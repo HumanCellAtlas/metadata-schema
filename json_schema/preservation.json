@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "additionalProperties": false, 
+    "definitions": {}, 
+    "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment", 
+    "properties": {
+        "autolysis_score": {
+            "description": "State of tissue breakdown due to self-digestion: none, mild, moderate", 
+            "enum": [
+                "none", 
+                "mild", 
+                "moderate"
+            ]
+        }, 
+        "core": {
+            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
+        }, 
+        "gross_description": {
+            "description": "Color, size and other aspects of specimen as visible to naked eye", 
+            "type": "string"
+        }, 
+        "gross_image": {
+            "description": "Photographs of body part without magnification", 
+            "items": {
+                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "ischemic_time": {
+            "description": "Time in seconds when body part had insufficient blood supply.", 
+            "maximum": 100000, 
+            "minimum": 0, 
+            "type": "integer"
+        }, 
+        "microscopic_description": {
+            "description": "How the sample looks under the microscope and how it compares with normal cells", 
+            "type": "string"
+        }, 
+        "microscopic_image": {
+            "description": "Photographs of body part under microscope", 
+            "items": {
+                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "postmortem_interval": {
+            "description": "Time in seconds between when death declared and time the tissue is preserved or processed", 
+            "maximum": 100000, 
+            "minimum": 0, 
+            "type": "integer"
+        }, 
+        "preservation_protocol": {
+            "description": "Refers to a protocol that describes the use of chemicals, cold, or other means  to prevent or retard biological or physical deterioration of sample.", 
+            "pattern": "^P-....-.*$", 
+            "type": "string"
+        }, 
+        "storage_protocol": {
+            "description": "Refers to a protocol that says how sample was stored after preservation", 
+            "pattern": "^P-....-.*$", 
+            "type": "string"
+        }
+    }, 
+    "required": [
+        "core"
+    ], 
+    "title": "preservation", 
+    "type": "object"
+}

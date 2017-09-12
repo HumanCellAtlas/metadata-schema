@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "description": "enrichment schema generate by tagSchemaToJson from enrichment", 
+    "items": {
+        "additionalProperties": false, 
+        "properties": {
+            "core": {
+		"$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json", 
+		"description": "type and schema for this object"
+            }, 
+            "markers": {
+                "description": "Text in the format of space delimited list of markers with +/-.  Example:  \"CD4+ CD8-\"", 
+                "type": "string"
+            }, 
+            "protocol": {
+                "description": "Refers to an enrichment protocol", 
+                "items": {
+                    "pattern": "^P-....-.*$", 
+                    "type": "string"
+                }, 
+                "type": "array"
+            }, 
+            "size_max": {
+                "description": "Maximum size passing selection in microns", 
+                "maximum": 10000, 
+                "minimum": 0.01, 
+                "type": "number"
+            }, 
+            "size_min": {
+                "description": "Minimum size passing selection in microns", 
+                "maximum": 10000, 
+                "minimum": 0.01, 
+                "type": "number"
+            }, 
+            "type": {
+                "description": "How enrichment was achieved.  MACS, FACS, filter, etc", 
+                "enum": [
+                    "FACS", 
+                    "MACS", 
+                    "Ficoll gradient"
+                ]
+            }
+        }, 
+        "type": "object"
+    }, 
+    "required": [
+        "type"
+    ], 
+    "title": "enrichment", 
+    "type": "object"
+}

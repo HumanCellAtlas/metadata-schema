@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "additionalProperties": false, 
+    "description": "A term that may be associated with an ontology term", 
+    "properties": {
+        "text": {
+            "description": "The text for the term as the user provides it.", 
+            "type": "string"
+        }, 
+        "ontology": {
+            "description": "An optional ontology reference in format where prefix_ indicates which ontology", 
+            "type": "string"
+        }
+    }, 
+    "required": [
+        "text"
+    ], 
+    "title": "ontology", 
+    "type": "object"
+}
