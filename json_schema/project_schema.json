@@ -1,0 +1,240 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "additionalProperties": false, 
+    "definitions": {
+        "array_express": {
+            "additionalProperties": false, 
+            "properties": {
+                "accession": {
+                    "description": "EBI Array Express investigation accession", 
+                    "pattern": "^E-....-.*$", 
+                    "type": "string"
+                }, 
+                "experiment_type": {
+                    "description": "A few words describing type of experiment at Array Express. Example \"RNA-seq of coding RNA from single cells\"", 
+                    "type": "string"
+                }, 
+                "related_experiment": {
+                    "description": "Array Express accessions of related experiments", 
+                    "type": "string"
+                }, 
+                "term_source_file": {
+                    "description": "Names of files (or usually URLs) associated with ArrayExpress term ontology management", 
+                    "items": {
+                        "type": "string"
+                    }, 
+                    "type": "array"
+                }, 
+                "term_source_name": {
+                    "description": "List of groups at EBI responsible for term ontologies", 
+                    "items": {
+                        "type": "string"
+                    }, 
+                    "type": "array"
+                }
+            }, 
+            "type": "object"
+        }, 
+        "contact": {
+            "additionalProperties": false, 
+            "properties": {
+                "address": {
+                    "description": "Full mailing address except for name.  Includes city, state, postal code, country.", 
+                    "type": "string"
+                }, 
+                "city": {
+                    "description": "City name.  See also contact.address", 
+                    "type": "string"
+                }, 
+                "country": {
+                    "description": "Country (USA or UK for those countries, otherwise spelled out)", 
+                    "type": "string"
+                }, 
+                "department": {
+                    "description": "Name of department within institution if any", 
+                    "type": "string"
+                }, 
+                "email": {
+                    "description": "Email of contact", 
+                    "pattern": "^.*@.*..*$", 
+                    "type": "string"
+                }, 
+                "institute": {
+                    "description": "Name of institute where contact works", 
+                    "type": "string"
+                }, 
+                "laboratory": {
+                    "description": "Name of lab (often the PI name) within institute where contact works", 
+                    "type": "string"
+                }, 
+                "name": {
+                    "description": "Text formatted with first name, middle, last in that order separated by commas.  Usually middle is just an initial.", 
+                    "type": "string"
+                }, 
+                "phone": {
+                    "description": "Phone number of contact", 
+                    "type": "string"
+                }, 
+                "postal_code": {
+                    "description": "Zip or postal code", 
+                    "type": "string"
+                }, 
+                "state": {
+                    "description": "State in the USA, provence, canton, or other subdivisions for other countries", 
+                    "enum": [
+                        "AL", 
+                        "AZ", 
+                        "CA", 
+                        "FL", 
+                        "IL", 
+                        "MA", 
+                        "MO", 
+                        "NY", 
+                        "OR", 
+                        "PA", 
+                        "TX", 
+                        "WA"
+                    ]
+                }, 
+                "street_address": {
+                    "description": "Part of address excluding city, state, postal code, country. See also address", 
+                    "type": "string"
+                }
+            }, 
+            "required": [
+                "email", 
+                "name"
+            ], 
+            "type": "object"
+        }
+    }, 
+    "description": "project schema generate by tagSchemaToJson from curated.tight", 
+    "properties": {
+        "array_express": {
+            "$ref": "#/definitions/array_express"
+        }, 
+        "contact": {
+            "$ref": "#/definitions/contact"
+        }, 
+        "contributor": {
+            "description": "List of contributors. For individuals use first name, middle, last in that order separated by commas. Middle may be initial", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "ddjb_trace_project": {
+            "description": "Japanese trace archive project accession.", 
+            "pattern": "^ERP.*$", 
+            "type": "string"
+        }, 
+        "experimental_factor_name": {
+            "description": "Name of experimental factors (generally each with an EFO ontology) that vary in projects experiment.  Examples \"cell_line\"  \"disease\"", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "geo_doc_id": {
+            "description": "Most people use geo_series instead of this numerical GEO id that is equivalent", 
+            "maximum": 1000000000, 
+            "minimum": 1, 
+            "type": "integer"
+        }, 
+        "geo_parent_series": {
+            "description": "For GEO series that are part of a larger project, the accession of the larger project", 
+            "type": "string"
+        }, 
+        "geo_series": {
+            "description": "NCBI GEO series accession", 
+            "pattern": "^GSE.*$", 
+            "type": "string"
+        }, 
+        "id": {
+            "description": "A computer-parsable  (no spaces) but hopefully somewhat human readable id for project, unique across HCA", 
+            "type": "string"
+        }, 
+        "last_update_date": {
+            "description": "When project was last updated", 
+            "pattern": "^2...-..-..$", 
+            "type": "string"
+        }, 
+        "mage_tab_version": {
+            "description": "Array Express MAGE TAB version number.", 
+            "maximum": 10.0, 
+            "minimum": 1.0, 
+            "type": "number"
+        }, 
+        "ncbi_bioproject": {
+            "description": "NCBI bioproject ID", 
+            "pattern": "^PRJNA.*$", 
+            "type": "string"
+        }, 
+        "overall_design": {
+            "description": "A sentence to a paragraph describing major steps of the experiment", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "pmid": {
+            "description": "PubMed ID of associated paper(s)", 
+            "items": {
+                "maximum": 100000000, 
+                "minimum": 1, 
+                "type": "integer"
+            }, 
+            "type": "array"
+        }, 
+        "publication_author_list": {
+            "description": "Comma separated list of authors associated with papers.  Example: \"Tran NM, Macosko EZ, Kowalczyk M\"", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "release_status": {
+            "description": "Date when project was released publicly, or plans for release", 
+            "pattern": "^.*2...-..-..$", 
+            "type": "string"
+        }, 
+        "sra_project": {
+            "description": "NCBI SRA project accession", 
+            "pattern": "^SRP.*$", 
+            "type": "string"
+        }, 
+        "submission_date": {
+            "description": "When project was submitted to database (GEO, ArrayExpress, SRA, ENA or HCA)", 
+            "pattern": "^2...-..-..$", 
+            "type": "string"
+        }, 
+        "summary": {
+            "description": "A paragraph or so summary of the the project", 
+            "type": "string"
+        }, 
+        "supplementary_files": {
+            "description": "Project level supplementary files", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "title": {
+            "description": "A sentence long or so description of the project", 
+            "type": "string"
+        }, 
+        "uuid": {
+            "description": "Unique id for project.  Generated by HCA", 
+            "pattern": "^........-....-....-....-............$", 
+            "type": "string"
+        }
+    }, 
+    "required": [
+        "id", 
+        "summary", 
+        "title", 
+        "uuid"
+    ], 
+    "title": "project", 
+    "type": "object"
+}

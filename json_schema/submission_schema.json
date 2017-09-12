@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "additionalProperties": false,
+    "definitions" : {
+    	"transfer_service_version" : {
+		"additionalProperties" : false,
+		"type" : "string"
+	},
+	"submitted_files" : {
+		"additionalProperties" : false,
+		"type" : "array",
+		"items" : {
+			"$ref" : "#/definitions/file"	
+		}
+	},
+	"file" : {
+		"type" : "object",
+		"additionalProperties" : false,
+		"properties" : {
+			"name" : {
+				"description" : "Name of the file",
+				"type" : "string"
+			},
+			"content_type" :{
+				"description" : "type of file e.g hca-sample-json, hca-assay-json, hca-rnaseq-fastq-gz",
+				"type" : "string"
+			},
+			"size" : {
+				"description" : "Length of file in bytes",
+				"type" : "integer"
+			},
+			"id" : {
+				"description" : "URI of the Data Storage System file resource that describes this file",
+				"type" : "string"
+			},
+			"checksums" : {
+				"type" : "object",
+				"properties" : {
+					"s3etag" : {
+						"description" : "S3 ETAG checksum of this file",
+						"type" : "string"
+					},
+					"sha1" : {
+						"description" : "SHA-1 checksum of this file",
+						"type" : "string"
+					},
+					"sha256" : {
+						"description" : "SHA-256 checksum of this file",
+						"type" : "string"
+					},
+					"crc32" : {
+						"description" : "CRC-32 checksum of this file",
+						"type" : "string"
+					}
+				},
+				"required" : [
+					"s3etag",
+					"sha1",
+					"sha256",
+					"crc32"
+				]
+			}
+		},
+		"required" : [
+			"name",
+			"content_type",
+			"size",
+			"id",
+			"checksums"
+		]
+	}
+    },
+    "properties" : {
+    	"transfer_service_version" : {
+		"$ref" : "#/definitions/transfer_service_version"
+	},
+	"submitted_files" : {
+		"$ref" : "#/definitions/submitted_files"
+	}
+    },
+    "required" : [
+    	"transfer_service_version",
+	"submitted_files"
+    ],
+    "title" : "submission",
+    "type" : "object"
+}

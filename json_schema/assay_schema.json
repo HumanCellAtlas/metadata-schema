@@ -1,0 +1,202 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "additionalProperties": false, 
+    "definitions": {
+        "rna": {
+            "additionalProperties": false, 
+            "properties": {
+                "prep": {
+                    "description": "RNA preparation kit", 
+                    "type": "string"
+                }, 
+                "primer": {
+                    "description": "Primer for cDNA synthesis from RNA", 
+                    "enum": [
+                        "poly-dt", 
+                        "random"
+                    ]
+                }, 
+                "spike_in": {
+                    "description": "Name of RNA spike in kit", 
+                    "type": "string"
+                }, 
+                "spike_in_dilution": {
+                    "description": "Dilution of RNA spike in", 
+                    "maximum": 1000000, 
+                    "minimum": 1, 
+                    "type": "integer"
+                }, 
+                "strand": {
+                    "description": "Single stranded?", 
+                    "enum": [
+                        "both", 
+                        "first"
+                    ]
+                }
+            }, 
+            "type": "object"
+        }, 
+        "seq": {
+            "additionalProperties": false, 
+            "properties": {
+                "machine": {
+                    "description": "Name of sequencing machine", 
+                    "enum": [
+                        "Illumina HiSeq 2000", 
+                        "Illumina HiSeq 2500", 
+                        "Illumina HiSeq 4000", 
+                        "Illumina NextSeq 500", 
+                        "Illumina MiSeq"
+                    ]
+                }, 
+                "molecule": {
+                    "description": "RNA, DNA, or protein, or more specifically \"total RNA,\" \"genomic DNA,\"  etc.", 
+                    "enum": [
+                        "RNA", 
+                        "polyA RNA", 
+                        "total RNA"
+                    ]
+                }, 
+                "paired_ends": {
+                    "description": "Is a paired end sequencing strategy used? Values are yes/no/index1_reads2 (for 10x and drop-seq)", 
+                    "enum": [
+                        "index1_reads2", 
+                        "no", 
+                        "yes"
+                    ]
+                }, 
+                "prep": {
+                    "description": "DNA sequencing library preparation kit", 
+                    "enum": [
+                        "DNA Library Prep kit (Nextera XT; Illumina)", 
+                        "Nextera XT", 
+                        "TruSeq", 
+                        "modified Nextera XT"
+                    ]
+                }, 
+                "umi_barcode_offset": {
+                    "description": "Offset in sequence of unique molecular identifier (UMI) barcode. 0 for beginning of sequence", 
+                    "maximum": 50, 
+                    "minimum": 0, 
+                    "type": "integer"
+                }, 
+                "umi_barcode_read": {
+                    "description": "Read file type", 
+                    "enum": [
+                        "read1", 
+                        "read2", 
+                        "index"
+                    ]
+                }, 
+                "umi_barcode_size": {
+                    "description": "Size  of UMI barcode. 0 for no barcode", 
+                    "maximum": 50, 
+                    "minimum": 0, 
+                    "type": "integer"
+                }
+            }, 
+            "required": [
+                "molecule", 
+                "paired_ends"
+            ], 
+            "type": "object"
+        }, 
+        "single_cell": {
+            "additionalProperties": false, 
+            "properties": {
+                "cell_barcode_offset": {
+                    "description": "Offset in sequence of cell identifying barcode. 0 for beginning of sequence", 
+                    "maximum": 50, 
+                    "minimum": 0, 
+                    "type": "integer"
+                }, 
+                "cell_barcode_read": {
+                    "description": "Read file type", 
+                    "enum": [
+                        "read1", 
+                        "read2", 
+                        "index"
+                    ]
+                }, 
+                "cell_barcode_size": {
+                    "description": "Size of cell identifying barcode. 0 for no barcode", 
+                    "maximum": 50, 
+                    "minimum": 0, 
+                    "type": "integer"
+                }, 
+                "method": {
+                    "description": "How cells are separated.  FACS, drop-seq, tenX, Fluidigm C1, etc", 
+                    "enum": [
+                        "10x_v2", 
+                        "FACS", 
+                        "Fluidigm C1", 
+                        "drop-seq", 
+                        "mouth pipette", 
+                        "bulk"
+                    ]
+                }
+            }, 
+            "required": [
+                "method"
+            ], 
+            "type": "object"
+        }
+    }, 
+    "description": "assay schema generate by tagSchemaToJson from curated.tight", 
+    "properties": {
+        "ena_experiment": {
+            "description": "European Nucleotide Archive experiment accession", 
+            "pattern": "^ERX.*$", 
+            "type": "string"
+        }, 
+        "ena_run": {
+            "description": "European Nucleotide Archive run accession", 
+            "pattern": "^ERR.*$", 
+            "type": "string"
+        }, 
+        "files": {
+            "description": "An array of file objects.  See file fields below.", 
+            "type": "array",
+	    "items": {
+	        "type": "object",
+		"properties": {
+		    "name": {"type": "string"},
+		    "format": {"enum": [".fastq.gz", ".pdf", ".bam", ".txt", ".tsv", ".csv"]},
+		    "type": {"enum": ["reads", "read1", "read2", "index", "gene_matrix", "transcript_matrix", "other"]},
+		    "lane": {"type": "integer"}
+		},
+		"required": ["name","format","type","lane"]
+	    }
+        }, 
+        "rna": {
+            "$ref": "#/definitions/rna"
+        }, 
+        "seq": {
+            "$ref": "#/definitions/seq"
+        }, 
+        "single_cell": {
+            "$ref": "#/definitions/single_cell"
+        }, 
+        "sra_experiment": {
+            "description": "NCBI Short Read Archive experiment accession (SRX)", 
+            "type": "string"
+        }, 
+        "sra_run": {
+            "description": "NCBI Short Read Archive run accession (SRR)", 
+            "items": {
+                "pattern": "^SRR.*$", 
+                "type": "string"
+            }, 
+            "type": "array"
+        }, 
+        "submitted_file_names": {
+            "description": "Names of files as submitted to database, which were renamed by database in files array", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        }
+    }, 
+    "title": "assay", 
+    "type": "object"
+}

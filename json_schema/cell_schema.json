@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "additionalProperties": false, 
+    "description": "cell schema generate by tagSchemaToJson from curated.tight", 
+    "patternProperties": {
+        "^characteristics_.*$": {
+            "description": "Fields that begin with sample.characteristics_ can contain any value, and the field name can be anything after the prefix", 
+            "type": "string"
+        }
+    }, 
+    "properties": {
+        "cell_cycle": {
+            "description": "Stage in cell cycle - G1, S, G2, M or combination like G2/M", 
+            "enum": [
+                "G1 phase", 
+                "G2/M phase", 
+                "M phase", 
+                "G2 phase", 
+                "S phase"
+            ]
+        }, 
+        "id": {
+            "description": "Unique (within project) id for cell for cell-at-a-time assays", 
+            "type": "string"
+        }, 
+        "ontology": {
+            "description": "Cell type ontology reference", 
+            "pattern": "^.*_0......$|^FMA_.*$", 
+            "type": "string"
+        }, 
+        "type": {
+            "description": "Cell type - something like \"fibroblast\" or \"neuron.\"  Ideally a term from an ontology", 
+            "type": "string"
+        }, 
+        "well_quality": {
+            "description": "Note on how good cell looks if imaged in well before sequencing", 
+            "type": "string"
+        }
+    }, 
+    "title": "cell", 
+    "type": "object"
+}
