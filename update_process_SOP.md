@@ -1,4 +1,4 @@
-#The Human Cell Atlas Metadata Update Process SOP
+# The Human Cell Atlas Metadata Update Process SOP
 
 This file is a place holder for the update process proceedure.
 
