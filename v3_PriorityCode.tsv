@@ -1,0 +1,12 @@
+The priority field contains two words: requirement and scope.  Scope is define for required and high priority fields. 	
+	
+Requirement Levels	
+Required	Field must be filled in
+High	Field should be filled in but basic analysis and interpretation can happen without it
+Optional	Field is informative but not crucial
+Low	Field is not very informative for most people but include it if it is useful to you
+	
+Scope Levels	
+All	Requirement applies to all situations
+DB	Requirement applies to projects taken from the relevant public database
+Some	Required in some situation, for instance this may be paramaters to a particular method 

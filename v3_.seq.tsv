@@ -1,0 +1,22 @@
+seq	This is a subobject module used in the assay entity					
+Information about how a sample was sequenced.						
+						
+Field Name	source	Priority	Applies to	Type	Description	
+core	ingest	required	all	core module	id and schema for seq object	
+						
+lanes	submitter	Required	lane based sequencing	array of lane	Array of lanes module	Array of lane subobjects.  Contains sequence read files.
+instrument_platform	submitter	Required	all	CV	Examples: Illumina, Ion Torrent, Pac Bio	
+instrument_model	submitter	Required	all	CV	Examples: HiSeq 200, Pac Bio SEQuel	
+local_machine_name	submitter	Optional	all	text	Local lab name for particular machine of given platform and model this was run on.	
+molecule	submitter	Req All	all	CV	RNA, DNA, or protein, or more specifically "total RNA," "genomic DNA,"  etc. 	
+paired_ends	submitter	Req All	all	CV	Is a paired end sequencing strategy used? Values are single/paired/index1_reads2 (for 10x and drop-seq) 	
+library_construction	submitter	Optional	all	CV	How dna sequencing library was prepared from sample or rna library.  Examples: "Nextera XT" "TrueSeq"	
+library_protocol	submitter	Optional	all	protocol	DNA sequencing library preparation protocol	
+umi_barcode_offset	submitter	Req Some	assays w/ UMI	pos integer	Offset in sequence of unique molecular identifier (UMI) barcode. 0 for beginning of sequence	
+umi_barcode_size	submitter	Req Some	assays w/ UMI	pos integer	Size  of UMI barcode. 0 for no barcode	
+umi_barcode_read	submitter	Req Some	assays w/ UMI	CV	Which read UMI is found on.  Is either "read1," "read2," "reads" or "index" or some TBD field of seq.lane.	
+						
+ena_experiment	ext DB	Req DB	All that are in ENA	ext ID	European Nucleotide Archive experiment accession	
+ena_run	ext DB	Req DB	All that are in ENA	ext ID	European Nucleotide Archive run accession	
+sra_experiment	ext DB	Req DB	All that are in SRA	ext ID	NCBI Short Read Archive experiment accession (SRX)	
+sra_run	ext DB	Req DB	All that are in SRA	array of ext ID	NCBI Short Read Archive run accession (SRR)	

@@ -1,0 +1,16 @@
+imaging	This is a subobject module used in the assay entity				
+Information about how a sample was probed and imaged					
+NOTE - no json schema yet for this					
+					
+Field Name	source	Priority	Applies to	Type	Description
+core	ingest	required	all	core module	schema for imaging object
+					
+embedding	submitter	High	all	text	Description of embedding conditions
+exposure_time	submitter	Optional	all	number	Exposure time as a floating point number in units of seconds
+field_counts	submitter	Req	all	array of pos int	number of fields in x and y dimensions
+field_microns	submitter	High	all	array of pos int	microns covered by a field in x,y, and z.  Z includes all focal planes in a single file
+field_resolution	submitter	Req	all	array of pos int	x, y, and z (number of focal planes) resolution of an individual field
+fixation	submitter	High	all	text	Description of fixation conditions
+microscope	submitter	High	all	CV	Microscope used for imaging
+					
+probes	submitter	Required	all	file/url	A file containing information on probe sequence, genes they cover, and  colors
