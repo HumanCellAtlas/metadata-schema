@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/HumanCellAtlas/metadata-schema.svg?branch=master)](https://travis-ci.org/HumanCellAtlas/metadata-schema)
+
+
 # The Human Cell Atlas Metadata Schema
 
 This repo contains the HCA metadata metadata json schemas.
