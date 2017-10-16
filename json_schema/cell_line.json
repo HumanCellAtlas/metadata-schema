@@ -1,9 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "additionalProperties": false, 
-    "definitions": {}, 
     "description": "Information about the cell line used in the sample", 
     "properties": {
+        "sample_type": {
+            "type": "array",
+            "enum": ["cell line"]
+         },
         "catalog_number": {
             "description": "the supplier catalogue number for the cell line", 
             "type": "string"
@@ -14,11 +17,11 @@
         }, 
         "cell_type": {
 	    "description": "what cell type was the line derived from, CLO ontology usually",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "ontology.json"
         }, 
         "core": {
 	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
+            "$ref": "core.json"
         }, 
         "culture_protocol": {
             "description": "pointer to the culture protocol", 
@@ -36,7 +39,7 @@
         }, 
         "disease": {
 	    "description": "text describing disease association, preferable a disease found in EFO",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "ontology.json"
         }, 
         "karyotype": {
             "description": "the karyotype of the cell line", 
@@ -44,7 +47,7 @@
         }, 
         "name": {
 	    "description": "what is the official name for the cell line?",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "ontology.json"
         }, 
         "passage_number": {
             "description": "how many passages the cell line as been through", 
@@ -54,7 +57,7 @@
         }, 
         "publication": {
 	    "description": "what is the official name for the cell line?",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/publication.json"
+            "$ref": "publication.json"
         },
         "cell_cycle": {
         "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
