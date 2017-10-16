@@ -55,6 +55,10 @@
         "publication": {
 	    "description": "what is the official name for the cell line?",
             "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/publication.json"
+        },
+        "cell_cycle": {
+        "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+        "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here"
         }
     }, 
     "title": "cell_line", 
