@@ -1,7 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "description": "Information on a biosample." ,
+    "additionalProperties": false,
+    "required": ["details", "id", "name", "project_id", "core"],
+    "description": "Information about a biosample." ,
     "properties": {
         "core": { "$ref": "core.json" },
         "id": {
@@ -47,6 +48,23 @@
             "description": "The id field of the project that this connects to", 
             "type": "string"
         },
+        "supplementary_files": {
+            "description": "Sample level supplementary files.", 
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array"
+        },  
+        "total_estimated_cells": {
+            "description": "Total estimated number of cells in sample.  May be 1 for well based assays.", 
+            "maximum": 1000000000.0, 
+            "minimum": 0.1, 
+            "type": "number"
+        }, 
+        "well": {
+            "$ref": "well.json", 
+            "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
+        },
         "sample_accessions": {
             "type": "object",
             "description": "One or more accession numbers from a standard archive.", 
@@ -69,11 +87,8 @@
                     "description": "European nucleotide archive sample ID", 
                     "pattern": "^ERS.*$", 
                     "type": "string"
-                }      
+                }
             }
         }
-    },
-    
-    "required": ["details", "id", "name", "project_id", "core"],
-    "additionalProperties": "False"
+    }
 }
