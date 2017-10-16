@@ -9,4 +9,4 @@ install:
 
 script:
    - cd src
-   - python test_schema.py
+   - python simple_test.py
