@@ -1,0 +1,25 @@
+{       
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "description":    "", 
+    "properties": {
+        "sample_type": {
+            "type": "string",
+            "enum": ["cell suspension"]
+         },
+        "cell type": {
+            "description" : "cell types present in suspension",
+            "type": "array",
+            "items": { "$ref": "ontology.json" }             
+       },
+        "disassociation_protocol": {
+            "description": "How body part was treated to disassociate it into cells that can float individually in solution in sorter or microfluidics device.", 
+            "pattern": "^P-....-.*$", 
+            "type": "string"
+        }, 
+        "enrichment": {
+            "description": "How cells were enriched for specific type or to weed out common types after disassociation.",
+            "type": "array",            
+            "items": { "$ref": "enrichment.json" }
+        }
+     }
+}
