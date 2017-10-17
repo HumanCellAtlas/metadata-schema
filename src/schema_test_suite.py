@@ -2,14 +2,23 @@ import json
 from jsonschema import Draft4Validator, RefResolver, SchemaError
 import warnings
 
+
 def get_json_from_file(filename):
     f = open(filename, 'r')
     return json.loads(f.read())
 
 def get_validator(filename, base_uri = ''):
+    """Load schema from JSON file;
+    Check whether it's a valid schema;
+    Return a Draft4Validator object.
+    Optionally specify a base URI for relative path
+    resolution of JSON pointers. This is especially useful
+    for local resolution via base_uri of form file://{some_path}/
+    """
     schema = get_json_from_file(filename)
     try:
-        Draft4Validator.check_schema(schema)  # Not clear what's wrong here. Works in notebook.
+        # Check schema via class method call.
+        Draft4Validator.check_schema(schema)  # IDE complaining but seems to work.
         print("Schema %s is valid" % filename)
     except SchemaError: 
         raise    
@@ -22,6 +31,7 @@ def get_validator(filename, base_uri = ''):
                             resolver = resolver)
 
 def validate(validator, instance):
+    """Validate an instance of a schema and report errors."""
     if validator.is_valid(instance):
         print("Passes")
         return True
