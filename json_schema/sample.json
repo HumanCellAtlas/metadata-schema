@@ -12,24 +12,6 @@
             "description": "A unique ID for this sample", 
             "type": "string"
         },
-        "submit_date": {
-            "description": "When project was first submitted to database.", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "submitter_id": {
-            "description": "ID of contact who first submitted project", 
-            "type": "string"
-        },
-        "update_date": {
-            "description": "When project was last updated", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "updater_id": {
-            "description": "ID of contact who last updated project", 
-            "type": "string"
-        },          
         "details": {
             "anyOf": [
                 { "$ref": "donor.json" },
