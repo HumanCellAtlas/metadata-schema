@@ -4,20 +4,12 @@
     "required": ["details", "core"],
     "description": "Information about a biosample." ,
     "properties": {
-        "core": { 
+        "core": {
             "$ref": "core.json",
             "description": "type and schema for this object"
              },
         "id": {
             "description": "A unique ID for this sample", 
-            "type": "string"
-        },
-        "name": {
-            "description": "A short descriptive name for sample.  Should be enough to distinguish it from other samples in the project", 
-            "type": "string"
-        },
-         "title": {
-            "description": "A descriptive phrase or sentence describing the sample  , ideally about 60 characters.", 
             "type": "string"
         },
         "submit_date": {

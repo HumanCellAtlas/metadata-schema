@@ -15,18 +15,28 @@
         "type": {
             "description": "The name of the core metadata entity type.", 
             "enum": [
-		"assay",
-		"project",
-		"protocol",
-		"sample",
-		"file",
-		"analysis"
+		      "assay",
+		      "project",
+		      "protocol",
+		      "sample",
+		      "file",
+		      "analysis"
             ]
+        },
+        "name": {
+            "description": "A short descriptive name for the entity (e.g. sample, assay, protocol, file, analysis).  Should be enough to distinguish it from other samples in the project.", 
+            "type": "string"
+        },
+        "comment": {
+            "description": "A free text commment capturing any relevant information not captured by other fields.",
+            "type": "string"
+        },
+        "description": { 
+            "description": "A general description of the item being submitted (e.g. sample, assay, protocol, file, analysis).",
+            "type": "string"           
         }
-    }, 
+    },
     "required": [
         "type"
-    ], 
-    "title": "core", 
-    "type": "object"
+    ]  
 }
