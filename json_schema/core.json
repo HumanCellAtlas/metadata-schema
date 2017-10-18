@@ -23,6 +23,10 @@
 		      "analysis"
             ]
         },
+        "user_supplied_id":{
+            "description": "A local identifier for the entity (e.g. sample, assay, protocol, file, analysis).",
+            "type": "string"
+        },
         "name": {
             "description": "A short descriptive name for the entity (e.g. sample, assay, protocol, file, analysis).  Should be enough to distinguish it from other samples in the project.", 
             "type": "string"
