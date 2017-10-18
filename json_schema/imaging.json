@@ -3,10 +3,7 @@
     "additionalProperties": false, 
     "definitions": {}, 
     "description": "imaging schema generate by tagSchemaToJson from imaging", 
-    "properties": {
-        "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
-        }, 
+    "properties": { 
         "embedding": {
             "description": "Description of embedding conditions", 
             "type": "string"
@@ -55,7 +52,6 @@
         }
     }, 
     "required": [
-	"core",
         "field_counts",
 	"field_resolution",
 	"probes"

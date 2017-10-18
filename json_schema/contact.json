@@ -12,10 +12,6 @@
             "description": "City name.  See also contact.address", 
             "type": "string"
         }, 
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
-        }, 
         "country": {
             "description": "Country (USA or UK for those countries, otherwise spelled out)", 
             "enum": [
@@ -112,8 +108,7 @@
         }
     }, 
     "required": [
-	"core",
-        "name"
+            "name"
     ], 
     "title": "contact", 
     "type": "object"

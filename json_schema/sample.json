@@ -1,16 +1,23 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "additionalProperties": false,
-    "required": ["details", "id", "name", "project_id", "core"],
+    "required": ["details", "core"],
     "description": "Information about a biosample." ,
     "properties": {
-        "core": { "$ref": "core.json" },
+        "core": { 
+            "$ref": "core.json",
+            "description": "type and schema for this object"
+             },
         "id": {
             "description": "A unique ID for this sample", 
             "type": "string"
-        }, 
+        },
         "name": {
             "description": "A short descriptive name for sample.  Should be enough to distinguish it from other samples in the project", 
+            "type": "string"
+        },
+         "title": {
+            "description": "A descriptive phrase or sentence describing the sample  , ideally about 60 characters.", 
             "type": "string"
         },
         "submit_date": {
@@ -20,10 +27,6 @@
         }, 
         "submitter_id": {
             "description": "ID of contact who first submitted project", 
-            "type": "string"
-        },
-        "title": {
-            "description": "A descriptive phrase or sentence, ideally about 60 characters.", 
             "type": "string"
         },
         "update_date": {
@@ -36,9 +39,9 @@
             "type": "string"
         },          
         "details": {
-            "oneOf": [
-                { "$ref": "donor.jon" },
-                { "$ref": "sample_from_organism.jsomn" },
+            "anyOf": [
+                { "$ref": "donor.json" },
+                { "$ref": "sample_from_organism.json" },
                 { "$ref": "cell_line.json" },
                 { "$ref": "cell_suspension.json" },
                 { "$ref": "organoid.json" } 

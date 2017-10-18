@@ -4,7 +4,7 @@
     "description": "donor schema generate by tagSchemaToJson from donor", 
     "properties": {
         "sample_type": {
-            "type": "array",
+            "type": "string",
             "enum": ["donor"]
          },
         "age": {
@@ -34,10 +34,6 @@
             "maximum": 100, 
             "minimum": 5, 
             "type": "number"
-        }, 
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "core.json"
         }, 
         "death": {
 	    "description": "Information about conditions of death (or info that donor was living at time of collection)",
@@ -85,11 +81,11 @@
             ]
         }, 
         "medication": {
-	    "description": "List of medications donor is on",
-	    "type": "array",
-	    "items": {
-		"$ref": "ontology.json"
-	    }
+	       "description": "List of medications donor is on",
+	       "type": "array",
+	       "items": {
+		  "$ref": "ontology.json"
+	       }
         }, 
         "sex": {
             "description": "Sex of donor.  Either 'male' 'female' 'mixed' or 'unknown'", 
@@ -123,7 +119,7 @@
         }
     }, 
     "required": [
-        "core", "species", "is_living", "sample_type"
+        "species", "is_living", "sample_type"
     ],
     "title": "donor", 
     "type": "object"

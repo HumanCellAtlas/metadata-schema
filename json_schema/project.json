@@ -17,12 +17,12 @@
         "contributors": {
 	    "description": "List of scientists contributing to project",
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/contact.json"
+                "$ref": "contact.json"
             }, 
             "type": "array"
         }, 
         "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json", 
+            "$ref": "core.json", 
             "description": "type and schema for this object"
         }, 
         "ddjb_trace": {

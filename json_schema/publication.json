@@ -9,11 +9,7 @@
                 "type": "string"
             }, 
             "type": "array"
-        }, 
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
-        }, 
+        },
         "doi": {
             "description": "Publication digital object identifier.  Example \"10.1016/j.cell.2016.07.054\"", 
             "type": "string"
@@ -30,10 +26,7 @@
             "description": "URL, preferably not behind a paywall, for publication", 
             "type": "string"
         }
-    }, 
-    "required": [
-	"core"
-    ], 
+    },
     "title": "publication", 
     "type": "object"
 }

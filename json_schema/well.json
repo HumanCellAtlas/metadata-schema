@@ -11,10 +11,6 @@
             "description": "well column in plate", 
             "type": "string"
         }, 
-        "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json", 
-	    "description": "type and schema for this object"
-        }, 
         "name": {
             "description": "A name for the well, should be unique for the plate", 
             "type": "string"
@@ -41,10 +37,7 @@
             "description": "well row in plate", 
             "type": "string"
         }
-    }, 
-    "required": [
-	"core"
-    ], 
+    },
     "title": "well", 
     "type": "object"
 }

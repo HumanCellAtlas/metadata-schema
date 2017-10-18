@@ -12,9 +12,6 @@
                 "moderate"
             ]
         }, 
-        "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
-        }, 
         "gross_description": {
             "description": "Color, size and other aspects of specimen as visible to naked eye", 
             "type": "string"
@@ -62,9 +59,6 @@
             "type": "string"
         }
     }, 
-    "required": [
-        "core"
-    ], 
     "title": "preservation", 
     "type": "object"
 }

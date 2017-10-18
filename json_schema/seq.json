@@ -39,9 +39,6 @@
     }, 
     "description": "Information about how a sample was sequenced.", 
     "properties": {
-        "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
-        }, 
         "ena_experiment": {
             "description": "European Nucleotide Archive experiment accession", 
             "pattern": "^ERX.*$", 
@@ -122,7 +119,6 @@
         }
     }, 
     "required": [
-	"core",
 	"instrument_model",
 	"instrument_platform",
 	"lanes",

@@ -14,11 +14,7 @@
                 "no", 
                 "yes"
             ]
-        }, 
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
-        }, 
+        },  
         "days_on_ventilator": {
             "description": "Days on ventilator before dying", 
             "maximum": 10000, 
@@ -38,7 +34,6 @@
         }
     }, 
     "required": [
-	"core",
 	"cause_of_death"
     ], 
     "title": "death", 

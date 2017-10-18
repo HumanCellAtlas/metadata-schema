@@ -13,27 +13,14 @@
             "type": "string"
         }, 
         "type": {
-            "description": "A name for the type of object/module. By convention also the file name (without dir or extension) of json schema or entity level metadata file", 
+            "description": "The name of the core metadata entity type.", 
             "enum": [
 		"assay",
-		"barcode",
-		"cell_line",
-		"contact",
-		"core",
-		"death",
-		"donor",
-		"enrichment",
-		"imaging",
-		"lane",
-		"preservation",
 		"project",
 		"protocol",
-		"publication",
-		"rna",
 		"sample",
-		"seq",
-		"single_cell",
-		"well"
+		"file",
+		"analysis"
             ]
         }
     }, 

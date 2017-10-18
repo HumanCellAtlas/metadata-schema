@@ -1,7 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "additionalProperties": false, 
-    "definitions": {}, 
     "description": "Contains information on single cell aspects of an assay.", 
     "properties": {
         "barcode": {
@@ -19,14 +18,10 @@
                 "mouth pipette", 
                 "bulk"
             ]
-        }, 
-        "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
         }
     }, 
     "required": [
-        "cell_handling",
-	"core"
+        "cell_handling"
     ], 
     "title": "single_cell", 
     "type": "object"

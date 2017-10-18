@@ -10,7 +10,7 @@
         }, 
         "core": {
 	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
+            "$ref": "core.json"
         }, 
         "description": {
             "description": "a text based desciption about the protocol", 

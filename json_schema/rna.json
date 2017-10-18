@@ -4,10 +4,6 @@
     "definitions": {}, 
     "description": "Information about how RNA was converted to DNA or otherwise prepared for assay", 
     "properties": {
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
-        }, 
         "end_bias": {
             "description": "\"3' bias\" or \"5' bias\" or \"3' end\" or \"5' end\" or \"none\"", 
             "enum": [
@@ -65,7 +61,6 @@
         }
     }, 
     "required": [
-	"core",
         "library_construction"
     ], 
     "title": "rna", 

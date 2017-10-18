@@ -12,7 +12,7 @@
     "type": "object",
     "properties": {
         "sample_type": {
-            "type": "array",
+            "type": "string",
             "enum": ["sample from organism"]
          },
         "body_part": {
@@ -39,7 +39,6 @@
     "required": [
     "sample_type",
 	"body_part",
-	"core",
 	"organ"
     ]
 }

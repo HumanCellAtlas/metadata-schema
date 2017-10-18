@@ -4,10 +4,6 @@
     "items": {
         "additionalProperties": false, 
         "properties": {
-            "core": {
-		"$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json", 
-		"description": "type and schema for this object"
-            }, 
             "markers": {
                 "description": "Text in the format of space delimited list of markers with +/-.  Example:  \"CD4+ CD8-\"", 
                 "type": "string"
