@@ -25,9 +25,7 @@
         }
     }, 
     "required": [
-        "type", 
-        "schema_version", 
-        "schema_url"
+        "type"
     ], 
     "title": "core", 
     "type": "object"
