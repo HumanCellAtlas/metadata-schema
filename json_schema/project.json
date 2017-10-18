@@ -29,11 +29,7 @@
             "description": "Japanese trace archive project accession.", 
             "pattern": "^ERP.*$", 
             "type": "string"
-        }, 
-        "description": {
-            "description": "A paragraph or so description of the the project", 
-            "type": "string"
-        }, 
+        },
         "experimental_design": {
             "items": {
                 "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
@@ -88,43 +84,18 @@
             "pattern": "^SRP.*$", 
             "type": "string"
         }, 
-        "submit_date": {
-            "description": "When project was first submitted to database.", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "submitter": {
-            "description": "Contact who first submitted project", 
-	    "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/contact.json"
-        }, 
         "supplementary_files": {
             "description": "Project level supplementary files such as experimental design documents, lab spreadsheets,  manuscripts in preparation.", 
             "items": {
                 "type": "string"
             }, 
             "type": "array"
-        }, 
-        "title": {
-            "description": "A sentence long or so title for the project", 
-            "type": "string"
-        }, 
-        "update_date": {
-            "description": "When project was last updated", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "updater": {
-            "description": "Contact who last updated project", 
-	    "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/contact.json"
         }
     }, 
     "required": [
 	"core",
 	"contributors",
-        "description", 
-        "id", 
-        "submitter", 
-        "title"
+    "id", 
     ], 
     "title": "project", 
     "type": "object"
