@@ -14,7 +14,7 @@
         "exposure_time": {
             "description": "Exposure time as a floating point number in units of seconds", 
             "maximum": 1000, 
-            "minimum": 1e-09, 
+            "minimum": 1e-9, 
             "type": "number"
         }, 
         "field_counts": {
