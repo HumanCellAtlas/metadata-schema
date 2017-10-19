@@ -95,7 +95,7 @@
     "required": [
 	"core",
 	"contributors",
-    "id", 
+    	"id" 
     ], 
     "title": "project", 
     "type": "object"
