@@ -22,7 +22,7 @@
             ]
         },
         "project_id": {
-            "description": "The id field of the project that this connects to", 
+            "description": "The id field of the project that this connects to",
             "type": "string"
         },
         "supplementary_files": {
