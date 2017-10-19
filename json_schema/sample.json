@@ -13,7 +13,7 @@
             "type": "string"
         },
         "details": {
-            "anyOf": [
+            "oneOf": [
                 { "$ref": "donor.json" },
                 { "$ref": "sample_from_organism.json" },
                 { "$ref": "cell_line.json" },
