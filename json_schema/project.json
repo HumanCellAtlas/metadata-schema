@@ -32,7 +32,7 @@
         },
         "experimental_design": {
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+                "$ref": "ontology.json",
                 "description": "A short description of overall experiment type, such as \"single cell RNA sequencing.\""
             }, 
             "type": "array"
@@ -60,14 +60,14 @@
         }, 
         "protocols": {
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/protocol.json", 
+                "$ref": "protocol.json",
                 "description": "An array of protocol modules.  Assay and project protocols reference this."
             }, 
             "type": "array"
         }, 
         "publications": {
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/publication.json", 
+                "$ref": "publication.json",
                 "description": "An array of publication modules."
             }, 
             "type": "array"
@@ -95,7 +95,7 @@
     "required": [
 	"core",
 	"contributors",
-    "id", 
+    "id"
     ], 
     "title": "project", 
     "type": "object"
