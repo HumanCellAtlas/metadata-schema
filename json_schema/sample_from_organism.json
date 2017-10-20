@@ -37,8 +37,8 @@
         }
     }, 
     "required": [
-    "sample_type",
-	"body_part",
-	"organ"
+        "sample_type",
+	    "body_part",
+	    "organ"
     ]
 }

@@ -93,9 +93,9 @@
         }
     }, 
     "required": [
-	"core",
-	"contributors",
-    "id"
+    	"core",
+	    "contributors",
+        "id"
     ], 
     "title": "project", 
     "type": "object"

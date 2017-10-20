@@ -26,8 +26,8 @@
         }
     }, 
     "required": [
-    	"id",
-    	"sample_id"
+	    "id",
+	    "sample_id"
     ],
     "title": "assay", 
     "type": "object"
