@@ -17,7 +17,7 @@
         }, 
         "cell_type": {
 	        "description": "what cell type was the line derived from, CLO ontology usually",
-            "$ref": "ontology.json"
+            "$ref": "cell_type_ontology.json"
         },  
         "culture_protocol": {
             "description": "pointer to the culture protocol", 
@@ -35,7 +35,7 @@
         }, 
         "disease": {
 	        "description": "text describing disease association, preferable a disease found in EFO",
-            "$ref": "ontology.json"
+            "$ref": "disease_ontology.json"
         }, 
         "karyotype": {
             "description": "the karyotype of the cell line", 

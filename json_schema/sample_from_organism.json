@@ -16,7 +16,7 @@
             "enum": ["sample from organism"]
          },
         "body_part": {
-            "$ref": "ontology.json", 
+            "$ref": "body_part_ontology.json",
             "description": "A more detailed position within the body than the term given in the organ field."
         },
         "organ": {

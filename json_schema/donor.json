@@ -47,7 +47,7 @@
             "description": "Short description of disease status of individual.",
 	        "type": "array",
 	        "items": {
-		        "$ref": "ontology.json"
+		        "$ref": "disease_ontology.json"
 	        }
         }, 
         "genotype": {
