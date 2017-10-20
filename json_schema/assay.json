@@ -13,21 +13,21 @@
             "type": "string"
         }, 
         "rna": {
-	    "description": "Information about how RNA was converted to DNA or otherwise prepared for assay", 
+	        "description": "Information about how RNA was converted to DNA or otherwise prepared for assay",
             "$ref": "rna.json"
         }, 
         "seq": {
-	    "description": "Information about how a sample was sequenced.", 
+	        "description": "Information about how a sample was sequenced.",
             "$ref": "seq.json"
         }, 
         "single_cell": {
-	    "description": "Contains information on single cell aspects of an assay.", 
+	        "description": "Contains information on single cell aspects of an assay.",
             "$ref": "single_cell.json"
         }
     }, 
     "required": [
-	"id",
-	"sample_id"
+    	"id",
+    	"sample_id"
     ],
     "title": "assay", 
     "type": "object"
