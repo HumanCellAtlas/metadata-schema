@@ -29,12 +29,12 @@
         }, 
         "time_of_death": {
             "description": "Date and time of death on death certificate for deceased donor", 
-	    "pattern": "^....-..-.. ..:..:..$",
+	        "pattern": "^....-..-.. ..:..:..$",
             "type": "string"
         }
     }, 
     "required": [
-	"cause_of_death"
+    	"cause_of_death"
     ], 
     "title": "death", 
     "type": "object"

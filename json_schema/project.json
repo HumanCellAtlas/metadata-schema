@@ -15,7 +15,7 @@
             "pattern": "^E-....-.*$" 
         }, 
         "contributors": {
-	    "description": "List of scientists contributing to project",
+	        "description": "List of scientists contributing to project",
             "items": {
                 "$ref": "contact.json"
             }, 

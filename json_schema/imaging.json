@@ -53,8 +53,8 @@
     }, 
     "required": [
         "field_counts",
-	"field_resolution",
-	"probes"
+	    "field_resolution",
+	    "probes"
     ], 
     "title": "imaging", 
     "type": "object"

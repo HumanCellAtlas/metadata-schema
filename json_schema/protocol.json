@@ -9,7 +9,7 @@
             "type": "string"
         }, 
         "core": {
-	    "description": "type and schema for this object",
+	        "description": "type and schema for this object",
             "$ref": "core.json"
         }, 
         "description": {
@@ -54,7 +54,7 @@
         }
     }, 
     "required": [
-	"core",
+    	"core",
         "id"
     ], 
     "title": "protocol", 

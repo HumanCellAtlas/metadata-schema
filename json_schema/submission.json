@@ -80,7 +80,7 @@
     },
     "required" : [
     	"transfer_service_version",
-	"submitted_files"
+		"submitted_files"
     ],
     "title" : "submission",
     "type" : "object"

@@ -24,10 +24,10 @@
         }, 
         "ancestry": {
             "description": "term from https://www.ebi.ac.uk/ols/ontologies/ancestro", 
-	    "type": "array",
-	    "items": {
-		"$ref": "ontology.json"
-	    }
+	        "type": "array",
+	        "items": {
+    		    "$ref": "ontology.json"
+	        }
         }, 
         "body_mass_index": {
             "description": "Body mass index of donor", 
@@ -36,19 +36,19 @@
             "type": "number"
         }, 
         "death": {
-	    "description": "Information about conditions of death (or info that donor was living at time of collection)",
+	        "description": "Information about conditions of death (or info that donor was living at time of collection)",
             "$ref": "death.json"
         }, 
         "development_stage": {
-	    "description": "More detailed (especially for embryos) version of life_stage. Might be \"E9\" or \"P17\" for a mouse.",
+	        "description": "More detailed (especially for embryos) version of life_stage. Might be \"E9\" or \"P17\" for a mouse.",
             "$ref": "ontology.json"
         }, 
         "disease": {
-	    "description": "Short description of disease status of individual.",
-	    "type": "array",
-	    "items": {
-		"$ref": "ontology.json"
-	    }
+            "description": "Short description of disease status of individual.",
+	        "type": "array",
+	        "items": {
+		        "$ref": "ontology.json"
+	        }
         }, 
         "genotype": {
             "description": "Genotype. List of genetic changes from usual. Should be strain, cross and genetic modification info in MGI format for mice.", 
@@ -84,7 +84,7 @@
 	       "description": "List of medications donor is on",
 	       "type": "array",
 	       "items": {
-		  "$ref": "ontology.json"
+               "$ref": "ontology.json"
 	       }
         }, 
         "sex": {
@@ -97,15 +97,15 @@
             ]
         }, 
         "species": {
-	    "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
+	        "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
             "$ref": "ontology.json"
         }, 
         "strain": {
-	    "description": "Mouse inbred strain.  Example C57BL/6.",
-	    "type": "array",
-	    "items": {
-		"$ref": "ontology.json"
-	    }
+	        "description": "Mouse inbred strain.  Example C57BL/6.",
+	        "type": "array",
+	        "items": {
+		        "$ref": "ontology.json"
+	        }
         }, 
         "submitted_id": {
             "description": "Free format string to help link back to submitter's donor database.", 
