@@ -37,6 +37,16 @@ def validate(validator, instance):
         return True
     else:
         es = validator.iter_errors(instance)
-        for e in es:
-            warnings.warn(str("\n".join([e.message, str(e.instance)])))
+        recurse_through_errors(es)
         return False
+
+def recurse_through_errors(es):
+    """Recurse through errors posting message 
+    and schema path until context is empty"""
+    # Assuming blank context is a sufficient escape clause here.
+    for e in es:
+        warnings.warn("\t".join([e.message, 
+                                     str(e.absolute_schema_path)]) + "\n")
+        if e.context:
+            recurse_through_errors(e.context)
+    
