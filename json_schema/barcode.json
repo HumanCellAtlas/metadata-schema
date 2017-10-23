@@ -28,9 +28,9 @@
 	   }
 	},
     "required": [
-	"offset",
-	"size",
-	"read"
+      "offset",
+      "size",
+      "read"
     ] ,
     "title": "barcode", 
     "type": "object"

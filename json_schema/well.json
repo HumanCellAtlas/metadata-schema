@@ -4,7 +4,7 @@
     "description": "This describes the well inside the plate or fluidics chip where sample came from.", 
     "properties": {
         "cell_type": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+            "$ref": "cell_type_ontology.json",
             "description": "the cell type which submitter thinks is in the well"
         }, 
         "col": {

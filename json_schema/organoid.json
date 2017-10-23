@@ -6,7 +6,7 @@
             "type": "string",
             "enum": ["organoid"]
         },
-        "model for organ": {
+        "model_for_organ": {
             "description":  "Organ that this organoid is a model system for.",
             "$ref": "ontlogy.json"
         }

@@ -9,7 +9,7 @@
             "type": "string"
         }, 
         "core": {
-	    "description": "type and schema for this object",
+	        "description": "type and schema for this object",
             "$ref": "core.json"
         }, 
         "description": {
@@ -40,7 +40,7 @@
             "type": "string"
         }, 
         "type": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+            "$ref": "ontology.json",
             "description": "Type of protocol, ideally an EFO term"
         }, 
         "update_date": {
@@ -54,7 +54,7 @@
         }
     }, 
     "required": [
-	"core",
+    	"core",
         "id"
     ], 
     "title": "protocol", 

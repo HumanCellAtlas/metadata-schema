@@ -6,10 +6,10 @@
             "type": "string",
             "enum": ["cell suspension"]
          },
-        "cell type": {
+        "cell_type": {
             "description" : "cell types present in suspension",
             "type": "array",
-            "items": { "$ref": "ontology.json" }             
+            "items": {"$ref": "cell_type_ontology.json" }
        },
         "disassociation_protocol": {
             "description": "How body part was treated to disassociate it into cells that can float individually in solution in sorter or microfluidics device.", 

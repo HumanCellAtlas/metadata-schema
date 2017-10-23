@@ -8,7 +8,7 @@
                 "properties": {
                     "number": {
                         "description": "Which lane number", 
-			"type": "number"
+			            "type": "number"
                     }, 
                     "r1": {
                         "description": "File name of first read in paired read sequencing assay, or only read for unpaired", 
@@ -18,22 +18,22 @@
                         "description": "File name of second read in paired read assay", 
                         "type": "string"
                     }, 
-		    "i1": {
-		        "description": "A barcode index file.  Often index off of first read",
-			"type": "string"
-		    },
-		    "i2": {
-		        "description": "A barcode index file.  Often index off of second read",
-			"type": "string"
-		    }
+		            "i1": {
+		                "description": "A barcode index file.  Often index off of first read",
+			            "type": "string"
+                    },
+                    "i2": {
+                        "description": "A barcode index file.  Often index off of second read",
+                        "type": "string"
+                    }
                 }, 
-		"required": [
-		    "r1"
-		],
-		"title": "a sequencing lane", 
+                "required": [
+                    "r1"
+                ],
+                "title": "a sequencing lane",
                 "type": "object"
-            }, 
-	    "title": "lane array", 
+            },
+	        "title": "lane array",
             "type": "array"
         }
     }, 
@@ -115,13 +115,13 @@
         }, 
         "umi_barcode": {
             "description": "Information about unique molecular identifier barcode", 
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/barcode.json"
+            "$ref": "barcode.json"
         }
     }, 
     "required": [
-	"instrument_model",
-	"instrument_platform",
-	"lanes",
+        "instrument_model",
+        "instrument_platform",
+        "lanes",
         "molecule", 
         "paired_ends"
     ], 

@@ -16,8 +16,8 @@
             "type": "string"
         }, 
         "cell_type": {
-	    "description": "what cell type was the line derived from, CLO ontology usually",
-            "$ref": "ontology.json"
+	        "description": "what cell type was the line derived from, CLO ontology usually",
+            "$ref": "cell_type_ontology.json"
         },  
         "culture_protocol": {
             "description": "pointer to the culture protocol", 
@@ -34,15 +34,15 @@
             "type": "string"
         }, 
         "disease": {
-	    "description": "text describing disease association, preferable a disease found in EFO",
-            "$ref": "ontology.json"
+	        "description": "text describing disease association, preferable a disease found in EFO",
+            "$ref": "disease_ontology.json"
         }, 
         "karyotype": {
             "description": "the karyotype of the cell line", 
             "type": "string"
         }, 
         "name": {
-	    "description": "what is the official name for the cell line?",
+	        "description": "what is the official name for the cell line?",
             "$ref": "ontology.json"
         }, 
         "passage_number": {
@@ -52,12 +52,12 @@
             "type": "integer"
         }, 
         "publication": {
-	    "description": "what is the official name for the cell line?",
+	        "description": "what is the official name for the cell line?",
             "$ref": "publication.json"
         },
         "cell_cycle": {
-        "$ref": "ontology.json", 
-        "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here."
+            "$ref": "ontology.json",
+            "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here."
         }
     }, 
     "title": "cell_line", 
