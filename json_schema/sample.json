@@ -22,11 +22,11 @@
             "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here"
         }, 
         "cell_line": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/cell_line.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/cell_line.json",
             "description": "Description of cell line if any that this came from."
         }, 
         "core": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json",
             "description": "type and schema for this object"
         }, 
         "culture_type": {
@@ -43,7 +43,7 @@
             "type": "string"
         }, 
         "donor": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/donor.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/donor.json",
             "description": "Information on the donors that the sample came from."
         }, 
         "ena_sample": {
@@ -54,7 +54,7 @@
         "enrichment": {
             "description": "How cells were enriched for specific type or to weed out common types after disassociation.",
             "items": {
-		"$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/enrichment.json"
+		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/enrichment.json"
 	    },
             "type": "array"
         }, 
@@ -80,7 +80,7 @@
             "description": "The organ that the sample came from.  \"Blood\" and \"connective tissue\" count as organs."
         }, 
         "preservation": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/preservation.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/preservation.json",
             "description": "State of body_part at collection and how it was preserved after removal."
         }, 
         "project_id": {
@@ -131,7 +131,7 @@
             "type": "string"
         }, 
         "well": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/well.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/well.json",
             "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
         }
     }, 
