@@ -54,7 +54,7 @@
         }, 
         "publication": {
 	    "description": "what is the official name for the cell line?",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/publication.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/publication.json"
         }
     }, 
     "title": "cell_line", 

@@ -118,7 +118,7 @@
         }, 
         "umi_barcode": {
             "description": "Information about unique molecular identifier barcode", 
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/barcode.json"
         }
     }, 
     "required": [

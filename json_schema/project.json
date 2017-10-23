@@ -17,7 +17,7 @@
         "contributors": {
 	    "description": "List of scientists contributing to project",
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/contact.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/contact.json"
             }, 
             "type": "array"
         }, 
@@ -64,14 +64,14 @@
         }, 
         "protocols": {
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/protocol.json", 
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/protocol.json",
                 "description": "An array of protocol modules.  Assay and project protocols reference this."
             }, 
             "type": "array"
         }, 
         "publications": {
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/publication.json", 
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/publication.json",
                 "description": "An array of publication modules."
             }, 
             "type": "array"
@@ -95,7 +95,7 @@
         }, 
         "submitter": {
             "description": "Contact who first submitted project", 
-	    "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/contact.json"
+	    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/contact.json"
         }, 
         "supplementary_files": {
             "description": "Project level supplementary files such as experimental design documents, lab spreadsheets,  manuscripts in preparation.", 
@@ -115,7 +115,7 @@
         }, 
         "updater": {
             "description": "Contact who last updated project", 
-	    "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/contact.json"
+	    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/contact.json"
         }
     }, 
     "required": [

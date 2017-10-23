@@ -38,7 +38,7 @@
         }, 
         "death": {
 	    "description": "Information about conditions of death (or info that donor was living at time of collection)",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/death.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/death.json"
         }, 
         "development_stage": {
 	    "description": "More detailed (especially for embryos) version of life_stage. Might be \"E9\" or \"P17\" for a mouse.",
