@@ -23,7 +23,7 @@
             "description": "term from https://www.ebi.ac.uk/ols/ontologies/ancestro", 
 	    "type": "array",
 	    "items": {
-		"$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
 	    }
         }, 
         "body_mass_index": {
@@ -34,7 +34,7 @@
         }, 
         "core": {
 	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
         }, 
         "death": {
 	    "description": "Information about conditions of death (or info that donor was living at time of collection)",
@@ -42,13 +42,13 @@
         }, 
         "development_stage": {
 	    "description": "More detailed (especially for embryos) version of life_stage. Might be \"E9\" or \"P17\" for a mouse.",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
         }, 
         "disease": {
 	    "description": "Short description of disease status of individual.",
 	    "type": "array",
 	    "items": {
-		"$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
 	    }
         }, 
         "genotype": {
@@ -87,7 +87,7 @@
 	    "description": "List of medications donor is on",
 	    "type": "array",
 	    "items": {
-		"$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
 	    }
         }, 
         "sex": {
@@ -101,13 +101,13 @@
         }, 
         "species": {
 	    "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
         }, 
         "strain": {
 	    "description": "Mouse inbred strain.  Example C57BL/6.",
 	    "type": "array",
 	    "items": {
-		"$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
 	    }
         }, 
         "submitted_id": {

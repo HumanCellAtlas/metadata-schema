@@ -14,11 +14,11 @@
         }, 
         "cell_type": {
 	    "description": "what cell type was the line derived from, CLO ontology usually",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
         }, 
         "core": {
 	    "description": "type and schema for this object",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
         }, 
         "culture_protocol": {
             "description": "pointer to the culture protocol", 
@@ -36,7 +36,7 @@
         }, 
         "disease": {
 	    "description": "text describing disease association, preferable a disease found in EFO",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
         }, 
         "karyotype": {
             "description": "the karyotype of the cell line", 
@@ -44,7 +44,7 @@
         }, 
         "name": {
 	    "description": "what is the official name for the cell line?",
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
         }, 
         "passage_number": {
             "description": "how many passages the cell line as been through", 

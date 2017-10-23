@@ -22,7 +22,7 @@
             "type": "array"
         }, 
         "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json", 
             "description": "type and schema for this object"
         }, 
         "ddjb_trace": {
@@ -36,7 +36,7 @@
         }, 
         "experimental_design": {
             "items": {
-                "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
                 "description": "A short description of overall experiment type, such as \"single cell RNA sequencing.\""
             }, 
             "type": "array"

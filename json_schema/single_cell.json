@@ -21,7 +21,7 @@
             ]
         }, 
         "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
         }
     }, 
     "required": [

@@ -14,11 +14,11 @@
             "type": "string"
         }, 
         "body_part": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
             "description": "A more detailed position within the organ where body came from."
         }, 
         "cell_cycle": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
             "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here"
         }, 
         "cell_line": {
@@ -26,7 +26,7 @@
             "description": "Description of cell line if any that this came from."
         }, 
         "core": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/core.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json", 
             "description": "type and schema for this object"
         }, 
         "culture_type": {
@@ -76,7 +76,7 @@
             "type": "string"
         }, 
         "organ": {
-            "$ref": "http://hgwdev.soe.ucsc.edu/~kent/hca/schema/ontology.json", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
             "description": "The organ that the sample came from.  \"Blood\" and \"connective tissue\" count as organs."
         }, 
         "preservation": {
