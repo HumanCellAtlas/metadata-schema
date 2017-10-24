@@ -5,7 +5,7 @@
     "description": "project schema generate by tagSchemaToJson from project", 
     "patternProperties": {
         "^characteristics_.*$": {
-            "description": "FIelds that begin with characteristics_ can contain any value, and the field name can be anything after the prefix", 
+            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
             "type": "string"
         }
     }, 

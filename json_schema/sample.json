@@ -3,6 +3,12 @@
     "additionalProperties": false,
     "required": ["details", "core"],
     "description": "Information about a biosample." ,
+    "patternProperties": {
+       "^characteristics_.*$": {
+            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
+            "type": "string"
+       }
+    },
     "properties": {
         "core": {
             "$ref": "core.json",
@@ -27,16 +33,6 @@
                 "type": "string"
             }, 
             "type": "array"
-        },  
-        "total_estimated_cells": {
-            "description": "Total estimated number of cells in sample.  May be 1 for well based assays.", 
-            "maximum": 1000000000.0, 
-            "minimum": 0.1, 
-            "type": "number"
-        }, 
-        "well": {
-            "$ref": "well.json", 
-            "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
         },
         "sample_accessions": {
             "type": "object",
