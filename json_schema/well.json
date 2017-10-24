@@ -3,10 +3,6 @@
     "additionalProperties": false, 
     "description": "This describes the well inside the plate or fluidics chip where sample came from.", 
     "properties": {
-        "cell_type": {
-            "$ref": "cell_type_ontology.json",
-            "description": "the cell type which submitter thinks is in the well"
-        }, 
         "col": {
             "description": "well column in plate", 
             "type": "string"
@@ -18,12 +14,7 @@
         "plate": {
             "description": "plate id that well came from if any", 
             "type": "string"
-        }, 
-        "plating_protocol": {
-            "description": "all wells", 
-            "pattern": "^P-....-.*$", 
-            "type": "string"
-        }, 
+        },
         "quality": {
             "description": "Note on how good cell looks if imaged in well before sequencing", 
             "enum": [
