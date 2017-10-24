@@ -6,12 +6,12 @@
             "type": "string",
             "enum": ["cell suspension"]
          },
-        "cell_type": {
+        "target_cell_type": {
             "description" : "cell types present in suspension",
             "type": "array",
             "items": {"$ref": "cell_type_ontology.json" }
        },
-        "disassociation_protocol": {
+        "dissociation_protocol": {
             "description": "How body part was treated to disassociate it into cells that can float individually in solution in sorter or microfluidics device.", 
             "pattern": "^P-....-.*$", 
             "type": "string"
@@ -31,5 +31,8 @@
             "$ref": "well.json",
             "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
         }
-     }
+     },
+    "required":[
+        "sample_type"
+    ]
 }
