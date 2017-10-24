@@ -21,7 +21,11 @@
                 "week", 
                 "year"
             ]
-        }, 
+        },
+        "smoking_history": {
+            "description": "Number of drinks consumed on a typical day",
+            "type": "string"
+        },
         "ancestry": {
             "description": "term from https://www.ebi.ac.uk/ols/ontologies/ancestro", 
 	        "type": "array",
@@ -86,7 +90,20 @@
 	       "items": {
                "$ref": "ontology.json"
 	       }
-        }, 
+        },
+        "nutritional_state": {
+            "description": "Normal, fasting, feeding tube removed, etc",
+            "enum": [
+                "normal",
+                "fasting",
+                "feeding tube removed"
+            ]
+        },
+        "recruitment_protocol": {
+            "description": "protocol accession for how donors were recruited",
+            "pattern": "^P-....-.*$",
+            "type": "string"
+        },
         "sex": {
             "description": "Sex of donor.  Either 'male' 'female' 'mixed' or 'unknown'", 
             "enum": [
@@ -95,7 +112,11 @@
                 "mixed", 
                 "unknown"
             ]
-        }, 
+        },
+        "smoking_history": {
+            "description": "Estimated # of cigarattes smoked per day and for how many years",
+            "type": "string"
+        },
         "species": {
 	        "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
             "$ref": "ontology.json"
@@ -107,7 +128,7 @@
 		        "$ref": "ontology.json"
 	        }
         }, 
-        "submitted_id": {
+        "submitter_id": {
             "description": "Free format string to help link back to submitter's donor database.", 
             "type": "string"
         }, 
