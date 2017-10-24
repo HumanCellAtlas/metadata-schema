@@ -59,7 +59,11 @@
             "$ref": "ontology.json",
             "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here."
         }
-    }, 
+    },
+    "required":[
+        "sample_type",
+        "name"
+    ],
     "title": "cell_line", 
     "type": "object"
 }
