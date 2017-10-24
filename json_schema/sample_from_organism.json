@@ -20,14 +20,6 @@
         "state_of_specimen": {
             "$ref": "state_of_specimen.json",
             "description": "State of body_part at collection and how it was preserved after removal."
-        }, 
-        "protocol_ids": {
-            "description": "Array of protocol IDs from project.protocols used for this sample.", 
-            "items": {
-                "pattern": "^.*-....-.*$", 
-                "type": "string"
-            }, 
-            "type": "array"
         }
     }, 
     "required": [

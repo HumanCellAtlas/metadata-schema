@@ -27,6 +27,13 @@
                 { "$ref": "organoid.json" } 
             ]
         },
+        "protocols": {
+            "items": {
+                "$ref": "protocol.json",
+                "description": "An array of protocol modules.  Assay and project protocols reference this."
+            },
+            "type": "array"
+        },
         "supplementary_files": {
             "description": "Sample level supplementary files.", 
             "items": {

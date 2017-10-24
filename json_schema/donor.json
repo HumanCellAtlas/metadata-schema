@@ -99,14 +99,6 @@
                 "feeding tube removed"
             ]
         },
-        "protocol_ids": {
-            "description": "Array of protocol IDs from project.protocols used for this sample.",
-            "items": {
-                "pattern": "^.*-....-.*$",
-                "type": "string"
-            },
-            "type": "array"
-        },
         "sex": {
             "description": "Sex of donor.  Either 'male' 'female' 'mixed' or 'unknown'", 
             "enum": [

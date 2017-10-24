@@ -46,14 +46,6 @@
             "minimum": 0, 
             "type": "integer"
         },
-        "protocol_ids": {
-            "description": "Array of protocol IDs from project.protocols used for this sample.",
-            "items": {
-                "pattern": "^.*-....-.*$",
-                "type": "string"
-            },
-            "type": "array"
-        },
         "publication": {
 	        "description": "in what publication was the cell line creation cited",
             "$ref": "publication.json"

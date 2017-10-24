@@ -50,7 +50,7 @@
             "type": "string"
         }, 
         "id": {
-            "description": "A unique ID for project, may be GEO or Array Express ID for imported projects", 
+            "description": "A unique ID for project",
             "type": "string"
         }, 
         "ncbi_bioproject": {
