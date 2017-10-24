@@ -8,7 +8,10 @@
         },
         "model_for_organ": {
             "description":  "Organ that this organoid is a model system for.",
-            "$ref": "ontlogy.json"
+            "$ref": "ontology.json"
         }
-    }
+    },
+    "required":[
+        "sample_type"
+    ]
 }
