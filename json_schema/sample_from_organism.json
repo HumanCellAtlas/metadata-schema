@@ -1,13 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "additionalProperties": false, 
-    "description": "A sample contains information on the biosample that was sequenced or imaged.  This includes donor, body part, and anything that comes between removing the sample from a body and the assay.", 
-    "patternProperties": {
-        "^characteristics_.*$": {
-            "description": "FIelds that begin with sample.characteristics_ can contain any value, and the field name can be anything after the prefix", 
-            "type": "string"
-        }
-    },
+    "description": "A sample contains information on the biosample that was sequenced or imaged.  This includes donor, body part, and anything that comes between removing the sample from a body and the assay.",
     "title": "sample from organism", 
     "type": "object",
     "properties": {
@@ -23,8 +17,8 @@
             "$ref": "ontology.json", 
             "description": "The organ that the sample came from.  \"Blood\" and \"connective tissue\" count as organs."
         }, 
-        "preservation": {
-            "$ref": "preservation.json", 
+        "state_of_specimen": {
+            "$ref": "state_of_specimen.json",
             "description": "State of body_part at collection and how it was preserved after removal."
         }, 
         "protocol_ids": {
