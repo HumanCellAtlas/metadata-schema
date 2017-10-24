@@ -3,7 +3,7 @@
     "additionalProperties": false,
     "description": "Information added or generated at ingest time." ,
     "properties": {
-        "submissionDate": {
+        "submission_date": {
             "description": "When project was first submitted to database.", 
             "format": "date-time", 
             "type": "string"
@@ -39,6 +39,6 @@
 
     },
     "required": [
-        "submitter_id"
+        "submitter_id", "submission_date"
     ]
 }

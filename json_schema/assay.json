@@ -4,14 +4,18 @@
     "definitions": {}, 
     "description": "An assay contains Information relevant to how RNA expression levels were assayed or otherwise the sample was converted into digital information", 
     "properties": { 
+        "core": {
+	        "description": "type and schema for this object",
+            "$ref": "core.json"
+        },
         "id": {
             "description": "unique id for this assay", 
             "type": "string"
-        }, 
-        "sample_id": {
-            "description": "id of sample that was assayed", 
-            "type": "string"
-        }, 
+        },
+         "imaging": {
+	        "description": "Information on image based RNA quantification assays",
+            "$ref": "imaging.json"
+        },
         "rna": {
 	        "description": "Information about how RNA was converted to DNA or otherwise prepared for assay",
             "$ref": "rna.json"
@@ -26,8 +30,7 @@
         }
     }, 
     "required": [
-	    "id",
-	    "sample_id"
+	    "core", "id"
     ],
     "title": "assay", 
     "type": "object"

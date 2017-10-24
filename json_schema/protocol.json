@@ -37,7 +37,8 @@
     }, 
     "required": [
     	"core",
-        "id"
+        "id",
+        "type"
     ], 
     "title": "protocol", 
     "type": "object"

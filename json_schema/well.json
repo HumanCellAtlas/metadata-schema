@@ -29,6 +29,7 @@
             "type": "string"
         }
     },
+    "required":[],
     "title": "well", 
     "type": "object"
 }

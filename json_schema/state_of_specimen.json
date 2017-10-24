@@ -48,7 +48,8 @@
             "minimum": 0, 
             "type": "integer"
         }
-    }, 
+    },
+    "required":[],
     "title": "preservation", 
     "type": "object"
 }

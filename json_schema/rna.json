@@ -61,7 +61,7 @@
         }
     }, 
     "required": [
-        "library_construction"
+        "end_bias", "library_construction", "strand"
     ], 
     "title": "rna", 
     "type": "object"
