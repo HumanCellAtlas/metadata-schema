@@ -89,11 +89,7 @@
             "description": "Email of contact for contributingauthors", 
             "pattern": "^.*@.*..*$", 
             "type": "string"
-        }, 
-        "id": {
-            "description": "describe_me_please", 
-            "type": "string"
-        }, 
+        },
         "institution": {
             "description": "Name of primary institute where contact works", 
             "type": "string"

@@ -130,11 +130,7 @@
 	        "items": {
 		        "$ref": "ontology.json"
 	        }
-        }, 
-        "submitter_id": {
-            "description": "Free format string to help link back to submitter's donor database.", 
-            "type": "string"
-        }, 
+        },
         "weight": {
             "description": "Weight of donor in kg", 
             "maximum": 1000, 
