@@ -6,7 +6,7 @@
     "properties": {
         "cause_of_death": {
             "description": "Cause of death from death report for human donor, from research lab for mouse", 
-            "type": "string"
+            "$ref": "ontology.json"
         }, 
         "cold_perfused": {
             "description": "If yes, was perfused with cold fluid to help preserve tissues before heart stopped", 
