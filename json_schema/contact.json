@@ -108,7 +108,8 @@
         }
     }, 
     "required": [
-            "name"
+            "name",
+            "email"
     ], 
     "title": "contact", 
     "type": "object"

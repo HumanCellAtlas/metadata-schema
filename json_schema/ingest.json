@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "additionalProperties": false,
-    "description": "Information about a biosample." ,
+    "description": "Information added or generated at ingest time." ,
     "properties": {
         "submissionDate": {
             "description": "When project was first submitted to database.", 
@@ -21,12 +21,12 @@
             "description": "ID of contact who last updated project", 
             "type": "string"
         },
-        "uuid": {
+        "document_id": {
             "description": "Identifier for document.",
             "comment": "This structure supports the current ingest API.  It may change in future.",
             "type": "object",
             "properties": { 
-                "uuid": {
+                "document_id": {
                     "type": "string",
                     "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}"
                 }
@@ -37,5 +37,8 @@
             "type": "string"
         }
 
-    }
+    },
+    "required": [
+        "submitter_id"
+    ]
 }
