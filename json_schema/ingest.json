@@ -14,7 +14,7 @@
         },
         "update_date": {
             "description": "When project was last updated", 
-            "pattern": "^2...-..-..$", 
+            "format": "date-time",
             "type": "string"
         }, 
         "updater_id": {

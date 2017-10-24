@@ -21,7 +21,7 @@
         },
         "date_established": {
             "description": "when was the cell line established", 
-            "pattern": "^....-..-..$", 
+            "format": "date-time",
             "type": "string"
         }, 
         "derived_from": {
