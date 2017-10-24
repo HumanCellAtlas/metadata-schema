@@ -55,7 +55,7 @@
             "type": "array"
         },
         "publication": {
-	        "description": "what is the official name for the cell line?",
+	        "description": "in what publication was the cell line creation cited",
             "$ref": "publication.json"
         },
         "cell_cycle": {

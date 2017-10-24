@@ -27,6 +27,10 @@
             "type": "string"
         }
     },
+    "required":[
+        "authors",
+        "title"
+    ],
     "title": "publication", 
     "type": "object"
 }
