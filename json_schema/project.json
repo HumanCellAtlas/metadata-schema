@@ -57,14 +57,7 @@
             "description": "NCBI bioproject ID", 
             "pattern": "^PRJNA.*$", 
             "type": "string"
-        }, 
-        "protocols": {
-            "items": {
-                "$ref": "protocol.json",
-                "description": "An array of protocol modules.  Assay and project protocols reference this."
-            }, 
-            "type": "array"
-        }, 
+        },
         "publications": {
             "items": {
                 "$ref": "publication.json",
