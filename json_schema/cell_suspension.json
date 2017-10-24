@@ -11,15 +11,18 @@
             "type": "array",
             "items": {"$ref": "cell_type_ontology.json" }
        },
-        "dissociation_protocol": {
-            "description": "How body part was treated to disassociate it into cells that can float individually in solution in sorter or microfluidics device.", 
-            "pattern": "^P-....-.*$", 
-            "type": "string"
-        }, 
         "enrichment": {
             "description": "How cells were enriched for specific type or to weed out common types after disassociation.",
             "type": "array",            
             "items": { "$ref": "enrichment.json" }
+        },
+        "protocol_ids": {
+            "description": "Array of protocol IDs from project.protocols used for this sample.",
+            "items": {
+                "pattern": "^.*-....-.*$",
+                "type": "string"
+            },
+            "type": "array"
         },
         "total_estimated_cells": {
             "description": "Total estimated number of cells in sample.  May be 1 for well based assays.",

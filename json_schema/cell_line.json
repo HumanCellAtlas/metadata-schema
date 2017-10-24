@@ -18,12 +18,7 @@
         "cell_type": {
 	        "description": "what cell type was the line derived from, CLO ontology usually",
             "$ref": "cell_type_ontology.json"
-        },  
-        "culture_protocol": {
-            "description": "pointer to the culture protocol", 
-            "pattern": "^P-....-.*$", 
-            "type": "string"
-        }, 
+        },
         "date_established": {
             "description": "when was the cell line established", 
             "pattern": "^....-..-..$", 
@@ -50,7 +45,15 @@
             "maximum": 1000, 
             "minimum": 0, 
             "type": "integer"
-        }, 
+        },
+        "protocol_ids": {
+            "description": "Array of protocol IDs from project.protocols used for this sample.",
+            "items": {
+                "pattern": "^.*-....-.*$",
+                "type": "string"
+            },
+            "type": "array"
+        },
         "publication": {
 	        "description": "what is the official name for the cell line?",
             "$ref": "publication.json"

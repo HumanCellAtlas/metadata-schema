@@ -47,16 +47,6 @@
             "maximum": 100000, 
             "minimum": 0, 
             "type": "integer"
-        }, 
-        "preservation_protocol": {
-            "description": "Refers to a protocol that describes the use of chemicals, cold, or other means  to prevent or retard biological or physical deterioration of sample.", 
-            "pattern": "^P-....-.*$", 
-            "type": "string"
-        }, 
-        "storage_protocol": {
-            "description": "Refers to a protocol that says how sample was stored after preservation", 
-            "pattern": "^P-....-.*$", 
-            "type": "string"
         }
     }, 
     "title": "preservation", 

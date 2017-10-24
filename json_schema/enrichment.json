@@ -7,14 +7,6 @@
             "description": "Text in the format of space delimited list of markers with +/-.  Example:  \"CD4+ CD8-\"",
             "type": "string"
         },
-        "protocol": {
-            "description": "Refers to an enrichment protocol",
-            "items": {
-                "pattern": "^P-....-.*$",
-                "type": "string"
-            },
-            "type": "array"
-        },
         "size_max": {
             "description": "Maximum size passing selection in microns",
             "maximum": 10000,
