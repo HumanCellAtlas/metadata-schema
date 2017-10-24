@@ -95,10 +95,7 @@
         }, 
         "paired_ends": {
             "description": "Is a paired end sequencing strategy used? Values are yes/no", 
-            "enum": [
-                "no", 
-                "yes"
-            ]
+            "type": "boolean"
         }, 
         "sra_experiment": {
             "description": "NCBI Short Read Archive experiment accession (SRX)", 

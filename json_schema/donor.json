@@ -70,10 +70,7 @@
         }, 
         "is_living": {
             "description": "If yes donor is living at time of sample donation.", 
-            "enum": [
-                "no", 
-                "yes"
-            ]
+            "type": "boolean"
         }, 
         "life_stage": {
             "description": "describe_me_please", 

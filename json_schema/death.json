@@ -10,10 +10,7 @@
         }, 
         "cold_perfused": {
             "description": "If yes, was perfused with cold fluid to help preserve tissues before heart stopped", 
-            "enum": [
-                "no", 
-                "yes"
-            ]
+            "type": "boolean"
         },  
         "days_on_ventilator": {
             "description": "Days on ventilator before dying", 
