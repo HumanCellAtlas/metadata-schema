@@ -29,28 +29,10 @@
         "retail_name": {
             "description": "the retail name of the kit used e.g SureCell WTA 3\u2032 Library Prep Kit", 
             "type": "string"
-        }, 
-        "submit_date": {
-            "description": "When protocol was first submitted to database.", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "submitter_id": {
-            "description": "who created this entry", 
-            "type": "string"
-        }, 
+        },
         "type": {
             "$ref": "ontology.json",
             "description": "Type of protocol, ideally an EFO term"
-        }, 
-        "update_date": {
-            "description": "When protocol was last updated", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "updater_id": {
-            "description": "who last updated this entry", 
-            "type": "string"
         }
     }, 
     "required": [
