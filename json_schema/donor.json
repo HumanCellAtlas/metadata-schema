@@ -22,10 +22,6 @@
                 "year"
             ]
         },
-        "smoking_history": {
-            "description": "Number of drinks consumed on a typical day",
-            "type": "string"
-        },
         "ancestry": {
             "description": "term from https://www.ebi.ac.uk/ols/ontologies/ancestro", 
 	        "type": "array",
@@ -63,11 +59,7 @@
             "maximum": 10, 
             "minimum": 0, 
             "type": "number"
-        }, 
-        "id": {
-            "description": "A unique ID for this donor", 
-            "type": "string"
-        }, 
+        },
         "is_living": {
             "description": "If yes donor is living at time of sample donation.", 
             "type": "boolean"

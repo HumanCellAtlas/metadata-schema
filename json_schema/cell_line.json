@@ -23,11 +23,7 @@
             "description": "when was the cell line established", 
             "format": "date-time",
             "type": "string"
-        }, 
-        "derived_from": {
-            "description": "Which other biosample is this cell_line derived from, if available", 
-            "type": "string"
-        }, 
+        },
         "disease": {
 	        "description": "text describing disease association, preferable a disease found in EFO",
             "$ref": "disease_ontology.json"
@@ -35,11 +31,7 @@
         "karyotype": {
             "description": "the karyotype of the cell line", 
             "type": "string"
-        }, 
-        "name": {
-	        "description": "what is the official name for the cell line?",
-            "$ref": "ontology.json"
-        }, 
+        },
         "passage_number": {
             "description": "how many passages the cell line as been through", 
             "maximum": 1000, 

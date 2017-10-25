@@ -1,8 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "additionalProperties": false,
-    "required": ["details", "core", "id"],
     "description": "Information about a biosample." ,
+    "allOf": [{ "$ref": "core.json" }],
+    "oneOf": [
+                { "$ref": "donor.json" },
+                { "$ref": "sample_from_organism.json" },
+                { "$ref": "cell_line.json" },
+                { "$ref": "cell_suspension.json" },
+                { "$ref": "organoid.json" }
+            ],
     "patternProperties": {
        "^characteristics_.*$": {
             "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
@@ -10,30 +17,6 @@
        }
     },
     "properties": {
-        "core": {
-            "$ref": "core.json",
-            "description": "type and schema for this object"
-             },
-        "id": {
-            "description": "A unique ID for this sample", 
-            "type": "string"
-        },
-        "details": {
-            "oneOf": [
-                { "$ref": "donor.json" },
-                { "$ref": "sample_from_organism.json" },
-                { "$ref": "cell_line.json" },
-                { "$ref": "cell_suspension.json" },
-                { "$ref": "organoid.json" } 
-            ]
-        },
-        "protocols": {
-            "items": {
-                "$ref": "protocol.json",
-                "description": "An array of protocol modules.  Assay and project protocols reference this."
-            },
-            "type": "array"
-        },
         "supplementary_files": {
             "description": "Sample level supplementary files.", 
             "items": {

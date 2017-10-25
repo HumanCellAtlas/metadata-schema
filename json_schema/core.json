@@ -23,7 +23,7 @@
 		      "analysis"
             ]
         },
-        "user_supplied_id":{
+        "id":{
             "description": "A local identifier for the entity (e.g. sample, assay, protocol, file, analysis).",
             "type": "string"
         },
@@ -41,6 +41,6 @@
         }
     },
     "required": [
-        "type"
+        "type","id"
     ]  
 }
