@@ -101,6 +101,10 @@
         "name": {
             "description": "Text formatted with first name, middle, last in that order separated by commas.  Usually middle is just an initial.", 
             "type": "string"
+        },
+        "phone":{
+            "description": "Phone number (including country code) of submitter or submitter's lab",
+            "type": "string"
         }
     }, 
     "required": [
