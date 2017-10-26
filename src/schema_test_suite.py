@@ -1,6 +1,8 @@
 import json
 from jsonschema import Draft4Validator, RefResolver, SchemaError
 import warnings
+import subprocess
+import os
 
 
 def get_json_from_file(filename):
@@ -40,13 +42,28 @@ def validate(validator, instance):
         recurse_through_errors(es)
         return False
 
-def recurse_through_errors(es):
+def recurse_through_errors(es, level = 0):
     """Recurse through errors posting message 
     and schema path until context is empty"""
     # Assuming blank context is a sufficient escape clause here.
     for e in es:
-        warnings.warn("\t".join([e.message, 
-                                     str(e.absolute_schema_path)]) + "\n")
+        warnings.warn("***"*level + "subschema level " + str(level) + "\t".join([e.message, 
+                                     "Path to error:" +  str(e.absolute_schema_path)]) + "\n")
         if e.context:
-            recurse_through_errors(e.context)
+            level += 1
+            recurse_through_errors(e.context, level = level)
+            
+
+def test_local(path_to_schema_dir, schema_file, instance_file):
+    """Tests a single instance against a single schema.
+    Assumes all schema files in single dir.
+    path_to_schema_dir may be relative.
+    schema_file and instance_file may be local to schema dir or full path."""
+    os.chdir(path_to_schema_dir)
+    pwd = subprocess.check_output('pwd').decode("utf-8").rstrip()
+    base_uri = "file://" + pwd + "/"
+    sv = get_validator(schema_file, base_uri)
+    i = get_json_from_file(instance_file)
+    print("Testing: %s" % instance_file)
+    validate(sv, i)
     
