@@ -84,8 +84,8 @@ function getCompiledSchemas(){
 }
 
 
-var donor = require("../test-json/test-donor.json");
-var sample = require("../test-json/test-sample.json");
+var donor = require("../../../schema_tests/sample/donor_test1.json");
+var sample = require("../../../schema_tests/sample/sample-test-current.json");
 
 var validate = getCompiledSchemas();
 
