@@ -3,10 +3,6 @@
     "additionalProperties": false, 
     "description": "donor schema generate by tagSchemaToJson from donor", 
     "properties": {
-        "sample_type": {
-            "type": "string",
-            "enum": ["donor"]
-         },
         "age": {
             "description": "Age in age_units.  Expressed since birth.  For embryos measured since fertilization.", 
             "maximum": 150, 
@@ -128,7 +124,7 @@
         }
     }, 
     "required": [
-        "species", "is_living", "sample_type"
+        "species", "is_living"
     ],
     "title": "donor", 
     "type": "object"

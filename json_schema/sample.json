@@ -1,7 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "additionalProperties": false,
-    "required": ["details", "core", "id"],
+    "allOf" : [{"required" : ["core"]}],
+    "oneOf" : [{"required" : ["donor"]}, 
+               {"required" : ["sample_from_organsim"]},
+               {"required" : ["cell_line"]},
+               {"required" : ["cell_suspension"]},
+               {"required" : ["organoid"]}
+               ],
     "description": "Information about a biosample." ,
     "patternProperties": {
        "^characteristics_.*$": {
@@ -18,14 +24,17 @@
             "description": "A unique ID for this sample", 
             "type": "string"
         },
-        "details": {
-            "oneOf": [
-                { "$ref": "donor.json" },
-                { "$ref": "sample_from_organism.json" },
-                { "$ref": "cell_line.json" },
-                { "$ref": "cell_suspension.json" },
-                { "$ref": "organoid.json" } 
-            ]
+        "donor" : {
+          "$ref": "donor.json"
+        },
+        "cell_suspension" : {
+          "$ref": "cell_suspension.json"
+        },
+        "cell_line" : {
+          "$ref": "cell_line.json"
+        },
+         "organoid" : {
+          "$ref": "organoid.json"
         },
         "protocols": {
             "items": {

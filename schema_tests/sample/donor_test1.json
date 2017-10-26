@@ -1,6 +1,5 @@
 {
     "core" : {
-      "id": "d1",
       "type": "sample"
     },
     "donor" : {
@@ -10,7 +9,5 @@
               "text": "Homo sapiens",
               "ontology": "NCBITAXON_9606"
           }
-    },
-    "ncbi_taxon_id": 9606
-
+    }
 }
