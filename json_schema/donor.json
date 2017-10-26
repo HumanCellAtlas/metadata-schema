@@ -1,12 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "description": "donor schema generate by tagSchemaToJson from donor", 
+    "description": "donor schema generate by tagSchemaToJson from donor",
+    "additionalProperties" : false,
     "properties": {
-        "sample_type": {
-            "type": "string",
-            "enum": ["donor"]
-         },
         "age": {
             "description": "Age in age_units.  Expressed since birth.  For embryos measured since fertilization.", 
             "maximum": 150, 
@@ -120,8 +116,8 @@
         }
     }, 
     "required": [
-        "species", "is_living", "sample_type"
+        "species", "is_living"
     ],
-    "title": "donor", 
+    "title": "donor",
     "type": "object"
 }

@@ -1,7 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "description": "core object found in all modules", 
+    "description": "core object found in all modules",
     "properties": {
         "schema_url": {
             "description": "URL of json schema document that validates this version of this module.", 

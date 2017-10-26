@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "A schema for a sample entity with added ingest data" ,
+    "properties": {
+        "core" : {
+           "$ref": "ingest.json",
+            "description": "Sample content",
+            "type": "object"
+        },
+        "content": {
+            "$ref": "sample.json",
+            "description": "Sample content",
+            "type": "object"
+        },
+        "derived_from" : {
+          "type": "string"
+        }
+    },
+    "required": [
+        "core", "content"
+    ]
+}

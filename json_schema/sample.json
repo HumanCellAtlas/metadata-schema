@@ -1,53 +1,92 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false,
     "description": "Information about a biosample." ,
-    "allOf": [{ "$ref": "core.json" }],
-    "oneOf": [
-                { "$ref": "donor.json" },
-                { "$ref": "sample_from_organism.json" },
-                { "$ref": "cell_line.json" },
-                { "$ref": "cell_suspension.json" },
-                { "$ref": "organoid.json" }
-            ],
+    "additionalProperties" : false,
     "patternProperties": {
        "^characteristics_.*$": {
             "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
-            "type": "string"
+             "type": "string"
+
        }
     },
     "properties": {
+        "schema_url": {
+            "description": "URL of json schema document that validates this version of this module.",
+            "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format. Example 3.2.4.  Major version changes likely require change to software.  Patches are just documentation changes",
+            "pattern": "^...*..*$",
+            "type": "string"
+        },
+        "type": {
+            "description": "The name of the core metadata entity type.",
+            "enum": [
+		      "donor",
+		      "sample_from_organism",
+		      "cell_suspension"
+            ]
+        },
+        "id":{
+            "description": "A local identifier for the entity (e.g. sample, assay, protocol, file, analysis).",
+            "type": "string"
+        },
+        "name": {
+            "description": "A short descriptive name for the entity (e.g. sample, assay, protocol, file, analysis).  Should be enough to distinguish it from other samples in the project.",
+            "type": "string"
+        },
+        "comment": {
+            "description": "A free text commment capturing any relevant information not captured by other fields.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the item being submitted (e.g. sample, assay, protocol, file, analysis).",
+            "type": "string"
+        },
+        "donor" : {
+          "$ref": "donor.json"
+        },
+        "sample_from_organism" : {
+          "$ref": "sample_from_organism.json"
+        },
+        "ncbi_taxon_id" : {
+          "description": "Taxon id from NCBI",
+          "type" : "integer"
+        },
         "supplementary_files": {
-            "description": "Sample level supplementary files.", 
+            "description": "Sample level supplementary files.",
             "items": {
                 "type": "string"
-            }, 
+            },
             "type": "array"
         },
         "sample_accessions": {
             "type": "object",
-            "description": "One or more accession numbers from a standard archive.", 
+            "description": "One or more accession numbers from a standard archive.",
             "additionalProperties" : false,
              "properties": {
                 "biosd_sample": {
-                    "description": "EBI biosample ID", 
+                    "description": "EBI biosample ID",
                     "type": "string"
-                }, 
+                },
                 "ncbi_biosample": {
-                    "description": "NCBI biosample ID", 
+                    "description": "NCBI biosample ID",
                     "type": "string"
                 },
                 "geo_sample": {
-                    "description": "NCBI GEO sample accession", 
-                    "pattern": "^GSM.*$", 
+                    "description": "NCBI GEO sample accession",
+                    "pattern": "^GSM.*$",
                     "type": "string"
                 },
                 "ena_sample": {
-                    "description": "European nucleotide archive sample ID", 
-                    "pattern": "^ERS.*$", 
+                    "description": "European nucleotide archive sample ID",
+                    "pattern": "^ERS.*$",
                     "type": "string"
                 }
             }
         }
-    }
+    },
+    "allOf" : [{"required" : ["id", "type"]}],
+    "oneOf" : [{"required" : ["donor"]}, {"required" : ["sample_from_organism"]}]
+
 }

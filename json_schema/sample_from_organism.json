@@ -5,12 +5,8 @@
     "title": "sample from organism", 
     "type": "object",
     "properties": {
-        "sample_type": {
-            "type": "string",
-            "enum": ["sample from organism"]
-         },
         "body_part": {
-            "$ref": "body_part_ontology.json",
+            "$ref": "ontology_json/body_part_ontology.json",
             "description": "A more detailed position within the body than the term given in the organ field."
         },
         "organ": {
@@ -20,10 +16,13 @@
         "state_of_specimen": {
             "$ref": "state_of_specimen.json",
             "description": "State of body_part at collection and how it was preserved after removal."
+        },
+        "donor_id" : {
+            "type" : "string",
+            "description" : "the local identifier for the donor of this sample"
         }
     }, 
     "required": [
-        "sample_type",
 	    "body_part",
 	    "organ"
     ]
