@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "enrichment schema generate by tagSchemaToJson from enrichment", 
     "additionalProperties": false,
     "properties": {

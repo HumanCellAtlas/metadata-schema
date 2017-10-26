@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "description": "A term that may be associated with an ontology term", 
     "properties": {

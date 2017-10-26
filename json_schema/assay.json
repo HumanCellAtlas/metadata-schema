@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "definitions": {}, 
     "description": "An assay contains Information relevant to how RNA expression levels were assayed or otherwise the sample was converted into digital information", 

@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "description": "donor schema generate by tagSchemaToJson from donor", 
     "properties": {
@@ -51,7 +51,7 @@
             "description": "Short description of disease status of individual.",
 	        "type": "array",
 	        "items": {
-		        "$ref": "disease_ontology.json"
+		        "$ref": "ontology_json/disease_ontology.json"
 	        }
         }, 
         "genotype": {

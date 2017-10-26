@@ -1,0 +1,16 @@
+{
+  "core" : {
+    "id": "d1",
+    "type": "sample"
+  },
+  "donor" : {
+    "is_living": true,
+    "life_stage": "adult",
+    "species": {
+      "text": "Homo sapiens",
+      "ontology": "NCBITAXON_9606"
+    }
+  },
+  "ncbi_taxon_id": 9606
+
+}
