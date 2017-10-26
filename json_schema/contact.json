@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "definitions": {}, 
     "description": "contact schema generate by tagSchemaToJson from contact", 
@@ -100,6 +100,10 @@
         }, 
         "name": {
             "description": "Text formatted with first name, middle, last in that order separated by commas.  Usually middle is just an initial.", 
+            "type": "string"
+        },
+        "phone":{
+            "description": "Phone number (including country code) of submitter or submitter's lab",
             "type": "string"
         }
     }, 

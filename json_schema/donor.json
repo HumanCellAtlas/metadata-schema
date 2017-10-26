@@ -18,6 +18,11 @@
                 "year"
             ]
         },
+        "alcohol_history": {
+            "description": "Number of drinks consumed on a typical day",
+            "type": "string"
+        },
+
         "ancestry": {
             "description": "term from https://www.ebi.ac.uk/ols/ontologies/ancestro", 
 	        "type": "array",
@@ -43,7 +48,7 @@
             "description": "Short description of disease status of individual.",
 	        "type": "array",
 	        "items": {
-		        "$ref": "disease_ontology.json"
+		        "$ref": "ontology_json/disease_ontology.json"
 	        }
         }, 
         "genotype": {
@@ -97,7 +102,7 @@
             "description": "Estimated # of cigarattes smoked per day and for how many years",
             "type": "string"
         },
-        "species": {
+        "genus_species": {
 	        "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
             "$ref": "ontology.json"
         }, 
@@ -117,6 +122,7 @@
     }, 
     "required": [
         "species", "is_living"
+
     ],
     "title": "donor",
     "type": "object"

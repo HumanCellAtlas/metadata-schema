@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "description": "Information about the cell line used in the sample", 
     "properties": {
@@ -17,7 +17,7 @@
         }, 
         "cell_type": {
 	        "description": "what cell type was the line derived from, CLO ontology usually",
-            "$ref": "cell_type_ontology.json"
+            "$ref": "ontology_json/cell_type_ontology.json"
         },
         "date_established": {
             "description": "when was the cell line established", 
@@ -26,7 +26,7 @@
         },
         "disease": {
 	        "description": "text describing disease association, preferable a disease found in EFO",
-            "$ref": "disease_ontology.json"
+            "$ref": "ontology_json/disease_ontology.json"
         }, 
         "karyotype": {
             "description": "the karyotype of the cell line", 

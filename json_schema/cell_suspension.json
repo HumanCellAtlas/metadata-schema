@@ -1,6 +1,6 @@
 {       
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "description": "",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description":    "", 
     "properties": {
         "sample_type": {
             "type": "string",
@@ -9,7 +9,7 @@
         "target_cell_type": {
             "description" : "cell types present in suspension",
             "type": "array",
-            "items": {"$ref": "cell_type_ontology.json" }
+            "items": {"$ref": "ontology_json/cell_type_ontology.json" }
        },
         "enrichment": {
             "description": "How cells were enriched for specific type or to weed out common types after disassociation.",
