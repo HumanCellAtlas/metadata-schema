@@ -22,7 +22,7 @@
                 "year"
             ]
         },
-        "smoking_history": {
+        "alcohol_history": {
             "description": "Number of drinks consumed on a typical day",
             "type": "string"
         },
