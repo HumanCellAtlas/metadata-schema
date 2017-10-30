@@ -57,7 +57,7 @@ def recurse_through_errors(es, level = 0):
             
 
 def test_local(path_to_schema_dir, schema_file, test_dir):
-    """Tests a instances in a test_folder against a single schema.
+    """Tests all instances in a test_folder against a single schema.
     Assumes all schema files in single dir.
     Assumes all *.json files in the test_dir should validate against the schema.
        * path_to_schema_dir:  Absolute or relative path to schema dir
@@ -69,6 +69,7 @@ def test_local(path_to_schema_dir, schema_file, test_dir):
     base_uri = "file://" + pwd + "/"
     sv = get_validator(schema_file, base_uri)
     test_files = glob.glob(pathname=test_dir + '/*.json')
+    #print("Found test files: %s in %s" % (str(test_files), test_dir))
     for instance_file in test_files:
         i = get_json_from_file(instance_file)
         print("Testing: %s" % instance_file)
