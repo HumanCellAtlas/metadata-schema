@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "definitions": {}, 
     "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment", 
@@ -49,7 +49,6 @@
             "type": "integer"
         }
     },
-    "required":[],
-    "title": "preservation", 
+    "title": "preservation",
     "type": "object"
 }

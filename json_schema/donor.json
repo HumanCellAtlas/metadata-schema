@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "description": "donor schema generate by tagSchemaToJson from donor", 
     "properties": {
@@ -22,7 +22,7 @@
                 "year"
             ]
         },
-        "smoking_history": {
+        "alcohol_history": {
             "description": "Number of drinks consumed on a typical day",
             "type": "string"
         },
@@ -51,7 +51,7 @@
             "description": "Short description of disease status of individual.",
 	        "type": "array",
 	        "items": {
-		        "$ref": "disease_ontology.json"
+		        "$ref": "ontology_json/disease_ontology.json"
 	        }
         }, 
         "genotype": {
@@ -109,7 +109,7 @@
             "description": "Estimated # of cigarattes smoked per day and for how many years",
             "type": "string"
         },
-        "species": {
+        "genus_species": {
 	        "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
             "$ref": "ontology.json"
         }, 
@@ -128,7 +128,7 @@
         }
     }, 
     "required": [
-        "species", "is_living", "sample_type"
+        "genus_species", "is_living", "sample_type"
     ],
     "title": "donor", 
     "type": "object"

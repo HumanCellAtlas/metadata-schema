@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "description": "A publication contains information about a journal article, book, web page or other external available documentation on a project", 
     "properties": {
