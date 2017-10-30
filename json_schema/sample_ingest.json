@@ -15,6 +15,13 @@
         },
         "derived_from" : {
           "type": "string"
+        },
+        "derivation_protocols": {
+            "items": {
+                 "$ref": "protocol.json",
+                 "description": "An array of protocols used in derivation of this sample."
+             },
+             "type": "array"
         }
     },
     "required": [
