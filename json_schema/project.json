@@ -10,6 +10,18 @@
         }
     }, 
     "properties": {
+        "project_id":{
+            "description": "A unique ID for project",
+            "type": "string"
+        },
+        "name": {
+            "description": "A short descriptive name for the entity project.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the project.",
+            "type": "string"
+        },
         "array_express_investigation": {
             "description": "EBI Array Express investigation accession", 
             "pattern": "^E-....-.*$" 
@@ -48,11 +60,7 @@
             "description": "NCBI GEO series accession", 
             "pattern": "^GSE.*$", 
             "type": "string"
-        }, 
-        "id": {
-            "description": "A unique ID for project",
-            "type": "string"
-        }, 
+        },
         "ncbi_bioproject": {
             "description": "NCBI bioproject ID", 
             "pattern": "^PRJNA.*$", 

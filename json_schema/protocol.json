@@ -4,6 +4,18 @@
     "definitions": {}, 
     "description": "protocol schema generate by tagSchemaToJson from protocol", 
     "properties": {
+        "protocol_id":{
+            "description": "Unique ID for this protocol.",
+            "type": "string"
+        },
+        "name": {
+            "description": "A short descriptive name for the entity protocol.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the protocol.",
+            "type": "string"
+        },
         "batch_number": {
             "description": "the batch of kit used", 
             "type": "string"
@@ -15,12 +27,7 @@
         "description": {
             "description": "a text based desciption about the protocol", 
             "type": "string"
-        }, 
-        "id": {
-            "description": "Unique ID for this protocol.", 
-            "pattern": "^.*-....-.*$", 
-            "type": "string"
-        }, 
+        },
         "pdf": {
             "description": "A pdf containing the details of the protocol", 
             "pattern": "^.*.pdf$", 

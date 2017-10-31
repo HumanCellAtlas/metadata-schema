@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "description": "donor schema generate by tagSchemaToJson from donor",
+    "description": "Information about the donor from which a specimen was collected",
     "additionalProperties" : false,
     "properties": {
         "age": {

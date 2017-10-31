@@ -1,46 +1,30 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
-    "description": "Information about the immortalized cell line used in the sample",
+    "additionalProperties": false,
+    "description": "Information about the primary cell line used in the sample",
     "properties": {
         "sample_type": {
             "type": "string",
             "enum": ["cell line"]
          },
-        "catalog_number": {
-            "description": "the supplier catalogue number for the cell line", 
-            "type": "string"
-        }, 
-        "catalog_url": {
-            "description": "the supplier catalogue url for the cell line", 
-            "type": "string"
-        }, 
         "cell_type": {
 	        "description": "what cell type was the line derived from, CLO ontology usually",
             "$ref": "ontology_json/cell_type_ontology.json"
         },
         "date_established": {
-            "description": "when was the cell line established", 
+            "description": "when was the cell line established",
             "format": "date-time",
             "type": "string"
         },
         "disease": {
 	        "description": "text describing disease association, preferable a disease found in EFO",
             "$ref": "ontology_json/disease_ontology.json"
-        }, 
-        "karyotype": {
-            "description": "the karyotype of the cell line", 
-            "type": "string"
         },
         "passage_number": {
-            "description": "how many passages the cell line as been through", 
-            "maximum": 1000, 
-            "minimum": 0, 
+            "description": "how many passages the cell line as been through",
+            "maximum": 1000,
+            "minimum": 0,
             "type": "integer"
-        },
-        "publication": {
-	        "description": "in what publication was the cell line creation cited",
-            "$ref": "publication.json"
         },
         "cell_cycle": {
             "$ref": "ontology.json",
@@ -51,6 +35,6 @@
         "sample_type",
         "name"
     ],
-    "title": "immortalised_cell_line",
+    "title": "primary_cell_line",
     "type": "object"
 }

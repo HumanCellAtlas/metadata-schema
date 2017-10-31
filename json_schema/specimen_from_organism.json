@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
-    "description": "A sample contains information on the biosample that was sequenced or imaged.  This includes donor, body part, and anything that comes between removing the sample from a body and the assay.",
-    "title": "sample from organism", 
+    "description": "Information about the specimen that was extracted from the donor organism",
+    "title": "specimen_from_organism",
     "type": "object",
     "properties": {
         "body_part": {

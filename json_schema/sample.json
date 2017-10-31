@@ -1,7 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about a biosample." ,
-    "additionalProperties" : false,
+    "description": "A sample contains information on the biosample that was sequenced or imaged.  This includes donor, body part, and anything that comes between removing the sample from a body and the assay.",    "additionalProperties" : false,
     "patternProperties": {
        "^characteristics_.*$": {
             "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
@@ -102,5 +101,6 @@
                 }
             }
         }
-    }
+    },
+    "title": "sample"
 }

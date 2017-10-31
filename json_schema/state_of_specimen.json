@@ -49,6 +49,6 @@
             "type": "integer"
         }
     },
-    "title": "preservation",
+    "title": "state_of_specimen",
     "type": "object"
 }

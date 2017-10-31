@@ -8,8 +8,16 @@
 	        "description": "type and schema for this object",
             "$ref": "core.json"
         },
-        "id": {
+        "assay_id": {
             "description": "unique id for this assay", 
+            "type": "string"
+        },
+        "name": {
+            "description": "A short descriptive name for the entity assay.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the assay.",
             "type": "string"
         },
          "imaging": {
