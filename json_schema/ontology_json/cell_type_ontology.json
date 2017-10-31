@@ -4,12 +4,19 @@
     "description": "A term that may be associated with a cell type-related ontology term",
     "properties": {
         "text": {
-            "description": "The text for the term as the user provides it.",
+            "description": "The name of a cell type supplied by a user.",
             "type": "string"
         },
         "ontology": {
-            "description": "An optional ontology reference in format where prefix_ indicates which ontology",
-            "type": "string"
+            "description": "An ontology term identifier in the form prefix:accession",
+            "type": "string",
+            "graph_restriction":  {
+                "ontologies" : ["obo:cl", "obo:efo"],
+                "classes": ["obo:CL_0000003"],
+                "relations": ["rdfs:subClassOf"],
+                "direct": false,
+                "include_self": true
+            }
         }
     },
     "required": [
