@@ -101,10 +101,6 @@
         "smoking_history": {
             "description": "Estimated # of cigarattes smoked per day and for how many years",
             "type": "string"
-        },
-        "genus_species": {
-	        "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
-            "$ref": "ontology.json"
         }, 
         "strain": {
 	        "description": "Mouse inbred strain.  Example C57BL/6.",
@@ -121,8 +117,7 @@
         }
     }, 
     "required": [
-        "species", "is_living"
-
+        "is_living"
     ],
     "title": "donor",
     "type": "object"
