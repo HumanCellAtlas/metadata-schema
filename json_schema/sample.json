@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Information about a biosample." ,
     "additionalProperties" : false,
     "patternProperties": {
@@ -9,49 +9,66 @@
 
        }
     },
+    "allOf" : [{"required" : ["id", "type", "ncbi_taxon_id"]}],
+    "oneOf" : [{"required" : ["donor_description"], "properties": { "type":  { "enum" : ["donor"]}}},
+              {"required" : ["immortalized_cell_line_description"], "properties": { "type":  { "enum" : ["immortalized_cell_line"]}}},
+              {"required" : ["cell_suspension_description"], "properties": { "type":  { "enum" : ["cell_suspension"]}}},
+              {"required" : ["organoid_description"], "properties": { "type":  { "enum" : ["organoid"]}}},
+              {"required" : ["primary_cell_line_description"], "properties": { "type":   { "enum" : ["primary_cell_line"]}}},
+              {"required" : ["specimen_from_organism_description"], "properties": { "type":  { "enum" : ["specimen_from_organism"]}}}
+              ],
+
     "properties": {
-        "schema_url": {
-            "description": "URL of json schema document that validates this version of this module.",
-            "type": "string"
-        },
-        "schema_version": {
-            "description": "Version number in major.minor.patch format. Example 3.2.4.  Major version changes likely require change to software.  Patches are just documentation changes",
-            "pattern": "^...*..*$",
-            "type": "string"
-        },
+        "core": { "$ref": "core.json" },
         "type": {
             "description": "The name of the core metadata entity type.",
             "enum": [
-		      "donor",
-		      "sample_from_organism",
-		      "cell_suspension"
+                "donor",
+                "specimen_from_organism",
+                "cell_suspension",
+                "organoid",
+                "immortalized_cell_line",
+                "primary_cell_line"
             ]
         },
-        "id":{
-            "description": "A local identifier for the entity (e.g. sample, assay, protocol, file, analysis).",
+        "sample_id":{
+            "description": "A local identifier for the sample.  Should be unique in the context of the submission (project).",
             "type": "string"
         },
         "name": {
-            "description": "A short descriptive name for the entity (e.g. sample, assay, protocol, file, analysis).  Should be enough to distinguish it from other samples in the project.",
-            "type": "string"
-        },
-        "comment": {
-            "description": "A free text commment capturing any relevant information not captured by other fields.",
+            "description": "A short descriptive name for the entity sample.",
             "type": "string"
         },
         "description": {
-            "description": "A general description of the item being submitted (e.g. sample, assay, protocol, file, analysis).",
+            "description": "A general description of the sample.",
             "type": "string"
         },
-        "donor" : {
+        "donor_description" : {
           "$ref": "donor.json"
         },
-        "sample_from_organism" : {
-          "$ref": "sample_from_organism.json"
+        "specimen_from_organism_description" : {
+          "$ref": "specimen_from_organism.json"
         },
+         "immortalized_cell_line_description" : {
+          "$ref": "immortalized_cell_line.json"
+        },
+        "primary_cell_line_description" : {
+          "$ref": "primary_cell_line.json"
+        },
+        "organoid_description" : {
+          "$ref": "organoid.json"
+        },
+        "cell_suspension_description" : {
+          "$ref": "cell_suspension.json"
+        },
+
         "ncbi_taxon_id" : {
           "description": "Taxon id from NCBI",
           "type" : "integer"
+        },
+        "genus_species": {
+            "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
+            "$ref": "ontology.json"
         },
         "supplementary_files": {
             "description": "Sample level supplementary files.",
@@ -85,8 +102,5 @@
                 }
             }
         }
-    },
-    "allOf" : [{"required" : ["id", "type"]}],
-    "oneOf" : [{"required" : ["donor"]}, {"required" : ["sample_from_organism"]}]
-
+    }
 }
