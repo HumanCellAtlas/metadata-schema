@@ -6,8 +6,11 @@ import os
 import glob
 
 
-def get_json_from_file(filename):
-    f = open(filename, 'r')
+def get_json_from_file(filename, warn = False):
+    """Loads json from a file.
+    Optionally specify warn = True to warn, rather than
+    fail if file not found."""
+    f = open(filename, 'r') 
     return json.loads(f.read())
 
 def get_validator(filename, base_uri = ''):
@@ -15,15 +18,16 @@ def get_validator(filename, base_uri = ''):
     Check whether it's a valid schema;
     Return a Draft4Validator object.
     Optionally specify a base URI for relative path
-    resolution of JSON pointers. This is especially useful
-    for local resolution via base_uri of form file://{some_path}/
+    resolution of JSON pointers (This is especially useful
+    for local resolution via base_uri of form file://{some_path}/)
     """
+   
     schema = get_json_from_file(filename)
     try:
-        # Check schema via class method call.
-        Draft4Validator.check_schema(schema)  # IDE complaining but seems to work.
+        # Check schema via class method call. Works, despite IDE complaining
+        Draft4Validator.check_schema(schema)
         print("Schema %s is valid" % filename)
-    except SchemaError: 
+    except SchemaError:
         raise    
     if base_uri:
         resolver = RefResolver(base_uri = base_uri, 
