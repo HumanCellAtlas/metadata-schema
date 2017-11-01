@@ -2,22 +2,22 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
     "definitions": {}, 
-    "description": "An assay contains Information relevant to how RNA expression levels were assayed or otherwise the sample was converted into digital information", 
+    "description": "An assay contains information relevant to how a sample (in vivo) was converted into digital information (in silico).",
     "properties": { 
         "core": {
-	        "description": "type and schema for this object",
+	        "description": "Type and schema for this object.",
             "$ref": "core.json"
         },
         "id": {
-            "description": "unique id for this assay", 
+            "description": "A unique ID for this assay.",
             "type": "string"
         },
          "imaging": {
-	        "description": "Information on image based RNA quantification assays",
+	        "description": "Information on image-based RNA quantification assays.",
             "$ref": "imaging.json"
         },
         "rna": {
-	        "description": "Information about how RNA was converted to DNA or otherwise prepared for assay",
+	        "description": "Information about how a sample was prepared for the assay. e.g. how RNA was converted to cDNA.",
             "$ref": "rna.json"
         }, 
         "seq": {
@@ -25,7 +25,7 @@
             "$ref": "seq.json"
         }, 
         "single_cell": {
-	        "description": "Contains information on single cell aspects of an assay.",
+	        "description": "Information about single cell aspects of an assay.",
             "$ref": "single_cell.json"
         }
     }, 
