@@ -39,79 +39,73 @@
     }, 
     "description": "Information about how a sample was sequenced.", 
     "properties": {
-        "ena_experiment": {
-            "description": "European Nucleotide Archive experiment accession", 
-            "pattern": "^ERX.*$", 
+        "insdc_experiment": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
+            "pattern": "^[D|E|S]RX\d+$",
             "type": "string"
-        }, 
-        "ena_run": {
-            "description": "European Nucleotide Archive run accession", 
-            "pattern": "^ERR.*$", 
-            "type": "string"
-        }, 
+        },
+        "insdc_run": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
+            "items": {
+                "pattern": "^[D|E|S]RR\d+$",
+                "type": "string"
+            },
+            "type": "array"
+        },
         "instrument_model": {
-            "description": "Examples: HiSeq 200, Pac Bio SEQuel", 
+            "description": "The model of the sequencer used. e.g. HiSeq 2000, Sequel.",
             "enum": [
-                "Illumina HiSeq 2000", 
-                "Illumina HiSeq 2500", 
-                "Illumina HiSeq 4000", 
-                "Illumina MiSeq", 
-                "Illumina NextSeq 500"
+                "HiSeq 2000",
+                "HiSeq 2500",
+                "HiSeq 4000",
+                "MiSeq",
+                "NextSeq 500",
+                "Sequel"
             ]
-        }, 
+        },
         "instrument_platform": {
-            "description": "Examples: Illumina, Ion Torrent, Pac Bio", 
+            "description": "The sequencing platform used. e.g. Illumina, Ion Torrent, Pacific Biosciences.",
             "enum": [
-                "Illumina"
+                "Illumina",
+                "Ion Torrent",
+                "Pacific Biosciences"
             ]
-        }, 
+        },
         "lanes": {
             "$ref": "#/definitions/lanes"
-        }, 
+        },
         "library_construction": {
-            "description": "How dna sequencing library was prepared from sample or rna library.  Examples: \"Nextera XT\" \"TrueSeq\"", 
+            "description": "How the DNA sequencing library was prepared. e.g. \"Nextera XT\" \"TrueSeq\".",
             "enum": [
-                "Nextera XT", 
-                "TruSeq", 
+                "Nextera XT",
+                "TruSeq",
                 "modified Nextera XT"
             ]
-        }, 
+        },
         "library_protocol": {
-            "description": "DNA sequencing library preparation protocol", 
-            "pattern": "^P-....-.*$", 
+            "description": "DNA sequencing library preparation protocol.",
+            "pattern": "^P-....-.*$",
             "type": "string"
-        }, 
+        },
         "local_machine_name": {
-            "description": "Local lab name for particular machine of given platform and model this was run on.", 
+            "description": "Local name for the particular machine on which the sample was sequenced.",
             "type": "string"
-        }, 
+        },
         "molecule": {
-            "description": "RNA, DNA, or protein, or more specifically \"total RNA,\" \"genomic DNA,\"  etc.", 
+            "description": "Specific type of molecule sequenced. e.g. total RNA, genomic DNA, polyA RNA.",
             "enum": [
-                "RNA", 
-                "polyA RNA", 
-                "total RNA"
+                "RNA",
+                "polyA RNA",
+                "total RNA",
+                "genomic DNA"
             ]
-        }, 
+        },
         "paired_ends": {
-            "description": "Is a paired end sequencing strategy used? Values are yes/no", 
+            "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
             "type": "boolean"
-        }, 
-        "sra_experiment": {
-            "description": "NCBI Short Read Archive experiment accession (SRX)", 
-            "pattern": "^SRX.*$", 
-            "type": "string"
-        }, 
-        "sra_run": {
-            "description": "NCBI Short Read Archive run accession (SRR)", 
-            "items": {
-                "pattern": "^SRR.*$", 
-                "type": "string"
-            }, 
-            "type": "array"
-        }, 
+        },
         "umi_barcode": {
-            "description": "Information about unique molecular identifier barcode", 
+            "description": "Information about unique molecular identifier (umi) barcode.",
             "$ref": "barcode.json"
         }
     }, 
