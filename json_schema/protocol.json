@@ -5,11 +5,11 @@
     "description": "protocol schema generate by tagSchemaToJson from protocol", 
     "properties": {
         "protocol_id":{
-            "description": "Unique ID for this protocol.",
+            "description": "A unique ID for the protocol.",
             "type": "string"
         },
         "name": {
-            "description": "A short descriptive name for the entity protocol.",
+            "description": "A short, descriptive name for the protocol that need not be unique.",
             "type": "string"
         },
         "description": {
@@ -17,7 +17,7 @@
             "type": "string"
         },
         "batch_number": {
-            "description": "the batch of kit used", 
+            "description": "The batch of kit used.",
             "type": "string"
         }, 
         "core": {
@@ -25,21 +25,21 @@
             "$ref": "core.json"
         }, 
         "description": {
-            "description": "a text based desciption about the protocol", 
+            "description": "A text-based description of the protocol.",
             "type": "string"
         },
         "pdf": {
-            "description": "A pdf containing the details of the protocol", 
+            "description": "A filename of a PDF containing the details of the protocol.",
             "pattern": "^.*.pdf$", 
             "type": "string"
         }, 
         "retail_name": {
-            "description": "the retail name of the kit used e.g SureCell WTA 3\u2032 Library Prep Kit", 
+            "description": "The retail name of the kit used. e.g SureCell WTA 3\' Library Prep Kit",
             "type": "string"
         },
         "type": {
             "$ref": "ontology.json",
-            "description": "Type of protocol, ideally an EFO term"
+            "description": "The yype of protocol. Ideally an EFO term."
         }
     }, 
     "required": [
