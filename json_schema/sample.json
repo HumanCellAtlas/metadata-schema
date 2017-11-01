@@ -82,21 +82,13 @@
             "additionalProperties" : false,
              "properties": {
                 "biosd_sample": {
-                    "description": "EBI biosample ID",
+                    "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
+                    "pattern": "^SAM[N|E|D]\d+$",
                     "type": "string"
                 },
-                "ncbi_biosample": {
-                    "description": "NCBI biosample ID",
-                    "type": "string"
-                },
-                "geo_sample": {
-                    "description": "NCBI GEO sample accession",
-                    "pattern": "^GSM.*$",
-                    "type": "string"
-                },
-                "ena_sample": {
-                    "description": "European nucleotide archive sample ID",
-                    "pattern": "^ERS.*$",
+                "insdc_sample": {
+                    "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
+                    "pattern": "^[D|E|S]RS\d+$",
                     "type": "string"
                 }
             }

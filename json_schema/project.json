@@ -24,8 +24,9 @@
         },
         "array_express_investigation": {
             "description": "An EBI ArrayExpress investigation accession.",
-            "pattern": "^E-....-.*$" 
-        }, 
+            "pattern": "^E-....-.*$",
+            "type": "string"
+        },
         "contributors": {
 	        "description": "List of people contributing to the project.",
             "items": {
@@ -37,11 +38,6 @@
             "$ref": "core.json", 
             "description": "type and schema for this object"
         }, 
-        "ddjb_trace": {
-            "description": "Japanese trace archive project accession.", 
-            "pattern": "^ERP.*$", 
-            "type": "string"
-        },
         "experimental_design": {
             "items": {
                 "$ref": "ontology.json",
@@ -61,9 +57,14 @@
             "pattern": "^GSE.*$", 
             "type": "string"
         },
-        "ncbi_bioproject": {
-            "description": "An NCBI BioProject ID.",
-            "pattern": "^PRJNA.*$", 
+        "insdc_project": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
+            "pattern": "^[D|E|S]RP\d+$",
+            "type": "string"
+        },
+        "insdc_study": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
+            "pattern": "^PRJ[E|N|D]\w\d+$",
             "type": "string"
         },
         "publications": {
@@ -80,11 +81,6 @@
             }, 
             "type": "array"
         }, 
-        "sra_project": {
-            "description": "An NCBI SRA project accession.",
-            "pattern": "^SRP.*$", 
-            "type": "string"
-        }, 
         "supplementary_files": {
             "description": "Project-level supplementary files. e.g. experimental design documents, lab spreadsheets, manuscripts in preparation.",
             "items": {
@@ -92,7 +88,7 @@
             }, 
             "type": "array"
         }
-    }, 
+    },
     "required": [
     	"core",
 	    "contributors",
