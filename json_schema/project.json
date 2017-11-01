@@ -1,98 +1,99 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A sample contains information on the biosample that was sequenced or imaged. This includes donor, body part, and anything that comes between removing the sample from a donor and the assay.",    "additionalProperties" : false,
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "project schema generate by tagSchemaToJson from project",
     "patternProperties": {
-       "^characteristics_.*$": {
-            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix.",
-             "type": "string"
-
-       }
+        "^characteristics_.*$": {
+            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
+            "type": "string"
+        }
     },
-    "allOf" : [{"required" : ["id", "type", "ncbi_taxon_id"]}],
-    "oneOf" : [{"required" : ["donor_description"], "properties": { "type":  { "enum" : ["donor"]}}},
-              {"required" : ["immortalized_cell_line_description"], "properties": { "type":  { "enum" : ["immortalized_cell_line"]}}},
-              {"required" : ["cell_suspension_description"], "properties": { "type":  { "enum" : ["cell_suspension"]}}},
-              {"required" : ["organoid_description"], "properties": { "type":  { "enum" : ["organoid"]}}},
-              {"required" : ["primary_cell_line_description"], "properties": { "type":   { "enum" : ["primary_cell_line"]}}},
-              {"required" : ["specimen_from_organism_description"], "properties": { "type":  { "enum" : ["specimen_from_organism"]}}}
-              ],
-
     "properties": {
-        "core": { "$ref": "core.json" },
-        "type": {
-            "description": "The name of the core metadata entity type.",
-            "enum": [
-                "donor",
-                "specimen_from_organism",
-                "cell_suspension",
-                "organoid",
-                "immortalized_cell_line",
-                "primary_cell_line"
-            ]
-        },
-        "sample_id":{
-            "description": "A local identifier for the sample. Should be unique in the context of the project.",
+        "project_id":{
+            "description": "A unique ID for the project.",
             "type": "string"
         },
         "name": {
-            "description": "A short, descriptive name for the sample that need not be unique.",
+            "description": "A short descriptive name for the entity project. Does not need to be unique.",
             "type": "string"
         },
         "description": {
-            "description": "A general description of the sample.",
+            "description": "A general description of the project.",
             "type": "string"
         },
-        "donor_description" : {
-          "$ref": "donor.json"
+        "array_express_investigation": {
+            "description": "An EBI ArrayExpress investigation accession.",
+            "pattern": "^E-....-.*$",
+            "type": "string"
         },
-        "specimen_from_organism_description" : {
-          "$ref": "specimen_from_organism.json"
+        "contributors": {
+	        "description": "List of people contributing to the project.",
+            "items": {
+                "$ref": "contact.json"
+            },
+            "type": "array"
         },
-         "immortalized_cell_line_description" : {
-          "$ref": "immortalized_cell_line.json"
+        "core": {
+            "$ref": "core.json",
+            "description": "type and schema for this object"
         },
-        "primary_cell_line_description" : {
-          "$ref": "primary_cell_line.json"
+        "experimental_design": {
+            "items": {
+                "$ref": "ontology.json",
+                "description": "A short description of overall experiment type. e.g. \"single cell RNA sequencing.\""
+            },
+            "type": "array"
         },
-        "organoid_description" : {
-          "$ref": "organoid.json"
-        },
-        "cell_suspension_description" : {
-          "$ref": "cell_suspension.json"
-        },
-
-        "ncbi_taxon_id" : {
-          "description": "A taxonomy ID (taxonID) from NCBI.",
-          "type" : "integer"
-        },
-        "genus_species": {
-            "description": "Scientific binomial name of donor species. e.g. \"homo sapiens\". NCBI taxon in ontology field.",
-            "$ref": "ontology.json"
-        },
-        "supplementary_files": {
-            "description": "A list of filenames of sample-level supplementary files.",
+        "experimental_factor_name": {
+            "description": "A list of the factors that vary between samples in the experiment. e.g. \"time since collection\", \"preservation method\"",
             "items": {
                 "type": "string"
             },
             "type": "array"
         },
-        "sample_accessions": {
-            "type": "object",
-            "description": "One or more accession numbers from a standard archive.",
-            "additionalProperties" : false,
-             "properties": {
-                "biosd_sample": {
-                    "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
-                    "pattern": "^SAM[N|E|D]\d+$",
-                    "type": "string"
-                },
-                "insdc_sample": {
-                    "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
-                    "pattern": "^[D|E|S]RS\d+$",
-                    "type": "string"
-                }
-            }
+        "geo_series": {
+            "description": "An NCBI GEO series accession.",
+            "pattern": "^GSE.*$",
+            "type": "string"
+        },
+        "insdc_project": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
+            "pattern": "^[D|E|S]RP\d+$",
+            "type": "string"
+        },
+        "insdc_study": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
+            "pattern": "^PRJ[E|N|D]\w\d+$",
+            "type": "string"
+        },
+        "publications": {
+            "items": {
+                "$ref": "publication.json",
+                "description": "An array of publication modules."
+            },
+            "type": "array"
+        },
+        "related_projects": {
+            "description": "A list of other projects that may be logically grouped with this one.",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "supplementary_files": {
+            "description": "Project-level supplementary files. e.g. experimental design documents, lab spreadsheets, manuscripts in preparation.",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
         }
     },
-    "title": "sample"
+    "required": [
+    	"core",
+	    "contributors",
+        "id"
+    ],
+    "title": "project",
+    "type": "object"
 }
