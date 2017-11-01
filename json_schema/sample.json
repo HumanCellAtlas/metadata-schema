@@ -5,17 +5,17 @@
     "description": "Information about a biosample." ,
     "patternProperties": {
        "^characteristics_.*$": {
-            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
+            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix.",
             "type": "string"
        }
     },
     "properties": {
         "core": {
             "$ref": "core.json",
-            "description": "type and schema for this object"
+            "description": "Type and schema for this object."
              },
         "id": {
-            "description": "A unique ID for this sample", 
+            "description": "A unique ID for this sample.",
             "type": "string"
         },
         "details": {
@@ -30,12 +30,12 @@
         "protocols": {
             "items": {
                 "$ref": "protocol.json",
-                "description": "An array of protocol modules.  Assay and project protocols reference this."
+                "description": "An array of protocol modules. Assay and project protocols reference this."
             },
             "type": "array"
         },
         "supplementary_files": {
-            "description": "Sample level supplementary files.", 
+            "description": "A list of filenames of sample-level supplementary files.",
             "items": {
                 "type": "string"
             }, 
@@ -47,20 +47,20 @@
             "additionalProperties" : false,
              "properties": {
                 "biosd_sample": {
-                    "description": "EBI biosample ID", 
+                    "description": "An EBI BioSamples ID.",
                     "type": "string"
                 }, 
                 "ncbi_biosample": {
-                    "description": "NCBI biosample ID", 
+                    "description": "An NCBI BioSample ID.",
                     "type": "string"
                 },
                 "geo_sample": {
-                    "description": "NCBI GEO sample accession", 
+                    "description": "An NCBI GEO sample accession.",
                     "pattern": "^GSM.*$", 
                     "type": "string"
                 },
                 "ena_sample": {
-                    "description": "European nucleotide archive sample ID", 
+                    "description": "A European Nucleotide Archive sample ID.",
                     "pattern": "^ERS.*$", 
                     "type": "string"
                 }
