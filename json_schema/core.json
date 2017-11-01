@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "description": "core object found in all modules",
+    "description": "Core object found in all modules.",
     "properties": {
         "schema_url": {
-            "description": "URL of json schema document that validates this version of this module.", 
+            "description": "URL of JSON schema document that validates this version of this module.",
             "type": "string"
         }, 
         "schema_version": {
-            "description": "Version number in major.minor.patch format. Example 3.2.4.  Major version changes likely require change to software.  Patches are just documentation changes", 
+            "description": "Version number in major.minor.patch format. e.g. 3.2.4. Major version changes likely require changes to software. Minor version changes should not require software changes. Patches are just documentation changes.",
             "pattern": "^...*..*$", 
             "type": "string"
         }, 
