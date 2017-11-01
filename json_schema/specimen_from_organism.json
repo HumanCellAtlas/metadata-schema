@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false, 
-    "description": "Information about the specimen that was extracted from the donor organism",
+    "description": "Information about the specimen that was extracted from the donor organism.",
     "title": "specimen_from_organism",
     "type": "object",
     "properties": {
@@ -9,17 +9,17 @@
             "$ref": "ontology_json/body_part_ontology.json",
             "description": "A more detailed position within the body than the term given in the organ field."
         },
+        "donor_id" : {
+            "type" : "string",
+            "description" : "The ID of the donor from which this sample was collected."
+        },
         "organ": {
             "$ref": "ontology.json", 
-            "description": "The organ that the sample came from.  \"Blood\" and \"connective tissue\" count as organs."
+            "description": "The organ that the sample came from. e.g. liver, spleen. \"Blood\" and \"connective tissue\" count as organs."
         }, 
         "state_of_specimen": {
             "$ref": "state_of_specimen.json",
             "description": "State of body_part at collection and how it was preserved after removal."
-        },
-        "donor_id" : {
-            "type" : "string",
-            "description" : "the local identifier for the donor of this sample"
         }
     }, 
     "required": [
