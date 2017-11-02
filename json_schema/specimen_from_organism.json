@@ -5,6 +5,10 @@
     "title": "specimen_from_organism",
     "type": "object",
     "properties": {
+        "type" : {
+            "enum" : ["specimen_from_organism"],
+            "description" : "This should always be a specimen_from_organism"
+        },
         "body_part": {
             "$ref": "ontology_json/body_part_ontology.json",
             "description": "A more detailed position within the body than the term given in the organ field."
@@ -24,6 +28,7 @@
     }, 
     "required": [
 	    "body_part",
+        "type",
 	    "organ"
     ]
 }

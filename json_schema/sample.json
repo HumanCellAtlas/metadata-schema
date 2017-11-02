@@ -8,28 +8,17 @@
 
        }
     },
-    "allOf" : [{"required" : ["id", "type", "ncbi_taxon_id"]}],
-    "oneOf" : [{"required" : ["donor_description"], "properties": { "type":  { "enum" : ["donor"]}}},
-              {"required" : ["immortalized_cell_line_description"], "properties": { "type":  { "enum" : ["immortalized_cell_line"]}}},
-              {"required" : ["cell_suspension_description"], "properties": { "type":  { "enum" : ["cell_suspension"]}}},
-              {"required" : ["organoid_description"], "properties": { "type":  { "enum" : ["organoid"]}}},
-              {"required" : ["primary_cell_line_description"], "properties": { "type":   { "enum" : ["primary_cell_line"]}}},
-              {"required" : ["specimen_from_organism_description"], "properties": { "type":  { "enum" : ["specimen_from_organism"]}}}
+    "allOf" : [{"required" : ["id", "ncbi_taxon_id"]}],
+    "oneOf" : [{"required" : ["donor_description"]},
+              {"required" : ["immortalized_cell_line_description"]},
+              {"required" : ["cell_suspension_description"]},
+              {"required" : ["organoid_description"]},
+              {"required" : ["primary_cell_line_description"]},
+              {"required" : ["specimen_from_organism_description"]}
               ],
 
     "properties": {
         "core": { "$ref": "core.json" },
-        "type": {
-            "description": "The name of the core metadata entity type.",
-            "enum": [
-                "donor",
-                "specimen_from_organism",
-                "cell_suspension",
-                "organoid",
-                "immortalized_cell_line",
-                "primary_cell_line"
-            ]
-        },
         "sample_id":{
             "description": "A local identifier for the sample. Should be unique in the context of the project.",
             "type": "string"
