@@ -11,7 +11,7 @@
         },
         "organ": {
             "$ref": "ontology.json", 
-            "description": "The organ that the sample came from. e.g. liver, spleen. \"Blood\" and \"connective tissue\" count as organs."
+            "description": "The organ that the sample came from. e.g. liver, spleen. Blood and connective tissue count as organs."
         }, 
         "state_of_specimen": {
             "$ref": "state_of_specimen.json",
