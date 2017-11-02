@@ -4,27 +4,27 @@
     "description": "Information about the primary cell line used in the sample",
     "properties": {
         "cell_type": {
-	        "description": "what cell type was the line derived from, CLO ontology usually",
+	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
             "$ref": "ontology_json/cell_type_ontology.json"
         },
         "date_established": {
-            "description": "when was the cell line established",
+            "description": "When the cell line was established, in date-time format.",
             "format": "date-time",
             "type": "string"
         },
         "disease": {
-	        "description": "text describing disease association, preferable a disease found in EFO",
+	        "description": "Free text describing any disease association to the cell type. Should be found in EFO ontology.",
             "$ref": "ontology_json/disease_ontology.json"
         },
         "passage_number": {
-            "description": "how many passages the cell line as been through",
+            "description": "The number of passages the cell line has been through.",
             "maximum": 1000,
             "minimum": 0,
             "type": "integer"
         },
         "cell_cycle": {
             "$ref": "ontology.json",
-            "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here."
+            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
         }
     },
     "required":[
