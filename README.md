@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/HumanCellAtlas/metadata-schema.svg?branch=master)](https://travis-ci.org/HumanCellAtlas/metadata-schema)
+[![Build Status](https://travis-ci.org/HumanCellAtlas/metadata-schema.svg)](https://travis-ci.org/HumanCellAtlas/metadata-schema)
 
 
 # The Human Cell Atlas Metadata Schema
