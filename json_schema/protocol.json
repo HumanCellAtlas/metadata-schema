@@ -35,7 +35,7 @@
         },
         "type": {
             "$ref": "ontology.json",
-            "description": "The yype of protocol. Ideally an EFO term."
+            "description": "The type of protocol. Ideally an EFO term."
         }
     }, 
     "required": [
