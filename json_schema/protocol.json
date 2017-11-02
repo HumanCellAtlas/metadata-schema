@@ -4,35 +4,38 @@
     "definitions": {}, 
     "description": "protocol schema generate by tagSchemaToJson from protocol", 
     "properties": {
+        "protocol_id":{
+            "description": "A unique ID for the protocol.",
+            "type": "string"
+        },
+        "name": {
+            "description": "A short, descriptive name for the protocol that need not be unique.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the protocol.",
+            "type": "string"
+        },
         "batch_number": {
-            "description": "The batch number of the kit used.",
+            "description": "The batch of kit used.",
             "type": "string"
         }, 
         "core": {
-	        "description": "Type and schema for this object.",
+	        "description": "type and schema for this object",
             "$ref": "core.json"
-        }, 
-        "description": {
-            "description": "A text-based description of the protocol.",
-            "type": "string"
-        }, 
-        "id": {
-            "description": "A unique ID for this protocol.",
-            "pattern": "^.*-....-.*$", 
-            "type": "string"
-        }, 
+        },
         "pdf": {
-            "description": "The name of a PDF file containing the details of the protocol.",
+            "description": "A filename of a PDF containing the details of the protocol.",
             "pattern": "^.*.pdf$", 
             "type": "string"
         }, 
         "retail_name": {
-            "description": "The retail name of the kit used. e.g. TruSeq RNA Library Prep Kit v2.",
+            "description": "The retail name of the kit used. e.g SureCell WTA 3\' Library Prep Kit",
             "type": "string"
         },
         "type": {
             "$ref": "ontology.json",
-            "description": "Type of protocol. Ideally an EFO term."
+            "description": "The type of protocol. Ideally an EFO term."
         }
     }, 
     "required": [

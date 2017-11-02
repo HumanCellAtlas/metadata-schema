@@ -1,11 +1,7 @@
 {       
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description":    "", 
+    "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "properties": {
-        "sample_type": {
-            "type": "string",
-            "enum": ["cell suspension"]
-         },
         "target_cell_type": {
             "description" : "cell types present in suspension",
             "type": "array",
@@ -27,6 +23,7 @@
             "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
         }
      },
+    "title" : "cell_suspension",
     "required":[
         "sample_type"
     ]

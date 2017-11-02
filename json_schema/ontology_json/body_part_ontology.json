@@ -22,6 +22,6 @@
     "required": [
         "text"
     ],
-    "title": "ontology",
+    "title": "body_part_ontology",
     "type": "object"
 }

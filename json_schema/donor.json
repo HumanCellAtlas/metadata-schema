@@ -1,20 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
-    "description": "donor schema generate by tagSchemaToJson from donor", 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "description": "Information about the donor from which a specimen was collected",
+    "additionalProperties" : false,
     "properties": {
-        "sample_type": {
-            "type": "string",
-            "enum": ["donor"]
-         },
         "age": {
-            "description": "Age in age_units.  Expressed since birth.  For embryos measured since fertilization.", 
+            "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
             "maximum": 150, 
             "minimum": 0, 
             "type": "number"
         }, 
         "age_unit": {
-            "description": "Unit age is expressed, typically day, week, month, or year", 
+            "description": "The unit in which age is expressed. Must be one of day, week, month, or year.",
             "enum": [
                 "hour", 
                 "day", 
@@ -23,28 +19,29 @@
             ]
         },
         "alcohol_history": {
-            "description": "Number of drinks consumed on a typical day",
+            "description": "Number of drinks consumed on a typical day.",
             "type": "string"
         },
+
         "ancestry": {
-            "description": "term from https://www.ebi.ac.uk/ols/ontologies/ancestro", 
+            "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
 	        "type": "array",
 	        "items": {
     		    "$ref": "ontology.json"
 	        }
         }, 
         "body_mass_index": {
-            "description": "Body mass index of donor", 
+            "description": "The body mass index of the donor.",
             "maximum": 100, 
             "minimum": 5, 
             "type": "number"
         }, 
         "death": {
-	        "description": "Information about conditions of death (or info that donor was living at time of collection)",
+	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
             "$ref": "death.json"
         }, 
         "development_stage": {
-	        "description": "More detailed (especially for embryos) version of life_stage. Might be \"E9\" or \"P17\" for a mouse.",
+	        "description": "More detailed (especially for embryos) version of life_stage. e.g. \"E9\" or \"P17\" for mouse.",
             "$ref": "ontology.json"
         }, 
         "disease": {
@@ -55,25 +52,21 @@
 	        }
         }, 
         "genotype": {
-            "description": "Genotype. List of genetic changes from usual. Should be strain, cross and genetic modification info in MGI format for mice.", 
+            "description": "Genotype of donor including strain, cross, and genetic modification information. Must be in MGI format for mice.",
             "type": "string"
         }, 
         "height": {
-            "description": "Height of donor in meters", 
+            "description": "Height of donor in meters.",
             "maximum": 10, 
             "minimum": 0, 
             "type": "number"
-        }, 
-        "id": {
-            "description": "A unique ID for this donor", 
-            "type": "string"
-        }, 
+        },
         "is_living": {
-            "description": "If yes donor is living at time of sample donation.", 
+            "description": "Should be yes if donor is living at time of sample donation. Otherwise, should be no.",
             "type": "boolean"
         }, 
         "life_stage": {
-            "description": "describe_me_please", 
+            "description": "Should be one of adult, child, embryo, or postpartum.",
             "enum": [
                 "adult", 
                 "child", 
@@ -82,14 +75,14 @@
             ]
         }, 
         "medication": {
-	       "description": "List of medications donor is on",
+	       "description": "List of medications the donor was currently taking at time of sample donation.",
 	       "type": "array",
 	       "items": {
                "$ref": "ontology.json"
 	       }
         },
         "nutritional_state": {
-            "description": "Normal, fasting, feeding tube removed, etc",
+            "description": "Should be one of normal, fasting, or feeding tube removed.",
             "enum": [
                 "normal",
                 "fasting",
@@ -97,7 +90,7 @@
             ]
         },
         "sex": {
-            "description": "Sex of donor.  Either 'male' 'female' 'mixed' or 'unknown'", 
+            "description": "Sex of donor. Should be one of male, female, mixed, or unknown.",
             "enum": [
                 "female", 
                 "male", 
@@ -106,30 +99,26 @@
             ]
         },
         "smoking_history": {
-            "description": "Estimated # of cigarattes smoked per day and for how many years",
+            "description": "Estimated number of cigarettes smoked per day and for how many years.",
             "type": "string"
-        },
-        "genus_species": {
-	        "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
-            "$ref": "ontology.json"
         }, 
         "strain": {
-	        "description": "Mouse inbred strain.  Example C57BL/6.",
+	        "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
 	        "type": "array",
 	        "items": {
 		        "$ref": "ontology.json"
 	        }
         },
         "weight": {
-            "description": "Weight of donor in kg", 
+            "description": "Weight of donor in kilograms.",
             "maximum": 1000, 
             "minimum": 0, 
             "type": "number"
         }
     }, 
     "required": [
-        "genus_species", "is_living", "sample_type"
+        "is_living"
     ],
-    "title": "donor", 
+    "title": "donor",
     "type": "object"
 }

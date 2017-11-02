@@ -15,6 +15,14 @@
          "description" : "ID give to the analysis run which refers back to the analysis instance in the green box.",
          "type" : "number"
       },
+      "name": {
+         "description": "A short descriptive name for the entity analysis.",
+         "type": "string"
+      },
+      "description": {
+         "description": "A general description of the analysis.",
+         "type": "string"
+      },
       "computational_method" : {
          "description" : "A URI to a versioned workflow and versioned execution environment in a GA4GH compliant repository.",
          "type" : "uri"
@@ -126,6 +134,7 @@
          "type" : "object"
       }
    },
+   "title" : "analysis",
    "required" : [
      "timestamp_start_utc",
      "timestamp_stop_utc",

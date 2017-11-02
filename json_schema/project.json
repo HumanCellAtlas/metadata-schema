@@ -1,95 +1,99 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "Project schema generate by tagSchemaToJson from project.",
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "project schema generate by tagSchemaToJson from project",
     "patternProperties": {
         "^characteristics_.*$": {
-            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix.",
+            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
             "type": "string"
         }
     }, 
     "properties": {
+        "project_id":{
+            "description": "A unique ID for the project.",
+            "type": "string"
+        },
+        "name": {
+            "description": "A short descriptive name for the entity project. Does not need to be unique.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the project.",
+            "type": "string"
+        },
         "array_express_investigation": {
             "description": "An EBI ArrayExpress investigation accession.",
-            "pattern": "^E-....-.*$" 
-        }, 
+            "pattern": "^E-....-.*$",
+            "type": "string"
+        },
         "contributors": {
-	        "description": "A list of people who contributed to project.",
+	        "description": "List of people contributing to the project.",
             "items": {
                 "$ref": "contact.json"
-            }, 
+            },
             "type": "array"
-        }, 
+        },
         "core": {
-            "$ref": "core.json", 
-            "description": "Type and schema for this object."
-        }, 
-        "ddjb_trace": {
-            "description": "A Japanese trace archive project accession.",
-            "pattern": "^ERP.*$", 
-            "type": "string"
+            "$ref": "core.json",
+            "description": "type and schema for this object"
         },
         "experimental_design": {
             "items": {
                 "$ref": "ontology.json",
-                "description": "A short description of the experiment type. e.g. \"single cell RNA sequencing\"."
-            }, 
+                "description": "A short description of overall experiment type. e.g. \"single cell RNA sequencing.\""
+            },
             "type": "array"
-        }, 
+        },
         "experimental_factor_name": {
-            "description": "A list of the factors that vary between samples in the experiment. e.g. time, disease state.",
+            "description": "A list of the factors that vary between samples in the experiment. e.g. \"time since collection\", \"preservation method\"",
             "items": {
                 "type": "string"
-            }, 
+            },
             "type": "array"
-        }, 
+        },
         "geo_series": {
             "description": "An NCBI GEO series accession.",
-            "pattern": "^GSE.*$", 
+            "pattern": "^GSE.*$",
             "type": "string"
-        }, 
-        "id": {
-            "description": "A unique ID for project.",
+        },
+        "insdc_project": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
+            "pattern": "^[D|E|S]RP[0-9]+$",
             "type": "string"
-        }, 
-        "ncbi_bioproject": {
-            "description": "An NCBI BioProject ID.",
-            "pattern": "^PRJNA.*$", 
+        },
+        "insdc_study": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
+            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "type": "string"
         },
         "publications": {
             "items": {
                 "$ref": "publication.json",
                 "description": "An array of publication modules."
-            }, 
+            },
             "type": "array"
-        }, 
+        },
         "related_projects": {
             "description": "A list of other projects that may be logically grouped with this one.",
             "items": {
                 "type": "string"
-            }, 
+            },
             "type": "array"
-        }, 
-        "sra_project": {
-            "description": "An NCBI SRA project accession.",
-            "pattern": "^SRP.*$", 
-            "type": "string"
-        }, 
+        },
         "supplementary_files": {
-            "description": "A list filenames of project-level supplementary files. e.g. experimental design documents, lab spreadsheets, or manuscripts in preparation.",
+            "description": "Project-level supplementary files. e.g. experimental design documents, lab spreadsheets, manuscripts in preparation.",
             "items": {
                 "type": "string"
-            }, 
+            },
             "type": "array"
         }
-    }, 
+    },
     "required": [
     	"core",
 	    "contributors",
         "id"
-    ], 
-    "title": "project", 
+    ],
+    "title": "project",
     "type": "object"
 }

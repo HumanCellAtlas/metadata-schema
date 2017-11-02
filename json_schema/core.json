@@ -1,14 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
-    "description": "core object found in all modules", 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "description": "Core object found in all modules.",
     "properties": {
         "schema_url": {
-            "description": "URL of json schema document that validates this version of this module.", 
+            "description": "URL of JSON schema document that validates this version of this module.",
             "type": "string"
         }, 
         "schema_version": {
-            "description": "Version number in major.minor.patch format. Example 3.2.4.  Major version changes likely require change to software.  Patches are just documentation changes", 
+            "description": "Version number in major.minor.patch format. e.g. 3.2.4. Major version changes likely require changes to software. Minor version changes should not require software changes. Patches are just documentation changes.",
             "pattern": "^...*..*$", 
             "type": "string"
         }, 
@@ -22,25 +21,9 @@
 		      "file",
 		      "analysis"
             ]
-        },
-        "user_supplied_id":{
-            "description": "A local identifier for the entity (e.g. sample, assay, protocol, file, analysis).",
-            "type": "string"
-        },
-        "name": {
-            "description": "A short descriptive name for the entity (e.g. sample, assay, protocol, file, analysis).  Should be enough to distinguish it from other samples in the project.", 
-            "type": "string"
-        },
-        "comment": {
-            "description": "A free text commment capturing any relevant information not captured by other fields.",
-            "type": "string"
-        },
-        "description": { 
-            "description": "A general description of the item being submitted (e.g. sample, assay, protocol, file, analysis).",
-            "type": "string"           
         }
     },
     "required": [
         "type"
-    ]  
+    ]
 }

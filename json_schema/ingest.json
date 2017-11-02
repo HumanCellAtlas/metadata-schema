@@ -3,7 +3,7 @@
     "additionalProperties": false,
     "description": "Information added or generated at ingest time." ,
     "properties": {
-        "submission_date": {
+        "submissionDate": {
             "description": "When project was first submitted to database.", 
             "format": "date-time", 
             "type": "string"
@@ -12,7 +12,7 @@
             "description": "ID of contact who first submitted project", 
             "type": "string"
         },
-        "update_date": {
+        "updateDate": {
             "description": "When project was last updated", 
             "format": "date-time",
             "type": "string"
@@ -24,13 +24,8 @@
         "document_id": {
             "description": "Identifier for document.",
             "comment": "This structure supports the current ingest API.  It may change in future.",
-            "type": "object",
-            "properties": { 
-                "document_id": {
-                    "type": "string",
-                    "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}"
-                }
-            }
+            "type": "string",
+            "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}"
         },
         "accession": {
             "description": "A unique accession for this entity, provided by the broker.",
@@ -39,6 +34,6 @@
 
     },
     "required": [
-        "submitter_id", "submission_date"
+        "document_id", "submissionDate"
     ]
 }
