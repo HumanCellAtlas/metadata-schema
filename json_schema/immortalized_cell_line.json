@@ -3,10 +3,6 @@
     "additionalProperties": false, 
     "description": "Information about the immortalized cell line used in the sample",
     "properties": {
-        "sample_type": {
-            "type": "string",
-            "enum": ["cell line"]
-         },
         "catalog_number": {
             "description": "the supplier catalogue number for the cell line", 
             "type": "string"
