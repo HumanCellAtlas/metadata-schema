@@ -9,6 +9,6 @@
     },
     "title" : "organoid",
     "required":[
-        "sample_type"
+        "model_for_organ"
     ]
 }

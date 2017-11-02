@@ -43,10 +43,6 @@
             "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here."
         }
     },
-    "required":[
-        "sample_type",
-        "name"
-    ],
-    "title": "immortalised_cell_line",
+    "title": "immortalized_cell_line",
     "type": "object"
 }

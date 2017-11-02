@@ -4,10 +4,9 @@
           "type": "donor",
           "is_living": true,
           "life_stage": "adult"
-
     },
     "ncbi_taxon_id": 9606,
-     "genus_species": {
+    "genus_species": {
       "text": "Homo sapiens",
       "ontology": "NCBITAXON_9606"
     }

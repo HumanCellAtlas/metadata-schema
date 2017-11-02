@@ -6,16 +6,19 @@
     "accession": "SAM0999697"
   },
   "content" : {
-    "id": "d1",
-    "type": "donor",
+    "core" : {
+      "schema_version" : "4.0.0",
+      "type" : "sample"
+    },
+    "sample_id": "d1",
     "donor" : {
           "is_living": true,
-          "life_stage": "adult",
-          "species": {
-              "text": "Homo sapiens",
-              "ontology": "NCBITAXON_9606"
-          }
+          "life_stage": "adult"
     },
-    "ncbi_taxon_id": 9606
+    "ncbi_taxon_id": 9606,
+    "genus_species": {
+      "text": "Homo sapiens",
+      "ontology": "NCBITAXON_9606"
+    }
   }
 }
