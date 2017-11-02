@@ -8,5 +8,5 @@ install:
    - pip install -r requirements.txt
 
 script:
-   - cs src
+   - cd src
    - python test.py
