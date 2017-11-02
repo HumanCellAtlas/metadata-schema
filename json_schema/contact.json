@@ -86,24 +86,24 @@
             ]
         }, 
         "email": {
-            "description": "Email of contact for contributingauthors", 
+            "description": "An email address for the contact.",
             "pattern": "^.*@.*..*$", 
             "type": "string"
         },
         "institution": {
-            "description": "Name of primary institute where contact works", 
+            "description": "Name of primary institute where contact works.",
             "type": "string"
         }, 
         "laboratory": {
-            "description": "Name of lab (often the PI name) within institute where contact works", 
+            "description": "Name of lab (often the PI name) within institute where contact works.",
             "type": "string"
         }, 
         "name": {
-            "description": "Text formatted with first name, middle, last in that order separated by commas.  Usually middle is just an initial.", 
+            "description": "The contact's name. Should be in the format first, middle, last name. Middle can be initial or left blank. e.g. John,D,Doe or Jane,,Smith",
             "type": "string"
         },
         "phone":{
-            "description": "Phone number (including country code) of submitter or submitter's lab",
+            "description": "Phone number (including country code) of contact or contact's lab.",
             "type": "string"
         }
     }, 
