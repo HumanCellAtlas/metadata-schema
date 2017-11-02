@@ -5,10 +5,6 @@
     "title": "specimen_from_organism",
     "type": "object",
     "properties": {
-        "type" : {
-            "enum" : ["specimen_from_organism"],
-            "description" : "This should always be a specimen_from_organism"
-        },
         "body_part": {
             "$ref": "ontology_json/body_part_ontology.json",
             "description": "A more detailed position within the body than the term given in the organ field."
@@ -19,7 +15,7 @@
         },
         "organ": {
             "$ref": "ontology.json", 
-            "description": "The organ that the sample came from. e.g. liver, spleen. \"Blood\" and \"connective tissue\" count as organs."
+            "description": "The organ that the sample came from. e.g. liver, spleen. Blood and connective tissue count as organs."
         }, 
         "state_of_specimen": {
             "$ref": "state_of_specimen.json",
@@ -28,7 +24,6 @@
     }, 
     "required": [
 	    "body_part",
-        "type",
 	    "organ"
     ]
 }

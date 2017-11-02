@@ -55,7 +55,7 @@
           "type" : "integer"
         },
         "genus_species": {
-            "description": "Scientific binomial name of donor species. e.g. \"homo sapiens\". NCBI taxon in ontology field.",
+            "description": "Scientific binomial name of donor species. e.g. Homo sapiens.",
             "$ref": "ontology.json"
         },
         "supplementary_files": {
