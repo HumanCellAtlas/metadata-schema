@@ -23,10 +23,6 @@
         "core": {
 	        "description": "type and schema for this object",
             "$ref": "core.json"
-        }, 
-        "description": {
-            "description": "A text-based description of the protocol.",
-            "type": "string"
         },
         "pdf": {
             "description": "A filename of a PDF containing the details of the protocol.",
