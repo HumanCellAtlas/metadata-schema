@@ -14,16 +14,16 @@ dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0.json')
 # Specific schema tests to follow .
 validate(sv, dt1)
 
-sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
-validate(sv, sfo1)
-
-sample_ingest_validator = get_validator('sample_ingest.json', base_uri)
-sample_ingest_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0-ingest.json')
-validate(sample_ingest_validator, sample_ingest_file)
-
-sample_ingest_file = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0-ingest.json')
-validate(sample_ingest_validator, sample_ingest_file)
-
-sample_bundle_validator = get_validator('sample_bundle.json', base_uri)
-sample_bundle_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_bundle.json')
-validate(sample_bundle_validator, sample_bundle_file)
+# sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
+# validate(sv, sfo1)
+#
+# sample_ingest_validator = get_validator('sample_ingest.json', base_uri)
+# sample_ingest_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0-ingest.json')
+# validate(sample_ingest_validator, sample_ingest_file)
+#
+# sample_ingest_file = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0-ingest.json')
+# validate(sample_ingest_validator, sample_ingest_file)
+#
+# sample_bundle_validator = get_validator('sample_bundle.json', base_uri)
+# sample_bundle_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_bundle.json')
+# validate(sample_bundle_validator, sample_bundle_file)

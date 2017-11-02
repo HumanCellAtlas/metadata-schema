@@ -5,7 +5,7 @@
     "properties": {
          "type" : {
             "enum" : ["donor"],
-            "description" : "This should always be a specimen_from_organism"
+            "description" : "This should always be a donor"
         },
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",

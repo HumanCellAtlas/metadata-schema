@@ -8,13 +8,13 @@
 
        }
     },
-    "allOf" : [{"required" : ["id", "ncbi_taxon_id"]}],
-    "oneOf" : [{"required" : ["donor_description"]},
-              {"required" : ["immortalized_cell_line_description"]},
-              {"required" : ["cell_suspension_description"]},
-              {"required" : ["organoid_description"]},
-              {"required" : ["primary_cell_line_description"]},
-              {"required" : ["specimen_from_organism_description"]}
+    "allOf" : [{"required" : ["sample_id", "ncbi_taxon_id"]}],
+    "oneOf" : [{"required" : ["donor"]},
+              {"required" : ["immortalized_cell_line"]},
+              {"required" : ["cell_suspension"]},
+              {"required" : ["organoid"]},
+              {"required" : ["primary_cell_line"]},
+              {"required" : ["specimen_from_organism"]}
               ],
 
     "properties": {
@@ -31,22 +31,22 @@
             "description": "A general description of the sample.",
             "type": "string"
         },
-        "donor_description" : {
+        "donor" : {
           "$ref": "donor.json"
         },
-        "specimen_from_organism_description" : {
+        "specimen_from_organism" : {
           "$ref": "specimen_from_organism.json"
         },
-         "immortalized_cell_line_description" : {
+         "immortalized_cell_line" : {
           "$ref": "immortalized_cell_line.json"
         },
-        "primary_cell_line_description" : {
+        "primary_cell_line" : {
           "$ref": "primary_cell_line.json"
         },
-        "organoid_description" : {
+        "organoid" : {
           "$ref": "organoid.json"
         },
-        "cell_suspension_description" : {
+        "cell_suspension" : {
           "$ref": "cell_suspension.json"
         },
 
