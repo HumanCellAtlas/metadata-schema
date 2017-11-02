@@ -1,9 +1,10 @@
 {
-    "id": "s1",
-    "type": "sample_from_organism",
+    "sample_id": "s1",
     "name": "PBMCs",
     "description": "peripheral blood mononuclear cells (PBMCs)",
-    "sample_from_organism" : {
+    "ncbi_taxon_id": 9606,
+    "specimen_from_organism" : {
+       "type": "specimen_from_organism",
        "organ": {
             "text": "blood",
             "ontology": "UBERON_0000178"

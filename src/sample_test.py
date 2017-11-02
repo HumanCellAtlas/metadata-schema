@@ -14,8 +14,8 @@ dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0.json')
 # Specific schema tests to follow .
 validate(sv, dt1)
 
-# sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
-# validate(sv, sfo1)
+sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
+validate(sv, sfo1)
 #
 # sample_ingest_validator = get_validator('sample_ingest.json', base_uri)
 # sample_ingest_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0-ingest.json')
