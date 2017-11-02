@@ -47,7 +47,8 @@
             "additionalProperties" : false,
              "properties": {
                 "biosd_sample": {
-                    "description": "An EBI BioSamples ID.",
+                    "description": "An EMBL-EBI BioSamples ID.",
+                    "pattern": "^SAM(?:N|D|EA|E|EG)[0-9]+$",
                     "type": "string"
                 }, 
                 "ncbi_biosample": {
