@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A schema for a sample bundle" ,
+  "description": "A schema for an assay bundle" ,
   "type": "array",
   "definitions" : {
-    "sample_ingest" : {
+    "assay_ingest" : {
       "type": "object",
       "required": ["hca_ingest", "content"],
       "properties": {
@@ -13,12 +13,9 @@
           "type": "object"
         },
         "content": {
-          "$ref": "sample.json",
-          "description": "Sample content",
+          "$ref": "assay.json",
+          "description": "Assay content",
           "type": "object"
-        },
-        "derived_from": {
-          "type": "string"
         },
         "derivation_protocols": {
           "items": {
@@ -31,6 +28,6 @@
     }
   },
   "items": {
-    "$ref": "sample_bundle.json#/definitions/sample_ingest"
+    "$ref": "assay_bundle.json#/definitions/assay_ingest"
   }
 }
