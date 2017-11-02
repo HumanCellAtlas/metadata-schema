@@ -4,26 +4,26 @@
     "description": "A publication contains information about a journal article, book, web page or other external available documentation on a project", 
     "properties": {
         "authors": {
-            "description": "Authors associated with piblication.  Each is in last-name initials format such as:  \"Tran NM\" or \"Kowalczyk M\" or \"de Silva-Schmidt CKJ\"", 
+            "description": "A list of authors associated with the publication. Should be in \"surname initials\" format. e.g. \"Tran NM\", \"Kowalczyk M\", \"de Silva-Schmidt CKJ\"",
             "items": {
                 "type": "string"
             }, 
             "type": "array"
         },
         "doi": {
-            "description": "Publication digital object identifier.  Example \"10.1016/j.cell.2016.07.054\"", 
+            "description": "The publication digital object identifier (doi), if available. e.g. \"10.1016/j.cell.2016.07.054\"",
             "type": "string"
         }, 
         "pmid": {
-            "description": "PubMed ID of publication", 
+            "description": "A PubMed ID of the publication, if available. e.g. 27565351",
             "type": "integer"
         }, 
         "title": {
-            "description": "Title of publication", 
+            "description": "The full title of the publication.",
             "type": "string"
         }, 
         "url": {
-            "description": "URL, preferably not behind a paywall, for publication", 
+            "description": "A URL, preferably not behind a paywall, for the publication.",
             "type": "string"
         }
     },
