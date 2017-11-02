@@ -1,7 +1,10 @@
 {
+    "core" : {
+      "schema_version" : "4.0.0",
+      "type" : "sample"
+    },
     "sample_id": "d1",
     "donor" : {
-          "type": "donor",
           "is_living": true,
           "life_stage": "adult"
     },
@@ -10,5 +13,4 @@
       "text": "Homo sapiens",
       "ontology": "NCBITAXON_9606"
     }
-
 }
