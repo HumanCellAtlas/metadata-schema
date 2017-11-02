@@ -83,12 +83,12 @@
              "properties": {
                 "biosd_sample": {
                     "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
-                    "pattern": "^SAM[N|E|D]\d+$",
+                    "pattern": "^SAM[N|E|D][0-9]+$",
                     "type": "string"
                 },
                 "insdc_sample": {
                     "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
-                    "pattern": "^[D|E|S]RS\d+$",
+                    "pattern": "^[D|E|S]RS[0-9]+$",
                     "type": "string"
                 }
             }

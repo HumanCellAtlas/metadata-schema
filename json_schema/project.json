@@ -64,7 +64,7 @@
         },
         "insdc_study": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
-            "pattern": "^PRJ[E|N|D]\w\d+$",
+            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "type": "string"
         },
         "publications": {

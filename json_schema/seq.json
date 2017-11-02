@@ -11,26 +11,26 @@
 			            "type": "number"
                     }, 
                     "r1": {
-                        "description": "File name of first read in paired read sequencing assay, or only read for unpaired", 
+                        "description": "File name of first read in paired-end read sequencing assay, or only read for unpaired.",
                         "type": "string"
                     }, 
                     "r2": {
-                        "description": "File name of second read in paired read assay", 
+                        "description": "File name of second read in paired-end read assay.",
                         "type": "string"
                     }, 
 		            "i1": {
-		                "description": "A barcode index file.  Often index off of first read",
+		                "description": "A barcode index file. Often index off of first read.",
 			            "type": "string"
                     },
                     "i2": {
-                        "description": "A barcode index file.  Often index off of second read",
+                        "description": "A barcode index file. Often index off of second read.",
                         "type": "string"
                     }
                 }, 
                 "required": [
                     "r1"
                 ],
-                "title": "a sequencing lane",
+                "title": "A sequencing lane.",
                 "type": "object"
             },
 	        "title": "lane array",
@@ -41,13 +41,13 @@
     "properties": {
         "insdc_experiment": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
-            "pattern": "^[D|E|S]RX\d+$",
+            "pattern": "^[D|E|S]RX[0-9]+$",
             "type": "string"
         },
         "insdc_run": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
             "items": {
-                "pattern": "^[D|E|S]RR\d+$",
+                "pattern": "^[D|E|S]RR[0-9]+$",
                 "type": "string"
             },
             "type": "array"
