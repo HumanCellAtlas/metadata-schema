@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "Information about the data files produced from single cells.",
+    "title": "file",
+    "type": "object",
+    "properties": {
+        "filename": {
+            "description": "A filename for a data file. Must have a valid extension.",
+            "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$",
+            "type": "string"
+        },
+        "file_format": {
+            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, png."
+            "enum": [
+                "fastq",
+                "fastq.gz",
+                "tiff",
+                "jpg",
+                "png"
+            ]
+        },
+        "sample_id" : {
+            "type" : "string",
+            "description" : "The ID of the sample from which the data file was generated.",
+        },
+
+    },
+    "required": [
+	    "filename",
+        "sample_id"
+    ]
+}
