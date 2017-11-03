@@ -18,6 +18,7 @@ for d in dlist:
 
 valid = True
 for s in schemas_to_test:
-    test_local(path_to_schema_dir = path_to_schemas , 
+    print("Checking whether %s.json is a valid json schema" % s)
+    test_local(path_to_schema_dir = path_to_schemas ,
                schema_file = s + '.json',
                test_dir = path_to_test + s + '/pass/')
