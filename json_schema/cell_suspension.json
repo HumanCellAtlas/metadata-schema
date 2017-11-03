@@ -23,8 +23,5 @@
             "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
         }
      },
-    "title" : "cell_suspension",
-    "required":[
-        "sample_type"
-    ]
+    "title" : "cell_suspension"
 }

@@ -1,4 +1,11 @@
 {
+  "core" : {
+    "document_id": "a37dbd93-b93a-4838-a7bb-cd0796b3d9d0",
+    "submissionDate": "2017-10-13T09:18:49.422Z",
+    "updateDate": "2017-10-13T09:19:40.069Z",
+    "accession": "SAM0888697"
+  },
+  "content" : {
     "core" : {
       "schema_version" : "4.0.0",
       "type" : "sample"
@@ -17,4 +24,5 @@
         }
     },
     "derived_from": "d1"
+  }
 }

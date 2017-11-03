@@ -38,7 +38,7 @@
         }
     }, 
     "required": [
-	    "core", "id"
+	    "core", "assay_id"
     ],
     "title": "assay", 
     "type": "object"

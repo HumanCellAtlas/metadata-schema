@@ -3,10 +3,6 @@
     "description": "Information about the donor from which a specimen was collected",
     "additionalProperties" : false,
     "properties": {
-         "type" : {
-            "enum" : ["donor"],
-            "description" : "This should always be a donor"
-        },
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
             "maximum": 150, 
@@ -121,7 +117,7 @@
         }
     }, 
     "required": [
-        "is_living", "type"
+        "is_living"
     ],
     "title": "donor",
     "type": "object"

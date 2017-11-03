@@ -92,7 +92,7 @@
     "required": [
     	"core",
 	    "contributors",
-        "id"
+        "project_id"
     ],
     "title": "project",
     "type": "object"

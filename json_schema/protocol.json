@@ -40,7 +40,7 @@
     }, 
     "required": [
     	"core",
-        "id",
+        "protocol_id",
         "type"
     ], 
     "title": "protocol", 

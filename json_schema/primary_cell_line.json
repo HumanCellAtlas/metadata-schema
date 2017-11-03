@@ -27,10 +27,6 @@
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
         }
     },
-    "required":[
-        "sample_type",
-        "name"
-    ],
     "title": "primary_cell_line",
     "type": "object"
 }
