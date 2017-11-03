@@ -11,7 +11,7 @@
             "type": "string"
         },
         "file_format": {
-            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, png."
+            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, png.",
             "enum": [
                 "fastq",
                 "fastq.gz",
@@ -22,9 +22,8 @@
         },
         "sample_id" : {
             "type" : "string",
-            "description" : "The ID of the sample from which the data file was generated.",
-        },
-
+            "description" : "The ID of the sample from which the data file was generated."
+        }
     },
     "required": [
 	    "filename",

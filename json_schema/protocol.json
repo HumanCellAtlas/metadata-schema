@@ -30,7 +30,7 @@
             "type": "string"
         }, 
         "retail_name": {
-            "description": "The retail name of the kit used. e.g SureCell WTA 3\' Library Prep Kit",
+            "description": "The retail name of the kit used. e.g SureCell WTA 3' Library Prep Kit",
             "type": "string"
         },
         "type": {

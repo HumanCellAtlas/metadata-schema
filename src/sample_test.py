@@ -1,11 +1,12 @@
 from schema_test_suite import get_validator, get_json_from_file, validate
 import os
+import sys
 import subprocess
 
 # Simple first test - are json files in json_schema folder
 # valid json schema docs?
 
-## Flag for tracking the exit status of validate() calls
+# Flag for tracking the exit status of validate() calls
 status_flag = True
 
 os.chdir('../json_schema')
@@ -13,20 +14,37 @@ pwd = subprocess.check_output('pwd').decode("utf-8").rstrip()
 base_uri = "file://" + pwd + "/"
 print(base_uri)
 
+print('\nValidating sample.json')
 sv = get_validator('sample.json', base_uri)
+
+# Specific schema tests follow
+
+print('\nValidating schema_test_files/10x_pbmc8k_donor_0.json')
 dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0.json')
-# Specific schema tests to follow .
-if not validate(sv, dt1): ## will return False if fails (show return value)
+if not validate(sv, dt1): # will return False if fails (show return value)
     status_flag = False
 
+print('\nValidating schema_test_files/10x_pbmc8k_sample_0.json')
 sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
 if not validate(sv, sfo1):
     status_flag = False
 
+print('\nValidating schema_tests/sample/fail/sample-test-current.json')
+sf1 = get_json_from_file('../schema_tests/sample/fail/sample-test-current.json')
+if not validate(sv, sf1):
+    status_flag = False
+
+# Specific bundle tests follow
+
+print('\nValidating sample_bundle.json')
 sample_bundle_validator = get_validator('sample_bundle.json', base_uri)
+
+print('\nValidating schema_test_files/10x_pbmc8k_sample_bundle.json')
 sample_bundle_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_bundle.json')
 if not validate(sample_bundle_validator, sample_bundle_file):
     status_flag = False
 
+# If any of the validate() calls failed, set exit status to 1
+# Without this line, failed validate() will result in exit status 0
 if not status_flag:
-    print('validate() failed.')
+    sys.exit(1)
