@@ -9,4 +9,6 @@ install:
 
 script:
    - cd src
-   - python test.py
+   # python test.py
+   ## temporary patch
+   - python sample_test.py
