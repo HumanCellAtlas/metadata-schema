@@ -81,6 +81,13 @@
             },
             "type": "array"
         },
+        "submitters": {
+	        "description": "List of people submitting data to the project.",
+            "items": {
+                "$ref": "contact.json"
+            },
+            "type": "array"
+        },
         "supplementary_files": {
             "description": "Project-level supplementary files. e.g. experimental design documents, lab spreadsheets, manuscripts in preparation.",
             "items": {
