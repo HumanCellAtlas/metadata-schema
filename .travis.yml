@@ -11,4 +11,5 @@ script:
    - cd src
    # python test.py
    ## temporary patch
+   - python simple_test.py
    - python sample_test.py

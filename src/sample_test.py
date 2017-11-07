@@ -3,8 +3,10 @@ import os
 import sys
 import subprocess
 
-# Simple first test - are json files in json_schema folder
-# valid json schema docs?
+"""
+Sample test: Are JSON files that are in the 
+schema_test* folders valid JSON schema?
+"""
 
 # Flag for tracking the exit status of validate() calls
 status_flag = True
@@ -29,7 +31,7 @@ sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
 if not validate(sv, sfo1):
     status_flag = False
 
-print('\nValidating schema_tests/sample/fail/sample-test-current.json (This should fail)')
+print('\nValidating schema_tests/sample/fail/sample-test-current.json\n(This should fail)')
 sf1 = get_json_from_file('../schema_tests/sample/fail/sample-test-current.json')
 # This should fail. If it fails, keep status_flag = True
 if validate(sv, sf1):
@@ -45,8 +47,8 @@ sample_bundle_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_
 if not validate(sample_bundle_validator, sample_bundle_file):
     status_flag = False
 
-# If any of the validate() calls fail, set exit status to 1
-# Failed validate() calls on things that are supposed to fail will not affect exit status
-# Without the following line, failed validate() will result in exit status 0, which is not desirable
+# If any of the validate() calls fail, set exit status to 1.
+# Failed validate() calls on things that are supposed to fail will not affect exit status.
+# Without the following line, failed validate() will result in exit status 0, which is not desirable.
 if not status_flag:
     sys.exit(1)
