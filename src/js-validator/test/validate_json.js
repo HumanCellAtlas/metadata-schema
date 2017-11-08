@@ -84,8 +84,8 @@ function getCompiledSchemas(){
 }
 
 
-var donor = require("../../../schema_tests/sample/donor_test1.json");
-var sample = require("../../../schema_tests/sample/sample-test-current.json");
+var donor = require("../../../schema_tests/sample/pass/donor_test1.json");
+var sample = require("../../../schema_tests/sample/fail/sample-test-current.json");
 
 var validate = getCompiledSchemas();
 
@@ -96,5 +96,9 @@ function test(data) {
     var valid = validate(data);
     if (valid) console.log('Valid!');
     else console.log('Invalid: ' + ajv.errorsText(validate.errors));
+    
+    validate.errors.forEach((error) =>{	
+    	console.log(error);
+    });
 
 }
