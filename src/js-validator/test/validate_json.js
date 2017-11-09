@@ -1,30 +1,9 @@
-var Ajv = require('ajv');
-var ajv = new Ajv({allErrors: true,
-    verbose : true,
-    meta: false, // optional, to prevent adding draft-06 meta-schema
-    extendRefs: true, // optional, current default is to 'fail', spec behaviour is to 'ignore'
-    unknownFormats: 'ignore',  // optional, current default is true (fail)
-});
-
-var metaSchema = require('ajv/lib/refs/json-schema-draft-04.json');
-ajv.addMetaSchema(metaSchema);
-ajv._opts.defaultMeta = metaSchema.id;
-
-// optional, using unversioned URI is out of spec, see https://github.com/json-schema-org/json-schema-spec/issues/216
-ajv._refs['http://json-schema.org/schema'] = 'http://json-schema.org/draft-04/schema';
-
-// Optionally you can also disable keywords defined in draft-06
-ajv.removeKeyword('propertyNames');
-ajv.removeKeyword('contains');
-ajv.removeKeyword('const');
-
-
-var fs = require('fs');
-var path = require('path')
-
-var f = [];
+const Ajv = require('ajv');
+const fs = require('fs');
+const path = require('path')
 
 function fromDir(startPath,filter){
+    var f = []
     if (!fs.existsSync(startPath)){
         console.log("no dir ",startPath);
         return;
@@ -35,7 +14,7 @@ function fromDir(startPath,filter){
         var filename=path.join(startPath,files[i]);
         var stat = fs.lstatSync(filename);
         if (stat.isDirectory()){
-            fromDir(filename,filter); //recurse
+            f.push(...fromDir(filename,filter)); //recurse
         }
         else if (filename.indexOf(filter)>=0) {
             console.log('-- found: ',filename);
@@ -46,58 +25,67 @@ function fromDir(startPath,filter){
 };
 
 
-var jsonFiles = fromDir("../../../json_schema/", ".json");
+function createConfiguredAjv(){
+	var ajv = new Ajv({allErrors: true,
+	    verbose : true,
+	    meta: false, // optional, to prevent adding draft-06 meta-schema
+	    extendRefs: true, // optional, current default is to 'fail', spec behaviour is to 'ignore'
+	    unknownFormats: 'ignore',  // optional, current default is true (fail)
+	    errorDataPath: 'property',
+	    messages: true,
+	    jsonPointers: false,
+	    inlineRefs: false,
+	    addUsedSchema: true,
+	    passContext: true
+	});
 
+	var metaSchema = require('ajv/lib/refs/json-schema-draft-04.json');
+	ajv.addMetaSchema(metaSchema);
+	ajv._opts.defaultMeta = metaSchema.id;
 
+	// optional, using unversioned URI is out of spec, see https://github.com/json-schema-org/json-schema-spec/issues/216
+	ajv._refs['http://json-schema.org/schema'] = 'http://json-schema.org/draft-04/schema';
 
+	// Optionally you can also disable keywords defined in draft-06
+	ajv.removeKeyword('propertyNames');
+	ajv.removeKeyword('contains');
+	ajv.removeKeyword('const');
 
+    // add the schemas
+    var schemaFiles = fromDir("../../../json_schema/", ".json");
 
-function getCompiledSchemas(){
+    schemaFiles
+        .filter((schemaFile) => !schemaFile.includes("analysis.json"))
+        .forEach((schemaFile) => {
+            var schema = require(schemaFile);
+            schema.id = schemaFile;
+        ajv.addSchema(require(schemaFile), schemaFile);
+    });
 
-    var schemas = []
+    return ajv;
+}
 
-    for(var i=0; i< jsonFiles.length; i++){
-
-        if(jsonFiles[i].indexOf("analysis") == -1){
-            var filename = jsonFiles[i];
-            var schema = require(filename);
-
-            if(schema.id === undefined){
-                schema.id = filename
-            }
-            ajv.addSchema(schema);
-            schemas.push(schema)
-
-        }
-        else{
-            console.log("we don't want to look at " + jsonFiles[i]);
-        }
-    }
-
-    var validate;
-    for(var j=0; j< schemas.length; j++){
-
-        validate = ajv.compile(schemas[j]);
-        console.log("Schema " + schemas[j].title + ".json is a valid json schema")
-    }
-    return validate;
+function getValidatorFunctionForSchema(ajvValidator, schemaPath){
+	schema = require(schemaPath);
+	return ajvValidator.compile(schema);
 }
 
 
 var donor = require("../../../schema_tests/sample/pass/donor_test1.json");
 var sample = require("../../../schema_tests/sample/fail/sample-test-current.json");
 
-var validate = getCompiledSchemas();
 
-test(donor);
-test(sample);
+test(donor, "../../../json_schema/sample.json");
+test(sample, "../../../json_schema/sample.json");
 
-function test(data) {
-    var valid = validate(data);
+function test(data, schema) {	
+    var ajv = createConfiguredAjv()
+    var validator = getValidatorFunctionForSchema(ajv, schema)
+    var valid = validator(data);
     if (valid) console.log('Valid!');
-    else console.log('Invalid: ' + ajv.errorsText(validate.errors));
+    else console.log('Invalid: ' + ajv.errorsText(validator.errors));
     
-    validate.errors.forEach((error) =>{	
+    validator.errors.forEach((error) =>{	
     	console.log(error);
     });
 
