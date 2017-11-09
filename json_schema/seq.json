@@ -75,7 +75,7 @@
             "$ref": "#/definitions/lanes"
         },
         "library_construction": {
-            "description": "How the DNA sequencing library was prepared. e.g. \"Nextera XT\" \"TrueSeq\".",
+            "description": "How the DNA sequencing library was prepared. e.g. Nextera XT, TrueSeq.",
             "enum": [
                 "Nextera XT",
                 "TruSeq",
@@ -94,7 +94,6 @@
         "molecule": {
             "description": "Specific type of molecule sequenced. e.g. total RNA, genomic DNA, polyA RNA.",
             "enum": [
-                "RNA",
                 "polyA RNA",
                 "total RNA",
                 "genomic DNA"
@@ -105,7 +104,7 @@
             "type": "boolean"
         },
         "umi_barcode": {
-            "description": "Information about unique molecular identifier (umi) barcode.",
+            "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "$ref": "barcode.json"
         }
     }, 

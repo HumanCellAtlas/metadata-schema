@@ -3,24 +3,24 @@
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "properties": {
         "target_cell_type": {
-            "description" : "cell types present in suspension",
+            "description" : "Cell types present in the suspension.",
             "type": "array",
             "items": {"$ref": "ontology_json/cell_type_ontology.json" }
        },
         "enrichment": {
-            "description": "How cells were enriched for specific type or to weed out common types after disassociation.",
+            "description": "How sample was enriched for specific cell type(s).",
             "type": "array",            
             "items": { "$ref": "enrichment.json" }
         },
         "total_estimated_cells": {
-            "description": "Total estimated number of cells in sample.  May be 1 for well based assays.",
+            "description": "Total estimated number of cells in sample. May be 1 for well-based assays.",
             "maximum": 1000000000.0,
             "minimum": 0.1,
             "type": "number"
         },
         "well": {
             "$ref": "well.json",
-            "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
+            "description": "Information about wells in a plate or chip used for single-cell isolation."
         }
      },
     "title" : "cell_suspension"

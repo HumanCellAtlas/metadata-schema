@@ -11,11 +11,11 @@
     }, 
     "properties": {
         "project_id":{
-            "description": "A unique ID for the project.",
+            "description": "A unique ID for this project.",
             "type": "string"
         },
         "name": {
-            "description": "A short descriptive name for the entity project. Does not need to be unique.",
+            "description": "A short, descriptive name for the project that need not be unique.",
             "type": "string"
         },
         "description": {

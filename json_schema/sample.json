@@ -20,7 +20,7 @@
     "properties": {
         "core": { "$ref": "core.json" },
         "sample_id":{
-            "description": "A local identifier for the sample. Should be unique in the context of the project.",
+            "description": "A unique ID for this sample.",
             "type": "string"
         },
         "name": {

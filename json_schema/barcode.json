@@ -10,17 +10,18 @@
             "type": "integer"
         }, 
         "size": {
-            "description": "Size of barcode.", 
+            "description": "Size of barcode in nucleotides.",
             "maximum": 50, 
             "minimum": 0, 
             "type": "integer"
         }, 
         "read": {
-            "description": "Which read barcode is found on. Should be one of read1, read2, reads, or index, or some TBD field of seq.lane.",
+            "description": "The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index.",
             "enum": [
-                "r1", 
-                "r2", 
-                "i1"
+                "Read 1",
+                "Read 2",
+                "i7 Index",
+                "i5 Index"
             ]
         }, 
 	   "white_list_file": {

@@ -5,22 +5,23 @@
     "description": "contact schema generate by tagSchemaToJson from contact", 
     "properties": {
         "address": {
-            "description": "Full mailing address except for name.  Includes city, state, postal code, country.", 
+            "description": "Full mailing address where contact works. Should include street name and number, city, state, postal code, country.",
             "type": "string"
         }, 
         "city": {
-            "description": "City name.  See also contact.address", 
+            "description": "Name of city where contact works.",
             "type": "string"
         }, 
         "country": {
-            "description": "Country (USA or UK for those countries, otherwise spelled out)", 
+            "description": "Name of country where contact works. Please spell out (except for USA or UK).",
             "enum": [
                 "Austria", 
                 "Canada", 
                 "China", 
                 "France", 
                 "Germany", 
-                "Japan", 
+                "Israel",
+                "Japan",
                 "Sweden", 
                 "Switzerland", 
                 "UK", 
@@ -28,7 +29,7 @@
             ]
         }, 
         "country_division": {
-            "description": "State in the USA, provence, canton, or other subdivisions for other countries.", 
+            "description": "Name of state, province, canton, or other country subdivision.",
             "enum": [
                 "AL", 
                 "AK", 
