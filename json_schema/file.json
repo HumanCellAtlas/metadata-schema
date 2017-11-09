@@ -19,14 +19,9 @@
                 "jpg",
                 "png"
             ]
-        },
-        "sample_id" : {
-            "type" : "string",
-            "description" : "The ID of the sample from which the data file was generated."
         }
     },
     "required": [
-	    "filename",
-        "sample_id"
+	    "filename"
     ]
 }
