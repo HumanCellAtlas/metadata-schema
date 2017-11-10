@@ -10,7 +10,7 @@
 		"additionalProperties" : false,
 		"type" : "array",
 		"items" : {
-			"$ref" : "#/definitions/file"	
+			"$ref" : "submission.json#/definitions/file"
 		}
 	},
 	"file" : {
@@ -72,10 +72,10 @@
     },
     "properties" : {
     	"transfer_service_version" : {
-		"$ref" : "#/definitions/transfer_service_version"
+		"$ref" : "submission.json#/definitions/transfer_service_version"
 	},
 	"submitted_files" : {
-		"$ref" : "#/definitions/submitted_files"
+		"$ref" : "submission.json#/definitions/submitted_files"
 	}
     },
     "required" : [

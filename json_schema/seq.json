@@ -72,7 +72,7 @@
             ]
         },
         "lanes": {
-            "$ref": "#/definitions/lanes"
+            "$ref": "seq.json#/definitions/lanes"
         },
         "library_construction": {
             "description": "How the DNA sequencing library was prepared. e.g. Nextera XT, TrueSeq.",
