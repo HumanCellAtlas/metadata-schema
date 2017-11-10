@@ -75,6 +75,10 @@
       "reference_bundle" : {
          "description" : "Bundle containing the reference used in running the pipeline.",
          "type" : "uri"
+      },
+      "core": {
+            "description": "Type and schema for this object.",
+            "$ref": "core.json"
       }
    },
    "type" : "object",

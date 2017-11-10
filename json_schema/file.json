@@ -19,7 +19,11 @@
                 "jpg",
                 "png"
             ]
-        }
+        },
+        "core": {
+            "description": "Type and schema for this object.",
+            "$ref": "core.json"
+        },
     },
     "required": [
 	    "filename"

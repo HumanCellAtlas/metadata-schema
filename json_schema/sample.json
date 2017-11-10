@@ -18,7 +18,10 @@
               ],
 
     "properties": {
-        "core": { "$ref": "core.json" },
+        "core": {
+            "description": "Type and schema for this object.",
+            "$ref": "core.json"
+        },
         "sample_id":{
             "description": "A unique ID for this sample.",
             "type": "string"
