@@ -17,8 +17,8 @@
         "library_construction": {
             "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x.",
             "enum": [
-		        "unknown",
-                "CEL-seq", 
+                "unknown",
+                "CEL-seq",
                 "SMARTer Ultra Low RNA Kit",
                 "modified smart-seq2",
                 "smart-seq2",
