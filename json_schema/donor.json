@@ -1,8 +1,22 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://schema.humancellatlas.org/sample/5.0.0/sample.json#",
     "description": "Information about the donor from which a specimen was collected",
     "additionalProperties" : false,
+    "required" : ["sample_core", "is_living"],
     "properties": {
+        "self" : {
+            "schema_url" : "http://hca.org/schema/sample/donor/5.2.0/donor.json",
+            "version" : "5.0.1"
+        },
+        "type" : "donor",
+        "sample_core" : {
+            "$ref": "http://hca.org/schema/sample/5.0.0/sample_core.json"
+        },
+        "schema" : {"type" : "string"},
+        "death": {
+	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
+            "$ref": "http://hca.org/schema/sample/donor/death/5.2.0/death.json"
+        },
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
             "maximum": 150, 
@@ -35,11 +49,7 @@
             "maximum": 100, 
             "minimum": 5, 
             "type": "number"
-        }, 
-        "death": {
-	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
-            "$ref": "death.json"
-        }, 
+        },
         "development_stage": {
 	        "description": "More detailed (especially for embryos) version of life_stage. e.g. \"E9\" or \"P17\" for mouse.",
             "$ref": "ontology.json"
@@ -115,10 +125,7 @@
             "minimum": 0, 
             "type": "number"
         }
-    }, 
-    "required": [
-        "is_living"
-    ],
+    },
     "title": "donor",
     "type": "object"
 }
