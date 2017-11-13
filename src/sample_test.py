@@ -16,8 +16,8 @@ pwd = subprocess.check_output('pwd').decode("utf-8").rstrip()
 base_uri = "file://" + pwd + "/"
 print(base_uri)
 
-print('\nValidating sample.json')
-sv = get_validator('sample.json', base_uri)
+print('\nValidating sample_core.json')
+sv = get_validator('sample_core.json', base_uri)
 
 # Specific schema tests follow
 

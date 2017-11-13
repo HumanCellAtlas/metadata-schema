@@ -1,11 +1,19 @@
 {       
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
+    "required" : ["self","sample_core", "enrichment"],
     "properties": {
+        "self" : {
+            "schema_url" : "http://hca.org/schema/sample/donor/5.0.0/donor.json",
+            "version" : "5.0.1"
+        },
+        "sample_core" : {
+            "$ref": "http://schema.humancellatlas.org/sample/5.0.0/sample_core.json"
+        },
         "target_cell_type": {
             "description" : "Cell types present in the suspension.",
             "type": "array",
-            "items": {"$ref": "ontology_json/cell_type_ontology.json" }
+            "items": {"$ref": "ontology_json/cell_type_ontology.json"}
        },
         "enrichment": {
             "description": "How sample was enriched for specific cell type(s).",
@@ -23,5 +31,6 @@
             "description": "Information about wells in a plate or chip used for single-cell isolation."
         }
      },
-    "title" : "cell_suspension"
+    "title" : "cell_suspension",
+    "type": "object"
 }

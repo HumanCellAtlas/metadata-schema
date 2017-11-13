@@ -5,18 +5,17 @@
     "required" : ["sample_core", "is_living"],
     "properties": {
         "self" : {
-            "schema_url" : "http://hca.org/schema/sample/donor/5.2.0/donor.json",
+            "schema_url" : "http://hca.org/schema/sample/donor/5.0.0/donor.json",
             "version" : "5.0.1"
         },
-        "type" : "donor",
         "sample_core" : {
-            "$ref": "http://hca.org/schema/sample/5.0.0/sample_core.json"
+            "$ref": "http://schema.humancellatlas.org/sample/5.0.0/sample_core.json"
         },
-        "schema" : {"type" : "string"},
         "death": {
 	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
-            "$ref": "http://hca.org/schema/sample/donor/death/5.2.0/death.json"
+            "$ref": "http://schema.humancellatlas.org/sample/donor/death/5.2.0/death.json"
         },
+        "schema" : {"type" : "string"},
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
             "maximum": 150, 
@@ -36,7 +35,6 @@
             "description": "Number of drinks consumed on a typical day.",
             "type": "string"
         },
-
         "ancestry": {
             "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
 	        "type": "array",
@@ -51,7 +49,7 @@
             "type": "number"
         },
         "development_stage": {
-	        "description": "More detailed (especially for embryos) version of life_stage. e.g. \"E9\" or \"P17\" for mouse.",
+	        "description": "More detailed (especially for embryos) version of life_stage. e.g. E9 or P17 for mouse.",
             "$ref": "ontology.json"
         }, 
         "disease": {
