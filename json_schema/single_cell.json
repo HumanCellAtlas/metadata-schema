@@ -3,7 +3,7 @@
     "additionalProperties": false, 
     "description": "Contains information on single cell aspects of an assay.", 
     "properties": {
-        "barcode": {
+        "cell_barcode": {
             "description": "Information about cell identifier barcode.",
             "$ref": "barcode.json"
         },
