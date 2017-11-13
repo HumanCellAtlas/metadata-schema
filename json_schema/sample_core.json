@@ -1,5 +1,5 @@
 {
-    "$schema": "http://schema.humancellatlas.org/sample/5.0.0/sample_core.json#",
+    "$schema": "http://schema.humancellatlas.org/sample/5.0.0/sample.json#",
     "description": "A sample contains information on the biosample that was sequenced or imaged. This includes donor, body part, and anything that comes between removing the sample from a donor and the assay.",
     "required" : ["sample_id", "ncbi_taxon_id"],
     "properties": {

@@ -6,16 +6,16 @@
     "properties": {
         "self" : {
             "schema_url" : "http://hca.org/schema/sample/donor/5.0.0/donor.json",
-            "version" : "5.0.1"
+            "version" : "5.0.0"
         },
         "sample_core" : {
+	        "description": "Core sample-level information.",
             "$ref": "http://schema.humancellatlas.org/sample/5.0.0/sample_core.json"
         },
         "death": {
 	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
             "$ref": "http://schema.humancellatlas.org/sample/donor/death/5.2.0/death.json"
         },
-        "schema" : {"type" : "string"},
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
             "maximum": 150, 
