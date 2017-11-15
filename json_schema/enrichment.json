@@ -4,23 +4,23 @@
     "additionalProperties": false,
     "properties": {
         "markers": {
-            "description": "Text in the format of space delimited list of markers with +/-.  Example:  \"CD4+ CD8-\"",
+            "description": "Space-delimited list of markers (with +/-) used for enrichment. e.g. CD4+ CD8-",
             "type": "string"
         },
         "size_max": {
-            "description": "Maximum size passing selection in microns",
+            "description": "Maximum size passing selection, in microns.",
             "maximum": 10000,
             "minimum": 0.01,
             "type": "number"
         },
         "size_min": {
-            "description": "Minimum size passing selection in microns",
+            "description": "Minimum size passing selection, in microns.",
             "maximum": 10000,
             "minimum": 0.01,
             "type": "number"
         },
         "type": {
-            "description": "How enrichment was achieved.  MACS, FACS, filter, etc",
+            "description": "The method by which enrichment was achieved. e.g. MACS, FACS, Ficoli gradient",
             "enum": [
                 "FACS",
                 "MACS",
