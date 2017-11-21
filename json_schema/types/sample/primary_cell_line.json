@@ -1,8 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
+    "id" : "http://schema.humancellatlas.org/types/sample/primary_cell_line/4.0.0/primary_cell_line.json",
     "description": "Information about the primary cell line used in the sample",
+    "additionalProperties": false,
+    "title": "primary_cell_line",
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/sample/primary_cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/primary_cell_line.json”,
+            "type": "string"
+        },
+        "sample_core" : {
+	        "description": "Core sample-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/sample/4.0.0/sample.json"
+        },
         "cell_type": {
 	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
             "$ref": "ontology_json/cell_type_ontology.json"
@@ -27,6 +37,5 @@
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
         }
     },
-    "title": "primary_cell_line",
     "type": "object"
 }

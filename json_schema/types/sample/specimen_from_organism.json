@@ -1,10 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
+    "id" : "http://schema.humancellatlas.org/types/sample/specimen_from_organism/4.0.0/specimen_from_organism.json",
     "description": "Information about the specimen that was extracted from the donor organism.",
+    "additionalProperties": false,
     "title": "specimen_from_organism",
-    "type": "object",
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/sample/specimen_from_organism/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/specimen_from_organism.json”,
+            "type": "string"
+        },
+        "sample_core" : {
+	        "description": "Core sample-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/sample/4.0.0/sample.json"
+        },
         "body_part": {
             "$ref": "ontology_json/body_part_ontology.json",
             "description": "A more detailed position within the body than the term given in the organ field."
@@ -21,5 +29,6 @@
     "required": [
 	    "body_part",
 	    "organ"
-    ]
+    ],
+    "type": "object"
 }
