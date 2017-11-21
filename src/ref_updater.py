@@ -35,14 +35,29 @@ def replaceUrl(jsonSchema, k, v):
     for key in jsonSchema.keys():
         if key == k:
             old = jsonSchema[key]
-            jsonSchema[key] = v + old
+            extension = getExtension(old)
+            jsonSchema[key] = v + extension
         elif type(jsonSchema[key]) is dict:
             replaceUrl(jsonSchema[key], k, v)
 
     return jsonSchema
 
 
+def getExtension(url):
+    extension = ""
+    if "/" in url and url.rfind("/") != url.find("/"):
+        if "json_schema" in url:
+            j = url.find("json_schema")
+            i = url[j:].find("/")
+            extension = url[j+i+1:]
+        else:
+            j = url.find(".json")
+            i = url[:j].rfind("/")
+            extension = url[i+1:]
+    else:
+        extension = url
 
+    return extension
 
 def getJsonFiles(path):
     if os.path.exists(path):
