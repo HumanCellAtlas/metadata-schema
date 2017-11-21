@@ -11,12 +11,12 @@
             ],
             "properties": {
                 "hca_ingest": {
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ingest.json",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ingest.json",
                     "description": "core fields added by HCA ingest service",
                     "type": "object"
                 },
                 "content": {
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/sample.json",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/sample.json",
                     "description": "Sample content",
                     "type": "object"
                 },
@@ -25,7 +25,7 @@
                 },
                 "derivation_protocols": {
                     "items": {
-                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/protocol.json",
+                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/protocol.json",
                         "description": "An array of protocols used in derivation of this sample."
                     },
                     "type": "array"
@@ -34,6 +34,6 @@
         }
     },
     "items": {
-        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/sample_bundle.json#/definitions/sample_ingest"
+        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/sample_bundle.json#/definitions/sample_ingest"
     }
 }

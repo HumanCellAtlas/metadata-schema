@@ -11,12 +11,12 @@
             ],
             "properties": {
                 "hca_ingest": {
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ingest.json",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ingest.json",
                     "description": "core fields added by HCA ingest service",
                     "type": "object"
                 },
                 "content": {
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/project.json",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/project.json",
                     "description": "Project content",
                     "type": "object"
                 }
@@ -24,6 +24,6 @@
         }
     },
     "items": {
-        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/project_bundle.json#/definitions/project_ingest"
+        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/project_bundle.json#/definitions/project_ingest"
     }
 }

@@ -22,7 +22,7 @@
         },
         "core": {
             "description": "type and schema for this object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/core.json"
         },
         "pdf": {
             "description": "A filename of a PDF containing the details of the protocol.",
@@ -34,7 +34,7 @@
             "type": "string"
         },
         "type": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json",
             "description": "The type of protocol. Ideally an EFO term."
         }
     },
