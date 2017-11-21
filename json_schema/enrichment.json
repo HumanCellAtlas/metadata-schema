@@ -1,51 +1,36 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "description": "enrichment schema generate by tagSchemaToJson from enrichment", 
-    "items": {
-        "additionalProperties": false, 
-        "properties": {
-            "core": {
-		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json", 
-		"description": "type and schema for this object"
-            }, 
-            "markers": {
-                "description": "Text in the format of space delimited list of markers with +/-.  Example:  \"CD4+ CD8-\"", 
-                "type": "string"
-            }, 
-            "protocol": {
-                "description": "Refers to an enrichment protocol", 
-                "items": {
-                    "pattern": "^P-....-.*$", 
-                    "type": "string"
-                }, 
-                "type": "array"
-            }, 
-            "size_max": {
-                "description": "Maximum size passing selection in microns", 
-                "maximum": 10000, 
-                "minimum": 0.01, 
-                "type": "number"
-            }, 
-            "size_min": {
-                "description": "Minimum size passing selection in microns", 
-                "maximum": 10000, 
-                "minimum": 0.01, 
-                "type": "number"
-            }, 
-            "type": {
-                "description": "How enrichment was achieved.  MACS, FACS, filter, etc", 
-                "enum": [
-                    "FACS", 
-                    "MACS", 
-                    "Ficoll gradient"
-                ]
-            }
-        }, 
-        "type": "object"
-    }, 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "enrichment schema generate by tagSchemaToJson from enrichment",
+    "additionalProperties": false,
+    "properties": {
+        "markers": {
+            "description": "Space-delimited list of markers (with +/-) used for enrichment. e.g. CD4+ CD8-",
+            "type": "string"
+        },
+        "size_max": {
+            "description": "Maximum size passing selection, in microns.",
+            "maximum": 10000,
+            "minimum": 0.01,
+            "type": "number"
+        },
+        "size_min": {
+            "description": "Minimum size passing selection, in microns.",
+            "maximum": 10000,
+            "minimum": 0.01,
+            "type": "number"
+        },
+        "type": {
+            "description": "The method by which enrichment was achieved. e.g. MACS, FACS, Ficoli gradient",
+            "enum": [
+                "FACS",
+                "MACS",
+                "Ficoll gradient"
+            ]
+        }
+    },
     "required": [
         "type"
-    ], 
-    "title": "enrichment", 
+    ],
+    "title": "enrichment",
     "type": "object"
 }

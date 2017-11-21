@@ -1,131 +1,106 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "project schema generate by tagSchemaToJson from project", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "project schema generate by tagSchemaToJson from project",
     "patternProperties": {
         "^characteristics_.*$": {
-            "description": "FIelds that begin with characteristics_ can contain any value, and the field name can be anything after the prefix", 
+            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
             "type": "string"
         }
-    }, 
+    },
     "properties": {
-        "array_express_investigation": {
-            "description": "EBI Array Express investigation accession", 
-            "pattern": "^E-....-.*$" 
-        }, 
-        "contributors": {
-	    "description": "List of scientists contributing to project",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/contact.json"
-            }, 
-            "type": "array"
-        }, 
-        "core": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json", 
-            "description": "type and schema for this object"
-        }, 
-        "ddjb_trace": {
-            "description": "Japanese trace archive project accession.", 
-            "pattern": "^ERP.*$", 
+        "project_id": {
+            "description": "A unique ID for this project.",
             "type": "string"
-        }, 
+        },
+        "name": {
+            "description": "A short, descriptive name for the project that need not be unique.",
+            "type": "string"
+        },
         "description": {
-            "description": "A paragraph or so description of the the project", 
+            "description": "A general description of the project.",
             "type": "string"
-        }, 
+        },
+        "array_express_investigation": {
+            "description": "An EBI ArrayExpress investigation accession.",
+            "pattern": "^E-....-.*$",
+            "type": "string"
+        },
+        "contributors": {
+            "description": "List of people contributing to the project.",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/contact.json"
+            },
+            "type": "array"
+        },
+        "core": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/core.json",
+            "description": "type and schema for this object"
+        },
         "experimental_design": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
-                "description": "A short description of overall experiment type, such as \"single cell RNA sequencing.\""
-            }, 
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json",
+                "description": "A short description of overall experiment type. e.g. \"single cell RNA sequencing.\""
+            },
             "type": "array"
-        }, 
+        },
         "experimental_factor_name": {
-            "description": "A list of the factors that vary between samples in the experiment.", 
+            "description": "A list of the factors that vary between samples in the experiment. e.g. \"time since collection\", \"preservation method\"",
             "items": {
                 "type": "string"
-            }, 
+            },
             "type": "array"
-        }, 
+        },
         "geo_series": {
-            "description": "NCBI GEO series accession", 
-            "pattern": "^GSE.*$", 
+            "description": "An NCBI GEO series accession.",
+            "pattern": "^GSE.*$",
             "type": "string"
-        }, 
-        "id": {
-            "description": "A unique ID for project, may be GEO or Array Express ID for imported projects", 
+        },
+        "insdc_project": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
+            "pattern": "^[D|E|S]RP[0-9]+$",
             "type": "string"
-        }, 
-        "ncbi_bioproject": {
-            "description": "NCBI bioproject ID", 
-            "pattern": "^PRJNA.*$", 
+        },
+        "insdc_study": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
+            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "type": "string"
-        }, 
-        "protocols": {
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/protocol.json",
-                "description": "An array of protocol modules.  Assay and project protocols reference this."
-            }, 
-            "type": "array"
-        }, 
+        },
         "publications": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/publication.json",
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/publication.json",
                 "description": "An array of publication modules."
-            }, 
+            },
             "type": "array"
-        }, 
+        },
         "related_projects": {
-            "description": "List of other projects that may be logically grouped with this one.", 
+            "description": "A list of other projects that may be logically grouped with this one.",
             "items": {
                 "type": "string"
-            }, 
+            },
             "type": "array"
-        }, 
-        "sra_project": {
-            "description": "NCBI SRA project accession", 
-            "pattern": "^SRP.*$", 
-            "type": "string"
-        }, 
-        "submit_date": {
-            "description": "When project was first submitted to database.", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "submitter": {
-            "description": "Contact who first submitted project", 
-	    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/contact.json"
-        }, 
+        },
+        "submitters": {
+            "description": "List of people submitting data to the project.",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/contact.json"
+            },
+            "type": "array"
+        },
         "supplementary_files": {
-            "description": "Project level supplementary files such as experimental design documents, lab spreadsheets,  manuscripts in preparation.", 
+            "description": "Project-level supplementary files. e.g. experimental design documents, lab spreadsheets, manuscripts in preparation.",
             "items": {
                 "type": "string"
-            }, 
+            },
             "type": "array"
-        }, 
-        "title": {
-            "description": "A sentence long or so title for the project", 
-            "type": "string"
-        }, 
-        "update_date": {
-            "description": "When project was last updated", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "updater": {
-            "description": "Contact who last updated project", 
-	    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/contact.json"
         }
-    }, 
+    },
     "required": [
-	"core",
-	"contributors",
-        "description", 
-        "id", 
-        "submitter", 
-        "title"
-    ], 
-    "title": "project", 
+        "core",
+        "contributors",
+        "project_id"
+    ],
+    "title": "project",
     "type": "object"
 }

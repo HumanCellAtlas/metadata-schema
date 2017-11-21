@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "Information about the data files produced from single cells.",
+    "title": "file",
+    "type": "object",
+    "properties": {
+        "filename": {
+            "description": "A filename for a data file. Must have a valid extension.",
+            "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$",
+            "type": "string"
+        },
+        "file_format": {
+            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, png.",
+            "enum": [
+                "fastq",
+                "fastq.gz",
+                "tiff",
+                "jpg",
+                "png"
+            ]
+        },
+        "core": {
+            "description": "Type and schema for this object.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/core.json"
+        }
+    },
+    "required": [
+        "filename"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "Information about the immortalized cell line used in the sample",
+    "properties": {
+        "catalog_number": {
+            "description": "The supplier catalogue number for the cell line.",
+            "type": "string"
+        },
+        "catalog_url": {
+            "description": "The supplier catalogue URL for the cell line.",
+            "type": "string"
+        },
+        "cell_type": {
+            "description": "What cell type the line was derived from. CLO ontology.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/cell_type_ontology.json"
+        },
+        "date_established": {
+            "description": "When the cell line was established.",
+            "format": "date-time",
+            "type": "string"
+        },
+        "disease": {
+            "description": "A disease associated with the cell line. EFO ontology.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/disease_ontology.json"
+        },
+        "karyotype": {
+            "description": "The karyotype of the cell line.",
+            "type": "string"
+        },
+        "passage_number": {
+            "description": "The number of passages the cell line as been through.",
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "publication": {
+            "description": "The publication in which the cell line creation was cited.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/publication.json"
+        },
+        "cell_cycle": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json",
+            "description": "The cell cycle phase, if known."
+        }
+    },
+    "title": "immortalized_cell_line",
+    "type": "object"
+}

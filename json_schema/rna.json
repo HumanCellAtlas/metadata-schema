@@ -1,73 +1,70 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "Information about how RNA was converted to DNA or otherwise prepared for assay", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "Information about how RNA was converted to cDNA for sequencing.",
     "properties": {
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
-        }, 
         "end_bias": {
-            "description": "\"3' bias\" or \"5' bias\" or \"3' end\" or \"5' end\" or \"none\"", 
+            "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
             "enum": [
-                "three_prime_end", 
-                "three_prime_bias", 
-                "five_prime_end", 
-                "five_prime_bias", 
-                "full_transcript"
+                "three_prime_end",
+                "three_prime_bias",
+                "five_prime_end",
+                "five_prime_bias",
+                "none"
             ]
-        }, 
+        },
         "library_construction": {
-            "description": "Something like smart-seq, true-seq.", 
+            "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x.",
             "enum": [
-		"unknown",
-                "CEL-seq", 
-                "SMARTer Ultra Low RNA Kit", 
-                "modified smart-seq2", 
+                "unknown",
+                "CEL-seq",
+                "SMARTer Ultra Low RNA Kit",
+                "modified smart-seq2",
                 "smart-seq2",
-		"QUARTZ-Seq",
-                "10x_v2", 
-		"drop-seq",
-		"inDrop"
+                "QUARTZ-Seq",
+                "10x_v2",
+                "drop-seq",
+                "inDrop"
             ]
-        }, 
+        },
         "library_protocol": {
-            "description": "RNA preparation protocol", 
-            "pattern": "^P-....-.*$", 
+            "description": "RNA preparation protocol",
+            "pattern": "^P-....-.*$",
             "type": "string"
-        }, 
+        },
         "primer": {
-            "description": "Primer for cDNA synthesis from RNA.  Usually random or poly-dt", 
+            "description": "Primer used for cDNA synthesis from RNA. Must be either poly-dT or random.",
             "enum": [
-                "poly-dt", 
+                "poly-dT",
                 "random"
             ]
-        }, 
+        },
         "spike_in": {
-            "description": "Name of RNA spike in kit.  Usually ERCC", 
+            "description": "Name of RNA spike-in kit. e.g. ERCC.",
             "enum": [
                 "ERCC"
             ]
-        }, 
+        },
         "spike_in_dilution": {
-            "description": "Dilution of RNA spike in", 
-            "maximum": 1000000, 
-            "minimum": 1, 
+            "description": "Dilution of RNA spike-in.",
+            "maximum": 1000000,
+            "minimum": 1,
             "type": "integer"
-        }, 
+        },
         "strand": {
-            "description": "Single stranded?", 
+            "description": "Single stranded?",
             "enum": [
-                "both", 
+                "both",
                 "first"
             ]
         }
-    }, 
+    },
     "required": [
-	"core",
-        "library_construction"
-    ], 
-    "title": "rna", 
+        "end_bias",
+        "library_construction",
+        "strand"
+    ],
+    "title": "rna",
     "type": "object"
 }

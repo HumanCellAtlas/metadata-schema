@@ -3,5 +3,13 @@ language: python
 # python versions to be used for testing
 python:
    - "3.6"
-   
-   
+
+install:
+   - pip install -r requirements.txt
+
+script:
+   - cd src
+   # python test.py
+   ## temporary patch
+   - python simple_test.py
+   - python sample_test.py

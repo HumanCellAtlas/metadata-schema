@@ -1,149 +1,126 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "description": "A sample contains information on the biosample that was sequenced or imaged.  This includes donor, body part, and anything that comes between removing the sample from a body and the assay.", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A sample contains information on the biosample that was sequenced or imaged. This includes donor, body part, and anything that comes between removing the sample from a donor and the assay.",
+    "additionalProperties": false,
     "patternProperties": {
         "^characteristics_.*$": {
-            "description": "FIelds that begin with sample.characteristics_ can contain any value, and the field name can be anything after the prefix", 
+            "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix.",
             "type": "string"
         }
-    }, 
-    "properties": {
-        "biosd_sample": {
-            "description": "EBI biosample ID", 
-            "type": "string"
-        }, 
-        "body_part": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
-            "description": "A more detailed position within the organ where body came from."
-        }, 
-        "cell_cycle": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
-            "description": "If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here"
-        }, 
-        "cell_line": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/cell_line.json",
-            "description": "Description of cell line if any that this came from."
-        }, 
-        "core": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json",
-            "description": "type and schema for this object"
-        }, 
-        "culture_type": {
-            "description": "either \"primary culture,\" \"tissue\" or \"cell_line\"", 
-            "enum": [
-                "cell line", 
-                "primary culture", 
-                "tissue"
+    },
+    "allOf": [
+        {
+            "required": [
+                "sample_id",
+                "core",
+                "ncbi_taxon_id"
             ]
-        }, 
-        "disassociation_protocol": {
-            "description": "How body part was treated to disassociate it into cells that can float individually in solution in sorter or microfluidics device.", 
-            "pattern": "^P-....-.*$", 
-            "type": "string"
-        }, 
-        "donor": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/donor.json",
-            "description": "Information on the donors that the sample came from."
-        }, 
-        "ena_sample": {
-            "description": "European nucleotide archive sample ID", 
-            "pattern": "^ERS.*$", 
-            "type": "string"
-        }, 
-        "enrichment": {
-            "description": "How cells were enriched for specific type or to weed out common types after disassociation.",
-            "items": {
-		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/enrichment.json"
-	    },
-            "type": "array"
-        }, 
-        "geo_sample": {
-            "description": "NCBI GEO sample accession", 
-            "pattern": "^GSM.*$", 
-            "type": "string"
-        }, 
-        "id": {
-            "description": "A unique ID for this sample", 
-            "type": "string"
-        }, 
-        "name": {
-            "description": "A short descriptive name for sample.  Should be enough to distinguish it from other samples in the project", 
-            "type": "string"
-        }, 
-        "ncbi_biosample": {
-            "description": "NCBI biosample ID", 
-            "type": "string"
-        }, 
-        "organ": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
-            "description": "The organ that the sample came from.  \"Blood\" and \"connective tissue\" count as organs."
-        }, 
-        "preservation": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/preservation.json",
-            "description": "State of body_part at collection and how it was preserved after removal."
-        }, 
-        "project_id": {
-            "description": "The id field of the project that this connects to", 
-            "type": "string"
-        }, 
-        "protocol_ids": {
-            "description": "Array of protocol IDs from project.protocols used for this sample.", 
-            "items": {
-                "pattern": "^.*-....-.*$", 
-                "type": "string"
-            }, 
-            "type": "array"
-        }, 
-        "submit_date": {
-            "description": "When project was first submitted to database.", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "submitter_id": {
-            "description": "ID of contact who first submitted project", 
-            "type": "string"
-        }, 
-        "supplementary_files": {
-            "description": "Sample level supplementary files.", 
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array"
-        }, 
-        "title": {
-            "description": "A descriptive phrase or sentence, ideally about 60 characters.", 
-            "type": "string"
-        }, 
-        "total_estimated_cells": {
-            "description": "Total estimated number of cells in sample.  May be 1 for well based assays.", 
-            "maximum": 1000000000.0, 
-            "minimum": 0.1, 
-            "type": "number"
-        }, 
-        "update_date": {
-            "description": "When project was last updated", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "updater_id": {
-            "description": "ID of contact who last updated project", 
-            "type": "string"
-        }, 
-        "well": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/787f6175423222eee531e52834dc3749c2bd3f4e/json_schema/well.json",
-            "description": "If sample was isolated in a well in plate (or fluidics chip), information about that"
         }
-    }, 
-    "required": [
-	"body_part",
-	"core",
-	"donor",
-        "id", 
-        "name",
-	"organ",
-	"project_id"
-    ], 
-    "title": "sample", 
-    "type": "object"
+    ],
+    "oneOf": [
+        {
+            "required": [
+                "donor"
+            ]
+        },
+        {
+            "required": [
+                "immortalized_cell_line"
+            ]
+        },
+        {
+            "required": [
+                "cell_suspension"
+            ]
+        },
+        {
+            "required": [
+                "organoid"
+            ]
+        },
+        {
+            "required": [
+                "primary_cell_line"
+            ]
+        },
+        {
+            "required": [
+                "specimen_from_organism"
+            ]
+        }
+    ],
+    "properties": {
+        "core": {
+            "description": "Type and schema for this object.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/core.json"
+        },
+        "sample_id": {
+            "description": "A unique ID for this sample.",
+            "type": "string"
+        },
+        "name": {
+            "description": "A short, descriptive name for the sample that need not be unique.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the sample.",
+            "type": "string"
+        },
+        "donor": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/donor.json"
+        },
+        "specimen_from_organism": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/specimen_from_organism.json"
+        },
+        "immortalized_cell_line": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/immortalized_cell_line.json"
+        },
+        "primary_cell_line": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/primary_cell_line.json"
+        },
+        "organoid": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/organoid.json"
+        },
+        "cell_suspension": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/cell_suspension.json"
+        },
+        "ncbi_taxon_id": {
+            "description": "A taxonomy ID (taxonID) from NCBI.",
+            "type": "integer"
+        },
+        "genus_species": {
+            "description": "Scientific binomial name of donor species. e.g. Homo sapiens.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
+        },
+        "derived_from": {
+            "type": "string",
+            "description": "If this sample is derived from another sample e.g. a tissue or donor, enter the sample_id for the sample this was derived from",
+            "comment": "This field is primarily required for spreadsheet based submissions"
+        },
+        "supplementary_files": {
+            "description": "A list of filenames of sample-level supplementary files.",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "sample_accessions": {
+            "type": "object",
+            "description": "One or more accession numbers from a standard archive.",
+            "additionalProperties": false,
+            "properties": {
+                "biosd_sample": {
+                    "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
+                    "pattern": "^SAM[N|E|D][0-9]+$",
+                    "type": "string"
+                },
+                "insdc_sample": {
+                    "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
+                    "pattern": "^[D|E|S]RS[0-9]+$",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "title": "sample"
 }

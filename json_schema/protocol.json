@@ -1,62 +1,48 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "protocol schema generate by tagSchemaToJson from protocol", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "protocol schema generate by tagSchemaToJson from protocol",
     "properties": {
-        "batch_number": {
-            "description": "the batch of kit used", 
+        "protocol_id": {
+            "description": "A unique ID for this protocol.",
             "type": "string"
-        }, 
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
-        }, 
+        },
+        "name": {
+            "description": "A short, descriptive name for the protocol that need not be unique.",
+            "type": "string"
+        },
         "description": {
-            "description": "a text based desciption about the protocol", 
+            "description": "A general description of the protocol.",
             "type": "string"
-        }, 
-        "id": {
-            "description": "Unique ID for this protocol.", 
-            "pattern": "^.*-....-.*$", 
+        },
+        "batch_number": {
+            "description": "The batch of kit used.",
             "type": "string"
-        }, 
+        },
+        "core": {
+            "description": "type and schema for this object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/core.json"
+        },
         "pdf": {
-            "description": "A pdf containing the details of the protocol", 
-            "pattern": "^.*.pdf$", 
+            "description": "A filename of a PDF containing the details of the protocol.",
+            "pattern": "^.*.pdf$",
             "type": "string"
-        }, 
+        },
         "retail_name": {
-            "description": "the retail name of the kit used e.g SureCell WTA 3\u2032 Library Prep Kit", 
+            "description": "The retail name of the kit used. e.g SureCell WTA 3' Library Prep Kit",
             "type": "string"
-        }, 
-        "submit_date": {
-            "description": "When protocol was first submitted to database.", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "submitter_id": {
-            "description": "who created this entry", 
-            "type": "string"
-        }, 
+        },
         "type": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
-            "description": "Type of protocol, ideally an EFO term"
-        }, 
-        "update_date": {
-            "description": "When protocol was last updated", 
-            "pattern": "^2...-..-..$", 
-            "type": "string"
-        }, 
-        "updater_id": {
-            "description": "who last updated this entry", 
-            "type": "string"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json",
+            "description": "The type of protocol. Ideally an EFO term."
         }
-    }, 
+    },
     "required": [
-	"core",
-        "id"
-    ], 
-    "title": "protocol", 
+        "core",
+        "protocol_id",
+        "type"
+    ],
+    "title": "protocol",
     "type": "object"
 }

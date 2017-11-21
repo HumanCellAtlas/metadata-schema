@@ -1,41 +1,39 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "description": "This object describes where a particular type of barcode is in a read", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "This object describes where a particular type of barcode is in a read.",
     "properties": {
         "offset": {
-            "description": "Offset in read of barcode. 0 for beginning of read", 
-            "maximum": 50, 
-            "minimum": 0, 
+            "description": "Offset in read of barcode. 0 for beginning of read.",
+            "maximum": 50,
+            "minimum": 0,
             "type": "integer"
-        }, 
+        },
         "size": {
-            "description": "Size of barcode.", 
-            "maximum": 50, 
-            "minimum": 0, 
+            "description": "Size of barcode in nucleotides.",
+            "maximum": 50,
+            "minimum": 0,
             "type": "integer"
-        }, 
+        },
         "read": {
-            "description": "Which read barcode is found on.  Is either \"read1,\" \"read2,\" \"reads\" or \"index\" or some TBD field of seq.lane.", 
+            "description": "The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index.",
             "enum": [
-                "r1", 
-                "r2", 
-                "i1"
+                "Read 1",
+                "Read 2",
+                "i7 Index",
+                "i5 Index"
             ]
-        }, 
-	"white_list_file": {
-	    "description": "Name of file containing legitimate bar code sequences.  Unused for randomly generated barcodes."
-	},
-        "core": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
+        },
+        "white_list_file": {
+            "description": "Name of file containing legitimate barcode sequences. Unused for randomly generated barcodes.",
+            "type": "string"
         }
-    }, 
+    },
     "required": [
-	"core",
-	"offset",
-	"size",
-	"read"
-    ] ,
-    "title": "barcode", 
+        "offset",
+        "size",
+        "read"
+    ],
+    "title": "barcode",
     "type": "object"
 }

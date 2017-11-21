@@ -1,33 +1,28 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "Contains information on single cell aspects of an assay.", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "Contains information on single cell aspects of an assay.",
     "properties": {
-        "barcode": {
-            "description": "Information about cell identifier barcode", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/barcode.json"
+        "cell_barcode": {
+            "description": "Information about cell identifier barcode.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/barcode.json"
         },
         "cell_handling": {
-            "description": "How cells are separated.  FACS, drop-seq, tenX_v2, Fluidigm C1, etc", 
+            "description": "How cells are separated. e.g. FACS, drop-seq, 10X_v2, Fluidigm C1.",
             "enum": [
-                "10x_v2", 
-                "FACS", 
-                "Fluidigm C1", 
-                "drop-seq", 
-                "inDrop", 
-                "mouth pipette", 
+                "10x_v2",
+                "FACS",
+                "Fluidigm C1",
+                "drop-seq",
+                "inDrop",
+                "mouth pipette",
                 "bulk"
             ]
-        }, 
-        "core": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
         }
-    }, 
+    },
     "required": [
-        "cell_handling",
-	"core"
-    ], 
-    "title": "single_cell", 
+        "cell_handling"
+    ],
+    "title": "single_cell",
     "type": "object"
 }

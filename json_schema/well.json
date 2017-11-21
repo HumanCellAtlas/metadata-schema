@@ -1,50 +1,34 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "description": "This describes the well inside the plate or fluidics chip where sample came from.", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "description": "This describes the well inside the plate or fluidics chip where sample came from.",
     "properties": {
-        "cell_type": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json", 
-            "description": "the cell type which submitter thinks is in the well"
-        }, 
         "col": {
-            "description": "well column in plate", 
+            "description": "Well column in plate.",
             "type": "string"
-        }, 
-        "core": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json", 
-	    "description": "type and schema for this object"
-        }, 
+        },
         "name": {
-            "description": "A name for the well, should be unique for the plate", 
+            "description": "A name for the well. Should be unique for the plate",
             "type": "string"
-        }, 
+        },
         "plate": {
-            "description": "plate id that well came from if any", 
+            "description": "An ID for the plate that the well is located on.",
             "type": "string"
-        }, 
-        "plating_protocol": {
-            "description": "all wells", 
-            "pattern": "^P-....-.*$", 
-            "type": "string"
-        }, 
+        },
         "quality": {
-            "description": "Note on how good cell looks if imaged in well before sequencing", 
+            "description": "Note on how good cell looks if imaged in well before sequencing.",
             "enum": [
-                "OK", 
-                "control, 2-cell well", 
-                "control, empty well", 
+                "OK",
+                "control, 2-cell well",
+                "control, empty well",
                 "low quality cell"
             ]
-        }, 
+        },
         "row": {
-            "description": "well row in plate", 
+            "description": "Well row in plate.",
             "type": "string"
         }
-    }, 
-    "required": [
-	"core"
-    ], 
-    "title": "well", 
+    },
+    "title": "well",
     "type": "object"
 }

@@ -1,0 +1,4 @@
+{ "schemas_to_test": ["sample", 
+                      "sample_ingest", 
+                      "sample_bundle"]
+}

@@ -1,129 +1,123 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "donor schema generate by tagSchemaToJson from donor", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information about the donor from which a specimen was collected",
+    "additionalProperties": false,
     "properties": {
         "age": {
-            "description": "Age in age_units.  Expressed since birth.  For embryos measured since fertilization.", 
-            "maximum": 150, 
-            "minimum": 0, 
+            "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
+            "maximum": 150,
+            "minimum": 0,
             "type": "number"
-        }, 
+        },
         "age_unit": {
-            "description": "Unit age is expressed, typically day, week, month, or year", 
+            "description": "The unit in which age is expressed. Must be one of day, week, month, or year.",
             "enum": [
-                "hour", 
-                "day", 
-                "week", 
+                "hour",
+                "day",
+                "week",
                 "year"
             ]
-        }, 
+        },
+        "alcohol_history": {
+            "description": "Number of drinks consumed on a typical day.",
+            "type": "string"
+        },
         "ancestry": {
-            "description": "term from https://www.ebi.ac.uk/ols/ontologies/ancestro", 
-	    "type": "array",
-	    "items": {
-		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
-	    }
-        }, 
+            "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
+            }
+        },
         "body_mass_index": {
-            "description": "Body mass index of donor", 
-            "maximum": 100, 
-            "minimum": 5, 
+            "description": "The body mass index of the donor.",
+            "maximum": 100,
+            "minimum": 5,
             "type": "number"
-        }, 
-        "core": {
-	    "description": "type and schema for this object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/core.json"
-        }, 
+        },
         "death": {
-	    "description": "Information about conditions of death (or info that donor was living at time of collection)",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/07599dd75f61ec1ea86a720542f1c2ba5ffd80d0/json_schema/death.json"
-        }, 
+            "description": "Information about conditions of death (or info that donor was living at time of collection).",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/death.json"
+        },
         "development_stage": {
-	    "description": "More detailed (especially for embryos) version of life_stage. Might be \"E9\" or \"P17\" for a mouse.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
-        }, 
+            "description": "More detailed (especially for embryos) version of life_stage. e.g. \"E9\" or \"P17\" for mouse.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
+        },
         "disease": {
-	    "description": "Short description of disease status of individual.",
-	    "type": "array",
-	    "items": {
-		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
-	    }
-        }, 
+            "description": "Short description of disease status of individual.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/disease_ontology.json"
+            }
+        },
         "genotype": {
-            "description": "Genotype. List of genetic changes from usual. Should be strain, cross and genetic modification info in MGI format for mice.", 
+            "description": "Genotype of donor including strain, cross, and genetic modification information. Must be in MGI format for mice.",
             "type": "string"
-        }, 
+        },
         "height": {
-            "description": "Height of donor in meters", 
-            "maximum": 10, 
-            "minimum": 0, 
+            "description": "Height of donor in meters.",
+            "maximum": 10,
+            "minimum": 0,
             "type": "number"
-        }, 
-        "id": {
-            "description": "A unique ID for this donor", 
-            "type": "string"
-        }, 
+        },
         "is_living": {
-            "description": "If yes donor is living at time of sample donation.", 
-            "enum": [
-                "no", 
-                "yes"
-            ]
-        }, 
+            "description": "Should be yes if donor is living at time of sample donation. Otherwise, should be no.",
+            "type": "boolean"
+        },
         "life_stage": {
-            "description": "describe_me_please", 
+            "description": "Should be one of adult, child, embryo, or postpartum.",
             "enum": [
-                "adult", 
-                "cell line", 
-                "child", 
-                "embryo", 
-                "organoid", 
+                "adult",
+                "child",
+                "embryo",
                 "postpartum"
             ]
-        }, 
+        },
         "medication": {
-	    "description": "List of medications donor is on",
-	    "type": "array",
-	    "items": {
-		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
-	    }
-        }, 
-        "sex": {
-            "description": "Sex of donor.  Either 'male' 'female' 'mixed' or 'unknown'", 
+            "description": "List of medications the donor was currently taking at time of sample donation.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
+            }
+        },
+        "nutritional_state": {
+            "description": "Should be one of normal, fasting, or feeding tube removed.",
             "enum": [
-                "female", 
-                "male", 
-                "mixed", 
+                "normal",
+                "fasting",
+                "feeding tube removed"
+            ]
+        },
+        "sex": {
+            "description": "Sex of donor. Should be one of male, female, mixed, or unknown.",
+            "enum": [
+                "female",
+                "male",
+                "mixed",
                 "unknown"
             ]
-        }, 
-        "species": {
-	    "description": "Scientific binomial name of donor species in text field, NCBI taxon in ontology field",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
-        }, 
-        "strain": {
-	    "description": "Mouse inbred strain.  Example C57BL/6.",
-	    "type": "array",
-	    "items": {
-		"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/9f75c0b028341324c71ebd5cf1f3ab74e4761bb0/json_schema/ontology.json"
-	    }
-        }, 
-        "submitted_id": {
-            "description": "Free format string to help link back to submitter's donor database.", 
+        },
+        "smoking_history": {
+            "description": "Estimated number of cigarettes smoked per day and for how many years.",
             "type": "string"
-        }, 
+        },
+        "strain": {
+            "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
+            }
+        },
         "weight": {
-            "description": "Weight of donor in kg", 
-            "maximum": 1000, 
-            "minimum": 0, 
+            "description": "Weight of donor in kilograms.",
+            "maximum": 1000,
+            "minimum": 0,
             "type": "number"
         }
-    }, 
+    },
     "required": [
-        "core", "species", "is_living"
+        "is_living"
     ],
-    "title": "donor", 
+    "title": "donor",
     "type": "object"
 }
