@@ -1,14 +1,25 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A description of an organoid sample.", 
+    "id" : "http://schema.humancellatlas.org/types/sample/organoid/4.0.0/organoid.json",
+    "description": "Information about an organoid sample used in the sample",
+    "additionalProperties" : false,
+    "title" : "organoid",
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/sample/organoid/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organoid.json”,
+            "type": "string"
+        },
+        "sample_core" : {
+	        "description": "Core sample-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/sample/4.0.0/sample.json"
+        },
         "model_for_organ": {
             "description":  "Organ that this organoid is a model system for.",
             "$ref": "ontology.json"
         }
     },
-    "title" : "organoid",
     "required":[
         "model_for_organ"
-    ]
+    ],
+    "type": "object"
 }
