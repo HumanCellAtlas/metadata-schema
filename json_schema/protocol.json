@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "protocol schema generate by tagSchemaToJson from protocol", 
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "protocol schema generate by tagSchemaToJson from protocol",
     "properties": {
-        "protocol_id":{
+        "protocol_id": {
             "description": "A unique ID for this protocol.",
             "type": "string"
         },
@@ -19,30 +19,30 @@
         "batch_number": {
             "description": "The batch of kit used.",
             "type": "string"
-        }, 
+        },
         "core": {
-	        "description": "type and schema for this object",
-            "$ref": "core.json"
+            "description": "type and schema for this object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/core.json"
         },
         "pdf": {
             "description": "A filename of a PDF containing the details of the protocol.",
-            "pattern": "^.*.pdf$", 
+            "pattern": "^.*.pdf$",
             "type": "string"
-        }, 
+        },
         "retail_name": {
             "description": "The retail name of the kit used. e.g SureCell WTA 3' Library Prep Kit",
             "type": "string"
         },
         "type": {
-            "$ref": "ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json",
             "description": "The type of protocol. Ideally an EFO term."
         }
-    }, 
+    },
     "required": [
-    	"core",
+        "core",
         "protocol_id",
         "type"
-    ], 
-    "title": "protocol", 
+    ],
+    "title": "protocol",
     "type": "object"
 }

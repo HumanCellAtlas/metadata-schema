@@ -1,16 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
-    "description": "This describes the well inside the plate or fluidics chip where sample came from.", 
+    "additionalProperties": false,
+    "description": "This describes the well inside the plate or fluidics chip where sample came from.",
     "properties": {
         "col": {
             "description": "Well column in plate.",
             "type": "string"
-        }, 
+        },
         "name": {
             "description": "A name for the well. Should be unique for the plate",
             "type": "string"
-        }, 
+        },
         "plate": {
             "description": "An ID for the plate that the well is located on.",
             "type": "string"
@@ -18,12 +18,12 @@
         "quality": {
             "description": "Note on how good cell looks if imaged in well before sequencing.",
             "enum": [
-                "OK", 
-                "control, 2-cell well", 
-                "control, empty well", 
+                "OK",
+                "control, 2-cell well",
+                "control, empty well",
                 "low quality cell"
             ]
-        }, 
+        },
         "row": {
             "description": "Well row in plate.",
             "type": "string"

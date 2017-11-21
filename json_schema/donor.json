@@ -1,20 +1,20 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Information about the donor from which a specimen was collected",
-    "additionalProperties" : false,
+    "additionalProperties": false,
     "properties": {
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
-            "maximum": 150, 
-            "minimum": 0, 
+            "maximum": 150,
+            "minimum": 0,
             "type": "number"
-        }, 
+        },
         "age_unit": {
             "description": "The unit in which age is expressed. Must be one of day, week, month, or year.",
             "enum": [
-                "hour", 
-                "day", 
-                "week", 
+                "hour",
+                "day",
+                "week",
                 "year"
             ]
         },
@@ -22,64 +22,63 @@
             "description": "Number of drinks consumed on a typical day.",
             "type": "string"
         },
-
         "ancestry": {
             "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
-	        "type": "array",
-	        "items": {
-    		    "$ref": "ontology.json"
-	        }
-        }, 
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+            }
+        },
         "body_mass_index": {
             "description": "The body mass index of the donor.",
-            "maximum": 100, 
-            "minimum": 5, 
+            "maximum": 100,
+            "minimum": 5,
             "type": "number"
-        }, 
+        },
         "death": {
-	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
-            "$ref": "death.json"
-        }, 
+            "description": "Information about conditions of death (or info that donor was living at time of collection).",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/death.json"
+        },
         "development_stage": {
-	        "description": "More detailed (especially for embryos) version of life_stage. e.g. \"E9\" or \"P17\" for mouse.",
-            "$ref": "ontology.json"
-        }, 
+            "description": "More detailed (especially for embryos) version of life_stage. e.g. \"E9\" or \"P17\" for mouse.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+        },
         "disease": {
             "description": "Short description of disease status of individual.",
-	        "type": "array",
-	        "items": {
-		        "$ref": "ontology_json/disease_ontology.json"
-	        }
-        }, 
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology_json/disease_ontology.json"
+            }
+        },
         "genotype": {
             "description": "Genotype of donor including strain, cross, and genetic modification information. Must be in MGI format for mice.",
             "type": "string"
-        }, 
+        },
         "height": {
             "description": "Height of donor in meters.",
-            "maximum": 10, 
-            "minimum": 0, 
+            "maximum": 10,
+            "minimum": 0,
             "type": "number"
         },
         "is_living": {
             "description": "Should be yes if donor is living at time of sample donation. Otherwise, should be no.",
             "type": "boolean"
-        }, 
+        },
         "life_stage": {
             "description": "Should be one of adult, child, embryo, or postpartum.",
             "enum": [
-                "adult", 
-                "child", 
-                "embryo", 
+                "adult",
+                "child",
+                "embryo",
                 "postpartum"
             ]
-        }, 
+        },
         "medication": {
-	       "description": "List of medications the donor was currently taking at time of sample donation.",
-	       "type": "array",
-	       "items": {
-               "$ref": "ontology.json"
-	       }
+            "description": "List of medications the donor was currently taking at time of sample donation.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+            }
         },
         "nutritional_state": {
             "description": "Should be one of normal, fasting, or feeding tube removed.",
@@ -92,30 +91,30 @@
         "sex": {
             "description": "Sex of donor. Should be one of male, female, mixed, or unknown.",
             "enum": [
-                "female", 
-                "male", 
-                "mixed", 
+                "female",
+                "male",
+                "mixed",
                 "unknown"
             ]
         },
         "smoking_history": {
             "description": "Estimated number of cigarettes smoked per day and for how many years.",
             "type": "string"
-        }, 
+        },
         "strain": {
-	        "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
-	        "type": "array",
-	        "items": {
-		        "$ref": "ontology.json"
-	        }
+            "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+            }
         },
         "weight": {
             "description": "Weight of donor in kilograms.",
-            "maximum": 1000, 
-            "minimum": 0, 
+            "maximum": 1000,
+            "minimum": 0,
             "type": "number"
         }
-    }, 
+    },
     "required": [
         "is_living"
     ],

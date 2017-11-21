@@ -1,36 +1,39 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A schema for a sample bundle" ,
-  "type": "array",
-  "definitions" : {
-    "sample_ingest" : {
-      "type": "object",
-      "required": ["hca_ingest", "content"],
-      "properties": {
-        "hca_ingest": {
-          "$ref": "ingest.json",
-          "description": "core fields added by HCA ingest service",
-          "type": "object"
-        },
-        "content": {
-          "$ref": "sample.json",
-          "description": "Sample content",
-          "type": "object"
-        },
-        "derived_from": {
-          "type": "string"
-        },
-        "derivation_protocols": {
-          "items": {
-            "$ref": "protocol.json",
-            "description": "An array of protocols used in derivation of this sample."
-          },
-          "type": "array"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A schema for a sample bundle",
+    "type": "array",
+    "definitions": {
+        "sample_ingest": {
+            "type": "object",
+            "required": [
+                "hca_ingest",
+                "content"
+            ],
+            "properties": {
+                "hca_ingest": {
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ingest.json",
+                    "description": "core fields added by HCA ingest service",
+                    "type": "object"
+                },
+                "content": {
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/sample.json",
+                    "description": "Sample content",
+                    "type": "object"
+                },
+                "derived_from": {
+                    "type": "string"
+                },
+                "derivation_protocols": {
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/protocol.json",
+                        "description": "An array of protocols used in derivation of this sample."
+                    },
+                    "type": "array"
+                }
+            }
         }
-      }
+    },
+    "items": {
+        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/sample_bundle.json#/definitions/sample_ingest"
     }
-  },
-  "items": {
-    "$ref": "sample_bundle.json#/definitions/sample_ingest"
-  }
 }

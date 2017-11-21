@@ -1,24 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false,
-    "description": "Information added or generated at ingest time." ,
+    "description": "Information added or generated at ingest time.",
     "properties": {
         "submissionDate": {
-            "description": "When project was first submitted to database.", 
-            "format": "date-time", 
+            "description": "When project was first submitted to database.",
+            "format": "date-time",
             "type": "string"
-        }, 
+        },
         "submitter_id": {
-            "description": "ID of contact who first submitted project", 
+            "description": "ID of contact who first submitted project",
             "type": "string"
         },
         "updateDate": {
-            "description": "When project was last updated", 
+            "description": "When project was last updated",
             "format": "date-time",
             "type": "string"
-        }, 
+        },
         "updater_id": {
-            "description": "ID of contact who last updated project", 
+            "description": "ID of contact who last updated project",
             "type": "string"
         },
         "document_id": {
@@ -31,9 +31,9 @@
             "description": "A unique accession for this entity, provided by the broker.",
             "type": "string"
         }
-
     },
     "required": [
-        "document_id", "submissionDate"
+        "document_id",
+        "submissionDate"
     ]
 }

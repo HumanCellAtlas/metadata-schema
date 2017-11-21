@@ -1,26 +1,29 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "A schema for a project bundle" ,
-  "type": "array",
-  "definitions" : {
-    "project_ingest" : {
-      "type": "object",
-      "required": ["hca_ingest", "content"],
-      "properties": {
-        "hca_ingest": {
-          "$ref": "ingest.json",
-          "description": "core fields added by HCA ingest service",
-          "type": "object"
-        },
-        "content": {
-          "$ref": "project.json",
-          "description": "Project content",
-          "type": "object"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A schema for a project bundle",
+    "type": "array",
+    "definitions": {
+        "project_ingest": {
+            "type": "object",
+            "required": [
+                "hca_ingest",
+                "content"
+            ],
+            "properties": {
+                "hca_ingest": {
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ingest.json",
+                    "description": "core fields added by HCA ingest service",
+                    "type": "object"
+                },
+                "content": {
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/project.json",
+                    "description": "Project content",
+                    "type": "object"
+                }
+            }
         }
-      }
+    },
+    "items": {
+        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/project_bundle.json#/definitions/project_ingest"
     }
-  },
-  "items": {
-    "$ref": "project_bundle.json#/definitions/project_ingest"
-  }
 }

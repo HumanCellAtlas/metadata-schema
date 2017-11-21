@@ -1,28 +1,60 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A sample contains information on the biosample that was sequenced or imaged. This includes donor, body part, and anything that comes between removing the sample from a donor and the assay.",    "additionalProperties" : false,
+    "description": "A sample contains information on the biosample that was sequenced or imaged. This includes donor, body part, and anything that comes between removing the sample from a donor and the assay.",
+    "additionalProperties": false,
     "patternProperties": {
-       "^characteristics_.*$": {
+        "^characteristics_.*$": {
             "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix.",
-             "type": "string"
-
-       }
+            "type": "string"
+        }
     },
-    "allOf" : [{"required" : ["sample_id", "core", "ncbi_taxon_id"]}],
-    "oneOf" : [{"required" : ["donor"]},
-              {"required" : ["immortalized_cell_line"]},
-              {"required" : ["cell_suspension"]},
-              {"required" : ["organoid"]},
-              {"required" : ["primary_cell_line"]},
-              {"required" : ["specimen_from_organism"]}
-              ],
-
+    "allOf": [
+        {
+            "required": [
+                "sample_id",
+                "core",
+                "ncbi_taxon_id"
+            ]
+        }
+    ],
+    "oneOf": [
+        {
+            "required": [
+                "donor"
+            ]
+        },
+        {
+            "required": [
+                "immortalized_cell_line"
+            ]
+        },
+        {
+            "required": [
+                "cell_suspension"
+            ]
+        },
+        {
+            "required": [
+                "organoid"
+            ]
+        },
+        {
+            "required": [
+                "primary_cell_line"
+            ]
+        },
+        {
+            "required": [
+                "specimen_from_organism"
+            ]
+        }
+    ],
     "properties": {
         "core": {
             "description": "Type and schema for this object.",
-            "$ref": "core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/core.json"
         },
-        "sample_id":{
+        "sample_id": {
             "description": "A unique ID for this sample.",
             "type": "string"
         },
@@ -34,37 +66,36 @@
             "description": "A general description of the sample.",
             "type": "string"
         },
-        "donor" : {
-          "$ref": "donor.json"
+        "donor": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/donor.json"
         },
-        "specimen_from_organism" : {
-          "$ref": "specimen_from_organism.json"
+        "specimen_from_organism": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/specimen_from_organism.json"
         },
-         "immortalized_cell_line" : {
-          "$ref": "immortalized_cell_line.json"
+        "immortalized_cell_line": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/immortalized_cell_line.json"
         },
-        "primary_cell_line" : {
-          "$ref": "primary_cell_line.json"
+        "primary_cell_line": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/primary_cell_line.json"
         },
-        "organoid" : {
-          "$ref": "organoid.json"
+        "organoid": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/organoid.json"
         },
-        "cell_suspension" : {
-          "$ref": "cell_suspension.json"
+        "cell_suspension": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/cell_suspension.json"
         },
-
-        "ncbi_taxon_id" : {
-          "description": "A taxonomy ID (taxonID) from NCBI.",
-          "type" : "integer"
+        "ncbi_taxon_id": {
+            "description": "A taxonomy ID (taxonID) from NCBI.",
+            "type": "integer"
         },
         "genus_species": {
             "description": "Scientific binomial name of donor species. e.g. Homo sapiens.",
-            "$ref": "ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
         },
-        "derived_from" : {
-            "type" : "string",
-            "description" : "If this sample is derived from another sample e.g. a tissue or donor, enter the sample_id for the sample this was derived from",
-            "comment" : "This field is primarily required for spreadsheet based submissions"
+        "derived_from": {
+            "type": "string",
+            "description": "If this sample is derived from another sample e.g. a tissue or donor, enter the sample_id for the sample this was derived from",
+            "comment": "This field is primarily required for spreadsheet based submissions"
         },
         "supplementary_files": {
             "description": "A list of filenames of sample-level supplementary files.",
@@ -76,8 +107,8 @@
         "sample_accessions": {
             "type": "object",
             "description": "One or more accession numbers from a standard archive.",
-            "additionalProperties" : false,
-             "properties": {
+            "additionalProperties": false,
+            "properties": {
                 "biosd_sample": {
                     "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
                     "pattern": "^SAM[N|E|D][0-9]+$",

@@ -8,9 +8,9 @@
             "description": "Fields that begin with characteristics_ can contain any value, and the field name can be anything after the prefix",
             "type": "string"
         }
-    }, 
+    },
     "properties": {
-        "project_id":{
+        "project_id": {
             "description": "A unique ID for this project.",
             "type": "string"
         },
@@ -28,19 +28,19 @@
             "type": "string"
         },
         "contributors": {
-	        "description": "List of people contributing to the project.",
+            "description": "List of people contributing to the project.",
             "items": {
-                "$ref": "contact.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/contact.json"
             },
             "type": "array"
         },
         "core": {
-            "$ref": "core.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/core.json",
             "description": "type and schema for this object"
         },
         "experimental_design": {
             "items": {
-                "$ref": "ontology.json",
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json",
                 "description": "A short description of overall experiment type. e.g. \"single cell RNA sequencing.\""
             },
             "type": "array"
@@ -69,7 +69,7 @@
         },
         "publications": {
             "items": {
-                "$ref": "publication.json",
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/publication.json",
                 "description": "An array of publication modules."
             },
             "type": "array"
@@ -82,9 +82,9 @@
             "type": "array"
         },
         "submitters": {
-	        "description": "List of people submitting data to the project.",
+            "description": "List of people submitting data to the project.",
             "items": {
-                "$ref": "contact.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/contact.json"
             },
             "type": "array"
         },
@@ -97,8 +97,8 @@
         }
     },
     "required": [
-    	"core",
-	    "contributors",
+        "core",
+        "contributors",
         "project_id"
     ],
     "title": "project",

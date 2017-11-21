@@ -1,20 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
+    "additionalProperties": false,
     "description": "This object describes where a particular type of barcode is in a read.",
     "properties": {
         "offset": {
             "description": "Offset in read of barcode. 0 for beginning of read.",
-            "maximum": 50, 
-            "minimum": 0, 
+            "maximum": 50,
+            "minimum": 0,
             "type": "integer"
-        }, 
+        },
         "size": {
             "description": "Size of barcode in nucleotides.",
-            "maximum": 50, 
-            "minimum": 0, 
+            "maximum": 50,
+            "minimum": 0,
             "type": "integer"
-        }, 
+        },
         "read": {
             "description": "The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index.",
             "enum": [
@@ -23,17 +23,17 @@
                 "i7 Index",
                 "i5 Index"
             ]
-        }, 
-	   "white_list_file": {
-	       "description": "Name of file containing legitimate barcode sequences. Unused for randomly generated barcodes.",
+        },
+        "white_list_file": {
+            "description": "Name of file containing legitimate barcode sequences. Unused for randomly generated barcodes.",
             "type": "string"
-	   }
-	},
+        }
+    },
     "required": [
-      "offset",
-      "size",
-      "read"
-    ] ,
-    "title": "barcode", 
+        "offset",
+        "size",
+        "read"
+    ],
+    "title": "barcode",
     "type": "object"
 }

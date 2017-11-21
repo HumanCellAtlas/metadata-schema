@@ -1,43 +1,43 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
+    "additionalProperties": false,
     "definitions": {
         "lanes": {
             "items": {
-                "additionalProperties": false, 
+                "additionalProperties": false,
                 "properties": {
                     "number": {
-                        "description": "Which lane number", 
-			            "type": "number"
-                    }, 
+                        "description": "Which lane number",
+                        "type": "number"
+                    },
                     "r1": {
                         "description": "File name of first read in paired-end read sequencing assay, or only read for unpaired.",
                         "type": "string"
-                    }, 
+                    },
                     "r2": {
                         "description": "File name of second read in paired-end read assay.",
                         "type": "string"
-                    }, 
-		            "i1": {
-		                "description": "A barcode index file. Often index off of first read.",
-			            "type": "string"
+                    },
+                    "i1": {
+                        "description": "A barcode index file. Often index off of first read.",
+                        "type": "string"
                     },
                     "i2": {
                         "description": "A barcode index file. Often index off of second read.",
                         "type": "string"
                     }
-                }, 
+                },
                 "required": [
                     "r1"
                 ],
                 "title": "A sequencing lane.",
                 "type": "object"
             },
-	        "title": "lane array",
+            "title": "lane array",
             "type": "array"
         }
-    }, 
-    "description": "Information about how a sample was sequenced.", 
+    },
+    "description": "Information about how a sample was sequenced.",
     "properties": {
         "insdc_experiment": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
@@ -72,7 +72,7 @@
             ]
         },
         "lanes": {
-            "$ref": "seq.json#/definitions/lanes"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/seq.json#/definitions/lanes"
         },
         "library_construction": {
             "description": "How the DNA sequencing library was prepared. e.g. Nextera XT, TrueSeq.",
@@ -105,16 +105,16 @@
         },
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
-            "$ref": "barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/barcode.json"
         }
-    }, 
+    },
     "required": [
         "instrument_model",
         "instrument_platform",
         "lanes",
-        "molecule", 
+        "molecule",
         "paired_ends"
-    ], 
-    "title": "seq", 
+    ],
+    "title": "seq",
     "type": "object"
 }
