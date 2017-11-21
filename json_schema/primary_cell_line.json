@@ -5,7 +5,7 @@
     "properties": {
         "cell_type": {
             "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology_json/cell_type_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/cell_type_ontology.json"
         },
         "date_established": {
             "description": "When the cell line was established, in date-time format.",
@@ -14,7 +14,7 @@
         },
         "disease": {
             "description": "Free text describing any disease association to the cell type. Should be found in EFO ontology.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology_json/disease_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/disease_ontology.json"
         },
         "passage_number": {
             "description": "The number of passages the cell line has been through.",
@@ -23,7 +23,7 @@
             "type": "integer"
         },
         "cell_cycle": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json",
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
         }
     },

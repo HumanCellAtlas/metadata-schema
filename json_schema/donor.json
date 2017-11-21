@@ -26,7 +26,7 @@
             "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
             }
         },
         "body_mass_index": {
@@ -37,17 +37,17 @@
         },
         "death": {
             "description": "Information about conditions of death (or info that donor was living at time of collection).",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/death.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/death.json"
         },
         "development_stage": {
             "description": "More detailed (especially for embryos) version of life_stage. e.g. \"E9\" or \"P17\" for mouse.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
         },
         "disease": {
             "description": "Short description of disease status of individual.",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology_json/disease_ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/disease_ontology.json"
             }
         },
         "genotype": {
@@ -77,7 +77,7 @@
             "description": "List of medications the donor was currently taking at time of sample donation.",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
             }
         },
         "nutritional_state": {
@@ -105,7 +105,7 @@
             "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
             }
         },
         "weight": {

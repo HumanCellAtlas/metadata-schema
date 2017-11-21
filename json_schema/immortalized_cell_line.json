@@ -13,7 +13,7 @@
         },
         "cell_type": {
             "description": "What cell type the line was derived from. CLO ontology.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology_json/cell_type_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/cell_type_ontology.json"
         },
         "date_established": {
             "description": "When the cell line was established.",
@@ -22,7 +22,7 @@
         },
         "disease": {
             "description": "A disease associated with the cell line. EFO ontology.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology_json/disease_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/disease_ontology.json"
         },
         "karyotype": {
             "description": "The karyotype of the cell line.",
@@ -36,10 +36,10 @@
         },
         "publication": {
             "description": "The publication in which the cell line creation was cited.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/publication.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/publication.json"
         },
         "cell_cycle": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0/json_schema/ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json",
             "description": "The cell cycle phase, if known."
         }
     },
