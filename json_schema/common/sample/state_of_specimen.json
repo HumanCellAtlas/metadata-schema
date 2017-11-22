@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/types/process/sample/4.0.0/state_of_specimen.json",
+    "id": "http://schema.humancellatlas.org/common/sample/4.0.0/state_of_specimen.json",
     "additionalProperties": false,
     "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
     "title": "state_of_specimen",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/process/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/state_of_specimen.json",
+            "pattern" : "http://schema.humancellatlas.org/common/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/state_of_specimen.json",
             "type": "string"
         },
         "autolysis_score": {
