@@ -17,7 +17,7 @@ base_uri = "file://" + pwd + "/"
 print(base_uri)
 
 print('\nValidating sample_core.json')
-sv = get_validator('sample_core.json', base_uri)
+sv = get_validator('core/sample/sample_core.json', base_uri)
 
 # Specific schema tests follow
 
