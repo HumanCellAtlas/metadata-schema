@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/core/sample/4.0.0/sample.json",
+    "id": "http://schema.humancellatlas.org/types/sample/4.0.0/sample.json",
     "description": "An empty sample schema that is inherited by all sample types.",
     "title": "sample"
 }
