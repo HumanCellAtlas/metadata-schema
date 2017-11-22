@@ -1,4 +1,4 @@
-{       
+{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id" : "http://schema.humancellatlas.org/types/sample/cell_suspension/4.0.0/cell_suspension.json",
     "description": "Information about the cell suspension derived from the collected or cultured specimen",

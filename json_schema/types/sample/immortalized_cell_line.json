@@ -6,7 +6,7 @@
     "title": "immortalized_cell_line",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/immortalized_cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/immortalized_cell_line.json”,
+            "pattern" : "http://schema.humancellatlas.org/types/sample/immortalized_cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/immortalized_cell_line.json",
             "type": "string"
         },
         "sample_core" : {

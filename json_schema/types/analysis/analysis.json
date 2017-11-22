@@ -1,7 +1,26 @@
 {
    "$schema" : "http://json-schema.org/draft-04/schema#",
-   "additionalProperties" : true,
+   "id": "http://schema.humancellatlas.org/types/analysis/4.0.0/analysis.json",
+   "additionalProperties" : false,
+   "required" : [
+     "timestamp_start_utc",
+     "timestamp_stop_utc",
+     "computational_method",
+     "input_bundles",
+     "reference_bundle",
+     "analysis_id",
+     "analysis_run_type",
+     "metadata_schema",
+     "tasks",
+     "inputs",
+     "outputs"
+   ],
+   "title" : "analysis",
    "properties" : {
+       "$schema" : {
+         "pattern" : "http://schema.humancellatlas.org/types/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis.json",
+         "type": "string"
+      },
       "tasks" : {
          "description" : "Descriptions of tasks in the workflow.",
          "type" : "array",
@@ -75,13 +94,8 @@
       "reference_bundle" : {
          "description" : "Bundle containing the reference used in running the pipeline.",
          "type" : "uri"
-      },
-      "core": {
-            "description": "Type and schema for this object.",
-            "$ref": "core.json"
       }
    },
-   "type" : "object",
    "definitions" : {
       "file" : {
          "additionalProperties" : false,
@@ -138,18 +152,5 @@
          "type" : "object"
       }
    },
-   "title" : "analysis",
-   "required" : [
-     "timestamp_start_utc",
-     "timestamp_stop_utc",
-     "computational_method",
-     "input_bundles",
-     "reference_bundle",
-     "analysis_id",
-     "analysis_run_type",
-     "metadata_schema",
-     "tasks",
-     "inputs",
-     "outputs"
-   ]
+   "type" : "object"
 }

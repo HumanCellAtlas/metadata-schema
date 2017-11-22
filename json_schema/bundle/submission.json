@@ -7,7 +7,6 @@
 		"submitted_files"
     ],
     "title" : "submission",
-    "type" : "object",
     "definitions" : {
     	"transfer_service_version" : {
 		"additionalProperties" : false,
@@ -88,5 +87,6 @@
 		"submitted_files" : {
 			"$ref" : "submission.json#/definitions/submitted_files"
 		}
-    }
+    },
+	"type" : "object"
 }

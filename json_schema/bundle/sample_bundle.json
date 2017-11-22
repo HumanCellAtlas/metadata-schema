@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id" : "http://schema.humancellatlas.org/bundle/4.0.0/sample_bundle.json",
   "description": "A schema for a sample bundle" ,
-  "type": "array",
   "properties": {
     "$schema" : {
         "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sample_bundle.json",
@@ -39,5 +38,6 @@
   },
   "items": {
     "$ref": "sample_bundle.json#/definitions/sample_ingest"
-  }
+  },
+  "type": "array"
 }

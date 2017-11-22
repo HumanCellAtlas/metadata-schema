@@ -7,7 +7,6 @@
         "text"
     ],
     "title": "disease_ontology",
-    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/common/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/disease_ontology.json",
@@ -21,5 +20,6 @@
             "description": "An optional ontology reference in format where prefix_ indicates which ontology",
             "type": "string"
         }
-    }
+    },
+    "type": "object"
 }

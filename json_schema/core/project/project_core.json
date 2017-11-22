@@ -4,11 +4,11 @@
     "additionalProperties": false,
     "description": "This object describes the core fields for a project",
     "title": "project_core",
-    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/core/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_core.json",
             "type": "string"
         }
-	}
+	},
+    "type": "object"
 }

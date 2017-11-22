@@ -9,7 +9,6 @@
             "email"
     ],
     "title": "contact",
-    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/common/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/contact.json",
@@ -118,5 +117,6 @@
             "description": "Phone number (including country code) of contact or contact's lab.",
             "type": "string"
         }
-    }
+    },
+    "type": "object"
 }

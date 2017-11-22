@@ -2,7 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id" : "http://schema.humancellatlas.org/bundle/4.0.0/assay_bundle.json",
   "description": "A schema for an assay bundle" ,
-  "type": "array",
   "properties": {
     "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/assay_bundle.json",
@@ -36,5 +35,6 @@
   },
   "items": {
     "$ref": "assay_bundle.json#/definitions/assay_ingest"
-  }
+  },
+  "type": "array"
 }

@@ -1,8 +1,18 @@
 {
-    "$schema": "http://schema.humancellatlas.org/sample/5.0.0/sample.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/core/sample/4.0.0/sample_core.json",
     "description": "A sample contains information on the biosample that was sequenced or imaged. This includes donor, body part, and anything that comes between removing the sample from a donor and the assay.",
-    "required" : ["sample_id", "ncbi_taxon_id"],
+    "additionalProperties": false,
+    "required": [
+        "sample_id",
+        "ncbi_taxon_id"
+    ],
+    "title": "sample_core",
     "properties": {
+       "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/core/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sample_core.json",
+            "type": "string"
+        },
         "sample_id":{
             "description": "A unique ID for this sample.",
             "type": "string"
@@ -46,5 +56,5 @@
             "type": "string"
         }
     },
-    "title": "sample"
+    "type": "object"
 }

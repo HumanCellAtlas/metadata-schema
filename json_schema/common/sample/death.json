@@ -8,7 +8,6 @@
     	"cause_of_death", "time_of_death"
     ],
     "title": "death",
-    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/common/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/death.json",
@@ -39,5 +38,6 @@
             "format": "date-time",
             "type": "string"
         }
-    }
+    },
+    "type": "object"
 }

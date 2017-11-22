@@ -7,7 +7,6 @@
         "text"
     ],
     "title": "body_part_ontology",
-    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/common/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/body_part_ontology.json",
@@ -28,5 +27,6 @@
                 "include_self": true
             }
         }
-    }
+    },
+    "type": "object"
 }
