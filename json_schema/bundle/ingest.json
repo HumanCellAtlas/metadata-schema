@@ -1,8 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/bundle/4.0.0/ingest.json",
     "additionalProperties": false,
     "description": "Information added or generated at ingest time." ,
+    "required": [
+        "document_id", "submissionDate"
+    ],
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ingest.json",
+            "type": "string"
+        },
         "submissionDate": {
             "description": "When project was first submitted to database.", 
             "format": "date-time", 
@@ -32,8 +40,5 @@
             "type": "string"
         }
 
-    },
-    "required": [
-        "document_id", "submissionDate"
-    ]
+    }
 }

@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json",
+    "additionalProperties": false,
+    "description": "This object describes the core fields for a protocol",
+    "title": "protocol_core",
+    "type": "object",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/core/protocol/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/protocol_core.json",
+            "type": "string"
+        }
+	}
+}

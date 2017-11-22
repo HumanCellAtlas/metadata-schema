@@ -1,9 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/common/project/4.0.0/contact.json",
     "additionalProperties": false, 
     "definitions": {}, 
-    "description": "contact schema generate by tagSchemaToJson from contact", 
+    "description": "contact schema generate by tagSchemaToJson from contact",
+     "required": [
+            "name",
+            "email"
+    ],
+    "title": "contact",
+    "type": "object",
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/common/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/contact.json",
+            "type": "string"
+        },
         "address": {
             "description": "Full mailing address where contact works. Should include street name and number, city, state, postal code, country.",
             "type": "string"
@@ -107,11 +118,5 @@
             "description": "Phone number (including country code) of contact or contact's lab.",
             "type": "string"
         }
-    }, 
-    "required": [
-            "name",
-            "email"
-    ], 
-    "title": "contact", 
-    "type": "object"
+    }
 }

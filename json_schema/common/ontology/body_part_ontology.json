@@ -1,8 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
+    "id" : "http://schema.humancellatlas.org/common/ontology/4.0.0/body_part_ontology.json",
     "description": "A term that may be associated with an anatomy-related ontology term",
+    "additionalProperties": false,
+     "required": [
+        "text"
+    ],
+    "title": "body_part_ontology",
+    "type": "object",
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/common/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/body_part_ontology.json",
+            "type": "string"
+        },
         "text": {
             "description": "The text for the term as the user provides it.",
             "type": "string"
@@ -18,10 +28,5 @@
                 "include_self": true
             }
         }
-    },
-    "required": [
-        "text"
-    ],
-    "title": "body_part_ontology",
-    "type": "object"
+    }
 }

@@ -1,8 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/common/project/4.0.0/publication.json",
     "additionalProperties": false, 
-    "description": "A publication contains information about a journal article, book, web page or other external available documentation on a project", 
+    "description": "A publication contains information about a journal article, book, web page or other external available documentation on a project",
+     "required":[
+        "authors",
+        "title"
+    ],
+    "title": "publication",
+    "type": "object",
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/common/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/publication.json",
+            "type": "string"
+        },
         "authors": {
             "description": "A list of authors associated with the publication. Should be in \"surname initials\" format. e.g. \"Tran NM\", \"Kowalczyk M\", \"de Silva-Schmidt CKJ\"",
             "items": {
@@ -26,11 +37,5 @@
             "description": "A URL, preferably not behind a paywall, for the publication.",
             "type": "string"
         }
-    },
-    "required":[
-        "authors",
-        "title"
-    ],
-    "title": "publication", 
-    "type": "object"
+    }
 }

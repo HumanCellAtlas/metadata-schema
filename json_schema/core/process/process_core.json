@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json",
+    "additionalProperties": false,
+    "description": "This object describes the core fields for a process",
+    "title": "process_core",
+    "type": "object",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/core/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_core.json",
+            "type": "string"
+        }
+	}
+}
