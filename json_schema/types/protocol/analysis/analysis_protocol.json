@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/types/protocol/analysis/4.0.0/analysis_protocol.json",
+    "description": "Information about the analysis protocol",
+    "title": "protocol",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/protocol/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_protocol.json",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

@@ -4,6 +4,9 @@
     "description": "Information about an organoid sample used in the sample",
     "additionalProperties" : false,
     "title" : "organoid",
+      "required":[
+        "model_for_organ"
+    ],
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/types/sample/organoid/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organoid.json",
@@ -18,8 +21,5 @@
             "$ref": "ontology.json"
         }
     },
-    "required":[
-        "model_for_organ"
-    ],
     "type": "object"
 }

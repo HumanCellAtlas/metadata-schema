@@ -1,9 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
-    "definitions": {}, 
+    "id": "http://schema.humancellatlas.org/types/process/sequencing/4.0.0/rna_process.json",
+    "additionalProperties": false,
+     "required": [
+        "end_bias", "library_construction", "strand"
+    ],
+    "title": "rna",
     "description": "Information about how RNA was converted to cDNA for sequencing.",
     "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/rna_process.json",
+            "type": "string"
+        },
         "end_bias": {
             "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
             "enum": [
@@ -59,10 +67,6 @@
                 "first"
             ]
         }
-    }, 
-    "required": [
-        "end_bias", "library_construction", "strand"
-    ], 
-    "title": "rna", 
+    },
     "type": "object"
 }
