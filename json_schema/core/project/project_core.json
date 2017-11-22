@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/core/project/4.0.0/project_core.json",
-    "description": "This object describes the core fields for a project",
+    "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
 	    "contributors",
