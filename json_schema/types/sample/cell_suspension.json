@@ -6,7 +6,7 @@
     "title" : "cell_suspension",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/cell_suspension/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json”,
+            "pattern" : "http://schema.humancellatlas.org/types/sample/cell_suspension/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json",
             "type": "string"
         },
         "sample_core" : {

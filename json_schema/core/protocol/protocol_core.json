@@ -29,10 +29,6 @@
             "description": "The batch of kit used.",
             "type": "string"
         },
-        "core": {
-	        "description": "type and schema for this object",
-            "$ref": "core.json"
-        },
         "pdf": {
             "description": "A filename of a PDF containing the details of the protocol.",
             "pattern": "^.*.pdf$",

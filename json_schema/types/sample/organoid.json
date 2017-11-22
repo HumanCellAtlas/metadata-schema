@@ -6,7 +6,7 @@
     "title" : "organoid",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/organoid/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organoid.json”,
+            "pattern" : "http://schema.humancellatlas.org/types/sample/organoid/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organoid.json",
             "type": "string"
         },
         "sample_core" : {
