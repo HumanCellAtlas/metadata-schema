@@ -1,9 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/types/process/imaging/4.0.0/imaging_process.json",
     "additionalProperties": false, 
-    "definitions": {}, 
-    "description": "imaging schema generate by tagSchemaToJson from imaging", 
-    "properties": { 
+    "description": "imaging schema generate by tagSchemaToJson from imaging",
+     "required": [
+        "field_counts",
+	    "field_resolution",
+	    "probes"
+    ],
+    "title": "imaging_process",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/imaging/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/imaging_process.json",
+            "type": "string"
+        },
         "embedding": {
             "description": "Description of embedding conditions", 
             "type": "string"
@@ -50,12 +60,6 @@
             "description": "A file containing information on probe sequence, genes they cover, and  colors", 
             "type": "string"
         }
-    }, 
-    "required": [
-        "field_counts",
-	    "field_resolution",
-	    "probes"
-    ], 
-    "title": "imaging", 
+    },
     "type": "object"
 }

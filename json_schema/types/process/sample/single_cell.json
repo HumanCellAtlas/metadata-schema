@@ -1,8 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
+     "id": "http://schema.humancellatlas.org/types/process/sample/4.0.0/single_cell.json",
+    "additionalProperties": false,
     "description": "Contains information on single cell aspects of an assay.", 
+    "required": [
+       "cell_handling"
+    ],
+    "title": "single_cell",
     "properties": {
+       "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/single_cell.json",
+            "type": "string"
+        },
         "barcode": {
             "description": "Information about cell identifier barcode.",
             "$ref": "barcode.json"
@@ -19,10 +28,6 @@
                 "bulk"
             ]
         }
-    }, 
-    "required": [
-        "cell_handling"
-    ], 
-    "title": "single_cell", 
+    },
     "type": "object"
 }

@@ -1,8 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
+    "id": "http://schema.humancellatlas.org/types/process/sample/4.0.0/well.json",
+    "additionalProperties": false,
     "description": "This describes the well inside the plate or fluidics chip where sample came from.", 
+    "title": "well",
     "properties": {
+       "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/well.json",
+            "type": "string"
+        },
         "col": {
             "description": "Well column in plate.",
             "type": "string"
@@ -29,6 +35,5 @@
             "type": "string"
         }
     },
-    "title": "well",
     "type": "object"
 }

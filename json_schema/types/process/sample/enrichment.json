@@ -1,8 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "enrichment schema generate by tagSchemaToJson from enrichment", 
+    "id": "http://schema.humancellatlas.org/types/process/sample/4.0.0/enrichment.json",
+    "description": "enrichment schema generate by tagSchemaToJson from enrichment",
     "additionalProperties": false,
+    "required": [
+        "type"
+    ],
+    "title": "enrichment",
     "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment.json",
+            "type": "string"
+        },
         "markers": {
             "description": "Text in the format of space delimited list of markers with +/-.  Example:  \"CD4+ CD8-\"",
             "type": "string"
@@ -28,9 +37,5 @@
             ]
         }
     },
-    "required": [
-        "type"
-    ], 
-    "title": "enrichment", 
     "type": "object"
 }
