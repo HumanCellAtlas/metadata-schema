@@ -1,32 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/types/file/4.0.0/file.json",
-    "additionalProperties": false,
-    "description": "Information about the data files produced from single cells.",
-    "title": "file",
-    "required": [
-	    "filename"
-    ],
-    "properties": {
-        "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/file.json",
-            "type": "string"
-        },
-        "filename": {
-            "description": "A filename for a data file. Must have a valid extension.",
-            "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$",
-            "type": "string"
-        },
-        "file_format": {
-            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, png.",
-            "enum": [
-                "fastq",
-                "fastq.gz",
-                "tiff",
-                "jpg",
-                "png"
-            ]
-        }
-    },
-    "type": "object"
+    "description": "An empty file schema that is inherited by all file types.",
+    "title": "file"
 }

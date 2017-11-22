@@ -4,9 +4,13 @@
     "description": "Information about the specimen that was extracted from the donor organism.",
     "additionalProperties": false,
     "title": "specimen_from_organism",
+    "required": [
+	    "body_part",
+	    "organ"
+    ],
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/specimen_from_organism/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/specimen_from_organism.json”,
+            "pattern" : "http://schema.humancellatlas.org/types/sample/specimen_from_organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/specimen_from_organism.json",
             "type": "string"
         },
         "sample_core" : {
@@ -25,10 +29,6 @@
             "$ref": "state_of_specimen.json",
             "description": "State of body_part at collection and how it was preserved after removal."
         }
-    }, 
-    "required": [
-	    "body_part",
-	    "organ"
-    ],
+    },
     "type": "object"
 }
