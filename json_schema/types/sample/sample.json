@@ -2,5 +2,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/types/sample/4.0.0/sample.json",
     "description": "An empty sample schema that is inherited by all sample types.",
-    "title": "sample"
+    "title": "sample",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sample.json",
+            "type": "string"
+        }
+    },
+    "type": "object"
 }

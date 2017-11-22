@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/types/protocol/sequencing/4.0.0/sequencing_protocol.json",
+    "description": "Information about the sequencing protocol",
+    "title": "protocol",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/protocol/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequencing_protocol.json",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

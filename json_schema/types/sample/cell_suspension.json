@@ -1,12 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/types/sample/cell_suspension/4.0.0/cell_suspension.json",
+    "id": "http://schema.humancellatlas.org/types/sample/cell_suspension/4.0.0/cell_suspension.json",
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "additionalProperties" : false,
     "title" : "cell_suspension",
+    "required" : [
+      "sample_core",
+      "enrichment"
+    ],
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/cell_suspension/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json”,
+            "pattern" : "http://schema.humancellatlas.org/types/sample/cell_suspension/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json",
             "type": "string"
         },
         "sample_core" : {
@@ -34,9 +38,5 @@
             "description": "Information about wells in a plate or chip used for single-cell isolation."
         }
      },
-    "required" : [
-      "sample_core",
-      "enrichment"
-    ],
     "type": "object"
 }

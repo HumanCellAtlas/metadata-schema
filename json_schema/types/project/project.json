@@ -2,5 +2,12 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/types/project/4.0.0/project.json",
     "description": "An empty project schema that is inherited by all project types.",
-    "title": "project"
+    "title": "project",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project.json",
+            "type": "string"
+        }
+    },
+    "type": "object"
 }
