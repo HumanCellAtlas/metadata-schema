@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json",
+    "description": "A protocol contains information about the intended protocol that was followed in the project.",
+    "additionalProperties": false,
+    "required": [
+        "protocol_id",
+        "type"
+    ],
+    "title": "protocol_core",
+    "properties": {
+        "protocol_id":{
+            "description": "A unique ID for this protocol.",
+            "type": "string"
+        },
+        "name": {
+            "description": "A short, descriptive name for the protocol that need not be unique.",
+            "type": "string"
+        },
+        "description": {
+            "description": "A general description of the protocol.",
+            "type": "string"
+        },
+        "batch_number": {
+            "description": "The batch of kit used.",
+            "type": "string"
+        },
+        "core": {
+	        "description": "type and schema for this object",
+            "$ref": "core.json"
+        },
+        "pdf": {
+            "description": "A filename of a PDF containing the details of the protocol.",
+            "pattern": "^.*.pdf$",
+            "type": "string"
+        },
+        "retail_name": {
+            "description": "The retail name of the kit used. e.g SureCell WTA 3' Library Prep Kit",
+            "type": "string"
+        },
+        "type": {
+            "$ref": "ontology.json",
+            "description": "The type of protocol. Ideally an EFO term."
+        }
+    },
+    "type": "object"
+}
