@@ -4,9 +4,13 @@
     "description": "Information about the donor from which a specimen was collected",
     "additionalProperties" : false,
     "title": "donor",
+     "required" : [
+        "sample_core",
+        "is_living"
+    ],
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/donor/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor.json”,
+            "pattern" : "http://schema.humancellatlas.org/types/sample/donor/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor.json",
             "type": "string"
         },
         "sample_core" : {
@@ -125,9 +129,5 @@
             "type": "number"
         }
     },
-    "required" : [
-        "sample_core",
-        "is_living"
-    ],
     "type": "object"
 }

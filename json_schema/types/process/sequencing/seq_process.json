@@ -1,6 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false, 
+    "id": "http://schema.humancellatlas.org/types/process/sequencing/4.0.0/seq_process.json",
+    "description": "Information about how a sample was sequenced.",
+    "additionalProperties": false,
+     "required": [
+        "instrument_model",
+        "instrument_platform",
+        "lanes",
+        "molecule",
+        "paired_ends"
+    ],
+    "title": "seq",
     "definitions": {
         "lanes": {
             "items": {
@@ -37,8 +47,11 @@
             "type": "array"
         }
     }, 
-    "description": "Information about how a sample was sequenced.", 
     "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/seq_process.json",
+            "type": "string"
+        },
         "insdc_experiment": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
             "pattern": "^[D|E|S]RX[0-9]+$",
@@ -107,14 +120,6 @@
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "$ref": "barcode.json"
         }
-    }, 
-    "required": [
-        "instrument_model",
-        "instrument_platform",
-        "lanes",
-        "molecule", 
-        "paired_ends"
-    ], 
-    "title": "seq", 
+    },
     "type": "object"
 }
