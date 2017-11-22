@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/core/process/4.0.0/process.json",
+    "id": "http://schema.humancellatlas.org/types/process/4.0.0/process.json",
     "description": "An empty process schema that is inherited by all process types.",
     "title": "process"
 }
