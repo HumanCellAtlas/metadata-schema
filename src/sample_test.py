@@ -13,18 +13,28 @@ status_flag = True
 
 os.chdir('../json_schema')
 pwd = subprocess.check_output('pwd').decode("utf-8").rstrip()
+print('pwd: %s' % pwd)
 base_uri = "file://" + pwd + "/"
-print(base_uri)
+print('base URI: %s' % base_uri)
 
 print('\nValidating sample_core.json')
 sv = get_validator('core/sample/sample_core.json', base_uri)
 
 # Specific schema tests follow
 
+# Doesn't contain ontology field
 print('\nValidating schema_test_files/10x_pbmc8k_donor_0.json')
 dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0.json')
 if not validate(sv, dt1): # will return False if fails (show return value)
     status_flag = False
+
+# Contains ontology field
+"""
+print('\nValidating schema_test_files/10x_pbmc8k_donor_0_ontology.json')
+dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0.json')
+if not validate(sv, dt1): # will return False if fails (show return value)
+    status_flag = False
+"""
 
 print('\nValidating schema_test_files/10x_pbmc8k_sample_0.json')
 sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
@@ -38,7 +48,7 @@ if validate(sv, sf1):
     status_flag = False
 
 # Specific bundle tests follow
-
+"""
 print('\nValidating sample_bundle.json')
 sample_bundle_validator = get_validator('sample_bundle.json', base_uri)
 
@@ -46,6 +56,7 @@ print('\nValidating schema_test_files/10x_pbmc8k_sample_bundle.json')
 sample_bundle_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_bundle.json')
 if not validate(sample_bundle_validator, sample_bundle_file):
     status_flag = False
+"""
 
 # If any of the validate() calls fail, set exit status to 1.
 # Failed validate() calls on things that are supposed to fail will not affect exit status.
