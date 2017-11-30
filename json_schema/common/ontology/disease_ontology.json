@@ -18,7 +18,14 @@
         },
         "ontology": {
             "description": "An optional ontology reference in format where prefix_ indicates which ontology",
-            "type": "string"
+            "type": "string",
+            "graph_restriction":  {
+                "ontologies" : ["obo:efo"],
+                "classes": ["MONDO:0000001", "EFO:0000408"],
+                "relations": ["rdfs:subClassOf"],
+                "direct": false,
+                "include_self": false
+            }
         }
     },
     "type": "object"

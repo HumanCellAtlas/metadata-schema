@@ -21,10 +21,10 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:uberon", "obo:efo"],
-                "classes": ["obo:UBERON_0000062","obo:UBERON_0000179"],
+                "classes": ["UBERON:0000062","UBERON:0000179"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": true
+                "include_self": false
             }
         }
     },

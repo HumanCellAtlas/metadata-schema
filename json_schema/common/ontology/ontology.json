@@ -16,7 +16,7 @@
             "type": "string"
         }, 
         "ontology": {
-            "description": "An optional ontology reference in format where prefix_ indicates which ontology", 
+            "description": "An identifier for an ontology term taking the form prefix:accession e.g. UBERON:0000062.", 
             "type": "string"
         }
     },
