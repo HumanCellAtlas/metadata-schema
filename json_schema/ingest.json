@@ -1,39 +1,39 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
-    "description": "Information added or generated at ingest time.",
-    "properties": {
-        "submissionDate": {
-            "description": "When project was first submitted to database.",
-            "format": "date-time",
-            "type": "string"
-        },
-        "submitter_id": {
-            "description": "ID of contact who first submitted project",
-            "type": "string"
-        },
-        "updateDate": {
-            "description": "When project was last updated",
-            "format": "date-time",
-            "type": "string"
-        },
-        "updater_id": {
-            "description": "ID of contact who last updated project",
-            "type": "string"
-        },
-        "document_id": {
-            "description": "Identifier for document.",
-            "comment": "This structure supports the current ingest API.  It may change in future.",
-            "type": "string",
-            "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}"
-        },
-        "accession": {
-            "description": "A unique accession for this entity, provided by the broker.",
-            "type": "string"
-        }
-    },
+    "additionalProperties": false, 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
     "required": [
-        "document_id",
+        "document_id", 
         "submissionDate"
-    ]
+    ], 
+    "description": "Information added or generated at ingest time.", 
+    "properties": {
+        "accession": {
+            "type": "string", 
+            "description": "A unique accession for this entity, provided by the broker."
+        }, 
+        "submissionDate": {
+            "type": "string", 
+            "description": "When project was first submitted to database.", 
+            "format": "date-time"
+        }, 
+        "submitter_id": {
+            "type": "string", 
+            "description": "ID of contact who first submitted project"
+        }, 
+        "updateDate": {
+            "type": "string", 
+            "description": "When project was last updated", 
+            "format": "date-time"
+        }, 
+        "document_id": {
+            "comment": "This structure supports the current ingest API.  It may change in future.", 
+            "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}", 
+            "type": "string", 
+            "description": "Identifier for document."
+        }, 
+        "updater_id": {
+            "type": "string", 
+            "description": "ID of contact who last updated project"
+        }
+    }
 }

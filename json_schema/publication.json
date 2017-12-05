@@ -1,36 +1,36 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
-    "description": "A publication contains information about a journal article, book, web page or other external available documentation on a project",
+    "description": "A publication contains information about a journal article, book, web page or other external available documentation on a project", 
+    "title": "publication", 
+    "required": [
+        "authors", 
+        "title"
+    ], 
+    "additionalProperties": false, 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "type": "object", 
     "properties": {
+        "url": {
+            "type": "string", 
+            "description": "A URL, preferably not behind a paywall, for the publication."
+        }, 
+        "title": {
+            "type": "string", 
+            "description": "The full title of the publication."
+        }, 
+        "pmid": {
+            "type": "integer", 
+            "description": "A PubMed ID of the publication, if available. e.g. 27565351"
+        }, 
+        "doi": {
+            "type": "string", 
+            "description": "The publication digital object identifier (doi), if available. e.g. \"10.1016/j.cell.2016.07.054\""
+        }, 
         "authors": {
-            "description": "A list of authors associated with the publication. Should be in \"surname initials\" format. e.g. \"Tran NM\", \"Kowalczyk M\", \"de Silva-Schmidt CKJ\"",
             "items": {
                 "type": "string"
-            },
-            "type": "array"
-        },
-        "doi": {
-            "description": "The publication digital object identifier (doi), if available. e.g. \"10.1016/j.cell.2016.07.054\"",
-            "type": "string"
-        },
-        "pmid": {
-            "description": "A PubMed ID of the publication, if available. e.g. 27565351",
-            "type": "integer"
-        },
-        "title": {
-            "description": "The full title of the publication.",
-            "type": "string"
-        },
-        "url": {
-            "description": "A URL, preferably not behind a paywall, for the publication.",
-            "type": "string"
+            }, 
+            "type": "array", 
+            "description": "A list of authors associated with the publication. Should be in \"surname initials\" format. e.g. \"Tran NM\", \"Kowalczyk M\", \"de Silva-Schmidt CKJ\""
         }
-    },
-    "required": [
-        "authors",
-        "title"
-    ],
-    "title": "publication",
-    "type": "object"
+    }
 }

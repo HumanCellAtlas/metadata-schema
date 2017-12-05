@@ -1,54 +1,54 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
-    "definitions": {},
-    "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
+    "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment", 
+    "title": "state_of_specimen", 
+    "additionalProperties": false, 
+    "definitions": {}, 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "type": "object", 
     "properties": {
-        "autolysis_score": {
-            "description": "State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate.",
-            "enum": [
-                "none",
-                "mild",
-                "moderate"
-            ]
-        },
-        "gross_description": {
-            "description": "Color, size, and other aspects of specimen as visible to naked eye.",
-            "type": "string"
-        },
-        "gross_image": {
-            "description": "List of filenames of photographs of body part without magnification. Must be of format JPEG, TIFF, or PNG.",
-            "items": {
-                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$",
-                "type": "string"
-            },
-            "type": "array"
-        },
         "ischemic_time": {
-            "description": "Duration of time, in seconds, that the body part had insufficient blood supply.",
-            "maximum": 100000,
-            "minimum": 0,
-            "type": "integer"
-        },
-        "microscopic_description": {
-            "description": "How the sample looks under the microscope and how it compares with normal cells.",
-            "type": "string"
-        },
-        "microscopic_image": {
-            "description": "List of filenames of photographs of body part under microscope. Must be of format JPEG, TIFF, or PNG.",
+            "minimum": 0, 
+            "type": "integer", 
+            "description": "Duration of time, in seconds, that the body part had insufficient blood supply.", 
+            "maximum": 100000
+        }, 
+        "gross_image": {
             "items": {
-                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$",
+                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
                 "type": "string"
-            },
-            "type": "array"
-        },
+            }, 
+            "type": "array", 
+            "description": "List of filenames of photographs of body part without magnification. Must be of format JPEG, TIFF, or PNG."
+        }, 
         "postmortem_interval": {
-            "description": "Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed.",
-            "maximum": 100000,
-            "minimum": 0,
-            "type": "integer"
+            "minimum": 0, 
+            "type": "integer", 
+            "description": "Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed.", 
+            "maximum": 100000
+        }, 
+        "gross_description": {
+            "type": "string", 
+            "description": "Color, size, and other aspects of specimen as visible to naked eye."
+        }, 
+        "autolysis_score": {
+            "enum": [
+                "none", 
+                "mild", 
+                "moderate"
+            ], 
+            "description": "State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate."
+        }, 
+        "microscopic_image": {
+            "items": {
+                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
+                "type": "string"
+            }, 
+            "type": "array", 
+            "description": "List of filenames of photographs of body part under microscope. Must be of format JPEG, TIFF, or PNG."
+        }, 
+        "microscopic_description": {
+            "type": "string", 
+            "description": "How the sample looks under the microscope and how it compares with normal cells."
         }
-    },
-    "title": "state_of_specimen",
-    "type": "object"
+    }
 }

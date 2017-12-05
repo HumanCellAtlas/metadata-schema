@@ -1,31 +1,31 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the cell suspension derived from the collected or cultured specimen",
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "cell_suspension", 
+    "description": "Information about the cell suspension derived from the collected or cultured specimen", 
     "properties": {
-        "target_cell_type": {
-            "description": "Cell types present in the suspension.",
-            "type": "array",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/ontology_json/cell_type_ontology.json"
-            }
-        },
-        "enrichment": {
-            "description": "How sample was enriched for specific cell type(s).",
-            "type": "array",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/enrichment.json"
-            }
-        },
-        "total_estimated_cells": {
-            "description": "Total estimated number of cells in sample. May be 1 for well-based assays.",
-            "maximum": 1000000000.0,
-            "minimum": 0.1,
-            "type": "number"
-        },
         "well": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/well.json",
-            "description": "Information about wells in a plate or chip used for single-cell isolation."
+            "description": "Information about wells in a plate or chip used for single-cell isolation.", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/well.json"
+        }, 
+        "target_cell_type": {
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/ontology_json/cell_type_ontology.json"
+            }, 
+            "type": "array", 
+            "description": "Cell types present in the suspension."
+        }, 
+        "total_estimated_cells": {
+            "minimum": 0.1, 
+            "type": "number", 
+            "description": "Total estimated number of cells in sample. May be 1 for well-based assays.", 
+            "maximum": 1000000000.0
+        }, 
+        "enrichment": {
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/enrichment.json"
+            }, 
+            "type": "array", 
+            "description": "How sample was enriched for specific cell type(s)."
         }
-    },
-    "title": "cell_suspension"
+    }
 }

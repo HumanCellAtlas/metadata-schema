@@ -1,120 +1,120 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "additionalProperties": false,
+    "description": "Information about how a sample was sequenced.", 
+    "title": "seq", 
+    "required": [
+        "instrument_model", 
+        "instrument_platform", 
+        "lanes", 
+        "molecule", 
+        "paired_ends"
+    ], 
+    "additionalProperties": false, 
     "definitions": {
         "lanes": {
             "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "number": {
-                        "description": "Which lane number",
-                        "type": "number"
-                    },
-                    "r1": {
-                        "description": "File name of first read in paired-end read sequencing assay, or only read for unpaired.",
-                        "type": "string"
-                    },
-                    "r2": {
-                        "description": "File name of second read in paired-end read assay.",
-                        "type": "string"
-                    },
-                    "i1": {
-                        "description": "A barcode index file. Often index off of first read.",
-                        "type": "string"
-                    },
-                    "i2": {
-                        "description": "A barcode index file. Often index off of second read.",
-                        "type": "string"
-                    }
-                },
+                "additionalProperties": false, 
                 "required": [
                     "r1"
-                ],
-                "title": "A sequencing lane.",
-                "type": "object"
-            },
-            "title": "lane array",
-            "type": "array"
+                ], 
+                "type": "object", 
+                "properties": {
+                    "i1": {
+                        "type": "string", 
+                        "description": "A barcode index file. Often index off of first read."
+                    }, 
+                    "i2": {
+                        "type": "string", 
+                        "description": "A barcode index file. Often index off of second read."
+                    }, 
+                    "number": {
+                        "type": "number", 
+                        "description": "Which lane number"
+                    }, 
+                    "r2": {
+                        "type": "string", 
+                        "description": "File name of second read in paired-end read assay."
+                    }, 
+                    "r1": {
+                        "type": "string", 
+                        "description": "File name of first read in paired-end read sequencing assay, or only read for unpaired."
+                    }
+                }, 
+                "title": "A sequencing lane."
+            }, 
+            "type": "array", 
+            "title": "lane array"
         }
-    },
-    "description": "Information about how a sample was sequenced.",
+    }, 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "type": "object", 
     "properties": {
-        "insdc_experiment": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
-            "pattern": "^[D|E|S]RX[0-9]+$",
-            "type": "string"
-        },
-        "insdc_run": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
-            "items": {
-                "pattern": "^[D|E|S]RR[0-9]+$",
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "instrument_model": {
-            "description": "The model of the sequencer used. e.g. HiSeq 2000, Sequel.",
-            "enum": [
-                "HiSeq 2000",
-                "HiSeq 2500",
-                "HiSeq 4000",
-                "MiSeq",
-                "NextSeq 500",
-                "Sequel"
-            ]
-        },
-        "instrument_platform": {
-            "description": "The sequencing platform used. e.g. Illumina, Ion Torrent, Pacific Biosciences.",
-            "enum": [
-                "Illumina",
-                "Ion Torrent",
-                "Pacific Biosciences"
-            ]
-        },
-        "lanes": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/seq.json#/definitions/lanes"
-        },
-        "library_construction": {
-            "description": "How the DNA sequencing library was prepared. e.g. Nextera XT, TrueSeq.",
-            "enum": [
-                "Nextera XT",
-                "TruSeq",
-                "modified Nextera XT"
-            ]
-        },
-        "library_protocol": {
-            "description": "DNA sequencing library preparation protocol.",
-            "pattern": "^P-....-.*$",
-            "type": "string"
-        },
-        "local_machine_name": {
-            "description": "Local name for the particular machine on which the sample was sequenced.",
-            "type": "string"
-        },
-        "molecule": {
-            "description": "Specific type of molecule sequenced. e.g. total RNA, genomic DNA, polyA RNA.",
-            "enum": [
-                "polyA RNA",
-                "total RNA",
-                "genomic DNA"
-            ]
-        },
         "paired_ends": {
-            "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
-            "type": "boolean"
-        },
+            "type": "boolean", 
+            "description": "Was a paired-end sequencing strategy used? Must be either yes or no."
+        }, 
+        "lanes": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/seq.json#/definitions/lanes"
+        }, 
         "umi_barcode": {
-            "description": "Information about unique molecular identifier (UMI) barcode sequences.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/barcode.json"
+            "description": "Information about unique molecular identifier (UMI) barcode sequences.", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/barcode.json"
+        }, 
+        "insdc_run": {
+            "items": {
+                "pattern": "^[D|E|S]RR[0-9]+$", 
+                "type": "string"
+            }, 
+            "type": "array", 
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR."
+        }, 
+        "local_machine_name": {
+            "type": "string", 
+            "description": "Local name for the particular machine on which the sample was sequenced."
+        }, 
+        "molecule": {
+            "enum": [
+                "polyA RNA", 
+                "total RNA", 
+                "genomic DNA"
+            ], 
+            "description": "Specific type of molecule sequenced. e.g. total RNA, genomic DNA, polyA RNA."
+        }, 
+        "instrument_model": {
+            "enum": [
+                "HiSeq 2000", 
+                "HiSeq 2500", 
+                "HiSeq 4000", 
+                "MiSeq", 
+                "NextSeq 500", 
+                "Sequel"
+            ], 
+            "description": "The model of the sequencer used. e.g. HiSeq 2000, Sequel."
+        }, 
+        "instrument_platform": {
+            "enum": [
+                "Illumina", 
+                "Ion Torrent", 
+                "Pacific Biosciences"
+            ], 
+            "description": "The sequencing platform used. e.g. Illumina, Ion Torrent, Pacific Biosciences."
+        }, 
+        "library_protocol": {
+            "pattern": "^P-....-.*$", 
+            "type": "string", 
+            "description": "DNA sequencing library preparation protocol."
+        }, 
+        "insdc_experiment": {
+            "pattern": "^[D|E|S]RX[0-9]+$", 
+            "type": "string", 
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX."
+        }, 
+        "library_construction": {
+            "enum": [
+                "Nextera XT", 
+                "TruSeq", 
+                "modified Nextera XT"
+            ], 
+            "description": "How the DNA sequencing library was prepared. e.g. Nextera XT, TrueSeq."
         }
-    },
-    "required": [
-        "instrument_model",
-        "instrument_platform",
-        "lanes",
-        "molecule",
-        "paired_ends"
-    ],
-    "title": "seq",
-    "type": "object"
+    }
 }

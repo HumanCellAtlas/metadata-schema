@@ -1,29 +1,29 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Core object found in all modules.",
-    "properties": {
-        "schema_url": {
-            "description": "URL of JSON schema document that validates this version of this module.",
-            "type": "string"
-        },
-        "schema_version": {
-            "description": "Version number in major.minor.patch format. e.g. 3.2.4. Major version changes likely require changes to software. Minor version changes should not require software changes. Patches are just documentation changes.",
-            "pattern": "^...*..*$",
-            "type": "string"
-        },
-        "type": {
-            "description": "The name of the core metadata entity type.",
-            "enum": [
-                "assay",
-                "project",
-                "protocol",
-                "sample",
-                "file",
-                "analysis"
-            ]
-        }
-    },
+    "$schema": "http://json-schema.org/draft-04/schema#", 
     "required": [
         "type"
-    ]
+    ], 
+    "description": "Core object found in all modules.", 
+    "properties": {
+        "type": {
+            "enum": [
+                "assay", 
+                "project", 
+                "protocol", 
+                "sample", 
+                "file", 
+                "analysis"
+            ], 
+            "description": "The name of the core metadata entity type."
+        }, 
+        "schema_url": {
+            "type": "string", 
+            "description": "URL of JSON schema document that validates this version of this module."
+        }, 
+        "schema_version": {
+            "pattern": "^...*..*$", 
+            "type": "string", 
+            "description": "Version number in major.minor.patch format. e.g. 3.2.4. Major version changes likely require changes to software. Minor version changes should not require software changes. Patches are just documentation changes."
+        }
+    }
 }
