@@ -5,7 +5,7 @@
     "properties": {
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
-            "pattern": "^[0-9]+\.?[0-9]*-?[0-9]*\.?[0-9]*$",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string"
         },
         "age_unit": {
@@ -59,7 +59,7 @@
         },
         "height": {
             "description": "Height of donor, in meters. Can be a range separated by a hyphen.",
-            "pattern": "^[0-9]+\.?[0-9]*-?[0-9]*\.?[0-9]*$",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string"
         },
         "is_living": {
@@ -112,7 +112,7 @@
         },
         "weight": {
             "description": "Weight of donor, in kilograms. Can be a range separated by a hyphen.",
-            "pattern": "^[0-9]+\.?[0-9]*-?[0-9]*\.?[0-9]*$",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string"
         }
     },
