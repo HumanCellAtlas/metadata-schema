@@ -13,7 +13,7 @@
           "life_stage": "adult",
           "species": {
               "text": "Homo sapiens",
-              "ontology": "NCBITAXON_9606"
+              "ontology": "NCBITAXON:9606"
           }
     },
     "ncbi_taxon_id": 9606

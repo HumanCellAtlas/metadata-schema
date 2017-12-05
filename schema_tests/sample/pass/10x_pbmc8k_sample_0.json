@@ -6,7 +6,7 @@
     "sample_from_organism" : {
        "organ": {
             "text": "blood",
-            "ontology": "UBERON_0000178"
+            "ontology": "UBERON:0000178"
         },
         "body_part": {
             "text": "peripheral blood mononuclear cells (PBMCs)"

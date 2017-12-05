@@ -37,7 +37,7 @@
   "donor": {
     "species": {
       "text": "Homo sapiens",
-      "ontology": 9606
+      "ontology": "NCBITAXON:9606"
     },
     "is_living": "yes",
     "core": {
