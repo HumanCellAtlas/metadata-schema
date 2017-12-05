@@ -31,8 +31,7 @@
         }
     },
     "required": [
-        "cause_of_death",
-        "time_of_death"
+        "cause_of_death"
     ],
     "title": "death",
     "type": "object"
