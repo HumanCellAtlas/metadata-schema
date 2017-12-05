@@ -11,8 +11,8 @@
             "description": "An optional ontology reference in format where prefix_ indicates which ontology",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:uberon", "obo:efo"],
-                "classes": ["obo:UBERON_0000465"],
+                "ontologies" : ["obo:uberon"],
+                "classes": ["UBERON:0000465"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": true

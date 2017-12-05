@@ -11,8 +11,8 @@
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:cl", "obo:efo"],
-                "classes": ["obo:CL_0000003"],
+                "ontologies" : ["obo:cl"],
+                "classes": ["CL:0000003"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": true

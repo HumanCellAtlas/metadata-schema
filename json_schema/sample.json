@@ -111,7 +111,7 @@
             "properties": {
                 "biosd_sample": {
                     "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
-                    "pattern": "^SAM[N|E|D][0-9]+$",
+                    "pattern": "^SAM[E|N|D][A|G]?[0-9]+$",
                     "type": "string"
                 },
                 "insdc_sample": {
