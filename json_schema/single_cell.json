@@ -5,7 +5,7 @@
     "properties": {
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/barcode.json"
         },
         "cell_handling": {
             "description": "How cells are separated. e.g. FACS, drop-seq, 10X_v2, Fluidigm C1.",

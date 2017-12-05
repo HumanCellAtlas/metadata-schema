@@ -6,7 +6,7 @@
     "properties": {
         "cause_of_death": {
             "description": "Cause of death from death report for human donor, from research lab for mouse.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/ontology.json"
         },
         "cold_perfused": {
             "description": "Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise.",

@@ -10,7 +10,7 @@
             "additionalProperties": false,
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/submission.json#/definitions/file"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/submission.json#/definitions/file"
             }
         },
         "file": {
@@ -72,10 +72,10 @@
     },
     "properties": {
         "transfer_service_version": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/submission.json#/definitions/transfer_service_version"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/submission.json#/definitions/transfer_service_version"
         },
         "submitted_files": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/submission.json#/definitions/submitted_files"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/submission.json#/definitions/submitted_files"
         }
     },
     "required": [

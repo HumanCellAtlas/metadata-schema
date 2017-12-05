@@ -6,15 +6,15 @@
     "type": "object",
     "properties": {
         "body_part": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology_json/body_part_ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/ontology_json/body_part_ontology.json",
             "description": "A more detailed position within the body than the term given in the organ field."
         },
         "organ": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/ontology.json",
             "description": "The organ that the sample came from. e.g. liver, spleen. Blood and connective tissue count as organs."
         },
         "state_of_specimen": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.0.0/json_schema/state_of_specimen.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.1.0/json_schema/state_of_specimen.json",
             "description": "State of body_part at collection and how it was preserved after removal."
         }
     },
