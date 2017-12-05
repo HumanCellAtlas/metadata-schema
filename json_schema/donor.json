@@ -5,9 +5,8 @@
     "properties": {
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
-            "maximum": 150,
-            "minimum": 0,
-            "type": "number"
+            "pattern": "^\d+\.?\d*-?\d*\.?\d*$",
+            "type": "string"
         },
         "age_unit": {
             "description": "The unit in which age is expressed. Must be one of day, week, month, or year.",
@@ -15,7 +14,11 @@
                 "hour",
                 "day",
                 "week",
-                "year"
+                "year",
+                "hours",
+                "days",
+                "weeks",
+                "years"
             ]
         },
         "alcohol_history": {
@@ -55,10 +58,9 @@
             "type": "string"
         },
         "height": {
-            "description": "Height of donor in meters.",
-            "maximum": 10,
-            "minimum": 0,
-            "type": "number"
+            "description": "Height of donor, in meters. Can be a range separated by a hyphen.",
+            "pattern": "^\d+\.?\d*-?\d*\.?\d*$",
+            "type": "string"
         },
         "is_living": {
             "description": "Should be yes if donor is living at time of sample donation. Otherwise, should be no.",
@@ -109,10 +111,9 @@
             }
         },
         "weight": {
-            "description": "Weight of donor in kilograms.",
-            "maximum": 1000,
-            "minimum": 0,
-            "type": "number"
+            "description": "Weight of donor, in kilograms. Can be a range separated by a hyphen.",
+            "pattern": "^\d+\.?\d*-?\d*\.?\d*$",
+            "type": "string"
         }
     },
     "required": [
