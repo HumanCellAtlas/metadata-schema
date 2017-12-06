@@ -10,7 +10,7 @@
     "properties": {
         "core": {
             "description": "Type and schema for this object.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
         }, 
         "file_format": {
             "enum": [
