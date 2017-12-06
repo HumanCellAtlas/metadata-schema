@@ -19,7 +19,7 @@
     "properties": {
         "core": {
             "description": "type and schema for this object", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
         }, 
         "related_projects": {
             "items": {
@@ -34,21 +34,14 @@
         }, 
         "contributors": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/contact.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/contact.json"
             }, 
             "type": "array", 
             "description": "List of people contributing to the project."
         }, 
-        "experimental_factor_name": {
-            "items": {
-                "type": "string"
-            }, 
-            "type": "array", 
-            "description": "A list of the factors that vary between samples in the experiment. e.g. \"time since collection\", \"preservation method\""
-        }, 
         "submitters": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/contact.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/contact.json"
             }, 
             "type": "array", 
             "description": "List of people submitting data to the project."
@@ -73,25 +66,32 @@
         "experimental_design": {
             "items": {
                 "description": "A short description of overall experiment type. e.g. \"single cell RNA sequencing.\"", 
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ontology.json"
             }, 
             "type": "array"
         }, 
         "publications": {
             "items": {
                 "description": "An array of publication modules.", 
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/publication.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/publication.json"
             }, 
             "type": "array"
+        }, 
+        "experimental_factor_name": {
+            "items": {
+                "type": "string"
+            }, 
+            "type": "array", 
+            "description": "A list of the factors that vary between samples in the experiment. e.g. \"time since collection\", \"preservation method\""
+        }, 
+        "project_id": {
+            "type": "string", 
+            "description": "A unique ID for this project."
         }, 
         "array_express_investigation": {
             "pattern": "^E-....-.*$", 
             "type": "string", 
             "description": "An EBI ArrayExpress investigation accession."
-        }, 
-        "project_id": {
-            "type": "string", 
-            "description": "A unique ID for this project."
         }, 
         "insdc_study": {
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$", 

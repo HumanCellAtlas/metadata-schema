@@ -53,7 +53,7 @@
     "properties": {
         "core": {
             "description": "Type and schema for this object.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
         }, 
         "sample_accessions": {
             "additionalProperties": false, 
@@ -66,28 +66,28 @@
                     "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS."
                 }, 
                 "biosd_sample": {
-                    "pattern": "^SAM[E|N|D][A|G]?[0-9]+$", 
+                    "pattern": "^SAM(D|N|E([AG]?))[0-9]+$", 
                     "type": "string", 
                     "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME."
                 }
             }
         }, 
         "immortalized_cell_line": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/immortalized_cell_line.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/immortalized_cell_line.json"
         }, 
         "description": {
             "type": "string", 
             "description": "A general description of the sample."
         }, 
         "cell_suspension": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/cell_suspension.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/cell_suspension.json"
         }, 
         "specimen_from_organism": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/specimen_from_organism.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/specimen_from_organism.json"
         }, 
         "genus_species": {
             "description": "Scientific binomial name of donor species. e.g. Homo sapiens.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ontology.json"
         }, 
         "supplementary_files": {
             "items": {
@@ -110,13 +110,13 @@
             "description": "A unique ID for this sample."
         }, 
         "donor": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/donor.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/donor.json"
         }, 
         "primary_cell_line": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/primary_cell_line.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/primary_cell_line.json"
         }, 
         "organoid": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/organoid.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/organoid.json"
         }, 
         "name": {
             "type": "string", 

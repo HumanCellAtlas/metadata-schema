@@ -10,19 +10,19 @@
                 "content": {
                     "type": "object", 
                     "description": "Assay content", 
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/assay.json"
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/assay.json"
                 }, 
                 "derivation_protocols": {
                     "items": {
                         "description": "An array of protocols used in derivation of this sample.", 
-                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/protocol.json"
+                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/protocol.json"
                     }, 
                     "type": "array"
                 }, 
                 "hca_ingest": {
                     "type": "object", 
                     "description": "core fields added by HCA ingest service", 
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/ingest.json"
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ingest.json"
                 }
             }
         }
@@ -31,6 +31,6 @@
     "type": "array", 
     "description": "A schema for an assay bundle", 
     "items": {
-        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/assay_bundle.json#/definitions/assay_ingest"
+        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/assay_bundle.json#/definitions/assay_ingest"
     }
 }

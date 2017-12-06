@@ -9,7 +9,7 @@
         "submitted_files": {
             "additionalProperties": false, 
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/submission.json#/definitions/file"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/submission.json#/definitions/file"
             }, 
             "type": "array"
         }, 
@@ -28,10 +28,6 @@
             ], 
             "type": "object", 
             "properties": {
-                "id": {
-                    "type": "string", 
-                    "description": "URI of the Data Storage System file resource that describes this file"
-                }, 
                 "checksums": {
                     "required": [
                         "s3etag", 
@@ -63,6 +59,10 @@
                     "type": "string", 
                     "description": "Name of the file"
                 }, 
+                "id": {
+                    "type": "string", 
+                    "description": "URI of the Data Storage System file resource that describes this file"
+                }, 
                 "content_type": {
                     "type": "string", 
                     "description": "type of file e.g hca-sample-json, hca-assay-json, hca-rnaseq-fastq-gz"
@@ -78,10 +78,10 @@
     "type": "object", 
     "properties": {
         "submitted_files": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/submission.json#/definitions/submitted_files"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/submission.json#/definitions/submitted_files"
         }, 
         "transfer_service_version": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/submission.json#/definitions/transfer_service_version"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/submission.json#/definitions/transfer_service_version"
         }
     }
 }
