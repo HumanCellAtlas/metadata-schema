@@ -20,7 +20,9 @@
                 "drop-seq", 
                 "inDrop", 
                 "mouth pipette", 
-                "bulk"
+                "bulk",
+                "10x",
+                "10X"
             ], 
             "description": "How cells are separated. e.g. FACS, drop-seq, 10X_v2, Fluidigm C1."
         }

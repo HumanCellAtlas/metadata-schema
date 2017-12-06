@@ -66,7 +66,7 @@
                     "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS."
                 }, 
                 "biosd_sample": {
-                    "pattern": "^SAM[E|N|D][A|G]?[0-9]+$", 
+                    "pattern": "^SAM(D|N|E([AG]?))[0-9]+$",
                     "type": "string", 
                     "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME."
                 }

@@ -64,7 +64,8 @@
                 "XY", 
                 "FU", 
                 "PR", 
-                "VI"
+                "VI",
+                "Cambridgeshire"
             ], 
             "description": "Name of state, province, canton, or other country subdivision."
         }, 

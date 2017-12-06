@@ -10,7 +10,7 @@
             "minimum": 0, 
             "type": "integer", 
             "description": "Duration of time, in seconds, that the body part had insufficient blood supply.", 
-            "maximum": 100000
+            "maximum": 1000000
         }, 
         "gross_image": {
             "items": {
@@ -24,7 +24,7 @@
             "minimum": 0, 
             "type": "integer", 
             "description": "Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed.", 
-            "maximum": 100000
+            "maximum": 1000000
         }, 
         "gross_description": {
             "type": "string", 

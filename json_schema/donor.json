@@ -38,7 +38,7 @@
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.2.0/json_schema/ontology.json"
             }, 
             "type": "array", 
-            "description": "The name of th mouse inbred strain. e.g. C57BL/6."
+            "description": "The name of the mouse inbred strain. e.g. C57BL/6."
         }, 
         "alcohol_history": {
             "type": "string", 

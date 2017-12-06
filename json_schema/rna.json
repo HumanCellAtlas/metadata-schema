@@ -62,7 +62,9 @@
                 "QUARTZ-Seq", 
                 "10x_v2", 
                 "drop-seq", 
-                "inDrop"
+                "inDrop",
+                "10x",
+                "10X"
             ], 
             "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x."
         }

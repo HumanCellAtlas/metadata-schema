@@ -112,7 +112,9 @@
             "enum": [
                 "Nextera XT", 
                 "TruSeq", 
-                "modified Nextera XT"
+                "modified Nextera XT",
+                "10X",
+                "10x"
             ], 
             "description": "How the DNA sequencing library was prepared. e.g. Nextera XT, TrueSeq."
         }
