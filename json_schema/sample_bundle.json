@@ -38,12 +38,12 @@
         "core": {
             "description": "Type and schema for this object.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
+        },
+        "samples" : {
+            "type" : "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/sample_bundle.json#/definitions/sample_ingest"
+            }
         }
-    },
-    "samples" : {
-        "type" : "array",
-        "items": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/sample_bundle.json#/definitions/sample_ingest"
-        }
-     }
+    }
 }
