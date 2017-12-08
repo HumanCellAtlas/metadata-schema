@@ -12,9 +12,9 @@
                 "protocol", 
                 "sample", 
                 "file", 
-                "analysis",
-                "assay_bundle",
-                "sample_bundle",
+                "analysis", 
+                "assay_bundle", 
+                "sample_bundle", 
                 "project_bundle"
             ], 
             "description": "The name of the core metadata entity type."

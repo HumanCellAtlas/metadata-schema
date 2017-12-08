@@ -53,7 +53,7 @@
             "description": "Was a paired-end sequencing strategy used? Must be either yes or no."
         }, 
         "lanes": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/seq.json#/definitions/lanes"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/seq.json#/definitions/lanes"
         }, 
         "insdc_run": {
             "items": {
@@ -88,7 +88,7 @@
         }, 
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/barcode.json"
         }, 
         "library_protocol": {
             "pattern": "^P-....-.*$", 

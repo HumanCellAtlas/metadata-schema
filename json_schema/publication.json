@@ -13,10 +13,6 @@
             "type": "string", 
             "description": "A URL, preferably not behind a paywall, for the publication."
         }, 
-        "title": {
-            "type": "string", 
-            "description": "The full title of the publication."
-        }, 
         "pmid": {
             "type": "integer", 
             "description": "A PubMed ID of the publication, if available. e.g. 27565351"
@@ -31,6 +27,10 @@
             }, 
             "type": "array", 
             "description": "A list of authors associated with the publication. Should be in \"surname initials\" format. e.g. \"Tran NM\", \"Kowalczyk M\", \"de Silva-Schmidt CKJ\""
+        }, 
+        "title": {
+            "type": "string", 
+            "description": "The full title of the publication."
         }
     }
 }

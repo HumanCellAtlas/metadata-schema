@@ -10,7 +10,12 @@
     "properties": {
         "core": {
             "description": "Type and schema for this object.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/core.json"
+        }, 
+        "filename": {
+            "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
+            "type": "string", 
+            "description": "A filename for a data file. Must have a valid extension."
         }, 
         "file_format": {
             "enum": [
@@ -21,11 +26,6 @@
                 "png"
             ], 
             "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, png."
-        }, 
-        "filename": {
-            "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
-            "type": "string", 
-            "description": "A filename for a data file. Must have a valid extension."
         }
     }
 }

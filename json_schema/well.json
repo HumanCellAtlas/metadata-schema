@@ -9,10 +9,6 @@
             "type": "string", 
             "description": "An ID for the plate that the well is located on."
         }, 
-        "row": {
-            "type": "string", 
-            "description": "Well row in plate."
-        }, 
         "quality": {
             "enum": [
                 "OK", 
@@ -29,6 +25,10 @@
         "name": {
             "type": "string", 
             "description": "A name for the well. Should be unique for the plate"
+        }, 
+        "row": {
+            "type": "string", 
+            "description": "Well row in plate."
         }
     }
 }

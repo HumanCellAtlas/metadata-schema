@@ -46,16 +46,16 @@
             "type": "array", 
             "description": "x, y, and z (number of focal planes) resolution of an individual field"
         }, 
-        "probes": {
-            "type": "string", 
-            "description": "A file containing information on probe sequence, genes they cover, and  colors"
-        }, 
         "field_counts": {
             "items": {
                 "type": "integer"
             }, 
             "type": "array", 
             "description": "number of fields in x and y dimensions"
+        }, 
+        "probes": {
+            "type": "string", 
+            "description": "A file containing information on probe sequence, genes they cover, and  colors"
         }
     }
 }

@@ -6,16 +6,16 @@
     ], 
     "additionalProperties": false, 
     "definitions": {
-        "submitted_files": {
-            "additionalProperties": false, 
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/submission.json#/definitions/file"
-            }, 
-            "type": "array"
-        }, 
         "transfer_service_version": {
             "additionalProperties": false, 
             "type": "string"
+        }, 
+        "submitted_files": {
+            "additionalProperties": false, 
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/submission.json#/definitions/file"
+            }, 
+            "type": "array"
         }, 
         "file": {
             "additionalProperties": false, 
@@ -55,21 +55,21 @@
                         }
                     }
                 }, 
+                "size": {
+                    "type": "integer", 
+                    "description": "Length of file in bytes"
+                }, 
                 "name": {
                     "type": "string", 
                     "description": "Name of the file"
-                }, 
-                "id": {
-                    "type": "string", 
-                    "description": "URI of the Data Storage System file resource that describes this file"
                 }, 
                 "content_type": {
                     "type": "string", 
                     "description": "type of file e.g hca-sample-json, hca-assay-json, hca-rnaseq-fastq-gz"
                 }, 
-                "size": {
-                    "type": "integer", 
-                    "description": "Length of file in bytes"
+                "id": {
+                    "type": "string", 
+                    "description": "URI of the Data Storage System file resource that describes this file"
                 }
             }
         }
@@ -77,11 +77,11 @@
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "type": "object", 
     "properties": {
-        "submitted_files": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/submission.json#/definitions/submitted_files"
-        }, 
         "transfer_service_version": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/submission.json#/definitions/transfer_service_version"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/submission.json#/definitions/transfer_service_version"
+        }, 
+        "submitted_files": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/submission.json#/definitions/submitted_files"
         }
     }
 }

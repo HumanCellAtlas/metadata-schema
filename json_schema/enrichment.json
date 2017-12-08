@@ -8,13 +8,11 @@
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "type": "object", 
     "properties": {
-        "type": {
-            "enum": [
-                "FACS", 
-                "MACS", 
-                "Ficoll gradient"
-            ], 
-            "description": "The method by which enrichment was achieved. e.g. MACS, FACS, Ficoli gradient"
+        "size_max": {
+            "minimum": 0.01, 
+            "type": "number", 
+            "description": "Maximum size passing selection, in microns.", 
+            "maximum": 10000
         }, 
         "size_min": {
             "minimum": 0.01, 
@@ -22,11 +20,13 @@
             "description": "Minimum size passing selection, in microns.", 
             "maximum": 10000
         }, 
-        "size_max": {
-            "minimum": 0.01, 
-            "type": "number", 
-            "description": "Maximum size passing selection, in microns.", 
-            "maximum": 10000
+        "type": {
+            "enum": [
+                "FACS", 
+                "MACS", 
+                "Ficoll gradient"
+            ], 
+            "description": "The method by which enrichment was achieved. e.g. MACS, FACS, Ficoli gradient"
         }, 
         "markers": {
             "type": "string", 

@@ -1,14 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "title": "cell_suspension", 
+    "description": "Information about the cell suspension derived from the collected or cultured specimen", 
     "properties": {
         "well": {
             "description": "Information about wells in a plate or chip used for single-cell isolation.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/well.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/well.json"
         }, 
         "target_cell_type": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ontology_json/cell_type_ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/ontology_json/cell_type_ontology.json"
             }, 
             "type": "array", 
             "description": "Cell types present in the suspension."
@@ -21,11 +21,11 @@
         }, 
         "enrichment": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/enrichment.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/enrichment.json"
             }, 
             "type": "array", 
             "description": "How sample was enriched for specific cell type(s)."
         }
     }, 
-    "description": "Information about the cell suspension derived from the collected or cultured specimen"
+    "title": "cell_suspension"
 }

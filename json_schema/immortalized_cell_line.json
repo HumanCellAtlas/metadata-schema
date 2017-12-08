@@ -11,7 +11,7 @@
         }, 
         "cell_type": {
             "description": "What cell type the line was derived from. CLO ontology.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ontology_json/cell_type_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/ontology_json/cell_type_ontology.json"
         }, 
         "date_established": {
             "type": "string", 
@@ -24,7 +24,7 @@
         }, 
         "disease": {
             "description": "A disease associated with the cell line. EFO ontology.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ontology_json/disease_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/ontology_json/disease_ontology.json"
         }, 
         "passage_number": {
             "minimum": 0, 
@@ -32,17 +32,17 @@
             "description": "The number of passages the cell line as been through.", 
             "maximum": 1000
         }, 
-        "cell_cycle": {
-            "description": "The cell cycle phase, if known.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ontology.json"
+        "publication": {
+            "description": "The publication in which the cell line creation was cited.", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/publication.json"
         }, 
         "karyotype": {
             "type": "string", 
             "description": "The karyotype of the cell line."
         }, 
-        "publication": {
-            "description": "The publication in which the cell line creation was cited.", 
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/publication.json"
+        "cell_cycle": {
+            "description": "The cell cycle phase, if known.", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/ontology.json"
         }
     }
 }
