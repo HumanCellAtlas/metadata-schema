@@ -3,7 +3,8 @@
         "sample_ingest": {
             "required": [
                 "hca_ingest", 
-                "content"
+                "content",
+                "core"
             ], 
             "type": "object", 
             "properties": {
@@ -25,7 +26,12 @@
                     "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/ingest.json"
                 }, 
                 "derived_from": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The sample that this sample was derived from."
+                },
+                "core": {
+                    "description": "Type and schema for this object.",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
                 }
             }
         }
