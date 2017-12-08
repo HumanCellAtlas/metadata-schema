@@ -3,9 +3,8 @@
         "sample_ingest": {
             "required": [
                 "hca_ingest", 
-                "content",
-                "core"
-            ], 
+                "content"
+            ],
             "type": "object", 
             "properties": {
                 "content": {
@@ -28,18 +27,23 @@
                 "derived_from": {
                     "type": "string",
                     "description": "The sample that this sample was derived from."
-                },
-                "core": {
-                    "description": "Type and schema for this object.",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
                 }
             }
         }
     }, 
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "type": "array", 
+    "type": "object",
     "description": "A schema for a sample bundle", 
-    "items": {
-        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/sample_bundle.json#/definitions/sample_ingest"
+    "properties" : {
+        "core": {
+            "description": "Type and schema for this object.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/core.json"
+        },
+        "samples" : {
+            "type" : "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.3.0/json_schema/sample_bundle.json#/definitions/sample_ingest"
+            }
+        }
     }
 }
