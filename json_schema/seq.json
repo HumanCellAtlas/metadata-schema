@@ -113,8 +113,8 @@
                 "Nextera XT", 
                 "TruSeq", 
                 "modified Nextera XT", 
-                "10X", 
-                "10x"
+                "10x_v2",
+                "10x_v1"
             ], 
             "description": "How the DNA sequencing library was prepared. e.g. Nextera XT, TrueSeq."
         }
