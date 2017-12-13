@@ -11,7 +11,8 @@
         "metadata_schema",
         "tasks",
         "inputs",
-        "outputs"
+        "outputs",
+        "core"
     ],
     "additionalProperties": true,
     "definitions": {
