@@ -24,7 +24,18 @@
                     "type": "object", 
                     "description": "core fields added by HCA ingest service", 
                     "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/ingest.json"
-                }, 
+                },
+                "has_input": {
+                    "type": "string",
+                    "description": "The sample that this assay was performed on."
+                },
+                "has_output": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array",
+                    "description": "The files that were generated from this assay."
+                },
                 "core": {
                     "description": "Type and schema for this object.", 
                     "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/core.json"
