@@ -1,6 +1,6 @@
 {
     "definitions": {
-        "project_ingest": {
+        "analysis_ingest": {
             "required": [
                 "hca_ingest",
                 "content",
@@ -10,8 +10,8 @@
             "properties": {
                 "content": {
                     "type": "object",
-                    "description": "Project content",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/project.json"
+                    "description": "Analysis content",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis.json"
                 },
                 "core": {
                     "description": "Type and schema for this object.",
@@ -27,6 +27,6 @@
     },
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
-    "description": "A schema for a project bundle",
-    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/project_bundle.json#/definitions/project_ingest"
+    "description": "A schema for a analysis bundle",
+    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis_bundle.json#/definitions/analysis_ingest"
 }

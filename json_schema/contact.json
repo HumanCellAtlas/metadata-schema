@@ -1,14 +1,14 @@
 {
-    "description": "contact schema generate by tagSchemaToJson from contact", 
-    "title": "contact", 
+    "description": "contact schema generate by tagSchemaToJson from contact",
+    "title": "contact",
     "required": [
-        "name", 
+        "name",
         "email"
-    ], 
-    "additionalProperties": false, 
-    "definitions": {}, 
-    "$schema": "http://json-schema.org/draft-04/schema#", 
-    "type": "object", 
+    ],
+    "additionalProperties": false,
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
     "properties": {
         "country": {
             "description": "Name of country where contact works.",
@@ -17,34 +17,34 @@
         "country_division": {
             "description": "Name of state, province, canton, or other country subdivision where contact works.",
             "type": "string"
-        }, 
+        },
         "city": {
-            "type": "string", 
+            "type": "string",
             "description": "Name of city where contact works."
-        }, 
+        },
         "name": {
-            "type": "string", 
+            "type": "string",
             "description": "The contact's name. Should be in the format first, middle, last name. Middle can be initial or left blank. e.g. John,D,Doe or Jane,,Smith"
         },
         "email": {
-            "pattern": "^.*@.*..*$", 
-            "type": "string", 
+            "pattern": "^.*@.*..*$",
+            "type": "string",
             "description": "An email address for the contact."
-        }, 
+        },
         "phone": {
-            "type": "string", 
+            "type": "string",
             "description": "Phone number (including country code) of contact or contact's lab."
-        }, 
+        },
         "address": {
-            "type": "string", 
+            "type": "string",
             "description": "Full mailing address where contact works. Should include street name and number, city, state, postal code, country."
-        }, 
+        },
         "laboratory": {
-            "type": "string", 
+            "type": "string",
             "description": "Name of lab (often the PI name) within institute where contact works."
-        }, 
+        },
         "institution": {
-            "type": "string", 
+            "type": "string",
             "description": "Name of primary institute where contact works."
         }
     }
