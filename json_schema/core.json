@@ -15,7 +15,8 @@
                 "analysis",
                 "assay_bundle",
                 "sample_bundle",
-                "project_bundle"
+                "project_bundle",
+                "analysis_bundle"
             ],
             "description": "The name of the core metadata entity type."
         },
