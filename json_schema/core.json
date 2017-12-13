@@ -1,8 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
     "required": [
-        "type",
-        "schema_url"
+        "type"
     ], 
     "description": "Core object found in all modules.", 
     "properties": {

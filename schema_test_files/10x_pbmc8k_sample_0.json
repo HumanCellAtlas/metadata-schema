@@ -1,7 +1,8 @@
 {
     "core" : {
-      "schema_version" : "4.0.0",
-      "type" : "sample"
+      "schema_version" : "4.4.0",
+      "type" : "sample",
+      "schema_url": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/sample.json"
     },
     "sample_id": "s1",
     "name": "PBMCs",
