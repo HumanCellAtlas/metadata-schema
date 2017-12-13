@@ -1,8 +1,8 @@
 {
   "core": {
     "type": "sample_bundle",
-    "schema_url": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/sample_bundle.json",
-    "schema_version": "4.4.0"
+    "schema_url": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/sample_bundle.json",
+    "schema_version": "4.5.0"
   },
   "samples": [
     {
@@ -14,9 +14,9 @@
       },
       "content": {
         "core": {
-          "schema_version": "4.4.0",
+          "schema_version": "4.5.0",
           "type": "sample",
-          "schema_url": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/sample.json"
+          "schema_url": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/sample.json"
         },
         "sample_id": "d1",
         "donor": {
@@ -40,8 +40,8 @@
       "content": {
         "core": {
           "type": "sample",
-          "schema_url": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.4.0/json_schema/sample.json",
-          "schema_version": "4.4.0"
+          "schema_url": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/sample.json",
+          "schema_version": "4.5.0"
         },
         "sample_id": "s1",
         "name": "PBMCs",
