@@ -19,14 +19,14 @@
         }, 
         "doi": {
             "type": "string", 
-            "description": "The publication digital object identifier (doi), if available. e.g. \"10.1016/j.cell.2016.07.054\""
+            "description": "The publication digital object identifier (doi), if available. e.g. 10.1016/j.cell.2016.07.054"
         }, 
         "authors": {
             "items": {
                 "type": "string"
             }, 
             "type": "array", 
-            "description": "A list of authors associated with the publication. Should be in \"surname initials\" format. e.g. \"Tran NM\", \"Kowalczyk M\", \"de Silva-Schmidt CKJ\""
+            "description": "A list of authors associated with the publication. Names can be in any format but must be separated by ||."
         }, 
         "title": {
             "type": "string", 

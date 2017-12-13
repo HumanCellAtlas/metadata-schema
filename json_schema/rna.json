@@ -63,8 +63,9 @@
                 "10x_v2", 
                 "drop-seq", 
                 "inDrop", 
-                "10x", 
-                "10X"
+                "10x_v1",
+                "SMARTer cDNA synthesis kit",
+                "TruSeq Stranded Total RNA Library Prep"
             ], 
             "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x."
         }

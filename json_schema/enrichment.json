@@ -24,9 +24,10 @@
             "enum": [
                 "FACS", 
                 "MACS", 
-                "Ficoll gradient"
+                "Ficoll gradient",
+                "density gradient"
             ], 
-            "description": "The method by which enrichment was achieved. e.g. MACS, FACS, Ficoli gradient"
+            "description": "The method by which enrichment was achieved. e.g. MACS, FACS, Ficoll gradient"
         }, 
         "markers": {
             "type": "string", 
