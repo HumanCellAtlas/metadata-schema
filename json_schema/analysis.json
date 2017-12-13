@@ -11,7 +11,8 @@
         "metadata_schema",
         "tasks",
         "inputs",
-        "outputs"
+        "outputs",
+        "core"
     ],
     "additionalProperties": true,
     "definitions": {
@@ -30,16 +31,38 @@
             ],
             "type": "object",
             "properties": {
-                "disk_size": "string",
-                "name": "string",
-                "zone": "string",
-                "log_err": "uri",
-                "start_time": "date-time",
-                "cpus": "int",
-                "log_out": "uri",
-                "stop_time": "date-time",
-                "memory": "string",
-                "docker_image": "string"
+                "disk_size": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "zone": {
+                    "type": "string"
+                },
+                "log_err": {
+                    "type": "string"
+                },
+                "start_time": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "cpus": {
+                    "type": "integer"
+                },
+                "log_out": {
+                    "type": "string"
+                },
+                "stop_time": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "memory": {
+                    "type": "string"
+                },
+                "docker_image": {
+                    "type": "string"
+                }
             }
         },
         "parameter": {
@@ -50,9 +73,15 @@
             ],
             "type": "object",
             "properties": {
-                "checksum": "string",
-                "name": "string",
-                "value": "string"
+                "checksum": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
             }
         },
         "file": {
@@ -64,9 +93,15 @@
             ],
             "type": "object",
             "properties": {
-                "checksum": "string",
-                "file_path": "uri",
-                "format": "string"
+                "checksum": {
+                    "type": "string"
+                },
+                "file_path": {
+                    "type": "string"
+                },
+                "format": {
+                    "type": "string"
+                }
             }
         }
     },
@@ -75,22 +110,18 @@
     "properties": {
         "inputs": {
             "items": {
-                "type": {
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis.json#/definitions/parameter"
-                }
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis.json#/definitions/parameter"
             },
             "type": "array",
             "description": "Input parameters used in the pipeline run, these can be files or string values (settings)."
         },
         "reference_bundle": {
-            "type": "uri",
+            "type": "string",
             "description": "Bundle containing the reference used in running the pipeline."
         },
         "tasks": {
             "items": {
-                "type": {
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis.json#/definitions/task"
-                }
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis.json#/definitions/task"
             },
             "type": "array",
             "description": "Descriptions of tasks in the workflow."
@@ -100,35 +131,35 @@
             "description": "A general description of the analysis."
         },
         "timestamp_stop_utc": {
-            "type": "date-time",
+            "type": "string",
+            "format": "date-time",
             "description": "Terminal stop time of the full pipeline."
         },
         "input_bundles": {
             "items": {
-                "type": "uri"
+                "type": "string"
             },
             "type": "array",
             "description": "The input bundles used in this analysis run."
         },
         "outputs": {
             "items": {
-                "type": {
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis.json#/definitions/file"
-                }
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/analysis.json#/definitions/file"
             },
             "type": "array",
             "description": "Output generated by the pipeline run."
         },
         "analysis_id": {
-            "type": "number",
+            "type": "string",
             "description": "A unique ID for this analysis."
         },
         "computational_method": {
-            "type": "uri",
+            "type": "string",
             "description": "A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository."
         },
         "timestamp_start_utc": {
-            "type": "date-time",
+            "type": "string",
+            "format": "date-time",
             "description": "Initial start time of the full pipeline."
         },
         "core": {

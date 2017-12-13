@@ -7,8 +7,7 @@ json_schema folder valid JSON schema?
 Specific schema tests to follow.
 """
 
-# a*.json skipped for now
-schemas = glob.glob('../json_schema/' +"[b-z]*.json")
+schemas = glob.glob('../json_schema/' +"[a-z]*.json")
 
 for s in schemas:
     print("Checking whether %s is a valid json schema" % s) 
