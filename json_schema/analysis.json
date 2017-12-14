@@ -22,7 +22,6 @@
                 "name",
                 "start_time",
                 "stop_time",
-                "log",
                 "disk_size",
                 "docker_image",
                 "cpus",
@@ -87,7 +86,7 @@
         "file": {
             "additionalProperties": false,
             "required": [
-                "checksum",
+                "name",
                 "file_path",
                 "format"
             ],
@@ -100,6 +99,9 @@
                     "type": "string"
                 },
                 "format": {
+                    "type": "string"
+                },
+                "name": {
                     "type": "string"
                 }
             }
