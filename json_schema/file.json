@@ -10,7 +10,7 @@
     "properties": {
         "core": {
             "description": "Type and schema for this object.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/analysis_updates/json_schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/core.json"
         },
         "filename": {
             "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$",
