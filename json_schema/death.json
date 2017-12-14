@@ -11,7 +11,7 @@
     "properties": {
         "cause_of_death": {
             "description": "Cause of death from death report for human donor, from research lab for mouse.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/ontology.json"
         },
         "hardy_scale": {
             "minimum": 0,

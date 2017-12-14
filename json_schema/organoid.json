@@ -7,7 +7,7 @@
     "properties": {
         "model_for_organ": {
             "description": "Organ that this organoid is a model system for.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/ontology.json"
         }
     },
     "title": "organoid"

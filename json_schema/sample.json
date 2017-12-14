@@ -53,24 +53,24 @@
     "properties": {
         "core": {
             "description": "Type and schema for this object.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/core.json"
         },
         "immortalized_cell_line": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/immortalized_cell_line.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/immortalized_cell_line.json"
         },
         "description": {
             "type": "string",
             "description": "A general description of the sample."
         },
         "cell_suspension": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/cell_suspension.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/cell_suspension.json"
         },
         "specimen_from_organism": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/specimen_from_organism.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/specimen_from_organism.json"
         },
         "genus_species": {
             "description": "Scientific binomial name of donor species. e.g. Homo sapiens.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/ontology.json"
         },
         "supplementary_files": {
             "items": {
@@ -97,13 +97,13 @@
             "description": "A unique ID for this sample."
         },
         "donor": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/donor.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/donor.json"
         },
         "primary_cell_line": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/primary_cell_line.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/primary_cell_line.json"
         },
         "organoid": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/organoid.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/organoid.json"
         },
         "sample_accessions": {
             "additionalProperties": false,
