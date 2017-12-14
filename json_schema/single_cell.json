@@ -10,7 +10,7 @@
     "properties": {
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.5.0/json_schema/barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/analysis_updates/json_schema/barcode.json"
         },
         "cell_handling": {
             "enum": [
