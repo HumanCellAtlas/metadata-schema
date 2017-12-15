@@ -13,29 +13,11 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/core.json"
         }, 
         "file_format": {
-            "enum": [
-                "fastq", 
-                "fastq.gz", 
-                "fq", 
-                "fq.gz", 
-                "tiff", 
-                "jpg", 
-                "png", 
-                "txt", 
-                "bam", 
-                "cram", 
-                "jpeg", 
-                "gtf", 
-                "tar", 
-                "interval_list", 
-                "tsv", 
-                "csv"
-            ], 
-            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, jpeg, png, txt, bam, cram, gtf, tar, tsv, csv."
+            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, jpeg, png, txt, bam, cram, gtf, tar, tsv, csv.",
+            "type": "string"
         }, 
         "filename": {
-            "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$|^.*.txt$|^.*.bam$|^.*.cram$|^.*.gtf$|^.*.fq$|^.*.fq.gz$|^.*.tar$|^.*.interval_list$|^.*.tsv$|^.*.csv$", 
-            "type": "string", 
+            "type": "string",
             "description": "A filename for a data or results file. Must have a valid extension."
         }
     }
