@@ -2,31 +2,31 @@
     "definitions": {
         "analysis_ingest": {
             "required": [
-                "hca_ingest",
-                "content",
+                "hca_ingest", 
+                "content", 
                 "core"
-            ],
-            "type": "object",
+            ], 
+            "type": "object", 
             "properties": {
                 "content": {
-                    "type": "object",
-                    "description": "Analysis content",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/analysis.json"
-                },
+                    "type": "object", 
+                    "description": "Analysis content", 
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/analysis.json"
+                }, 
                 "core": {
-                    "description": "Type and schema for this object.",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/core.json"
-                },
+                    "description": "Type and schema for this object.", 
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/core.json"
+                }, 
                 "hca_ingest": {
-                    "type": "object",
-                    "description": "core fields added by HCA ingest service",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/ingest.json"
+                    "type": "object", 
+                    "description": "core fields added by HCA ingest service", 
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/ingest.json"
                 }
             }
         }
-    },
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "description": "A schema for a analysis bundle",
-    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/analysis_bundle.json#/definitions/analysis_ingest"
+    }, 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "type": "object", 
+    "description": "A schema for a analysis bundle", 
+    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/analysis_bundle.json#/definitions/analysis_ingest"
 }

@@ -1,14 +1,14 @@
 {
-    "description": "A description of an organoid sample.",
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "organoid", 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
     "required": [
         "model_for_organ"
-    ],
+    ], 
+    "description": "A description of an organoid sample.", 
     "properties": {
         "model_for_organ": {
-            "description": "Organ that this organoid is a model system for.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.0/json_schema/ontology.json"
+            "description": "Organ that this organoid is a model system for.", 
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/ontology.json"
         }
-    },
-    "title": "organoid"
+    }
 }
