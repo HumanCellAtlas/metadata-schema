@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/types/sample/primary_cell_line/4.0.0/primary_cell_line.json",
-    "description": "Information about the primary cell line used in the sample",
+    "id" : "http://schema.humancellatlas.org/types/sample/cell_line/4.0.0/cell_line.json",
+    "description": "Information about the cell line used in the sample",
     "additionalProperties": false,
-    "title": "primary_cell_line",
+    "title": "cell_line",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/primary_cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/primary_cell_line.json",
+            "pattern" : "http://schema.humancellatlas.org/types/sample/cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line.json",
             "type": "string"
         },
         "sample_core" : {
@@ -18,7 +18,7 @@
             "$ref": "ontology_json/cell_type_ontology.json"
         },
         "date_established": {
-            "description": "When the cell line was established, in date-time format.",
+            "description": "When the cell line was established, in date-time formatyyyy-mm-ddThh:mm:ssZ.",
             "format": "date-time",
             "type": "string"
         },
@@ -35,6 +35,14 @@
         "cell_cycle": {
             "$ref": "ontology.json",
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
+        },
+         "primary_cell_line": {
+	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
+            "$ref": "http://schema.humancellatlas.org/common/sample/primary_cell_line/4.0.0/primary_cell_line.json"
+        },
+         "immortalized_cell_line": {
+	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
+            "$ref": "http://schema.humancellatlas.org/common/sample/immortalized_cell_line/4.0.0/immortalized_cell_line.json"
         }
     },
     "type": "object"

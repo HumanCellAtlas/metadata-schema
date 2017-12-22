@@ -34,7 +34,7 @@
             "type": "integer"
         }, 
         "time_of_death": {
-            "description": "Date and time of death on death certificate for deceased donor.",
+            "description": "Date and time of death on death certificate for deceased donor, in format yyyy-mm-ddThh:mm:ssZ.",
             "format": "date-time",
             "type": "string"
         }

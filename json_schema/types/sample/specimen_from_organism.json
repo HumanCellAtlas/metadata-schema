@@ -30,6 +30,11 @@
         "state_of_specimen": {
             "$ref": "common/sample/state_of_specimen.json",
             "description": "State of the specimen at the time of collection and how it was preserved after removal."
+        },
+        "collection_time": {
+            "description": "When the sample was collection, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
+            "format": "date-time",
+            "type": "string"
         }
     },
     "type": "object"

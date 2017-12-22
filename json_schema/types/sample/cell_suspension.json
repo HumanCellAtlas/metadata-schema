@@ -36,7 +36,22 @@
         "well": {
             "$ref": "well.json",
             "description": "Information about wells in a plate or chip used for single-cell isolation."
-        }
+        },
+        "cell_morphology": {
+            "description": "Description of the morphology of the cells in the cell suspension.",
+            "type": "string"
+        },
+        "cell_size": {
+            "description": "The size of the cells in the cell suspension.",
+            "type": "number"
+        },
+       "cell_size_unit": {
+          "description": "The unit in which the cell size is expressed.",
+            "enum": [
+                "millimeter",
+                "micrometer"
+            ]
+       }
      },
     "type": "object"
 }
