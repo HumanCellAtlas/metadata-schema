@@ -37,11 +37,11 @@
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
         },
          "primary_cell_line": {
-	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
+	        "description": "Information about the primary cell line used in the sample.",
             "$ref": "http://schema.humancellatlas.org/common/sample/primary_cell_line/4.0.0/primary_cell_line.json"
         },
          "immortalized_cell_line": {
-	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
+	        "description": "Information about the immortalized cell line used in the sample.",
             "$ref": "http://schema.humancellatlas.org/common/sample/immortalized_cell_line/4.0.0/immortalized_cell_line.json"
         }
     },
