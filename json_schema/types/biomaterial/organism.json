@@ -1,11 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/types/sample/organism/4.0.0/organism.json",
+    "id": "http://schema.humancellatlas.org/types/biomaterial/organism/4.0.0/organism.json",
     "description": "Information about the organism from which a specimen was collected.",
     "additionalProperties" : false,
     "title": "donor",
     "required" : [
-        "sample_core",
+        "biomaterial_core",
         "is_living"
     ],
     "definitions" : {
@@ -24,7 +24,7 @@
                     }
                 },
                 "medication": {
-                   "description": "List of medications the donor was currently taking at time of sample donation.",
+                   "description": "List of medications the donor was currently taking at time of biomaterial donation.",
                    "type": "array",
                    "items": {
                        "$ref": "ontology.json"
@@ -64,12 +64,12 @@
     },
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json",
+            "pattern" : "http://schema.humancellatlas.org/types/biomaterial/organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json",
             "type": "string"
         },
-        "sample_core" : {
-	        "description": "Core sample-level information.",
-            "$ref": "http://schema.humancellatlas.org/core/sample/4.0.0/sample_core.json"
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
         },
         "human_specific": {
             "$ref": "#definitions/human_specific"
@@ -79,7 +79,7 @@
         },
         "death": {
 	        "description": "Information about conditions of death (or info that donor was living at time of collection).",
-            "$ref": "http://schema.humancellatlas.org/common/sample/death/4.0.0/death.json"
+            "$ref": "http://schema.humancellatlas.org/common/biomaterial/death/4.0.0/death.json"
         },
         "age": {
             "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
@@ -120,7 +120,7 @@
             "type": "number"
         },
         "is_living": {
-            "description": "Should be yes if donor is living at time of sample donation. Otherwise, should be no.",
+            "description": "Should be yes if donor is living at time of biomaterial donation. Otherwise, should be no.",
             "type": "boolean"
         }, 
         "life_stage": {

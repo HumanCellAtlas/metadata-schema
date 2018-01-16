@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id" : "http://schema.humancellatlas.org/bundle/4.0.0/sample_bundle.json",
-  "description": "A schema for a sample bundle" ,
+  "id" : "http://schema.humancellatlas.org/bundle/4.0.0/biomaterial_bundle.json",
+  "description": "A schema for a biomaterial bundle" ,
   "properties": {
     "$schema" : {
-        "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sample_bundle.json",
+        "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle.json",
         "type": "string"
     }
   },
   "definitions" : {
-    "sample_ingest" : {
+    "biomaterial_ingest" : {
       "type": "object",
       "required": ["hca_ingest", "content"],
       "properties": {
@@ -19,8 +19,8 @@
           "type": "object"
         },
         "content": {
-          "$ref": "sample.json",
-          "description": "Sample content",
+          "$ref": "biomaterial.json",
+          "description": "biomaterial content",
           "type": "object"
         },
         "derived_from": {
@@ -29,7 +29,7 @@
         "derivation_protocols": {
           "items": {
             "$ref": "protocol.json",
-            "description": "An array of protocols used in derivation of this sample."
+            "description": "An array of protocols used in derivation of this biomaterial."
           },
           "type": "array"
         }
@@ -37,7 +37,7 @@
     }
   },
   "items": {
-    "$ref": "sample_bundle.json#/definitions/sample_ingest"
+    "$ref": "biomaterial_bundle.json#/definitions/biomaterial_ingest"
   },
   "type": "array"
 }

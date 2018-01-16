@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/common/sample/immortalized_cell_line/4.0.0/immortalized_cell_line.json",
-    "description": "Information about the immortalized cell line used in the sample",
+    "id": "http://schema.humancellatlas.org/common/biomaterial/immortalized_cell_line/4.0.0/immortalized_cell_line.json",
+    "description": "Information about the immortalized cell line used in the biomaterial",
     "additionalProperties": false,
     "title": "immortalized_cell_line",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/common/sample/immortalized_cell_line/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/immortalized_cell_line.json",
+            "pattern" : "http://schema.humancellatlas.org/common/biomaterial/immortalized_cell_line/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/immortalized_cell_line.json",
             "type": "string"
         },
         "catalog_number": {

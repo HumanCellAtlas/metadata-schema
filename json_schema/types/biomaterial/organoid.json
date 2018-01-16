@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/types/biomaterial/organoid/4.0.0/organoid.json",
+    "description": "Information about an organoid biomaterial used in the biomaterial",
+    "additionalProperties" : false,
+    "title" : "organoid",
+      "required":[
+        "model_for_organ"
+    ],
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/biomaterial/organoid/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organoid.json",
+            "type": "string"
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+        },
+        "model_for_organ": {
+            "description":  "Organ that this organoid is a model system for.",
+            "$ref": "ontology.json"
+        }
+    },
+    "type": "object"
+}

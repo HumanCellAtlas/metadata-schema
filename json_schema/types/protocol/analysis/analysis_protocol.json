@@ -7,6 +7,10 @@
          "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/types/protocol/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_protocol.json",
             "type": "string"
+        },
+       "protocol_core" : {
+	        "description": "Core protocol-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json"
         }
     },
     "type": "object"

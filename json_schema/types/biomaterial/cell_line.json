@@ -1,17 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/types/sample/cell_line/4.0.0/cell_line.json",
-    "description": "Information about the cell line used in the sample",
+    "id" : "http://schema.humancellatlas.org/types/biomaterial/cell_line/4.0.0/cell_line.json",
+    "description": "Information about the cell line used in the biomaterial",
     "additionalProperties": false,
     "title": "cell_line",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/sample/cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line.json",
+            "pattern" : "http://schema.humancellatlas.org/types/biomaterial/cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line.json",
             "type": "string"
         },
-        "sample_core" : {
-	        "description": "Core sample-level information.",
-            "$ref": "http://schema.humancellatlas.org/core/sample/4.0.0/sample.json"
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
         },
         "cell_type": {
 	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
@@ -37,12 +37,12 @@
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
         },
          "primary_cell_line": {
-	        "description": "Information about the primary cell line used in the sample.",
-            "$ref": "http://schema.humancellatlas.org/common/sample/primary_cell_line/4.0.0/primary_cell_line.json"
+	        "description": "Information about the primary cell line used in the biomaterial.",
+            "$ref": "http://schema.humancellatlas.org/common/biomaterial/primary_cell_line/4.0.0/primary_cell_line.json"
         },
          "immortalized_cell_line": {
-	        "description": "Information about the immortalized cell line used in the sample.",
-            "$ref": "http://schema.humancellatlas.org/common/sample/immortalized_cell_line/4.0.0/immortalized_cell_line.json"
+	        "description": "Information about the immortalized cell line used in the biomaterial.",
+            "$ref": "http://schema.humancellatlas.org/common/biomaterial/immortalized_cell_line/4.0.0/immortalized_cell_line.json"
         }
     },
     "type": "object"

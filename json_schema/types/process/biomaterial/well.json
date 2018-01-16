@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/types/process/sample/4.0.0/well.json",
+    "id": "http://schema.humancellatlas.org/types/process/biomaterial/4.0.0/well.json",
     "additionalProperties": false,
-    "description": "This describes the well inside the plate or fluidics chip where sample came from.", 
+    "description": "This describes the well inside the plate or fluidics chip where biomaterial came from.",
     "title": "well",
     "properties": {
        "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/process/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/well.json",
+            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/well.json",
             "type": "string"
         },
         "col": {

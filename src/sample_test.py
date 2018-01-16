@@ -17,8 +17,8 @@ print('pwd: %s' % pwd)
 base_uri = "file://" + pwd + "/"
 print('base URI: %s' % base_uri)
 
-print('\nValidating sample_core.json')
-sv = get_validator('core/sample/sample_core.json', base_uri)
+print('\nValidating biomaterial_core.json')
+sv = get_validator('core/biomaterial/biomaterial_core.json', base_uri)
 
 # Specific schema tests follow
 
@@ -36,21 +36,21 @@ if not validate(sv, dt1): # will return False if fails (show return value)
     status_flag = False
 """
 
-print('\nValidating schema_test_files/10x_pbmc8k_sample_0.json')
-sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_0.json')
+print('\nValidating schema_test_files/10x_pbmc8k_biomaterial_0.json')
+sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_biomaterial_0.json')
 if not validate(sv, sfo1):
     status_flag = False
 
-print('\nValidating schema_tests/sample/fail/sample-test-current.json\n(This should fail)')
-sf1 = get_json_from_file('../schema_tests/sample/fail/sample-test-current.json')
+print('\nValidating schema_tests/biomaterial/fail/biomaterial-test-current.json\n(This should fail)')
+sf1 = get_json_from_file('../schema_tests/biomaterial/fail/biomaterial-test-current.json')
 # This should fail. If it fails, keep status_flag = True
 if validate(sv, sf1):
     status_flag = False
 
 # Specific bundle tests follow
 """
-print('\nValidating sample_bundle.json')
-sample_bundle_validator = get_validator('sample_bundle.json', base_uri)
+print('\nValidating biomaterial_bundle.json')
+sample_bundle_validator = get_validator('biomaterial_bundle.json', base_uri)
 
 print('\nValidating schema_test_files/10x_pbmc8k_sample_bundle.json')
 sample_bundle_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_bundle.json')

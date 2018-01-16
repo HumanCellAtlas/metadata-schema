@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/types/process/sample/4.0.0/enrichment.json",
+    "id": "http://schema.humancellatlas.org/types/process/biomaterial/4.0.0/enrichment.json",
     "description": "enrichment schema generate by tagSchemaToJson from enrichment",
     "additionalProperties": false,
     "required": [
@@ -9,7 +9,7 @@
     "title": "enrichment",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/process/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment.json",
+            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment.json",
             "type": "string"
         },
         "markers": {

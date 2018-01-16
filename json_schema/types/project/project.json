@@ -7,6 +7,10 @@
          "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/types/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project.json",
             "type": "string"
+        },
+       "project_core" : {
+	        "description": "Core project-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/project/4.0.0/project_core.json"
         }
     },
     "type": "object"

@@ -51,7 +51,7 @@
             "type": "array"
         },
         "experimental_factor_name": {
-            "description": "A list of the factors that vary between samples in the experiment. e.g. \"time since collection\", \"preservation method\"",
+            "description": "A list of the factors that vary between biomaterials in the experiment. e.g. \"time since collection\", \"preservation method\"",
             "items": {
                 "type": "string"
             },

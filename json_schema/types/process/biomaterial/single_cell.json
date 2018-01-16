@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-     "id": "http://schema.humancellatlas.org/types/process/sample/4.0.0/single_cell.json",
+     "id": "http://schema.humancellatlas.org/types/process/biomaterial/4.0.0/single_cell.json",
     "additionalProperties": false,
     "description": "Contains information on single cell aspects of an assay.", 
     "required": [
@@ -9,8 +9,12 @@
     "title": "single_cell",
     "properties": {
        "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/process/sample/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/single_cell.json",
+            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/single_cell.json",
             "type": "string"
+        },
+       "process_core" : {
+	        "description": "Core process-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
         },
         "barcode": {
             "description": "Information about cell identifier barcode.",

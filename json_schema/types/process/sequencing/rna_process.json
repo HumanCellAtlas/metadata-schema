@@ -12,6 +12,10 @@
             "pattern" : "http://schema.humancellatlas.org/types/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/rna_process.json",
             "type": "string"
         },
+         "process_core" : {
+	        "description": "Core process-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
+        },
         "end_bias": {
             "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
             "enum": [

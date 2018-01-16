@@ -33,7 +33,7 @@
             "$ref": "rna.json"
         },
         "seq": {
-	        "description": "Information about how a cDNA sample was sequenced.",
+	        "description": "Information about how a cDNA biomaterial was sequenced.",
             "$ref": "seq.json"
         },
         "single_cell": {
