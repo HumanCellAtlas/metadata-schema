@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/types/process/sequencing/4.0.0/seq_process.json",
+    "description": "Information about how a biomaterial was sequenced.",
+    "additionalProperties": false,
+     "required": [
+        "instrument_manufacturer_model",
+        "lanes",
+        "paired_ends"
+    ],
+    "title": "seq",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/seq_process.json",
+            "type": "string"
+        },
+         "process_core" : {
+	        "description": "Core process-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
+        },
+        "insdc_experiment": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
+            "pattern": "^[D|E|S]RX[0-9]+$",
+            "type": "string"
+        },
+        "insdc_run": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
+            "items": {
+                "pattern": "^[D|E|S]RR[0-9]+$",
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "instrument_manufacturer_model": {
+            "description": "The manufacturer and model of the sequencer used.",
+            "type": "string",
+            "$ref": "ontology.json",
+            "example": "Illumina HiSeq 4000"
+        },
+        "lanes": {
+            "$ref": "seq.json#/definitions/lanes"
+        },
+        "local_machine_name": {
+            "description": "Local name for the particular machine on which the biomaterial was sequenced.",
+            "type": "string"
+        },
+        "paired_ends": {
+            "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
+            "type": "boolean"
+        }
+    },
+    "type": "object"
+}

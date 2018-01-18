@@ -21,10 +21,10 @@
             "description": "The filename of the data file.",
             "type": "string"
         },
-	"checksum": {
+        "checksum": {
             "description": "MD5 checksum of the data file.",
             "type": "string"
-	}, 
+	    }
     },
     "type": "object"
 }

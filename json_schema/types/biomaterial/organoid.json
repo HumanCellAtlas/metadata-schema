@@ -16,6 +16,10 @@
 	        "description": "Core biomaterial-level information.",
             "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
         },
+        "cell_morphology": {
+	        "description": "Features relating to the morphology of cells in a biomaterial.",
+            "$ref": "cell_morphology.json"
+        },
         "model_for_organ": {
             "description":  "Organ that this organoid is a model system for.",
             "$ref": "ontology.json"

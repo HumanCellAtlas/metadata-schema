@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/common/biomaterial/4.0.0/cell_pathology.json",
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "Information relating to pathological features of cells.",
+    "required": [
+
+    ],
+    "title": "cell_pathology",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/common/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_pathology.json",
+            "type": "string"
+        },
+        "cell_morphology": {
+            "description": "Description of the morphology of the cells in the cell suspension.",
+            "type": "string"
+        },
+        "cell_size": {
+            "description": "The size of the cells. Average cell size is acceptable.",
+            "type": "number"
+        },
+        "cell_size_unit": {
+            "description": "The unit in which the cell size is expressed.",
+            "type": "string",
+            "enum": [
+                "millimeter",
+                "micrometer"
+            ]
+        },
+        "cell_viability": {
+            "description": "Percent of cells determined to be viable.",
+            "type": "number"
+        },
+        "cell_viability_method": {
+            "description": "The method by which cell viability was determined.",
+            "type": "string"
+        },
+        "percent_necrosis": {
+            "description" : "Percent necrosis.",
+            "type": "number"
+        }
+    },
+    "type": "object"
+}

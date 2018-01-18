@@ -35,29 +35,13 @@
                 "engineered"
           ]
         },
-        "cell_size": {
-            "description": "The size of the cells. Average cell size is acceptable.",
-            "type": "number"
-        },
-        "cell_size_unit": {
-            "description": "The unit in which the cell size is expressed.",
-            "type": "string",
-            "enum": [
-                "millimeter",
-                "micrometer"
-            ]
+        "cell_morphology": {
+	        "description": "Features relating to the morphology of cells in a biomaterial.",
+            "$ref": "cell_morphology.json"
         },
         "cell_type": {
 	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
             "$ref": "ontology_json/cell_type_ontology.json"
-        },
-        "cell_viability": {
-            "description": "Percent of cells determined to be viable.",
-            "type": "number"
-        },
-        "cell_viability_method": {
-            "description": "The method by which cell viability was determined.",
-            "type": "string"
         },
         "date_established": {
             "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
@@ -73,10 +57,6 @@
             "maximum": 1000,
             "minimum": 0,
             "type": "integer"
-        },
-        "percent_necrosis": {
-            "description" : "Percent necrosis.",
-            "type": "number"
         },
         "publications": {
             "description": "One or more publications in which the cell line creation was cited.",

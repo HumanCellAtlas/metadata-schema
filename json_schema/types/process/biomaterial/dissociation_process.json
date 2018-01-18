@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+     "id": "http://schema.humancellatlas.org/types/process/biomaterial/4.0.0/dissociation_process.json",
+    "additionalProperties": false,
+    "description": "Contains information on single cell aspects of an assay.", 
+    "required": [
+    ],
+    "title": "dissociation_process",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/dissociation_process.json",
+            "type": "string"
+        },
+        "process_core" : {
+	        "description": "Core process-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
+        },
+        "dissociation_method": {
+            "description": "How cells or organelles were dissociated.",
+            "type": "string",
+            "enum": [
+                "10x_v2", 
+                "FACS", 
+                "Fluidigm C1", 
+                "drop-seq", 
+                "inDrop", 
+                "mouth pipette", 
+                "bulk",
+                "enzymatic",
+                "mechanical",
+                "none"
+            ]
+        },
+        "nucleic_acid_source": {
+            "description": "Source cells or organelles from which nucleic acid molecules were selected for sequencing.",
+            "type": "string",
+            "enum": [
+                "bulk cell",
+                "single cell",
+                "single nucleus",
+                "bulk nuclei",
+                "mitochondria"
+            ]
+        }
+    },
+    "type": "object"
+}

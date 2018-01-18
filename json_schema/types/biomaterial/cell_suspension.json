@@ -5,8 +5,7 @@
     "additionalProperties" : false,
     "title" : "cell_suspension",
     "required" : [
-      "biomaterial_core",
-      "enrichment"
+      "biomaterial_core"
     ],
     "properties": {
         "$schema" : {
@@ -18,20 +17,9 @@
             "$ref": "http://schema.humancellatlas.org/biomaterial/4.0.0/biomaterial_core.json"
         },
         "cell_morphology": {
-            "description": "Description of the morphology of the cells in the cell suspension.",
-            "type": "string"
+	        "description": "Features relating to the morphology of cells in a biomaterial.",
+            "$ref": "cell_morphology.json"
         },
-        "cell_size": {
-            "description": "The size of the cells in the cell suspension.",
-            "type": "number"
-        },
-        "cell_size_unit": {
-          "description": "The unit in which the cell size is expressed.",
-            "enum": [
-                "millimeter",
-                "micrometer"
-            ]
-       },
         "target_cell_type": {
             "description" : "Cell types present in the suspension.",
             "type": "array",
