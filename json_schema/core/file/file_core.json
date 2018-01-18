@@ -1,10 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/core/file/4.0.0/file_core.json",
-    "description": "A file contains information about the data files produced from single cells.",
+    "description": "A file entity contains information about a data file produced from any process.",
     "additionalProperties": false,
     "required": [
-	    "filename"
+	    "filename",
+	    "file_format"
     ],
     "title": "file_core",
     "properties": {
@@ -12,20 +13,13 @@
             "pattern" : "http://schema.humancellatlas.org/core/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/file_core.json",
             "type": "string"
         },
-        "filename": {
-            "description": "A filename for a data file. Must have a valid extension.",
-            "pattern": "^.*.fastq$|^.*.fastq.gz$|^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$",
-            "type": "string"
-        },
         "file_format": {
-            "description": "The format that the data file is in. Must be one of: fastq, fastq.gz, tiff, jpg, png.",
-            "enum": [
-                "fastq",
-                "fastq.gz",
-                "tiff",
-                "jpg",
-                "png"
-            ]
+            "description": "The format of the data file.",
+            "type": "string"
+        }, 
+        "filename": {
+            "description": "The filename of the data file.",
+            "type": "string"
         }
     },
     "type": "object"
