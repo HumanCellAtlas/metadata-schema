@@ -24,22 +24,15 @@
             "description": "A general description of the assay.",
             "type": "string"
         },
-         "imaging": {
-	        "description": "Information on image based RNA quantification assays",
-            "$ref": "imaging.json"
-        },
-        "rna": {
-	        "description": "Information about how RNA was converted to cDNA.",
-            "$ref": "rna.json"
-        },
-        "seq": {
-	        "description": "Information about how a cDNA biomaterial was sequenced.",
-            "$ref": "seq.json"
-        },
-        "single_cell": {
-	        "description": "Information on single-cell aspects of an assay.",
-            "$ref": "single_cell.json"
-        }
+         "time": {
+            "description": "When the process took place, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
+            "format": "date-time",
+            "type": "string"
+         },
+         "location": {
+            "description": "Where the process took place, eg biomaterial collection location",
+            "type": "string"
+         }
     },
     "type": "object"
 }

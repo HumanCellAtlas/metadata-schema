@@ -18,7 +18,7 @@ base_uri = "file://" + pwd + "/"
 print('base URI: %s' % base_uri)
 
 print('\nValidating biomaterial_core.json')
-sv = get_validator('core/biomaterial/biomaterial_core.json', base_uri)
+sv = get_validator('core/biomaterial_collection/biomaterial_core.json', base_uri)
 
 # Specific schema tests follow
 
@@ -41,8 +41,8 @@ sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_biomaterial_0.json')
 if not validate(sv, sfo1):
     status_flag = False
 
-print('\nValidating schema_tests/biomaterial/fail/biomaterial-test-current.json\n(This should fail)')
-sf1 = get_json_from_file('../schema_tests/biomaterial/fail/biomaterial-test-current.json')
+print('\nValidating schema_tests/biomaterial_collection/fail/biomaterial_collection-test-current.json\n(This should fail)')
+sf1 = get_json_from_file('../schema_tests/biomaterial_collection/fail/biomaterial_collection-test-current.json')
 # This should fail. If it fails, keep status_flag = True
 if validate(sv, sf1):
     status_flag = False
