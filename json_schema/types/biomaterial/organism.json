@@ -12,36 +12,6 @@
         "human_specific": {
             "description": "Fields that only apply to humans.",
             "properties": {
-                "alcohol_history": {
-                    "description": "Number of drinks consumed on a typical day.",
-                    "type": "string"
-                },
-                "ethnicity": {
-                    "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
-                    "type": "array",
-                    "items": {
-                        "$ref": "ontology.json"
-                    }
-                },
-                "medication": {
-                   "description": "List of medications the donor was currently taking at time of biomaterial donation.",
-                   "type": "array",
-                   "items": {
-                       "$ref": "ontology.json"
-                   }
-                },
-                "nutritional_state": {
-                    "description": "Should be one of normal, fasting, or feeding tube removed.",
-                    "enum": [
-                        "normal",
-                        "fasting",
-                        "feeding tube removed"
-                    ]
-                },
-                "smoking_history": {
-                    "description": "Estimated number of cigarettes smoked per day and for how many years.",
-                    "type": "string"
-                }
             }
         },
         "non_human_specific": {
@@ -53,10 +23,6 @@
                     "items": {
                         "$ref": "ontology.json"
                     }
-                },
-                "genotype": {
-                    "description": "Genotype of donor including strain, cross, and genetic modification information. Must be in MGI format for mice.",
-                    "type": "string"
                 }
             }
         }
@@ -82,17 +48,18 @@
             "$ref": "http://schema.humancellatlas.org/common/biomaterial/death/4.0.0/death.json"
         },
         "age": {
-            "description": "Age in age_units. For embryos, measured since fertilization. For all others, measured since birth.",
+            "description": "Age in age_units. Measured since birth.",
             "maximum": 150, 
             "minimum": 0, 
             "type": "number"
         }, 
         "age_unit": {
-            "description": "The unit in which age is expressed. Must be one of day, week, month, or year.",
+            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
             "enum": [
                 "hour", 
                 "day", 
-                "week", 
+                "week",
+                "month",
                 "year"
             ]
         },
@@ -103,7 +70,7 @@
             "type": "number"
         },
         "development_stage": {
-	        "description": "More detailed (especially for embryos) version of life_stage. e.g. E9 or P17 for mouse.",
+	        "description": "A classification of the developmental stage of the organism.",
             "$ref": "ontology.json"
         }, 
         "disease": {
@@ -112,7 +79,27 @@
 	        "items": {
 		        "$ref": "ontology_json/disease_ontology.json"
 	        }
-        }, 
+        },
+        "familial_relationship": {
+            "description": "Information about other organisms related to this organism.",
+            "$ref": "familial_relationship.json"
+        },
+        "gestational_age": {
+            "description": "Gestational age in gestational_age_units. Measured since fertilization.",
+            "maximum": 150,
+            "minimum": 0,
+            "type": "number"
+        },
+        "gestational_age_unit": {
+            "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
+            "enum": [
+                "hour",
+                "day",
+                "week",
+                "month",
+                "year"
+            ]
+        },
         "height": {
             "description": "Height of donor in meters.",
             "maximum": 10, 
@@ -123,15 +110,6 @@
             "description": "Should be yes if donor is living at time of biomaterial donation. Otherwise, should be no.",
             "type": "boolean"
         }, 
-        "life_stage": {
-            "description": "Should be one of adult, child, embryo, or postpartum.",
-            "enum": [
-                "adult", 
-                "child", 
-                "embryo", 
-                "postpartum"
-            ]
-        },
         "sex": {
             "description": "Sex of donor. Should be one of male, female, mixed, or unknown.",
             "enum": [

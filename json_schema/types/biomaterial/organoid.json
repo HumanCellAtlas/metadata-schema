@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id" : "http://schema.humancellatlas.org/types/biomaterial/organoid/4.0.0/organoid.json",
-    "description": "Information about an organoid biomaterial used in the biomaterial",
+    "description": "Information about an organoid biomaterial.",
     "additionalProperties" : false,
     "title" : "organoid",
       "required":[
@@ -19,6 +19,30 @@
         "model_for_organ": {
             "description":  "Organ that this organoid is a model system for.",
             "$ref": "ontology.json"
+        },
+        "organoid_age": {
+            "description": "Age of the organoid",
+            "type": "number"
+        },
+        "organoid_age_unit": {
+            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
+            "enum": [
+                "hour",
+                "day",
+                "week",
+                "month",
+                "year"
+            ]
+        },
+        "organoid_type": {
+            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
+            "type": "string",
+            "enum": [
+                "primary",
+                "immortalized",
+                "stem cell-derived",
+                "engineered"
+          ]
         }
     },
     "type": "object"

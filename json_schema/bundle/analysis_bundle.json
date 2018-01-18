@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "description": "A schema for an analysis bundle",
+    "id" : "http://schema.humancellatlas.org/bundle/4.0.0/analysis_bundle.json",
+    "definitions": {
+        "analysis_ingest": {
+            "required": [
+                "hca_ingest",
+                "content",
+                "core"
+            ],
+            "type": "object",
+            "properties": {
+                "content": {
+                    "type": "object",
+                    "description": "Analysis content",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/analysis.json"
+                },
+                "core": {
+                    "description": "Type and schema for this object.",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/core.json"
+                },
+                "hca_ingest": {
+                    "type": "object",
+                    "description": "core fields added by HCA ingest service",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/ingest.json"
+                }
+            }
+        }
+    }
+}

@@ -17,26 +17,6 @@
 	        "description": "Core biomaterial-level information.",
             "$ref": "http://schema.humancellatlas.org/biomaterial/4.0.0/biomaterial_core.json"
         },
-        "target_cell_type": {
-            "description" : "Cell types present in the suspension.",
-            "type": "array",
-            "items": {"$ref": "ontology_json/cell_type_ontology.json"}
-       },
-        "enrichment": {
-            "description": "How biomaterial was enriched for specific cell type(s).",
-            "type": "array",            
-            "items": { "$ref": "enrichment.json" }
-        },
-        "total_estimated_cells": {
-            "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
-            "maximum": 1000000000.0,
-            "minimum": 0.1,
-            "type": "number"
-        },
-        "well": {
-            "$ref": "well.json",
-            "description": "Information about wells in a plate or chip used for single-cell isolation."
-        },
         "cell_morphology": {
             "description": "Description of the morphology of the cells in the cell suspension.",
             "type": "string"
@@ -45,13 +25,24 @@
             "description": "The size of the cells in the cell suspension.",
             "type": "number"
         },
-       "cell_size_unit": {
+        "cell_size_unit": {
           "description": "The unit in which the cell size is expressed.",
             "enum": [
                 "millimeter",
                 "micrometer"
             ]
-       }
+       },
+        "target_cell_type": {
+            "description" : "Cell types present in the suspension.",
+            "type": "array",
+            "items": {"$ref": "ontology_json/cell_type_ontology.json"}
+       },
+        "total_estimated_cells": {
+            "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
+            "maximum": 1000000000.0,
+            "minimum": 0.1,
+            "type": "number"
+        }
      },
     "type": "object"
 }

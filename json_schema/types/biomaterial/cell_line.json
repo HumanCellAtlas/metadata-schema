@@ -13,17 +13,59 @@
 	        "description": "Core biomaterial-level information.",
             "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
         },
+        "catalog_number": {
+            "description": "The supplier catalogue number for the cell line.",
+            "type": "string"
+        },
+        "catalog_url": {
+            "description": "The supplier catalogue URL for the cell line.",
+            "type": "string"
+        },
+        "cell_cycle": {
+            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
+            "$ref": "ontology.json"
+        },
+        "cell_line_type": {
+            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
+            "type": "string",
+            "enum": [
+                "primary",
+                "immortalized",
+                "stem cell-derived",
+                "engineered"
+          ]
+        },
+        "cell_size": {
+            "description": "The size of the cells. Average cell size is acceptable.",
+            "type": "number"
+        },
+        "cell_size_unit": {
+            "description": "The unit in which the cell size is expressed.",
+            "type": "string",
+            "enum": [
+                "millimeter",
+                "micrometer"
+            ]
+        },
         "cell_type": {
 	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
             "$ref": "ontology_json/cell_type_ontology.json"
         },
-        "date_established": {
-            "description": "When the cell line was established, in date-time formatyyyy-mm-ddThh:mm:ssZ.",
-            "format": "date-time",
+        "cell_viability": {
+            "description": "Percent of cells determined to be viable.",
+            "type": "number"
+        },
+        "cell_viability_method": {
+            "description": "The method by which cell viability was determined.",
             "type": "string"
         },
+        "date_established": {
+            "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
+            "type": "string",
+            "format": "date-time"
+        },
         "disease": {
-	        "description": "Free text describing any disease association to the cell type. Should be found in EFO ontology.",
+	        "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
             "$ref": "ontology_json/disease_ontology.json"
         },
         "passage_number": {
@@ -32,18 +74,18 @@
             "minimum": 0,
             "type": "integer"
         },
-        "cell_cycle": {
-            "$ref": "ontology.json",
-            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known."
+        "percent_necrosis": {
+            "description" : "Percent necrosis.",
+            "type": "number"
         },
-         "primary_cell_line": {
-	        "description": "Information about the primary cell line used in the biomaterial.",
-            "$ref": "http://schema.humancellatlas.org/common/biomaterial/primary_cell_line/4.0.0/primary_cell_line.json"
-        },
-         "immortalized_cell_line": {
-	        "description": "Information about the immortalized cell line used in the biomaterial.",
-            "$ref": "http://schema.humancellatlas.org/common/biomaterial/immortalized_cell_line/4.0.0/immortalized_cell_line.json"
+        "publications": {
+            "description": "One or more publications in which the cell line creation was cited.",
+            "type": "array",
+            "items": {
+                "$ref": "publication.json"
+            }
         }
+
     },
     "type": "object"
 }

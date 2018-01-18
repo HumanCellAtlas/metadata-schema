@@ -29,14 +29,22 @@
             "description": "A taxonomy ID (taxonID) from NCBI.",
             "type" : "integer"
         },
-        "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
-            "$ref": "ontology.json"
-        },
         "derived_from" : {
             "description" : "If this biomaterial is derived from another biomaterial, enter the biomaterial_id for the biomaterial it was derived from.",
             "type" : "string",
             "comment" : "This field is primarily required for spreadsheet-based submissions."
+        },
+        "genotype": {
+            "description": "Genotype of donor including strain, cross, and genetic modification information. Must be in MGI format for mice.",
+            "type": "string"
+        },
+        "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "$ref": "ontology.json"
+        },
+        "karyotype": {
+            "description": "The karyotype of the cell line.",
+            "type": "string"
         },
         "supplementary_files": {
             "description": "A list of filenames of biomaterial-level supplementary files.",

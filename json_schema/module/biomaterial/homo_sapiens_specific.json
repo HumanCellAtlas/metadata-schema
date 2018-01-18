@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/common/biomaterial/4.0.0/homo_sapiens_specific.json",
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "Information specific to an organism that is a homo sapiens.",
+    "required": [
+
+    ],
+    "title": "death",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/common/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/homo_sapiens_specific.json",
+            "type": "string"
+        },
+        "alcohol_history": {
+            "description": "Number of drinks consumed on a typical day.",
+            "type": "string"
+        },
+        "ethnicity": {
+            "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
+            "type": "array",
+            "items": {
+                "$ref": "ontology.json"
+            }
+        },
+        "medication": {
+           "description": "List of medications the organism was currently taking at time of biomaterial donation.",
+           "type": "string"
+        },
+        "nutritional_state": {
+            "description": "Should be one of normal, fasting, or feeding tube removed.",
+            "enum": [
+                "normal",
+                "fasting",
+                "feeding tube removed"
+            ]
+        },
+        "smoking_history": {
+            "description": "Estimated number of cigarettes smoked per day and for how many years.",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}
