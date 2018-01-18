@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json",
-    "description": "A biomaterial contains information on the biobiomaterial that was sequenced or imaged. This includes donor, body part, and anything that comes between removing the biomaterial from a donor and the assay.",
+    "description": "A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components.",
     "additionalProperties": true,
     "required": [
         "biomaterial_id",
@@ -30,30 +30,30 @@
             "type" : "integer"
         },
         "genus_species": {
-            "description": "Scientific binomial name of donor species. e.g. Homo sapiens.",
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
             "$ref": "ontology.json"
         },
         "derived_from" : {
+            "description" : "If this biomaterial is derived from another biomaterial, enter the biomaterial_id for the biomaterial it was derived from.",
             "type" : "string",
-            "description" : "If this biomaterial is derived from another biomaterial e.g. a tissue or donor, enter the biomaterial_id for the biomaterial this was derived from",
-            "comment" : "This field is primarily required for spreadsheet based submissions"
+            "comment" : "This field is primarily required for spreadsheet-based submissions."
         },
         "supplementary_files": {
             "description": "A list of filenames of biomaterial-level supplementary files.",
+            "type": "array",
             "items": {
                 "type": "string"
-            },
-            "type": "array"
+            }
         },
         "biosd_biomaterial": {
-            "description": "A DDBJ, NCBI, or EBI Biobiomaterial ID. Accessions must start with SAMD, SAMN, or SAME.",
-            "pattern": "^SAM[E|N|D][A|G]?[0-9]+$",
-            "type": "string"
+            "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
+            "type": "string",
+            "pattern": "^SAM[E|N|D][A|G]?[0-9]+$"
         },
         "insdc_biomaterial": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) biomaterial accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
-            "pattern": "^[D|E|S]RS[0-9]+$",
-            "type": "string"
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
+            "type": "string",
+            "pattern": "^[D|E|S]RS[0-9]+$"
         }
     },
     "type": "object"
