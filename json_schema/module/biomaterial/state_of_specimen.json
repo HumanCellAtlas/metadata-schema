@@ -4,13 +4,15 @@
     "additionalProperties": false,
     "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
     "title": "state_of_specimen",
+    "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/common/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/state_of_specimen.json",
-            "type": "string"
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/common/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/state_of_specimen.json"
         },
         "autolysis_score": {
             "description": "State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate.",
+            "type": "string",
             "enum": [
                 "none", 
                 "mild", 
@@ -23,11 +25,11 @@
         }, 
         "gross_image": {
             "description": "List of filenames of photographs of body part without magnification. Must be of format JPEG, TIFF, or PNG.",
+            "type": "array",
             "items": {
                 "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
                 "type": "string"
-            }, 
-            "type": "array"
+            }
         }, 
         "ischemic_temperature": {
             "description": "Whether warm or cold ischemia.",
@@ -39,9 +41,9 @@
         }, 
         "ischemic_time": {
             "description": "Duration of time, in seconds, that the body part had insufficient blood supply.",
+            "type": "integer",
             "maximum": 100000, 
-            "minimum": 0, 
-            "type": "integer"
+            "minimum": 0
         }, 
         "microscopic_description": {
             "description": "How the biomaterial looks under the microscope and how it compares with normal cells.",
@@ -49,18 +51,17 @@
         }, 
         "microscopic_image": {
             "description": "List of filenames of photographs of body part under microscope. Must be of format JPEG, TIFF, or PNG.",
+            "type": "array",
             "items": {
-                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
-                "type": "string"
-            }, 
-            "type": "array"
+                "type": "string",
+                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$"
+            }
         }, 
         "postmortem_interval": {
             "description": "Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed.",
+            "type": "integer",
             "maximum": 100000, 
-            "minimum": 0, 
-            "type": "integer"
+            "minimum": 0
         }
-    },
-    "type": "object"
+    }
 }
