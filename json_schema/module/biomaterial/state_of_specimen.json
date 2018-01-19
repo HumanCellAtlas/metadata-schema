@@ -29,6 +29,14 @@
             }, 
             "type": "array"
         }, 
+        "ischemic_temperature": {
+            "description": "Whether warm or cold ischemia.",
+            "type": "string",
+            "enum": [
+                "warm",
+                "cold"
+            ]
+        }, 
         "ischemic_time": {
             "description": "Duration of time, in seconds, that the body part had insufficient blood supply.",
             "maximum": 100000, 
