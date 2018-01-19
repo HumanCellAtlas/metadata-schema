@@ -43,8 +43,8 @@
             "type": "string"
         },
         "protocol_type": {
-            "$ref": "ontology.json",
-            "description": "The type of protocol. Ideally an EFO term."
+            "description": "The type of protocol. Ideally an EFO term.",
+            "$ref": "ontology_json/protocol_type_ontology.json"
         }
     },
     "type": "object"

@@ -23,7 +23,7 @@
             "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
             "type": "array",
             "items": {
-                "$ref": "ontology.json"
+                "$ref": "ontology_json/ethnicity_ontology.json"
             }
         }
     },

@@ -45,7 +45,7 @@
             "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
             "type" : "array",
             "items":{
-                "$ref": "ontology.json"
+                "$ref": "ontology_json/species_ontology.json"
             }
         },
         "karyotype": {

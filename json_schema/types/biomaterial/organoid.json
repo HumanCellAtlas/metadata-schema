@@ -22,7 +22,7 @@
         },
         "model_for_organ": {
             "description":  "Organ that this organoid is a model system for.",
-            "$ref": "ontology.json"
+            "$ref": "ontology_json/organ_ontology.json"
         },
         "organoid_age": {
             "description": "Age of the organoid",

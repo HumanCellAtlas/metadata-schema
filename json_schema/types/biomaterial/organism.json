@@ -63,7 +63,7 @@
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
-            "$ref": "ontology.json"
+            "$ref": "ontology_json/development_stage_ontology.json"
         }, 
         "disease": {
             "description": "Short description of disease status of the organism.",

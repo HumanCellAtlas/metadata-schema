@@ -42,8 +42,8 @@
             }
          },
         "process_type": {
-            "$ref": "ontology.json",
-            "description": "The type of process. Ideally an EFO term."
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "ontology_json/process_type_ontology.json"
         }
     },
     "type": "object"

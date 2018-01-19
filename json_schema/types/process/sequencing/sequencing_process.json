@@ -34,7 +34,7 @@
         "instrument_manufacturer_model": {
             "description": "The manufacturer and model of the sequencer used.",
             "type": "string",
-            "$ref": "ontology.json",
+            "$ref": "ontology_json/instrument_ontology.json",
             "example": "Illumina HiSeq 4000"
         },
         "lanes": {

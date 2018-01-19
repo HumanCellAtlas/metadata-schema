@@ -23,7 +23,7 @@
         },
         "cell_cycle": {
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
-            "$ref": "ontology.json"
+            "$ref": "ontology_json/cell_cycle_ontology.json"
         },
         "cell_line_type": {
             "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
