@@ -1,41 +1,45 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/types/process/biomaterial/4.0.0/enrichment.json",
-    "description": "enrichment schema generate by tagSchemaToJson from enrichment",
+    "description": "Process by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
     "additionalProperties": false,
     "required": [
         "type"
     ],
     "title": "enrichment",
+    "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment.json",
-            "type": "string"
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment.json"
         },
-        "markers": {
-            "description": "Text in the format of space delimited list of markers with +/-.  Example:  \"CD4+ CD8-\"",
-            "type": "string"
-        },
-        "size_max": {
-            "description": "Maximum size passing selection in microns",
-            "maximum": 10000,
-            "minimum": 0.01,
-            "type": "number"
-        },
-        "size_min": {
-            "description": "Minimum size passing selection in microns",
-            "maximum": 10000,
-            "minimum": 0.01,
-            "type": "number"
-        },
-        "type": {
-            "description": "How enrichment was achieved.  MACS, FACS, filter, etc",
+        "enrichment_type": {
+            "description": "How enrichment was achieved.",
+            "type": "string",
+            "example": "FACS"
             "enum": [
                 "FACS",
                 "MACS",
-                "Ficoll gradient"
+                "Ficoll gradient",
+                "Laser capture microdissection"
             ]
         }
-    },
-    "type": "object"
+        "markers": {
+            "description": "A space-delimited list of markers with +/-."
+            "type": "string",
+            "example": "CD4+ CD8-"
+        },
+        "size_max": {
+            "description": "Maximum size passing selection in microns.",
+            "type": "number",
+            "maximum": 10000,
+            "minimum": 0.01
+        },
+        "size_min": {
+            "description": "Minimum size passing selection in microns.",
+            "type": "number",
+            "maximum": 10000,
+            "minimum": 0.01
+        },
+    }
 }
