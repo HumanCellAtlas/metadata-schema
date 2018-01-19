@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/common/biomaterial/4.0.0/cell_pathology.json",
+    "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/cell_pathology.json",
     "additionalProperties": false,
     "definitions": {},
     "description": "Information relating to pathological features of cells.",
@@ -10,7 +10,7 @@
     "title": "cell_pathology",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/common/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_pathology.json",
+            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_pathology.json",
             "type": "string"
         },
         "cell_morphology": {

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/common/project/4.0.0/publication.json",
+    "id" : "http://schema.humancellatlas.org/module/project/4.0.0/publication.json",
     "additionalProperties": false, 
     "description": "A publication contains information about a journal article, book, web page or other external available documentation on a project",
      "required":[
@@ -10,7 +10,7 @@
     "title": "publication",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/common/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/publication.json",
+            "pattern" : "http://schema.humancellatlas.org/module/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/publication.json",
             "type": "string"
         },
         "authors": {

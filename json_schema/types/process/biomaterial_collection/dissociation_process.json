@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
      "id": "http://schema.humancellatlas.org/types/process/biomaterial/4.0.0/dissociation_process.json",
     "additionalProperties": false,
-    "description": "Contains information on single cell aspects of an assay.", 
+    "description": "Contains information on the dissociation process used to separate the cells in a specimen.",
     "required": [
     ],
     "title": "dissociation_process",

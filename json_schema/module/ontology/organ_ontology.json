@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/common/ontology/4.0.0/organ_ontology.json",
+    "id" : "http://schema.humancellatlas.org/module/ontology/4.0.0/organ_ontology.json",
     "description": "A term that may be associated with an anatomy-related ontology term.",
     "additionalProperties": false,
      "required": [
@@ -9,7 +9,7 @@
     "title": "organ_ontology",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/common/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organ_ontology.json",
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organ_ontology.json",
             "type": "string"
         },
         "text": {

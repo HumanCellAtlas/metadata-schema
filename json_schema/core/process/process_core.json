@@ -13,15 +13,15 @@
             "type": "string"
         },
         "process_id": {
-            "description": "A unique ID for this assay.",
+            "description": "A unique ID for this process.",
             "type": "string"
         },
         "process_name": {
-            "description": "A short, descriptive name for the assay that need not be unique.",
+            "description": "A short, descriptive name for the process that need not be unique.",
             "type": "string"
         },
         "process_description": {
-            "description": "A general description of the assay.",
+            "description": "A general description of the process.",
             "type": "string"
         },
          "time": {

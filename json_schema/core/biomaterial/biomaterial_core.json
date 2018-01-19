@@ -38,7 +38,7 @@
             "comment" : "This field is primarily required for spreadsheet-based submissions."
         },
         "genotype": {
-            "description": "Genotype of donor including strain, cross, and genetic modification information. Must be in MGI format for mice.",
+            "description": "Genotype of organism including strain, cross, and genetic modification information. Must be in MGI format for mice.",
             "type": "string"
         },
         "genus_species": {

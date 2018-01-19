@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "id" : "http://schema.humancellatlas.org/common/ontology/4.0.0/ontology.json",
+    "id" : "http://schema.humancellatlas.org/module/ontology/4.0.0/ontology.json",
     "description": "A term that may be associated with an ontology term",
      "required": [
         "text"
@@ -8,7 +8,7 @@
     "title": "ontology",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/common/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ontology.json",
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ontology.json",
             "type": "string"
         },
         "text": {

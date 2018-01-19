@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/common/biomaterial/4.0.0/homo_sapiens_specific.json",
+    "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/homo_sapiens_specific.json",
     "additionalProperties": false,
     "definitions": {},
     "description": "Information specific to an organism that is a homo sapiens.",
@@ -10,7 +10,7 @@
     "title": "death",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/common/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/homo_sapiens_specific.json",
+            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/homo_sapiens_specific.json",
             "type": "string"
         },
         "alcohol_history": {

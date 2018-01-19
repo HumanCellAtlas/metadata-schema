@@ -8,7 +8,7 @@
     ],
     "properties": {
         "$schema": {
-            "pattern": "http://schema.humancellatlas.org/common/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequence_file.json",
+            "pattern": "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequence_file.json",
             "type": "string"
         },
         "read_index": {
