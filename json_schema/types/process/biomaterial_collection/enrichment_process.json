@@ -4,7 +4,7 @@
     "description": "Process by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
     "additionalProperties": false,
     "required": [
-        "type"
+        "enrichment_type"
     ],
     "title": "enrichment",
     "type": "object",
