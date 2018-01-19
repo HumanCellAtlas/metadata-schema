@@ -21,7 +21,8 @@
                 "FACS",
                 "MACS",
                 "Ficoll gradient",
-                "Laser capture microdissection"
+                "laser capture microdissection",
+                "density gradient"
             ]
         },
         "markers": {
