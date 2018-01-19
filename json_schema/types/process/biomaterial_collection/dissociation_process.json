@@ -6,13 +6,14 @@
     "required": [
     ],
     "title": "dissociation_process",
+    "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/dissociation_process.json",
-            "type": "string"
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/types/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/dissociation_process.json"
         },
         "process_core" : {
-	        "description": "Core process-level information.",
+	    "description": "Core process-level information.",
             "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
         },
         "dissociation_method": {
@@ -42,6 +43,5 @@
                 "mitochondria"
             ]
         }
-    },
-    "type": "object"
+    }
 }
