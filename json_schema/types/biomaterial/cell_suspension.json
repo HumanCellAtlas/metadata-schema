@@ -4,6 +4,7 @@
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "additionalProperties" : false,
     "title" : "cell_suspension",
+    "type": "object",
     "required" : [
       "biomaterial_core"
     ],
@@ -13,24 +14,25 @@
             "type": "string"
         },
         "biomaterial_core" : {
-	        "description": "Core biomaterial-level information.",
+	    "description": "Core biomaterial-level information.",
             "$ref": "http://schema.humancellatlas.org/biomaterial/4.0.0/biomaterial_core.json"
         },
         "cell_morphology": {
-	        "description": "Features relating to the morphology of cells in a biomaterial.",
+	    "description": "Features relating to the morphology of cells in a biomaterial.",
             "$ref": "cell_morphology.json"
         },
         "target_cell_type": {
-            "description" : "Cell types present in the suspension.",
+            "description" : "Cell types expected to be present in the suspension.",
             "type": "array",
-            "items": {"$ref": "ontology_json/cell_type_ontology.json"}
+            "items": {
+		    "$ref": "ontology_json/cell_type_ontology.json"
+	    }
        },
         "total_estimated_cells": {
             "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
+            "type": "number",
             "maximum": 1000000000.0,
-            "minimum": 0.1,
-            "type": "number"
+            "minimum": 0.1
         }
-     },
-    "type": "object"
+     }
 }
