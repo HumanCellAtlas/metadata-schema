@@ -16,16 +16,16 @@
         "enrichment_type": {
             "description": "How enrichment was achieved.",
             "type": "string",
-            "example": "FACS"
+            "example": "FACS",
             "enum": [
                 "FACS",
                 "MACS",
                 "Ficoll gradient",
                 "Laser capture microdissection"
             ]
-        }
+        },
         "markers": {
-            "description": "A space-delimited list of markers with +/-."
+            "description": "A space-delimited list of markers with +/-.",
             "type": "string",
             "example": "CD4+ CD8-"
         },
