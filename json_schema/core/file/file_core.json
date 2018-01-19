@@ -4,7 +4,7 @@
     "description": "A file entity contains information about a data file produced from any process.",
     "additionalProperties": false,
     "required": [
-	    "filename",
+	    "file_name",
 	    "file_format"
     ],
     "title": "file_core",
@@ -17,7 +17,7 @@
             "description": "The format of the data file.",
             "type": "string"
         }, 
-        "filename": {
+        "file_name": {
             "description": "The filename of the data file.",
             "type": "string"
         },

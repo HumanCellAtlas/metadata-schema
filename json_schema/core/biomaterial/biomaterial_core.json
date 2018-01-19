@@ -17,11 +17,11 @@
             "description": "A unique ID for this biomaterial.",
             "type": "string"
         },
-        "name": {
+        "biomaterial_name": {
             "description": "A short, descriptive name for the biomaterial that need not be unique.",
             "type": "string"
         },
-        "description": {
+        "biomaterial_description": {
             "description": "A general description of the biomaterial.",
             "type": "string"
         },

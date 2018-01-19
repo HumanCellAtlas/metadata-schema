@@ -17,11 +17,11 @@
             "description": "A unique ID for this protocol.",
             "type": "string"
         },
-        "name": {
+        "protocol_name": {
             "description": "A short, descriptive name for the protocol that need not be unique.",
             "type": "string"
         },
-        "description": {
+        "protocol_description": {
             "description": "A general description of the protocol.",
             "type": "string"
         },
@@ -38,7 +38,7 @@
             "description": "The retail name of the kit used. e.g SureCell WTA 3' Library Prep Kit",
             "type": "string"
         },
-        "type": {
+        "protocol_type": {
             "$ref": "ontology.json",
             "description": "The type of protocol. Ideally an EFO term."
         }

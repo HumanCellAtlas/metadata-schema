@@ -40,8 +40,11 @@
              "items":{
                 "type": "string"
             }
-
-         }
+         },
+        "process_type": {
+            "$ref": "ontology.json",
+            "description": "The type of process. Ideally an EFO term."
+        }
     },
     "type": "object"
 }
