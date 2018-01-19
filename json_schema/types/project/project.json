@@ -3,70 +3,73 @@
     "id": "http://schema.humancellatlas.org/types/project/4.0.0/project.json",
     "description": "An empty project schema that is inherited by all project types.",
     "title": "project",
+    "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/types/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project.json",
-            "type": "string"
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/types/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project.json"
         },
         "project_core" : {
-	        "description": "Core project-level information.",
+	    "description": "Core project-level information.",
             "$ref": "http://schema.humancellatlas.org/core/project/4.0.0/project_core.json"
         },
         "related_projects": {
+            "description": "A list of other projects that may be logically grouped with this one.",
+            "type": "array",
             "items": {
                 "type": "string"
-            },
-            "type": "array",
-            "description": "A list of other projects that may be logically grouped with this one."
+            }
         },
         "contributors": {
+            "description": "List of people contributing to any aspect of the project.",
+            "type": "array",
+            "example": "List of authors for a publication resulting from this project.",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/contact.json"
-            },
-            "type": "array",
-            "description": "List of people contributing to the project."
+            }
         },
         "submitters": {
+            "description": "List of people submitting ultimately responsible for the project.",
+            "type": "array",
+            "example": "List of corresponding authors for a publication resulting from this project.",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/contact.json"
-            },
-            "type": "array",
-            "description": "List of people submitting data to the project."
+            }
         },
         "insdc_project": {
-            "pattern": "^[D|E|S]RP[0-9]+$",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
             "type": "string",
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP."
+            "pattern": "^[D|E|S]RP[0-9]+$"
         },
         "supplementary_files": {
-            "items": {
-                "type": "string"
-            },
+            "description": "Project-level supplementary files.",
             "type": "array",
-            "description": "Project-level supplementary files. e.g. experimental design documents, lab spreadsheets, manuscripts in preparation."
+            "example": "Experimental design documents, electronic notebook files, manuscripts in preparation, etc.",
+	    "items": {
+                "type": "string"
+            }
         },
         "publications": {
+	    "description": "A list of publications resulting from this project.",
+            "type": "array",
             "items": {
-                "description": "An array of publication modules.",
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/publication.json"
-            },
-            "type": "array"
+            }
         },
         "geo_series": {
-            "pattern": "^GSE.*$",
+            "description": "An NCBI GEO series accession.",
             "type": "string",
-            "description": "An NCBI GEO series accession."
+            "pattern": "^GSE.*$"
         },
         "array_express_investigation": {
-            "pattern": "^E-....-.*$",
+            "description": "An EBI ArrayExpress investigation accession.",
             "type": "string",
-            "description": "An EBI ArrayExpress investigation accession."
+            "pattern": "^E-....-.*$"
         },
         "insdc_study": {
-            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
             "type": "string",
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD"
+            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$"
         }
-    },
-    "type": "object"
+    }
 }
