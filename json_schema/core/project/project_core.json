@@ -4,8 +4,7 @@
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-	    "contributors",
-        "project_id"
+	    "project_id"
     ],
     "title": "project_core",
     "properties": {
@@ -15,17 +14,18 @@
             "pattern" : "http://schema.humancellatlas.org/core/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_core.json"
         },
         "project_id": {
-            "description": "A unique ID for this project.",
+            "description": "A unique ID for the project.",
             "type": "string"
         },
         "project_title": {
-            "description": "A short, descriptive name for the project that need not be unique.",
-            "type": "string"
+            "description": "A summary of the project in a sentence.",
+            "type": "string",
+            "example": "A title of a grant proposal, publication, or poster. Approximately 30 words."
         },
         "project_description": {
             "description": "A longer description of the project.",
             "type": "string",
-            "example": "An abstract from a grant application, publication, or poster."
+            "example": "An abstract from a grant application, publication, or poster. Approximately 300 words."
         }
     },
    "type": "object"
