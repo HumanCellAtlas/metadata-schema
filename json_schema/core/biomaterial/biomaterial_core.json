@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json",
     "description": "A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components.",
-    "additionalProperties": true,
+    "additionalProperties": false,
     "required": [
         "biomaterial_id",
         "ncbi_taxon_id"
@@ -26,8 +26,11 @@
             "type": "string"
         },
         "ncbi_taxon_id" : {
-            "description": "A taxonomy ID (taxonID) from NCBI.",
-            "type" : "integer"
+            "description": "A taxonomy ID (taxonID) from NCBI. Multiple IDs can be provided for multi-species samples.",
+            "type" : "array",
+            "items":{
+                "type": "integer"
+            }
         },
         "derived_from" : {
             "description" : "If this biomaterial is derived from another biomaterial, enter the biomaterial_id for the biomaterial it was derived from.",
@@ -40,7 +43,10 @@
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
-            "$ref": "ontology.json"
+            "type" : "array",
+            "items":{
+                "$ref": "ontology.json"
+            }
         },
         "karyotype": {
             "description": "The karyotype of the cell line.",

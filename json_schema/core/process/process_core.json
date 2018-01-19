@@ -16,11 +16,11 @@
             "description": "A unique ID for this assay.",
             "type": "string"
         },
-        "name": {
+        "process_name": {
             "description": "A short, descriptive name for the assay that need not be unique.",
             "type": "string"
         },
-        "description": {
+        "process_description": {
             "description": "A general description of the assay.",
             "type": "string"
         },
@@ -30,8 +30,17 @@
             "type": "string"
          },
          "location": {
-            "description": "Where the process took place, eg biomaterial collection location",
-            "type": "string"
+            "description": "Where the process took place.",
+            "type": "string",
+            "example": "Wellcome Sanger Institute, Teichman Lab."
+         },
+         "researcher": {
+            "description": "Name of the individual who executed this process.",
+            "type": "array",
+             "items":{
+                "type": "string"
+            }
+
          }
     },
     "type": "object"
