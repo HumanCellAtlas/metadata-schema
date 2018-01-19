@@ -61,12 +61,6 @@
                 "year"
             ]
         },
-        "body_mass_index": {
-            "description": "The body mass index of the organism.",
-            "type": "number",
-            "maximum": 100, 
-            "minimum": 5
-        },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
             "$ref": "ontology.json"

@@ -29,6 +29,10 @@
             "description": "The batch of kit used.",
             "type": "string"
         },
+         "doi": {
+            "description": "The publication digital object identifier (doi), if available. e.g. \"10.1016/j.cell.2016.07.054\"",
+            "type": "string"
+        },
         "pdf": {
             "description": "A filename of a PDF containing the details of the protocol.",
             "pattern": "^.*.pdf$",
