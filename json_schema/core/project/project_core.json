@@ -23,7 +23,7 @@
             "example": "A title of a grant proposal, publication, or poster. Approximately 30 words."
         },
         "project_description": {
-            "description": "A longer description of the project.",
+            "description": "A longer description of the project which can include research goals and experimental approach.",
             "type": "string",
             "example": "An abstract from a grant application, publication, or poster. Approximately 300 words."
         }
