@@ -37,13 +37,7 @@
         },
         "organoid_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
-            "enum": [
-                "hour",
-                "day",
-                "week",
-                "month",
-                "year"
-            ]
+            "$ref": "ontology_json/time_unit_ontology.json"
         },
         "organoid_type": {
             "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",

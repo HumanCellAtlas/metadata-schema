@@ -60,13 +60,7 @@
         }, 
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
-            "enum": [
-                "hour", 
-                "day", 
-                "week",
-                "month",
-                "year"
-            ]
+            "$ref": "ontology_json/time_unit_ontology.json"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
@@ -76,8 +70,8 @@
             "description": "Short description of disease status of the organism.",
             "type": "array",
             "items": {
-            "$ref": "ontology_json/disease_ontology.json"
-	    }
+                "$ref": "ontology_json/disease_ontology.json"
+	        }
         },
         "familial_relationship": {
             "description": "Information about other organisms related to this organism.",
@@ -91,13 +85,7 @@
         },
         "gestational_age_unit": {
             "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
-            "enum": [
-                "hour",
-                "day",
-                "week",
-                "month",
-                "year"
-            ]
+            "$ref": "ontology_json/time_unit_ontology.json"
         },
         "height": {
             "description": "Height of organism in meters.",
