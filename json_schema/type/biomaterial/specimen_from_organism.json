@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/type/biomaterial/specimen_from_organism/4.0.0/specimen_from_organism.json",
+    "description": "Information about the specimen that was extracted from the organism.",
+    "additionalProperties": false,
+    "title": "specimen_from_organism",
+    "required": [
+	    "organ_part",
+	    "organ"
+    ],
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/specimen_from_organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/specimen_from_organism.json",
+            "type": "string"
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+        },
+        "organ": {
+            "$ref": "module/ontology/organ_ontology.json",
+            "description": "The organ that the biomaterial came from. e.g. liver, spleen, bicep muscle. Blood and connective tissue are considered organs. The term \"organ\" is very broadly defined here.",
+            "example": "Blood"
+        },
+        "organ_part": {
+            "$ref": "module/ontology/organ_part_ontology.json",
+            "description": "A term for a specific part of the organ that the biomaterial came from. The term \"organ part\" is very broadly defined here.",
+            "example": "Umbilical cord blood"
+        },
+        "state_of_specimen": {
+            "$ref": "module/biomaterial/state_of_specimen.json",
+            "description": "State of the specimen at the time of collection and how it was preserved after removal."
+        },
+        "collection_time": {
+            "description": "When the biomaterial was collection, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
+            "format": "date-time",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}
