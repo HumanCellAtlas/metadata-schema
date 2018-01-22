@@ -36,12 +36,7 @@
         "input_molecule": {
             "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
             "type": "string",
-            "enum": [
-                "polyA RNA",
-                "total RNA",
-                "genomic DNA",
-                "mitochondrial DNA"
-            ]
+            "$ref": "ontology_json/biological_macromolecule_ontology.json"
         },
         "library_construction": {
             "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x.",
