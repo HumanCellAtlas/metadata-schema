@@ -17,8 +17,8 @@ How to contribute is described in [contributing.md](https://github.com/HumanCell
 1. Move to process-based schema for handling transitions between core entities
 1. Move to a component-based schema to support independent versioning of submittable types
 1. Define hierarchy (directory structure) for core entities and modules
-    1. High-level *core* entities are not submittable on their own (e.g. sample.json)
-    1. Mid-level *type* entities are submittable on their own (e.g. donor.json)
+    1. High-level *core* entities are not submittable on their own (e.g. biomaterial.json)
+    1. Mid-level *type* entities are submittable on their own (e.g. organism.json)
     1. Low-level *common* modules are not submittable on their own (e.g. death.json)
 
 #### Proposed organisational structure 
@@ -33,50 +33,40 @@ How to contribute is described in [contributing.md](https://github.com/HumanCell
 core/
     process/process_core.json
     protocol/protocol_core.json
-    sample/sample_core.json	
+    biomaterial/biomaterial_core.json	
     file/file_core.json
     project/project_core.json
-    analysis/analysis_core.json
  
-types/
+type/
     process/    
-        process.json
-        sequencing/	rna_process.json
-                    seq_process.json
+        sequencing/	library_preparation_process.json
+                    sequencing_process.json
         imaging/    imaging_process.json
         analysis/   analysis_process.json
-        sample/	    enrichment.json
-                    preservation.json
-                    sample_collection.json
-                    single_cell.json
-                    sorting.json
-    protocols/  
-        protocols.json
-        sequencing/	rna_protocol.json
-                    seq_protocol.json
+        biomaterial_collection/enrichment_process.json
+                               collection_process.json
+                               dissociation_process.json
+    protocol/  
+        sequencing/ sequencing_protocol.json
         imaging/	imaging_protocol.json
-        analysis/	analysis.json
-        sample/	    enrichment.json
-                    preservation.json
-                    sample_collection.json
-                    single_cell.json
-                    sorting.json
-    sample/
-        sample.json
-        donor.json
-        specimen.json
+        analysis/	analysis_protocol.json
+        biomaterial/biomaterial_collection_protocol.json
+        ...
+                  
+    biomaterial/
+        organism.json
+        specimen_from_organism.json
         cell_suspension.json
         organoid.json
-        primary_cell_line.json
+        cell_line.json
     file/		
-        file.json
+        sequence_file.json
     project/	
         project.json
-    analysis/	
-        analysis.json
+
  
-common/
-    sample/
+module/
+    biomaterial/
         death.json
         ...
     process/
@@ -103,19 +93,19 @@ bundle/
 
 Each schema should be self describing using `id` field with a URL to the location of the version of the current document. 
 
-Version indicated in schema URL: `http://schema.humancellatlas.org/core/sample/4.0.0/sample_core.json`
+Version indicated in schema URL: `http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json`
 
 As we are requiring instance data to also be self describing, all *types* will require a property called `$schema`. 
 
-e.g. For `donor.json` schema, `type` field should contain: 
+e.g. For `organism.json` schema, `type` field should contain: 
 
 ``` 
 "$schema": "http://json-schema.org/draft-04/schema#"
-"id": "http://schema.hca.org/schema/v1.0.0/types/sample/donor.json"
+"id": "http://schema.humancellatlas.org/type/biomaterial/4.0.0/organism.json"
 "additionalProperties": false,
 properties : {
     $schema : {
-        "pattern" : "http://schema.hca.org/schema/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/types/samples/donor.json"
+        "pattern" : "http://schema.humancellatlas.org/type/biomaterial/organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json"
         "type" : "string",
     }
 }
@@ -135,16 +125,11 @@ ontology/ontology.json
 ontology/body_part_ontology.json
 ontology/…
 
-sample/specimen_from_sample/state_of_specimen.json
-sample/immortalized_cell_line/publication.json
-sample/donor/death.json
-sample/cell_suspension/well.json
-sample/cell_suspension/enrichment.json
+biomaterial/state_of_specimen.json
+biomaterial/death.json
+biomaterial/…
 
-process/imaging.json
-process/rna.json 
-process/seq.json
-process/single_cell.json
+process/sequencing/well.json 
 process/sequencing/barcode.json
 
 project/contact.json
