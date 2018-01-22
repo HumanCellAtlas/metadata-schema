@@ -120,6 +120,10 @@
                 "description": "Core process-level information.",
                 "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
     	},
+        "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "ontology_json/process_type_ontology.json"
+        },
         "inputs": {
             "description": "Input parameters used in the pipeline run, these can be files or string values (settings).",
             "type": "array",

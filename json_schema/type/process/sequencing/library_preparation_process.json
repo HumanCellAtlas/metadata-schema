@@ -67,7 +67,11 @@
                 "poly-dT",
                 "random"
             ]
-        }, 
+        },
+        "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "ontology_json/process_type_ontology.json"
+        },
         "spike_in": {
             "description": "Name of RNA spike-in kit.",
             "type": "string",

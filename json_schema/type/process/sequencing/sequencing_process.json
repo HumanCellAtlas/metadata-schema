@@ -44,6 +44,10 @@
         "paired_ends": {
             "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
             "type": "boolean"
+        },
+         "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "ontology_json/process_type_ontology.json"
         }
     },
     "type": "object"

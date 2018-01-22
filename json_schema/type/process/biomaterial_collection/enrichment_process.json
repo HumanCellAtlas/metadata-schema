@@ -25,6 +25,10 @@
                 "density gradient"
             ]
         },
+        "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "ontology_json/process_type_ontology.json"
+        },
         "markers": {
             "description": "A space-delimited list of markers with +/-.",
             "type": "string",
@@ -41,6 +45,6 @@
             "type": "number",
             "maximum": 10000,
             "minimum": 0.01
-        },
+        }
     }
 }
