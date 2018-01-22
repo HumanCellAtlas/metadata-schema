@@ -11,6 +11,10 @@
        "protocol_core" : {
 	        "description": "Core protocol-level information.",
             "$ref": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json"
+        },
+        "protocol_type": {
+            "description": "The type of protocol. Must be a term from the Experimental Factor Ontology.",
+            "$ref": "ontology_json/protocol_type_ontology.json"
         }
     },
     "type": "object"
