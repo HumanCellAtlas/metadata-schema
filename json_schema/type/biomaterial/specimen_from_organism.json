@@ -17,6 +17,13 @@
 	        "description": "Core biomaterial-level information.",
             "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
         },
+         "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "type" : "array",
+            "items":{
+                "$ref": "ontology_json/species_ontology.json"
+            }
+        },
         "organ": {
             "$ref": "module/ontology/organ_ontology.json",
             "description": "The organ that the biomaterial came from. e.g. liver, spleen, bicep muscle. Blood and connective tissue are considered organs. The term \"organ\" is very broadly defined here.",

@@ -52,6 +52,13 @@
 	        "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
             "$ref": "ontology_json/disease_ontology.json"
         },
+         "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "type" : "array",
+            "items":{
+                "$ref": "ontology_json/species_ontology.json"
+            }
+        },
         "passage_number": {
             "description": "The number of passages the cell line has been through.",
             "maximum": 1000,

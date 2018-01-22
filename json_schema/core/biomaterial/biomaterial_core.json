@@ -41,13 +41,6 @@
             "description": "Genotype of organism including strain, cross, and genetic modification information. Must be in MGI format for mice.",
             "type": "string"
         },
-        "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
-            "type" : "array",
-            "items":{
-                "$ref": "ontology_json/species_ontology.json"
-            }
-        },
         "karyotype": {
             "description": "The karyotype of the cell line.",
             "type": "string"

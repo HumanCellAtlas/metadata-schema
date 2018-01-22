@@ -45,6 +45,13 @@
             "description": "Information about conditions of death (or info that organism was living at time of collection).",
             "$ref": "http://schema.humancellatlas.org/module/biomaterial/death/4.0.0/death.json"
         },
+         "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "type" : "array",
+            "items":{
+                "$ref": "ontology_json/species_ontology.json"
+            }
+        },
         "organism_age": {
             "description": "Age in age_units. Measured since birth.",
             "type": "number",
