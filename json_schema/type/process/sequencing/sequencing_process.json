@@ -37,9 +37,6 @@
             "$ref": "ontology_json/instrument_ontology.json",
             "example": "Illumina HiSeq 4000"
         },
-        "lanes": {
-            "$ref": "seq.json#/definitions/lanes"
-        },
         "local_machine_name": {
             "description": "Local name for the particular machine on which the biomaterial was sequenced.",
             "type": "string"

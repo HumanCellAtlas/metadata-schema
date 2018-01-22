@@ -45,13 +45,13 @@
             "description": "Information about conditions of death (or info that organism was living at time of collection).",
             "$ref": "http://schema.humancellatlas.org/module/biomaterial/death/4.0.0/death.json"
         },
-        "age": {
+        "organism_age": {
             "description": "Age in age_units. Measured since birth.",
             "type": "number",
             "maximum": 150, 
             "minimum": 0
         }, 
-        "age_unit": {
+        "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
             "enum": [
                 "hour", 

@@ -10,7 +10,7 @@
             "pattern" : "http://schema.humancellatlas.org/type/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project.json"
         },
         "project_core" : {
-	    "description": "Core project-level information.",
+    	    "description": "Core project-level information.",
             "$ref": "http://schema.humancellatlas.org/core/project/4.0.0/project_core.json"
         },
         "related_projects": {
@@ -45,12 +45,12 @@
             "description": "Project-level supplementary files.",
             "type": "array",
             "example": "Experimental design documents, electronic notebook files, manuscripts in preparation, etc.",
-	    "items": {
+	        "items": {
                 "type": "string"
             }
         },
         "publications": {
-	    "description": "A list of publications resulting from this project.",
+    	    "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/publication.json"

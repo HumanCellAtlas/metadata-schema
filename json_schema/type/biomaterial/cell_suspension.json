@@ -14,19 +14,19 @@
             "type": "string"
         },
         "biomaterial_core" : {
-	    "description": "Core biomaterial-level information.",
+	        "description": "Core biomaterial-level information.",
             "$ref": "http://schema.humancellatlas.org/biomaterial/4.0.0/biomaterial_core.json"
         },
         "cell_morphology": {
-	    "description": "Features relating to the morphology of cells in a biomaterial.",
+            "description": "Features relating to the morphology of cells in a biomaterial.",
             "$ref": "cell_morphology.json"
         },
         "target_cell_type": {
             "description" : "Cell types expected to be present in the suspension.",
             "type": "array",
             "items": {
-		    "$ref": "ontology_json/cell_type_ontology.json"
-	    }
+		        "$ref": "ontology_json/cell_type_ontology.json"
+	        }
        },
         "total_estimated_cells": {
             "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
