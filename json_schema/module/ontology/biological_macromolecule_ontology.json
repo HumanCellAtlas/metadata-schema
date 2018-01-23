@@ -7,6 +7,7 @@
         "text"
     ],
     "title": "biological_macromolecule_ontology",
+    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biological_macromolecule_ontology.json",
@@ -33,6 +34,5 @@
                 "include_self": false
             }
         }
-    },
-    "type": "object"
+    }
 }
