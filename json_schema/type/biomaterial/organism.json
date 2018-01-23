@@ -2,32 +2,23 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/type/biomaterial/organism/4.0.0/organism.json",
     "description": "Information about the organism from which a specimen was collected.",
-    "additionalProperties" : false,
-    "title": "organism",
-    "type": "object",
-    "required" : [
+    "additionalProperties": false,
+    "required": [
         "biomaterial_core",
         "is_living"
     ],
-    "definitions" : {
-        "non_human_specific": {
-            "description": "Fields that only apply to non-humans.",
-            "properties": {
-                "strain": {
-                    "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
-                    "type": "array",
-                    "items": {
-                        "$ref": "strain_ontology.json"
-                    }
-                }
-            }
-        }
-
-    },
+    "title": "organism",
+    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/type/biomaterial/organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",

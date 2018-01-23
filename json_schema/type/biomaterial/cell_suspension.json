@@ -2,16 +2,22 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/type/biomaterial/cell_suspension/4.0.0/cell_suspension.json",
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
-    "additionalProperties" : false,
-    "title" : "cell_suspension",
-    "type": "object",
-    "required" : [
+    "additionalProperties": false,
+    "required": [
       "biomaterial_core"
     ],
+    "title": "cell_suspension",
+    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/type/biomaterial/cell_suspension/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
