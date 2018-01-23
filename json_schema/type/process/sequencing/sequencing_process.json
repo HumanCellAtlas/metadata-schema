@@ -1,18 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/sequencing/4.0.0/seq_process.json",
+    "id": "http://schema.humancellatlas.org/type/process/sequencing/4.0.0/sequencing_process.json",
     "description": "Information about how a biomaterial was sequenced.",
     "additionalProperties": false,
-     "required": [
+    "required": [
         "instrument_manufacturer_model",
-        "lanes",
         "paired_ends"
     ],
-    "title": "seq",
+    "title": "sequencing_process",
+    "type": "object",
     "properties": {
          "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/seq_process.json",
+            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequencing_process.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
          "process_core" : {
 	        "description": "Core process-level information.",
@@ -49,6 +55,5 @@
             "description": "The type of process. Ideally an EFO term.",
             "$ref": "ontology_json/process_type_ontology.json"
         }
-    },
-    "type": "object"
+    }
 }

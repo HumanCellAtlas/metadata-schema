@@ -15,6 +15,12 @@
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/type/process/imaging/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/imaging_process.json"
          },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
          "process_core" : {
             "description": "Core process-level information.",
             "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
