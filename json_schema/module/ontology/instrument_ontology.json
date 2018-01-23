@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/module/ontology/4.0.0/instrument_ontology.json",
-    "description": "A term that may be associated with a cell type-related ontology term",
+    "id": "http://schema.humancellatlas.org/module/ontology/4.0.0/instrument_ontology.json",
+    "description": "A term that may be associated with a instrument-related ontology term",
     "additionalProperties": false,
-        "required": [
+    "required": [
         "text"
     ],
     "title": "instrument_ontology",
@@ -15,6 +15,12 @@
         "text": {
             "description": "The full name of the instrument used.",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
