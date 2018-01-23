@@ -1,18 +1,25 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/module/process/sequencing/4.0.0/barcode.json",
-    "additionalProperties": false, 
-    "description": "This object describes where a particular type of barcode is in a read.",
+    "id": "http://schema.humancellatlas.org/module/process/sequencing/4.0.0/barcode.json",
+    "description": "This module describes where a particular type of barcode is in a read.",
+    "additionalProperties": false,
     "required": [
       "offset",
       "size",
       "read"
     ] ,
     "title": "barcode",
+    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/barcode.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "offset": {
             "description": "Offset in read of barcode. 0 for beginning of read.",
@@ -39,6 +46,5 @@
 	       "description": "Name of file containing legitimate barcode sequences. Unused for randomly generated barcodes.",
             "type": "string"
 	   }
-	},
-    "type": "object"
+	}
 }
