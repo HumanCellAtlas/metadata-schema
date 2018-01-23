@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/module/project/4.0.0/contact.json",
-    "additionalProperties": false, 
-    "definitions": {}, 
+    "id": "http://schema.humancellatlas.org/module/project/4.0.0/contact.json",
     "description": "Information about a person who submitted or contributed to a project.",
-     "required": [
+    "additionalProperties": false,
+    "required": [
         "name",
         "email"
     ],
@@ -14,6 +13,12 @@
         "$schema" : {
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/module/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/contact.json"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "country_division": {
             "type": "string", 
