@@ -1,17 +1,21 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/homo_sapiens_specific.json",
-    "additionalProperties": false,
-    "definitions": {},
     "description": "Information specific to an organism that is a homo sapiens.",
-    "required": [
-
-    ],
-    "title": "death",
+    "additionalProperties": false,
+    "required": [],
+    "title": "homo_sapiens_specific",
+    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/homo_sapiens_specific.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
          "body_mass_index": {
             "description": "The body mass index of the organism.",
@@ -26,6 +30,5 @@
                 "$ref": "ontology_json/ethnicity_ontology.json"
             }
         }
-    },
-    "type": "object"
+    }
 }

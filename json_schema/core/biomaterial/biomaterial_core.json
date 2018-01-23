@@ -8,10 +8,17 @@
         "ncbi_taxon_id"
     ],
     "title": "biomaterial_core",
+    "type": "object",
     "properties": {
-       "$schema" : {
+        "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/core/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_core.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "biomaterial_id":{
             "description": "A unique ID for this biomaterial.",
@@ -38,11 +45,11 @@
             "comment" : "This field is primarily required for spreadsheet-based submissions."
         },
         "genotype": {
-            "description": "Genotype of organism including strain, cross, and genetic modification information. Must be in MGI format for mice.",
+            "description": "Genotype of biomaterial including strain, cross, and genetic modification information.",
             "type": "string"
         },
         "karyotype": {
-            "description": "The karyotype of the cell line.",
+            "description": "The karyotype of the biomaterial.",
             "type": "string"
         },
         "supplementary_files": {
@@ -62,6 +69,5 @@
             "type": "string",
             "pattern": "^[D|E|S]RS[0-9]+$"
         }
-    },
-    "type": "object"
+    }
 }

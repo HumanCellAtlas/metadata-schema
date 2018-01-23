@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/bundle/4.0.0/ingest.json",
+    "id": "http://schema.humancellatlas.org/bundle/4.0.0/ingest.json",
     "additionalProperties": false,
-    "description": "Information added or generated at ingest time." ,
+    "description": "Information added or generated at time of ingest." ,
     "required": [
         "document_id", "submissionDate"
     ],

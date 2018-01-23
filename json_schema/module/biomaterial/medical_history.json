@@ -1,17 +1,21 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/homo_sapiens_specific.json",
+    "description": "Information about the medical history of an organism.",
     "additionalProperties": false,
-    "definitions": {},
-    "description": "Information specific to an organism that is a homo sapiens.",
-    "required": [
-
-    ],
-    "title": "death",
+    "required": [],
+    "title": "medical_history",
+    "type": "object",
     "properties": {
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/homo_sapiens_specific.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "alcohol_history": {
             "description": "Number of drinks consumed on a typical day.",
@@ -41,6 +45,5 @@
             "description": "Any treatments the individual has undergone.",
             "type": "string"
         }
-    },
-    "type": "object"
+    }
 }

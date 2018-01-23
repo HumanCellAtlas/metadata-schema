@@ -1,16 +1,23 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json",
-    "description": "A protocol entity contains information about the intended protocol that was followed in the project.",
+    "description": "A protocol entity contains information about an intended protocol that was followed in the project.",
     "additionalProperties": false,
     "required": [
         "protocol_id"
     ],
     "title": "protocol_core",
+    "type": "object",
     "properties": {
-         "$schema" : {
+        "$schema" : {
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/core/protocol/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/protocol_core.json"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "protocol_id":{
             "description": "A unique ID for this protocol.",
@@ -43,6 +50,5 @@
             "type": "string",
             "example": "SureCell WTA 3' Library Prep Kit"
         }
-    },
-    "type": "object"
+    }
 }
