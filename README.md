@@ -10,22 +10,19 @@ The **design-principles** can be read in the [linked Google Doc](https://docs.go
 How to contribute is described in [contributing.md](https://github.com/HumanCellAtlas/metadata-schema/blob/master/contributing.md)
 
 
-### HCA v4-to-v5 metadata schema overview
+### HCA v4.6.1-to-v5.0.0 metadata schema changes overview
 
 #### Primary goals of changes
 
-1. Move to process-based schema for handling transitions between core entities
-1. Move to a component-based schema to support independent versioning of submittable types
-1. Define hierarchy (directory structure) for core entities and modules
-    1. High-level *core* entities are not submittable on their own (e.g. biomaterial.json)
-    1. Mid-level *type* entities are submittable on their own (e.g. organism.json)
-    1. Low-level *common* modules are not submittable on their own (e.g. death.json)
+1. Move to process-based schema for handling transitions between core biomaterial entities
+1. Move to a module-based schema to support independent versioning and user-/domain-specific metadata fields
+1. Enable metadata structure to be as flexible as possible
 
 #### Proposed organisational structure 
 
-* *Core* = Very stable, high-level entities that are referenced by a Type
-* *Type* = Any entity that is submittable directly to ingest 
-* *Common* = Small, potentially quickly evolving modules that can be referenced by a Type
+* *Core* = Very stable, high-level entities that are referenced by a respective *Type*. These entities contain core fields that apply to and are inherited by corresponding *Type* entities.
+* *Type* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
+* *Module* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
 
 #### Suggested directory structure of schemas
 
