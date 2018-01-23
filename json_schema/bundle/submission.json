@@ -28,7 +28,7 @@
 					"type" : "string"
 				},
 				"content_type" :{
-					"description" : "type of file e.g hca-sample-json, hca-assay-json, hca-rnaseq-fastq-gz",
+					"description" : "type of file e.g hca-biomaterial-json, hca-process-json, hca-rnaseq-fastq-gz",
 					"type" : "string"
 				},
 				"size" : {

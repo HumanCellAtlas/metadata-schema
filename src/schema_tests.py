@@ -29,7 +29,7 @@ class TestSchemas(unittest.TestCase):
         base_uri = get_local_base_uri('../jsonschema/')
         
     def positive_tests(self):
-        v = get_validator('sample.json', self.base_uri)
+        v = get_validator('collection_process.json', self.base_uri)
         validate(v, {})
         return
         

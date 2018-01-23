@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/process/imaging/4.0.0/imaging_process.json",
+    "description": "Process by which images are captured.",
+    "additionalProperties": false, 
+    "required": [
+         "field_counts",
+         "field_resolution",
+         "probes"
+    ],
+    "title": "imaging_process",
+    "type": "object",
+    "properties": {
+         "$schema" : {
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/process/imaging/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/imaging_process.json"
+         },
+         "process_core" : {
+            "description": "Core process-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
+         },
+         "embedding": {
+            "description": "Description of embedding conditions.", 
+            "type": "string"
+         }, 
+         "exposure_time": {
+            "description": "Exposure time as a floating point number in units of seconds.", 
+            "type": "number",
+            "maximum": 1000,
+            "minimum": 1e-9
+         }, 
+         "field_counts": {
+            "description": "Number of fields in x and y dimensions.", 
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+         }, 
+         "field_microns": {
+            "description": "Microns covered by a field in x, y, and z. Z includes all focal planes in a single file.", 
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+         }, 
+         "field_resolution": {
+            "description": "x, y, and z (number of focal planes) resolution of an individual field.", 
+            "type": "array",
+            "items": {
+                "type": "integer"
+            }
+         }, 
+         "fixation": {
+            "description": "Description of fixation conditions.", 
+            "type": "string"
+         }, 
+         "microscope": {
+            "description": "Microscope used for imaging.", 
+            "enum": [
+                "generic confocal", 
+                "generic two photon"
+            ]
+         }, 
+         "probes": {
+            "description": "A file containing information on probe sequence, genes they cover, and  colors", 
+            "type": "string"
+         },
+         "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "ontology_json/process_type_ontology.json"
+        }
+    }
+}

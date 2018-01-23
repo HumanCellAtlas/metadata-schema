@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/type/biomaterial/organoid/4.0.0/organoid.json",
+    "description": "Information about an organoid biomaterial.",
+    "additionalProperties" : false,
+    "title" : "organoid",
+      "required":[
+        "model_for_organ"
+    ],
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/organoid/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organoid.json",
+            "type": "string"
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+        },
+        "cell_morphology": {
+	        "description": "Features relating to the morphology of cells in a biomaterial.",
+            "$ref": "cell_morphology.json"
+        },
+         "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "type" : "array",
+            "items":{
+                "$ref": "ontology_json/species_ontology.json"
+            }
+        },
+        "model_for_organ": {
+            "description":  "Organ that this organoid is a model system for.",
+            "$ref": "ontology_json/organ_ontology.json"
+        },
+        "organoid_age": {
+            "description": "Age of the organoid",
+            "type": "number"
+        },
+        "organoid_age_unit": {
+            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
+            "$ref": "ontology_json/time_unit_ontology.json"
+        },
+        "organoid_type": {
+            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
+            "type": "string",
+            "enum": [
+                "primary",
+                "immortalized",
+                "stem cell-derived",
+                "engineered"
+          ]
+        }
+    },
+    "type": "object"
+}

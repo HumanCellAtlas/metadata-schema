@@ -1,6 +1,0 @@
-{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/types/analysis/4.0.0/analysis.json",
-    "description": "An empty analysis schema that is inherited by all analysis types.",
-    "title": "analysis"
-}

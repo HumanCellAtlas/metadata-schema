@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/process/sequencing/4.0.0/library_preparation_process.json",
+    "additionalProperties": false,
+     "required": [
+         "end_bias",
+         "library_construction",
+         "strand"
+    ],
+    "title": "library_preparation_process",
+    "description": "Information about how a sequencing library was created.",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process.json",
+            "type": "string"
+        },
+         "process_core" : {
+	        "description": "Core process-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
+        },
+        "cell_barcode": {
+            "description": "Information about cell identifier barcode.",
+            "$ref": "barcode.json"
+        },
+        "end_bias": {
+            "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
+            "type": "string",
+            "enum": [
+                "three_prime_end", 
+                "three_prime_bias", 
+                "five_prime_end", 
+                "five_prime_bias", 
+                "none"
+            ]
+        }, 
+        "input_molecule": {
+            "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
+            "type": "string",
+            "$ref": "ontology_json/biological_macromolecule_ontology.json"
+        },
+        "library_construction": {
+            "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x.",
+            "enum": [
+                "unknown",
+                "CEL-seq",
+                "SMARTer Ultra Low RNA Kit",
+                "modified smart-seq2",
+                "smart-seq2",
+		        "QUARTZ-Seq",
+                "10x_v2", 
+		        "drop-seq",
+		        "inDrop",
+                "Nextera XT",
+                "TruSeq",
+                "modified Nextera XT"
+            ]
+        }, 
+        "primer": {
+            "description": "Primer used for cDNA synthesis from RNA. Must be either poly-dT or random.",
+            "type": "string",
+            "enum": [
+                "poly-dT",
+                "random"
+            ]
+        },
+        "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "ontology_json/process_type_ontology.json"
+        },
+        "spike_in": {
+            "description": "Name of RNA spike-in kit.",
+            "type": "string",
+            "example": "ERCC"
+        },
+        "spike_in_dilution": {
+            "description": "Dilution of RNA spike-in.",
+            "type": "integer",
+            "maximum": 1000000,
+            "minimum": 1
+        },
+        "strand": {
+            "description": "Library strandedness.",
+            "enum": [
+                "first",
+                "second",
+                "none"
+            ]
+        },
+        "umi_barcode": {
+            "description": "Information about unique molecular identifier (UMI) barcode sequences.",
+            "$ref": "barcode.json"
+        }
+    },
+    "type": "object"
+}

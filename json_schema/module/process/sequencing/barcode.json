@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/module/process/sequencing/4.0.0/barcode.json",
+    "additionalProperties": false, 
+    "description": "This object describes where a particular type of barcode is in a read.",
+    "required": [
+      "offset",
+      "size",
+      "read"
+    ] ,
+    "title": "barcode",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/barcode.json",
+            "type": "string"
+        },
+        "offset": {
+            "description": "Offset in read of barcode. 0 for beginning of read.",
+            "maximum": 50, 
+            "minimum": 0, 
+            "type": "integer"
+        }, 
+        "size": {
+            "description": "Size of barcode in nucleotides.",
+            "maximum": 50, 
+            "minimum": 0, 
+            "type": "integer"
+        }, 
+        "read": {
+            "description": "The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index.",
+            "enum": [
+                "Read 1",
+                "Read 2",
+                "i7 Index",
+                "i5 Index"
+            ]
+        }, 
+	   "white_list_file": {
+	       "description": "Name of file containing legitimate barcode sequences. Unused for randomly generated barcodes.",
+            "type": "string"
+	   }
+	},
+    "type": "object"
+}

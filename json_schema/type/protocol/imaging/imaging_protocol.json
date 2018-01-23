@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/protocol/imaging/4.0.0/imaging_protocol.json",
+    "description": "Information about the imaging protocol",
+    "title": "protocol",
+    "properties": {
+         "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/type/protocol/imaging/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/imaging_protocol.json",
+            "type": "string"
+        },
+       "protocol_core" : {
+	        "description": "Core protocol-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json"
+        },
+        "protocol_type": {
+            "description": "The type of protocol. Must be a term from the Experimental Factor Ontology.",
+            "$ref": "ontology_json/protocol_type_ontology.json"
+        }
+    },
+    "type": "object"
+}

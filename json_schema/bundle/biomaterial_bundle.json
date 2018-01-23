@@ -1,0 +1,49 @@
+{
+    "definitions": {
+        "biomaterial_ingest": {
+            "required": [
+                "hca_ingest",
+                "content"
+            ],
+            "type": "object",
+            "properties": {
+                "content": {
+                    "type": "object",
+                    "description": "Biomaterial content",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/biomaterial.json"
+                },
+                "derivation_protocols": {
+                    "items": {
+                        "description": "An array of protocols used in derivation of this biomaterial.",
+                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/protocol.json"
+                    },
+                    "type": "array"
+                },
+                "hca_ingest": {
+                    "type": "object",
+                    "description": "core fields added by HCA ingest service",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/ingest.json"
+                },
+                "derived_from": {
+                    "type": "string",
+                    "description": "The biomaterial that this biomaterial was derived from."
+                }
+            }
+        }
+    },
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "A schema for a biomaterial bundle",
+    "properties": {
+        "core": {
+            "description": "Type and schema for this object.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/core.json"
+        },
+        "biomaterials": {
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+            },
+            "type": "array"
+        }
+    }
+}

@@ -1,27 +1,26 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json",
-    "description": "A protocol contains information about the intended protocol that was followed in the project.",
+    "description": "A protocol entity contains information about the intended protocol that was followed in the project.",
     "additionalProperties": false,
     "required": [
-        "protocol_id",
-        "type"
+        "protocol_id"
     ],
     "title": "protocol_core",
     "properties": {
          "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/core/protocol/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/protocol_core.json",
-            "type": "string"
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/core/protocol/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/protocol_core.json"
         },
         "protocol_id":{
             "description": "A unique ID for this protocol.",
             "type": "string"
         },
-        "name": {
+        "protocol_name": {
             "description": "A short, descriptive name for the protocol that need not be unique.",
             "type": "string"
         },
-        "description": {
+        "protocol_description": {
             "description": "A general description of the protocol.",
             "type": "string"
         },
@@ -29,18 +28,20 @@
             "description": "The batch of kit used.",
             "type": "string"
         },
+        "doi": {
+            "description": "The publication digital object identifier (doi) associated with the protocol.",
+            "type": "string",
+            "example": "10.1016/j.cell.2016.07.054"
+        },
         "pdf": {
             "description": "A filename of a PDF containing the details of the protocol.",
-            "pattern": "^.*.pdf$",
-            "type": "string"
+            "type": "string",
+            "pattern": "^.*.pdf$"
         },
         "retail_name": {
-            "description": "The retail name of the kit used. e.g SureCell WTA 3' Library Prep Kit",
-            "type": "string"
-        },
-        "type": {
-            "$ref": "ontology.json",
-            "description": "The type of protocol. Ideally an EFO term."
+            "description": "The retail name of the kit used.",
+            "type": "string",
+            "example": "SureCell WTA 3' Library Prep Kit"
         }
     },
     "type": "object"

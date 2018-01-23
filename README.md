@@ -34,41 +34,36 @@ core/
     file/file_core.json
     project/project_core.json
  
-types/
+type/
     process/    
-        sequencing/ rna_process.json
-                    seq_process.json
+        sequencing/	library_preparation_process.json
+                    sequencing_process.json
         imaging/    imaging_process.json
         analysis/   analysis_process.json
-        biomaterial/enrichment.json
-                    preservation.json
-                    biomaterial_collection.json
-                    sorting.json
+        biomaterial_collection/enrichment_process.json
+                               collection_process.json
+                               dissociation_process.json
     protocol/  
-        sequencing/ rna_protocol.json
-                    seq_protocol.json
-        imaging/    imaging_protocol.json
-        /	    enrichment.json
-                    preservation.json
-                    sample_collection.json
-                    single_cell.json
-                    sorting.json
-    sample/
-        sample.json
-        donor.json
-        specimen.json
+        sequencing/ sequencing_protocol.json
+        imaging/	imaging_protocol.json
+        analysis/	analysis_protocol.json
+        biomaterial/biomaterial_collection_protocol.json
+        ...
+                  
+    biomaterial/
+        organism.json
+        specimen_from_organism.json
         cell_suspension.json
         organoid.json
-        primary_cell_line.json
+        cell_line.json
     file/		
-        file.json
+        sequence_file.json
     project/	
         project.json
-    analysis/	
-        analysis.json
+
  
-common/
-    sample/
+module/
+    biomaterial/
         death.json
         ...
     process/
@@ -95,19 +90,19 @@ bundle/
 
 Each schema should be self describing using `id` field with a URL to the location of the version of the current document. 
 
-Version indicated in schema URL: `http://schema.humancellatlas.org/core/sample/4.0.0/sample_core.json`
+Version indicated in schema URL: `http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json`
 
 As we are requiring instance data to also be self describing, all *types* will require a property called `$schema`. 
 
-e.g. For `donor.json` schema, `type` field should contain: 
+e.g. For `organism.json` schema, `type` field should contain: 
 
 ``` 
 "$schema": "http://json-schema.org/draft-04/schema#"
-"id": "http://schema.hca.org/schema/v1.0.0/types/sample/donor.json"
+"id": "http://schema.humancellatlas.org/type/biomaterial/4.0.0/organism.json"
 "additionalProperties": false,
 properties : {
     $schema : {
-        "pattern" : "http://schema.hca.org/schema/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/types/samples/donor.json"
+        "pattern" : "http://schema.humancellatlas.org/type/biomaterial/organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json"
         "type" : "string",
     }
 }
@@ -127,16 +122,11 @@ ontology/ontology.json
 ontology/body_part_ontology.json
 ontology/…
 
-sample/specimen_from_sample/state_of_specimen.json
-sample/immortalized_cell_line/publication.json
-sample/donor/death.json
-sample/cell_suspension/well.json
-sample/cell_suspension/enrichment.json
+biomaterial/state_of_specimen.json
+biomaterial/death.json
+biomaterial/…
 
-process/imaging.json
-process/rna.json 
-process/seq.json
-process/single_cell.json
+process/sequencing/well.json 
 process/sequencing/barcode.json
 
 project/contact.json

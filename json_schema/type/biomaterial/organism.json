@@ -1,0 +1,116 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/organism/4.0.0/organism.json",
+    "description": "Information about the organism from which a specimen was collected.",
+    "additionalProperties" : false,
+    "title": "organism",
+    "type": "object",
+    "required" : [
+        "biomaterial_core",
+        "is_living"
+    ],
+    "definitions" : {
+        "non_human_specific": {
+            "description": "Fields that only apply to non-humans.",
+            "properties": {
+                "strain": {
+                    "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "ontology.json"
+                    }
+                }
+            }
+        }
+
+    },
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json",
+            "type": "string"
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+        },
+        "human_specific": {
+	        "description": "Fields specific to human organisms.",
+            "$ref": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/homo_sapiens_specific.json"
+        },
+        "non_human_specific": {
+	        "description": "Fields specific to non-human organisms.",
+            "$ref": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/non_homo_sapiens_specific.json"
+        },
+        "death": {
+            "description": "Information about conditions of death (or info that organism was living at time of collection).",
+            "$ref": "http://schema.humancellatlas.org/module/biomaterial/death/4.0.0/death.json"
+        },
+         "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "type" : "array",
+            "items":{
+                "$ref": "ontology_json/species_ontology.json"
+            }
+        },
+        "organism_age": {
+            "description": "Age in age_units. Measured since birth.",
+            "type": "number",
+            "maximum": 150, 
+            "minimum": 0
+        }, 
+        "organism_age_unit": {
+            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
+            "$ref": "ontology_json/time_unit_ontology.json"
+        },
+        "development_stage": {
+            "description": "A classification of the developmental stage of the organism.",
+            "$ref": "ontology_json/development_stage_ontology.json"
+        }, 
+        "disease": {
+            "description": "Short description of disease status of the organism.",
+            "type": "array",
+            "items": {
+                "$ref": "ontology_json/disease_ontology.json"
+	        }
+        },
+        "familial_relationship": {
+            "description": "Information about other organisms related to this organism.",
+            "$ref": "familial_relationship.json"
+        },
+        "gestational_age": {
+            "description": "Gestational age in gestational_age_units. Measured since fertilization.",
+            "type": "number",
+            "maximum": 150,
+            "minimum": 0
+        },
+        "gestational_age_unit": {
+            "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
+            "$ref": "ontology_json/time_unit_ontology.json"
+        },
+        "height": {
+            "description": "Height of organism in meters.",
+            "type": "number",
+            "maximum": 10, 
+            "minimum": 0
+        },
+        "is_living": {
+            "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
+            "type": "boolean"
+        }, 
+        "sex": {
+            "description": "Sex of organism. Should be one of male, female, mixed, or unknown.",
+            "enum": [
+                "female", 
+                "male", 
+                "mixed", 
+                "unknown"
+            ]
+        },
+        "weight": {
+            "description": "Weight of organism in kilograms.",
+            "type": "number",
+            "maximum": 1000, 
+            "minimum": 0
+        }
+    }
+}

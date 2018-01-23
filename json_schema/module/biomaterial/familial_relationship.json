@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/familial_relationship.json",
+    "additionalProperties": false,
+    "definitions": {},
+    "description": "Information relating to other organisms that this organism is related to.",
+    "required": [
+    	"cause_of_death", "time_of_death"
+    ],
+    "title": "death",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/familial_relationship.json",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/module/ontology/4.0.0/cell_type_ontology.json",
+    "description": "A term that may be associated with a cell type-related ontology term",
+    "additionalProperties": false,
+        "required": [
+        "text"
+    ],
+    "title": "cell_type_ontology",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_type_ontology.json",
+            "type": "string"
+        },
+        "text": {
+            "description": "The name of a cell type supplied by a user.",
+            "type": "string"
+        },
+        "ontology": {
+            "description": "An ontology term identifier in the form prefix:accession",
+            "type": "string",
+            "graph_restriction":  {
+                "ontologies" : ["obo:cl", "obo:efo"],
+                "classes": ["CL:0000003"],
+                "relations": ["rdfs:subClassOf"],
+                "direct": false,
+                "include_self": false
+            }
+        }
+    },
+    "type": "object"
+}

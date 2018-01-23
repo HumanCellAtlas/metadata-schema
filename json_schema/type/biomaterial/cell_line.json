@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/type/biomaterial/cell_line/4.0.0/cell_line.json",
+    "description": "Information about the cell line used in the biomaterial",
+    "additionalProperties": false,
+    "title": "cell_line",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/cell_line/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line.json",
+            "type": "string"
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+        },
+        "catalog_number": {
+            "description": "The supplier catalogue number for the cell line.",
+            "type": "string"
+        },
+        "catalog_url": {
+            "description": "The supplier catalogue URL for the cell line.",
+            "type": "string"
+        },
+        "cell_cycle": {
+            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
+            "$ref": "ontology_json/cell_cycle_ontology.json"
+        },
+        "cell_line_type": {
+            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
+            "type": "string",
+            "enum": [
+                "primary",
+                "immortalized",
+                "stem cell-derived",
+                "engineered"
+          ]
+        },
+        "cell_morphology": {
+	        "description": "Features relating to the morphology of cells in a biomaterial.",
+            "$ref": "cell_morphology.json"
+        },
+        "cell_type": {
+	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
+            "$ref": "ontology_json/cell_type_ontology.json"
+        },
+        "date_established": {
+            "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "disease": {
+	        "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
+            "$ref": "ontology_json/disease_ontology.json"
+        },
+         "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "type" : "array",
+            "items":{
+                "$ref": "ontology_json/species_ontology.json"
+            }
+        },
+        "passage_number": {
+            "description": "The number of passages the cell line has been through.",
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "publications": {
+            "description": "One or more publications in which the cell line creation was cited.",
+            "type": "array",
+            "items": {
+                "$ref": "publication.json"
+            }
+        }
+
+    },
+    "type": "object"
+}

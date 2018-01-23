@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json",
+    "description": "A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components.",
+    "additionalProperties": false,
+    "required": [
+        "biomaterial_id",
+        "ncbi_taxon_id"
+    ],
+    "title": "biomaterial_core",
+    "properties": {
+       "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/core/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_core.json",
+            "type": "string"
+        },
+        "biomaterial_id":{
+            "description": "A unique ID for this biomaterial.",
+            "type": "string"
+        },
+        "biomaterial_name": {
+            "description": "A short, descriptive name for the biomaterial that need not be unique.",
+            "type": "string"
+        },
+        "biomaterial_description": {
+            "description": "A general description of the biomaterial.",
+            "type": "string"
+        },
+        "ncbi_taxon_id" : {
+            "description": "A taxonomy ID (taxonID) from NCBI. Multiple IDs can be provided for multi-species samples.",
+            "type" : "array",
+            "items":{
+                "type": "integer"
+            }
+        },
+        "derived_from" : {
+            "description" : "If this biomaterial is derived from another biomaterial, enter the biomaterial_id for the biomaterial it was derived from.",
+            "type" : "string",
+            "comment" : "This field is primarily required for spreadsheet-based submissions."
+        },
+        "genotype": {
+            "description": "Genotype of organism including strain, cross, and genetic modification information. Must be in MGI format for mice.",
+            "type": "string"
+        },
+        "karyotype": {
+            "description": "The karyotype of the cell line.",
+            "type": "string"
+        },
+        "supplementary_files": {
+            "description": "A list of filenames of biomaterial-level supplementary files.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "biosd_biomaterial": {
+            "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
+            "type": "string",
+            "pattern": "^SAM(D|N|E([AG]?))[0-9]+$"
+        },
+        "insdc_biomaterial": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
+            "type": "string",
+            "pattern": "^[D|E|S]RS[0-9]+$"
+        }
+    },
+    "type": "object"
+}
