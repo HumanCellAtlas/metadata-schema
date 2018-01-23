@@ -2,11 +2,19 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/type/protocol/biomaterial/4.0.0/biomaterial_protocol.json",
     "description": "Information about the biomaterial collection protocol",
-    "title": "protocol",
+    "additionalProperties": false,
+    "title": "biomaterial_protocol",
+    "type": "object",
     "properties": {
          "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_protocol.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
        "protocol_core" : {
 	        "description": "Core protocol-level information.",
@@ -16,6 +24,5 @@
             "description": "The type of protocol. Must be a term from the Experimental Factor Ontology.",
             "$ref": "ontology_json/protocol_type_ontology.json"
         }
-    },
-    "type": "object"
+    }
 }
