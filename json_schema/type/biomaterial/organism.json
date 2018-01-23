@@ -17,7 +17,7 @@
                     "description": "The name of th mouse inbred strain. e.g. C57BL/6.",
                     "type": "array",
                     "items": {
-                        "$ref": "ontology.json"
+                        "$ref": "strain_ontology.json"
                     }
                 }
             }
