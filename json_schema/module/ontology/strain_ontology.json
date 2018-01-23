@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "http://schema.humancellatlas.org/module/ontology/4.0.0/strain_ontology.json",
+    "description": "A term that may be associated with a cell type-related ontology term",
+    "additionalProperties": false,
+        "required": [
+        "text"
+    ],
+    "title": "strain_ontology",
+    "properties": {
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/strain_ontology.json",
+            "type": "string"
+        },
+        "text": {
+            "description": "The name of the strain to which the organism belongs (mouse-specific).",
+            "type": "string"
+        },
+        "ontology": {
+            "description": "An ontology term identifier in the form prefix:accession",
+            "type": "string",
+            "graph_restriction":  {
+                "ontologies" : ["obo:NCBITaxon", "obo:efo"],
+                "classes": ["NCBITaxon:131567", "EFO:0004472"],
+                "relations": ["rdfs:subClassOf"],
+                "direct": false,
+                "include_self": false
+            }
+        }
+    },
+    "type": "object"
+}
