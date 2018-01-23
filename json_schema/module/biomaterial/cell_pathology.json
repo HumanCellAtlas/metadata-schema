@@ -23,11 +23,7 @@
         },
         "cell_size_unit": {
             "description": "The unit in which the cell size is expressed.",
-            "type": "string",
-            "enum": [
-                "millimeter",
-                "micrometer"
-            ]
+            "$ref": "ontology_json/length_unit_ontology.json"
         },
         "cell_viability": {
             "description": "Percent of cells determined to be viable.",
