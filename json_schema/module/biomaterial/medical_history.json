@@ -21,11 +21,13 @@
         },
         "alcohol_history": {
             "description": "Number of drinks consumed on a typical day.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Alcohol history"
         },
         "medication": {
            "description": "List of medications the organism was currently taking at time of biomaterial donation.",
-           "type": "string"
+           "type": "string",
+            "user_friendly": "Medications"
         },
         "nutritional_state": {
             "description": "Should be one of normal, fasting, or feeding tube removed.",
@@ -33,19 +35,23 @@
                 "normal",
                 "fasting",
                 "feeding tube removed"
-            ]
+            ],
+            "user_friendly": "Nutritional state"
         },
         "smoking_history": {
             "description": "Estimated number of cigarettes smoked per day and for how many years.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Smoking history"
         },
         "test_results": {
             "description": "Results from any medical tests performed on the individual.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Test results"
         },
         "treatment": {
             "description": "Any treatments the individual has undergone.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Treatments"
         }
     }
 }

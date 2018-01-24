@@ -25,27 +25,31 @@
         },
         "cell_morphology": {
             "description": "Features relating to the morphology of cells in a biomaterial.",
-            "$ref": "cell_morphology.json"
+            "$ref": "cell_morphology.json",
+            "user_friendly": "Cell morphology"
         },
-         "genus_species": {
+        "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
             "type" : "array",
             "items":{
                 "$ref": "ontology_json/species_ontology.json"
-            }
+            },
+            "user_friendly": "Genus species"
         },
         "target_cell_type": {
             "description" : "Cell types expected to be present in the suspension.",
             "type": "array",
             "items": {
 		        "$ref": "ontology_json/cell_type_ontology.json"
-	        }
+	        },
+            "user_friendly": "Target cell type"
        },
         "total_estimated_cells": {
             "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
             "type": "number",
             "maximum": 1000000000.0,
             "minimum": 0.1
-        }
+        },
+            "user_friendly": "Total estimated cell count"
      }
 }

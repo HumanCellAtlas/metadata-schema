@@ -41,28 +41,33 @@
             "type" : "array",
             "items":{
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
-            }
+            },
+            "user_friendly": "Genus species"
         },
         "organism_age": {
             "description": "Age in age_units. Measured since birth.",
             "type": "number",
             "maximum": 150, 
-            "minimum": 0
+            "minimum": 0,
+            "user_friendly": "Organism age"
         }, 
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
-            "$ref": "ontology_json/time_unit_ontology.json"
+            "$ref": "ontology_json/time_unit_ontology.json",
+            "user_friendly": "Organism age unit"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/development_stage_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/development_stage_ontology.json",
+            "user_friendly": "Development stage"
         }, 
         "disease": {
             "description": "Short description of disease status of the organism.",
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/disease_ontology.json"
-	        }
+	        },
+            "user_friendly": "Disease"
         },
         "familial_relationship": {
             "description": "Information about other organisms related to this organism.",
@@ -72,21 +77,25 @@
             "description": "Gestational age in gestational_age_units. Measured since fertilization.",
             "type": "number",
             "maximum": 150,
-            "minimum": 0
+            "minimum": 0,
+            "user_friendly": "Gestational age"
         },
         "gestational_age_unit": {
             "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
-            "$ref": "ontology_json/time_unit_ontology.json"
+            "$ref": "ontology_json/time_unit_ontology.json",
+            "user_friendly": "Gestational age unit"
         },
         "height": {
             "description": "Height of organism in meters.",
             "type": "number",
             "maximum": 10, 
-            "minimum": 0
+            "minimum": 0,
+            "user_friendly": "Height"
         },
         "is_living": {
             "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
-            "type": "boolean"
+            "type": "boolean",
+            "user_friendly": "Is living?"
         }, 
         "sex": {
             "description": "Sex of organism. Should be one of male, female, mixed, or unknown.",
@@ -95,13 +104,15 @@
                 "male", 
                 "mixed", 
                 "unknown"
-            ]
+            ],
+            "user_friendly": "Biological sex"
         },
         "weight": {
             "description": "Weight of organism in kilograms.",
             "type": "number",
             "maximum": 1000, 
-            "minimum": 0
+            "minimum": 0,
+            "user_friendly": "Weight"
         }
     }
 }
