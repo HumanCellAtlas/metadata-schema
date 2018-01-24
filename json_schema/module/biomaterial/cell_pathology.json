@@ -3,7 +3,9 @@
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/cell_pathology.json",
     "description": "Information relating to pathological features of cells.",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "$schema"
+    ],
     "title": "cell_pathology",
     "type": "object",
     "properties": {

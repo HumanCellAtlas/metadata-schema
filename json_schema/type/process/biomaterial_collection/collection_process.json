@@ -3,7 +3,9 @@
     "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/4.0.0/collection_process.json",
     "description": "Process by which a biomaterial was collected or transformed from another biomaterial or from a population.",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "$schema"
+    ],
     "title": "collection_process",
     "type": "object",
     "properties": {

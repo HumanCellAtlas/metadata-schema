@@ -3,7 +3,9 @@
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/familial_relationship.json",
     "description": "Information relating to other organisms that this organism is related to.",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "$schema"
+    ],
     "title": "familial_relationship",
     "type": "object",
     "properties": {

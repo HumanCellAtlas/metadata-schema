@@ -3,7 +3,9 @@
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/homo_sapiens_specific.json",
     "description": "Information about the medical history of an organism.",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "$schema"
+    ],
     "title": "medical_history",
     "type": "object",
     "properties": {

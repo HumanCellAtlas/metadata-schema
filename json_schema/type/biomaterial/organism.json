@@ -22,7 +22,7 @@
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
-            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "human_specific": {
 	        "description": "Fields specific to human organisms.",
@@ -40,7 +40,7 @@
             "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
             "type" : "array",
             "items":{
-                "$ref": "ontology_json/species_ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
             }
         },
         "organism_age": {
@@ -55,13 +55,13 @@
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
-            "$ref": "ontology_json/development_stage_ontology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/development_stage_ontology.json"
         }, 
         "disease": {
             "description": "Short description of disease status of the organism.",
             "type": "array",
             "items": {
-                "$ref": "ontology_json/disease_ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/disease_ontology.json"
 	        }
         },
         "familial_relationship": {
