@@ -25,7 +25,8 @@
             "example": "C57BL/6.",
             "items": {
                 "$ref": "strain_ontology.json"
-            }
+            },
+            "user_friendly": "Strain"
         }
     }
 }

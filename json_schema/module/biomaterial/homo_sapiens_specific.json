@@ -23,14 +23,16 @@
             "description": "The body mass index of the organism.",
             "type": "number",
             "maximum": 100,
-            "minimum": 5
+            "minimum": 5,
+            "user_friendly": "Body mass index"
         },
         "ethnicity": {
             "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
             "type": "array",
             "items": {
                 "$ref": "ontology_json/ethnicity_ontology.json"
-            }
+            },
+            "user_friendly": "Ethnicity"
         }
     }
 }

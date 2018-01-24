@@ -27,11 +27,13 @@
                 "r2",
                 "i1",
                 "i2"
-            ]
+            ],
+            "user_friendly": "Read index"
         },
         "lane_index": {
             "description": "The index of the lane that this file was produced from.",
-            "type": "integer"
+            "type": "integer",
+            "user_friendly": "Lane index"
         }
     }
 }

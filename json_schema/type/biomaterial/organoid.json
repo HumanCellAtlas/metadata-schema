@@ -33,19 +33,23 @@
             "type" : "array",
             "items":{
                 "$ref": "ontology_json/species_ontology.json"
-            }
+            },
+            "user_friendly": "Genus species"
         },
         "model_for_organ": {
             "description":  "Organ that this organoid is a model system for.",
-            "$ref": "ontology_json/organ_ontology.json"
+            "$ref": "ontology_json/organ_ontology.json",
+            "user_friendly": "Organ model"
         },
         "organoid_age": {
             "description": "Age of the organoid",
-            "type": "number"
+            "type": "number",
+            "user_friendly": "Organoid age"
         },
         "organoid_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
-            "$ref": "ontology_json/time_unit_ontology.json"
+            "$ref": "ontology_json/time_unit_ontology.json",
+            "user_friendly": "Organoid age unit"
         },
         "organoid_type": {
             "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
@@ -55,7 +59,8 @@
                 "immortalized",
                 "stem cell-derived",
                 "engineered"
-          ]
+            ],
+            "user_friendly": "Organoid type"
         }
     }
 }

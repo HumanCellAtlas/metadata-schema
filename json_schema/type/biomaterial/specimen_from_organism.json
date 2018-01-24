@@ -26,24 +26,27 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
          "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
-            "type" : "array",
+             "description": "The scientific binomial name for the species of the biomaterial.",
+             "type" : "array",
              "example": "Homo sapiens",
-            "items":{
+             "items":{
                 "$ref": "module/ontology/species_ontology.json"
-            }
+             },
+             "user_friendly": "Genus species"
         },
         "organ": {
             "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/organ_ontology.json",
             "example": "Blood",
-            "comment": "The term organ is very broadly defined here."
+            "comment": "The term organ is very broadly defined here.",
+            "user_friendly": "Organ"
         },
         "organ_part": {
             "description": "A term for a specific part of the organ that the biomaterial came from.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/organ_part_ontology.json",
             "example": "Umbilical cord blood",
-            "comment": "The term organ part is very broadly defined here."
+            "comment": "The term organ part is very broadly defined here.",
+            "user_friendly": "Organ part"
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection and how it was preserved after removal.",
@@ -52,7 +55,8 @@
         "collection_time": {
             "description": "When the biomaterial was collection, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "user_friendly": "Time of collection"
         }
     }
 }

@@ -22,15 +22,18 @@
         },
         "file_format": {
             "description": "The format of the data file.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "File format"
         }, 
         "file_name": {
             "description": "The filename of the data file.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "File name"
         },
         "checksum": {
             "description": "MD5 checksum of the data file.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Checksum"
 	    }
     }
 }
