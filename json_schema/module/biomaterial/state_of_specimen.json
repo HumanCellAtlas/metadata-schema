@@ -50,7 +50,7 @@
                 "warm",
                 "cold"
             ],
-            "user_friendly": "Iscemic temperatureh"
+            "user_friendly": "Ischemic temperature"
         }, 
         "ischemic_time": {
             "description": "Duration of time, in seconds, that the body part had insufficient blood supply.",
