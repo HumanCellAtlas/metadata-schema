@@ -18,7 +18,7 @@
         },
         "project_core" : {
     	    "description": "Core project-level information.",
-            "$ref": "http://schema.humancellatlas.org/core/project/4.0.0/project_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/project/project_core.json"
         },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",

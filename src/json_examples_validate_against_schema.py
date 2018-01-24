@@ -20,31 +20,42 @@ print('base URI: %s' % base_uri)
 
 # Specific schema tests follow
 
-# Testing organism JSON example
-print('\nValidating organism.json')
-sv = get_validator('type/biomaterial/organism.json', base_uri)
-
-print('\nValidating schema_test_files/10x_pbmc8k_organism_0.json')
-dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_organism_0.json')
-if not validate(sv, dt1): # will return False if fails (show return value)
+# Testing valid project JSON example
+print('\nValidating project/test_pass_project_0.json')
+sv = get_validator('type/project/project.json', base_uri)
+p1 = get_json_from_file('../schema_test_files/project/test_pass_project_0.json')
+if not validate(sv, p1):
     status_flag = False
 
-# Testing specimen JSON example
-print('\nValidating specimen.json')
-sv = get_validator('type/biomaterial/specimen_from_organism.json', base_uri)
+# Testing invalid project JSON example
+# It is missing required project_id field
+print('\nValidating project/test_fail_project_0.json\n(This should fail)')
+sv = get_validator('type/project/project.json', base_uri)
+p1 = get_json_from_file('../schema_test_files/project/test_fail_project_0.json')
+if validate(sv, p1):
+    status_flag = False
 
-print('\nValidating schema_test_files/10x_pbmc8k_specimen_0.json')
-sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_specimen_0.json')
-if not validate(sv, sfo1):
+# Testing valid organism JSON example
+print('\nValidating biomaterial/test_pass_organism_0.json')
+sv = get_validator('type/biomaterial/organism.json', base_uri)
+o1 = get_json_from_file('../schema_test_files/biomaterial/test_pass_organism_0.json')
+if not validate(sv, o1):
+    status_flag = False
+
+# Testing valid specimen JSON example
+print('\nValidating biomaterial/test_pass_specimen_0.json')
+sv = get_validator('type/biomaterial/specimen_from_organism.json', base_uri)
+s1 = get_json_from_file('../schema_test_files/biomaterial/test_pass_specimen_0.json')
+if not validate(sv, s1):
     status_flag = False
 
 # Testing invalid specimen JSON example
 # It is missing required ncbi_taxon_id field
 # This should fail. If it fails, keep status_flag = True
+print('\nValidating biomaterial/test_fail_specimen_0.json\n(This should fail)')
 sv = get_validator('type/biomaterial/specimen_from_organism.json', base_uri)
-print('\nValidating schema_tests/biomaterial/fail/biomaterial-test-current.json\n(This should fail)')
-sf1 = get_json_from_file('../schema_tests/biomaterial/fail/biomaterial-test-current.json')
-if validate(sv, sf1):
+s2 = get_json_from_file('../schema_test_files/biomaterial/test_fail_specimen_0.json')
+if validate(sv, s2):
     status_flag = False
 
 # Specific bundle tests follow
@@ -52,8 +63,8 @@ if validate(sv, sf1):
 print('\nValidating biomaterial_bundle.json')
 sample_bundle_validator = get_validator('biomaterial_bundle.json', base_uri)
 
-print('\nValidating schema_test_files/10x_pbmc8k_sample_bundle.json')
-sample_bundle_file = get_json_from_file('../schema_test_files/10x_pbmc8k_sample_bundle.json')
+print('\nValidating schema_test_files/test_pass_biomaterial_bundle.json')
+sample_bundle_file = get_json_from_file('../schema_test_files/test_pass_biomaterial_bundle.json')
 if not validate(sample_bundle_validator, sample_bundle_file):
     status_flag = False
 """

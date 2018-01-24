@@ -1,0 +1,11 @@
+{
+  "schema_version" : "5.0.0",
+  "project_core": {
+    "schema_version" : "5.0.0",
+    "project_title": "project 1",
+    "project_description": "This is a project."
+  },
+  "related_projects": [
+    "project 2"
+  ]
+}
