@@ -32,7 +32,8 @@
                 "scraping",
                 "urine collection",
                 "organ extraction"
-            ]
+            ],
+            "user_friendly": "Collection method"
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",

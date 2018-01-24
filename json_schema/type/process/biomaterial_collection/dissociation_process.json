@@ -37,7 +37,8 @@
                 "enzymatic",
                 "mechanical",
                 "none"
-            ]
+            ],
+            "user_friendly": "Dissociation method"
         },
         "nucleic_acid_source": {
             "description": "Source cells or organelles from which nucleic acid molecules were selected for sequencing.",
@@ -48,7 +49,8 @@
                 "single nucleus",
                 "bulk nuclei",
                 "mitochondria"
-            ]
+            ],
+            "user_friendly": "Nucleic acid source"
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
