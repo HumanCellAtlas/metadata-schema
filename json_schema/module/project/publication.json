@@ -21,11 +21,12 @@
             "example": "4.6.1"
         },
         "authors": {
-            "description": "A list of authors associated with the publication. Should be in \"surname initials\" format. e.g. \"Tran NM\", \"Kowalczyk M\", \"de Silva-Schmidt CKJ\"",
+            "description": "A list of authors associated with the publication in 'surname initials' format.",
+            "type": "array",
+            "example":  "Smith JD",
             "items": {
                 "type": "string"
             }, 
-            "type": "array",
             "user_friendly": "Authors"
         },
         "publication_title": {
@@ -34,13 +35,15 @@
             "user_friendly": "Publication title"
         },
         "doi": {
-            "description": "The publication digital object identifier (doi), if available. e.g. \"10.1016/j.cell.2016.07.054\"",
+            "description": "The publication digital object identifier.",
             "type": "string",
+            "example": "10.1016/j.cell.2016.07.054",
             "user_friendly": "DOI"
         }, 
         "pmid": {
-            "description": "A PubMed ID of the publication, if available. e.g. 27565351",
+            "description": "The PubMed ID of the publication.",
             "type": "integer",
+            "example": "27565351",
             "user_friendly": "PMID"
         },
         "publication_url": {

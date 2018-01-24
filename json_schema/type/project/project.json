@@ -71,7 +71,7 @@
             "user_friendly": "ArrayExpress accession"
         },
         "insdc_study": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD.",
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "user_friendly": "INSDC study accession"
