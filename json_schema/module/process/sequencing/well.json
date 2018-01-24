@@ -16,30 +16,35 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "col": {
-            "description": "Well column in plate.",
-            "type": "string"
-        }, 
-        "name": {
-            "description": "A name for the well. Should be unique for the plate",
-            "type": "string"
-        }, 
         "plate": {
             "description": "An ID for the plate that the well is located on.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Plate ID"
+        },
+        "well_name": {
+            "description": "A name for the well. Should be unique for the plate",
+            "type": "string",
+            "user_friendly": "Well name"
+        }, 
+        "row": {
+            "description": "Well row in plate.",
+            "type": "string",
+            "user_friendly": "Well row"
+        },
+         "col": {
+            "description": "Well column in plate.",
+            "type": "string",
+            "user_friendly": "Well column"
         },
         "quality": {
             "description": "Note on how good cell looks if imaged in well before sequencing.",
             "enum": [
-                "OK", 
-                "control, 2-cell well", 
-                "control, empty well", 
+                "OK",
+                "control, 2-cell well",
+                "control, empty well",
                 "low quality cell"
-            ]
-        }, 
-        "row": {
-            "description": "Well row in plate.",
-            "type": "string"
+            ],
+            "user_friendly": "Cell quality"
         }
     }
 }

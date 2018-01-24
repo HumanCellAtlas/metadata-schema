@@ -29,28 +29,33 @@
                 "Ficoll gradient",
                 "laser capture microdissection",
                 "density gradient"
-            ]
-        },
-        "process_type": {
-            "description": "The type of process. Ideally an EFO term.",
-            "$ref": "ontology_json/process_type_ontology.json"
+            ],
+            "user_friendly": "Enrichment type"
         },
         "markers": {
             "description": "A space-delimited list of markers with +/-.",
             "type": "string",
-            "example": "CD4+ CD8-"
-        },
-        "size_max": {
-            "description": "Maximum size passing selection in microns.",
-            "type": "number",
-            "maximum": 10000,
-            "minimum": 0.01
+            "example": "CD4+ CD8-",
+            "user_friendly": "Markers"
         },
         "size_min": {
             "description": "Minimum size passing selection in microns.",
             "type": "number",
             "maximum": 10000,
-            "minimum": 0.01
+            "minimum": 0.01,
+            "user_friendly": "Minimum size"
+        },
+        "size_max": {
+            "description": "Maximum size passing selection in microns.",
+            "type": "number",
+            "maximum": 10000,
+            "minimum": 0.01,
+            "user_friendly": "Maximum size"
+        },
+         "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
         }
     }
 }

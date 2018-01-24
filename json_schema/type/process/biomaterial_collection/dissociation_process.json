@@ -3,7 +3,9 @@
     "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/4.0.0/dissociation_process.json",
     "description": "Contains information on the dissociation process used to separate the cells in a specimen.",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "$schema"
+    ],
     "title": "dissociation_process",
     "type": "object",
     "properties": {
@@ -35,7 +37,8 @@
                 "enzymatic",
                 "mechanical",
                 "none"
-            ]
+            ],
+            "user_friendly": "Dissociation method"
         },
         "nucleic_acid_source": {
             "description": "Source cells or organelles from which nucleic acid molecules were selected for sequencing.",
@@ -46,11 +49,13 @@
                 "single nucleus",
                 "bulk nuclei",
                 "mitochondria"
-            ]
+            ],
+            "user_friendly": "Nucleic acid source"
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
-            "$ref": "ontology_json/process_type_ontology.json"
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
         }
     }
 }

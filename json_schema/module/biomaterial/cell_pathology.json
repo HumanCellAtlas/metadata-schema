@@ -3,7 +3,9 @@
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/cell_pathology.json",
     "description": "Information relating to pathological features of cells.",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "$schema"
+    ],
     "title": "cell_pathology",
     "type": "object",
     "properties": {
@@ -19,27 +21,33 @@
         },
         "cell_morphology": {
             "description": "Description of the morphology of the cells in the cell suspension.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Cell morphology"
         },
         "cell_size": {
             "description": "The size of the cells. Average cell size is acceptable.",
-            "type": "number"
+            "type": "number",
+            "user_friendly": "Cell size number"
         },
         "cell_size_unit": {
             "description": "The unit in which the cell size is expressed.",
-            "$ref": "ontology_json/length_unit_ontology.json"
+            "$ref": "module/ontology/length_unit_ontology.json",
+            "user_friendly": "Cell size unit"
         },
         "cell_viability": {
             "description": "Percent of cells determined to be viable.",
-            "type": "number"
+            "type": "number",
+            "user_friendly": "Percent cell viability"
         },
         "cell_viability_method": {
             "description": "The method by which cell viability was determined.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Cell viability method"
         },
         "percent_necrosis": {
-            "description" : "Percent necrosis.",
-            "type": "number"
+            "description" : "Percent of cells identified to be necrotic.",
+            "type": "number",
+            "user_friendly": "Percent necrosis"
         }
     }
 }

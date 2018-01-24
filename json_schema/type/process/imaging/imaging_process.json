@@ -27,53 +27,62 @@
          },
          "embedding": {
             "description": "Description of embedding conditions.", 
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Embedding conditions"
          }, 
          "exposure_time": {
             "description": "Exposure time as a floating point number in units of seconds.", 
             "type": "number",
             "maximum": 1000,
-            "minimum": 1e-9
+            "minimum": 1e-9,
+            "user_friendly": "Exposure time"
          }, 
          "field_counts": {
             "description": "Number of fields in x and y dimensions.", 
             "type": "array",
             "items": {
                 "type": "integer"
-            }
+            },
+            "user_friendly": "Field count"
          }, 
          "field_microns": {
             "description": "Microns covered by a field in x, y, and z. Z includes all focal planes in a single file.", 
             "type": "array",
             "items": {
                 "type": "integer"
-            }
+            },
+            "user_friendly": "Field microns"
          }, 
          "field_resolution": {
             "description": "x, y, and z (number of focal planes) resolution of an individual field.", 
             "type": "array",
             "items": {
                 "type": "integer"
-            }
+            },
+            "user_friendly": "Field resolution"
          }, 
          "fixation": {
             "description": "Description of fixation conditions.", 
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Fixation"
          }, 
          "microscope": {
             "description": "Microscope used for imaging.", 
             "enum": [
                 "generic confocal", 
                 "generic two photon"
-            ]
+            ],
+            "user_friendly": "Microscope"
          }, 
          "probes": {
             "description": "A file containing information on probe sequence, genes they cover, and  colors", 
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Probes"
          },
          "process_type": {
             "description": "The type of process. Ideally an EFO term.",
-            "$ref": "ontology_json/process_type_ontology.json"
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
         }
     }
 }

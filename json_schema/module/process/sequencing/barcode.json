@@ -21,18 +21,6 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "offset": {
-            "description": "Offset in read of barcode. 0 for beginning of read.",
-            "maximum": 50, 
-            "minimum": 0, 
-            "type": "integer"
-        }, 
-        "size": {
-            "description": "Size of barcode in nucleotides.",
-            "maximum": 50, 
-            "minimum": 0, 
-            "type": "integer"
-        }, 
         "read": {
             "description": "The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index.",
             "enum": [
@@ -40,11 +28,27 @@
                 "Read 2",
                 "i7 Index",
                 "i5 Index"
-            ]
+            ],
+            "user_friendly": "Read"
+        },
+        "barcode_offset": {
+            "description": "Offset in read of barcode. 0 for beginning of read.",
+            "maximum": 50, 
+            "minimum": 0, 
+            "type": "integer",
+            "user_friendly": "Barcode offset"
         }, 
-	   "white_list_file": {
+        "barcode_size": {
+            "description": "Size of barcode in nucleotides.",
+            "maximum": 50, 
+            "minimum": 0, 
+            "type": "integer",
+            "user_friendly": "Barcode size"
+        },
+	    "white_list_file": {
 	       "description": "Name of file containing legitimate barcode sequences. Unused for randomly generated barcodes.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "White list file"
 	   }
 	}
 }

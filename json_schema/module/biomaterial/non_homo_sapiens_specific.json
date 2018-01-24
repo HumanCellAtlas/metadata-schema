@@ -3,7 +3,9 @@
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/non_homo_sapiens_specific.json",
     "description": "Information specific to an organism that is NOT a homo sapiens.",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "$schema"
+    ],
     "title": "non_homo_sapiens_specific",
     "type": "object",
     "properties": {
@@ -18,12 +20,13 @@
             "example": "4.6.1"
         },
         "strain": {
-            "description": "The name of the strain."
+            "description": "The name of the strain.",
             "type": "array",
             "example": "C57BL/6.",
             "items": {
                 "$ref": "strain_ontology.json"
-            }
+            },
+            "user_friendly": "Strain"
         }
     }
 }

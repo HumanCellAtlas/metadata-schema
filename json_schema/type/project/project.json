@@ -20,13 +20,6 @@
     	    "description": "Core project-level information.",
             "$ref": "http://schema.humancellatlas.org/core/project/4.0.0/project_core.json"
         },
-        "related_projects": {
-            "description": "A list of other projects that may be logically grouped with this one.",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
             "type": "array",
@@ -43,18 +36,14 @@
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/contact.json"
             }
         },
-        "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
-            "type": "string",
-            "pattern": "^[D|E|S]RP[0-9]+$"
-        },
         "supplementary_files": {
             "description": "Project-level supplementary files.",
             "type": "array",
             "example": "Experimental design documents, electronic notebook files, manuscripts in preparation, etc.",
 	        "items": {
                 "type": "string"
-            }
+            },
+            "user_friendly": "Supplementary files"
         },
         "publications": {
     	    "description": "A list of publications resulting from this project.",
@@ -63,20 +52,37 @@
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/publication.json"
             }
         },
+        "insdc_project": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
+            "type": "string",
+            "pattern": "^[D|E|S]RP[0-9]+$",
+            "user_friendly": "INSCDC project accession"
+        },
         "geo_series": {
             "description": "An NCBI GEO series accession.",
             "type": "string",
-            "pattern": "^GSE.*$"
+            "pattern": "^GSE.*$",
+            "user_friendly": "GEO series accession"
         },
         "array_express_investigation": {
             "description": "An EBI ArrayExpress investigation accession.",
             "type": "string",
-            "pattern": "^E-....-.*$"
+            "pattern": "^E-....-.*$",
+            "user_friendly": "ArrayExpress accession"
         },
         "insdc_study": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
             "type": "string",
-            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$"
+            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
+            "user_friendly": "INSDC study accession"
+        },
+        "related_projects": {
+            "description": "A list of other projects that may be logically grouped with this one.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "user_friendly": "Related projects"
         }
     }
 }

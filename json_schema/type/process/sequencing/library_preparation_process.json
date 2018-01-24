@@ -29,21 +29,11 @@
             "description": "Information about cell identifier barcode.",
             "$ref": "barcode.json"
         },
-        "end_bias": {
-            "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
-            "type": "string",
-            "enum": [
-                "three_prime_end", 
-                "three_prime_bias", 
-                "five_prime_end", 
-                "five_prime_bias", 
-                "none"
-            ]
-        }, 
         "input_molecule": {
             "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
             "type": "string",
-            "$ref": "ontology_json/biological_macromolecule_ontology.json"
+            "$ref": "module/ontology/biological_macromolecule_ontology.json",
+            "user_friendly": "Input molecule"
         },
         "library_construction": {
             "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x.",
@@ -62,30 +52,29 @@
                 "modified Nextera XT",
                 "10x",
                 "10X"
-            ]
-        }, 
+            ],
+            "user_friendly": "Library construction approach"
+        },
+        "end_bias": {
+            "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
+            "type": "string",
+            "enum": [
+                "three_prime_end",
+                "three_prime_bias",
+                "five_prime_end",
+                "five_prime_bias",
+                "none"
+            ],
+            "user_friendly": "End bias"
+        },
         "primer": {
             "description": "Primer used for cDNA synthesis from RNA. Must be either poly-dT or random.",
             "type": "string",
             "enum": [
                 "poly-dT",
                 "random"
-            ]
-        },
-        "process_type": {
-            "description": "The type of process. Ideally an EFO term.",
-            "$ref": "ontology_json/process_type_ontology.json"
-        },
-        "spike_in": {
-            "description": "Name of RNA spike-in kit.",
-            "type": "string",
-            "example": "ERCC"
-        },
-        "spike_in_dilution": {
-            "description": "Dilution of RNA spike-in.",
-            "type": "integer",
-            "maximum": 1000000,
-            "minimum": 1
+            ],
+            "user_friendly": "Primer"
         },
         "strand": {
             "description": "Library strandedness.",
@@ -93,11 +82,30 @@
                 "first",
                 "second",
                 "none"
-            ]
+            ],
+            "user_friendly": "Strand"
+        },
+        "spike_in": {
+            "description": "Name of RNA spike-in kit.",
+            "type": "string",
+            "example": "ERCC",
+            "user_friendly": "Spike in"
+        },
+        "spike_in_dilution": {
+            "description": "Dilution of RNA spike-in.",
+            "type": "integer",
+            "maximum": 1000000,
+            "minimum": 1,
+            "user_friendly": "Spike in dilution"
         },
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "$ref": "barcode.json"
+        },
+        "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
         }
     }
 }

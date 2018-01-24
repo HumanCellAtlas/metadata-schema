@@ -16,13 +16,14 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-       "protocol_core" : {
+        "protocol_core" : {
 	        "description": "Core protocol-level information.",
             "$ref": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json"
         },
         "protocol_type": {
             "description": "The type of protocol. Must be a term from the Experimental Factor Ontology.",
-            "$ref": "ontology_json/protocol_type_ontology.json"
+            "$ref": "module/ontology/protocol_type_ontology.json",
+            "user_friendly": "Protocol type"
         }
     }
 }

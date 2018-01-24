@@ -4,8 +4,9 @@ import sys
 import subprocess
 
 """
-Sample test: Are JSON files that are in the 
-schema_test* folders valid JSON schema?
+json_examples_validate_against_schema: 
+Do JSON files that are in the schema_test* folders validate
+against their correspondoing JSON schema?
 """
 
 # Flag for tracking the exit status of validate() calls
@@ -17,25 +18,32 @@ print('pwd: %s' % pwd)
 base_uri = "file://" + pwd + "/"
 print('base URI: %s' % base_uri)
 
-print('\nValidating biomaterial_core.json')
-sv = get_validator('core/biomaterial_collection/biomaterial_core.json', base_uri)
-
 # Specific schema tests follow
 
-# Contains an ontology field
+# Testing organism JSON example
+print('\nValidating organism.json')
+sv = get_validator('type/biomaterial/organism.json', base_uri)
+
 print('\nValidating schema_test_files/10x_pbmc8k_organism_0.json')
 dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_organism_0.json')
 if not validate(sv, dt1): # will return False if fails (show return value)
     status_flag = False
+
+# Testing specimen JSON example
+print('\nValidating specimen.json')
+sv = get_validator('type/biomaterial/specimen_from_organism.json', base_uri)
 
 print('\nValidating schema_test_files/10x_pbmc8k_specimen_0.json')
 sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_specimen_0.json')
 if not validate(sv, sfo1):
     status_flag = False
 
-print('\nValidating schema_tests/biomaterial_collection/fail/biomaterial_collection-test-current.json\n(This should fail)')
-sf1 = get_json_from_file('../schema_tests/biomaterial_collection/fail/biomaterial_collection-test-current.json')
+# Testing invalid specimen JSON example
+# It is missing required ncbi_taxon_id field
 # This should fail. If it fails, keep status_flag = True
+sv = get_validator('type/biomaterial/specimen_from_organism.json', base_uri)
+print('\nValidating schema_tests/biomaterial/fail/biomaterial-test-current.json\n(This should fail)')
+sf1 = get_json_from_file('../schema_tests/biomaterial/fail/biomaterial-test-current.json')
 if validate(sv, sf1):
     status_flag = False
 

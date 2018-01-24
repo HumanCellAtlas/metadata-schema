@@ -128,7 +128,7 @@
     	},
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
-            "$ref": "ontology_json/process_type_ontology.json"
+            "$ref": "module/ontology/process_type_ontology.json"
         },
         "inputs": {
             "description": "Input parameters used in the pipeline run, these can be files or string values (settings).",
