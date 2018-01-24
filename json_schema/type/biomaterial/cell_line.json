@@ -35,7 +35,7 @@
         },
         "cell_cycle": {
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
-            "$ref": "ontology_json/cell_cycle_ontology.json",
+            "$ref": "module/ontology/cell_cycle_ontology.json",
             "user_friendly": "Cell cycle"
         },
         "cell_line_type": {
@@ -56,7 +56,7 @@
         },
         "cell_type": {
 	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
-            "$ref": "ontology_json/cell_type_ontology.json",
+            "$ref": "module/ontology/cell_type_ontology.json",
             "user_friendly": "Cell type"
         },
         "date_established": {
@@ -67,14 +67,14 @@
         },
         "disease": {
 	        "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
-            "$ref": "ontology_json/disease_ontology.json",
+            "$ref": "module/ontology/disease_ontology.json",
             "user_friendly": "Disease"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
             "type" : "array",
             "items":{
-                "$ref": "ontology_json/species_ontology.json"
+                "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },

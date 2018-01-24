@@ -32,7 +32,8 @@
         "input_molecule": {
             "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
             "type": "string",
-            "$ref": "ontology_json/biological_macromolecule_ontology.json"
+            "$ref": "module/ontology/biological_macromolecule_ontology.json",
+            "user_friendly": "Input molecule"
         },
         "library_construction": {
             "description": "The general approach for sequencing library construction. e.g. Smart-seq, Drop-seq, 10x.",
@@ -103,7 +104,8 @@
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
-            "$ref": "ontology_json/process_type_ontology.json"
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
         }
     }
 }

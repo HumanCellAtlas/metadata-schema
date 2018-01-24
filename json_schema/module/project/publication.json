@@ -25,23 +25,28 @@
             "items": {
                 "type": "string"
             }, 
-            "type": "array"
+            "type": "array",
+            "user_friendly": "Authors"
+        },
+        "publication_title": {
+            "description": "The full title of the publication.",
+            "type": "string",
+            "user_friendly": "Publication title"
         },
         "doi": {
             "description": "The publication digital object identifier (doi), if available. e.g. \"10.1016/j.cell.2016.07.054\"",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "DOI"
         }, 
         "pmid": {
             "description": "A PubMed ID of the publication, if available. e.g. 27565351",
-            "type": "integer"
-        }, 
-        "title": {
-            "description": "The full title of the publication.",
-            "type": "string"
-        }, 
-        "url": {
+            "type": "integer",
+            "user_friendly": "PMID"
+        },
+        "publication_url": {
             "description": "A URL, preferably not behind a paywall, for the publication.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Publication URL"
         }
     }
 }

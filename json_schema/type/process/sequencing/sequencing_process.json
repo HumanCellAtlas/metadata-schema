@@ -27,8 +27,9 @@
         "instrument_manufacturer_model": {
             "description": "The manufacturer and model of the sequencer used.",
             "type": "string",
-            "$ref": "ontology_json/instrument_ontology.json",
-            "example": "Illumina HiSeq 4000"
+            "$ref": "module/ontology/instrument_ontology.json",
+            "example": "Illumina HiSeq 4000",
+            "user_friendly": "Instrument manufacturer and model"
         },
         "local_machine_name": {
             "description": "Local name for the particular machine on which the biomaterial was sequenced.",
@@ -57,7 +58,8 @@
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
-            "$ref": "ontology_json/process_type_ontology.json"
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
         }
     }
 }

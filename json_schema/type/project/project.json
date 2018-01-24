@@ -26,8 +26,7 @@
             "example": "List of authors for a publication resulting from this project.",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/contact.json"
-            },
-            "user_friendly": "Contributors"
+            }
         },
         "submitters": {
             "description": "List of people submitting ultimately responsible for the project.",
@@ -35,8 +34,7 @@
             "example": "List of corresponding authors for a publication resulting from this project.",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/contact.json"
-            },
-            "user_friendly": "Submitters"
+            }
         },
         "supplementary_files": {
             "description": "Project-level supplementary files.",
@@ -52,8 +50,7 @@
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/publication.json"
-            },
-            "user_friendly": "Publications"
+            }
         },
         "insdc_project": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",

@@ -53,7 +53,7 @@
         }, 
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
-            "$ref": "ontology_json/time_unit_ontology.json",
+            "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Organism age unit"
         },
         "development_stage": {
@@ -82,7 +82,7 @@
         },
         "gestational_age_unit": {
             "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
-            "$ref": "ontology_json/time_unit_ontology.json",
+            "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Gestational age unit"
         },
         "height": {

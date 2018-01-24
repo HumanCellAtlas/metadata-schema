@@ -32,7 +32,7 @@
             "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
             "type" : "array",
             "items":{
-                "$ref": "ontology_json/species_ontology.json"
+                "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
@@ -40,7 +40,7 @@
             "description" : "Cell types expected to be present in the suspension.",
             "type": "array",
             "items": {
-		        "$ref": "ontology_json/cell_type_ontology.json"
+		        "$ref": "module/ontology/cell_type_ontology.json"
 	        },
             "user_friendly": "Target cell type"
        },
