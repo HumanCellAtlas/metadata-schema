@@ -49,7 +49,7 @@
         "ischemic_time": {
             "description": "Duration of time, in seconds, that the body part had insufficient blood supply.",
             "type": "integer",
-            "maximum": 100000, 
+            "maximum": 1000000,
             "minimum": 0
         }, 
         "microscopic_description": {

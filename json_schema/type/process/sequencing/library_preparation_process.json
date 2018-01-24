@@ -59,7 +59,9 @@
 		        "inDrop",
                 "Nextera XT",
                 "TruSeq",
-                "modified Nextera XT"
+                "modified Nextera XT",
+                "10x",
+                "10X"
             ]
         }, 
         "primer": {

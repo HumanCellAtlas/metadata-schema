@@ -1,0 +1,21 @@
+{
+  "schema_version" : "5.0.0",
+  "biomaterial_core": {
+    "biomaterial_id": "d1",
+    "biomaterial_name": "donor1",
+    "ncbi_taxon_id": [
+      9606
+    ]
+  },
+  "is_living": true,
+  "development_stage": {
+    "text": "adult",
+    "ontology": "EFO_0001272"
+  },
+  "genus_species": [
+    {
+    "text": "Homo sapiens",
+    "ontology": "NCBITAXON_9606"
+    }
+  ]
+}

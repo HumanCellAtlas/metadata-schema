@@ -22,22 +22,14 @@ sv = get_validator('core/biomaterial_collection/biomaterial_core.json', base_uri
 
 # Specific schema tests follow
 
-# Doesn't contain ontology field
-print('\nValidating schema_test_files/10x_pbmc8k_donor_0.json')
-dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0.json')
+# Contains an ontology field
+print('\nValidating schema_test_files/10x_pbmc8k_organism_0.json')
+dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_organism_0.json')
 if not validate(sv, dt1): # will return False if fails (show return value)
     status_flag = False
 
-# Contains ontology field
-"""
-print('\nValidating schema_test_files/10x_pbmc8k_donor_0_ontology.json')
-dt1 = get_json_from_file('../schema_test_files/10x_pbmc8k_donor_0.json')
-if not validate(sv, dt1): # will return False if fails (show return value)
-    status_flag = False
-"""
-
-print('\nValidating schema_test_files/10x_pbmc8k_biomaterial_0.json')
-sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_biomaterial_0.json')
+print('\nValidating schema_test_files/10x_pbmc8k_specimen_0.json')
+sfo1 = get_json_from_file('../schema_test_files/10x_pbmc8k_specimen_0.json')
 if not validate(sv, sfo1):
     status_flag = False
 
