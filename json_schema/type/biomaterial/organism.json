@@ -37,8 +37,9 @@
             "$ref": "http://schema.humancellatlas.org/module/biomaterial/death/4.0.0/death.json"
         },
          "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
+            "example": "Homo sapiens",
             "items":{
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
             },
@@ -71,7 +72,11 @@
         },
         "familial_relationship": {
             "description": "Information about other organisms related to this organism.",
-            "$ref": "familial_relationship.json"
+            "type": "array",
+            "items": {
+                "$ref": "familial_relationship.json"
+            },
+            "user_friendly": "Familial relationship"
         },
         "gestational_age": {
             "description": "Gestational age in gestational_age_units. Measured since fertilization.",
@@ -99,6 +104,7 @@
         }, 
         "sex": {
             "description": "Sex of organism. Should be one of male, female, mixed, or unknown.",
+            "type": "string",
             "enum": [
                 "female", 
                 "male", 

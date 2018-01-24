@@ -5,8 +5,8 @@ import subprocess
 
 """
 json_examples_validate_against_schema: 
-Do JSON files that are in the schema_test* folders validate
-against their correspondoing JSON schema?
+Do JSON files and bundles in the schema_test_files folders
+validate against their correspondoing JSON schema?
 """
 
 # Flag for tracking the exit status of validate() calls
@@ -51,7 +51,6 @@ if not validate(sv, s1):
 
 # Testing invalid specimen JSON example
 # It is missing required ncbi_taxon_id field
-# This should fail. If it fails, keep status_flag = True
 print('\nValidating biomaterial/test_fail_specimen_0.json\n(This should fail)')
 sv = get_validator('type/biomaterial/specimen_from_organism.json', base_uri)
 s2 = get_json_from_file('../schema_test_files/biomaterial/test_fail_specimen_0.json')
@@ -59,6 +58,7 @@ if validate(sv, s2):
     status_flag = False
 
 # Specific bundle tests follow
+
 """
 print('\nValidating biomaterial_bundle.json')
 sample_bundle_validator = get_validator('biomaterial_bundle.json', base_uri)

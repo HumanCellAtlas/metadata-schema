@@ -56,7 +56,7 @@
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
             "type": "string",
             "pattern": "^[D|E|S]RP[0-9]+$",
-            "user_friendly": "INSCDC project accession"
+            "user_friendly": "INSDC project accession"
         },
         "geo_series": {
             "description": "An NCBI GEO series accession.",
@@ -71,7 +71,7 @@
             "user_friendly": "ArrayExpress accession"
         },
         "insdc_study": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD.",
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "user_friendly": "INSDC study accession"

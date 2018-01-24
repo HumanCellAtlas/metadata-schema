@@ -20,7 +20,7 @@
             "example": "4.6.1"
         },
         "cell_morphology": {
-            "description": "Description of the morphology of the cells in the cell suspension.",
+            "description": "General description of the morphology of the cells in the cell suspension.",
             "type": "string",
             "user_friendly": "Cell morphology"
         },
