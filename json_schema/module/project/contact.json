@@ -48,22 +48,12 @@
             "user_friendly": "Laboratory"
         },
         "address": {
-            "description": "Street address where contact works. Should include street name and number, city, state, postal code, country.",
+            "description": "Street address where contact works. Should include street name and number, city, country division, postal code.",
             "type": "string",
             "user_friendly": "Address"
         },
-        "city": {
-            "description": "Name of city where contact works.",
-            "type": "string",
-            "user_friendly": "City"
-        }, 
-        "country_division": {
-            "description": "Name of state, province, canton, or other country subdivision where contact works.",
-            "type": "string",
-            "user_friendly": "Country division"
-        },
         "country": {
-            "description": "Name of country where contact works.",
+            "description": "Country where contact works.",
             "type": "string",
             "user_friendly": "Country"
         }
