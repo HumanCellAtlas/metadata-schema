@@ -10,13 +10,16 @@ class SpreadsheetCreator:
 
 
     def __init__(self, dry=False, output=None, schema_version=None):
-        print("foo")
+        self.logger = logging.getLogger(__name__)
 
     def generateSpreadsheet(self, pathToSchemas, output):
         values = []
         try:
             for schema in pathToSchemas:
-                values.append(self._gatherValues(schema))
+                v = self._gatherValues(schema)
+                values.append(v)
+
+                # values.append(self._gatherValues(schema))
 
             self._buildSpreadsheet(values, output)
         except ValueError as e:
@@ -62,6 +65,8 @@ class SpreadsheetCreator:
         else:
             print(schema + " does not exist")
 
+        return entities
+
 
     def _buildSpreadsheet(self, values, outputLocation):
         wb = Workbook()
@@ -101,7 +106,7 @@ if __name__ == '__main__':
 
 
     generator = SpreadsheetCreator()
-    generator.generateSpreadsheet(["https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organism.json"], None)
+    generator.generateSpreadsheet(["https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organism.json"], "spreadsheet_test.xlsx")
 
         # - base
         # schema
