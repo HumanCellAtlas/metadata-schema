@@ -22,17 +22,20 @@
         },
         "project_id": {
             "description": "A unique ID for the project.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Project ID"
         },
         "project_title": {
             "description": "A summary of the project in a sentence.",
             "type": "string",
-            "example": "A title of a grant proposal, publication, or poster. Approximately 30 words."
+            "example": "A title of a grant proposal, publication, or poster. Approximately 30 words.",
+            "user_friendly": "Project title"
         },
         "project_description": {
             "description": "A longer description of the project which can include research goals and experimental approach.",
             "type": "string",
-            "example": "An abstract from a grant application, publication, or poster. Approximately 300 words."
+            "example": "An abstract from a grant application, publication, or poster. Approximately 300 words.",
+            "user_friendly": "Project description"
         }
     }
 }
