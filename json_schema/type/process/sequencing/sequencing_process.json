@@ -49,11 +49,11 @@
         },
         "insdc_run": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
+            "type": "array",
             "items": {
                 "pattern": "^[D|E|S]RR[0-9]+$",
                 "type": "string"
             },
-            "type": "array",
             "user_friendly": "INSDC run"
         },
         "process_type": {
