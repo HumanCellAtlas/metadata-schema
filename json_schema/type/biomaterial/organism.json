@@ -26,15 +26,15 @@
         },
         "human_specific": {
 	        "description": "Fields specific to human organisms.",
-            "$ref": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/homo_sapiens_specific.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/homo_sapiens_specific.json"
         },
         "non_human_specific": {
 	        "description": "Fields specific to non-human organisms.",
-            "$ref": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/non_homo_sapiens_specific.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/non_homo_sapiens_specific.json"
         },
         "death": {
             "description": "Information about conditions of death (or info that organism was living at time of collection).",
-            "$ref": "http://schema.humancellatlas.org/module/biomaterial/death/4.0.0/death.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/death.json"
         },
          "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
@@ -54,7 +54,7 @@
         }, 
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
-            "$ref": "module/ontology/time_unit_ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
             "user_friendly": "Organism age unit"
         },
         "development_stage": {
@@ -74,7 +74,7 @@
             "description": "Information about other organisms related to this organism.",
             "type": "array",
             "items": {
-                "$ref": "familial_relationship.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/familial_relationship.json"
             },
             "user_friendly": "Familial relationship"
         },
@@ -87,7 +87,7 @@
         },
         "gestational_age_unit": {
             "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
-            "$ref": "module/ontology/time_unit_ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
             "user_friendly": "Gestational age unit"
         },
         "height": {

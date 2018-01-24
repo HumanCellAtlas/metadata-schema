@@ -4,7 +4,7 @@ import os
 
 # Could move these into config
 path_to_schemas = '../json_schema'
-path_to_test = '../schema_tests/'
+path_to_test = '../schema_test_files/'
 
 # Assume all dir in test directory not 
 # beginning with a '.' are the names of schemas to test.

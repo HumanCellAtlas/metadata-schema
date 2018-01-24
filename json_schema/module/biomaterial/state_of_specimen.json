@@ -57,7 +57,7 @@
             "type": "integer",
             "maximum": 1000000,
             "minimum": 0,
-            "user_friendly": "Ischemtic time"
+            "user_friendly": "Ischemic time"
         }, 
         "microscopic_description": {
             "description": "How the biomaterial looks under the microscope and how it compares with normal cells.",
