@@ -1,4 +1,8 @@
 {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "A schema for an process bundle",
+    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/process_bundle.json#/definitions/process_ingest",
     "definitions": {
         "process_ingest": {
             "required": [
@@ -43,8 +47,10 @@
             }
         }
     },
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "description": "A schema for an process bundle",
-    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/process_bundle.json#/definitions/process_ingest"
+    "processes": {
+        "items": {
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+        },
+        "type": "array"
+    }
 }

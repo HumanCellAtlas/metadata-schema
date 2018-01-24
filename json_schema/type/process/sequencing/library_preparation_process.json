@@ -1,18 +1,25 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/type/process/sequencing/4.0.0/library_preparation_process.json",
+    "description": "Information about how a sequencing library was created.",
     "additionalProperties": false,
-     "required": [
+    "required": [
          "end_bias",
          "library_construction",
          "strand"
     ],
     "title": "library_preparation_process",
-    "description": "Information about how a sequencing library was created.",
+    "type": "object",
     "properties": {
          "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
          "process_core" : {
 	        "description": "Core process-level information.",
@@ -90,6 +97,5 @@
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "$ref": "barcode.json"
         }
-    },
-    "type": "object"
+    }
 }

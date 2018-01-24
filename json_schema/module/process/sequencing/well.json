@@ -1,13 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/biomaterial/4.0.0/well.json",
+    "id": "http://schema.humancellatlas.org/module/process/sequencing/4.0.0/well.json",
+    "description": "This module describes the well inside the plate or fluidics chip where biomaterial came from.",
     "additionalProperties": false,
-    "description": "This describes the well inside the plate or fluidics chip where biomaterial came from.",
     "title": "well",
+    "type": "object",
     "properties": {
-       "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/well.json",
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/well.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "col": {
             "description": "Well column in plate.",
@@ -34,6 +41,5 @@
             "description": "Well row in plate.",
             "type": "string"
         }
-    },
-    "type": "object"
+    }
 }

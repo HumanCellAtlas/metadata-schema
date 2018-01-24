@@ -1,14 +1,21 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/state_of_specimen.json",
-    "additionalProperties": false,
     "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
+    "additionalProperties": false,
+    "required": [],
     "title": "state_of_specimen",
     "type": "object",
     "properties": {
         "$schema" : {
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/state_of_specimen.json"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "autolysis_score": {
             "description": "State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate.",

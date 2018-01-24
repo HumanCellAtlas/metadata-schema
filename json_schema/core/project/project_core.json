@@ -7,11 +7,18 @@
 	    "project_id"
     ],
     "title": "project_core",
+    "type": "object",
     "properties": {
         "$schema" : {
             "description": "The URL to this JSON schema.",
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/core/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_core.json"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "project_id": {
             "description": "A unique ID for the project.",
@@ -27,6 +34,5 @@
             "type": "string",
             "example": "An abstract from a grant application, publication, or poster. Approximately 300 words."
         }
-    },
-   "type": "object"
+    }
 }

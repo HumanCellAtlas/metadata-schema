@@ -1,4 +1,10 @@
 {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/bundle/4.0.0/biomaterial_bundle.json",
+    "title": "biomaterial_bundle",
+    "type": "object",
+    "description": "A schema for a biomaterial bundle",
+    "additionalProperties": false,
     "definitions": {
         "biomaterial_ingest": {
             "required": [
@@ -21,7 +27,7 @@
                 },
                 "hca_ingest": {
                     "type": "object",
-                    "description": "core fields added by HCA ingest service",
+                    "description": "Core fields added by HCA ingest service",
                     "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/ingest.json"
                 },
                 "derived_from": {
@@ -31,13 +37,16 @@
             }
         }
     },
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "description": "A schema for a biomaterial bundle",
     "properties": {
-        "core": {
-            "description": "Type and schema for this object.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/core.json"
+        "$schema" : {
+            "pattern" : "http://schema.humancellatlas.org/core/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_core.json",
+            "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "biomaterials": {
             "items": {

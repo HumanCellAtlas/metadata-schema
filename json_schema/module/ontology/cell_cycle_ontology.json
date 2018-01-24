@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/module/ontology/4.0.0/cell_cycle_ontology.json",
-    "description": "A term that may be associated with a cell type-related ontology term",
+    "id": "http://schema.humancellatlas.org/module/ontology/4.0.0/cell_cycle_ontology.json",
+    "description": "A term that may be associated with a cell cycle-related ontology term",
     "additionalProperties": false,
-        "required": [
+    "required": [
         "text"
     ],
     "title": "cell_cycle_ontology",
@@ -11,6 +11,12 @@
         "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_cycle_ontology.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "text": {
             "description": "The name of a cell cycle of the cells in the specimen.",

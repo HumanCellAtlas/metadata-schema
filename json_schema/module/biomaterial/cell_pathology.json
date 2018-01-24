@@ -1,17 +1,21 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/cell_pathology.json",
-    "additionalProperties": false,
-    "definitions": {},
     "description": "Information relating to pathological features of cells.",
-    "required": [
-
-    ],
+    "additionalProperties": false,
+    "required": [],
     "title": "cell_pathology",
+    "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_pathology.json",
-            "type": "string"
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_pathology.json"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "cell_morphology": {
             "description": "Description of the morphology of the cells in the cell suspension.",
@@ -37,6 +41,5 @@
             "description" : "Percent necrosis.",
             "type": "number"
         }
-    },
-    "type": "object"
+    }
 }

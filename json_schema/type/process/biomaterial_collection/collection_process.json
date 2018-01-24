@@ -1,19 +1,24 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/biomaterial/4.0.0/collection_process.json",
-    "additionalProperties": false,
+    "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/4.0.0/collection_process.json",
     "description": "Process by which a biomaterial was collected or transformed from another biomaterial or from a population.",
-    "required": [
-    ],
+    "additionalProperties": false,
+    "required": [],
     "title": "collection_process",
     "type": "object",
     "properties": {
         "$schema" : {
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/collection_process.json"
+            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/collection_process.json"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "process_core" : {
-	    "description": "Core process-level information.",
+	        "description": "Core process-level information.",
             "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
         },
         "collection_method": {

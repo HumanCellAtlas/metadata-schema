@@ -1,4 +1,10 @@
 {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/bundle/4.0.0/analysis_bundle.json",
+    "additionalProperties": false,
+    "description": "Schema for an analysis bundle.",
+    "type": "object",
+    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/analysis_bundle.json#/definitions/analysis_ingest",
     "definitions": {
         "analysis_ingest": {
             "required": [
@@ -24,9 +30,5 @@
                 }
             }
         }
-    },
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "description": "A schema for a analysis bundle",
-    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/analysis_bundle.json#/definitions/analysis_ingest"
+    }
 }

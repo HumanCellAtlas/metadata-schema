@@ -8,10 +8,17 @@
 	    "file_format"
     ],
     "title": "file_core",
+    "type": "object",
     "properties": {
-         "$schema" : {
+        "$schema" : {
             "pattern" : "http://schema.humancellatlas.org/core/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/file_core.json",
             "type": "string"
+        },
+        "schema_version": {
+            "description": "Version number in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "file_format": {
             "description": "The format of the data file.",
@@ -25,6 +32,5 @@
             "description": "MD5 checksum of the data file.",
             "type": "string"
 	    }
-    },
-    "type": "object"
+    }
 }
