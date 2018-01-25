@@ -4,6 +4,7 @@
     "description": "Information about a journal article, book, web page, or other external available documentation on a project.",
     "additionalProperties": false,
     "required": [
+        "$schema",
         "authors",
         "title"
     ],
@@ -11,14 +12,30 @@
     "type": "object",
     "properties": {
         "$schema" : {
+            "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/module/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/publication.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "authors": {
             "description": "A list of authors associated with the publication in 'surname initials' format.",

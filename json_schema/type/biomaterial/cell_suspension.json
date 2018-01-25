@@ -4,20 +4,37 @@
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "additionalProperties": false,
     "required": [
-      "biomaterial_core"
+        "$schema",
+        "biomaterial_core"
     ],
     "title": "cell_suspension",
     "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/cell_suspension/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",

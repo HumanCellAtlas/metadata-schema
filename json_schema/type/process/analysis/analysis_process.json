@@ -4,6 +4,7 @@
     "description": "Information about an analysis that was performed on data files.",
     "additionalProperties": true,
     "required": [
+        "$schema",
         "timestamp_start_utc",
         "timestamp_stop_utc",
         "computational_method",
@@ -14,8 +15,7 @@
         "metadata_schema",
         "tasks",
         "inputs",
-        "outputs",
-        "core"
+        "outputs"
     ],
     "title": "analysis_process",
     "type": "object",
@@ -112,15 +112,31 @@
         }
     },
     "properties": {
-        "$schema" : {
-                "type": "string",
-                "pattern" : "http://schema.humancellatlas.org/type/process/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_process.json"
+        "$schema": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/process/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_process.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "process_core" : {
                 "description": "Core process-level information.",
