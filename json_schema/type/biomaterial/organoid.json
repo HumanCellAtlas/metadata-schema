@@ -39,11 +39,11 @@
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
-            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "cell_morphology": {
 	        "description": "Features relating to the morphology of cells in a biomaterial.",
-            "$ref": "cell_morphology.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json"
         },
          "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",

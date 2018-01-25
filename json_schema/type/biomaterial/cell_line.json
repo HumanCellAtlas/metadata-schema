@@ -39,7 +39,7 @@
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
             "type": "string",
-            "$ref": "http://schema.humancellatlas.org/core/biomaterial/4.0.0/biomaterial_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "catalog_number": {
             "description": "The supplier catalogue number for the cell line.",
@@ -69,7 +69,7 @@
         },
         "cell_morphology": {
 	        "description": "Features relating to the morphology of cells in a biomaterial.",
-            "$ref": "cell_morphology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
         "cell_type": {
@@ -107,7 +107,7 @@
             "description": "One or more publications in which the cell line creation was cited.",
             "type": "array",
             "items": {
-                "$ref": "publication.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/publication.json"
             },
             "user_friendly": "Publications"
         }
