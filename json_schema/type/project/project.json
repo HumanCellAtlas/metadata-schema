@@ -44,7 +44,7 @@
             "type": "array",
             "example": "List of authors for a publication resulting from this project.",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/contact.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/project/contact.json"
             }
         },
         "submitters": {
@@ -52,7 +52,7 @@
             "type": "array",
             "example": "List of corresponding authors for a publication resulting from this project.",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/contact.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/project/contact.json"
             }
         },
         "supplementary_files": {
@@ -68,7 +68,7 @@
     	    "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/publication.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/project/publication.json"
             }
         },
         "insdc_project": {

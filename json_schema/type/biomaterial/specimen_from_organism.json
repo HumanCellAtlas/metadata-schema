@@ -67,7 +67,7 @@
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection and how it was preserved after removal.",
-            "$ref": "module/biomaterial/state_of_specimen.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/state_of_specimen.json"
         },
         "collection_time": {
             "description": "When the biomaterial was collection, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
