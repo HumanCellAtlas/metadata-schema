@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/protocol/biomaterial/4.0.0/biomaterial_protocol.json",
+    "id": "http://schema.humancellatlas.org/type/protocol/biomaterial/4.0.0/biomaterial_collection_protocol.json",
     "description": "Information about the biomaterial collection protocol",
     "additionalProperties": false,
     "required": [
@@ -12,7 +12,7 @@
          "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_protocol.json"
+            "pattern" : "http://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_collection_protocol.json"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

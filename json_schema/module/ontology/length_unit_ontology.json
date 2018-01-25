@@ -1,16 +1,40 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "http://schema.humancellatlas.org/module/ontology/4.0.0/length_unit_ontology.json",
+    "id": "http://schema.humancellatlas.org/module/ontology/4.0.0/length_unit_ontology.json",
     "description": "A term that may be associated with a cell type-related ontology term",
     "additionalProperties": false,
-        "required": [
+    "required": [
+        "$schema",
         "text"
     ],
     "title": "length_unit_ontology",
+    "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/length_unit_ontology.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/length_unit_ontology.json"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "text": {
             "description": "The name of a length unit being used.",
@@ -27,6 +51,5 @@
                 "include_self": false
             }
         }
-    },
-    "type": "object"
+    }
 }

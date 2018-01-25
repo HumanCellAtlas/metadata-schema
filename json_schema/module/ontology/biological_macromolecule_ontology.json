@@ -4,20 +4,37 @@
     "description": "A term that may be associated with a biological macromolecule-related ontology term",
     "additionalProperties": false,
     "required": [
+        "$schema",
         "text"
     ],
     "title": "biological_macromolecule_ontology",
     "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biological_macromolecule_ontology.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biological_macromolecule_ontology.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "text": {
             "description": "The name of the biological macromolecule being used.",

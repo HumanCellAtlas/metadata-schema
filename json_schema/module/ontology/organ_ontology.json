@@ -4,19 +4,36 @@
     "description": "A term that may be associated with an anatomy-related ontology term.",
     "additionalProperties": false,
     "required": [
+        "$schema",
         "text"
     ],
     "title": "organ_ontology",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organ_ontology.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organ_ontology.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "text": {
             "description": "The text for the term as the user provides it.",
