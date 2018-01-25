@@ -58,17 +58,14 @@ if validate(sv, s2):
     status_flag = False
 
 # Specific bundle tests follow
-
-"""
-print('\nValidating biomaterial_bundle.json')
-sample_bundle_validator = get_validator('biomaterial_bundle.json', base_uri)
-
-print('\nValidating schema_test_files/test_pass_biomaterial_bundle.json')
-sample_bundle_file = get_json_from_file('../schema_test_files/test_pass_biomaterial_bundle.json')
-if not validate(sample_bundle_validator, sample_bundle_file):
+'''
+# Testing valid biomaterial bundle example
+print('\nValidating biomaterial/test_pass_biomaterial_bundle.json')
+sv = get_validator('bundle/biomaterial_bundle.json', base_uri)
+b1 = get_json_from_file('../schema_test_files/biomaterial/test_pass_biomaterial_bundle.json')
+if not validate(sv, b1):
     status_flag = False
-"""
-
+'''
 # If any of the validate() calls fail, set exit status to 1.
 # Failed validate() calls on things that are supposed to fail will not affect exit status.
 # Without the following line, failed validate() will result in exit status 0, which is not desirable.

@@ -3,6 +3,9 @@
     "id": "http://schema.humancellatlas.org/bundle/4.0.0/biomaterial_bundle.json",
     "description": "A schema for a biomaterial bundle",
     "additionalProperties": false,
+    "required": [
+        "$schema"
+    ],
     "title": "biomaterial_bundle",
     "type": "object",
     "definitions": {
@@ -14,45 +17,67 @@
             "type": "object",
             "properties": {
                 "content": {
+                    "description": "Content for any biomaterial type entity.",
                     "type": "object",
-                    "description": "Biomaterial content",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/biomaterial.json"
+                    "oneOf": [
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organism.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/specimen_from_organism.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_suspension.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organoid.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_line.json" }
+                    ]
                 },
                 "derivation_protocols": {
+                    "description": "An array of protocols used to derive this biomaterial.",
                     "items": {
-                        "description": "An array of protocols used in derivation of this biomaterial.",
                         "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/protocol.json"
                     },
                     "type": "array"
                 },
                 "hca_ingest": {
-                    "type": "object",
                     "description": "Core fields added by HCA ingest service",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/ingest.json"
+                    "type": "object",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/bundle/ingest.json"
                 },
                 "derived_from": {
-                    "type": "string",
-                    "description": "The biomaterial that this biomaterial was derived from."
+                    "description": "The biomaterial_id of the biomaterial that this biomaterial was derived from.",
+                    "type": "string"
                 }
             }
         }
     },
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/core/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_core.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
+        },
         "biomaterials": {
+            "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/biomaterial_bundle.json#/definitions/biomaterial_ingest"
-            },
-            "type": "array"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+            }
         }
     }
 }

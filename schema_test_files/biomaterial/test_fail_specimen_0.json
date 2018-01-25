@@ -10,10 +10,12 @@
     "derived_from": "d1"
   },
   "organ": {
+    "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/organ_ontology.json",
     "text": "blood",
     "ontology": "UBERON_0000178"
   },
   "organ_part": {
+    "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/organ_part_ontology.json",
     "text": "peripheral blood mononuclear cells (PBMCs)"
   }
 }
