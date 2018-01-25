@@ -1,25 +1,42 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/module/process/sequencing/4.0.0/barcode.json",
-    "description": "This module describes where a particular type of barcode is in a read.",
+    "description": "This module describes barcodes used in a library preparation process.",
     "additionalProperties": false,
     "required": [
-      "offset",
-      "size",
-      "read"
-    ] ,
+        "$schema",
+        "offset",
+        "size",
+        "read"
+    ],
     "title": "barcode",
     "type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/barcode.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/barcode.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "read": {
             "description": "The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index.",

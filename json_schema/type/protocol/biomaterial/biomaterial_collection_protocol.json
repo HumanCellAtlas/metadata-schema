@@ -3,18 +3,37 @@
     "id": "http://schema.humancellatlas.org/type/protocol/biomaterial/4.0.0/biomaterial_protocol.json",
     "description": "Information about the biomaterial collection protocol",
     "additionalProperties": false,
+    "required": [
+        "$schema"
+    ],
     "title": "biomaterial_protocol",
     "type": "object",
     "properties": {
          "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_protocol.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_protocol.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "protocol_core" : {
 	        "description": "Core protocol-level information.",

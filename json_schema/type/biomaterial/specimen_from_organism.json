@@ -4,6 +4,7 @@
     "description": "Information about the specimen that was extracted from the organism.",
     "additionalProperties": false,
     "required": [
+        "$schema",
         "biomaterial_core",
 	    "organ_part",
 	    "organ"
@@ -12,14 +13,30 @@
     "type": "object",
     "properties": {
         "$schema" : {
+            "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/type/biomaterial/specimen_from_organism/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/specimen_from_organism.json"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle"
+            ]
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
