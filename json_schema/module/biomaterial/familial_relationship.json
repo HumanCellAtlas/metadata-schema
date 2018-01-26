@@ -39,6 +39,16 @@
             "description": "This organism is a child of the indicated organism.",
             "type": "string",
             "user_friendly": "Child of"
+        },
+         "is_parent_of": {
+            "description": "This organism is a parent of the indicated organism.",
+            "type": "string",
+            "user_friendly": "Parent of"
+        },
+         "is_sibling_of": {
+            "description": "This organism is a sibling of the indicated organism.",
+            "type": "string",
+            "user_friendly": "Sibling of"
         }
     }
 }
