@@ -47,14 +47,6 @@
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/project/contact.json"
             }
         },
-        "submitters": {
-            "description": "List of people submitting ultimately responsible for the project.",
-            "type": "array",
-            "example": "List of corresponding authors for a publication resulting from this project.",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/project/contact.json"
-            }
-        },
         "supplementary_files": {
             "description": "Project-level supplementary files.",
             "type": "array",
