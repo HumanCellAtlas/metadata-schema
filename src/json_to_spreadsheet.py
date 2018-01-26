@@ -7,8 +7,8 @@ from openpyxl.styles import Font
 
 
 # hard coded tab ordering
-tab_ordering = ["project", "publication", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
-                "cell_line", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
+tab_ordering = ["project", "project.publications", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
+                "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
                 "sequencing_process", "sequence_file"]
 
 class SpreadsheetCreator:
@@ -45,39 +45,11 @@ class SpreadsheetCreator:
             values = []
 
             for prop in properties:
-                # if a property has a user_friendly tag, include it as a direct field. This includes ontology module references as these should not be
-                # exposed to users
-                if ("user_friendly" in properties[prop]):
-                    description = None
-                    example = None
-                    if "description" in properties[prop]:
-                        description = properties[prop]["description"]
-                    if "example" in properties[prop]:
-                        example = properties[prop]["example"]
-
-                    values.append({"header":properties[prop]["user_friendly"], "description":description, "example": example})
-                # if a property does not include a user_friendly tag but includes a reference, fetch the contents of that reference and add them
-                # directly to the properties for this sheet
-                elif("$ref" in properties[prop]):
-                    module = properties[prop]["$ref"]
-                    if "_core" in module or module in dependencies:
-                        module_values = self._gatherValues(module, None)
-                        for key in module_values.keys():
-                            # special case for naming UMI barcodes
-                            if prop == "umi_barcode":
-                                for entry in module_values[key]:
-                                    entry["header"] = entry["header"] + " (UMI barcode)"
-                            # special case for naming cell barcodes
-                            if prop == "cell_barcode":
-                                for entry in module_values[key]:
-                                    entry["header"] = entry["header"] + " (cell barcode)"
-
-                            values.extend(module_values[key])
                 # if a property has an array of references (potential 1-to-many relationship), gather the properties for the references and format them to become
                 # their own spreadsheet tab
-                elif("items" in properties[prop] and "$ref" in properties[prop]["items"]):
+                if ("items" in properties[prop] and "$ref" in properties[prop]["items"]):
                     module = properties[prop]["items"]["$ref"]
-                    if module in dependencies:
+                    if "ontology" not in module and module in dependencies:
                         module_values = self._gatherValues(module, None)
                         # add primary entity ID
                         for primary in values:
@@ -85,7 +57,44 @@ class SpreadsheetCreator:
                                 for key in module_values.keys():
                                     module_values[key].append(primary)
                                 break
+
+                        # special name cases for publication tabs
+                        if entity_title == "project" and "publication" in module_values.keys():
+                            module_values["project.publications"] = module_values.pop("publication")
+                        if entity_title == "cell_line" and "publication" in module_values.keys():
+                            module_values["cell_line.publications"] = module_values.pop("publication")
                         entities.update(module_values)
+                # if a property does not include a user_friendly tag but includes a reference, fetch the contents of that reference and add them
+                # directly to the properties for this sheet
+                elif("$ref" in properties[prop]):
+                    module = properties[prop]["$ref"]
+                    if "ontology" not in module and ("_core" in module or module in dependencies):
+                        module_values = self._gatherValues(module, None)
+                        for key in module_values.keys():
+                            # special case for naming UMI barcodes
+                            if prop == "umi_barcode":
+                                for entry in module_values[key]:
+                                    entry["header"] = "UMI " + entry["header"]
+                            # special case for naming cell barcodes
+                            if prop == "cell_barcode":
+                                for entry in module_values[key]:
+                                    entry["header"] = "Cell " + entry["header"]
+
+                            values.extend(module_values[key])
+
+                # if a property has a user_friendly tag, include it as a direct field. This includes ontology module references as these should not be
+                # exposed to users
+                elif ("user_friendly" in properties[prop]):
+                    description = None
+                    example = None
+                    if "description" in properties[prop]:
+                        description = properties[prop]["description"]
+                    if "example" in properties[prop]:
+                        example = properties[prop]["example"]
+
+                    values.append({"header": properties[prop]["user_friendly"], "description": description,
+                                   "example": example})
+
 
             entities[entity_title] = values
             return entities
