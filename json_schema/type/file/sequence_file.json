@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "file_core",
         "read_index"
     ],
     "title": "sequence_file",
@@ -35,6 +36,10 @@
                 "process_bundle",
                 "project_bundle"
             ]
+        },
+        "file_core" : {
+	        "description": "Core file-level information.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/file/file_core.json"
         },
         "read_index": {
             "description": "Whether the read represents the R1, R2, I1, or I2 part of the sequencing read.",

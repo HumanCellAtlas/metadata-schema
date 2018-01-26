@@ -45,37 +45,38 @@
 	        "description": "Features relating to the morphology of cells in a biomaterial.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json"
         },
-         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+        "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
+            "example": "Homo sapiens",
             "items":{
-                "$ref": "module/ontology/species_ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
         "model_for_organ": {
-            "description":  "Organ that this organoid is a model system for.",
+            "description":  "Organ for which this organoid is a model system.",
             "$ref": "module/ontology/organ_ontology.json",
             "user_friendly": "Organ model"
         },
         "organoid_age": {
-            "description": "Age of the organoid",
+            "description": "Age of the organoid.",
             "type": "number",
             "user_friendly": "Organoid age"
         },
         "organoid_age_unit": {
-            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
+            "description": "The unit in which organoid age is expressed. Must be one of hour, day, week, month, or year.",
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Organoid age unit"
         },
         "organoid_type": {
-            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
+            "description": "The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
             "type": "string",
             "enum": [
                 "primary",
                 "immortalized",
                 "stem cell-derived",
-                "engineered"
+                "synthetic"
             ],
             "user_friendly": "Organoid type"
         }
