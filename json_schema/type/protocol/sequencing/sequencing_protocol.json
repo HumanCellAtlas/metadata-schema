@@ -4,7 +4,8 @@
     "description": "Information about the sequencing protocol",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "protocol_core"
     ],
     "title": "sequencing_protocol",
     "type": "object",

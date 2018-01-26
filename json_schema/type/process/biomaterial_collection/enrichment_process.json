@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "process_core",
         "enrichment_type"
     ],
     "title": "enrichment_process",

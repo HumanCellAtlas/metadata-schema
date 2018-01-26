@@ -52,9 +52,9 @@
             "user_friendly": "Process description"
         },
          "start_time": {
-            "description": "When the process took place, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
-            "format": "date-time",
+            "description": "When the process started, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
             "type": "string",
+            "format": "date-time",
             "example": "2018-01-31T08:30:00Z",
             "user_friendly": "Start time"
          },
@@ -65,12 +65,13 @@
             "user_friendly": "Location"
          },
          "researcher": {
-            "description": "Name of the individual who executed this process.",
-            "type": "array",
-             "items":{
+           "description": "Name of the individual(s) who executed this process.",
+           "type": "array",
+           "example": "John Smith||Jane Doe",
+           "items":{
                 "type": "string"
-            },
-            "user_friendly": "Researcher"
+           },
+           "user_friendly": "Researcher"
          }
     }
 }

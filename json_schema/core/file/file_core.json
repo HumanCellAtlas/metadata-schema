@@ -37,16 +37,16 @@
                 "project_bundle"
             ]
         },
-        "file_format": {
-            "description": "The format of the data file.",
-            "type": "string",
-            "user_friendly": "File format"
-        }, 
         "file_name": {
             "description": "The filename of the data file.",
             "type": "string",
             "user_friendly": "File name"
         },
+        "file_format": {
+            "description": "The format of the data file.",
+            "type": "string",
+            "user_friendly": "File format"
+        }, 
         "checksum": {
             "description": "MD5 checksum of the data file.",
             "type": "string",
