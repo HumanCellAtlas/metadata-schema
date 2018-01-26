@@ -7,9 +7,9 @@ from openpyxl.styles import Font
 
 
 # hard coded tab ordering
-tab_ordering = ["project", "publication", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
-                "cell_line", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
-                "sequencing_process", "sequence_file"]
+tab_ordering = ["project", "project.publications", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
+                "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
+                "sequencing_process", "sequence_file", "protocol"]
 
 class SpreadsheetCreator:
 
@@ -45,39 +45,11 @@ class SpreadsheetCreator:
             values = []
 
             for prop in properties:
-                # if a property has a user_friendly tag, include it as a direct field. This includes ontology module references as these should not be
-                # exposed to users
-                if ("user_friendly" in properties[prop]):
-                    description = None
-                    example = None
-                    if "description" in properties[prop]:
-                        description = properties[prop]["description"]
-                    if "example" in properties[prop]:
-                        example = properties[prop]["example"]
-
-                    values.append({"header":properties[prop]["user_friendly"], "description":description, "example": example})
-                # if a property does not include a user_friendly tag but includes a reference, fetch the contents of that reference and add them
-                # directly to the properties for this sheet
-                elif("$ref" in properties[prop]):
-                    module = properties[prop]["$ref"]
-                    if "_core" in module or module in dependencies:
-                        module_values = self._gatherValues(module, None)
-                        for key in module_values.keys():
-                            # special case for naming UMI barcodes
-                            if prop == "umi_barcode":
-                                for entry in module_values[key]:
-                                    entry["header"] = entry["header"] + " (UMI barcode)"
-                            # special case for naming cell barcodes
-                            if prop == "cell_barcode":
-                                for entry in module_values[key]:
-                                    entry["header"] = entry["header"] + " (cell barcode)"
-
-                            values.extend(module_values[key])
                 # if a property has an array of references (potential 1-to-many relationship), gather the properties for the references and format them to become
                 # their own spreadsheet tab
-                elif("items" in properties[prop] and "$ref" in properties[prop]["items"]):
+                if ("items" in properties[prop] and "$ref" in properties[prop]["items"]):
                     module = properties[prop]["items"]["$ref"]
-                    if module in dependencies:
+                    if "ontology" not in module and module in dependencies:
                         module_values = self._gatherValues(module, None)
                         # add primary entity ID
                         for primary in values:
@@ -85,7 +57,59 @@ class SpreadsheetCreator:
                                 for key in module_values.keys():
                                     module_values[key].append(primary)
                                 break
+
+                        # special name cases for publication tabs
+                        if entity_title == "project" and "publication" in module_values.keys():
+                            module_values["project.publications"] = module_values.pop("publication")
+                        if entity_title == "cell_line" and "publication" in module_values.keys():
+                            module_values["cell_line.publications"] = module_values.pop("publication")
                         entities.update(module_values)
+                # if a property does not include a user_friendly tag but includes a reference, fetch the contents of that reference and add them
+                # directly to the properties for this sheet
+                elif("$ref" in properties[prop]):
+                    module = properties[prop]["$ref"]
+                    if "ontology" not in module and ("_core" in module or module in dependencies):
+                        module_values = self._gatherValues(module, None)
+                        for key in module_values.keys():
+                            # special case for naming UMI barcodes
+                            if prop == "umi_barcode":
+                                for entry in module_values[key]:
+                                    entry["header"] = "UMI " + entry["header"]
+                            # special case for naming cell barcodes
+                            if prop == "cell_barcode":
+                                for entry in module_values[key]:
+                                    entry["header"] = "Cell " + entry["header"]
+
+                            values.extend(module_values[key])
+
+                # if a property has a user_friendly tag, include it as a direct field. This includes ontology module references as these should not be
+                # exposed to users
+                elif ("user_friendly" in properties[prop]):
+                    description = None
+                    example = None
+                    if "description" in properties[prop]:
+                        description = properties[prop]["description"]
+                    if "example" in properties[prop]:
+                        example = properties[prop]["example"]
+
+                    values.append({"header": properties[prop]["user_friendly"], "description": description,
+                                   "example": example})
+
+            if "type/biomaterial" in schema:
+                values.append(
+                    {"header": "Process IDs", "description": "IDs of processes for which this biomaterial is an input",
+                                   "example": None})
+            if "type/process" in schema:
+                values.append(
+                    {"header": "Protocol IDs", "description": "IDs of protocols which this process implements",
+                     "example": None})
+            if "type/file" in schema:
+                values.append(
+                    {"header": "Biomaterial ID", "description": "ID of the biomaterial to which this file relates",
+                     "example": None})
+                values.append(
+                    {"header": "Sequencing process ID", "description": "ID of the sequencing process to which this file relates",
+                     "example": None})
 
             entities[entity_title] = values
             return entities
@@ -164,6 +188,6 @@ if __name__ == '__main__':
 
 # Full run:
 # -s "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/"
-# -t "type/project/project.json,type/biomaterial/organism.json,type/biomaterial/organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/file/sequence_file.json"
+# -t "type/project/project.json,type/biomaterial/organism.json,type/biomaterial/organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/protocol/protocol.json,type/file/sequence_file.json"
 # -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/non_homo_sapiens_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/well.json"
 # -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"
