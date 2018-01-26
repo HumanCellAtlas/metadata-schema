@@ -39,6 +39,7 @@
         },
         "file_core" : {
 	        "description": "Core file-level information.",
+            "type": "string",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/file/file_core.json"
         },
         "read_index": {
