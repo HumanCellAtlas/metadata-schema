@@ -42,8 +42,9 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/file/file_core.json"
         },
         "read_index": {
-            "description": "Whether the read represents the R1, R2, I1, or I2 part of the sequencing read.",
+            "description": "Whether the read represents the r1, r2, i1, or i2 part of the sequencing read.",
             "type": "string",
+            "example": "r1",
             "enum": [
                 "r1",
                 "r2",
@@ -53,8 +54,9 @@
             "user_friendly": "Read index"
         },
         "lane_index": {
-            "description": "The index of the lane that this file was produced from.",
+            "description": "The index of the lane that this file was sequenced from.",
             "type": "integer",
+            "example": 1,
             "user_friendly": "Lane index"
         }
     }
