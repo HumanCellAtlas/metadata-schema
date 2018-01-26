@@ -3,11 +3,15 @@ import logging
 import openpyxl
 from openpyxl import Workbook
 import requests, pprint
+from openpyxl.styles import Font
 
 
+# hard coded tab ordering
+tab_ordering = ["project", "publication", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
+                "cell_line", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
+                "sequencing_process", "sequence_file"]
 
 class SpreadsheetCreator:
-
 
     def __init__(self):
         self.logger = logging.getLogger(__name__)
@@ -44,8 +48,14 @@ class SpreadsheetCreator:
                 # if a property has a user_friendly tag, include it as a direct field. This includes ontology module references as these should not be
                 # exposed to users
                 if ("user_friendly" in properties[prop]):
-                    if ("description" in properties[prop]):
-                      values.append({"header":properties[prop]["user_friendly"], "description":properties[prop]["description"]})
+                    description = None
+                    example = None
+                    if "description" in properties[prop]:
+                        description = properties[prop]["description"]
+                    if "example" in properties[prop]:
+                        example = properties[prop]["example"]
+
+                    values.append({"header":properties[prop]["user_friendly"], "description":description, "example": example})
                 # if a property does not include a user_friendly tag but includes a reference, fetch the contents of that reference and add them
                 # directly to the properties for this sheet
                 elif("$ref" in properties[prop]):
@@ -53,6 +63,15 @@ class SpreadsheetCreator:
                     if "_core" in module or module in dependencies:
                         module_values = self._gatherValues(module, None)
                         for key in module_values.keys():
+                            # special case for naming UMI barcodes
+                            if prop == "umi_barcode":
+                                for entry in module_values[key]:
+                                    entry["header"] = entry["header"] + " (UMI barcode)"
+                            # special case for naming cell barcodes
+                            if prop == "cell_barcode":
+                                for entry in module_values[key]:
+                                    entry["header"] = entry["header"] + " (cell barcode)"
+
                             values.extend(module_values[key])
                 # if a property has an array of references (potential 1-to-many relationship), gather the properties for the references and format them to become
                 # their own spreadsheet tab
@@ -60,6 +79,12 @@ class SpreadsheetCreator:
                     module = properties[prop]["items"]["$ref"]
                     if module in dependencies:
                         module_values = self._gatherValues(module, None)
+                        # add primary entity ID 
+                        for primary in values:
+                            if "ID" in primary["header"]:
+                                for key in module_values.keys():
+                                    module_values[key].append(primary)
+                                break
                         entities.update(module_values)
 
             entities[entity_title] = values
@@ -73,18 +98,27 @@ class SpreadsheetCreator:
         wb = Workbook()
 
         # for each tab entry in the values dictionary, create a new worksheet
-        for title in values.keys():
+        # for tab_name in values.keys():
+        for tab_name in tab_ordering:
+            if tab_name in values.keys():
+                headers = values[tab_name]
 
-            headers = values[title]
+                ws = wb.create_sheet(title=tab_name)
+                col = 1
 
-            ws = wb.create_sheet(title=title)
-            col = 1
+                # Optional set of descriptors what each of the 3 top rows contains
+                # ws.cell(column=col, row=1, value="Description")
+                # ws.cell(column=col, row=2, value="Example").font = Font(italic=True)
+                # ws.cell(column=col, row=3, value="Header").font = Font(bold=True)
+                # col +=1
 
-            # put each description in row 1 and each header in row 2, then increment the column index
-            for header in headers:
-                ws.cell(column=col, row=1, value=header["description"])
-                ws.cell(column=col, row=2, value=header["header"])
-                col += 1
+
+                # put each description in row 1, example in row 2 and header in row 3, then increment the column index
+                for header in headers:
+                    ws.cell(column=col, row=1, value=header["description"])
+                    ws.cell(column=col, row=2, value=header["example"]).font = Font(italic = True)
+                    ws.cell(column=col, row=3, value=header["header"]).font = Font(bold = True)
+                    col += 1
 
         # remove the blank worksheet that is automatically created with the spreadsheet
         if "Sheet" in wb.sheetnames:
@@ -124,7 +158,12 @@ if __name__ == '__main__':
 
 # Example run:
 # -s "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/"
-# -t ["type/biomaterial/organism.json", "type/process/sequencing/library_preparation_process.json"]
-# -i ["module/biomaterial/homo_sapiens_specific.json", "module/biomateral/familial_relationship.json", "module/process/sequencing/barcode.json"]
+# -t "type/biomaterial/organism.json,type/process/sequencing/library_preparation_process.json"
+# -i "module/biomaterial/homo_sapiens_specific.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json"
 # -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"
-#
+
+# Full run:
+# -s "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/"
+# -t "type/project/project.json,type/biomaterial/organism.json,type/biomaterial/organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/file/sequence_file.json"
+# -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/non_homo_sapiens_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/well.json"
+# -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"

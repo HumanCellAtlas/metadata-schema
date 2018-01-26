@@ -47,7 +47,7 @@
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
             "type": "string",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/secquencing/barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
         },
         "input_molecule": {
             "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
