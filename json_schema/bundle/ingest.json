@@ -1,15 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/bundle/4.0.0/ingest.json",
-    "additionalProperties": false,
     "description": "Information added or generated at time of ingest." ,
+    "additionalProperties": false,
     "required": [
         "document_id", "submissionDate"
     ],
+    "title": "ingest",
+	"type": "object",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ingest.json",
-            "type": "string"
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ingest.json"
         },
         "submissionDate": {
             "description": "When project was first submitted to database.", 

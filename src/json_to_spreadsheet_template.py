@@ -51,7 +51,7 @@ class SpreadsheetCreator:
                     module = properties[prop]["items"]["$ref"]
                     if "ontology" not in module and module in dependencies:
                         module_values = self._gatherValues(module, None)
-                        # add primary entity ID
+                        # add primary entity ID to cross reference with main entity
                         for primary in values:
                             if "ID" in primary["header"]:
                                 for key in module_values.keys():
