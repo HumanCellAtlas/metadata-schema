@@ -46,10 +46,11 @@
             "user_friendly": "Cell morphology"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
+            "example": "Homo sapiens",
             "items":{
-                "$ref": "module/ontology/species_ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },

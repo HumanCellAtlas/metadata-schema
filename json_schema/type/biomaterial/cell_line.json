@@ -57,13 +57,13 @@
             "user_friendly": "Cell cycle"
         },
         "cell_line_type": {
-            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or engineered.",
+            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
             "type": "string",
             "enum": [
                 "primary",
                 "immortalized",
                 "stem cell-derived",
-                "engineered"
+                "synthetic"
           ],
             "user_friendly": "Cell line type"
         },
@@ -89,10 +89,11 @@
             "user_friendly": "Disease"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial. e.g. Homo sapiens.",
+            "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
+            "example": "Homo sapiens",
             "items":{
-                "$ref": "module/ontology/species_ontology.json"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },

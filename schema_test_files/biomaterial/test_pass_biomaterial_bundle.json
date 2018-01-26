@@ -29,7 +29,6 @@
         },
         "genus_species": [
           {
-            "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology.json",
             "text": "Homo sapiens",
             "ontology": "NCBITAXON_9606"
           }

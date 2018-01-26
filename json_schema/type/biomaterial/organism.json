@@ -53,7 +53,7 @@
             "description": "Information about conditions of death (or info that organism was living at time of collection).",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/death.json"
         },
-         "genus_species": {
+        "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
             "example": "Homo sapiens",
