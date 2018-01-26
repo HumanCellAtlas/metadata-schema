@@ -58,7 +58,7 @@
             "user_friendly": "Dissociation method"
         },
         "nucleic_acid_source": {
-            "description": "Source cells or organelles from which nucleic acid molecules were selected for sequencing.",
+            "description": "Source cells or organelles from which nucleic acid molecules were collected.",
             "type": "string",
             "enum": [
                 "bulk cell",
