@@ -4,7 +4,8 @@
     "description": "Information about the biomaterial collection protocol",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "protocol_core"
     ],
     "title": "biomaterial_protocol",
     "type": "object",
