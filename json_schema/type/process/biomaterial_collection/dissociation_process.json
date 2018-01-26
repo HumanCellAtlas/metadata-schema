@@ -4,7 +4,8 @@
     "description": "Contains information on the dissociation process used to separate the cells in a specimen.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "process_core"
     ],
     "title": "dissociation_process",
     "type": "object",

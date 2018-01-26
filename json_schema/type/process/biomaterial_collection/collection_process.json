@@ -4,7 +4,8 @@
     "description": "Process by which a biomaterial was collected or transformed from another biomaterial or from a population.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "process_core"
     ],
     "title": "collection_process",
     "type": "object",
