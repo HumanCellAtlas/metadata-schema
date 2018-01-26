@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "process_core",
         "instrument_manufacturer_model",
         "paired_ends"
     ],
@@ -39,6 +40,7 @@
         },
         "process_core" : {
 	        "description": "Core process-level information.",
+            "type": "string",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
         "instrument_manufacturer_model": {

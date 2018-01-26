@@ -5,9 +5,10 @@
     "additionalProperties": false,
     "required": [
         "$schema",
-         "end_bias",
-         "library_construction",
-         "strand"
+        "process_core",
+        "end_bias",
+        "library_construction",
+        "strand"
     ],
     "title": "library_preparation_process",
     "type": "object",
@@ -40,10 +41,12 @@
         },
         "process_core" : {
 	        "description": "Core process-level information.",
+            "type": "string",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
+            "type": "string",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/secquencing/barcode.json"
         },
         "input_molecule": {
