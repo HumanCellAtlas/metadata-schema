@@ -49,7 +49,7 @@
             "user_friendly": "Embedding conditions"
          }, 
          "exposure_time": {
-            "description": "Exposure time as a floating point number in units of seconds.", 
+            "description": "Exposure time - as a floating point number - in seconds.",
             "type": "number",
             "maximum": 1000,
             "minimum": 1e-9,
@@ -93,7 +93,7 @@
             "user_friendly": "Microscope"
          }, 
          "probes": {
-            "description": "A file containing information on probe sequence, genes they cover, and  colors", 
+            "description": "A file containing information on probe sequence, genes they cover, and colors.",
             "type": "string",
             "user_friendly": "Probes"
          },
