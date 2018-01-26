@@ -5,6 +5,7 @@
     "additionalProperties": false, 
     "required": [
       "$schema",
+      "process_core",
       "field_counts",
       "field_resolution",
       "probes"
