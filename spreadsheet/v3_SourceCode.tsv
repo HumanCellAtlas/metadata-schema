@@ -1,5 +1,0 @@
-Here are the various values allowed in the source field of the fields sheet	
-	
-ext DB	External DB identifier filled in during import from or export to that database
-ingest	Filled in by ingestion system
-submitter	Filled in by data submitter
