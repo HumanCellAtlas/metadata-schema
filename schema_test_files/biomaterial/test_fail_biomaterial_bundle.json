@@ -1,0 +1,69 @@
+{
+  "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle.json",
+  "schema_version": "5.0.0",
+  "schema_type": "biomaterial_bundle",
+  "biomaterials": [
+    {
+      "content": {
+        "$schema": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism.json",
+        "schema_version" : "5.0.0",
+        "schema_type": "biomaterial",
+        "biomaterial_core": {
+          "$schema": "http://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core.json",
+          "biomaterial_id": "d1",
+          "biomaterial_name": "donor1",
+          "ncbi_taxon_id": [
+            9606
+          ]
+        },
+        "is_living": true,
+        "development_stage": {
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/development_stage_ontology.json",
+          "text": "adult",
+          "ontology": "EFO_0001272"
+        },
+        "genus_species": [
+          {
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology.json",
+          "text": "Homo sapiens",
+          "ontology": "NCBITAXON_9606"
+          }
+        ]
+      }
+    },
+    {
+      "hca_ingest": {
+        "document_id": "a37dbd93-b93a-4838-a7bb-cd0796b3d9d1",
+        "submissionDate": "2017-10-13T09:18:49.422Z",
+        "updateDate": "2017-10-13T09:19:40.069Z",
+        "accession": "SAM0999697"
+      },
+      "content": {
+        "$schema": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/specimen_from_organism.json",
+        "schema_version" : "5.0.0",
+        "schema_type": "biomaterial",
+        "biomaterial_core": {
+          "$schema": "http://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core.json",
+          "biomaterial_id": "s1",
+          "biomaterial_name": "PBMCs",
+          "biomaterial_description": "peripheral blood mononuclear cells (PBMCs)",
+          "ncbi_taxon_id": [
+            9606
+          ],
+          "derived_from": "d1"
+        },
+        "organ": {
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/organ_ontology.json",
+          "text": "blood",
+          "ontology": "UBERON_0000178"
+        },
+        "organ_part": {
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/organ_part_ontology.json",
+          "text": "peripheral blood mononuclear cells (PBMCs)"
+        }
+      },
+      "derived_from": "a37dbd93-b93a-4838-a7bb-cd0796b3d9d1",
+      "derivation_protocols": []
+    }
+  ]
+}

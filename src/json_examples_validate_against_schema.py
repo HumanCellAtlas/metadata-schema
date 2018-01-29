@@ -72,6 +72,15 @@ b1 = get_json_from_file('../schema_test_files/biomaterial/test_pass_biomaterial_
 if not validate(sv, b1):
     status_flag = False
 
+# Testing invalid biomaterial bundle example
+# Bundle is missing hca_ingest property in one of the biomaterials
+print('\nValidating bundle/biomaterial_bundle.json schema')
+sv = get_validator('bundle/biomaterial_bundle.json', base_uri)
+print('Validating biomaterial/test_fail_biomaterial_bundle.json JSON against schema\n(This should fail)')
+b2 = get_json_from_file('../schema_test_files/biomaterial/test_fail_biomaterial_bundle.json')
+if validate(sv, b2):
+    status_flag = False
+
 # If any of the validate() calls fail, set exit status to 1.
 # Failed validate() calls on things that are supposed to fail will not affect exit status.
 # Without the following line, failed validate() will result in exit status 0, which is not desirable.

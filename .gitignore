@@ -5,3 +5,4 @@
 .idea/
 .pydevproject
 src/schema_test_suite.pyc
+src/__pycache__/
