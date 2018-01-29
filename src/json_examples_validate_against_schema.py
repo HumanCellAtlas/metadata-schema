@@ -32,7 +32,7 @@ if not validate(sv, p1):
 # It is missing required project_id field
 print('\nValidating type/project/project.json schema')
 sv = get_validator('type/project/project.json', base_uri)
-print('Validating project/test_fail_project_0.json JSON against schema\n(This should fail)')
+print('Validating project/test_fail_project_0.json JSON against schema\n(This should fail, missing project_id)')
 p1 = get_json_from_file('../schema_test_files/project/test_fail_project_0.json')
 if validate(sv, p1):
     status_flag = False
@@ -57,7 +57,7 @@ if not validate(sv, s1):
 # It is missing required ncbi_taxon_id field
 print('\nValidating type/biomaterial/specimen_from_organism.json schema')
 sv = get_validator('type/biomaterial/specimen_from_organism.json', base_uri)
-print('Validating biomaterial/test_fail_specimen_0.json JSON against schema\n(This should fail)')
+print('Validating biomaterial/test_fail_specimen_0.json JSON against schema\n(This should fail, missing ncbi_taxon_id)')
 s2 = get_json_from_file('../schema_test_files/biomaterial/test_fail_specimen_0.json')
 if validate(sv, s2):
     status_flag = False
@@ -76,9 +76,17 @@ if not validate(sv, b1):
 # Bundle is missing hca_ingest property in one of the biomaterials
 print('\nValidating bundle/biomaterial_bundle.json schema')
 sv = get_validator('bundle/biomaterial_bundle.json', base_uri)
-print('Validating biomaterial/test_fail_biomaterial_bundle.json JSON against schema\n(This should fail)')
+print('Validating biomaterial/test_fail_biomaterial_bundle.json JSON against schema\n(This should fail, missing hca_ingest)')
 b2 = get_json_from_file('../schema_test_files/biomaterial/test_fail_biomaterial_bundle.json')
 if validate(sv, b2):
+    status_flag = False
+
+# Testing valid project bundle example
+print('\nValidating bundle/project_bundle.json schema')
+sv = get_validator('bundle/project_bundle.json', base_uri)
+print('Validating project/test_pass_project_bundle.json JSON against schema')
+b1 = get_json_from_file('../schema_test_files/project/test_pass_project_bundle.json')
+if not validate(sv, b1):
     status_flag = False
 
 # If any of the validate() calls fail, set exit status to 1.

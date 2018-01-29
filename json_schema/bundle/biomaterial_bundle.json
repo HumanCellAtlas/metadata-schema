@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle.json",
-    "description": "A schema for a biomaterial bundle",
+    "description": "A schema for a biomaterial bundle.",
     "additionalProperties": false,
     "required": [
         "$schema"
@@ -69,7 +69,9 @@
                 "analysis_bundle",
                 "biomaterial_bundle",
                 "process_bundle",
-                "project_bundle"
+                "project_bundle",
+                "ingest",
+                "submission"
             ]
         },
         "biomaterials": {
