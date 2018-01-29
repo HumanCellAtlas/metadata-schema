@@ -1,5 +1,5 @@
 {
-  "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle.json",
+  "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle.json",
   "schema_version": "5.0.0",
   "schema_type": "project_bundle",
   "content": {
@@ -13,7 +13,7 @@
       "project_description": "This is a project."
     },
     "related_projects": [
-      "project 2"
+      "HCAP-002"
     ],
     "contributors": [
       {
