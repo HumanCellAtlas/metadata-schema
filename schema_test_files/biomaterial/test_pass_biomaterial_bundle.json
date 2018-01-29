@@ -24,13 +24,15 @@
         },
         "is_living": true,
         "development_stage": {
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/development_stage_ontology.json",
           "text": "adult",
           "ontology": "EFO_0001272"
         },
         "genus_species": [
           {
-            "text": "Homo sapiens",
-            "ontology": "NCBITAXON_9606"
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology.json",
+          "text": "Homo sapiens",
+          "ontology": "NCBITAXON_9606"
           }
         ]
       }

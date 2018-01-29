@@ -26,7 +26,7 @@
                 "hca_ingest": {
                     "type": "object",
                     "description": "core fields added by HCA ingest service",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/ingest.json"
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
                 }
             }
         }

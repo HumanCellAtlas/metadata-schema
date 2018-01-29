@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/4.0.0/biomaterial_bundle.json",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle.json",
     "description": "A schema for a biomaterial bundle",
     "additionalProperties": false,
     "required": [
@@ -30,14 +30,14 @@
                 "derivation_protocols": {
                     "description": "An array of protocols used to derive this biomaterial.",
                     "items": {
-                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/protocol.json"
+                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/protocol.json"
                     },
                     "type": "array"
                 },
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/bundle/ingest.json"
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
                 },
                 "derived_from": {
                     "description": "The biomaterial_id of the biomaterial that this biomaterial was derived from.",
@@ -55,8 +55,7 @@
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
-            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
-            "example": "4.6.1"
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
         },
         "schema_type": {
             "description": "The type of the metadata schema entity.",

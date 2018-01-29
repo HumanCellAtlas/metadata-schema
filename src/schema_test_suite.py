@@ -27,9 +27,9 @@ def get_validator(filename, base_uri = ''):
     try:
         # Check schema via class method call. Works, despite IDE complaining
         Draft4Validator.check_schema(schema)
-        print("Schema %s is valid" % filename)
+        print("Schema %s is valid JSON" % filename)
     except SchemaError:
-        raise    
+        raise
     if base_uri:
         resolver = RefResolver(base_uri = base_uri,
                                referrer = filename)

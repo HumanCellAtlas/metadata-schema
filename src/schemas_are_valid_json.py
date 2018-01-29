@@ -16,6 +16,5 @@ schemas = [os.path.join(dirpath, f)
 print("Checking %d schemas" % len(schemas))
 
 for s in schemas:
-    print("Checking whether %s is a valid json schema" % s)
+    print('Checking %s' % s)
     get_validator(s)
-

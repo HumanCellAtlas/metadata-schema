@@ -1,10 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/4.0.0/ingest.json",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
     "description": "Information added or generated at time of ingest." ,
     "additionalProperties": false,
     "required": [
-        "document_id", "submissionDate"
+        "document_id",
+        "submissionDate"
     ],
     "title": "ingest",
 	"type": "object",
@@ -13,6 +14,12 @@
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ingest.json"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
         },
         "submissionDate": {
             "description": "When project was first submitted to database.", 
