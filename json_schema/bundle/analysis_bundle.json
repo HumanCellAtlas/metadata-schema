@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/4.0.0/analysis_bundle.json",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/analysis_bundle.json",
+    "description": "A schema for an analysis bundle.",
     "additionalProperties": false,
-    "description": "Schema for an analysis bundle.",
     "type": "object",
     "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/analysis_bundle.json#/definitions/analysis_ingest",
     "definitions": {
