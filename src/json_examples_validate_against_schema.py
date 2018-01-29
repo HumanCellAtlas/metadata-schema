@@ -19,7 +19,7 @@ base_uri = "file://" + pwd + "/"
 print('base URI: %s' % base_uri)
 
 # Specific schema tests follow
-'''
+
 # Testing valid project JSON example
 print('\nValidating type/project/project.json schema')
 sv = get_validator('type/project/project.json', base_uri)
@@ -61,7 +61,7 @@ print('Validating biomaterial/test_fail_specimen_0.json JSON against schema\n(Th
 s2 = get_json_from_file('../schema_test_files/biomaterial/test_fail_specimen_0.json')
 if validate(sv, s2):
     status_flag = False
-'''
+
 # Specific bundle tests follow
 
 # Testing valid biomaterial bundle example

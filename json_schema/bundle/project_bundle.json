@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "description": "A schema for a project bundle",
-    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/project_bundle.json#/definitions/project_ingest",
+    "id": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/project_bundle.json#/definitions/project_ingest",
     "definitions": {
         "project_ingest": {
             "required": [

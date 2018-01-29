@@ -16,14 +16,10 @@
                     "type": "string",
                     "description": "The sample that this process was performed on."
                 },
-                "core": {
-                    "description": "Type and schema for this object.",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/core.json"
-                },
                 "content": {
                     "type": "object",
                     "description": "Process content",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/process.json"
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/process.json"
                 },
                 "has_output": {
                     "items": {
@@ -35,7 +31,7 @@
                 "derivation_protocols": {
                     "items": {
                         "description": "An array of protocols used in derivation of this sample.",
-                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/protocol.json"
+                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/protocol.json"
                     },
                     "type": "array"
                 },
@@ -49,7 +45,7 @@
     },
     "processes": {
         "items": {
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/bundle/process_bundle.json#/definitions/process_ingest"
         },
         "type": "array"
     }
