@@ -1,32 +1,52 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle.json",
+    "description": "A schema for a project bundle.",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "hca_ingest",
+        "content"
+    ],
+    "title": "project_bundle",
     "type": "object",
-    "description": "A schema for a project bundle",
-    "id": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/project_bundle.json#/definitions/project_ingest",
-    "definitions": {
-        "project_ingest": {
-            "required": [
-                "hca_ingest",
-                "content",
-                "core"
-            ],
+    "properties": {
+        "$schema": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern": "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle.json"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle",
+                "ingest",
+                "submission"
+            ]
+        },
+        "content": {
+            "description": "Content for a project type entity.",
             "type": "object",
-            "properties": {
-                "content": {
-                    "type": "object",
-                    "description": "Project content",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/project.json"
-                },
-                "core": {
-                    "description": "Type and schema for this object.",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/4.6.1/json_schema/core.json"
-                },
-                "hca_ingest": {
-                    "type": "object",
-                    "description": "core fields added by HCA ingest service",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
-                }
-            }
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/project/project.json"
+        },
+        "hca_ingest": {
+            "description": "Core fields added by HCA ingest service",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
         }
     }
 }

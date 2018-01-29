@@ -4,6 +4,7 @@
     "description": "Information added or generated at time of ingest." ,
     "additionalProperties": false,
     "required": [
+        "$schema",
         "document_id",
         "submissionDate"
     ],
@@ -21,29 +22,46 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial",
+                "file",
+                "process",
+                "project",
+                "protocol",
+                "analysis_bundle",
+                "biomaterial_bundle",
+                "process_bundle",
+                "project_bundle",
+                "ingest",
+                "submission"
+            ]
+        },
         "submissionDate": {
             "description": "When project was first submitted to database.", 
-            "format": "date-time", 
-            "type": "string"
-        }, 
+            "type": "string",
+            "format": "date-time"
+        },
         "submitter_id": {
             "description": "ID of contact who first submitted project", 
             "type": "string"
         },
         "updateDate": {
             "description": "When project was last updated", 
-            "format": "date-time",
-            "type": "string"
-        }, 
+            "type": "string",
+            "format": "date-time"
+        },
         "updater_id": {
             "description": "ID of contact who last updated project", 
             "type": "string"
         },
         "document_id": {
             "description": "Identifier for document.",
-            "comment": "This structure supports the current ingest API.  It may change in future.",
             "type": "string",
-            "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}"
+            "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}",
+            "comment": "This structure supports the current ingest API.  It may change in future."
         },
         "accession": {
             "description": "A unique accession for this entity, provided by the broker.",
