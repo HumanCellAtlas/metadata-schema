@@ -5,7 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
-        "name",
+        "contact_name",
         "email"
     ],
     "title": "contact",
