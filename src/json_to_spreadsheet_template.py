@@ -103,10 +103,10 @@ class SpreadsheetCreator:
                 values.append(
                     {"header": "Protocol IDs", "description": "IDs of protocols which this process implements",
                      "example": None})
-            if "module/process/purchased_reagents" in schema:
-                values.append(
-                    {"header": "Process ID", "description": "ID of the process in which this reagent was used",
-                     "example": None})
+            # if "module/process/purchased_reagents" in schema:
+            #     values.append(
+            #         {"header": "Process ID", "description": "ID of the process in which this reagent was used",
+            #          "example": None})
             if "type/file" in schema:
                 values.append(
                     {"header": "Biomaterial ID", "description": "ID of the biomaterial to which this file relates",
