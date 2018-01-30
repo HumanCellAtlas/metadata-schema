@@ -55,7 +55,12 @@ class SpreadsheetCreator:
                         for primary in values:
                             if "ID" in primary["header"]:
                                 for key in module_values.keys():
-                                    module_values[key].append(primary)
+                                    t = primary["header"]
+                                    t = t.replace(" ID", "").lower()
+                                    d = "ID for " + t + " this " + key + " relates to"
+                                    module_values[key].append({"header": t,
+                                                               "description": d,
+                                                               "example": None})
                                 break
 
                         # special name cases for publication tabs
