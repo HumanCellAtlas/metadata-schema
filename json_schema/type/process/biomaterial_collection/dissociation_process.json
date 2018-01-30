@@ -73,6 +73,13 @@
             "description": "The type of process. Ideally an EFO term.",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
+        },
+        "process_reagents": {
+            "description": "A list of purchased reagents used in this process.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/purchased_reagents.json"
+            }
         }
     }
 }
