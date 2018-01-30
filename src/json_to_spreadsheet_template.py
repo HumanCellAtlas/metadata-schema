@@ -9,7 +9,7 @@ from openpyxl.styles import Font
 # hard coded tab ordering
 tab_ordering = ["project", "project.publications", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
                 "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
-                "sequencing_process", "sequence_file", "protocol"]
+                "sequencing_process", "purchased_reagents", "protocol", "sequence_file"]
 
 class SpreadsheetCreator:
 
@@ -102,6 +102,10 @@ class SpreadsheetCreator:
             if "type/process" in schema:
                 values.append(
                     {"header": "Protocol IDs", "description": "IDs of protocols which this process implements",
+                     "example": None})
+            if "module/process/purchased_reagents" in schema:
+                values.append(
+                    {"header": "Process ID", "description": "ID of the process in which this reagent was used",
                      "example": None})
             if "type/file" in schema:
                 values.append(
