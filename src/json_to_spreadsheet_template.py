@@ -55,7 +55,12 @@ class SpreadsheetCreator:
                         for primary in values:
                             if "ID" in primary["header"]:
                                 for key in module_values.keys():
-                                    module_values[key].append(primary)
+                                    t = primary["header"]
+                                    t = t.replace(" ID", "").lower()
+                                    d = "ID for " + t + " this " + key + " relates to"
+                                    module_values[key].append({"header": t,
+                                                               "description": d,
+                                                               "example": None})
                                 break
 
                         # special name cases for publication tabs
@@ -103,10 +108,10 @@ class SpreadsheetCreator:
                 values.append(
                     {"header": "Protocol IDs", "description": "IDs of protocols which this process implements",
                      "example": None})
-            if "module/process/purchased_reagents" in schema:
-                values.append(
-                    {"header": "Process ID", "description": "ID of the process in which this reagent was used",
-                     "example": None})
+            # if "module/process/purchased_reagents" in schema:
+            #     values.append(
+            #         {"header": "Process ID", "description": "ID of the process in which this reagent was used",
+            #          "example": None})
             if "type/file" in schema:
                 values.append(
                     {"header": "Biomaterial ID", "description": "ID of the biomaterial to which this file relates",
