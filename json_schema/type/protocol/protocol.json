@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/protocol/4.0.0/protocol.json",
+    "id": "http://schema.humancellatlas.org/type/protocol/5.0.0/protocol.json",
     "description": "Information about the protocol",
     "additionalProperties": false,
     "required": [
