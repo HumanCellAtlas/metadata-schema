@@ -50,8 +50,12 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/non_homo_sapiens_specific.json"
         },
         "death": {
-            "description": "Information about conditions of death (or info that organism was living at time of collection).",
+            "description": "Information about conditions of death of an organism.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/death.json"
+        },
+        "medical_history": {
+            "description": "Information about the medical history of an organism.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/medical_history.json"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
