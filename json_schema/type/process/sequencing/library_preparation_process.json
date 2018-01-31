@@ -76,6 +76,7 @@
                 "TruSeq",
                 "unknown"
             ],
+            "comment": "This will become an ontology.",
             "user_friendly": "Library construction approach"
         },
         "end_bias": {
