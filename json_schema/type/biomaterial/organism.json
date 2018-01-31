@@ -50,8 +50,12 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/non_homo_sapiens_specific.json"
         },
         "death": {
-            "description": "Information about conditions of death (or info that organism was living at time of collection).",
+            "description": "Information about conditions of death of an organism.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/death.json"
+        },
+        "medical_history": {
+            "description": "Information about the medical history of an organism.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/medical_history.json"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
@@ -107,19 +111,23 @@
             "user_friendly": "Gestational age unit"
         },
         "height": {
-            "description": "Height of organism in meters.",
+            "description": "Height of organism in height units.",
             "type": "number",
-            "maximum": 10, 
-            "minimum": 0,
+            "minimum": 0.0,
             "user_friendly": "Height"
+        },
+        "height_unit": {
+            "description": "The unit in which height is expressed. Must be one of centimeters, meters, or inches.",
+            "type": "string",
+            "user_friendly": "Height unit"
         },
         "is_living": {
             "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
             "type": "boolean",
             "user_friendly": "Is living?"
         }, 
-        "sex": {
-            "description": "Sex of organism. Should be one of male, female, mixed, or unknown.",
+        "biological_sex": {
+            "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
             "type": "string",
             "enum": [
                 "female", 
@@ -132,9 +140,13 @@
         "weight": {
             "description": "Weight of organism in kilograms.",
             "type": "number",
-            "maximum": 1000, 
-            "minimum": 0,
+            "minimum": 0.0,
             "user_friendly": "Weight"
+        },
+        "weight_unit": {
+            "description": "The unit in which weight is expressed. Must be one of gram, kilogram, pound.",
+            "type": "string",
+            "user_friendly": "Weight unit"
         }
     }
 }

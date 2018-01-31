@@ -64,9 +64,9 @@
        },
         "total_estimated_cells": {
             "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
-            "type": "number",
-            "maximum": 1000000000.0,
-            "minimum": 0.1,
+            "type": "integer",
+            "maximum": 1000000000,
+            "minimum": 0,
             "user_friendly": "Total estimated cell count"
         }
      }

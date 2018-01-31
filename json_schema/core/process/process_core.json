@@ -64,14 +64,14 @@
             "example": "Wellcome Sanger Institute, Teichman Lab.",
             "user_friendly": "Location"
          },
-         "researcher": {
-           "description": "Name of the individual(s) who executed this process.",
+         "operator_identity": {
+           "description": "Identifier for individual(s) who executed this process.",
            "type": "array",
-           "example": "John Smith||Jane Doe",
+           "example": "Technician 1",
            "items":{
                 "type": "string"
            },
-           "user_friendly": "Researcher"
+           "user_friendly": "Operator identity"
          }
     }
 }
