@@ -65,7 +65,7 @@
             "user_friendly": "Location"
          },
          "operator_identity": {
-           "description": "Identity of individual(s) who executed this process.",
+           "description": "Identifier for individual(s) who executed this process.",
            "type": "array",
            "example": "Technician 1",
            "items":{
