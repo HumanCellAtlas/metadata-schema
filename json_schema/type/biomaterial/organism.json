@@ -107,11 +107,15 @@
             "user_friendly": "Gestational age unit"
         },
         "height": {
-            "description": "Height of organism in meters.",
+            "description": "Height of organism in height units.",
             "type": "number",
-            "maximum": 10, 
-            "minimum": 0,
+            "minimum": 0.0,
             "user_friendly": "Height"
+        },
+        "height_unit": {
+            "description": "The unit in which height is expressed. Must be one of centimeters, meters, or inches.",
+            "type": "string",
+            "user_friendly": "Height unit"
         },
         "is_living": {
             "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
@@ -132,9 +136,13 @@
         "weight": {
             "description": "Weight of organism in kilograms.",
             "type": "number",
-            "maximum": 1000, 
-            "minimum": 0,
+            "minimum": 0.0,
             "user_friendly": "Weight"
+        },
+        "weight_unit": {
+            "description": "The unit in which weight is expressed. Must be one of gram, kilogram, pound.",
+            "type": "string",
+            "user_friendly": "Weight unit"
         }
     }
 }
