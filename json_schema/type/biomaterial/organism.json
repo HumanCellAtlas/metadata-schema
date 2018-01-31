@@ -122,8 +122,8 @@
             "type": "boolean",
             "user_friendly": "Is living?"
         }, 
-        "sex": {
-            "description": "Sex of organism. Should be one of male, female, mixed, or unknown.",
+        "biological_sex": {
+            "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
             "type": "string",
             "enum": [
                 "female", 
