@@ -17,6 +17,7 @@
           ]
         },
         "is_living": true,
+        "biological_sex": "male",
         "development_stage": {
           "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/development_stage_ontology.json",
           "text": "adult",
