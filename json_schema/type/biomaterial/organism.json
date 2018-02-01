@@ -43,12 +43,12 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "human_specific": {
-	        "description": "Fields specific to human organisms.",
+	        "description": "Fields specific to human (homo sapiens) organisms.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/homo_sapiens_specific.json"
         },
-        "non_human_specific": {
-	        "description": "Fields specific to non-human organisms.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/non_homo_sapiens_specific.json"
+        "mus_musculus_specific": {
+	        "description": "Fields specific to mouse (mus musculus) organisms.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/mus_musculus_specific.json"
         },
         "death": {
             "description": "Information about conditions of death of an organism.",
