@@ -112,13 +112,13 @@
             "user_friendly": "Strand"
         },
         "spike_in": {
-            "description": "Name of RNA spike-in kit.",
+            "description": "Name of spike-in kit.",
             "type": "string",
             "example": "ERCC",
             "user_friendly": "Spike-in kit"
         },
         "spike_in_dilution": {
-            "description": "Dilution of RNA spike-in.",
+            "description": "Dilution of spike-in.",
             "type": "integer",
             "maximum": 1000000,
             "minimum": 1,
