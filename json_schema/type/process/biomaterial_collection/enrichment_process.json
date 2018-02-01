@@ -60,19 +60,19 @@
             "example": "CD4+ CD8-",
             "user_friendly": "Markers"
         },
-        "size_min": {
-            "description": "Minimum size passing selection in microns.",
+        "min_size_selected": {
+            "description": "Minimum cell or organelle size passing selection, in microns.",
             "type": "number",
             "maximum": 10000,
             "minimum": 0.01,
-            "user_friendly": "Minimum size"
+            "user_friendly": "Minimum size selected"
         },
-        "size_max": {
-            "description": "Maximum size passing selection in microns.",
+        "max_size_selected": {
+            "description": "Maximum cell or organelle size passing selection, in microns.",
             "type": "number",
             "maximum": 10000,
             "minimum": 0.01,
-            "user_friendly": "Maximum size"
+            "user_friendly": "Maximum size selected"
         },
          "process_type": {
             "description": "The type of process. Ideally an EFO term.",
