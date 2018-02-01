@@ -43,14 +43,15 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/file/file_core.json"
         },
         "read_index": {
-            "description": "Whether the read represents the r1, r2, i1, or i2 part of the sequencing read.",
+            "description": "Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read. If read file represents a single-end, non-indexed library, indicate that here.",
             "type": "string",
-            "example": "r1",
+            "example": "read1",
             "enum": [
-                "r1",
-                "r2",
-                "i1",
-                "i2"
+                "read1",
+                "read2",
+                "index1",
+                "index2",
+                "single-end, non-indexed"
             ],
             "user_friendly": "Read index"
         },
