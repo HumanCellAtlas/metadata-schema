@@ -6,7 +6,8 @@
     "required": [
         "$schema",
         "biomaterial_core",
-        "is_living"
+        "is_living",
+        "biological_sex"
     ],
     "title": "organism",
     "type": "object",
