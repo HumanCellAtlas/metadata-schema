@@ -41,8 +41,8 @@
 	        "description": "Core process-level information.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
-        "enrichment_type": {
-            "description": "How enrichment was achieved.",
+        "enrichment_method": {
+            "description": "The method by which enrichment was achieved.",
             "type": "string",
             "example": "FACS",
             "enum": [
@@ -52,7 +52,8 @@
                 "laser capture microdissection",
                 "density gradient"
             ],
-            "user_friendly": "Enrichment type"
+            "comment": "This will become an ontology.",
+            "user_friendly": "Enrichment method"
         },
         "markers": {
             "description": "A space-delimited list of markers with +/-.",
