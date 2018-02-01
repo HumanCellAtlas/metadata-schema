@@ -63,11 +63,11 @@
             "example": "10.17504/protocols.io.mgjc3un",
             "user_friendly": "protocols.io DOI"
         },
-        "pdf": {
-            "description": "A filename of a PDF containing the details of the protocol.",
+        "document": {
+            "description": "A filename of a PDF document containing the details of the protocol.",
             "type": "string",
             "pattern": "^.*.pdf$",
-            "user_friendly": "PDF filename"
+            "user_friendly": "Document filename"
         }
     }
 }
