@@ -45,6 +45,11 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
+        "growth_conditions": {
+            "description": "Features relating to the growth and/or maintenance of a biomaterial.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
+            "user_friendly": "Growth conditions"
+        },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
