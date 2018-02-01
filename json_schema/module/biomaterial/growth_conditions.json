@@ -59,6 +59,12 @@
             "type": "string",
             "example": "No spots of bright blue stain observed at high magnification",
             "user_friendly": "Mycoplasma testing results"
+        },
+        "drug_treatment": {
+            "description": "Description of drugs added to the growth medium for this biomaterial.",
+            "type": "string",
+            "example": "100 ug/mL ampicillin",
+            "user_friendly": "Drug treatment"
         }
     }
 }
