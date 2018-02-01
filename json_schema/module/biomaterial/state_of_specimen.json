@@ -92,7 +92,6 @@
         "postmortem_interval": {
             "description": "Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed.",
             "type": "integer",
-            "maximum": 100000, 
             "minimum": 0,
             "user_friendly": "Post-mortem interval"
         }
