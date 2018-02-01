@@ -1,18 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/module/biomaterial/4.0.0/non_homo_sapiens_specific.json",
-    "description": "Information specific to an organism that is NOT a homo sapiens.",
+    "id": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/mus_musculus_specific.json",
+    "description": "Information specific to an organism that is a mouse (mus musculus).",
     "additionalProperties": false,
     "required": [
         "$schema"
     ],
-    "title": "non_homo_sapiens_specific",
+    "title": "mus_musculus_specific",
     "type": "object",
     "properties": {
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/non_homo_sapiens_specific.json"
+            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/mus_musculus_specific.json"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
