@@ -107,7 +107,7 @@
             "enum": [
                 "first",
                 "second",
-                "none"
+                "unstranded"
             ],
             "user_friendly": "Strand"
         },
