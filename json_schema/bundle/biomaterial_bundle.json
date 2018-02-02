@@ -36,12 +36,12 @@
                     "description": "The biomaterial_id of the biomaterial that this biomaterial was derived from.",
                     "type": "string"
                 },
-                "derivation_protocols": {
-                    "description": "An array of protocols used to derive this biomaterial.",
+                "derivation_processes": {
+                    "description": "An array of processes used to derive this biomaterial.",
+                    "type": "array",
                     "items": {
-                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/protocol.json"
-                    },
-                    "type": "array"
+                        "type": "string"
+                    }
                 }
             }
         }
