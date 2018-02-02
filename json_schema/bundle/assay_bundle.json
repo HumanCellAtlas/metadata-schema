@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/assay_bundle.json",
+    "description": "A schema for an assay bundle. An assay contains information relevant to how a biomaterial (in vitro) was converted into digital information (in silico).",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "hca_ingest",
+        "content"
+    ],
+    "title": "assay_bundle",
+    "type": "object",
+    "definitions": {
+        "seq": {
+            "description": "Information about how cDNA was sequenced.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/sequencing/sequencing_process.json"
+        },
+        "rna": {
+            "description": "Information about how RNA was converted to cDNA.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/sequencing/library_preparation_process.json"
+        },
+        "single_cell": {
+            "description": "Information on how single cells were dissociated for assay.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/biomaterial_collection/dissociation_process.json"
+        },
+        "imaging": {
+            "description": "Information on image-based RNA quantification assays",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/imaging/imaging_process.json"
+        },
+        "assay_id": {
+            "description": "A unique ID for this assay.",
+            "type": "string"
+        }
+    },
+    "properties": {
+        "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/assay_bundle.json"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "assay_bundle"
+            ]
+        },
+        "hca_ingest": {
+            "description": "Core fields added by HCA ingest service",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
+        },
+        "has_input": {
+            "description": "The UUID of the biomaterial that this assay was performed on.",
+            "type": "string"
+        },
+        "has_output": {
+            "description": "The UUID(s) of the file(s) that was(were) generated from this assay.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "content": {
+            "description": "Assay content",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/assay_bundle.json#/definitions/assay_ingest"
+        },
+        "derivation_protocols": {
+            "description": "An array of protocols used in derivation of the input biomaterial.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/protocol.json"
+            },
+            "comment": "This might not be needed."
+        }
+    }
+}
