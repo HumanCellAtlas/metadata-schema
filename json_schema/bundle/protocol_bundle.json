@@ -32,8 +32,11 @@
                     ]
                 },
                 "has_process": {
-                    "description": "The process that instantiated this protocol.",
-                    "type": "string"
+                    "description": "An array of processes that instantiated this protocol.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         }
