@@ -33,8 +33,11 @@
                     ]
                 },
                 "derived_from": {
-                    "description": "The biomaterial_id of the biomaterial that this biomaterial was derived from.",
-                    "type": "string"
+                    "description": "The biomaterial_id(s) of the biomaterial(s) that this biomaterial was derived from.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "derivation_processes": {
                     "description": "An array of processes used to derive this biomaterial.",
