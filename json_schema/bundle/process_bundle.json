@@ -36,8 +36,11 @@
                     ]
                 },
                 "has_input": {
-                    "description": "The biomaterial or file that this process was performed on.",
-                    "type": "string"
+                    "description": "The biomaterials or files that this process was performed on.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "has_output": {
                     "description": "The biomaterials or files that were generated from this process.",
