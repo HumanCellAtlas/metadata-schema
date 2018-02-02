@@ -1,0 +1,80 @@
+{
+  "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/process_bundle.json",
+  "schema_version": "5.0.0",
+  "schema_type": "process_bundle",
+  "processes": [
+    {
+      "hca_ingest": {
+        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
+        "accession": "",
+        "submissionDate": "2017-12-16T01:43:43.467Z",
+        "updateDate": "2017-12-16T01:44:24.837Z",
+        "document_id": "63688c4a-1280-4eb7-a431-2456f89c3cde"
+      },
+      "has_input": [
+        "2896fd1c-e99b-4763-9988-f6093d749240"
+      ],
+      "has_output": [
+        "15cdc9e6-d588-4ab3-8328-6fadaf40a2d1",
+        "fc60c1cf-ffd1-4bdb-b06c-b31896efcd46"
+      ],
+      "content": {
+        "$schema": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process.json",
+        "process_core": {
+          "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
+          "process_id": "dissociation_protocol_1"
+        },
+        "dissociation_method": "FACS"
+      }
+    },
+    {
+      "hca_ingest": {
+        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
+        "accession": "",
+        "submissionDate": "2017-12-16T01:43:43.467Z",
+        "updateDate": "2017-12-16T01:44:24.837Z",
+        "document_id": "63688c4a-1280-4eb7-a431-2456f89c3cdf"
+      },
+      "has_input": [
+        "2896fd1c-e99b-4763-9988-f6093d749240"
+      ],
+      "has_output": [
+        "fc60c1cf-ffd1-4bdb-b06c-b31896efcd46"
+      ],
+      "content": {
+        "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process.json",
+        "process_core": {
+          "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
+          "process_id": "lib_prep_protocol_1"
+        },
+        "end_bias": "five_prime_end",
+        "strand": "first",
+        "library_construction": "smart-seq2"
+      }
+    },
+    {
+      "hca_ingest": {
+        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
+        "accession": "",
+        "submissionDate": "2017-12-16T01:43:43.467Z",
+        "updateDate": "2017-12-16T01:44:24.837Z",
+        "document_id": "63688c4a-1280-4eb7-a431-2456f89c3cdf"
+      },
+      "has_input": [
+        "2896fd1c-e99b-4763-9988-f6093d749240"
+      ],
+      "has_output": [
+        "fc60c1cf-ffd1-4bdb-b06c-b31896efcd46"
+      ],
+      "content": {
+        "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process.json",
+        "process_core": {
+          "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
+          "process_id": "seq_protocol_1"
+        },
+        "paired_ends": true,
+        "instrument_manufacturer_model": "Illumina HiSeq 4000"
+      }
+    }
+    ]
+}
