@@ -17,10 +17,23 @@
             ],
             "type": "object",
             "properties": {
-                "content": {
-                    "description": "Process content",
+                "hca_ingest": {
+                    "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/process.json"
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
+                },
+                "content": {
+                    "description": "Content for any process type entity.",
+                    "type": "object",
+                    "oneOf": [
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/analysis/analysis.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/collection_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/dissociation_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/enrichment_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/imaging/imaging_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/sequencing/library_preparation_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/sequencing/sequencing_process.json" }
+                    ]
                 },
                 "has_input": {
                     "description": "The biomaterial or file that this process was performed on.",
@@ -32,11 +45,6 @@
                     "items": {
                         "type": "string"
                     }
-                },
-                "hca_ingest": {
-                    "description": "Core fields added by HCA ingest service",
-                    "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
                 }
             }
         }

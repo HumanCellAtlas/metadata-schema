@@ -16,6 +16,11 @@
             ],
             "type": "object",
             "properties": {
+                "hca_ingest": {
+                    "description": "Core fields added by HCA ingest service",
+                    "type": "object",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
+                },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
@@ -27,21 +32,16 @@
                         { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_line.json" }
                     ]
                 },
+                "derived_from": {
+                    "description": "The biomaterial_id of the biomaterial that this biomaterial was derived from.",
+                    "type": "string"
+                },
                 "derivation_protocols": {
                     "description": "An array of protocols used to derive this biomaterial.",
                     "items": {
                         "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/protocol.json"
                     },
                     "type": "array"
-                },
-                "hca_ingest": {
-                    "description": "Core fields added by HCA ingest service",
-                    "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
-                },
-                "derived_from": {
-                    "description": "The biomaterial_id of the biomaterial that this biomaterial was derived from.",
-                    "type": "string"
                 }
             }
         }
@@ -61,17 +61,7 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle",
-                "ingest",
-                "submission"
+                "biomaterial_bundle"
             ]
         },
         "biomaterials": {

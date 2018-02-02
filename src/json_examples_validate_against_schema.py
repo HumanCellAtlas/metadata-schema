@@ -89,14 +89,6 @@ b1 = get_json_from_file('../schema_test_files/project/test_pass_project_bundle.j
 if not validate(sv, b1):
     status_flag = False
 
-# Testing valid assay bundle example
-print('\nValidating bundle/assay_bundle.json schema')
-sv = get_validator('bundle/assay_bundle.json', base_uri)
-print('Validating assay/test_pass_assay_bundle.json JSON against schema')
-b1 = get_json_from_file('../schema_test_files/assay/test_pass_assay_bundle.json')
-if not validate(sv, b1):
-    status_flag = False
-
 # If any of the validate() calls fail, set exit status to 1.
 # Failed validate() calls on things that are supposed to fail will not affect exit status.
 # Without the following line, failed validate() will result in exit status 0, which is not desirable.
