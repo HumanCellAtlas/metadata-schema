@@ -41,7 +41,7 @@
         },
          "process_core" : {
             "description": "Core process-level information.",
-            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
          },
          "embedding": {
             "description": "Description of embedding conditions.", 
