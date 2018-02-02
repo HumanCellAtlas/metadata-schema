@@ -66,11 +66,15 @@
             "user_friendly": "Organ part"
         },
         "state_of_specimen": {
-            "description": "State of the specimen at the time of collection and how it was preserved after removal.",
+            "description": "State of the specimen at the time of collection/removal.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/state_of_specimen.json"
         },
+        "preservation_storage": {
+            "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/preservation_storage.json"
+        },
         "collection_time": {
-            "description": "When the biomaterial was collection, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
+            "description": "When the biomaterial was collected, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
             "type": "string",
             "format": "date-time",
             "user_friendly": "Time of collection"
