@@ -9,7 +9,7 @@
     "title": "protocol_bundle",
     "type": "object",
     "definitions": {
-        "process_ingest": {
+        "protocol_ingest": {
             "required": [
                 "hca_ingest",
                 "content"
@@ -25,25 +25,15 @@
                     "description": "Content for any process type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/analysis/analysis.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/collection_process.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/dissociation_process.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/enrichment_process.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/imaging/imaging_process.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/sequencing/library_preparation_process.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/sequencing/sequencing_process.json" }
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/analysis/analysis_protocol.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/biomaterial/biomaterial_collection_protocol.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/imaging/imaging_protocol.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/sequencing/sequencing_protocol.json" }
                     ]
                 },
-                "has_input": {
-                    "description": "The biomaterial or file that this process was performed on.",
+                "has_process": {
+                    "description": "The process that instantiated this protocol.",
                     "type": "string"
-                },
-                "has_output": {
-                    "description": "The biomaterials or files that were generated from this process.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
                 }
             }
         }
@@ -76,9 +66,9 @@
                 "submission"
             ]
         },
-        "processes": {
+        "protocols": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/bundle/process_bundle.json#/definitions/process_ingest"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/bundle/process_bundle.json#/definitions/protocol_ingest"
             },
             "type": "array"
         }
