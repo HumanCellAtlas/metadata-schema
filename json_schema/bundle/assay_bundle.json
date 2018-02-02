@@ -77,7 +77,7 @@
         "content": {
             "description": "Assay content",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/assay_bundle.json#/definitions/assay_ingest"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/assay_bundle.json#/definitions/assay_ingest"
         },
         "derivation_protocols": {
             "description": "An array of protocols used in derivation of the input biomaterial.",

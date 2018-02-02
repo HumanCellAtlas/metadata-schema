@@ -3,6 +3,7 @@
   "schema_version": "5.0.0",
   "schema_type": "assay_bundle",
   "hca_ingest": {
+    "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
     "accession": "",
     "submissionDate": "2017-12-16T01:43:43.467Z",
     "updateDate": "2017-12-16T01:44:24.837Z",
@@ -16,25 +17,28 @@
   "content": {
     "assay_id": "test_assay_1",
     "single_cell": {
+      "$schema": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process.json",
       "process_core": {
-        "$schema": "http://schema.humancellatlas.org/core/biomaterial/5.0.0/process_core.json",
-        "process_id": "dissociation_protocol_1",
+        "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
+        "process_id": "dissociation_protocol_1"
       },
       "dissociation_method": "FACS"
     },
     "rna": {
+      "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process.json",
       "process_core": {
-        "$schema": "http://schema.humancellatlas.org/core/biomaterial/5.0.0/process_core.json",
-        "process_id": "lib_prep_protocol_1",
+        "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
+        "process_id": "lib_prep_protocol_1"
       },
       "end_bias": "five_prime_end",
       "strand": "first",
       "library_construction": "smart-seq2"
     },
     "seq": {
+      "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process.json",
       "process_core": {
-        "$schema": "http://schema.humancellatlas.org/core/biomaterial/5.0.0/process_core.json",
-        "process_id": "seq_protocol_1",
+        "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
+        "process_id": "seq_protocol_1"
       },
       "paired_ends": true,
       "instrument_manufacturer_model": "Illumina HiSeq 4000"
