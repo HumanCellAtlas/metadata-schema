@@ -11,25 +11,33 @@
     "title": "assay_bundle",
     "type": "object",
     "definitions": {
-        "seq": {
-            "description": "Information about how cDNA was sequenced.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/sequencing/sequencing_process.json"
-        },
-        "rna": {
-            "description": "Information about how RNA was converted to cDNA.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/sequencing/library_preparation_process.json"
-        },
-        "single_cell": {
-            "description": "Information on how single cells were dissociated for assay.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/biomaterial_collection/dissociation_process.json"
-        },
-        "imaging": {
-            "description": "Information on image-based RNA quantification assays",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/imaging/imaging_process.json"
-        },
-        "assay_id": {
-            "description": "A unique ID for this assay.",
-            "type": "string"
+        "assay_ingest": {
+            "required": [
+                "assay_id"
+            ],
+            "type": "object",
+            "properties": {
+                "assay_id": {
+                    "description": "A unique ID for this assay.",
+                    "type": "string"
+                },
+                "single_cell": {
+                    "description": "Information on how single cells were dissociated for assay.",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/biomaterial_collection/dissociation_process.json"
+                },
+                "rna": {
+                    "description": "Information about how RNA was converted to cDNA.",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/sequencing/library_preparation_process.json"
+                },
+                "seq": {
+                    "description": "Information about how cDNA was sequenced.",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/sequencing/sequencing_process.json"
+                },
+                "imaging": {
+                    "description": "Information on image-based RNA quantification assays",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/type/process/imaging/imaging_process.json"
+                }
+            }
         }
     },
     "properties": {
