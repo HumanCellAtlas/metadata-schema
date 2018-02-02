@@ -1,19 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/5.0.0/process_bundle.json",
-    "description": "A schema for a process bundle.",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/protocol_bundle.json",
+    "description": "A schema for a protocol bundle.",
     "additionalProperties": false,
     "required": [
         "$schema"
     ],
-    "title": "process_bundle",
+    "title": "protocol_bundle",
     "type": "object",
     "definitions": {
         "process_ingest": {
             "required": [
                 "hca_ingest",
-                "content",
-                "has_input"
+                "content"
             ],
             "type": "object",
             "properties": {
