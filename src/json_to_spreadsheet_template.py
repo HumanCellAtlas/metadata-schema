@@ -151,6 +151,15 @@ class SpreadsheetCreator:
                     ws.cell(column=col, row=1, value=header["description"])
                     ws.cell(column=col, row=2, value=header["example"]).font = Font(italic = True)
                     ws.cell(column=col, row=3, value=header["header"]).font = Font(bold = True)
+
+                    # set column width to the width of the header or 5 for very short headers (eg DOI)
+                    min_width = 5
+                    width = len(header["header"])
+                    if width < min_width:
+                        adjusted_width = min_width
+                    else:
+                        adjusted_width = width
+                    ws.column_dimensions[ws.cell(column=col,row=3).column].width = adjusted_width
                     col += 1
 
         # remove the blank worksheet that is automatically created with the spreadsheet
