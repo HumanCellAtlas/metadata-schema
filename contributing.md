@@ -29,11 +29,13 @@ This section outlines steps for members of the DCP's ingest team (collaboration 
 
 1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` and `src/json_examples_validate_against_schema.py` scripts (which are run by Travis CI). The first script checks whether each .json file in the `json_schema` folder is valid JSON format. The second script attempts to validate example JSON files in the `schema_test_files` directory against their corresponding schemas. Some of the JSON files are meant to fail (e.g. they are lacking required fields) and as their failure is expected behavior, the script should exit with status 0. Ensure both scripts exit with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If either test fails, you will have to debug and fix the errors in the changes you made.
 
-1. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes. Use helpful/short messages in commit statement. If your commit specifically fixes/addresses a current GitHub issue, you can add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issues. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
+1. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes and to increase granularity for rollbacks (if needed). Use helpful/short messages in commit statements. If your commit specifically fixes/addresses a current GitHub issue, you can add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issue. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
 
     `git add <changed files>`
     
     `git commit -m "Helpful commit message here. Fixes #000."`
+    
+    Example commit message: "Added examples to fields in analysis_process.json. Fixes #142."
 
 1. **Push** the committed changes to the working branch.
 
@@ -44,7 +46,7 @@ This section outlines steps for members of the DCP's ingest team (collaboration 
     - Click on "master" in the drop-down menu in the top left of the page and select your new working branch
     - Click "Pull request" in the upper right corner
     - Change the base branch to "v5_prototype" and make sure the compare branch is your new working branch
-    - In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files
+    - In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
     - Click "Create pull request" when ready
     - Assign reviewers (top right of page) to send notifications that a PR needs to be reviewed and merged. **Do not merge your own PR.**
 
@@ -52,6 +54,6 @@ This section outlines steps for members of the DCP's ingest team (collaboration 
 
 ## Observed guidelines
 
-- Don't merge your own PR. This ensures that at least one other person has reviewed your suggested changes and has approved them. The only exception is if another person specifically "approves" your PR, but doesn't actually merge it. In this scenario, because the other person gave approval that they agree with the changes, the original PRer is allowed to merge their own changes.
-- Be as clear and descriptive as possible when commenting on the PR. Include references to current GitHub issues when appropriate. Reference specific people if the PR addresses someones concerns. Include reasoning behind changes that could be controvesial (e.g. reason why a field names changes, but no reason needed to fix a typo in a field description).
+- *Do not merge your own PR.* This ensures that at least one other person has reviewed the suggested changes and has approved them. The only exception is if another person specifically "approves" your PR, but doesn't actually merge it. In this scenario, because the other person gave approval that they agree with the changes, the original PRer is allowed to merge their own changes.
+- *Be clear and descriptive in PR comments.* Include references to current GitHub issues when appropriate. Reference specific people if the PR addresses someones concerns. Include reasoning behind changes that could be controversial (e.g. reason why a field name changes, but no reason needed to fix a typo in a field description).
 
