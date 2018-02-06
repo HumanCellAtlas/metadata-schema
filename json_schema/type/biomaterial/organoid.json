@@ -68,6 +68,7 @@
         "organoid_age": {
             "description": "Age of the organoid.",
             "type": "number",
+            "example": 55,
             "user_friendly": "Organoid age"
         },
         "organoid_age_unit": {
