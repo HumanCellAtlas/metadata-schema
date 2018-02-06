@@ -58,7 +58,7 @@ class SpreadsheetCreator:
                                     t = primary["header"]
                                     t = t.replace(" ID", "").lower()
                                     d = "ID for " + t + " this " + key + " relates to"
-                                    module_values[key].append({"header": t,
+                                    module_values[key].append({"header": primary["header"],
                                                                "description": d,
                                                                "example": None})
                                 break
