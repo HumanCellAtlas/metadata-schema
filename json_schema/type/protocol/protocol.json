@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "schema_type",
         "protocol_core"
     ],
     "title": "protocol",

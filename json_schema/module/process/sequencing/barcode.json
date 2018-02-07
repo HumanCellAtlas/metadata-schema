@@ -23,13 +23,6 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "schema_type": {
-            "description": "The type of the metadata schema entity.",
-            "type": "string",
-            "enum": [
-                "process"
-            ]
-        },
         "barcode_read": {
             "description": "The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index.",
             "type": "string",

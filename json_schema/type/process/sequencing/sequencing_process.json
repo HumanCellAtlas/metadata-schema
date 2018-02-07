@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "schema_type",
         "process_core",
         "instrument_manufacturer_model",
         "paired_ends"

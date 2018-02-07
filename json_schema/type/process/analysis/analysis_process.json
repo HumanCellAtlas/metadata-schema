@@ -5,6 +5,7 @@
     "additionalProperties": true,
     "required": [
         "$schema",
+        "schema_type",
         "timestamp_start_utc",
         "timestamp_stop_utc",
         "computational_method",

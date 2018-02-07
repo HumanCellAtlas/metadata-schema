@@ -20,13 +20,6 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "schema_type": {
-            "description": "The type of the metadata schema entity.",
-            "type": "string",
-            "enum": [
-                "biomaterial"
-            ]
-        },
         "autolysis_score": {
             "description": "State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate.",
             "type": "string",

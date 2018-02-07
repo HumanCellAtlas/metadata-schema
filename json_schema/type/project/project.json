@@ -4,7 +4,8 @@
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "schema_type"
     ],
     "title": "project",
     "type": "object",

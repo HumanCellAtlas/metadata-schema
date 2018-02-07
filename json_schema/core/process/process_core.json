@@ -21,13 +21,6 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "schema_type": {
-            "description": "The type of the metadata schema entity.",
-            "type": "string",
-            "enum": [
-                "process"
-            ]
-        },
         "process_id": {
             "description": "A unique ID for this process.",
             "type": "string",

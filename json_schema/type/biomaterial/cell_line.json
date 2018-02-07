@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "schema_type",
         "biomaterial_core"
     ],
     "title": "cell_line",
