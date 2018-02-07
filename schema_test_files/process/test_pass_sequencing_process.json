@@ -1,5 +1,6 @@
 {
   "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process.json",
+  "schema_type": "process",
   "process_core": {
     "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
     "process_id": "seq_protocol_1"
