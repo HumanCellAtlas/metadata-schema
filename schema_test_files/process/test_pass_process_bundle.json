@@ -20,6 +20,7 @@
       ],
       "content": {
         "$schema": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process.json",
+        "schema_type": "process",
         "process_core": {
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
           "process_id": "dissociation_protocol_1"
@@ -43,6 +44,7 @@
       ],
       "content": {
         "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process.json",
+        "schema_type": "process",
         "process_core": {
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
           "process_id": "lib_prep_protocol_1"
@@ -68,6 +70,7 @@
       ],
       "content": {
         "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process.json",
+        "schema_type": "process",
         "process_core": {
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
           "process_id": "seq_protocol_1"
@@ -79,5 +82,5 @@
         }
       }
     }
-    ]
+  ]
 }
