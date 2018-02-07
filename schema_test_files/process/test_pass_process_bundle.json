@@ -73,7 +73,10 @@
           "process_id": "seq_protocol_1"
         },
         "paired_ends": true,
-        "instrument_manufacturer_model": "Illumina HiSeq 4000"
+        "instrument_manufacturer_model": {
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/instrument_ontology.json",
+          "text": "Illumina HiSeq 4000"
+        }
       }
     }
     ]

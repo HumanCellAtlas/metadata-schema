@@ -71,10 +71,10 @@
             ]
         },
         "processes": {
+            "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/process_bundle.json#/definitions/process_ingest"
-            },
-            "type": "array"
+            }
         }
     }
 }
