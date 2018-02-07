@@ -89,6 +89,14 @@ b1 = get_json_from_file('../schema_test_files/project/test_pass_project_bundle.j
 if not validate(sv, b1):
     status_flag = False
 
+# Testing valid process bundle example
+print('\nValidating bundle/process_bundle.json schema')
+sv = get_validator('bundle/process_bundle.json', base_uri)
+print('Validating process/test_pass_process_bundle.json JSON against schema')
+b1 = get_json_from_file('../schema_test_files/process/test_pass_process_bundle.json')
+if not validate(sv, b1):
+    status_flag = False
+
 # If any of the validate() calls fail, set exit status to 1.
 # Failed validate() calls on things that are supposed to fail will not affect exit status.
 # Without the following line, failed validate() will result in exit status 0, which is not desirable.
