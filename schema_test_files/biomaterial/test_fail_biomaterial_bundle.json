@@ -63,7 +63,7 @@
           "text": "peripheral blood mononuclear cells (PBMCs)"
         }
       },
-      "derived_from": "a37dbd93-b93a-4838-a7bb-cd0796b3d9d1",
+      "derived_from": ["a37dbd93-b93a-4838-a7bb-cd0796b3d9d1"],
       "derivation_protocols": []
     }
   ]
