@@ -5,7 +5,7 @@
   "processes": [
     {
       "hca_ingest": {
-        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
+        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit.json",
         "accession": "",
         "submissionDate": "2017-12-16T01:43:43.467Z",
         "updateDate": "2017-12-16T01:44:24.837Z",
@@ -20,6 +20,7 @@
       ],
       "content": {
         "$schema": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process.json",
+        "schema_type": "process",
         "process_core": {
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
           "process_id": "dissociation_protocol_1"
@@ -29,7 +30,7 @@
     },
     {
       "hca_ingest": {
-        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
+        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit.json",
         "accession": "",
         "submissionDate": "2017-12-16T01:43:43.467Z",
         "updateDate": "2017-12-16T01:44:24.837Z",
@@ -43,6 +44,7 @@
       ],
       "content": {
         "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process.json",
+        "schema_type": "process",
         "process_core": {
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
           "process_id": "lib_prep_protocol_1"
@@ -54,7 +56,7 @@
     },
     {
       "hca_ingest": {
-        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
+        "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit.json",
         "accession": "",
         "submissionDate": "2017-12-16T01:43:43.467Z",
         "updateDate": "2017-12-16T01:44:24.837Z",
@@ -68,6 +70,7 @@
       ],
       "content": {
         "$schema": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process.json",
+        "schema_type": "process",
         "process_core": {
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core.json",
           "process_id": "seq_protocol_1"
@@ -79,5 +82,5 @@
         }
       }
     }
-    ]
+  ]
 }

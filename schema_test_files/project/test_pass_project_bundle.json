@@ -24,7 +24,7 @@
     ]
   },
   "hca_ingest": {
-    "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest.json",
+    "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit.json",
     "accession": "HCAP-001",
     "submissionDate": "2017-12-16T01:43:43.381Z",
     "updateDate": "2017-12-16T01:44:25.613Z",
