@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "schema_type",
         "hca_ingest",
         "content"
     ],
@@ -31,7 +32,7 @@
         "hca_ingest": {
             "description": "Core fields added by HCA ingest service",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
         },
         "content": {
             "description": "Content for a project type entity.",

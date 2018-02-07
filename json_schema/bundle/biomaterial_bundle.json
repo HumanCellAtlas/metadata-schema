@@ -4,7 +4,8 @@
     "description": "A schema for a biomaterial bundle.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "schema_type"
     ],
     "title": "biomaterial_bundle",
     "type": "object",
@@ -19,7 +20,7 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
                 },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
