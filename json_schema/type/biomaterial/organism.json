@@ -70,7 +70,8 @@
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
-            "user_friendly": "Organism age unit"
+            "user_friendly": "Organism age unit",
+	    "example": "year"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
