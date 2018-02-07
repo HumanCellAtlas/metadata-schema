@@ -119,7 +119,7 @@
         },
         "height_unit": {
             "description": "The unit in which height is expressed. Must be one of centimeters, meters, or inches.",
-            "type": "string",
+            "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Height unit"
         },
         "is_living": {
@@ -145,8 +145,8 @@
             "user_friendly": "Weight"
         },
         "weight_unit": {
-            "description": "The unit in which weight is expressed. Must be one of gram, kilogram, pound.",
-            "type": "string",
+            "description": "The unit in which weight is expressed. Must be one of gram or kilogram.",
+            "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
         }
     }

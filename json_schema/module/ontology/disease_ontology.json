@@ -27,7 +27,7 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:efo"],
-                "classes": ["MONDO:0000001", "EFO:0000408"],
+                "classes": ["MONDO:0000001", "EFO:0000408", "PATO:0000461"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
