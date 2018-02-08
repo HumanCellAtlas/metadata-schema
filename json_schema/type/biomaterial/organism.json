@@ -62,9 +62,8 @@
         },
         "organism_age": {
             "description": "Age in age_units. Measured since birth.",
-            "type": "number",
-            "maximum": 150, 
-            "minimum": 0,
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
             "user_friendly": "Organism age"
         }, 
         "organism_age_unit": {
@@ -106,8 +105,8 @@
         },
         "height": {
             "description": "Height of organism in height units.",
-            "type": "number",
-            "minimum": 0.0,
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
             "user_friendly": "Height"
         },
         "height_unit": {
@@ -133,8 +132,8 @@
         },
         "weight": {
             "description": "Weight of organism in kilograms.",
-            "type": "number",
-            "minimum": 0.0,
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
             "user_friendly": "Weight"
         },
         "weight_unit": {
