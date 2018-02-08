@@ -5,7 +5,7 @@ _A schema for a process bundle._
 Location: bundle/process_bundle.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 schema_type | The type of the metadata schema entity. | string | 
@@ -17,7 +17,7 @@ _A schema for a biomaterial bundle._
 Location: bundle/biomaterial_bundle.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 schema_type | The type of the metadata schema entity. | string | 
@@ -29,7 +29,7 @@ _A schema for a project bundle._
 Location: bundle/project_bundle.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 schema_type | The type of the metadata schema entity. | string | 
@@ -42,7 +42,7 @@ _Information added or generated at time of ingest._
 Location: bundle/ingest_audit.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 submissionDate | When project was first submitted to database. | string | 
@@ -58,7 +58,7 @@ _Information added to a submission at ingest._
 Location: bundle/submission.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 schema_type | The type of the metadata schema entity. | string | 
@@ -71,7 +71,7 @@ _A schema for a protocol bundle._
 Location: bundle/protocol_bundle.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 schema_type | The type of the metadata schema entity. | string | 

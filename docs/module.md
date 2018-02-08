@@ -5,7 +5,7 @@ _A term that may be associated with a cell type-related ontology term_
 Location: module/ontology/length_unit_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of a length unit being used. | string | 
@@ -17,7 +17,7 @@ _A term that may be associated with a cell cycle-related ontology term_
 Location: module/ontology/cell_cycle_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema |  | string | 
 schema_version | Version number in major.minor.patch format. | string | 
 text | The name of a cell cycle of the cells in the specimen. | string | 
@@ -29,7 +29,7 @@ _A term that may be associated with a ethnicity-related ontology term_
 Location: module/ontology/ethnicity_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema |  | string | 
 schema_version | Version number in major.minor.patch format. | string | 
 text | The ethnicity of the human donor. | string | 
@@ -41,7 +41,7 @@ _A term that may be associated with an ontology term_
 Location: module/ontology/ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The text for the term as the user provides it. | string | 
@@ -53,7 +53,7 @@ _A term that may be associated with a process-related ontology term_
 Location: module/ontology/process_type_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of a process type being used. | string | 
@@ -65,7 +65,7 @@ _A term that may be associated with a species-related ontology term_
 Location: module/ontology/species_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of the species to which the organism belongs. | string | 
@@ -77,7 +77,7 @@ _A term that may be associated with a disease-related ontology term_
 Location: module/ontology/disease_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema |  | string | 
 schema_version | Version number in major.minor.patch format. | string | 
 text | The text for the term as the user provides it. | string | 
@@ -89,7 +89,7 @@ _A term that may be associated with a strain-related ontology term_
 Location: module/ontology/strain_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of the strain to which the organism belongs (mouse-specific). | string | 
@@ -101,7 +101,7 @@ _A term that may be associated with an anatomy-related ontology term_
 Location: module/ontology/organ_part_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The text for the term as the user provides it. | string | 
@@ -113,7 +113,7 @@ _A term that may be associated with a time unit-related ontology term_
 Location: module/ontology/time_unit_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of a time unit being used. | string | 
@@ -125,7 +125,7 @@ _A term that may be associated with a protocol-related ontology term_
 Location: module/ontology/protocol_type_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of a protocol type used. | string | 
@@ -137,7 +137,7 @@ _A term that may be associated with a development stage-related ontology term_
 Location: module/ontology/development_stage_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema |  | string | 
 schema_version | Version number in major.minor.patch format. | string | 
 text | The name of the development stage of the organism. | string | 
@@ -149,7 +149,7 @@ _A term that may be associated with a instrument-related ontology term_
 Location: module/ontology/instrument_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema |  | string | 
 text | The full name of the instrument used. | string | 
 schema_version | Version number in major.minor.patch format. | string | 
@@ -161,7 +161,7 @@ _A term that may be associated with a cell type-related ontology term_
 Location: module/ontology/mass_unit_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of a mass unit being used. | string | 
@@ -173,7 +173,7 @@ _A term that may be associated with a biological macromolecule-related ontology 
 Location: module/ontology/biological_macromolecule_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The name of the biological macromolecule being used. | string | 
@@ -185,7 +185,7 @@ _A term that may be associated with a cell type-related ontology term_
 Location: module/ontology/cell_type_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema |  | string | 
 schema_version | Version number in major.minor.patch format. | string | 
 text | The name of a cell type supplied by a user. | string | 
@@ -197,7 +197,7 @@ _A term that may be associated with an anatomy-related ontology term._
 Location: module/ontology/organ_ontology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 text | The text for the term as the user provides it. | string | 
@@ -209,7 +209,7 @@ _Information about a person who submitted or contributed to a project._
 Location: module/project/contact.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 contact_name | The contact's name. Should be in the format 'first, middle, last name'. Middle can be initial or left blank. | string | Contact name
@@ -226,7 +226,7 @@ _Information about a journal article, book, web page, or other external availabl
 Location: module/project/publication.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 authors | A list of authors associated with the publication in 'surname initials' format. | array | Authors
@@ -241,7 +241,7 @@ _Information relating to how a biomaterial was grown and/or maintained in a labo
 Location: module/biomaterial/growth_conditions.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 passage_number | The number of passages the cell line has been through. | integer | Passage number
@@ -256,7 +256,7 @@ _Information relating to how a biomaterial was preserved and/or stored over a pe
 Location: module/biomaterial/preservation_storage.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 storage_method | The method by which a biomaterial was stored. | string | Storage method
@@ -270,7 +270,7 @@ _Information specific to an organism that is a homo sapiens._
 Location: module/biomaterial/homo_sapiens_specific.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 body_mass_index | The body mass index of the organism. | number | Body mass index
@@ -282,7 +282,7 @@ _Information relating to the death of an organism._
 Location: module/biomaterial/death.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string | Cause of death
@@ -297,7 +297,7 @@ _Information about other organisms that this organism is related to._
 Location: module/biomaterial/familial_relationship.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 is_child_of | This organism is a child of the indicated organism. | string | Child of
@@ -310,7 +310,7 @@ _Information about the medical history of an organism._
 Location: module/biomaterial/medical_history.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 alcohol_history | Number of drinks consumed on a typical day. | string | Alcohol history
@@ -326,7 +326,7 @@ _Information relating to pathological features of cells._
 Location: module/biomaterial/cell_morphology.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 cell_morphology | General description of the morphology of the cells in the cell suspension. | string | Cell morphology
@@ -342,7 +342,7 @@ _State of body part at collection and how it was preserved after removal and/or 
 Location: module/biomaterial/state_of_specimen.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 autolysis_score | State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate. | string | Autolysis score
@@ -360,7 +360,7 @@ _Information specific to an organism that is a mouse (mus musculus)._
 Location: module/biomaterial/mus_musculus_specific.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 strain | The name of the strain. | array | Strain
@@ -371,7 +371,7 @@ _This module describes purchased kits or reagents used in any process._
 Location: module/process/purchased_reagents.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 retail_name | The retail name of the kit/reagent. | string | Retail name
@@ -386,7 +386,7 @@ _This module describes the well inside the plate or fluidics chip where biomater
 Location: module/process/sequencing/well.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 plate | An ID for the plate that the well is located on. | string | Plate ID
@@ -401,7 +401,7 @@ _This module describes barcodes used in a library preparation process._
 Location: module/process/sequencing/barcode.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 barcode_read | The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index. | string | Barcode-containing read

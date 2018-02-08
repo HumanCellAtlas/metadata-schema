@@ -26,12 +26,13 @@ class MarkdownGenerator:
             file.write("\n")
 
             file.write("Property name | Description | Type | User friendly name \n")
-            file.write("--- | --- | --- \n")
+            # file.write("Property name | Description | Type  \n")
+            file.write("--- | --- | --- | ---\n")
 
             for property in schema["properties"]:
                 file.write(property + " | "+
                            (schema["properties"][property]["description"] if "description" in schema["properties"][property] else "") + " | " +
-                           (schema["properties"][property]["type"] if "type" in schema["properties"][property] else "") + " | " + 
+                           (schema["properties"][property]["type"] if "type" in schema["properties"][property] else "")  + " | " +
                            (schema["properties"][property]["user_friendly"] if "user_friendly" in schema["properties"][property] else "") + "\n")
 
 

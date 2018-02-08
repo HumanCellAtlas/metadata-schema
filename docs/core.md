@@ -5,7 +5,7 @@ _A file entity contains information about a data file produced from any process.
 Location: core/file/file_core.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 file_name | The filename of the data file. | string | File name
@@ -18,7 +18,7 @@ _A protocol entity contains information about an intended protocol that was foll
 Location: core/protocol/protocol_core.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 protocol_id | A unique ID for this protocol. | string | Protocol ID
@@ -34,7 +34,7 @@ _A project contains information about the overall project._
 Location: core/project/project_core.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 project_shortname | A unique label for the project. | string | Project shortname
@@ -47,7 +47,7 @@ _A biomaterial entity contains information about biological material that was ge
 Location: core/biomaterial/biomaterial_core.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 biomaterial_id | A unique ID for this biomaterial. | string | Biomaterial ID
@@ -67,7 +67,7 @@ _A process entity contains information relevant to how a biomaterial/file entity
 Location: core/process/process_core.json
 
 Property name | Description | Type | User friendly name 
---- | --- | --- 
+--- | --- | --- | ---
 $schema | The URL reference to the schema. | string | 
 schema_version | The version number of the schema in major.minor.patch format. | string | 
 process_id | A unique ID for this process. | string | Process ID
