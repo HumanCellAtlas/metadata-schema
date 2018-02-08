@@ -11,7 +11,6 @@
         "computational_method",
         "input_bundles",
         "reference_bundle",
-        "analysis_id",
         "analysis_run_type",
         "metadata_schema",
         "tasks",
@@ -24,7 +23,7 @@
         "task": {
             "additionalProperties": false,
             "required": [
-                "name",
+                "task_name",
                 "start_time",
                 "stop_time",
                 "disk_size",
@@ -38,7 +37,7 @@
                 "disk_size": {
                     "type": "string"
                 },
-                "name": {
+                "task_name": {
                     "type": "string"
                 },
                 "zone": {
@@ -72,18 +71,18 @@
         "parameter": {
             "additionalProperties": false,
             "required": [
-                "name",
-                "value"
+                "parameter_name",
+                "parameter_value"
             ],
             "type": "object",
             "properties": {
                 "checksum": {
                     "type": "string"
                 },
-                "name": {
+                "parameter_name": {
                     "type": "string"
                 },
-                "value": {
+                "parameter_value": {
                     "type": "string"
                 }
             }
@@ -91,9 +90,9 @@
         "file": {
             "additionalProperties": false,
             "required": [
-                "name",
+                "file_name",
                 "file_path",
-                "format"
+                "file_format"
             ],
             "type": "object",
             "properties": {
@@ -103,10 +102,10 @@
                 "file_path": {
                     "type": "string"
                 },
-                "name": {
+                "file_name": {
                     "type": "string"
                 },
-                "format": {
+                "file_format": {
                     "type": "string"
                 }
             }
@@ -132,7 +131,7 @@
             ]
         },
         "process_core" : {
-	        "description": "Core process-level information.",
+            "description": "Core process-level information.",
             "type": "string",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
     	},
@@ -198,10 +197,6 @@
             "description": "The version of the metadata schemas used for the JSON files.",
             "type": "string",
             "pattern" : "[0-9]{1,}.[0-9]{1,}.[0-9]{1,}"
-        },
-        "analysis_id": {
-            "description": "A unique ID for this analysis.",
-            "type": "string"
         }
     }
 }
