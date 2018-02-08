@@ -7,7 +7,7 @@
         "$schema",
         "schema_type",
         "process_core",
-        "enrichment_type"
+        "enrichment_method"
     ],
     "title": "enrichment_process",
     "type": "object",
