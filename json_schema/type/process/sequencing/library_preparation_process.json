@@ -9,7 +9,8 @@
         "process_core",
         "end_bias",
         "library_construction",
-        "strand"
+        "strand",
+        "input_molecule"
     ],
     "title": "library_preparation_process",
     "type": "object",
