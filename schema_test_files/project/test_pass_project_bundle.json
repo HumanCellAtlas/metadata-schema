@@ -1,31 +1,30 @@
 {
   "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle.json",
   "schema_version": "5.0.0",
-  "schema_type": "project_bundle",
   "content": {
     "$schema": "http://schema.humancellatlas.org/type/project/5.0.0/project.json",
     "schema_version" : "5.0.0",
     "schema_type": "project",
     "project_core": {
       "$schema": "http://schema.humancellatlas.org/core/project/5.0.0/project_core.json",
-      "project_id": "p1",
-      "project_title": "project 1",
+      "project_shortname": "P1",
+      "project_title": "Project 1",
       "project_description": "This is a project."
     },
     "related_projects": [
-      "HCAP-002"
+      "P2"
     ],
     "contributors": [
       {
         "$schema": "http://schema.humancellatlas.org/module/project/5.0.0/contact.json",
-        "contact_name": "Q3_DEMO-MintTeam",
+        "contact_name": "Dummy Person",
         "email": "dummy@email.com"
       }
     ]
   },
   "hca_ingest": {
     "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit.json",
-    "accession": "HCAP-001",
+    "accession": "",
     "submissionDate": "2017-12-16T01:43:43.381Z",
     "updateDate": "2017-12-16T01:44:25.613Z",
     "document_id": "19d3e86b-9af2-44c2-b9bd-50c159b044f1"

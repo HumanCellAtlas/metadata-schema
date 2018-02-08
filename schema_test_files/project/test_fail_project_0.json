@@ -1,13 +1,19 @@
 {
   "$schema": "http://schema.humancellatlas.org/type/project/5.0.0/project.json",
-  "schema_version" : "5.0.0",
+  "schema_version": "5.0.0",
   "schema_type": "project",
   "project_core": {
     "$schema": "http://schema.humancellatlas.org/core/project/5.0.0/project_core.json",
-    "project_title": "project 1",
+    "project_title": "Project 1",
     "project_description": "This is a project."
   },
   "related_projects": [
-    "project 2"
-  ]
+    "P2"
+  ],
+  "contributors": [
+    {
+      "$schema": "http://schema.humancellatlas.org/module/project/5.0.0/contact.json",
+      "contact_name": "Dummy Person",
+      "email": "dummy@email.com"
+    }
 }

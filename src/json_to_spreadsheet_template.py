@@ -53,11 +53,15 @@ class SpreadsheetCreator:
                         module_values = self._gatherValues(module, None)
                         # add primary entity ID to cross reference with main entity
                         for primary in values:
-                            if "ID" in primary["header"]:
+                            if "ID" in primary["header"] or "shortname" in primary["header"]:
                                 for key in module_values.keys():
                                     t = primary["header"]
-                                    t = t.replace(" ID", "").lower()
-                                    d = "ID for " + t + " this " + key + " relates to"
+                                    if "ID" in t:
+                                        t = t.replace(" ID", "").lower()
+                                        d = "ID for " + t + " this " + key + " relates to"
+                                    else:
+                                        t = t.replace(" shortname", "").lower()
+                                        d = "Shortname for " + t + " this " + key + " relates to"
                                     module_values[key].append({"header": primary["header"],
                                                                "description": d,
                                                                "example": None})
