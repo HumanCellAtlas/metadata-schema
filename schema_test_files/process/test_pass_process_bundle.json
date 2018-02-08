@@ -51,6 +51,10 @@
         },
         "end_bias": "five_prime_end",
         "strand": "first",
+        "input_molecule": {
+          "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology.json",
+          "text": "Illumina HiSeq 4000"
+        },
         "library_construction": "smart-seq2"
       }
     },
