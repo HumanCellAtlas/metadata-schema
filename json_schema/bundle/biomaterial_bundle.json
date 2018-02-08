@@ -4,7 +4,8 @@
     "description": "A schema for a biomaterial bundle.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "schema_type"
     ],
     "title": "biomaterial_bundle",
     "type": "object",
@@ -16,6 +17,11 @@
             ],
             "type": "object",
             "properties": {
+                "hca_ingest": {
+                    "description": "Core fields added by HCA ingest service",
+                    "type": "object",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+                },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
@@ -27,21 +33,19 @@
                         { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_line.json" }
                     ]
                 },
-                "derivation_protocols": {
-                    "description": "An array of protocols used to derive this biomaterial.",
-                    "items": {
-                        "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/protocol.json"
-                    },
-                    "type": "array"
-                },
-                "hca_ingest": {
-                    "description": "Core fields added by HCA ingest service",
-                    "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
-                },
                 "derived_from": {
-                    "description": "The biomaterial_id of the biomaterial that this biomaterial was derived from.",
-                    "type": "string"
+                    "description": "The biomaterial_id(s) of the biomaterial(s) that this biomaterial was derived from.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "derivation_processes": {
+                    "description": "An array of processes used to derive this biomaterial.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         }
@@ -61,17 +65,7 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle",
-                "ingest",
-                "submission"
+                "biomaterial_bundle"
             ]
         },
         "biomaterials": {

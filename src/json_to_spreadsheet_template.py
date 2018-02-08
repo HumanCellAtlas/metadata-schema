@@ -47,9 +47,9 @@ class SpreadsheetCreator:
             for prop in properties:
                 # if a property has an array of references (potential 1-to-many relationship), gather the properties for the references and format them to become
                 # their own spreadsheet tab
-                if ("items" in properties[prop] and "$ref" in properties[prop]["items"]):
+                if ("items" in properties[prop] and "$ref" in properties[prop]["items"] and "ontology" not in properties[prop]["items"]["$ref"]):
                     module = properties[prop]["items"]["$ref"]
-                    if "ontology" not in module and module in dependencies:
+                    if module in dependencies:
                         module_values = self._gatherValues(module, None)
                         # add primary entity ID to cross reference with main entity
                         for primary in values:
@@ -58,7 +58,7 @@ class SpreadsheetCreator:
                                     t = primary["header"]
                                     t = t.replace(" ID", "").lower()
                                     d = "ID for " + t + " this " + key + " relates to"
-                                    module_values[key].append({"header": t,
+                                    module_values[key].append({"header": primary["header"],
                                                                "description": d,
                                                                "example": None})
                                 break
@@ -71,9 +71,9 @@ class SpreadsheetCreator:
                         entities.update(module_values)
                 # if a property does not include a user_friendly tag but includes a reference, fetch the contents of that reference and add them
                 # directly to the properties for this sheet
-                elif("$ref" in properties[prop]):
+                elif("$ref" in properties[prop] and "ontology" not in properties[prop]["$ref"]):
                     module = properties[prop]["$ref"]
-                    if "ontology" not in module and ("_core" in module or module in dependencies):
+                    if "_core" in module or module in dependencies:
                         module_values = self._gatherValues(module, None)
                         for key in module_values.keys():
                             # special case for naming UMI barcodes
@@ -151,6 +151,15 @@ class SpreadsheetCreator:
                     ws.cell(column=col, row=1, value=header["description"])
                     ws.cell(column=col, row=2, value=header["example"]).font = Font(italic = True)
                     ws.cell(column=col, row=3, value=header["header"]).font = Font(bold = True)
+
+                    # set column width to the width of the header or 5 for very short headers (eg DOI)
+                    min_width = 5
+                    width = len(header["header"])
+                    if width < min_width:
+                        adjusted_width = min_width
+                    else:
+                        adjusted_width = width
+                    ws.column_dimensions[ws.cell(column=col,row=3).column].width = adjusted_width
                     col += 1
 
         # remove the blank worksheet that is automatically created with the spreadsheet

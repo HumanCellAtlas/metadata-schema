@@ -1,18 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/module/ontology/4.0.0/process_type_ontology.json",
-    "description": "A term that may be associated with a process-related ontology term",
+    "id": "http://schema.humancellatlas.org/module/ontology/4.0.0/mass_unit_ontology.json",
+    "description": "A term that may be associated with a cell type-related ontology term",
     "additionalProperties": false,
     "required": [
         "$schema",
         "text"
     ],
-    "title": "process_type_ontology",
+    "title": "mass_unit_ontology",
+    "type": "object",
     "properties": {
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_type_ontology.json"
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/mass_unit_ontology.json"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -21,20 +22,19 @@
             "example": "4.6.1"
         },
         "text": {
-            "description": "The name of a process type being used.",
+            "description": "The name of a mass unit being used.",
             "type": "string"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:efo"],
-                "classes": ["EFO:0002694"],
+                "ontologies" : ["obo:uo, obo:efo"],
+                "classes": ["UO:0000002"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
             }
         }
-    },
-    "type": "object"
+    }
 }

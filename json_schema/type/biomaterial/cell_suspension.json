@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "schema_type",
         "biomaterial_core"
     ],
     "title": "cell_suspension",
@@ -25,15 +26,7 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle"
+                "biomaterial"
             ]
         },
         "biomaterial_core" : {

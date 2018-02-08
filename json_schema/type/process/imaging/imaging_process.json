@@ -5,6 +5,7 @@
     "additionalProperties": false, 
     "required": [
       "$schema",
+      "schema_type",
       "process_core",
       "field_counts",
       "field_resolution",
@@ -28,20 +29,13 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle"
+                "process"
             ]
         },
          "process_core" : {
-            "description": "Core process-level information.",
-            "$ref": "http://schema.humancellatlas.org/core/process/4.0.0/process_core.json"
+	        "description": "Core process-level information.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
          },
          "embedding": {
             "description": "Description of embedding conditions.", 
