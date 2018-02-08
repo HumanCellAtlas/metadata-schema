@@ -16,10 +16,9 @@ _A schema for a biomaterial bundle._
 
 Location: bundle/biomaterial_bundle.json
 
-| Property name | Description | Type | 
-| --- | :---: | :---: |
-| $schema | The URL reference to the schema. | string |
-
+Property name | Description | Type 
+--- | --- | --- 
+$schema | The URL reference to the schema. | string
 schema_version | The version number of the schema in major.minor.patch format. | string
 schema_type | The type of the metadata schema entity. | string
 biomaterials |  | array

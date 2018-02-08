@@ -37,7 +37,7 @@ Property name | Description | Type
 --- | --- | --- 
 $schema | The URL reference to the schema. | string
 schema_version | The version number of the schema in major.minor.patch format. | string
-project_id | A unique ID for the project. | string
+project_shortname | A unique label for the project. | string
 project_title | A summary of the project in a sentence. | string
 project_description | A longer description of the project which can include research goals and experimental approach. | string
 
