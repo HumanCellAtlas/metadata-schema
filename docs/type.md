@@ -112,6 +112,7 @@ biomaterial_core | Core biomaterial-level information. |  | yes |  |
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | Genus species | Homo sapiens
 organ | The organ that the biomaterial came from. Blood and connective tissue are considered organs. |  | yes | Organ | Blood
 organ_part | A term for a specific part of the organ that the biomaterial came from. |  | yes | Organ part | Umbilical cord blood
+disease | Short description of disease status of the specimen. Can be 'normal' or one or more disease terms. | array | no | Disease | 
 state_of_specimen | State of the specimen at the time of collection/removal. |  | no |  | 
 preservation_storage | Information relating to how a biomaterial was preserved and/or stored over a period of time. |  | no |  | 
 collection_time | When the biomaterial was collected, in date-time format, yyyy-mm-ddThh:mm:ssZ. | string | no | Time of collection | 
@@ -132,18 +133,18 @@ mus_musculus_specific | Fields specific to mouse (mus musculus) organisms. |  | 
 death | Information about conditions of death of an organism. |  | no |  | 
 medical_history | Information about the medical history of an organism. |  | no |  | 
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | Genus species | Homo sapiens
-organism_age | Age in age_units. Measured since birth. | number | no | Organism age | 
+organism_age | Age in age_units. Measured since birth. | string | no | Organism age | 
 organism_age_unit | The unit in which age is expressed. Must be one of hour, day, week, month, or year. |  | no | Organism age unit | 
 development_stage | A classification of the developmental stage of the organism. |  | no | Development stage | 
 disease | Short description of disease status of the organism. | array | no | Disease | 
 familial_relationship | Information about other organisms related to this organism. | array | no |  | 
-gestational_age | Gestational age in gestational_age_units. Measured since fertilization. | number | no | Gestational age | 
+gestational_age | Gestational age in gestational_age_units. Measured since fertilization. | string | no | Gestational age | 
 gestational_age_unit | The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year. |  | no | Gestational age unit | 
-height | Height of organism in height units. | number | no | Height | 
+height | Height of organism in height units. | string | no | Height | 
 height_unit | The unit in which height is expressed. Must be one of centimeters, meters, or inches. |  | no | Height unit | 
 is_living | Yes if organism is living at time of biomaterial collection. No otherwise. | boolean | yes | Is living? | 
 biological_sex | The biological sex of the organism. Should be one of male, female, mixed, or unknown. | string | yes | Biological sex | 
-weight | Weight of organism in kilograms. | number | no | Weight | 
+weight | Weight of organism in kilograms. | string | no | Weight | 
 weight_unit | The unit in which weight is expressed. Must be one of gram or kilogram. |  | no | Weight unit | 
 
 ## cell_suspension
