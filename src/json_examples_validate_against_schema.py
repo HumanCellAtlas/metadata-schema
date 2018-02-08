@@ -29,10 +29,10 @@ if not validate(sv, p1):
     status_flag = False
 
 # Testing invalid project JSON example
-# It is missing required project_id field
+# It is missing required project_shortname field
 print('\nValidating type/project/project.json schema')
 sv = get_validator('type/project/project.json', base_uri)
-print('Validating project/test_fail_project_0.json JSON against schema\n(This should fail, missing project_id)')
+print('Validating project/test_fail_project_0.json JSON against schema\n(This should fail, missing project_shortname)')
 p1 = get_json_from_file('../schema_test_files/project/test_fail_project_0.json')
 if validate(sv, p1):
     status_flag = False

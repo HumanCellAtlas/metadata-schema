@@ -1,6 +1,7 @@
 {
   "$schema": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle.json",
   "schema_version": "5.0.0",
+  "schema_type": "project_bundle",
   "content": {
     "$schema": "http://schema.humancellatlas.org/type/project/5.0.0/project.json",
     "schema_version" : "5.0.0",
