@@ -59,7 +59,7 @@
             "user_friendly": "Organ part"
         },
         "disease": {
-            "description": "Short description of disease status of the specimen. Must be one of 'normal' or one or more disease terms.",
+            "description": "Short description of disease status of the specimen. Can be 'normal' or one or more disease terms.",
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/disease_ontology.json"
