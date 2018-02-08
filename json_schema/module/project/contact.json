@@ -31,7 +31,7 @@
         "email": {
             "description": "An email address for the contact.",
             "type": "string",
-            "pattern": "^.*@.*..*$",
+            "format": "email",
             "user_friendly": "Email"
         },
         "phone": {
