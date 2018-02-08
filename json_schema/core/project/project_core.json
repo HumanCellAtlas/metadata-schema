@@ -1,11 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/core/project/4.0.0/project_core.json",
+    "id": "http://schema.humancellatlas.org/core/project/5.0.0/project_core.json",
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
         "$schema",
-	    "project_id"
+	    "project_shortname",
+        "project_title"
     ],
     "title": "project_core",
     "type": "object",
@@ -21,21 +22,21 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "project_id": {
-            "description": "A unique ID for the project.",
+        "project_shortname": {
+            "description": "A unique label for the project.",
             "type": "string",
-            "user_friendly": "Project ID"
+            "user_friendly": "Project Shortname"
         },
         "project_title": {
             "description": "A summary of the project in a sentence.",
             "type": "string",
-            "example": "A title of a grant proposal, publication, or poster. Approximately 30 words.",
+            "example": "A title of a grant proposal or publication. Approximately 30 words.",
             "user_friendly": "Project title"
         },
         "project_description": {
             "description": "A longer description of the project which can include research goals and experimental approach.",
             "type": "string",
-            "example": "An abstract from a grant application, publication, or poster. Approximately 300 words.",
+            "example": "An abstract from a grant application or publication. Approximately 300 words.",
             "user_friendly": "Project description"
         }
     }
