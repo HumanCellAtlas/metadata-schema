@@ -25,6 +25,7 @@
         "project_shortname": {
             "description": "A unique label for the project.",
             "type": "string",
+            "example": "Tissue Stability",
             "user_friendly": "Project Shortname"
         },
         "project_title": {
