@@ -9,7 +9,8 @@
         "process_core",
         "end_bias",
         "library_construction",
-        "strand"
+        "strand",
+        "input_molecule"
     ],
     "title": "library_preparation_process",
     "type": "object",
@@ -45,7 +46,7 @@
         "input_molecule": {
             "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
             "type": "string",
-            "$ref": "module/ontology/biological_macromolecule_ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/biological_macromolecule_ontology.json",
             "user_friendly": "Input molecule"
         },
         "library_construction": {
