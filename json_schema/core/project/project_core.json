@@ -26,7 +26,7 @@
             "description": "A unique label for the project.",
             "type": "string",
             "example": "Tissue Stability",
-            "user_friendly": "Project Shortname"
+            "user_friendly": "Project shortname"
         },
         "project_title": {
             "description": "A summary of the project in a sentence.",
