@@ -25,15 +25,19 @@ class MarkdownGenerator:
             file.write("Location: " +  path.replace("../json_schema/", "") + "\n")
             file.write("\n")
 
-            file.write("Property name | Description | Type | User friendly name \n")
+            file.write("Property name | Description | Type | Required? | User friendly name | Example \n")
             # file.write("Property name | Description | Type  \n")
-            file.write("--- | --- | --- | ---\n")
+            file.write("--- | --- | --- | --- | --- | --- \n")
+
+            required = schema["required"]
 
             for property in schema["properties"]:
                 file.write(property + " | "+
                            (schema["properties"][property]["description"] if "description" in schema["properties"][property] else "") + " | " +
                            (schema["properties"][property]["type"] if "type" in schema["properties"][property] else "")  + " | " +
-                           (schema["properties"][property]["user_friendly"] if "user_friendly" in schema["properties"][property] else "") + "\n")
+                           ("yes" if property in required else "no")  + " | " +
+                           (schema["properties"][property]["user_friendly"] if "user_friendly" in schema["properties"][property] else "") + " | " +
+                           (str(schema["properties"][property]["example"]) if "example" in schema["properties"][property] else "") + "\n")
 
 
 
