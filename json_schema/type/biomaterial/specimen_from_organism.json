@@ -58,6 +58,14 @@
             "comment": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
+        "disease": {
+            "description": "Short description of disease status of the specimen.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/disease_ontology.json"
+	        },
+            "user_friendly": "Disease"
+        },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection/removal.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/state_of_specimen.json"
