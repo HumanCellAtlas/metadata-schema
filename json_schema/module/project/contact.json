@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/module/project/4.0.0/contact.json",
+    "id": "http://schema.humancellatlas.org/module/project/5.0.0/contact",
     "description": "Information about a person who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [
@@ -14,7 +14,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/module/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/contact.json"
+            "pattern" : "http://schema.humancellatlas.org/module/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/contact"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

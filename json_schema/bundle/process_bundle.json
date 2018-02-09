@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/5.0.0/process_bundle.json",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/process_bundle",
     "description": "A schema for a process bundle.",
     "additionalProperties": false,
     "required": [
@@ -57,7 +57,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_bundle.json"
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_bundle"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

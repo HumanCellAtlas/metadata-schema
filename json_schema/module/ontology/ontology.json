@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#", 
-    "id": "http://schema.humancellatlas.org/module/ontology/4.0.0/ontology.json",
+    "id": "http://schema.humancellatlas.org/module/ontology/5.0.0/ontology",
     "description": "A term that may be associated with an ontology term",
     "additionalProperties": false,
     "required": [
@@ -13,7 +13,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ontology.json"
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ontology"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
