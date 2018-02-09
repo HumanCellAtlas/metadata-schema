@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/imaging/4.0.0/imaging_process.json",
+    "id": "http://schema.humancellatlas.org/type/process/imaging/5.0.0/imaging_process",
     "description": "Process by which images are captured.",
     "additionalProperties": false, 
     "required": [
@@ -17,7 +17,7 @@
          "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/process/imaging/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/imaging_process.json"
+            "pattern" : "http://schema.humancellatlas.org/type/process/imaging/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/imaging_process"
          },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
