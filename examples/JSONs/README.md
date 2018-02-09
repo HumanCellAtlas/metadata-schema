@@ -1,6 +1,8 @@
-`v5`
-Files in the repo represent example JSON files compatible with v5.*.* of the metadata schema.
+`examples/JSONs/v5`
 
-`v4`
-Files in the repo represent example JOSN files compatible with v4.*.* of the metadata schema.
+Files in this folder represent example JSON files compatible with v5.\*.\* of the HCA metadata schema.
+
+`examples/JSONs/v4`
+
+Files in this folder represent example JSON files compatible with v4.\*.\* of the HCA metadata schema.
 
