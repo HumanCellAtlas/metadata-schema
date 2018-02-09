@@ -21,21 +21,6 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "schema_type": {
-            "description": "The type of the metadata schema entity.",
-            "type": "string",
-            "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle"
-            ]
-        },
         "protocol_id":{
             "description": "A unique ID for this protocol.",
             "type": "string",

@@ -5,6 +5,7 @@
     "additionalProperties": false,
     "required": [
         "$schema",
+        "schema_type",
         "biomaterial_core",
         "is_living",
         "biological_sex"
@@ -26,16 +27,8 @@
         "schema_type": {
             "description": "The type of the metadata schema entity.",
             "type": "string",
-            "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle"
+           "enum": [
+                "biomaterial"
             ]
         },
         "biomaterial_core" : {
@@ -120,7 +113,7 @@
         },
         "height_unit": {
             "description": "The unit in which height is expressed. Must be one of centimeters, meters, or inches.",
-            "type": "string",
+            "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Height unit"
         },
         "is_living": {
@@ -146,8 +139,8 @@
             "user_friendly": "Weight"
         },
         "weight_unit": {
-            "description": "The unit in which weight is expressed. Must be one of gram, kilogram, pound.",
-            "type": "string",
+            "description": "The unit in which weight is expressed. Must be one of gram or kilogram.",
+            "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
         }
     }

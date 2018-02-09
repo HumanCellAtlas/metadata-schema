@@ -5,7 +5,9 @@
     "additionalProperties": false,
     "required": [
         "$schema",
-        "process_core"
+        "schema_type",
+        "process_core",
+        "dissociation_method"
     ],
     "title": "dissociation_process",
     "type": "object",
@@ -25,19 +27,11 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle"
+                "process"
             ]
         },
         "process_core" : {
-	        "description": "Core process-level information.",
+            "description": "Core process-level information.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
         "dissociation_method": {

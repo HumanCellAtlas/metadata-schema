@@ -4,7 +4,8 @@
     "description": "A schema for a process bundle.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "$schema",
+        "schema_type"
     ],
     "title": "process_bundle",
     "type": "object",
@@ -17,6 +18,11 @@
             ],
             "type": "object",
             "properties": {
+                "hca_ingest": {
+                    "description": "Core fields added by HCA ingest service",
+                    "type": "object",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+                },
                 "content": {
                     "description": "Content for any process type entity.",
                     "type": "object",
@@ -31,20 +37,18 @@
                     ]
                 },
                 "has_input": {
-                    "description": "The biomaterial or file that this process was performed on.",
-                    "type": "string"
-                },
-                "has_output": {
-                    "description": "The biomaterial or files that were generated from this process.",
+                    "description": "The biomaterials or files that this process was performed on.",
                     "type": "array",
                     "items": {
                         "type": "string"
                     }
                 },
-                "hca_ingest": {
-                    "description": "Core fields added by HCA ingest service",
-                    "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest.json"
+                "has_output": {
+                    "description": "The biomaterials or files that were generated from this process.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         }
@@ -53,7 +57,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle.json"
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_bundle.json"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -64,24 +68,14 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "biomaterial",
-                "file",
-                "process",
-                "project",
-                "protocol",
-                "analysis_bundle",
-                "biomaterial_bundle",
-                "process_bundle",
-                "project_bundle",
-                "ingest",
-                "submission"
+                "process_bundle"
             ]
         },
         "processes": {
+            "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/bundle/process_bundle.json#/definitions/process_ingest"
-            },
-            "type": "array"
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/process_bundle.json#/definitions/process_ingest"
+            }
         }
     }
 }
