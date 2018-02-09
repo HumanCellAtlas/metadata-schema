@@ -46,7 +46,7 @@
         },
         "storage_time_unit": {
             "description": "The unit in which Storage time is expressed.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/module/ontology/time_unit_ontology.json",
             "example": "days",
             "user_friendly": "Storage time unit"
         },

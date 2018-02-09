@@ -31,7 +31,7 @@
         },
         "protocol_core" : {
 	        "description": "Core protocol-level information.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/protocol/protocol_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/core/protocol/protocol_core.json"
         },
         "protocol_type": {
             "description": "The type of protocol. Must be a term from the Experimental Factor Ontology.",

@@ -32,7 +32,7 @@
         },
          "process_core" : {
 	        "description": "Core process-level information.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/core/process/process_core.json"
         },
         "enrichment_method": {
             "description": "The method by which enrichment was achieved.",
