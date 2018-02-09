@@ -103,11 +103,11 @@
         },
     	"transfer_service_version" : {
 			"description": "",
-			"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/submission.json#/definitions/transfer_service_version"
+			"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/bundle/submission.json#/definitions/transfer_service_version"
 		},
 		"submitted_files" : {
 			"description": "",
-			"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/submission.json#/definitions/submitted_files"
+			"$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/bundle/submission.json#/definitions/submitted_files"
 		}
     }
 }

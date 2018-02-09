@@ -36,17 +36,17 @@
         "process_core" : {
 	        "description": "Core process-level information.",
             "type": "string",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/core/process/process_core.json"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
             "type": "string",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/module/process/sequencing/barcode.json"
         },
         "input_molecule": {
             "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
             "type": "string",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/biological_macromolecule_ontology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/module/ontology/biological_macromolecule_ontology.json",
             "user_friendly": "Input molecule"
         },
         "library_construction": {
@@ -121,7 +121,7 @@
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "type": "string",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/module/process/sequencing/barcode.json"
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
