@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/biomaterial/cell_line/4.0.0/cell_line.json",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/4.0.0/cell_line.json",
     "description": "Information about the cell line used in the biomaterial",
     "additionalProperties": false,
     "required": [
