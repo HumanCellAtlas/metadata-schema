@@ -1,6 +1,5 @@
 from optparse import OptionParser
 import logging
-import openpyxl
 from openpyxl import Workbook
 import requests, pprint
 from openpyxl.styles import Font
