@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/biomaterial/organism/4.0.0/organism.json",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/4.0.0/organism.json",
     "description": "Information about the organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
