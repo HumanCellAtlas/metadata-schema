@@ -89,7 +89,8 @@
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/familial_relationship.json"
-            }
+                },
+	    "user_friendly": "Familial relationship"
         },
         "gestational_age": {
             "description": "Gestational age in gestational_age_units. Measured since fertilization.",
