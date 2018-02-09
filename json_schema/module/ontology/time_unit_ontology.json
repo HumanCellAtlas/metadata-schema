@@ -44,7 +44,7 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:uo, obo:efo"],
-                "classes": ["UO:0000003, UO:0000149"],
+                "classes": ["UO:0000003, UO:0000149, UO:0000036"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
