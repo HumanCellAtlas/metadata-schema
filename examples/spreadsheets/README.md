@@ -1,9 +1,9 @@
 `examples/spreadsheets/v5`
 
-Files in this folder represent template spreadsheets compatible with v5.\*.\* of the HCA metadata schema.
+Files in this folder represent template and filled spreadsheets compatible with v5.\*.\* of the HCA metadata schema.
 
 `examples/spreadsheets/v4`
-Files in this folder represent template spreadsheets compatible with v4.\*.\* of the HCA metadata schema.
+Files in this folder represent template and filled spreadsheets compatible with v4.\*.\* of the HCA metadata schema.
 
 `examples/spreadsheets/v3`
 Files in this folder were pulled from Jim's V3 metadata schema at 11:15am PST on September 19th. It creates a metadata freeze allowing developers to integrate for the October 2-5th demo at CZI in Palo Alto.
