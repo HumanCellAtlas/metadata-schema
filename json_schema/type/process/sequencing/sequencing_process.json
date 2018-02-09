@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
+    "description": "Information about how a biomaterial was sequenced.",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type",
+        "process_core",
+        "instrument_manufacturer_model",
+        "paired_ends"
+    ],
+    "title": "sequencing_process",
+    "type": "object",
+    "properties": {
+         "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequencing_process"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+           "enum": [
+                "process"
+            ]
+        },
+        "process_core" : {
+	        "description": "Core process-level information.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
+        },
+        "instrument_manufacturer_model": {
+            "description": "The manufacturer and model of the sequencer used.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/instrument_ontology.json",
+            "example": "Illumina HiSeq 4000",
+            "user_friendly": "Instrument manufacturer and model"
+        },
+        "local_machine_name": {
+            "description": "Local name for the particular machine on which the biomaterial was sequenced.",
+            "type": "string",
+            "user_friendly": "Local machine name"
+        },
+        "paired_ends": {
+            "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
+            "type": "boolean",
+            "user_friendly": "Paired ends?"
+        },
+        "insdc_experiment": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
+            "pattern": "^[D|E|S]RX[0-9]+$",
+            "type": "string",
+            "user_friendly": "INSDC experiment"
+        },
+        "insdc_run": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
+            "type": "array",
+            "items": {
+                "pattern": "^[D|E|S]RR[0-9]+$",
+                "type": "string"
+            },
+            "user_friendly": "INSDC run"
+        },
+        "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
+        }
+    }
+}

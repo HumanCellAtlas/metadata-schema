@@ -1,0 +1,144 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism",
+    "description": "Information about the organism from which a specimen was collected.",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type",
+        "biomaterial_core",
+        "is_living",
+        "biological_sex"
+    ],
+    "title": "organism",
+    "type": "object",
+    "properties": {
+        "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+           "enum": [
+                "biomaterial"
+            ]
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
+        },
+        "human_specific": {
+	        "description": "Fields specific to human (homo sapiens) organisms.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/homo_sapiens_specific.json"
+        },
+        "mus_musculus_specific": {
+	        "description": "Fields specific to mouse (mus musculus) organisms.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/mus_musculus_specific.json"
+        },
+        "death": {
+            "description": "Information about conditions of death of an organism.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/death.json"
+        },
+        "medical_history": {
+            "description": "Information about the medical history of an organism.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/medical_history.json"
+        },
+        "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial.",
+            "type" : "array",
+            "example": "Homo sapiens",
+            "items":{
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
+            },
+            "user_friendly": "Genus species"
+        },
+        "organism_age": {
+            "description": "Age in age_units. Measured since birth.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "user_friendly": "Organism age"
+        }, 
+        "organism_age_unit": {
+            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
+            "user_friendly": "Organism age unit"
+        },
+        "development_stage": {
+            "description": "A classification of the developmental stage of the organism.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/development_stage_ontology.json",
+            "user_friendly": "Development stage"
+        }, 
+        "disease": {
+            "description": "Short description of disease status of the organism.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/disease_ontology.json"
+	        },
+            "user_friendly": "Disease"
+        },
+        "familial_relationship": {
+            "description": "Information about other organisms related to this organism.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/familial_relationship.json"
+            }
+        },
+        "gestational_age": {
+            "description": "Gestational age in gestational_age_units. Measured since fertilization.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "user_friendly": "Gestational age"
+        },
+        "gestational_age_unit": {
+            "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
+            "user_friendly": "Gestational age unit"
+        },
+        "height": {
+            "description": "Height of organism in height units.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "user_friendly": "Height"
+        },
+        "height_unit": {
+            "description": "The unit in which height is expressed. Must be one of centimeters, meters, or inches.",
+            "$ref": "module/ontology/length_unit_ontology.json",
+            "user_friendly": "Height unit"
+        },
+        "is_living": {
+            "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
+            "type": "boolean",
+            "user_friendly": "Is living?"
+        }, 
+        "biological_sex": {
+            "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
+            "type": "string",
+            "enum": [
+                "female", 
+                "male", 
+                "mixed", 
+                "unknown"
+            ],
+            "user_friendly": "Biological sex"
+        },
+        "weight": {
+            "description": "Weight of organism in kilograms.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "user_friendly": "Weight"
+        },
+        "weight_unit": {
+            "description": "The unit in which weight is expressed. Must be one of gram or kilogram.",
+            "$ref": "module/ontology/mass_unit_ontology.json",
+            "user_friendly": "Weight unit"
+        }
+    }
+}

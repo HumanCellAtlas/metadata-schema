@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_suspension",
+    "description": "Information about the cell suspension derived from the collected or cultured specimen",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type",
+        "biomaterial_core"
+    ],
+    "title": "cell_suspension",
+    "type": "object",
+    "properties": {
+        "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial"
+            ]
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
+        },
+        "cell_morphology": {
+            "description": "Features relating to the morphology of cells in a biomaterial.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
+            "user_friendly": "Cell morphology"
+        },
+        "growth_conditions": {
+            "description": "Features relating to the growth and/or maintenance of a biomaterial.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
+            "user_friendly": "Growth conditions"
+        },
+        "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial.",
+            "type" : "array",
+            "example": "Homo sapiens",
+            "items":{
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
+            },
+            "user_friendly": "Genus species"
+        },
+        "target_cell_type": {
+            "description" : "Cell types expected to be present in the suspension.",
+            "type": "array",
+            "items": {
+		        "$ref": "module/ontology/cell_type_ontology.json"
+	        },
+            "user_friendly": "Target cell type"
+       },
+        "total_estimated_cells": {
+            "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
+            "type": "integer",
+            "maximum": 1000000000,
+            "minimum": 0,
+            "user_friendly": "Total estimated cell count"
+        }
+     }
+}

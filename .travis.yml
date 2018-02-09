@@ -1,0 +1,15 @@
+language: python
+
+# python version to be used for testing
+python:
+   - "3.6"
+ 
+install:
+   - pip install -r requirements.txt
+
+script:
+   - cd src
+   # test if JSON schemas in the repo are valid JSON format
+   - python schemas_are_valid_json.py
+   # test if examples JSON files are valid against their corresponding schema
+   - python json_examples_validate_against_schema.py

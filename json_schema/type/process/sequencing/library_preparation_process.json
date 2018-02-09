@@ -1,0 +1,132 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
+    "description": "Information about how a sequencing library was created.",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type",
+        "process_core",
+        "end_bias",
+        "library_construction",
+        "strand",
+        "input_molecule"
+    ],
+    "title": "library_preparation_process",
+    "type": "object",
+    "properties": {
+         "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "process"
+            ]
+        },
+        "process_core" : {
+	        "description": "Core process-level information.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
+        },
+        "cell_barcode": {
+            "description": "Information about cell identifier barcode.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
+        },
+        "input_molecule": {
+            "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/biological_macromolecule_ontology.json",
+            "user_friendly": "Input molecule"
+        },
+        "library_construction": {
+            "description": "The general approach for sequencing library construction.",
+            "type": "string",
+            "example": "Smart-seq2",
+            "enum": [
+                "10x",
+                "10X",
+                "10x_v2",
+                "CEL-seq",
+		        "Drop-Seq",
+		        "inDrop",
+                "modified Nextera XT",
+                "modified smart-seq2",
+                "Nextera XT",
+		        "QUARTZ-Seq",
+                "SMARTer Ultra Low RNA Kit",
+                "smart-seq2",
+                "Smart-seq2",
+                "TruSeq",
+                "unknown"
+            ],
+            "comment": "This will become an ontology.",
+            "user_friendly": "Library construction approach"
+        },
+        "end_bias": {
+            "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
+            "type": "string",
+            "example": "three_prime_bias",
+            "enum": [
+                "three_prime_end",
+                "three_prime_bias",
+                "five_prime_end",
+                "five_prime_bias",
+                "none"
+            ],
+            "user_friendly": "End bias"
+        },
+        "primer": {
+            "description": "Primer used for cDNA synthesis from RNA. Must be either poly-dT or random.",
+            "type": "string",
+            "enum": [
+                "poly-dT",
+                "random"
+            ],
+            "user_friendly": "Primer"
+        },
+        "strand": {
+            "description": "Library strandedness.",
+            "type": "string",
+            "enum": [
+                "first",
+                "second",
+                "unstranded"
+            ],
+            "user_friendly": "Strand"
+        },
+        "spike_in": {
+            "description": "Name of spike-in kit.",
+            "type": "string",
+            "example": "ERCC",
+            "user_friendly": "Spike-in kit"
+        },
+        "spike_in_dilution": {
+            "description": "Dilution of spike-in.",
+            "type": "integer",
+            "maximum": 1000000,
+            "minimum": 1,
+            "user_friendly": "Spike-in dilution"
+        },
+        "umi_barcode": {
+            "description": "Information about unique molecular identifier (UMI) barcode sequences.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
+        },
+        "process_type": {
+            "description": "The type of process. Ideally an EFO term.",
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
+        }
+    }
+}

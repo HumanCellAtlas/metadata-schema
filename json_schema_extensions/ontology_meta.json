@@ -1,0 +1,39 @@
+{
+  "graph_restriction": {
+    "description": "A JSON schema extension field used to specify which ontology terms are valid for a field, based on their graph location.  A graph consists of edges representing  classification (subClassOf) and simple existential restrictions  (e.g. eye subClassOf part_of some head).  Graph location is specified via a list \n of objectProperties to follow and a list of grouping classes.  \n All ontologies and OWL entities are specified using CURIEs.  \n CURIE resolution depends on an extenal resolution service (e.g. identifiers.org) \n or JSON-LD mapping file. \n",
+    "type": "object",
+    "required": [
+      "ontologies",
+      "relations",
+      "classes",
+      "include_self",
+      "direct"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "ontologies": {
+        "description": "A list of valid ontologies. Each ontology is specified using a CURIE.",
+        "type": "array",
+        "items": "string"
+      },
+      "relations": {
+        "description": "A list of relations (object properties) to use for graph-based term grouping.  Each property is specified using a CURIE.",
+        "type": "array",
+        "items": "string"
+      },
+      "classes": {
+        "description": "A list of grouping classes.  Each class is specified using a CURIE.",
+        "type": "array",
+        "items": "string"
+      },
+      "include_self": {
+        "description": "A boolean allowing specification of whether the graph query should return the specified grouping classes(es).",
+        "type": "boolean"
+      },
+      "direct": {
+        "description": "A boolean specifying return of all descendant classes (False) or direct child classes only (True).",
+        "type": "boolean"
+      }
+    }
+  }
+}

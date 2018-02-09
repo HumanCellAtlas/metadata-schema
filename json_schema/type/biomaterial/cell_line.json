@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line",
+    "description": "Information about the cell line used in the biomaterial",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type",
+        "biomaterial_core"
+    ],
+    "title": "cell_line",
+    "type": "object",
+    "properties": {
+        "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial"
+            ]
+        },
+        "biomaterial_core" : {
+	        "description": "Core biomaterial-level information.",
+            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
+        },
+        "catalog_number": {
+            "description": "The supplier catalogue number for the cell line.",
+            "type": "string",
+            "user_friendly": "Catalog number"
+        },
+        "catalog_url": {
+            "description": "The supplier catalogue URL for the cell line.",
+            "type": "string",
+            "user_friendly": "Catalog URL"
+        },
+        "cell_cycle": {
+            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
+            "$ref": "module/ontology/cell_cycle_ontology.json",
+            "user_friendly": "Cell cycle"
+        },
+        "cell_line_type": {
+            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
+            "type": "string",
+            "enum": [
+                "primary",
+                "immortalized",
+                "stem cell-derived",
+                "synthetic"
+          ],
+            "user_friendly": "Cell line type"
+        },
+        "cell_morphology": {
+	        "description": "Features relating to the morphology of cells in a biomaterial.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
+            "user_friendly": "Cell morphology"
+        },
+        "growth_conditions": {
+            "description": "Features relating to the growth and/or maintenance of a biomaterial.",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
+            "user_friendly": "Growth conditions"
+        },
+        "cell_type": {
+	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
+            "$ref": "module/ontology/cell_type_ontology.json",
+            "user_friendly": "Cell type"
+        },
+        "date_established": {
+            "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
+            "type": "string",
+            "format": "date-time",
+            "user_friendly": "Date established"
+        },
+        "disease": {
+	        "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
+            "$ref": "module/ontology/disease_ontology.json",
+            "user_friendly": "Disease"
+        },
+        "genus_species": {
+            "description": "The scientific binomial name for the species of the biomaterial.",
+            "type" : "array",
+            "example": "Homo sapiens",
+            "items":{
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
+            },
+            "user_friendly": "Genus species"
+        },
+        "publications": {
+            "description": "One or more publications in which the cell line creation was cited.",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/publication.json"
+            },
+            "user_friendly": "Publications"
+        }
+
+    }
+}

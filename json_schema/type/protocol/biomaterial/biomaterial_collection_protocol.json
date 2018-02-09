@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/protocol/biomaterial/5.0.0/biomaterial_collection_protocol",
+    "description": "Information about the biomaterial collection protocol",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type",
+        "protocol_core"
+    ],
+    "title": "biomaterial_protocol",
+    "type": "object",
+    "properties": {
+         "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_collection_protocol"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "protocol"
+            ]
+        },
+        "protocol_core" : {
+	        "description": "Core protocol-level information.",
+            "$ref": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json"
+        },
+        "protocol_type": {
+            "description": "The type of protocol. Must be a term from the Experimental Factor Ontology.",
+            "$ref": "module/ontology/protocol_type_ontology.json",
+            "user_friendly": "Protocol type"
+        }
+    }
+}

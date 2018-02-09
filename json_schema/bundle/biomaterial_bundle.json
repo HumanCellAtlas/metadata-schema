@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle",
+    "description": "A schema for a biomaterial bundle.",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type"
+    ],
+    "title": "biomaterial_bundle",
+    "type": "object",
+    "definitions": {
+        "biomaterial_ingest": {
+            "required": [
+                "hca_ingest",
+                "content"
+            ],
+            "type": "object",
+            "properties": {
+                "hca_ingest": {
+                    "description": "Core fields added by HCA ingest service",
+                    "type": "object",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+                },
+                "content": {
+                    "description": "Content for any biomaterial type entity.",
+                    "type": "object",
+                    "oneOf": [
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organism.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/specimen_from_organism.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_suspension.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organoid.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_line.json" }
+                    ]
+                },
+                "derived_from": {
+                    "description": "The biomaterial_id(s) of the biomaterial(s) that this biomaterial was derived from.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "derivation_processes": {
+                    "description": "An array of processes used to derive this biomaterial.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "properties": {
+        "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial_bundle"
+            ]
+        },
+        "biomaterials": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/process_bundle",
+    "description": "A schema for a process bundle.",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type"
+    ],
+    "title": "process_bundle",
+    "type": "object",
+    "definitions": {
+        "process_ingest": {
+            "required": [
+                "hca_ingest",
+                "content",
+                "has_input"
+            ],
+            "type": "object",
+            "properties": {
+                "hca_ingest": {
+                    "description": "Core fields added by HCA ingest service",
+                    "type": "object",
+                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+                },
+                "content": {
+                    "description": "Content for any process type entity.",
+                    "type": "object",
+                    "oneOf": [
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/analysis/analysis_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/collection_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/dissociation_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/biomaterial_collection/enrichment_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/imaging/imaging_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/sequencing/library_preparation_process.json" },
+                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/process/sequencing/sequencing_process.json" }
+                    ]
+                },
+                "has_input": {
+                    "description": "The biomaterials or files that this process was performed on.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "has_output": {
+                    "description": "The biomaterials or files that were generated from this process.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "properties": {
+        "$schema" : {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_bundle"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "process_bundle"
+            ]
+        },
+        "processes": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/process_bundle.json#/definitions/process_ingest"
+            }
+        }
+    }
+}
