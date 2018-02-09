@@ -8,20 +8,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [5.0.0] - 2018-02-14
 ### Added
-- New visual identity by @tylerfortune8.
-- Version navigation.
-
 ### Changed
-- Start using "changelog" over "change log" since it's the common usage.
-- Start versioning based on the current English version at 0.3.0 to help
-translation authors keep things up-to-date.
-
 ### Removed
-- Section about "changelog" vs "CHANGELOG".
-
 ### Fixed
-- Fix typos in recent README changes.
-- Update outdated unreleased diff link.
+### Deprecated
+### Security
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
