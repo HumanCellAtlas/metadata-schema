@@ -111,7 +111,7 @@
             "user_friendly": "Height"
         },
         "height_unit": {
-            "description": "The unit in which height is expressed. Must be one of centimeters, meters, or inches.",
+            "description": "The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
             "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Height unit"
         },
@@ -138,7 +138,7 @@
             "user_friendly": "Weight"
         },
         "weight_unit": {
-            "description": "The unit in which weight is expressed. Must be one of gram or kilogram.",
+            "description": "The unit in which weight is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000002.",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
         }
