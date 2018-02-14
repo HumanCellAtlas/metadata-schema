@@ -4,7 +4,7 @@ _A project contains information about the overall project._
 
 Location: core/project/project_core.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -17,7 +17,7 @@ _A biomaterial entity contains information about biological material that was ge
 
 Location: core/biomaterial/biomaterial_core.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -37,7 +37,7 @@ _A process entity contains information relevant to how a biomaterial/file entity
 
 Location: core/process/process_core.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -53,7 +53,7 @@ _A protocol entity contains information about an intended protocol that was foll
 
 Location: core/protocol/protocol_core.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -69,7 +69,7 @@ _A file entity contains information about a data file produced from any process.
 
 Location: core/file/file_core.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1

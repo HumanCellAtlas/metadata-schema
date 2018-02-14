@@ -28,7 +28,7 @@ class MarkdownGenerator:
             file.write("Location: " +  path.replace("../json_schema/", "") + "\n")
             file.write("\n")
 
-            file.write("Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example \n")
+            file.write("Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example \n")
             # file.write("Property name | Description | Type  \n")
             file.write("--- | --- | --- | --- | --- | --- | --- | --- \n")
 

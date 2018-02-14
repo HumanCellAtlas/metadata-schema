@@ -4,7 +4,7 @@ _A project contains information about the overall project._
 
 Location: type/project/project.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -24,7 +24,7 @@ _Information about the cell suspension derived from the collected or cultured sp
 
 Location: type/biomaterial/cell_suspension.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -41,7 +41,7 @@ _Information about the cell line used in the biomaterial_
 
 Location: type/biomaterial/cell_line.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -64,7 +64,7 @@ _Information about an organoid biomaterial._
 
 Location: type/biomaterial/organoid.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -83,7 +83,7 @@ _Information about the organism from which a specimen was collected._
 
 Location: type/biomaterial/organism.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -113,7 +113,7 @@ _Information about the specimen that was extracted from the organism._
 
 Location: type/biomaterial/specimen_from_organism.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -132,7 +132,7 @@ _Process by which images are captured._
 
 Location: type/process/imaging/imaging_process.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -153,7 +153,7 @@ _Information about how a sequencing library was created._
 
 Location: type/process/sequencing/library_preparation_process.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -175,7 +175,7 @@ _Information about how a biomaterial was sequenced._
 
 Location: type/process/sequencing/sequencing_process.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -193,7 +193,7 @@ _Contains information on the dissociation process used to separate the cells in 
 
 Location: type/process/biomaterial_collection/dissociation_process.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -209,7 +209,7 @@ _Process by which one biomaterial was produced from another biomaterial to favor
 
 Location: type/process/biomaterial_collection/enrichment_process.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -226,7 +226,7 @@ _Process by which a biomaterial was collected or transformed from another biomat
 
 Location: type/process/biomaterial_collection/collection_process.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -241,7 +241,7 @@ _Information about an analysis that was performed on data files._
 
 Location: type/process/analysis/analysis_process.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -264,7 +264,7 @@ _Information about the protocol_
 
 Location: type/protocol/protocol.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -277,7 +277,7 @@ _Information about the imaging protocol_
 
 Location: type/protocol/imaging/imaging_protocol.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -290,7 +290,7 @@ _Information about the sequencing protocol_
 
 Location: type/protocol/sequencing/sequencing_protocol.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -303,7 +303,7 @@ _Information about the biomaterial collection protocol_
 
 Location: type/protocol/biomaterial/biomaterial_collection_protocol.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -316,7 +316,7 @@ _Information about the analysis protocol_
 
 Location: type/protocol/analysis/analysis_protocol.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -329,7 +329,7 @@ _A file of read sequences generated by a sequencing experiment._
 
 Location: type/file/sequence_file.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1

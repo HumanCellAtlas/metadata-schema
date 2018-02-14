@@ -4,7 +4,7 @@ _A term that may be associated with a cell type-related ontology term_
 
 Location: module/ontology/cell_type_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema |  | string | no |  |  |  | 
 schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -16,7 +16,7 @@ _A term that may be associated with a ethnicity-related ontology term_
 
 Location: module/ontology/ethnicity_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema |  | string | no |  |  |  | 
 schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -28,7 +28,7 @@ _A term that may be associated with a species-related ontology term_
 
 Location: module/ontology/species_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -40,7 +40,7 @@ _A term that may be associated with a disease-related ontology term_
 
 Location: module/ontology/disease_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema |  | string | no |  |  |  | 
 schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -52,7 +52,7 @@ _A term that may be associated with an anatomy-related ontology term_
 
 Location: module/ontology/organ_part_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -64,7 +64,7 @@ _A term that may be associated with a cell type-related ontology term_
 
 Location: module/ontology/length_unit_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -76,7 +76,7 @@ _A term that may be associated with a time unit-related ontology term_
 
 Location: module/ontology/time_unit_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -88,7 +88,7 @@ _A term that may be associated with a development stage-related ontology term_
 
 Location: module/ontology/development_stage_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema |  | string | no |  |  |  | 
 schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -100,7 +100,7 @@ _A term that may be associated with an anatomy-related ontology term._
 
 Location: module/ontology/organ_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -112,7 +112,7 @@ _A term that may be associated with a cell type-related ontology term_
 
 Location: module/ontology/mass_unit_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -124,7 +124,7 @@ _A term that may be associated with a strain-related ontology term_
 
 Location: module/ontology/strain_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -136,7 +136,7 @@ _A term that may be associated with a instrument-related ontology term_
 
 Location: module/ontology/instrument_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema |  | string | no |  |  |  | 
 text | The full name of the instrument used. | string | yes |  |  |  | 
@@ -148,7 +148,7 @@ _A term that may be associated with a cell cycle-related ontology term_
 
 Location: module/ontology/cell_cycle_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema |  | string | no |  |  |  | 
 schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -160,7 +160,7 @@ _A term that may be associated with a process-related ontology term_
 
 Location: module/ontology/process_type_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -172,7 +172,7 @@ _A term that may be associated with a protocol-related ontology term_
 
 Location: module/ontology/protocol_type_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -184,7 +184,7 @@ _A term that may be associated with a biological macromolecule-related ontology 
 
 Location: module/ontology/biological_macromolecule_ontology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -196,7 +196,7 @@ _Information about a person who submitted or contributed to a project._
 
 Location: module/project/contact.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -213,7 +213,7 @@ _Information about a journal article, book, web page, or other external availabl
 
 Location: module/project/publication.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -228,7 +228,7 @@ _Information about the medical history of an organism._
 
 Location: module/biomaterial/medical_history.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -244,7 +244,7 @@ _Information about other organisms that this organism is related to._
 
 Location: module/biomaterial/familial_relationship.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -257,7 +257,7 @@ _Information relating to pathological features of cells._
 
 Location: module/biomaterial/cell_morphology.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -273,7 +273,7 @@ _Information relating to how a biomaterial was grown and/or maintained in a labo
 
 Location: module/biomaterial/growth_conditions.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -288,7 +288,7 @@ _Information specific to an organism that is a mouse (mus musculus)._
 
 Location: module/biomaterial/mus_musculus_specific.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -299,7 +299,7 @@ _Information relating to how a biomaterial was preserved and/or stored over a pe
 
 Location: module/biomaterial/preservation_storage.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -313,7 +313,7 @@ _Information specific to an organism that is a homo sapiens._
 
 Location: module/biomaterial/homo_sapiens_specific.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -325,7 +325,7 @@ _State of body part at collection and how it was preserved after removal and/or 
 
 Location: module/biomaterial/state_of_specimen.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -343,7 +343,7 @@ _Information relating to the death of an organism._
 
 Location: module/biomaterial/death.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -358,7 +358,7 @@ _This module describes purchased kits or reagents used in any process._
 
 Location: module/process/purchased_reagents.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -373,7 +373,7 @@ _This module describes barcodes used in a library preparation process._
 
 Location: module/process/sequencing/barcode.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -387,7 +387,7 @@ _This module describes the well inside the plate or fluidics chip where biomater
 
 Location: module/process/sequencing/well.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1

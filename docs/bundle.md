@@ -4,7 +4,7 @@ _Information added or generated at time of ingest._
 
 Location: bundle/ingest_audit.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
@@ -20,7 +20,7 @@ _A schema for a biomaterial bundle._
 
 Location: bundle/biomaterial_bundle.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 
@@ -32,7 +32,7 @@ _A schema for a protocol bundle._
 
 Location: bundle/protocol_bundle.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 
@@ -44,7 +44,7 @@ _A schema for a process bundle._
 
 Location: bundle/process_bundle.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 
@@ -56,7 +56,7 @@ _A schema for a project bundle._
 
 Location: bundle/project_bundle.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 
@@ -69,7 +69,7 @@ _Information added to a submission at ingest._
 
 Location: bundle/submission.json
 
-Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example 
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
