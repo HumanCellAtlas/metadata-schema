@@ -292,7 +292,7 @@ Property name | Description | Type | Required? | Module reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-strain | The name of the strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Strain |  | C57BL/6.
+strain | The name of the strain. | array | no | [See   strain_ontology](.md/#strain_ontology) | Strain |  | C57BL/6.
 
 ## preservation_storage<a name='preservation_storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
