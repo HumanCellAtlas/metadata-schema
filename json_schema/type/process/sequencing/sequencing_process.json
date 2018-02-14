@@ -33,12 +33,12 @@
         },
         "process_core" : {
 	        "description": "Core process-level information.",
-            "type": "string",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
         "instrument_manufacturer_model": {
             "description": "The manufacturer and model of the sequencer used.",
-            "type": "string",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/instrument_ontology.json",
             "example": "Illumina HiSeq 4000",
             "user_friendly": "Instrument manufacturer and model"
@@ -70,6 +70,7 @@
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
         }

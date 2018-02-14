@@ -32,6 +32,7 @@
         },
          "process_core" : {
 	        "description": "Core process-level information.",
+             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
         "enrichment_method": {
@@ -70,6 +71,7 @@
         },
          "process_type": {
             "description": "The type of process. Ideally an EFO term.",
+            "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
         }

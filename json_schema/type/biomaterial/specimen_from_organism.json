@@ -33,6 +33,7 @@
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "genus_species": {
@@ -46,6 +47,7 @@
         },
         "organ": {
             "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/organ_ontology.json",
             "example": "Blood",
             "comment": "The term organ is very broadly defined here.",
@@ -53,6 +55,7 @@
         },
         "organ_part": {
             "description": "A term for a specific part of the organ that the biomaterial came from.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/organ_part_ontology.json",
             "example": "Umbilical cord blood",
             "comment": "The term organ part is very broadly defined here.",
@@ -68,10 +71,12 @@
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection/removal.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/state_of_specimen.json"
         },
         "preservation_storage": {
             "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/preservation_storage.json"
         },
         "collection_time": {
