@@ -33,18 +33,22 @@
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "human_specific": {
 	        "description": "Fields specific to human (homo sapiens) organisms.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/homo_sapiens_specific.json"
         },
         "mus_musculus_specific": {
 	        "description": "Fields specific to mouse (mus musculus) organisms.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/mus_musculus_specific.json"
         },
         "death": {
             "description": "Information about conditions of death of an organism.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/death.json"
         },
         "medical_history": {
@@ -68,12 +72,14 @@
         }, 
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
             "user_friendly": "Organism age unit",
 	    "example": "year"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/development_stage_ontology.json",
             "user_friendly": "Development stage"
         }, 
@@ -101,6 +107,7 @@
         },
         "gestational_age_unit": {
             "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
             "user_friendly": "Gestational age unit"
         },
@@ -111,7 +118,8 @@
             "user_friendly": "Height"
         },
         "height_unit": {
-            "description": "The unit in which height is expressed. Must be one of centimeters, meters, or inches.",
+            "description": "The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
+            "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Height unit"
         },
@@ -138,7 +146,8 @@
             "user_friendly": "Weight"
         },
         "weight_unit": {
-            "description": "The unit in which weight is expressed. Must be one of gram or kilogram.",
+            "description": "The unit in which weight is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000002.",
+            "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
         }

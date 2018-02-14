@@ -32,15 +32,18 @@
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "cell_morphology": {
             "description": "Features relating to the morphology of cells in a biomaterial.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
         "growth_conditions": {
             "description": "Features relating to the growth and/or maintenance of a biomaterial.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
             "user_friendly": "Growth conditions"
         },
@@ -55,6 +58,7 @@
         },
         "model_for_organ": {
             "description":  "Organ for which this organoid is a model system.",
+            "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
             "user_friendly": "Organ model"
         },
@@ -66,6 +70,7 @@
         },
         "organoid_age_unit": {
             "description": "The unit in which organoid age is expressed. Must be one of hour, day, week, month, or year.",
+            "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Organoid age unit"
         },

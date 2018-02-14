@@ -31,7 +31,7 @@
         },
         "biomaterial_core" : {
 	        "description": "Core biomaterial-level information.",
-            "type": "string",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "catalog_number": {
@@ -45,7 +45,8 @@
             "user_friendly": "Catalog URL"
         },
         "cell_cycle": {
-            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
+            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049.",
+            "type": "object",
             "$ref": "module/ontology/cell_cycle_ontology.json",
             "user_friendly": "Cell cycle"
         },
@@ -62,16 +63,19 @@
         },
         "cell_morphology": {
 	        "description": "Features relating to the morphology of cells in a biomaterial.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
         "growth_conditions": {
             "description": "Features relating to the growth and/or maintenance of a biomaterial.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
             "user_friendly": "Growth conditions"
         },
         "cell_type": {
-	        "description": "The cell type that the cell line was derived from. Should be a CLO ontology.",
+	        "description": "The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
+            "type": "object",
             "$ref": "module/ontology/cell_type_ontology.json",
             "user_friendly": "Cell type"
         },
@@ -83,6 +87,7 @@
         },
         "disease": {
 	        "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
+            "type": "object",
             "$ref": "module/ontology/disease_ontology.json",
             "user_friendly": "Disease"
         },
