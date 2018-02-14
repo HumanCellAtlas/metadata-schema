@@ -19,23 +19,43 @@ class MarkdownGenerator:
 
             schema = get_json_from_file(path)
 
-            file.write("## " + schema["title"] + "\n")
+            if (entity_type == "module" or entity_type == "core"):
+                file.write("## " + schema["title"] + "<a name='" + schema["title"] + "'></a>\n")
+            else:
+                file.write("## " + schema["title"] + "\n")
             file.write("_" + schema["description"] + "_\n")
             file.write("\n")
             file.write("Location: " +  path.replace("../json_schema/", "") + "\n")
             file.write("\n")
 
-            file.write("Property name | Description | Type | Required? | User friendly name | Allowed values | Example \n")
+            file.write("Property name | Description | Type | Required? | Module reference? | User friendly name | Allowed values | Example \n")
             # file.write("Property name | Description | Type  \n")
-            file.write("--- | --- | --- | --- | --- | --- | --- \n")
+            file.write("--- | --- | --- | --- | --- | --- | --- | --- \n")
 
             required = schema["required"]
 
             for property in schema["properties"]:
+
+                if "$ref" in schema["properties"][property]:
+                    ref = schema["properties"][property]["$ref"]
+                    mod = ref.split("/")[-1]
+                    mod = mod.replace(".json", "")
+                    link = "[See module "  + mod + "](module.md/#" + mod + ")"
+
+
+                elif "items" in schema["properties"][property] and "$ref" in schema["properties"][property]["items"]:
+                    ref = schema["properties"][property]["items"]["$ref"]
+                    mod = ref.split("/")[-1]
+                    mod = mod.replace(".json", "")
+                    link = "[See module "  + mod + "](module.md/#" + mod + ")"
+                else:
+                    link = ""
+
                 file.write(property + " | "+
                            (schema["properties"][property]["description"] if "description" in schema["properties"][property] else "") + " | " +
                            (schema["properties"][property]["type"] if "type" in schema["properties"][property] else "")  + " | " +
                            ("yes" if property in required else "no")  + " | " +
+                           link + " | " +
                            (schema["properties"][property]["user_friendly"] if "user_friendly" in schema["properties"][property] else "") + " | " +
                            (", ".join(schema["properties"][property]["enum"]) if "enum" in schema["properties"][property] else "") + " | " +
                            (str(schema["properties"][property]["example"]) if "example" in schema["properties"][property] else "") + "\n")
