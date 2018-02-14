@@ -44,7 +44,7 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
         },
         "input_molecule": {
-            "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
+            "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/biological_macromolecule_ontology.json",
             "user_friendly": "Input molecule"
@@ -124,7 +124,7 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
         },
         "process_type": {
-            "description": "The type of process. Ideally an EFO term.",
+            "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"

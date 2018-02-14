@@ -35,7 +35,7 @@
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
         "process_type": {
-            "description": "The type of process. Ideally an EFO term.",
+            "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"

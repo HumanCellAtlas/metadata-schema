@@ -31,7 +31,7 @@
             "user_friendly": "Cell size number"
         },
         "cell_size_unit": {
-            "description": "The unit in which the cell size is expressed.",
+            "description": "The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Cell size unit"
