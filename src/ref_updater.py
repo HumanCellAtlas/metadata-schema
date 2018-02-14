@@ -15,7 +15,7 @@ def update_refs(args):
             updateJson(input, f, output, url)
 
 def updateJson(input, f, output, url):
-    with open(input + f) as data_file:
+    with open(f) as data_file:
         jsonData = json.load(data_file)
         newJson = replaceUrl(jsonData, "$ref", url)
         dumpJsonToFile(output, newJson, f)
@@ -46,9 +46,14 @@ def replaceUrl(jsonSchema, k, v):
 
 def getJsonFiles(path):
     if os.path.exists(path):
-        filesInDir = os.listdir(path)
+        # filesInDir = os.listdir(path)
 
+
+        filesInDir = [os.path.join(dirpath, f)
+     for dirpath, dirnames, files in os.walk(path)
+     for f in files if f.endswith('.json')]
         return filesInDir
+
 
     else:
         print(path + " is not a valid directory")

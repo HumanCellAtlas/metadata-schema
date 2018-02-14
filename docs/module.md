@@ -35,18 +35,6 @@ schema_version | Version number in major.minor.patch format. | string | no |  | 
 text | The ethnicity of the human donor. | string | yes |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  | 
 
-## ontology
-_A term that may be associated with an ontology term_
-
-Location: module/ontology/ontology.json
-
-Property name | Description | Type | Required? | User friendly name | Example 
---- | --- | --- | --- | --- | --- 
-$schema | The URL reference to the schema. | string | yes |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  | 4.6.1
-text | The text for the term as the user provides it. | string | yes |  | 
-ontology | An identifier for an ontology term taking the form prefix:accession e.g. UBERON:0000062. | string | no |  | 
-
 ## process_type_ontology
 _A term that may be associated with a process-related ontology term_
 
@@ -289,7 +277,7 @@ cause_of_death | Cause of death from death report for human donor, from research
 cold_perfused | Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise. | boolean | no | Cold perfused? | 
 days_on_ventilator | Days on ventilator before dying. | number | no | Number of days on ventilator | 
 hardy_scale | Should be integer representing: (0) ventilator case, (1) violent and fast death, (2) fast death of natural causes, (3) intermediate death, or (4) slow death. | integer | no | Value on Hardy scale | 
-time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ. | string | yes | Time of death | 
+time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ. | string | no | Time of death | 
 
 ## familial_relationship
 _Information about other organisms that this organism is related to._
