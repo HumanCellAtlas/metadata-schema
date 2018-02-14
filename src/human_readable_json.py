@@ -40,14 +40,14 @@ class MarkdownGenerator:
                     ref = schema["properties"][property]["$ref"]
                     mod = ref.split("/")[-1]
                     mod = mod.replace(".json", "")
-                    link = "[See module "  + mod + "](module.md/#" + mod + ")"
+                    link = "[See " + entity_type + "  " + mod + "](" + entity_type + ".md/#" + mod + ")"
 
 
                 elif "items" in schema["properties"][property] and "$ref" in schema["properties"][property]["items"]:
                     ref = schema["properties"][property]["items"]["$ref"]
                     mod = ref.split("/")[-1]
                     mod = mod.replace(".json", "")
-                    link = "[See module "  + mod + "](module.md/#" + mod + ")"
+                    link = "[See " + entity_type + "  " + mod + "](" + entity_type + ".md/#" + mod + ")"
                 else:
                     link = ""
 

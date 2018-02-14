@@ -263,7 +263,7 @@ $schema | The URL reference to the schema. | string | yes |  |  |  |
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 cell_morphology | General description of the morphology of the cells in the cell suspension. | string | no |  | Cell morphology |  | 
 cell_size | The size of the cells. Average cell size is acceptable. | number | no |  | Cell size number |  | 
-cell_size_unit | The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
+cell_size_unit | The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
 cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 
 cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | 
 percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrosis |  | 
@@ -292,7 +292,7 @@ Property name | Description | Type | Required? | Module reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-strain | The name of the strain. | array | no | [See module strain_ontology](module.md/#strain_ontology) | Strain |  | C57BL/6.
+strain | The name of the strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Strain |  | C57BL/6.
 
 ## preservation_storage<a name='preservation_storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
@@ -305,7 +305,7 @@ $schema | The URL reference to the schema. | string | yes |  |  |  |
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 storage_method | The method by which a biomaterial was stored. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen, -70C freezer, frozen, -150C freezer, frozen, liquid nitrogen, frozen, vapor phase, paraffin block, RNAlater, frozen, TRIzol, frozen | 
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
-storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | days
+storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | days
 preservation_method | The method by which a biomaterial was preserved or not. | string | no |  | Storage method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, Fresh | 
 
 ## homo_sapiens_specific<a name='homo_sapiens_specific'></a>
@@ -318,7 +318,7 @@ Property name | Description | Type | Required? | Module reference? | User friend
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 body_mass_index | The body mass index of the organism. | number | no |  | Body mass index |  | 
-ethnicity | An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates. | array | no | [See module ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
+ethnicity | An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
 
 ## state_of_specimen<a name='state_of_specimen'></a>
 _State of body part at collection and how it was preserved after removal and/or cell enrichment_
