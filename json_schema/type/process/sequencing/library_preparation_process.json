@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/sequencing/4.0.0/library_preparation_process.json",
+    "id": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
     "description": "Information about how a sequencing library was created.",
     "additionalProperties": false,
     "required": [
@@ -18,7 +18,7 @@
          "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process.json"
+            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

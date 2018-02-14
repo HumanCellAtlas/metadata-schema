@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/biomaterial/organism/4.0.0/organism.json",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism",
     "description": "Information about the organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
@@ -16,7 +16,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json"
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -69,7 +69,8 @@
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
-            "user_friendly": "Organism age unit"
+            "user_friendly": "Organism age unit",
+	    "example": "year"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
@@ -89,7 +90,8 @@
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/familial_relationship.json"
-            }
+                },
+	    "user_friendly": "Familial relationship"
         },
         "gestational_age": {
             "description": "Gestational age in gestational_age_units. Measured since fertilization.",

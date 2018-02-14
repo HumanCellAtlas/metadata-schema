@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/biomaterial/cell_suspension/4.0.0/cell_suspension.json",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_suspension",
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "additionalProperties": false,
     "required": [
@@ -14,7 +14,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension.json"
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

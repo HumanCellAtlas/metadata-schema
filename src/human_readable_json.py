@@ -47,17 +47,7 @@ class MarkdownGenerator:
 
 
         file.close()
-        # values = {}
-        # try:
-        #     # for each schema, gather the values for the relevant tab(s)
-        #     for schema in schemas:
-        #         v = self._gatherValues(baseUri+schema, dependencies)
-        #         values.update(v)
-        #     # Build the spreadsheet from the retrieved values
-        #     self._buildSpreadsheet(values, output)
-        # except ValueError as e:
-        #     self.logger.error("Error:" + str(e))
-        #     raise e
+
 
 
 

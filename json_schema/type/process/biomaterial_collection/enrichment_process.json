@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/4.0.0/enrichment_process.json",
+    "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/enrichment_process",
     "description": "Process by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
     "additionalProperties": false,
     "required": [
@@ -15,7 +15,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment_process.json"
+            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment_process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
