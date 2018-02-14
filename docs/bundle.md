@@ -25,7 +25,7 @@ Property name | Description | Type | Required? | Module reference? | User friend
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial_bundle | 
-biomaterials |  | array | no | [See   biomaterial_ingest](.md/#biomaterial_ingest) |  |  | 
+biomaterials |  | array | no |  |  |  | 
 
 ## protocol_bundle
 _A schema for a protocol bundle._
@@ -37,7 +37,7 @@ Property name | Description | Type | Required? | Module reference? | User friend
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project_bundle | 
-protocols |  | array | no | [See   protocol_ingest](.md/#protocol_ingest) |  |  | 
+protocols |  | array | no |  |  |  | 
 
 ## process_bundle
 _A schema for a process bundle._
@@ -49,7 +49,7 @@ Property name | Description | Type | Required? | Module reference? | User friend
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process_bundle | 
-processes |  | array | no | [See   process_ingest](.md/#process_ingest) |  |  | 
+processes |  | array | no |  |  |  | 
 
 ## project_bundle
 _A schema for a project bundle._
@@ -74,6 +74,6 @@ Property name | Description | Type | Required? | Module reference? | User friend
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | no |  |  | submission | 
-transfer_service_version |  |  | yes | [See   transfer_service_version](.md/#transfer_service_version) |  |  | 
-submitted_files |  |  | yes | [See   submitted_files](.md/#submitted_files) |  |  | 
+transfer_service_version |  |  | yes |  |  |  | 
+submitted_files |  |  | yes |  |  |  | 
 

@@ -70,7 +70,7 @@
         "growth_conditions": {
             "description": "Features relating to the growth and/or maintenance of a biomaterial.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/growth_conditions.json",
             "user_friendly": "Growth conditions"
         },
         "cell_type": {

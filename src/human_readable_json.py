@@ -38,30 +38,39 @@ class MarkdownGenerator:
 
                 if "$ref" in schema["properties"][property]:
                     ref = schema["properties"][property]["$ref"]
-                    if "core" in ref:
-                        dir = "core"
-                    elif "module" in ref:
-                        dir = "module"
+                    if "definitions" not in ref:
+                        if "core" in ref:
+                            dir = "core"
+                        elif "module" in ref:
+                            dir = "module"
+                        else:
+                            dir = ""
+                        mod = ref.split("/")[-1]
+                        mod = mod.replace(".json", "")
+                        link = "[See " + dir + "  " + mod + "](" + dir + ".md/#" + mod + ")"
                     else:
-                        dir = ""
-                    mod = ref.split("/")[-1]
-                    mod = mod.replace(".json", "")
-                    link = "[See " + dir + "  " + mod + "](" + dir + ".md/#" + mod + ")"
+                        link = ""
 
 
                 elif "items" in schema["properties"][property] and "$ref" in schema["properties"][property]["items"]:
                     ref = schema["properties"][property]["items"]["$ref"]
-                    if "core" in ref:
-                        dir = "core"
-                    elif "module" in ref:
-                        dir = "module"
+                    if "definitions" not in ref:
+                        if "core" in ref:
+                            dir = "core"
+                        elif "module" in ref:
+                            dir = "module"
+                        else:
+                            dir = ""
+                        mod = ref.split("/")[-1]
+                        mod = mod.replace(".json", "")
+                        link = "[See " + dir + "  " + mod + "](" + dir + ".md/#" + mod + ")"
                     else:
-                        dir = ""
-                    mod = ref.split("/")[-1]
-                    mod = mod.replace(".json", "")
-                    link = "[See " + dir + "  " + mod + "](" + dir + ".md/#" + mod + ")"
+                        link = ""
                 else:
                     link = ""
+
+                # if link is not "":
+                #     print(schema["title"] + "\t "+ property + "\t"+ link)
 
                 file.write(property + " | "+
                            (schema["properties"][property]["description"] if "description" in schema["properties"][property] else "") + " | " +

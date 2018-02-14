@@ -31,7 +31,7 @@ schema_version | The version number of the schema in major.minor.patch format. |
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
-growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Growth conditions |  | 
+growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
 target_cell_type | Cell types expected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Target cell type |  | 
 total_estimated_cells | Total estimated number of cells in biomaterial. May be 1 for well-based assays. | integer | no |  | Total estimated cell count |  | 
@@ -52,7 +52,7 @@ catalog_url | The supplier catalogue URL for the cell line. | string | no |  | C
 cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
 cell_line_type | The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | no |  | Cell line type | primary, immortalized, stem cell-derived, synthetic | 
 cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
-growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Growth conditions |  | 
+growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 cell_type | The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
 date_established | When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ. | string | no |  | Date established |  | 
 disease | Free text describing any disease association to the cell type. Should be an EFO ontology. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
@@ -71,7 +71,7 @@ schema_version | The version number of the schema in major.minor.patch format. |
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
-growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Growth conditions |  | 
+growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
 model_for_organ | Organ for which this organoid is a model system. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
 organoid_age | Age of the organoid. | number | no |  | Organoid age |  | 55
@@ -248,12 +248,12 @@ schema_version | The version number of the schema in major.minor.patch format. |
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | no | [See core  process_core](core.md/#process_core) |  |  | 
 process_type | The type of process. Ideally an EFO term. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) |  |  | 
-inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes | [See   parameter](.md/#parameter) |  |  | 
+inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  |  |  | 
 reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
-tasks | Descriptions of tasks in the workflow. | array | yes | [See   task](.md/#task) |  |  | 
+tasks | Descriptions of tasks in the workflow. | array | yes |  |  |  | 
 timestamp_stop_utc | Terminal stop time of the full pipeline. | string | yes |  |  |  | 
 input_bundles | The input bundles used in this analysis run. | array | yes |  |  |  | 
-outputs | Output generated by the pipeline run. | array | yes | [See   file](.md/#file) |  |  | 
+outputs | Output generated by the pipeline run. | array | yes |  |  |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  |  |  | 
 timestamp_start_utc | Initial start time of the full pipeline. | string | yes |  |  |  | 
 analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string | yes |  |  | run, copy-forward | 
