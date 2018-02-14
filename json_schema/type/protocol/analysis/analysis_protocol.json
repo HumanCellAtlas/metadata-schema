@@ -31,10 +31,12 @@
         },
         "protocol_core" : {
 	        "description": "Core protocol-level information.",
+            "type": "object",
             "$ref": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json"
         },
         "protocol_type": {
             "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+            "type": "object",
             "$ref": "module/ontology/protocol_type_ontology.json",
             "user_friendly": "Protocol type"
         }
