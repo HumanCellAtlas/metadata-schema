@@ -30,6 +30,7 @@
         },
         "project_core" : {
     	    "description": "Core project-level information.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/project/project_core.json"
         },
         "contributors": {

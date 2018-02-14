@@ -35,17 +35,17 @@
         },
         "process_core" : {
 	        "description": "Core process-level information.",
-            "type": "string",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
-            "type": "string",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
         },
         "input_molecule": {
             "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared.",
-            "type": "string",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/biological_macromolecule_ontology.json",
             "user_friendly": "Input molecule"
         },
@@ -120,11 +120,12 @@
         },
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
-            "type": "string",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
         },
         "process_type": {
             "description": "The type of process. Ideally an EFO term.",
+            "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
         }

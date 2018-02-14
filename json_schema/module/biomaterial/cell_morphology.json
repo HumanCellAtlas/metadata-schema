@@ -32,6 +32,7 @@
         },
         "cell_size_unit": {
             "description": "The unit in which the cell size is expressed.",
+            "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Cell size unit"
         },
