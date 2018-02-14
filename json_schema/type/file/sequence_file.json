@@ -31,7 +31,7 @@
             ]
         },
         "file_core" : {
-	        "description": "Core file-level information.",
+            "description": "Core file-level information.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/file/file_core.json"
         },
@@ -53,6 +53,12 @@
             "type": "integer",
             "example": 1,
             "user_friendly": "Lane index"
+        },
+        "read_length": {
+            "description": "The length of a sequenced read in this file, in nucleotides.",
+            "type": "integer",
+            "example": 51,
+            "user_friendly": "Read length"
         }
     }
 }
