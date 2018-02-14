@@ -12,7 +12,7 @@ class MarkdownGenerator:
         self.logger = logging.getLogger(__name__)
 
     def generateMarkdown(self, schemas, entity_type):
-        file = open("../docs/" + entity_type + ".md", "w")
+        file = open("../docs/jsonBrowser/" + entity_type + ".md", "w")
         file.write("# " + entity_type.capitalize() + "\n")
 
         for path in schemas:
