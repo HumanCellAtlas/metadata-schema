@@ -89,9 +89,9 @@
             "example": "3_prime_tag",
             "enum": [
                 "3 prime tag",
-                "3 prime end_bias",
+                "3 prime end bias",
                 "5 prime tag",
-                "5 prime end_bias",
+                "5 prime end bias",
                 "full length"
             ],
             "user_friendly": "End bias"
