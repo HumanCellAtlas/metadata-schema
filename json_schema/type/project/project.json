@@ -80,14 +80,6 @@
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "user_friendly": "INSDC study accession"
-        },
-        "related_projects": {
-            "description": "A list of other projects that may be logically grouped with this one.",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "user_friendly": "Related projects"
         }
     }
 }
