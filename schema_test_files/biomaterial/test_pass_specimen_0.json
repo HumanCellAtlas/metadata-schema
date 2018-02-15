@@ -10,7 +10,7 @@
     "ncbi_taxon_id": [
       9606
     ],
-    "derived_from": "d1"
+    "has_input_biomaterial": "d1"
   },
   "organ": {
     "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/organ_ontology",
