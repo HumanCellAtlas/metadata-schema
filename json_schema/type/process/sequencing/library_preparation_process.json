@@ -73,6 +73,16 @@
             "comment": "This should become an ontology.",
             "user_friendly": "Library construction approach"
         },
+        "library_construction_kit": {
+            "description": "Name of kit used to construct the sequencing library.",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/purchased_reagents.json"
+        },
+        "nucleic_acid_conversion_kit": {
+            "description": "Name of kit used to convert RNA to DNA for sequencing.",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/purchased_reagents.json"
+        },
         "end_bias": {
             "description": "The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.",
             "type": "string",
