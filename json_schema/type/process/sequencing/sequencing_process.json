@@ -68,6 +68,11 @@
             },
             "user_friendly": "INSDC run"
         },
+        "smartseq2" : {
+	        "description": "Fields specific for SmartSeq2 experiments.",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/smartseq2.json"
+        },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
