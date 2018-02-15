@@ -51,6 +51,8 @@
         "paired_ends": {
             "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
             "type": "boolean",
+            "example": "yes",
+            "comment": "If 10x, then put no.",
             "user_friendly": "Paired ends?"
         },
         "insdc_experiment": {
