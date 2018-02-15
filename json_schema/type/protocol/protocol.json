@@ -30,7 +30,7 @@
             ]
         },
         "protocol_core" : {
-	        "description": "Core protocol-level information.",
+            "description": "Core protocol-level information.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/protocol/protocol_core.json"
         },
