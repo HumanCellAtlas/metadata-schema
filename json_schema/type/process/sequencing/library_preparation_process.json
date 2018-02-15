@@ -74,14 +74,14 @@
             "user_friendly": "Library construction approach"
         },
         "end_bias": {
-            "description": "The type of tag or end bias the library has.",
+            "description": "The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.",
             "type": "string",
             "example": "3_prime_tag",
             "enum": [
-                "3_prime_tag",
-                "3_prime_end_bias",
-                "5_prime_tag",
-                "5_prime_end_bias",
+                "3 prime tag",
+                "3 prime end_bias",
+                "5 prime tag",
+                "5 prime end_bias",
                 "full length"
             ],
             "user_friendly": "End bias"
@@ -96,16 +96,17 @@
             "user_friendly": "Primer"
         },
         "strand": {
-            "description": "Library strandedness.",
+            "description": "Library strandedness. Must be one of first, second, or unstranded.",
             "type": "string",
             "enum": [
                 "first",
                 "second",
                 "unstranded"
             ],
+            "example": "unstranded",
             "user_friendly": "Strand"
         },
-        "spike_in": {
+        "spike_in_kit": {
             "description": "Name of spike-in kit.",
             "type": "string",
             "example": "ERCC",
