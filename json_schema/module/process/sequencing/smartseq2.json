@@ -6,7 +6,7 @@
     "required": [
         "$schema"
     ],
-    "title": "well",
+    "title": "smartseq2",
     "type": "object",
     "properties": {
         "$schema" : {
