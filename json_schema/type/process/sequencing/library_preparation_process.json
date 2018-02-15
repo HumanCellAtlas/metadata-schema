@@ -43,13 +43,13 @@
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
         },
-        "input_molecule": {
-            "description": "Specific type of nucleic acid molecule from which a sequencing library was prepared. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
+        "input_nucleic_acid_molecule": {
+            "description": "Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/biological_macromolecule_ontology.json",
-            "user_friendly": "Input molecule"
+            "user_friendly": "Input nucleic acid molecule"
         },
-        "library_construction": {
+        "library_construction_approach": {
             "description": "The general approach for sequencing library construction.",
             "type": "string",
             "example": "Smart-seq2",
@@ -70,7 +70,7 @@
                 "TruSeq",
                 "unknown"
             ],
-            "comment": "This will become an ontology.",
+            "comment": "This should become an ontology.",
             "user_friendly": "Library construction approach"
         },
         "end_bias": {
