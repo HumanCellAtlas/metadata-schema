@@ -61,15 +61,6 @@
             "type": "string",
             "user_friendly": "INSDC experiment"
         },
-        "insdc_run": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
-            "type": "array",
-            "items": {
-                "pattern": "^[D|E|S]RR[0-9]+$",
-                "type": "string"
-            },
-            "user_friendly": "INSDC run"
-        },
         "smartseq2" : {
 	        "description": "Fields specific for SmartSeq2 experiments.",
             "type": "object",
