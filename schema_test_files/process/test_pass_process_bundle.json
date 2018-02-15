@@ -49,7 +49,7 @@
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "process_id": "lib_prep_protocol_1"
         },
-        "end_bias": "5 prime end bias",
+        "end_bias": "full length",
         "strand": "unstranded",
         "input_nucleic_acid_molecule": {
           "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology",
