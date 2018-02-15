@@ -34,7 +34,7 @@
             ]
         },
         "process_core" : {
-	        "description": "Core process-level information.",
+            "description": "Core process-level information.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
         },

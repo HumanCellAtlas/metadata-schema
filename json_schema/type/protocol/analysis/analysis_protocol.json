@@ -30,7 +30,7 @@
             ]
         },
         "protocol_core" : {
-	        "description": "Core protocol-level information.",
+            "description": "Core protocol-level information.",
             "type": "object",
             "$ref": "http://schema.humancellatlas.org/core/protocol/4.0.0/protocol_core.json"
         },

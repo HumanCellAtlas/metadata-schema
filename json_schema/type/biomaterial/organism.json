@@ -27,22 +27,22 @@
         "schema_type": {
             "description": "The type of the metadata schema entity.",
             "type": "string",
-           "enum": [
+            "enum": [
                 "biomaterial"
             ]
         },
         "biomaterial_core" : {
-	        "description": "Core biomaterial-level information.",
+            "description": "Core biomaterial-level information.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
         },
         "human_specific": {
-	        "description": "Fields specific to human (homo sapiens) organisms.",
+            "description": "Fields specific to human (homo sapiens) organisms.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/homo_sapiens_specific.json"
         },
         "mus_musculus_specific": {
-	        "description": "Fields specific to mouse (mus musculus) organisms.",
+            "description": "Fields specific to mouse (mus musculus) organisms.",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/mus_musculus_specific.json"
         },
@@ -53,6 +53,7 @@
         },
         "medical_history": {
             "description": "Information about the medical history of an organism.",
+            "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/medical_history.json"
         },
         "genus_species": {
@@ -75,7 +76,7 @@
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/time_unit_ontology.json",
             "user_friendly": "Organism age unit",
-	    "example": "year"
+            "example": "year"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
@@ -97,7 +98,7 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/familial_relationship.json"
                 },
-	    "user_friendly": "Familial relationship"
+            "user_friendly": "Familial relationship"
         },
         "gestational_age": {
             "description": "Gestational age in gestational_age_units. Measured since fertilization.",
