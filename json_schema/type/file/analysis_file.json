@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.humancellatlas.org/type/file/5.0.0/analysis_file",
+    "description": "A file analysis results produced by a secondary analysis pipeline.",
+    "additionalProperties": false,
+    "required": [
+        "$schema",
+        "schema_type",
+        "file_core"
+    ],
+    "title": "analysis_file",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern": "http://schema.humancellatlas.org/type/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_file"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "file"
+            ]
+        },
+        "file_core" : {
+            "description": "Core file-level information.",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/file/file_core.json"
+        }
+    }
+}
