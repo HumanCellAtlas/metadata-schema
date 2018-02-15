@@ -350,20 +350,20 @@ barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 
-## well<a name='well'></a>
-_This module describes the well inside the plate or fluidics chip where biomaterial came from._
+## smartseq2<a name='smartseq2'></a>
+_This module describes information specific to SmartSeq2 experiments._
 
 Location: module/process/sequencing/smartseq2.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-plate | An ID for the plate that the well is located on. | string | no |  | Plate ID |  | 
+cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
+well_row | Well row in plate. | string | no |  | Well row |  | 
+well_column | Well column in plate. | string | no |  | Well column |  | 
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 well_name | A name for the well. Should be unique for the plate | string | no |  | Well name |  | 
-quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | 
-col | Well column in plate. | string | no |  | Well column |  | 
-row | Well row in plate. | string | no |  | Well row |  | 
+plate_id | An ID for the plate that the well is located on. | string | no |  | Well plate ID |  | 
 
 ## contact<a name='contact'></a>
 _Information about a person who submitted or contributed to a project._

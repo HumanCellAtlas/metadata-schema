@@ -225,16 +225,18 @@ spike_in_dilution | Dilution of spike-in. | integer | no |  | Spike-in dilution 
 input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446. | object | no | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | 
 process_type | The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 umi_barcode | Information about unique molecular identifier (UMI) barcode sequences. | object | no | [See module  barcode](module.md/#barcode) |  |  | 
+strand | Library strandedness. Must be one of first, second, or unstranded. | string | yes |  | Strand | first, second, unstranded | unstranded
+library_construction_kit | Name of kit used to construct the sequencing library. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
-spike_in_kit | Name of spike-in kit. | string | no |  | Spike-in kit |  | ERCC
+spike_in_kit | Name of spike-in kit. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
 library_construction_approach | The general approach for sequencing library construction. | string | no |  | Library construction approach | 10x, 10X, 10x_v2, CEL-seq, Drop-Seq, inDrop, modified Nextera XT, modified smart-seq2, Nextera XT, QUARTZ-Seq, SMARTer Ultra Low RNA Kit, smart-seq2, Smart-seq2, TruSeq, unknown | Smart-seq2
 cell_barcode | Information about cell identifier barcode. | object | no | [See module  barcode](module.md/#barcode) |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 end_bias | The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length. | string | yes |  | End bias | 3 prime tag, 3 prime end_bias, 5 prime tag, 5 prime end_bias, full length | 3_prime_tag
 $schema | The URL reference to the schema. | string | yes |  |  |  | 
 primer | Primer used for cDNA synthesis from RNA. Must be either poly-dT or random. | string | no |  | Primer | poly-dT, random | 
-strand | Library strandedness. Must be one of first, second, or unstranded. | string | yes |  | Strand | first, second, unstranded | unstranded
+nucleic_acid_conversion_kit | Name of kit used to convert RNA to DNA for sequencing. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
 
 ## sequencing_process
 _Information about how a biomaterial was sequenced._
@@ -243,7 +245,7 @@ Location: type/process/sequencing/sequencing_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean | yes |  | Paired ends? |  | 
+paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean | yes |  | Paired ends? |  | yes
 insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR. | array | no |  | INSDC run |  | 
 local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | 
 instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
