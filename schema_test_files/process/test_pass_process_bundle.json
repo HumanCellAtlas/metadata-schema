@@ -49,13 +49,13 @@
           "$schema": "http://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "process_id": "lib_prep_protocol_1"
         },
-        "end_bias": "five_prime_end",
-        "strand": "first",
-        "input_molecule": {
+        "end_bias": "5 prime end bias",
+        "strand": "unstranded",
+        "input_nucleic_acid_molecule": {
           "$schema": "http://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology",
-          "text": "Illumina HiSeq 4000"
+          "text": "polyA RNA"
         },
-        "library_construction": "smart-seq2"
+        "library_construction_approach": "smart-seq2"
       }
     },
     {
