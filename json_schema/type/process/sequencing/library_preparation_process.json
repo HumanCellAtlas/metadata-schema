@@ -74,15 +74,15 @@
             "user_friendly": "Library construction approach"
         },
         "end_bias": {
-            "description": "The type of end bias the library has. Must be one of 3' bias, 5' bias, 3' end, 5' end, or none.",
+            "description": "The type of tag or end bias the library has.",
             "type": "string",
-            "example": "three_prime_bias",
+            "example": "3_prime_tag",
             "enum": [
-                "three_prime_end",
-                "three_prime_bias",
-                "five_prime_end",
-                "five_prime_bias",
-                "none"
+                "3_prime_tag",
+                "3_prime_end_bias",
+                "5_prime_tag",
+                "5_prime_end_bias",
+                "full length"
             ],
             "user_friendly": "End bias"
         },
