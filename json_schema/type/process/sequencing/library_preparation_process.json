@@ -8,9 +8,9 @@
         "schema_type",
         "process_core",
         "end_bias",
-        "library_construction",
+        "library_construction_approach",
         "strand",
-        "input_molecule"
+        "input_nucleic_acid_molecule"
     ],
     "title": "library_preparation_process",
     "type": "object",
