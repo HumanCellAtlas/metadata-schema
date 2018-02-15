@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/module/process/sequencing/5.0.0/well",
-    "description": "This module describes the well inside the plate or fluidics chip where biomaterial came from.",
+    "id": "http://schema.humancellatlas.org/module/process/sequencing/5.0.0/smartseq2",
+    "description": "This module describes information specific to SmartSeq2 experiments.",
     "additionalProperties": false,
     "required": [
         "$schema"
@@ -12,7 +12,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/well"
+            "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/smartseq2"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -20,27 +20,27 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "plate": {
+        "plate_id": {
             "description": "An ID for the plate that the well is located on.",
             "type": "string",
-            "user_friendly": "Plate ID"
+            "user_friendly": "Well plate ID"
         },
         "well_name": {
             "description": "A name for the well. Should be unique for the plate",
             "type": "string",
             "user_friendly": "Well name"
         }, 
-        "row": {
+        "well_row": {
             "description": "Well row in plate.",
             "type": "string",
             "user_friendly": "Well row"
         },
-         "col": {
+         "well_column": {
             "description": "Well column in plate.",
             "type": "string",
             "user_friendly": "Well column"
         },
-        "quality": {
+        "cell_quality": {
             "description": "Note on how good cell looks if imaged in well before sequencing.",
             "type": "string",
             "enum": [
