@@ -38,10 +38,10 @@ if validate(sv, p1):
     status_flag = False
 
 # Testing valid organism JSON example
-print('\nValidating type/biomaterial/organism.json schema')
-sv = get_validator('type/biomaterial/organism.json', base_uri)
-print('Validating biomaterial/test_pass_organism_0.json JSON against schema')
-o1 = get_json_from_file('../schema_test_files/biomaterial/test_pass_organism_0.json')
+print('\nValidating type/biomaterial/donor_organism.json schema')
+sv = get_validator('type/biomaterial/donor_organism.json', base_uri)
+print('Validating biomaterial/test_pass_donor_organism_0.json JSON against schema')
+o1 = get_json_from_file('../schema_test_files/biomaterial/test_pass_donor_organism_0.json')
 if not validate(sv, o1):
     status_flag = False
 

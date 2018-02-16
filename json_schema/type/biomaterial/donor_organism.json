@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism",
+    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
     "description": "Information about the organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
@@ -16,7 +16,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism"
+            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
