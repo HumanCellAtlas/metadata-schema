@@ -9,6 +9,9 @@
 - [Specification of schema structure and content](#specification-of-schema-structure-and-content)
 - [Schema Versioning](#schema-versioning)
 - [Module stability](#module-stability)
+- [Adding new committers to metadata working group](#adding-new-committers-to-metadata-working-group)
+- [Governance of Schema Updates](#governance-of-schema-updates)
+- [Open questions](#open-questions)
 
 ## High level description
 
@@ -200,3 +203,65 @@ Modules which are labeled as low stability are those associated with rapidly evo
 The metadata working group should review the stability level of different modules on a quarterly or bi-annual basis to decide if changes are needed.
 
 Submitters should always be able to define additional fields which are not part of the schema specification and have them pass through the system without error.
+
+## Adding new committers to metadata working group
+
+A nominated group of metadata working group members will have commit access to the metadata-schema repo.  Committers are members of the working group who have permission to merge and accept pull requests to the metadata-schema repo.
+
+Committers are not allowed to skip the review process. Any person including the committers who wish to make a change to a metadata schema module this process must be followed.
+
+Anyone can request to join the committer team. When a request is received, the existing committers will discuss the request and vote on the addition of the new member. This process should be rapid and the requestor should hear the outcome within 72 hours.
+
+## Governance of Schema Updates
+
+The metadata working group will report progress to the HCA executive committee.
+
+The working group will provide written updates on the following matters at the start of each month:
+
+- Changes to the metadata specification.
+  - Updates to existing modules
+  - Addition of new modules
+- New members of the metadata working group.
+- New committers to the metadata-schema git repo.
+
+The reporting frequency and process will be reviewed on a yearly basis and modifications made as required.
+
+## Open questions
+
+This section lists open questions about this process which are not yet covered by the process description 
+
+#### Handling submissions in prep
+
+Do we have a strategy for submissions in preparation while the update gets put in?
+
+#### What is the testing process for changes to the metadata-schema?
+
+When a new pull request is made, what integration tests need to be run to reduce the likelihood of something breaking
+
+#### How are update requests assigned to committers?
+
+How do we ensure that all update requests are assigned to a committer and there is a reasonable feedback timeframe.
+
+#### What labels do we need in the github repo to label issues and PRs?
+
+Github has a label system and we need to define the correct labels to annotate issues and PRs to enable more rapid assessment
+
+#### Which developers/teams should be notified for which modules?
+
+We need a process so the committers reviewing a change know which teams need to be reached out to for different suggested changes or to figure out how best to enable people to watch given modules in a git repo
+
+#### What happens if a suggested change required a new software update to be deployed which can’t be carried out in the given timeframe?
+
+How do we modify the process to handle this?
+
+#### Are readmes/other docs in metadata-schema subject to the same review process?
+
+Can the readmes or other documentation which is not contained inside a schema be edited by committers without PR review?
+
+#### What is the formal process of tagging and making a new release in git?
+
+Are there any existing HCA DCP processes we can adopt here
+
+#### How long is reasonable between approval and merge of new schema and it being in production?
+
+Presumably in almost all cases this needs to be instant (or near as damn it) but it would be good to understand if there are occasions where it can’t be if the change happening requires an update to the ingest or any other DCP software. We should discuss this with the engineering teams?
