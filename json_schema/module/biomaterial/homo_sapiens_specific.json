@@ -31,7 +31,7 @@
             "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
             "type": "array",
             "items": {
-                "$ref": "module/ontology/ethnicity_ontology.json"
+                "$ref": "http://schema.data.humancellatlas.org/module/ontology/5.0.0/ethnicity_ontology"
             },
             "user_friendly": "Ethnicity"
         }

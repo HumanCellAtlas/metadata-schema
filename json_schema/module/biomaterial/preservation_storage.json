@@ -47,7 +47,7 @@
         "storage_time_unit": {
             "description": "The unit in which Storage time is expressed.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/ontology/time_unit_ontology.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/ontology/5.0.0/time_unit_ontology",
             "example": "days",
             "user_friendly": "Storage time unit"
         },
