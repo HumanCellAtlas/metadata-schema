@@ -12,9 +12,6 @@
       "project_title": "Project 1",
       "project_description": "This is a project."
     },
-    "related_projects": [
-      "P2"
-    ],
     "contributors": [
       {
         "$schema": "http://schema.humancellatlas.org/module/project/5.0.0/contact",
