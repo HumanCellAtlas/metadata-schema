@@ -6,7 +6,7 @@ from openpyxl.styles import Font
 
 
 # hard coded tab ordering
-tab_ordering = ["project", "project.publications", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
+tab_ordering = ["project", "project.publications", "contact", "donor_organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
                 "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
                 "sequencing_process", "purchased_reagents", "protocol", "sequence_file"]
 
