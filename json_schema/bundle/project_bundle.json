@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle.json",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle",
     "description": "A schema for a project bundle.",
     "additionalProperties": false,
     "required": [
@@ -32,12 +32,12 @@
         "hca_ingest": {
             "description": "Core fields added by HCA ingest service",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+            "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
         },
         "content": {
             "description": "Content for a project type entity.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/project/project.json"
+            "$ref": "http://schema.humancellatlas.org/type/project/5.0.0/project"
         }
     }
 }

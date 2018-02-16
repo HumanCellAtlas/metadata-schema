@@ -20,16 +20,16 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+                    "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
                 },
                 "content": {
                     "description": "Content for any process type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/analysis/analysis_protocol.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/biomaterial/biomaterial_collection_protocol.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/imaging/imaging_protocol.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/protocol/sequencing/sequencing_protocol.json" }
+                        { "$ref": "http://schema.humancellatlas.org/type/protocol/analysis/5.0.0/analysis_protocol" },
+                        { "$ref": "http://schema.humancellatlas.org/type/protocol/biomaterial/5.0.0/biomaterial_collection_protocol" },
+                        { "$ref": "http://schema.humancellatlas.org/type/protocol/imaging/5.0.0/imaging_protocol" },
+                        { "$ref": "http://schema.humancellatlas.org/type/protocol/sequencing/5.0.0/sequencing_protocol" }
                     ]
                 },
                 "has_process": {
@@ -62,7 +62,7 @@
         },
         "protocols": {
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/bundle/protocol_bundle.json#/definitions/protocol_ingest"
+                "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/protocol_bundle#/definitions/protocol_ingest"
             },
             "type": "array"
         }

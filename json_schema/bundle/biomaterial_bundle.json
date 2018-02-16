@@ -20,17 +20,17 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+                    "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
                 },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organism.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/specimen_from_organism.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_suspension.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organoid.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_line.json" }
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/specimen_from_organism" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_suspension" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organoid" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line" }
                     ]
                 },
                 "derived_from": {
@@ -71,7 +71,7 @@
         "biomaterials": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+                "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle#/definitions/biomaterial_ingest"
             }
         }
     }
