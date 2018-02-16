@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle.json",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle",
     "description": "A schema for a project bundle.",
     "additionalProperties": false,
     "required": [

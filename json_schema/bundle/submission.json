@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-  	"id": "http://schema.humancellatlas.org/bundle/5.0.0/submission",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/submission",
     "description": "Information added to a submission at ingest." ,
     "additionalProperties": false,
 	"required": [
