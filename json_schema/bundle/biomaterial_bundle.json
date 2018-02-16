@@ -26,7 +26,7 @@
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism" },
                         { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/specimen_from_organism" },
                         { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_suspension" },
                         { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organoid" },

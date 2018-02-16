@@ -12,7 +12,7 @@
         "accession": "SAM0888697"
       },
       "content": {
-        "$schema": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism",
+        "$schema": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
         "schema_version" : "5.0.0",
         "schema_type": "biomaterial",
         "biomaterial_core": {
