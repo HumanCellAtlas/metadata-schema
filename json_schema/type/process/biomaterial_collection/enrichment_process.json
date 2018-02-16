@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/5.0.0/enrichment_process",
+    "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/enrichment_process",
     "description": "Process by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
     "additionalProperties": false,
     "required": [
@@ -15,7 +15,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment_process"
+            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment_process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -33,7 +33,7 @@
          "process_core" : {
             "description": "Core process-level information.",
              "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core"
+            "$ref": "http://schema.humancellatlas.org/core/process/process_core"
         },
         "enrichment_method": {
             "description": "The method by which enrichment was achieved.",
@@ -72,7 +72,7 @@
          "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/ontology/process_type_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/process_type_ontology",
             "user_friendly": "Process type"
         }
     }

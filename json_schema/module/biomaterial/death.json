@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/module/biomaterial/5.0.0/death",
+    "id": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/death",
     "description": "Information relating to the death of an organism.",
     "additionalProperties": false,
     "required": [
@@ -13,7 +13,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.data.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/death"
+            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/death"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

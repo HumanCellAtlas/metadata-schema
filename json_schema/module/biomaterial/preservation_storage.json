@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/module/biomaterial/5.0.0/preservation_storage",
+    "id": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/preservation_storage",
     "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
     "additionalProperties": false,
     "required": [
@@ -12,7 +12,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.data.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/preservation_storage"
+            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/preservation_storage"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -47,7 +47,7 @@
         "storage_time_unit": {
             "description": "The unit in which Storage time is expressed.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/ontology/5.0.0/time_unit_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/time_unit_ontology",
             "example": "days",
             "user_friendly": "Storage time unit"
         },

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/module/process/5.0.0/purchased_reagents",
+    "id": "http://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents",
     "description": "This module describes purchased kits or reagents used in any process.",
     "additionalProperties": false,
     "required": [
@@ -12,7 +12,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.data.humancellatlas.org/module/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/purchased_reagents"
+            "pattern" : "http://schema.humancellatlas.org/module/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/purchased_reagents"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

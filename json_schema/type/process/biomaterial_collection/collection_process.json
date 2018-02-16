@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/5.0.0/collection_process",
+    "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/collection_process",
     "description": "Process by which a biomaterial was collected or transformed from another biomaterial or from a population.",
     "additionalProperties": false,
     "required": [
@@ -14,7 +14,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/collection_process"
+            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/collection_process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,12 +32,12 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core"
+            "$ref": "http://schema.humancellatlas.org/core/process/process_core"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/ontology/process_type_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/process_type_ontology",
             "user_friendly": "Process type"
         },
         "collection_method": {
@@ -56,7 +56,7 @@
             "description": "A list of purchased reagents used in this process.",
             "type": "array",
             "items": {
-                "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents"
+                "$ref": "http://schema.humancellatlas.org/module/process/purchased_reagents"
             }
         }
     }

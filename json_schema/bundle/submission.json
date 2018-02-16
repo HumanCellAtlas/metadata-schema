@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/bundle/5.0.0/submission",
+    "id": "http://schema.humancellatlas.org/bundle/5.0.0/submission",
     "description": "Information added to a submission at ingest." ,
     "additionalProperties": false,
 	"required": [
@@ -21,7 +21,7 @@
 			"additionalProperties": false,
 			"type": "array",
 			"items": {
-				"$ref": "http://schema.data.humancellatlas.org/bundle/submission#/definitions/file"
+				"$ref": "http://schema.humancellatlas.org/bundle/submission#/definitions/file"
 			}
 		},
 		"file" : {
@@ -86,7 +86,7 @@
 	 	"$schema": {
             "description": "The URL reference to the schema.",
 			"type": "string",
-      	  	"pattern": "http://schema.data.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/submission"
+      	  	"pattern": "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/submission"
     	},
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -103,11 +103,11 @@
         },
     	"transfer_service_version" : {
 			"description": "",
-			"$ref": "http://schema.data.humancellatlas.org/bundle/submission#/definitions/transfer_service_version"
+			"$ref": "http://schema.humancellatlas.org/bundle/submission#/definitions/transfer_service_version"
 		},
 		"submitted_files" : {
 			"description": "",
-			"$ref": "http://schema.data.humancellatlas.org/bundle/submission#/definitions/submitted_files"
+			"$ref": "http://schema.humancellatlas.org/bundle/submission#/definitions/submitted_files"
 		}
     }
 }

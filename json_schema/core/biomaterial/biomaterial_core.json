@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core",
+    "id": "http://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core",
     "description": "A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components.",
     "additionalProperties": false,
     "required": [
@@ -14,7 +14,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.data.humancellatlas.org/core/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_core"
+            "pattern" : "http://schema.humancellatlas.org/core/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_core"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

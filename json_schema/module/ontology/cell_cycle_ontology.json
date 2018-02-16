@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.data.humancellatlas.org/module/ontology/5.0.0/cell_cycle_ontology",
+    "id": "http://schema.humancellatlas.org/module/ontology/5.0.0/cell_cycle_ontology",
     "description": "A term that may be associated with a cell cycle-related ontology term",
     "additionalProperties": false,
     "required": [
@@ -9,7 +9,7 @@
     "title": "cell_cycle_ontology",
     "properties": {
         "$schema" : {
-            "pattern" : "http://schema.data.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_cycle_ontology",
+            "pattern" : "http://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_cycle_ontology",
             "type": "string"
         },
         "schema_version": {
