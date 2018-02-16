@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/file/5.0.0/analysis_file",
+    "id": "https://schema.humancellatlas.org/type/file/5.0.0/analysis_file",
     "description": "A file analysis results produced by a secondary analysis pipeline.",
     "additionalProperties": false,
     "required": [
@@ -14,7 +14,7 @@
         "$schema": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern": "http://schema.humancellatlas.org/type/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_file"
+            "pattern": "https://schema.humancellatlas.org/type/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_file"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,7 +32,7 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/core/file/5.0.0/file_core"
+            "$ref": "https://schema.humancellatlas.org/core/file/5.0.0/file_core"
         }
     }
 }

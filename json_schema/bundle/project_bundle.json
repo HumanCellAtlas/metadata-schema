@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/5.0.0/project_bundle",
+    "id": "https://schema.humancellatlas.org/bundle/5.0.0/project_bundle",
     "description": "A schema for a project bundle.",
     "additionalProperties": false,
     "required": [
@@ -15,7 +15,7 @@
         "$schema": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern": "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_bundle"
+            "pattern": "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_bundle"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,12 +32,12 @@
         "hca_ingest": {
             "description": "Core fields added by HCA ingest service",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
+            "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
         },
         "content": {
             "description": "Content for a project type entity.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/type/project/5.0.0/project"
+            "$ref": "https://schema.humancellatlas.org/type/project/5.0.0/project"
         }
     }
 }

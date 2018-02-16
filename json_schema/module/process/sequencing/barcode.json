@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode",
+    "id": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode",
     "description": "This module describes barcodes used in a library preparation process.",
     "additionalProperties": false,
     "required": [
@@ -15,7 +15,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/barcode"
+            "pattern" : "https://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/barcode"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
