@@ -31,14 +31,14 @@
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/core/project/project_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/project/5.0.0/project_core"
         },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
             "type": "array",
             "example": "List of authors for a publication resulting from this project.",
             "items": {
-                "$ref": "http://schema.data.humancellatlas.org/module/project/contact.json"
+                "$ref": "http://schema.data.humancellatlas.org/module/project/5.0.0/contact"
             }
         },
         "supplementary_files": {
@@ -54,7 +54,7 @@
     	    "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
-                "$ref": "http://schema.data.humancellatlas.org/module/project/publication.json"
+                "$ref": "http://schema.data.humancellatlas.org/module/project/5.0.0/publication"
             }
         },
         "insdc_project": {
