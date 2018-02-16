@@ -32,12 +32,12 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/core/process/process_core"
+            "$ref": "http://schema.humancellatlas.org/core/process/5.0.0/process_core"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/ontology/process_type_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology",
             "user_friendly": "Process type"
         },
         "collection_method": {
@@ -56,7 +56,7 @@
             "description": "A list of purchased reagents used in this process.",
             "type": "array",
             "items": {
-                "$ref": "http://schema.humancellatlas.org/module/process/purchased_reagents"
+                "$ref": "http://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents"
             }
         }
     }
