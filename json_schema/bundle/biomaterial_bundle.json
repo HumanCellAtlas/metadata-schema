@@ -20,17 +20,17 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "http://schema.humancellatlas.org/bundle/ingest_audit"
+                    "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
                 },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/organism" },
-                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/specimen_from_organism" },
-                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/cell_suspension" },
-                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/organoid" },
-                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/cell_line" }
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organism" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/specimen_from_organism" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_suspension" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/organoid" },
+                        { "$ref": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line" }
                     ]
                 },
                 "derived_from": {
@@ -71,7 +71,7 @@
         "biomaterials": {
             "type": "array",
             "items": {
-                "$ref": "http://schema.humancellatlas.org/bundle/biomaterial_bundle#/definitions/biomaterial_ingest"
+                "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle#/definitions/biomaterial_ingest"
             }
         }
     }

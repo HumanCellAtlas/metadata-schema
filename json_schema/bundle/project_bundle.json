@@ -32,12 +32,12 @@
         "hca_ingest": {
             "description": "Core fields added by HCA ingest service",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/bundle/ingest_audit"
+            "$ref": "http://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
         },
         "content": {
             "description": "Content for a project type entity.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/type/project/project"
+            "$ref": "http://schema.humancellatlas.org/type/project/5.0.0/project"
         }
     }
 }

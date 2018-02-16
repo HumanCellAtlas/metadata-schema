@@ -21,7 +21,7 @@
 			"additionalProperties": false,
 			"type": "array",
 			"items": {
-				"$ref": "http://schema.humancellatlas.org/bundle/submission#/definitions/file"
+				"$ref": "http://schema.humancellatlas.org/bundle/5.0.0/submission#/definitions/file"
 			}
 		},
 		"file" : {
@@ -103,11 +103,11 @@
         },
     	"transfer_service_version" : {
 			"description": "",
-			"$ref": "http://schema.humancellatlas.org/bundle/submission#/definitions/transfer_service_version"
+			"$ref": "http://schema.humancellatlas.org/bundle/5.0.0/submission#/definitions/transfer_service_version"
 		},
 		"submitted_files" : {
 			"description": "",
-			"$ref": "http://schema.humancellatlas.org/bundle/submission#/definitions/submitted_files"
+			"$ref": "http://schema.humancellatlas.org/bundle/5.0.0/submission#/definitions/submitted_files"
 		}
     }
 }
