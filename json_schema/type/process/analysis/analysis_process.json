@@ -110,18 +110,18 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core"
     	},
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/ontology/process_type_ontology"
         },
         "inputs": {
             "description": "Input parameters used in the pipeline run, these can be files or string values (settings).",
             "type": "array",
             "items": {
-                "$ref": "http://schema.data.humancellatlas.org/type/process/analysis/analysis_process.json#/definitions/parameter"
+                "$ref": "http://schema.data.humancellatlas.org/type/process/analysis/analysis_process#/definitions/parameter"
             }
         },
         "reference_bundle": {
@@ -132,7 +132,7 @@
             "description": "Descriptions of tasks in the workflow.",
             "type": "array",
             "items": {
-                "$ref": "http://schema.data.humancellatlas.org/type/process/analysis/analysis_process.json#/definitions/task"
+                "$ref": "http://schema.data.humancellatlas.org/type/process/analysis/analysis_process#/definitions/task"
             }
         },
         "timestamp_stop_utc": {
@@ -152,7 +152,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "$ref": "http://schema.data.humancellatlas.org/type/file/analysis_file.json"
+                "$ref": "http://schema.data.humancellatlas.org/type/file/analysis_file"
             }
         },
         "computational_method": {

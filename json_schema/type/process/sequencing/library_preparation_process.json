@@ -36,17 +36,17 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/process/sequencing/barcode.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/sequencing/barcode"
         },
         "input_nucleic_acid_molecule": {
             "description": "Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/ontology/biological_macromolecule_ontology.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/ontology/biological_macromolecule_ontology",
             "user_friendly": "Input nucleic acid molecule"
         },
         "library_construction_approach": {
@@ -76,12 +76,12 @@
         "library_construction_kit": {
             "description": "Name of kit used to construct the sequencing library.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents"
         },
         "nucleic_acid_conversion_kit": {
             "description": "Name of kit used to convert RNA to DNA for sequencing.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents"
         },
         "end_bias": {
             "description": "The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.",
@@ -119,7 +119,7 @@
         "spike_in_kit": {
             "description": "Name of spike-in kit.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents"
         },
         "spike_in_dilution": {
             "description": "Dilution of spike-in.",
@@ -131,12 +131,12 @@
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/module/process/sequencing/barcode.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/sequencing/barcode"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/ontology/process_type_ontology",
             "user_friendly": "Process type"
         }
     }

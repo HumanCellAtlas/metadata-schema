@@ -32,7 +32,7 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "http://schema.data.humancellatlas.org/core/file/file_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/file/file_core"
         }
     }
 }
