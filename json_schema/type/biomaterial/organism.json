@@ -34,34 +34,34 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/core/biomaterial/biomaterial_core"
+            "$ref": "http://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core"
         },
         "human_specific": {
             "description": "Fields specific to human (homo sapiens) organisms.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/biomaterial/homo_sapiens_specific"
+            "$ref": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/homo_sapiens_specific"
         },
         "mus_musculus_specific": {
             "description": "Fields specific to mouse (mus musculus) organisms.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/biomaterial/mus_musculus_specific"
+            "$ref": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/mus_musculus_specific"
         },
         "death": {
             "description": "Information about conditions of death of an organism.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/biomaterial/death"
+            "$ref": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/death"
         },
         "medical_history": {
             "description": "Information about the medical history of an organism.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/biomaterial/medical_history"
+            "$ref": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/medical_history"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
-                "$ref": "http://schema.humancellatlas.org/module/ontology/species_ontology"
+                "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology"
             },
             "user_friendly": "Genus species"
         },
@@ -74,21 +74,21 @@
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/ontology/time_unit_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/time_unit_ontology",
             "user_friendly": "Organism age unit",
             "example": "year"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/ontology/development_stage_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/development_stage_ontology",
             "user_friendly": "Development stage"
         }, 
         "disease": {
             "description": "Short description of disease status of the organism.",
             "type": "array",
             "items": {
-                "$ref": "http://schema.humancellatlas.org/module/ontology/disease_ontology"
+                "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/disease_ontology"
 	        },
             "user_friendly": "Disease"
         },
@@ -96,7 +96,7 @@
             "description": "Information about other organisms related to this organism.",
             "type": "array",
             "items": {
-                "$ref": "http://schema.humancellatlas.org/module/biomaterial/familial_relationship"
+                "$ref": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/familial_relationship"
                 },
             "user_friendly": "Familial relationship"
         },
@@ -121,7 +121,7 @@
         "height_unit": {
             "description": "The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/ontology/length_unit_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/length_unit_ontology",
             "user_friendly": "Height unit"
         },
         "is_living": {
@@ -149,7 +149,7 @@
         "weight_unit": {
             "description": "The unit in which weight is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000002.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/module/ontology/mass_unit_ontology",
+            "$ref": "http://schema.humancellatlas.org/module/ontology/5.0.0/mass_unit_ontology",
             "user_friendly": "Weight unit"
         }
     }
