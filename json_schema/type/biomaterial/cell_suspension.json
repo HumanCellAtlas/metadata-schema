@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_suspension",
+    "id": "http://schema.data.humancellatlas.org/type/biomaterial/5.0.0/cell_suspension",
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "additionalProperties": false,
     "required": [
@@ -14,7 +14,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension"
+            "pattern" : "http://schema.data.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,18 +32,18 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/biomaterial/biomaterial_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/biomaterial/biomaterial_core.json"
         },
         "cell_morphology": {
             "description": "Features relating to the morphology of cells in a biomaterial.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/cell_morphology.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
         "growth_conditions": {
             "description": "Features relating to the growth and/or maintenance of a biomaterial.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/biomaterial/growth_conditions.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/biomaterial/growth_conditions.json",
             "user_friendly": "Growth conditions"
         },
         "genus_species": {
@@ -51,7 +51,7 @@
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/species_ontology.json"
+                "$ref": "http://schema.data.humancellatlas.org/module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },

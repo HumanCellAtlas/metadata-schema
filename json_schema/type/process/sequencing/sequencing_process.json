@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
+    "id": "http://schema.data.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
     "description": "Information about how a biomaterial was sequenced.",
     "additionalProperties": false,
     "required": [
@@ -16,7 +16,7 @@
          "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequencing_process"
+            "pattern" : "http://schema.data.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequencing_process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -34,12 +34,12 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core.json"
         },
         "instrument_manufacturer_model": {
             "description": "The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/instrument_ontology.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/ontology/instrument_ontology.json",
             "example": "Illumina HiSeq 4000",
             "user_friendly": "Instrument manufacturer and model"
         },
@@ -64,12 +64,12 @@
         "smartseq2" : {
 	        "description": "Fields specific for SmartSeq2 experiments.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/smartseq2.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/sequencing/smartseq2.json"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/process_type_ontology.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
         }
     }

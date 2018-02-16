@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/core/process/5.0.0/process_core",
+    "id": "http://schema.data.humancellatlas.org/core/process/5.0.0/process_core",
     "description": "A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity.",
     "additionalProperties": false,
     "required": [
@@ -13,7 +13,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/core/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_core"
+            "pattern" : "http://schema.data.humancellatlas.org/core/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_core"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

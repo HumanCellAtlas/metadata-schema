@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/module/biomaterial/5.0.0/growth_conditions",
+    "id": "http://schema.data.humancellatlas.org/module/biomaterial/5.0.0/growth_conditions",
     "description": "Information relating to how a biomaterial was grown and/or maintained in a laboratory setting.",
     "additionalProperties": false,
     "required": [
@@ -12,7 +12,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/growth_conditions"
+            "pattern" : "http://schema.data.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/growth_conditions"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

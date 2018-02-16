@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle",
+    "id": "http://schema.data.humancellatlas.org/bundle/5.0.0/biomaterial_bundle",
     "description": "A schema for a biomaterial bundle.",
     "additionalProperties": false,
     "required": [
@@ -20,17 +20,17 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/ingest_audit.json"
+                    "$ref": "http://schema.data.humancellatlas.org/bundle/ingest_audit.json"
                 },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organism.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/specimen_from_organism.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_suspension.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/organoid.json" },
-                        { "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/type/biomaterial/cell_line.json" }
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/organism.json" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/specimen_from_organism.json" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/cell_suspension.json" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/organoid.json" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/cell_line.json" }
                     ]
                 },
                 "derived_from": {
@@ -54,7 +54,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle"
+            "pattern" : "http://schema.data.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -71,7 +71,7 @@
         "biomaterials": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/bundle/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+                "$ref": "http://schema.data.humancellatlas.org/bundle/biomaterial_bundle.json#/definitions/biomaterial_ingest"
             }
         }
     }

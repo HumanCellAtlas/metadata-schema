@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/protocol/biomaterial/5.0.0/biomaterial_collection_protocol",
+    "id": "http://schema.data.humancellatlas.org/type/protocol/biomaterial/5.0.0/biomaterial_collection_protocol",
     "description": "Information about the biomaterial collection protocol",
     "additionalProperties": false,
     "required": [
@@ -14,7 +14,7 @@
          "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_collection_protocol"
+            "pattern" : "http://schema.data.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_collection_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,7 +32,7 @@
         "protocol_core" : {
             "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "http://schema.humancellatlas.org/core/protocol/5.0.0/protocol_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/protocol/5.0.0/protocol_core.json"
         },
         "protocol_type": {
             "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",

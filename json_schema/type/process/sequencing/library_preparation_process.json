@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
+    "id": "http://schema.data.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
     "description": "Information about how a sequencing library was created.",
     "additionalProperties": false,
     "required": [
@@ -18,7 +18,7 @@
          "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process"
+            "pattern" : "http://schema.data.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -36,17 +36,17 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/core/process/process_core.json"
+            "$ref": "http://schema.data.humancellatlas.org/core/process/process_core.json"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/sequencing/barcode.json"
         },
         "input_nucleic_acid_molecule": {
             "description": "Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/ontology/biological_macromolecule_ontology.json",
+            "$ref": "http://schema.data.humancellatlas.org/module/ontology/biological_macromolecule_ontology.json",
             "user_friendly": "Input nucleic acid molecule"
         },
         "library_construction_approach": {
@@ -76,12 +76,12 @@
         "library_construction_kit": {
             "description": "Name of kit used to construct the sequencing library.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/purchased_reagents.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents.json"
         },
         "nucleic_acid_conversion_kit": {
             "description": "Name of kit used to convert RNA to DNA for sequencing.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/purchased_reagents.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents.json"
         },
         "end_bias": {
             "description": "The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.",
@@ -119,7 +119,7 @@
         "spike_in_kit": {
             "description": "Name of spike-in kit.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/purchased_reagents.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/purchased_reagents.json"
         },
         "spike_in_dilution": {
             "description": "Dilution of spike-in.",
@@ -131,7 +131,7 @@
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/module/process/sequencing/barcode.json"
+            "$ref": "http://schema.data.humancellatlas.org/module/process/sequencing/barcode.json"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
