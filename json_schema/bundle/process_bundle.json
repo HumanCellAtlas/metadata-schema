@@ -21,19 +21,19 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "http://schema.data.humancellatlas.org/bundle/ingest_audit.json"
+                    "$ref": "http://schema.data.humancellatlas.org/bundle/ingest_audit"
                 },
                 "content": {
                     "description": "Content for any process type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "http://schema.data.humancellatlas.org/type/process/analysis/analysis_process.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/collection_process.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/dissociation_process.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/enrichment_process.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/process/imaging/imaging_process.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/process/sequencing/library_preparation_process.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/process/sequencing/sequencing_process.json" }
+                        { "$ref": "http://schema.data.humancellatlas.org/type/process/analysis/analysis_process" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/collection_process" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/dissociation_process" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/process/biomaterial_collection/enrichment_process" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/process/imaging/imaging_process" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/process/sequencing/library_preparation_process" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/process/sequencing/sequencing_process" }
                     ]
                 },
                 "has_input": {
@@ -74,7 +74,7 @@
         "processes": {
             "type": "array",
             "items": {
-                "$ref": "http://schema.data.humancellatlas.org/bundle/process_bundle.json#/definitions/process_ingest"
+                "$ref": "http://schema.data.humancellatlas.org/bundle/process_bundle#/definitions/process_ingest"
             }
         }
     }

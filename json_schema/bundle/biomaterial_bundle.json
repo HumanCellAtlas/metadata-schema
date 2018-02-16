@@ -20,17 +20,17 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "http://schema.data.humancellatlas.org/bundle/ingest_audit.json"
+                    "$ref": "http://schema.data.humancellatlas.org/bundle/ingest_audit"
                 },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/organism.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/specimen_from_organism.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/cell_suspension.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/organoid.json" },
-                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/cell_line.json" }
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/organism" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/specimen_from_organism" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/cell_suspension" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/organoid" },
+                        { "$ref": "http://schema.data.humancellatlas.org/type/biomaterial/cell_line" }
                     ]
                 },
                 "derived_from": {
@@ -71,7 +71,7 @@
         "biomaterials": {
             "type": "array",
             "items": {
-                "$ref": "http://schema.data.humancellatlas.org/bundle/biomaterial_bundle.json#/definitions/biomaterial_ingest"
+                "$ref": "http://schema.data.humancellatlas.org/bundle/biomaterial_bundle#/definitions/biomaterial_ingest"
             }
         }
     }
