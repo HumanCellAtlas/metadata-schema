@@ -5,9 +5,9 @@
 
 This repo contains the HCA metadata JSON schemas, example JSON files, and template metadata spreadsheets.
 
-The **design-principles** can be read in the [linked Google Doc](https://docs.google.com/document/d/1eUVpYDLu2AxmxRw2ZUMM-jpKNxQudJbznNyNRp35nLc/edit?usp=sharing)
+The **metadata design principles** can be read in the [Metadata schema lifecycle doc](docs/Metadata_schema_lifecycle_doc.md).
 
-How to contribute is described in [contributing.md](https://github.com/HumanCellAtlas/metadata-schema/blob/master/contributing.md)
+Details on **how to contribute** to the metadata schema are described in the [contributing.md](contributing.md) doc.
 
 
 ### HCA v4.6.1-to-v5.0.0 metadata schema changes overview
