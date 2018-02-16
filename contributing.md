@@ -1,5 +1,13 @@
 # The Human Cell Atlas Metadata Update Process SOP - v2.0
 
+# Table of Contents
+- [Introduction](#introduction)
+- [General steps of the update process](#general-steps-of-the-update-process)
+- [Schema update acceptance process](#schema-update-acceptance-process)
+- [Specific steps for contributing changes](#specific-steps-for-contributing-changes)
+
+## Introduction
+
 Information about the process by which the HCA metadata schema will evolve is outlined here. Version 1.0 of this document can be found in the [HCA metadata lifecycle and versioning](https://docs.google.com/document/d/1eUVpYDLu2AxmxRw2ZUMM-jpKNxQudJbznNyNRp35nLc/edit#heading=h.6p3dwsx7c3hb) document. The v2.0 document here includes general update process steps, specific instructions for making suggested changes via a pull request, and the acceptance process and criteria for change acceptance. The HCA schema design principles, the semantics and process for versioning and updating these schema, and discussion of the detailed format and syntax of the metadata schema and their instantiation can be found in the complementary document [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455). These documents should be viewable by everyone. Please contact us if you do not have access to view.
 
 ## General steps of the update process
@@ -105,7 +113,7 @@ Hopefully negative marks or a lack of consensus will be very rare occurrence but
 
 For proposed changes where consensus looks unlikely, as the review deadline looms (~ 1 day before if possible), the assigned committer should schedule a phone call to discuss the issue with the interested parties. If no consensus can be reached, the process should be extended by 5 working days for more interaction. At the end of these 5 days, if no consensus has been reached, the two possible solutions should be presented to the committers and a vote should be called with the committers to the metadata-schemas repo, the solution with most votes being taken forward.
 
-## Specific steps for contributing changes to the metadata schema
+## Specific steps for contributing changes
 
 This section outlines steps for contributors to suggest changes to the metadata schema via pull requests.
 
