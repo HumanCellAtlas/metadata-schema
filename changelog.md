@@ -1,29 +1,38 @@
 # Changelog
-All notable changes to the HCA metadata schema will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+All notable changes to the HCA metadata schema will be documented in this file. Starting with v5.0.0, the schema will be versioned independently. Therefore, this changelog will contain notes for independent updates/releases per schema.
 
-TO-DO: Insert link to HCA Metadata schema lifecycle and update process after it is migrated to GitHub
+Starting after v5.0.0 release, updates will be declared for schemas independently in the form `[<schema_name>.json vX.Y.Z] - Release-date`. Changes will be organized across six categories: Added, Changed, Removed, Fixed, Deprecated, and Security. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
 
-## [Unreleased]
-
-## [5.0.0] - 2018-02-14
-### Added
-### Changed
-### Removed
-### Fixed
-### Deprecated
-### Security
+## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
-## [4.6.1](https://github.com/HumanCellAtlas/metadata-schema/tree/4.6.1) - 2017-12-15
+## [5.0.0](https://github.com/HumanCellAtlas/metadata-schema/tree/5.0.0) - 2018-02-19
+### Added
+- New fields based on feedback from extensive user evaluation sessions
+- New modules which now capture domain-specific fields
+- New field attributes (e.g. example, user_friendly) to improve schema clarity
+- New example v5.0.0 JSON files and template spreadsheets
+- New markdown-formatted table of current metadata fields for easy browsing
+
+### Changed
+- Structural changes to the hierarchy of schema entities
+- Updated field names and descriptions based on user feedback
+- Expanded use ontologies to validate relevant fields
+- Improved automatic Travis CI testing (new passing and failing example JSON)
+- Improved documentation for schema updates (changelog.md, Metadata_schema_lifecycle_doc.md)
+
+### Removed
+- Removal of fields that were deemed unnecessary
+
+## [v4.6.1](https://github.com/HumanCellAtlas/metadata-schema/tree/4.6.1) - 2017-12-15
 ### Removed
 - Remove controlled vocabulary for `file.file_format`
 - Remove regex for `file.filename`
 
-## [4.6.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.6.0) - 2017-12-14
+## [v4.6.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.6.0) - 2017-12-14
 ### Added
 - Add `name` field to `file` definition in `analysis_bundle.json`
 
@@ -33,7 +42,7 @@ TO-DO: Insert link to HCA Metadata schema lifecycle and update process after it 
 ### Removed
 - Remove undefined property `log` from `task` definition in `analysis_bundle.json`
 
-## [4.5.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.5.0) - 2017-12-13
+## [v4.5.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.5.0) - 2017-12-13
 ### Added
 - Add `analysis_bundle.json` as a core type
 
@@ -43,7 +52,7 @@ TO-DO: Insert link to HCA Metadata schema lifecycle and update process after it 
 - Update enums on multiple fields to based on example test datasets
 - Convert `contact.country` and `contact.country_division` free text string fields
 
-## [4.4.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.4.0) - 2017-12-08
+## [v4.4.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.4.0) - 2017-12-08
 ### Added
 - Add `core` field to `assay_bundle.json`, `project_bundle.json`, and `sample_bundle.json`
 - Add bundle schemas to list of accepted core types
@@ -52,7 +61,7 @@ TO-DO: Insert link to HCA Metadata schema lifecycle and update process after it 
 ### Changed
 - Made `sample_bundle.json`, `assay_bundle.json`, and `project_bundle.json` objects instead of arrays
 
-## [4.3.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.3.0) - 2017-12-06
+## [v4.3.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.3.0) - 2017-12-06
 ### Added
 - Add "10X" and "10x" as options to `seq.library_construction`, `rna.library_construction`, and `single_cell.cell_handling`
 - Add "Cambridgeshire" as options to `contact.country_division`
@@ -63,13 +72,13 @@ TO-DO: Insert link to HCA Metadata schema lifecycle and update process after it 
 ### Fixed
 - Fix `sample.biosd_sample` regex in `sample.json`
 
-## [4.2.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.2.0) - 2017-12-05
+## [v4.2.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.2.0) - 2017-12-05
 ### Changed
 - Change `donor.json`' fields `height`, `weight`, and `age` from number type to string type with a regex to allow entering a number range
 - Extend enums for `donor.age_unit` to allow plural forms
 - Change `death.time_of_death` from required to optional
 
-## [4.1.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.1.0) - 2017-12-05
+## [v4.1.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.1.0) - 2017-12-05
 ### Changed
 - Update ontologies for `body_part_ontology.json` and `cell_type_ontology.json`
 - Add ontology restrictions for `disease_ontology.json`
@@ -78,7 +87,7 @@ TO-DO: Insert link to HCA Metadata schema lifecycle and update process after it 
 ### Fixed
 - Fix `sample.biosd_sample` regex in `sample.json`
 
-## [4.0.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.0.0) - 2017-11-21
+## [v4.0.0](https://github.com/HumanCellAtlas/metadata-schema/tree/4.0.0) - 2017-11-21
 ### Added
 - Schema for entities (cell_suspension, immortalized_cell_line, ingest, organoid, file, primary_cell_line, specimen_from_organism, imaging)
 - Schema for ontologies (ontology_meta, body_part_ontology, cell_type_ontology, disease_ontology)
@@ -108,6 +117,17 @@ TO-DO: Insert link to HCA Metadata schema lifecycle and update process after it 
 - Field `sample.geo_sample`
 - Field `sample.title`
 
-## [3.0.0](https://github.com/HumanCellAtlas/metadata-schema/tree/3.0) - 2017-09-19
+## [v3.0](https://github.com/HumanCellAtlas/metadata-schema/tree/3.0) - 2017-09-19
 ### Added
 - First official release.
+
+## Template changelog formatting
+
+### [schema_name.json - vX.Y.Z] - YYYY-MM-DD
+### Added
+### Changed
+### Removed
+### Fixed
+### Deprecated
+### Security
+
