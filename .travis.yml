@@ -1,6 +1,6 @@
 language: python
 
-# python versions to be used for testing
+# python version to be used for testing
 python:
    - "3.6"
 
@@ -9,7 +9,7 @@ install:
 
 script:
    - cd src
-   # python test.py
-   ## temporary patch
-   - python simple_test.py
-   - python sample_test.py
+   # test if JSON schemas in the repo are valid JSON format
+   - python schemas_are_valid_json.py
+   # test if examples JSON files are valid against their corresponding schema
+   - python json_examples_validate_against_schema.py

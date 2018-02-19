@@ -13,6 +13,7 @@ def get_json_from_file(filename, warn = False):
     f = open(filename, 'r') 
     return json.loads(f.read())
 
+
 def get_validator(filename, base_uri = ''):
     """Load schema from JSON file;
     Check whether it's a valid schema;
@@ -26,16 +27,17 @@ def get_validator(filename, base_uri = ''):
     try:
         # Check schema via class method call. Works, despite IDE complaining
         Draft4Validator.check_schema(schema)
-        print("Schema %s is valid" % filename)
+        print("Schema %s is valid JSON" % filename)
     except SchemaError:
-        raise    
+        raise
     if base_uri:
-        resolver = RefResolver(base_uri = base_uri, 
-                                  referrer = filename)
+        resolver = RefResolver(base_uri = base_uri,
+                               referrer = filename)
     else:
         resolver = None
-    return Draft4Validator(schema = schema, 
-                            resolver = resolver)
+    return Draft4Validator(schema = schema,
+                           resolver = resolver)
+
 
 def validate(validator, instance):
     """Validate an instance of a schema and report errors."""
@@ -48,14 +50,15 @@ def validate(validator, instance):
         print("Validation Fails")
         return False
 
+
 def recurse_through_errors(es, level = 0):
     """Recurse through errors posting message 
     and schema path until context is empty"""
     # Assuming blank context is a sufficient escape clause here.
     for e in es:
         warnings.warn(
-            "***"*level + "subschema level " + str(level) + "\t".join([e.message, 
-            "Path to error:" +  str(e.absolute_schema_path)]) + "\n")
+            "***"*level + "subschema level " + str(level) + "\t".join([e.message,
+            "Path to error:" + str(e.absolute_schema_path)]) + "\n")
         if e.context:
             level += 1
             recurse_through_errors(e.context, level = level)
@@ -74,7 +77,7 @@ def test_local(path_to_schema_dir, schema_file, test_dir):
     base_uri = "file://" + pwd + "/"
     sv = get_validator(schema_file, base_uri)
     test_files = glob.glob(pathname=test_dir + '/*.json')
-    #print("Found test files: %s in %s" % (str(test_files), test_dir))
+    # print("Found test files: %s in %s" % (str(test_files), test_dir))
     for instance_file in test_files:
         i = get_json_from_file(instance_file)
         print("Testing: %s" % instance_file)

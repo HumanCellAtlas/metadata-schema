@@ -1,0 +1,8 @@
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
+.idea/
+.pydevproject
+src/schema_test_suite.pyc
+src/__pycache__/

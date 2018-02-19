@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
+  "schema_type": "process",
+  "process_core": {
+    "$schema": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
+    "process_id": "seq_protocol_1"
+  },
+  "paired_ends": true,
+  "instrument_manufacturer_model": {
+    "$schema": "https://schema.humancellatlas.org/module/ontology/5.0.0/instrument_ontology",
+    "text": "Illumina HiSeq 4000"
+  }
+}
