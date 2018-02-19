@@ -10,7 +10,7 @@
         "is_living",
         "biological_sex"
     ],
-    "title": "organism",
+    "title": "donor_organism",
     "type": "object",
     "properties": {
         "$schema" : {
