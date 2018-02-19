@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process",
+    "id": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process",
     "description": "Contains information on the dissociation process used to separate the cells in a specimen.",
     "additionalProperties": false,
     "required": [
@@ -15,7 +15,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/dissociation_process"
+            "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/dissociation_process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,7 +32,8 @@
         },
         "process_core" : {
             "description": "Core process-level information.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/core/process/process_core.json"
+            "type": "object",
+            "$ref": "https://schema.humancellatlas.org/core/process/5.0.0/process_core"
         },
         "dissociation_method": {
             "description": "How cells or organelles were dissociated.",
@@ -64,15 +65,16 @@
             "user_friendly": "Nucleic acid source"
         },
         "process_type": {
-            "description": "The type of process. Ideally an EFO term.",
-            "$ref": "module/ontology/process_type_ontology.json",
+            "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
+            "type": "object",
+            "$ref": "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology",
             "user_friendly": "Process type"
         },
         "process_reagents": {
             "description": "A list of purchased reagents used in this process.",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/module/process/purchased_reagents.json"
+                "$ref": "https://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents"
             }
         }
     }

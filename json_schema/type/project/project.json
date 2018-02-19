@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://schema.humancellatlas.org/type/project/5.0.0/project",
+    "id": "https://schema.humancellatlas.org/type/project/5.0.0/project",
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
@@ -13,7 +13,7 @@
         "$schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "http://schema.humancellatlas.org/type/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project"
+            "pattern" : "https://schema.humancellatlas.org/type/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -29,15 +29,16 @@
             ]
         },
         "project_core" : {
-    	    "description": "Core project-level information.",
-            "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/core/project/project_core.json"
+            "description": "Core project-level information.",
+            "type": "object",
+            "$ref": "https://schema.humancellatlas.org/core/project/5.0.0/project_core"
         },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
             "type": "array",
             "example": "List of authors for a publication resulting from this project.",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/module/project/contact.json"
+                "$ref": "https://schema.humancellatlas.org/module/project/5.0.0/contact"
             }
         },
         "supplementary_files": {
@@ -53,7 +54,7 @@
     	    "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/develop/json_schema/module/project/publication.json"
+                "$ref": "https://schema.humancellatlas.org/module/project/5.0.0/publication"
             }
         },
         "insdc_project": {
@@ -79,14 +80,6 @@
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "user_friendly": "INSDC study accession"
-        },
-        "related_projects": {
-            "description": "A list of other projects that may be logically grouped with this one.",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "user_friendly": "Related projects"
         }
     }
 }

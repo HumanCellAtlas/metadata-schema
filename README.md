@@ -5,9 +5,9 @@
 
 This repo contains the HCA metadata JSON schemas, example JSON files, and template metadata spreadsheets.
 
-The **design-principles** can be read in the [linked Google Doc](https://docs.google.com/document/d/1eUVpYDLu2AxmxRw2ZUMM-jpKNxQudJbznNyNRp35nLc/edit?usp=sharing)
+The **metadata design principles** can be read in the [Metadata schema lifecycle doc](docs/Metadata_schema_lifecycle_doc.md).
 
-How to contribute is described in [contributing.md](https://github.com/HumanCellAtlas/metadata-schema/blob/master/contributing.md)
+Details on **how to contribute** to the metadata schema are described in the [contributing.md](contributing.md) doc.
 
 
 ### HCA v4.6.1-to-v5.0.0 metadata schema changes overview
@@ -84,21 +84,21 @@ module/
 
 Each schema should be self describing using `id` field with a URL to the location of the version of the current document. 
 
-Version indicated in schema URL: `http://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core.json`
+Version indicated in schema URL: `https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core`
 
 As we are requiring instance data to also be self describing, all *types* will require a property called `$schema`. 
 
-e.g. For `organism.json` schema, these fields will look like: 
+e.g. For `donor_organism.json` schema, these fields will look like: 
 
 ``` 
 "$schema": "http://json-schema.org/draft-04/schema#"
-"id": "http://schema.humancellatlas.org/type/biomaterial/4.0.0/organism.json"
+"id": "https://schema.humancellatlas.org/type/biomaterial/4.0.0/donor_organism"
 "additionalProperties": false,
 "properties" : {
     "$schema": {
         "description": "The URL reference to the schema.",
         "type": "string",
-        "pattern": "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json"
+        "pattern": "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
     },
     ...
 }

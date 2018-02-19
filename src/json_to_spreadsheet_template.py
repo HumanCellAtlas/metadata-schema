@@ -6,7 +6,7 @@ from openpyxl.styles import Font
 
 
 # hard coded tab ordering
-tab_ordering = ["project", "project.publications", "contact", "organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
+tab_ordering = ["project", "project.publications", "contact", "donor_organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
                 "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
                 "sequencing_process", "purchased_reagents", "protocol", "sequence_file"]
 
@@ -203,12 +203,12 @@ if __name__ == '__main__':
 
 # Example run:
 # -s "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/"
-# -t "type/biomaterial/organism.json,type/process/sequencing/library_preparation_process.json"
+# -t "type/biomaterial/donor_organism.json,type/process/sequencing/library_preparation_process.json"
 # -i "module/biomaterial/homo_sapiens_specific.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json"
 # -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"
 
 # Full run:
 # -s "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/"
-# -t "type/project/project.json,type/biomaterial/organism.json,type/biomaterial/organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/protocol/protocol.json,type/file/sequence_file.json"
-# -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/mus_musculus_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/well.json"
+# -t "type/project/project.json,type/biomaterial/donor_organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/protocol/protocol.json,type/file/sequence_file.json"
+# -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/mus_musculus_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/smartseq2.json"
 # -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"
