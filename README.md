@@ -92,13 +92,13 @@ e.g. For `organism.json` schema, these fields will look like:
 
 ``` 
 "$schema": "http://json-schema.org/draft-04/schema#"
-"id": "http://schema.humancellatlas.org/type/biomaterial/4.0.0/organism.json"
+"id": "https://schema.humancellatlas.org/type/biomaterial/4.0.0/donor_organism"
 "additionalProperties": false,
 "properties" : {
     "$schema": {
         "description": "The URL reference to the schema.",
         "type": "string",
-        "pattern": "http://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organism.json"
+        "pattern": "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
     },
     ...
 }
