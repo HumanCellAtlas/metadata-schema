@@ -1,20 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.0.0/process_bundle",
+    "id": "https://schema.humancellatlas.org/bundle/5.0.0/process",
     "description": "A schema for a process bundle.",
     "additionalProperties": false,
     "required": [
         "schema",
         "schema_type"
     ],
-    "title": "process_bundle",
+    "title": "process",
     "type": "object",
     "definitions": {
         "process_ingest": {
             "required": [
                 "hca_ingest",
-                "content",
-                "has_input"
+                "content"
             ],
             "type": "object",
             "properties": {
@@ -35,20 +34,6 @@
                         { "$ref": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process" },
                         { "$ref": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process" }
                     ]
-                },
-                "has_input": {
-                    "description": "The biomaterials or files that this process was performed on.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "has_output": {
-                    "description": "The biomaterials or files that were generated from this process.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
                 }
             }
         }
@@ -57,7 +42,7 @@
         "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_bundle"
+            "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -71,7 +56,8 @@
                 "process_bundle"
             ]
         },
-        "processes": {
+        "process_wrappers": {
+            "description": "An array of processes.",
             "type": "array",
             "items": {
                 "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/process_bundle#/definitions/process_ingest"

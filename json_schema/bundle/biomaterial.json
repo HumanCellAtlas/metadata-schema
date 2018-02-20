@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle",
+    "id": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial",
     "description": "A schema for a biomaterial bundle.",
     "additionalProperties": false,
     "required": [
         "schema",
         "schema_type"
     ],
-    "title": "biomaterial_bundle",
+    "title": "biomaterial",
     "type": "object",
     "definitions": {
         "biomaterial_ingest": {
@@ -32,20 +32,6 @@
                         { "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/organoid" },
                         { "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line" }
                     ]
-                },
-                "derived_from": {
-                    "description": "The biomaterial_id(s) of the biomaterial(s) that this biomaterial was derived from.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "derivation_processes": {
-                    "description": "An array of processes used to derive this biomaterial.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
                 }
             }
         }
@@ -54,7 +40,7 @@
         "schema": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle"
+            "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -68,7 +54,8 @@
                 "biomaterial_bundle"
             ]
         },
-        "biomaterials": {
+        "biomaterial_wrappers": {
+            "description": "An array of biomaterials.",
             "type": "array",
             "items": {
                 "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle#/definitions/biomaterial_ingest"

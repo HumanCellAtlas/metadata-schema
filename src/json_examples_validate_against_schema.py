@@ -73,8 +73,8 @@ if not validate(sv, b1):
 # Specific bundle tests follow
 '''
 # Testing valid biomaterial bundle example
-print('\nValidating bundle/biomaterial_bundle.json schema')
-sv = get_validator('bundle/biomaterial_bundle.json', base_uri)
+print('\nValidating bundle/biomaterial.json schema')
+sv = get_validator('bundle/biomaterial.json', base_uri)
 print('Validating biomaterial/test_pass_biomaterial_bundle.json JSON against schema')
 b1 = get_json_from_file('../schema_test_files/biomaterial/test_pass_biomaterial_bundle.json')
 if not validate(sv, b1):
@@ -82,24 +82,24 @@ if not validate(sv, b1):
 
 # Testing invalid biomaterial bundle example
 # Bundle is missing hca_ingest property in one of the biomaterials
-print('\nValidating bundle/biomaterial_bundle.json schema')
-sv = get_validator('bundle/biomaterial_bundle.json', base_uri)
+print('\nValidating bundle/biomaterial.json schema')
+sv = get_validator('bundle/biomaterial.json', base_uri)
 print('Validating biomaterial/test_fail_biomaterial_bundle.json JSON against schema\n(This should fail, missing hca_ingest)')
 b2 = get_json_from_file('../schema_test_files/biomaterial/test_fail_biomaterial_bundle.json')
 if validate(sv, b2):
     status_flag = False
 
 # Testing valid project bundle example
-print('\nValidating bundle/project_bundle.json schema')
-sv = get_validator('bundle/project_bundle.json', base_uri)
+print('\nValidating bundle/project.json schema')
+sv = get_validator('bundle/project.json', base_uri)
 print('Validating project/test_pass_project_bundle.json JSON against schema')
 b1 = get_json_from_file('../schema_test_files/project/test_pass_project_bundle.json')
 if not validate(sv, b1):
     status_flag = False
 
 # Testing valid process bundle example
-print('\nValidating bundle/process_bundle.json schema')
-sv = get_validator('bundle/process_bundle.json', base_uri)
+print('\nValidating bundle/process.json schema')
+sv = get_validator('bundle/process.json', base_uri)
 print('Validating process/test_pass_process_bundle.json JSON against schema')
 b1 = get_json_from_file('../schema_test_files/process/test_pass_process_bundle.json')
 if not validate(sv, b1):
