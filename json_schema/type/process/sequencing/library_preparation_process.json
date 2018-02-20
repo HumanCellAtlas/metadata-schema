@@ -134,7 +134,7 @@
             "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode"
         },
         "amplification_method": {
-            "description": "The method by which oligonucleotides are amplified prior to sequencing. Must be one of PCR, IVT, or none.",
+            "description": "The method to amplify cDNA library prior to sequencing. Must be one of PCR, IVT, or none.",
             "type": "string",
             "enum": [
                 "PCR",
