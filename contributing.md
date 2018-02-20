@@ -29,6 +29,14 @@ Information about the process by which the HCA metadata schema will evolve is ou
     - What is the name of the new module schema?
     - What fields should it contain (in JSON schema or spreadsheet/tab form)?
     - Why it the new module needed? Specifically, why does the current metadata schema not meet the contributor's need?
+    
+    To request any new fields or changes to fields, the following information needs to be supplied:
+    
+    - Field name (required)
+    - Field description (required)
+    - Whether the field should be optional or required (required)
+    - An example valid value for this field (optional)
+    - If this field needs a controlled vocabulary or ontology, what those values should be (optional)
 
     If the suggested update comes in the form of the pull request, the required information should be self-evident between the JSON schema itself and the pull request message. If this isn’t clear either from the pull request or the message sent through email or git, then the assigned committer will seek clarification before moving onto step 3.
 
@@ -129,9 +137,9 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
     `git checkout develop`
 
-1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `name-brief_desc_of_branch_scope`
+1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `username-brief_desc_of_branch_scope`
 
-    `git checkout -b MalloryFreeberg-new_mouse_module`
+    `git checkout -b malloryfreeberg-new_mouse_module`
 
 1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` and `src/json_examples_validate_against_schema.py` scripts (which are run by Travis CI). The first script checks whether each .json file in the `json_schema` folder is valid JSON format. The second script attempts to validate example JSON files in the `schema_test_files` directory against their corresponding schemas. Some of the JSON files are meant to fail (e.g. they are lacking required fields) and as their failure is expected behavior, the script should exit with status 0. Ensure both scripts exit with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If either test fails, you will have to debug and fix the errors in the changes you made.
 
@@ -145,7 +153,7 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
 1. **Push** the committed changes to the working branch.
 
-    `git push origin MalloryFreeberg-new_mouse_module`
+    `git push origin malloryfreeberg-new_mouse_module`
 
 1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In the GitHub UI, **create** a pull request (PR) against the `develop` branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
 
