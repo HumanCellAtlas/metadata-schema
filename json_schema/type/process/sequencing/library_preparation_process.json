@@ -133,6 +133,16 @@
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode"
         },
+        "amplification_method": {
+            "description": "The method by which oligonucleotides are amplified prior to sequencing. Must be one of PCR, IVT, or none.",
+            "type": "string",
+            "enum": [
+                "PCR",
+                "IVT",
+                "none"
+            ],
+            "user_friendly": "Amplification method"
+        },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
