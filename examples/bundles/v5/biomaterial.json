@@ -1,22 +1,32 @@
 {
-  "$schema": "https:/.../bundle_biomaterial.json",
+  "$schema": "https://schema.humancellatlas.org/bundle/biomaterial/5.0.0/biomaterial_bundle",
   "schema_version": "5.0.0",
+  "schema_type": "biomaterial_bundle",
   "biomaterial_wrapper": [
     {
-      "$schema": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/",
+      "$schema": "https://schema.humancellatlas.org/bundle/biomaterial/5.0.0/biomaterial_wrapper",
       "schema_version": "5.0.0",
-      "schema_type": "organ",
+      "schema_type": "biomaterial_wrapper",
       "content": {
-        "Biomaterial ID": "DEMO-donor_MGH30",
-        "Biomaterial name": "DEMO donor MGH30",
-        "Biomaterial description": "",
-        "NCBI taxon ID": "9606",
-
-
-
-
-
-      }
+        "$schema": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
+        "schema_version": "5.0.0",
+        "schema_type": "biomaterial",
+        "biomaterial_core": {
+          "$schema": "https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core",
+          "schema_version": "5.0.0",
+          "biomaterial_id": "DEMO-donor_MGH30",
+          "biomaterial_name": "DEMO donor MGH30",
+          "ncbi_taxon_id": "9606"
+        },
+        "genus_species": [
+          {
+            "$schema": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
+            "text": "Homo sapiens",
+            "ontology": "NCBITAXON_9606"
+          }
+        ],
+        "is_living": "yes"
+      },
       "hca_ingest": {
         "uuid": "0c4d72b7-a398-4956-bea1-befbc7c916bc",
         "submissionDate": "2018-02-07T10:21:43.228Z",
