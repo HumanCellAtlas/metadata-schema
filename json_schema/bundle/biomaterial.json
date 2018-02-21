@@ -54,7 +54,7 @@
                 "biomaterial_bundle"
             ]
         },
-        "biomaterial_wrappers": {
+        "biomaterials": {
             "description": "An array of biomaterials.",
             "type": "array",
             "items": {
