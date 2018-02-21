@@ -4,9 +4,6 @@
   "schema_type": "biomaterial_bundle",
   "biomaterial_wrapper": [
     {
-      "$schema": "https://schema.humancellatlas.org/bundle/biomaterial/5.0.0/biomaterial_wrapper",
-      "schema_version": "5.0.0",
-      "schema_type": "biomaterial_wrapper",
       "content": {
         "$schema": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
         "schema_version": "5.0.0",
@@ -16,7 +13,9 @@
           "schema_version": "5.0.0",
           "biomaterial_id": "DEMO-donor_MGH30",
           "biomaterial_name": "DEMO donor MGH30",
-          "ncbi_taxon_id": "9606"
+          "ncbi_taxon_id": [
+            9606
+          ]
         },
         "genus_species": [
           {
