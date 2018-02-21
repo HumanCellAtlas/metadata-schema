@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
+  "schema_version": "5.0.0",
+  "schema_type": "biomaterial",
+  "biomaterial_core": {
+    "$schema": "https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core",
+    "schema_version": "5.0.0",
+    "biomaterial_id": "DEMO-donor_MGH30",
+    "biomaterial_name": "DEMO donor MGH30",
+    "biomaterial_description": "",
+    "ncbi_taxon_id": "9606",
+    "has_input_biomaterial": "",
+    "genotype": "",
+    "karyotype": "",
+    "supplementary_files": "",
+    "biosd_biomaterial": "",
+    "insdc_biomaterial": ""
+  },
+  "human_specific": {
+    "$schema": "https://schema.humancellatlas.org/module/biomaterial/5.0.0/homo_sapiens_specific",
+    "schema_version": "5.0.0",
+    "body_mass_index": "",
+    "ethnicity": ""
+  },
+  "death": {
+    "$schema": "https://schema.humancellatlas.org/module/biomaterial/5.0.0/death",
+    "schema_version": "5.0.0",
+    "cold_perfused": "",
+    "days_on_ventilator": "",
+    "hardy_scale": "",
+    "time_of_death": ""
+  },
+  "medical_history": {
+    "$schema": "https://schema.humancellatlas.org/module/biomaterial/5.0.0/medical_history",
+    "schema_version": "5.0.0",
+    "alcohol_history": "",
+    "medication": "",
+    "nutritional_state": "",
+    "smoking_history": "",
+    "test_results": "",
+    "treatment": ""
+  },
+  "genus_species": "Homo sapiens",
+  "organism_age": "",
+  "organism_age_unit": "",
+  "development_stage": "",
+  "disease": "",
+  "gestational_age": "",
+  "gestational_age_unit": "",
+  "height": "",
+  "height_unit": "",
+  "is_living": "yes",
+  "biological_sex": "",
+  "weight": "",
+  "weight_unit": ""
+}

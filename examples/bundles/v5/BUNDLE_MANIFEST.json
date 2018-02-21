@@ -1,0 +1,10 @@
+{
+  "bundle": [
+    "project.json",
+    "biomaterial.json",
+    "process.json",
+    "protocol.json",
+    "file.json",
+    "links.json"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https:/.../bundle_biomaterial.json",
+  "schema_version": "5.0.0",
+  "project_wrapper": {
+    "$schema": "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/",
+    "schema_version": "5.0.0",
+    "schema_type": "organ",
+    "content": {}
+    "hca_ingest": {
+      "uuid": "0c4d72b7-a398-4956-bea1-befbc7c916bc",
+      "submissionDate": "2018-02-07T10:21:43.228Z",
+      "updateDate": "2018-02-07T10:21:54.398Z",
+      "user": "anonymousUser",
+      "lastModifiedUser": "anonymousUser"
+    }
+  }
+}
