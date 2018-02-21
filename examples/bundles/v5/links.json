@@ -1,0 +1,19 @@
+{
+  "bundle_links": [
+    {
+      "source": "organism_0c4d72b7-a398-4956-bea1-befbc7c916bc",
+      "target": "dissociation_e2aea7fc-95ac-4465-89fe-609e394a5727",
+      "relationship_type": "input"
+    },
+    {
+      "source": "dissociation_e2aea7fc-95ac-4465-89fe-609e394a5727",
+      "target": "specimen_from_organism_497947a2-cc3f-4234-8498-72204a508af9",
+      "relationship_type": "output"
+    },
+    {
+      "source": "dissociation_e2aea7fc-95ac-4465-89fe-609e394a5727",
+      "target": "protocol_a193cac2-c5ba-424d-b349-42aeb169dc78",
+      "relationship_type": "followed"
+    }
+  ]
+}
