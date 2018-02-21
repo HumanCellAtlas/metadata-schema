@@ -2,7 +2,7 @@
   "$schema": "https://schema.humancellatlas.org/bundle/biomaterial/5.0.0/biomaterial_bundle",
   "schema_version": "5.0.0",
   "schema_type": "biomaterial_bundle",
-  "biomaterial_wrappers": [
+  "biomaterial": [
     {
       "content": {
         "$schema": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
