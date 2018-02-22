@@ -4,7 +4,7 @@
     "description": "A schema for a biomaterial bundle.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type"
     ],
     "title": "biomaterial_bundle",
@@ -51,7 +51,7 @@
         }
     },
     "properties": {
-        "$schema" : {
+        "schema": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_bundle"

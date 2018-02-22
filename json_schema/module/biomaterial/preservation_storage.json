@@ -4,12 +4,12 @@
     "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "schema"
     ],
     "title": "preservation_storage",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/preservation_storage"

@@ -4,14 +4,14 @@
     "description": "Information about a journal article, book, web page, or other external available documentation on a project.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "authors",
         "title"
     ],
     "title": "publication",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/publication"

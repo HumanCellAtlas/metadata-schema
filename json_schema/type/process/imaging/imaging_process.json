@@ -4,7 +4,7 @@
     "description": "Process by which images are captured.",
     "additionalProperties": false, 
     "required": [
-      "$schema",
+      "schema",
       "schema_type",
       "process_core",
       "field_counts",
@@ -14,7 +14,7 @@
     "title": "imaging_process",
     "type": "object",
     "properties": {
-         "$schema" : {
+         "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/imaging/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/imaging_process"
