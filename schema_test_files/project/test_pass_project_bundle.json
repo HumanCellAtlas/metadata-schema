@@ -1,27 +1,27 @@
 {
-  "schema": "https://schema.humancellatlas.org/bundle/5.0.0/project",
+  "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/project",
   "schema_version": "5.0.0",
   "schema_type": "project_bundle",
   "content": {
-    "schema": "https://schema.humancellatlas.org/type/project/5.0.0/project",
+    "describedBy": "https://schema.humancellatlas.org/type/project/5.0.0/project",
     "schema_version" : "5.0.0",
     "schema_type": "project",
     "project_core": {
-      "schema": "https://schema.humancellatlas.org/core/project/5.0.0/project_core",
+      "describedBy": "https://schema.humancellatlas.org/core/project/5.0.0/project_core",
       "project_shortname": "P1",
       "project_title": "Project 1",
       "project_description": "This is a project."
     },
     "contributors": [
       {
-        "schema": "https://schema.humancellatlas.org/module/project/5.0.0/contact",
+        "describedBy": "https://schema.humancellatlas.org/module/project/5.0.0/contact",
         "contact_name": "Dummy Person",
         "email": "dummy@email.com"
       }
     ]
   },
   "hca_ingest": {
-    "schema": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
     "accession": "",
     "submissionDate": "2017-12-16T01:43:43.381Z",
     "updateDate": "2017-12-16T01:44:25.613Z",

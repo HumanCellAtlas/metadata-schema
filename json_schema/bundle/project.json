@@ -4,7 +4,7 @@
     "description": "A schema for a project bundle.",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type",
         "hca_ingest",
         "content"
@@ -12,7 +12,7 @@
     "title": "project",
     "type": "object",
     "properties": {
-        "schema": {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern": "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project"

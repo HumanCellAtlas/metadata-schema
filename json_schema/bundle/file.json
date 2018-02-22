@@ -4,7 +4,7 @@
     "description": "A schema for a file bundle.",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type"
     ],
     "title": "file",
@@ -34,7 +34,7 @@
         }
     },
     "properties": {
-        "schema" : {
+        "describedBy" : {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/file"
