@@ -4,13 +4,13 @@
     "description": "A term that may be associated with a cell type-related ontology term",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "text"
     ],
     "title": "length_unit_ontology",
     "type": "object",
     "properties": {
-        "schema":  {
+        "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/length_unit_ontology"

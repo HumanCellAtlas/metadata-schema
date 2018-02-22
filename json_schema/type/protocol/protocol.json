@@ -4,14 +4,14 @@
     "description": "Information about the protocol",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type",
         "protocol_core"
     ],
     "title": "protocol",
     "type": "object",
     "properties": {
-         "schema":  {
+         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/protocol/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/protocol"

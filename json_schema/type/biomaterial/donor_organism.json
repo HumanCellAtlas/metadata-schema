@@ -4,7 +4,7 @@
     "description": "Information about the organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type",
         "biomaterial_core",
         "is_living",
@@ -13,7 +13,7 @@
     "title": "donor_organism",
     "type": "object",
     "properties": {
-        "schema":  {
+        "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"

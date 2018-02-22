@@ -4,14 +4,14 @@
     "description": "Information about the biomaterial collection protocol",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type",
         "protocol_core"
     ],
     "title": "biomaterial_protocol",
     "type": "object",
     "properties": {
-         "schema":  {
+         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_collection_protocol"
