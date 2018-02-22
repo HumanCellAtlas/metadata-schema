@@ -95,7 +95,7 @@ e.g. For `donor_organism.json` schema, these fields will look like:
 "id": "https://schema.humancellatlas.org/type/biomaterial/4.0.0/donor_organism"
 "additionalProperties": false,
 "properties" : {
-    "$schema": {
+    "schema": {
         "description": "The URL reference to the schema.",
         "type": "string",
         "pattern": "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"

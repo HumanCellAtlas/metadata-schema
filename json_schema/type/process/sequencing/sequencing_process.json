@@ -4,7 +4,7 @@
     "description": "Information about how a biomaterial was sequenced.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type",
         "process_core",
         "instrument_manufacturer_model",
@@ -13,7 +13,7 @@
     "title": "sequencing_process",
     "type": "object",
     "properties": {
-         "$schema" : {
+         "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequencing_process"

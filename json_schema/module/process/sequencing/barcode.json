@@ -4,7 +4,7 @@
     "description": "This module describes barcodes used in a library preparation process.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "barcode_offset",
         "barcode_length",
         "barcode_read"
@@ -12,7 +12,7 @@
     "title": "barcode",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/barcode"

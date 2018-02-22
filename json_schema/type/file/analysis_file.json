@@ -4,14 +4,14 @@
     "description": "A file analysis results produced by a secondary analysis pipeline.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type",
         "file_core"
     ],
     "title": "analysis_file",
     "type": "object",
     "properties": {
-        "$schema": {
+        "schema": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern": "https://schema.humancellatlas.org/type/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_file"

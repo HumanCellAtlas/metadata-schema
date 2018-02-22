@@ -4,7 +4,7 @@
     "description": "Information about how a sequencing library was created.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type",
         "process_core",
         "end_bias",
@@ -15,7 +15,7 @@
     "title": "library_preparation_process",
     "type": "object",
     "properties": {
-         "$schema" : {
+         "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process"

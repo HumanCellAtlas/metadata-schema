@@ -4,13 +4,13 @@
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type"
     ],
     "title": "project",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project"

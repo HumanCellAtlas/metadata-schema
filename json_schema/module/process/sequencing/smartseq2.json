@@ -4,12 +4,12 @@
     "description": "This module describes information specific to SmartSeq2 experiments.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "schema"
     ],
     "title": "smartseq2",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/smartseq2"
