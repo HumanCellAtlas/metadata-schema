@@ -4,7 +4,7 @@
     "description": "A schema for a file bundle.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type"
     ],
     "title": "file",
@@ -26,15 +26,15 @@
                     "description": "Content for any file type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/sequence_file" },
-                        { "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/analysis_file" }
+                        { "$ref": "https://schema.humancellatlas.org/type/file/5.0.0/sequence_file" },
+                        { "$ref": "https://schema.humancellatlas.org/type/file/5.0.0/analysis_file" }
                     ]
                 }
             }
         }
     },
     "properties": {
-        "$schema" : {
+        "schema" : {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/file"
@@ -51,7 +51,7 @@
                 "file_bundle"
             ]
         },
-        "file_wrappers": {
+        "files": {
             "description": "An array of files.",
             "type": "array",
             "items": {
