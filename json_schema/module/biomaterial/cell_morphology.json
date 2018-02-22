@@ -4,12 +4,12 @@
     "description": "Information relating to pathological features of cells.",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "schema"
     ],
     "title": "cell_pathology",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_morphology"

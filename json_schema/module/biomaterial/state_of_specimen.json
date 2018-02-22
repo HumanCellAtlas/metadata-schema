@@ -4,12 +4,12 @@
     "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
     "additionalProperties": false,
     "required": [
-        "$schema"
+        "schema"
     ],
     "title": "state_of_specimen",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/state_of_specimen"

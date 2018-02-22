@@ -8,7 +8,7 @@
     ],
     "title": "instrument_ontology",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/instrument_ontology",
             "type": "string"
         },

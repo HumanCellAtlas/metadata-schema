@@ -4,14 +4,14 @@
     "description": "Information about a person who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "contact_name",
         "email"
     ],
     "title": "contact",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/module/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/contact"

@@ -4,7 +4,7 @@
     "description": "Information about an analysis that was performed on data files.",
     "additionalProperties": true,
     "required": [
-        "$schema",
+        "schema",
         "schema_type",
         "timestamp_start_utc",
         "timestamp_stop_utc",
@@ -89,7 +89,7 @@
         }
     },
     "properties": {
-        "$schema": {
+        "schema": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_process"

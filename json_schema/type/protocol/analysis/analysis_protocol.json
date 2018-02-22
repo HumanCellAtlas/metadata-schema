@@ -4,14 +4,14 @@
     "description": "Information about the analysis protocol",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type",
         "protocol_core"
     ],
     "title": "analysis_protocol",
     "type": "object",
     "properties": {
-         "$schema" : {
+         "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/protocol/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_protocol"

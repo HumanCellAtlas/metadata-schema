@@ -4,14 +4,14 @@
     "description": "Information about the cell suspension derived from the collected or cultured specimen",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "schema",
         "schema_type",
         "biomaterial_core"
     ],
     "title": "cell_suspension",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "schema":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension"
