@@ -56,7 +56,7 @@
                 "process_bundle"
             ]
         },
-        "process_wrappers": {
+        "processes": {
             "description": "An array of processes.",
             "type": "array",
             "items": {

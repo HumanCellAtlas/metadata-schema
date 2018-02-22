@@ -53,7 +53,7 @@
                 "protocol_bundle"
             ]
         },
-        "protocol_wrappers": {
+        "protocols": {
             "description": "An array of protocols.",
             "items": {
                 "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/protocol_bundle#/definitions/protocol_ingest"
