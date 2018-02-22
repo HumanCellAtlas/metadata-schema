@@ -50,7 +50,7 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "project_bundle"
+                "protocol_bundle"
             ]
         },
         "protocol_wrappers": {
