@@ -60,7 +60,7 @@
             "description": "An array of processes.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/process_bundle#/definitions/process_ingest"
+                "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/process#/definitions/process_ingest"
             }
         }
     }

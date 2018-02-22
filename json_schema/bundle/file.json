@@ -55,7 +55,7 @@
             "description": "An array of files.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/bundle/1.0.0/biomaterial_bundle#/definitions/file_ingest"
+                "$ref": "https://schema.humancellatlas.org/bundle/1.0.0/file#/definitions/file_ingest"
             }
         }
     }
