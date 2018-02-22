@@ -58,7 +58,7 @@
             "description": "An array of biomaterials.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle#/definitions/biomaterial_ingest"
+                "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial#/definitions/biomaterial_ingest"
             }
         }
     }
