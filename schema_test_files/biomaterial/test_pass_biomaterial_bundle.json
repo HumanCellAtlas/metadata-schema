@@ -1,5 +1,5 @@
 {
-  "schema": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial_bundle",
+  "schema": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial",
   "schema_version": "5.0.0",
   "schema_type": "biomaterial_bundle",
   "biomaterials": [
@@ -70,9 +70,7 @@
           "schema": "https://schema.humancellatlas.org/module/ontology/5.0.0/organ_part_ontology",
           "text": "peripheral blood mononuclear cells (PBMCs)"
         }
-      },
-      "derived_from": ["a37dbd93-b93a-4838-a7bb-cd0796b3d9d1"],
-      "derivation_processes": []
+      }
     }
   ]
 }
