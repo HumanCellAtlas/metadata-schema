@@ -4,7 +4,7 @@
     "description": "Information added to a submission at ingest." ,
     "additionalProperties": false,
 	"required": [
-		"schema",
+		"describedBy",
     	"transfer_service_version",
 		"submitted_files"
     ],
@@ -83,7 +83,7 @@
 		}
     },
     "properties": {
-	 	"schema": {
+	 	"describedBy": {
             "description": "The URL reference to the schema.",
 			"type": "string",
       	  	"pattern": "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/submission"

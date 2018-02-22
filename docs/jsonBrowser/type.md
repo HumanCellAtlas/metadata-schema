@@ -6,7 +6,7 @@ Location: type/file/sequence_file.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
@@ -22,7 +22,7 @@ Location: type/file/analysis_file.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
@@ -34,7 +34,7 @@ Location: type/protocol/protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
@@ -47,7 +47,7 @@ Location: type/protocol/sequencing/sequencing_protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
@@ -60,7 +60,7 @@ Location: type/protocol/analysis/analysis_protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
@@ -73,7 +73,7 @@ Location: type/protocol/imaging/imaging_protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
@@ -86,7 +86,7 @@ Location: type/protocol/biomaterial/biomaterial_collection_protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
@@ -99,7 +99,7 @@ Location: type/project/project.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
 project_core | Core project-level information. | object | no | [See core  project_core](core.md/#project_core) |  |  | 
@@ -118,7 +118,7 @@ Location: type/biomaterial/specimen_from_organism.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
@@ -137,7 +137,7 @@ Location: type/biomaterial/cell_suspension.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
@@ -154,7 +154,7 @@ Location: type/biomaterial/cell_line.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
@@ -177,7 +177,7 @@ Location: type/biomaterial/donor_organism.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
@@ -207,7 +207,7 @@ Location: type/biomaterial/organoid.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
@@ -226,7 +226,7 @@ Location: type/process/sequencing/library_preparation_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
@@ -250,7 +250,7 @@ Location: type/process/sequencing/sequencing_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
@@ -268,7 +268,7 @@ Location: type/process/analysis/analysis_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | no | [See core  process_core](core.md/#process_core) |  |  | 
@@ -291,7 +291,7 @@ Location: type/process/biomaterial_collection/collection_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
@@ -306,7 +306,7 @@ Location: type/process/biomaterial_collection/enrichment_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
@@ -323,7 +323,7 @@ Location: type/process/biomaterial_collection/dissociation_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
@@ -339,7 +339,7 @@ Location: type/process/imaging/imaging_process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 

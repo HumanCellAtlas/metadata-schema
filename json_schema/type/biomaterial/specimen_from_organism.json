@@ -4,7 +4,7 @@
     "description": "Information about the specimen that was extracted from the organism.",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type",
         "biomaterial_core",
 	    "organ_part",
@@ -13,7 +13,7 @@
     "title": "specimen_from_organism",
     "type": "object",
     "properties": {
-        "schema":  {
+        "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/specimen_from_organism"

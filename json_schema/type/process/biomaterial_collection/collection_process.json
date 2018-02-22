@@ -4,14 +4,14 @@
     "description": "Process by which a biomaterial was collected or transformed from another biomaterial or from a population.",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type",
         "process_core"
     ],
     "title": "collection_process",
     "type": "object",
     "properties": {
-        "schema":  {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/collection_process"

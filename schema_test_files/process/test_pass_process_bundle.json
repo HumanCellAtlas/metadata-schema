@@ -1,21 +1,21 @@
 {
-  "schema": "https://schema.humancellatlas.org/bundle/5.0.0/process",
+  "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/process",
   "schema_version": "5.0.0",
   "schema_type": "process_bundle",
   "processes": [
     {
       "hca_ingest": {
-        "schema": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
         "accession": "",
         "submissionDate": "2017-12-16T01:43:43.467Z",
         "updateDate": "2017-12-16T01:44:24.837Z",
         "document_id": "63688c4a-1280-4eb7-a431-2456f89c3cde"
       },
       "content": {
-        "schema": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process",
+        "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/dissociation_process",
         "schema_type": "process",
         "process_core": {
-          "schema": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
+          "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "process_id": "dissociation_protocol_1"
         },
         "dissociation_method": "FACS"
@@ -23,23 +23,23 @@
     },
     {
       "hca_ingest": {
-        "schema": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
         "accession": "",
         "submissionDate": "2017-12-16T01:43:43.467Z",
         "updateDate": "2017-12-16T01:44:24.837Z",
         "document_id": "63688c4a-1280-4eb7-a431-2456f89c3cdf"
       },
       "content": {
-        "schema": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
+        "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
         "schema_type": "process",
         "process_core": {
-          "schema": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
+          "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "process_id": "lib_prep_protocol_1"
         },
         "end_bias": "full length",
         "strand": "unstranded",
         "input_nucleic_acid_molecule": {
-          "schema": "https://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology",
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology",
           "text": "polyA RNA"
         },
         "library_construction_approach": "smart-seq2"
@@ -47,22 +47,22 @@
     },
     {
       "hca_ingest": {
-        "schema": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
         "accession": "",
         "submissionDate": "2017-12-16T01:43:43.467Z",
         "updateDate": "2017-12-16T01:44:24.837Z",
         "document_id": "63688c4a-1280-4eb7-a431-2456f89c3cdf"
       },
       "content": {
-        "schema": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
+        "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
         "schema_type": "process",
         "process_core": {
-          "schema": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
+          "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "process_id": "seq_protocol_1"
         },
         "paired_ends": true,
         "instrument_manufacturer_model": {
-          "schema": "https://schema.humancellatlas.org/module/ontology/5.0.0/instrument_ontology",
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/instrument_ontology",
           "text": "Illumina HiSeq 4000"
         }
       }

@@ -4,14 +4,14 @@
     "description": "Information about the cell line used in the biomaterial",
     "additionalProperties": false,
     "required": [
-        "schema",
+        "describedBy",
         "schema_type",
         "biomaterial_core"
     ],
     "title": "cell_line",
     "type": "object",
     "properties": {
-        "schema":  {
+        "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/biomaterial/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line"

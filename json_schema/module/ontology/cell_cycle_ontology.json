@@ -8,7 +8,7 @@
     ],
     "title": "cell_cycle_ontology",
     "properties": {
-        "schema":  {
+        "describedBy": {
             "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_cycle_ontology",
             "type": "string"
         },
