@@ -6,7 +6,7 @@
     "required": [
         "describedBy",
         "authors",
-        "title"
+        "publication_title"
     ],
     "title": "publication",
     "type": "object",
