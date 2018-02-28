@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/project/5.0.0/project",
+    "id": "https://schema.humancellatlas.org/type/project/5.0.1/project",
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
