@@ -104,7 +104,7 @@
             "description": "One or more publications in which the cell line creation was cited.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/project/5.0.0/publication"
+                "$ref": "https://schema.humancellatlas.org/module/project/5.0.1/publication"
             },
             "user_friendly": "Publications"
         }
