@@ -1,5 +1,5 @@
 {
-  "describedBy": "https://schema.humancellatlas.org/type/project/5.0.0/project",
+  "describedBy": "https://schema.humancellatlas.org/type/project/5.0.1/project",
   "schema_version": "5.0.0",
   "schema_type": "project",
   "project_core": {

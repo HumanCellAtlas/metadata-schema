@@ -1,5 +1,5 @@
 {
-  "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/biomaterial",
+  "describedBy": "https://schema.humancellatlas.org/bundle/5.0.1/biomaterial",
   "schema_version": "5.0.0",
   "schema_type": "biomaterial_bundle",
   "biomaterials": [

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.0.0/project",
+    "id": "https://schema.humancellatlas.org/bundle/5.0.1/project",
     "description": "A schema for a project bundle.",
     "additionalProperties": false,
     "required": [
@@ -37,7 +37,7 @@
         "content": {
             "description": "Content for a project type entity.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/type/project/5.0.0/project"
+            "$ref": "https://schema.humancellatlas.org/type/project/5.0.1/project"
         }
     }
 }
