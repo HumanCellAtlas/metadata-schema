@@ -35,7 +35,7 @@
       "content":  {
         "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/specimen_from_organism",
         "schema_version": "5.0.0",
-        "schema_type": "specimen_from_organism",
+        "schema_type": "biomaterial",
         "biomaterial_core": {
           "biomaterial_id": "Q4_DEMO-sample_SAMN02797092",
           "biomaterial_name": "Q4_DEMO-Single cell mRNA-seq_MGH30_A01",
