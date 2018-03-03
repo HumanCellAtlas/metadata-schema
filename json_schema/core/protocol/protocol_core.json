@@ -4,13 +4,13 @@
     "description": "A protocol entity contains information about an intended protocol that was followed in the project.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "describedBy",
         "protocol_id"
     ],
     "title": "protocol_core",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/core/protocol/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/protocol_core"

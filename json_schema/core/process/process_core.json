@@ -4,13 +4,13 @@
     "description": "A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "describedBy",
         "process_id"
     ],
     "title": "process_core",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/core/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_core"

@@ -1,17 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line",
+    "id": "https://schema.humancellatlas.org/type/biomaterial/5.0.1/cell_line",
     "description": "Information about the cell line used in the biomaterial",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "describedBy",
         "schema_type",
         "biomaterial_core"
     ],
     "title": "cell_line",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/biomaterial/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line"
@@ -104,7 +104,7 @@
             "description": "One or more publications in which the cell line creation was cited.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/project/5.0.0/publication"
+                "$ref": "https://schema.humancellatlas.org/module/project/5.0.1/publication"
             },
             "user_friendly": "Publications"
         }

@@ -4,7 +4,7 @@
     "description": "Contains information on the dissociation process used to separate the cells in a specimen.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "describedBy",
         "schema_type",
         "process_core",
         "dissociation_method"
@@ -12,7 +12,7 @@
     "title": "dissociation_process",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/dissociation_process"

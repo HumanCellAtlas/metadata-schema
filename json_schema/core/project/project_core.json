@@ -4,14 +4,14 @@
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "describedBy",
 	    "project_shortname",
         "project_title"
     ],
     "title": "project_core",
     "type": "object",
     "properties": {
-        "$schema" : {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/core/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_core"

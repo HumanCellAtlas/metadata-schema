@@ -9,6 +9,26 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/project/publication.json - v5.0.1] - 2018-02-28
+### Fixed
+The incorrect field `title` in the list of required field was fixed to be the correct field `publication_title`.
+
+### [type/project/project.json - v5.0.1] - 2018-02-28
+### Fixed
+Reference to patch version update of `module/project/publication.json` was updated.
+
+### [type/biomaterial/cell_line.json - v5.0.1] - 2018-02-28
+### Fixed
+Reference to patch version update of `module/project/publication.json` was updated.
+
+### [bundle/project.json - v5.0.1] - 2018-02-28
+### Fixed
+Reference to patch version update of `type/project/project.json` was updated.
+
+### [bundle/biomaterial.json - v5.0.1] - 2018-02-28
+### Fixed
+Reference to patch version update of `type/biomaterial/cell_line.json` was updated.
+
 ## [5.0.0](https://github.com/HumanCellAtlas/metadata-schema/tree/5.0.0) - 2018-02-19
 ### Added
 - New fields based on feedback from extensive user evaluation sessions

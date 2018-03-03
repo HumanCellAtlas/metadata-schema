@@ -4,14 +4,14 @@
     "description": "Information added or generated at time of ingest." ,
     "additionalProperties": false,
     "required": [
-        "$schema",
+        "describedBy",
         "document_id",
         "submissionDate"
     ],
     "title": "ingest",
 	"type": "object",
     "properties": {
-        "$schema" : {
+        "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ingest_audit"

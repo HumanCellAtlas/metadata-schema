@@ -1,10 +1,10 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://schema.humancellatlas.org/bundle/5.0.0/submission",
     "description": "Information added to a submission at ingest." ,
     "additionalProperties": false,
 	"required": [
-		"$schema",
+		"describedBy",
     	"transfer_service_version",
 		"submitted_files"
     ],
@@ -83,7 +83,7 @@
 		}
     },
     "properties": {
-	 	"$schema": {
+	 	"describedBy": {
             "description": "The URL reference to the schema.",
 			"type": "string",
       	  	"pattern": "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/submission"
