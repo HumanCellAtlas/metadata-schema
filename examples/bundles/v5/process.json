@@ -62,16 +62,19 @@
       "content": {
         "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
         "schema_version": "5.0.0",
-        "schema_type": "sequencing_process",
+        "schema_type": "process",
         "process_core": {
           "process_id": "assay1",
           "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "schema_version": "5.0.0"
         },
-        "instrument_manufacturer_model": "Illumina HiSeq 2500",
-        "paired_ends": "yes",
-        "process_type": "single cell sequencing process",
-        "protocol_ids": "Q4_DEMO-protocol"
+        "instrument_manufacturer_model": {"text": "Illumina HiSeq 2500",
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/instrument_ontology"},
+        "paired_ends": true,
+        "process_type": {
+          "text" : "single cell sequencing process",
+            "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology"
+        }
       },
       "hca_ingest": {
         "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
