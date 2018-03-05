@@ -7,7 +7,7 @@
       "content": {
         "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
         "schema_version": "5.0.0",
-        "schema_type": "donor_organism",
+        "schema_type": "biomaterial",
         "biomaterial_core": {
           "biomaterial_id": "Q4_DEMO-donor_MGH30",
           "biomaterial_name": "Q4 DEMO donor MGH30",
@@ -17,10 +17,12 @@
           "describedBy": "https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core",
           "schema_version": "5.0.0"
         },
-        "genus_species": [
-          "Homo sapiens"
-        ],
-        "is_living": "yes"
+        "genus_species": [{
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
+          "text": "Homo sapiens"
+        }],
+        "is_living": true,
+        "biological_sex": "unknown"
       },
       "hca_ingest": {
         "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
@@ -32,7 +34,7 @@
       }
     },
     {
-      "content":  {
+      "content": {
         "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/specimen_from_organism",
         "schema_version": "5.0.0",
         "schema_type": "biomaterial",
@@ -50,12 +52,24 @@
           "schema_version": "5.0.0"
         },
         "genus_species": [
-          "Homo sapiens"
+          {
+            "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
+            "text": "Homo sapiens"
+          }
         ],
-        "organ": "brain",
-        "organ_part": "astrocyte",
+        "organ": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/organ_ontology",
+          "text": "brain"
+        },
+        "organ_part": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/organ_part_ontology",
+          "text": "astrocyte"
+        },
         "disease": [
-          "glioblastoma"
+          {
+            "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/disease_ontology",
+            "text": "glioblastoma"
+          }
         ]
       },
       "hca_ingest": {
@@ -66,5 +80,6 @@
         "submitter_id": "anonymousUser",
         "updater_id": "anonymousUser"
       }
-    }]
+    }
+  ]
 }
