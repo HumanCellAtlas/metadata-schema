@@ -30,20 +30,24 @@
     },
     {
       "content": {
-        "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
+	"describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
         "schema_version": "5.0.0",
-        "schema_type": "library_preparation_process",
+        "schema_type": "process",
         "process_core": {
           "process_id": "preparation1",
           "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "schema_version": "5.0.0"
         },
-        "input_nucleic_acid_molecule": "polyA RNA",
+        "input_nucleic_acid_molecule": {
+          "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology",
+            "text": "polyA RNA"},
         "library_construction_approach": "Smart-seq2",
         "end_bias": "5 prime end bias",
         "strand": "unstranded",
-        "process_type": "nucleic acid librarly construction process",
-        "protocol_ids": "library_protocol1"
+        "process_type":{
+		"text" :"nucleic acid librarly construction process", 
+		"describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology"
+	}
       },
       "hca_ingest": {
         "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
