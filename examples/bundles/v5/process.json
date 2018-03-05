@@ -4,17 +4,20 @@
   "schema_type": "process_bundle",
   "processes": [
     {
-      "content": {
+	"content" : {
         "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/enrichment_process",
         "schema_version": "5.0.0",
-        "schema_type": "enrichment_process",
+        "schema_type": "process",
         "process_core": {
           "process_id": "enrichment1",
           "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
           "schema_version": "5.0.0"
         },
         "enrichment_method": "FACS",
-        "process_type": "enrichment process"
+        "process_type": {
+          "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology",
+          "text": "enrichment process"
+        }
       },
       "hca_ingest": {
         "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
