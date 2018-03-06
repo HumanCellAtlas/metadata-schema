@@ -12,7 +12,6 @@
         "input_bundles",
         "reference_bundle",
         "analysis_run_type",
-        "metadata_schema",
         "tasks",
         "inputs",
         "outputs"
