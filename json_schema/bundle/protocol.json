@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.0.0/protocol",
+    "id": "https://schema.humancellatlas.org/bundle/5.1.0/protocol",
     "description": "A schema for a protocol bundle.",
     "additionalProperties": false,
     "required": [
@@ -29,7 +29,8 @@
                         { "$ref": "https://schema.humancellatlas.org/type/protocol/analysis/5.0.0/analysis_protocol" },
                         { "$ref": "https://schema.humancellatlas.org/type/protocol/biomaterial/5.0.0/biomaterial_collection_protocol" },
                         { "$ref": "https://schema.humancellatlas.org/type/protocol/imaging/5.0.0/imaging_protocol" },
-                        { "$ref": "https://schema.humancellatlas.org/type/protocol/sequencing/5.0.0/sequencing_protocol" }
+                        { "$ref": "https://schema.humancellatlas.org/type/protocol/sequencing/5.0.0/sequencing_protocol" },
+                        { "$ref": "https://schema.humancellatlas.org/type/protocol/5.0.0/protocol" }
                     ]
                 }
             }

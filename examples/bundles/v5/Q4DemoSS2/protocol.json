@@ -1,0 +1,56 @@
+{
+  "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/protocol",
+  "schema_version": "5.0.0",
+  "schema_type": "protocol_bundle",
+  "protocols": [
+    {
+      "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/5.0.0/protocol",
+        "schema_version": "5.0.0",
+        "schema_type": "protocol",
+        "protocol_core": {
+          "protocol_id": "Q4_DEMO-protocol",
+          "document": "Q4_DEMO-protocol.pdf",
+          "describedBy": "https://schema.humancellatlas.org/core/protocol/5.0.0/protocol_core",
+          "schema_version": "5.0.0"
+        },
+        "protocol_type": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/protocol_type_ontology",
+          "text": "single cell sequencing protocol"
+        }
+      },
+      "hca_ingest": {
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "document_id": "c3f875b1-3f68-49dc-8430-628809471723",
+        "submissionDate": "2018-02-07T10:21:43.228Z",
+        "updateDate": "2018-02-07T10:21:54.398Z",
+        "submitter_id": "anonymousUser",
+        "updater_id": "anonymousUser"
+      }
+    },
+    {
+      "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/protocol/5.0.0/protocol",
+        "schema_version": "5.0.0",
+        "schema_type": "protocol",
+        "protocol_core": {
+          "protocol_id": "library_protocol1",
+          "describedBy": "https://schema.humancellatlas.org/core/protocol/5.0.0/protocol_core",
+          "schema_version": "5.0.0"
+        },
+        "protocol_type": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/protocol_type_ontology",
+          "text": "library construction protocol"
+        }
+      },
+      "hca_ingest": {
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "document_id": "55f6af18-50fc-4224-a568-992aceb7dc7b",
+        "submissionDate": "2018-02-07T10:21:43.228Z",
+        "updateDate": "2018-02-07T10:21:54.398Z",
+        "submitter_id": "anonymousUser",
+        "updater_id": "anonymousUser"
+      }
+    }
+  ]
+}
