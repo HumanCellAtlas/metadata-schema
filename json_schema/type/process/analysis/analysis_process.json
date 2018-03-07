@@ -12,7 +12,6 @@
         "input_bundles",
         "reference_bundle",
         "analysis_run_type",
-        "metadata_schema",
         "tasks",
         "inputs",
         "outputs"
@@ -171,11 +170,6 @@
                 "run",
                 "copy-forward"
             ]
-        },
-        "metadata_schema": {
-            "description": "The version of the metadata schemas used for the JSON files.",
-            "type": "string",
-            "pattern" : "[0-9]{1,}.[0-9]{1,}.[0-9]{1,}"
         }
     }
 }
