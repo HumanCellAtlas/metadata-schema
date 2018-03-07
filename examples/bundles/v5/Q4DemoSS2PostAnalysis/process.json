@@ -227,7 +227,7 @@
             "file_core": {
               "describedBy": "https://schema.humancellatlas.org/core/file/5.0.0/file_core",
               "file_name": "gs://broad-dsde-mint-dev-cromwell-execution/cromwell-executions/AdapterSmartSeq2SingleCell/37df2462-96a3-4783-b2cc-9e1b2da0969a/call-analysis/SmartSeq2SingleCell/2892d81e-a738-4c03-ab8c-737012bb40e6/call-qc/RunHisat2Pipeline/e7aaa255-901a-4598-9c8d-2966544cb257/call-Hisat2/b0c57b9c-860b-4bbf-84aa-5f845508101d_qc.bam",
-              "file_format": "bam",
+              "file_format": "bam"
             }
           },
           {
