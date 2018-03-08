@@ -41,7 +41,8 @@
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode"
+            "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode",
+            "user_friendly": "Cell barcode"
         },
         "input_nucleic_acid_molecule": {
             "description": "Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
@@ -76,12 +77,14 @@
         "library_construction_kit": {
             "description": "Name of kit used to construct the sequencing library.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents"
+            "$ref": "https://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents",
+            "user_friendly": "Library construction kit"
         },
         "nucleic_acid_conversion_kit": {
             "description": "Name of kit used to convert RNA to DNA for sequencing.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents"
+            "$ref": "https://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents",
+            "user_friendly": "Nucleic acid conversion kit"
         },
         "end_bias": {
             "description": "The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.",
@@ -119,7 +122,8 @@
         "spike_in_kit": {
             "description": "Name of spike-in kit.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents"
+            "$ref": "https://schema.humancellatlas.org/module/process/5.0.0/purchased_reagents",
+            "user_friendly": "Spike-in kit"
         },
         "spike_in_dilution": {
             "description": "Dilution of spike-in.",
@@ -131,7 +135,8 @@
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode"
+            "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode",
+            "user_friendly": "UMI barcode"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
