@@ -1,5 +1,6 @@
 [ {
-  "metadata" : [ {
+  "schema_type" : "project",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/project/5.0.1/project",
     "schema_version" : "5.0.1",
     "schema_type" : "project",
@@ -10,10 +11,10 @@
       "describedBy" : "https://schema.humancellatlas.org/core/project/5.0.0/project_core",
       "schema_version" : "5.0.0"
     }
-  } ],
-  "links" : [ ]
+  } ]
 }, {
-  "metadata" : [ {
+  "schema_type" : "biomaterial",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism",
     "schema_version" : "5.0.0",
     "schema_type" : "biomaterial",
@@ -30,10 +31,10 @@
     } ],
     "is_living" : true,
     "biological_sex" : "unknown"
-  } ],
-  "links" : [ ]
+  } ]
 }, {
-  "metadata" : [ {
+  "schema_type" : "biomaterial",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/biomaterial/5.0.0/specimen_from_organism",
     "schema_version" : "5.0.0",
     "schema_type" : "biomaterial",
@@ -62,10 +63,10 @@
       "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/disease_ontology",
       "text" : "glioblastoma"
     } ]
-  } ],
-  "links" : [ ]
+  } ]
 }, {
-  "metadata" : [ {
+  "schema_type" : "process",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/enrichment_process",
     "schema_version" : "5.0.0",
     "schema_type" : "process",
@@ -79,10 +80,10 @@
       "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology",
       "text" : "enrichment process"
     }
-  } ],
-  "links" : [ ]
+  } ]
 }, {
-  "metadata" : [ {
+  "schema_type" : "process",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
     "schema_version" : "5.0.0",
     "schema_type" : "process",
@@ -110,7 +111,8 @@
     "destination_id" : "library_protocol1"
   } ]
 }, {
-  "metadata" : [ {
+  "schema_type" : "process",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
     "schema_version" : "5.0.0",
     "schema_type" : "process",
@@ -136,7 +138,8 @@
     "destination_id" : "Q4_DEMO-protocol"
   } ]
 }, {
-  "metadata" : [ {
+  "schema_type" : "protocol",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/protocol/5.0.0/protocol",
     "schema_version" : "5.0.0",
     "schema_type" : "protocol",
@@ -163,10 +166,10 @@
       "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/protocol_type_ontology",
       "text" : "library construction protocol"
     }
-  } ],
-  "links" : [ ]
+  } ]
 }, {
-  "metadata" : [ {
+  "schema_type" : "file",
+  "content" : [ {
     "describedBy" : "https://schema.humancellatlas.org/type/file/5.0.0/sequence_file",
     "schema_version" : "5.0.0",
     "schema_type" : "file",
