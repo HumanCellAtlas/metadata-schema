@@ -8,7 +8,7 @@ from schema_test_suite import get_json_from_file
 
 
 # hard coded tab ordering
-tab_ordering = ["project", "project.publications", "contact", "donor_organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
+tab_ordering = ["project", "project.publications", "project.contributors", "donor_organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
                 "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
                 "sequencing_process", "purchased_reagents", "protocol", "sequence_file"]
 
@@ -92,6 +92,7 @@ class SpreadsheetCreator:
                         module_values["project.publications"] = module_values.pop("publication")
                     if entity_title == "cell_line" and "publication" in module_values.keys():
                         module_values["cell_line.publications"] = module_values.pop("publication")
+
                     entities.update(module_values)
             # if a property does not include a user_friendly tag but includes a reference, fetch the contents of that reference and add them
             # directly to the properties for this sheet
@@ -147,7 +148,8 @@ class SpreadsheetCreator:
                     if "example" in properties[prop]:
                         example = properties[prop]["example"]
 
-                    if("$ref" in properties[prop] and "ontology" in properties[prop]["$ref"]):
+                    if(("$ref" in properties[prop] and "ontology" in properties[prop]["$ref"]) or
+                            (("items" in properties[prop] and "$ref" in properties[prop]["items"]) and ("ontology" in properties[prop]["items"]["$ref"]))):
                         prop = prop + ".text"
 
                     values.append({"header": prop, "description": description,
