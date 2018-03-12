@@ -12,17 +12,19 @@ tab_ordering = ["project", "project.publications", "contact", "donor_organism", 
                 "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
                 "sequencing_process", "purchased_reagents", "protocol", "sequence_file"]
 
+excluded_fields = ["describedBy", "schema_version", "schema_type"]
+
 class SpreadsheetCreator:
 
     def __init__(self):
         self.logger = logging.getLogger(__name__)
 
-    def generateSpreadsheet(self, baseUri, schemas, dependencies, output, local):
+    def generateSpreadsheet(self, baseUri, schemas, dependencies, output, local, userFriendly):
         values = {}
         try:
             # for each schema, gather the values for the relevant tab(s)
             for schema in schemas:
-                v = self._gatherValues(baseUri, schema, dependencies, local)
+                v = self._gatherValues(baseUri, schema, dependencies, local, userFriendly)
                 values.update(v)
             # Build the spreadsheet from the retrieved values
             self._buildSpreadsheet(values, output)
@@ -30,7 +32,7 @@ class SpreadsheetCreator:
             self.logger.error("Error:" + str(e))
             raise e
 
-    def _gatherValues(self, basepath, schema, dependencies, local):
+    def _gatherValues(self, basepath, schema, dependencies, local, userFriendly):
 
         if local:
             jsonRaw = get_json_from_file(schema)
@@ -68,10 +70,10 @@ class SpreadsheetCreator:
                         module = module + "/" + e
                     module = module + ".json"
                 if module in dependencies:
-                    module_values = self._gatherValues(basepath, module, None, local)
+                    module_values = self._gatherValues(basepath, module, None, local, userFriendly)
                     # add primary entity ID to cross reference with main entity
                     for primary in values:
-                        if "ID" in primary["header"] or "shortname" in primary["header"]:
+                        if "id" in primary["header"].lower() or "shortname" in primary["header"]:
                             for key in module_values.keys():
                                 t = primary["header"]
                                 if "ID" in t:
@@ -107,28 +109,26 @@ class SpreadsheetCreator:
                     module = module + ".json"
 
                     if "_core" in module or module in dependencies:
-                        module_values = self._gatherValues(basepath, module, None, local)
+                        module_values = self._gatherValues(basepath, module, None, local, userFriendly)
 
-                    prefix = ""
-                    if module in dependencies:
-
-                        if "user_friendly" in properties[prop]:
-                            prefix = properties[prop]["user_friendly"] + " - "
+                        prefix = ""
+                    # if module in dependencies:
+                        if userFriendly:
+                            if "user_friendly" in properties[prop]:
+                                prefix = properties[prop]["user_friendly"] + " - "
+                            else:
+                                print(prop + " in " + entity_title + " has no user friendly name")
                         else:
-                            print(prop + " in " + entity_title + " has no user friendly name")
+                            prefix = prop + "."
 
                     for key in module_values.keys():
                         for entry in module_values[key]:
                             entry["header"] = prefix + entry["header"]
                         values.extend(module_values[key])
 
-
-
-
-
             # if a property has a user_friendly tag, include it as a direct field. This includes ontology module references as these should not be
             # exposed to users
-            elif ("user_friendly" in properties[prop]):
+            elif (userFriendly and "user_friendly" in properties[prop]):
                 description = None
                 example = None
                 if "description" in properties[prop]:
@@ -138,22 +138,56 @@ class SpreadsheetCreator:
 
                 values.append({"header": properties[prop]["user_friendly"], "description": description,
                                "example": example})
+            elif not userFriendly:
+                if prop not in excluded_fields:
+                    description = None
+                    example = None
+                    if "description" in properties[prop]:
+                        description = properties[prop]["description"]
+                    if "example" in properties[prop]:
+                        example = properties[prop]["example"]
+
+                    if("$ref" in properties[prop] and "ontology" in properties[prop]["$ref"]):
+                        prop = prop + ".text"
+
+                    values.append({"header": prop, "description": description,
+                                   "example": example})
 
         if "type/biomaterial" in schema:
-            values.append(
-                {"header": "Process IDs", "description": "IDs of processes for which this biomaterial is an input",
-                               "example": None})
+            if userFriendly:
+                values.append(
+                    {"header": "Process IDs", "description": "IDs of processes for which this biomaterial is an input",
+                                   "example": None})
+            else:
+                values.append(
+                    {"header": "process_ids", "description": "IDs of processes for which this biomaterial is an input",
+                     "example": None})
         if "type/process" in schema:
-            values.append(
-                {"header": "Protocol IDs", "description": "IDs of protocols which this process implements",
-                 "example": None})
+            if userFriendly:
+                values.append(
+                    {"header": "Protocol IDs", "description": "IDs of protocols which this process implements",
+                     "example": None})
+            else:
+                values.append(
+                    {"header": "protocol_ids", "description": "IDs of protocols which this process implements",
+                     "example": None})
+
         if "type/file" in schema:
-            values.append(
-                {"header": "Biomaterial ID", "description": "ID of the biomaterial to which this file relates",
-                 "example": None})
-            values.append(
-                {"header": "Sequencing process ID", "description": "ID of the sequencing process to which this file relates",
-                 "example": None})
+            if userFriendly:
+                values.append(
+                    {"header": "Biomaterial ID", "description": "ID of the biomaterial to which this file relates",
+                     "example": None})
+                values.append(
+                    {"header": "Sequencing process ID", "description": "ID of the sequencing process to which this file relates",
+                    "example": None})
+            else:
+                values.append(
+                    {"header": "biomaterials_id", "description": "ID of the biomaterial to which this file relates",
+                     "example": None})
+                values.append(
+                    {"header": "process_id",
+                     "description": "ID of the sequencing process to which this file relates",
+                     "example": None})
 
         entities[entity_title] = values
         return entities
@@ -215,7 +249,12 @@ if __name__ == '__main__':
                       help="Schema modules to include in the spreadsheet")
     parser.add_option("-l", "--local", action="store_true", dest="local_files",
                       help="Run using local schemas")
-
+    parser.add_option("-r", "--remote", action="store_false", dest="local_files",
+                      help="Run using schemas from remote URL")
+    parser.add_option("-u", "--user_friendly", action="store_true", dest="user_friendly",
+                      help="Use user friendly field names")
+    parser.add_option("-f", "--field_names", action="store_false", dest="user_friendly",
+                      help="Use non-user friendly field names")
 
     (options, args) = parser.parse_args()
 
@@ -258,7 +297,7 @@ if __name__ == '__main__':
             dependencies[index] = options.schema_uri+dependency
 
     generator = SpreadsheetCreator()
-    generator.generateSpreadsheet(base_schema_path, schema_types, dependencies, options.output, options.local_files)
+    generator.generateSpreadsheet(base_schema_path, schema_types, dependencies, options.output, options.local_files, options.user_friendly)
 
 
 
