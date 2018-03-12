@@ -105,10 +105,10 @@
     }
   } ],
   "links" : [ {
-    "source_type" : "library_preparation_process",
+    "source_type" : "process",
     "source_id" : "preparation1",
-    "destination_type" : "protocol_ids",
-    "destination_id" : "library_protocol1"
+    "destination_type" : "protocol",
+    "destination_ids" : [ "library_protocol1" ]
   } ]
 }, {
   "schema_type" : "process",
@@ -132,10 +132,10 @@
     }
   } ],
   "links" : [ {
-    "source_type" : "sequencing_process",
+    "source_type" : "process",
     "source_id" : "assay1",
-    "destination_type" : "protocol_ids",
-    "destination_id" : "Q4_DEMO-protocol"
+    "destination_type" : "protocol",
+    "destination_ids" : [ "Q4_DEMO-protocol" ]
   } ]
 }, {
   "schema_type" : "protocol",
@@ -197,24 +197,24 @@
     "read_length" : 225
   } ],
   "links" : [ {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "R1.fastq.gz",
-    "destination_type" : "biomaterial_id",
-    "destination_id" : "Q4_DEMO-sample_SAMN02797092"
+    "destination_type" : "biomaterial",
+    "destination_ids" : [ "Q4_DEMO-sample_SAMN02797092" ]
   }, {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "R1.fastq.gz",
-    "destination_type" : "sequencing_process_id",
-    "destination_id" : "assay_1"
+    "destination_type" : "sequencing",
+    "destination_ids" : [ "assay_1" ]
   }, {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "R2.fastq.gz",
-    "destination_type" : "biomaterial_id",
-    "destination_id" : "Q4_DEMO-sample_SAMN02797092"
+    "destination_type" : "biomaterial",
+    "destination_ids" : [ "Q4_DEMO-sample_SAMN02797092" ]
   }, {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "R2.fastq.gz",
-    "destination_type" : "sequencing_process_id",
-    "destination_id" : "assay_1"
+    "destination_type" : "sequencing",
+    "destination_ids" : [ "assay_1" ]
   } ]
 } ]

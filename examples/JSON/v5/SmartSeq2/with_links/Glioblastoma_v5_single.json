@@ -61,10 +61,10 @@
     }
   } ],
   "links" : [ {
-    "source_type" : "specimen_from_organism",
+    "source_type" : "biomaterial",
     "source_id" : "BT_S1_T",
-    "destination_type" : "process_ids",
-    "destination_id" : "dis_proc_1"
+    "destination_type" : "process",
+    "destination_ids" : [ "dis_proc_1" ]
   } ]
 }, {
   "schema_type" : "biomaterial",
@@ -89,10 +89,10 @@
     "total_estimated_cells" : 1
   } ],
   "links" : [ {
-    "source_type" : "cell_suspension",
+    "source_type" : "biomaterial",
     "source_id" : "GSM2243439",
-    "destination_type" : "process_ids",
-    "destination_id" : "lib_prep_proc_1||seq_proc_1"
+    "destination_type" : "process",
+    "destination_ids" : [ "lib_prep_proc_1", "seq_proc_1" ]
   } ]
 }, {
   "schema_type" : "process",
@@ -108,10 +108,10 @@
     "dissociation_method" : "FACS"
   } ],
   "links" : [ {
-    "source_type" : "dissociation_process",
+    "source_type" : "process",
     "source_id" : "dis_proc_1",
-    "destination_type" : "protocol_ids",
-    "destination_id" : "na_lib_con_1"
+    "destination_type" : "protocol",
+    "destination_ids" : [ "na_lib_con_1" ]
   } ]
 }, {
   "schema_type" : "process",
@@ -133,10 +133,10 @@
     "strand" : "unstranded"
   } ],
   "links" : [ {
-    "source_type" : "library_preparation_process",
+    "source_type" : "process",
     "source_id" : "lib_prep_proc_1",
-    "destination_type" : "protocol_ids",
-    "destination_id" : "na_lib_con_1"
+    "destination_type" : "protocol",
+    "destination_ids" : [ "na_lib_con_1" ]
   } ]
 }, {
   "schema_type" : "process",
@@ -202,24 +202,24 @@
     "read_index" : "read2"
   } ],
   "links" : [ {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "SRR3934349_1.fastq.gz",
-    "destination_type" : "biomaterial_id",
-    "destination_id" : "GSM2243439"
+    "destination_type" : "biomaterial",
+    "destination_ids" : [ "GSM2243439" ]
   }, {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "SRR3934349_1.fastq.gz",
-    "destination_type" : "sequencing_process_id",
-    "destination_id" : "seq_proc_1"
+    "destination_type" : "sequencing",
+    "destination_ids" : [ "seq_proc_1" ]
   }, {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "SRR3934349_2.fastq.gz",
-    "destination_type" : "biomaterial_id",
-    "destination_id" : "GSM2243439"
+    "destination_type" : "biomaterial",
+    "destination_ids" : [ "GSM2243439" ]
   }, {
-    "source_type" : "sequence_file",
+    "source_type" : "file",
     "source_id" : "SRR3934349_2.fastq.gz",
-    "destination_type" : "sequencing_process_id",
-    "destination_id" : "seq_proc_1"
+    "destination_type" : "sequencing",
+    "destination_ids" : [ "seq_proc_1" ]
   } ]
 } ]
