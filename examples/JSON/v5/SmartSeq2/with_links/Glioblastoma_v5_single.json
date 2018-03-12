@@ -156,7 +156,8 @@
     "paired_ends" : true,
     "smartseq2" : {
       "plate_id" : "1001000173",
-      "well_name" : "G8"
+      "well_name" : "G8",
+      "describedBy" : "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/smartseq2"
     }
   } ]
 }, {
