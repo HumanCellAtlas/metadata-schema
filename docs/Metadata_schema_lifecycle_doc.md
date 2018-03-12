@@ -13,15 +13,11 @@
 - [Governance of Schema Updates](#governance-of-schema-updates)
 - [Open questions](#open-questions)
 
-Information about the process by which the HCA metadata schema will evolve is outlined here. Version 1.0 of this document can be found in the [HCA metadata lifecycle and versioning](https://docs.google.com/document/d/1eUVpYDLu2AxmxRw2ZUMM-jpKNxQudJbznNyNRp35nLc/edit#heading=h.6p3dwsx7c3hb) document. The v2.0 document here includes HCA schema design principles and standards and the semantics for versioning and updating these schema. More detailed discussion of the format and syntax of the metadata schema and their instantiation can be found in the complementary document [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455). These documents should be viewable by everyone. Please contact us if you do not have access to view.
-
 ## High level description
 
 The Human Cell Atlas (HCA) is collecting complex biological samples and assays with rich descriptions. We expect over the lifetime of the project that the metadata schema that captures these descriptions will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding changes the descriptions we need may also change. The schema will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
 
-This document describes the basis for and the process by which the HCA metadata schema will evolve. This document includes our schema design principles and the semantics and process for versioning and updating these schema. For discussion of the detailed format and syntax of the metadata schema and their instantiation, see the complementary doc [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455#).
-
-The metadata working group should review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes should be made to ensure metadata update is not a blocker for the consortium as a whole.
+This document describes the principles and standards by which the HCA metadata schema will evolve. Version 1.0 of this document can be found in the [HCA metadata lifecycle and versioning](https://docs.google.com/document/d/1eUVpYDLu2AxmxRw2ZUMM-jpKNxQudJbznNyNRp35nLc/edit#heading=h.6p3dwsx7c3hb) document on Google Drive. The v2.0 document here includes HCA schema design principles and standards and the semantics for versioning and updating these schema. More detailed discussion of the format and syntax of the metadata schema and their instantiation can be found in the complementary [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) document on Google Drive. The metadata working group will review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes should be made to ensure metadata update is not a blocker for the consortium as a whole.
 
 ## Terminology
 
@@ -35,13 +31,13 @@ A file-based specification for the metadata. The specification defines the metad
 
 ### Module
 
-A specific subset of objects and fields from the schema associated with an isolated aspect of the metadata. These subsets would be needed for some, but not all, data sets. Examples where this is appropriate include field specific to a human donor, a particular single cell RNA-Seq platform like SmartSeq2, or a particular imaging experiment like MERFISH. We acknowledge the design must balance the flexibility offered by these modules with the overhead of maintaining a large number modules. We should only seek additional modules where there is a true requirement for them due experimental specialisation and not for convenience sake.
+A specific subset of objects and fields from the schema associated with an isolated aspect of the metadata. These subsets would be needed for some, but not all, data sets. Examples where this is appropriate include fields specific to a human donor, a particular single cell RNA-Seq platform like SmartSeq2, or a particular imaging experiment like MERFISH. We acknowledge the design must balance the flexibility offered by these modules with the overhead of maintaining a large number modules. We should only seek additional modules where there is a true requirement for them due experimental specialisation and not for convenience sake.
 
 ### Contributor
 
 Any member of the HCA community can review and suggest updates to the schemas. In this document these individuals are referred to as contributors.
 
-### Metadata WG member
+### MWG member
 
 Any person who is a member of the metadata working group.
 
@@ -87,7 +83,7 @@ Data contributing labs are the groups who collect the samples and run the assays
 
 The ingest brokers are the primary DCP contact with the data contributing labs. It is likely that a significant proportion of update requests will come via the ingest broker teams as they interact with the contributing labs and have a strong connection to the biology of the HCA. They should have a keen understanding of the capabilities of the contributing labs they are supporting and be able to comment on the reasonableness of change or addition to the rules with regard to the labs they support.
 
-#### Secondary Analysis Pipelines team (MINT)
+#### Secondary Analysis Pipelines (MINT) team
 The secondary analysis pipelines will use metadata to discover and run their analysis pipelines. The impact of any changes on how pipelines discover data and run must be understood and where appropriate a member of the secondary analysis pipelines team should be involved in the review.
 
 #### HCA data access portal team
@@ -112,9 +108,9 @@ The Ingest API team should only need to be involved in the metadata update proce
 
 #### DSS team
 
-The Data Storage System includes automated indexing of files marked as “metadata” in data bundles uploaded to the system.  The current primary, “non-transformative” index takes documents as they are and loads them into an Elasticsearch index.  This primary, non-transformative index can then be 1) queried, resulting in paged results pointing to individual bundles and/or 2) queries can be registered ahead of time and new data bundles (data bundle versions) whose metadata matches the queries will trigger notifications to a system associated with that registered query.
+The Data Storage System includes automated indexing of files marked as "metadata" in data bundles uploaded to the system. The current primary, "non-transformative" index takes documents as they are and loads them into an Elasticsearch index. This primary, non-transformative index can then be 1) queried, resulting in paged results pointing to individual bundles and/or 2) queries can be registered ahead of time and new data bundles (data bundle versions) whose metadata matches the queries will trigger notifications to a system associated with that registered query.
 
-This approach is nice in that it is extremely flexible from a project metadata perspective.  Many different projects can be supported in a DSS with a non-transformative indexing strategy.  It does not need to understand the format of the metadata for a project ahead of time.  However, the limitation is related to changes over time.  In particular, the Elasticsearch indexing technology we are currently using is sensitive to changes in metadata key/value types.  For example, when the value of “species” changes from a string “homo sapiens” to a complex type “{ ‘name’ : ‘homo sapiens’, ‘ontology’: 817 }”.  For this reason, we want to use semantic versioning for each metadata document, such that breaking changes like this can be predicted by simply examining the top-level document schema version number.  Elasticsearch can then place conflicting schemas in different indexes (yet dynamically combine their content in searches).  This is the solution, and resulting limitation, we have currently.
+This approach is extremely flexible from a project metadata perspective. Many different projects can be supported in a DSS with a non-transformative indexing strategy because this strategy does not need to understand the format of the metadata for a project ahead of time. One limitation of this strategy is related to changes over time. In particular, the Elasticsearch indexing technology we are currently using is sensitive to changes in metadata key/value types, e.g. the value of "species" changing from a string "homo sapiens" to a complex type "{ `name` : `homo sapiens`, `ontology`: 817 }".  For this reason, we want to use semantic versioning for each metadata document, such that breaking changes like this can be predicted by simply examining the top-level document schema version number. Elasticsearch can then place conflicting schemas in different indexes (yet dynamically combine their content in searches). This is the solution, and resulting limitation, we have currently.
 
 ## Recording the Standards
 
@@ -152,31 +148,37 @@ Schema are a superset of JSON schema and JSON schema validation (json-schema.org
 
 ## Schema Versioning
 
-The schema modules will be versioned using [semantic versioning](http://semver.org/). This gives each version a specific number in the form `X.Y.Z`. 
+The schema modules will be versioned using [semantic versioning](http://semver.org/). This gives each version a specific number in the form `vX.Y.Z`. 
 
-The numbers change when a schema update is made. The principles we follow to decide which of the three numbers to update are as follows. These principles primarily consider **Backwards compatibility**. This considers if the new schema is compatible with the old schema. This is the view from the producer of metadata. There are three kinds of changes that may or may not affect backwards compatibility: major, minor, and patch.
+The version numbers change when a schema update is made. The principles we follow to decide which of the three numbers to update are described below. These principles primarily consider **backwards compatibility**. This considers if the new schema is compatible with the old schema. This is the view from the producer of metadata. There are three kinds of changes that may or may not affect backwards compatibility: major, minor, and patch.
 
 **Major (increment to X)**: Any change to the schema that breaks compatibility with metadata created using the previous version. Specific examples include:
-- Removing a required field.
-- Making a required field optional.
-- Making a field use a controlled vocabulary or ontology.
-- Renaming a field.
-- Making a field into an array from a single value.
-- Changing the type of a field.
-- Unpacking an overloaded field (a field which serves multiple purposes, complex sample name for example)
+- Adding a required field.
+- Removing a required or optional field.
+- Moving a required field from one schema to another (increment both schemas).
+- Making an optional field required.
+- Changing the type of a field (e.g. number to string, string to ontology/enum).
+- Changing the ontology source for an ontologized field.
+- Changing the name of a required or optional field.
+- Removing a value from a controlled vocabulary.
+- Unpacking an overloaded field (a field which serves multiple purposes e.g. complex biomaterial name)
 
 **Minor (increment to Y)**: Any change to the schema that ensures compatibility with metadata created using the previous version. Specific examples include:
-- Adding a field.
-- Removing controlled vocabulary from a field.
-- Making an optional field required.
-- Adding controlled vocabulary from a field.
+- Adding an optional field.
+- Making a required field optional.
+- Updating the field description in a way that changes the meaning of the field.
+- Adding a new module (increment the type schema that references the new module).
+- Removing controlled vocabulary from a field (but the field type stays the same).
 
 **Patch (increment to Z)**: A change to auxiliary information that does affect the structure or semantics of the schema itself. Specific examples include:
-- Changing a description.
-- Changing an example.
-- Extending a controlled vocabulary enumeration
+- Adding or updating the field description to improve readability.
+- Adding or updating the field example.
+- Adding or updating the field comment.
+- Adding or updating the field user-friendly name.
+- Extending a controlled vocabulary enumeration.
+- Fixing an incorrect regular expression.
 
-**Forwards compatibility** refers to whether data generated with a newer version will be compatible with a conformance requirements of an older version. This is the version from the consumer perspective -- e.g. an analysis tool or a conformance requirement. Here, we use a syntax based on a subset of that allowed by npm (a JavaScript package manager), whereby a consumer, e.g. in a conformance requirement, specifies the version of a module it needs and whether it will tolerate alternative version levels in any of the three fields. As an example, if a conformance requirements version 1.0.4 of a package, it can state that requirement as
+**Forwards compatibility** refers to whether data generated with a newer version will be compatible with conformance requirements of an older version. This is the version from the consumer perspective, for example an analysis tool or a conformance requirement. We use a syntax based on a subset of that allowed by npm (a JavaScript package manager), whereby a consumer specifies the version of a schema it needs and whether it will tolerate alternative versions in any of the three fields. As an example, if a conformance requires version 1.0.4 of a package, it can state that requirement as:
 
 - 1.0.4 -- requires exactly 1.0.4 and no other version
 - ^1.0.4 -- requires exactly 1.0.4 and higher patch versions (e.g. 1.0.6, 1.0.7)
@@ -186,25 +188,23 @@ The numbers change when a schema update is made. The principles we follow to dec
 
 ## Module stability
 
-This modular schema design allows us to have different rates of change for different modules. In order to manage this, each different module needs to be annotated with a stability level so everyone can understand the impact of a suggested change to a particular module. This also allows us to define appropriate governance for each stability level. Modules labeled at a particular stability level are expected to be that stable, so high stability modules should rarely change but low stability modules should be free to iterate quickly. This annotation of stability is not the same as versioning, rather, it’s complimentary: it’s a way of indicating whether a module is undergoing rapid changes to its version (low stability), or if the version hasn’t changed in awhile and is unlikely to change (high stability). 
+This modular schema design allows us to have different rates of change for different schemas. In order to manage this, each different schema needs to be annotated with a stability level so everyone can understand the impact of a suggested change to a particular schema. This design also allows us to define appropriate governance for each stability level. Schemas labeled at a particular stability level are expected to be that stable, so high-stability modules should rarely change but low-stability modules should be free to iterate quickly. This annotation of stability is not the same as versioning, rather, it’s complimentary: it’s a way of indicating whether a schema is undergoing rapid changes to its version (low stability) or if the version hasn’t changed in awhile and is unlikely to change (high stability). 
 
 ### High Stability
 
-High stability modules are those where the DCP infrastructure has specific knowledge about the module’s structure and changing it would require a new DCP component software version. The ingest service is the most likely component to require high stability modules. Fields in these modules should be very limited and contain no scientific meaning. They are likely to be fields assigned by the Ingest infrastructure rather than provided by submitters. The process for requesting and getting updates to these fields should require a large scale consultation with the users of and developers of the Ingest service and a reasonable timeframe to update the software and educate users about the change before it enters production.
+High stability schemas are those where the DCP infrastructure has specific knowledge about the schema's structure and changing it would require a new DCP component software version. The ingest service is the most likely component to require high stability schemas. Fields in these schemas should be very limited and contain no scientific meaning. They are likely to be fields assigned by the Ingest infrastructure rather than provided by submitters. The process for requesting and getting updates to these fields should require a large scale consultation with the users of and developers of the Ingest service and a reasonable timeframe to update the software and educate users about the change before it enters production. The *core* entity schemas are generally considered high-stability schemas.
 
 ### Medium Stability
 
-Medium stability modules are those which tend to contain scientific fields which downstream users such as the pipeline infrastructure or portal developers have dependencies. Changing these fields should not require major software updates for the DCP but may alter how the pipelines or portals query for new data. As these fields are likely to have scientific meaning; this increases the likelihood that they might change as our understanding evolves. This means the update process needs to be agile and able to react to changes in the subject. That said, these changes may have significant downstream consequences for the automated processes that run the pipelines or portals, strong agreement is needed for a change before it happens. 
+Medium stability schemas are those which tend to contain scientific fields on which downstream users - such as the pipeline infrastructure or portal developers - have dependencies. Changing fields in these schemas should not require major software updates for the DCP but may alter how the pipelines or portals query for new data. As these fields are likely to have scientific meaning, this increases the likelihood that they might change as our understanding evolves. The schema update process needs to be agile and able to react to changes in the subject. These changes may have significant downstream consequences for the automated processes that run the pipelines or portals, so strong agreement is needed for a change before it happens. The *type* entity schemas are generally considered medium-stability schemas.
 
 ### Low Stability
 
-Modules which are labeled as low stability are those associated with rapidly evolving sample collection or experimental techniques. Developers should avoid depending on the fields in these modules. The update process should be rapid and use a minimal approval process such as a small number of +1s on a git pull request.
+Schemas which are labeled as low stability are those associated with rapidly evolving sample collection or experimental techniques. Developers should avoid depending on the fields in these schemas. The update process should be rapid and use a minimal approval process such as a small number of +1s on a GitHub pull request. The *module* entity schemas are generally considered low-stability schemas.
 
 ### Reviewing Stability levels
 
-The metadata working group should review the stability level of different modules on a quarterly or bi-annual basis to decide if changes are needed.
-
-Submitters should always be able to define additional fields which are not part of the schema specification and have them pass through the system without error.
+The metadata working group should review the stability level of different schemas on a quarterly or bi-annual basis to decide if changes are needed.
 
 ## Adding new committers to metadata working group
 
@@ -216,15 +216,13 @@ Anyone can request to join the committer team. When a request is received, the e
 
 ## Governance of Schema Updates
 
-The metadata working group will report progress to the HCA executive committee.
+The metadata working group will report progress to the HCA executive committee. The working group will provide written updates on the following matters at the start of each month:
 
-The working group will provide written updates on the following matters at the start of each month:
-
-- Changes to the metadata specification.
+- Changes to the metadata specification
   - Updates to existing modules
   - Addition of new modules
-- New members of the metadata working group.
-- New committers to the metadata-schema git repo.
+- New members of the metadata working group
+- New committers to the metadata-schema git repo
 
 The reporting frequency and process will be reviewed on a yearly basis and modifications made as required.
 
