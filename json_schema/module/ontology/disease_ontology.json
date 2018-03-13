@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.0.0/disease_ontology",
+    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology",
     "description": "A term that may be associated with a disease-related ontology term",
     "additionalProperties": false,
     "required": [
