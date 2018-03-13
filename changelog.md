@@ -9,6 +9,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [bundle/process.json - v5.2.0] - 2018-03-13
+### Changed
+The new generic process type was added to the list of processes that can be imported into a process bundle
+
+### [tpye/process/process.json - v1.0.0] - 2018-03-13
+### Added
+A new generic process type was created to allow the creation of processes for which no metadata is available.
+
 ### [all modules/* and core/* entities - v5.1.0] - 2018-03-13
 ### Changed
 The field `describedBy` was removed from the list of required fields as it was redundant. Only type entites and bundle entities need to explicitly declare a schema in data instances. As a result, all referencing types and bundles were also updated.
