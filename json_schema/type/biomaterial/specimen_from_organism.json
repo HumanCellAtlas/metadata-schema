@@ -7,7 +7,6 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-	    "organ_part",
 	    "organ"
     ],
     "title": "specimen_from_organism",
