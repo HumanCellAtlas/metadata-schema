@@ -9,6 +9,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [all modules/* and core/* entities - v5.1.0] - 2018-03-13
+### Changed
+The field `describedBy` was removed from the list of required fields as it was redundant. Only type entites and bundle entities need to explicitly declare a schema in data instances. As a result, all referencing types and bundles were also updated.
+
+### [type/biomaterial/specimen_from_organism.json - v5.1.0] - 2018-03-13
+### Changed
+The field `organ_part` was removed from the list of required fields as it was causing issues for datasets where a sub-organ sampling site is not known.
+
 ### [module/project/publication.json - v5.0.1] - 2018-02-28
 ### Fixed
 The incorrect field `title` in the list of required field was fixed to be the correct field `publication_title`.
