@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "type": "array",
+  "items": {
+    "required": [
+      "schema_type",
+      "content"
+    ],
+    "type": "object",
+    "properties": {
+      "schema_type": {
+        "type": "string",
+        "enum": [
+          "project",
+          "biomaterial",
+          "process",
+          "protocol",
+          "file"
+        ]
+      },
+      "content": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "oneOf": [
+            {
+              "$ref": "https://schema.humancellatlas.org/type/project/5.1.0/project"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_line"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/organoid"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_line"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/file/5.1.0/analysis_file"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/process/analysis/5.1.0/analysis_process"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/collection_process"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/enrichment_process"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/process/imaging/5.1.0/imaging_process"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/protocol/analysis/5.1.0/analysis_protocol"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/protocol/biomaterial/5.1.0/biomaterial_collection_protocol"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/protocol/imaging/5.1.0/imaging_protocol"
+            },
+            {
+              "$ref": "https://schema.humancellatlas.org/type/protocol/sequencing/5.1.0/sequencing_protocol"
+            }
+          ]
+        }
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "source_type": {
+              "type": "string",
+              "enum": [
+                "project",
+                "biomaterial",
+                "process",
+                "protocol",
+                "file"
+              ]
+            },
+            "source_id": {
+              "type": "string"
+            },
+            "destination_type": {
+              "type": "string"
+            },
+            "destination_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

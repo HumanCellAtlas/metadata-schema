@@ -20,14 +20,14 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit"
+                    "$ref": "https://schema.humancellatlas.org/bundle/5.1.0/ingest_audit"
                 },
                 "content": {
                     "description": "Content for any file type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "https://schema.humancellatlas.org/type/file/5.0.0/sequence_file" },
-                        { "$ref": "https://schema.humancellatlas.org/type/file/5.0.0/analysis_file" }
+                        { "$ref": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file" },
+                        { "$ref": "https://schema.humancellatlas.org/type/file/5.1.0/analysis_file" }
                     ]
                 }
             }

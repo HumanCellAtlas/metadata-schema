@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/process/analysis/5.0.0/analysis_process",
+    "id": "https://schema.humancellatlas.org/type/process/analysis/5.1.0/analysis_process",
     "description": "Information about an analysis that was performed on data files.",
     "additionalProperties": true,
     "required": [
@@ -12,7 +12,6 @@
         "input_bundles",
         "reference_bundle",
         "analysis_run_type",
-        "metadata_schema",
         "tasks",
         "inputs",
         "outputs"
@@ -110,18 +109,18 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/process/5.0.0/process_core"
+            "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
     	},
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology"
+            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/process_type_ontology"
         },
         "inputs": {
             "description": "Input parameters used in the pipeline run, these can be files or string values (settings).",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/type/process/analysis/5.0.0/analysis_process#/definitions/parameter"
+                "$ref": "https://schema.humancellatlas.org/type/process/analysis/5.1.0/analysis_process#/definitions/parameter"
             }
         },
         "reference_bundle": {
@@ -132,7 +131,7 @@
             "description": "Descriptions of tasks in the workflow.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/type/process/analysis/5.0.0/analysis_process#/definitions/task"
+                "$ref": "https://schema.humancellatlas.org/type/process/analysis/5.1.0/analysis_process#/definitions/task"
             }
         },
         "timestamp_stop_utc": {
@@ -152,7 +151,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "$ref": "https://schema.humancellatlas.org/type/file/5.0.0/analysis_file"
+                "$ref": "https://schema.humancellatlas.org/type/file/5.1.0/analysis_file"
             }
         },
         "computational_method": {
@@ -171,11 +170,6 @@
                 "run",
                 "copy-forward"
             ]
-        },
-        "metadata_schema": {
-            "description": "The version of the metadata schemas used for the JSON files.",
-            "type": "string",
-            "pattern" : "[0-9]{1,}.[0-9]{1,}.[0-9]{1,}"
         }
     }
 }

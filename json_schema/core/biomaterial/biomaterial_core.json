@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core",
+    "id": "https://schema.humancellatlas.org/core/biomaterial/5.1.0/biomaterial_core",
     "description": "A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components.",
     "additionalProperties": false,
     "required": [
-        "describedBy",
         "biomaterial_id",
         "ncbi_taxon_id"
     ],

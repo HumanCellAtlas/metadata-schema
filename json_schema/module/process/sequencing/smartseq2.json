@@ -1,11 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/smartseq2",
+    "id": "https://schema.humancellatlas.org/module/process/sequencing/5.1.0/smartseq2",
     "description": "This module describes information specific to SmartSeq2 experiments.",
     "additionalProperties": false,
-    "required": [
-        "describedBy"
-    ],
     "title": "smartseq2",
     "type": "object",
     "properties": {

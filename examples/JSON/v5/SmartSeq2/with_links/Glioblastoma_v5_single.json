@@ -1,0 +1,207 @@
+[ {
+  "schema_type" : "project",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/project/5.1.0/project",
+    "schema_version" : "5.1.0",
+    "schema_type" : "project",
+    "project_core" : {
+      "project_shortname" : "quakeGlioblastoma1",
+      "project_title" : "Single-Cell RNAseq analysis of diffuse neoplastic infiltrating cells at the migrating front of human glioblastoma",
+      "project_description" : "We used single-cell RNAseq to investigate the heterogeneity of glioblastoma tumors and assess differential expression between cells within and in proximity of the tumor.",
+      "schema_version" : "5.1.0"
+    },
+    "supplementary_files" : [ "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE84nnn/GSE84465/suppl/GSE84465_GBM_All_data.csv.gz", "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE84nnn/GSE84465/suppl/GSE84465_RAW.tar" ],
+    "geo_series" : "GSE84465"
+  } ]
+}, {
+  "schema_type" : "biomaterial",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism",
+    "schema_version" : "5.1.0",
+    "schema_type" : "biomaterial",
+    "biomaterial_core" : {
+      "biomaterial_id" : "BT_S1",
+      "ncbi_taxon_id" : [ 9606 ],
+      "schema_version" : "5.1.0"
+    },
+    "genus_species" : [ {
+      "text" : "Homo sapiens"
+    } ],
+    "is_living" : true,
+    "biological_sex" : "unknown"
+  } ]
+}, {
+  "schema_type" : "biomaterial",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism",
+    "schema_version" : "5.1.0",
+    "schema_type" : "biomaterial",
+    "biomaterial_core" : {
+      "biomaterial_id" : "BT_S1_T",
+      "biomaterial_description" : "Tumor",
+      "ncbi_taxon_id" : [ 9606 ],
+      "has_input_biomaterial" : "BT_S1",
+      "schema_version" : "5.1.0"
+    },
+    "genus_species" : [ {
+      "text" : "Homo sapiens"
+    } ],
+    "organ" : {
+      "text" : "brain"
+    },
+    "organ_part" : {
+      "text" : "temporal lobe"
+    }
+  } ],
+  "links" : [ {
+    "source_type" : "biomaterial",
+    "source_id" : "BT_S1_T",
+    "destination_type" : "process",
+    "destination_ids" : [ "dis_proc_1" ]
+  } ]
+}, {
+  "schema_type" : "biomaterial",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension",
+    "schema_version" : "5.1.0",
+    "schema_type" : "biomaterial",
+    "biomaterial_core" : {
+      "biomaterial_id" : "GSM2243439",
+      "biomaterial_name" : "Single cell from Tumor,1001000173.G8",
+      "ncbi_taxon_id" : [ 9606 ],
+      "has_input_biomaterial" : "BT_S2_T",
+      "supplementary_files" : [ "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2243nnn/GSM2243439/suppl/GSM2243439_1001000173.G8.csv.gz" ],
+      "biosd_biomaterial" : "SAMN05421106",
+      "schema_version" : "5.1.0"
+    },
+    "genus_species" : [ {
+      "text" : "Homo sapiens"
+    } ],
+    "total_estimated_cells" : 1
+  } ],
+  "links" : [ {
+    "source_type" : "biomaterial",
+    "source_id" : "GSM2243439",
+    "destination_type" : "process",
+    "destination_ids" : [ "lib_prep_proc_1", "seq_proc_1" ]
+  } ]
+}, {
+  "schema_type" : "process",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process",
+    "schema_version" : "5.1.0",
+    "schema_type" : "process",
+    "process_core" : {
+      "process_id" : "dis_proc_1",
+      "schema_version" : "5.1.0"
+    },
+    "dissociation_method" : "FACS"
+  } ],
+  "links" : [ {
+    "source_type" : "process",
+    "source_id" : "dis_proc_1",
+    "destination_type" : "protocol",
+    "destination_ids" : [ "na_lib_con_1" ]
+  } ]
+}, {
+  "schema_type" : "process",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process",
+    "schema_version" : "5.1.0",
+    "schema_type" : "process",
+    "process_core" : {
+      "process_id" : "lib_prep_proc_1",
+      "schema_version" : "5.1.0"
+    },
+    "input_nucleic_acid_molecule" : {
+      "text" : "polyA RNA"
+    },
+    "library_construction_approach" : "Smart-seq2",
+    "end_bias" : "full length",
+    "strand" : "unstranded"
+  } ],
+  "links" : [ {
+    "source_type" : "process",
+    "source_id" : "lib_prep_proc_1",
+    "destination_type" : "protocol",
+    "destination_ids" : [ "na_lib_con_1" ]
+  } ]
+}, {
+  "schema_type" : "process",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process",
+    "schema_version" : "5.1.0",
+    "schema_type" : "process",
+    "process_core" : {
+      "process_id" : "seq_proc_1",
+      "schema_version" : "5.1.0"
+    },
+    "instrument_manufacturer_model" : {
+      "text" : "Illumina NextSeq 500"
+    },
+    "paired_ends" : true,
+    "smartseq2" : {
+      "plate_id" : "1001000173",
+      "well_name" : "G8",
+    }
+  } ]
+}, {
+  "schema_type" : "protocol",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol",
+    "schema_version" : "5.1.0",
+    "schema_type" : "protocol",
+    "protocol_core" : {
+      "protocol_id" : "na_lib_con_1",
+      "protocol_description" : "single-cell sorting in 96-well plates followed by cDNA preparation using Smart-seq2",
+      "schema_version" : "5.1.0"
+    },
+    "protocol_type" : {
+      "text" : "nucleic acid library construction protocol"
+    }
+  } ]
+}, {
+  "schema_type" : "file",
+  "content" : [ {
+    "describedBy" : "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file",
+    "schema_version" : "5.1.0",
+    "schema_type" : "file",
+    "file_core" : {
+      "file_name" : "SRR3934349_1.fastq.gz",
+      "file_format" : "fastq.gz",
+      "schema_version" : "5.1.0"
+    },
+    "read_index" : "read1"
+  }, {
+    "describedBy" : "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file",
+    "schema_version" : "5.1.0",
+    "schema_type" : "file",
+    "file_core" : {
+      "file_name" : "SRR3934349_2.fastq.gz",
+      "file_format" : "fastq.gz",
+      "schema_version" : "5.1.0"
+    },
+    "read_index" : "read2"
+  } ],
+  "links" : [ {
+    "source_type" : "file",
+    "source_id" : "SRR3934349_1.fastq.gz",
+    "destination_type" : "biomaterial",
+    "destination_ids" : [ "GSM2243439" ]
+  }, {
+    "source_type" : "file",
+    "source_id" : "SRR3934349_1.fastq.gz",
+    "destination_type" : "sequencing",
+    "destination_ids" : [ "seq_proc_1" ]
+  }, {
+    "source_type" : "file",
+    "source_id" : "SRR3934349_2.fastq.gz",
+    "destination_type" : "biomaterial",
+    "destination_ids" : [ "GSM2243439" ]
+  }, {
+    "source_type" : "file",
+    "source_id" : "SRR3934349_2.fastq.gz",
+    "destination_type" : "sequencing",
+    "destination_ids" : [ "seq_proc_1" ]
+  } ]
+} ]

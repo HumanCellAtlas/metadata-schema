@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/project/5.0.1/publication",
+    "id": "https://schema.humancellatlas.org/module/project/5.1.0/publication",
     "description": "Information about a journal article, book, web page, or other external available documentation on a project.",
     "additionalProperties": false,
     "required": [
-        "describedBy",
         "authors",
         "publication_title"
     ],

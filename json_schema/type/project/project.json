@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/project/5.0.1/project",
+    "id": "https://schema.humancellatlas.org/type/project/5.1.0/project",
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
@@ -31,14 +31,14 @@
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/project/5.0.0/project_core"
+            "$ref": "https://schema.humancellatlas.org/core/project/5.1.0/project_core"
         },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
             "type": "array",
             "example": "List of authors for a publication resulting from this project.",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/project/5.0.0/contact"
+                "$ref": "https://schema.humancellatlas.org/module/project/5.1.0/contact"
             }
         },
         "supplementary_files": {
@@ -54,7 +54,7 @@
     	    "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/project/5.0.1/publication"
+                "$ref": "https://schema.humancellatlas.org/module/project/5.1.0/publication"
             }
         },
         "insdc_project": {
