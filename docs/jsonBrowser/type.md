@@ -124,7 +124,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | bio
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
 organ | The organ that the biomaterial came from. Blood and connective tissue are considered organs. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | Blood
-organ_part | A term for a specific part of the organ that the biomaterial came from. | object | yes | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | Umbilical cord blood
+organ_part | A term for a specific part of the organ that the biomaterial came from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | Umbilical cord blood
 disease | Short description of disease status of the specimen. Can be 'normal' or one or more disease terms. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
 state_of_specimen | State of the specimen at the time of collection/removal. | object | no | [See module  state_of_specimen](module.md/#state_of_specimen) |  |  | 
 preservation_storage | Information relating to how a biomaterial was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md/#preservation_storage) |  |  | 
@@ -218,6 +218,19 @@ model_for_organ | Organ for which this organoid is a model system. | object | ye
 organoid_age | Age of the organoid. | number | no |  | Organoid age |  | 55
 organoid_age_unit | The unit in which organoid age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organoid age unit |  | 
 organoid_type | The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | no |  | Organoid type | primary, immortalized, stem cell-derived, synthetic | 
+
+## process
+_Information about the process_
+
+Location: type/process/process.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+describedBy | The URL reference to the schema. | string | yes |  |  |  | 
+schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
+schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
+process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
+process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | process type |  | 
 
 ## library_preparation_process
 _Information about how a sequencing library was created._

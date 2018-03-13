@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.1.0/process",
+    "id": "https://schema.humancellatlas.org/bundle/5.2.0/process",
     "description": "A schema for a process bundle.",
     "additionalProperties": false,
     "required": [
@@ -32,7 +32,8 @@
                         { "$ref": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/enrichment_process" },
                         { "$ref": "https://schema.humancellatlas.org/type/process/imaging/5.1.0/imaging_process" },
                         { "$ref": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process" },
-                        { "$ref": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process" }
+                        { "$ref": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process" },
+                        { "$ref": "https://schema.humancellatlas.org/type/process/1.0.0/process"}
                     ]
                 }
             }
