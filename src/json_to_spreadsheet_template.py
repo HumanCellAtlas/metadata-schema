@@ -184,7 +184,7 @@ class SpreadsheetCreator:
                     "example": None})
             else:
                 values.append(
-                    {"header": "biomaterials_id", "description": "ID of the biomaterial to which this file relates",
+                    {"header": "biomaterial_id", "description": "ID of the biomaterial to which this file relates",
                      "example": None})
                 values.append(
                     {"header": "process_id",
