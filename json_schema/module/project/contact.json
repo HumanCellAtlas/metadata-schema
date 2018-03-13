@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/project/5.0.0/contact",
+    "id": "https://schema.humancellatlas.org/module/project/5.1.0/contact",
     "description": "Information about a person who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [
-        "describedBy",
         "contact_name",
         "email"
     ],

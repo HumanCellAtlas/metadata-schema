@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode",
+    "id": "https://schema.humancellatlas.org/module/process/sequencing/5.1.0/barcode",
     "description": "This module describes barcodes used in a library preparation process.",
     "additionalProperties": false,
     "required": [
-        "describedBy",
         "barcode_offset",
         "barcode_length",
         "barcode_read"
