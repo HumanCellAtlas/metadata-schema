@@ -32,7 +32,10 @@ class MarkdownGenerator:
             # file.write("Property name | Description | Type  \n")
             file.write("--- | --- | --- | --- | --- | --- | --- | --- \n")
 
-            required = schema["required"]
+            required = []
+
+            if "required" in schema:
+                required = schema["required"]
 
             for property in schema["properties"]:
 
