@@ -27,9 +27,11 @@
             "hca_ingest": {
                 "accession": "", 
                 "submissionDate": "2018-03-14T14:22:30.842Z", 
+                "updater_id": "anonymousUser",
                 "updateDate": "2018-03-14T14:22:42.215Z", 
-                "document_id": "2f332c60-cba4-4b6e-9a92-bbfe16798415"
-            }, 
+                "document_id": "2f332c60-cba4-4b6e-9a92-bbfe16798415",
+                "submitter_id": "anonymousUser"
+            },
             "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/biomaterial", 
             "schema_version": "5.1.0", 
             "schema_type": "biomaterial_bundle"
