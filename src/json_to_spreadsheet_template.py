@@ -304,16 +304,24 @@ if __name__ == '__main__':
 
 
 # Example run:
-# -s "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/"
+# -s "https://schema.humancellatlas.org/"
 # -t "type/biomaterial/donor_organism.json,type/process/sequencing/library_preparation_process.json"
 # -i "module/biomaterial/homo_sapiens_specific.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json"
 # -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"
 
-# Full run:
-# -s "https://raw.githubusercontent.com/HumanCellAtlas/metadata-schema/v5_prototype/json_schema/"
+# Full run (plain headers):
+# -s "https://schema.humancellatlas.org/"
 # -t "type/project/project.json,type/biomaterial/donor_organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/protocol/protocol.json,type/file/sequence_file.json"
 # -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/mus_musculus_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/smartseq2.json"
-# -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"
+# -o "../examples/spreadsheets/v5/template/Programmatically_generated_v5_template_plainHeaders.xlsx"
+# --field_names
+
+# Full run (user-friendly headers):
+# -s "https://schema.humancellatlas.org/"
+# -t "type/project/project.json,type/biomaterial/donor_organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/protocol/protocol.json,type/file/sequence_file.json"
+# -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/mus_musculus_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/smartseq2.json"
+# -o "../examples/spreadsheets/v5/template/Programmatically_generated_v5_template_spreadsheet.xlsx"
+# --user_friendly
 
 # Run using local files only
 # -s "../json"
