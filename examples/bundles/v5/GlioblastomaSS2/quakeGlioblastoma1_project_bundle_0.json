@@ -3,10 +3,7 @@
         "contributors": [
             {
                 "country": "USA", 
-                "project_core": {
-                    "project_shortname": "quakeGlioblastoma1"
-                }, 
-                "email": "spyros.darmanis@gmail.com", 
+                "email": "spyros.darmanis@gmail.com",
                 "phone": "650-696-0861", 
                 "address": "Clark Center, E300; Stanford, California 94305 USA", 
                 "laboratory": "Stephen Quake", 
@@ -28,10 +25,7 @@
             {
                 "doi": "10.1016/j.celrep.2017.10.030", 
                 "publication_url": "http://www.cell.com/cell-reports/fulltext/S2211-1247(17)31462-6", 
-                "project_core": {
-                    "project_shortname": "quakeGlioblastoma1"
-                }, 
-                "publication_title": "Single-Cell RNA-Seq Analysis of Infiltrating Neoplastic Cells at the Migrating Front of Human Glioblastoma", 
+                "publication_title": "Single-Cell RNA-Seq Analysis of Infiltrating Neoplastic Cells at the Migrating Front of Human Glioblastoma",
                 "authors": [
                     "Darmanis S", 
                     "Sloan SA", 

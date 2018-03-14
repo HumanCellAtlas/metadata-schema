@@ -30,9 +30,9 @@
     "hca_ingest": {
         "accession": "", 
         "submissionDate": "2018-03-14T14:22:31.427Z", 
-        "lastModifiedUser": "anonymousUser", 
+        "updater_id": "anonymousUser",
         "updateDate": "2018-03-14T14:22:42.496Z", 
         "document_id": "cd626fa7-91e0-40b1-b18e-5f99aaaaba88", 
-        "user": "anonymousUser"
+        "submitter_id": "anonymousUser"
     }
 }
