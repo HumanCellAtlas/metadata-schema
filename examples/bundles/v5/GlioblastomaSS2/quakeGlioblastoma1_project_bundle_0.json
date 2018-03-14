@@ -51,7 +51,7 @@
                     "Gephart MH", 
                     "Quake SR"
                 ], 
-                "pmid": "29091775"
+                "pmid": 29091775
             }
         ], 
         "schema_type": "project", 
@@ -60,11 +60,11 @@
     "hca_ingest": {
         "accession": "", 
         "submissionDate": "2018-03-14T14:22:30.784Z", 
-        "lastModifiedUser": "anonymousUser", 
-        "updateDate": "2018-03-14T14:22:42.614Z", 
-        "document_id": "710eadea-8753-4b32-9d30-83e7a261befe", 
-        "user": "google-oauth2|100633116083392806776"
-    }, 
+        "updater_id": "anonymousUser",
+        "updateDate": "2018-03-14T14:22:42.614Z",
+        "document_id": "710eadea-8753-4b32-9d30-83e7a261befe",
+        "submitter_id": "google-oauth2|100633116083392806776"
+    },
     "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/project", 
     "schema_version": "5.1.0", 
     "schema_type": "project_bundle"
