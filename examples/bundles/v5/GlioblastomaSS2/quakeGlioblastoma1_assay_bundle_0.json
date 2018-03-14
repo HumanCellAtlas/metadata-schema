@@ -1,38 +1,37 @@
 {
-    "has_input": "2f332c60-cba4-4b6e-9a92-bbfe16798415", 
-    "core": {
-        "type": "assay_bundle", 
-        "schema_url": "https://schema.humancellatlas.org/bundle/5.1.0/assay", 
-        "schema_version": "5.1.0"
-    }, 
-    "schema_version": "5.1.0", 
-    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/project", 
-    "content": {
-        "paired_ends": true, 
-        "instrument_manufacturer_model": {
-            "text": "Illumina NextSeq 500"
-        }, 
-        "process_core": {
-            "process_id": "seq_proc_2"
-        }, 
-        "smartseq2": {
-            "well_name": "B4", 
-            "plate_id": "1001000173"
-        }, 
-        "schema_type": "process", 
-        "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process"
-    }, 
-    "has_output": [
-        "8b436953-485e-4a30-a842-33d9f41744fe", 
-        "5f3dbe2e-734d-4523-be15-7787afdf2cbb"
-    ], 
-    "schema_type": "project_bundle", 
-    "hca_ingest": {
-        "accession": "", 
-        "submissionDate": "2018-03-14T14:22:31.427Z", 
-        "updater_id": "anonymousUser",
-        "updateDate": "2018-03-14T14:22:42.496Z", 
-        "document_id": "cd626fa7-91e0-40b1-b18e-5f99aaaaba88", 
-        "submitter_id": "anonymousUser"
-    }
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/process",
+    "schema_version": "5.1.0",
+    "schema_type": "process_bundle",
+    "processes": [
+        {
+            "content": {
+                "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process",
+                "schema_version": "5.1.0",
+                "schema_type": "process",
+                "process_core": {
+                    "process_id": "seq_proc_2",
+                    "schema_version": "5.1.0"
+                },
+                "paired_ends": true,
+                "instrument_manufacturer_model": {
+                    "text": "Illumina NextSeq 500"
+                },
+                "smartseq2": {
+                    "well_name": "B4",
+                    "plate_id": "1001000173"
+                },
+                "process_type": {
+                    "text": "seqeuencing process"
+                }
+            },
+            "hca_ingest": {
+                "accession": "",
+                "submissionDate": "2018-03-14T14:22:31.427Z",
+                "updater_id": "anonymousUser",
+                "updateDate": "2018-03-14T14:22:42.496Z",
+                "document_id": "cd626fa7-91e0-40b1-b18e-5f99aaaaba88",
+                "submitter_id": "anonymousUser"
+            }
+        }
+    ]
 }
