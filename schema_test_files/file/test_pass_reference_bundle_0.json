@@ -1,0 +1,121 @@
+{
+  "describedBy": "https://schema.humancellatlas.org/bundle/1.0.0/reference",
+  "schema_version": "1.0.0",
+  "schema_type": "reference_bundle",
+  "references": [
+    {
+      "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "schema_version": "1.0.0",
+        "schema_type": "file",
+        "file_core": {
+          "file_name": "genome_snp_tran.tar.gz",
+          "file_format": "tar.gz",
+          "describedBy": "https://schema.humancellatlas.org/core/file/5.0.0/file_core",
+          "schema_version": "5.0.0"
+        },
+        "ncbi_taxon_id": 9606,
+        "genus_species": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
+          "text": "Homo sapiens"
+        },
+        "reference_type": "genome sequence index",
+        "reference_version": "GRCh38"
+      },
+      "hca_ingest": {
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "document_id": "db08d9a7-1fcb-4650-8892-6eee95877c42",
+        "submissionDate": "2018-02-07T10:21:43.228Z",
+        "updateDate": "2018-02-07T10:21:54.398Z",
+        "submitter_id": "anonymousUser",
+        "updater_id": "anonymousUser"
+      }
+    },
+    {
+      "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "schema_version": "1.0.0",
+        "schema_type": "file",
+        "file_core": {
+          "file_name": "gencode_v27_trans_rsem.tar.gz",
+          "file_format": "tar.gz",
+          "describedBy": "https://schema.humancellatlas.org/core/file/5.0.0/file_core",
+          "schema_version": "5.0.0"
+        },
+        "ncbi_taxon_id": 9606,
+        "genus_species": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
+          "text": "Homo sapiens"
+        },
+        "reference_type": "transcriptome index",
+        "reference_version": "GencodeV27"
+      },
+      "hca_ingest": {
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "document_id": "5266a514-5614-420e-a882-a9dff3df9d84",
+        "submissionDate": "2018-02-07T10:21:43.228Z",
+        "updateDate": "2018-02-07T10:21:54.398Z",
+        "submitter_id": "anonymousUser",
+        "updater_id": "anonymousUser"
+      }
+    },
+    {
+       "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "schema_version": "1.0.0",
+        "schema_type": "file",
+        "file_core": {
+          "file_name": "GRCh38.primary_assembly.genome.fa",
+          "file_format": "fa",
+          "describedBy": "https://schema.humancellatlas.org/core/file/5.0.0/file_core",
+          "schema_version": "5.0.0"
+        },
+        "ncbi_taxon_id": 9606,
+        "genus_species": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
+          "text": "Homo sapiens"
+        },
+        "assembly_type": "primary assembly",
+        "reference_type": "genome sequence",
+        "reference_version": "GRCh38"
+      },
+      "hca_ingest": {
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "document_id": "ab48d9a7-1fcb-4650-8892-6eee95877b67",
+        "submissionDate": "2018-02-07T10:21:43.228Z",
+        "updateDate": "2018-02-07T10:21:54.398Z",
+        "submitter_id": "anonymousUser",
+        "updater_id": "anonymousUser"
+      }
+    },
+    {
+      "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "schema_version": "1.0.0",
+        "schema_type": "file",
+        "file_core": {
+          "file_name": "gencode.v27.primary_assembly.annotation.gtf",
+          "file_format": "gtf",
+          "describedBy": "https://schema.humancellatlas.org/core/file/5.0.0/file_core",
+          "schema_version": "5.0.0"
+        },
+        "ncbi_taxon_id": 9606,
+        "genus_species": {
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
+          "text": "Homo sapiens"
+        },
+        "assembly_type": "primary assembly",
+        "reference_type": "annotation reference",
+        "reference_version": "GencodeV27"
+      },
+      "hca_ingest": {
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "document_id": "3456a514-5614-420e-a882-a9dff3df9c08",
+        "submissionDate": "2018-02-07T10:21:43.228Z",
+        "updateDate": "2018-02-07T10:21:54.398Z",
+        "submitter_id": "anonymousUser",
+        "updater_id": "anonymousUser"
+      }
+    }
+  ]
+}
