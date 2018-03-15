@@ -7,7 +7,31 @@
     "describedBy",
     "schema_type"
   ],
+  "title": "links",
   "type": "object",
+  "definitions": {
+      "bundle_links": {
+         "type": "object",
+         "properties": {
+          "source_type": {
+            "description": "The type of the entity this link starts from",
+            "type": "string"
+          },
+          "source_id": {
+            "description": "The id of the entity this link starts from",
+            "type": "string"
+          },
+          "destination_type": {
+            "description": "The type of the entity this link goes to",
+            "type": "string"
+          },
+          "destination_id": {
+            "description": "The id  of the entity this link goes to",
+            "type": "string"
+          }
+        }
+      }
+  },
   "properties": {
     "describedBy": {
       "description": "The URL reference to the schema.",
@@ -27,23 +51,11 @@
       ]
     },
     "links": {
+      "description": "An array of linking objects",
       "type": "array",
       "items": {
         "type": "object",
-        "properties": {
-          "source_type": {
-            "type": "string"
-          },
-          "source_id": {
-            "type": "string"
-          },
-          "destination_type": {
-            "type": "string"
-          },
-          "destination_id": {
-            "type": "string"
-          }
-        }
+        "$ref": "https://schema.humancellatlas.org/bundle/1.0.0/links#/definitions/bundle_links"
       }
     }
   }
