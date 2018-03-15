@@ -9,6 +9,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+
+### [bundle/links.json - v1.0.0] - 2018-03-15
+### Added
+A links entity was added to allow linking of entites in bundles.
+
 ### [bundle/process.json - v5.2.0] - 2018-03-13
 ### Changed
 The new generic process type was added to the list of processes that can be imported into a process bundle
