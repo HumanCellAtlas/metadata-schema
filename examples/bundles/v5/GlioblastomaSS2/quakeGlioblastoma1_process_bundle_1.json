@@ -56,7 +56,7 @@
             }
         }
     ], 
-    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/process", 
-    "schema_version": "5.1.0", 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.2.1/process", 
+    "schema_version": "5.2.1", 
     "schema_type": "process_bundle"
 }

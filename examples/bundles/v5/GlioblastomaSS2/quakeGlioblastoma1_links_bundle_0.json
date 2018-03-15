@@ -3,6 +3,12 @@
         {
             "source_id": "7c72f20a-8199-497a-bba7-1316520ba847", 
             "source_type": "biomaterial", 
+            "destination_id": "336c7184-70a7-41b3-ab31-98f78b0ab092", 
+            "destination_type": "dissociation_process"
+        }, 
+        {
+            "source_id": "336c7184-70a7-41b3-ab31-98f78b0ab092", 
+            "source_type": "dissociation_process", 
             "destination_id": "94049366-4e4b-4076-8474-b2a00d7aa08d", 
             "destination_type": "biomaterial"
         }, 
@@ -10,22 +16,34 @@
             "source_id": "cd9d52fa-e89d-4c37-bb0e-997a2affe1dc", 
             "source_type": "biomaterial", 
             "destination_id": "8c01ac9e-751b-4426-9032-c4235503a164", 
+            "destination_type": "process"
+        }, 
+        {
+            "source_id": "8c01ac9e-751b-4426-9032-c4235503a164", 
+            "source_type": "process", 
+            "destination_id": "8c01ac9e-751b-4426-9032-c4235503a164", 
             "destination_type": "biomaterial"
         }, 
         {
-            "source_id": "94049366-4e4b-4076-8474-b2a00d7aa08d", 
-            "source_type": "biomaterial", 
+            "source_id": "adebcaaa-0cea-44af-8cce-fdc5dcadb286", 
+            "source_type": "sequencing_process", 
+            "destination_id": "94049366-4e4b-4076-8474-b2a00d7aa08d", 
+            "destination_type": "biomaterial"
+        }, 
+        {
+            "source_id": "adebcaaa-0cea-44af-8cce-fdc5dcadb286", 
+            "source_type": "sequencing_process", 
             "destination_id": "cb4f1900-cdcf-4e3d-834e-21c6b3e59237", 
             "destination_type": "file"
         }, 
         {
-            "source_id": "94049366-4e4b-4076-8474-b2a00d7aa08d", 
-            "source_type": "biomaterial", 
+            "source_id": "adebcaaa-0cea-44af-8cce-fdc5dcadb286", 
+            "source_type": "sequencing_process", 
             "destination_id": "ed7989fb-1ca0-48ba-9b81-f83c4af7b091", 
             "destination_type": "file"
         }
     ], 
     "describedBy": "https://schema.humancellatlas.org/bundle/1.0.0/links", 
     "schema_version": "1.0.0", 
-    "schema_type": "links_bundle"
+    "schema_type": "link_bundle"
 }
