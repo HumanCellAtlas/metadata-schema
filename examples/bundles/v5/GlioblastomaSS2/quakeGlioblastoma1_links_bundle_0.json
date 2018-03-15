@@ -25,10 +25,10 @@
             "destination_type": "process"
         }, 
         {
-            "source_id": "adebcaaa-0cea-44af-8cce-fdc5dcadb286", 
-            "source_type": "sequencing_process", 
-            "destination_id": "94049366-4e4b-4076-8474-b2a00d7aa08d", 
-            "destination_type": "biomaterial"
+            "source_id": "94049366-4e4b-4076-8474-b2a00d7aa08d", 
+            "source_type": "biomaterial", 
+            "destination_id": "adebcaaa-0cea-44af-8cce-fdc5dcadb286", 
+            "destination_type": "sequencing_process"
         }, 
         {
             "source_id": "adebcaaa-0cea-44af-8cce-fdc5dcadb286", 
