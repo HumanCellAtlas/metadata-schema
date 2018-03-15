@@ -25,7 +25,7 @@
                 "content": {
                     "description": "Content for any reference type entity.",
                     "type": "object",
-                    "$ref": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file"
+                    "$ref": "https://schema.humancellatlas.org/type/file/1.0.1/reference_file"
                 }
             }
         }
@@ -52,7 +52,7 @@
             "description": "An array of reference files.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/bundle/1.0.0/reference#/definitions/reference_ingest"
+                "$ref": "https://schema.humancellatlas.org/bundle/1.0.1/reference#/definitions/reference_ingest"
             }
         }
     }

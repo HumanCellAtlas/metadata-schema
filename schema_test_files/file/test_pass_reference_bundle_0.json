@@ -5,7 +5,7 @@
   "references": [
     {
       "content": {
-        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.1/reference_file",
         "schema_version": "1.0.0",
         "schema_type": "file",
         "file_core": {
@@ -33,7 +33,7 @@
     },
     {
       "content": {
-        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.1/reference_file",
         "schema_version": "1.0.0",
         "schema_type": "file",
         "file_core": {
@@ -61,7 +61,7 @@
     },
     {
        "content": {
-        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.1/reference_file",
         "schema_version": "1.0.0",
         "schema_type": "file",
         "file_core": {
@@ -90,7 +90,7 @@
     },
     {
       "content": {
-        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+        "describedBy": "https://schema.humancellatlas.org/type/file/1.0.1/reference_file",
         "schema_version": "1.0.0",
         "schema_type": "file",
         "file_core": {
