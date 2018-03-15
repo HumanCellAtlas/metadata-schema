@@ -4,15 +4,15 @@
             "content": {
                 "biomaterial_core": {
                     "has_input_biomaterial": "BT_S2_T", 
-                    "biomaterial_name": "Single cell from Tumor,1001000173.G8", 
+                    "biomaterial_name": "Single cell from Tumor,1001000173.B4", 
                     "supplementary_files": [
-                        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2243nnn/GSM2243439/suppl/GSM2243439_1001000173.G8.csv.gz"
+                        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2243nnn/GSM2243441/suppl/GSM2243441_1001000173.B4.csv.gz"
                     ], 
                     "ncbi_taxon_id": [
                         9606
                     ], 
-                    "biomaterial_id": "GSM2243439", 
-                    "biosd_biomaterial": "SAMN05421106"
+                    "biomaterial_id": "GSM2243441", 
+                    "biosd_biomaterial": "SAMN05421108"
                 }, 
                 "genus_species": [
                     {
@@ -26,9 +26,9 @@
             }, 
             "hca_ingest": {
                 "accession": "", 
-                "submissionDate": "2018-03-15T15:58:20.035Z", 
-                "updateDate": "2018-03-15T15:58:30.759Z", 
-                "document_id": "94049366-4e4b-4076-8474-b2a00d7aa08d"
+                "submissionDate": "2018-03-15T15:58:20.062Z", 
+                "updateDate": "2018-03-15T15:58:30.722Z", 
+                "document_id": "317d865b-1d94-439d-a1bc-0da63bbe2348"
             }
         }, 
         {
