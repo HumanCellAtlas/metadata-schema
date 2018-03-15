@@ -9,6 +9,13 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [bundle/reference.json - v1.0.1] - 2018-03-15
+### Changed
+Bug fix to make reference bundle schema use the correct dependent version numbers
+
+### [type/file/reference_file.json - v1.0.1] - 2018-03-15
+### Changed
+Bug fix to make reference_file schema use the correct dependent version numbers
 
 ### [bundle/reference.json - v1.0.0] - 2018-03-15
 ### Added
