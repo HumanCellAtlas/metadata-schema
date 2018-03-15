@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://schema.humancellatlas.org/module/ontology/1.0.0/reference_human_atlas_structure_ontology",
+    "description": "A term associated with a specific structure of the human brain.",
+    "additionalProperties": false,
+    "required": [
+        "text"
+    ],
+    "title": "mass_unit_ontology",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/reference_human_atlas_structure_ontology"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "text": {
+            "description": "The specific structure of the human brain.",
+            "type": "string"
+        },
+        "ontology": {
+            "description": "An ontology term identifier in the form prefix:accession",
+            "type": "string",
+            "graph_restriction":  {
+                "ontologies" : ["obo:uo","obo:efo"],
+                "classes": ["UO:0000002"],
+                "relations": ["rdfs:subClassOf"],
+                "direct": false,
+                "include_self": false
+            }
+        }
+    }
+}
