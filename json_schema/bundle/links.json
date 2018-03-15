@@ -32,14 +32,7 @@
         "type": "object",
         "properties": {
           "source_type": {
-            "type": "string",
-            "enum": [
-              "project",
-              "biomaterial",
-              "process",
-              "protocol",
-              "file"
-            ]
+            "type": "string"
           },
           "source_id": {
             "type": "string"
@@ -47,11 +40,8 @@
           "destination_type": {
             "type": "string"
           },
-          "destination_ids": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "destination_id": {
+            "type": "string"
           }
         }
       }
