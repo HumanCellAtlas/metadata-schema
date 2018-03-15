@@ -1,0 +1,28 @@
+{
+    "fileProjectMap": {
+        "7012b553-75f6-4c8c-9362-efeb099972d2": [
+            []
+        ]
+    }, 
+    "dataFiles": [
+        "8b436953-485e-4a30-a842-33d9f41744fe", 
+        "5f3dbe2e-734d-4523-be15-7787afdf2cbb"
+    ], 
+    "fileProtocolMap": {}, 
+    "envelopeUuid": "a37a2e3c-b8f0-45ee-805b-e0cdfb050590", 
+    "bundleUuid": "40a3a2b0-e746-438b-98d2-fd2589dd6efd", 
+    "fileBiomaterialMap": {
+        "a384e99b-49fd-4e2f-9e41-01bd1e0698ea": []
+    }, 
+    "fileProcessMap": {
+        "6119cd59-d908-4f57-8f73-ef23634f347c": [
+            "cd626fa7-91e0-40b1-b18e-5f99aaaaba88"
+        ]
+    }, 
+    "fileFilesMap": {
+        "ce5158af-7acd-4707-9609-79a27314f6c4": [
+            "8b436953-485e-4a30-a842-33d9f41744fe", 
+            "5f3dbe2e-734d-4523-be15-7787afdf2cbb"
+        ]
+    }
+}

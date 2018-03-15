@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
+    "id": "https://schema.humancellatlas.org/core/process/5.1.0/process_core",
     "description": "A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity.",
     "additionalProperties": false,
     "required": [
-        "describedBy",
         "process_id"
     ],
     "title": "process_core",

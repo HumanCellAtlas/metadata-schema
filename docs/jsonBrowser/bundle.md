@@ -43,7 +43,7 @@ Location: bundle/ingest_audit.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | yes |  |  |  | 
+describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
 submitter_id | ID of contact who first submitted project | string | no |  |  |  | 

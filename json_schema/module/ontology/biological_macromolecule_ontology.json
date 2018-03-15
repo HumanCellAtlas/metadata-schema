@@ -1,10 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology",
+    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/biological_macromolecule_ontology",
     "description": "A term that may be associated with a biological macromolecule-related ontology term",
     "additionalProperties": false,
     "required": [
-        "describedBy",
         "text"
     ],
     "title": "biological_macromolecule_ontology",
@@ -29,7 +28,7 @@
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:chebi, obo:efo, obo:obi"],
+                "ontologies" : ["obo:chebi", "obo:efo", "obo:obi"],
                 "classes": ["EFO:0004446"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,

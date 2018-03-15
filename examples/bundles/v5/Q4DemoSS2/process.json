@@ -1,26 +1,23 @@
 {
-  "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/process",
-  "schema_version": "5.0.0",
+  "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/process",
+  "schema_version": "5.1.0",
   "schema_type": "process_bundle",
   "processes": [
     {
 	"content" : {
-        "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.0.0/enrichment_process",
-        "schema_version": "5.0.0",
+        "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/enrichment_process",
+        "schema_version": "5.1.0",
         "schema_type": "process",
         "process_core": {
           "process_id": "enrichment1",
-          "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
-          "schema_version": "5.0.0"
+          "schema_version": "5.1.0"
         },
         "enrichment_method": "FACS",
         "process_type": {
-          "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology",
           "text": "enrichment process"
         }
       },
       "hca_ingest": {
-        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
         "document_id": "dc88a32b-e990-43bc-ba33-de8c4d5da286",
         "submissionDate": "2018-02-07T10:21:43.228Z",
         "updateDate": "2018-02-07T10:21:54.398Z",
@@ -30,27 +27,23 @@
     },
     {
       "content": {
-	"describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process",
-        "schema_version": "5.0.0",
+	"describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process",
+        "schema_version": "5.1.0",
         "schema_type": "process",
         "process_core": {
           "process_id": "preparation1",
-          "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
-          "schema_version": "5.0.0"
+          "schema_version": "5.1.0"
         },
         "input_nucleic_acid_molecule": {
-          "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/biological_macromolecule_ontology",
             "text": "polyA RNA"},
         "library_construction_approach": "Smart-seq2",
         "end_bias": "5 prime end bias",
         "strand": "unstranded",
         "process_type":{
 		"text" :"nucleic acid librarly construction process", 
-		"describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology"
 	}
       },
       "hca_ingest": {
-        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
         "document_id": "791e2c9a-3e5f-406a-8d57-6c69c320378b",
         "submissionDate": "2018-02-07T10:21:43.228Z",
         "updateDate": "2018-02-07T10:21:54.398Z",
@@ -60,24 +53,24 @@
     },
     {
       "content": {
-        "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.0.0/sequencing_process",
-        "schema_version": "5.0.0",
+        "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process",
+        "schema_version": "5.1.0",
         "schema_type": "process",
         "process_core": {
           "process_id": "assay1",
-          "describedBy": "https://schema.humancellatlas.org/core/process/5.0.0/process_core",
-          "schema_version": "5.0.0"
+          "describedBy": "https://schema.humancellatlas.org/core/process/5.1.0/process_core",
+          "schema_version": "5.1.0"
         },
         "instrument_manufacturer_model": {"text": "Illumina HiSeq 2500",
-          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.0.0/instrument_ontology"},
+          "describedBy": "https://schema.humancellatlas.org/module/ontology/5.1.0/instrument_ontology"},
         "paired_ends": true,
         "process_type": {
           "text" : "single cell sequencing process",
-            "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.0.0/process_type_ontology"
+            "describedBy" : "https://schema.humancellatlas.org/module/ontology/5.1.0/process_type_ontology"
         }
       },
       "hca_ingest": {
-        "describedBy": "https://schema.humancellatlas.org/bundle/5.0.0/ingest_audit",
+        "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/ingest_audit",
         "document_id": "af62f558-f579-47b6-892d-d14fd3abc018",
         "submissionDate": "2018-02-07T10:21:43.228Z",
         "updateDate": "2018-02-07T10:21:54.398Z",
