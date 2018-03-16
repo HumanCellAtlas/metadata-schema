@@ -6,13 +6,13 @@
                     "file_name": "SRR3934349_1.fastq.gz", 
                     "file_format": "fastq.gz"
                 }, 
-                "schema_type": "file", 
+                "read_index": "read1", 
                 "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file", 
-                "read_index": "read1"
+                "schema_type": "file"
             }, 
             "hca_ingest": {
-                "submissionDate": "2018-03-15T15:58:20.509Z", 
-                "document_id": "cb4f1900-cdcf-4e3d-834e-21c6b3e59237"
+                "submissionDate": "2018-03-16T14:38:05.980Z", 
+                "document_id": "0ee59158-9ef8-4310-a8ac-074e9c2666e9"
             }
         }, 
         {
@@ -21,13 +21,13 @@
                     "file_name": "SRR3934349_2.fastq.gz", 
                     "file_format": "fastq.gz"
                 }, 
-                "schema_type": "file", 
+                "read_index": "read2", 
                 "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file", 
-                "read_index": "read2"
+                "schema_type": "file"
             }, 
             "hca_ingest": {
-                "submissionDate": "2018-03-15T15:58:20.523Z", 
-                "document_id": "ed7989fb-1ca0-48ba-9b81-f83c4af7b091"
+                "submissionDate": "2018-03-16T14:38:06.000Z", 
+                "document_id": "cecfc838-a2c5-4a7e-9fe7-f354317c0f6c"
             }
         }
     ], 

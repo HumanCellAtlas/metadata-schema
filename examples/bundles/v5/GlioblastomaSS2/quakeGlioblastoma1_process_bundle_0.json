@@ -3,33 +3,61 @@
         {
             "content": {
                 "nucleic_acid_source": "single cell", 
-                "schema_type": "process", 
-                "dissociation_method": "FACS", 
-                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
                 "process_core": {
                     "process_id": "dis_proc_3"
-                }
+                }, 
+                "dissociation_method": "FACS", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
             }, 
             "hca_ingest": {
                 "accession": "", 
-                "submissionDate": "2018-03-15T15:58:20.761Z", 
-                "updateDate": "2018-03-15T15:58:31.772Z", 
-                "document_id": "336c7184-70a7-41b3-ab31-98f78b0ab092"
+                "submissionDate": "2018-03-16T14:38:06.688Z", 
+                "updateDate": "2018-03-16T14:38:51.282Z", 
+                "document_id": "eefc8b50-59be-4613-9648-0b0970f5f210"
             }
         }, 
         {
             "content": {
-                "schema_type": "process", 
-                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
                 "process_core": {
-                    "process_id": "sampling_process_3"
-                }
+                    "process_id": "sampling_process_5"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
             }, 
             "hca_ingest": {
                 "accession": "", 
-                "submissionDate": "2018-03-15T15:58:20.219Z", 
-                "updateDate": "2018-03-15T15:58:30.764Z", 
-                "document_id": "8c01ac9e-751b-4426-9032-c4235503a164"
+                "submissionDate": "2018-03-16T14:38:05.717Z", 
+                "updateDate": "2018-03-16T14:38:31.842Z", 
+                "document_id": "ef0c0752-759b-46f2-af82-2763e4b8e361"
+            }
+        }, 
+        {
+            "content": {
+                "input_nucleic_acid_molecule": {
+                    "text": "polyA RNA"
+                }, 
+                "process_core": {
+                    "process_id": "lib_prep_proc_1"
+                }, 
+                "library_construction_approach": "Smart-seq2", 
+                "cell_barcode": {
+                    "barcode_length": 16, 
+                    "barcode_read": "Read 1"
+                }, 
+                "schema_type": "process", 
+                "end_bias": "full length", 
+                "protocol_ids": [
+                    "lib_prep_protocol_1"
+                ], 
+                "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process", 
+                "strand": "unstranded"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-16T14:38:06.095Z", 
+                "updateDate": "2018-03-16T14:38:43.501Z", 
+                "document_id": "56545546-dfb2-4d81-9efc-ce2640e06f7d"
             }
         }, 
         {
@@ -46,13 +74,16 @@
                     "plate_id": "1001000173"
                 }, 
                 "schema_type": "process", 
+                "protocol_ids": [
+                    "seq_protocol_1"
+                ], 
                 "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process"
             }, 
             "hca_ingest": {
                 "accession": "", 
-                "submissionDate": "2018-03-15T15:58:21.852Z", 
-                "updateDate": "2018-03-15T15:58:32.752Z", 
-                "document_id": "adebcaaa-0cea-44af-8cce-fdc5dcadb286"
+                "submissionDate": "2018-03-16T14:38:06.080Z", 
+                "updateDate": "2018-03-16T14:38:42.465Z", 
+                "document_id": "bab2ea12-98a3-4c1a-b0e6-f9004d966606"
             }
         }
     ], 
