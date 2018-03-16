@@ -53,9 +53,9 @@
     }, 
     "hca_ingest": {
         "accession": "", 
-        "submissionDate": "2018-03-16T14:38:04.609Z", 
-        "updateDate": "2018-03-16T14:38:08.407Z", 
-        "document_id": "b6769701-2ac9-4354-bc6c-1be20473b90a"
+        "submissionDate": "2018-03-16T17:12:32.305Z", 
+        "updateDate": "2018-03-16T17:12:49.520Z", 
+        "document_id": "30312353-36a9-4bc9-9c68-47b568577ede"
     }, 
     "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/project", 
     "schema_version": "5.1.0", 
