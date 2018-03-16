@@ -1,0 +1,49 @@
+{
+    "links": [
+        {
+            "source_id": "7c72f20a-8199-497a-bba7-1316520ba847", 
+            "source_type": "biomaterial", 
+            "destination_id": "336c7184-70a7-41b3-ab31-98f78b0ab092", 
+            "destination_type": "dissociation_process"
+        }, 
+        {
+            "source_id": "336c7184-70a7-41b3-ab31-98f78b0ab092", 
+            "source_type": "dissociation_process", 
+            "destination_id": "317d865b-1d94-439d-a1bc-0da63bbe2348", 
+            "destination_type": "biomaterial"
+        }, 
+        {
+            "source_id": "8c01ac9e-751b-4426-9032-c4235503a164", 
+            "source_type": "process", 
+            "destination_id": "7c72f20a-8199-497a-bba7-1316520ba847", 
+            "destination_type": "biomaterial"
+        }, 
+        {
+            "source_id": "cd9d52fa-e89d-4c37-bb0e-997a2affe1dc", 
+            "source_type": "biomaterial", 
+            "destination_id": "8c01ac9e-751b-4426-9032-c4235503a164", 
+            "destination_type": "process"
+        }, 
+        {
+            "source_id": "412d2e81-18e0-4f23-b6ff-d579882d8efd", 
+            "source_type": "sequencing_process", 
+            "destination_id": "317d865b-1d94-439d-a1bc-0da63bbe2348", 
+            "destination_type": "biomaterial"
+        }, 
+        {
+            "source_id": "412d2e81-18e0-4f23-b6ff-d579882d8efd", 
+            "source_type": "sequencing_process", 
+            "destination_id": "54da508d-cf88-42da-8443-e623ef9ab94a", 
+            "destination_type": "file"
+        }, 
+        {
+            "source_id": "412d2e81-18e0-4f23-b6ff-d579882d8efd", 
+            "source_type": "sequencing_process", 
+            "destination_id": "9be3faa9-597f-453c-b42e-c83c70a8ebfe", 
+            "destination_type": "file"
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/1.0.0/links", 
+    "schema_version": "1.0.0", 
+    "schema_type": "link_bundle"
+}

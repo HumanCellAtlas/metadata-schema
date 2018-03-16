@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.2.0/process",
+    "id": "https://schema.humancellatlas.org/bundle/5.2.1/process",
     "description": "A schema for a process bundle.",
     "additionalProperties": false,
     "required": [
@@ -61,7 +61,7 @@
             "description": "An array of processes.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/bundle/5.1.0/process#/definitions/process_ingest"
+                "$ref": "https://schema.humancellatlas.org/bundle/5.2.1/process#/definitions/process_ingest"
             }
         }
     }

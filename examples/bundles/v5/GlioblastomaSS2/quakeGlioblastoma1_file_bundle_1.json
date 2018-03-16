@@ -3,7 +3,7 @@
         {
             "content": {
                 "file_core": {
-                    "file_name": "SRR3934349_1.fastq.gz", 
+                    "file_name": "SRR3934351_1.fastq.gz", 
                     "file_format": "fastq.gz"
                 }, 
                 "schema_type": "file", 
@@ -11,14 +11,14 @@
                 "read_index": "read1"
             }, 
             "hca_ingest": {
-                "submissionDate": "2018-03-15T15:58:20.509Z", 
-                "document_id": "cb4f1900-cdcf-4e3d-834e-21c6b3e59237"
+                "submissionDate": "2018-03-15T15:58:20.546Z", 
+                "document_id": "54da508d-cf88-42da-8443-e623ef9ab94a"
             }
         }, 
         {
             "content": {
                 "file_core": {
-                    "file_name": "SRR3934349_2.fastq.gz", 
+                    "file_name": "SRR3934351_2.fastq.gz", 
                     "file_format": "fastq.gz"
                 }, 
                 "schema_type": "file", 
@@ -26,8 +26,8 @@
                 "read_index": "read2"
             }, 
             "hca_ingest": {
-                "submissionDate": "2018-03-15T15:58:20.523Z", 
-                "document_id": "ed7989fb-1ca0-48ba-9b81-f83c4af7b091"
+                "submissionDate": "2018-03-15T15:58:20.561Z", 
+                "document_id": "9be3faa9-597f-453c-b42e-c83c70a8ebfe"
             }
         }
     ], 
