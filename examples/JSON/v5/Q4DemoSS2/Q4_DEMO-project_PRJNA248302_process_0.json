@@ -1,0 +1,14 @@
+{
+    "paired_ends": true, 
+    "schema_type": "process", 
+    "instrument_manufacturer_model": {
+        "text": "Illumina HiSeq 2500"
+    }, 
+    "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process", 
+    "process_type": {
+        "text": "single cell sequencing process"
+    }, 
+    "process_core": {
+        "process_id": "assay_1"
+    }
+}

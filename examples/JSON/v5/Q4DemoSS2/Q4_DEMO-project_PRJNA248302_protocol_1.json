@@ -1,0 +1,10 @@
+{
+    "protocol_core": {
+        "protocol_id": "library_protocol1"
+    }, 
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+    "protocol_type": {
+        "text": "library construction protocol"
+    }, 
+    "schema_type": "protocol"
+}

@@ -1,0 +1,20 @@
+{
+    "mus_musculus_specific": {
+        "strain": [
+            "Homo sapiens"
+        ]
+    }, 
+    "schema_type": "biomaterial", 
+    "biomaterial_core": {
+        "ncbi_taxon_id": [
+            9606
+        ], 
+        "biomaterial_id": "Q4_DEMO-donor_MGH30", 
+        "biomaterial_name": "Q4 DEMO donor MGH30"
+    }, 
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism", 
+    "medical_history": {
+        "smoking_history": "yes", 
+        "test_results": "unknown"
+    }
+}
