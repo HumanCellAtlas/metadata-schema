@@ -2,11 +2,11 @@
 
 #### `glioblastoma_v5_plainHeaders_large_7000cells.xlsx`
 
-A version of the glioblastoma spreadsheet in which the number of cells sequenced has been artificially duplicated to 7178 cells. This spreadsheet serves as a stress test. 
+A version of the glioblastoma spreadsheet in which the number of cells sequenced has been artificially duplicated to 7176 cells. This spreadsheet serves as a stress test. 
 
 #### `glioblastoma_v5_plainHeaders_real_3500cells.xlsx`
 
-The real version of the glioblastoma spreadsheet which has 3589 cells sequenced. 
+The real version of the glioblastoma spreadsheet which has 3588 cells sequenced. 
 
 #### `glioblastoma_v5_plainHeaders_medium_1000cells.xlsxz`
 
