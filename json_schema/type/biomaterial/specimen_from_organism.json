@@ -60,6 +60,11 @@
             "comment": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
+        "brain_specific": {
+            "description": "Brain-related information.",
+            "type": "object",
+            "$ref": "https://schema.humancellatlas.org/module/biomaterial/1.0.0/brain_specific"
+        },
         "disease": {
             "description": "Short description of disease status of the specimen. Can be 'normal' or one or more disease terms.",
             "type": "array",
