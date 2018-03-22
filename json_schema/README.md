@@ -33,3 +33,61 @@ Individual JSON files that are all part of the same experiment or assay are wrap
 1. All fields and schemas should have a description.
 1. All fields should have an accompanying example and user-friendly name for displaying in a UI.
 1. Fields should not have duplicate or snynonymous fields in any other schema.
+
+#### Directory structure of schemas
+
+```
+bundle/
+    <bundle schemas>
+ 
+core/
+    biomaterial/biomaterial_core.json	
+    file/file_core.json
+    process/process_core.json
+    project/project_core.json
+    protocol/protocol_core.json
+ 
+type/
+    biomaterial/
+        cell_line.json
+        cell_suspension.json
+        donor_organism.json
+        organoid.json
+        specimen_from_organism.json
+    file/		
+        analysis_file.json
+        reference_file.json
+        sequence_file.json
+    process/    
+        analysis/analysis_process.json
+        biomaterial_collection/enrichment_process.json
+        biomaterial_collection/collection_process.json
+        biomaterial_collection/dissociation_process.json
+        imaging/imaging_process.json
+        sequencing/library_preparation_process.json
+        sequencing/sequencing_process.json
+        process.json
+    protocol/  
+        analysis/analysis_protocol.json
+        biomaterial/biomaterial_collection_protocol.json
+        imaging/imaging_protocol.json
+        sequencing/sequencing_protocol.json
+        protocol.json        
+    project/	
+        project.json
+ 
+module/
+    biomaterial/
+        death.json
+        ...
+    ontology/
+        body_part_ontology.json
+        ...
+    process/
+        sequencing/barcode.json
+        ...
+    project/
+        contact.json
+        ...
+
+```
