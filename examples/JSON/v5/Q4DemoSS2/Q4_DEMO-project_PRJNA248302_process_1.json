@@ -1,0 +1,16 @@
+{
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA"
+    }, 
+    "process_type": {
+        "text": "nucleic acid librarly construction process"
+    }, 
+    "process_core": {
+        "process_id": "preparation1"
+    }, 
+    "library_construction_approach": "Smart-seq2", 
+    "schema_type": "process", 
+    "end_bias": "5 prime end bias", 
+    "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process", 
+    "strand": "unstranded"
+}

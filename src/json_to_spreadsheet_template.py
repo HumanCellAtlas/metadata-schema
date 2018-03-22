@@ -8,7 +8,7 @@ from schema_test_suite import get_json_from_file
 
 
 # hard coded tab ordering
-tab_ordering = ["project", "project.publications", "project.contributors", "donor_organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
+tab_ordering = ["project", "project.publications", "contact", "donor_organism", "familial_relationship", "specimen_from_organism", "cell_suspension",
                 "cell_line", "cell_line.publications", "organoid", "collection_process", "dissociation_process", "enrichment_process", "library_preparation_process",
                 "sequencing_process", "purchased_reagents", "protocol", "sequence_file"]
 
@@ -38,8 +38,10 @@ class SpreadsheetCreator:
             jsonRaw = get_json_from_file(schema)
 
         else:
+            if basepath not in schema:
+                schema = basepath + schema
             # get the schema of HTTP
-            req = requests.get(basepath+schema)
+            req = requests.get(schema)
 
             # if the schema is successfully retrieved, process it, else return an error message
             if (req.status_code == requests.codes.ok):
@@ -109,23 +111,23 @@ class SpreadsheetCreator:
                         module = module + "/" + e
                     module = module + ".json"
 
-                    if "_core" in module or module in dependencies:
-                        module_values = self._gatherValues(basepath, module, None, local, userFriendly)
+                if "_core" in module or module in dependencies:
+                    module_values = self._gatherValues(basepath, module, None, local, userFriendly)
 
-                        prefix = ""
-                    # if module in dependencies:
-                        if userFriendly:
-                            if "user_friendly" in properties[prop]:
-                                prefix = properties[prop]["user_friendly"] + " - "
-                            else:
-                                print(prop + " in " + entity_title + " has no user friendly name")
+                    prefix = ""
+                # if module in dependencies:
+                    if userFriendly:
+                        if "user_friendly" in properties[prop]:
+                            prefix = properties[prop]["user_friendly"] + " - "
                         else:
-                            prefix = prop + "."
+                            print(prop + " in " + entity_title + " has no user friendly name")
+                    else:
+                        prefix = prop + "."
 
-                    for key in module_values.keys():
-                        for entry in module_values[key]:
-                            entry["header"] = prefix + entry["header"]
-                        values.extend(module_values[key])
+                for key in module_values.keys():
+                    for entry in module_values[key]:
+                        entry["header"] = prefix + entry["header"]
+                    values.extend(module_values[key])
 
             # if a property has a user_friendly tag, include it as a direct field. This includes ontology module references as these should not be
             # exposed to users
@@ -234,7 +236,7 @@ class SpreadsheetCreator:
 
         # remove the blank worksheet that is automatically created with the spreadsheet
         if "Sheet" in wb.sheetnames:
-            wb.remove(wb.get_sheet_by_name("Sheet"))
+            wb.remove(wb["Sheet"])
 
         wb.save(filename=outputLocation)
 
@@ -303,27 +305,26 @@ if __name__ == '__main__':
 
 
 
-# Example run:
+# Example run to generate a spreadsheet for a 10x assay on samples from a live human donor with no medical history or family relationship info:
 # -s "https://schema.humancellatlas.org/"
-# -t "type/biomaterial/donor_organism.json,type/process/sequencing/library_preparation_process.json"
-# -i "module/biomaterial/homo_sapiens_specific.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json"
-# -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"
+# -t "type/project/5.1.0/project,type/biomaterial/5.1.0/donor_organism,type/biomaterial/5.1.0/specimen_from_organism,type/biomaterial/5.1.0/cell_suspension,type/process/biomaterial_collection/5.1.0/collection_process,type/process/biomaterial_collection/5.1.0/dissociation_process,type/process/biomaterial_collection/5.1.0/enrichment_process,type/process/sequencing/5.1.0/library_preparation_process,type/process/sequencing/5.1.0/sequencing_process,type/file/5.1.0/sequence_file,type/protocol/5.1.0/protocol"
+# -i "module/project/5.1.0/contact,module/project/5.1.0/publication,module/biomaterial/5.1.0/cell_morphology,module/biomaterial/5.1.0/homo_sapiens_specific,module/biomaterial/5.1.0/state_of_specimen,module/process/sequencing/5.1.0/barcode,module/process/5.1.0/purchased_reagents"
+# -o "/path/to/target/file/filename.xlsx"
+# -r   //use schemas from schema.humancellatlas.org
+# -f   //plain headers
 
-# Full run (plain headers):
+# Full run (user friendly headers, schemas from schema.humancellatlas.org):
 # -s "https://schema.humancellatlas.org/"
-# -t "type/project/project.json,type/biomaterial/donor_organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/protocol/protocol.json,type/file/sequence_file.json"
-# -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/mus_musculus_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/smartseq2.json"
-# -o "../examples/spreadsheets/v5/template/Programmatically_generated_v5_template_plainHeaders.xlsx"
-# --field_names
+# -t "type/project/5.1.0/project,type/biomaterial/5.1.0/donor_organism,type/biomaterial/5.1.0/specimen_from_organism,type/biomaterial/5.1.0/cell_suspension,type/biomaterial/5.1.0/cell_line,type/biomaterial/5.1.0/organoid,type/process/biomaterial_collection/5.1.0/collection_process,type/process/biomaterial_collection/5.1.0/dissociation_process,type/process/biomaterial_collection/5.1.0/enrichment_process,type/process/sequencing/5.1.0/library_preparation_process,type/process/sequencing/5.1.0/sequencing_process,type/file/5.1.0/sequence_file,type/protocol/5.1.0/protocol"
+# -i "module/project/5.1.0/contact,module/project/5.1.0/publication,module/biomaterial/5.1.0/cell_morphology,module/biomaterial/5.1.0/death,module/biomaterial/5.1.0/homo_sapiens_specific,module/biomaterial/5.1.0/medical_history,module/biomaterial/5.1.0/mus_musculus_specific,module/biomaterial/5.1.0/state_of_specimen,module/biomaterial/5.1.0/familial_relationship,module/process/sequencing/5.1.0/barcode,module/process/sequencing/5.1.0/smartseq2,module/biomaterial/5.1.0/growth_conditions,module/biomaterial/5.1.0/preservation_storage,module/process/5.1.0/purchased_reagents"
+# -o "/path/to/target/file/filename.xlsx"
+# -r   //use schemas from schema.humancellatlas.org
+# -u   //user friendly headers
 
-# Full run (user-friendly headers):
-# -s "https://schema.humancellatlas.org/"
-# -t "type/project/project.json,type/biomaterial/donor_organism.json,type/biomaterial/specimen_from_organism.json,type/biomaterial/cell_suspension.json,type/biomaterial/cell_line.json,type/biomaterial/organoid.json,type/process/biomaterial_collection/collection_process.json,type/process/biomaterial_collection/dissociation_process.json,type/process/biomaterial_collection/enrichment_process.json,type/process/sequencing/library_preparation_process.json,type/process/sequencing/sequencing_process.json,type/protocol/protocol.json,type/file/sequence_file.json"
-# -i "module/project/contact.json,module/project/publication.json,module/biomaterial/cell_morphology.json,module/biomaterial/death.json,module/biomaterial/homo_sapiens_specific.json,module/biomaterial/medical_history.json,module/biomaterial/mus_musculus_specific.json,module/biomaterial/state_of_specimen.json,module/biomaterial/familial_relationship.json,module/process/sequencing/barcode.json,module/process/sequencing/smartseq2.json"
-# -o "../examples/spreadsheets/v5/template/Programmatically_generated_v5_template_spreadsheet.xlsx"
-# --user_friendly
 
-# Run using local files only
+
+# Full run using local files only and plain headers
 # -s "../json"
 # -l
+# -f
 # -o "/Users/dwelter/Development/HCA/metadata-schema/src/spreadsheet_test.xlsx"

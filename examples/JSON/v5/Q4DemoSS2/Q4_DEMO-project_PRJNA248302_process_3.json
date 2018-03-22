@@ -1,0 +1,11 @@
+{
+    "enrichment_method": "FACS", 
+    "schema_type": "process", 
+    "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/enrichment_process", 
+    "process_type": {
+        "text": "enrichment process"
+    }, 
+    "process_core": {
+        "process_id": "enrichment1"
+    }
+}
