@@ -236,7 +236,7 @@ class SpreadsheetCreator:
 
         # remove the blank worksheet that is automatically created with the spreadsheet
         if "Sheet" in wb.sheetnames:
-            wb.remove(wb.get_sheet_by_name("Sheet"))
+            wb.remove(wb["Sheet"])
 
         wb.save(filename=outputLocation)
 
