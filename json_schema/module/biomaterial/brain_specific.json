@@ -1,18 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/1.0.0/brain_initiative",
-    "description": "Information relating to biomaterials used specifically in projects that are a part of the NIH BRAIN Initiative.",
+    "id": "https://schema.humancellatlas.org/module/biomaterial/1.0.0/brain_specific",
+    "description": "Information relating to biomaterials used specifically in projects studying the brain.",
     "additionalProperties": false,
     "required": [
-        "reference_human_atlas_structure_id"
+        "required_brain_specific_field"
     ],
-    "title": "brain_initiative",
+    "title": "brain_specific",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/brain_initiative"
+            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/brain_specific"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -20,13 +20,19 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "optional_brain_initiative_specific_field": {
-            "description": "This is some other BRAIN Initiative-specific field not relevant to other projects.",
+        "required_brain_specific_field": {
+            "description": "This is a general brain-specific field that was considered required by brain experts.",
             "type": "string",
             "example": "Cool brain feature",
-            "user_friendly": "Allen Brain Reference Atlases"
+            "user_friendly": "Brain-specific field"
         },
-        "reference_human_atlas_structure_id": {
+        "optional_brain_initiative_specific_field": {
+            "description": "This is a BRAIN Initiative-specific field not relevant to other projects.",
+            "type": "string",
+            "example": "Cool brain feature",
+            "user_friendly": "Another brain-specific field"
+        },
+        "optional_brain_specific_field": {
             "description": "Specific region of the brain. Must be a child term of the Allen Human Brain Atlas ontology in the NIF Standard Ontology.",
             "type": "string",
             "$ref": "https://schema.humancellatlas.org/module/ontology/1.0.0/reference_human_atlas_structure_ontology",
