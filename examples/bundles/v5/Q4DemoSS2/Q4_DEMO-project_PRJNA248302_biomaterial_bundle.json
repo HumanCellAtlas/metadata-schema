@@ -1,0 +1,70 @@
+{
+    "biomaterials": [
+        {
+            "content": {
+                "organ": {
+                    "text": "brain", 
+                    "ontology": "astrocyte"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "Q4_DEMO-donor_MGH30", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "Q4_DEMO-sample_SAMN02797092", 
+                    "supplementary_files": [
+                        "Q4_DEMO-protocol"
+                    ], 
+                    "biomaterial_name": "Q4_DEMO-Single cell mRNA-seq_MGH30_A01"
+                }, 
+                "organ_part": {
+                    "text": "glioblastoma"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.212Z", 
+                "updateDate": "2018-03-22T10:47:53.786Z", 
+                "document_id": "71e26994-bdbd-49a7-b99c-1b7b28719742"
+            }
+        }, 
+        {
+            "content": {
+                "is_living": true, 
+                "biological_sex": "unknown", 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "Q4_DEMO-donor_MGH30", 
+                    "biomaterial_name": "Q4 DEMO donor MGH30"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.237Z", 
+                "updateDate": "2018-03-22T10:47:53.701Z", 
+                "document_id": "c07a95b3-05b2-418c-a047-da5bd5d9e4eb"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/biomaterial", 
+    "schema_version": "5.1.0", 
+    "schema_type": "biomaterial_bundle"
+}
