@@ -19,7 +19,7 @@ Information about the process by which the HCA metadata schema will evolve is ou
 
     To request an update to an existing schema, the contributor needs to supply four pieces of information. 
 
-    - Which schema needs be changed?
+    - Which schema needs to be changed?
     - What field(s) in that schema need to be changed?
     - What should the change be?
     - Why is the change requested?
