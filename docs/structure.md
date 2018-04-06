@@ -27,7 +27,7 @@ The entities are arranged in units the represent different parts of an experimen
 
 The metadata entity model supports units that can have either biomaterials or data files as input or output. If the input is a biomaterial and the output is a data file, we typically refer to this as an assay. If both the input and output is a data file, we refer to this as an analysis. This flexible model also allows for the possibility of modeling synthetic biology experiments - for example a data file is used as input to produce a custom biomaterial - in the future.
 
-![Entities](images/unit_of_scenarios.jpg)
+![Entities](images/unit_scenarios.jpg)
 
 **Wrapper processes**
 
