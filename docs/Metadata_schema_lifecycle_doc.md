@@ -1,5 +1,7 @@
 # HCA Metadata schema lifecycle - v2.0
 
+# Parts of this document to be divided into contributing, evolution, structure, and rationale docs
+
 The **metadata design principles** can be read in the [Metadata schema lifecycle doc](docs/Metadata_schema_lifecycle_doc.md).
 
 ## Table of Contents

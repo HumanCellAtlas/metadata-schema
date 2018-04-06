@@ -1,6 +1,8 @@
 # The Human Cell Atlas Metadata Structure Overview - v3.0
 
-**Rationale for the [design and implementation choices](docs/rationale.md) for the HCA metadata standards.**
+# This doc is high priority and needs work!!
+
+This document outlines rationales for the design and implementation choices for the HCA metadata standards.
 
 ## Table of Contents
 - [Design choices](#design-choices)
