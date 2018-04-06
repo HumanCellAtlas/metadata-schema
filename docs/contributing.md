@@ -28,7 +28,7 @@ Information about the process by which the HCA metadata schema will evolve is ou
 
     - What is the name of the new module schema?
     - What fields should it contain (in JSON schema or spreadsheet/tab form)?
-    - Why it the new module needed? Specifically, why does the current metadata schema not meet the contributor's need?
+    - Why is the new module needed? Specifically, why does the current metadata schema not meet the contributor's need?
     
     To request any new fields or changes to fields, the following information needs to be supplied:
     
