@@ -1,4 +1,4 @@
-# The Human Cell Atlas Metadata Structure Overview - v3.0
+# The Human Cell Atlas Metadata Design and Implementation Choices - v3.0
 
 # This doc is high priority and needs work!!
 
