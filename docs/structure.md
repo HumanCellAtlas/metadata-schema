@@ -15,7 +15,7 @@ The Human Cell Atlas (HCA) is collecting data from complex biological samples an
 
 ## Entity structure
 
-
+![Entities](images/entities.jpg)
 
 ### Primary goals
 
