@@ -3,7 +3,7 @@
 This document describes HCA metadata schema design principles and standards and the semantics for versioning and updating these schema. More detailed discussion of the format and syntax of the metadata schema and their instantiation can be found in the complementary [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) document on Google Drive. The metadata working group will review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes should be made to ensure metadata update is not a blocker for the consortium as a whole.
 
 
-# Table of Contents
+## Table of Contents
 - [High-level description](#high-level-description)
 - [Entity structure](#entity-structure)
 - [Principles](#principles)
@@ -41,7 +41,7 @@ The primary goals of the HCA metadata entity model we developed include:
 1. Modular schemas to support independent versioning and domain-specific metadata fields
 1. Flexible and reusable metadata structure to enable modeling of future experiment types
 
-### Field organisation 
+### Metadata field organisation 
 
 * *Core* = Very stable, high-level entities that are referenced by a respective *Type*. These entities contain core fields that apply to and are inherited by corresponding *Type* entities.
 * *Type* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.

@@ -1,4 +1,18 @@
-#### Specifying version info
+# The Human Cell Atlas Metadata Structure Overview - v3.0
+
+**Rationale for the [design and implementation choices](docs/rationale.md) for the HCA metadata standards.**
+
+## Table of Contents
+- [Design choices](#design-choices)
+- [Implementation choices](#dimplementation-choices)
+
+## Design choices
+
+## Implementation choices
+
+### Hierarchy of entities (core, type, module)
+
+### Specifying version info
 
 Each schema is self-describing using the `id` field with a URL to the location of the version of the current document. 
 
