@@ -5,27 +5,29 @@ This document describes HCA metadata schema design principles and standards and 
 
 # Table of Contents
 - [High-level description](#high-level-description)
-- [Terminology](#terminology)
+- [Entity structure](#entity-structure)
 - [Principles](#principles)
 - [Stakeholders](#stakeholders)
 
-#### Primary goals of structure
+## High-level description
+
+The Human Cell Atlas (HCA) is collecting data from complex biological samples and assays with rich information (metadata). We expect over the lifetime of the project that the schemas that captures these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
+
+## Entity structure
+
+
+
+### Primary goals
 
 1. Process-based schema for handling transitions between biomaterial and file entities
 1. Modular schemas to support independent versioning and domain-specific metadata fields
 1. More flexible, reusable metadata structure
 
-#### Field organisational structure 
+### Field organisation 
 
 * *Core* = Very stable, high-level entities that are referenced by a respective *Type*. These entities contain core fields that apply to and are inherited by corresponding *Type* entities.
 * *Type* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
 * *Module* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
-
-
-
-## High-level description
-
-The Human Cell Atlas (HCA) is collecting data from complex biological samples and assays with rich information (metadata). We expect over the lifetime of the project that the schemas that captures these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
 
 ## Principles
 

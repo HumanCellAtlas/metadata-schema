@@ -1,6 +1,6 @@
 # The Human Cell Atlas Metadata Update Process SOP - v2.0
 
-# Table of Contents
+## Table of Contents
 - [Introduction](#introduction)
 - [General steps of the update process](#general-steps-of-the-update-process)
 - [Schema update acceptance process](#schema-update-acceptance-process)

@@ -2,7 +2,7 @@
 
 The **metadata design principles** can be read in the [Metadata schema lifecycle doc](docs/Metadata_schema_lifecycle_doc.md).
 
-# Table of Contents
+## Table of Contents
 - [Recording the Standards](#recording-the-standards)
 - [Specification of schema structure and content](#specification-of-schema-structure-and-content)
 - [Schema Versioning](#schema-versioning)
