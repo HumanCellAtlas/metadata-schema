@@ -15,13 +15,31 @@ The Human Cell Atlas (HCA) is collecting data from complex biological samples an
 
 ## Entity structure
 
+### Overview
+
+There are five major entities supported by the HCA metadata standard: Projects, Biomaterials (i.e. samples), Protocols, Processes, and Files.
+
 ![Entities](images/entities.jpg)
+
+The entities are arranged in units the represent different parts of an experiment. For example, the diagram below is an abstract illustratation of an input *biomaterial* (*e.g.* a tissue sample) undergoing some *process* (*e.g.* dissociation) to produce another *biomaterial* (*e.g.* a sample of dissociated cells). The *process* that was actually executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
+
+![Entities](images/unit_of_hierarcy.jpg)
+
+The metadata entity model supports units that can have either biomaterials or data files as input or output. If the input is a biomaterial and the output is a data file, we typically refer to this as an assay. If both the input and output is a data file, we refer to this as an analysis. This flexible model also allows for the possibility of modeling synthetic biology experiments - for example a data file is used as input to produce a custom biomaterial - in the future.
+
+![Entities](images/unit_of_scenarios.jpg)
+
+**Wrapper processes**
+
+![Entities](images/wrapper_process.jpg)
 
 ### Primary goals
 
+The primary goals of the HCA metadata entity model we developed include:
+
 1. Process-based schema for handling transitions between biomaterial and file entities
 1. Modular schemas to support independent versioning and domain-specific metadata fields
-1. More flexible, reusable metadata structure
+1. Flexible and reusable metadata structure to enable modeling of future experiment types
 
 ### Field organisation 
 
