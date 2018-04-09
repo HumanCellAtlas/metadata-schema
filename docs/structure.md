@@ -1,17 +1,22 @@
-# The Human Cell Atlas Metadata Structure Overview - v3.0
-
-This document describes HCA metadata schema design principles and standards and the semantics for versioning and updating these schema. More detailed discussion of the format and syntax of the metadata schema and their instantiation can be found in the complementary [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) document on Google Drive. The metadata working group will review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes should be made to ensure metadata update is not a blocker for the consortium as a whole.
-
+# The Human Cell Atlas: Overview of Metadata Structure v3.0
 
 ## Table of Contents
-- [High-level description](#high-level-description)
+- [Introduction](#introduction)
 - [Entity structure](#entity-structure)
 - [Principles](#principles)
 - [Stakeholders](#stakeholders)
 
-## High-level description
+## Introduction
 
 The Human Cell Atlas (HCA) is collecting data from complex biological samples and assays with rich information (metadata). We expect over the lifetime of the project that the schemas that captures these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
+
+This document describes the overall sctructure of the HCA metadata standards . More detailed discussion of the format and syntax of the metadata schema and their instantiation can be found in the complementary [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) document on Google Drive. The Metadata Working Group will review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes will be made to ensure metadata update is not a blocker for the consortium as a whole.
+
+The primary goals of the HCA metadata entity model we developed include:
+
+1. Process-based schema for handling transitions between biomaterial and file entities
+1. Modular schemas to support independent versioning and domain-specific metadata fields
+1. Flexible and reusable metadata structure to enable modeling of future experiment types
 
 ## Entity structure
 
@@ -29,35 +34,27 @@ The metadata entity model supports units that can have either biomaterials or da
 
 ![Entities](images/unit_scenarios.jpg)
 
-**Wrapper processes**
+**Describe wrapper processes**
 
 ![Entities](images/wrapper_process.jpg)
 
-### Primary goals
-
-The primary goals of the HCA metadata entity model we developed include:
-
-1. Process-based schema for handling transitions between biomaterial and file entities
-1. Modular schemas to support independent versioning and domain-specific metadata fields
-1. Flexible and reusable metadata structure to enable modeling of future experiment types
-
 ### Metadata field organisation 
 
-* *Core* = Very stable, high-level entities that are referenced by a respective *Type*. These entities contain core fields that apply to and are inherited by corresponding *Type* entities.
-* *Type* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
-* *Module* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
+* *Core fields* = Very stable, high-level entities that are referenced by a respective *Type*. These entities contain core fields that apply to and are inherited by corresponding *Type* entities.
+* *Type fields* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
+* *Module fields* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
 
 ## Principles
 
-The HCA metadata standards must be created and updated in a transparent and open manner ensuring the whole community can participate in the process if they wish. The following principles will be adhered to for the update process.
+The HCA metadata standards are developed and updated in a transparent and open manner to ensure that the whole community can participate in the process. The following principles will be adhered to for the update process.
 
 ### Agility
 
-The HCA foresees active development of sample handling, assays, and analyses, and will include both stable and rapidly evolving methods. As such, the metadata schema needs to be able to adapt accordingly, with regular updates (e.g. weekly or monthly), and a process for managing and tracking schema and data versions.
+The HCA foresees active development of sample handling, assays, and analyses, and will include both stable and rapidly evolving methods. As such, the metadata schema needs to be able to adapt accordingly, with regular updates (*e.g.* weekly or monthly), and a process for managing and tracking schema and data versions.
 
 ### Modularity
 
-As the metadata evolves, different components will likely evolve at different rates than others -- for example, the specification of contact info may never change, whereas entirely new objects will be required when a new experimental technology is invented. A modular design will ensure that different components of the metadata can flexibly and independently evolve. 
+As the metadata evolves, different components will likely evolve at different rates than others. For example, the specification of contact info may never change, whereas entirely new objects will be required when a new experimental technology is invented. A modular design will ensure that different components of the metadata can flexibly and independently evolve. 
 
 ### Flexibility
 

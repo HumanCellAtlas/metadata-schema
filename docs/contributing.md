@@ -1,4 +1,4 @@
-# The Human Cell Atlas Metadata Update Process SOP - v2.0
+# The Human Cell Atlas: Metadata Update Process v2.0
 
 ## Table of Contents
 - [Introduction](#introduction)

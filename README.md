@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/HumanCellAtlas/metadata-schema.svg)](https://travis-ci.org/HumanCellAtlas/metadata-schema)
 
-# The Human Cell Atlas Metadata Standards
+# The Human Cell Atlas: Metadata Standards
 
 The Human Cell Atlas metadata-schema repo contains the schema specifications and supporting documentation for the HCA metadata standards.
 
