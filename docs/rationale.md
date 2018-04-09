@@ -22,7 +22,7 @@ Version indicated in schema URL: `https://schema.humancellatlas.org/core/biomate
 
 As we are requiring instance data to also be self describing, all *Type* entities will require a property called `describedBy`. 
 
-e.g. For `donor_organism.json` schema, these fields will look like: 
+For `donor_organism.json` schema, these fields will look like: 
 
 ``` 
 "$schema": "http://json-schema.org/draft-04/schema#"
