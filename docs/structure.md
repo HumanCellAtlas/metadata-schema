@@ -5,7 +5,7 @@
 - [Entity structure](#entity-structure)
 - [Principles](#principles)
 - [Specification of schema structure and content](#specification-of-schema-structure-and-content)
-- [Recording the Standards](#recording-the-standards)
+- [Recording the standards](#recording-the-standards)
 - [Stakeholders](#stakeholders)
 
 ## Introduction

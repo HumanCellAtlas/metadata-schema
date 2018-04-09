@@ -4,10 +4,10 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Schema Versioning](#schema-versioning)
+- [Schema versioning](#schema-versioning)
 - [Module stability](#module-stability)
 - [Adding new committers to metadata working group](#adding-new-committers-to-metadata-working-group)
-- [Governance of Schema Updates](#governance-of-schema-updates)
+- [Governance of schema updates](#governance-of-schema-updates)
 
 ## Introduction
 
