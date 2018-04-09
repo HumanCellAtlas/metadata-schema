@@ -1,4 +1,4 @@
-# The Human Cell Atlas: Overview of Metadata Structure v3.0
+# The Human Cell Atlas: Overview of Metadata Structure
 
 ## Table of Contents
 - [Introduction](#introduction)

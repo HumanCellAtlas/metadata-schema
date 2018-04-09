@@ -8,8 +8,8 @@ The Human Cell Atlas metadata-schema repo contains the schema specifications and
 - [Documentation](#documentation)
 - [Metadata schemas and examples](#metadata-schemas-and-examples)
 - [Terminology](#terminology)
-- [Scripts](#scripts)
 - [Community feedback](#community-feedback)
+- [Scripts](#scripts)
 
 ## Documentation
 
@@ -40,17 +40,14 @@ The `examples/` directory contains example JSON files and spreadsheets to illust
 
 **Submitters** are any members of the HCA or scientific community who submit data or metadata to the HCA.
 
-**Committers** are any members of the HCA Data Coordination Platform (DCP) with commit privileges to the metadata-schema GitHub repo. All committers are also members of the MWG.
-
-**MWG members** are any persons who are a member of the Metadata Working Group.
-
-## Scripts
-
-Any scripts - *e.g.* those required for automatic testing, generation of template spreadsheets - are located in the `src/` directory.
+**Committers** are any members of the HCA Data Coordination Platform (DCP) with commit privileges to the metadata-schema GitHub repo.
 
 ## Community feedback
 
 Follow our community discussion of HCA metadata by joining the #hca-metadata channel on the [HCA Slack group](http://join-slack.humancellatlas.org/).
 
 If you have any questions or concerns, please create GitHub issues or email our helpdesk at data-help@humancellatlas.org. 
- 
+
+## Scripts
+
+Any scripts - *e.g.* those required for automatic testing, generation of template spreadsheets - are located in the `src/` directory.

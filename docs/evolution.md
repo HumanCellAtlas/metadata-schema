@@ -1,4 +1,4 @@
-# The Human Cell Atlas: Metadata Evolution and Update Principles v2.0
+# The Human Cell Atlas: Metadata Evolution and Update Principles
 
 # This doc is high priority and needs work!!
 

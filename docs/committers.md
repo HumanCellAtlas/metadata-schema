@@ -1,4 +1,4 @@
-# The Human Cell Atlas: Metadata Update Process for Committers v1.0
+# The Human Cell Atlas: Metadata Update Process for Committers
 
 ## Table of Contents
 - [Introduction](#introduction)
