@@ -5,6 +5,7 @@
 - [General steps of the update process](#general-steps-of-the-update-process)
 - [Schema update acceptance process](#schema-update-acceptance-process)
 - [Specific steps for contributing changes](#specific-steps-for-contributing-changes)
+- [Observed guidelines](#observed-guidelines)
 
 ## Introduction
 
