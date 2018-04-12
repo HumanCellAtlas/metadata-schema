@@ -7,8 +7,8 @@ The Human Cell Atlas metadata-schema repo contains the schema specifications and
 ## Table of Contents
 - [Documentation](#documentation)
 - [Metadata schemas and examples](#metadata-schemas-and-examples)
+- [Contributing](#contributing)
 - [Terminology](#terminology)
-- [Community feedback](#community-feedback)
 - [Scripts](#scripts)
 
 ## Documentation
@@ -28,6 +28,12 @@ When required, extensions to base JSON schemas have been developed and are locat
 
 The `examples/` directory contains example JSON files and spreadsheets to illustrate how the HCA metadata standards are implemented.
 
+## Contributing
+
+The HCA is committed to building and evolving the metadata standards based on the needs of the scientific community. Everyone is welcome to suggest updates, changes, or additions to the HCA metadata standards by [creating GitHub issues](https://github.com/HumanCellAtlas/metadata-schema/issues/new) or emailing [data-help@humancellaltas.org](data-help@humancellaltas.org). More details on [how to contribute](docs/contributing.md) to the HCA metadata standards are available. 
+
+Follow our community discussion of HCA metadata by joining the #hca-metadata channel on the [HCA Slack group](http://join-slack.humancellatlas.org/).
+
 ## Terminology
 
 **Metadata** are the collections of descriptive information needed to understand the data supported by the HCA. Metadata is collected for entities such as, but not limited to, assays (*e.g.* fastq and tif files), analysis results (*e.g.* expression matrices), and biological samples (*e.g.* biopsy or autopsy samples). This descriptive information will be provided to the community in a structured format defined by the HCA metadata schemas.
@@ -41,12 +47,6 @@ The `examples/` directory contains example JSON files and spreadsheets to illust
 **Submitters** are any members of the HCA or scientific community who submit data or metadata to the HCA.
 
 **Committers** are any members of the HCA Data Coordination Platform (DCP) with commit privileges to the metadata-schema GitHub repo.
-
-## Community feedback
-
-Follow our community discussion of HCA metadata by joining the #hca-metadata channel on the [HCA Slack group](http://join-slack.humancellatlas.org/).
-
-If you have any questions or concerns, please create GitHub issues or email our helpdesk at data-help@humancellatlas.org. 
 
 ## Scripts
 
