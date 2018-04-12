@@ -6,7 +6,6 @@
 - [Principles](#principles)
 - [Specification of schema structure and content](#specification-of-schema-structure-and-content)
 - [Recording the standards](#recording-the-standards)
-- [Stakeholders](#stakeholders)
 
 ## Introduction
 
@@ -99,47 +98,4 @@ The schema will be stored as a series of individual documents which are related 
 The metadata schemas are maintained in the [metadata-schema repo](https://github.com/HumanCellAtlas/metadata_schema/json_schema) in the Human Cell Atlas GitHub organisation.
 
 Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
-
-## Stakeholders
-
-The HCA community is broad and has many participating groups. The metadata update process needs to be transparent and easy to access for all these groups. One important issue to face is ensuring that anyone who is not comfortable with the git interface is not blocked from making metadata update suggestions. 
-
-### Collectors and users of the data
-
-#### Data Contributing Labs
-
-Data contributing labs are the groups who collect the samples and run the assays that generate the data for the HCA. They will be the individuals who have to record and report the majority of the metadata specified. The update and review process needs to be accessible to these groups and we must strive to ensure that they can easily find and incorporate changes in their own processes.
-
-#### Ingest Brokers
-
-The ingest brokers are the primary DCP contact with the data contributing labs. It is likely that a significant proportion of update requests will come via the ingest broker teams as they interact with the contributing labs and have a strong connection to the biology of the HCA. They should have a keen understanding of the capabilities of the contributing labs they are supporting and be able to comment on the reasonableness of change or addition to the rules with regard to the labs they support.
-
-#### Secondary Analysis Pipelines (MINT) team
-The secondary analysis pipelines will use metadata to discover and run their analysis pipelines. The impact of any changes on how pipelines discover data and run must be understood and where appropriate a member of the secondary analysis pipelines team should be involved in the review.
-
-#### HCA data access portal team
-
-The Data Access Portal (DAP) will be a simple file/bundle browser for the Data Storage System (DSS).  The DAP will use the metadata to build one or more indexes used to search for files and data bundles by a variety of configurable “facets”.  Changes to the metadata schema may alter how the indexer(s) are coded and how these search indexes get built.  The release of metadata versions should be coupled to updates of the indexers (and potentially web UI) by the DAP group..
-
-#### Third party portal developers
-
-The portal developers will use the metadata to build views and querying services on the data. Changes to the metadata schema may alter how these services are built. Portal developers must have access to the update and review process to ensure any downstream consequences on their own processes can be assessed and where necessary acted on.
-
-#### Tertiary methods developers and other downstream users of the data
-
-The metadata also needs to facilitate the all users of the data, whether they access it directly from the data store or via services provided by the different portals. This process must be visible and accessible to all our users.
-
-### Software teams
-
-The majority of metadata updates should have no impact on the software teams and should not require any downstream software updates but occasionally such breaking changes will be necessary.
-
-#### Ingest API team
-
-The Ingest API team should only need to be involved in the metadata update process if fields are updated which require changes to the Ingest API. This should be a very rare event and would require a longer consultation before making the change. The other class of change which would need consultation with the Ingest API is anything where semantic validation is required but the current schema validation tools are not able to validate yet. The schema allows for  additional metadata fields to be defined by a submitter beyond the fields already captured by the schema. This means submitters can always provide additional descriptive data to the DCP without it being officially part of the schema. If the suggested change require validation software updates to be scheduled, an individual submitter should be able to move forward with a change before the new validation is possible.
-
-#### DSS team
-
-The Data Storage System includes automated indexing of files marked as "metadata" in data bundles uploaded to the system. The current primary, "non-transformative" index takes documents as they are and loads them into an Elasticsearch index. This primary, non-transformative index can then be 1) queried, resulting in paged results pointing to individual bundles and/or 2) queries can be registered ahead of time and new data bundles (data bundle versions) whose metadata matches the queries will trigger notifications to a system associated with that registered query.
-
-This approach is extremely flexible from a project metadata perspective. Many different projects can be supported in a DSS with a non-transformative indexing strategy because this strategy does not need to understand the format of the metadata for a project ahead of time. One limitation of this strategy is related to changes over time. In particular, the Elasticsearch indexing technology we are currently using is sensitive to changes in metadata key/value types, e.g. the value of "species" changing from a string "homo sapiens" to a complex type "{ `name` : `homo sapiens`, `ontology`: 817 }".  For this reason, we want to use semantic versioning for each metadata document, such that breaking changes like this can be predicted by simply examining the top-level document schema version number. Elasticsearch can then place conflicting schemas in different indexes (yet dynamically combine their content in searches). This is the solution, and resulting limitation, we have currently.
 
