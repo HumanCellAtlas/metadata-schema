@@ -15,10 +15,10 @@ The Human Cell Atlas metadata-schema repo contains the schema specifications and
 
 Documentation supporting the metadata standard is available in the `docs/` directory. Specific topics covered include:
 
-- High-level overview of the [structure](docs/structure.md) of the HCA metadata standards.
-- Rationale for the [design and implementation choices](docs/rationale.md) for the HCA metadata standards.
-- [Evolution and update principles](docs/evolution.md) for the HCA metadata standards.
 - Information for [how to contribute](docs/contributing.md) to the HCA metadata standards.
+- Overview of the [structure](docs/structure.md) of the HCA metadata standards.
+- [Evolution and update principles](docs/evolution.md) for the HCA metadata standards.
+- Rationale for the [design and implementation choices](docs/rationale.md) for the HCA metadata standards.
 
 ## Metadata schemas and examples
 
