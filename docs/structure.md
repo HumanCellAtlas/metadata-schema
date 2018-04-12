@@ -2,28 +2,42 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Entity structure](#entity-structure)
+- [Overview of the metadata structure](#structure-overview)
+- [Specification of the metadata structure](#specification-of-schema-structure-and-content)
 - [Principles](#principles)
-- [Specification of schema structure and content](#specification-of-schema-structure-and-content)
 - [Recording the standards](#recording-the-standards)
 
 ## Introduction
 
-The Human Cell Atlas (HCA) is collecting data from complex biological samples and assays with rich information (metadata). We expect over the lifetime of the project that the schemas that captures these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
+This **structure** document describes the structure of the HCA metadata standards. More detailed specification of the format and syntax of the metadata schemas and their instantiation can be found in the [metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) on Google Drive.
 
-This document describes the overall sctructure of the HCA metadata standards . More detailed discussion of the format and syntax of the metadata schema and their instantiation can be found in the complementary [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) document on Google Drive. The Metadata Working Group will review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes will be made to ensure metadata update is not a blocker for the consortium as a whole.
+What is in this document?
+ - High-level [overview of the schema structure](#structure-overview)
+ - More detailed [specification of the schema structure](#specification-of-schema-structure-and-content)
+ - The set of [principles](#principles) specifically guiding the schema structure design
+ - Description of the [physical instatiation](#recording-the-standards) of the metadata standards
 
-The primary goals of the HCA metadata entity model we developed include:
+Who should be reading this document?
+ - Data contributors
+ - Data consumers
+ - Members of external projects seeking alignment with HCA metadata standards
+
+What *isn't* in this document?
+ - Something blah blah blah
+ 
+## Structure overview
+
+### Motivation
+
+The primary motivations behind the HCA metadata entity model include:
 
 1. Process-based schema for handling transitions between biomaterial and file entities
 1. Modular schemas to support independent versioning and domain-specific metadata fields
 1. Flexible and reusable metadata structure to enable modeling of future experiment types
 
-## Entity structure
+### Entities
 
-### Overview
-
-There are five major entities supported by the HCA metadata standard: Projects, Biomaterials (i.e. samples), Protocols, Processes, and Files.
+There are five major entities supported by the HCA metadata standard: Projects, Biomaterials (samples), Protocols, Processes, and Files.
 
 ![Entities](images/entities.jpg)
 
@@ -97,5 +111,7 @@ The schema will be stored as a series of individual documents which are related 
  
 The metadata schemas are maintained in the [metadata-schema repo](https://github.com/HumanCellAtlas/metadata_schema/json_schema) in the Human Cell Atlas GitHub organisation.
 
+ The Metadata Working Group will review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes will be made to ensure metadata update is not a blocker for the consortium as a whole.
+ 
 Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
 

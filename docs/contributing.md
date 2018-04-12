@@ -8,20 +8,26 @@
 
 ## Introduction
 
-This document includes directions for suggesting or requesting changes via a pull request, and the acceptance process and criteria for change acceptance. The HCA schema design principles, the semantics and process for versioning and updating these schema, and discussion of the detailed format and syntax of the metadata schema and their instantiation can be found in the complementary document [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455). These documents should be viewable by everyone. Please contact us if you do not have access to view.
+This **contributing** document provides directions for suggesting or requesting changes, making pull requests, and reporting bugs in the metadata schema via GitHub. This document also outlines what contributors can expect in terms of acceptance or rejection of contributions. 
 
 What is in this document?
  - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes)
- - Expectations for contributions to be accepted or rejected
  - Directions for [submitting pull requests](#submitting-pull-requests) for changes
- - Directions for [reporting bugs](#reporting-bugs)
+ - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
+ - Expectations for contributions to be accepted or rejected
 
 Who should be reading this document?
  - Data contributors
  - Data consumers
  - Anyone reporting a bug in the schema
 
+What *isn't* in this document?
+ - Process for committing changes to the schema (HCA committers **only**) can be found [here]()
+ - Description of major, minor, and patch changes can be found [here]()
+
 ## Requesting or suggesting changes
+
+**NEED TO FLIP PERSPECTIVE TO BE FROM THAT OF THE CONTRIBUTOR**
 
 1. **Submit feedback to the HCA on metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     - Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
