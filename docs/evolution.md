@@ -100,7 +100,7 @@ Anyone can request to join the committer team. When a request is received, the e
 
 ## Governance of schema updates
 
-The metadata working group will report progress to the HCA executive committee. The working group will provide written updates on the following matters at the start of each month:
+The Metadata Working Group will report progress to the HCA executive committee. The Metadata Working Group will review the update process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes will be made to ensure metadata update is not a blocker for the consortium as a whole. The working group will provide written updates on the following matters at the start of each month:
 
 - Changes to the metadata specification
   - Updates to existing modules

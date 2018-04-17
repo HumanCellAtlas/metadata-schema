@@ -49,9 +49,9 @@ The metadata entity model supports units that can have either biomaterials or da
 
 ![Entities](images/unit_scenarios.jpg)
 
-**Describe wrapper processes**
+Below is an example single-cell sequencing experiment modeled using the HCA metadata entity model described here.
 
-![Entities](images/wrapper_process.jpg)
+![Entities](images/project_scenario.jpg)
 
 ### Metadata field organisation 
 
@@ -107,11 +107,5 @@ It must be possible to separate different concerns related to metadata. For exam
 
 ## Recording the standards
 
-The schema will be stored as a series of individual documents which are related to entities and modules associated with them e.g project.json, assay.json, sample.json. These documents should be stored in a single versioned control repository alongside any documentation about the schema, the meaning of their contents or the update process.
- 
-The metadata schemas are maintained in the [metadata-schema repo](https://github.com/HumanCellAtlas/metadata_schema/json_schema) in the Human Cell Atlas GitHub organisation.
-
- The Metadata Working Group will review this process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes will be made to ensure metadata update is not a blocker for the consortium as a whole.
- 
-Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
+The schema will be stored as a series of individual documents which are related to entities and modules associated with them *e.g* project.json, biomaterial.json, sequencing_process.json. These documents are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their contents, and the update process. Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
 
