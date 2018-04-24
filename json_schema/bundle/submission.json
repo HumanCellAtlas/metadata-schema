@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.1.0/submission",
+    "id": "bundle/submission.json",
     "description": "Information added to a submission at ingest." ,
     "additionalProperties": false,
 	"required": [
@@ -21,7 +21,7 @@
 			"additionalProperties": false,
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.humancellatlas.org/bundle/5.1.0/submission#/definitions/file"
+				"$ref": "../bundle/submission.json#/definitions/file"
 			}
 		},
 		"file" : {
@@ -103,11 +103,11 @@
         },
     	"transfer_service_version" : {
 			"description": "",
-			"$ref": "https://schema.humancellatlas.org/bundle/5.1.0/submission#/definitions/transfer_service_version"
+			"$ref": "../bundle/submission.json#/definitions/transfer_service_version"
 		},
 		"submitted_files" : {
 			"description": "",
-			"$ref": "https://schema.humancellatlas.org/bundle/5.1.0/submission#/definitions/submitted_files"
+			"$ref": "../bundle/submission.json#/definitions/submitted_files"
 		}
     }
 }

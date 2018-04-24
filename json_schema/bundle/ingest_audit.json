@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/5.1.0/ingest_audit",
+    "id": "../bundle/ingest_audit.json",
     "description": "Information added or generated at time of ingest." ,
     "additionalProperties": false,
     "required": [

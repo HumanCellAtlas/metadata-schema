@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/medical_history",
+    "id": "module/biomaterial/medical_history.json",
     "description": "Information about the medical history of an organism.",
     "additionalProperties": false,
     "title": "medical_history",

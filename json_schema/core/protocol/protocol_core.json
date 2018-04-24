@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/core/protocol/5.1.0/protocol_core",
+    "id": "core/protocol/protocol_core.json",
     "description": "A protocol entity contains information about an intended protocol that was followed in the project.",
     "additionalProperties": false,
     "required": [

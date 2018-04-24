@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/time_unit_ontology",
+    "id": "module/ontology/time_unit_ontology",
     "description": "A term that may be associated with a time unit-related ontology term",
     "additionalProperties": false,
     "required": [

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/preservation_storage",
+    "id": "module/biomaterial/preservation_storage.json",
     "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
     "additionalProperties": false,
     "title": "preservation_storage",
@@ -44,7 +44,7 @@
         "storage_time_unit": {
             "description": "The unit in which Storage time is expressed.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/time_unit_ontology",
+            "$ref": "../ontology/time_unit_ontology.json",
             "example": "days",
             "user_friendly": "Storage time unit"
         },

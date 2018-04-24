@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/bundle/1.0.1/reference",
+    "id": "bundle/reference.json",
     "description": "A schema for a reference bundle.",
     "additionalProperties": false,
     "required": [
@@ -20,12 +20,12 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "https://schema.humancellatlas.org/bundle/5.1.0/ingest_audit"
+                    "$ref": "../bundle/ingest_audit.json"
                 },
                 "content": {
                     "description": "Content for any reference type entity.",
                     "type": "object",
-                    "$ref": "https://schema.humancellatlas.org/type/file/1.0.1/reference_file"
+                    "$ref": "../type/file/reference_file.json"
                 }
             }
         }
@@ -52,7 +52,7 @@
             "description": "An array of reference files.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/bundle/1.0.1/reference#/definitions/reference_ingest"
+                "$ref": "../bundle/reference.json#/definitions/reference_ingest"
             }
         }
     }

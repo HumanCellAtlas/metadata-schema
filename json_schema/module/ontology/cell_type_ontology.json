@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_type_ontology",
+    "id": "module/ontology/cell_type_ontology.json",
     "description": "A term that may be associated with a cell type-related ontology term",
     "additionalProperties": false,
     "required": [

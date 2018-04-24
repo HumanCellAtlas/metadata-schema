@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/death",
+    "id": "module/biomaterial/death.json",
     "description": "Information relating to the death of an organism.",
     "additionalProperties": false,
     "required": [

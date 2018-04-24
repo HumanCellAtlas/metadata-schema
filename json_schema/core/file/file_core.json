@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/core/file/5.1.0/file_core",
+    "id": "core/file/file_core.json",
     "description": "A file entity contains information about a data file produced from any process.",
     "additionalProperties": false,
     "required": [
