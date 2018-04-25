@@ -1,4 +1,12 @@
 # Module
+## Common fields
+_Fields common to all schemas in this document_
+
+Property name | Description | Type | Required? | Example 
+--- | --- | --- | --- | ---
+ describedBy | The URL reference to the schema. | string | no |  |  |  | 
+schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
+
 ## length_unit_ontology<a name='length_unit_ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
@@ -6,8 +14,6 @@ Location: module/ontology/length_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of a length unit being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -18,8 +24,6 @@ Location: module/ontology/cell_cycle_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of a cell cycle of the cells in the specimen. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -30,8 +34,6 @@ Location: module/ontology/ethnicity_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The ethnicity of the human donor. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -42,8 +44,6 @@ Location: module/ontology/process_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of a process type being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -54,8 +54,6 @@ Location: module/ontology/species_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of the species to which the organism belongs. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -66,8 +64,6 @@ Location: module/ontology/disease_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The text for the term as the user provides it. | string | yes |  |  |  | 
 ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  |  |  | 
 
@@ -78,8 +74,6 @@ Location: module/ontology/strain_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -90,8 +84,6 @@ Location: module/ontology/organ_part_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The text for the term as the user provides it. | string | yes |  |  |  | 
 ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  |  |  | 
 
@@ -102,8 +94,6 @@ Location: module/ontology/time_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of a time unit being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -114,8 +104,6 @@ Location: module/ontology/protocol_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of a protocol type used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -126,8 +114,6 @@ Location: module/ontology/development_stage_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of the development stage of the organism. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -138,9 +124,7 @@ Location: module/ontology/instrument_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
 text | The full name of the instrument used. | string | yes |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
 ## mass_unit_ontology<a name='mass_unit_ontology'></a>
@@ -150,8 +134,6 @@ Location: module/ontology/mass_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of a mass unit being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -162,8 +144,6 @@ Location: module/ontology/biological_macromolecule_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of the biological macromolecule being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -174,8 +154,6 @@ Location: module/ontology/cell_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The name of a cell type supplied by a user. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
@@ -186,8 +164,6 @@ Location: module/ontology/organ_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 text | The text for the term as the user provides it. | string | yes |  |  |  | 
 ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  |  |  | 
 
@@ -198,8 +174,6 @@ Location: module/project/contact.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 contact_name | The contact's name. Should be in the format 'first, middle, last name'. Middle can be initial or left blank. | string | yes |  | Contact name |  | John,D,Doe
 email | An email address for the contact. | string | yes |  | Email |  | 
 phone | Phone number (including country code) of contact or contact's lab. | string | no |  | Phone number |  | 
@@ -215,8 +189,6 @@ Location: module/project/publication.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 authors | A list of authors associated with the publication in 'surname initials' format. | array | yes |  | Authors |  | Smith JD
 publication_title | The full title of the publication. | string | yes |  | Publication title |  | 
 doi | The publication digital object identifier. | string | no |  | DOI |  | 10.1016/j.cell.2016.07.054
@@ -230,8 +202,6 @@ Location: module/biomaterial/growth_conditions.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 passage_number | The number of passages the cell line has been through. | integer | no |  | Passage number |  | 
 growth_medium | The solid, liquid, or semi-solid medium used to support the growth of the biomaterial. | string | no |  | Growth medium |  | lysogeny broth (LB) medium
 mycoplasma_testing_method | The method used for detecting mycoplasma contamination of a biomaterial culture. | string | no |  | Mycoplasma testing method |  | Indirect DNA stain using Hoechst 33258 with 3T3 indicator cells
@@ -245,8 +215,6 @@ Location: module/biomaterial/preservation_storage.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 storage_method | The method by which a biomaterial was stored. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen, -70C freezer, frozen, -150C freezer, frozen, liquid nitrogen, frozen, vapor phase, paraffin block, RNAlater, frozen, TRIzol, frozen | 
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | days
@@ -259,8 +227,6 @@ Location: module/biomaterial/homo_sapiens_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 body_mass_index | The body mass index of the organism. | number | no |  | Body mass index |  | 
 ethnicity | An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
 
@@ -271,8 +237,6 @@ Location: module/biomaterial/death.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string | yes |  | Cause of death |  | 
 cold_perfused | Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise. | boolean | no |  | Cold perfused? |  | 
 days_on_ventilator | Days on ventilator before dying. | number | no |  | Number of days on ventilator |  | 
@@ -286,8 +250,6 @@ Location: module/biomaterial/familial_relationship.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 is_child_of | This organism is a child of the indicated organism. | string | no |  | Child of |  | 
 is_parent_of | This organism is a parent of the indicated organism. | string | no |  | Parent of |  | 
 is_sibling_of | This organism is a sibling of the indicated organism. | string | no |  | Sibling of |  | 
@@ -299,8 +261,6 @@ Location: module/biomaterial/medical_history.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 alcohol_history | Number of drinks consumed on a typical day. | string | no |  | Alcohol history |  | 
 medication | List of medications the organism was currently taking at time of biomaterial donation. | string | no |  | Medications |  | 
 nutritional_state | Should be one of normal, fasting, or feeding tube removed. |  | no |  | Nutritional state | normal, fasting, feeding tube removed | 
@@ -315,8 +275,6 @@ Location: module/biomaterial/cell_morphology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 cell_morphology | General description of the morphology of the cells in the cell suspension. | string | no |  | Cell morphology |  | 
 cell_size | The size of the cells. Average cell size is acceptable. | number | no |  | Cell size number |  | 
 cell_size_unit | The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
@@ -331,8 +289,6 @@ Location: module/biomaterial/state_of_specimen.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 autolysis_score | State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate. | string | no |  | Autolysis score | none, mild, moderate | 
 gross_description | Color, size, and other aspects of specimen as visible to naked eye. | string | no |  | Gross description |  | 
 gross_image | List of filenames of photographs of body part without magnification. Must be of format JPEG, TIFF, or PNG. | array | no |  | Gross image |  | 
@@ -349,8 +305,6 @@ Location: module/biomaterial/mus_musculus_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 strain | The name of the strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Strain |  | C57BL/6.
 
 ## purchased_reagents<a name='purchased_reagents'></a>
@@ -360,8 +314,6 @@ Location: module/process/purchased_reagents.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit
 catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
 manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
@@ -375,8 +327,6 @@ Location: module/process/sequencing/barcode.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 barcode_read | The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | 
 barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer | yes |  | Barcode offset |  | 
 barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 
@@ -389,8 +339,6 @@ Location: module/process/sequencing/smartseq2.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 plate_id | An ID for the plate that the well is located on. | string | no |  | Well plate ID |  | 
 well_name | A name for the well. Should be unique for the plate | string | no |  | Well name |  | 
 well_row | Well row in plate. | string | no |  | Well row |  | 
