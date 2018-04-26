@@ -22,12 +22,13 @@ Who should be reading this document?
  - Anyone reporting a bug in the schema
 
 What *isn't* in this document?
- - Process for committing changes to the schema (currently this must be done via a HCA broker)
- - Description of major, minor, and patch changes can be found [here]()
+- Any information about contributing data to the HCA. This document is about contributing to the metadata schema.
+- Automated process for committing changes to the schema. Currently this must be done via a HCA wrangler with commit privilages.
+- Description of major, minor, and patch changes can be found [here]()
 
 ## Requesting or suggesting changes
 
-As a prerequisite to this section you may want to look at [how the metadata is structured](metadata-schema/docs/structure.md))
+As a prerequisite to this section you may want to look at [how the metadata is structured](metadata-schema/docs/structure.md)
 
 1. **Submit feedback to the HCA on metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     - Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
