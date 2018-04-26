@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This **contributing** document provides directions for suggesting or requesting changes, making pull requests, and reporting bugs in the metadata schema via GitHub. This document also outlines what contributors can expect in terms of acceptance or rejection of contributions. 
+This document will describe how you can contribute by suggesting or requesting changes, making pull requests, and reporting bugs in the metadata schema via GitHub. This document also covers our rationale for acceptance or rejection of your suggestions.
 
 What is in this document?
  - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes)
@@ -22,17 +22,17 @@ Who should be reading this document?
  - Anyone reporting a bug in the schema
 
 What *isn't* in this document?
- - Process for committing changes to the schema (HCA committers **only**) can be found [here]()
+ - Process for committing changes to the schema (currently this must be done via a HCA broker)
  - Description of major, minor, and patch changes can be found [here]()
 
 ## Requesting or suggesting changes
 
-**NEED TO FLIP PERSPECTIVE TO BE FROM THAT OF THE CONTRIBUTOR**
+As a prerequisite to this section you may want to look at how the metadata is structured (see [here]())
 
 1. **Submit feedback to the HCA on metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     - Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
     - Email the HCA DCP helpdesk at data-help@humancellaltas.org
-    - Make a pull request against the develop branch of the metadata-schema GitHub repo
+    - Make a pull request against the develop branch of the metadata-schema GitHub repo (only recommended for users with prior familiarity with GitHub)
 
     To request an **update to an existing schema**, you need to supply the following four pieces of information:
 
@@ -55,26 +55,10 @@ What *isn't* in this document?
     1. An example valid value for this field (optional)
     1. If this field needs a controlled vocabulary or ontology, and, if yes, what those values should be (optional)
 
-    If you are suggesting update via a pull request, the required information should be self-evident in the JSON schema itself and the pull request message. If the required information isn't clear, then you will be asked for clarification before moving to step 3.
+2. **Review of your suggestion.** Within 2 working days, we will review your suggestion. We may seek clarification from you or the appropriate HCA communities for additional input.
 
-2. **Suggestion assigned a committer for review.** Within 2 working days, a committer will be assigned to review the suggestion. The committer will be responsible for reviewing the suggestion, seeking clarification from the proposer, and generating the appropriate updates to the metadata standard. If needed, the committer will also contact the appropriate HCA communities for additional input. 
+3. **Review and comments from the community** Your metadata request will be posted to the #hca-metadata Slack channel and the metadata-wg mailing list so everyone can have an opportunity to comment over a time frame that matches the severity of the change.
 
-3. **Pull request made by committer (if one doesn’t exist already).** If the feedback didn’t come in the form of the pull request, then one needs to be created. If the contributor has a GitHub account, they should be encouraged to make a pull request for their proposed change. ,If that is not possible, the committer who is handling the feedback should translate it into a JSON schema update and create the pull request. If this happens, another committer should be added to review and merge the pull request.
+4.  **Implementing the change** Once the review period is over, if the change is accepted into the repository, we will generate appropriate updates to the metadata standard on your behalf. Further details about this procedure are documented [here]().
 
-4. **Annotate the pull request with suitable labels and run integration tests.** The assigned reviewer should classify the suggested change by the type of change it is from a versioning perspective (patch, minor, or major) and the stability category of the module being changed (high, medium, or low). These labels can be setup in the GitHub repo so which pull requests have been flagged with which category are easy to see and filter. 
-
-    The reviewer should also ensure the integration tests have been run. Minor and patch version changes should not cause the tests to fail. A major version change may cause test failures, especially when in a high stability module and this should help the reviewer to select the appropriate people to assist with the review.
-
-    We aim for steps 1 to 4 to be completed less than 48 hours from the initial request being received.
-
-5. **Notify community about the change request.** The pull request should be posted to the #hca-metadata Slack channel and the metadata-wg mailing list so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change.
-
-    The committer leading this effort should ensure appropriate developers from any system which could be impacted by the change are watching the thread on the pull request.
-
-6. **Start the update acceptance process.** The assigned committer now starts the clock on the update acceptance process (see below). They should ensure the community is reminded about the proposed change at least once during the review timeframe. They also need to ensure any other assigned reviewer actively accepts the change and/or provides feedback on the change. 
-
-7. **Accept or reject the change.** Once the review period is over, if the change is accepted into the repository, the pull request will be merged. The pull request merge should trigger automated updates to the documentation and propagation of the new schemas through the ingest system. The precise timing of the new schema version into production will depend on any software consequences for the change. Any patch or minor version change should be usable very quickly but major version changes might take longer depending on how long it takes any affected piece of software to be updated to function with the new schema.
-
-8. **Announce accepted change to community**. The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. 
-
-## Submitting pull requests
+5.  **Notification to the community** The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. You can [join the HCA slack community follow these instructions.](https://github.com/HumanCellAtlas/wiki/wiki)
