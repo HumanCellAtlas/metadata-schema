@@ -24,7 +24,7 @@ Who should be reading this document?
 What *isn't* in this document?
 - Any information about contributing data to the HCA. This document is about contributing to the metadata schema.
 - Automated process for committing changes to the schema. Currently this must be done via a HCA wrangler with commit privilages.
-- Description of major, minor, and patch changes can be found [here]()
+- [Description of major, minor, and patch changes.](https://github.com/HumanCellAtlas/metadata-schema/blob/mg-updade-docs/docs/evolution.md#schema-versioning)
 
 ## Requesting or suggesting changes
 
