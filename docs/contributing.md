@@ -26,7 +26,7 @@ What *isn't* in this document?
 - Automated process for committing changes to the schema. Currently this must be done via a HCA wrangler with commit privilages.
 - [Description of major, minor, and patch changes.](https://github.com/HumanCellAtlas/metadata-schema/blob/mg-updade-docs/docs/evolution.md#schema-versioning)
 
-## Requesting or suggesting changes
+## Requesting or suggesting changes to the metadata schema
 
 As a prerequisite to this section you may want to look at [how the metadata is structured](metadata-schema/docs/structure.md)
 
