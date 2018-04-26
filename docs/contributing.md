@@ -27,7 +27,7 @@ What *isn't* in this document?
 
 ## Requesting or suggesting changes
 
-As a prerequisite to this section you may want to look at how the metadata is structured (see [here]())
+As a prerequisite to this section you may want to look at [how the metadata is structured](metadata-schema/docs/structure.md))
 
 1. **Submit feedback to the HCA on metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     - Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
