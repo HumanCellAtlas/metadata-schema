@@ -1,5 +1,7 @@
 # The Human Cell Atlas: Metadata Update Process
 
+# This doc needs to be re-written from the perspective of a user
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Requesting or suggesting changes](#requesting-or-suggesting-changes)
@@ -26,8 +28,6 @@ What *isn't* in this document?
  - Description of major, minor, and patch changes can be found [here]()
 
 ## Requesting or suggesting changes
-
-**NEED TO FLIP PERSPECTIVE TO BE FROM THAT OF THE CONTRIBUTOR**
 
 1. **Submit feedback to the HCA on metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     - Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
