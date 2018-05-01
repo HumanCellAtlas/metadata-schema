@@ -1,0 +1,134 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://schema.humancellatlas.org/type/process/biomaterial_collection/1.0.0/differentiation_process",
+    "description": "Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid.",
+    "additionalProperties": false,
+    "required": [
+        "describedBy",
+        "schema_type",
+        "process_core",
+        "differentiation_method",
+	"differentiation_cell_source_type",
+	"differentiation_target_cell_type"
+    ],
+    "title": "differentiation_process",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/differentiation_process"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "process"
+            ]
+        },
+        "process_core" : {
+            "description": "Core process-level information.",
+            "type": "object",
+            "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
+        },
+	"differentiation_protocol":{
+	    "description": "Unique identifier of the protocol file which captures the details of how differentiation of cells were performed.",
+	    "type": "string",
+	    "user_friendly": "Differentiation Protocol",
+	    "example": "Abcam- Human embryonic stem cells to hepatic endoderm protocol"
+	},
+	"differentiation_method": {
+	    "decription": "Differentiation method applied to stem cell culture to induce a specific differentiation response.",
+	    "type": "string",
+	    "usert_friendly": "Differentiation Method",
+	    "example": "Embryoid Body, Monolayer, Inductive Co-Culture"
+	},
+	"differentiation_cell_source_id":{
+	    "description": "Unique identifier of the cell source prior to differentiation to target cell.",
+	    "type": "string",
+	    "user_friendly": "Cell Source ID"
+	},
+	"differentiation_cell_source_type":{
+            "description": "Cell type of sample prior to differentiation to target cell.",
+            "type": "string",
+            "user_friendly": "Cell Source Type"
+	    "example": "hESC, iPSC, Mesoderm Progenitor, Neural Progenitor"
+        },
+	"differentiation_target_cell_type":{
+	    "description": "Target cell type that cell of origin is differentiated to.",
+	    "type": "string",
+	    "user_friendly": "Target Cell Type",
+	    "example": "Cardiomyocyte, Cortical Neuron, Macrophage"
+	},
+	"differentiation_target_cell_yield":{
+            "description": "Percent of target cells obtained after directed differentiation of origin cell.",
+            "type": "string",
+            "user_friendly": "Target Cell Yield"
+        },
+	"differentiation_growth_environment":{
+	    "description": "Growth environment in which stem cells are differentiated.",
+	    "type": "string",
+	    "user_friendly": "Growth Environment",
+	    "example": "scaffold, monolayer, suspension, hanging drops, collagen, engraftment"
+	},
+	"differentiation_growth_factors":{
+	    "description": "Growth factor added to stem cell culture to induce a specific differentiation response.",
+	    "type": "string",
+	    "user_friendly": "Differentiation Growth Factors",
+	    "example": "FLT3 Ligand CTS Recombinant Human Protein"
+	},
+	"differentiation_medium":{
+	    "description": "Culture media used to induce a specific differentiation response.",
+	    "type": "string",
+	    "user_friendly": "Differentiation Media",
+	    "example": "RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium"
+	},
+	"differentiation_small_molecules":{
+	    "description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
+	    "type": "string",
+	    "user_friendly": "Small Molecules",
+	    "example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
+	},
+	"differentiation_reagents":{
+	    "description": "Differentiation reagents added to stem cell culture to induce a specific differentiation response.",
+	    "type": "string",
+	    "user_friendly": "Differentiation Reagents",
+	    "example": "Ascl1 (mouse), nuclear receptor subfamily 4 group A member 2(Nurr1), Lmx1a(mouse)"
+	},
+	"differentiation_cell_culture_id":{
+	    "description": "Unique identifier of the differentiated cell culture after differentiation reagents and methods are applied. ",
+	    "type": "string",
+	    "user_friendly": "Differentiated Cell Culture ID"
+	},
+	"differentiation_target_pathway":{
+	    "description": "Targeted pathway for specific differentiation response.",
+	    "type": "string",
+	    "user_friendly": "Target Pathway",
+	    "example": "Wnt Pathway"
+	},
+	"differentiation_validation_method":{
+	    "description": "Method used to validate origin cell successfully differentiated to target cell.",
+	    "type": "string",
+	    "user_friendly": "Differentiation Validation Method",
+	    "example": "Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining"
+	},
+	"differentiation_validation_results":{
+            "description": "Results confirming successful differentiation to target cell type.",
+            "type": "string",
+            "user_friendly": "Validation Results",
+            "example": "CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative"
+        },
+	"differentiation_extracellular_substrate_matrix":{
+	    "description": "Extracellular substrate matrix in which cells are grown during differentiation.",
+	    "type": "string",
+	    "user_friendly": "Extracellular Substrate Matrix",
+	    "example": "Matrigel, Laminin, Vitronectin"
+	}
+    }
+}
