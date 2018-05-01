@@ -1,15 +1,20 @@
 # The Human Cell Atlas: Metadata Design and Implementation Choices
 
 
-This document outlines rationales for the design and implementation choices for the HCA metadata standards.
-
 ## Table of Contents
 - [Design choices](#design-choices)
 - [Implementation choices](#dimplementation-choices)
 
 What is in this document?
 
+This document outlines rationales for the design and implementation choices for the HCA metadata standards.
+
 Who should be reading this document?
+
+* Data contributors
+* Data consumers
+* Anyone who wants to understand the HCA metadata rationale
+
 
 What *isn't* in this document?
 - [Hierarchy of entities (core, type, module)]()
