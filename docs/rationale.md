@@ -1,6 +1,5 @@
 # The Human Cell Atlas: Metadata Design and Implementation Choices
 
-# This doc is high priority and needs work!!
 
 This document outlines rationales for the design and implementation choices for the HCA metadata standards.
 
