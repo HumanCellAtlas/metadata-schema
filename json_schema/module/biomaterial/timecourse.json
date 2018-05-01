@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/timecourse",
+    "description": "Fields to capture timecourse information.",
+    "additionalProperties": false,
+    "title": "timecourse",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/timecourse"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "timecourse_value": {
+            "description": "The numerical value associated with a time interval used in the experiment.",
+            "type": "number",
+            "example": "1"
+        },
+        "timecourse_unit": {
+            "description": "The unit that the timecourse value is in.",
+            "type": "ontology",
+            "example": "hours"
+        },
+        "timecourse_significance": {
+            "description": "Importance of timecourse to experimental design.",
+            "type": "string",
+            "example": "Cell was treated with doxycycline at 1 hour after incubation.",
+	    "user_friendly": "Time Significance"
+        }
+    }
+}
