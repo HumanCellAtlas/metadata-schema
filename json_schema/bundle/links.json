@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "bundle/links.json",
   "description": "A schema for a links bundle.",
   "additionalProperties": false,
   "required": [
@@ -55,7 +54,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "../bundle/links.json#/definitions/bundle_links"
+        "$ref": "bundle/links.json#/definitions/bundle_links"
       }
     }
   }

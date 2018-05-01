@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "type/project/project.json",
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
@@ -31,14 +30,14 @@
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",
-            "$ref": "../../core/project/project_core.json"
+            "$ref": "core/project/project_core.json"
         },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
             "type": "array",
             "example": "List of authors for a publication resulting from this project.",
             "items": {
-                "$ref": "../../module/project/contact.json"
+                "$ref": "module/project/contact.json"
             }
         },
         "supplementary_files": {
@@ -54,7 +53,7 @@
     	    "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
-                "$ref": "../../module/project/publication.json"
+                "$ref": "module/project/publication.json"
             }
         },
         "insdc_project": {

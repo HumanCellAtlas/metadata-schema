@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/biomaterial/growth_conditions.json",
     "description": "Information relating to how a biomaterial was grown and/or maintained in a laboratory setting.",
     "additionalProperties": false,
     "title": "growth_conditions",

@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/project/contact.json",
     "description": "Information about a person who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [

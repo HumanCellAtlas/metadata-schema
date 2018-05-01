@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/process/sequencing/barcode.json",
     "description": "This module describes barcodes used in a library preparation process.",
     "additionalProperties": false,
     "required": [

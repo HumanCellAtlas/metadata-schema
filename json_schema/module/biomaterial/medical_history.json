@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/biomaterial/medical_history.json",
     "description": "Information about the medical history of an organism.",
     "additionalProperties": false,
     "title": "medical_history",

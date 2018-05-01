@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/biomaterial/state_of_specimen.json",
     "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
     "additionalProperties": false,
     "title": "state_of_specimen",

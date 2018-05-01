@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/ontology/protocol_type_ontology",
     "description": "A term that may be associated with a protocol-related ontology term",
     "additionalProperties": false,
     "required": [

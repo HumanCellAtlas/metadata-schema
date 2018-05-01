@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "core/file/file_core.json",
     "description": "A file entity contains information about a data file produced from any process.",
     "additionalProperties": false,
     "required": [

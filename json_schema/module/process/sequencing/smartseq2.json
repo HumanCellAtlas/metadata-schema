@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/process/sequencing/smartseq2.json",
     "description": "This module describes information specific to SmartSeq2 experiments.",
     "additionalProperties": false,
     "title": "smartseq2",

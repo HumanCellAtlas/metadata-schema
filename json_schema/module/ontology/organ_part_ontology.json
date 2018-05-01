@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/ontology/organ_part_ontology",
     "description": "A term that may be associated with an anatomy-related ontology term",
     "additionalProperties": false,
     "required": [

@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "type/file/analysis_file.json",
     "description": "A file analysis results produced by a secondary analysis pipeline.",
     "additionalProperties": false,
     "required": [
@@ -32,7 +31,7 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "../../core/file/file_core.json"
+            "$ref": "core/file/file_core.json"
         }
     }
 }

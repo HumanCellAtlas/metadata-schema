@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "type/process/process.json",
     "description": "Information about the process",
     "additionalProperties": false,
     "required": [
@@ -32,12 +31,12 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "../../core/process/process_core.json"
+            "$ref": "core/process/process_core.json"
         },
         "process_type": {
             "description": "The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
             "type": "object",
-            "$ref": "../../module/ontology/process_type_ontology.json",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "process type"
         }
     }

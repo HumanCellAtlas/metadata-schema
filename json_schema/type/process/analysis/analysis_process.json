@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "type/process/analysis/analysis_process.json",
     "description": "Information about an analysis that was performed on data files.",
     "additionalProperties": true,
     "required": [
@@ -109,18 +108,18 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "../../../core/process/process_core.json"
+            "$ref": "core/process/process_core.json"
     	},
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "../../../module/ontology/process_type_ontology.json"
+            "$ref": "module/ontology/process_type_ontology.json"
         },
         "inputs": {
             "description": "Input parameters used in the pipeline run, these can be files or string values (settings).",
             "type": "array",
             "items": {
-                "$ref": "analysis_process.json#/definitions/parameter"
+                "$ref": "type/process/analysis/analysis_process.json#/definitions/parameter"
             }
         },
         "reference_bundle": {
@@ -131,7 +130,7 @@
             "description": "Descriptions of tasks in the workflow.",
             "type": "array",
             "items": {
-                "$ref": "analysis_process.json#/definitions/task"
+                "$ref": "type/process/analysis/analysis_process.json#/definitions/task"
             }
         },
         "timestamp_stop_utc": {
@@ -151,7 +150,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "$ref": "../../file/analysis_file.json"
+                "$ref": "type/file/analysis_file.json"
             }
         },
         "computational_method": {

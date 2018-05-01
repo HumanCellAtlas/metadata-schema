@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "type/process/sequencing/sequencing_process.json",
     "description": "Information about how a biomaterial was sequenced.",
     "additionalProperties": false,
     "required": [
@@ -34,12 +33,12 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "../../../core/process/process_core.json"
+            "$ref": "core/process/process_core.json"
         },
         "instrument_manufacturer_model": {
             "description": "The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548.",
             "type": "object",
-            "$ref": "../../../module/ontology/instrument_ontology.json",
+            "$ref": "module/ontology/instrument_ontology.json",
             "example": "Illumina HiSeq 4000",
             "user_friendly": "Instrument manufacturer and model"
         },
@@ -64,12 +63,12 @@
         "smartseq2" : {
 	        "description": "Fields specific for SmartSeq2 experiments.",
             "type": "object",
-            "$ref": "../../../module/process/sequencing/smartseq2.json"
+            "$ref": "module/process/sequencing/smartseq2.json"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": ".../../../module/ontology/process_type_ontology.json",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
         }
     }

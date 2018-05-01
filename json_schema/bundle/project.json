@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "bundle/project.json",
     "description": "A schema for a project bundle.",
     "additionalProperties": false,
     "required": [
@@ -32,12 +31,12 @@
         "hca_ingest": {
             "description": "Core fields added by HCA ingest service",
             "type": "object",
-            "$ref": "../bundle/ingest_audit.json"
+            "$ref": "bundle/ingest_audit.json"
         },
         "content": {
             "description": "Content for a project type entity.",
             "type": "object",
-            "$ref": "../type/project/project.json"
+            "$ref": "type/project/project.json"
         }
     }
 }

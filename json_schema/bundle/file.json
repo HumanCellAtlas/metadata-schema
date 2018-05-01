@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "bundle/file.json",
     "description": "A schema for a file bundle.",
     "additionalProperties": false,
     "required": [
@@ -20,14 +19,14 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "../bundle/ingest_audit.json"
+                    "$ref": "bundle/ingest_audit.json"
                 },
                 "content": {
                     "description": "Content for any file type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "../type/file/sequence_file.json" },
-                        { "$ref": "../type/file/analysis_file.json" }
+                        { "$ref": "type/file/sequence_file.json" },
+                        { "$ref": "type/file/analysis_file.json" }
                     ]
                 }
             }
@@ -55,7 +54,7 @@
             "description": "An array of files.",
             "type": "array",
             "items": {
-                "$ref": "../bundle/file.json#/definitions/file_ingest"
+                "$ref": "bundle/file.json#/definitions/file_ingest"
             }
         }
     }

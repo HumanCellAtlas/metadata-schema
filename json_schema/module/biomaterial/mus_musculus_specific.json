@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/biomaterial/mus_musculus_specific.json",
     "description": "Information specific to an organism that is a mouse (mus musculus).",
     "additionalProperties": false,
     "title": "mus_musculus_specific",
@@ -22,7 +21,7 @@
             "type": "array",
             "example": "C57BL/6.",
             "items": {
-                "$ref": "../ontology/strain_ontology.json"
+                "$ref": "module/ontology/strain_ontology.json"
             },
             "user_friendly": "Strain"
         }

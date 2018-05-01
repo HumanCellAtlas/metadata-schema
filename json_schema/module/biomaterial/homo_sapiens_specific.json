@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/biomaterial/homo_sapiens_specific.json",
     "description": "Information specific to an organism that is a homo sapiens.",
     "additionalProperties": false,
     "title": "homo_sapiens_specific",
@@ -28,7 +27,7 @@
             "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
             "type": "array",
             "items": {
-                "$ref": "../ontology/ethnicity_ontology.json"
+                "$ref": "module/ontology/ethnicity_ontology.json"
             },
             "user_friendly": "Ethnicity"
         }

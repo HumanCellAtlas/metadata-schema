@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "bundle/biomaterial.json",
     "description": "A schema for a biomaterial bundle.",
     "additionalProperties": false,
     "required": [
@@ -20,17 +19,17 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "../bundle/ingest_audit.json"
+                    "$ref": "bundle/ingest_audit.json"
                 },
                 "content": {
                     "description": "Content for any biomaterial type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "../type/biomaterial/donor_organism.json" },
-                        { "$ref": "../type/biomaterial/specimen_from_organism.json" },
-                        { "$ref": "../type/biomaterial/cell_suspension.json" },
-                        { "$ref": "../type/biomaterial/organoid.json" },
-                        { "$ref": "../type/biomaterial/cell_line.json" }
+                        { "$ref": "type/biomaterial/donor_organism.json" },
+                        { "$ref": "type/biomaterial/specimen_from_organism.json" },
+                        { "$ref": "type/biomaterial/cell_suspension.json" },
+                        { "$ref": "type/biomaterial/organoid.json" },
+                        { "$ref": "type/biomaterial/cell_line.json" }
                     ]
                 }
             }
@@ -58,7 +57,7 @@
             "description": "An array of biomaterials.",
             "type": "array",
             "items": {
-                "$ref": "../bundle/biomaterial.json#/definitions/biomaterial_ingest"
+                "$ref": "bundle/biomaterial.json#/definitions/biomaterial_ingest"
             }
         }
     }

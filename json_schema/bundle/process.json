@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "bundle/process.json",
     "description": "A schema for a process bundle.",
     "additionalProperties": false,
     "required": [
@@ -20,20 +19,20 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "../bundle/ingest_audit"
+                    "$ref": "bundle/ingest_audit.json"
                 },
                 "content": {
                     "description": "Content for any process type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "../type/process/analysis/analysis_process.json" },
-                        { "$ref": "../type/process/biomaterial_collection/collection_process.json" },
-                        { "$ref": "../type/process/biomaterial_collection/dissociation_process.json" },
-                        { "$ref": "../type/process/biomaterial_collection/enrichment_process.json" },
-                        { "$ref": "../type/process/imaging/imaging_process.json" },
-                        { "$ref": "../type/process/sequencing/library_preparation_process.json" },
-                        { "$ref": "../type/process/sequencing/sequencing_process.json" },
-                        { "$ref": "../type/process/process.json"}
+                        { "$ref": "type/process/analysis/analysis_process.json" },
+                        { "$ref": "type/process/biomaterial_collection/collection_process.json" },
+                        { "$ref": "type/process/biomaterial_collection/dissociation_process.json" },
+                        { "$ref": "type/process/biomaterial_collection/enrichment_process.json" },
+                        { "$ref": "type/process/imaging/imaging_process.json" },
+                        { "$ref": "type/process/sequencing/library_preparation_process.json" },
+                        { "$ref": "type/process/sequencing/sequencing_process.json" },
+                        { "$ref": "type/process/process.json"}
                     ]
                 }
             }
@@ -61,7 +60,7 @@
             "description": "An array of processes.",
             "type": "array",
             "items": {
-                "$ref": "../bundle/5.2.1/process#/definitions/process_ingest"
+                "$ref": "bundle/process.json#/definitions/process_ingest"
             }
         }
     }

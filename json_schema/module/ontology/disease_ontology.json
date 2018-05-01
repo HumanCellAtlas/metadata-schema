@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/ontology/disease_ontology.json",
     "description": "A term that may be associated with a disease-related ontology term",
     "additionalProperties": false,
     "required": [

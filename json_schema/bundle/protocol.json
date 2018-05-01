@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "bundle/protocol.json",
     "description": "A schema for a protocol bundle.",
     "additionalProperties": false,
     "required": [
@@ -20,17 +19,17 @@
                 "hca_ingest": {
                     "description": "Core fields added by HCA ingest service",
                     "type": "object",
-                    "$ref": "../bundle/ingest_audit.json"
+                    "$ref": "bundle/ingest_audit.json"
                 },
                 "content": {
                     "description": "Content for any process type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "../type/protocol/analysis/analysis_protocol.json" },
-                        { "$ref": "../type/protocol/biomaterial/biomaterial_collection_protocol.json" },
-                        { "$ref": "../type/protocol/imaging/imaging_protocol.json" },
-                        { "$ref": "../type/protocol/sequencing/sequencing_protocol.json" },
-                        { "$ref": "../type/protocol/protocol.json" }
+                        { "$ref": "type/protocol/analysis/analysis_protocol.json" },
+                        { "$ref": "type/protocol/biomaterial/biomaterial_collection_protocol.json" },
+                        { "$ref": "type/protocol/imaging/imaging_protocol.json" },
+                        { "$ref": "type/protocol/sequencing/sequencing_protocol.json" },
+                        { "$ref": "type/protocol/protocol.json" }
                     ]
                 }
             }
@@ -57,7 +56,7 @@
         "protocols": {
             "description": "An array of protocols.",
             "items": {
-                "$ref": "../bundle/protocol.json#/definitions/protocol_ingest"
+                "$ref": "bundle/protocol.json#/definitions/protocol_ingest"
             },
             "type": "array"
         }

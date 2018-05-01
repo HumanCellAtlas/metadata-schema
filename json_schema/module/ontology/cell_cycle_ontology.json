@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "module/ontology/cell_cycle_ontology.json",
     "description": "A term that may be associated with a cell cycle-related ontology term",
     "additionalProperties": false,
     "required": [
