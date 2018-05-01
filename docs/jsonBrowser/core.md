@@ -1,4 +1,12 @@
 # Core
+## Common fields
+_Fields common to all schemas in this document_
+
+Property name | Description | Type | Required? | Example 
+--- | --- | --- | --- | ---
+ describedBy | The URL reference to the schema. | string | no |  |  |  | 
+schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
+
 ## file_core<a name='file_core'></a>
 _A file entity contains information about a data file produced from any process._
 
@@ -6,8 +14,6 @@ Location: core/file/file_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 file_name | The filename of the data file. | string | yes |  | File name |  | 
 file_format | The format of the data file. | string | yes |  | File format |  | 
 checksum | MD5 checksum of the data file. | string | no |  | Checksum |  | 
@@ -19,8 +25,6 @@ Location: core/protocol/protocol_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 protocol_id | A unique ID for this protocol. | string | yes |  | Protocol ID |  | 
 protocol_name | A short, descriptive name for the protocol that need not be unique. | string | no |  | Protocol name |  | 
 protocol_description | A general description of the protocol. | string | no |  | Protocol description |  | 
@@ -35,8 +39,6 @@ Location: core/project/project_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 project_shortname | A unique label for the project. | string | yes |  | Project shortname |  | Tissue Stability
 project_title | A summary of the project in a sentence. | string | yes |  | Project title |  | A title of a grant proposal or publication. Approximately 30 words.
 project_description | A longer description of the project which can include research goals and experimental approach. | string | no |  | Project description |  | An abstract from a grant application or publication. Approximately 300 words.
@@ -48,8 +50,6 @@ Location: core/biomaterial/biomaterial_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 biomaterial_id | A unique ID for this biomaterial. | string | yes |  | Biomaterial ID |  | 
 biomaterial_name | A short, descriptive name for the biomaterial that need not be unique. | string | no |  | Biomaterial name |  | 
 biomaterial_description | A general description of the biomaterial. | string | no |  | Biomaterial description |  | 
@@ -68,8 +68,6 @@ Location: core/process/process_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 process_id | A unique ID for this process. | string | yes |  | Process ID |  | 
 process_name | A short, descriptive name for the process that need not be unique. | string | no |  | Process name |  | 
 process_description | A general description of the process. | string | no |  | Process description |  | 
