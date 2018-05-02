@@ -11,7 +11,7 @@ This document describes the structure of the HCA metadata standards. More detail
 
 **What is in this document?**
  - High-level [overview of the schema structure](#structure-overview)
- - Description of [schema URL structure](#specifying-schema-url)
+ - Description of [schema URL structure](#specifying-schema-urls)
 
 **Who should be reading this document?**
  - Data contributors
