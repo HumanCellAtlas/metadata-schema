@@ -1,5 +1,7 @@
 # The Human Cell Atlas: Metadata Update Process for Committers
 
+# This doc needs to be re-written from the perspective of the committer!
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Steps of the update process](#steps-of-the-update-process)
@@ -11,7 +13,7 @@
 
 This document serves as an SOP for committers who are ultimately responsible for changes to the metadata standards.
 
-## Steps of the update process - write from the perspective of the committer
+## Steps of the update process
 
 1. **Submit feedback to the HCA on metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo

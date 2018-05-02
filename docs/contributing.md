@@ -1,5 +1,7 @@
 # The Human Cell Atlas: Metadata Update Process
 
+# This doc needs to be re-written from the perspective of a user
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Requesting or suggesting changes](#requesting-or-suggesting-changes)
