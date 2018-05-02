@@ -66,4 +66,4 @@ As a prerequisite to this section you may want to look at [how the metadata is s
 
 ## Reporting bugs
 
-[Report all bugs and issues by creating a new issue in this repo.](https://github.com/HumanCellAtlas/metadata-schema/issues/new)
+Report all bugs and issues by creating a [new issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) in this repo.
