@@ -87,16 +87,21 @@ For `donor_organism.json` schema, these fields will look like:
 
 The HCA metadata lifecycle document defines the requirement for the metadata schema to be self-describing, ie each metadata file needs to explicitly indicate the schema and schema version which it manifests. The proposed structure of the metadata schema URIs is:
 
-http://schema.humancellatlas.org/{primary_directory}/{secondary/directory/structure}/{version}/{filename}
+`http://schema.humancellatlas.org/{primary_directory}/{secondary/directory/structure}/{version}/{filename}`
+
 where
+
+```
 {primary_directory} = [core, type, module]
 {secondary/directory/structure} eg biomaterial or process/sequencing
 {version} = the version number of the schema file eg 5.0.1
-
+```
 Examples
+
+```
 http://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core
 http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line
 http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process
 http://schema.humancellatlas.org/module/ontology/5.0.0/cell_type_ontology
 http://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode
-
+```
