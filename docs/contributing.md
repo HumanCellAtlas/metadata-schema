@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Requesting or suggesting changes](#requesting-or-suggesting-changes)
+- [Requesting or suggesting changes](#requesting-or-suggesting-changes-to-the-metadata-schema)
 - [Example request for schema change](#example-request-for-schema-change)
 - [Reporting bugs](#reporting-bugs)
 
