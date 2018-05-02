@@ -8,7 +8,6 @@
 - [Module stability](#module-stability)
 - [Adding new committers to metadata working group](#adding-new-committers-to-metadata-working-group)
 - [Governance of schema updates](#governance-of-schema-updates)
-- [Stakeholders](#stakeholders)
 
 ## Introduction
 
