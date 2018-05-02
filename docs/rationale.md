@@ -2,14 +2,15 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Implementation choices](#dimplementation-choices)
+- [Implementation choices](#implementation-choices)
 - [Design choices](#design-choices)
 
 ## Introduction
 
 **What is in this document?**
 
-This document outlines rationales for the design and implementation choices for the HCA metadata standards.
+- Rationale for how the HCA metadata standard is implemented
+- De
 
 **Who should be reading this document?**
 

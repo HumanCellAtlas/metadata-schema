@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Overview of the metadata structure](#structure-overview)
-- [Specifying schema URL](#specifying-schema-url)
+- [Specifying schema URLs](#specifying-schema-urls)
 
 ## Introduction
 
@@ -55,23 +55,25 @@ Below is an example single-cell sequencing experiment modeled using the HCA meta
 * *Type fields* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
 * *Module fields* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
 
-## Recording the standards
+### Recording the standard
 
 The schema will be stored as a series of individual documents which are related to entities and modules associated with them *e.g* project.json, biomaterial.json, sequencing_process.json. These documents are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their contents, and the update process. Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
 
-### Specifying schema URL
+## Specifying schema URLs
 
-Each schema is self-describing using the `id` field with a URL to the location of the version of the current document. 
+### JSON schemas
 
-Version indicated in schema URL: `https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core`
+Each JSON schema is self-describing using the `$id` field with a URL to the location of the version of the current document. An example of how the version is indicated in schema URL: 
 
-As we are requiring instance data to also be self describing, all *Type* entities will require a property called `describedBy`. 
+`https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core`
+
+As we are requiring JSON schemas to be self-describing, all *Type* entities will require a property called `describedBy`. 
 
 For `donor_organism.json` schema, these fields will look like: 
 
 ``` 
 "$schema": "http://json-schema.org/draft-04/schema#"
-"id": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism"
+"$id": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism"
 "additionalProperties": false,
 "properties" : {
     "describedBy": {
@@ -83,23 +85,25 @@ For `donor_organism.json` schema, these fields will look like:
 }
 ```
 
-The HCA metadata lifecycle document defines the requirement for the metadata schema to be self-describing, ie each metadata file needs to explicitly indicate the schema and schema version which it manifests. The proposed structure of the metadata schema URIs is:
+### JSON documents
 
-`http://schema.humancellatlas.org/{primary_directory}/{secondary/directory/structure}/{version}/{filename}`
+Each JSON document needs to explicitly indicate the JSON schema and schema version which it manifests. The proposed structure of the metadata schema URIs is:
+
+`http://schema.humancellatlas.org/{primary_directory}/{secondary/directory/structure}/{version}/{schema_filename}`
 
 where
 
-```
-{primary_directory} = [core, type, module]
-{secondary/directory/structure} eg biomaterial or process/sequencing
-{version} = the version number of the schema file eg 5.0.1
-```
-Examples
+- `{primary_directory}` is one of [core, type, module]
+- `{secondary/directory/structure}` describes the path to the `{filename}` *e.g.* biomaterial, process/sequencing
+- `{version}` is the version number of the schema file *e.g.* 5.0.1
+- `{schema_filename}` is the ultimate name of the JSON schema document
+
+Some example URIs includ:
 
 ```
-http://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core
+http://schema.humancellatlas.org/core/biomaterial/5.0.1/biomaterial_core
 http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line
 http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process
 http://schema.humancellatlas.org/module/ontology/5.0.0/cell_type_ontology
-http://schema.humancellatlas.org/module/process/sequencing/5.0.0/barcode
+http://schema.humancellatlas.org/module/process/sequencing/5.2.0/barcode
 ```
