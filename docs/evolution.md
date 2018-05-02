@@ -1,7 +1,5 @@
 # The Human Cell Atlas: Metadata Evolution and Update Principles
 
-# This doc is high priority and needs work!!
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Schema versioning](#schema-versioning)
