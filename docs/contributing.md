@@ -11,7 +11,6 @@ This document will describe how you can contribute by suggesting or requesting c
 
 What is in this document?
  - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes-to-the-metadata-schema)
- - Directions for [submitting pull requests](#submitting-pull-requests) for changes
  - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
  - Expectations for contributions to be accepted or rejected
 
@@ -23,7 +22,8 @@ Who should be reading this document?
 What *isn't* in this document?
 - Any information about contributing data to the HCA. This document is about contributing to the metadata schema.
 - Automated process for committing changes to the schema. Currently this must be done via a HCA wrangler with commit privilages.
-- [Description of major, minor, and patch changes.](https://github.com/HumanCellAtlas/metadata-schema/blob/mg-updade-docs/docs/evolution.md#schema-versioning)
+- [Description of major, minor, and patch changes.](metadata-schema/docs/evolution.md#schema-versioning)
+- Directions for [submitting pull requests](metadata-schema/docs/committers.md) for changes
 
 ## Requesting or suggesting changes to the metadata schema
 
