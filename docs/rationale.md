@@ -66,31 +66,3 @@ Significant experimental diversity is expected. Our methods for iterating metada
 ### Separation of (metadata) concerns
 
 It must be possible to separate different concerns related to metadata. For example, the metadata validation process should be driven by the schema, and depend only on having access to the schema, not the particular content of the schema or its semantics. Similarly, it should be possible to store the metadata on disk without understanding its syntax or semantics.
-
-## Recording the standards
-
-The schema will be stored as a series of individual documents which are related to entities and modules associated with them *e.g* project.json, biomaterial.json, sequencing_process.json. These documents are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their contents, and the update process. Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
-
-### Specifying version info
-
-Each schema is self-describing using the `id` field with a URL to the location of the version of the current document. 
-
-Version indicated in schema URL: `https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core`
-
-As we are requiring instance data to also be self describing, all *Type* entities will require a property called `describedBy`. 
-
-For `donor_organism.json` schema, these fields will look like: 
-
-``` 
-"$schema": "http://json-schema.org/draft-04/schema#"
-"id": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism"
-"additionalProperties": false,
-"properties" : {
-    "describedBy": {
-        "description": "The URL reference to the schema.",
-        "type": "string",
-        "pattern": "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
-    },
-    ...
-}
-```
