@@ -7,20 +7,18 @@
 
 ## Introduction
 
-**What is in this document?**
+This document describes reasons and rationale behind certain implementation and design choices for how the metadata standard is developed and maintained.
 
-- Rationale for how the HCA metadata standard is implemented
-- De
+**What is in this document?**
+- Rationale for how the HCA metadata standard is designed and implemented
 
 **Who should be reading this document?**
-
  - Data contributors
  - Data consumers
  - Members of external projects seeking alignment with HCA metadata standards
 
-
 **What *isn't* in this document?**
-- [Hierarchy of entities (core, type, module)]()
+- The [structure of metadata standards](metadata-schema/docs/structure.md) that resulted from following the design and implementation choices outlined here.
  
 ## Implementation choices
 
