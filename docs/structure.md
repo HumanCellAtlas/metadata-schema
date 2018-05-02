@@ -11,9 +11,7 @@ This **structure** document describes the structure of the HCA metadata standard
 
 What is in this document?
  - High-level [overview of the schema structure](#structure-overview)
- - More detailed [specification of the schema structure](#specification-of-schema-structure-and-content)
- - The set of [principles](#principles) specifically guiding the schema structure design
- - Description of the [physical instatiation](#recording-the-standards) of the metadata standards
+ - Description of [schema URL structure](#specifying-schema-url)
 
 Who should be reading this document?
  - Data contributors
@@ -21,7 +19,7 @@ Who should be reading this document?
  - Members of external projects seeking alignment with HCA metadata standards
 
 What *isn't* in this document?
- - Something blah blah blah
+ - The set of [principles](metadata-schema/docs/rationale.md#design-choices) specifically guiding the schema structure design
  
 ## Structure overview
 
