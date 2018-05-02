@@ -1,7 +1,5 @@
 # The Human Cell Atlas: Metadata Update Process for Committers
 
-# This doc needs to be re-written from the perspective of the committer!
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Steps of the update process](#steps-of-the-update-process)
@@ -13,9 +11,23 @@
 
 This document serves as an SOP for committers who are ultimately responsible for changes to the metadata standards.
 
+**What is in this document?**
+ - Directions for [how to incorporate feedback](#steps-of-the-update-process) into the metadata standards
+ - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
+ - Expectations for contributions to be accepted or rejected
+
+**Who should be reading this document?**
+ - HCA DCP internal developers
+
+**What *isn't* in this document?**
+- Any information about contributing data to the HCA. This document is about contributing to the metadata schema.
+- Automated process for committing changes to the schema. Currently this must be done via a HCA wrangler with commit privilages.
+- [Description of major, minor, and patch changes.](metadata-schema/docs/evolution.md#schema-versioning)
+- Directions for [submitting pull requests](metadata-schema/docs/committers.md) for changes
+
 ## Steps of the update process
 
-1. **Submit feedback to the HCA on metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
+1. **Acquire feedback on the HCA metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
     1. Email the HCA DCP helpdesk at data-help@humancellaltas.org
     1. Make a pull request against the develop branch of the metadata-schema GitHub repo

@@ -9,22 +9,19 @@
 
 ## Introduction
 
-It is important to capture the trade offs between being able to rapidly evolve for contributors vs keeping it stable for consumers.
+This document describes the principles and standards by which the HCA metadata schema will evolve as well as the semantics for versioning and updating the schema. The HCA is collecting data from complex biological samples and assays with rich metadata. We expect over the lifetime of the project that the schemas that captures these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
 
-This **evolution and update** document describes the principles and standards by which the HCA metadata schema will evolve as well as the semantics for versioning and updating the schema. The HCA is collecting data from complex biological samples and assays with rich metadata. We expect over the lifetime of the project that the schemas that captures these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
-
-
-What is in this document?
+**What is in this document?**
  - How [versioning of metadata schemas](#schema-versioning) is defined
  - Definitions of the stability of metadata schemas
  - How schema updates are governed
  - How different stakeholders might be affected by schema updates
 
-Who should be reading this document?
+**Who should be reading this document?**
  - Members of external projects seeking alignment with HCA metadata standards
- - Internal HCA developers, especially those who depend on schema versions
+ - Internal HCA DCP developers, especially those who depend on schema versions
 
-What *isn't* in this document?
+**What *isn't* in this document?**
  - Process for [schema evolution](metadata-schema/docs/committers.md)
 
 ## Schema versioning

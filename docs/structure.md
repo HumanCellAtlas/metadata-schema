@@ -7,18 +7,18 @@
 
 ## Introduction
 
-This **structure** document describes the structure of the HCA metadata standards. More detailed specification of the format and syntax of the metadata schemas and their instantiation can be found in the [metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) on Google Drive.
+This document describes the structure of the HCA metadata standards. More detailed specification of the format and syntax of the metadata schemas and their instantiation can be found in the [metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) on Google Drive.
 
-What is in this document?
+**What is in this document?**
  - High-level [overview of the schema structure](#structure-overview)
  - Description of [schema URL structure](#specifying-schema-url)
 
-Who should be reading this document?
+**Who should be reading this document?**
  - Data contributors
  - Data consumers
  - Members of external projects seeking alignment with HCA metadata standards
 
-What *isn't* in this document?
+**What *isn't* in this document?**
  - The set of [principles](metadata-schema/docs/rationale.md#design-choices) specifically guiding the schema structure design
  
 ## Structure overview

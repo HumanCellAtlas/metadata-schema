@@ -1,7 +1,5 @@
 # The Human Cell Atlas: Metadata Update Process
 
-# This doc needs to be re-written from the perspective of a user
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Requesting or suggesting changes](#requesting-or-suggesting-changes)
@@ -11,17 +9,17 @@
 
 This document will describe how you can contribute by suggesting or requesting changes, making pull requests, and reporting bugs in the metadata schema via GitHub. This document also covers our rationale for acceptance or rejection of your suggestions.
 
-What is in this document?
+**What is in this document?**
  - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes-to-the-metadata-schema)
  - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
  - Expectations for contributions to be accepted or rejected
 
-Who should be reading this document?
+**Who should be reading this document?**
  - Data contributors
  - Data consumers
  - Anyone reporting a bug in the schema
 
-What *isn't* in this document?
+**What *isn't* in this document?**
 - Any information about contributing data to the HCA. This document is about contributing to the metadata schema.
 - Automated process for committing changes to the schema. Currently this must be done via a HCA wrangler with commit privilages.
 - [Description of major, minor, and patch changes.](metadata-schema/docs/evolution.md#schema-versioning)
