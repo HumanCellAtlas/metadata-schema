@@ -4,7 +4,7 @@
 - [Introduction](#introduction)
 - [Steps of the update process](#steps-of-the-update-process)
 - [Schema update acceptance process](#schema-update-acceptance-process)
-- [Specific steps for contributing changes](#specific-steps-for-contributing-changes)
+- [Specific steps for making changes](#specific-steps-for-making-changes)
 - [Observed guidelines](#observed-guidelines)
 
 ## Introduction
@@ -13,17 +13,14 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 **What is in this document?**
  - Directions for [how to incorporate feedback](#steps-of-the-update-process) into the metadata standards
- - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
  - Expectations for contributions to be accepted or rejected
 
 **Who should be reading this document?**
  - HCA DCP internal developers
 
 **What *isn't* in this document?**
-- Any information about contributing data to the HCA. This document is about contributing to the metadata schema.
-- Automated process for committing changes to the schema. Currently this must be done via a HCA wrangler with commit privilages.
-- [Description of major, minor, and patch changes.](metadata-schema/docs/evolution.md#schema-versioning)
-- Directions for [submitting pull requests](metadata-schema/docs/committers.md) for changes
+- Description of what defines [major, minor, and patch changes](metadata-schema/docs/evolution.md#schema-versioning) to the metadata schema
+- Directions for [reporting bugs](metadata-schema/docs/contributing.md#reporting-bugs) in the metadata schema
 
 ## Steps of the update process
 
@@ -32,27 +29,31 @@ This document serves as an SOP for committers who are ultimately responsible for
     1. Email the HCA DCP helpdesk at data-help@humancellaltas.org
     1. Make a pull request against the develop branch of the metadata-schema GitHub repo
 
-    To request an update to an existing schema, the contributor needs to supply four pieces of information. 
+    There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).
 
-    - Which schema needs to be changed?
-    - What field(s) in that schema need to be changed?
-    - What should the change be?
-    - Why is the change requested?
+    1. To request an **update** to an existing schema, please supply the following pieces of information:
 
-    To request a new module schema, the feedback needs to contain three pieces of information.
+        1. Which schema would you like to be changed?
+        1. What field(s) in that schema would you like to be changed, and what should the change be?
+        1. What new field(s) need to be added?
+            - Details for requesting **new field(s)** outlined below
+        1. Why is the change needed?
 
-    - What is the name of the new module schema?
-    - What fields should it contain (in JSON schema or spreadsheet/tab form)?
-    - Why is the new module needed? Specifically, why does the current metadata schema not meet the contributor's need?
+    1. To request a **new** schema, you need to supply the following pieces of information:
+
+        1. What is the proposed name of the new schema?
+        1. What field(s) should the new schema contain?
+            - Details for requesting **new field(s)** outlined below
+        1. Why is the new schema needed? Specifically, why does the current metadata standard not meet your need?
     
-    To request any new fields or changes to fields, the following information needs to be supplied:
+    For **each new field** requested, please supply the following pieces of information:
     
-    - Field name (required)
-    - Field description (required)
-    - Whether the field should be optional or required (required)
-    - An example valid value for this field (optional)
-    - If this field needs a controlled vocabulary or ontology, what those values should be (optional)
-
+    1. Field name (required)
+    1. Field description (required)
+    1. Whether the field should be optional or required (required)
+    1. An example valid value for this field (optional)
+    1. If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed (optional)
+    
     If the suggested update comes in the form of the pull request, the required information should be self-evident between the JSON schema itself and the pull request message. If this isn’t clear either from the pull request or the message sent through email or git, then the assigned committer will seek clarification before moving onto step 3.
 
 2. **Assign a committer to review the suggestion.** A person with commit rights on the metadata-standards repo should be assigned to the review process for each suggestions. This person will be responsible for reviewing the suggestion and ensuring upstream and downstream consequences are noted. They will contact the appropriate HCA teams and making the general community announcements ensuring the whole community has opportunity to give input. 
@@ -134,7 +135,7 @@ Hopefully negative marks or a lack of consensus will be very rare occurrence but
 
 For proposed changes where consensus looks unlikely, as the review deadline looms (~ 1 day before if possible), the assigned committer should schedule a phone call to discuss the issue with the interested parties. If no consensus can be reached, the process should be extended by 5 working days for more interaction. At the end of these 5 days, if no consensus has been reached, the two possible solutions should be presented to the committers and a vote should be called with the committers to the metadata-schemas repo, the solution with most votes being taken forward.
 
-## Specific steps for contributing changes
+## Specific steps for making changes
 
 This section outlines steps for contributors to suggest changes to the metadata schema via pull requests.
 
@@ -150,9 +151,9 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
     `git checkout develop`
 
-1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `username-brief_desc_of_branch_scope`
+1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `initials-brief_desc_of_branch_scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) or JIRA ticket (e.g. `HCA-123`) in the branch name.
 
-    `git checkout -b malloryfreeberg-new_mouse_module`
+    `git checkout -b mf-new_mouse_module-Issue222`
 
 1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` and `src/json_examples_validate_against_schema.py` scripts (which are run by Travis CI). The first script checks whether each .json file in the `json_schema` folder is valid JSON format. The second script attempts to validate example JSON files in the `schema_test_files` directory against their corresponding schemas. Some of the JSON files are meant to fail (e.g. they are lacking required fields) and as their failure is expected behavior, the script should exit with status 0. Ensure both scripts exit with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If either test fails, you will have to debug and fix the errors in the changes you made.
 
@@ -166,7 +167,7 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
 1. **Push** the committed changes to the working branch.
 
-    `git push origin malloryfreeberg-new_mouse_module`
+    `git push origin mf-new_mouse_module-Issue222`
 
 1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In the GitHub UI, **create** a pull request (PR) against the `develop` branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
 
