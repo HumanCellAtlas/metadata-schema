@@ -17,7 +17,7 @@ This **evolution and update** document describes the principles and standards by
 
 
 What is in this document?
- - How [versioning of metadata schemas](#) is defined
+ - How [versioning of metadata schemas](#schema-versioning) is defined
  - Definitions of the stability of metadata schemas
  - How schema updates are governed
  - How different stakeholders might be affected by schema updates
@@ -27,7 +27,7 @@ Who should be reading this document?
  - Internal HCA developers, especially those who depend on schema versions
 
 What *isn't* in this document?
- - Something blah blah blah
+ - Process for [schema evolution](metadata-schema/docs/committers.md)
 
 ## Schema versioning
 
