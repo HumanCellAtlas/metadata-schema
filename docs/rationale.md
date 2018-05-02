@@ -2,8 +2,8 @@
 
 
 ## Table of Contents
-- [Design choices](#design-choices)
 - [Implementation choices](#dimplementation-choices)
+- [Design choices](#design-choices)
 
 What is in this document?
 
