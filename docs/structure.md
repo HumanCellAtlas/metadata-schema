@@ -3,9 +3,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Overview of the metadata structure](#structure-overview)
-- [Specification of the metadata structure](#specification-of-schema-structure-and-content)
-- [Principles](#principles)
-- [Recording the standards](#recording-the-standards)
+- [Specifying schema URL](#specifying-schema-url)
 
 ## Introduction
 
@@ -59,3 +57,30 @@ Below is an example single-cell sequencing experiment modeled using the HCA meta
 * *Type fields* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
 * *Module fields* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
 
+## Recording the standards
+
+The schema will be stored as a series of individual documents which are related to entities and modules associated with them *e.g* project.json, biomaterial.json, sequencing_process.json. These documents are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their contents, and the update process. Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
+
+### Specifying schema URL
+
+Each schema is self-describing using the `id` field with a URL to the location of the version of the current document. 
+
+Version indicated in schema URL: `https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core`
+
+As we are requiring instance data to also be self describing, all *Type* entities will require a property called `describedBy`. 
+
+For `donor_organism.json` schema, these fields will look like: 
+
+``` 
+"$schema": "http://json-schema.org/draft-04/schema#"
+"id": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism"
+"additionalProperties": false,
+"properties" : {
+    "describedBy": {
+        "description": "The URL reference to the schema.",
+        "type": "string",
+        "pattern": "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
+    },
+    ...
+}
+```
