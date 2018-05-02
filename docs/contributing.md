@@ -3,7 +3,6 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Requesting or suggesting changes](#requesting-or-suggesting-changes)
-- [Submitting pull requests](#submitting-pull-requests) 
 - [Reporting bugs](#reporting-bugs)
 
 ## Introduction
@@ -11,7 +10,7 @@
 This document will describe how you can contribute by suggesting or requesting changes, making pull requests, and reporting bugs in the metadata schema via GitHub. This document also covers our rationale for acceptance or rejection of your suggestions.
 
 What is in this document?
- - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes)
+ - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes-to-the-metadata-schema)
  - Directions for [submitting pull requests](#submitting-pull-requests) for changes
  - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
  - Expectations for contributions to be accepted or rejected
@@ -63,3 +62,8 @@ As a prerequisite to this section you may want to look at [how the metadata is s
 4.  **Implementing the change** Once the review period is over, if the change is accepted into the repository, we will generate appropriate updates to the metadata standard on your behalf. Details about how and when changes are accepted can be found [here](https://github.com/HumanCellAtlas/metadata-schema/blob/mg-updade-docs/docs/committers.md#schema-update-acceptance-process).
 
 5.  **Notification to the community** The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. You can [join the HCA slack community follow these instructions.](https://github.com/HumanCellAtlas/wiki/wiki)
+
+
+## Reporting bugs
+
+[Report all bugs and issues by creating a new issue in this repo.](https://github.com/HumanCellAtlas/metadata-schema/issues/new)
