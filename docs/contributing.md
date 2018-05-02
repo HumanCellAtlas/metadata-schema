@@ -60,6 +60,6 @@ As a prerequisite to this section you may want to look at [how the metadata is s
 
 3. **Review and comments from the community** Your metadata request will be posted to the #hca-metadata Slack channel and the metadata-wg mailing list so everyone can have an opportunity to comment over a time frame that matches the severity of the change.
 
-4.  **Implementing the change** Once the review period is over, if the change is accepted into the repository, we will generate appropriate updates to the metadata standard on your behalf. Further details about this procedure are documented [here]().
+4.  **Implementing the change** Once the review period is over, if the change is accepted into the repository, we will generate appropriate updates to the metadata standard on your behalf. Details about how and when changes are accepted can be found [here](https://github.com/HumanCellAtlas/metadata-schema/blob/mg-updade-docs/docs/committers.md#schema-update-acceptance-process).
 
 5.  **Notification to the community** The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. You can [join the HCA slack community follow these instructions.](https://github.com/HumanCellAtlas/wiki/wiki)
