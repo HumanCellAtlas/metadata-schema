@@ -1,106 +1,53 @@
 [![Build Status](https://travis-ci.org/HumanCellAtlas/metadata-schema.svg)](https://travis-ci.org/HumanCellAtlas/metadata-schema)
 
+# The Human Cell Atlas: Metadata Standards
 
-# The Human Cell Atlas Metadata Schema
+The Human Cell Atlas metadata-schema repo contains the schema specifications and supporting documentation for the HCA metadata standards.
 
-This repo contains the HCA metadata JSON schemas, example JSON files, and template metadata spreadsheets.
+## Table of Contents
+- [Documentation](#documentation)
+- [Metadata schemas and examples](#metadata-schemas-and-examples)
+- [Contributing](#contributing)
+- [Terminology](#terminology)
+- [Scripts](#scripts)
 
-The **metadata design principles** can be read in the [Metadata schema lifecycle doc](docs/Metadata_schema_lifecycle_doc.md).
+## Documentation
 
-Details on **how to contribute** to the metadata schema are described in the [contributing.md](contributing.md) doc.
+Documentation supporting the metadata standard is available in the `docs/` directory. Specific topics covered include:
 
+- Information for [how to contribute](docs/contributing.md) to the HCA metadata standards.
+- Overview of the [structure](docs/structure.md) of the HCA metadata standards.
+- [Evolution and update principles](docs/evolution.md) for the HCA metadata standards.
+- Rationale for the [design and implementation choices](docs/rationale.md) for the HCA metadata standards.
 
-### HCA v4.6.1-to-v5.0.0 metadata schema changes overview
+## Metadata schemas and examples
 
-#### Primary goals of changes
+Metadata JSON schemas are located in the `json_schema/` directory. Schemas are also hosted at [schema.humancellatlas.org](https://schema.humancellatlas.org/a).
 
-1. Move to process-based schema for handling transitions between core biomaterial and file entities
-1. Move to a module-based schema to support independent versioning and user-/domain-specific metadata fields
-1. Move to a more flexible, reusable metadata structure
+When required, extensions to base JSON schemas have been developed and are located in the `json_schema_extensions/` directory.
 
-#### Proposed organisational structure 
+The `examples/` directory contains example JSON files and spreadsheets to illustrate how the HCA metadata standards are implemented.
 
-* *Core* = Very stable, high-level entities that are referenced by a respective *Type*. These entities contain core fields that apply to and are inherited by corresponding *Type* entities.
-* *Type* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
-* *Module* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
+## Contributing
 
-#### Suggested directory structure of schemas
+The HCA is committed to building and evolving the metadata standards based on the needs of the scientific community. Everyone is welcome to suggest updates, changes, or additions to the HCA metadata standards by [creating GitHub issues](https://github.com/HumanCellAtlas/metadata-schema/issues/new) or emailing [data-help@humancellaltas.org](data-help@humancellaltas.org). More details on [how to contribute](docs/contributing.md) to the HCA metadata standards are available. 
 
-```
-core/
-    biomaterial/biomaterial_core.json	
-    file/file_core.json
-    process/process_core.json
-    project/project_core.json
-    protocol/protocol_core.json
- 
-type/
-    process/    
-        analysis/   analysis_process.json
-        biomaterial_collection/ enrichment_process.json
-                                collection_process.json
-                                dissociation_process.json
-        imaging/    imaging_process.json
-        sequencing/	library_preparation_process.json
-                    sequencing_process.json
-    protocol/  
-        analysis/    analysis_protocol.json
-        biomaterial/ biomaterial_collection_protocol.json
-        imaging/     imaging_protocol.json
-        sequencing/  sequencing_protocol.json
-                  
-    biomaterial/
-        cell_line.json
-        cell_suspension.json
-        organism.json
-        organoid.json
-        specimen_from_organism.json
-    file/		
-        sequence_file.json
-    project/	
-        project.json
- 
-module/
-    biomaterial/
-        death.json
-        ...
-    ontology/
-        body_part_ontology.json
-        ...
-    process/
-        sequencing/
-            barcode.json
-            ...
-        imaging/
-            ...
-    project/
-        contact.json
-        publication.json
-        ...
+Follow our community discussion of HCA metadata by joining the #hca-metadata channel on the [HCA Slack group](http://join-slack.humancellatlas.org/).
 
-```
+## Terminology
 
-#### Specifying version info
+**Metadata** are the collections of descriptive information needed to understand the data supported by the HCA. Metadata is collected for entities such as, but not limited to, assays (*e.g.* fastq and tif files), analysis results (*e.g.* expression matrices), and biological samples (*e.g.* biopsy or autopsy samples). This descriptive information will be provided to the community in a structured format defined by the HCA metadata schemas.
 
-Each schema should be self describing using `id` field with a URL to the location of the version of the current document. 
+**Schemas** are file-based specifications for the HCA metadata. The specification defines the metadata structure and fields, including field name, description, format, and ontology (where appropriate). This specification is likely to have a hierarchical structure (*e.g.* objects and sub-objects containing fields). In practice, individual JSON schemas are defined for specific entities. More details on the hierarchy of HCA metadata schemas can be found in the [structure](docs/structure.md) document. 
 
-Version indicated in schema URL: `https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core`
+**Modules** are schema objects that contains a specific subset of metadata fields associated with an isolated aspect of the metadata. A module schema would be one that is needed for some, but not all, data sets. Examples where this is appropriate include fields specific to a human donor, a particular single cell RNA-Seq platform like SmartSeq2, or a particular imaging experiment like MERFISH. We acknowledge the design must balance the flexibility offered by these modules with the overhead of maintaining a large number modules. We aim to only include additional modules where there is a true requirement for them due to experimental specialisation and not for convenience's sake.
 
-As we are requiring instance data to also be self describing, all *types* will require a property called `$schema`. 
+**Contributors** are any members of the HCA or scientific community who suggest, contribute, or review updates to the metadata schemas.
 
-e.g. For `donor_organism.json` schema, these fields will look like: 
+**Submitters** are any members of the HCA or scientific community who submit data or metadata to the HCA.
 
-``` 
-"$schema": "http://json-schema.org/draft-04/schema#"
-"id": "https://schema.humancellatlas.org/type/biomaterial/4.0.0/donor_organism"
-"additionalProperties": false,
-"properties" : {
-    "describedBy": {
-        "description": "The URL reference to the schema.",
-        "type": "string",
-        "pattern": "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
-    },
-    ...
-}
-```
+**Committers** are any members of the HCA Data Coordination Platform (DCP) with commit privileges to the metadata-schema GitHub repo.
 
+## Scripts
+
+Any scripts - *e.g.* those required for automatic testing, generation of template spreadsheets - are located in the `src/` directory.

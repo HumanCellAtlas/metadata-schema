@@ -1,0 +1,60 @@
+{
+    "protocols": [
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_id": "dissociation_protocol_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:35.674Z", 
+                "updateDate": "2018-03-22T13:04:45.950Z", 
+                "document_id": "8f9e5e0c-49dd-465f-8ce5-becb4068443e"
+            }
+        }, 
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_id": "library_preparation_protocol_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "protocol_type": {
+                    "text": "10x sequencing protocol", 
+                    "ontology": "EFO:0008443"
+                }, 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:35.717Z", 
+                "updateDate": "2018-03-22T13:04:55.158Z", 
+                "document_id": "e116078d-d2fe-4546-ac48-2240f8970bbe"
+            }
+        }, 
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_id": "10x_v2_sequencing_protocol_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "protocol_type": {
+                    "text": "10x sequencing protocol", 
+                    "ontology": "EFO:0008443"
+                }, 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:35.739Z", 
+                "updateDate": "2018-03-22T13:04:54.034Z", 
+                "document_id": "74785828-fb25-410f-ba1a-31718d566376"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/protocol", 
+    "schema_version": "5.1.0", 
+    "schema_type": "protocol_bundle"
+}

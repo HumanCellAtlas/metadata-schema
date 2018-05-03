@@ -1,0 +1,129 @@
+{
+    "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/project/5.1.0/project", 
+        "project_core": {
+            "project_shortname": "1M Immune Cells", 
+            "project_description": "Diverse cells of the immune system maintain and protect tissue function, integrity, and homeostasis upon changes in functional demands and diverse perturbations. Recent advances such as massively parallel single-cell RNA-sequencing and sophisticated computational methods help shed new light on this complexity. This immune cell census aims to profile up to 2M immunocytes, the first tranche of this is currently available. With computational methods optimized to a massive scale, we can readily identify cell types and markers, as well as the process of hematopoietic differentiation. The high quality and comprehensive reference map is provided as an open community resource for understanding human health and disease.", 
+            "project_title": "Census of Immune Cells"
+        }, 
+        "publications": [], 
+        "contributors": [
+            {
+                "country": "USA", 
+                "email": "aregev@broadinstitute.org", 
+                "phone": "(617) 714-7020", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Aviv,,Regev", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "libo@broadinstitute.org", 
+                "phone": "(617) 714-8681", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Bo,,Li", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "institution": "Broad Institute", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Monika,S,Kowalczyk", 
+                "email": "msk.kowalczyk@gmail.com"
+            }, 
+            {
+                "country": "USA", 
+                "email": "dionne@broadinstitute.org", 
+                "phone": "(617) 714-8147", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Danielle,,Dionne", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "ttickle@broadinstitute.org", 
+                "phone": "(617) 714-7084", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Timothy,,Tickle", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "janelee@broadinstitute.org", 
+                "phone": "(617) 714-7448", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Jane,,Lee", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "orit@broadinstitute.org", 
+                "phone": "(617) 714-7789", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Orit,,Rozenblatt-Rosen", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "orr@broadinstitute.org", 
+                "phone": "(617) 714-8681", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Orr,,Ashenberg", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "mtabaka@broadinstitute.org", 
+                "phone": "(617) 714-7470", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Marcin,,Tabaka", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "karthik@broadinstitute.org", 
+                "phone": "(617) 714-8067", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Karthik,,Shekhar", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "email": "mslyper@broadinstitute.org", 
+                "phone": "(617) 714-7199", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Michal,,Slyper", 
+                "institution": "Broad Institute"
+            }, 
+            {
+                "country": "USA", 
+                "institution": "Broad Institute", 
+                "address": "415 Main Street, Cambridge, MA", 
+                "laboratory": "Regev Lab", 
+                "contact_name": "Julia,,Waldman", 
+                "email": "jwaldman@broadinstitute.org"
+            }
+        ], 
+        "schema_type": "project"
+    }, 
+    "hca_ingest": {
+        "accession": "", 
+        "submissionDate": "2018-03-22T13:04:35.590Z", 
+        "updateDate": "2018-03-22T13:04:48.105Z", 
+        "document_id": "4152108d-3d77-46cd-8d20-3b63ff07efe9"
+    }, 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/project", 
+    "schema_version": "5.1.0", 
+    "schema_type": "project_bundle"
+}

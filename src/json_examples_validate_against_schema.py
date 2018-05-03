@@ -70,6 +70,14 @@ b1 = get_json_from_file('../schema_test_files/process/test_pass_sequencing_proce
 if not validate(sv, b1):
     status_flag = False
 
+# Testing valid analysis process example
+print('\nValidating type/process/analysis/analysis_process.json schema')
+sv = get_validator('type/process/analysis/analysis_process.json', base_uri)
+print('Validating process/test_pass_analysis_process.json JSON against schema')
+b1 = get_json_from_file('../schema_test_files/process/test_pass_analysis_process.json')
+if not validate(sv, b1):
+    status_flag = False
+
 # Specific bundle tests follow
 
 # Testing valid biomaterial bundle example

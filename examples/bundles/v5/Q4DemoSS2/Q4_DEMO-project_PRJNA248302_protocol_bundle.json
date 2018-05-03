@@ -1,0 +1,62 @@
+{
+    "protocols": [
+        {
+            "content": {
+                "protocol_core": {
+                    "document": "Q4_DEMO-protocol.pdf", 
+                    "protocol_id": "enrichment_protocol1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "protocol_type": {
+                    "text": "single cell sequencing protocol"
+                }, 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.188Z", 
+                "updateDate": "2018-03-22T10:47:56.413Z", 
+                "document_id": "1cd2bffd-9281-45c3-963a-afce27329362"
+            }
+        }, 
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_id": "library_protocol1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "protocol_type": {
+                    "text": "library construction protocol"
+                }, 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.195Z", 
+                "updateDate": "2018-03-22T10:47:56.446Z", 
+                "document_id": "de4c3326-7e0c-41f2-a8a9-bc9bdd95c0a9"
+            }
+        }, 
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_id": "sequencing_protocol1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "protocol_type": {
+                    "text": "single cell sequencing protocol"
+                }, 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.204Z", 
+                "updateDate": "2018-03-22T10:47:56.435Z", 
+                "document_id": "e6f7a3c6-92ce-4a9d-a8b7-f076c4c68902"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/protocol", 
+    "schema_version": "5.1.0", 
+    "schema_type": "protocol_bundle"
+}

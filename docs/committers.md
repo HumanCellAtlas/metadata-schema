@@ -1,43 +1,59 @@
-# The Human Cell Atlas Metadata Update Process SOP - v2.0
+# The Human Cell Atlas: Metadata Update Process for Committers
 
-# Table of Contents
+## Table of Contents
 - [Introduction](#introduction)
-- [General steps of the update process](#general-steps-of-the-update-process)
+- [Steps of the update process](#steps-of-the-update-process)
 - [Schema update acceptance process](#schema-update-acceptance-process)
-- [Specific steps for contributing changes](#specific-steps-for-contributing-changes)
+- [Specific steps for making changes](#specific-steps-for-making-changes)
+- [Observed guidelines](#observed-guidelines)
 
 ## Introduction
 
-Information about the process by which the HCA metadata schema will evolve is outlined here. Version 1.0 of this document can be found in the [HCA metadata lifecycle and versioning](https://docs.google.com/document/d/1eUVpYDLu2AxmxRw2ZUMM-jpKNxQudJbznNyNRp35nLc/edit#heading=h.6p3dwsx7c3hb) document. The v2.0 document here includes general update process steps, specific instructions for making suggested changes via a pull request, and the acceptance process and criteria for change acceptance. The HCA schema design principles, the semantics and process for versioning and updating these schema, and discussion of the detailed format and syntax of the metadata schema and their instantiation can be found in the complementary document [Metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455). These documents should be viewable by everyone. Please contact us if you do not have access to view.
+This document serves as an SOP for committers who are ultimately responsible for changes to the metadata standards.
 
-## General steps of the update process
+**What is in this document?**
+ - Directions for [how to incorporate feedback](#steps-of-the-update-process) into the metadata standards
+ - Expectations for contributions to be accepted or rejected
 
-1. **Receive feedback on metadata standard.** Anyone can be a contributor and suggest changes to the metadata. Contributors can suggest changes via three main routes:
-    1. Email the DCP helpdesk data-help@humancellaltas.org
-    1. Create an issue on the metadata-schema GitHub repo
+**Who should be reading this document?**
+ - HCA DCP internal developers
+
+**What *isn't* in this document?**
+- Description of what defines [major, minor, and patch changes](metadata-schema/docs/evolution.md#schema-versioning) to the metadata schema
+- Directions for [reporting bugs](metadata-schema/docs/contributing.md#reporting-bugs) in the metadata schema
+
+## Steps of the update process
+
+1. **Acquire feedback on the HCA metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
+    1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
+    1. Email the HCA DCP helpdesk at data-help@humancellaltas.org
     1. Make a pull request against the develop branch of the metadata-schema GitHub repo
 
-    To request an update to an existing schema, the contributor needs to supply four pieces of information. 
+    There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).
 
-    - Which schema needs be changed?
-    - What field(s) in that schema need to be changed?
-    - What should the change be?
-    - Why is the change requested?
+    1. To request an **update** to an existing schema, please supply the following pieces of information:
 
-    To request a new module schema, the feedback needs to contain three pieces of information.
+        1. Which schema would you like to be changed?
+        1. What field(s) in that schema would you like to be changed, and what should the change be?
+        1. What new field(s) need to be added?
+            - Details for requesting **new field(s)** outlined below
+        1. Why is the change needed?
 
-    - What is the name of the new module schema?
-    - What fields should it contain (in JSON schema or spreadsheet/tab form)?
-    - Why it the new module needed? Specifically, why does the current metadata schema not meet the contributor's need?
+    1. To request a **new** schema, you need to supply the following pieces of information:
+
+        1. What is the proposed name of the new schema?
+        1. What field(s) should the new schema contain?
+            - Details for requesting **new field(s)** outlined below
+        1. Why is the new schema needed? Specifically, why does the current metadata standard not meet your need?
     
-    To request any new fields or changes to fields, the following information needs to be supplied:
+    For **each new field** requested, please supply the following pieces of information:
     
-    - Field name (required)
-    - Field description (required)
-    - Whether the field should be optional or required (required)
-    - An example valid value for this field (optional)
-    - If this field needs a controlled vocabulary or ontology, what those values should be (optional)
-
+    1. Field name (required)
+    1. Field description (required)
+    1. Whether the field should be optional or required (required)
+    1. An example valid value for this field (optional)
+    1. If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed (optional)
+    
     If the suggested update comes in the form of the pull request, the required information should be self-evident between the JSON schema itself and the pull request message. If this isn’t clear either from the pull request or the message sent through email or git, then the assigned committer will seek clarification before moving onto step 3.
 
 2. **Assign a committer to review the suggestion.** A person with commit rights on the metadata-standards repo should be assigned to the review process for each suggestions. This person will be responsible for reviewing the suggestion and ensuring upstream and downstream consequences are noted. They will contact the appropriate HCA teams and making the general community announcements ensuring the whole community has opportunity to give input. 
@@ -62,9 +78,7 @@ Information about the process by which the HCA metadata schema will evolve is ou
 
 ## Schema update acceptance process
 
-There are three types of update acceptance verification: full, medium, and light. These three levels aim to facilitate agility for simple changes with few downstream dependencies but ensure that appropriate consideration is required for changes which are likely to trigger software updates. The table below describes which acceptance process is used in which circumstance.
-
-All reviews should consider what need is met by the requested change and what the impact of the change is on the existing systems, ensuring that updates which require major version changes also bring value to the DCP as a whole.
+There are three types of update acceptance verification: full, medium, and light. These three levels aim to facilitate agility for simple changes with few downstream dependencies but ensure that appropriate consideration is required for changes which are likely to trigger software updates. All reviews should consider what need is met by the requested change and what the impact of the change is on the existing systems, ensuring that updates which require major version changes also bring value to the DCP as a whole.
 
 The *review timeframe* should start when the committer responsible for the suggestion has notified the #hca-metadata slack channel and the metadata-wg email list about the pull request. Weekend days do not count for the review timeframe.
 
@@ -121,7 +135,7 @@ Hopefully negative marks or a lack of consensus will be very rare occurrence but
 
 For proposed changes where consensus looks unlikely, as the review deadline looms (~ 1 day before if possible), the assigned committer should schedule a phone call to discuss the issue with the interested parties. If no consensus can be reached, the process should be extended by 5 working days for more interaction. At the end of these 5 days, if no consensus has been reached, the two possible solutions should be presented to the committers and a vote should be called with the committers to the metadata-schemas repo, the solution with most votes being taken forward.
 
-## Specific steps for contributing changes
+## Specific steps for making changes
 
 This section outlines steps for contributors to suggest changes to the metadata schema via pull requests.
 
@@ -137,9 +151,9 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
     `git checkout develop`
 
-1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `username-brief_desc_of_branch_scope`
+1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `initials-brief_desc_of_branch_scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) or JIRA ticket (e.g. `HCA-123`) in the branch name.
 
-    `git checkout -b malloryfreeberg-new_mouse_module`
+    `git checkout -b mf-new_mouse_module-Issue222`
 
 1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` and `src/json_examples_validate_against_schema.py` scripts (which are run by Travis CI). The first script checks whether each .json file in the `json_schema` folder is valid JSON format. The second script attempts to validate example JSON files in the `schema_test_files` directory against their corresponding schemas. Some of the JSON files are meant to fail (e.g. they are lacking required fields) and as their failure is expected behavior, the script should exit with status 0. Ensure both scripts exit with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If either test fails, you will have to debug and fix the errors in the changes you made.
 
@@ -153,7 +167,7 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
 1. **Push** the committed changes to the working branch.
 
-    `git push origin malloryfreeberg-new_mouse_module`
+    `git push origin mf-new_mouse_module-Issue222`
 
 1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In the GitHub UI, **create** a pull request (PR) against the `develop` branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
 
