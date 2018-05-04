@@ -18,8 +18,9 @@
         },
         "timecourse_value": {
             "description": "The numerical value associated with a time interval used in the experiment.",
-            "type": "number",
-            "example": "1"
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "example": "1-2"
         },
         "timecourse_unit": {
             "description": "The unit that the timecourse value is in.",
