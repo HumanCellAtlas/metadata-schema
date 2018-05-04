@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/file/1.0.1/reference_file",
     "description": "A reference file used by a secondary reference pipeline.",
     "additionalProperties": false,
     "required": [
@@ -32,7 +31,7 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/file/5.1.0/file_core"
+            "$ref": "core/file/file_core.json"
         },
         "ncbi_taxon_id" : {
             "description": "A taxonomy ID (taxonID) from NCBI.",
@@ -42,7 +41,7 @@
         "genus_species": {
             "description": "The scientific binomial name for the species of this reference.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/species_ontology",
+            "$ref": "module/ontology/species_ontology.json",
             "example": "Homo sapiens",
             "user_friendly": "Genus species"
         },

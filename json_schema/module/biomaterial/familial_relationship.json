@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/familial_relationship",
     "description": "Information about other organisms that this organism is related to.",
     "additionalProperties": false,
     "title": "familial_relationship",

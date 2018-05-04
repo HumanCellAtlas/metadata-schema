@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/biological_macromolecule_ontology",
     "description": "A term that may be associated with a biological macromolecule-related ontology term",
     "additionalProperties": false,
     "required": [

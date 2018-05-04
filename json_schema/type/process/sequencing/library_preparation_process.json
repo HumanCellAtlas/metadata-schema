@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process",
     "description": "Information about how a sequencing library was created.",
     "additionalProperties": false,
     "required": [
@@ -36,18 +35,18 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
+            "$ref": "core/process/process_core.json"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.1.0/barcode",
+            "$ref": "module/process/sequencing/barcode.json",
             "user_friendly": "Cell barcode"
         },
         "input_nucleic_acid_molecule": {
             "description": "Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/biological_macromolecule_ontology",
+            "$ref": "module/ontology/biological_macromolecule_ontology.json",
             "user_friendly": "Input nucleic acid molecule"
         },
         "library_construction_approach": {
@@ -77,13 +76,13 @@
         "library_construction_kit": {
             "description": "Name of kit used to construct the sequencing library.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents",
+            "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Library construction kit"
         },
         "nucleic_acid_conversion_kit": {
             "description": "Name of kit used to convert RNA to DNA for sequencing.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents",
+            "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Nucleic acid conversion kit"
         },
         "end_bias": {
@@ -122,7 +121,7 @@
         "spike_in_kit": {
             "description": "Name of spike-in kit.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents",
+            "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Spike-in kit"
         },
         "spike_in_dilution": {
@@ -135,13 +134,13 @@
         "umi_barcode": {
             "description": "Information about unique molecular identifier (UMI) barcode sequences.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/sequencing/5.1.0/barcode",
+            "$ref": "module/process/sequencing/barcode.json",
             "user_friendly": "UMI barcode"
         },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/process_type_ontology",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
         }
     }
