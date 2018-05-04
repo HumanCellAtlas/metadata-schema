@@ -26,12 +26,6 @@
             "description": "The unit that the timecourse value is in.",
             "type": "ontology",
             "example": "hours"
-        },
-        "timecourse_significance": {
-            "description": "Importance of timecourse to experimental design.",
-            "type": "string",
-            "example": "Cell was treated with doxycycline at 1 hour after incubation.",
-	    "user_friendly": "Time Significance"
         }
     }
 }
