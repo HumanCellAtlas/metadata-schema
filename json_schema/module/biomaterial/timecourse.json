@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/timecourse",
     "description": "Fields to capture timecourse information.",
     "additionalProperties": false,
     "title": "timecourse",
