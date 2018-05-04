@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/process/biomaterial_collection/1.0.0/ipsc_induction_process",
     "description": "Contains information on how a sample was treated to become an induced pluripotent stem cell.",
     "additionalProperties": false,
     "required": [
