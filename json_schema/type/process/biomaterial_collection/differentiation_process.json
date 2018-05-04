@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/process/biomaterial_collection/1.0.0/differentiation_process",
     "description": "Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid.",
     "additionalProperties": false,
     "required": [
