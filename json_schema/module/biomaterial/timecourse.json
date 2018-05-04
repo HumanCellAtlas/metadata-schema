@@ -24,9 +24,9 @@
             "user-friendly": "Timecourse value"
         },
         "timecourse_unit": {
-            "description": "The unit that the timecourse value is in.",
-            "type": "ontology",
-            "example": "hours",
+            "description": "The unit in which the timecourse value is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
             "user-friendly": "Timecourse unit"
         }
     }
