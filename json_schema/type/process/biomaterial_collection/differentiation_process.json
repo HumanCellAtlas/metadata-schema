@@ -60,8 +60,11 @@
 	    "example": "hESC, iPSC, Mesoderm Progenitor, Neural Progenitor"
         },
 	"differentiation_target_cell_type":{
-	    "description": "Target cell type that cell of origin is differentiated to.",
-	    "type": "string",
+	    "description": "Target cell type that cell of origin is differentiated to. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
+	    "type": "array",
+            "items": {
+		        "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_type_ontology"
+	        },
 	    "user_friendly": "Target Cell Type",
 	    "example": "Cardiomyocyte, Cortical Neuron, Macrophage"
 	},
