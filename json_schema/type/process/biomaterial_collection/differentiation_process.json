@@ -45,7 +45,7 @@
 	"differentiation_method": {
 	    "decription": "Differentiation method applied to stem cell culture to induce a specific differentiation response.",
 	    "type": "string",
-	    "usert_friendly": "Differentiation Method",
+	    "user_friendly": "Differentiation Method",
 	    "example": "Embryoid Body, Monolayer, Inductive Co-Culture"
 	},
 	"differentiation_cell_source_id":{

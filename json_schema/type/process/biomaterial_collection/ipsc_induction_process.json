@@ -44,7 +44,7 @@
 	"induced_pluripotent_cell_source": {
 	    "decription": "Controlled term describing the source from which the ipsc was derived.",
 	    "type": "string",
-	    "usert_friendly": "iPSC Source",
+	    "user_friendly": "iPSC Source",
 	    "example": "fibroblast"
 	},
 	"induced_pluripotent_cell_induction_method":{
