@@ -28,3 +28,6 @@ Small SS2 spreadsheet example used in 2017 Q4 demo. Has user-friendly headers.
 
 Small SS2 spreadsheet example used in 2017 Q4 demo. Has plain headers.
 
+#### `data_files`
+
+A folder containing the data files that can be used to test the `glioblastoma_v5_plainHeaders_small_2cells` and `Q4DemoSS2Metadata_v5*` spreadsheets. These are very small files.
