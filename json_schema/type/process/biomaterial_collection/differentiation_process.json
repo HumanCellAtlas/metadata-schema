@@ -59,7 +59,7 @@
             "items": {
 		        "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_type_ontology"
 	        },
-            "user_friendly": "Cell Source Type"
+            "user_friendly": "Cell Source Type",
 	    "example": "hESC, iPSC, Mesoderm Progenitor, Neural Progenitor"
         },
 	"differentiation_target_cell_type":{
