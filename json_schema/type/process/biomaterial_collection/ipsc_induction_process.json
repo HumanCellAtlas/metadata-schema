@@ -94,11 +94,12 @@
 	    "user_friendly": "Induction Kit Titer",
 	    "example": "Titer: Specification is 3.0x10 7 − 9.0x107 Cell Infectious Units/mL"
 	},
-	"induced_pluripotent_cell_induction_reagents":{
-	    "description": "Induction reagents added to primary cell culture to induce pluripotency.",
-	    "type": "string",
-	    "user_friendly": "Induction Reagents",
-	    "example": "POU5F1, SOX2, KLF4, c-MYC"
+        "process_reagents": {
+            "description": "A list of purchased reagents used in this process.",
+            "type": "array",
+            "items": {
+                "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
+            }
 	},
 	"induced_pluripotent_cell_culture_id":{
 	    "description": "Unique identifier of the induced pluripotent stem cell culture or cell line after induction reagents and methods are applied.",
