@@ -105,10 +105,10 @@
 	    "type": "string",
 	    "user_friendly": "iPSC Culture ID"
 	},
-	"pluripotency_assay":{
+	"pluripotency_test":{
 	    "description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
 	    "type": "string",
-	    "user_friendly": "Pluripotency Assay",
+	    "user_friendly": "Pluripotency Test",
 	    "example": "teratoma assay"
 	},
 	"pluripotency_assay_results":{
