@@ -36,12 +36,6 @@
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
         },
-	"differentiation_protocol":{
-	    "description": "Unique identifier of the protocol file which captures the details of how differentiation of cells were performed.",
-	    "type": "string",
-	    "user_friendly": "Differentiation Protocol",
-	    "example": "Abcam- Human embryonic stem cells to hepatic endoderm protocol"
-	},
 	"differentiation_method": {
 	    "decription": "Differentiation method applied to stem cell culture to induce a specific differentiation response.",
 	    "type": "string",
