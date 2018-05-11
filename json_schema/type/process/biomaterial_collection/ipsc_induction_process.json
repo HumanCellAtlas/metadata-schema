@@ -35,12 +35,6 @@
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
         },
-	"induced_pluripotent_cell_induction_protocol_name":{
-	    "description": "Unique identifier of the protocol file which captures the details of how the cellular transformation was performed.",
-	    "type": "string",
-	    "user_friendly": "Induction Protocol Name",
-	    "example": "ThermoFisher Scientific- Generation of hiPSCs using the Epi5 Episomal iPSC Reprogramming Kit"
-	},
 	"induced_pluripotent_cell_source": {
 	    "decription": "Controlled term describing the source from which the ipsc was derived. This is a cell type and should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
 	    "type": "array",
