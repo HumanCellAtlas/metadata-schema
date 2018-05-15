@@ -123,11 +123,7 @@
 	},
 	"induced_pluripotent_cell_induction_produced_in_house":{
 	    "description": "Was the induced pluripotent stem cell prepared in-house?",
-	    "type": "string",
-	    "enum": [
-		"yes",
-		"no"
-		],
+	    "type": "boolean",
 	    "user_friendly": "iPSC Induction Facility"
 	}
     }
