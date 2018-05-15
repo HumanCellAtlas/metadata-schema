@@ -46,6 +46,12 @@
             "format": "date",
             "example": "2018-01-31",
             "user_friendly": "Expiry date"
-        }
+        },
+	"kit_titer": {
+	    "description": "Appropriate titer and volume recommendations found in each kit's Certificate of Analysis.",
+	    "type": "string",
+	    "example": "Titer: Specification is 3.0x10 7 ",
+	    "user_friendly": "Kit Titer"
+	    }
 	}
 }
