@@ -60,33 +60,11 @@
 	    ],
 	    "user_friendly": "Induction Method"
 	},
-	"induced_pluripotent_cell_induction_kit_manufacturer":{
-	    "description": "Manufacturer of kit used to induce pluripotent stem cell generation.",
-	    "type": "string",
-	    "user_friendly": "Induction Kit Manufacturer",
-	    "example": "ThermoFisher Scientific"
-	},
 	"induced_pluripotent_cell_induction_kit":{
 	    "description": "Kit used to induce pluripotent stem cell generation.",
 	    "type": "string",
 	    "user_friendly": "Induction Kit",
 	    "example": "CTS CytoTune-iPS 2.1 Sendai Reprogramming Kit"
-	},
-	"induced_pluripotent_cell_induction_kit_catalog_number":{
-	    "description": "Catalog number of kit used to induce pluripotent stem cell generation.",
-	    "type": "string",
-	    "user_friendly": "Induction Kit Catalog Number"
-	},
-	"induced_pluripotent_cell_induction_kit_lot_number":{
-	    "description": "Lot number of kit used to induce pluripotent stem cell generation.",
-	    "type": "string",
-	    "user_friendly": "Induction Kit Lot Number"
-	},
-	"induced_pluripotent_cell_induction_kit_titer":{
-	    "description": "Appropriate titer and volume recommendations for successful induction found in each kit's Certificate of Analysis.",
-	    "type": "string",
-	    "user_friendly": "Induction Kit Titer",
-	    "example": "Titer: Specification is 3.0x10 7 − 9.0x107 Cell Infectious Units/mL"
 	},
         "induced_pluripotent_cell_induction_reagents": {
             "description": "A list of purchased reagents used in this process.",
