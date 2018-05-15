@@ -88,7 +88,7 @@
 	    "user_friendly": "Induction Kit Titer",
 	    "example": "Titer: Specification is 3.0x10 7 − 9.0x107 Cell Infectious Units/mL"
 	},
-        "process_reagents": {
+        "induced_pluripotent_cell_induction_reagents": {
             "description": "A list of purchased reagents used in this process.",
             "type": "array",
             "items": {

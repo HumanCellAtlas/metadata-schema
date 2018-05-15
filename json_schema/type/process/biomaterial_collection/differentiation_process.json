@@ -94,7 +94,7 @@
 	    "user_friendly": "Small Molecules",
 	    "example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
 	},
-        "process_reagents": {
+        "differentiation_reagents": {
             "description": "A list of purchased reagents used in this process.",
             "type": "array",
             "items": {
