@@ -106,10 +106,10 @@
 	    "user_friendly": "Pluripotency Test",
 	    "example": "teratoma assay"
 	},
-	"pluripotency_assay_results":{
+	"pluripotency_test_results":{
 	    "description": "A percentage of iPSCs that passed the assay.",
 	    "type": "string",
-	    "user_friendly": "Pluripotency Assay Results"
+	    "user_friendly": "Pluripotency Test Results"
 	},
 	"pluripotency_vector_removed":{
 	    "description": "Confirmation whether a viral vector has been removed after induction.",
