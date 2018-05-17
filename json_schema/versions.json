@@ -34,7 +34,7 @@
       "process":{
         "process": "1.0.0",
         "analysis": {
-          "analysis_process": "5.1.0"
+          "analysis_process": "6.0.0"
         },
         "biomaterial_collection": {
           "collection_process": "5.1.0",
