@@ -27,6 +27,7 @@
                     "oneOf": [
                         { "$ref": "type/protocol/analysis/analysis_protocol.json" },
                         { "$ref": "type/protocol/biomaterial_collection/collection_protocol.json" },
+                        { "$ref": "type/protocol/biomaterial_collection/dissociation_protocol.json" },
                         { "$ref": "type/protocol/imaging/imaging_protocol.json" },
                         { "$ref": "type/protocol/sequencing/sequencing_protocol.json" },
                         { "$ref": "type/protocol/protocol.json" }
