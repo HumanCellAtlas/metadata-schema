@@ -25,10 +25,6 @@
                     "description": "Content for any process type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "type/process/analysis/analysis_process.json" },
-                        { "$ref": "type/process/imaging/imaging_process.json" },
-                        { "$ref": "type/process/sequencing/library_preparation_process.json" },
-                        { "$ref": "type/process/sequencing/sequencing_process.json" },
                         { "$ref": "type/process/process.json"}
                     ]
                 }
