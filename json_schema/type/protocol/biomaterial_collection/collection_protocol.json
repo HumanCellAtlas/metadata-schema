@@ -13,7 +13,7 @@
          "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_collection_protocol"
+            "pattern" : "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/collection_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -38,6 +38,26 @@
             "type": "object",
             "$ref": "module/ontology/protocol_type_ontology.json",
             "user_friendly": "Protocol type"
+        },
+
+        "collection_method": {
+            "description": "How the biomaterial was collected.",
+            "type": "string",
+            "enum": [
+                "biopsy",
+                "blood draw",
+                "scraping",
+                "urine collection",
+                "organ extraction"
+            ],
+        "user_friendly": "Collection method"
+        },
+        "protocol_reagents": {
+            "description": "A list of purchased reagents used in this protocol.",
+            "type": "array",
+            "items": {
+                "$ref": "module/process/purchased_reagents.json"
+            }
         }
     }
 }
