@@ -27,7 +27,6 @@
                     "oneOf": [
                         { "$ref": "type/process/analysis/analysis_process.json" },
                         { "$ref": "type/process/biomaterial_collection/collection_process.json" },
-                        { "$ref": "type/process/biomaterial_collection/dissociation_process.json" },
                         { "$ref": "type/process/biomaterial_collection/enrichment_process.json" },
                         { "$ref": "type/process/imaging/imaging_process.json" },
                         { "$ref": "type/process/sequencing/library_preparation_process.json" },
