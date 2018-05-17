@@ -32,7 +32,7 @@
         "sequence_file": "5.1.0"
       },
       "process":{
-        "process": "1.0.0",
+        "process": "2.0.0",
         "analysis": {
           "analysis_process": "5.1.0"
         },
@@ -116,7 +116,7 @@
       "file": "1.0.0",
       "ingest_audit": "5.1.0",
       "links": "1.0.0",
-      "process": "5.2.1",
+      "process": "6.0.0",
       "project": "5.1.0",
       "protocol": "5.1.0",
       "reference": "1.0.1",
