@@ -99,7 +99,7 @@
         "time_unit_ontology": "5.1.0"
       },
       "process": {
-        "purchased_reagents": "5.1.0",
+        "purchased_reagents": "5.2.0",
         "sequencing": {
           "barcode": "5.1.0",
           "smartseq2": "5.1.0"
