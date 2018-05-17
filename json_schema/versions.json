@@ -38,8 +38,7 @@
         },
         "biomaterial_collection": {
           "collection_process": "5.1.0",
-          "dissociation_process": "5.1.0",
-          "enrichment_process": "5.1.0"
+          "dissociation_process": "5.1.0"
         },
         "imaging": {
           "imaging_process": "5.1.0"
@@ -58,9 +57,8 @@
           "analysis_protocol": "5.1.0"
         },
         "biomaterial_collection": {
-          "collection_protocol": "6.0.0"
-        "biomaterial_collection": {
-          "biomaterial_collection_protocol": "5.1.0",
+          "collection_protocol": "6.0.0",
+          "enrichment_protocol": "1.0.0",
           "dissociation_protocol": "1.0.0"
         },
         "imaging": {
