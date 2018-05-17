@@ -32,7 +32,7 @@
         "sequence_file": "6.0.0"
       },
       "process":{
-        "process": "1.0.0",
+        "process": "2.0.0",
         "sequencing": {
           "sequencing_process": "6.0.0"
         }

@@ -38,6 +38,11 @@
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "process type"
+        },
+        "deviation_from_protocol": {
+            "description": "Any deviation from the standard protocol provided",
+            "type": "string",
+            "user_friendly": "Deviation from protocol"
         }
     }
 }
