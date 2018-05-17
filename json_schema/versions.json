@@ -44,7 +44,6 @@
           "imaging_process": "5.1.0"
         },
          "sequencing": {
-          "library_preparation_process": "5.1.0",
           "sequencing_process": "5.1.0"
         }
       },
@@ -64,7 +63,8 @@
         "imaging": {
           "imaging_protocol": "5.1.0"
         },
-          "sequencing": {
+        "sequencing": {
+          "library_preparation_protocol": "1.0.0",
           "sequencing_protocol": "5.1.0"
         }
       }
