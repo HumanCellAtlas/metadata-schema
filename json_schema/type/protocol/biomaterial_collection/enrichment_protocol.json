@@ -1,20 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Process by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
+    "description": "protocol by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
-        "process_core",
+        "protocol_core",
         "enrichment_method"
     ],
-    "title": "enrichment_process",
+    "title": "enrichment_protocol",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment_process"
+            "pattern" : "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/enrichment_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -26,13 +26,13 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "process"
+                "protocol"
             ]
         },
-         "process_core" : {
-            "description": "Core process-level information.",
+         "protocol_core" : {
+            "description": "Core protocol-level information.",
              "type": "object",
-            "$ref": "core/process/process_core.json"
+            "$ref": "core/protocol/protocol_core.json"
         },
         "enrichment_method": {
             "description": "The method by which enrichment was achieved.",
@@ -68,11 +68,11 @@
             "minimum": 0.01,
             "user_friendly": "Maximum size selected"
         },
-         "process_type": {
-            "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
+         "protocol_type": {
+            "description": "The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Process type"
+            "$ref": "module/ontology/protocol_type_ontology.json",
+            "user_friendly": "protocol type"
         }
     }
 }
