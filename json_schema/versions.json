@@ -29,22 +29,12 @@
       "file":{
         "analysis_file": "5.1.0",
         "reference_file": "1.0.1",
-        "sequence_file": "5.1.0"
+        "sequence_file": "6.0.0"
       },
       "process":{
         "process": "1.0.0",
-        "analysis": {
-          "analysis_process": "6.0.0"
-        },
-        "biomaterial_collection": {
-          "collection_process": "5.1.0",
-          "dissociation_process": "5.1.0"
-        },
-        "imaging": {
-          "imaging_process": "5.1.0"
-        },
-         "sequencing": {
-          "sequencing_process": "5.1.0"
+        "sequencing": {
+          "sequencing_process": "6.0.0"
         }
       },
       "project":{
@@ -53,7 +43,7 @@
       "protocol":{
         "protocol": "5.1.0",
         "analysis": {
-          "analysis_protocol": "5.1.0"
+          "analysis_protocol": "6.0.0"
         },
         "biomaterial_collection": {
           "collection_protocol": "6.0.0",
@@ -61,11 +51,11 @@
           "dissociation_protocol": "1.0.0"
         },
         "imaging": {
-          "imaging_protocol": "5.1.0"
+          "imaging_protocol": "6.0.0"
         },
         "sequencing": {
           "library_preparation_protocol": "1.0.0",
-          "sequencing_protocol": "5.1.0"
+          "sequencing_protocol": "6.0.0"
         }
       }
     },
@@ -114,7 +104,7 @@
     },
     "bundle": {
       "biomaterial": "5.1.0",
-      "file": "1.0.0",
+      "file": "2.0.0",
       "ingest_audit": "5.1.0",
       "links": "1.0.0",
       "process": "6.0.0",

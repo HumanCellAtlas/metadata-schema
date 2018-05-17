@@ -25,7 +25,8 @@
                     "description": "Content for any process type entity.",
                     "type": "object",
                     "oneOf": [
-                        { "$ref": "type/process/process.json"}
+                        { "$ref": "type/process/process.json"},
+                        { "$ref": "type/process/sequencing/sequencing_process.json"}
                     ]
                 }
             }

@@ -63,10 +63,10 @@ if validate(sv, s2):
     status_flag = False
 
 # Testing valid process example
-print('\nValidating type/process/sequencing/sequencing_process.json schema')
-sv = get_validator('type/process/sequencing/sequencing_process.json', base_uri)
-print('Validating process/test_pass_sequencing_process.json JSON against schema')
-b1 = get_json_from_file('../schema_test_files/process/test_pass_sequencing_process.json')
+print('\nValidating type/protocol/sequencing/sequencing_protocol.json schema')
+sv = get_validator('type/protocol/sequencing/sequencing_protocol.json', base_uri)
+print('Validating protocol/test_pass_sequencing_protocol.json JSON against schema')
+b1 = get_json_from_file('../schema_test_files/protocol/test_pass_sequencing_protocol.json')
 if not validate(sv, b1):
     status_flag = False
 
