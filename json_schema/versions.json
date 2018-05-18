@@ -45,7 +45,7 @@
           "imaging_process": "5.1.0"
         },
          "sequencing": {
-          "library_preparation_process": "5.1.0",
+          "library_preparation_process": "5.1.0"
         }
       },
       "project":{
