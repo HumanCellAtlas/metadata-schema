@@ -158,27 +158,6 @@
             "user_friendly": "cDNA library amplification method",
             "comment": "This field should be an ontology"
         },
-        "library_preamplification_method": {
-            "description": "The method used to amplify RNA prior to adaptor ligation. Must be one of: PCR, in vitro transcription, none",
-            "type": "string",
-            "enum": [
-                "PCR",
-                "in vitro transcription",
-                "none"
-            ],
-            "user_friendly": "Library pre-amplification method",
-            "comment": "This field should be an ontology"
-        },
-        "cdna_library_amplification_method": {
-            "description": "The method used to amplify a cDNA library prior to sequencing. Must be one of: PCR, none",
-            "type": "string",
-            "enum": [
-                "PCR",
-                "none"
-            ],
-            "user_friendly": "cDNA library amplification method",
-            "comment": "This field should be an ontology"
-        },
         "process_type": {
             "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
