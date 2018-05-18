@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_line",
+    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.1/cell_line",
     "description": "Information about the cell line used in the biomaterial",
     "additionalProperties": false,
     "required": [
@@ -96,7 +96,7 @@
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/species_ontology"
+                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.1/species_ontology"
             },
             "user_friendly": "Genus species"
         },

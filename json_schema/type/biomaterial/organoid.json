@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/organoid",
+    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.1/organoid",
     "description": "Information about an organoid biomaterial.",
     "additionalProperties": false,
     "required": [
@@ -52,7 +52,7 @@
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/species_ontology"
+                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.1/species_ontology"
             },
             "user_friendly": "Genus species"
         },
