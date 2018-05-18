@@ -30,7 +30,7 @@
             "user_friendly": "Growth medium"
         },
         "mycoplasma_testing_method": {
-            "description": "The method by which a biomaterial is tested for mycoplasma contamination. Must be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining.",
+            "description": "The method by which a biomaterial is tested for mycoplasma contamination. Must be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay.",
             "type": "string",
             "enum": [
                 "Direct DNA stain",
@@ -40,7 +40,9 @@
                 "Nested PCR",
                 "ELISA",
                 "Autoradiography",
-                "Immunostaining"
+                "Immunostaining",
+                "Cell-based assay",
+                "Microbiological assay"
             ],
             "example": "Indirect DNA stain",
             "user_friendly": "Mycoplasma testing method"
