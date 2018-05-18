@@ -46,9 +46,13 @@
             "user_friendly": "Mycoplasma testing method"
         },
         "mycoplasma_testing_results": {
-            "description": "Results of mycoplasma testing of a biomaterial culture.",
+            "description": "Whether the biomaterial passed or failed the mycoplasma test. Must be pass or fail.",
             "type": "string",
-            "example": "No spots of bright blue stain observed at high magnification",
+            "enum": [
+                "pass",
+                "fail"
+            ],
+            "example": "pass",
             "user_friendly": "Mycoplasma testing results"
         },
         "drug_treatment": {
