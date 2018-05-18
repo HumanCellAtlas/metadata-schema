@@ -46,7 +46,6 @@
         },
          "sequencing": {
           "library_preparation_process": "5.1.0",
-          "sequencing_process": "6.0.0"
         }
       },
       "project":{
@@ -102,7 +101,8 @@
         "purchased_reagents": "5.1.0",
         "sequencing": {
           "barcode": "5.1.0",
-          "smartseq2": "5.1.0"
+          "smartseq2": "5.1.0",
+          "insdc_experiment": "1.0.0"
         }
 
       },
