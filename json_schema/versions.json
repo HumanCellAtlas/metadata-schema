@@ -23,7 +23,7 @@
                 "process_core": "5.1.0"
             },
             "project": {
-                "project_core": "5.2.0"
+                "project_core": "5.1.0"
             },
             "protocol": {
                 "protocol_core": "5.1.0"
@@ -103,7 +103,7 @@
                 }
             },
             "project": {
-                "project": "5.1.0"
+                "project": "5.2.0"
             },
             "protocol": {
                 "analysis": {
