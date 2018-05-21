@@ -23,12 +23,12 @@ This document describes how you can contribute to the development of the HCA met
 **What *isn't* in this document?**
 - Information about contributing **data** to the HCA. This information can be found on the HCA DCP website
 - Directions for committing changes to this repo, which is currently restricted to a core group of committers for this repo
-- Description of what defines [major, minor, and patch changes](metadata-schema/docs/evolution.md#schema-versioning) to the metadata schema
-- Directions for [submitting pull requests](metadata-schema/docs/committers.md) for changes
+- Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
+- Directions for [submitting pull requests](committers.md) for changes
 
 ## Requesting or suggesting changes to the metadata schema
 
-As a prerequisite to this section, you may want to look at [how the metadata is structured](metadata-schema/docs/structure.md)
+As a prerequisite to this section, you may want to look at [how the metadata is structured](structure.md)
 
 1. **Gather information** requested for submitting feedback. There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).
 
@@ -65,7 +65,7 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
 
 1. **Track progress of request.** Within 2 working days, your request will be reviewed by an HCA DCP member. You may be asked for clarification on your request, and additional input may be sough from the appropriate HCA communities.
 
-1. **Review and comment on proposed update.** A proposed schema update to address to your request will be developed by an HCA DCP member and then posted to the #hca-metadata Slack channel and on GitHub. Making the proposed update public allows everyone the opportunity to comment or raise concerns. The amount of time an update remains public for comments depends on the severity of the change. These timeframes can be found [here](metadata-schema/docs/committers.md#schema-update-acceptance-process).
+1. **Review and comment on proposed update.** A proposed schema update to address to your request will be developed by an HCA DCP member and then posted to the #hca-metadata Slack channel and on GitHub. Making the proposed update public allows everyone the opportunity to comment or raise concerns. The amount of time an update remains public for comments depends on the severity of the change. These timeframes can be found [here](committers.md#schema-update-acceptance-process).
 
 1.  **Notification of acceptance.** Once the review period is over and the update is accepted, the changes will be merged into the metadata standard on your behalf. The update will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list. You can join the HCA slack community follow these [instructions.](https://github.com/HumanCellAtlas/wiki/wiki)
 

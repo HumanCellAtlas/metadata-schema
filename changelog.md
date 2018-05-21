@@ -14,6 +14,10 @@ Bug fix to make ontology validation work - root species ontology node changed fr
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
+### Changed
+Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
+
 ### [module/biomaterial/growth_conditions.json - v6.0.0] - 2018-05-18
 ### Changed
 This change is to make the fields mycoplasma_testing_method and mycoplasma_testing_results enums. This is a major change.
