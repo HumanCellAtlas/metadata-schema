@@ -1,18 +1,33 @@
-# Descriptions of files located in filled/Smartseq2
-```
-Smartseq2/
+## Files in this folder
 
-	Glioblastoma.xlsx			# Human readable basic glioblastoma spreadsheet  
+`glioblastoma_v5_plainHeaders_large_7000cells.xlsx`
 
-	Glioblastoma_single.xlsx      	        # Human readable basic glioblastoma spreadsheet with 1 assay  	
+>A version of the glioblastoma spreadsheet in which the number of cells sequenced has been artificially duplicated to 7176 cells. This spreadsheet serves as a stress test. 
 
-	Q4DemoSS2Metadata_v5.xlsx	        # Smartseq2 test dataset  
+`glioblastoma_v5_plainHeaders_real_3500cells.xlsx`
 
-	glioblastoma_2assay_data.xlsx	        # Computer header glioblastoma spreadsheet with added cell/umi barcode modules with only 2 assays  
+>The real version of the glioblastoma spreadsheet which has 3588 cells sequenced. 
 
-	glioblastoma_added_module.xlsx	        # Human readable glioblastoma spreadsheet with cell/umi barcdoe modules  
+`glioblastoma_v5_plainHeaders_medium_1000cells.xlsxz`
 
-	glioblastoma_doubleAssay_data.xlsx     	# Computer header glioblastoma spreadsheet with added cell/umi barcode modules with double the assays   
+>A version of the glioblastoma spreadsheet in which the number of cells sequenced has been decreased to 1000. This spreadsheet serves as a test for secondary analysis pipelines. 
 
-	updated_plain_headers_glio.xlsx		# Computer header glioblastoma spreadsheet with added cell/umi barcode modules  
-```
+`glioblastoma_v5_plainHeaders_smallish_100cells.xlsxz`
+
+>A version of the glioblastoma spreadsheet in which the number of cells sequenced has been decreased to 100. This spreadsheet serves as a test for secondary analysis pipelines. 
+
+`glioblastoma_v5_plainHeaders_small_2cells.xlsx`
+
+>A version of the glioblastoma spreadsheet in which the number of cells sequenced has been decreased to 2. This spreadsheet serves as a minimal test for all boxes. 
+
+`Q4DemoSS2Metadata_v5_userFriendlyHeaders.xlsx`
+
+>Small SS2 spreadsheet example used in 2017 Q4 demo. Has user-friendly headers.
+
+`Q4DemoSS2Metadata_v5_plainHeaders.xlsx`
+
+>Small SS2 spreadsheet example used in 2017 Q4 demo. Has plain headers.
+
+`data_files`
+
+>A folder containing the data files that can be used to test the `glioblastoma_v5_plainHeaders_small_2cells` and `Q4DemoSS2Metadata_v5*` spreadsheets. These are very small files.

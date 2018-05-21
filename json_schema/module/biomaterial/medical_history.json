@@ -28,6 +28,7 @@
         },
         "nutritional_state": {
             "description": "Should be one of normal, fasting, or feeding tube removed.",
+            "type": "string",
             "enum": [
                 "normal",
                 "fasting",
