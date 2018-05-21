@@ -34,7 +34,7 @@
                 "cell_morphology": "5.1.0",
                 "death": "5.1.0",
                 "familial_relationship": "5.1.0",
-                "growth_conditions": "5.1.0",
+                "growth_conditions": "6.0.0",
                 "homo_sapiens_specific": "5.1.0",
                 "medical_history": "5.1.0",
                 "mus_musculus_specific": "5.1.0",
