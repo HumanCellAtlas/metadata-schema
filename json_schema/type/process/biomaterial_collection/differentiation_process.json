@@ -37,7 +37,7 @@
             "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
         },
 		"differentiation_method": {
-			"description": "Differentiation method applied to stem cell culture to induce a specific differentiation response.",
+			"description": "Differentiation method applied to cell culture to induce a specific differentiation response.",
 			"type": "string",
 			"user_friendly": "Differentiation method",
 			"example": "Embryoid Body, Monolayer, Inductive Co-Culture"
@@ -48,7 +48,7 @@
             "user_friendly": "Target cell yield"
         },
 		"differentiation_growth_environment":{
-			"description": "Growth environment in which stem cells are differentiated.",
+			"description": "Growth environment in which cells are differentiated.",
 			"type": "string",
 			"user_friendly": "Growth environment",
 			"example": "scaffold, monolayer, suspension, hanging drops, collagen, engraftment"
@@ -72,10 +72,10 @@
 			"example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
 		},
         "differentiation_reagents": {
-            "description": "A list of purchased reagents used in this process.",
+            "description": "A list of purchased reagents used in the differentiation process.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
+                "$ref": "module/process/5.1.0/purchased_reagents"
             }
 		},
 		"differentiation_target_pathway":{
