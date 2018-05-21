@@ -29,7 +29,7 @@
             "items":{
                 "type": "string"
             },
-            "example": "BBSRC",
+            "example": "Biotechnology and Biological Sciences Research Council (BBSRC)",
             "user_friendly": "Name of grant funder"
         }
 
