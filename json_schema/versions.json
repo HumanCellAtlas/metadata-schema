@@ -75,7 +75,7 @@
         "type": {
             "biomaterial": {
                 "cell_line": "5.1.1",
-                "cell_suspension": "5.1.1",
+                "cell_suspension": "6.0.0",
                 "donor_organism": "5.1.1",
                 "organoid": "5.1.1",
                 "specimen_from_organism": "5.1.1"

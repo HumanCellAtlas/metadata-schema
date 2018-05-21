@@ -8,6 +8,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
 
+
 ### [type/project/project.json - v5.2.0] - 2018-05-21
 ### Changed
 Added a pointer to new module with three optional fields to track project funders
@@ -15,6 +16,10 @@ Added a pointer to new module with three optional fields to track project funder
 ### [module/project/funder.json - v1.0.0] - 2018-05-21
 ### Added
 A new module with three optional fields to track project funders
+
+### [type/biomaterial/cell_suspension.json - v6.0.0] - 2018-05-21
+### Changed
+Changed the field `target_cell_type` to `selected_cell_type`.
 
 ### [module/process/purchased_reagents.json - v5.2.0] - 2018-05-18
 ### Added
