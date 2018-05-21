@@ -38,23 +38,5 @@
             "example": "An abstract from a grant application or publication. Approximately 300 words.",
             "user_friendly": "Project description"
         }
-        "grant_title": {
-            "description": "The name of the grant funding the project.",
-            "type": "array",
-            "items":{
-                "type": "string"
-            },
-            "example": "A title of a grant proposal. Approximately 30 words.",
-            "user_friendly": "Grant title"
-        }
-        "grant_id": {
-            "description": "The unique grant identifier or reference for the project.",
-            "type": "array",
-            "items":{
-                "type": "string"
-            },
-            "example": "BB/P0000001/1",
-            "user_friendly": "Grant ID"
-        }
     }
 }
