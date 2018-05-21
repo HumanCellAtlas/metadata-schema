@@ -42,11 +42,6 @@
 			"user_friendly": "Differentiation method",
 			"example": "Embryoid Body, Monolayer, Inductive Co-Culture"
 		},
-		"differentiation_cell_source_id":{
-			"description": "Unique identifier of the cell source prior to differentiation to target cell.",
-			"type": "string",
-			"user_friendly": "Cell Source ID"
-		},
 		"differentiation_source_cell_type":{
 			"description": "Cell type of sample prior to differentiation to target cell. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
             "type": "array",
