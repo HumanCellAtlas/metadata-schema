@@ -79,7 +79,7 @@
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "user_friendly": "INSDC study accession"
-        }
+        },
         "funders": {
             "description": "A list of funders supporteing this project",
             "type": "array",
