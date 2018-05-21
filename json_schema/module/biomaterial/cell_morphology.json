@@ -52,7 +52,7 @@
                 "fail"
             ],
             "example": "pass"
-            "user_friendly": "Cell viability method"
+            "user_friendly": "Cell viability pass/fail result"
         },
         "percent_necrosis": {
             "description" : "Percent of cells identified to be necrotic.",
