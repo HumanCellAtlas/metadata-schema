@@ -24,7 +24,7 @@
         "cell_size": {
             "description": "The size of the cells. Average cell size is acceptable.",
             "type": "string",
-            "pattern": "^[0-9]+\.?[0-9]-?[0-9]\.?[0-9]*$",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "example": "20-30",
             "user_friendly": "Cell size number"
         },
@@ -38,7 +38,7 @@
         "percent_cell_viability": {
             "description": "Percent of cells determined to be viable.",
             "type": "string",
-            "pattern": "^[0-9]+\.?[0-9]-?[0-9]\.?[0-9]*$",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "example": "98.7",
             "user_friendly": "Percent cell viability"
         },
@@ -55,7 +55,7 @@
                 "pass",
                 "fail"
             ],
-            "example": "pass"
+            "example": "pass",
             "user_friendly": "Cell viability pass/fail result"
         },
         "percent_necrosis": {
