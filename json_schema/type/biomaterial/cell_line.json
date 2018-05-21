@@ -36,7 +36,14 @@
         "catalog_number": {
             "description": "The supplier catalogue number for the cell line.",
             "type": "string",
+            "example": "77650057",
             "user_friendly": "Catalog number"
+        },
+        "supplier": {
+           "description": "The supplier of the cell line.",
+           "type": "string",
+           "example": "HipSci",
+           "user_friendly": "Supplier"
         },
         "catalog_url": {
             "description": "The supplier catalogue URL for the cell line.",
