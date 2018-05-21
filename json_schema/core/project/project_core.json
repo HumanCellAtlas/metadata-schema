@@ -27,15 +27,15 @@
             "user_friendly": "Project shortname"
         },
         "project_title": {
-            "description": "A summary of the project in a sentence.",
+            "description": "A summary of the project in a sentence. Approximately 30 words.",
             "type": "string",
-            "example": "A title of a publication. Approximately 30 words.",
+            "example": "A title of a publication.",
             "user_friendly": "Project title"
         },
         "project_description": {
-            "description": "A longer description of the project which can include research goals and experimental approach.",
+            "description": "A longer description of the project which can include research goals and experimental approach. Approximately 300 words.",
             "type": "string",
-            "example": "An abstract from a grant application or publication. Approximately 300 words.",
+            "example": "An abstract from a grant application or publication.",
             "user_friendly": "Project description"
         }
     }
