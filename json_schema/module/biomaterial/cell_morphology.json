@@ -25,13 +25,14 @@
             "description": "The size of the cells. Average cell size is acceptable.",
             "type": "string",
             "pattern": "^[0-9]+\.?[0-9]-?[0-9]\.?[0-9]*$",
-            "example": "30-40",
+            "example": "20-30",
             "user_friendly": "Cell size number"
         },
         "cell_size_unit": {
             "description": "The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
+            "example": "micrometer",
             "user_friendly": "Cell size unit"
         },
         "percent_cell_viability": {
