@@ -47,5 +47,14 @@
             "example": "A title of a grant proposal. Approximately 30 words.",
             "user_friendly": "Grant title"
         }
+        "grant_id": {
+            "description": "The unique grant identifier or reference for the project.",
+            "type": "array",
+            "items":{
+                "type": "string"
+            },
+            "example": "BB/P0000001/1",
+            "user_friendly": "Grant ID"
+        }
     }
 }
