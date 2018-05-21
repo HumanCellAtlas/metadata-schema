@@ -32,9 +32,11 @@
             "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Cell size unit"
         },
-        "cell_viability": {
+        "percent_cell_viability": {
             "description": "Percent of cells determined to be viable.",
-            "type": "number",
+            "type": "string",
+            "pattern": "^[0-9]+\.?[0-9]-?[0-9]\.?[0-9]*$",
+            "example": "98.7",
             "user_friendly": "Percent cell viability"
         },
         "cell_viability_method": {
