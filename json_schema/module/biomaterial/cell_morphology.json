@@ -44,6 +44,16 @@
             "type": "string",
             "user_friendly": "Cell viability method"
         },
+        "cell_viability_result": {
+            "description": "Whether the result of the cell viability test is pass or fail.",
+            "type": "string",
+            "enum": [
+                "pass",
+                "fail"
+            ],
+            "example": "pass"
+            "user_friendly": "Cell viability method"
+        },
         "percent_necrosis": {
             "description" : "Percent of cells identified to be necrotic.",
             "type": "number",
