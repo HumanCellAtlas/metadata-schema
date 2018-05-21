@@ -7,7 +7,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [module/cell_line.json - v5.2.1] - 2018-05-21
+### [type/biomaterial/cell_line.json - v5.2.1] - 2018-05-21
 ### Added
 Added `supplier` field to capture supplier of purchased cell line.
 Added `lot_number` field to capture lot number of purchased cell line.
