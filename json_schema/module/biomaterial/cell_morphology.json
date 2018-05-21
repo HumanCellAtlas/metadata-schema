@@ -45,6 +45,7 @@
         "cell_viability_method": {
             "description": "The method by which cell viability was determined.",
             "type": "string",
+            "example": "Fluorescein diacetate hydrolysis assay",
             "user_friendly": "Cell viability method"
         },
         "cell_viability_result": {
