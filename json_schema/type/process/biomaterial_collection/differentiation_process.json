@@ -87,11 +87,6 @@
                 "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
             }
 		},
-		"differentiation_cell_culture_id":{
-			"description": "Unique identifier of the differentiated cell culture after differentiation reagents and methods are applied. ",
-			"type": "string",
-			"user_friendly": "Differentiated Cell Culture ID"
-		},
 		"differentiation_target_pathway":{
 			"description": "Targeted pathway for specific differentiation response.",
 			"type": "string",
