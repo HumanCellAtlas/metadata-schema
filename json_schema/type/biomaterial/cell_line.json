@@ -33,28 +33,28 @@
             "type": "object",
             "$ref": "core/biomaterial/biomaterial_core.json"
         },
-        "catalog_number": {
-            "description": "The supplier catalogue number for the cell line.",
-            "type": "string",
-            "example": "77650057",
-            "user_friendly": "Catalog number"
-        },
         "supplier": {
            "description": "The supplier of the cell line.",
            "type": "string",
            "example": "HipSci",
            "user_friendly": "Supplier"
         },
-        "catalog_url": {
-            "description": "The supplier catalogue URL for the cell line.",
+        "catalog_number": {
+            "description": "The supplier catalogue number for the cell line.",
             "type": "string",
-            "user_friendly": "Catalog URL"
+            "example": "77650057",
+            "user_friendly": "Catalog number"
         },
         "lot_number": {
             "description": "The supplier lot or batch number for the cell line.",
             "type": "string",
             "example": "24.10.14",
             "user_friendly": "Lot/batch number"
+        },
+        "catalog_url": {
+            "description": "The supplier catalogue URL for the cell line.",
+            "type": "string",
+            "user_friendly": "Catalog URL"
         },
         "cell_cycle": {
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049.",
@@ -69,8 +69,10 @@
                 "primary",
                 "immortalized",
                 "stem cell-derived",
-                "synthetic"
-          ],
+                "synthetic",
+                "induced pluripotent"
+            ],
+            "example": "induced pluripotent",
             "user_friendly": "Cell line type"
         },
         "cell_morphology": {
