@@ -76,7 +76,8 @@
             "type": "array",
             "items": {
                 "$ref": "module/process/5.1.0/purchased_reagents"
-            }
+            },
+			"user_friendly": "Differentiation reagents"
 		},
 		"differentiation_target_pathway":{
 			"description": "Targeted pathway for specific differentiation response.",
