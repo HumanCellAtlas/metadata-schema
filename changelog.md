@@ -7,10 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/cell_line.json - v5.2.1] - 2018-05-21
+### Added
+Added `supplier` field to capture supplier of purchased cell line.
+Added `lot_number` field to capture lot number of purchased cell line.
+Added `induced pluripotent` to enum of cell line type.
+
 ### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
 ### Changed
 Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
-
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
