@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "Information relating to pathological features of cells.",
     "additionalProperties": false,
-    "title": "cell_pathology",
+    "title": "cell_morphology",
     "type": "object",
     "properties": {
         "describedBy": {
