@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_suspension.json - v6.0.0] - 2018-05-21
+### Changed
+Changed the field `target_cell_type` to `selected_cell_type`.
+
 ### [module/process/purchased_reagents.json - v5.2.0] - 2018-05-18
 ### Added
 Added a new field - `kit_titer` - to record the appropriate titer and volume recommendations found in a kit's Certificate of Analysis.
