@@ -55,11 +55,12 @@
             "user_friendly": "Genus species"
         },
         "selected_cell_type": {
-            "description" : "The cell type(s) selected for to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
+            "description" : "The cell type(s) selected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
             "type": "array",
             "items": {
 		        "$ref": "module/ontology/cell_type_ontology.json"
 	        },
+            "example": "fetal cardiomyocyte",
             "user_friendly": "Selected cell type"
        },
         "total_estimated_cells": {
