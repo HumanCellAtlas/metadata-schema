@@ -7,14 +7,6 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
-### Changed
-Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
-
-### [module/biomaterial/growth_conditions.json - v6.0.0] - 2018-05-18
-### Changed
-This change is to make the fields mycoplasma_testing_method and mycoplasma_testing_results enums. This is a major change.
-
 ### [module/biomaterial/cell_morphology.json - v6.0.0] - 2018-05-21
 ### Changed
 Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
@@ -22,6 +14,14 @@ Changed name of cell_viability field to percent_cell_viability to accurately ref
 Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
 
 This update is a major change due to the changing of the cell_viability field name.
+
+### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
+### Changed
+Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
+
+### [module/biomaterial/growth_conditions.json - v6.0.0] - 2018-05-18
+### Changed
+This change is to make the fields mycoplasma_testing_method and mycoplasma_testing_results enums. This is a major change.
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
