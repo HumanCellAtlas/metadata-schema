@@ -43,6 +43,12 @@
             "type": "string",
             "user_friendly": "Catalog URL"
         },
+        "lot_number": {
+            "description": "The supplier lot or batch number for the cell line.",
+            "type": "string",
+            "example": "24.10.14",
+            "user_friendly": "Lot/batch number"
+        },
         "cell_cycle": {
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049.",
             "type": "object",
