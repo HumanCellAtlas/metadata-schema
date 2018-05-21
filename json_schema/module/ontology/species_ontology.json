@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.1/species_ontology",
     "description": "A term that may be associated with a species-related ontology term",
     "additionalProperties": false,
     "required": [
