@@ -31,7 +31,7 @@
         },
         "module": {
             "biomaterial": {
-                "cell_morphology": "5.1.0",
+                "cell_morphology": "6.0.0",
                 "death": "5.1.0",
                 "familial_relationship": "5.1.0",
                 "growth_conditions": "6.0.0",
