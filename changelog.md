@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/project/project.json - v5.2.0] - 2018-05-21
+### Changed
+Added a pointer to new module with three optional fields to track project funders
+
+### [module/project/funder.json - v1.0.0] - 2018-05-21
+### Added
+A new module with three optional fields to track project funders
+
 ### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
 ### Changed
 Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
