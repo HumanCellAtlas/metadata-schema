@@ -26,7 +26,7 @@
             "description": "A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph.",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:uberon", "obo:efo"],
+                "ontologies" : ["obo:hcao", "obo:uberon"],
                 "classes": ["UBERON:0000062","UBERON:0000179"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
