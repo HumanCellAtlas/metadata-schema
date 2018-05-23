@@ -49,7 +49,8 @@
 				"plasmid",
 				"retroviral"
 			],
-			"user_friendly": "Induction method"
+			"user_friendly": "Induction method",
+			"example": "plasmid"
 		},
 		"induced_pluripotent_cell_induction_kit":{
             "description": "Kit used to induce pluripotent stem cell generation.",
@@ -67,6 +68,7 @@
 			"description": "A percentage of iPSCs that passed the assay.",
 			"type": "string",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+			"example": "97.2",
 			"user_friendly": "Percent pluripotency"
 		},
 		"pluripotency_vector_removed":{
@@ -77,7 +79,8 @@
 				"no",
 				"unknown"
 			],
-			"user_friendly": "Pluripotent vector removed?"
+			"user_friendly": "Pluripotent vector removed?",
+			"example": "yes"
 		},
 		"induced_pluripotent_cell_induction_produced_in_house":{
 			"description": "Whether the induced pluripotent stem cell was prepared in-house. Must be yes or no.",
