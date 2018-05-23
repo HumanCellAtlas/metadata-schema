@@ -5,8 +5,7 @@
   "biomaterial_core": {
     "biomaterial_id": "s1",
     "biomaterial_name": "PBMCs",
-    "biomaterial_description": "peripheral blood mononuclear cells (PBMCs)",
-    "has_input_biomaterial": "d1"
+    "biomaterial_description": "peripheral blood mononuclear cells (PBMCs)"
   },
   "organ": {
     "text": "blood",
