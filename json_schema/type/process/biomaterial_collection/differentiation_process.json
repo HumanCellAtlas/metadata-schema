@@ -43,9 +43,9 @@
 			"example": "Embryoid Body, Monolayer, Inductive Co-Culture"
 		},
 		"differentiation_target_cell_yield":{
-            "description": "Percent of target cells obtained after directed differentiation of origin cell.",
-            "type": "string",
-            "user_friendly": "Target cell yield"
+			"description": "Percent of target cells obtained after directed differentiation of origin cell.",
+			"type": "string",
+			"user_friendly": "Target cell yield"
         },
 		"differentiation_growth_environment":{
 			"description": "Growth environment in which cells are differentiated.",
