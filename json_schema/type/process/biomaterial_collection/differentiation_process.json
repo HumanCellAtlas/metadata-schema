@@ -47,12 +47,6 @@
             "type": "string",
             "user_friendly": "Target cell yield"
         },
-        "differentiation_growth_environment":{
-            "description": "Growth environment in which cells are differentiated.",
-            "type": "string",
-            "user_friendly": "Growth environment",
-            "example": "scaffold, monolayer, suspension, hanging drops, collagen, engraftment"
-        },
         "differentiation_growth_factors":{
             "description": "Growth factor added to stem cell culture to induce a specific differentiation response.",
             "type": "string",
