@@ -39,17 +39,17 @@
 			"description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
 			"type": "string",
 			"enum": [
-			"lentivirus",
-			"sendai virus",
-			"Gun particle",
-			"piggyBac transposon",
-			"miRNA viral",
-			"adenovirus",
-			"cre-loxP",
-			"plasmid",
-			"retroviral"
+				"lentivirus",
+				"sendai virus",
+				"Gun particle",
+				"piggyBac transposon",
+				"miRNA viral",
+				"adenovirus",
+				"cre-loxP",
+				"plasmid",
+				"retroviral"
 			],
-			"user_friendly": "Induction Method"
+			"user_friendly": "Induction method"
 		},
 		"induced_pluripotent_cell_induction_kit":{
             "description": "Kit used to induce pluripotent stem cell generation.",
@@ -67,28 +67,28 @@
 		"pluripotency_test":{
 			"description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
 			"type": "string",
-			"user_friendly": "Pluripotency Test",
+			"user_friendly": "Pluripotency test",
 			"example": "teratoma assay"
 		},
 		"pluripotency_test_results":{
 			"description": "A percentage of iPSCs that passed the assay.",
 			"type": "string",
-			"user_friendly": "Pluripotency Test Results"
+			"user_friendly": "Pluripotency test results"
 		},
 		"pluripotency_vector_removed":{
-			"description": "Confirmation whether a viral vector has been removed after induction.",
+			"description": "Confirmation whether a viral vector has been removed after induction. Must be one of: yes, no, unknown.",
 			"type": "string",
 			"enum": [
-			"yes",
-			"no",
-			"unknown"
+				"yes",
+				"no",
+				"unknown"
 			],
-			"user_friendly": "Pluripotent Vector Removed"
+			"user_friendly": "Pluripotent vector removed?"
 		},
 		"induced_pluripotent_cell_induction_produced_in_house":{
 			"description": "Was the induced pluripotent stem cell prepared in-house?",
 			"type": "boolean",
-			"user_friendly": "iPSC Induction Facility"
+			"user_friendly": "iPSC induction facility"
 		}
     }
 }
