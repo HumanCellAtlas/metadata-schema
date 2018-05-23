@@ -14,7 +14,7 @@
         },
         "core": {
             "biomaterial": {
-                "biomaterial_core": "5.1.0"
+                "biomaterial_core": "6.0.0"
             },
             "file": {
                 "file_core": "5.1.0"
