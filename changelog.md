@@ -9,7 +9,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ### [core/biomaterial/biomaterial_core.json - v6.0.0] - 2018-05-23
 ### Removed
-Removed the `has_input_biomaterial` property as the purpose is missleading and no longer required by the spreadsheet importer
+Removed the `has_input_biomaterial` property as the purpose is misleading and no longer required by the spreadsheet importer
 
 ### [type/biomaterial/cell_suspension.json - v6.0.0] - 2018-05-21
 ### Changed
