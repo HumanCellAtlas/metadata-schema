@@ -3,12 +3,12 @@
     "description": "Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid.",
     "additionalProperties": false,
     "required": [
-		"describedBy",
-		"schema_type",
-		"process_core",
-		"differentiation_method",
-		"differentiation_cell_source_type",
-		"differentiation_target_cell_type"
+      "describedBy",
+      "schema_type",
+      "process_core",
+      "differentiation_method",
+      "differentiation_cell_source_type",
+      "differentiation_target_cell_type"
     ],
     "title": "differentiation_process",
     "type": "object",
