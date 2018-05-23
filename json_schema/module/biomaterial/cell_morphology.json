@@ -36,10 +36,9 @@
             "user_friendly": "Cell size unit"
         },
         "percent_cell_viability": {
-            "description": "Percent of cells determined to be viable.",
-            "type": "string",
-            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "example": "98.7",
+            "description": "Percent of cells determined to be viable. Please enter a single number. An average value is acceptable.",
+            "type": "number",
+            "example": 98.7,
             "user_friendly": "Percent cell viability"
         },
         "cell_viability_method": {
