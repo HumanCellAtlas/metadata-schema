@@ -37,39 +37,39 @@
             "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
         },
         "differentiation_method": {
-			"description": "Differentiation method applied to cell culture to induce a specific differentiation response.",
-			"type": "string",
-			"user_friendly": "Differentiation method",
-			"example": "Embryoid Body, Monolayer, Inductive Co-Culture"
+            "description": "Differentiation method applied to cell culture to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Differentiation method",
+            "example": "Embryoid Body, Monolayer, Inductive Co-Culture"
         },
         "differentiation_target_cell_yield":{
-			"description": "Percent of target cells obtained after directed differentiation of origin cell.",
-			"type": "string",
-			"user_friendly": "Target cell yield"
+            "description": "Percent of target cells obtained after directed differentiation of origin cell.",
+            "type": "string",
+            "user_friendly": "Target cell yield"
         },
         "differentiation_growth_environment":{
-			"description": "Growth environment in which cells are differentiated.",
-			"type": "string",
-			"user_friendly": "Growth environment",
-			"example": "scaffold, monolayer, suspension, hanging drops, collagen, engraftment"
+            "description": "Growth environment in which cells are differentiated.",
+            "type": "string",
+            "user_friendly": "Growth environment",
+            "example": "scaffold, monolayer, suspension, hanging drops, collagen, engraftment"
         },
         "differentiation_growth_factors":{
-			"description": "Growth factor added to stem cell culture to induce a specific differentiation response.",
-			"type": "string",
-			"user_friendly": "Differentiation growth factors",
-			"example": "FLT3 Ligand CTS Recombinant Human Protein"
+            "description": "Growth factor added to stem cell culture to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Differentiation growth factors",
+            "example": "FLT3 Ligand CTS Recombinant Human Protein"
         },
         "differentiation_medium":{
-			"description": "Culture media used to induce a specific differentiation response.",
-			"type": "string",
-			"user_friendly": "Differentiation media",
-			"example": "RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium"
+            "description": "Culture media used to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Differentiation media",
+            "example": "RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium"
         },
         "differentiation_small_molecules":{
-			"description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
-			"type": "string",
-			"user_friendly": "Small molecules",
-			"example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
+            "description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Small molecules",
+            "example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
         },
         "differentiation_reagents": {
             "description": "A list of purchased reagents used in the differentiation process.",
@@ -77,19 +77,19 @@
             "items": {
                 "$ref": "module/process/5.1.0/purchased_reagents"
             },
-			"user_friendly": "Differentiation reagents"
+            "user_friendly": "Differentiation reagents"
         },
         "differentiation_target_pathway":{
-			"description": "Targeted pathway for specific differentiation response.",
-			"type": "string",
-			"user_friendly": "Target pathway",
-			"example": "Wnt Pathway"
+            "description": "Targeted pathway for specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Target pathway",
+            "example": "Wnt Pathway"
         },
         "differentiation_validation_method":{
-			"description": "Method used to validate origin cell successfully differentiated to target cell.",
-			"type": "string",
-			"user_friendly": "Differentiation validation method",
-			"example": "Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining"
+            "description": "Method used to validate origin cell successfully differentiated to target cell.",
+            "type": "string",
+            "user_friendly": "Differentiation validation method",
+            "example": "Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining"
         },
         "differentiation_validation_results":{
             "description": "Results confirming successful differentiation to target cell type.",
@@ -98,10 +98,10 @@
             "example": "CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative"
         },
         "differentiation_extracellular_substrate_matrix":{
-			"description": "Extracellular substrate matrix in which cells are grown during differentiation.",
-			"type": "string",
-			"user_friendly": "Extracellular substrate matrix",
-			"example": "Matrigel, Laminin, Vitronectin"
+            "description": "Extracellular substrate matrix in which cells are grown during differentiation.",
+            "type": "string",
+            "user_friendly": "Extracellular substrate matrix",
+            "example": "Matrigel, Laminin, Vitronectin"
         }
     }
 }
