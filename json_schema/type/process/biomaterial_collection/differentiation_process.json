@@ -72,12 +72,6 @@
             "type": "string",
             "user_friendly": "Validation results",
             "example": "CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative"
-        },
-        "differentiation_extracellular_substrate_matrix":{
-            "description": "Extracellular substrate matrix in which cells are grown during differentiation.",
-            "type": "string",
-            "user_friendly": "Extracellular substrate matrix",
-            "example": "Matrigel, Laminin, Vitronectin"
         }
     }
 }
