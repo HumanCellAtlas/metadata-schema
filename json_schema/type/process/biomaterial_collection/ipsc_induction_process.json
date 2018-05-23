@@ -7,7 +7,7 @@
         "schema_type",
         "process_core",
         "induced_pluripotent_cell_source",
-	"induced_pluripotent_cell_induction_method"
+		"induced_pluripotent_cell_induction_method"
     ],
     "title": "ipsc_induction_process",
     "type": "object",
@@ -35,74 +35,65 @@
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
         },
-	"induced_pluripotent_cell_source": {
-	    "decription": "Controlled term describing the source from which the ipsc was derived. This is a cell type and should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
-	    "type": "array",
-            "items": {
-		        "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_type_ontology"
-	        },
-	    "user_friendly": "iPSC Source",
-	    "example": "fibroblast"
-	},
-	"induced_pluripotent_cell_induction_method":{
-	    "description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
-	    "type": "string",
-	    "enum": [
-		"lentivirus",
-		"sendai virus",
-		"Gun particle",
-		"piggyBac transposon",
-		"miRNA viral",
-		"adenovirus",
-		"cre-loxP",
-		"plasmid",
-		"retroviral"
-	    ],
-	    "user_friendly": "Induction Method"
-	},
-	"induced_pluripotent_cell_induction_kit":{
-	    "description": "Kit used to induce pluripotent stem cell generation.",
-	    "type": "string",
-	    "user_friendly": "Induction Kit",
-	    "example": "CTS CytoTune-iPS 2.1 Sendai Reprogramming Kit"
-	},
-        "induced_pluripotent_cell_induction_reagents": {
-            "description": "A list of purchased reagents used in this process.",
-            "type": "array",
-            "items": {
-                "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
-            }
-	},
-	"induced_pluripotent_cell_culture_id":{
-	    "description": "Unique identifier of the induced pluripotent stem cell culture or cell line after induction reagents and methods are applied.",
-	    "type": "string",
-	    "user_friendly": "iPSC Culture ID"
-	},
-	"pluripotency_test":{
-	    "description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
-	    "type": "string",
-	    "user_friendly": "Pluripotency Test",
-	    "example": "teratoma assay"
-	},
-	"pluripotency_test_results":{
-	    "description": "A percentage of iPSCs that passed the assay.",
-	    "type": "string",
-	    "user_friendly": "Pluripotency Test Results"
-	},
-	"pluripotency_vector_removed":{
-	    "description": "Confirmation whether a viral vector has been removed after induction.",
-	    "type": "string",
-	    "enum": [
-		"yes",
-		"no",
-		"unknown"
-		],
-	    "user_friendly": "Pluripotent Vector Removed"
-	},
-	"induced_pluripotent_cell_induction_produced_in_house":{
-	    "description": "Was the induced pluripotent stem cell prepared in-house?",
-	    "type": "boolean",
-	    "user_friendly": "iPSC Induction Facility"
-	}
+		"induced_pluripotent_cell_induction_method":{
+			"description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
+			"type": "string",
+			"enum": [
+			"lentivirus",
+			"sendai virus",
+			"Gun particle",
+			"piggyBac transposon",
+			"miRNA viral",
+			"adenovirus",
+			"cre-loxP",
+			"plasmid",
+			"retroviral"
+			],
+			"user_friendly": "Induction Method"
+		},
+		"induced_pluripotent_cell_induction_kit":{
+			"description": "Kit used to induce pluripotent stem cell generation.",
+			"type": "string",
+			"user_friendly": "Induction Kit",
+			"example": "CTS CytoTune-iPS 2.1 Sendai Reprogramming Kit"
+		},
+			"induced_pluripotent_cell_induction_reagents": {
+				"description": "A list of purchased reagents used in this process.",
+				"type": "array",
+				"items": {
+					"$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
+				}
+		},
+		"induced_pluripotent_cell_culture_id":{
+			"description": "Unique identifier of the induced pluripotent stem cell culture or cell line after induction reagents and methods are applied.",
+			"type": "string",
+			"user_friendly": "iPSC Culture ID"
+		},
+		"pluripotency_test":{
+			"description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
+			"type": "string",
+			"user_friendly": "Pluripotency Test",
+			"example": "teratoma assay"
+		},
+		"pluripotency_test_results":{
+			"description": "A percentage of iPSCs that passed the assay.",
+			"type": "string",
+			"user_friendly": "Pluripotency Test Results"
+		},
+		"pluripotency_vector_removed":{
+			"description": "Confirmation whether a viral vector has been removed after induction.",
+			"type": "string",
+			"enum": [
+			"yes",
+			"no",
+			"unknown"
+			],
+			"user_friendly": "Pluripotent Vector Removed"
+		},
+		"induced_pluripotent_cell_induction_produced_in_house":{
+			"description": "Was the induced pluripotent stem cell prepared in-house?",
+			"type": "boolean",
+			"user_friendly": "iPSC Induction Facility"
+		}
     }
 }
