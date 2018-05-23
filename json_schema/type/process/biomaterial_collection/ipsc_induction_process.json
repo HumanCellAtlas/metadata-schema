@@ -52,17 +52,17 @@
 			"user_friendly": "Induction Method"
 		},
 		"induced_pluripotent_cell_induction_kit":{
-			"description": "Kit used to induce pluripotent stem cell generation.",
-			"type": "string",
-			"user_friendly": "Induction Kit",
-			"example": "CTS CytoTune-iPS 2.1 Sendai Reprogramming Kit"
+            "description": "Kit used to induce pluripotent stem cell generation.",
+            "type": "object",
+            "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents",
+            "user_friendly": "Induction kit"
 		},
-			"induced_pluripotent_cell_induction_reagents": {
-				"description": "A list of purchased reagents used in this process.",
-				"type": "array",
-				"items": {
-					"$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
-				}
+		"induced_pluripotent_cell_induction_reagents": {
+			"description": "A list of purchased reagents used in this process.",
+			"type": "array",
+			"items": {
+				"$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
+			}
 		},
 		"pluripotency_test":{
 			"description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
