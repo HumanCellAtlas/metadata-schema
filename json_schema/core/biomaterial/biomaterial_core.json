@@ -43,12 +43,6 @@
             },
             "user_friendly": "NCBI taxon ID"
         },
-        "has_input_biomaterial": {
-            "description": "If this biomaterial is derived from another biomaterial, enter the biomaterial_id for the biomaterial it was derived from.",
-            "type": "string",
-            "comment": "This field is primarily required for spreadsheet-based submissions.",
-            "user_friendly": "Input biomaterial ID"
-        },
         "genotype": {
             "description": "Genotype of biomaterial including strain, cross, and genetic modification information.",
             "type": "string",
