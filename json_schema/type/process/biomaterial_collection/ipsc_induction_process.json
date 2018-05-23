@@ -87,9 +87,9 @@
 			"user_friendly": "Pluripotent vector removed?"
 		},
 		"induced_pluripotent_cell_induction_produced_in_house":{
-			"description": "Was the induced pluripotent stem cell prepared in-house?",
+			"description": "Whether the induced pluripotent stem cell was prepared in-house. Must be yes or no.",
 			"type": "boolean",
-			"user_friendly": "iPSC induction facility"
+			"user_friendly": "iPSC prepared in-house?"
 		}
     }
 }
