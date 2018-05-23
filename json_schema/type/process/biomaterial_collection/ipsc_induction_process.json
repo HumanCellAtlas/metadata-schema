@@ -64,11 +64,6 @@
 					"$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
 				}
 		},
-		"induced_pluripotent_cell_culture_id":{
-			"description": "Unique identifier of the induced pluripotent stem cell culture or cell line after induction reagents and methods are applied.",
-			"type": "string",
-			"user_friendly": "iPSC Culture ID"
-		},
 		"pluripotency_test":{
 			"description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
 			"type": "string",
