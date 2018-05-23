@@ -6,7 +6,6 @@
         "describedBy",
         "schema_type",
         "process_core",
-        "induced_pluripotent_cell_source",
 		"induced_pluripotent_cell_induction_method"
     ],
     "title": "ipsc_induction_process",
