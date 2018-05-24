@@ -67,6 +67,11 @@
                 "type": "string"
             },
             "user_friendly": "INSDC run"
+        },
+         "smartseq2" : {
+	        "description": "Fields specific for SmartSeq2 experiments.",
+            "type": "object",
+            "$ref": "module/process/sequencing/smartseq2.json"
         }
     }
 }

@@ -3,12 +3,12 @@
     "version_numbers": {
         "bundle": {
             "biomaterial": "5.1.2",
-            "file": "1.0.0",
+            "file": "2.0.0",
             "ingest_audit": "5.1.0",
             "links": "1.0.0",
-            "process": "5.2.2",
+            "process": "6.0.0",
             "project": "5.1.0",
-            "protocol": "5.1.1",
+            "protocol": "6.0.0",
             "reference": "1.0.3",
             "submission": "5.1.0"
         },
@@ -63,6 +63,7 @@
                 "purchased_reagents": "5.2.0",
                 "sequencing": {
                     "barcode": "5.1.0",
+                    "insdc_experiment": "1.0.0",
                     "smartseq2": "5.1.0"
                 }
             },
@@ -82,43 +83,31 @@
             "file": {
                 "analysis_file": "5.1.0",
                 "reference_file": "1.0.3",
-                "sequence_file": "5.1.0"
+                "sequence_file": "6.0.0"
             },
-            "process": {
-                "analysis": {
-                    "analysis_process": "5.1.0"
-                },
-                "biomaterial_collection": {
-                    "collection_process": "5.1.0",
-                    "dissociation_process": "5.1.0",
-                    "enrichment_process": "5.1.0"
-                },
-                "imaging": {
-                    "imaging_process": "5.1.0"
-                },
-                "process": "1.0.0",
-                "sequencing": {
-                    "library_preparation_process": "5.1.1",
-                    "sequencing_process": "5.1.0"
-                }
+            "process": {              
+                "process": "2.0.0",             
             },
             "project": {
                 "project": "5.1.0"
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "5.1.1"
+                    "analysis_protocol": "6.0.0"
                 },
-                "biomaterial": {
-                    "biomaterial_collection_protocol": "5.1.1"
+                "biomaterial_collection": {
+                    "collection_protocol": "6.0.0",
+                    "dissociation_protocol": "1.0.0",
+                    "enrichment_protocol": "1.0.0"
                 },
                 "imaging": {
                     "imaging_protocol": "5.1.1"
                 },
-                "protocol": "5.1.1",
                 "sequencing": {
-                    "sequencing_protocol": "5.1.1"
-                }
+                    "library_preparation_protocol": "1.0.0", 
+                    "sequencing_protocol": "6.0.0"
+                },
+                "protocol": "6.0.0"
             }
         }
     }

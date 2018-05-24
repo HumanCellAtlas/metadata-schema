@@ -5,7 +5,9 @@
     "required": [
         "describedBy",
         "schema_type",
-        "protocol_core"
+        "protocol_core",
+        "instrument_manufacturer_model",
+        "paired_ends"
     ],
     "title": "sequencing_protocol",
     "type": "object",
@@ -32,6 +34,25 @@
             "description": "Core protocol-level information.",
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
+        },
+         "instrument_manufacturer_model": {
+            "description": "The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548.",
+            "type": "object",
+            "$ref": "module/ontology/instrument_ontology.json",
+            "example": "Illumina HiSeq 4000",
+            "user_friendly": "Instrument manufacturer and model"
+        },
+        "local_machine_name": {
+            "description": "Local name for the particular machine on which the biomaterial was sequenced.",
+            "type": "string",
+            "user_friendly": "Local machine name"
+        },
+        "paired_ends": {
+            "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
+            "type": "boolean",
+            "example": "yes",
+            "comment": "If 10x, then put no.",
+            "user_friendly": "Paired ends?"
         },
         "protocol_type": {
             "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",

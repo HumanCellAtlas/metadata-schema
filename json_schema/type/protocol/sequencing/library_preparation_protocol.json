@@ -5,19 +5,19 @@
     "required": [
         "describedBy",
         "schema_type",
-        "process_core",
+        "protocol_core",
         "end_bias",
         "library_construction_approach",
         "strand",
         "input_nucleic_acid_molecule"
     ],
-    "title": "library_preparation_process",
+    "title": "library_preparation_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/process/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_process"
+            "pattern" : "https://schema.humancellatlas.org/type/protocol/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/library_preparation_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -29,13 +29,13 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "process"
+                "protocol"
             ]
         },
-        "process_core" : {
-            "description": "Core process-level information.",
+        "protocol_core" : {
+            "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/process/process_core.json"
+            "$ref": "core/protocol/protocol_core.json"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcode.",
@@ -158,11 +158,11 @@
             "user_friendly": "cDNA library amplification method",
             "comment": "This field should be an ontology"
         },
-        "process_type": {
-            "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
+        "protocol_type": {
+            "description": "The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Process type"
+            "$ref": "module/ontology/protocol_type_ontology.json",
+            "user_friendly": "protocol type"
         }
     }
 }
