@@ -7,7 +7,39 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/protocol/*.json - v?.?.?] - 2018-05-24
+### [bundle/protocol.json - v7.0.1] - 2018-05-24
+### Changed
+Updated all protocol type references.
+
+### [type/protocol/protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v1.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/imaging/imaging_protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v1.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v1.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/analysis/analysis_protocol.json - v6.0.1] - 2018-05-24
 ### Changed
 Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
 
