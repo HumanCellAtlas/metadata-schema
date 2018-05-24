@@ -50,27 +50,9 @@
             "user_friendly": "Input nucleic acid molecule"
         },
         "library_construction_approach": {
-            "description": "The general approach for sequencing library construction.",
-            "type": "string",
-            "example": "Smart-seq2",
-            "enum": [
-                "10x",
-                "10X",
-                "10x_v2",
-                "CEL-seq",
-		        "Drop-Seq",
-		        "inDrop",
-                "modified Nextera XT",
-                "modified smart-seq2",
-                "Nextera XT",
-		        "QUARTZ-Seq",
-                "SMARTer Ultra Low RNA Kit",
-                "smart-seq2",
-                "Smart-seq2",
-                "TruSeq",
-                "unknown"
-            ],
-            "comment": "This should become an ontology.",
+            "description": "The general approach for sequencing library construction. Should be a child term of EFO - library preparation",
+            "type": "object",
+            "$ref": "module/ontology/library_construction_ontology.json",
             "user_friendly": "Library construction approach"
         },
         "library_construction_kit": {
@@ -138,25 +120,16 @@
             "user_friendly": "UMI barcode"
         },
         "library_preamplification_method": {
-            "description": "The method used to amplify RNA prior to adaptor ligation. Must be one of: PCR, in vitro transcription, none",
-            "type": "string",
-            "enum": [
-                "PCR",
-                "in vitro transcription",
-                "none"
-            ],
-            "user_friendly": "Library pre-amplification method",
-            "comment": "This field should be an ontology"
+            "description": "The method used to amplify RNA prior to adaptor ligation. Should be a child term of EFO - nucleic acid preparation",
+            "type": "object",
+            "$ref": "module/ontology/library_amplification_ontology.json",
+            "user_friendly": "Library pre-amplification method"
         },
         "cdna_library_amplification_method": {
-            "description": "The method used to amplify a cDNA library prior to sequencing. Must be one of: PCR, none",
-            "type": "string",
-            "enum": [
-                "PCR",
-                "none"
-            ],
-            "user_friendly": "cDNA library amplification method",
-            "comment": "This field should be an ontology"
+            "description": "The method used to amplify a cDNA library prior to sequencing. Should be a child term of EFO - nucleic acid preparation",
+            "type": "object",
+            "$ref": "module/ontology/library_amplification_ontology.json",
+            "user_friendly": "cDNA library amplification method"
         },
         "protocol_type": {
             "description": "The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
