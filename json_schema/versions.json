@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-05-21T17:11:31Z",
+    "last_update_date": "2018-05-24T11:43:48Z",
     "version_numbers": {
         "bundle": {
             "biomaterial": "5.1.2",
@@ -8,7 +8,7 @@
             "links": "1.0.0",
             "process": "6.0.0",
             "project": "5.1.0",
-            "protocol": "6.0.0",
+            "protocol": "7.0.0",
             "reference": "1.0.3",
             "submission": "5.1.0"
         },
@@ -50,6 +50,8 @@
                 "ethnicity_ontology": "5.1.0",
                 "instrument_ontology": "5.1.0",
                 "length_unit_ontology": "5.1.1",
+                "library_amplification_ontology": "2.0.0",
+                "library_construction_ontology": "2.0.0",
                 "mass_unit_ontology": "5.1.1",
                 "organ_ontology": "5.1.1",
                 "organ_part_ontology": "5.1.1",
@@ -85,7 +87,7 @@
                 "reference_file": "1.0.3",
                 "sequence_file": "6.0.0"
             },
-            "process": {              
+            "process": {
                 "process": "2.0.0"
             },
             "project": {
@@ -103,11 +105,11 @@
                 "imaging": {
                     "imaging_protocol": "6.0.0"
                 },
+                "protocol": "6.0.0",
                 "sequencing": {
-                    "library_preparation_protocol": "1.0.0", 
+                    "library_preparation_protocol": "2.0.0",
                     "sequencing_protocol": "6.0.0"
-                },
-                "protocol": "6.0.0"
+                }
             }
         }
     }
