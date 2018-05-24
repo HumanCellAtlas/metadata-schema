@@ -101,7 +101,7 @@
                     "enrichment_protocol": "1.0.0"
                 },
                 "imaging": {
-                    "imaging_protocol": "5.1.1"
+                    "imaging_protocol": "6.0.0"
                 },
                 "sequencing": {
                     "library_preparation_protocol": "1.0.0", 
