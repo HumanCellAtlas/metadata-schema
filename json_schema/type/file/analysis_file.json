@@ -13,7 +13,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern": "https://schema.humancellatlas.org/type/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_file"
+            "pattern": "^(http|https)://schema.humancellatlas.org/type/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_file"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

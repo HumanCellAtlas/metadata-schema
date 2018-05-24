@@ -12,7 +12,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/core/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_core"
+            "pattern" : "^(http|https)://schema.humancellatlas.org/core/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project_core"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
