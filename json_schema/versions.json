@@ -86,7 +86,7 @@
                 "sequence_file": "6.0.0"
             },
             "process": {              
-                "process": "2.0.0",             
+                "process": "2.0.0"
             },
             "project": {
                 "project": "5.1.0"
