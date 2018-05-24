@@ -7,6 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/*.json - v?.?.?] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+
 ### [core/biomaterial/biomaterial_core.json - v6.0.0] - 2018-05-23
 ### Removed
 Removed the `has_input_biomaterial` property as the purpose is misleading and no longer required by the spreadsheet importer
