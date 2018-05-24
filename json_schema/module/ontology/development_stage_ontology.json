@@ -25,8 +25,8 @@
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:efo"],
-                "classes": ["EFO:0000399"],
+                "ontologies" : ["obo:efo", "obo:hcao"],
+                "classes": ["EFO:0000399", "HsapDv:0000000", "UBERON:0000105"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false

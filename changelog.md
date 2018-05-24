@@ -7,12 +7,27 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/biomaterial/biomaterial_core.json - v6.0.0] - 2018-05-23
+### Removed
+Removed the `has_input_biomaterial` property as the purpose is misleading and no longer required by the spreadsheet importer
+
+### [type/biomaterial/cell_suspension.json - v6.0.0] - 2018-05-21
+### Changed
+Changed the field `target_cell_type` to `selected_cell_type`.
+
+### [module/process/purchased_reagents.json - v5.2.0] - 2018-05-18
+### Added
+Added a new field - `kit_titer` - to record the appropriate titer and volume recommendations found in a kit's Certificate of Analysis.
+
 ### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
 ### Changed
 Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
 
-
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/biomaterial/growth_conditions.json - v6.0.0] - 2018-05-18
+### Changed
+This change is to make the fields mycoplasma_testing_method and mycoplasma_testing_results enums. This is a major change.
 
 ### [bundle/process.json - v5.2.1] - 2018-03-15
 ### Changed
