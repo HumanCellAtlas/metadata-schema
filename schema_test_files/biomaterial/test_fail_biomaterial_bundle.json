@@ -46,8 +46,7 @@
           "biomaterial_description": "peripheral blood mononuclear cells (PBMCs)",
           "ncbi_taxon_id": [
             9606
-          ],
-          "has_input_biomaterial": "d1"
+          ]
         },
         "organ": {
           "text": "blood",

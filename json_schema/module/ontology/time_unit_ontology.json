@@ -26,8 +26,8 @@
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:uo, obo:efo"],
-                "classes": ["UO:0000003, UO:0000149"],
+                "ontologies" : ["obo:efo", "obo:uo"],
+                "classes": ["UO:0000003", "UO:0000149"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
