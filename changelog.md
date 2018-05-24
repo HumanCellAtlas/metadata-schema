@@ -7,7 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/protocol/biomaterial_collection/enrichment_protocol.json - v?.?.?] - 2018-05-24
+### [bundle/protocol.json - v7.1.0] - 2018-05-24
+### Changed
+Updated enrichment_protocol.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v1.1.0] - 2018-05-24
 ### Changed
 Changed the type of field `enrichment_approach` from string-enums to ontology object references.
 

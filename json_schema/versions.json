@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-05-24T12:15:27Z",
+    "last_update_date": "2018-05-24T17:00:04Z",
     "version_numbers": {
         "bundle": {
             "biomaterial": "5.1.2",
@@ -8,7 +8,7 @@
             "links": "1.0.0",
             "process": "6.0.0",
             "project": "5.1.0",
-            "protocol": "7.0.1",
+            "protocol": "7.1.0",
             "reference": "1.0.3",
             "submission": "5.1.0"
         },
@@ -101,7 +101,7 @@
                 "biomaterial_collection": {
                     "collection_protocol": "6.0.1",
                     "dissociation_protocol": "1.0.1",
-                    "enrichment_protocol": "1.0.1"
+                    "enrichment_protocol": "1.1.0"
                 },
                 "imaging": {
                     "imaging_protocol": "6.0.1"
