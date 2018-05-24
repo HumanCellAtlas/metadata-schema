@@ -35,17 +35,9 @@
             "$ref": "core/protocol/protocol_core.json"
         },
         "enrichment_method": {
-            "description": "The method by which enrichment was achieved.",
-            "type": "string",
-            "example": "FACS",
-            "enum": [
-                "FACS",
-                "MACS",
-                "Ficoll gradient",
-                "laser capture microdissection",
-                "density gradient"
-            ],
-            "comment": "This will become an ontology.",
+            "description": "The method by which enrichment was achieved. Should be a child term of EFO - enrichment process",
+            "type": "object",
+            "$ref": "module/ontology/enrichment_ontology.json",
             "user_friendly": "Enrichment method"
         },
         "markers": {

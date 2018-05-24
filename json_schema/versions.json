@@ -47,6 +47,7 @@
                 "cell_type_ontology": "5.1.1",
                 "development_stage_ontology": "5.1.1",
                 "disease_ontology": "5.1.1",
+                "enrichment_ontology": "1.0.0",
                 "ethnicity_ontology": "5.1.0",
                 "instrument_ontology": "5.1.0",
                 "length_unit_ontology": "5.1.1",

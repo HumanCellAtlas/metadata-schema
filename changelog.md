@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v?.?.?] - 2018-05-24
+### Changed
+Changed the type of field `enrichment_approach` from string-enums to ontology object references.
+
+### [module/ontology/enrichment_ontology.json - v1.0.0] - 2018-05-24
+### Added
+Added a new ontology module for enrichment approach.
+
 ### [bundle/protocol.json - v7.0.1] - 2018-05-24
 ### Changed
 Updated all protocol type references.
@@ -43,7 +51,7 @@ Changed protocol_type ontology reference for all protocol schemas to reference p
 ### Changed
 Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
 
-### [type/protocol/library_preparation_protocol.json - v2.0.0] - 2018-05-24
+### [type/protocol/sequencing/library_preparation_protocol.json - v2.0.0] - 2018-05-24
 ### Changed
 Changed the type of fields `library_construction_approach`, `library_preamplification_method` and `cdna_library_amplification_method` from string-enums to ontology object references.
 
