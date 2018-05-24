@@ -14,7 +14,7 @@ Field batch_number changed to lot_number.
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/process.json - v5.2.1] - 2018-03-15
-### Change
+### Changed
 Bug fix to make reference bundle schema reference its own definition with correct version
 
 ### [bundle/reference.json - v1.0.1] - 2018-03-15
