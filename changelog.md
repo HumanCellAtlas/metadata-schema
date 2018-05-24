@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/*.json - v?.?.?] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
 ### [type/protocol/library_preparation_protocol.json - v2.0.0] - 2018-05-24
 ### Changed
 Changed the type of fields `library_construction_approach`, `library_preamplification_method` and `cdna_library_amplification_method` from string-enums to ontology object references.
