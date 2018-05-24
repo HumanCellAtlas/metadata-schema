@@ -7,10 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/process/purchased_reagents.json - v6.0.0] - 2018-05-24
+### Changed
+Field batch_number changed to lot_number.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/process.json - v5.2.1] - 2018-03-15
-### Changed
+### Change
 Bug fix to make reference bundle schema reference its own definition with correct version
 
 ### [bundle/reference.json - v1.0.1] - 2018-03-15
