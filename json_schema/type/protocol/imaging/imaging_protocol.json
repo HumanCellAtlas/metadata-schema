@@ -33,6 +33,60 @@
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
+         "embedding": {
+            "description": "Description of embedding conditions.",
+            "type": "string",
+            "user_friendly": "Embedding conditions"
+         },
+         "exposure_time": {
+            "description": "Exposure time - as a floating point number - in seconds.",
+            "type": "number",
+            "maximum": 1000,
+            "minimum": 1e-9,
+            "user_friendly": "Exposure time"
+         },
+         "field_counts": {
+            "description": "Number of fields in x and y dimensions.",
+            "type": "array",
+            "items": {
+                "type": "integer"
+            },
+            "user_friendly": "Field count"
+         },
+         "field_microns": {
+            "description": "Microns covered by a field in x, y, and z. Z includes all focal planes in a single file.",
+            "type": "array",
+            "items": {
+                "type": "integer"
+            },
+            "user_friendly": "Field microns"
+         },
+         "field_resolution": {
+            "description": "x, y, and z (number of focal planes) resolution of an individual field.",
+            "type": "array",
+            "items": {
+                "type": "integer"
+            },
+            "user_friendly": "Field resolution"
+         },
+         "fixation": {
+            "description": "Description of fixation conditions.",
+            "type": "string",
+            "user_friendly": "Fixation"
+         },
+         "microscope": {
+            "description": "Microscope used for imaging.",
+            "enum": [
+                "generic confocal",
+                "generic two photon"
+            ],
+            "user_friendly": "Microscope"
+         },
+         "probes": {
+            "description": "A file containing information on probe sequence, genes they cover, and colors.",
+            "type": "string",
+            "user_friendly": "Probes"
+         },
         "protocol_type": {
             "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
             "type": "object",
