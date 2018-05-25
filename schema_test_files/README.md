@@ -1,4 +1,4 @@
-## Schema test files
+# The Human Cell Atlas Metadata Standards: Schema test files
 
 To add a JSON file to automatic Travis CI testing, complete the following:
 
