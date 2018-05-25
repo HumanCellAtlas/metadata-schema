@@ -1,4 +1,4 @@
-# The Human Cell Atlas: Metadata Standards Documentation
+# The Human Cell Atlas Metadata Standards: Documentation
 
 Documentation supporting the metadata standard is available here.
 
