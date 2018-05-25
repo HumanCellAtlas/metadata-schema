@@ -12,7 +12,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ingest_audit"
+            "pattern" : "^(http|https)://schema.(dev.|)data.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ingest_audit"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

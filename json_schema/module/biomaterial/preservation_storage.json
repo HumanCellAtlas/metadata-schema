@@ -8,7 +8,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/preservation_storage"
+            "pattern" : "^(http|https)://schema.(dev.|)data.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/preservation_storage"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
