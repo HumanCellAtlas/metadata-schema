@@ -1,5 +1,5 @@
 {
-  "describedBy": "https://schema.humancellatlas.org/type/protocol/sequencing/5.1.0/sequencing_protocol",
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/protocol/sequencing/5.1.0/sequencing_protocol",
   "schema_type": "protocol",
   "protocol_core": {
     "protocol_id": "seq_protocol_1"
