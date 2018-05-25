@@ -8,7 +8,7 @@
     "title": "disease_ontology",
     "properties": {
         "describedBy":  {
-            "pattern" : "^(http|https)://schema.(dev.|)data.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/disease_ontology",
+            "pattern" : "^(http|https)://schema.(dev.data.|)humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/disease_ontology",
             "type": "string"
         },
         "schema_version": {

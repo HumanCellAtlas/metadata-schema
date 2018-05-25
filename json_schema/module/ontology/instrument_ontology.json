@@ -8,7 +8,7 @@
     "title": "instrument_ontology",
     "properties": {
         "describedBy":  {
-            "pattern" : "^(http|https)://schema.(dev.|)data.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/instrument_ontology",
+            "pattern" : "^(http|https)://schema.(dev.data.|)humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/instrument_ontology",
             "type": "string"
         },
         "text": {
