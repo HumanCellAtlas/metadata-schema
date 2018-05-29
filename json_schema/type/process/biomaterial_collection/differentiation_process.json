@@ -59,7 +59,8 @@
             "description": "Targeted pathway for specific differentiation response.",
             "type": "string",
             "user_friendly": "Target pathway",
-            "example": "Wnt Pathway"
+            "example": "Wnt Pathway",
+            "comment": "Consider making this an ontology in the future."
         },
         "differentiation_validation_method": {
             "description": "Method used to validate origin cell successfully differentiated to target cell.",
