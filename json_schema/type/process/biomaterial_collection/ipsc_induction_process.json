@@ -50,7 +50,7 @@
 			],
 			"user_friendly": "Induction method",
 			"comment": "Consider making this field an ontology in the future",
-			"example": "sendai virus"
+			"example": "piggyBac transposon"
 		},
 		"induced_pluripotent_cell_induction_kit": {
             "description": "Kit used to induce pluripotent stem cell generation.",
@@ -94,6 +94,12 @@
 				"$ref": "module/process/5.1.0/purchased_reagents"
 			},
 			"user_friendly": "Additional reagents"
-		}
+		},
+        "clearance_of_reprogramming_factors_method": {
+            "description": "Method used to clear or remove reprogramming factors after iPSC generation.",
+            "type": "string",
+            "example": "Removal of piggyBac transposon by a transposase",
+            "user_friendly": "Method to remove reprogramming factors"
+        }
     }
 }
