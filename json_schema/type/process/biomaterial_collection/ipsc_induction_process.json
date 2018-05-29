@@ -1,39 +1,39 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Contains information on how a sample was treated to become an induced pluripotent stem cell.",
-    "additionalProperties": false,
-    "required": [
-        "describedBy",
-        "schema_type",
-        "process_core",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "Contains information on how a sample was treated to become an induced pluripotent stem cell.",
+	"additionalProperties": false,
+	"required": [
+		"describedBy",
+		"schema_type",
+		"process_core",
 		"induced_pluripotent_cell_induction_method"
-    ],
-    "title": "ipsc_induction_process",
-    "type": "object",
-    "properties": {
-        "describedBy": {
-            "description": "The URL reference to the schema.",
-            "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ipsc_induction_process"
-        },
-        "schema_version": {
-            "description": "The version number of the schema in major.minor.patch format.",
-            "type": "string",
-            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
-            "example": "4.6.1"
-        },
-        "schema_type": {
-            "description": "The type of the metadata schema entity.",
-            "type": "string",
-            "enum": [
-                "process"
-            ]
-        },
-        "process_core": {
-            "description": "Core process-level information.",
-            "type": "object",
-            "$ref": "core/process/5.1.0/process_core"
-        },
+	],
+	"title": "ipsc_induction_process",
+	"type": "object",
+	"properties": {
+		"describedBy": {
+			"description": "The URL reference to the schema.",
+			"type": "string",
+			"pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ipsc_induction_process"
+		},
+		"schema_version": {
+			"description": "The version number of the schema in major.minor.patch format.",
+			"type": "string",
+			"pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+			"example": "4.6.1"
+		},
+		"schema_type": {
+			"description": "The type of the metadata schema entity.",
+			"type": "string",
+			"enum": [
+				"process"
+			]
+		},
+	  "process_core": {
+			"description": "Core process-level information.",
+			"type": "object",
+			"$ref": "core/process/5.1.0/process_core"
+		},
 		"induced_pluripotent_cell_induction_method": {
 			"description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
 			"type": "string",
@@ -53,10 +53,10 @@
 			"example": "piggyBac transposon"
 		},
 		"induced_pluripotent_cell_induction_kit": {
-            "description": "Kit used to induce pluripotent stem cell generation.",
-            "type": "object",
-            "$ref": "module/process/5.1.0/purchased_reagents",
-            "user_friendly": "Induction kit"
+			"description": "Kit used to induce pluripotent stem cell generation.",
+			"type": "object",
+			"$ref": "module/process/5.1.0/purchased_reagents",
+			"user_friendly": "Induction kit"
 		},
 		"pluripotency_test": {
 			"description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
@@ -66,7 +66,7 @@
 		},
 		"percent_pluripotency": {
 			"description": "Percent of iPSCs that passed the pluripotency test.",
-            "type": "number",
+			"type": "number",
 			"example": 97.2,
 			"user_friendly": "Percent pluripotency"
 		},
@@ -95,11 +95,11 @@
 			},
 			"user_friendly": "Additional reagents"
 		},
-        "clearance_of_reprogramming_factors_method": {
-            "description": "Method used to clear or remove reprogramming factors after iPSC generation.",
-            "type": "string",
-            "example": "Removal of piggyBac transposon by a transposase",
-            "user_friendly": "Method to remove reprogramming factors"
-        }
-    }
+		"clearance_of_reprogramming_factors_method": {
+			"description": "Method used to clear or remove reprogramming factors after iPSC generation.",
+			"type": "string",
+			"example": "Removal of piggyBac transposon by a transposase",
+			"user_friendly": "Method to remove reprogramming factors"
+		}
+	}
 }
