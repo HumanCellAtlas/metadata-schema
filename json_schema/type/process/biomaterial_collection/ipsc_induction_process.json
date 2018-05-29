@@ -65,10 +65,9 @@
 			"example": "teratoma assay"
 		},
 		"percent_pluripotency": {
-			"description": "A percentage of iPSCs that passed the pluripotency test.",
-			"type": "string",
-            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-			"example": "97.2",
+			"description": "Percent of iPSCs that passed the pluripotency test.",
+            "type": "number",
+			"example": 97.2,
 			"user_friendly": "Percent pluripotency"
 		},
 		"pluripotency_vector_removed": {
