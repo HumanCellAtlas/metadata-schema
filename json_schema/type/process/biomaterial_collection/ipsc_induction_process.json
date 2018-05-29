@@ -11,7 +11,7 @@
     "title": "ipsc_induction_process",
     "type": "object",
     "properties": {
-        "describedBy":  {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ipsc_induction_process"
@@ -29,12 +29,12 @@
                 "process"
             ]
         },
-        "process_core" : {
+        "process_core": {
             "description": "Core process-level information.",
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
         },
-		"induced_pluripotent_cell_induction_method":{
+		"induced_pluripotent_cell_induction_method": {
 			"description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
 			"type": "string",
 			"enum": [
@@ -49,29 +49,30 @@
 				"retroviral"
 			],
 			"user_friendly": "Induction method",
-			"example": "plasmid"
+			"comment": "Consider making this field an ontology in the future",
+			"example": "sendai virus"
 		},
-		"induced_pluripotent_cell_induction_kit":{
+		"induced_pluripotent_cell_induction_kit": {
             "description": "Kit used to induce pluripotent stem cell generation.",
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents",
             "user_friendly": "Induction kit"
 		},
-		"pluripotency_test":{
+		"pluripotency_test": {
 			"description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
 			"type": "string",
 			"user_friendly": "Pluripotency test",
 			"example": "teratoma assay"
 		},
-		"percent_pluripotency":{
-			"description": "A percentage of iPSCs that passed the assay.",
+		"percent_pluripotency": {
+			"description": "A percentage of iPSCs that passed the pluripotency test.",
 			"type": "string",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
 			"example": "97.2",
 			"user_friendly": "Percent pluripotency"
 		},
-		"pluripotency_vector_removed":{
-			"description": "Confirmation whether a viral vector has been removed after induction. Must be one of: yes, no, unknown.",
+		"pluripotency_vector_removed": {
+			"description": "Whether a viral vector was removed after induction. Must be one of: yes, no, unknown.",
 			"type": "string",
 			"enum": [
 				"yes",
@@ -81,11 +82,11 @@
 			"user_friendly": "Pluripotent vector removed?",
 			"example": "yes"
 		},
-		"induced_pluripotent_cell_induction_produced_in_house":{
-			"description": "Whether the induced pluripotent stem cell was prepared in-house. Must be yes or no.",
+		"induced_pluripotent_cell_induction_produced_in_house": {
+			"description": "Whether the induced pluripotent stem cell was prepared in-house. Must be one of: yes, no.",
 			"type": "boolean",
 			"user_friendly": "iPSC prepared in-house?",
-			"example": true
+			"example": "yes"
 		},
 		"process_reagents": {
 			"description": "A list of additional purchased reagents used in this process.",
