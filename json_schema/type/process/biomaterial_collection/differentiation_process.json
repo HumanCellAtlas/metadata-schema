@@ -6,9 +6,7 @@
       "describedBy",
       "schema_type",
       "process_core",
-      "differentiation_method",
-      "differentiation_cell_source_type",
-      "differentiation_target_cell_type"
+      "differentiation_method"
     ],
     "title": "differentiation_process",
     "type": "object",
