@@ -55,7 +55,7 @@
 		"induced_pluripotent_cell_induction_kit": {
             "description": "Kit used to induce pluripotent stem cell generation.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents",
+            "$ref": "module/process/5.1.0/purchased_reagents",
             "user_friendly": "Induction kit"
 		},
 		"pluripotency_test": {
@@ -92,7 +92,7 @@
 			"description": "A list of additional purchased reagents used in this process.",
 			"type": "array",
 			"items": {
-				"$ref": "https://schema.humancellatlas.org/module/process/5.1.0/purchased_reagents"
+				"$ref": "module/process/5.1.0/purchased_reagents"
 			},
 			"user_friendly": "Additional reagents"
 		}
