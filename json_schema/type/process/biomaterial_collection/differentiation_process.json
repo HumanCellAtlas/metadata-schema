@@ -11,7 +11,7 @@
     "title": "differentiation_process",
     "type": "object",
     "properties": {
-        "describedBy":  {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/differentiation_process"
@@ -29,7 +29,7 @@
                 "process"
             ]
         },
-        "process_core" : {
+        "process_core": {
             "description": "Core process-level information.",
             "type": "object",
             "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
@@ -38,12 +38,14 @@
             "description": "Differentiation method applied to cell culture to induce a specific differentiation response.",
             "type": "string",
             "user_friendly": "Differentiation method",
+            "comment": "Consider making this an ontology in the future.",
             "example": "Embryoid Body, Monolayer, Inductive Co-Culture"
         },
-        "differentiation_target_cell_yield":{
+        "differentiation_target_cell_yield": {
             "description": "Percent of target cells obtained after directed differentiation of origin cell.",
-            "type": "string",
-            "user_friendly": "Target cell yield"
+            "type": "number",
+			"example": 95,
+            "user_friendly": "Percent target cell yield"
         },
         "differentiation_reagents": {
             "description": "A list of purchased reagents used in the differentiation process.",
@@ -53,19 +55,19 @@
             },
             "user_friendly": "Differentiation reagents"
         },
-        "differentiation_target_pathway":{
+        "differentiation_target_pathway": {
             "description": "Targeted pathway for specific differentiation response.",
             "type": "string",
             "user_friendly": "Target pathway",
             "example": "Wnt Pathway"
         },
-        "differentiation_validation_method":{
+        "differentiation_validation_method": {
             "description": "Method used to validate origin cell successfully differentiated to target cell.",
             "type": "string",
             "user_friendly": "Differentiation validation method",
             "example": "Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining"
         },
-        "differentiation_validation_results":{
+        "differentiation_validation_results": {
             "description": "Results confirming successful differentiation to target cell type.",
             "type": "string",
             "user_friendly": "Validation results",
