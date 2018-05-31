@@ -7,6 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+
+### [*.json - v?.?.?] - 2018-05-31
+### Changed
+Updated regex for all 66 schemas to match a range of schema.{}.humancellatlas domains and accept both version numbers in standard major.minor.patch format and "latest". Patch version increment to all schema versions.
+
 ### [*.json - v?.?.?] - 2018-05-25
 ### Changed
 Updated regex for all 66 schemas to match http or https and schema.data or schema.dev.data. 
