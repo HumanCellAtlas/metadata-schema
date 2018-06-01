@@ -58,10 +58,10 @@
                 "formalin fixed, unbuffered",
                 "formalin fixed, buffered",
                 "formalin fixed and paraffin embedded",
-                "Fresh"
+                "fresh"
             ],
             "comment": "Refers to the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration of a biomaterial.",
-            "user_friendly": "Storage method"
+            "user_friendly": "Preservation method"
         }
     }
 }
