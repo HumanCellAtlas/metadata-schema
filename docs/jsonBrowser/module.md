@@ -37,6 +37,16 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The name of the species to which the organism belongs. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
+## enrichment_ontology<a name='enrichment_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/enrichment_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of an enrichment approach being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
 ## disease_ontology<a name='disease_ontology'></a>
 _A term that may be associated with a disease-related ontology term_
 
@@ -65,6 +75,16 @@ Location: module/ontology/length_unit_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of a length unit being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## library_construction_ontology<a name='library_construction_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/library_construction_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a library construction approach being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
 ## time_unit_ontology<a name='time_unit_ontology'></a>
@@ -137,6 +157,16 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The name of a cell cycle of the cells in the specimen. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
+## library_amplification_ontology<a name='library_amplification_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/library_amplification_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a library amplification approach being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
 ## process_type_ontology<a name='process_type_ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
@@ -145,6 +175,16 @@ Location: module/ontology/process_type_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of a process type being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## sequencing_ontology<a name='sequencing_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/sequencing_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a sequencing approach being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
 ## protocol_type_ontology<a name='protocol_type_ontology'></a>
@@ -243,8 +283,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 passage_number | The number of passages the cell line has been through. | integer | no |  | Passage number |  | 
 growth_medium | The solid, liquid, or semi-solid medium used to support the growth of the biomaterial. | string | no |  | Growth medium |  | lysogeny broth (LB) medium
-mycoplasma_testing_method | The method used for detecting mycoplasma contamination of a biomaterial culture. | string | no |  | Mycoplasma testing method |  | Indirect DNA stain using Hoechst 33258 with 3T3 indicator cells
-mycoplasma_testing_results | Results of mycoplasma testing of a biomaterial culture. | string | no |  | Mycoplasma testing results |  | No spots of bright blue stain observed at high magnification
+mycoplasma_testing_method | The method by which a biomaterial is tested for mycoplasma contamination. Must be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay. | string | no |  | Mycoplasma testing method | Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay | Indirect DNA stain
+mycoplasma_testing_results | Whether the biomaterial passed or failed the mycoplasma test. Must be pass or fail. | string | no |  | Mycoplasma testing results | pass, fail | pass
 drug_treatment | Description of drugs added to the growth medium for this biomaterial. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin
 
 ## mus_musculus_specific<a name='mus_musculus_specific'></a>
@@ -266,7 +306,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 storage_method | The method by which a biomaterial was stored. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen, -70C freezer, frozen, -150C freezer, frozen, liquid nitrogen, frozen, vapor phase, paraffin block, RNAlater, frozen, TRIzol, frozen | 
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | days
-preservation_method | The method by which a biomaterial was preserved or not. | string | no |  | Storage method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, Fresh | 
+preservation_method | The method by which a biomaterial was preserved or not. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, fresh | 
 
 ## homo_sapiens_specific<a name='homo_sapiens_specific'></a>
 _Information specific to an organism that is a homo sapiens._
@@ -319,6 +359,7 @@ catalog_number | The catalog number of the kit/reagent. | string | no |  | Catal
 manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
 batch_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
 expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
+kit_titer | Appropriate titer and volume recommendations found in each kit's Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7 
 
 ## barcode<a name='barcode'></a>
 _This module describes barcodes used in a library preparation process._
@@ -344,4 +385,13 @@ well_name | A name for the well. Should be unique for the plate | string | no | 
 well_row | Well row in plate. | string | no |  | Well row |  | 
 well_column | Well column in plate. | string | no |  | Well column |  | 
 cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | 
+
+## insdc_experiment<a name='insdc_experiment'></a>
+_This module describes barcodes used in a library preparation process._
+
+Location: module/process/sequencing/insdc_experiment.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string | yes |  | INSDC experiment |  | 
 

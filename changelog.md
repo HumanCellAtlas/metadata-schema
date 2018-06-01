@@ -7,7 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [module/biomaterial/preservation_storage.json - v?.?.?] - 2018-06-01
+### [bundle/biomaterial.json - v5.2.1] - 2018-06-01
+### Changed
+Dependency update for specimen_from_organism
+
+### [type/biomaterial/specimen_from_organism.json - v5.2.1] - 2018-06-01
+### Changed
+Dependency update for preserveration_storage
+
+### [module/biomaterial/preservation_storage.json - v5.2.1] - 2018-06-01
 ### Changed
 Fixed (patch) incorrect user-friendly name.
 

@@ -36,8 +36,8 @@ biomaterial_core | Core biomaterial-level information. | object | yes | [See cor
 cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
 growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-target_cell_type | Cell types expected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Target cell type |  | 
-total_estimated_cells | Total estimated number of cells in biomaterial. May be 1 for well-based assays. | integer | no |  | Total estimated cell count |  | 
+selected_cell_type | The cell type(s) selected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type |  | fetal cardiomyocyte
+total_estimated_cells | Total estimated number of cells in biomaterial. May be 1 for well-based assays. | integer | no |  | Total estimated cell count |  | 2100
 
 ## cell_line
 _Information about the cell line used in the biomaterial_
@@ -132,18 +132,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
 process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | process type |  | 
-
-## sequencing_process
-_Information about how a biomaterial was sequenced._
-
-Location: type/process/sequencing/sequencing_process.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
-process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
-insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string | no |  | INSDC experiment |  | 
-process_type | The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+deviation_from_protocol | Any deviation from the standard protocol provided | string | no |  | Deviation from protocol |  | 
+insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) |  |  | 
 
 ## protocol
 _Information about the protocol_
@@ -154,7 +144,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | Protocol type |  | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 
 ## imaging_protocol
 _Information about the imaging protocol_
@@ -165,7 +155,15 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | Protocol type |  | 
+embedding | Description of embedding conditions. | string | no |  | Embedding conditions |  | 
+exposure_time | Exposure time - as a floating point number - in seconds. | number | no |  | Exposure time |  | 
+field_counts | Number of fields in x and y dimensions. | array | no |  | Field count |  | 
+field_microns | Microns covered by a field in x, y, and z. Z includes all focal planes in a single file. | array | no |  | Field microns |  | 
+field_resolution | x, y, and z (number of focal planes) resolution of an individual field. | array | no |  | Field resolution |  | 
+fixation | Description of fixation conditions. | string | no |  | Fixation |  | 
+microscope | Microscope used for imaging. |  | no |  | Microscope | generic confocal, generic two photon | 
+probes | A file containing information on probe sequence, genes they cover, and colors. | string | no |  | Probes |  | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 
 ## sequencing_protocol
 _Information about the sequencing protocol_
@@ -179,7 +177,7 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
 local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | 
 paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean | yes |  | Paired ends? |  | yes
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | Protocol type |  | 
+sequencing_approach | The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | 
 
 ## library_preparation_protocol
 _Information about how a sequencing library was created._
@@ -192,7 +190,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 cell_barcode | Information about cell identifier barcode. | object | no | [See module  barcode](module.md/#barcode) | Cell barcode |  | 
 input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446. | object | yes | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | 
-library_construction_approach | The general approach for sequencing library construction. | string | yes |  | Library construction approach | 10x, 10X, 10x_v2, CEL-seq, Drop-Seq, inDrop, modified Nextera XT, modified smart-seq2, Nextera XT, QUARTZ-Seq, SMARTer Ultra Low RNA Kit, smart-seq2, Smart-seq2, TruSeq, unknown | Smart-seq2
+library_construction_approach | The general approach for sequencing library construction. Should be a child term of EFO - library preparation | object | yes | [See module  library_construction_ontology](module.md/#library_construction_ontology) | Library construction approach |  | 
 library_construction_kit | Name of kit used to construct the sequencing library. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Library construction kit |  | 
 nucleic_acid_conversion_kit | Name of kit used to convert RNA to DNA for sequencing. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Nucleic acid conversion kit |  | 
 end_bias | The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length. | string | yes |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | 3_prime_tag
@@ -201,7 +199,8 @@ strand | Library strandedness. Must be one of first, second, or unstranded. | st
 spike_in_kit | Name of spike-in kit. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Spike-in kit |  | 
 spike_in_dilution | Dilution of spike-in. | integer | no |  | Spike-in dilution |  | 
 umi_barcode | Information about unique molecular identifier (UMI) barcode sequences. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 
-protocol_type | The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | protocol type |  | 
+library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | 
+cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | 
 
 ## enrichment_protocol
 _protocol by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest._
@@ -212,11 +211,10 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-enrichment_method | The method by which enrichment was achieved. | string | yes |  | Enrichment method | FACS, MACS, Ficoll gradient, laser capture microdissection, density gradient | FACS
+enrichment_method | The method by which enrichment was achieved. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
 markers | A space-delimited list of markers with +/-. | string | no |  | Markers |  | CD4+ CD8-
 min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 
 max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 
-protocol_type | The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | protocol type |  | 
 
 ## dissociation_protocol
 _Contains information on the dissociation protocol used to separate the cells in a specimen._
@@ -227,9 +225,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-dissociation_method | How cells or organelles were dissociated. | string | yes |  | Dissociation method | 10x_v2, FACS, Fluidigm C1, drop-seq, inDrop, mouth pipette, bulk, enzymatic, mechanical, none | 
+dissociation_method | How cells or organelles were dissociated. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
 nucleic_acid_source | Source cells or organelles from which nucleic acid molecules were collected. | string | no |  | Nucleic acid source | bulk cell, single cell, single nucleus, bulk nuclei, mitochondria | 
-protocol_type | The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | protocol type |  | 
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
 
 ## biomaterial_protocol
@@ -241,8 +238,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | Protocol type |  | 
-collection_method | How the biomaterial was collected. | string | no |  | Collection method | biopsy, blood draw, scraping, urine collection, organ extraction | 
+collection_method | How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
 
 ## analysis_protocol
@@ -254,7 +250,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  protocol_type_ontology](module.md/#protocol_type_ontology) | Protocol type |  | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  |  |  | 
 reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
 tasks | Descriptions of tasks in the workflow. | array | yes |  |  |  | 

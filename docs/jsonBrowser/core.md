@@ -29,7 +29,6 @@ biomaterial_id | A unique ID for this biomaterial. | string | yes |  | Biomateri
 biomaterial_name | A short, descriptive name for the biomaterial that need not be unique. | string | no |  | Biomaterial name |  | 
 biomaterial_description | A general description of the biomaterial. | string | no |  | Biomaterial description |  | 
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. Multiple IDs can be provided for multi-species samples. | array | yes |  | NCBI taxon ID |  | 
-has_input_biomaterial | If this biomaterial is derived from another biomaterial, enter the biomaterial_id for the biomaterial it was derived from. | string | no |  | Input biomaterial ID |  | 
 genotype | Genotype of biomaterial including strain, cross, and genetic modification information. | string | no |  | Genotype |  | 
 karyotype | The karyotype of the biomaterial. | string | no |  | Karyotype |  | 
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | 

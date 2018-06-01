@@ -63,11 +63,6 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
 process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) |  |  | 
-### sequencing_process
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | process | 
-process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) |  |  | 
 ### protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -85,13 +80,14 @@ schema_type | The type of the metadata schema entity. | string |  |  | protocol 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
 paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean |  | Paired ends? |  | yes
+sequencing_approach | The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070. | object | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | 
 ### library_preparation_protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446. | object | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | 
-library_construction_approach | The general approach for sequencing library construction. | string |  | Library construction approach | 10x, 10X, 10x_v2, CEL-seq, Drop-Seq, inDrop, modified Nextera XT, modified smart-seq2, Nextera XT, QUARTZ-Seq, SMARTer Ultra Low RNA Kit, smart-seq2, Smart-seq2, TruSeq, unknown | Smart-seq2
+library_construction_approach | The general approach for sequencing library construction. Should be a child term of EFO - library preparation | object | [See module  library_construction_ontology](module.md/#library_construction_ontology) | Library construction approach |  | 
 end_bias | The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length. | string |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | 3_prime_tag
 strand | Library strandedness. Must be one of first, second, or unstranded. | string |  | Strand | first, second, unstranded | unstranded
 ### enrichment_protocol
@@ -99,18 +95,19 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-enrichment_method | The method by which enrichment was achieved. | string |  | Enrichment method | FACS, MACS, Ficoll gradient, laser capture microdissection, density gradient | FACS
+enrichment_method | The method by which enrichment was achieved. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
 ### dissociation_protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-dissociation_method | How cells or organelles were dissociated. | string |  | Dissociation method | 10x_v2, FACS, Fluidigm C1, drop-seq, inDrop, mouth pipette, bulk, enzymatic, mechanical, none | 
+dissociation_method | How cells or organelles were dissociated. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
 ### biomaterial_protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+collection_method | How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
 ### analysis_protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -154,6 +151,10 @@ text | The ethnicity of the human donor. | string |  |  |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the species to which the organism belongs. | string |  |  |  | 
+### enrichment_ontology<a name='enrichment_ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of an enrichment approach being used. | string |  |  |  | 
 ### disease_ontology<a name='disease_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -166,6 +167,10 @@ text | The text for the term as the user provides it. | string |  |  |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a length unit being used. | string |  |  |  | 
+### library_construction_ontology<a name='library_construction_ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of a library construction approach being used. | string |  |  |  | 
 ### time_unit_ontology<a name='time_unit_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -194,10 +199,18 @@ text | The full name of the instrument used. | string |  |  |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a cell cycle of the cells in the specimen. | string |  |  |  | 
+### library_amplification_ontology<a name='library_amplification_ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of a library amplification approach being used. | string |  |  |  | 
 ### process_type_ontology<a name='process_type_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a process type being used. | string |  |  |  | 
+### sequencing_ontology<a name='sequencing_ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of a sequencing approach being used. | string |  |  |  | 
 ### protocol_type_ontology<a name='protocol_type_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -246,6 +259,10 @@ barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of 
 barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 
 ### smartseq2<a name='smartseq2'></a>
 _There are no required properties in schema smartseq2_
+### insdc_experiment<a name='insdc_experiment'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string |  | INSDC experiment |  | 
 ## Bundle
 ### ingest
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
