@@ -38,7 +38,7 @@
                 "homo_sapiens_specific": "5.2.1",
                 "medical_history": "5.2.1",
                 "mus_musculus_specific": "5.2.1",
-                "preservation_storage": "5.2.2",
+                "preservation_storage": "5.2.1",
                 "state_of_specimen": "5.2.1"
             },
             "ontology": {
