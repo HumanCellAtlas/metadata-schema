@@ -35,20 +35,9 @@
             "$ref": "core/protocol/protocol_core.json"
         },
         "dissociation_method": {
-            "description": "How cells or organelles were dissociated.",
-            "type": "string",
-            "enum": [
-                "10x_v2",
-                "FACS",
-                "Fluidigm C1",
-                "drop-seq",
-                "inDrop",
-                "mouth pipette",
-                "bulk",
-                "enzymatic",
-                "mechanical",
-                "none"
-            ],
+            "description": "How cells or organelles were dissociated. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
+            "type": "object",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Dissociation method"
         },
         "nucleic_acid_source": {
@@ -62,12 +51,6 @@
                 "mitochondria"
             ],
             "user_friendly": "Nucleic acid source"
-        },
-        "protocol_type": {
-            "description": "The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
-            "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "protocol type"
         },
         "protocol_reagents": {
             "description": "A list of purchased reagents used in this protocol.",

@@ -130,12 +130,6 @@
             "type": "object",
             "$ref": "module/ontology/library_amplification_ontology.json",
             "user_friendly": "cDNA library amplification method"
-        },
-        "protocol_type": {
-            "description": "The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
-            "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "protocol type"
         }
     }
 }
