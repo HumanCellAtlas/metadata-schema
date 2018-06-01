@@ -35,9 +35,9 @@
             "$ref": "core/protocol/protocol_core.json"
         },
         "enrichment_method": {
-            "description": "The method by which enrichment was achieved. Should be a child term of EFO - enrichment process",
+            "description": "The method by which enrichment was achieved. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
             "type": "object",
-            "$ref": "module/ontology/enrichment_ontology.json",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Enrichment method"
         },
         "markers": {
@@ -59,12 +59,6 @@
             "maximum": 10000,
             "minimum": 0.01,
             "user_friendly": "Maximum size selected"
-        },
-         "protocol_type": {
-            "description": "The type of protocol. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
-            "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "protocol type"
         }
     }
 }

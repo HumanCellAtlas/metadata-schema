@@ -7,12 +7,51 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [bundle/protocol.json - v8.0.0] - 2018-06-01
+### Changed
+Updated protocol types.
 
-### [*.json - v?.?.?] - 2018-05-31
+### [type/protocol/sequencing/sequencing_protocol.json - v2.0.0] - 2018-06-01
+### Added
+Added the field `sequencing_approach` referencing the new sequencing ontology module and made it required.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `sequencing_approach`.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v7.0.0] - 2018-06-01
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `library_preparation_approach`.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.0.0] - 2018-06-01
+### Changed
+Changed the type of field `enrichment_method` to use a different ontology module.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `enrichment_method`.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v2.0.0] - 2018-06-01
+### Changed
+Changed the type of field `dissociation_method` from string-enums to ontology object references.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `dissociation_method`.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v7.0.0] - 2018-06-01
+### Changed
+Changed the type of field `collection_method` from string-enums to ontology object references and made it required.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `collection_method`.
+
+### [module/ontology/sequencing_ontology.json - v1.0.0] - 2018-06-01
+### Added
+Added a new ontology module for sequencing approach.
+
+### [*.json - various version numbers - patch increment] - 2018-05-31
 ### Changed
 Updated regex for all 66 schemas to match a range of schema.{}.humancellatlas domains and accept both version numbers in standard major.minor.patch format and "latest". Patch version increment to all schema versions.
 
-### [*.json - v?.?.?] - 2018-05-25
+### [*.json - various version numbers - patch increment] - 2018-05-25
 ### Changed
 Updated regex for all 66 schemas to match http or https and schema.data or schema.dev.data. 
 

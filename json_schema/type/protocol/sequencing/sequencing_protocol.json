@@ -7,7 +7,8 @@
         "schema_type",
         "protocol_core",
         "instrument_manufacturer_model",
-        "paired_ends"
+        "paired_ends",
+        "sequencing_approach"
     ],
     "title": "sequencing_protocol",
     "type": "object",
@@ -54,10 +55,10 @@
             "comment": "If 10x, then put no.",
             "user_friendly": "Paired ends?"
         },
-        "protocol_type": {
-            "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+        "sequencing_approach": {
+            "description": "The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070.",
             "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
+            "$ref": "module/ontology/sequencing_ontology.json",
             "user_friendly": "Protocol type"
         }
     }
