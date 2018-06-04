@@ -5,7 +5,8 @@
     "required": [
         "describedBy",
         "schema_type",
-        "biomaterial_core"
+        "biomaterial_core",
+        "cell_line_type"
     ],
     "title": "cell_line",
     "type": "object",
