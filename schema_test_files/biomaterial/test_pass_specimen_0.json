@@ -1,5 +1,5 @@
 {
-  "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism",
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism",
   "schema_version" : "5.1.0",
   "schema_type": "biomaterial",
   "biomaterial_core": {

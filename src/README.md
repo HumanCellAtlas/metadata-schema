@@ -1,6 +1,6 @@
-# Running scripts
+# The Human Cell Atlas Metadata Standards: Scripts
 
-## This directory contains some useful scripts related to exploring the HCA metadata schemas.
+This directory contains useful scripts related to exploring the HCA metadata schemas.
 
 ### json_to_spreadsheet_template.py
 
