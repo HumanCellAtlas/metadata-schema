@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/process/1.0.0/process",
     "description": "Information about the process",
     "additionalProperties": false,
     "required": [
@@ -14,7 +13,7 @@
          "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/process/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/process"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,13 +31,23 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/process/5.1.0/process_core"
+            "$ref": "core/process/process_core.json"
         },
         "process_type": {
             "description": "The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/process_type_ontology",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "process type"
+        },
+        "deviation_from_protocol": {
+            "description": "Any deviation from the standard protocol provided",
+            "type": "string",
+            "user_friendly": "Deviation from protocol"
+        },
+        "insdc_experiment" : {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession.",
+            "type": "object",
+            "$ref": "module/process/sequencing/insdc_experiment.json"
         }
     }
 }

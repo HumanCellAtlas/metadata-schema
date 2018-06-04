@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/development_stage_ontology",
     "description": "A term that may be associated with a development stage-related ontology term",
     "additionalProperties": false,
     "required": [
@@ -9,7 +8,7 @@
     "title": "development_stage_ontology",
     "properties": {
         "describedBy": {
-            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/development_stage_ontology",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/development_stage_ontology",
             "type": "string"
         },
         "schema_version": {
@@ -26,8 +25,8 @@
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:efo"],
-                "classes": ["EFO:0000399"],
+                "ontologies" : ["obo:efo", "obo:hcao"],
+                "classes": ["EFO:0000399", "HsapDv:0000000", "UBERON:0000105"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false

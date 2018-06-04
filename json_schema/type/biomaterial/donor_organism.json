@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.1/donor_organism",
     "description": "Information about the organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
@@ -16,7 +15,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/donor_organism"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -34,34 +33,34 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/biomaterial/5.1.0/biomaterial_core"
+            "$ref": "core/biomaterial/biomaterial_core.json"
         },
         "human_specific": {
             "description": "Fields specific to human (homo sapiens) organisms.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/homo_sapiens_specific"
+            "$ref": "module/biomaterial/homo_sapiens_specific.json"
         },
         "mus_musculus_specific": {
             "description": "Fields specific to mouse (mus musculus) organisms.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/mus_musculus_specific"
+            "$ref": "module/biomaterial/mus_musculus_specific.json"
         },
         "death": {
             "description": "Information about conditions of death of an organism.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/death"
+            "$ref": "module/biomaterial/death.json"
         },
         "medical_history": {
             "description": "Information about the medical history of an organism.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/medical_history"
+            "$ref": "module/biomaterial/medical_history.json"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.1/species_ontology"
+                "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
@@ -74,21 +73,21 @@
         "organism_age_unit": {
             "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/time_unit_ontology",
+            "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Organism age unit",
             "example": "year"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/development_stage_ontology",
+            "$ref": "module/ontology/development_stage_ontology.json",
             "user_friendly": "Development stage"
         }, 
         "disease": {
             "description": "Short description of disease status of the organism.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology"
+                "$ref": "module/ontology/disease_ontology.json"
 	        },
             "user_friendly": "Disease"
         },
@@ -96,7 +95,7 @@
             "description": "Information about other organisms related to this organism.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/familial_relationship"
+                "$ref": "module/biomaterial/familial_relationship.json"
                 },
             "user_friendly": "Familial relationship"
         },
@@ -109,7 +108,7 @@
         "gestational_age_unit": {
             "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/time_unit_ontology",
+            "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Gestational age unit"
         },
         "height": {
@@ -121,7 +120,7 @@
         "height_unit": {
             "description": "The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/length_unit_ontology",
+            "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Height unit"
         },
         "is_living": {
@@ -149,7 +148,7 @@
         "weight_unit": {
             "description": "The unit in which weight is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000002.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/mass_unit_ontology",
+            "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
         }
     }

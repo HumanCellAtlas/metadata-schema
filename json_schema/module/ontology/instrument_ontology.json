@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/instrument_ontology",
     "description": "A term that may be associated with a instrument-related ontology term",
     "additionalProperties": false,
     "required": [
@@ -9,7 +8,7 @@
     "title": "instrument_ontology",
     "properties": {
         "describedBy":  {
-            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/instrument_ontology",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/instrument_ontology",
             "type": "string"
         },
         "text": {

@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/state_of_specimen",
     "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
     "additionalProperties": false,
     "title": "state_of_specimen",
@@ -9,7 +8,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/state_of_specimen"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/state_of_specimen"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",

@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_cycle_ontology",
     "description": "A term that may be associated with a cell cycle-related ontology term",
     "additionalProperties": false,
     "required": [
@@ -9,7 +8,7 @@
     "title": "cell_cycle_ontology",
     "properties": {
         "describedBy": {
-            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_cycle_ontology",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cell_cycle_ontology",
             "type": "string"
         },
         "schema_version": {
@@ -26,8 +25,8 @@
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:go", "obo:efo"],
-                "classes": ["GO:0007049"],
+                "ontologies" : ["obo:hcao", "obo:go"],
+                "classes": ["GO:0007049", "GO:0022403"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
