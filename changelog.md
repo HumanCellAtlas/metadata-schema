@@ -11,7 +11,22 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ### Changed
 Field batch_number changed to lot_number.
 
+
+### [module/biomaterial/cell_morphology.json - v6.0.0] - 2018-05-21
+### Changed
+Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
+### Added
+Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
+
+This update is a major change due to the changing of the cell_viability field name.
+
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
+### Added
+Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
+
+This update is a major change due to the changing of the cell_viability field name.
 
 ### [bundle/biomaterial.json - v5.2.1] - 2018-06-01
 ### Changed
@@ -71,7 +86,7 @@ Updated regex for all 66 schemas to match a range of schema.{}.humancellatlas do
 
 ### [*.json - various version numbers - patch increment] - 2018-05-25
 ### Changed
-Updated regex for all 66 schemas to match http or https and schema.data or schema.dev.data. 
+Updated regex for all 66 schemas to match http or https and schema.data or schema.dev.data.
 
 ### [bundle/protocol.json - v7.1.0] - 2018-05-24
 ### Changed
