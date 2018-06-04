@@ -1,20 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Contains information on the dissociation process used to separate the cells in a specimen.",
+    "description": "Contains information on the dissociation protocol used to separate the cells in a specimen.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
-        "process_core",
+        "protocol_core",
         "dissociation_method"
     ],
-    "title": "dissociation_process",
+    "title": "dissociation_protocol",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/dissociation_process"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/protocol/biomaterial_collection/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/dissociation_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -26,29 +26,18 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "process"
+                "protocol"
             ]
         },
-        "process_core" : {
-            "description": "Core process-level information.",
+        "protocol_core" : {
+            "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/process/process_core.json"
+            "$ref": "core/protocol/protocol_core.json"
         },
         "dissociation_method": {
-            "description": "How cells or organelles were dissociated.",
-            "type": "string",
-            "enum": [
-                "10x_v2", 
-                "FACS", 
-                "Fluidigm C1", 
-                "drop-seq", 
-                "inDrop", 
-                "mouth pipette", 
-                "bulk",
-                "enzymatic",
-                "mechanical",
-                "none"
-            ],
+            "description": "How cells or organelles were dissociated. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
+            "type": "object",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Dissociation method"
         },
         "nucleic_acid_source": {
@@ -63,14 +52,8 @@
             ],
             "user_friendly": "Nucleic acid source"
         },
-        "process_type": {
-            "description": "The type of process. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
-            "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Process type"
-        },
-        "process_reagents": {
-            "description": "A list of purchased reagents used in this process.",
+        "protocol_reagents": {
+            "description": "A list of purchased reagents used in this protocol.",
             "type": "array",
             "items": {
                 "$ref": "module/process/purchased_reagents.json"

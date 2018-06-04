@@ -8,7 +8,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/preservation_storage"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/preservation_storage"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -58,10 +58,10 @@
                 "formalin fixed, unbuffered",
                 "formalin fixed, buffered",
                 "formalin fixed and paraffin embedded",
-                "Fresh"
+                "fresh"
             ],
             "comment": "Refers to the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration of a biomaterial.",
-            "user_friendly": "Storage method"
+            "user_friendly": "Preservation method"
         }
     }
 }

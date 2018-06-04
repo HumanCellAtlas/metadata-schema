@@ -7,6 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/process/purchased_reagents.json - v6.0.0] - 2018-05-24
+### Changed
+Field batch_number changed to lot_number.
+
+
 ### [module/biomaterial/cell_morphology.json - v6.0.0] - 2018-05-21
 ### Changed
 Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
@@ -15,6 +20,146 @@ Added a new field - cell_viability_result - to capture whether the cell_viabilit
 
 This update is a major change due to the changing of the cell_viability field name.
 
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
+### Added
+Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
+
+This update is a major change due to the changing of the cell_viability field name.
+
+### [bundle/biomaterial.json - v5.2.1] - 2018-06-01
+### Changed
+Dependency update for specimen_from_organism
+
+### [type/biomaterial/specimen_from_organism.json - v5.2.1] - 2018-06-01
+### Changed
+Dependency update for preserveration_storage
+
+### [module/biomaterial/preservation_storage.json - v5.2.1] - 2018-06-01
+### Changed
+Fixed (patch) incorrect user-friendly name.
+
+### [bundle/protocol.json - v8.0.0] - 2018-06-01
+### Changed
+Updated protocol types.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v2.0.0] - 2018-06-01
+### Added
+Added the field `sequencing_approach` referencing the new sequencing ontology module and made it required.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `sequencing_approach`.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v7.0.0] - 2018-06-01
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `library_preparation_approach`.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.0.0] - 2018-06-01
+### Changed
+Changed the type of field `enrichment_method` to use a different ontology module.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `enrichment_method`.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v2.0.0] - 2018-06-01
+### Changed
+Changed the type of field `dissociation_method` from string-enums to ontology object references.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `dissociation_method`.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v7.0.0] - 2018-06-01
+### Changed
+Changed the type of field `collection_method` from string-enums to ontology object references and made it required.
+
+### Removed
+Removed the field `protocol_type` as it duplicates the information in `collection_method`.
+
+### [module/ontology/sequencing_ontology.json - v1.0.0] - 2018-06-01
+### Added
+Added a new ontology module for sequencing approach.
+
+### [*.json - various version numbers - patch increment] - 2018-05-31
+### Changed
+Updated regex for all 66 schemas to match a range of schema.{}.humancellatlas domains and accept both version numbers in standard major.minor.patch format and "latest". Patch version increment to all schema versions.
+
+### [*.json - various version numbers - patch increment] - 2018-05-25
+### Changed
+Updated regex for all 66 schemas to match http or https and schema.data or schema.dev.data.
+
+### [bundle/protocol.json - v7.1.0] - 2018-05-24
+### Changed
+Updated enrichment_protocol.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v1.1.0] - 2018-05-24
+### Changed
+Changed the type of field `enrichment_approach` from string-enums to ontology object references.
+
+### [module/ontology/enrichment_ontology.json - v1.0.0] - 2018-05-24
+### Added
+Added a new ontology module for enrichment approach.
+
+### [bundle/protocol.json - v7.0.1] - 2018-05-24
+### Changed
+Updated all protocol type references.
+
+### [type/protocol/protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v1.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/imaging/imaging_protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v1.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v1.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/analysis/analysis_protocol.json - v6.0.1] - 2018-05-24
+### Changed
+Changed protocol_type ontology reference for all protocol schemas to reference process_type_ontology module for ontology modelling reasons.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v2.0.0] - 2018-05-24
+### Changed
+Changed the type of fields `library_construction_approach`, `library_preamplification_method` and `cdna_library_amplification_method` from string-enums to ontology object references.
+
+### [module/ontology/library_amplification_ontology.json - v1.0.0] - 2018-05-24
+### Added
+Added a new ontology module for library amplification approach.
+
+### [module/ontology/library_construction_ontology.json - v1.0.0] - 2018-05-24
+### Added
+Added a new ontology module for library construction approach.
+
+### [core/biomaterial/biomaterial_core.json - v6.0.0] - 2018-05-23
+### Removed
+Removed the `has_input_biomaterial` property as the purpose is misleading and no longer required by the spreadsheet importer
+
+### [type/biomaterial/cell_suspension.json - v6.0.0] - 2018-05-21
+### Changed
+Changed the field `target_cell_type` to `selected_cell_type`.
+
+### [module/process/purchased_reagents.json - v5.2.0] - 2018-05-18
+### Added
+Added a new field - `kit_titer` - to record the appropriate titer and volume recommendations found in a kit's Certificate of Analysis.
+
 ### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
 ### Changed
 Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
@@ -22,8 +167,6 @@ Bug fix to make ontology validation work - root species ontology node changed fr
 ### [module/biomaterial/growth_conditions.json - v6.0.0] - 2018-05-18
 ### Changed
 This change is to make the fields mycoplasma_testing_method and mycoplasma_testing_results enums. This is a major change.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/process.json - v5.2.1] - 2018-03-15
 ### Changed

@@ -1,4 +1,4 @@
-# Structure of metadata-schema/examples folder
+# The Human Cell Atlas Metadata Standards: Metadata examples
 
 Folder structure for example bundles, JSON instances, and Excel spreadsheets comptaible with different versions of the HCA metdata schema. Within each folder here are deparate folders for schema versions (e.g. `v5/`).
 

@@ -5,7 +5,8 @@
     "required": [
         "describedBy",
         "schema_type",
-        "protocol_core"
+        "protocol_core",
+        "collection_method"
     ],
     "title": "biomaterial_protocol",
     "type": "object",
@@ -13,7 +14,7 @@
          "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/protocol/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/biomaterial_collection_protocol"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/protocol/biomaterial_collection/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/collection_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -33,11 +34,18 @@
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
-        "protocol_type": {
-            "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+        "collection_method": {
+            "description": "How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
             "type": "object",
-            "$ref": "module/ontology/protocol_type_ontology.json",
-            "user_friendly": "Protocol type"
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Collection method"
+        },
+        "protocol_reagents": {
+            "description": "A list of purchased reagents used in this protocol.",
+            "type": "array",
+            "items": {
+                "$ref": "module/process/purchased_reagents.json"
+            }
         }
     }
 }

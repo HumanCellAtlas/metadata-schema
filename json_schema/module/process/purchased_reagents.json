@@ -8,7 +8,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/purchased_reagents"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/process/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/purchased_reagents"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -34,7 +34,7 @@
            "example": "Illumina",
            "user_friendly": "Manufacturer"
         },
-        "batch_number": {
+        "lot_number": {
            "description": "The batch or lot number of the kit/reagent.",
            "type": "string",
            "example": "10001A",
@@ -46,6 +46,12 @@
             "format": "date",
             "example": "2018-01-31",
             "user_friendly": "Expiry date"
-        }
+        },
+        "kit_titer": {
+            "description": "Appropriate titer and volume recommendations found in each kit's Certificate of Analysis.",
+            "type": "string",
+            "example": "Titer: Specification is 3.0x10^7 ",
+            "user_friendly": "Kit titer"
+	    }
 	}
 }

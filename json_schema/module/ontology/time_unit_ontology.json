@@ -10,7 +10,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/time_unit_ontology"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/time_unit_ontology"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -26,8 +26,8 @@
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:uo, obo:efo"],
-                "classes": ["UO:0000003, UO:0000149"],
+                "ontologies" : ["obo:efo", "obo:uo"],
+                "classes": ["UO:0000003", "UO:0000149"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
