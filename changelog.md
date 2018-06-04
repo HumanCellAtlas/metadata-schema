@@ -12,6 +12,13 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 Field batch_number changed to lot_number.
 
 
+### [type/biomaterial/cell_line.json - v5.2.1] - 2018-05-21
+### Added
+Added `supplier` field to capture supplier of purchased cell line.
+Added `lot_number` field to capture lot number of purchased cell line.
+Added `induced pluripotent` to enum of cell line type.
+
+
 ### [module/biomaterial/cell_morphology.json - v6.0.0] - 2018-05-21
 ### Changed
 Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
