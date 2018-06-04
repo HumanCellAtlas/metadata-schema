@@ -1,15 +1,15 @@
 {
-    "last_update_date": "2018-06-04T13:10:54Z",
+    "last_update_date": "2018-06-04T14:37:16Z",
     "version_numbers": {
         "bundle": {
-            "biomaterial": "6.1.1",
+            "biomaterial": "7.0.0",
             "file": "2.1.1",
             "ingest_audit": "5.2.1",
             "links": "1.1.1",
             "process": "6.1.1",
             "project": "5.2.1",
-            "protocol": "9.0.0",
-            "reference": "1.1.1",
+            "protocol": "10.0.0",
+            "reference": "2.0.0",
             "submission": "5.2.1"
         },
         "core": {
@@ -78,7 +78,7 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "6.1.1",
+                "cell_line": "7.0.0",
                 "cell_suspension": "7.0.0",
                 "donor_organism": "5.2.1",
                 "organoid": "6.0.0",
@@ -86,7 +86,7 @@
             },
             "file": {
                 "analysis_file": "5.2.1",
-                "reference_file": "1.1.1",
+                "reference_file": "2.0.0",
                 "sequence_file": "6.1.1"
             },
             "process": {
@@ -97,15 +97,15 @@
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "6.1.1"
+                    "analysis_protocol": "7.0.0"
                 },
                 "biomaterial_collection": {
                     "collection_protocol": "8.0.0",
-                    "dissociation_protocol": "3.0.0",
+                    "dissociation_protocol": "4.0.0",
                     "enrichment_protocol": "2.0.0"
                 },
                 "imaging": {
-                    "imaging_protocol": "6.1.1"
+                    "imaging_protocol": "7.0.0"
                 },
                 "protocol": "6.1.1",
                 "sequencing": {
