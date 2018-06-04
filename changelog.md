@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [bundle/biomaterial.json - v5.2.1] - 2018-06-01
 ### Changed
 Dependency update for specimen_from_organism
@@ -142,8 +144,6 @@ Added a new field - `kit_titer` - to record the appropriate titer and volume rec
 ### [module/ontology/species_ontology.json - v5.1.1] - 2018-05-18
 ### Changed
 Bug fix to make ontology validation work - root species ontology node changed from "NCBITaxon:131567" to ["OBI:0100026","NCBITaxon:2759"] to reflect usage in HCAO. Patch update to referencing biomaterials and bundles.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/growth_conditions.json - v6.0.0] - 2018-05-18
 ### Changed
