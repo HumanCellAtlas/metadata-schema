@@ -7,24 +7,14 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
-## length_unit_ontology<a name='length_unit_ontology'></a>
+## cell_type_ontology<a name='cell_type_ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
-Location: module/ontology/length_unit_ontology.json
+Location: module/ontology/cell_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a length unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## cell_cycle_ontology<a name='cell_cycle_ontology'></a>
-_A term that may be associated with a cell cycle-related ontology term_
-
-Location: module/ontology/cell_cycle_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell cycle of the cells in the specimen. | string | yes |  |  |  | 
+text | The name of a cell type supplied by a user. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
 ## ethnicity_ontology<a name='ethnicity_ontology'></a>
@@ -37,16 +27,6 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The ethnicity of the human donor. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
-## process_type_ontology<a name='process_type_ontology'></a>
-_A term that may be associated with a process-related ontology term_
-
-Location: module/ontology/process_type_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a process type being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
 ## species_ontology<a name='species_ontology'></a>
 _A term that may be associated with a species-related ontology term_
 
@@ -55,6 +35,16 @@ Location: module/ontology/species_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of the species to which the organism belongs. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## enrichment_ontology<a name='enrichment_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/enrichment_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of an enrichment approach being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
 ## disease_ontology<a name='disease_ontology'></a>
@@ -67,16 +57,6 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The text for the term as the user provides it. | string | yes |  |  |  | 
 ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  |  |  | 
 
-## strain_ontology<a name='strain_ontology'></a>
-_A term that may be associated with a strain-related ontology term_
-
-Location: module/ontology/strain_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
 ## organ_part_ontology<a name='organ_part_ontology'></a>
 _A term that may be associated with an anatomy-related ontology term_
 
@@ -87,6 +67,26 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The text for the term as the user provides it. | string | yes |  |  |  | 
 ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  |  |  | 
 
+## length_unit_ontology<a name='length_unit_ontology'></a>
+_A term that may be associated with a cell type-related ontology term_
+
+Location: module/ontology/length_unit_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a length unit being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## library_construction_ontology<a name='library_construction_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/library_construction_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a library construction approach being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
 ## time_unit_ontology<a name='time_unit_ontology'></a>
 _A term that may be associated with a time unit-related ontology term_
 
@@ -95,16 +95,6 @@ Location: module/ontology/time_unit_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of a time unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## protocol_type_ontology<a name='protocol_type_ontology'></a>
-_A term that may be associated with a protocol-related ontology term_
-
-Location: module/ontology/protocol_type_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a protocol type used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
 ## development_stage_ontology<a name='development_stage_ontology'></a>
@@ -117,15 +107,15 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The name of the development stage of the organism. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
-## instrument_ontology<a name='instrument_ontology'></a>
-_A term that may be associated with a instrument-related ontology term_
+## organ_ontology<a name='organ_ontology'></a>
+_A term that may be associated with an anatomy-related ontology term._
 
-Location: module/ontology/instrument_ontology.json
+Location: module/ontology/organ_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The full name of the instrument used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  |  |  | 
+ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  |  |  | 
 
 ## mass_unit_ontology<a name='mass_unit_ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
@@ -137,6 +127,76 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The name of a mass unit being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 
+## strain_ontology<a name='strain_ontology'></a>
+_A term that may be associated with a strain-related ontology term_
+
+Location: module/ontology/strain_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## instrument_ontology<a name='instrument_ontology'></a>
+_A term that may be associated with a instrument-related ontology term_
+
+Location: module/ontology/instrument_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The full name of the instrument used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## cell_cycle_ontology<a name='cell_cycle_ontology'></a>
+_A term that may be associated with a cell cycle-related ontology term_
+
+Location: module/ontology/cell_cycle_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a cell cycle of the cells in the specimen. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## library_amplification_ontology<a name='library_amplification_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/library_amplification_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a library amplification approach being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## process_type_ontology<a name='process_type_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/process_type_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a process type being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## sequencing_ontology<a name='sequencing_ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/sequencing_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a sequencing approach being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## protocol_type_ontology<a name='protocol_type_ontology'></a>
+_A term that may be associated with a protocol-related ontology term_
+
+Location: module/ontology/protocol_type_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a protocol type used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
 ## biological_macromolecule_ontology<a name='biological_macromolecule_ontology'></a>
 _A term that may be associated with a biological macromolecule-related ontology term_
 
@@ -146,26 +206,6 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of the biological macromolecule being used. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## cell_type_ontology<a name='cell_type_ontology'></a>
-_A term that may be associated with a cell type-related ontology term_
-
-Location: module/ontology/cell_type_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell type supplied by a user. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## organ_ontology<a name='organ_ontology'></a>
-_A term that may be associated with an anatomy-related ontology term._
-
-Location: module/ontology/organ_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  |  |  | 
 
 ## contact<a name='contact'></a>
 _Information about a person who submitted or contributed to a project._
@@ -195,53 +235,19 @@ doi | The publication digital object identifier. | string | no |  | DOI |  | 10.
 pmid | The PubMed ID of the publication. | integer | no |  | PMID |  | 27565351
 publication_url | A URL, preferably not behind a paywall, for the publication. | string | no |  | Publication URL |  | 
 
-## growth_conditions<a name='growth_conditions'></a>
-_Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
+## medical_history<a name='medical_history'></a>
+_Information about the medical history of an organism._
 
-Location: module/biomaterial/growth_conditions.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-passage_number | The number of passages the cell line has been through. | integer | no |  | Passage number |  | 
-growth_medium | The solid, liquid, or semi-solid medium used to support the growth of the biomaterial. | string | no |  | Growth medium |  | lysogeny broth (LB) medium
-mycoplasma_testing_method | The method used for detecting mycoplasma contamination of a biomaterial culture. | string | no |  | Mycoplasma testing method |  | Indirect DNA stain using Hoechst 33258 with 3T3 indicator cells
-mycoplasma_testing_results | Results of mycoplasma testing of a biomaterial culture. | string | no |  | Mycoplasma testing results |  | No spots of bright blue stain observed at high magnification
-drug_treatment | Description of drugs added to the growth medium for this biomaterial. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin
-
-## preservation_storage<a name='preservation_storage'></a>
-_Information relating to how a biomaterial was preserved and/or stored over a period of time._
-
-Location: module/biomaterial/preservation_storage.json
+Location: module/biomaterial/medical_history.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-storage_method | The method by which a biomaterial was stored. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen, -70C freezer, frozen, -150C freezer, frozen, liquid nitrogen, frozen, vapor phase, paraffin block, RNAlater, frozen, TRIzol, frozen | 
-storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
-storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | days
-preservation_method | The method by which a biomaterial was preserved or not. | string | no |  | Storage method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, Fresh | 
-
-## homo_sapiens_specific<a name='homo_sapiens_specific'></a>
-_Information specific to an organism that is a homo sapiens._
-
-Location: module/biomaterial/homo_sapiens_specific.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-body_mass_index | The body mass index of the organism. | number | no |  | Body mass index |  | 
-ethnicity | An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
-
-## death<a name='death'></a>
-_Information relating to the death of an organism._
-
-Location: module/biomaterial/death.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string | yes |  | Cause of death |  | 
-cold_perfused | Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise. | boolean | no |  | Cold perfused? |  | 
-days_on_ventilator | Days on ventilator before dying. | number | no |  | Number of days on ventilator |  | 
-hardy_scale | Should be integer representing: (0) ventilator case, (1) violent and fast death, (2) fast death of natural causes, (3) intermediate death, or (4) slow death. | integer | no |  | Value on Hardy scale |  | 
-time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ. | string | no |  | Time of death |  | 
+alcohol_history | Number of drinks consumed on a typical day. | string | no |  | Alcohol history |  | 
+medication | List of medications the organism was currently taking at time of biomaterial donation. | string | no |  | Medications |  | 
+nutritional_state | Should be one of normal, fasting, or feeding tube removed. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | 
+smoking_history | Estimated number of cigarettes smoked per day and for how many years. | string | no |  | Smoking history |  | 
+test_results | Results from any medical tests performed on the individual. | string | no |  | Test results |  | 
+treatment | Any treatments the individual has undergone. | string | no |  | Treatments |  | 
 
 ## familial_relationship<a name='familial_relationship'></a>
 _Information about other organisms that this organism is related to._
@@ -253,20 +259,6 @@ Property name | Description | Type | Required? | Object reference? | User friend
 is_child_of | This organism is a child of the indicated organism. | string | no |  | Child of |  | 
 is_parent_of | This organism is a parent of the indicated organism. | string | no |  | Parent of |  | 
 is_sibling_of | This organism is a sibling of the indicated organism. | string | no |  | Sibling of |  | 
-
-## medical_history<a name='medical_history'></a>
-_Information about the medical history of an organism._
-
-Location: module/biomaterial/medical_history.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-alcohol_history | Number of drinks consumed on a typical day. | string | no |  | Alcohol history |  | 
-medication | List of medications the organism was currently taking at time of biomaterial donation. | string | no |  | Medications |  | 
-nutritional_state | Should be one of normal, fasting, or feeding tube removed. |  | no |  | Nutritional state | normal, fasting, feeding tube removed | 
-smoking_history | Estimated number of cigarettes smoked per day and for how many years. | string | no |  | Smoking history |  | 
-test_results | Results from any medical tests performed on the individual. | string | no |  | Test results |  | 
-treatment | Any treatments the individual has undergone. | string | no |  | Treatments |  | 
 
 ## cell_pathology<a name='cell_pathology'></a>
 _Information relating to pathological features of cells._
@@ -281,6 +273,50 @@ cell_size_unit | The unit in which the cell size is expressed. Should be a child
 cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 
 cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | 
 percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrosis |  | 
+
+## growth_conditions<a name='growth_conditions'></a>
+_Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
+
+Location: module/biomaterial/growth_conditions.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+passage_number | The number of passages the cell line has been through. | integer | no |  | Passage number |  | 
+growth_medium | The solid, liquid, or semi-solid medium used to support the growth of the biomaterial. | string | no |  | Growth medium |  | lysogeny broth (LB) medium
+mycoplasma_testing_method | The method by which a biomaterial is tested for mycoplasma contamination. Must be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay. | string | no |  | Mycoplasma testing method | Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay | Indirect DNA stain
+mycoplasma_testing_results | Whether the biomaterial passed or failed the mycoplasma test. Must be pass or fail. | string | no |  | Mycoplasma testing results | pass, fail | pass
+drug_treatment | Description of drugs added to the growth medium for this biomaterial. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin
+
+## mus_musculus_specific<a name='mus_musculus_specific'></a>
+_Information specific to an organism that is a mouse (mus musculus)._
+
+Location: module/biomaterial/mus_musculus_specific.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+strain | The name of the strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Strain |  | C57BL/6.
+
+## preservation_storage<a name='preservation_storage'></a>
+_Information relating to how a biomaterial was preserved and/or stored over a period of time._
+
+Location: module/biomaterial/preservation_storage.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+storage_method | The method by which a biomaterial was stored. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen, -70C freezer, frozen, -150C freezer, frozen, liquid nitrogen, frozen, vapor phase, paraffin block, RNAlater, frozen, TRIzol, frozen | 
+storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
+storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | days
+preservation_method | The method by which a biomaterial was preserved or not. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, fresh | 
+
+## homo_sapiens_specific<a name='homo_sapiens_specific'></a>
+_Information specific to an organism that is a homo sapiens._
+
+Location: module/biomaterial/homo_sapiens_specific.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+body_mass_index | The body mass index of the organism. | number | no |  | Body mass index |  | 
+ethnicity | An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
 
 ## state_of_specimen<a name='state_of_specimen'></a>
 _State of body part at collection and how it was preserved after removal and/or cell enrichment_
@@ -298,14 +334,18 @@ microscopic_description | How the biomaterial looks under the microscope and how
 microscopic_image | List of filenames of photographs of body part under microscope. Must be of format JPEG, TIFF, or PNG. | array | no |  | Microscopic image |  | 
 postmortem_interval | Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed. | integer | no |  | Post-mortem interval |  | 
 
-## mus_musculus_specific<a name='mus_musculus_specific'></a>
-_Information specific to an organism that is a mouse (mus musculus)._
+## death<a name='death'></a>
+_Information relating to the death of an organism._
 
-Location: module/biomaterial/mus_musculus_specific.json
+Location: module/biomaterial/death.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-strain | The name of the strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Strain |  | C57BL/6.
+cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string | yes |  | Cause of death |  | 
+cold_perfused | Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise. | boolean | no |  | Cold perfused? |  | 
+days_on_ventilator | Days on ventilator before dying. | number | no |  | Number of days on ventilator |  | 
+hardy_scale | Should be integer representing: (0) ventilator case, (1) violent and fast death, (2) fast death of natural causes, (3) intermediate death, or (4) slow death. | integer | no |  | Value on Hardy scale |  | 
+time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ. | string | no |  | Time of death |  | 
 
 ## purchased_reagents<a name='purchased_reagents'></a>
 _This module describes purchased kits or reagents used in any process._
@@ -319,6 +359,7 @@ catalog_number | The catalog number of the kit/reagent. | string | no |  | Catal
 manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
 batch_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
 expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
+kit_titer | Appropriate titer and volume recommendations found in each kit's Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7 
 
 ## barcode<a name='barcode'></a>
 _This module describes barcodes used in a library preparation process._
@@ -344,4 +385,13 @@ well_name | A name for the well. Should be unique for the plate | string | no | 
 well_row | Well row in plate. | string | no |  | Well row |  | 
 well_column | Well column in plate. | string | no |  | Well column |  | 
 cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | 
+
+## insdc_experiment<a name='insdc_experiment'></a>
+_This module describes barcodes used in a library preparation process._
+
+Location: module/process/sequencing/insdc_experiment.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string | yes |  | INSDC experiment |  | 
 

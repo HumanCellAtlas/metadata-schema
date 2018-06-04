@@ -114,11 +114,14 @@ class VersionUpdater:
             inc = int(elements[1])
             new_inc = inc + 1
             elements[1] = str(new_inc)
+            elements[2] = "0"
 
         elif increment_type == "major":
             inc = int(elements[0])
             new_inc = inc + 1
             elements[0] = str(new_inc)
+            elements[1] = "0"
+            elements[2] = "0"
 
         new_version = ".".join(elements)
 

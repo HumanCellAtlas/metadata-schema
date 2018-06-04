@@ -5,7 +5,10 @@
     "required": [
         "describedBy",
         "schema_type",
-        "protocol_core"
+        "protocol_core",
+        "instrument_manufacturer_model",
+        "paired_ends",
+        "sequencing_approach"
     ],
     "title": "sequencing_protocol",
     "type": "object",
@@ -13,7 +16,7 @@
          "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/protocol/sequencing/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/sequencing_protocol"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/protocol/sequencing/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/sequencing_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -33,10 +36,29 @@
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
-        "protocol_type": {
-            "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+         "instrument_manufacturer_model": {
+            "description": "The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548.",
             "type": "object",
-            "$ref": "module/ontology/protocol_type_ontology.json",
+            "$ref": "module/ontology/instrument_ontology.json",
+            "example": "Illumina HiSeq 4000",
+            "user_friendly": "Instrument manufacturer and model"
+        },
+        "local_machine_name": {
+            "description": "Local name for the particular machine on which the biomaterial was sequenced.",
+            "type": "string",
+            "user_friendly": "Local machine name"
+        },
+        "paired_ends": {
+            "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
+            "type": "boolean",
+            "example": "yes",
+            "comment": "If 10x, then put no.",
+            "user_friendly": "Paired ends?"
+        },
+        "sequencing_approach": {
+            "description": "The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070.",
+            "type": "object",
+            "$ref": "module/ontology/sequencing_ontology.json",
             "user_friendly": "Protocol type"
         }
     }
