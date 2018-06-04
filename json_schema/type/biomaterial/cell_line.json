@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the cell line used in the biomaterial",
+    "description": "Information about the cell line or cell culture biomaterial.",
     "additionalProperties": false,
     "required": [
         "describedBy",
