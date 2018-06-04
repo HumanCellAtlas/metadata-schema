@@ -1,4 +1,4 @@
-# The Human Cell Atlas Metadata Schema
+# The Human Cell Atlas Metadata Standards: JSON Schemas
 
 This repo contains the HCA metadata JSON schemas for core, type, and modules entities, as well as bundles.
 

@@ -26,8 +26,11 @@
                     "type": "object",
                     "oneOf": [
                         { "$ref": "type/protocol/analysis/analysis_protocol.json" },
-                        { "$ref": "type/protocol/biomaterial/biomaterial_collection_protocol.json" },
+                        { "$ref": "type/protocol/biomaterial_collection/enrichment_protocol.json" },
+                        { "$ref": "type/protocol/biomaterial_collection/collection_protocol.json" },
+                        { "$ref": "type/protocol/biomaterial_collection/dissociation_protocol.json" },
                         { "$ref": "type/protocol/imaging/imaging_protocol.json" },
+                        { "$ref": "type/protocol/sequencing/library_preparation_protocol.json" },
                         { "$ref": "type/protocol/sequencing/sequencing_protocol.json" },
                         { "$ref": "type/protocol/protocol.json" }
                     ]
@@ -39,7 +42,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/bundle/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/protocol"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
