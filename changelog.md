@@ -7,6 +7,26 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/reference_file.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made fields `ncbi_taxon_id`, `genus_species`, `assembly_type`, `reference_type` and `reference_version` required.
+
+### [type/protocol/imaging/imaging_protocol.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `protocol_type` required.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `nucleic_acid_source` required.
+
+### [type/protocol/analysis/analysis_protocol.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `protocol_type` required.
+
+### [type/biomaterial/cell_line.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `cell_line_type` required.
+
 ### [type/biomaterial/cell_line.json - v6.1.1] - 2018-06-04
 ### Changed
 Updated the description for the schema.
