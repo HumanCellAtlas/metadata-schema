@@ -34,7 +34,7 @@
            "example": "Illumina",
            "user_friendly": "Manufacturer"
         },
-        "batch_number": {
+        "lot_number": {
            "description": "The batch or lot number of the kit/reagent.",
            "type": "string",
            "example": "10001A",

@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/process/purchased_reagents.json - v6.0.0] - 2018-05-24
+### Changed
+Field batch_number changed to lot_number.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/biomaterial.json - v5.2.1] - 2018-06-01
