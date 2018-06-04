@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-06-01T16:04:55Z",
+    "last_update_date": "2018-06-04T12:02:35Z",
     "version_numbers": {
         "bundle": {
             "biomaterial": "5.2.2",
@@ -8,7 +8,7 @@
             "links": "1.1.1",
             "process": "6.1.1",
             "project": "5.2.1",
-            "protocol": "8.0.0",
+            "protocol": "9.0.0",
             "reference": "1.1.1",
             "submission": "5.2.1"
         },
@@ -64,7 +64,7 @@
                 "time_unit_ontology": "5.2.1"
             },
             "process": {
-                "purchased_reagents": "5.3.1",
+                "purchased_reagents": "6.0.0",
                 "sequencing": {
                     "barcode": "5.2.1",
                     "insdc_experiment": "1.1.1",
@@ -100,8 +100,8 @@
                     "analysis_protocol": "6.1.1"
                 },
                 "biomaterial_collection": {
-                    "collection_protocol": "7.0.0",
-                    "dissociation_protocol": "2.0.0",
+                    "collection_protocol": "8.0.0",
+                    "dissociation_protocol": "3.0.0",
                     "enrichment_protocol": "2.0.0"
                 },
                 "imaging": {
@@ -109,7 +109,7 @@
                 },
                 "protocol": "6.1.1",
                 "sequencing": {
-                    "library_preparation_protocol": "3.0.0",
+                    "library_preparation_protocol": "4.0.0",
                     "sequencing_protocol": "7.0.0"
                 }
             }
