@@ -260,7 +260,7 @@ is_child_of | This organism is a child of the indicated organism. | string | no 
 is_parent_of | This organism is a parent of the indicated organism. | string | no |  | Parent of |  | 
 is_sibling_of | This organism is a sibling of the indicated organism. | string | no |  | Sibling of |  | 
 
-## cell_pathology<a name='cell_pathology'></a>
+## cell_morphology<a name='cell_morphology'></a>
 _Information relating to pathological features of cells._
 
 Location: module/biomaterial/cell_morphology.json
@@ -268,11 +268,23 @@ Location: module/biomaterial/cell_morphology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 cell_morphology | General description of the morphology of the cells in the cell suspension. | string | no |  | Cell morphology |  | 
-cell_size | The size of the cells. Average cell size is acceptable. | number | no |  | Cell size number |  | 
-cell_size_unit | The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
-cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 
-cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | 
+cell_size | The size of the cells. Average cell size is acceptable. | string | no |  | Cell size number |  | 20-30
+cell_size_unit | The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | micrometer
+percent_cell_viability | Percent of cells determined to be viable. Please enter a single number. An average value is acceptable. | number | no |  | Percent cell viability |  | 98.7
+cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis assay
+cell_viability_result | Whether the result of the cell viability test is pass or fail. | string | no |  | Cell viability pass/fail result | pass, fail | pass
 percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrosis |  | 
+
+## timecourse<a name='timecourse'></a>
+_Fields to capture timecourse information._
+
+Location: module/biomaterial/timecourse.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+timecourse_value | The numerical value associated with a time interval used in the experiment. | string | yes |  |  |  | 2
+timecourse_unit | The unit in which the timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md/#time_unit_ontology) |  |  | day
+timecourse_relevance | The relevance of the timecourse value/unit to the experiment. | string | no |  |  |  | Collection after tumor cells injected into the mammary gland.
 
 ## growth_conditions<a name='growth_conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
@@ -357,7 +369,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit
 catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
 manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
-batch_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
+lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
 expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
 kit_titer | Appropriate titer and volume recommendations found in each kit's Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7 
 

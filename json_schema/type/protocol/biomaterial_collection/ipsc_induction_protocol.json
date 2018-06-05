@@ -5,16 +5,16 @@
     "required": [
         "describedBy",
         "schema_type",
-        "process_core",
+        "protocol_core",
         "induced_pluripotent_cell_induction_method"
     ],
-    "title": "ipsc_induction_process",
+    "title": "ipsc_induction_protocol",
     "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/process/biomaterial_collection/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/ipsc_induction_process"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/protocol/biomaterial_collection/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/ipsc_induction_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -26,13 +26,13 @@
             "description": "The type of the metadata schema entity.",
             "type": "string",
             "enum": [
-                "process"
+                "protocol"
             ]
         },
-      "process_core": {
-            "description": "Core process-level information.",
+        "protocol_core": {
+            "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/process/5.1.0/process_core"
+            "$ref": "core/protocol/protocol_core.json"
         },
         "induced_pluripotent_cell_induction_method": {
             "description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
@@ -55,7 +55,7 @@
         "induced_pluripotent_cell_induction_kit": {
             "description": "Kit used to induce pluripotent stem cell generation.",
             "type": "object",
-            "$ref": "module/process/5.1.0/purchased_reagents",
+            "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Induction kit"
         },
         "pluripotency_test": {
@@ -87,19 +87,13 @@
             "user_friendly": "iPSC prepared in-house?",
             "example": "yes"
         },
-        "process_reagents": {
-            "description": "A list of additional purchased reagents used in this process.",
+        "protocol_reagents": {
+            "description": "A list of additional purchased reagents used in this protocol.",
             "type": "array",
             "items": {
-                "$ref": "module/process/5.1.0/purchased_reagents"
+                "$ref": "module/process/purchased_reagents.json"
             },
             "user_friendly": "Additional reagents"
-        },
-        "clearance_of_reprogramming_factors_method": {
-            "description": "Method used to clear or remove reprogramming factors after iPSC generation.",
-            "type": "string",
-            "example": "Removal of piggyBac transposon by a transposase",
-            "user_friendly": "Method to remove reprogramming factors"
         }
     }
 }
