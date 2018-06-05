@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/organ_ontology",
     "description": "A term that may be associated with an anatomy-related ontology term.",
     "additionalProperties": false,
     "required": [
@@ -11,7 +10,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/organ_ontology"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/organ_ontology"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -27,7 +26,7 @@
             "description": "A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph.",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:uberon", "obo:efo"],
+                "ontologies" : ["obo:hcao", "obo:uberon"],
                 "classes": ["UBERON:0000062","UBERON:0000179"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,

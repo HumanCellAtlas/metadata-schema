@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_line",
-    "description": "Information about the cell line used in the biomaterial",
+    "description": "Information about the cell line or cell culture biomaterial.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
-        "biomaterial_core"
+        "biomaterial_core",
+        "cell_line_type"
     ],
     "title": "cell_line",
     "type": "object",
@@ -14,7 +14,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/biomaterial/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/v[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_line"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,12 +32,25 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/biomaterial/5.1.0/biomaterial_core"
+            "$ref": "core/biomaterial/biomaterial_core.json"
+        },
+        "supplier": {
+           "description": "The supplier of the cell line.",
+           "type": "string",
+           "example": "HipSci",
+           "user_friendly": "Supplier"
         },
         "catalog_number": {
             "description": "The supplier catalogue number for the cell line.",
             "type": "string",
+            "example": "77650057",
             "user_friendly": "Catalog number"
+        },
+        "lot_number": {
+            "description": "The supplier lot or batch number for the cell line.",
+            "type": "string",
+            "example": "24.10.14",
+            "user_friendly": "Lot/batch number"
         },
         "catalog_url": {
             "description": "The supplier catalogue URL for the cell line.",
@@ -47,7 +60,7 @@
         "cell_cycle": {
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_cycle_ontology",
+            "$ref": "module/ontology/cell_cycle_ontology.json",
             "user_friendly": "Cell cycle"
         },
         "cell_line_type": {
@@ -57,26 +70,28 @@
                 "primary",
                 "immortalized",
                 "stem cell-derived",
-                "synthetic"
-          ],
+                "synthetic",
+                "induced pluripotent"
+            ],
+            "example": "induced pluripotent",
             "user_friendly": "Cell line type"
         },
         "cell_morphology": {
             "description": "Features relating to the morphology of cells in a biomaterial.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/cell_morphology",
+            "$ref": "module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
         "growth_conditions": {
             "description": "Features relating to the growth and/or maintenance of a biomaterial.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/growth_conditions",
+            "$ref": "module/biomaterial/growth_conditions.json",
             "user_friendly": "Growth conditions"
         },
         "cell_type": {
             "description": "The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_type_ontology",
+            "$ref": "module/ontology/cell_type_ontology.json",
             "user_friendly": "Cell type"
         },
         "date_established": {
@@ -88,7 +103,7 @@
         "disease": {
             "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology",
+            "$ref": "module/ontology/disease_ontology.json",
             "user_friendly": "Disease"
         },
         "genus_species": {
@@ -96,7 +111,7 @@
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/species_ontology"
+                "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
@@ -104,7 +119,7 @@
             "description": "One or more publications in which the cell line creation was cited.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/project/5.1.0/publication"
+                "$ref": "module/project/publication.json"
             },
             "user_friendly": "Publications"
         }

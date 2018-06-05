@@ -1,5 +1,5 @@
 {
-  "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process",
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process",
   "schema_type": "process",
   "process_core": {
     "process_id": "seq_protocol_1"

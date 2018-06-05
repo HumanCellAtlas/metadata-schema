@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology",
     "description": "A term that may be associated with a disease-related ontology term",
     "additionalProperties": false,
     "required": [
@@ -9,7 +8,7 @@
     "title": "disease_ontology",
     "properties": {
         "describedBy":  {
-            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/disease_ontology",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/disease_ontology",
             "type": "string"
         },
         "schema_version": {
@@ -26,8 +25,8 @@
             "description": "An optional ontology reference in format where prefix_ indicates which ontology",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:efo"],
-                "classes": ["MONDO:0000001", "EFO:0000408", "PATO:0000461"],
+                "ontologies" : ["obo:mondo", "obo:efo"],
+                "classes": ["MONDO:0000001", "PATO:0000461"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false

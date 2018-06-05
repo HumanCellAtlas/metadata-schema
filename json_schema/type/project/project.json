@@ -1,6 +1,5 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/project/5.1.0/project",
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
@@ -13,7 +12,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/project/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/project"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/project"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -31,14 +30,14 @@
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/project/5.1.0/project_core"
+            "$ref": "core/project/project_core.json"
         },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
             "type": "array",
             "example": "List of authors for a publication resulting from this project.",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/project/5.1.0/contact"
+                "$ref": "module/project/contact.json"
             }
         },
         "supplementary_files": {
@@ -54,7 +53,7 @@
     	    "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
-                "$ref": "https://schema.humancellatlas.org/module/project/5.1.0/publication"
+                "$ref": "module/project/publication.json"
             }
         },
         "insdc_project": {
