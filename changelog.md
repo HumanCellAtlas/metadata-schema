@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/growth_conditions.json - v6.?+1.0] - 2018-06-05
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
 ### [bundle/protocol.json - v10.0.1] - 2018-06-05
 ### Changed
 Added new protocol types to the oneOf list for protocol bundle.
@@ -23,23 +27,23 @@ Added new protocol for IPSC induction.
 ### Added
 Added new protocol for cell differentiation.
 
-### [type/file/reference_file.json - v?+1.0.0] - 2018-06-04
+### [type/file/reference_file.json - v2.0.0] - 2018-06-04
 ### Changed
 Made fields `ncbi_taxon_id`, `genus_species`, `assembly_type`, `reference_type` and `reference_version` required.
 
-### [type/protocol/imaging/imaging_protocol.json - v?+1.0.0] - 2018-06-04
+### [type/protocol/imaging/imaging_protocol.json - v7.0.0] - 2018-06-04
 ### Changed
 Made field `protocol_type` required.
 
-### [type/protocol/biomaterial_collection/dissociation_protocol.json - v?+1.0.0] - 2018-06-04
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.0.0] - 2018-06-04
 ### Changed
 Made field `nucleic_acid_source` required.
 
-### [type/protocol/analysis/analysis_protocol.json - v?+1.0.0] - 2018-06-04
+### [type/protocol/analysis/analysis_protocol.json - v7.0.0] - 2018-06-04
 ### Changed
 Made field `protocol_type` required.
 
-### [type/biomaterial/cell_line.json - v?+1.0.0] - 2018-06-04
+### [type/biomaterial/cell_line.json - v7.0.0] - 2018-06-04
 ### Changed
 Made field `cell_line_type` required.
 

@@ -62,6 +62,19 @@
             "type": "string",
             "example": "100 ug/mL ampicillin",
             "user_friendly": "Drug treatment"
+        },
+        "feeder_layer_type": {
+            "description": "Type of feeder layer cells biomaterial was grown on.",
+            "type": "string",
+            "enum": [
+                "feeder-free",
+                "MEF Feeder Cells",
+                "JK1 Feeder Cells",
+                "SNL 76/7 Feeder Cells",
+                "Human Marrow Stromal Cells"
+            ],
+            "example": "Indirect DNA stain",
+            "user_friendly": "Feeder layer type"
         }
     }
 }
