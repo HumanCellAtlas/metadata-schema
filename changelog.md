@@ -7,6 +7,22 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [bundle/protocol.json - v10.0.1] - 2018-06-05
+### Changed
+Added new protocol types to the oneOf list for protocol bundle.
+
+### [module/biomaterial/timecourse.json - v1.0.0] - 2018-06-05
+### Added
+Added new module to capture timecourse information.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.0.0] - 2018-06-05
+### Added
+Added new protocol for IPSC induction.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.0.0] - 2018-06-05
+### Added
+Added new protocol for cell differentiation.
+
 ### [type/file/reference_file.json - v?+1.0.0] - 2018-06-04
 ### Changed
 Made fields `ncbi_taxon_id`, `genus_species`, `assembly_type`, `reference_type` and `reference_version` required.
