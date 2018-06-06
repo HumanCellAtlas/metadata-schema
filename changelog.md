@@ -9,7 +9,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ### [core/project/project_core.json - v+1.?.?] - 2018-06-06
 ### Changed
-Made project_description required.
+Made project_description a required field.
 
 ### [type/project/project.json - v?.+1.?] - 2018-06-06
 ### Changed
