@@ -19,27 +19,18 @@
         "grant_title": {
             "description": "The name of the grant funding the project. Approximately 30 words.",
             "type": "string",
-            "items":{
-                "type": "string"
-            },
             "example": "A title of a grant proposal.",
             "user_friendly": "Grant title"
         },
         "grant_id": {
             "description": "The unique grant identifier or reference for the project.",
             "type": "string",
-            "items":{
-                "type": "string"
-            },
             "example": "BB/P0000001/1",
             "user_friendly": "Grant ID"
         },
         "funder_name": {
             "description": "The name of the funding organization.",
             "type": "string",
-            "items":{
-                "type": "string"
-            },
             "example": "Biotechnology and Biological Sciences Research Council (BBSRC)",
             "user_friendly": "Name of grant funder"
         }
