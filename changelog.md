@@ -15,9 +15,45 @@ Added a pointer to new module with three optional fields to track project funder
 ### Added
 A new module with three optional fields to track project funders
 
-### [module/process/purchased_reagents.json - v?.?.?] - 2018-05-24
+### [bundle/protocol.json - v10.0.1] - 2018-06-05
 ### Changed
-Field batch_number changed to lot_number.
+Added new protocol types to the oneOf list for protocol bundle.
+
+### [module/biomaterial/timecourse.json - v1.0.0] - 2018-06-05
+### Added
+Added new module to capture timecourse information.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.0.0] - 2018-06-05
+### Added
+Added new protocol for IPSC induction.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.0.0] - 2018-06-05
+### Added
+Added new protocol for cell differentiation.
+
+### [type/file/reference_file.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made fields `ncbi_taxon_id`, `genus_species`, `assembly_type`, `reference_type` and `reference_version` required.
+
+### [type/protocol/imaging/imaging_protocol.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `protocol_type` required.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `nucleic_acid_source` required.
+
+### [type/protocol/analysis/analysis_protocol.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `protocol_type` required.
+
+### [type/biomaterial/cell_line.json - v?+1.0.0] - 2018-06-04
+### Changed
+Made field `cell_line_type` required.
+
+### [type/biomaterial/cell_line.json - v6.1.1] - 2018-06-04
+### Changed
+Updated the description for the schema.
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
@@ -79,7 +115,7 @@ Updated regex for all 66 schemas to match a range of schema.{}.humancellatlas do
 
 ### [*.json - various version numbers - patch increment] - 2018-05-25
 ### Changed
-Updated regex for all 66 schemas to match http or https and schema.data or schema.dev.data. 
+Updated regex for all 66 schemas to match http or https and schema.data or schema.dev.data.
 
 ### [bundle/protocol.json - v7.1.0] - 2018-05-24
 ### Changed
@@ -141,9 +177,27 @@ Added a new ontology module for library amplification approach.
 ### Added
 Added a new ontology module for library construction approach.
 
+### [module/process/purchased_reagents.json - v6.0.0] - 2018-05-24
+### Changed
+Field batch_number changed to lot_number.
+
 ### [core/biomaterial/biomaterial_core.json - v6.0.0] - 2018-05-23
 ### Removed
 Removed the `has_input_biomaterial` property as the purpose is misleading and no longer required by the spreadsheet importer
+
+### [type/biomaterial/cell_line.json - v5.2.1] - 2018-05-21
+### Added
+Added `supplier` field to capture supplier of purchased cell line.
+Added `lot_number` field to capture lot number of purchased cell line.
+Added `induced pluripotent` to enum of cell line type.
+
+### [module/biomaterial/cell_morphology.json - v6.0.0] - 2018-05-21
+### Changed
+Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
+### Added
+Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
+
+This update is a major change due to the changing of the cell_viability field name.
 
 ### [type/biomaterial/cell_suspension.json - v6.0.0] - 2018-05-21
 ### Changed

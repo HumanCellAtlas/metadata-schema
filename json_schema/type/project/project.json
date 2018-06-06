@@ -81,7 +81,7 @@
             "user_friendly": "INSDC study accession"
         },
         "funders": {
-            "description": "A list of funders supporteing this project",
+            "description": "A list of funders supporting this project",
             "type": "array",
             "items": {
                 "$ref": "module/project/funder.json"

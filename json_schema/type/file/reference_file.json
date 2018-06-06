@@ -5,7 +5,12 @@
     "required": [
         "describedBy",
         "schema_type",
-        "file_core"
+        "file_core",
+        "ncbi_taxon_id",
+        "genus_species",
+        "assembly_type",
+        "reference_type",
+        "reference_version"
     ],
     "title": "reference_file",
     "type": "object",

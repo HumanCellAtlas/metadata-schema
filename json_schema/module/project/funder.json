@@ -5,30 +5,32 @@
     "title": "funder",
     "type": "object",
     "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/funder"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
         "grant_title": {
             "description": "The name of the grant funding the project. Approximately 30 words.",
-            "type": "array",
-            "items":{
-                "type": "string"
-            },
+            "type": "string",
             "example": "A title of a grant proposal.",
             "user_friendly": "Grant title"
         },
         "grant_id": {
             "description": "The unique grant identifier or reference for the project.",
-            "type": "array",
-            "items":{
-                "type": "string"
-            },
+            "type": "string",
             "example": "BB/P0000001/1",
             "user_friendly": "Grant ID"
         },
         "funder_name": {
-            "description": "The name of the funding organisation.",
-            "type": "array",
-            "items":{
-                "type": "string"
-            },
+            "description": "The name of the funding organization.",
+            "type": "string",
             "example": "Biotechnology and Biological Sciences Research Council (BBSRC)",
             "user_friendly": "Name of grant funder"
         }
