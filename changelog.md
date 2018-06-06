@@ -7,13 +7,17 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/project/project.json - v?.?.?] - 2018-05-21
+### [type/project/project.json - v?.+1.?] - 2018-06-06
 ### Changed
-Added a pointer to new module with three optional fields to track project funders
+Added a pointer to new module with three optional fields to track project funders.
 
-### [module/project/funder.json - v1.0.0] - 2018-05-21
+### [module/project/funder.json - v1.0.0] - 2018-06-06
 ### Added
-A new module with three optional fields to track project funders
+A new module with three optional fields to track project funders.
+
+### [core/project/project_core.json - v?.?.+1] - 2018-06-06
+### Changed
+Updated descriptions and examples.
 
 ### [bundle/protocol.json - v10.0.1] - 2018-06-05
 ### Changed
