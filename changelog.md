@@ -11,6 +11,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ### Added
 Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
 
+### [type/project/project.json - v?.+1.?] - 2018-06-06
+### Changed
+Added a pointer to new module with three optional fields to track project funders.
+
+### [module/project/funder.json - v1.0.0] - 2018-06-06
+### Added
+A new module with three optional fields to track project funders.
+
+### [core/project/project_core.json - v?.?.+1] - 2018-06-06
+### Changed
+Updated descriptions and examples.
+
 ### [bundle/protocol.json - v10.0.1] - 2018-06-05
 ### Changed
 Added new protocol types to the oneOf list for protocol bundle.
@@ -51,30 +63,7 @@ Made field `cell_line_type` required.
 ### Changed
 Updated the description for the schema.
 
-### [module/process/purchased_reagents.json - v6.0.0] - 2018-05-24
-### Changed
-Field batch_number changed to lot_number.
-
-### [type/biomaterial/cell_line.json - v5.2.1] - 2018-05-21
-### Added
-Added `supplier` field to capture supplier of purchased cell line.
-Added `lot_number` field to capture lot number of purchased cell line.
-Added `induced pluripotent` to enum of cell line type.
-
-### [module/biomaterial/cell_morphology.json - v6.0.0] - 2018-05-21
-### Changed
-Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
-### Added
-Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
-
-This update is a major change due to the changing of the cell_viability field name.
-
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
-Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
-### Added
-Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
-
-This update is a major change due to the changing of the cell_viability field name.
 
 ### [bundle/biomaterial.json - v5.2.1] - 2018-06-01
 ### Changed
@@ -196,9 +185,27 @@ Added a new ontology module for library amplification approach.
 ### Added
 Added a new ontology module for library construction approach.
 
+### [module/process/purchased_reagents.json - v6.0.0] - 2018-05-24
+### Changed
+Field batch_number changed to lot_number.
+
 ### [core/biomaterial/biomaterial_core.json - v6.0.0] - 2018-05-23
 ### Removed
 Removed the `has_input_biomaterial` property as the purpose is misleading and no longer required by the spreadsheet importer
+
+### [type/biomaterial/cell_line.json - v5.2.1] - 2018-05-21
+### Added
+Added `supplier` field to capture supplier of purchased cell line.
+Added `lot_number` field to capture lot number of purchased cell line.
+Added `induced pluripotent` to enum of cell line type.
+
+### [module/biomaterial/cell_morphology.json - v6.0.0] - 2018-05-21
+### Changed
+Changed name of cell_viability field to percent_cell_viability to accurately reflect the value of this field.
+### Added
+Added a new field - cell_viability_result - to capture whether the cell_viability_method assay passed or failed.
+
+This update is a major change due to the changing of the cell_viability field name.
 
 ### [type/biomaterial/cell_suspension.json - v6.0.0] - 2018-05-21
 ### Changed
