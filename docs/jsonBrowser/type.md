@@ -40,7 +40,7 @@ selected_cell_type | The cell type(s) selected to be present in the suspension. 
 total_estimated_cells | Total estimated number of cells in biomaterial. May be 1 for well-based assays. | integer | no |  | Total estimated cell count |  | 2100
 
 ## cell_line
-_Information about the cell line used in the biomaterial_
+_Information about the cell line or cell culture biomaterial._
 
 Location: type/biomaterial/cell_line.json
 
@@ -48,10 +48,12 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-catalog_number | The supplier catalogue number for the cell line. | string | no |  | Catalog number |  | 
+supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci
+catalog_number | The supplier catalogue number for the cell line. | string | no |  | Catalog number |  | 77650057
+lot_number | The supplier lot or batch number for the cell line. | string | no |  | Lot/batch number |  | 24.10.14
 catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | 
 cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
-cell_line_type | The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | no |  | Cell line type | primary, immortalized, stem cell-derived, synthetic | 
+cell_line_type | The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | yes |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent | induced pluripotent
 cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
 growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 cell_type | The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
@@ -163,7 +165,7 @@ field_resolution | x, y, and z (number of focal planes) resolution of an individ
 fixation | Description of fixation conditions. | string | no |  | Fixation |  | 
 microscope | Microscope used for imaging. |  | no |  | Microscope | generic confocal, generic two photon | 
 probes | A file containing information on probe sequence, genes they cover, and colors. | string | no |  | Probes |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 
 ## sequencing_protocol
 _Information about the sequencing protocol_
@@ -216,6 +218,23 @@ markers | A space-delimited list of markers with +/-. | string | no |  | Markers
 min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 
 max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 
 
+## ipsc_induction_protocol
+_Contains information on how a sample was treated to become an induced pluripotent stem cell._
+
+Location: type/protocol/biomaterial_collection/ipsc_induction_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+induced_pluripotent_cell_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string | yes |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | piggyBac transposon
+induced_pluripotent_cell_induction_kit | Kit used to induce pluripotent stem cell generation. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Induction kit |  | 
+pluripotency_test | Description of how pluripotency was tested in induced pluripotent stem cells. | string | no |  | Pluripotency test |  | teratoma assay
+percent_pluripotency | Percent of iPSCs that passed the pluripotency test. | number | no |  | Percent pluripotency |  | 97.2
+pluripotency_vector_removed | Whether a viral vector was removed after induction. Must be one of: yes, no, unknown. | string | no |  | Pluripotent vector removed? | yes, no, unknown | yes
+induced_pluripotent_cell_induction_produced_in_house | Whether the induced pluripotent stem cell was prepared in-house. Must be one of: yes, no. | boolean | no |  | iPSC prepared in-house? |  | yes
+protocol_reagents | A list of additional purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Additional reagents |  | 
+
 ## dissociation_protocol
 _Contains information on the dissociation protocol used to separate the cells in a specimen._
 
@@ -226,8 +245,24 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 dissociation_method | How cells or organelles were dissociated. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
-nucleic_acid_source | Source cells or organelles from which nucleic acid molecules were collected. | string | no |  | Nucleic acid source | bulk cell, single cell, single nucleus, bulk nuclei, mitochondria | 
+nucleic_acid_source | Source cells or organelles from which nucleic acid molecules were collected. | string | yes |  | Nucleic acid source | bulk cell, single cell, single nucleus, bulk nuclei, mitochondria | 
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
+
+## differentiation_protocol
+_Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid._
+
+Location: type/protocol/biomaterial_collection/differentiation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+differentiation_method | Differentiation method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body, Monolayer, Inductive Co-Culture
+differentiation_target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
+differentiation_reagents | A list of purchased reagents used in the differentiation protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Differentiation reagents |  | 
+differentiation_target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt Pathway
+differentiation_validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining
+differentiation_validation_results | Results confirming successful differentiation to target cell type. | string | no |  | Validation results |  | CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative
 
 ## biomaterial_protocol
 _Information about the biomaterial collection protocol_
@@ -250,7 +285,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  |  |  | 
 reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
 tasks | Descriptions of tasks in the workflow. | array | yes |  |  |  | 
@@ -270,11 +305,11 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
-ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | no |  | NCBI taxon ID |  | 
-genus_species | The scientific binomial name for the species of this reference. | object | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-assembly_type | The assembly type of this reference. This applies to reference genome sequences. | string | no |  |  | primary assembly, complete assembly, patch assembly | 
-reference_type | The type of the genome reference. | string | no |  |  | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | 
-reference_version | The genome version of the reference. | string | no |  |  |  | GencodeV27
+ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | yes |  | NCBI taxon ID |  | 
+genus_species | The scientific binomial name for the species of this reference. | object | yes | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
+assembly_type | The assembly type of this reference. This applies to reference genome sequences. | string | yes |  |  | primary assembly, complete assembly, patch assembly | 
+reference_type | The type of the genome reference. | string | yes |  |  | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | 
+reference_version | The genome version of the reference. | string | yes |  |  |  | GencodeV27
 
 ## sequence_file
 _A file of read sequences generated by a sequencing experiment._
