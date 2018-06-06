@@ -73,7 +73,8 @@
             },
             "project": {
                 "contact": "5.2.1",
-                "publication": "5.2.1"
+                "publication": "5.2.1",
+                "funder": "1.0.0"
             }
         },
         "type": {
