@@ -69,12 +69,31 @@
             "type": "string",
             "enum": [
                 "feeder-free",
-                "feeder-dependent, MEF Feeder Cells",
-                "feeder-dependent, JK1 Feeder Cells",
-                "feeder-dependent, SNL 76/7 Feeder Cells",
-                "feeder-dependent, Human Marrow Stromal Cells"
+                "feeder-dependent, JK1 feeder cells",
+                "feeder-dependent, SNL 76/7 feeder cells",
+                "feeder-dependent, human marrow stromal cells",
+                "feeder-dependent, bovine embryonic fibroblast cells",
+                "feeder-dependent, mouse embryonic fibroblast cells",
+                "feeder-dependent, mouse fibroblast STO cells",
+                "feeder-dependent, mouse bone marrow stromal cells",
+                "feeder-dependent, mouse yolk sac-derived endothelial cells",
+                "feeder-dependent, human foreskin fibroblast cells",
+                "feeder-dependent, human newborn fibroblast cells",
+                "feeder-dependent, human fetal lung fibroblast cells",
+                "feeder-dependent, human uterine endometrial cells",
+                "feeder-dependent, human breast parenchymal cells",
+                "feeder-dependent, human embryonic fibroblast cells",
+                "feeder-dependent, human adipose stromal cells",
+                "feeder-dependent, human amniotic epithelial cells",
+                "feeder-dependent, human placental fibroblast cells",
+                "feeder-dependent, human umbilical cord stromal cells",
+                "feeder-dependent, human fetal muscle cells",
+                "feeder-dependent, human fetal skin cells",
+                "feeder-dependent, human fetal liver stromal cells",
+                "feeder-dependent, human fallopian tubal epithelial cells",
+                "feeder-dependent, human amniotic mesenchymal cells"
             ],
-            "example": "feeder-dependent, MEF Feeder Cells",
+            "example": "feeder-dependent, mouse embryonic fibroblast cells",
             "user_friendly": "Feeder layer type"
         }
     }
