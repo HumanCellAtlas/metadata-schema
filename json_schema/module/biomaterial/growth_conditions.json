@@ -68,12 +68,12 @@
             "type": "string",
             "enum": [
                 "feeder-free",
-                "MEF Feeder Cells",
-                "JK1 Feeder Cells",
-                "SNL 76/7 Feeder Cells",
-                "Human Marrow Stromal Cells"
+                "feeder-dependent, MEF Feeder Cells",
+                "feeder-dependent, JK1 Feeder Cells",
+                "feeder-dependent, SNL 76/7 Feeder Cells",
+                "feeder-dependent, Human Marrow Stromal Cells"
             ],
-            "example": "Indirect DNA stain",
+            "example": "feeder-dependent, MEF Feeder Cells",
             "user_friendly": "Feeder layer type"
         }
     }
