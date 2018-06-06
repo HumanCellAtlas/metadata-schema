@@ -17,10 +17,11 @@
             "example": "4.6.1"
         },
         "passage_number": {
-            "description": "The number of passages the cell line has been through.",
+            "description": "The number of passages (as an integer) that the biomaterial has been through.",
             "maximum": 1000,
             "minimum": 0,
             "type": "integer",
+            "example": 22,
             "user_friendly": "Passage number"
         },
         "growth_medium": {
