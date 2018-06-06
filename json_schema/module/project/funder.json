@@ -18,7 +18,7 @@
         },
         "grant_title": {
             "description": "The name of the grant funding the project. Approximately 30 words.",
-            "type": "array",
+            "type": "string",
             "items":{
                 "type": "string"
             },
@@ -27,7 +27,7 @@
         },
         "grant_id": {
             "description": "The unique grant identifier or reference for the project.",
-            "type": "array",
+            "type": "string",
             "items":{
                 "type": "string"
             },
@@ -35,8 +35,8 @@
             "user_friendly": "Grant ID"
         },
         "funder_name": {
-            "description": "The name of the funding organisation.",
-            "type": "array",
+            "description": "The name of the funding organization.",
+            "type": "string",
             "items":{
                 "type": "string"
             },
