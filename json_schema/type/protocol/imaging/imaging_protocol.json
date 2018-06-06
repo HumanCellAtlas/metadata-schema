@@ -5,7 +5,8 @@
     "required": [
         "describedBy",
         "schema_type",
-        "protocol_core"
+        "protocol_core",
+        "protocol_type"
     ],
     "title": "imaging_protocol",
     "type": "object",
