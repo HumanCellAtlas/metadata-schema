@@ -15,7 +15,6 @@ Renamed `start_time` to `length_of_time` with updated description and added a nu
 Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
 
 
-
 ### [type/project/project.json - v?.+1.?] - 2018-06-06
 ### Changed
 Added a pointer to new module with three optional fields to track project funders.
