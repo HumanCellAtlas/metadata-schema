@@ -94,6 +94,11 @@
             "$ref": "module/ontology/cell_type_ontology.json",
             "user_friendly": "Cell type"
         },
+        "karyotype": {
+            "description": "The karyotype of the biomaterial.",
+            "type": "string",
+            "user_friendly": "Karyotype"
+        },
         "date_established": {
             "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
             "type": "string",
