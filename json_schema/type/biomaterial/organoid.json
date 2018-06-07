@@ -34,18 +34,6 @@
             "type": "object",
             "$ref": "core/biomaterial/biomaterial_core.json"
         },
-        "cell_morphology": {
-            "description": "Features relating to the morphology of cells in a biomaterial.",
-            "type": "object",
-            "$ref": "module/biomaterial/cell_morphology.json",
-            "user_friendly": "Cell morphology"
-        },
-        "growth_conditions": {
-            "description": "Features relating to the growth and/or maintenance of a biomaterial.",
-            "type": "object",
-            "$ref": "module/biomaterial/growth_conditions.json",
-            "user_friendly": "Growth conditions"
-        },
         "genus_species": {
             "description": "The scientific binomial name for the species of the biomaterial.",
             "type" : "array",

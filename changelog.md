@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/organoid.json - v?+1.0.0] - 2018-06-07
+### Removed
+Removed fields `growth_conditions` and `cell_morphology` from organoid.
+
 ### [type/project/project.json - v?.+1.?] - 2018-06-06
 ### Changed
 Added a pointer to new module with three optional fields to track project funders.
