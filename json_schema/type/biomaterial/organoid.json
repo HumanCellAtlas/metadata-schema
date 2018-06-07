@@ -125,7 +125,8 @@
 	},
 	"organoid_stored_oxygen_levels": {
 	    "description": "Percent oxygen level organoid was stored in prior to sequencing.",
-	    "type": 75,
+	    "type": "number",
+	    "example": 75,
 	    "user_friendly": "Organoid stored oxygen level"
 	}
     }
