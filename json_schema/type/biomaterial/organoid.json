@@ -80,9 +80,14 @@
             "user_friendly": "Organoid age unit"
         },
 	"organoid_size": {
-	    "description": "The size of the organoid",
+	    "description": "The size of the organoid.",
 	    "type": "number",
 	    "user_friendly": "Organoid size"
+	},
+	"organoid_size_unit": {
+	    "description": "The unit in which the organoid size is expressed.",
+	    "type": "string",
+	    "user_friendly": "Organoid size unit"
 	},
         "organoid_type": {
             "description": "The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
