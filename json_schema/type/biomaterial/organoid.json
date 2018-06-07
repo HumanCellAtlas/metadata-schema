@@ -62,7 +62,7 @@
             "user_friendly": "Organ model"
         },
         "organoid_age": {
-            "description": "Age of the organoid.",
+            "description": "Age of the organoid starting from the day cell aggregates started differentiating to desired organoid model.",
             "type": "number",
             "example": 55,
             "user_friendly": "Organoid age"
