@@ -79,6 +79,11 @@
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Organoid age unit"
         },
+	"organoid_size": {
+	    "description": "The size of the organoid",
+	    "type": "number",
+	    "user_friendly": "Organoid size"
+	},
         "organoid_type": {
             "description": "The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
             "type": "string",
