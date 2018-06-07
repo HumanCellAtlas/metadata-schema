@@ -105,6 +105,11 @@
                 "synthetic"
             ],
             "user_friendly": "Organoid type"
-        }
+        },
+	"embedded_in_matrigel": {
+	    "description": "Whether organoids are embedded in a matrigel.",
+	    "type": "boolean",
+	    "user_friendly": "Embeddded in matrigel"
+	},
     }
 }
