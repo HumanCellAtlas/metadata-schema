@@ -89,6 +89,12 @@
 	    "type": "string",
 	    "user_friendly": "Organoid size unit"
 	},
+	"organoid_morphology": {
+	    "description": "General description of the organoid morphology.",
+	    "type": "string",
+	    "example": "Epithelial monolayer with budding crypt-like domains.",
+	    "user_frinedly": "Organoid morphology"
+	},
         "organoid_type": {
             "description": "The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
             "type": "string",
