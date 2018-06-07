@@ -117,5 +117,11 @@
 	    "example": "matrigel, liquid suspension, adherent",
 	    "user_friendly": "Organoid growth environment"
 	},
+	"input_aggregate_cell_count": {
+	    "description": "Estimated number of cells per cell aggregate.",
+	    "type": "number",
+	    "example": 10000,
+	    "user_friendly": "Input aggregate cell count"
+	},
     }
 }
