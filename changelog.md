@@ -7,6 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/process/process_core.json - v?+1.0.0] - 2018-06-07
+### Changed
+Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
+
+### Added
+Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
+
+
+
 ### [type/project/project.json - v?.+1.?] - 2018-06-06
 ### Changed
 Added a pointer to new module with three optional fields to track project funders.
