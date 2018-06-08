@@ -7,7 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [module/biomaterial/state_of_specimen.json - v5.2.?+1] - 2018-06-07
+### [bundle/biomaterial.json - v7.0.1] - 2018-06-07
+### Changed
+Updated definition of `ischemic_time` to address confusion from users.
+
+### [type/biomaterial/specimen_from_organism.json - v5.2.3] - 2018-06-07
+### Changed
+Updated definition of `ischemic_time` to address confusion from users.
+
+### [module/biomaterial/state_of_specimen.json - v5.2.2] - 2018-06-07
 ### Changed
 Updated definition of `ischemic_time` to address confusion from users.
 
