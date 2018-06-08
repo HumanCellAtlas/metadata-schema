@@ -1,0 +1,396 @@
+# fields from develop branch 4.6.18
+
+tabs:
+  - project:
+      display_name : Project
+      columns:
+        - project.project_core.project_shortname
+        - project.project_core.project_title
+        - project.project_core.project_description
+        - project.insdc_project
+        - project.geo_series
+        - project.insdc_study
+        - project.supplementary_files
+        - project.array_express_investigation
+  - contributors:
+      display_name : Contact
+      columns:
+        - project.contributors.contact_name
+        - project.contributors.email
+        - project.contributors.phone
+        - project.contributors.institution
+        - project.contributors.laboratory
+        - project.contributors.address
+        - project.contributors.country
+        - project.project_core.project_shortname
+  - publications:
+      display_name : Publications
+      columns:
+        - project.publications.authors
+        - project.publications.publication_title
+        - project.publications.doi
+        - project.publications.pmid
+        - project.publications.publication_url
+        - project.project_core.project_shortname
+  - donor_organism:
+      display_name : "Donor organism"
+      columns:
+        - donor_organism.biomaterial_core.biomaterial_id
+        - donor_organism.biomaterial_core.biomaterial_name
+        - donor_organism.biomaterial_core.biomaterial_description
+        - donor_organism.biomaterial_core.ncbi_taxon_id
+        - donor_organism.biomaterial_core.genotype
+        - donor_organism.biomaterial_core.karyotype
+        - donor_organism.biomaterial_core.supplementary_files
+        - donor_organism.biomaterial_core.biosd_biomaterial
+        - donor_organism.biomaterial_core.insdc_biomaterial
+        - donor_organism.human_specific.body_mass_index
+        - donor_organism.human_specific.ethnicity.text
+        - donor_organism.human_specific.ethnicity.ontology
+        - donor_organism.mus_musculus_specific.strain.text
+        - donor_organism.mus_musculus_specific.strain.ontology
+        - donor_organism.death.cause_of_death
+        - donor_organism.death.cold_perfused
+        - donor_organism.death.days_on_ventilator
+        - donor_organism.death.hardy_scale
+        - donor_organism.death.time_of_death
+        - donor_organism.medical_history.alcohol_history
+        - donor_organism.medical_history.medication
+        - donor_organism.medical_history.nutritional_state
+        - donor_organism.medical_history.smoking_history
+        - donor_organism.medical_history.test_results
+        - donor_organism.medical_history.treatment
+        - donor_organism.genus_species.text
+        - donor_organism.genus_species.ontology
+        - donor_organism.organism_age
+        - donor_organism.organism_age_unit.text
+        - donor_organism.organism_age_unit.ontology
+        - donor_organism.development_stage.text
+        - donor_organism.development_stage.ontology
+        - donor_organism.disease.text
+        - donor_organism.disease.ontology
+        - donor_organism.familial_relationship.is_child_of
+        - donor_organism.familial_relationship.is_parent_of
+        - donor_organism.familial_relationship.is_sibling_of
+        - donor_organism.gestational_age
+        - donor_organism.gestational_age_unit.text
+        - donor_organism.gestational_age_unit.ontology
+        - donor_organism.height
+        - donor_organism.height_unit.text
+        - donor_organism.height_unit.ontology
+        - donor_organism.is_living
+        - donor_organism.biological_sex
+        - donor_organism.weight
+        - donor_organism.weight_unit.text
+        - donor_organism.weight_unit.ontology
+        # - process.process_core.process_id
+  - specimen_from_organism:
+      display_name : "Specimen from organism"
+      columns:
+        - specimen_from_organism.biomaterial_core.biomaterial_id
+        # Input biomaterial ID field
+        - donor_organism.biomaterial_core.biomaterial_id
+        - specimen_from_organism.biomaterial_core.biomaterial_name
+        - specimen_from_organism.biomaterial_core.biomaterial_description
+        - specimen_from_organism.biomaterial_core.ncbi_taxon_id
+        - specimen_from_organism.genus_species.text
+        - specimen_from_organism.genus_species.ontology
+        - specimen_from_organism.organ.text
+        - specimen_from_organism.organ.ontology
+        - specimen_from_organism.organ_part.text
+        - specimen_from_organism.organ_part.ontology
+        - specimen_from_organism.preservation_storage.storage_method
+        - specimen_from_organism.preservation_storage.storage_time
+        - specimen_from_organism.preservation_storage.storage_time_unit.text
+        - specimen_from_organism.preservation_storage.storage_time_unit.ontology
+        - specimen_from_organism.preservation_storage.preservation_method
+        - specimen_from_organism.collection_time
+        - specimen_from_organism.disease.text
+        - specimen_from_organism.disease.ontology
+        - specimen_from_organism.biomaterial_core.genotype
+        - specimen_from_organism.biomaterial_core.karyotype
+        - specimen_from_organism.biomaterial_core.supplementary_files
+        - specimen_from_organism.biomaterial_core.biosd_biomaterial
+        - specimen_from_organism.biomaterial_core.insdc_biomaterial
+        - specimen_from_organism.state_of_specimen.autolysis_score
+        - specimen_from_organism.state_of_specimen.gross_description
+        - specimen_from_organism.state_of_specimen.gross_image
+        - specimen_from_organism.state_of_specimen.ischemic_temperature
+        - specimen_from_organism.state_of_specimen.ischemic_time
+        - specimen_from_organism.state_of_specimen.microscopic_description
+        - specimen_from_organism.state_of_specimen.microscopic_image
+        - specimen_from_organism.state_of_specimen.postmortem_interval
+        - process.process_core.process_id
+        # Protocol ID fields
+        - collection_protocol.protocol_core.protocol_id
+        - enrichment_protocol.protocol_core.protocol_id
+  - cell_suspension:
+      display_name : "Cell suspension"
+      columns:
+        - cell_suspension.biomaterial_core.biomaterial_id
+        # Input biomaterial ID field
+        - specimen_from_organism.biomaterial_core.biomaterial_id
+        - cell_suspension.biomaterial_core.biomaterial_name
+        - cell_suspension.biomaterial_core.biomaterial_description
+        - cell_suspension.biomaterial_core.ncbi_taxon_id
+        - cell_suspension.biomaterial_core.genotype
+        - cell_suspension.biomaterial_core.karyotype
+        - cell_suspension.biomaterial_core.supplementary_files
+        - cell_suspension.biomaterial_core.biosd_biomaterial
+        - cell_suspension.biomaterial_core.insdc_biomaterial
+        - cell_suspension.cell_morphology.cell_morphology
+        - cell_suspension.cell_morphology.cell_size
+        - cell_suspension.cell_morphology.cell_size_unit.text
+        - cell_suspension.cell_morphology.cell_size_unit.ontology
+        - cell_suspension.cell_morphology.percent_cell_viability
+        - cell_suspension.cell_morphology.cell_viability_method
+        - cell_suspension.cell_morphology.cell_viability_result
+        - cell_suspension.cell_morphology.percent_necrosis
+        - cell_suspension.growth_conditions.passage_number
+        - cell_suspension.growth_conditions.growth_medium
+        - cell_suspension.growth_conditions.mycoplasma_testing_method
+        - cell_suspension.growth_conditions.mycoplasma_testing_results
+        - cell_suspension.growth_conditions.drug_treatment
+        - cell_suspension.genus_species.text
+        - cell_suspension.genus_species.ontology
+        - cell_suspension.selected_cell_type.text
+        - cell_suspension.selected_cell_type.ontology
+        - cell_suspension.total_estimated_cells
+        - process.process_core.process_id
+        # Protocol ID fields
+        - dissociation_protocol.protocol_core.protocol_id
+        - enrichment_protocol.protocol_core.protocol_id
+  - sequence_file:
+      display_name : "Sequence files"
+      columns:
+        - sequence_file.file_core.file_name
+         # Input biomaterial ID field
+        - cell_suspension.biomaterial_core.biomaterial_id
+        - sequence_file.file_core.file_format
+        - sequence_file.file_core.checksum
+        - sequence_file.read_index
+        - sequence_file.lane_index
+        - sequence_file.read_length
+        - sequence_file.insdc_run
+        - sequence_file.smartseq2.plate_id
+        - sequence_file.smartseq2.well_name
+        - sequence_file.smartseq2.well_row
+        - sequence_file.smartseq2.well_column
+        - sequence_file.smartseq2.cell_quality
+        # Protocol ID fields
+        - library_preparation_protocol.protocol_core.protocol_id
+        - sequencing_protocol.protocol_core.protocol_id
+        - process.process_core.process_id
+  - organoid:
+      display_name : "Organoid"
+      columns:
+        - organoid.biomaterial_core.biomaterial_id
+        # Add input biomaterial link column here
+        - organoid.biomaterial_core.biomaterial_name
+        - organoid.biomaterial_core.biomaterial_description
+        - organoid.biomaterial_core.ncbi_taxon_id
+        - organoid.biomaterial_core.genotype
+        - organoid.biomaterial_core.karyotype
+        - organoid.biomaterial_core.supplementary_files
+        - organoid.biomaterial_core.biosd_biomaterial
+        - organoid.biomaterial_core.insdc_biomaterial
+        - organoid.cell_morphology.cell_morphology
+        - organoid.cell_morphology.cell_size
+        - organoid.cell_morphology.cell_size_unit.text
+        - organoid.cell_morphology.cell_size_unit.ontology
+        - organoid.cell_morphology.percent_cell_viability
+        - organoid.cell_morphology.cell_viability_method
+        - organoid.cell_morphology.cell_viability_result
+        - organoid.cell_morphology.percent_necrosis
+        - organoid.growth_conditions.passage_number
+        - organoid.growth_conditions.growth_medium
+        - organoid.growth_conditions.mycoplasma_testing_method
+        - organoid.growth_conditions.mycoplasma_testing_results
+        - organoid.growth_conditions.drug_treatment
+        - organoid.genus_species.text
+        - organoid.genus_species.ontology
+        - organoid.model_for_organ.text
+        - organoid.model_for_organ.ontology
+        - organoid.organoid_age
+        - organoid.organoid_age_unit.text
+        - organoid.organoid_age_unit.ontology
+        - organoid.organoid_type
+        - process.process_core.process_id
+        # Add protocol ID columns here
+  - cell_line:
+      display_name: "Cell line"
+      columns:
+        - cell_line.biomaterial_core.biomaterial_id
+        # Add input biomaterial link column here
+        - cell_line.biomaterial_core.biomaterial_name
+        - cell_line.biomaterial_core.biomaterial_description
+        - cell_line.biomaterial_core.ncbi_taxon_id
+        - cell_line.biomaterial_core.genotype
+        - cell_line.biomaterial_core.karyotype
+        - cell_line.biomaterial_core.supplementary_files
+        - cell_line.biomaterial_core.biosd_biomaterial
+        - cell_line.biomaterial_core.insdc_biomaterial
+        - cell_line.supplier
+        - cell_line.catalog_number
+        - cell_line.lot_number
+        - cell_line.catalog_url
+        - cell_line.cell_cycle.text
+        - cell_line.cell_cycle.ontology
+        - cell_line.cell_line_type
+        - cell_line.cell_morphology.cell_morphology
+        - cell_line.cell_morphology.cell_size
+        - cell_line.cell_morphology.cell_size_unit.text
+        - cell_line.cell_morphology.cell_size_unit.ontology
+        - cell_line.cell_morphology.percent_cell_viability
+        - cell_line.cell_morphology.cell_viability_method
+        - cell_line.cell_morphology.cell_viability_result
+        - cell_line.cell_morphology.percent_necrosis
+        - cell_line.growth_conditions.passage_number
+        - cell_line.growth_conditions.growth_medium
+        - cell_line.growth_conditions.mycoplasma_testing_method
+        - cell_line.growth_conditions.mycoplasma_testing_results
+        - cell_line.growth_conditions.drug_treatment
+        - cell_line.cell_type.text
+        - cell_line.cell_type.ontology
+        - cell_line.date_established
+        - cell_line.disease.text
+        - cell_line.disease.ontology
+        - cell_line.genus_species.text
+        - cell_line.genus_species.ontology
+        - cell_line.publications.authors
+        - cell_line.publications.publication_title
+        - cell_line.publications.doi
+        - cell_line.publications.pmid
+        - cell_line.publications.publication_url
+        - process.process_core.process_id
+        # Add protocol ID columns here
+  - collection_protocol:
+      display_name : "Collection protocol"
+      columns:
+        - collection_protocol.protocol_core.protocol_id
+        - collection_protocol.protocol_core.protocol_name
+        - collection_protocol.protocol_core.protocol_description
+        - collection_protocol.protocol_core.publication_doi
+        - collection_protocol.protocol_core.protocols_io_doi
+        - collection_protocol.protocol_core.document
+        - collection_protocol.collection_method.text
+        - collection_protocol.collection_method.ontology
+        - collection_protocol.protocol_reagents.retail_name
+        - collection_protocol.protocol_reagents.catalog_number
+        - collection_protocol.protocol_reagents.manufacturer
+        - collection_protocol.protocol_reagents.lot_number
+        - collection_protocol.protocol_reagents.expiry_date
+        - collection_protocol.protocol_reagents.kit_titer
+  - dissociation_protocol:
+      display_name : "Dissociation protocol"
+      columns:
+        - dissociation_protocol.protocol_core.protocol_id
+        - dissociation_protocol.protocol_core.protocol_name
+        - dissociation_protocol.protocol_core.protocol_description
+        - dissociation_protocol.protocol_core.publication_doi
+        - dissociation_protocol.protocol_core.protocols_io_doi
+        - dissociation_protocol.protocol_core.document
+        - dissociation_protocol.dissociation_method.text
+        - dissociation_protocol.dissociation_method.ontology
+        - dissociation_protocol.nucleic_acid_source
+        - dissociation_protocol.protocol_reagents.retail_name
+        - dissociation_protocol.protocol_reagents.catalog_number
+        - dissociation_protocol.protocol_reagents.manufacturer
+        - dissociation_protocol.protocol_reagents.lot_number
+        - dissociation_protocol.protocol_reagents.expiry_date
+        - dissociation_protocol.protocol_reagents.kit_titer
+  - enrichment_protocol:
+      display_name : "Enrichment protocol"
+      columns:
+        - enrichment_protocol.protocol_core.protocol_id
+        - enrichment_protocol.protocol_core.protocol_name
+        - enrichment_protocol.protocol_core.protocol_description
+        - enrichment_protocol.protocol_core.publication_doi
+        - enrichment_protocol.protocol_core.protocols_io_doi
+        - enrichment_protocol.protocol_core.document
+        - enrichment_protocol.enrichment_method.text
+        - enrichment_protocol.enrichment_method.ontology
+        - enrichment_protocol.markers
+        - enrichment_protocol.min_size_selected
+        - enrichment_protocol.max_size_selected
+  - library_preparation_protocol:
+      display_name : "Library preparation protocol"
+      columns:
+        - library_preparation_protocol.protocol_core.protocol_id
+        - library_preparation_protocol.protocol_core.protocol_name
+        - library_preparation_protocol.protocol_core.protocol_description
+        - library_preparation_protocol.protocol_core.publication_doi
+        - library_preparation_protocol.protocol_core.protocols_io_doi
+        - library_preparation_protocol.protocol_core.document
+        - library_preparation_protocol.cell_barcode.barcode_read
+        - library_preparation_protocol.cell_barcode.barcode_offset
+        - library_preparation_protocol.cell_barcode.barcode_length
+        - library_preparation_protocol.cell_barcode.white_list_file
+        - library_preparation_protocol.input_nucleic_acid_molecule.text
+        - library_preparation_protocol.input_nucleic_acid_molecule.ontology
+        - library_preparation_protocol.library_construction_approach.text
+        - library_preparation_protocol.library_construction_approach.ontology
+        - library_preparation_protocol.library_construction_kit.retail_name
+        - library_preparation_protocol.library_construction_kit.catalog_number
+        - library_preparation_protocol.library_construction_kit.manufacturer
+        - library_preparation_protocol.library_construction_kit.lot_number
+        - library_preparation_protocol.library_construction_kit.expiry_date
+        - library_preparation_protocol.library_construction_kit.kit_titer
+        - library_preparation_protocol.nucleic_acid_conversion_kit.retail_name
+        - library_preparation_protocol.nucleic_acid_conversion_kit.catalog_number
+        - library_preparation_protocol.nucleic_acid_conversion_kit.manufacturer
+        - library_preparation_protocol.nucleic_acid_conversion_kit.lot_number
+        - library_preparation_protocol.nucleic_acid_conversion_kit.expiry_date
+        - library_preparation_protocol.nucleic_acid_conversion_kit.kit_titer
+        - library_preparation_protocol.end_bias
+        - library_preparation_protocol.primer
+        - library_preparation_protocol.strand
+        - library_preparation_protocol.spike_in_kit.retail_name
+        - library_preparation_protocol.spike_in_kit.catalog_number
+        - library_preparation_protocol.spike_in_kit.manufacturer
+        - library_preparation_protocol.spike_in_kit.lot_number
+        - library_preparation_protocol.spike_in_kit.expiry_date
+        - library_preparation_protocol.spike_in_kit.kit_titer
+        - library_preparation_protocol.spike_in_dilution
+        - library_preparation_protocol.umi_barcode.barcode_read
+        - library_preparation_protocol.umi_barcode.barcode_offset
+        - library_preparation_protocol.umi_barcode.barcode_length
+        - library_preparation_protocol.umi_barcode.white_list_file
+        - library_preparation_protocol.library_preamplification_method.text
+        - library_preparation_protocol.library_preamplification_method.ontology
+        - library_preparation_protocol.cdna_library_amplification_method.text
+        - library_preparation_protocol.cdna_library_amplification_method.ontology
+  - sequencing_protocol:
+      display_name : "Sequencing protocol"
+      columns:
+        - sequencing_protocol.protocol_core.protocol_id
+        - sequencing_protocol.protocol_core.protocol_name
+        - sequencing_protocol.protocol_core.protocol_description
+        - sequencing_protocol.protocol_core.publication_doi
+        - sequencing_protocol.protocol_core.protocols_io_doi
+        - sequencing_protocol.protocol_core.document
+        - sequencing_protocol.instrument_manufacturer_model.text
+        - sequencing_protocol.instrument_manufacturer_model.ontology
+        - sequencing_protocol.local_machine_name
+        - sequencing_protocol.paired_ends
+        - sequencing_protocol.sequencing_approach.text
+        - sequencing_protocol.sequencing_approach.ontology
+  - imaging_protocol:
+      display_name : "Imaging protocol"
+      columns:
+        - imaging_protocol.protocol_core.protocol_id
+        - imaging_protocol.protocol_core.protocol_name
+        - imaging_protocol.protocol_core.protocol_description
+        - imaging_protocol.protocol_core.publication_doi
+        - imaging_protocol.protocol_core.protocols_io_doi
+        - imaging_protocol.protocol_core.document
+        - imaging_protocol.embedding
+        - imaging_protocol.exposure_time
+        - imaging_protocol.field_counts
+        - imaging_protocol.field_microns
+        - imaging_protocol.field_resolution
+        - imaging_protocol.fixation
+        - imaging_protocol.microscope
+        - imaging_protocol.probes
+        - imaging_protocol.protocol_type.text
+        - imaging_protocol.protocol_type.ontology
