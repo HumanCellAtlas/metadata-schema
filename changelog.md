@@ -7,7 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/biomaterial/specimen_from_organism.json - v5.?+1.0] - 2018-06-07
+### [bundle/biomaterial.json - v7.2.0] - 2018-06-11
+### Added
+Added the field `purchased_specimen` referencing the purchased_reagents module, to capture purchasing of specimens such as blood samples.
+
+### [type/biomaterial/specimen_from_organism.json - v5.3.0] - 2018-06-11
 ### Added
 Added the field `purchased_specimen` referencing the purchased_reagents module, to capture purchasing of specimens such as blood samples.
 
