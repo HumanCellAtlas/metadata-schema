@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/organoid.json - v?+1.0.0] - 2018-06-07
+### Removed
+Removed fields `growth_conditions` and `cell_morphology` from organoid.
+
 ### [bundle/biomaterial.json - v7.2.0] - 2018-06-11
 ### Added
 Added the field `purchased_specimen` referencing the purchased_reagents module, to capture purchasing of specimens such as blood samples.
