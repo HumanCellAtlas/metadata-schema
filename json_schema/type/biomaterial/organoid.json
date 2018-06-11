@@ -82,6 +82,7 @@
 	"organoid_size": {
 	    "description": "The size of the organoid.",
 	    "type": "number",
+	    "example": 4,
 	    "user_friendly": "Organoid size"
 	},
 	"organoid_size_unit": {
