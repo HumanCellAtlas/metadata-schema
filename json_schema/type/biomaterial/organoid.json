@@ -91,7 +91,7 @@
 	    "description": "The unit in which the organoid size is expressed.",
 	    "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-	    "example": "millimeter"
+	    "example": "millimeter",
 	    "user_friendly": "Organoid size unit"
 	},
 	"organoid_morphology": {
