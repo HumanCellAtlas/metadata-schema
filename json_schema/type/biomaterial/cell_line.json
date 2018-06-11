@@ -88,12 +88,12 @@
             "$ref": "module/biomaterial/growth_conditions.json",
             "user_friendly": "Growth conditions"
         },
-	"confluency": {
-	    "description": "The percent a plate surface is covered by cells.",
-	    "type": "number",
-	    "example": 60,
-	    "user_friendly": "Confluency"
-	},
+        "confluency": {
+            "description": "The percent a plate surface is covered by cells.",
+            "type": "number",
+            "example": 60,
+            "user_friendly": "Percent confluency"
+        },
         "cell_type": {
             "description": "The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
             "type": "object",
