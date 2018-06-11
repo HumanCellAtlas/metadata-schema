@@ -82,6 +82,12 @@
             "type": "string",
             "format": "date-time",
             "user_friendly": "Time of collection"
+        },
+        "purchased_specimen": {
+            "description": "Information about a purchased specimen.",
+            "type": "object",
+            "$ref": "module/process/purchased_reagents.json",
+            "user_friendly": "Purchased specimen"
         }
     }
 }
