@@ -14,7 +14,8 @@
         "analysis_run_type",
         "tasks",
         "inputs",
-        "outputs"
+        "outputs",
+        "protocol_type"
     ],
     "title": "analysis_protocol",
     "type": "object",

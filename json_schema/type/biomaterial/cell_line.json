@@ -1,11 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the cell line used in the biomaterial",
+    "description": "Information about the cell line or cell culture biomaterial.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
-        "biomaterial_core"
+        "biomaterial_core",
+        "cell_line_type"
     ],
     "title": "cell_line",
     "type": "object",
@@ -33,10 +34,23 @@
             "type": "object",
             "$ref": "core/biomaterial/biomaterial_core.json"
         },
+        "supplier": {
+           "description": "The supplier of the cell line.",
+           "type": "string",
+           "example": "HipSci",
+           "user_friendly": "Supplier"
+        },
         "catalog_number": {
             "description": "The supplier catalogue number for the cell line.",
             "type": "string",
+            "example": "77650057",
             "user_friendly": "Catalog number"
+        },
+        "lot_number": {
+            "description": "The supplier lot or batch number for the cell line.",
+            "type": "string",
+            "example": "24.10.14",
+            "user_friendly": "Lot/batch number"
         },
         "catalog_url": {
             "description": "The supplier catalogue URL for the cell line.",
@@ -56,8 +70,10 @@
                 "primary",
                 "immortalized",
                 "stem cell-derived",
-                "synthetic"
-          ],
+                "synthetic",
+                "induced pluripotent"
+            ],
+            "example": "induced pluripotent",
             "user_friendly": "Cell line type"
         },
         "cell_morphology": {
