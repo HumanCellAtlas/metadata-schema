@@ -1,29 +1,29 @@
 {
-    "last_update_date": "2018-06-06T10:43:03Z",
+    "last_update_date": "2018-06-11T15:27:50Z",
     "version_numbers": {
         "bundle": {
-            "biomaterial": "7.0.0",
+            "biomaterial": "9.1.0",
             "file": "2.1.1",
             "ingest_audit": "5.2.1",
             "links": "1.1.1",
-            "process": "6.1.1",
-            "project": "5.3.0",
+            "process": "7.0.0",
+            "project": "6.0.0",
             "protocol": "10.0.1",
             "reference": "2.0.0",
             "submission": "5.2.1"
         },
         "core": {
             "biomaterial": {
-                "biomaterial_core": "6.1.1"
+                "biomaterial_core": "7.0.0"
             },
             "file": {
                 "file_core": "5.2.1"
             },
             "process": {
-                "process_core": "5.2.1"
+                "process_core": "6.0.0"
             },
             "project": {
-                "project_core": "5.2.2"
+                "project_core": "6.0.0"
             },
             "protocol": {
                 "protocol_core": "5.2.1"
@@ -39,7 +39,8 @@
                 "medical_history": "5.2.1",
                 "mus_musculus_specific": "5.2.1",
                 "preservation_storage": "5.2.2",
-                "state_of_specimen": "5.2.1"
+                "state_of_specimen": "5.2.2",
+                "timecourse": "1.0.0"
             },
             "ontology": {
                 "biological_macromolecule_ontology": "5.2.1",
@@ -79,11 +80,11 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "7.0.0",
-                "cell_suspension": "7.0.0",
-                "donor_organism": "5.2.1",
-                "organoid": "6.0.0",
-                "specimen_from_organism": "5.2.2"
+                "cell_line": "8.1.0",
+                "cell_suspension": "8.0.0",
+                "donor_organism": "6.0.0",
+                "organoid": "8.0.0",
+                "specimen_from_organism": "6.0.0"
             },
             "file": {
                 "analysis_file": "5.2.1",
@@ -91,10 +92,10 @@
                 "sequence_file": "6.1.1"
             },
             "process": {
-                "process": "2.1.1"
+                "process": "3.0.0"
             },
             "project": {
-                "project": "5.3.0"
+                "project": "6.0.0"
             },
             "protocol": {
                 "analysis": {

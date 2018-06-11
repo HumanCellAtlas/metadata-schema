@@ -48,11 +48,6 @@
             "type": "string",
             "user_friendly": "Genotype"
         },
-        "karyotype": {
-            "description": "The karyotype of the biomaterial.",
-            "type": "string",
-            "user_friendly": "Karyotype"
-        },
         "supplementary_files": {
             "description": "A list of filenames of biomaterial-level supplementary files.",
             "type": "array",
