@@ -4,7 +4,8 @@
     "additionalProperties": false,
     "required": [
 	    "project_shortname",
-        "project_title"
+        "project_title",
+        "project_description"
     ],
     "title": "project_core",
     "type": "object",
@@ -23,19 +24,19 @@
         "project_shortname": {
             "description": "A unique label for the project.",
             "type": "string",
-            "example": "Tissue Stability",
-            "user_friendly": "Project shortname"
+            "example": "my_project",
+            "user_friendly": "Project label"
         },
         "project_title": {
-            "description": "A summary of the project in a sentence. Approximately 30 words.",
+            "description": "A summary of the project in one sentence. Approximately 30 words.",
             "type": "string",
-            "example": "A title of a publication.",
+            "example": "A publication title.",
             "user_friendly": "Project title"
         },
         "project_description": {
             "description": "A longer description of the project which can include research goals and experimental approach. Approximately 300 words.",
             "type": "string",
-            "example": "An abstract from a grant application or publication.",
+            "example": "An abstract from a publication.",
             "user_friendly": "Project description"
         }
     }
