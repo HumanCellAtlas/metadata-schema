@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v7.?+1.0] - 2018-06-11
+### Added
+Added the field `tissue` referencing the organ part ontology module, to capture the tissue the cell line was derived from.
+
 ### [core/project/project_core.json - v6.0.0] - 2018-06-11
 ### Changed
 Made project_description a required field.
