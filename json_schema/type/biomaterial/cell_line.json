@@ -94,6 +94,11 @@
             "$ref": "module/ontology/cell_type_ontology.json",
             "user_friendly": "Cell type"
         },
+        "karyotype": {
+            "description": "The karyotype of the biomaterial.",
+            "type": "string",
+            "user_friendly": "Karyotype"
+        },
         "tissue": {
             "description": "The tissue that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000465",
             "type": "object",
