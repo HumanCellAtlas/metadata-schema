@@ -59,6 +59,7 @@
             "description":  "Organ for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
+	    "example": "brain",
             "user_friendly": "Organ model"
         },
         "model_organ_part": {
