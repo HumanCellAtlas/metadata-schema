@@ -114,7 +114,7 @@
 	"embedded_in_matrigel": {
 	    "description": "Whether an organoid is embedded in a matrigel.",
 	    "type": "boolean",
-	    "example": yes,
+	    "example": "yes",
 	    "user_friendly": "Embeddded in matrigel"
 	},
 	"organoid_growth_environment": {
