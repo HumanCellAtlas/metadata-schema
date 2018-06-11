@@ -120,7 +120,7 @@
 	    "user_friendly": "Organoid growth environment"
 	},
 	"input_aggregate_cell_count": {
-	    "description": "Estimated number of cells per cell aggregate.",
+	    "description": "Estimated number of cells per input cell aggregate.",
 	    "type": "number",
 	    "example": 10000,
 	    "user_friendly": "Input aggregate cell count"
