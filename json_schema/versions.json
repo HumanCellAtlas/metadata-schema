@@ -1,8 +1,8 @@
 {
-    "last_update_date": "2018-06-11T14:36:01Z",
+    "last_update_date": "2018-06-11T14:49:50Z",
     "version_numbers": {
         "bundle": {
-            "biomaterial": "8.0.0",
+            "biomaterial": "9.0.0",
             "file": "2.1.1",
             "ingest_audit": "5.2.1",
             "links": "1.1.1",
@@ -14,7 +14,7 @@
         },
         "core": {
             "biomaterial": {
-                "biomaterial_core": "6.1.1"
+                "biomaterial_core": "7.0.0"
             },
             "file": {
                 "file_core": "5.2.1"
@@ -80,11 +80,11 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "7.1.0",
-                "cell_suspension": "7.0.0",
-                "donor_organism": "5.2.1",
-                "organoid": "7.0.0",
-                "specimen_from_organism": "5.3.0"
+                "cell_line": "8.0.0",
+                "cell_suspension": "8.0.0",
+                "donor_organism": "6.0.0",
+                "organoid": "8.0.0",
+                "specimen_from_organism": "6.0.0"
             },
             "file": {
                 "analysis_file": "5.2.1",

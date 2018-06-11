@@ -7,11 +7,34 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/biomaterial/cell_line.json - v?.?+1.0] - 2018-06-07
+### [bundle/biomaterial.json - v9.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/cell_suspension.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/donor_organism.json - v6.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/organoid.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/specimen_from_organism.json - v6.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/cell_line.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
 ### Added
 Added optional field `karyotype` to cell_line
 
-### [core/biomaterial/biomaterial_core.json - v?+1.0.0] - 2018-06-07
+### [core/biomaterial/biomaterial_core.json - v9.0.0] - 2018-06-11
 ### Removed
 Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
 
