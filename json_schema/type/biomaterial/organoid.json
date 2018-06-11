@@ -66,6 +66,7 @@
             "description":  "Organ part for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
+	    "example": "cortex",
             "user_friendly": "Organ part model"
         },
         "organoid_age": {
