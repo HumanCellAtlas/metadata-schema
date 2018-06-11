@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [bundle/biomaterial.json - v7.0.1] - 2018-06-07
 ### Changed
 Updated definition of `ischemic_time` to address confusion from users.
@@ -70,8 +72,6 @@ Made field `cell_line_type` required.
 ### [type/biomaterial/cell_line.json - v6.1.1] - 2018-06-04
 ### Changed
 Updated the description for the schema.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/biomaterial.json - v5.2.1] - 2018-06-01
 ### Changed
