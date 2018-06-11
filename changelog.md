@@ -7,11 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [core/project/project_core.json - v?+1.?.?] - 2018-06-11
+### [core/project/project_core.json - v6.0.0] - 2018-06-11
 ### Changed
 Made project_description a required field.
 
-### [type/project/project.json - v?+1.?.?] - 2018-06-11
+### [type/project/project.json - v6.0.0] - 2018-06-11
+### Changed
+Made project_description a required field.
+
+### [bundle/project/project.json - v6.0.0] - 2018-06-11
 ### Changed
 Made project_description a required field.
 
