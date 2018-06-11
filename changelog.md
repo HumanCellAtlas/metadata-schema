@@ -19,7 +19,7 @@ Updated definition of `ischemic_time` to address confusion from users.
 ### Changed
 Updated definition of `ischemic_time` to address confusion from users.
 
-### [type/project/project.json - v?.+1.?] - 2018-06-06
+### [type/project/project.json - v5.3.0] - 2018-06-06
 ### Changed
 Added a pointer to new module with three optional fields to track project funders.
 
@@ -27,7 +27,7 @@ Added a pointer to new module with three optional fields to track project funder
 ### Added
 A new module with three optional fields to track project funders.
 
-### [core/project/project_core.json - v?.?.+1] - 2018-06-06
+### [core/project/project_core.json - v5.2.2] - 2018-06-06
 ### Changed
 Updated descriptions and examples.
 
@@ -47,23 +47,23 @@ Added new protocol for IPSC induction.
 ### Added
 Added new protocol for cell differentiation.
 
-### [type/file/reference_file.json - v?+1.0.0] - 2018-06-04
+### [type/file/reference_file.json - v2.0.0] - 2018-06-04
 ### Changed
 Made fields `ncbi_taxon_id`, `genus_species`, `assembly_type`, `reference_type` and `reference_version` required.
 
-### [type/protocol/imaging/imaging_protocol.json - v?+1.0.0] - 2018-06-04
+### [type/protocol/imaging/imaging_protocol.json - v7.0.0] - 2018-06-04
 ### Changed
 Made field `protocol_type` required.
 
-### [type/protocol/biomaterial_collection/dissociation_protocol.json - v?+1.0.0] - 2018-06-04
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.0.0] - 2018-06-04
 ### Changed
 Made field `nucleic_acid_source` required.
 
-### [type/protocol/analysis/analysis_protocol.json - v?+1.0.0] - 2018-06-04
+### [type/protocol/analysis/analysis_protocol.json - v7.0.0] - 2018-06-04
 ### Changed
 Made field `protocol_type` required.
 
-### [type/biomaterial/cell_line.json - v?+1.0.0] - 2018-06-04
+### [type/biomaterial/cell_line.json - v7.0.0] - 2018-06-04
 ### Changed
 Made field `cell_line_type` required.
 
