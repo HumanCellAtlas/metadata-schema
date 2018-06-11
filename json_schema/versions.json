@@ -1,8 +1,8 @@
 {
-    "last_update_date": "2018-06-11T14:25:56Z",
+    "last_update_date": "2018-06-11T14:36:01Z",
     "version_numbers": {
         "bundle": {
-            "biomaterial": "7.2.0",
+            "biomaterial": "8.0.0",
             "file": "2.1.1",
             "ingest_audit": "5.2.1",
             "links": "1.1.1",
@@ -83,7 +83,7 @@
                 "cell_line": "7.1.0",
                 "cell_suspension": "7.0.0",
                 "donor_organism": "5.2.1",
-                "organoid": "6.0.0",
+                "organoid": "7.0.0",
                 "specimen_from_organism": "5.3.0"
             },
             "file": {
