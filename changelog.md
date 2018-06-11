@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-11
+### Changed
+Added small_molecules field.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-11
+### Changed
+Added differentiation_media field.
+
 ### [type/project/project.json - v?.+1.?] - 2018-06-06
 ### Changed
 Added a pointer to new module with three optional fields to track project funders.
