@@ -7,7 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/biomaterial/cell_line.json - v?.?+1.0] - 2018-06-11
+### [bundle/biomaterial.json - v9.1.0] - 2018-06-11
+### Added
+Added optional field `confluency` to cell_line
+
+### [type/biomaterial/cell_line.json - v8.1.0] - 2018-06-11
 ### Added
 Added optional field `confluency` to cell_line
 
