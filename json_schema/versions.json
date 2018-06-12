@@ -1,8 +1,8 @@
 {
-    "last_update_date": "2018-06-06T10:43:03Z",
+    "last_update_date": "2018-06-08T12:06:13Z",
     "version_numbers": {
         "bundle": {
-            "biomaterial": "7.0.0",
+            "biomaterial": "7.0.1",
             "file": "2.1.1",
             "ingest_audit": "5.2.1",
             "links": "1.1.1",
@@ -39,7 +39,8 @@
                 "medical_history": "5.2.1",
                 "mus_musculus_specific": "5.2.1",
                 "preservation_storage": "5.2.2",
-                "state_of_specimen": "5.2.1"
+                "state_of_specimen": "5.2.2",
+                "timecourse": "1.0.0"
             },
             "ontology": {
                 "biological_macromolecule_ontology": "5.2.1",
@@ -83,7 +84,7 @@
                 "cell_suspension": "7.0.0",
                 "donor_organism": "5.2.1",
                 "organoid": "6.0.0",
-                "specimen_from_organism": "5.2.2"
+                "specimen_from_organism": "5.2.3"
             },
             "file": {
                 "analysis_file": "5.2.1",
