@@ -59,14 +59,14 @@
             "description":  "Organ for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
-	    "example": "brain",
+            "example": "brain",
             "user_friendly": "Organ model"
         },
         "model_organ_part": {
             "description":  "Organ part for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
-	    "example": "cortex",
+            "example": "cortex",
             "user_friendly": "Organ part model"
         },
         "organoid_age": {
@@ -79,27 +79,28 @@
             "description": "The unit in which organoid age is expressed. Must be one of hour, day, week, month, or year.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
+            "example": "day",
             "user_friendly": "Organoid age unit"
         },
-	"organoid_size": {
-	    "description": "The size of the organoid.",
-	    "type": "number",
-	    "example": 4,
-	    "user_friendly": "Organoid size"
-	},
-	"organoid_size_unit": {
-	    "description": "The unit in which the organoid size is expressed.",
-	    "type": "object",
+        "organoid_size": {
+            "description": "The size of the organoid.",
+            "type": "number",
+            "example": 4,
+            "user_friendly": "Organoid size"
+        },
+        "organoid_size_unit": {
+            "description": "The unit in which the organoid size is expressed.",
+            "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-	    "example": "millimeter",
-	    "user_friendly": "Organoid size unit"
-	},
-	"organoid_morphology": {
-	    "description": "General description of the organoid morphology.",
-	    "type": "string",
-	    "example": "Epithelial monolayer with budding crypt-like domains.",
-	    "user_frinedly": "Organoid morphology"
-	},
+            "example": "millimeter",
+            "user_friendly": "Organoid size unit"
+        },
+        "organoid_morphology": {
+            "description": "General description of the organoid morphology.",
+            "type": "string",
+            "example": "Epithelial monolayer with budding crypt-like domains.",
+            "user_frinedly": "Organoid morphology"
+        },
         "organoid_type": {
             "description": "The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
             "type": "string",
@@ -111,29 +112,29 @@
             ],
             "user_friendly": "Organoid type"
         },
-	"embedded_in_matrigel": {
-	    "description": "Whether an organoid is embedded in a matrigel.",
-	    "type": "boolean",
-	    "example": "yes",
-	    "user_friendly": "Embeddded in matrigel"
-	},
-	"organoid_growth_environment": {
-	    "description": "Growth environment in which the organoid is grown in.",
-	    "type": "string",
-	    "example": "matrigel, liquid suspension, adherent",
-	    "user_friendly": "Organoid growth environment"
-	},
-	"input_aggregate_cell_count": {
-	    "description": "Estimated number of cells per input cell aggregate.",
-	    "type": "number",
-	    "example": 10000,
-	    "user_friendly": "Input aggregate cell count"
-	},
-	"organoid_stored_oxygen_levels": {
-	    "description": "Percent oxygen level organoid was stored in prior to sequencing.",
-	    "type": "number",
-	    "example": 75,
-	    "user_friendly": "Organoid stored oxygen level"
-	}
+        "embedded_in_matrigel": {
+            "description": "Whether an organoid is embedded in a matrigel.",
+            "type": "boolean",
+            "example": "yes",
+            "user_friendly": "Embeddded in matrigel?"
+        },
+        "organoid_growth_environment": {
+            "description": "Growth environment in which the organoid is grown in.",
+            "type": "string",
+            "example": "matrigel, liquid suspension, adherent",
+            "user_friendly": "Organoid growth environment"
+        },
+        "input_aggregate_cell_count": {
+            "description": "Estimated number of cells per input cell aggregate.",
+            "type": "number",
+            "example": 10000,
+            "user_friendly": "Input aggregate cell count"
+        },
+        "organoid_stored_oxygen_levels": {
+            "description": "Percent oxygen level organoid was stored in prior to sequencing.",
+            "type": "number",
+            "example": 75,
+            "user_friendly": "Organoid stored oxygen level"
+        }
     }
 }
