@@ -50,12 +50,6 @@
 	    "type": "number",
 	    "example": 25,
 	    "user_friendly": "PCR cycles"
-	},
-	"expected_cell_count": {
-	    "description": "The number of cells expected to be observed in the data matrix",
-	    "type": "number",
-	    "example": 3000,
-	    "user_friendly": "Expected cell count"
 	}
     }
 }
