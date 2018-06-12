@@ -44,12 +44,6 @@
 	    "description": "Result of visual inspection of emulsion after 10x run.",
 	    "type": "string",
 	    "user_friendly": "Drop uniformity"
-	},
-	"pcr_cycles": {
-	    "description": "Number of pcr cycles used for amplification.",
-	    "type": "number",
-	    "example": 25,
-	    "user_friendly": "PCR cycles"
 	}
     }
 }
