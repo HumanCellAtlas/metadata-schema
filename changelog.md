@@ -9,9 +9,9 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ### [type/biomaterial/organoid.json - v?+1.?.?] - 2018-06-12
 ### Added
-Added `model_organ_part`, `organoid_size`, `organoid_size_unit, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_arregate_cell_count` and `organoid_stored_oxygen_levels` fields.
+Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_arregate_cell_count` and `organoid_stored_oxygen_levels` fields.
 
-###Changed
+### Changed
 Changed `organoid_age` description
 
 ### [bundle/process.json - v7.0.0] - 2018-06-11
