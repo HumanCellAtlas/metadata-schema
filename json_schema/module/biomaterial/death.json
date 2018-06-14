@@ -48,6 +48,15 @@
             "format": "date-time",
             "type": "string",
             "user_friendly": "Time of death"
+        },
+        "organ_donation_death_type": {
+            "description": "For organ donors only, donor type (DCD / DBD).",
+            "type": "string",
+            "enum": [
+                "Donation after circulatory death",
+                "Donation after brainstem death"
+            ],
+            "user_friendly": "Organ donation death type"
         }
     }
 }

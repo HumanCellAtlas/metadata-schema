@@ -7,6 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/death.json - v5.?+1.0] - 2018-06-14
+### Added
+Added optional field `organ_donation_death_type` to module death
+
+
 ### [bundle/process.json - v7.0.0] - 2018-06-11
 ### Changed
 Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
