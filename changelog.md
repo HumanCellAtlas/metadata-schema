@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v8.1.0] - 2018-06-14
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism
+
 ### [bundle/process.json - v7.0.0] - 2018-06-11
 ### Changed
 Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
