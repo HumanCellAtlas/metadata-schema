@@ -7,9 +7,13 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/project/project.json - v5.?+1.0] - 2018-06-07
+### [type/project/project.json - v5.?+1.0] - 2018-06-14
 ### Added
-Added three new field, `license_url`, `license_description` and `license_icon_url`.
+Added optional new field to project referencing the new license module.
+
+### [module/project/license.json - v1.0.0] - 2018-06-14
+### Added
+Added a module to capture the license under which the data is released.
 
 ### [bundle/biomaterial.json - v7.2.0] - 2018-06-11
 ### Added

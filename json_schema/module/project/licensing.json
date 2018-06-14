@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information about the project license.",
+    "additionalProperties": false,
+    "title": "license",
+    "type": "object",
+    "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/license"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "license_url": {
+            "type": "string",
+            "description": "URL of the license under which this data is available",
+            "example": "https://creativecommons.org/licenses/by/4.0/",
+            "user_friendly": "License URL"
+        },
+        "license_description": {
+            "type": "string",
+            "description": "Description of the license under which this dataset is made available",
+            "example": "Each dataset in this Preview Data Release is licensed under a Creative Commons Attribution 4.0 International License. This is the license for these preview datasets and the license for other HCA data in the future may differ.",
+            "user_friendly": "License description"
+        },
+        "license_icon_url": {
+            "type": "string",
+            "description": "URL of the icon associated with this license",
+            "example": "https://preview.data.humancellatlas.org/images/icon/icon-cc-by@1x.png",
+            "user_friendly": "License icon URL"
+        }
+    }
+}

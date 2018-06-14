@@ -88,23 +88,11 @@
             },
             "user_friendly": "Project funders"
         },
-        "license_url": {
-            "type": "string",
-            "description": "URL of the license under which this data is available",
-            "example": "https://creativecommons.org/licenses/by/4.0/",
-            "user_friendly": "License URL"
-        },
-        "license_description": {
-            "type": "string",
-            "description": "Description of the license under which this dataset is made available",
-            "example": "Each dataset in this Preview Data Release is licensed under a Creative Commons Attribution 4.0 International License. This is the license for these preview datasets and the license for other HCA data in the future may differ.",
-            "user_friendly": "License description"
-        },
-        "license_icon_url": {
-            "type": "string",
-            "description": "URL of the icon associated with this license",
-            "example": "https://preview.data.humancellatlas.org/images/icon/icon-cc-by@1x.png",
-            "user_friendly": "License icon URL"
+        "license": {
+            "description": "The license under which this project is made available",
+            "type": "object",
+            "$ref": "module/project/license.json",
+            "user_friendly": "License"
         }
     }
 }
