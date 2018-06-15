@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v?+1.0.0] - 2018-06-15
+### Changed
+Changed the type of is_living to a string and added an enum to accomodate "unknown" as well as yes/no.
+
 ### [bundle/process.json - v7.0.0] - 2018-06-11
 ### Changed
 Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
