@@ -7,7 +7,104 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [bundle/process.json - v7.0.0] - 2018-06-11
+### Changed
+Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
+
+### Added
+Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
+
+### [type/process/process.json - v3.0.0] - 2018-06-11
+### Changed
+Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
+
+### Added
+Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
+
+### [core/process/process_core.json - v6.0.0] - 2018-06-11
+### Changed
+Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
+
+### Added
+Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
+
+### [bundle/biomaterial.json - v9.1.0] - 2018-06-11
+### Added
+Added optional field `confluency` to cell_line
+
+### [type/biomaterial/cell_line.json - v8.1.0] - 2018-06-11
+### Added
+Added optional field `confluency` to cell_line
+
+### [bundle/biomaterial.json - v9.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/cell_suspension.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/donor_organism.json - v6.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/organoid.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/specimen_from_organism.json - v6.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/cell_line.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### Added
+Added optional field `karyotype` to cell_line
+
+### [core/biomaterial/biomaterial_core.json - v9.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [bundle/biomaterial.json - v8.0.0] - 2018-06-11
+### Removed
+Removed fields `growth_conditions` and `cell_morphology` from organoid.
+
+### [type/biomaterial/organoid.json - v7.0.0] - 2018-06-11
+### Removed
+Removed fields `growth_conditions` and `cell_morphology` from organoid.
+
+### [bundle/biomaterial.json - v7.2.0] - 2018-06-11
+### Added
+Added the field `purchased_specimen` referencing the purchased_reagents module, to capture purchasing of specimens such as blood samples.
+
+### [type/biomaterial/specimen_from_organism.json - v5.3.0] - 2018-06-11
+### Added
+Added the field `purchased_specimen` referencing the purchased_reagents module, to capture purchasing of specimens such as blood samples.
+
+### [type/biomaterial/cell_line.json - v7.1.0] - 2018-06-11
+### Added
+Added the field `tissue` referencing the organ part ontology module, to capture the tissue the cell line was derived from.
+
+### [bundle/biomaterial.json - v7.1.0] - 2018-06-11
+### Added
+Added the field `tissue` referencing the organ part ontology module, to capture the tissue the cell line was derived from.
+
+### [core/project/project_core.json - v6.0.0] - 2018-06-11
+### Changed
+Made project_description a required field.
+
+### [type/project/project.json - v6.0.0] - 2018-06-11
+### Changed
+Made project_description a required field.
+
+### [bundle/project.json - v6.0.0] - 2018-06-11
+### Changed
+Made project_description a required field.
 
 ### [bundle/biomaterial.json - v7.0.1] - 2018-06-07
 ### Changed
