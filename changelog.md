@@ -7,6 +7,13 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [bundle/biomaterial.json - v9.1.1] - 2018-06-20
+### Changed
+Updated the schema URL pattern to cell_line
+
+### [type/biomaterial/cell_line.json - v8.1.1] - 2018-06-20
+### Changed
+Updated the schema URL pattern to cell_line
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
