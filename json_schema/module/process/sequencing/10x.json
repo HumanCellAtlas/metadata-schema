@@ -42,7 +42,8 @@
 	},
 	"drop_uniformity": {
 	    "description": "Result of visual inspection of emulsion after 10x run.",
-	    "type": "string",
+	    "type": "boolean",
+	    "example": "yes",
 	    "user_friendly": "Drop uniformity"
 	}
     }
