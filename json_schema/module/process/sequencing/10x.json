@@ -17,7 +17,7 @@
             "example": "4.6.1"
         },
 	"loading_concentration": {
-	    "description": "Concentration of cells loaded onto sequencer.",
+	    "description": "Concentration of cells loaded onto a single lane on a flowcell.",
 	    "type": "string",
 	    "example": "10 pM",
 	    "user_friendly": "Loading concentration"
@@ -35,7 +35,7 @@
 	    "user_friendly": "Fastq method version"
 	},
 	"pooled_channels": {
-	    "description": "The number of channes pooled within a sequencing lane.",
+	    "description": "The number of channels pooled within a sequencing lane.",
 	    "type": "number",
 	    "example": 4,
 	    "user_friendly": "Pooled channels"
