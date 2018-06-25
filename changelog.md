@@ -9,11 +9,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-25
 ### Added
-Added small_molecules field.
-
-### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-25
-### Added
-Added differentiation_media field.
+Added optionals small_molecules and differentiation_media fields.
 
 ### [bundle/biomaterial.json - v9.1.1] - 2018-06-20
 ### Changed
