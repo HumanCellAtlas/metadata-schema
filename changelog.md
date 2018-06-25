@@ -7,9 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [bundle/protocol.json v10.2.0] - 2018-06-25
+### Added
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
+
 ### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json v1.0.0] - 2018-06-25
 ### Added
-Added aggregate_generation_protocol.json.
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
 
 ### [bundle/protocol.json - v10.1.1] - 2018-06-25
 ### Added
