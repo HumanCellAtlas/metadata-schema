@@ -7,6 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/death.json - v5.?+1.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
 ### [bundle/biomaterial.json - v10.0.0] - 2018-06-25
 ### Changed
 Changed the type of is_living to a string and added an enum to accommodate "unknown" as well as yes/no.
