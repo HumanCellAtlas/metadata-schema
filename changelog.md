@@ -7,13 +7,23 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-11
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-25
 ### Added
 Added small_molecules field.
 
-### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-11
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v?.+1.?] - 2018-06-25
 ### Added
 Added differentiation_media field.
+
+### [bundle/biomaterial.json - v9.1.1] - 2018-06-20
+### Changed
+Updated the schema URL pattern to cell_line.
+
+### [type/biomaterial/cell_line.json - v8.1.1] - 2018-06-20
+### Changed
+Updated the schema URL pattern to cell_line.
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/process.json - v7.0.0] - 2018-06-11
 ### Changed
@@ -110,8 +120,6 @@ Made project_description a required field.
 ### [bundle/project.json - v6.0.0] - 2018-06-11
 ### Changed
 Made project_description a required field.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/biomaterial.json - v7.0.1] - 2018-06-07
 ### Changed
