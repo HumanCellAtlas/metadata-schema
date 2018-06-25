@@ -124,8 +124,13 @@
             "user_friendly": "Height unit"
         },
         "is_living": {
-            "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
-            "type": "boolean",
+            "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "unkown"
+            ],
             "user_friendly": "Is living?"
         }, 
         "biological_sex": {

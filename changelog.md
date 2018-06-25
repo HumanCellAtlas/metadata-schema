@@ -7,6 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v?+1.0.0] - 2018-06-25
+### Changed
+Changed the type of is_living to a string and added an enum to accomodate "unknown" as well as yes/no.
+Fixes Issue #371.
+
 ### [bundle/protocol.json v10.2.0] - 2018-06-25
 ### Added
 Added new aggregate_generation_protocol.json schema.
