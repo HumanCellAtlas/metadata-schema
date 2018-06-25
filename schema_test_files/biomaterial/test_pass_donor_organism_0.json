@@ -9,7 +9,7 @@
       9606
     ]
   },
-  "is_living": true,
+  "is_living": "yes",
   "biological_sex": "male",
   "development_stage": {
     "text": "adult",
