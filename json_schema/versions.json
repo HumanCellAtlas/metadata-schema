@@ -1,14 +1,14 @@
 {
-    "last_update_date": "2018-06-25T16:07:22Z",
+    "last_update_date": "2018-06-25T16:51:23Z",
     "version_numbers": {
         "bundle": {
-            "biomaterial": "9.1.1",
+            "biomaterial": "10.1.0",
             "file": "2.1.1",
             "ingest_audit": "5.2.1",
             "links": "1.1.1",
             "process": "7.0.0",
             "project": "6.0.0",
-            "protocol": "10.1.0",
+            "protocol": "10.2.0",
             "reference": "2.0.0",
             "submission": "5.2.1"
         },
@@ -32,7 +32,7 @@
         "module": {
             "biomaterial": {
                 "cell_morphology": "6.0.0",
-                "death": "5.2.1",
+                "death": "5.3.0",
                 "familial_relationship": "5.2.1",
                 "growth_conditions": "6.1.1",
                 "homo_sapiens_specific": "5.2.1",
@@ -82,7 +82,7 @@
             "biomaterial": {
                 "cell_line": "8.1.1",
                 "cell_suspension": "8.0.0",
-                "donor_organism": "6.0.0",
+                "donor_organism": "7.1.0",
                 "organoid": "8.0.0",
                 "specimen_from_organism": "6.0.0"
             },
@@ -102,6 +102,7 @@
                     "analysis_protocol": "7.0.0"
                 },
                 "biomaterial_collection": {
+                    "aggregate_generation_protocol": "1.0.0",
                     "collection_protocol": "8.0.0",
                     "differentiation_protocol": "1.1.0",
                     "dissociation_protocol": "4.0.0",

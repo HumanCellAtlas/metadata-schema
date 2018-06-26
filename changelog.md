@@ -7,12 +7,48 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/biomaterial/organoid.json - v?+1.?.?] - 2018-06-25
+
+### [type/biomaterial/organoid.json - v?.?+1.?] - 2018-06-25
 ### Added
 Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_arregate_cell_count` and `organoid_stored_oxygen_levels` fields.
 
 ### Changed
 Changed `organoid_age` description
+
+### [bundle/biomaterial.json - v10.1.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [type/biomaterial/donor_organism.json - v7.1.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [module/biomaterial/death.json - v5.3.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [bundle/biomaterial.json - v10.0.0] - 2018-06-25
+### Changed
+Changed the type of is_living to a string and added an enum to accommodate "unknown" as well as yes/no.
+Fixes Issue #371.
+
+### [type/biomaterial/donor_organism.json - v7.0.0] - 2018-06-25
+### Changed
+Changed the type of is_living to a string and added an enum to accommodate "unknown" as well as yes/no.
+Fixes Issue #371.
+
+### [bundle/protocol.json v10.2.0] - 2018-06-25
+### Added
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json v1.0.0] - 2018-06-25
+### Added
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
 
 ### [bundle/protocol.json - v10.1.1] - 2018-06-25
 ### Added
