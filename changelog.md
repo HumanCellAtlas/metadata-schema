@@ -7,6 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/**_ontology.json - various versions] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
 ### [bundle/biomaterial.json - v10.1.0] - 2018-06-25
 ### Added
 Added optional field `organ_donation_death_type` to module death.
