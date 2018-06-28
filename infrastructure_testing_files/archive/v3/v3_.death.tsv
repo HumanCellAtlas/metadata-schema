@@ -1,0 +1,11 @@
+death	A death is a subobject module used in the sample entity.			
+The deat describes information about the cause and circumstances of death				
+				
+Field Name	source	Priority	Type	Description
+core	ingest	required	core module	schema description for death module
+				
+cause_of_death	submitter	required	ontology	Cause of death from death report for human donor, from research lab for mouse.  Text is straight from death certificate. Same ontology used as donor.disease
+time_of_death	submitter	required	timestamp	Date and time of death on death certificate for deceased donor
+hardy_scale	submitter	High	number	0 - ventilator case, 1 - fast death -violent, 2 - fast-death -natural causes, 3 - intermediate death, 4 - slow death
+cold_perfused	submitter	High	yes/no	If yes, was perfused with cold fluid to help preserve tissues before heart stopped
+days_on_ventilator	submitter	High	number	Days on ventilator before dying
