@@ -7,7 +7,222 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [module/ontology/**_ontology.json - various versions] - 2018-06-26
+### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/process.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/protocol.json - v10.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/reference.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [core/process/process_core.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/cell_morphology.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/homo_sapiens_specific.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/mus_musculus_specific.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/preservation_storage.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/timecourse.json - v1.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/cell_line.json - v8.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/cell_suspension.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/donor_organism.json - v7.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/organoid.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/specimen_from_organism.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/file/reference_file.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/process/process.json - v3.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/analysis/analysis_protocol.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/protocol.json - v6.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/cell_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/development_stage_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/disease_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/enrichment_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/ethnicity_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/instrument_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/length_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/library_amplification_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/library_construction_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/mass_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/organ_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/organ_part_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/process_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/protocol_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/sequencing_ontology.json - v1.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/species_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/strain_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/time_unit_ontology.json - v5.3.0] - 2018-06-26
 ### Added
 Added optional field `ontology_label` to all ontology modules.
 Fixes Issue #383
