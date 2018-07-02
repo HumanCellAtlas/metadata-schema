@@ -28,6 +28,11 @@
                 "process"
             ]
         },
+        "provenance_core" : {
+            "description": "Core provenance-level information.",
+            "type": "object",
+            "$ref": "core/provenance_core.json"
+        },
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",

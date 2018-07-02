@@ -30,6 +30,11 @@
                 "biomaterial"
             ]
         },
+        "provenance_core" : {
+            "description": "Core provenance-level information.",
+            "type": "object",
+            "$ref": "core/provenance_core.json"
+        },
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",

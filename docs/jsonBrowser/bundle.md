@@ -61,7 +61,7 @@ references | An array of reference files. | array | no |  |  |  |
 ## ingest
 _Information added or generated at time of ingest._
 
-Location: bundle/ingest_audit.json
+Location: bundle/provenance_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 

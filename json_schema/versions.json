@@ -1,17 +1,6 @@
 {
     "last_update_date": "2018-06-25T16:51:23Z",
     "version_numbers": {
-        "bundle": {
-            "biomaterial": "10.1.0",
-            "file": "2.1.1",
-            "ingest_audit": "5.2.1",
-            "links": "1.1.1",
-            "process": "7.0.0",
-            "project": "6.0.0",
-            "protocol": "10.2.0",
-            "reference": "2.0.0",
-            "submission": "5.2.1"
-        },
         "core": {
             "biomaterial": {
                 "biomaterial_core": "7.0.0"
@@ -27,7 +16,8 @@
             },
             "protocol": {
                 "protocol_core": "5.2.1"
-            }
+            },
+            "provenance_core": "1.0.0"
         },
         "module": {
             "biomaterial": {
