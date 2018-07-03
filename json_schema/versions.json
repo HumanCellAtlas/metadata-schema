@@ -92,7 +92,10 @@
                 "sequence_file": "6.1.1"
             },
             "process": {
-                "process": "3.0.0"
+                "process": "3.0.0",
+                "analysis": {
+                    "analysis_process": "5.1.0"
+                }
             },
             "project": {
                 "project": "6.0.0"
