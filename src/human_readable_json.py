@@ -164,14 +164,14 @@ if __name__ == '__main__':
     module_schemas = [os.path.join(dirpath, f)
                     for dirpath, dirnames, files in os.walk(module_schema_path)
                     for f in files if f.endswith('.json')]
-    bundle_schemas = [os.path.join(dirpath, f)
-                    for dirpath, dirnames, files in os.walk(bundle_schema_path)
-                    for f in files if f.endswith('.json')]
+    # bundle_schemas = [os.path.join(dirpath, f)
+    #                 for dirpath, dirnames, files in os.walk(bundle_schema_path)
+    #                 for f in files if f.endswith('.json')]
 
     generator.generateMarkdown(core_schemas, "core")
     generator.generateMarkdown(type_schemas, "type")
     generator.generateMarkdown(module_schemas, "module")
-    generator.generateMarkdown(bundle_schemas, "bundle")
+    # generator.generateMarkdown(bundle_schemas, "bundle")
 
 
 
