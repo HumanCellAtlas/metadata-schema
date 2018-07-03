@@ -7,6 +7,22 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_suspension.json - v8.?+1.0] - 2018-07-03
+### Added
+Added field `plate_based_sequencing` importing the module of the same name. Fixes Issue #397
+
+### [type/file/sequence_file.json - v6.?+1.0] - 2018-07-03
+### Removed
+Removed field `smartseq2` as the module has been deprecated. Fixes Issue #397
+
+### [module/sequencing/plate_based_sequencing.json - v1.0.0] - 2018-07-03
+### Added
+Added module plate_based_sequencing. Fixes Issue #397
+
+### [module/sequencing/smartseq2.json - v5.2.1] - 2018-07-03
+### Deprecated
+Deprecated module smartseq2 in favour of a more generic plate_based_sequncing module. Fixes Issue #397
+
 ### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
 ### Added
 Added optional field `ontology_label` to all ontology modules.

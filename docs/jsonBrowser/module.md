@@ -408,7 +408,7 @@ white_list_file | Name of file containing legitimate barcode sequences. | string
 ## smartseq2<a name='smartseq2'></a>
 _This module describes information specific to SmartSeq2 experiments._
 
-Location: module/process/sequencing/smartseq2.json
+Location: module/process/sequencing/plate_based_sequencing.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 

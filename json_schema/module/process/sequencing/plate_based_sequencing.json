@@ -1,8 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "This module describes information specific to SmartSeq2 experiments.",
+    "description": "This module describes information specific to plate-based sequencing experiments.",
     "additionalProperties": false,
-    "title": "smartseq2",
+    "required": [
+        "plate_id",
+        "well_id"
+    ],
+    "title": "plate_based_sequencing",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -21,20 +25,10 @@
             "type": "string",
             "user_friendly": "Well plate ID"
         },
-        "well_name": {
-            "description": "A name for the well. Should be unique for the plate",
+        "well_id": {
+            "description": "An ID or name for the well. Should be unique for the plate",
             "type": "string",
-            "user_friendly": "Well name"
-        }, 
-        "well_row": {
-            "description": "Well row in plate.",
-            "type": "string",
-            "user_friendly": "Well row"
-        },
-         "well_column": {
-            "description": "Well column in plate.",
-            "type": "string",
-            "user_friendly": "Well column"
+            "user_friendly": "Well ID"
         },
         "cell_quality": {
             "description": "Note on how good cell looks if imaged in well before sequencing.",

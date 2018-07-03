@@ -69,7 +69,7 @@
                 "sequencing": {
                     "barcode": "5.2.1",
                     "insdc_experiment": "1.1.1",
-                    "smartseq2": "5.2.1"
+                    "plate_based_sequencing": "1.0.0"
                 }
             },
             "project": {
