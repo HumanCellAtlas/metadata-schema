@@ -6,6 +6,7 @@
         "describedBy",
         "schema_type",
         "process_core",
+        "process_type",
         "timestamp_start_utc",
         "timestamp_stop_utc",
         "input_bundles",
@@ -109,6 +110,12 @@
             "description": "Core process-level information.",
             "type": "object",
             "$ref": "core/process/process_core.json"
+        },
+        "process_type": {
+            "description": "The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+            "type": "object",
+            "$ref": "module/ontology/process_type_ontology.json",
+            "user_friendly": "Process type"
         },
         "inputs": {
             "description": "Input parameters used in the pipeline run, these can be files or string values (settings).",

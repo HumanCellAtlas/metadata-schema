@@ -12,27 +12,6 @@
     ],
     "title": "analysis_protocol",
     "type": "object",
-    "definitions": {
-        "parameter": {
-            "additionalProperties": false,
-            "required": [
-                "parameter_name",
-                "parameter_value"
-            ],
-            "type": "object",
-            "properties": {
-                "checksum": {
-                    "type": "string"
-                },
-                "parameter_name": {
-                    "type": "string"
-                },
-                "parameter_value": {
-                    "type": "string"
-                }
-            }
-        }
-    },
     "properties": {
          "describedBy":  {
             "description": "The URL reference to the schema.",
