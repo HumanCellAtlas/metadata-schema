@@ -7,30 +7,29 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
-## file_core<a name='file_core'></a>
-_A file entity contains information about a data file produced from any process._
+## links<a name='links'></a>
+_A schema for a links bundle._
 
-Location: core/file/file_core.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-file_name | The filename of the data file. | string | yes |  | File name |  | 
-file_format | The format of the data file. | string | yes |  | File format |  | 
-checksum | MD5 checksum of the data file. | string | no |  | Checksum |  | 
-
-## protocol_core<a name='protocol_core'></a>
-_A protocol entity contains information about an intended protocol that was followed in the project._
-
-Location: core/protocol/protocol_core.json
+Location: core/links.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-protocol_id | A unique ID for this protocol. | string | yes |  | Protocol ID |  | 
-protocol_name | A short, descriptive name for the protocol that need not be unique. | string | no |  | Protocol name |  | 
-protocol_description | A general description of the protocol. | string | no |  | Protocol description |  | 
-publication_doi | The publication digital object identifier (doi) associated with the protocol. | string | no |  | Publication DOI |  | 10.1101/193219
-protocols_io_doi | The protocols.io digital object identifier (doi) associated with the protocol. | string | no |  | protocols.io DOI |  | 10.17504/protocols.io.mgjc3un
-document | A filename of a PDF document containing the details of the protocol. | string | no |  | Document filename |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | link_bundle | 
+links | An array of linking objects | array | no |  |  |  | 
+
+## provenance_core<a name='provenance_core'></a>
+_Provenance information added or generated at time of ingest._
+
+Location: core/provenance_core.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+submission_date | When project was first submitted to database. | string | yes |  |  |  | 
+submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
+update_date | When project was last updated | string | no |  |  |  | 
+updater_id | ID of contact who last updated project | string | no |  |  |  | 
+document_id | Identifier for document. | string | yes |  |  |  | 
+accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
 
 ## project_core<a name='project_core'></a>
 _A project contains information about the overall project._
@@ -73,4 +72,29 @@ length_of_time | Length of time the process took to execute, from start to finis
 length_of_time_unit | The unit in which the length of time is expressed. Must be one of microsecond, second, minute, hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | second
 process_location | Where the process took place. | string | no |  | Location |  | Wellcome Sanger Institute, Teichman Lab.
 operator_identity | Identifier for individual(s) who executed this process. | array | no |  | Operator identity |  | Technician 1
+
+## protocol_core<a name='protocol_core'></a>
+_A protocol entity contains information about an intended protocol that was followed in the project._
+
+Location: core/protocol/protocol_core.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+protocol_id | A unique ID for this protocol. | string | yes |  | Protocol ID |  | 
+protocol_name | A short, descriptive name for the protocol that need not be unique. | string | no |  | Protocol name |  | 
+protocol_description | A general description of the protocol. | string | no |  | Protocol description |  | 
+publication_doi | The publication digital object identifier (doi) associated with the protocol. | string | no |  | Publication DOI |  | 10.1101/193219
+protocols_io_doi | The protocols.io digital object identifier (doi) associated with the protocol. | string | no |  | protocols.io DOI |  | 10.17504/protocols.io.mgjc3un
+document | A filename of a PDF document containing the details of the protocol. | string | no |  | Document filename |  | 
+
+## file_core<a name='file_core'></a>
+_A file entity contains information about a data file produced from any process._
+
+Location: core/file/file_core.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+file_name | The filename of the data file. | string | yes |  | File name |  | 
+file_format | The format of the data file. | string | yes |  | File format |  | 
+checksum | MD5 checksum of the data file. | string | no |  | Checksum |  | 
 
