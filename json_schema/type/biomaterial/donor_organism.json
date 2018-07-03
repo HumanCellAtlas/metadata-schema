@@ -38,12 +38,12 @@
         "human_specific": {
             "description": "Fields specific to human (homo sapiens) organisms.",
             "type": "object",
-            "$ref": "module/biomaterial/homo_sapiens_specific.json"
+            "$ref": "module/biomaterial/human_specific.json"
         },
-        "mus_musculus_specific": {
+        "mouse_specific": {
             "description": "Fields specific to mouse (mus musculus) organisms.",
             "type": "object",
-            "$ref": "module/biomaterial/mus_musculus_specific.json"
+            "$ref": "module/biomaterial/mouse_specific.json"
         },
         "death": {
             "description": "Information about conditions of death of an organism.",
