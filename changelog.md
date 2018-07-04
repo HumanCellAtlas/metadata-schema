@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v?.?.?+1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
 ### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
 ### Added
 Added optional field `ontology_label` to all ontology modules.
