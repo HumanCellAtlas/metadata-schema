@@ -7,7 +7,6 @@
         "schema_type",
         "file_core",
         "supplementary_type",
-        "source_method_name"
     ],
     "title": "supplementary_file",
     "type": "object",
@@ -47,10 +46,15 @@
             "user_friendly": "Supplementary type"
         },
         "source_method_name": {
-            "description": "The method or technique used to derive the supplementary file.",
+            "description": "The method, technique used to derive the supplementary file.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Source method name"
+        },
+        "data_source": {
+            "description": "A link to an external database record.",
+            "type": "string",
+            "user_friendly": "Data source"
         }
     }
 }
