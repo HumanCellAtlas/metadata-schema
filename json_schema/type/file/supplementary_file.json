@@ -6,7 +6,8 @@
         "describedBy",
         "schema_type",
         "file_core",
-        "supplementary_type"
+        "supplementary_type",
+        "source_method_name"
     ],
     "title": "supplementary_file",
     "type": "object",
@@ -14,7 +15,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/file/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/sequence_file"
+            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/file/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/supplementary_file"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -45,17 +46,11 @@
             ],
             "user_friendly": "Supplementary type"
         },
-        "protocol_core" : {
-            "description": "Core protocol-level information.",
-            "type": "object",
-            "$ref": "core/protocol/protocol_core.json"
-        },
-        "source_method": {
-            "description": "The method or technique used to derrive the supplementary file.",
+        "source_method_name": {
+            "description": "The method or technique used to derive the supplementary file.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Source method"
-        },
-
+            "user_friendly": "Source method name"
+        }
     }
 }
