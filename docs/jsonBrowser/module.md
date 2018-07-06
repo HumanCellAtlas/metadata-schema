@@ -254,6 +254,8 @@ doi | The publication digital object identifier. | string | no |  | DOI |  | 10.
 publication_title | The full title of the publication. | string | yes |  | Publication title |  | 
 authors | A list of authors associated with the publication in 'surname initials' format. | array | yes |  | Authors |  | Smith JD
 publication_url | A URL, preferably not behind a paywall, for the publication. | string | no |  | Publication URL |  | 
+doi | The publication digital object identifier. | string | no |  | DOI |  | 10.1016/j.cell.2016.07.054
+publication_title | The full title of the publication. | string | yes |  | Publication title |  | 
 
 ## funder<a name='funder'></a>
 _Information about the project funder._
@@ -401,6 +403,9 @@ Property name | Description | Type | Required? | Object reference? | User friend
 lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
 retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit
 expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
+retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit
+lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
+manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
 kit_titer | Appropriate titer and volume recommendations found in each kit's Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7 
 manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
 catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
@@ -413,8 +418,8 @@ Location: module/process/sequencing/barcode.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 barcode_read | The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | 
-barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer | yes |  | Barcode offset |  | 
 barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 
+barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer | yes |  | Barcode offset |  | 
 white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | 
 
 ## smartseq2<a name='smartseq2'></a>

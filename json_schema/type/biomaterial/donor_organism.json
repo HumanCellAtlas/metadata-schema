@@ -129,7 +129,7 @@
             "enum": [
                 "yes",
                 "no",
-                "unkown"
+                "unknown"
             ],
             "user_friendly": "Is living?"
         }, 

@@ -19,14 +19,14 @@ This document serves as an SOP for committers who are ultimately responsible for
  - HCA DCP internal developers
 
 **What *isn't* in this document?**
-- Description of what defines [major, minor, and patch changes](metadata-schema/docs/evolution.md#schema-versioning) to the metadata schema
-- Directions for [reporting bugs](metadata-schema/docs/contributing.md#reporting-bugs) in the metadata schema
+- Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
+- Directions for [reporting bugs](contributing.md#reporting-bugs) in the metadata schema
 
 ## Steps of the update process
 
 1. **Acquire feedback on the HCA metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
     1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
-    1. Email the HCA DCP helpdesk at data-help@humancellaltas.org
+    1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema GitHub repo
 
     There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).

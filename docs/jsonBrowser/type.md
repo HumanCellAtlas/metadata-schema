@@ -178,11 +178,12 @@ Location: type/protocol/sequencing/sequencing_protocol.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
 paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean | yes |  | Paired ends? |  | yes
 local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | 
 sequencing_approach | The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | 
+local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 
 ## library_preparation_protocol
 _Information about how a sequencing library was created._
@@ -220,6 +221,8 @@ markers | A space-delimited list of markers with +/-. | string | no |  | Markers
 enrichment_method | The method by which enrichment was achieved. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
 min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 
 max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 
+markers | A space-delimited list of markers with +/-. | string | no |  | Markers |  | CD4+ CD8-
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 
 ## aggregate_generation_protocol
 _Contains information on how cultured cells are developed into cell aggregates_
@@ -230,6 +233,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
 
@@ -270,9 +274,10 @@ Location: type/protocol/biomaterial_collection/differentiation_protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+differentiation_validation_results | Results confirming successful differentiation to target cell type. | string | no |  | Validation results |  | CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative
 differentiation_method | Differentiation method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body, Monolayer, Inductive Co-Culture
+differentiation_validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 differentiation_target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
 differentiation_validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining
 differentiation_target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt Pathway
@@ -290,6 +295,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 collection_method | How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
+collection_method | How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
 

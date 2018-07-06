@@ -27,6 +27,38 @@ Deprecated module `homo_sapiens_specific` in favour of common name module `human
 ### Deprecated
 Deprecated module `mus_musculus_specific` in favour of common name module `mouse_specific`. Fixes #387
 
+### [bundle/process.json - v8.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [type/process/process.json - v4.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [bundle/process.json - v8.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [type/process/process.json - v4.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [core/process/process_core.json - v7.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [module/ontology/enrichment_ontology.json - v1.2.1] - 2018-07-06
+### Changed
+Fixed a typo in the curie for the enrichment ontology root class.
+
+### [bundle/biomaterial.json - v10.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
+### [type/biomaterial/donor_organism.json - v7.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
 ### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
 ### Added
 Added optional field `ontology_label` to all ontology modules.
