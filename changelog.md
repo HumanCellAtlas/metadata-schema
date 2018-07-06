@@ -7,6 +7,13 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/project/project_core.json - v?.?.?+1] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
 ### [bundle/biomaterial.json - v11.2.0] - 2018-07-06
 ### Added
 Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
