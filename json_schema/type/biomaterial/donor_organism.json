@@ -155,6 +155,16 @@
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
+        },
+        "normothermic_regional_perfusion": {
+            "description": "Yes if donor's body (but not limbs) was perfused with warm oxygenated blood from the donor. No otherwise.",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "user_friendly": "Normothermic regional perfusion"
         }
     }
 }

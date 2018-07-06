@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v?.?+1.?] - 2018-07-06
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism. Fixes #362.
+
 ### [bundle/biomaterial.json - v11.0.0] - 2018-07-06
 ### Changed
 Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
