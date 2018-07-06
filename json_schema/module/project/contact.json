@@ -40,14 +40,14 @@
             "user_friendly": "Phone number"
         },
         "institution": {
-            "description": "Name of primary institute where contact works.",
+            "description": "Name of primary institute where the individual works.",
             "type": "string",
-            "user_friendly": "Institution"
+            "user_friendly": "Institute"
         },
         "laboratory": {
-            "description": "Name of lab (often the PI name) within institute where contact works.",
+            "description": "Name of lab or department within the institute where the individual works.",
             "type": "string",
-            "user_friendly": "Laboratory"
+            "user_friendly": "Laboratory/Department"
         },
         "address": {
             "description": "Street address where contact works. Should include street name and number, city, country division, postal code.",
