@@ -31,15 +31,15 @@
         }, 
         "module": {
             "biomaterial": {
-                "cell_morphology": "6.1.0", 
-                "death": "5.3.0", 
-                "familial_relationship": "5.2.1", 
-                "growth_conditions": "6.1.1", 
-                "homo_sapiens_specific": "5.3.0", 
-                "medical_history": "5.2.1", 
-                "mus_musculus_specific": "5.3.0", 
-                "preservation_storage": "5.3.0", 
-                "state_of_specimen": "5.2.2", 
+                "cell_morphology": "6.1.0",
+                "death": "5.3.0",
+                "familial_relationship": "5.2.1",
+                "growth_conditions": "6.1.1",
+                "human_specific": "1.0.0",
+                "medical_history": "5.2.1",
+                "mouse_specific": "1.0.0",
+                "preservation_storage": "5.3.0",
+                "state_of_specimen": "5.2.2",
                 "timecourse": "1.1.0"
             }, 
             "ontology": {

@@ -14,12 +14,12 @@ Location: bundle/ingest_audit.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-document_id | Identifier for document. | string | yes |  |  |  | 
 updater_id | ID of contact who last updated project | string | no |  |  |  | 
-submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
-accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
+document_id | Identifier for document. | string | yes |  |  |  | 
 updateDate | When project was last updated | string | no |  |  |  | 
 submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
+submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
+accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
 
 ## links
 _A schema for a links bundle._
@@ -69,8 +69,8 @@ Location: bundle/reference.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | reference_bundle | 
 references | An array of reference files. | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | reference_bundle | 
 
 ## biomaterial
 _A schema for a biomaterial bundle._

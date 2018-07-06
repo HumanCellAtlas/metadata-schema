@@ -7,6 +7,26 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v?+1.0.0] - 2018-07-03
+### Changed
+Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
+
+### [module/biomaterial/human_specific.json - v1.0.0] - 2018-07-03
+### Added
+Added module `human_specific` to replace deprecated `homo_sapiens_specific`. Fixes #387
+
+### [module/biomaterial/mouse_specific.json - v1.0.0] - 2018-07-03
+### Added
+Added module `mouse_specific` to replace deprecated `mus_musculus _specific`. Fixes #387
+
+### [module/biomaterial/homo_sapiens_specific.json - v5.3.0] - 2018-07-03
+### Deprecated
+Deprecated module `homo_sapiens_specific` in favour of common name module `human_specific`. Fixes #387
+
+### [module/biomaterial/mus_musculus_specific.json - v5.3.0] - 2018-07-03
+### Deprecated
+Deprecated module `mus_musculus_specific` in favour of common name module `mouse_specific`. Fixes #387
+
 ### [bundle/process.json - v8.1.0] - 2018-07-06
 ### Added
 Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
