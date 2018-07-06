@@ -31,6 +31,7 @@
                         { "$ref": "type/protocol/biomaterial_collection/dissociation_protocol.json" },
                         { "$ref": "type/protocol/biomaterial_collection/differentiation_protocol.json" },
                         { "$ref": "type/protocol/biomaterial_collection/ipsc_induction_protocol.json" },
+                        { "$ref": "type/protocol/biomaterial_collection/aggregate_generation_protocol.json" },
                         { "$ref": "type/protocol/imaging/imaging_protocol.json" },
                         { "$ref": "type/protocol/sequencing/library_preparation_protocol.json" },
                         { "$ref": "type/protocol/sequencing/sequencing_protocol.json" },
