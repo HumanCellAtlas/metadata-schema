@@ -56,6 +56,22 @@
             "description": "Country where contact works.",
             "type": "string",
             "user_friendly": "Country"
+        },
+        "project_role": {
+            "description": "Primary role of the person in the project",
+            "type": "string",
+            "enum": [
+                "principal investigator",
+                "external curator",
+                "HCA curator",
+                "technician",
+                "computational scientist",
+                "experimental scientist",
+                "clinician",
+                "pathologist",
+                "other"
+            ],
+            "user_friendly": "Project role"
         }
     }
 }
