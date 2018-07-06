@@ -21,9 +21,9 @@
             "example": "4.6.1"
         },
         "contact_name": {
-            "description": "The contact's name. Should be in the format 'first, middle, last name'. Middle can be initial or left blank.",
+            "description": "Name of any individual who has contributed to this project.",
             "type": "string",
-            "example": "John,D,Doe",
+            "example": "Format: 'first, middle, last name', middle can be initial or left blank. Example: John,D,Smith.",
             "user_friendly": "Contact name"
         },
         "email": {
