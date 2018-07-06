@@ -61,10 +61,10 @@
             "$ref": "module/ontology/sequencing_ontology.json",
             "user_friendly": "Protocol type"
         },
-	"10x": {
-	    "description": "Fields specific for 10x experiments.",
-	    "type": "object",
-	    "$ref": "module/process/sequencing/10x.json"
-	}
+        "10x": {
+            "description": "Fields specific for 10x experiments.",
+            "type": "object",
+            "$ref": "module/process/sequencing/10x.json"
+        }
     }
 }
