@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "file_core",
-        "supplementary_type",
+        "supplementary_type"
     ],
     "title": "supplementary_file",
     "type": "object",
