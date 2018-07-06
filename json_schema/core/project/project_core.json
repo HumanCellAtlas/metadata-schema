@@ -34,9 +34,9 @@
             "user_friendly": "Project title"
         },
         "project_description": {
-            "description": "A longer description of the project which can include research goals and experimental approach. Approximately 300 words.",
+            "description": "A longer description of the project which includes research goals and experimental approach.",
             "type": "string",
-            "example": "An abstract from a publication.",
+            "example": "For example, an abstract from a grant application or publication. Approximately 300 words.",
             "user_friendly": "Project description"
         }
     }
