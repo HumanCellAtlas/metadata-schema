@@ -50,12 +50,13 @@
             "user_friendly": "Laboratory/Department"
         },
         "address": {
-            "description": "Street address where contact works. Should include street name and number, city, country division, postal code.",
+            "description": "Street address where the individual works.",
             "type": "string",
+            "example": "Include street name and number, city, country division, postal code.",
             "user_friendly": "Address"
         },
         "country": {
-            "description": "Country where contact works.",
+            "description": "Country where the individual works.",
             "type": "string",
             "user_friendly": "Country"
         }
