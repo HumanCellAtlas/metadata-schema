@@ -11,6 +11,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ### Changed
 Fixed a typo in the curie for the enrichment ontology root class.
 
+### [bundle/biomaterial.json - v10.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
+### [type/biomaterial/donor_organism.json - v7.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
 ### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
 ### Added
 Added optional field `ontology_label` to all ontology modules.
