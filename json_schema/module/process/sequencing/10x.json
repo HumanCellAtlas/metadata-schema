@@ -41,7 +41,7 @@
 			"user_friendly": "Pooled channels"
 		},
 		"drop_uniformity": {
-			"description": "Result of visual inspection of emulsion after 10x run.",
+			"description": "Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run.",
 			"type": "boolean",
 			"example": "yes",
 			"user_friendly": "Drop uniformity"
