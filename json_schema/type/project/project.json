@@ -43,11 +43,11 @@
         "supplementary_files": {
             "description": "Project-level supplementary files.",
             "type": "array",
-            "example": "Experimental design documents, electronic notebook files, manuscripts in preparation, etc.",
+            "example": "For example, experimental documents, photos, etc. Please list the file names, separated by double pipes. You will be asked to upload these files separately.",
             "items": {
                 "type": "string"
             },
-            "user_friendly": "Supplementary files"
+            "user_friendly": "Project supplementary files"
         },
         "publications": {
             "description": "A list of publications resulting from this project.",
