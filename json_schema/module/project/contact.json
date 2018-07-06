@@ -72,6 +72,11 @@
                 "other"
             ],
             "user_friendly": "Project role"
+        },
+        "orcid_id": {
+            "description": "The contacts ORCID ID linked to their previous work.",
+            "type": "string",
+            "user_friendly": "ORCID ID"
         }
     }
 }
