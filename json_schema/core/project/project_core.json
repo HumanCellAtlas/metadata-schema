@@ -3,7 +3,7 @@
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-	    "project_shortname",
+	"project_shortname",
         "project_title",
         "project_description"
     ],
@@ -28,9 +28,9 @@
             "user_friendly": "Project label"
         },
         "project_title": {
-            "description": "A summary of the project in one sentence. Approximately 30 words.",
+            "description": "An official title for your project.",
             "type": "string",
-            "example": "A publication title.",
+            "example": "For example, the title of a grant proposal or a publication, approximately 30 words. This is how the project title will appear on the Human Cell Atlas data portal.",
             "user_friendly": "Project title"
         },
         "project_description": {
