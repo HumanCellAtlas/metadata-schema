@@ -98,6 +98,7 @@
                 "stem cell-derived",
                 "synthetic"
             ],
+            "example": "stem cell-derived",
             "user_friendly": "Organoid type"
         },
         "embedded_in_matrigel": {
@@ -107,7 +108,7 @@
             "user_friendly": "Embeddded in matrigel?"
         },
         "organoid_growth_environment": {
-            "description": "Growth environment in which the organoid is grown in.",
+            "description": "Growth environment in which the organoid is grown.",
             "type": "string",
             "example": "matrigel, liquid suspension, adherent",
             "user_friendly": "Organoid growth environment"
