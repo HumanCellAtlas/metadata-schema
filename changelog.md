@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/enrichment_ontology.json - v1.2.?+1] - 2018-07-02
+### Changed
+Fixed a typo in the curie for the enrichment ontology root class.
+
 ### [bundle/biomaterial.json - v10.2.1] - 2018-07-04
 ### Fixed
 Fixed typo in `is_living` enum from "unkown" to "unknown"
