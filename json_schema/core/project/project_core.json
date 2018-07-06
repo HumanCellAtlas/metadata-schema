@@ -22,9 +22,9 @@
             "example": "4.6.1"
         },
         "project_shortname": {
-            "description": "A unique label for the project.",
+            "description": "A short name for the project.",
             "type": "string",
-            "example": "my_project",
+            "example": "For example, a short label by which you refer to the project. This will be used for quick orientation and reference.",
             "user_friendly": "Project label"
         },
         "project_title": {
