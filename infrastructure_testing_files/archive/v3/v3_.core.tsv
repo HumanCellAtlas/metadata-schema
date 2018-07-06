@@ -1,0 +1,7 @@
+core	subobject level - a field in other objects			
+The core describes the type of object, version, and how to validate it.  It also includes a unique ID field. All modules include a core.				
+				
+Field Name	Source	Priority	Type	Description
+type	ingest	required	CV	A name for the type of object/module. By convention also the file name (without dir or extension) of json schema or entity level metadata file
+schema_version	ingest	required	text	Version number in major.minor.patch format. Example 3.2.4.  Major version changes likely require change to software.  Patches are just documentation changes
+schema_url	ingest	required	url	URL of json schema document that validates this version of this module.
