@@ -34,8 +34,9 @@
             "user_friendly": "Email address"
         },
         "phone": {
-            "description": "Phone number (including country code) of contact or contact's lab.",
+            "description": "Phone number of the individual or their lab.",
             "type": "string",
+            "example": "Enter a valid phone number, including country code.",
             "user_friendly": "Phone number"
         },
         "institution": {
