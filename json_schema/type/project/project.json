@@ -57,31 +57,35 @@
             }
         },
         "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI.",
             "type": "string",
             "pattern": "^[D|E|S]RP[0-9]+$",
+            "example": "Must start with DRP, ERP, or SRP.",
             "user_friendly": "INSDC project accession"
         },
         "geo_series": {
-            "description": "An NCBI GEO series accession.",
+            "description": "GEO accession number, if data has already been submitted to NCBI GEO.",
             "type": "string",
             "pattern": "^GSE.*$",
+            "example": "Must start with GSE.",
             "user_friendly": "GEO series accession"
         },
         "array_express_investigation": {
-            "description": "An EBI ArrayExpress investigation accession.",
+            "description": "EBI ArrayExpress accession number, if data has already been submitted to ArrayExpress.",
             "type": "string",
             "pattern": "^E-....-.*$",
+            "example": "Must start with E-.",
             "user_friendly": "ArrayExpress accession"
         },
         "insdc_study": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI.",
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
+            "example": "Must start with PRJE, PRJN, or PRJD.",
             "user_friendly": "INSDC study accession"
         },
         "funders": {
-            "description": "A list of funders supporting this project",
+            "description": "A list of funders supporting this project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/funder.json"
