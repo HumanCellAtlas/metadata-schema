@@ -14,6 +14,18 @@ Changed descriptions and examples for fields in the project_core and project_typ
 ### Added
 Added some examples to fields in the project_core and project_type schemas.
 
+### [bundle/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [type/project/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [module/project/contact.json - v5.2.2] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
 ### [bundle/biomaterial.json - v11.2.0] - 2018-07-06
 ### Added
 Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
