@@ -27,10 +27,11 @@
             "user_friendly": "Contact name"
         },
         "email": {
-            "description": "An email address for the contact.",
+            "description": "Email address for the individual.",
             "type": "string",
+            "example": "Enter a valid email address.",
             "format": "email",
-            "user_friendly": "Email"
+            "user_friendly": "Email address"
         },
         "phone": {
             "description": "Phone number (including country code) of contact or contact's lab.",
