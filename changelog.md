@@ -7,21 +7,395 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [module/process/sequencing/10x.json - v1.0.0] - 2018-06-21
+### [module/process/sequencing/10x.json - v1.0.0] - 2018-07-06
 ### Added
-Added module with 10x specific fields
+Added module with 10x specific fields.
 
-### [type/protocol/sequencing/sequencing_protocol.json - v?.?+1.?] - 2018-06-21
+### [type/protocol/sequencing/sequencing_protocol.json - v?.?+1.?] - 2018-07-06
 ### Added
-Added reference to 10x module
+Added reference to optional 10x module.
+
+### [bundle/project.json - v6.0.2] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+### [type/project/project.json - v6.0.2] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+### [core/project/project_core.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+### [bundle/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [type/project/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [module/project/contact.json - v5.2.2] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [bundle/biomaterial.json - v11.2.0] - 2018-07-06
+### Added
+Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
+
+### Changed
+Changed `organoid_age` description
+
+### [type/biomaterial/organoid.json - v8.2.0] - 2018-07-06
+### Added
+Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
+
+### Changed
+Changed `organoid_age` description
+
+### [bundle/biomaterial.json - v11.1.0] - 2018-07-06
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism. Fixes #362.
+
+### [type/biomaterial/donor_organism.json - v8.1.0] - 2018-07-06
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism. Fixes #362.
+
+### [bundle/biomaterial.json - v11.0.0] - 2018-07-06
+### Changed
+Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
+
+### [type/biomaterial/donor_organism.json - v8.0.0] - 2018-07-06
+### Changed
+Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
+
+### [module/biomaterial/human_specific.json - v1.0.0] - 2018-07-06
+### Added
+Added module `human_specific` to replace deprecated `homo_sapiens_specific`. Fixes #387
+
+### [module/biomaterial/mouse_specific.json - v1.0.0] - 2018-07-06
+### Added
+Added module `mouse_specific` to replace deprecated `mus_musculus _specific`. Fixes #387
+
+### [module/biomaterial/homo_sapiens_specific.json - v5.3.0] - 2018-07-06
+### Deprecated
+Deprecated module `homo_sapiens_specific` in favour of common name module `human_specific`. Fixes #387
+
+### [module/biomaterial/mus_musculus_specific.json - v5.3.0] - 2018-07-06
+### Deprecated
+Deprecated module `mus_musculus_specific` in favour of common name module `mouse_specific`. Fixes #387
+
+### [bundle/process.json - v8.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [type/process/process.json - v4.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [bundle/process.json - v8.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [type/process/process.json - v4.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [core/process/process_core.json - v7.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [module/ontology/enrichment_ontology.json - v1.2.1] - 2018-07-06
+### Changed
+Fixed a typo in the curie for the enrichment ontology root class.
+
+### [bundle/biomaterial.json - v10.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
+### [type/biomaterial/donor_organism.json - v7.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
+### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/process.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/protocol.json - v10.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/reference.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [core/process/process_core.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/cell_morphology.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/homo_sapiens_specific.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/mus_musculus_specific.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/preservation_storage.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/timecourse.json - v1.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/cell_line.json - v8.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/cell_suspension.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/donor_organism.json - v7.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/organoid.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/specimen_from_organism.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/file/reference_file.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/process/process.json - v3.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/analysis/analysis_protocol.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/protocol.json - v6.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/cell_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/development_stage_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/disease_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/enrichment_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/ethnicity_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/instrument_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/length_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/library_amplification_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/library_construction_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/mass_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/organ_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/organ_part_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/process_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/protocol_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/sequencing_ontology.json - v1.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/species_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/strain_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/time_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/biomaterial.json - v10.1.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [type/biomaterial/donor_organism.json - v7.1.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [module/biomaterial/death.json - v5.3.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [bundle/biomaterial.json - v10.0.0] - 2018-06-25
+### Changed
+Changed the type of is_living to a string and added an enum to accommodate "unknown" as well as yes/no.
+Fixes Issue #371.
+
+### [type/biomaterial/donor_organism.json - v7.0.0] - 2018-06-25
+### Changed
+Changed the type of is_living to a string and added an enum to accommodate "unknown" as well as yes/no.
+Fixes Issue #371.
+
+### [bundle/protocol.json v10.2.0] - 2018-06-25
+### Added
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json v1.0.0] - 2018-06-25
+### Added
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
+
+### [bundle/protocol.json - v10.1.1] - 2018-06-25
+### Added
+Added optionals small_molecules and differentiation_media fields.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.1.1] - 2018-06-25
+### Added
+Added optionals small_molecules and differentiation_media fields.
 
 ### [bundle/biomaterial.json - v9.1.1] - 2018-06-20
 ### Changed
-Updated the schema URL pattern to cell_line
+Updated the schema URL pattern to cell_line.
 
 ### [type/biomaterial/cell_line.json - v8.1.1] - 2018-06-20
 ### Changed
-Updated the schema URL pattern to cell_line
+Updated the schema URL pattern to cell_line.
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
