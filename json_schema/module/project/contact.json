@@ -62,13 +62,14 @@
             "type": "string",
             "enum": [
                 "principal investigator",
-                "external curator",
-                "HCA curator",
-                "technician",
-                "computational scientist",
+                "co investigator",
                 "experimental scientist",
+                "computational scientist",
                 "clinician",
                 "pathologist",
+                "technician",
+                "external curator",
+                "Human Cell Atlas wrangler",
                 "other"
             ],
             "user_friendly": "Project role"
