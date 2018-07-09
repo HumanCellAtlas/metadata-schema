@@ -9,7 +9,8 @@
   "contributors": [
     {
       "contact_name": "Dummy Person",
-      "email": "dummy@email.com"
+      "email": "dummy@email.com",
+      "corresponding_author": true
     }
   ]
 }
