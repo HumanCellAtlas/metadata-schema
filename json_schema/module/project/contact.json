@@ -5,7 +5,7 @@
     "required": [
         "contact_name",
         "email",
-        "corresponding_author"
+        "corresponding_contributor"
     ],
     "title": "contact",
     "type": "object",
@@ -61,10 +61,10 @@
             "type": "string",
             "user_friendly": "Country"
         },
-        "corresponding_author": {
-            "description": "Whether the individual is a corresponding author for this project.",
+        "corresponding_contributor": {
+            "description": "Whether the individual is a corresponding contributor for this project.",
             "type": "boolean",
-            "user_friendly": "Corresponding author?",
+            "user_friendly": "Corresponding contributor?",
             "example": "Must be either yes or no."
         }
     }
