@@ -7,13 +7,16 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v?+1.?.?] - 2018-07-09
+### Added
+Added new required field `corresponding_contributor` to contact.json module. Fixes #409.
+
 ### [bundle/project.json - v6.0.2] - 2018-07-06
 ### Changed
 Changed descriptions and examples for fields in the project_core and project_type schemas.
 
 ### Added
 Added some examples to fields in the project_core and project_type schemas.
-
 
 ### [type/project/project.json - v6.0.2] - 2018-07-06
 ### Changed
