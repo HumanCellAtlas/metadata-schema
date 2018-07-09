@@ -4,7 +4,8 @@
     "additionalProperties": false,
     "required": [
         "contact_name",
-        "email"
+        "email",
+        "corresponding_author"
     ],
     "title": "contact",
     "type": "object",
@@ -59,6 +60,12 @@
             "description": "Country where the individual works.",
             "type": "string",
             "user_friendly": "Country"
+        },
+        "corresponding_author": {
+            "description": "Whether the individual is a corresponding author for this project.",
+            "type": "boolean",
+            "user_friendly": "Corresponding author?",
+            "example": "Must be either yes or no."
         }
     }
 }
