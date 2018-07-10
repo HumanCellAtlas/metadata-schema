@@ -14,12 +14,12 @@ Location: bundle/ingest_audit.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-document_id | Identifier for document. | string | yes |  |  |  | 
 submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
+updater_id | ID of contact who last updated project | string | no |  |  |  | 
 submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
+document_id | Identifier for document. | string | yes |  |  |  | 
 updateDate | When project was last updated | string | no |  |  |  | 
 accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
-updater_id | ID of contact who last updated project | string | no |  |  |  | 
 
 ## links
 _A schema for a links bundle._
@@ -28,8 +28,8 @@ Location: bundle/links.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | link_bundle | 
 links | An array of linking objects | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | link_bundle | 
 
 ## project
 _A schema for a project bundle._
@@ -38,9 +38,9 @@ Location: bundle/project.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | project_bundle | 
-content | Content for a project type entity. | object | yes | [See   project](.md/#project) |  |  | 
 hca_ingest | Core fields added by HCA ingest service | object | yes | [See   ingest_audit](.md/#ingest_audit) |  |  | 
+content | Content for a project type entity. | object | yes | [See   project](.md/#project) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | project_bundle | 
 
 ## file
 _A schema for a file bundle._
@@ -49,8 +49,8 @@ Location: bundle/file.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file_bundle | 
 files | An array of files. | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file_bundle | 
 
 ## process
 _A schema for a process bundle._
@@ -99,7 +99,7 @@ Location: bundle/submission.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | no |  |  | submission | 
-submitted_files |  |  | yes |  |  |  | 
 transfer_service_version |  |  | yes |  |  |  | 
+submitted_files |  |  | yes |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | no |  |  | submission | 
 
