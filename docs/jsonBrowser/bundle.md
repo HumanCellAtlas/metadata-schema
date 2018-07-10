@@ -14,11 +14,11 @@ Location: bundle/ingest_audit.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+updateDate | When project was last updated | string | no |  |  |  | 
 submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
-updater_id | ID of contact who last updated project | string | no |  |  |  | 
 submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
 document_id | Identifier for document. | string | yes |  |  |  | 
-updateDate | When project was last updated | string | no |  |  |  | 
+updater_id | ID of contact who last updated project | string | no |  |  |  | 
 accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
 
 ## links
@@ -38,9 +38,9 @@ Location: bundle/project.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-hca_ingest | Core fields added by HCA ingest service | object | yes | [See   ingest_audit](.md/#ingest_audit) |  |  | 
 content | Content for a project type entity. | object | yes | [See   project](.md/#project) |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project_bundle | 
+hca_ingest | Core fields added by HCA ingest service | object | yes | [See   ingest_audit](.md/#ingest_audit) |  |  | 
 
 ## file
 _A schema for a file bundle._
@@ -59,8 +59,8 @@ Location: bundle/process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | process_bundle | 
 processes | An array of processes. | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | process_bundle | 
 
 ## reference
 _A schema for a reference bundle._
@@ -69,8 +69,8 @@ Location: bundle/reference.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | reference_bundle | 
 references | An array of reference files. | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | reference_bundle | 
 
 ## biomaterial
 _A schema for a biomaterial bundle._
@@ -79,8 +79,8 @@ Location: bundle/biomaterial.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial_bundle | 
 biomaterials | An array of biomaterials. | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial_bundle | 
 
 ## protocol
 _A schema for a protocol bundle._
@@ -89,8 +89,8 @@ Location: bundle/protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol_bundle | 
 protocols | An array of protocols. | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol_bundle | 
 
 ## submission
 _Information added to a submission at ingest._
@@ -100,6 +100,6 @@ Location: bundle/submission.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 transfer_service_version |  |  | yes |  |  |  | 
-submitted_files |  |  | yes |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | no |  |  | submission | 
+submitted_files |  |  | yes |  |  |  | 
 
