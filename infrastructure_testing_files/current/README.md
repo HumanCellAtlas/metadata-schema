@@ -3,9 +3,9 @@
 This directory (_metadata-schema/infrastructure_testing_files/current_) contains the latest metadata spreadsheets for DCP-wide integration tests.
 
 
-`Q4DemoSS2Metadata.xlsx`
+`dcp_integration_test_metadata_1_SS2_bundle.xlsx`
 
-One cell suspension dummy data for quick tests.
+**This is the DCP-wide integration test spreadsheet.** One cell suspension (one bundle) dummy data for quick tests.
 
 `glioblastoma_100cells.xlsx`
 
