@@ -21,39 +21,42 @@
             "example": "4.6.1"
         },
         "contact_name": {
-            "description": "The contact's name. Should be in the format 'first, middle, last name'. Middle can be initial or left blank.",
+            "description": "Name of any individual who has contributed to this project.",
             "type": "string",
-            "example": "John,D,Doe",
+            "example": "Format: 'first, middle, last name', middle can be initial or left blank. Example: John,D,Smith.",
             "user_friendly": "Contact name"
         },
         "email": {
-            "description": "An email address for the contact.",
+            "description": "Email address for the individual.",
             "type": "string",
+            "example": "Enter a valid email address.",
             "format": "email",
-            "user_friendly": "Email"
+            "user_friendly": "Email address"
         },
         "phone": {
-            "description": "Phone number (including country code) of contact or contact's lab.",
+            "description": "Phone number of the individual or their lab.",
             "type": "string",
+            "example": "Enter a valid phone number, including country code.",
             "user_friendly": "Phone number"
         },
         "institution": {
-            "description": "Name of primary institute where contact works.",
+            "description": "Name of primary institute where the individual works.",
             "type": "string",
-            "user_friendly": "Institution"
+            "user_friendly": "Institute"
         },
         "laboratory": {
-            "description": "Name of lab (often the PI name) within institute where contact works.",
+            "description": "Name of lab or department within the institute where the individual works.",
             "type": "string",
-            "user_friendly": "Laboratory"
+            "user_friendly": "Laboratory/Department"
         },
         "address": {
-            "description": "Street address where contact works. Should include street name and number, city, country division, postal code.",
+            "description": "Street address where the individual works.",
             "type": "string",
+            "example": "Include street name and number, city, country division, postal code.",
             "user_friendly": "Address"
         },
         "country": {
-            "description": "Country where contact works.",
+            "description": "Country where the individual works.",
             "type": "string",
             "user_friendly": "Country"
         },

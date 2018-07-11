@@ -11,6 +11,111 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ### Added
 Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
 
+### [bundle/project.json - v6.0.2] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+
+### [type/project/project.json - v6.0.2] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+
+### [core/project/project_core.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+### [bundle/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [type/project/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [module/project/contact.json - v5.2.2] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [bundle/biomaterial.json - v11.2.0] - 2018-07-06
+### Added
+Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
+
+### Changed
+Changed `organoid_age` description
+
+### [type/biomaterial/organoid.json - v8.2.0] - 2018-07-06
+### Added
+Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
+
+### Changed
+Changed `organoid_age` description
+
+### [bundle/biomaterial.json - v11.1.0] - 2018-07-06
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism. Fixes #362.
+
+### [type/biomaterial/donor_organism.json - v8.1.0] - 2018-07-06
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism. Fixes #362.
+
+### [bundle/biomaterial.json - v11.0.0] - 2018-07-06
+### Changed
+Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
+
+### [type/biomaterial/donor_organism.json - v8.0.0] - 2018-07-06
+### Changed
+Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
+
+### [module/biomaterial/human_specific.json - v1.0.0] - 2018-07-06
+### Added
+Added module `human_specific` to replace deprecated `homo_sapiens_specific`. Fixes #387
+
+### [module/biomaterial/mouse_specific.json - v1.0.0] - 2018-07-06
+### Added
+Added module `mouse_specific` to replace deprecated `mus_musculus _specific`. Fixes #387
+
+### [module/biomaterial/homo_sapiens_specific.json - v5.3.0] - 2018-07-06
+### Deprecated
+Deprecated module `homo_sapiens_specific` in favour of common name module `human_specific`. Fixes #387
+
+### [module/biomaterial/mus_musculus_specific.json - v5.3.0] - 2018-07-06
+### Deprecated
+Deprecated module `mus_musculus_specific` in favour of common name module `mouse_specific`. Fixes #387
+
+### [bundle/process.json - v8.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [type/process/process.json - v4.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [bundle/process.json - v8.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [type/process/process.json - v4.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [core/process/process_core.json - v7.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [module/ontology/enrichment_ontology.json - v1.2.1] - 2018-07-06
+### Changed
+Fixed a typo in the curie for the enrichment ontology root class.
+
 ### [bundle/biomaterial.json - v10.2.1] - 2018-07-04
 ### Fixed
 Fixed typo in `is_living` enum from "unkown" to "unknown"
