@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/links.json - v?+1.?.?] - 2018-07-11
+### Changed
+Renamed links fields to `input_type`, `inputs`, `output_type`, `outputs`. Added `protocols` and `process` fields.
+
 ### [bundle/biomaterial.json - v10.1.0] - 2018-06-25
 ### Added
 Added optional field `organ_donation_death_type` to module death.
