@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v?.?+1.?] - 2018-07-11
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
 ### [bundle/biomaterial.json - v10.2.1] - 2018-07-04
 ### Fixed
 Fixed typo in `is_living` enum from "unkown" to "unknown"
