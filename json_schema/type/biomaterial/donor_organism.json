@@ -43,12 +43,12 @@
         "human_specific": {
             "description": "Fields specific to human (homo sapiens) organisms.",
             "type": "object",
-            "$ref": "module/biomaterial/homo_sapiens_specific.json"
+            "$ref": "module/biomaterial/human_specific.json"
         },
-        "mus_musculus_specific": {
+        "mouse_specific": {
             "description": "Fields specific to mouse (mus musculus) organisms.",
             "type": "object",
-            "$ref": "module/biomaterial/mus_musculus_specific.json"
+            "$ref": "module/biomaterial/mouse_specific.json"
         },
         "death": {
             "description": "Information about conditions of death of an organism.",
@@ -134,7 +134,7 @@
             "enum": [
                 "yes",
                 "no",
-                "unkown"
+                "unknown"
             ],
             "user_friendly": "Is living?"
         }, 
@@ -160,6 +160,16 @@
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
+        },
+        "normothermic_regional_perfusion": {
+            "description": "Yes if donor's body (but not limbs) was perfused with warm oxygenated blood from the donor. No otherwise.",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "user_friendly": "Normothermic regional perfusion"
         }
     }
 }

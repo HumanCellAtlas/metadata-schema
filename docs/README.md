@@ -12,17 +12,17 @@ List of fields in the HCA metadata standard that can currently be annotated with
 
 ### contributing.md
 
-Information on [how to contribute](docs/contributing.md) to the HCA metadata standards.
+Information on [how to contribute](contributing.md) to the HCA metadata standards.
 
 ### evolution.md
 
-[Evolution and update principles](docs/evolution.md) for the HCA metadata standards.
+[Evolution and update principles](evolution.md) for the HCA metadata standards.
 
 ### rationale.md
 
-Rationale for the [design and implementation choices](docs/rationale.md) for the HCA metadata standards.
+Rationale for the [design and implementation choices](rationale.md) for the HCA metadata standards.
 
 ### structure.md
 
-Overview of the [structure](docs/structure.md) of the HCA metadata standards.
+Overview of the [structure](structure.md) of the HCA metadata standards.
 
