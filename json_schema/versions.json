@@ -16,9 +16,7 @@
             },
             "protocol": {
                 "protocol_core": "5.2.1"
-            },
-            "provenance_core": "1.0.0",
-            "links": "1.1.1"
+            }
         },
         "module": {
             "biomaterial": {
@@ -109,6 +107,8 @@
                     "sequencing_protocol": "7.1.0"
                 }
             }
-        }
+        },
+        "provenance_core": "1.0.0",
+        "links": "1.1.1"
     }
 }
