@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v?.?+1.?] - 2018-07-11
+### Added
+Added ipsc induction factors field to ipsc induction protocol
+
 ### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
 ### Added
 Added optional field `ontology_label` to all ontology modules.
