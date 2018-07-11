@@ -59,6 +59,30 @@
             "description": "Country where the individual works.",
             "type": "string",
             "user_friendly": "Country"
+        },
+        "project_role": {
+            "description": "Primary role of the person in the project.",
+            "type": "string",
+            "enum": [
+                "principal investigator",
+                "co investigator",
+                "experimental scientist",
+                "computational scientist",
+                "clinician",
+                "pathologist",
+                "technician",
+                "external curator",
+                "Human Cell Atlas wrangler",
+                "other"
+            ],
+            "example": "principal investigator",
+            "user_friendly": "Project role"
+        },
+        "orcid_id": {
+            "description": "The contacts ORCID ID linked to their previous work.",
+            "type": "string",
+            "example": "0000-1111-2222-3333",
+            "user_friendly": "ORCID ID"
         }
     }
 }
