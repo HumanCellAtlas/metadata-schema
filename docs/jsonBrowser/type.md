@@ -7,24 +7,32 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
-## project
-_A project contains information about the overall project._
+## cell_line
+_Information about the cell line or cell culture biomaterial._
 
-Location: type/project/project.json
+Location: type/biomaterial/cell_line.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
+catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | 
+lot_number | The supplier lot or batch number for the cell line. | string | no |  | Lot/batch number |  | 24.10.14
+cell_type | The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
+date_established | When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ. | string | no |  | Date established |  | 
+catalog_number | The supplier catalogue number for the cell line. | string | no |  | Catalog number |  | 77650057
+cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
+growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
+genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
+cell_line_type | The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | yes |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent | induced pluripotent
+confluency | The percent a plate surface is covered by cells. | number | no |  | Percent confluency |  | 60
+disease | Free text describing any disease association to the cell type. Should be an EFO ontology. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
 provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-project_core | Core project-level information. | object | no | [See core  project_core](core.md/#project_core) |  |  | 
-contributors | List of people contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) |  |  | List of authors for a publication resulting from this project.
-supplementary_files | Project-level supplementary files. | array | no |  | Supplementary files |  | Experimental design documents, electronic notebook files, manuscripts in preparation, etc.
-publications | A list of publications resulting from this project. | array | no | [See module  publication](module.md/#publication) |  |  | 
-insdc_project | An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP. | string | no |  | INSDC project accession |  | 
-geo_series | An NCBI GEO series accession. | string | no |  | GEO series accession |  | 
-array_express_investigation | An EBI ArrayExpress investigation accession. | string | no |  | ArrayExpress accession |  | 
-insdc_study | An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD. | string | no |  | INSDC study accession |  | 
-funders | A list of funders supporting this project | array | no | [See module  funder](module.md/#funder) | Project funders |  | 
+publications | One or more publications in which the cell line creation was cited. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
+tissue | The tissue that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000465 | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Tissue |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
+karyotype | The karyotype of the biomaterial. | string | no |  | Karyotype |  | 
+cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
 
 ## cell_suspension
 _Information about the cell suspension derived from the collected or cultured specimen_
@@ -33,57 +41,14 @@ Location: type/biomaterial/cell_suspension.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
 growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
-genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
 selected_cell_type | The cell type(s) selected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type |  | fetal cardiomyocyte
+genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
 total_estimated_cells | Total estimated number of cells in biomaterial. May be 1 for well-based assays. | integer | no |  | Total estimated cell count |  | 2100
-
-## cell_line
-_Information about the cell line or cell culture biomaterial._
-
-Location: type/biomaterial/cell_line.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci
-catalog_number | The supplier catalogue number for the cell line. | string | no |  | Catalog number |  | 77650057
-lot_number | The supplier lot or batch number for the cell line. | string | no |  | Lot/batch number |  | 24.10.14
-catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | 
-cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
-cell_line_type | The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | yes |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent | induced pluripotent
-cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
-growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
-confluency | The percent a plate surface is covered by cells. | number | no |  | Percent confluency |  | 60
-cell_type | The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
-karyotype | The karyotype of the biomaterial. | string | no |  | Karyotype |  | 
-tissue | The tissue that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000465 | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Tissue |  | 
-date_established | When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ. | string | no |  | Date established |  | 
-disease | Free text describing any disease association to the cell type. Should be an EFO ontology. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
-genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-publications | One or more publications in which the cell line creation was cited. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
-
-## organoid
-_Information about an organoid biomaterial._
-
-Location: type/biomaterial/organoid.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-model_for_organ | Organ for which this organoid is a model system. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
-organoid_age | Age of the organoid. | number | no |  | Organoid age |  | 55
-organoid_age_unit | The unit in which organoid age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organoid age unit |  | 
-organoid_type | The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | no |  | Organoid type | primary, immortalized, stem cell-derived, synthetic | 
 
 ## donor_organism
 _Information about the organism from which a specimen was collected._
@@ -92,27 +57,43 @@ Location: type/biomaterial/donor_organism.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-human_specific | Fields specific to human (homo sapiens) organisms. | object | no | [See module  homo_sapiens_specific](module.md/#homo_sapiens_specific) |  |  | 
-mus_musculus_specific | Fields specific to mouse (mus musculus) organisms. | object | no | [See module  mus_musculus_specific](module.md/#mus_musculus_specific) |  |  | 
-death | Information about conditions of death of an organism. | object | no | [See module  death](module.md/#death) |  |  | 
-medical_history | Information about the medical history of an organism. | object | no | [See module  medical_history](module.md/#medical_history) |  |  | 
+weight | Weight of organism in kilograms. | string | no |  | Weight |  | 
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-organism_age | Age in age_units. Measured since birth. | string | no |  | Organism age |  | 
-organism_age_unit | The unit in which age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organism age unit |  | year
-development_stage | A classification of the developmental stage of the organism. | object | no | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
-disease | Short description of disease status of the organism. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+medical_history | Information about the medical history of an organism. | object | no | [See module  medical_history](module.md/#medical_history) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 familial_relationship | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
+development_stage | A classification of the developmental stage of the organism. | object | no | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
+mus_musculus_specific | Fields specific to mouse (mus musculus) organisms. | object | no | [See module  mus_musculus_specific](module.md/#mus_musculus_specific) |  |  | 
+biological_sex | The biological sex of the organism. Should be one of male, female, mixed, or unknown. | string | yes |  | Biological sex | female, male, mixed, unknown | 
 gestational_age | Gestational age in gestational_age_units. Measured since fertilization. | string | no |  | Gestational age |  | 
 gestational_age_unit | The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | 
-height | Height of organism in height units. | string | no |  | Height |  | 
-height_unit | The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | 
-is_living | Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known. | string | yes |  | Is living? | yes, no, unkown | 
-biological_sex | The biological sex of the organism. Should be one of male, female, mixed, or unknown. | string | yes |  | Biological sex | female, male, mixed, unknown | 
-weight | Weight of organism in kilograms. | string | no |  | Weight |  | 
 weight_unit | The unit in which weight is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000002. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | 
+human_specific | Fields specific to human (homo sapiens) organisms. | object | no | [See module  homo_sapiens_specific](module.md/#homo_sapiens_specific) |  |  | 
+height_unit | The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | 
+death | Information about conditions of death of an organism. | object | no | [See module  death](module.md/#death) |  |  | 
+height | Height of organism in height units. | string | no |  | Height |  | 
+is_living | Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known. | string | yes |  | Is living? | yes, no, unkown | 
+disease | Short description of disease status of the organism. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
+organism_age | Age in age_units. Measured since birth. | string | no |  | Organism age |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+organism_age_unit | The unit in which age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organism age unit |  | year
+
+## organoid
+_Information about an organoid biomaterial._
+
+Location: type/biomaterial/organoid.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+organoid_age | Age of the organoid. | number | no |  | Organoid age |  | 55
+organoid_age_unit | The unit in which organoid age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organoid age unit |  | 
+genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
+model_for_organ | Organ for which this organoid is a model system. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
+organoid_type | The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic. | string | no |  | Organoid type | primary, immortalized, stem cell-derived, synthetic | 
 
 ## specimen_from_organism
 _Information about the specimen that was extracted from the organism._
@@ -121,215 +102,28 @@ Location: type/biomaterial/specimen_from_organism.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-organ | The organ that the biomaterial came from. Blood and connective tissue are considered organs. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | Blood
-organ_part | A term for a specific part of the organ that the biomaterial came from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | Umbilical cord blood
-disease | Short description of disease status of the specimen. Can be 'normal' or one or more disease terms. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
-state_of_specimen | State of the specimen at the time of collection/removal. | object | no | [See module  state_of_specimen](module.md/#state_of_specimen) |  |  | 
-preservation_storage | Information relating to how a biomaterial was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md/#preservation_storage) |  |  | 
-collection_time | When the biomaterial was collected, in date-time format, yyyy-mm-ddThh:mm:ssZ. | string | no |  | Time of collection |  | 
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased specimen |  | 
+state_of_specimen | State of the specimen at the time of collection/removal. | object | no | [See module  state_of_specimen](module.md/#state_of_specimen) |  |  | 
+organ | The organ that the biomaterial came from. Blood and connective tissue are considered organs. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | Blood
+preservation_storage | Information relating to how a biomaterial was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md/#preservation_storage) |  |  | 
+genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
+disease | Short description of disease status of the specimen. Can be 'normal' or one or more disease terms. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
+organ_part | A term for a specific part of the organ that the biomaterial came from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | Umbilical cord blood
+collection_time | When the biomaterial was collected, in date-time format, yyyy-mm-ddThh:mm:ssZ. | string | no |  | Time of collection |  | 
 
-## process
-_Information about the process_
+## analysis_file
+_A file analysis results produced by a secondary analysis pipeline._
 
-Location: type/process/process.json
+Location: type/file/analysis_file.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
 provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
-process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | process type |  | 
-deviation_from_protocol | Any deviation from the standard protocol provided | string | no |  | Deviation from protocol |  | 
-insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) |  |  | 
-
-## protocol
-_Information about the protocol_
-
-Location: type/protocol/protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-
-## imaging_protocol
-_Information about the imaging protocol_
-
-Location: type/protocol/imaging/imaging_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-embedding | Description of embedding conditions. | string | no |  | Embedding conditions |  | 
-exposure_time | Exposure time - as a floating point number - in seconds. | number | no |  | Exposure time |  | 
-field_counts | Number of fields in x and y dimensions. | array | no |  | Field count |  | 
-field_microns | Microns covered by a field in x, y, and z. Z includes all focal planes in a single file. | array | no |  | Field microns |  | 
-field_resolution | x, y, and z (number of focal planes) resolution of an individual field. | array | no |  | Field resolution |  | 
-fixation | Description of fixation conditions. | string | no |  | Fixation |  | 
-microscope | Microscope used for imaging. |  | no |  | Microscope | generic confocal, generic two photon | 
-probes | A file containing information on probe sequence, genes they cover, and colors. | string | no |  | Probes |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-
-## sequencing_protocol
-_Information about the sequencing protocol_
-
-Location: type/protocol/sequencing/sequencing_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
-local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | 
-paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean | yes |  | Paired ends? |  | yes
-sequencing_approach | The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | 
-
-## library_preparation_protocol
-_Information about how a sequencing library was created._
-
-Location: type/protocol/sequencing/library_preparation_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-cell_barcode | Information about cell identifier barcode. | object | no | [See module  barcode](module.md/#barcode) | Cell barcode |  | 
-input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446. | object | yes | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | 
-library_construction_approach | The general approach for sequencing library construction. Should be a child term of EFO - library preparation | object | yes | [See module  library_construction_ontology](module.md/#library_construction_ontology) | Library construction approach |  | 
-library_construction_kit | Name of kit used to construct the sequencing library. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Library construction kit |  | 
-nucleic_acid_conversion_kit | Name of kit used to convert RNA to DNA for sequencing. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Nucleic acid conversion kit |  | 
-end_bias | The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length. | string | yes |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | 3_prime_tag
-primer | Primer used for cDNA synthesis from RNA. Must be either poly-dT or random. | string | no |  | Primer | poly-dT, random | 
-strand | Library strandedness. Must be one of first, second, or unstranded. | string | yes |  | Strand | first, second, unstranded | unstranded
-spike_in_kit | Name of spike-in kit. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Spike-in kit |  | 
-spike_in_dilution | Dilution of spike-in. | integer | no |  | Spike-in dilution |  | 
-umi_barcode | Information about unique molecular identifier (UMI) barcode sequences. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 
-library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | 
-cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | 
-
-## enrichment_protocol
-_protocol by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest._
-
-Location: type/protocol/biomaterial_collection/enrichment_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-enrichment_method | The method by which enrichment was achieved. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
-markers | A space-delimited list of markers with +/-. | string | no |  | Markers |  | CD4+ CD8-
-min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 
-max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 
-
-## aggregate_generation_protocol
-_Contains information on how cultured cells are developed into cell aggregates_
-
-Location: type/protocol/biomaterial_collection/aggregate_generation_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
-aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
-
-## ipsc_induction_protocol
-_Contains information on how a sample was treated to become an induced pluripotent stem cell._
-
-Location: type/protocol/biomaterial_collection/ipsc_induction_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-induced_pluripotent_cell_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string | yes |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | piggyBac transposon
-induced_pluripotent_cell_induction_kit | Kit used to induce pluripotent stem cell generation. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Induction kit |  | 
-pluripotency_test | Description of how pluripotency was tested in induced pluripotent stem cells. | string | no |  | Pluripotency test |  | teratoma assay
-percent_pluripotency | Percent of iPSCs that passed the pluripotency test. | number | no |  | Percent pluripotency |  | 97.2
-pluripotency_vector_removed | Whether a viral vector was removed after induction. Must be one of: yes, no, unknown. | string | no |  | Pluripotent vector removed? | yes, no, unknown | yes
-induced_pluripotent_cell_induction_produced_in_house | Whether the induced pluripotent stem cell was prepared in-house. Must be one of: yes, no. | boolean | no |  | iPSC prepared in-house? |  | yes
-protocol_reagents | A list of additional purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Additional reagents |  | 
-
-## dissociation_protocol
-_Contains information on the dissociation protocol used to separate the cells in a specimen._
-
-Location: type/protocol/biomaterial_collection/dissociation_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-dissociation_method | How cells or organelles were dissociated. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
-nucleic_acid_source | Source cells or organelles from which nucleic acid molecules were collected. | string | yes |  | Nucleic acid source | bulk cell, single cell, single nucleus, bulk nuclei, mitochondria | 
-protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
-
-## differentiation_protocol
-_Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid._
-
-Location: type/protocol/biomaterial_collection/differentiation_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-differentiation_method | Differentiation method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body, Monolayer, Inductive Co-Culture
-differentiation_media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium
-differentiation_small_molecules | Differentiation small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4
-differentiation_target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
-differentiation_reagents | A list of purchased reagents used in the differentiation protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Differentiation reagents |  | 
-differentiation_target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt Pathway
-differentiation_validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining
-differentiation_validation_results | Results confirming successful differentiation to target cell type. | string | no |  | Validation results |  | CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative
-
-## biomaterial_protocol
-_Information about the biomaterial collection protocol_
-
-Location: type/protocol/biomaterial_collection/collection_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-collection_method | How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
-protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
-
-## analysis_protocol
-_Information about the analysis protocol_
-
-Location: type/protocol/analysis/analysis_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  |  |  | 
-reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
-tasks | Descriptions of tasks in the workflow. | array | yes |  |  |  | 
-timestamp_stop_utc | Terminal stop time of the full pipeline. | string | yes |  |  |  | 
-input_bundles | The input bundles used in this analysis run. | array | yes |  |  |  | 
-outputs | Output generated by the pipeline run. | array | yes | [See   analysis_file](.md/#analysis_file) |  |  | 
-computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  |  |  | 
-timestamp_start_utc | Initial start time of the full pipeline. | string | yes |  |  |  | 
-analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string | yes |  |  | run, copy-forward | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 
 ## reference_file
 _A reference file used by a secondary reference pipeline._
@@ -338,13 +132,13 @@ Location: type/file/reference_file.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
-ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | yes |  | NCBI taxon ID |  | 
-genus_species | The scientific binomial name for the species of this reference. | object | yes | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-assembly_type | The assembly type of this reference. This applies to reference genome sequences. | string | yes |  |  | primary assembly, complete assembly, patch assembly | 
 reference_type | The type of the genome reference. | string | yes |  |  | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | 
+genus_species | The scientific binomial name for the species of this reference. | object | yes | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | yes |  | NCBI taxon ID |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
+assembly_type | The assembly type of this reference. This applies to reference genome sequences. | string | yes |  |  | primary assembly, complete assembly, patch assembly | 
 reference_version | The genome version of the reference. | string | yes |  |  |  | GencodeV27
 
 ## sequence_file
@@ -354,23 +148,229 @@ Location: type/file/sequence_file.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
-read_index | Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read. If read file represents a single-end, non-indexed library, indicate that here. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | read1
 lane_index | The index of the lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
+read_index | Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read. If read file represents a single-end, non-indexed library, indicate that here. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | read1
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
 insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR. | array | no |  | INSDC run |  | 
 smartseq2 | Fields specific for SmartSeq2 experiments. | object | no | [See module  smartseq2](module.md/#smartseq2) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
 
-## analysis_file
-_A file analysis results produced by a secondary analysis pipeline._
+## process
+_Information about the process_
 
-Location: type/file/analysis_file.json
+Location: type/process/process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) |  |  | 
+process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | process type |  | 
+process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
+deviation_from_protocol | Any deviation from the standard protocol provided | string | no |  | Deviation from protocol |  | 
 provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
+
+## project
+_A project contains information about the overall project._
+
+Location: type/project/project.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+funders | A list of funders supporting this project | array | no | [See module  funder](module.md/#funder) | Project funders |  | 
+contributors | List of people contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) |  |  | List of authors for a publication resulting from this project.
+schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
+insdc_project | An INSDC (International Nucleotide Sequence Database Collaboration) project accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRP, ERP, or SRP. | string | no |  | INSDC project accession |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+geo_series | An NCBI GEO series accession. | string | no |  | GEO series accession |  | 
+supplementary_files | Project-level supplementary files. | array | no |  | Supplementary files |  | Experimental design documents, electronic notebook files, manuscripts in preparation, etc.
+array_express_investigation | An EBI ArrayExpress investigation accession. | string | no |  | ArrayExpress accession |  | 
+project_core | Core project-level information. | object | no | [See core  project_core](core.md/#project_core) |  |  | 
+insdc_study | An INSDC (International Nucleotide Sequence Database Collaboration) study accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD. | string | no |  | INSDC study accession |  | 
+publications | A list of publications resulting from this project. | array | no | [See module  publication](module.md/#publication) |  |  | 
+
+## protocol
+_Information about the protocol_
+
+Location: type/protocol/protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+
+## analysis_protocol
+_Information about the analysis protocol_
+
+Location: type/protocol/analysis/analysis_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  |  |  | 
+reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string | yes |  |  | run, copy-forward | 
+timestamp_stop_utc | Terminal stop time of the full pipeline. | string | yes |  |  |  | 
+input_bundles | The input bundles used in this analysis run. | array | yes |  |  |  | 
+outputs | Output generated by the pipeline run. | array | yes | [See   analysis_file](.md/#analysis_file) |  |  | 
+timestamp_start_utc | Initial start time of the full pipeline. | string | yes |  |  |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+tasks | Descriptions of tasks in the workflow. | array | yes |  |  |  | 
+computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+
+## aggregate_generation_protocol
+_Contains information on how cultured cells are developed into cell aggregates_
+
+Location: type/protocol/biomaterial_collection/aggregate_generation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
+
+## biomaterial_protocol
+_Information about the biomaterial collection protocol_
+
+Location: type/protocol/biomaterial_collection/collection_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+collection_method | How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
+
+## differentiation_protocol
+_Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid._
+
+Location: type/protocol/biomaterial_collection/differentiation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+differentiation_validation_results | Results confirming successful differentiation to target cell type. | string | no |  | Validation results |  | CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+differentiation_target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt Pathway
+differentiation_method | Differentiation method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body, Monolayer, Inductive Co-Culture
+differentiation_target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+differentiation_media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium
+differentiation_small_molecules | Differentiation small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+differentiation_validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining
+differentiation_reagents | A list of purchased reagents used in the differentiation protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Differentiation reagents |  | 
+
+## dissociation_protocol
+_Contains information on the dissociation protocol used to separate the cells in a specimen._
+
+Location: type/protocol/biomaterial_collection/dissociation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+nucleic_acid_source | Source cells or organelles from which nucleic acid molecules were collected. | string | yes |  | Nucleic acid source | bulk cell, single cell, single nucleus, bulk nuclei, mitochondria | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+dissociation_method | How cells or organelles were dissociated. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
+
+## enrichment_protocol
+_protocol by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest._
+
+Location: type/protocol/biomaterial_collection/enrichment_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+enrichment_method | The method by which enrichment was achieved. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+markers | A space-delimited list of markers with +/-. | string | no |  | Markers |  | CD4+ CD8-
+
+## ipsc_induction_protocol
+_Contains information on how a sample was treated to become an induced pluripotent stem cell._
+
+Location: type/protocol/biomaterial_collection/ipsc_induction_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+pluripotency_test | Description of how pluripotency was tested in induced pluripotent stem cells. | string | no |  | Pluripotency test |  | teratoma assay
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+percent_pluripotency | Percent of iPSCs that passed the pluripotency test. | number | no |  | Percent pluripotency |  | 97.2
+induced_pluripotent_cell_induction_kit | Kit used to induce pluripotent stem cell generation. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Induction kit |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+induced_pluripotent_cell_induction_produced_in_house | Whether the induced pluripotent stem cell was prepared in-house. Must be one of: yes, no. | boolean | no |  | iPSC prepared in-house? |  | yes
+induced_pluripotent_cell_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string | yes |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | piggyBac transposon
+pluripotency_vector_removed | Whether a viral vector was removed after induction. Must be one of: yes, no, unknown. | string | no |  | Pluripotent vector removed? | yes, no, unknown | yes
+protocol_reagents | A list of additional purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Additional reagents |  | 
+
+## imaging_protocol
+_Information about the imaging protocol_
+
+Location: type/protocol/imaging/imaging_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+exposure_time | Exposure time - as a floating point number - in seconds. | number | no |  | Exposure time |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+field_microns | Microns covered by a field in x, y, and z. Z includes all focal planes in a single file. | array | no |  | Field microns |  | 
+fixation | Description of fixation conditions. | string | no |  | Fixation |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+microscope | Microscope used for imaging. |  | no |  | Microscope | generic confocal, generic two photon | 
+embedding | Description of embedding conditions. | string | no |  | Embedding conditions |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+field_resolution | x, y, and z (number of focal planes) resolution of an individual field. | array | no |  | Field resolution |  | 
+probes | A file containing information on probe sequence, genes they cover, and colors. | string | no |  | Probes |  | 
+protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+field_counts | Number of fields in x and y dimensions. | array | no |  | Field count |  | 
+
+## library_preparation_protocol
+_Information about how a sequencing library was created._
+
+Location: type/protocol/sequencing/library_preparation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+spike_in_dilution | Dilution of spike-in. | integer | no |  | Spike-in dilution |  | 
+input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446. | object | yes | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+umi_barcode | Information about unique molecular identifier (UMI) barcode sequences. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 
+strand | Library strandedness. Must be one of first, second, or unstranded. | string | yes |  | Strand | first, second, unstranded | unstranded
+library_construction_kit | Name of kit used to construct the sequencing library. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Library construction kit |  | 
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+spike_in_kit | Name of spike-in kit. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Spike-in kit |  | 
+library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | 
+library_construction_approach | The general approach for sequencing library construction. Should be a child term of EFO - library preparation | object | yes | [See module  library_construction_ontology](module.md/#library_construction_ontology) | Library construction approach |  | 
+cell_barcode | Information about cell identifier barcode. | object | no | [See module  barcode](module.md/#barcode) | Cell barcode |  | 
+cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+end_bias | The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length. | string | yes |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | 3_prime_tag
+primer | Primer used for cDNA synthesis from RNA. Must be either poly-dT or random. | string | no |  | Primer | poly-dT, random | 
+nucleic_acid_conversion_kit | Name of kit used to convert RNA to DNA for sequencing. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Nucleic acid conversion kit |  | 
+
+## sequencing_protocol
+_Information about the sequencing protocol_
+
+Location: type/protocol/sequencing/sequencing_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | 
+instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
+provenance_core | Core provenance-level information. | object | no | [See core  provenance_core](core.md/#provenance_core) |  |  | 
+sequencing_approach | The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | 
+paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean | yes |  | Paired ends? |  | yes
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 
