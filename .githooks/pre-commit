@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+
+echo "Building docs"
+
+cd src
+
+python3 human_readable_json.py
+
+echo "Files built"
+
+cd ..
+
+git add docs/jsonBrowser/*.md
+
+echo "Files added to commit"
+
