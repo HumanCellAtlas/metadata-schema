@@ -41,15 +41,9 @@
             "enum": [
                 "Supplementary analysis",
                 "Supplementary data",
-                "Supplementary metadata"
+                "Supplementary metadata",
             ],
             "user_friendly": "Supplementary type"
-        },
-        "source_method_name": {
-            "description": "The method, technique used to derive the supplementary file.",
-            "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Source method name"
         },
         "data_source": {
             "description": "A link to an external database record.",
