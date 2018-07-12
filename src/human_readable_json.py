@@ -178,9 +178,3 @@ if __name__ == '__main__':
 
 
 
-
-""""
-steps:
-1. read in schemas
-2. for each schema, 
-"""
