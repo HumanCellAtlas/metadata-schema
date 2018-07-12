@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/project/contact.json - v?.?+1.?] - 2018-07-11
 ### Added
 Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
@@ -18,14 +20,12 @@ Changed descriptions and examples for fields in the project_core and project_typ
 ### Added
 Added some examples to fields in the project_core and project_type schemas.
 
-
 ### [type/project/project.json - v6.0.2] - 2018-07-06
 ### Changed
 Changed descriptions and examples for fields in the project_core and project_type schemas.
 
 ### Added
 Added some examples to fields in the project_core and project_type schemas.
-
 
 ### [core/project/project_core.json - v6.0.1] - 2018-07-06
 ### Changed
@@ -394,8 +394,6 @@ Updated the schema URL pattern to cell_line.
 ### [type/biomaterial/cell_line.json - v8.1.1] - 2018-06-20
 ### Changed
 Updated the schema URL pattern to cell_line.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/process.json - v7.0.0] - 2018-06-11
 ### Changed
