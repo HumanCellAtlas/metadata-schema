@@ -35,7 +35,7 @@
             "$ref": "core/file/file_core.json"
         },
         "supplementary_type": {
-            "description": "One of either 'Supplementary analysis', 'Supplementary data', 'Supplementary metadata' ",
+            "description": "The type of supplementary information that can be found in the file.",
             "type": "string",
             "example": "Supplementary analysis",
             "enum": [
