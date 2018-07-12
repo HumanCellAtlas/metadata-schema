@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/project/project_core.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
+### [bundle/project.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
+### [type/project/project.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/project/contact.json - v5.3.0] - 2018-07-12
