@@ -7,11 +7,12 @@
 
 ## Introduction
 
-This document serves as an SOP for super users who are responible for merging PR into develop ("pre-release") and releases from develop metadata from develop to integration, to staging, to production ("release").
+This document serves as an SOP for super users who are responible for merging PRs into develop ("pre-release") and propagate metadata schemas from develop to integration, to staging, to production ("release").
 
 **What is in this document**
 - Steps for merging pull requests (PRs) into the develop branch aka "pre-release"
-- Steps for merging the develop branch into the staging branch
+- Steps for merging the develop branch into the integration branch aka "release"
+- Steps for propagating from integration to staging and production
 
  **Who should be reading this document?**
  - HCA DCP internal developers with authorisation to do metadata pre-releases and releases.
@@ -39,14 +40,13 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ## Steps of the pre-release process
 
-***Conditions for pre-release***
-
-A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the general acceptance process.
+***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the general acceptance process.
 
 
 1. **Check out** the pull request branch and make sure your local copy is up to date
 
     `git checkout name_of_branch`
+
     `git pull`
 
 1. **Verify** whether there are any merge conflicts between the PR branch and develop. You can do this in github. If merge conflicts exist between the branch and develop,
@@ -107,7 +107,7 @@ A pull request is ready to be merged into develop when it has been approved by t
 
     `## [Released](https://github.com/HumanCellAtlas/metadata-schema/)`
 
-    right below
+    right below the line
 
     `## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)`
 
