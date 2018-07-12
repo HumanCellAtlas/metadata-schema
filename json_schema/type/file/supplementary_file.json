@@ -48,7 +48,7 @@
             "user_friendly": "Supplementary type"
         },
         "data_source": {
-            "description": "A link to an external database record.",
+            "description": "A link to an external database record or analysis pipeline.",
             "type": "string",
             "example": "https://www.coriell.org/0/Sections/Search/Sample_Detail.aspx?Ref=GM17372&PgId=166",
             "user_friendly": "Data source"
