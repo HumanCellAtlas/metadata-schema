@@ -24,10 +24,9 @@ class VersionUpdater:
         self.update_type = options.increment_type
         self.versions = self._getJson(self.path + "/versions.json")
 
-    def updateVersions(self):
+    def updateVersions(self, versionTracker=False):
 
         toUpdate = []
-
 
         for schema in self.schema_to_update:
             ref = schema + ".json"
@@ -42,9 +41,12 @@ class VersionUpdater:
 
         versionJson = self.versions
 
+        updatedVersion = {}
         for s in toUpdate:
             old_version = self._findSchemaVersion(s)
             new_version = self.incrementVersion(old_version, self.update_type)
+
+            updatedVersion[s] = new_version
 
             for part in reversed(s.split('/')):
                 new_version = {part: new_version}
@@ -57,6 +59,9 @@ class VersionUpdater:
 
         # self._saveJson(self.path, versionJson)
         self._saveJson(self.path + "/versions.json", versionJson)
+
+        if versionTracker:
+            return updatedVersion
 
     def _update(self, d, u):
         for k, v in u.items():

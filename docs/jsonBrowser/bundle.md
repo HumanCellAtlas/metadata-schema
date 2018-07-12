@@ -15,11 +15,11 @@ Location: bundle/ingest_audit.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 updater_id | ID of contact who last updated project | string | no |  |  |  | 
-document_id | Identifier for document. | string | yes |  |  |  | 
 updateDate | When project was last updated | string | no |  |  |  | 
 submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
-submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
 accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
+document_id | Identifier for document. | string | yes |  |  |  | 
+submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
 
 ## links
 _A schema for a links bundle._
@@ -28,8 +28,8 @@ Location: bundle/links.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | link_bundle | 
 links | An array of linking objects | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | link_bundle | 
 
 ## project
 _A schema for a project bundle._
@@ -39,8 +39,8 @@ Location: bundle/project.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project_bundle | 
-hca_ingest | Core fields added by HCA ingest service | object | yes | [See   ingest_audit](.md/#ingest_audit) |  |  | 
 content | Content for a project type entity. | object | yes | [See   project](.md/#project) |  |  | 
+hca_ingest | Core fields added by HCA ingest service | object | yes | [See   ingest_audit](.md/#ingest_audit) |  |  | 
 
 ## file
 _A schema for a file bundle._
@@ -69,8 +69,8 @@ Location: bundle/reference.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-references | An array of reference files. | array | no |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | reference_bundle | 
+references | An array of reference files. | array | no |  |  |  | 
 
 ## biomaterial
 _A schema for a biomaterial bundle._
@@ -100,6 +100,6 @@ Location: bundle/submission.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | no |  |  | submission | 
-transfer_service_version |  |  | yes |  |  |  | 
 submitted_files |  |  | yes |  |  |  | 
+transfer_service_version |  |  | yes |  |  |  | 
 

@@ -165,6 +165,16 @@ This section outlines steps for contributors to suggest changes to the metadata 
     
     Example commit message: "Created new mouse module with mouse-specific fields. Fixes #142."
 
+1. **Document** the changes in the update_log.csv file. This file is used by the automated release scripts to build the release changelog and increment the version number for the correct metadata schema. Unlike the changelog file, which is a running log of all metadata schema changes, the update_log file should only contain the documented changes for this branch, so the file should be empty apart from the header row when you first check out a new branch. An entry into update_log.csv should contain the path to the schema that was changed, the type of change (major, minor or patch) and the description of the change that should go into the changelog, for example:
+
+    `module/ontology/disease_ontology,patch,Fixed a typo in description of text field in disease_ontology. Fixes #000,,`
+
+    Only list one schema per line and only list schemas that you have actually changed as the release script will automatically identify dependent schemas. Each line should end in a double comma, signifying the empty columns for version number and release date, which will be filled in by the release script. Not including the commas will cause the release script to fail. If there is a comma in the change message, the message needs to be quoted:
+
+    `type/biomaterial/organoid,patch,"Added user friendly names for fields a, b, c and d",,`
+
+    The change message should start with one of *Added, Changed, Removed, Fixed, Deprecated or Security*
+
 1. **Push** the committed changes to the working branch.
 
     `git push origin mf-new_mouse_module-Issue222`
