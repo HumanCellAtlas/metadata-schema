@@ -1,0 +1,6 @@
+Schema,Change type,Change message,Version,Date
+module/biomaterial/death,patch,Changed enum for `foo`,5.3.1,2018-06-24
+type/biomaterial/donor_organism,minor,Added optional field `bar`,7.1.0,2018-06-26
+module/ontology/disease_ontology,patch,Fixed a typo in description of text field in disease_ontology,,
+type/protocol/sequencing/library_preparation_protocol,major,Added new required field `meep` to library_preparation_protocol,,
+type/biomaterial/organoid,patch,"Added user friendly names for fields a, b, c and d",,

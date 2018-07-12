@@ -11,6 +11,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ### Added
 Added new required field `corresponding_contributor` to contact.json module. Fixes #409.
 
+### [module/project/contact.json - v?.?+1.?] - 2018-07-11
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
 ### [bundle/project.json - v6.0.2] - 2018-07-06
 ### Changed
 Changed descriptions and examples for fields in the project_core and project_type schemas.

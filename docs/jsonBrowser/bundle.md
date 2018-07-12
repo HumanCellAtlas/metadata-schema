@@ -14,12 +14,12 @@ Location: bundle/ingest_audit.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-updater_id | ID of contact who last updated project | string | no |  |  |  | 
-document_id | Identifier for document. | string | yes |  |  |  | 
 updateDate | When project was last updated | string | no |  |  |  | 
-submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
+updater_id | ID of contact who last updated project | string | no |  |  |  | 
 submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
 accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
+submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
+document_id | Identifier for document. | string | yes |  |  |  | 
 
 ## links
 _A schema for a links bundle._
@@ -79,8 +79,8 @@ Location: bundle/biomaterial.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial_bundle | 
 biomaterials | An array of biomaterials. | array | no |  |  |  | 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial_bundle | 
 
 ## protocol
 _A schema for a protocol bundle._
