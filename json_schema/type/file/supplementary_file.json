@@ -42,7 +42,8 @@
                 "Supplementary analysis",
                 "Supplementary data",
                 "Supplementary metadata",
-                "Protocol"
+                "Protocol",
+                "Cell barcode whitelist file"
             ],
             "user_friendly": "Supplementary type"
         },
