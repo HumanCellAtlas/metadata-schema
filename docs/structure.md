@@ -19,7 +19,7 @@ This document describes the structure of the HCA metadata standards. More detail
  - Members of external projects seeking alignment with HCA metadata standards
 
 **What *isn't* in this document?**
- - The set of [principles](metadata-schema/docs/rationale.md#design-choices) specifically guiding the schema structure design
+ - The set of [principles](rationale.md#design-choices) specifically guiding the schema structure design
  
 ## Structure overview
 
