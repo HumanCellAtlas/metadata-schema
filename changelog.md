@@ -9,7 +9,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
-### [module/project/contact.json - v?.?+1.?] - 2018-07-11
+### [module/project/contact.json - v5.3.0] - 2018-07-12
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
+### [bundle/project.json - v6.1.0] - 2018-07-12
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
+### [type/project/project.json - v6.1.0] - 2018-07-12
 ### Added
 Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
 
