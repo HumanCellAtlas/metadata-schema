@@ -18,7 +18,7 @@ This document describes reasons and rationale behind certain implementation and 
  - Members of external projects seeking alignment with HCA metadata standards
 
 **What *isn't* in this document?**
-- The [structure of metadata standards](metadata-schema/docs/structure.md) that resulted from following the design and implementation choices outlined here.
+- The [structure of metadata standards](structure.md) that resulted from following the design and implementation choices outlined here.
  
 ## Implementation choices
 

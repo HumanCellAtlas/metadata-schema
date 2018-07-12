@@ -14,12 +14,12 @@ Location: bundle/ingest_audit.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-updater_id | ID of contact who last updated project | string | no |  |  |  | 
-submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
-updateDate | When project was last updated | string | no |  |  |  | 
-document_id | Identifier for document. | string | yes |  |  |  | 
 accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
 submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
+submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
+document_id | Identifier for document. | string | yes |  |  |  | 
+updater_id | ID of contact who last updated project | string | no |  |  |  | 
+updateDate | When project was last updated | string | no |  |  |  | 
 
 ## links
 _A schema for a links bundle._
@@ -89,8 +89,8 @@ Location: bundle/protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-protocols | An array of protocols. | array | no |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol_bundle | 
+protocols | An array of protocols. | array | no |  |  |  | 
 
 ## submission
 _Information added to a submission at ingest._
@@ -100,6 +100,6 @@ Location: bundle/submission.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 submitted_files |  |  | yes |  |  |  | 
-transfer_service_version |  |  | yes |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | no |  |  | submission | 
+transfer_service_version |  |  | yes |  |  |  | 
 
