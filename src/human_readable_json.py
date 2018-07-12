@@ -152,7 +152,7 @@ if __name__ == '__main__':
     core_schema_path = base_schema_path + '/core'
     type_schema_path = base_schema_path + '/type'
     module_schema_path = base_schema_path + '/module'
-    bundle_schema_path = base_schema_path + '/bundle'
+    # bundle_schema_path = base_schema_path + '/bundle'
 
     core_schemas = [os.path.join(dirpath, f)
                for dirpath, dirnames, files in os.walk(core_schema_path)
