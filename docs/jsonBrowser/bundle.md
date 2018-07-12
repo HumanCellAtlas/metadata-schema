@@ -14,12 +14,12 @@ Location: bundle/ingest_audit.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-document_id | Identifier for document. | string | yes |  |  |  | 
-submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
-submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
-accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
 updateDate | When project was last updated | string | no |  |  |  | 
 updater_id | ID of contact who last updated project | string | no |  |  |  | 
+submitter_id | ID of contact who first submitted project | string | no |  |  |  | 
+accession | A unique accession for this entity, provided by the broker. | string | no |  |  |  | 
+submissionDate | When project was first submitted to database. | string | yes |  |  |  | 
+document_id | Identifier for document. | string | yes |  |  |  | 
 
 ## links
 _A schema for a links bundle._
@@ -28,8 +28,8 @@ Location: bundle/links.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-links | An array of linking objects | array | no |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | link_bundle | 
+links | An array of linking objects | array | no |  |  |  | 
 
 ## project
 _A schema for a project bundle._
@@ -38,9 +38,9 @@ Location: bundle/project.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-content | Content for a project type entity. | object | yes | [See   project](.md/#project) |  |  | 
-hca_ingest | Core fields added by HCA ingest service | object | yes | [See   ingest_audit](.md/#ingest_audit) |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project_bundle | 
+hca_ingest | Core fields added by HCA ingest service | object | yes | [See   ingest_audit](.md/#ingest_audit) |  |  | 
+content | Content for a project type entity. | object | yes | [See   project](.md/#project) |  |  | 
 
 ## file
 _A schema for a file bundle._
@@ -59,8 +59,8 @@ Location: bundle/process.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-processes | An array of processes. | array | no |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process_bundle | 
+processes | An array of processes. | array | no |  |  |  | 
 
 ## reference
 _A schema for a reference bundle._
@@ -99,7 +99,7 @@ Location: bundle/submission.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-submitted_files |  |  | yes |  |  |  | 
-transfer_service_version |  |  | yes |  |  |  | 
 schema_type | The type of the metadata schema entity. | string | no |  |  | submission | 
+transfer_service_version |  |  | yes |  |  |  | 
+submitted_files |  |  | yes |  |  |  | 
 

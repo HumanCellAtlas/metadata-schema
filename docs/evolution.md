@@ -22,7 +22,7 @@ This document describes the principles and standards by which the HCA metadata s
  - Internal HCA DCP developers, especially those who depend on schema versions
 
 **What *isn't* in this document?**
- - Mechanism by which [approved committers implement the update process](metadata-schema/docs/committers.md)
+ - Mechanism by which [approved committers implement the update process](committers.md)
 
 ## Schema versioning
 

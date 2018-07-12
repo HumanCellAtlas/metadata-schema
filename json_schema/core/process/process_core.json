@@ -34,19 +34,6 @@
             "type": "string",
             "user_friendly": "Process description"
         },
-         "length_of_time": {
-            "description": "Length of time the process took to execute, from start to finish, in an appropriate time unit.",
-            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "type": "string",
-            "user_friendly": "Start time"
-         },
-        "length_of_time_unit": {
-            "description": "The unit in which the length of time is expressed. Must be one of microsecond, second, minute, hour, day, week, month, or year.",
-            "type": "object",
-            "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Length of time unit",
-            "example": "second"
-        },
          "process_location": {
             "description": "Where the process took place.",
             "type": "string",

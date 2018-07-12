@@ -58,7 +58,7 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
 1. **Submit request on the HCA metadata standard.** Anyone can suggest/request changes to the metadata standards via three main routes:
 
     1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema repo
-    1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](data-help@humancellaltas.org)
+    1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema repo (only recommended for users with familiarity with GitHub)
     
     Whichever method is chosen, the information indicated in Step 1 is requested to be submitted.
