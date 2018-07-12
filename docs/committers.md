@@ -169,11 +169,11 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
     `module/ontology/disease_ontology,patch,Fixed a typo in description of text field in disease_ontology. Fixes #000,,`
 
-    Only list one schema per line. Each line should end in a double comma, signifying the empty columns for version number and release date, which will be filled in by the release script. Not including the commas will cause the release script to fail. If there is a comma in the change message, the message needs to be quoted:
+    Only list one schema per line and only list schemas that you have actually changed as the release script will automatically identify dependent schemas. Each line should end in a double comma, signifying the empty columns for version number and release date, which will be filled in by the release script. Not including the commas will cause the release script to fail. If there is a comma in the change message, the message needs to be quoted:
 
     `type/biomaterial/organoid,patch,"Added user friendly names for fields a, b, c and d",,`
 
-    The change message should start with one of Added, Changed, Removed, Fixed, Deprecated or Security
+    The change message should start with one of *Added, Changed, Removed, Fixed, Deprecated or Security*
 
 1. **Push** the committed changes to the working branch.
 

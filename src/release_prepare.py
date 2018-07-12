@@ -110,10 +110,12 @@ class ReleasePrepare:
         writeChangeLog.close()
 
     def _saveUpdateLog(self, output):
+        # Save only the header row back to the upldate_log file
         change_log_file = self.schemafolder + "/update_log.csv"
+        h = output[0]
         with open(change_log_file, 'w') as writeChangeLog:
             writer = csv.writer(writeChangeLog)
-            writer.writerows(output)
+            writer.writerow(h)
         writeChangeLog.close()
 
 

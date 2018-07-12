@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This document serves as an SOP for super users who are responible for merging PRs into develop ("pre-release") and propagate metadata schemas from develop to integration, to staging, to production ("release").
+This document serves as an SOP for super users who are responsible for merging PRs into develop ("pre-release") and propagate metadata schemas from develop to integration, to staging, to production ("release").
 
 **What is in this document**
 - Steps for merging pull requests (PRs) into the develop branch aka "pre-release"
@@ -69,7 +69,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
     `python3 release_prepare.py`
 
-    The script updates the version numbers of the schemas listed in update_log.csv using the indicated increment type (major, minor or patch) in the json_schema/versions.json file as well as any dependent schemas. It then builds the changelog.md file.
+    The script updates the version numbers of the schemas listed in update_log.csv using the indicated increment type (major, minor or patch) in the json_schema/versions.json file as well as any dependent schemas. It then builds the changelog.md file. Finally, it deletes the content of update_log.csv apart from the header row.
 
 1. **Check** that both json_schema/versions.json and changelog.md were updated.
 
@@ -79,15 +79,13 @@ From now on, every time you commit anything in the metadata schema repo using th
 
     `git diff`
 
-1. **Delete** all entries in json_schema/update_log.csv but not the header row.
-
 1. **Commit** your changes back to the branch and push to github
 
     `git commit -a -m "Sensible commit message goes here"`
 
     `git push origin name_of_branch`
 
-1. **Wait** for the Travis build to pass, the **merge** the PR into develop.
+1. **Wait** for the Travis build to pass, the **merge** then PR into develop.
 
 
 
