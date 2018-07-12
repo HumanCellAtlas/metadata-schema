@@ -50,6 +50,7 @@
         "data_source": {
             "description": "A link to an external database record.",
             "type": "string",
+            "example": "https://www.coriell.org/0/Sections/Search/Sample_Detail.aspx?Ref=GM17372&PgId=166",
             "user_friendly": "Data source"
         }
     }
