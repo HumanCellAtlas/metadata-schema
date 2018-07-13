@@ -22,6 +22,17 @@ read_length | The length of a sequenced read in this file, in nucleotides. | int
 insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR. | array | no |  | INSDC run |  | 
 smartseq2 | Fields specific for SmartSeq2 experiments. | object | no | [See module  smartseq2](module.md/#smartseq2) |  |  | 
 
+## supplementary_file
+_Supplementary files belonging to a project._
+
+Location: type/file/supplementary_file.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
+file_description | A short description of this files content. This could include information about how the file was generated. | string | no |  |  |  | Enrichment protocol
+
 ## analysis_file
 _A file analysis results produced by a secondary analysis pipeline._
 
@@ -46,17 +57,6 @@ genus_species | The scientific binomial name for the species of this reference. 
 assembly_type | The assembly type of this reference. This applies to reference genome sequences. | string | yes |  |  | primary assembly, complete assembly, patch assembly | 
 reference_type | The type of the genome reference. | string | yes |  |  | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | 
 reference_version | The genome version of the reference. | string | yes |  |  |  | GencodeV27
-
-## supplemental_file
-_Supplemental files belonging to a project._
-
-Location: type/file/supplemental_file.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
-file_description | A short description of this files content. This could include information about how the file was generated. | string | no |  |  |  | Enrichment protocol
 
 ## protocol
 _Information about the protocol_
