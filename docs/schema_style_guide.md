@@ -139,7 +139,7 @@ The following attributes are required for each metadata field in an HCA metadata
     Example valid *format* values include: date-time, email. The specification of valid JSON *format* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.7.3). 
 
 
-1. **enum:** A defined list of valid values for the metadata field. This attribute is required when a field should only be given a limited set of values and an appropriate ontology is not available. The *enum* values currently are not displayed to users outside of the JSON schema itself, but in the future will be shown in the metadata spreadsheet.
+1. **enum:** A defined list of valid values for the metadata field. This attribute is required when a field should only be given a limited set of values, and an appropriate ontology is not available. The *enum* values currently are not displayed to users outside of the JSON schema itself, but in the future will be shown in the metadata spreadsheet.
 
     Example:
     
@@ -204,13 +204,33 @@ The following attributes are required for each metadata field in an HCA metadata
 
 1. If similar field names are needed, prepend the field names with context to differentiate them.
 
-        `umi_barcode` and `cell_barcode`
+        umi_barcode and cell_barcode
 
 1. If a number field requires a corresponding unit, append `_unit` to the number field name for the unit field name.
 
-        `organism_age` and `organism_age_unit` 
+        organism_age and organism_age_unit
 
 ### Tone
+
+1. Be factual and concise instead of making demands. For example:
+
+    Use
+
+        "description": "Age of the donor."
+    
+    not
+    
+        "description": "You need to include the age of the donor."
+    
+1. Be concise instead of verbose. For example:
+
+    Use
+    
+        "description": "Phone number of the individual or their lab."
+    
+    not
+    
+        "description": "Please include the phone number of the individual or the phone number of the individual's lab."
 
 1. Avoid using "you" phrases (what is the name of this tone??). For example:
 
@@ -221,25 +241,5 @@ The following attributes are required for each metadata field in an HCA metadata
     not 
     
         "description": "Your email address."   
-
-1. Avoid making demands. For example:
-
-    Use
-
-        "description": "Age of the donor."
-    
-    not
-    
-        "description": "You need to include the age of the donor."
-    
-1. Avoid using "please". For example:
-
-    Use
-    
-        "description": "Phone number of the individual or their lab."
-    
-    not
-    
-        "description": "Please include the phone number of the individual or their lab."
 
 ### 
