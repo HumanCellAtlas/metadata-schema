@@ -90,7 +90,7 @@ The following attributes are required for each metadata field in an HCA metadata
             "example": "Enter a valid email address.",
             "user_friendly": "Email address",
             ...
-        },
+        }
 
     Including *user-friendly* values for metadata fields has many advantages, including: 
     
@@ -174,7 +174,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ],
             "user_friendly": "Project role",
             ...
-        },
+        }
 
     If the *enum* list is short enough, the list of valid values can be included in the *example* attribute (*e.g.* the `biological_sex` enum). If the *enum* list is too long to comfortably fit in the *example* attribute, a single valid value can be listed instead (*e.g.* the `project_role` enum).
     
@@ -192,7 +192,7 @@ The following attributes are required for each metadata field in an HCA metadata
             "example": "Must start with DRP, ERP, or SRP.",
             "pattern": "^[D|E|S]RP[0-9]+$",
             "user_friendly": "INSDC project accession"
-        },
+        }
 
 ## General rules
 
