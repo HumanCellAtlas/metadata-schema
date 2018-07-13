@@ -16,12 +16,6 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-		"loading_concentration": {
-			"description": "Concentration of cells loaded onto a single lane on a flowcell.",
-			"type": "string",
-			"example": "10 pM",
-			"user_friendly": "Loading concentration"
-		},
 		"fastq_method": {
 			"description": "Method used for the generation of fastq files from bcl files.",
 			"type": "string",
