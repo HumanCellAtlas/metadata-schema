@@ -56,6 +56,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
+file_description | A short description of this files content. This could include information about how the file was generated. | string | no |  |  |  | Enrichment protocol
 
 ## protocol
 _Information about the protocol_
