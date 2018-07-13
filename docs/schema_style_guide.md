@@ -176,7 +176,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    If the *enum* list is short enough, the list of valid values can be included in the *example* attribute (*e.g.* the `biological_sex` enum). If the *enum* list is too long to comfortably fit in the *example* attribute, a single valid value can be listed instead (*e.g.* the `project_role` enum).
+    If the *enum* list is short enough (5 or fewer values), the list of valid values can be included in the *example* attribute (*e.g.* the `biological_sex` enum). If the *enum* list is too long to comfortably fit in the *example* attribute, a single valid value can be listed instead (*e.g.* the `project_role` enum).
     
     Creating an ontology module for a metadata field is preferred over maintaining an *enum* list.
 
