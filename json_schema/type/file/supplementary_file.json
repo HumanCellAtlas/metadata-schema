@@ -34,9 +34,10 @@
             "$ref": "core/file/file_core.json"
         },
         "file_description" : {
-            "description": "A short description of this files content. This could include information about how the file was generated.",
+            "description": "A short description of the file content. This could include information about how the file was generated.",
             "type": "string",
-            "example": "Enrichment protocol"
+            "example": "Enrichment protocol",
+            "user_friendly": "File description"
         }
     }
 }
