@@ -1,6 +1,6 @@
 # The Human Cell Atlas Metadata Standards: Template Example Metadata Spreadsheets
 
-This directory contains template example metadata spreadsheets as well as the YAML files that were used to generate them.
+This directory (_metadata-schema/examples/spreadsheets/current/template_) contains template example metadata spreadsheets as well as the YAML files that were used to generate them.
 
 `10x.yaml`
 
