@@ -4,8 +4,7 @@
     "additionalProperties": false,
     "required": [
         "contact_name",
-        "email",
-        "corresponding_contributor"
+        "email"
     ],
     "title": "contact",
     "type": "object",
