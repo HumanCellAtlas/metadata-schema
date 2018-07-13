@@ -5,7 +5,7 @@
     "required": [
         "describedBy",
         "schema_type",
-        "file_core",
+        "file_core"
     ],
     "title": "protocol_file",
     "type": "object",
@@ -32,6 +32,6 @@
             "description": "Core file-level information.",
             "type": "object",
             "$ref": "core/file/file_core.json"
-        },
+        }
     }
 }
