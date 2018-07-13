@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This document describes the style and formatting rules followed when evolving the metadata standard.
+This document describes the style and formatting rules followed when evolving the HCA metadata standard.
 
 **What is in this document**
 - General style guidelines and formatting for metadata schema and fields
@@ -38,7 +38,7 @@ The following attributes are required for each field in a metadata schema.
         "email": {
             "description": "Email address for the individual.",
             ...
-        },
+        }
 
 1. **type:** The JSON type of value required for the metadata field. The *type* value will be displayed in the Metadata Dictionary on the Data Portal.
 
@@ -48,13 +48,13 @@ The following attributes are required for each field in a metadata schema.
             "description": "Email address for the individual.",
             "type": "string",
             ...
-        },
+        }
         
-    Example valid *type* values include: `string`, `number`, `boolean`, `array`, `object`. A more comprehensive list of JSON-valid *type* values can be found here. 
+    Example valid *type* values include: string, number, boolean, array (when a field can accept an array of values), and object (when a field references another schema). The specification of valid JSON *type* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1). 
 
-1. **example:** Directions for how to enter a valid value in the metadata field followed by an example valid value, if able. The `example` value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
+1. **example:** Directions for how to enter a valid value in the metadata field and/or an example valid value. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
-    Example:
+    Examples:
     
         "email": {
             "description": "Email address for the individual.",
@@ -63,14 +63,19 @@ The following attributes are required for each field in a metadata schema.
             ...
         },
 
-    Sometimes including an example value is not necessary. Instances of this include:
+        "project_role": {
+            "description": "Primary role of the individual in the project.",
+            "type": "string",
+            "example": "principal investigator",
+            ...
+        }
+
+    Sometimes including an *example* value is not necessary. Instances of this include:
     
-    - Fields that import core or module schemas (e.g. `donor_organism.medical_history`)
-    - Fields for which including an example could bias contributors (e.g. `donor_organism.biomaterial_id`)
+    - Fields that import core or module schemas (e.g. `donor_organism.medical_history`) because the core and module schema fields will have their own examples
+    - Fields for which including an example could bias data contributors (e.g. `donor_organism.biomaterial_id`) 
 
-1. **user-friendly:** A user-facing, readable term/phrase of what the metadata field is. The `user-friendly` value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
-
-    Unlike the actual metadata field name, the `user-friendly` value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier to data contributors and consumers.
+1. **user-friendly:** A user-facing, readable term/phrase of what the metadata field is. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
     
@@ -82,12 +87,38 @@ The following attributes are required for each field in a metadata schema.
             ...
         },
 
+    Including *user-friendly* values for metadata fields has some advantages. 
+    
+    1. Unlike the actual metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
+    1. Updates or changes to a *user-friendly* value are considered a patch increment to the schema version number and are thus easier and simpler to implement than metadata field name changes.
+    1. The *user-friendly* values can be templated to allow concatenation of the schema name to the field name for improved clarity. For example, if the *user-friendly* value of the `biomaterial_id` field is set to "${schema} ID", then `donor_organism.biomaterial_id` will render as "Donor ID" while `cell_line.biomaterial_id` will render as "Cell line ID".
 
 ### Conditional required field attributes
 
-1. **$ref:** Relative path to schema which is imported by this metadata field. This attribute is required when a field imports a module, core, or ontology schema.
+1. **$ref:** Relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself and should always be used with `"type": "object",`.
 
-1. **format:** A JSON-defined format that the value supplied to the metadata field should follow.
+    Examples:
+
+        "project_core" : {
+            "description": "Core project-level information.",
+            "type": "object",
+            "$ref": "core/project/project_core.json",
+            ...
+        },
+        "umi_barcode": {
+            "description": "Information about unique molecular identifier (UMI) barcode sequences.",
+            "type": "object",
+            "$ref": "module/process/sequencing/barcode.json",
+            ...
+        },
+        "organism_age_unit": {
+            "description": "The unit in which age is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
+            ...
+        }
+
+1. **format:** A JSON-defined format that the value supplied to the metadata field should follow. This attribute is required when a field should follow and validate against standard JSON format.
 
     Example:
     
@@ -97,8 +128,9 @@ The following attributes are required for each field in a metadata schema.
             "example": "Enter a valid email address.",
             "user_friendly": "Email address",
             "format": "email"
-        },
+        }
 
+1. **enum:**
 
 ## General rules
 
