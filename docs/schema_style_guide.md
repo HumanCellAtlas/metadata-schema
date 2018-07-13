@@ -198,6 +198,10 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Field naming conventions
 
+1. Field names should be all lower case and snake_case.
+
+        example_field_name
+
 1. Short, meaningful field names are preferred over longer, vaguer field names. 
 
 1. The same field name should not appear within the same or across multiple schemas.
