@@ -210,7 +210,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
         organism_age and organism_age_unit
 
-### Tone
+### Tone and voice
 
 1. Make a statement, not a demand. For example:
 
