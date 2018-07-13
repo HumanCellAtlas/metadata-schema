@@ -1,4 +1,4 @@
-# The Human Cell Atlas: Metadata Schema Style Guide
+# The Human Cell Atlas: Metadata Schema Style and Formatting Guide
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -8,7 +8,9 @@
 
 ## Introduction
 
-This document describes the style and formatting rules followed when evolving the HCA metadata standard.
+**DISCLAIMER:** At this time, the HCA Metadata Standard development team is actively working towards adhering to this style and formatting guide. In some cases, the Standard is not
+
+This document describes the style and formatting rules followed by the HCA Metadata Standard.
 
 **What is in this document**
 - General style guidelines and formatting for metadata schema and fields
@@ -24,6 +26,7 @@ This document describes the style and formatting rules followed when evolving th
 
 ## Schema formatting
 
+TBD
 
 ## Field formatting
 
@@ -174,8 +177,38 @@ The following attributes are required for each metadata field in an HCA metadata
         },
 
     If the *enum* list is short enough, the list of valid values can be included in the *example* attribute (*e.g.* the `biological_sex` enum). If the *enum* list is too long to comfortably fit in the *example* attribute, a single valid value can be listed instead (*e.g.* the `project_role` enum).
+    
+    Creating an ontology module for a metadata field is preferred over maintaining an *enum* list.
+
+### Optional field attributes
+
+1. **pattern:** A regular expression that the metadata field value must follow. The *pattern* value is not displayed to users outside of the JSON schema itself, but the *example* attribute can describe what pattern the value should follow.
+
+    Example:
+    
+        "insdc_project": {
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI.",
+            "type": "string",
+            "example": "Must start with DRP, ERP, or SRP.",
+            "pattern": "^[D|E|S]RP[0-9]+$",
+            "user_friendly": "INSDC project accession"
+        },
 
 ## General rules
+
+### Field naming conventions
+
+1. Short, meaningful field names are preferred over longer, vaguer field names. 
+
+1. The same field name should not appear across multiple schemas.
+
+1. If similar field names are needed, prepend the field names with context to differentiate them.
+
+        `umi_barcode` and `cell_barcode`
+
+1. If a number field requires a corresponding unit, append `_unit` to the number field name for the unit field name.
+
+        `organism_age` and `organism_age_unit` 
 
 ### Tone
 
