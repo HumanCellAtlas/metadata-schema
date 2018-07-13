@@ -77,8 +77,8 @@ The following attributes are required for each metadata field in an HCA metadata
 
     Sometimes including an *example* value is not necessary, including:
     
-    - When a field imports a core or module schema (e.g. `donor_organism.medical_history`) because the core and module schema fields will have their own examples
-    - When including an example for the field could bias data contributors (e.g. `donor_organism.biomaterial_id`) 
+    - When a field imports a core or module schema (*e.g.* `donor_organism.medical_history`) because the core and module schema fields will have their own examples
+    - When including an example for the field could bias data contributors (*e.g.* `donor_organism.biomaterial_id`) 
 
 1. **user-friendly:** A user-facing, readable term/phrase of what the metadata field is. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
