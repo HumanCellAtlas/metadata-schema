@@ -16,7 +16,7 @@ This document describes the style and formatting rules followed by the HCA Metad
 - General style guidelines and formatting for metadata schema and fields
 
 **Who should be reading this document?**
-- HCA DCP internal developers
+- HCA DCP developers
 - Anyone reporting a bug in the schema
 - Members of external projects seeking alignment with HCA metadata standards
 
