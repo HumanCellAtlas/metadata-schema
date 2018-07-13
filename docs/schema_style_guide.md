@@ -29,7 +29,7 @@ This document describes the style and formatting rules followed when evolving th
 
 ### Required field attributes
 
-The following attributes are required for each field in a metadata schema. 
+The following attributes are required for each field in an HCA metadata schema. 
 
 1. **description:** A clear, concise statement of the what the metadata field is. The *description* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
@@ -39,6 +39,8 @@ The following attributes are required for each field in a metadata schema.
             "description": "Email address for the individual.",
             ...
         }
+
+    Each *description* should be one or more phrases or sentences and end in a full stop (period).
 
 1. **type:** The JSON type of value required for the metadata field. The *type* value will be displayed in the Metadata Dictionary on the Data Portal.
 
