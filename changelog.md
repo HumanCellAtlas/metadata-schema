@@ -9,7 +9,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ### [type/file/protocol_file.json - v1.0.0] - 2018-07-13
 ### A
-A new file type for protocol files
+A new file type for protocol files. Fixes #422.
 
 ### [core/project/project_core.json - v7.0.0] - 2018-07-12
 ### Changed
