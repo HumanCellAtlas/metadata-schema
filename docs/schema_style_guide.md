@@ -97,7 +97,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Conditional required field attributes
 
-1. **$ref:** Relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself and should always be used with `"type": "object",`.
+1. **$ref:** The relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself and should always be used with `"type": "object"`.
 
     Examples:
 
@@ -120,7 +120,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-1. **format:** A JSON-defined format that the value supplied to the metadata field should follow. This attribute is required when a field should follow and validate against standard JSON format.
+1. **format:** A JSON-defined format that the value supplied to the metadata field should follow. This attribute is required when a field should follow and validate against a standard JSON format. The *format* value is not displayed to users outside of the JSON schema itself.
 
     Example:
     
@@ -129,10 +129,51 @@ The following attributes are required for each metadata field in an HCA metadata
             "type": "string",
             "example": "Enter a valid email address.",
             "user_friendly": "Email address",
-            "format": "email"
+            "format": "email",
+            ...
         }
 
-1. **enum:**
+    Example valid *format* values include: date-time, email. The specification of valid JSON *format* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.7.3). 
+
+
+1. **enum:** A defined list of valid values for the metadata field. This attribute is required when a field should only be given a limited set of values and an appropriate ontology is not available. The *enum* values currently are not displayed to users outside of the JSON schema itself, but in the future will be shown in the metadata spreadsheet.
+
+    Example:
+    
+        "biological_sex": {
+            "description": "The biological sex of the organism.",
+            "type": "string",
+            "example": "Should be one of male, female, mixed, or unknown."
+            "enum": [
+                "female", 
+                "male", 
+                "mixed", 
+                "unknown"
+            ],
+            "user_friendly": "Biological sex",
+            ...
+        },
+        "project_role": {
+            "description": "Primary role of the individual in the project.",
+            "type": "string",
+            "example": "principal investigator",
+            "enum": [
+                "principal investigator",
+                "co investigator",
+                "experimental scientist",
+                "computational scientist",
+                "clinician",
+                "pathologist",
+                "technician",
+                "external curator",
+                "Human Cell Atlas wrangler",
+                "other"
+            ],
+            "user_friendly": "Project role",
+            ...
+        },
+
+    If the *enum* list is short enough, the list of valid values can be included in the *example* attribute (*e.g.* the `biological_sex` enum). If the *enum* list is too long to comfortably fit in the *example* attribute, a single valid value can be listed instead (*e.g.* the `project_role` enum).
 
 ## General rules
 
@@ -140,20 +181,32 @@ The following attributes are required for each metadata field in an HCA metadata
 
 1. Avoid using "you" phrases (what is the name of this tone??). For example:
 
-    Bad: `"description": "Your email address."`
+    Use
+
+        "description": "Email address for the individual."
+
+    not 
     
-    Good: `"description": "Email address for the individual."`
+        "description": "Your email address."   
 
 1. Avoid making demands. For example:
 
-    Bad: `"description": "You need to include the age of the donor."`
+    Use
+
+        "description": "Age of the donor."
     
-    Good: `"description": "Age of the donor."`
+    not
+    
+        "description": "You need to include the age of the donor."
     
 1. Avoid using "please". For example:
 
-    Bad: `"description": "Please include the phone number of the individual or their lab."`
+    Use
     
-    Good: `"description": "Phone number of the individual or their lab."`
+        "description": "Phone number of the individual or their lab."
+    
+    not
+    
+        "description": "Please include the phone number of the individual or their lab."
 
 ### 
