@@ -157,6 +157,31 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
 1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` and `src/json_examples_validate_against_schema.py` scripts (which are run by Travis CI). The first script checks whether each .json file in the `json_schema` folder is valid JSON format. The second script attempts to validate example JSON files in the `schema_test_files` directory against their corresponding schemas. Some of the JSON files are meant to fail (e.g. they are lacking required fields) and as their failure is expected behavior, the script should exit with status 0. Ensure both scripts exit with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If either test fails, you will have to debug and fix the errors in the changes you made.
 
+1. **Document** the changes in the update_log.csv file. This file is used by the automated release scripts to build the release changelog and increment the version number for the correct metadata schema. Unlike the changelog file, which is a running log of all metadata schema changes, the update_log file should only contain the documented changes for this branch, so the file should be empty apart from the header row when you first check out a new branch. An entry into update_log.csv should contain the path to the schema that was changed, the type of change (major, minor or patch) and the description of the change that should go into the changelog, for example:
+
+    `module/ontology/disease_ontology,patch,Fixed a typo in description of text field in disease_ontology. Fixes #000,,`
+
+    Only list one schema per line and only list schemas that you have actually changed as the release script will automatically identify dependent schemas. Each line should end in a double comma, signifying the empty columns for version number and release date, which will be filled in by the release script. Not including the commas will cause the release script to fail. If there is a comma in the change message, the message needs to be quoted:
+
+    `type/biomaterial/organoid,patch,"Added user friendly names for fields a, b, c and d",,`
+
+    The change message should start with one of *Added, Changed, Removed, Fixed, Deprecated or Security*
+
+    ***New schemas only***
+
+    1. If you added a new schema, **add** the name of the new schema in `json_schema/versions.json` in the correct location and with version number 0.0.0. For example, if you added a new biomaterial module `my_new_module`, your addition to the `versions.json` file would be:
+
+           `[...]
+            "module": {
+            "biomaterial": {
+                [...],
+                "my_new_module": 0.0.0
+            },
+            [...]`
+
+    2. The corresponding entry in the `update_log.csv` file should be marked a major version update so that the release script sets the version number of the new schema to `1.0.0`.
+
+
 1. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes and to increase granularity for rollbacks (if needed). Use helpful/short messages in commit statements. If the commit specifically fixes/addresses a current GitHub issue, you can add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issue. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
 
     `git add <changed files>`

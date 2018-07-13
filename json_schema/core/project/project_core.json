@@ -3,7 +3,7 @@
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-	"project_shortname",
+        "project_short_name",
         "project_title",
         "project_description"
     ],
@@ -21,7 +21,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "project_shortname": {
+        "project_short_name": {
             "description": "A short name for the project.",
             "type": "string",
             "example": "For example, a short label by which you refer to the project. This will be used for quick orientation and reference.",
