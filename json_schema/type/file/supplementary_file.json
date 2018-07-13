@@ -1,19 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Protocol files belonging to a project.",
+    "description": "Supplementary files belonging to a project.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
         "file_core"
     ],
-    "title": "protocol_file",
+    "title": "supplementary_file",
     "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/file/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/protocol_file"
+            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/file/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/supplementary_file"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -32,6 +32,12 @@
             "description": "Core file-level information.",
             "type": "object",
             "$ref": "core/file/file_core.json"
+        },
+        "file_description" : {
+            "description": "A short description of the file content. This could include information about how the file was generated.",
+            "type": "string",
+            "example": "Enrichment protocol",
+            "user_friendly": "File description"
         }
     }
 }
