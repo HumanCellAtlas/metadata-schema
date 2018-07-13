@@ -8,7 +8,7 @@
 
 ## Introduction
 
-**DISCLAIMER:** At this time, the HCA Metadata Standard development team is actively working towards adhering to this style and formatting guide. In some cases, the Standard is not
+**DISCLAIMER:** At this time, the HCA Metadata Standard development team is actively working towards adhering to this style and formatting guide. In some cases, the Standard might not yet follow all the guidelines outlined in this document.
 
 This document describes the style and formatting rules followed by the HCA Metadata Standard.
 
