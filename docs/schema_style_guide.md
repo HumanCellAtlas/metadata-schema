@@ -200,7 +200,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
 1. Short, meaningful field names are preferred over longer, vaguer field names. 
 
-1. The same field name should not appear across multiple schemas.
+1. The same field name should not appear within the same or across multiple schemas.
 
 1. If similar field names are needed, prepend the field names with context to differentiate them.
 
@@ -212,7 +212,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Tone
 
-1. Be factual and concise instead of making demands. For example:
+1. Make a statement, not a demand. For example:
 
     Use
 
@@ -220,7 +220,7 @@ The following attributes are required for each metadata field in an HCA metadata
     
     not
     
-        "description": "You need to include the age of the donor."
+        "description": "Enter the age of the donor."
     
 1. Be concise instead of verbose. For example:
 
@@ -232,7 +232,7 @@ The following attributes are required for each metadata field in an HCA metadata
     
         "description": "Please include the phone number of the individual or the phone number of the individual's lab."
 
-1. Avoid using "you" phrases (what is the name of this tone??). For example:
+1. Use a formal writing voice. Avoid first-person pronouns, using "you", contractions, and slang. For example:
 
     Use
 
