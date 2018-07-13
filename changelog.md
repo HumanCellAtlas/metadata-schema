@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/protocol_file.json - v1.0.0] - 2018-07-13
+### A
+A new file type for protocol files
+
 ### [core/project/project_core.json - v7.0.0] - 2018-07-12
 ### Changed
 Changed `project_shortname` to `project_short_name`. Fixes #378.
