@@ -61,6 +61,10 @@ From now on, every time you commit anything in the metadata schema repo using th
 
     1. **Fix** the merge conflicts and commit.
 
+        ***NB*** If merge conflicts are limited to files in the `/docs` directory, you can designate the version in your branch as the correct version over the files in `develop` by using:
+
+        `git merge --strategy-option ours`
+
 1. **Check json_schema/update_log.csv** to make sure that all metadata changes in this branch have been documented. There should be two commas at the end of each line in this file.
 
 1. **Run** the release preparation script from the src directory. The script should be run with Python 3 and takes no direct input arguments, but does require update_log.csv to be filled in correctly.
