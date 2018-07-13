@@ -29,7 +29,7 @@ This document describes the style and formatting rules followed when evolving th
 
 ### Required field attributes
 
-The following attributes are required for each field in an HCA metadata schema. 
+The following attributes are required for each metadata field in an HCA metadata schema. 
 
 1. **description:** A clear, concise statement of the what the metadata field is. The *description* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
@@ -52,7 +52,7 @@ The following attributes are required for each field in an HCA metadata schema.
             ...
         }
         
-    Example valid *type* values include: string, number, boolean, array (when a field can accept an array of values), and object (when a field references another schema). The specification of valid JSON *type* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1). 
+    Example valid *type* values include: string, number, boolean, array (when a field is an array of values), and object (when a field references another schema). The specification of valid JSON *type* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1). 
 
 1. **example:** Directions for how to enter a valid value in the metadata field and/or an example valid value. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
@@ -72,10 +72,10 @@ The following attributes are required for each field in an HCA metadata schema.
             ...
         }
 
-    Sometimes including an *example* value is not necessary. Instances of this include:
+    Sometimes including an *example* value is not necessary, including:
     
-    - Fields that import core or module schemas (e.g. `donor_organism.medical_history`) because the core and module schema fields will have their own examples
-    - Fields for which including an example could bias data contributors (e.g. `donor_organism.biomaterial_id`) 
+    - When a field imports a core or module schema (e.g. `donor_organism.medical_history`) because the core and module schema fields will have their own examples
+    - When including an example for the field could bias data contributors (e.g. `donor_organism.biomaterial_id`) 
 
 1. **user-friendly:** A user-facing, readable term/phrase of what the metadata field is. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
@@ -89,7 +89,7 @@ The following attributes are required for each field in an HCA metadata schema.
             ...
         },
 
-    Including *user-friendly* values for metadata fields has some advantages. 
+    Including *user-friendly* values for metadata fields has many advantages, including: 
     
     1. Unlike the actual metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
     1. Updates or changes to a *user-friendly* value are considered a patch increment to the schema version number and are thus easier and simpler to implement than metadata field name changes.
