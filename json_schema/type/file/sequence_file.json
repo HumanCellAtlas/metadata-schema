@@ -77,6 +77,12 @@
 	        "description": "Fields specific for SmartSeq2 experiments.",
             "type": "object",
             "$ref": "module/process/sequencing/smartseq2.json"
+        },
+        "technical_replicate_id" : {
+            "description": "A project wide unique id to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same library preparation. ",
+            "type": "string",
+            "example": "tr001",
+            "user_friendly": "Technical replicate ID"
         }
     }
 }

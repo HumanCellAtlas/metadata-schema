@@ -22,6 +22,7 @@ lane_index | The index of the lane that this file was sequenced from. | integer 
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
 insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR. | array | no |  | INSDC run |  | 
 smartseq2 | Fields specific for SmartSeq2 experiments. | object | no | [See module  smartseq2](module.md/#smartseq2) |  |  | 
+technical_replicate_id | A project wide unique id to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same library preparation.  | string | no |  | Technical replicate ID |  | tr001
 
 ## supplementary_file
 _Supplementary files belonging to a project._
