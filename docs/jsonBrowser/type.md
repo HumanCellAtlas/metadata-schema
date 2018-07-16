@@ -259,7 +259,7 @@ aggregate_formation_method | Method used to form cell aggreagtes. | string | yes
 aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
 
 ## biomaterial_protocol
-_Information about the biomaterial collection protocol_
+_Information about the biomaterial collection protocol._
 
 Location: type/protocol/biomaterial_collection/collection_protocol.json
 
@@ -268,11 +268,11 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-collection_method | How the biomaterial was collected. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
-protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) |  |  | 
+collection_method | How the biomaterial was collected. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | blood draw
+protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
 
 ## differentiation_protocol
-_Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid._
+_Information on how a pluripotent cell is differentiated to a desired cell type or organoid._
 
 Location: type/protocol/biomaterial_collection/differentiation_protocol.json
 
