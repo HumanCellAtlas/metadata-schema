@@ -54,7 +54,7 @@ Location: core/project/project_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-project_shortname | A short name for the project. | string | yes |  | Project label |  | For example, a short label by which you refer to the project. This will be used for quick orientation and reference.
+project_short_name | A short name for the project. | string | yes |  | Project label |  | For example, a short label by which you refer to the project. This will be used for quick orientation and reference.
 project_title | An official title for your project. | string | yes |  | Project title |  | For example, the title of a grant proposal or a publication, approximately 30 words. This is how the project title will appear on the Human Cell Atlas data portal.
 project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
 

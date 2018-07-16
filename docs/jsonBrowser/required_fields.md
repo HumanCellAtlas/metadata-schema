@@ -18,7 +18,7 @@ process_id | A unique ID for this process. | string |  | Process ID |  |
 ### project_core<a name='project_core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-project_shortname | A short name for the project. | string |  | Project label |  | For example, a short label by which you refer to the project. This will be used for quick orientation and reference.
+project_short_name | A short name for the project. | string |  | Project label |  | For example, a short label by which you refer to the project. This will be used for quick orientation and reference.
 project_title | An official title for your project. | string |  | Project title |  | For example, the title of a grant proposal or a publication, approximately 30 words. This is how the project title will appear on the Human Cell Atlas data portal.
 project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
 ### protocol_core<a name='protocol_core'></a>
@@ -77,6 +77,11 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
 file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
 read_index | Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read. If read file represents a single-end, non-indexed library, indicate that here. | string |  | Read index | read1, read2, index1, index2, single-end, non-indexed | read1
+### supplementary_file
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string |  |  | file | 
+file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
 ### process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -290,7 +295,7 @@ _There are no required properties in schema smartseq2_
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 contact_name | Name of any individual who has contributed to this project. | string |  | Contact name |  | Format: 'first, middle, last name', middle can be initial or left blank. Example: John,D,Smith.
-email | Email address for the individual. | string |  | Email address |  | Enter a valid email address.
+institution | Name of primary institute where the individual works. | string |  | Institute |  | 
 ### funder<a name='funder'></a>
 _There are no required properties in schema funder_
 ### publication<a name='publication'></a>
@@ -298,44 +303,3 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication in 'surname initials' format. | array |  | Authors |  | Smith JD
 publication_title | The full title of the publication. | string |  | Publication title |  | 
-## Bundle
-### biomaterial
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | biomaterial_bundle | 
-### file
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | file_bundle | 
-### ingest
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-submissionDate | When project was first submitted to database. | string |  |  |  | 
-document_id | Identifier for document. | string |  |  |  | 
-### links
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | link_bundle | 
-### process
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | process_bundle | 
-### project
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | project_bundle | 
-hca_ingest | Core fields added by HCA ingest service | object | [See   ingest_audit](.md/#ingest_audit) |  |  | 
-content | Content for a project type entity. | object | [See   project](.md/#project) |  |  | 
-### protocol
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | protocol_bundle | 
-### reference
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string |  |  | reference_bundle | 
-### submission
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-transfer_service_version |  |  |  |  |  | 
-submitted_files |  |  |  |  |  | 

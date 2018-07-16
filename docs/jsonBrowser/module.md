@@ -408,9 +408,9 @@ Location: module/project/contact.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 contact_name | Name of any individual who has contributed to this project. | string | yes |  | Contact name |  | Format: 'first, middle, last name', middle can be initial or left blank. Example: John,D,Smith.
-email | Email address for the individual. | string | yes |  | Email address |  | Enter a valid email address.
+email | Email address for the individual. | string | no |  | Email address |  | Enter a valid email address.
 phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | Enter a valid phone number, including country code.
-institution | Name of primary institute where the individual works. | string | no |  | Institute |  | 
+institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | 
 laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | 
 address | Street address where the individual works. | string | no |  | Address |  | Include street name and number, city, country division, postal code.
 country | Country where the individual works. | string | no |  | Country |  | 
