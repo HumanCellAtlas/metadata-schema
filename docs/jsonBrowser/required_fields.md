@@ -24,7 +24,7 @@ project_description | A longer description of the project which includes researc
 ### protocol_core<a name='protocol_core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-protocol_id | A unique ID for this protocol. | string |  | Protocol ID |  | 
+protocol_id | A unique ID for the protocol. | string |  | Protocol ID |  | 
 ## Type
 ### cell_line
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
