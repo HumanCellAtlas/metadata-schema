@@ -78,11 +78,11 @@
             "type": "object",
             "$ref": "module/process/sequencing/smartseq2.json"
         },
-        "technical_replicate_id" : {
-            "description": "A project wide unique id to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same library preparation. ",
+        "technical_replicate_group" : {
+            "description": "A project wide unique label to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same sequencing library. Leave blank if files are biological replicates.",
             "type": "string",
-            "example": "tr001",
-            "user_friendly": "Technical replicate ID"
+            "example": "tech_rep_group001",
+            "user_friendly": "Technical replicate group"
         }
     }
 }
