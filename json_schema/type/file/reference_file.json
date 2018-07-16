@@ -46,7 +46,8 @@
         "ncbi_taxon_id" : {
             "description": "A taxonomy ID (taxonID) from NCBI.",
             "type": "integer",
-            "user_friendly": "NCBI taxon ID"
+            "user_friendly": "NCBI taxon ID",
+            "example": 9606
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of this reference.",
@@ -56,13 +57,15 @@
             "user_friendly": "Genus species"
         },
         "assembly_type": {
-            "description": "The assembly type of this reference. This applies to reference genome sequences.",
+            "description": "The assembly type of the reference. This applies to reference genome sequences.",
             "type": "string",
             "enum": [
                 "primary assembly",
                 "complete assembly",
                 "patch assembly"
-            ]
+            ],
+            "user_friendly": "Assembly type",
+            "example": "Should be one of: primary assembly, complete assembly, or patch assembly."
         },
         "reference_type": {
             "description": "The type of the genome reference.",
@@ -73,12 +76,15 @@
                 "annotation reference",
                 "transcriptome index",
                 "genome sequence index"
-            ]
+            ],
+            "user_friendly": "Reference type",
+            "example": "Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index."
         },
         "reference_version": {
             "description": "The genome version of the reference.",
             "type": "string",
-            "example": "GencodeV27"
+            "example": "GencodeV27",
+            "user_friendly": "Reference version"
         }
     }
 }
