@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/cell_suspension,minor,"Added field `plate_based_sequencing` importing the module of the same name. Fixes Issue #397.",,
-type/file/sequence_file,minor,"Removed field `smartseq2` as the module has been deprecated. Fixes Issue #397.",,
