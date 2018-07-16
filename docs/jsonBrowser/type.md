@@ -213,7 +213,7 @@ insdc_study | An INSDC (International Nucleotide Sequence Database Collaboration
 funders | A list of funding source(s) supporting the project. | array | no | [See module  funder](module.md/#funder) | Project funding source(s) |  | 
 
 ## protocol
-_Information about the protocol_
+_Information about the protocol._
 
 Location: type/protocol/protocol.json
 
@@ -222,10 +222,10 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+protocol_type | The type of protocol. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | sample enrichment
 
 ## analysis_protocol
-_Information about the analysis protocol_
+_Information about the analysis protocol._
 
 Location: type/protocol/analysis/analysis_protocol.json
 
@@ -246,7 +246,7 @@ timestamp_start_utc | Initial start time of the full pipeline. | string | yes | 
 analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string | yes |  |  | run, copy-forward | 
 
 ## aggregate_generation_protocol
-_Contains information on how cultured cells are developed into cell aggregates_
+_Information on how cultured cells are developed into cell aggregates._
 
 Location: type/protocol/biomaterial_collection/aggregate_generation_protocol.json
 
@@ -256,7 +256,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
-aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
+aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
 
 ## biomaterial_protocol
 _Information about the biomaterial collection protocol_

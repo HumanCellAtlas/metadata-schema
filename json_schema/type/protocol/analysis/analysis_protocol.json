@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the analysis protocol",
+    "description": "Information about the analysis protocol.",
     "additionalProperties": false,
     "required": [
         "describedBy",
