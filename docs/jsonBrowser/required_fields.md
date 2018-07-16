@@ -14,7 +14,7 @@ file_format | The format of the file. | string |  | File format |  | fastq.gz
 ### process_core<a name='process_core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-process_id | A unique ID for this process. | string |  | Process ID |  | 
+process_id | A unique ID for the process. | string |  | Process ID |  | 
 ### project_core<a name='project_core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
