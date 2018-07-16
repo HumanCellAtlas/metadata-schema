@@ -7,8 +7,12 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v?.?+1.?] - 2018-07-16
+### Added
+Added ipsc induction factors field to ipsc induction protocol.
+
 ### [type/file/supplemental_file.json - v1.0.0] - 2018-07-13
-### A
+### Added
 A new file type entity for supplemental files. Fixes #422.
 
 ### [core/project/project_core.json - v7.0.0] - 2018-07-12
