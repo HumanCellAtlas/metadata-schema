@@ -368,19 +368,19 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-cell_barcode | Information about cell identifier barcode. | object | no | [See module  barcode](module.md/#barcode) | Cell barcode |  | 
-input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446. | object | yes | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | 
-library_construction_approach | The general approach for sequencing library construction. Should be a child term of EFO - library preparation | object | yes | [See module  library_construction_ontology](module.md/#library_construction_ontology) | Library construction approach |  | 
+cell_barcode | Information about cell identifier barcodes. | object | no | [See module  barcode](module.md/#barcode) | Cell barcode |  | 
+input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. | object | yes | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | polyA RNA
+library_construction_approach | The general approach for sequencing library construction. | object | yes | [See module  library_construction_ontology](module.md/#library_construction_ontology) | Library construction approach |  | Smart-seq2
 library_construction_kit | Name of kit used to construct the sequencing library. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Library construction kit |  | 
 nucleic_acid_conversion_kit | Name of kit used to convert RNA to DNA for sequencing. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Nucleic acid conversion kit |  | 
-end_bias | The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length. | string | yes |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | 3_prime_tag
-primer | Primer used for cDNA synthesis from RNA. Must be either poly-dT or random. | string | no |  | Primer | poly-dT, random | 
-strand | Library strandedness. Must be one of first, second, or unstranded. | string | yes |  | Strand | first, second, unstranded | unstranded
-spike_in_kit | Name of spike-in kit. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Spike-in kit |  | 
-spike_in_dilution | Dilution of spike-in. | integer | no |  | Spike-in dilution |  | 
-umi_barcode | Information about unique molecular identifier (UMI) barcode sequences. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 
-library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | 
-cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. Should be a child term of EFO - nucleic acid preparation | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | 
+end_bias | The type of tag or end bias the library has. | string | yes |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | Should be one of: 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.
+primer | Primer used for cDNA synthesis from RNA. | string | no |  | Primer | poly-dT, random | Should be one of: poly-dT, or random.
+strand | Library strandedness. | string | yes |  | Strand | first, second, unstranded | Should be one of: first, second, or unstranded.
+spike_in_kit | Information about a spike-in kit, if used. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Spike-in kit |  | 
+spike_in_dilution | Dilution of spike-in, if used. | integer | no |  | Spike-in dilution |  | 100
+umi_barcode | Information about unique molecular identifier (UMI) barcodes. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 
+library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | PCR
+cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | PCR
 
 ## sequencing_protocol
 _Information about the sequencing protocol_
@@ -393,7 +393,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
-local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | 
-paired_ends | Was a paired-end sequencing strategy used? Must be either yes or no. | boolean | yes |  | Paired ends? |  | yes
-sequencing_approach | The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | 
+local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | Machine1
+paired_ends | Was a paired-end sequencing strategy used? | boolean | yes |  | Paired ends? |  | Should be one of: yes, no.
+sequencing_approach | The general approach for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | full length single cell RNA sequencing
 
