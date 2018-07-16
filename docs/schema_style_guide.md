@@ -73,6 +73,18 @@ The following attributes are required for each metadata field in an HCA metadata
     - When a field imports a core or module schema (*e.g.* `donor_organism.medical_history`) because the core and module schema fields will have their own examples
     - When including an example for the field could bias data contributors (*e.g.* `donor_organism.biomaterial_id`) 
 
+    Examples can be included for fields that are governed by an ontology, but the example should be the ontology term (text) not the ontology curie.
+    
+    Example:
+    
+        "organ": {
+            "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
+            "type": "object",
+            "example": "Blood",
+            "$ref": "module/ontology/organ_ontology.json",
+            ...
+        }
+
 1. **user-friendly:** A user-facing, readable term/phrase of what the metadata field is. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
@@ -90,7 +102,7 @@ The following attributes are required for each metadata field in an HCA metadata
     1. Unlike the actual metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
     1. Changing a *user-friendly* value is considered a patch change to the schema version and is thus easier and simpler to implement than changing a metadata field name (which is a major change to the schema version).
     1. The *user-friendly* values can be templated to allow concatenation of the schema name to the field name for improved clarity. For example, if the *user-friendly* value of the `biomaterial_id` field is set to "${schema} ID", then `donor_organism.biomaterial_id` will render as "Donor organism ID" while `cell_line.biomaterial_id` will render as "Cell line ID".
-
+    
 ### Conditional required field attributes
 
 1. **$ref:** The relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself and should always be used with `"type": "object"`.
