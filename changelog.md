@@ -7,6 +7,194 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/biomaterial/biomaterial_core.json - v7.0.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/file/file_core.json - v5.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/process/process_core.json - v7.0.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/project/project_core.json - v7.0.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/protocol/protocol_core.json - v5.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/organoid.json - v8.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/reference_file.json - v2.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/sequence_file.json - v6.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/process/process.json - v4.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/protocol.json - v6.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.3] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/organoid.json - v8.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/analysis_file.json - v5.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/supplementary_file.json - v1.1.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/reference_file.json - v2.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/sequence_file.json - v6.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/process/process.json - v4.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/protocol.json - v6.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/imaging/imaging_protocol.json - v7.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
 ### [module/sequencing/plate_based_sequencing.json - v1.0.0] - 2018-07-16
 ### Added
 Added module plate_based_sequencing. Fixes Issue #397

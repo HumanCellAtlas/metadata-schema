@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Contains information on how cultured cells are developed into cell aggregates",
+    "description": "Information on how cultured cells are developed into cell aggregates.",
     "additionalProperties": false,
     "required": [
       "describedBy",
@@ -46,7 +46,7 @@
             "user_friendly": "Aggregate formation method"
         },
         "aggregate_cell_uniformity": {
-            "description": "Description of uniformity of the cell aggregates after they are formed",
+            "description": "Description of uniformity of the cell aggregates after they are formed.",
             "type": "string",
             "example": "Mostly homogenous EBs of variable cell numbers",
             "user_friendly": "Aggregate cell uniformity"
