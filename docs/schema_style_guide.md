@@ -199,23 +199,33 @@ The following attributes are required for each metadata field in an HCA metadata
 
 1. Field names should be all lower case and snake_case.
 
-        example_field_name
+    Example:
 
-1. Short, meaningful field names are preferred over longer, vaguer field names. 
+        biomaterial_id
 
-1. The same field name should not appear within the same or across multiple schemas.
+1. Short, meaningful field names should be chosen over longer, vaguer field names. 
 
-1. If similar field names are needed, prepend the field names with context to differentiate them.
+    Example:
+    
+        
 
-        umi_barcode and cell_barcode
+1. The same field name should not appear within the same or across multiple schemas. If similar field names are needed, prepend the field names with context to differentiate them.
 
-1. If a number field requires a corresponding unit, append `_unit` to the number field name for the unit field name.
+    Example:
+    
+        umi_barcode
+        cell_barcode
 
-        organism_age and organism_age_unit
+1. If a number field requires a corresponding unit field, append `_unit` to the number field name for the unit field name.
+
+    Example:
+
+        organism_age
+        organism_age_unit
 
 ### Tone and voice
 
-1. Make a statement, not a demand. For example:
+1. Make a statement instead of a demand in the field description. For example:
 
     Use
 
@@ -225,7 +235,7 @@ The following attributes are required for each metadata field in an HCA metadata
     
         "description": "Enter the age of the donor."
     
-1. Be concise instead of verbose. For example:
+1. Be concise instead of verbose in the field description. For example:
 
     Use
     
