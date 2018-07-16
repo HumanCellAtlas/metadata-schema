@@ -81,7 +81,7 @@
         "technical_replicate_group" : {
             "description": "A project wide unique label to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same sequencing library. Leave blank if files are biological replicates.",
             "type": "string",
-            "example": "tech_rep_group001",
+            "example": "tech_rep_group_001",
             "user_friendly": "Technical replicate group"
         }
     }
