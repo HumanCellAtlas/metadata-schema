@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-07-06T14:18:29Z",
+    "last_update_date": "2018-07-13T10:57:24Z",
     "version_numbers": {
         "bundle": {
             "biomaterial": "11.2.0",
@@ -7,7 +7,7 @@
             "ingest_audit": "5.2.1",
             "links": "1.1.1",
             "process": "8.1.0",
-            "project": "6.0.2",
+            "project": "7.0.0",
             "protocol": "10.3.0",
             "reference": "2.1.0",
             "submission": "5.2.1"
@@ -23,7 +23,7 @@
                 "process_core": "7.0.0"
             },
             "project": {
-                "project_core": "6.0.1"
+                "project_core": "7.0.0"
             },
             "protocol": {
                 "protocol_core": "5.2.1"
@@ -73,7 +73,7 @@
                 }
             },
             "project": {
-                "contact": "5.2.2",
+                "contact": "5.3.0",
                 "funder": "1.0.0",
                 "publication": "5.2.1"
             }
@@ -88,6 +88,7 @@
             },
             "file": {
                 "analysis_file": "5.2.1",
+                "supplemental_file": "1.0.0",
                 "reference_file": "2.1.0",
                 "sequence_file": "6.1.1"
             },
@@ -95,7 +96,7 @@
                 "process": "4.1.0"
             },
             "project": {
-                "project": "6.0.2"
+                "project": "7.0.0"
             },
             "protocol": {
                 "analysis": {
