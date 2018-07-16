@@ -41,12 +41,14 @@
             "items":{
                 "type": "integer"
             },
-            "user_friendly": "NCBI taxon ID"
+            "user_friendly": "NCBI taxon ID",
+            "example": 9606
         },
         "genotype": {
             "description": "Genotype of biomaterial including strain, cross, and genetic modification information.",
             "type": "string",
-            "user_friendly": "Genotype"
+            "user_friendly": "Genotype",
+            "example": "DRB1 0401 protective allele"
         },
         "supplementary_files": {
             "description": "A list of filenames of biomaterial-level supplementary files.",
@@ -60,13 +62,15 @@
             "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
             "type": "string",
             "pattern": "^SAM(D|N|E([AG]?))[0-9]+$",
-            "user_friendly": "BioSample ID"
+            "user_friendly": "BioSample ID",
+            "example": "SAMN00000000"
         },
         "insdc_biomaterial": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
             "type": "string",
             "pattern": "^[D|E|S]RS[0-9]+$",
-            "user_friendly": "INSDC ID"
+            "user_friendly": "INSDC ID",
+            "example": "SRS0000000"
         }
     }
 }
