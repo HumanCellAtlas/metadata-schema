@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/project/contact,major,"Changed email to be optional. Changed institution to be required. Fixes #411.",,

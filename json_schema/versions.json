@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-07-203T10:00:00Z",
+    "last_update_date": "2018-07-16T10:09:52Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -62,10 +62,14 @@
                 }
             },
             "project": {
-                "contact": "5.3.0",
+                "contact": "6.0.0",
                 "funder": "1.0.0",
                 "publication": "5.2.1"
             }
+        },
+        "system": {
+            "links": "1.1.1",
+            "provenance": "1.0.0"
         },
         "type": {
             "biomaterial": {
@@ -85,7 +89,7 @@
                 "process": "4.1.0"
             },
             "project": {
-                "project": "7.0.0"
+                "project": "8.0.0"
             },
             "protocol": {
                 "analysis": {
@@ -108,10 +112,6 @@
                     "sequencing_protocol": "7.1.0"
                 }
             }
-        },
-        "system": {
-            "provenance": "1.0.0",
-            "links": "1.1.1"
         }
     }
 }

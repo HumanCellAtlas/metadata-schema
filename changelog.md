@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v6.0.0] - 2018-07-16
+### Changed
+Changed email to be optional. Changed institution to be required. Fixes #411.
+
+### [type/project/project.json - v8.0.0] - 2018-07-16
+### Changed
+Changed email to be optional. Changed institution to be required. Fixes #411.
+
 ### [bundle/protocol.json - v10.4.0] - 2018-07-16
 ### Added
 Added optional iPSC induction factors field to iPSC induction protocol.
