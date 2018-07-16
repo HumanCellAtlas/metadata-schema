@@ -7,9 +7,41 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [bundle/protocol.json - v10.4.0] - 2018-07-16
+### Added
+Added optional iPSC induction factors field to iPSC induction protocol.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.1.0] - 2018-07-16
+### Added
+Added optional iPSC induction factors field to iPSC induction protocol.
+
+### [type/file/supplemental_file.json - v1.0.0] - 2018-07-13
+### Added
+A new file type entity for supplemental files. Fixes #422.
+
+### [core/project/project_core.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
+### [bundle/project.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
+### [type/project/project.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
-### [module/project/contact.json - v?.?+1.?] - 2018-07-11
+### [module/project/contact.json - v5.3.0] - 2018-07-12
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
+### [bundle/project.json - v6.1.0] - 2018-07-12
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
+### [type/project/project.json - v6.1.0] - 2018-07-12
 ### Added
 Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
 

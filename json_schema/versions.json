@@ -12,7 +12,7 @@
                 "process_core": "7.0.0"
             },
             "project": {
-                "project_core": "6.0.1"
+                "project_core": "7.0.0"
             },
             "protocol": {
                 "protocol_core": "5.2.1"
@@ -62,7 +62,7 @@
                 }
             },
             "project": {
-                "contact": "5.2.2",
+                "contact": "5.3.0",
                 "funder": "1.0.0",
                 "publication": "5.2.1"
             }
@@ -78,13 +78,14 @@
             "file": {
                 "analysis_file": "5.2.1",
                 "reference_file": "2.1.0",
-                "sequence_file": "6.1.1"
+                "sequence_file": "6.1.1",
+                "supplemental_file": "1.0.0"
             },
             "process": {
                 "process": "4.1.0"
             },
             "project": {
-                "project": "6.0.2"
+                "project": "7.0.0"
             },
             "protocol": {
                 "analysis": {
@@ -96,7 +97,7 @@
                     "differentiation_protocol": "1.1.0",
                     "dissociation_protocol": "4.1.0",
                     "enrichment_protocol": "2.1.0",
-                    "ipsc_induction_protocol": "1.0.0"
+                    "ipsc_induction_protocol": "1.1.0"
                 },
                 "imaging": {
                     "imaging_protocol": "7.1.0"
