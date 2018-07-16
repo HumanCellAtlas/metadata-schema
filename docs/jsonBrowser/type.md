@@ -49,6 +49,7 @@ growth_conditions | Features relating to the growth and/or maintenance of a biom
 genus_species | The scientific binomial name for the species of the biomaterial. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
 selected_cell_type | The cell type(s) selected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type |  | fetal cardiomyocyte
 total_estimated_cells | Total estimated number of cells in biomaterial. May be 1 for well-based assays. | integer | no |  | Total estimated cell count |  | 2100
+plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) |  |  | 
 
 ## donor_organism
 _Information about the organism from which a specimen was collected._
@@ -164,7 +165,6 @@ read_index | Whether the read file contains the read1, read2, index1, or index2 
 lane_index | The index of the lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
 insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR. | array | no |  | INSDC run |  | 
-smartseq2 | Fields specific for SmartSeq2 experiments. | object | no | [See module  smartseq2](module.md/#smartseq2) |  |  | 
 
 ## supplementary_file
 _Supplementary files belonging to a project._

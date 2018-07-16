@@ -289,8 +289,11 @@ barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string |  | INSDC experiment |  | 
-### smartseq2<a name='smartseq2'></a>
-_There are no required properties in schema smartseq2_
+### plate_based_sequencing<a name='plate_based_sequencing'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+plate_id | An ID for the plate that the well is located on. | string |  | Well plate ID |  | 2217
+well_id | An ID or name for the well. Should be unique for the plate | string |  | Well ID |  | A1
 ### contact<a name='contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

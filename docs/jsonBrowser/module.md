@@ -387,18 +387,16 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string | yes |  | INSDC experiment |  | 
 
-## smartseq2<a name='smartseq2'></a>
-_This module describes information specific to SmartSeq2 experiments._
+## plate_based_sequencing<a name='plate_based_sequencing'></a>
+_This module describes information specific to plate-based sequencing experiments._
 
 Location: module/process/sequencing/plate_based_sequencing.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-plate_id | An ID for the plate that the well is located on. | string | no |  | Well plate ID |  | 
-well_name | A name for the well. Should be unique for the plate | string | no |  | Well name |  | 
-well_row | Well row in plate. | string | no |  | Well row |  | 
-well_column | Well column in plate. | string | no |  | Well column |  | 
-cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | 
+plate_id | An ID for the plate that the well is located on. | string | yes |  | Well plate ID |  | 2217
+well_id | An ID or name for the well. Should be unique for the plate | string | yes |  | Well ID |  | A1
+cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | Must be one of: 'OK', 'control, 2-cell well', 'control, empty well', 'low quality cell'.
 
 ## contact<a name='contact'></a>
 _Information about a person who submitted or contributed to a project._
