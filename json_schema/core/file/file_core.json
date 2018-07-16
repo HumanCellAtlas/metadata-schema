@@ -34,7 +34,7 @@
         "checksum": {
             "description": "MD5 checksum of the file.",
             "type": "string",
-            "user_friendly": "Checksum",
+            "user_friendly": "Checksum"
 	    }
     }
 }
