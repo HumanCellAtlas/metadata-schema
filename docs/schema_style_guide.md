@@ -80,12 +80,12 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    Sometimes including an *example* is not necessary, including:
+    Sometimes having an *example* is not necessary, including when:
     
-    - When a field imports a core or module schema (*e.g.* `donor_organism.medical_history`) because the core and module schema fields will have their own examples
-    - When including an example for the field could bias data contributors (*e.g.* `donor_organism.biomaterial_id`) 
+    - A field imports a core or module schema (*e.g.* `donor_organism.medical_history`) because the core and module schema fields will have their own examples.
+    - An example for a field could bias data contributors (*e.g.* `donor_organism.biomaterial_id`). 
 
-1. **user-friendly:** A user-facing, readable term/phrase of what the metadata field is. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
+1. **user-friendly:** A user-facing, readable term/phrase for the metadata field. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
     
@@ -97,14 +97,24 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    Including *user-friendly* values for metadata fields has many advantages, including: 
+    Having *user-friendly* values for metadata fields has many advantages, including: 
     
-    1. Unlike the actual metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
+    1. Unlike the programmatic metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
     1. Changing a *user-friendly* value is considered a patch change to the schema version and is thus easier and simpler to implement than changing a metadata field name (which is a major change to the schema version).
-    1. The *user-friendly* values can be templated to allow concatenation of the schema name to the field name for improved clarity. For example, if the *user-friendly* value of the `biomaterial_id` field is set to "${schema} ID", then `donor_organism.biomaterial_id` will render as "Donor organism ID" while `cell_line.biomaterial_id` will render as "Cell line ID".
+    1. A *user-friendly* value can be templated to allow for custom displays. For example, concatenation of a schema name to a field name can improve clarity: if the *user-friendly* value of the `biomaterial_id` field is set to "${schema} ID", then `donor_organism.biomaterial_id` will render as "Donor organism ID" while `cell_line.biomaterial_id` will render as "Cell line ID".
     
-    Each *user-friendly* value should be a short term or phrase written in sentence case (*i.e.* only the first word capitalized). Case exceptions can be made for acronyms or other special capitalization schemes.
-
+    Each *user-friendly* value should be a short term or phrase written in sentence case (*i.e.* only the first word capitalized). Exceptions can be made for acronyms or other special capitalization schemes.
+    
+    Examples:
+    
+        Programmatic: ncbi_taxon_id
+        User-friendly: NCBI taxon ID
+        
+        Programmatic: paired_ends
+        User-friendly: Paired ends?
+        
+        Programmatic: min_size_selected
+        User-friendly: Minimum size selected
     
 ### Conditional required field attributes
 
