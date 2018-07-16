@@ -48,14 +48,14 @@ process_location | Location where the process took place. | string | no |  | Loc
 operator_identity | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1
 
 ## project_core<a name='project_core'></a>
-_A project contains information about the overall project._
+_A project entity contains information about the overall project._
 
 Location: core/project/project_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-project_short_name | A short name for the project. | string | yes |  | Project label |  | For example, a short label by which you refer to the project. This will be used for quick orientation and reference.
-project_title | An official title for your project. | string | yes |  | Project title |  | For example, the title of a grant proposal or a publication, approximately 30 words. This is how the project title will appear on the Human Cell Atlas data portal.
+project_short_name | A short name for the project. | string | yes |  | Project label |  | For example, a short label by which you refer to the project. This label will be used for quick reference.
+project_title | An official title for the project. | string | yes |  | Project title |  | For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.
 project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
 
 ## protocol_core<a name='protocol_core'></a>
