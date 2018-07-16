@@ -7,6 +7,94 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/imaging/imaging_protocol.json - v7.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/protocol.json - v6.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/cell_line.json - v8.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/cell_suspension.json - v8.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/donor_organism.json - v8.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/organoid.json - v8.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/analysis_file.json - v5.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/reference_file.json - v2.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/sequence_file.json - v6.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/supplemental_file.json - v1.1.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/process/process.json - v4.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/project/project.json - v8.1.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
 ### [module/project/contact.json - v6.0.0] - 2018-07-16
 ### Changed
 Changed email to be optional. Changed institution to be required. Fixes #411.
