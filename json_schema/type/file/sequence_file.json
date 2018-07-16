@@ -29,6 +29,11 @@
                 "file"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
@@ -67,11 +72,6 @@
                 "type": "string"
             },
             "user_friendly": "INSDC run"
-        },
-         "smartseq2" : {
-	        "description": "Fields specific for SmartSeq2 experiments.",
-            "type": "object",
-            "$ref": "module/process/sequencing/smartseq2.json"
         }
     }
 }
