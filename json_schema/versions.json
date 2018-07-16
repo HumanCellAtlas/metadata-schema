@@ -62,7 +62,7 @@
                 }
             },
             "project": {
-                "contact": "6.0.0",
+                "contact": "6.1.0",
                 "funder": "1.0.0",
                 "publication": "5.2.1"
             }
@@ -89,7 +89,7 @@
                 "process": "4.2.0"
             },
             "project": {
-                "project": "8.1.0"
+                "project": "8.2.0"
             },
             "protocol": {
                 "analysis": {

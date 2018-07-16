@@ -23,6 +23,14 @@ Added field `plate_based_sequencing` importing the module of the same name. Fixe
 ### Removed
 Removed field `smartseq2` as the module has been deprecated. Fixes Issue #397.
 
+### [module/project/contact.json - v6.1.0] - 2018-07-16
+### Added
+Added new optional field `corresponding_contributor` to contact schema. Fixes #409.
+
+### [type/project/project.json - v8.2.0] - 2018-07-16
+### Added
+Added new optional field `corresponding_contributor` to contact schema. Fixes #409.
+
 ### [type/protocol/imaging/imaging_protocol.json - v7.2.0] - 2018-07-16
 ### Added
 Added optional provenance field

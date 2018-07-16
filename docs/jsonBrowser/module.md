@@ -412,6 +412,7 @@ institution | Name of primary institute where the individual works. | string | y
 laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | 
 address | Street address where the individual works. | string | no |  | Address |  | Include street name and number, city, country division, postal code.
 country | Country where the individual works. | string | no |  | Country |  | 
+corresponding_contributor | Whether the individual is a corresponding contributor for this project. | boolean | no |  | Corresponding contributor? |  | Must be either yes or no.
 project_role | Primary role of the person in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator
 orcid_id | The contacts ORCID ID linked to their previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
 
