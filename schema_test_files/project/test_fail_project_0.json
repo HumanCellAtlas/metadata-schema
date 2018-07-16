@@ -9,7 +9,8 @@
   "contributors": [
     {
       "contact_name": "Dummy Person",
-      "email": "dummy@email.com"
+      "email": "dummy@email.com",
+      "institution": "Wellcome Trust Sanger Institute"
     }
   ]
 }
