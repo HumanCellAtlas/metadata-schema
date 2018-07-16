@@ -1,17 +1,6 @@
 {
-    "last_update_date": "2018-07-16T09:07:45Z",
+    "last_update_date": "2018-07-203T10:00:00Z",
     "version_numbers": {
-        "bundle": {
-            "biomaterial": "11.2.0",
-            "file": "2.1.1",
-            "ingest_audit": "5.2.1",
-            "links": "1.1.1",
-            "process": "8.1.0",
-            "project": "7.0.0",
-            "protocol": "10.4.0",
-            "reference": "2.1.0",
-            "submission": "5.2.1"
-        },
         "core": {
             "biomaterial": {
                 "biomaterial_core": "7.0.0"
@@ -119,6 +108,10 @@
                     "sequencing_protocol": "7.1.0"
                 }
             }
+        },
+        "system": {
+            "provenance": "1.0.0",
+            "links": "1.1.1"
         }
     }
 }
