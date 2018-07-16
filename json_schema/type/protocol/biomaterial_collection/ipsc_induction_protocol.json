@@ -52,6 +52,12 @@
             "comment": "Consider making this field an ontology in the future",
             "example": "piggyBac transposon"
         },
+        "ipsc_induction_factors": {
+            "description": "Induction factors added to primary cell culture to induce pluripotency",
+            "type": "string",
+            "user_friendly": "Induction factors",
+            "example": "POU5F1, SOX2, KLF4, c-MYC"
+	    },
         "induced_pluripotent_cell_induction_kit": {
             "description": "Kit used to induce pluripotent stem cell generation.",
             "type": "object",

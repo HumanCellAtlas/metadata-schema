@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [bundle/protocol.json - v10.4.0] - 2018-07-16
+### Added
+Added optional iPSC induction factors field to iPSC induction protocol.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.1.0] - 2018-07-16
+### Added
+Added optional iPSC induction factors field to iPSC induction protocol.
+
+### [type/file/supplemental_file.json - v1.0.0] - 2018-07-13
+### Added
+A new file type entity for supplemental files. Fixes #422.
+
 ### [core/project/project_core.json - v7.0.0] - 2018-07-12
 ### Changed
 Changed `project_shortname` to `project_short_name`. Fixes #378.

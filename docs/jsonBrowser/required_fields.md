@@ -77,6 +77,11 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
 file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
 read_index | Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read. If read file represents a single-end, non-indexed library, indicate that here. | string |  | Read index | read1, read2, index1, index2, single-end, non-indexed | read1
+### supplementary_file
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string |  |  | file | 
+file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
 ### process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
