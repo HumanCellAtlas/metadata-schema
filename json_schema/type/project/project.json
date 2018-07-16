@@ -27,6 +27,11 @@
                 "project"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",

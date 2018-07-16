@@ -28,6 +28,11 @@
                 "file"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
