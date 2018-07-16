@@ -293,7 +293,6 @@ insdc_experiment | An INSDC (International Nucleotide Sequence Database Collabor
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 plate_id | An ID for the plate that the well is located on. | string |  | Well plate ID |  | 2217
-well_id | An ID or name for the well. Should be unique for the plate | string |  | Well ID |  | A1
 ### contact<a name='contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
