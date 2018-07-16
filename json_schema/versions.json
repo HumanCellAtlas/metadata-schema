@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-07-13T10:57:24Z",
+    "last_update_date": "2018-07-16T09:07:45Z",
     "version_numbers": {
         "bundle": {
             "biomaterial": "11.2.0",
@@ -8,7 +8,7 @@
             "links": "1.1.1",
             "process": "8.1.0",
             "project": "7.0.0",
-            "protocol": "10.3.0",
+            "protocol": "10.4.0",
             "reference": "2.1.0",
             "submission": "5.2.1"
         },
@@ -88,9 +88,9 @@
             },
             "file": {
                 "analysis_file": "5.2.1",
-                "supplemental_file": "1.0.0",
                 "reference_file": "2.1.0",
-                "sequence_file": "6.1.1"
+                "sequence_file": "6.1.1",
+                "supplemental_file": "1.0.0"
             },
             "process": {
                 "process": "4.1.0"
@@ -108,7 +108,7 @@
                     "differentiation_protocol": "1.1.0",
                     "dissociation_protocol": "4.1.0",
                     "enrichment_protocol": "2.1.0",
-                    "ipsc_induction_protocol": "1.0.0"
+                    "ipsc_induction_protocol": "1.1.0"
                 },
                 "imaging": {
                     "imaging_protocol": "7.1.0"
