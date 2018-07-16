@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the organism from which a specimen was collected.",
+    "description": "Information about the donor organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -95,12 +95,12 @@
             "example": "adult"
         }, 
         "disease": {
-            "description": "Short description of disease status of the organism. Enter normal if no known disease.",
+            "description": "Short description of known disease(s) of the organism. Enter normal if no known disease.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
-            "user_friendly": "Disease",
+            "user_friendly": "Known disease(s)",
             "example": "bone squamous cell carcinoma"
         },
         "familial_relationship": {
