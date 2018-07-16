@@ -83,7 +83,7 @@
                 "analysis_file": "5.3.0",
                 "reference_file": "2.2.0",
                 "sequence_file": "6.3.0",
-                "supplemental_file": "1.1.0"
+                "supplementary_file": "1.1.0"
             },
             "process": {
                 "process": "4.2.0"
