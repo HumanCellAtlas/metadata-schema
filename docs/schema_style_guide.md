@@ -135,7 +135,6 @@ The following attributes are required for each metadata field in an HCA metadata
         "email": {
             "description": "Email address for the individual.",
             "type": "string",
-            "example": "example_person@email.com",
             "user_friendly": "Email address",
             "format": "email",
             ...
@@ -151,14 +150,14 @@ The following attributes are required for each metadata field in an HCA metadata
         "biological_sex": {
             "description": "The biological sex of the organism.",
             "type": "string",
-            "example": "Should be one of male, female, mixed, or unknown."
+            "example": "Should be one of: male, female, mixed, or unknown."
+            "user_friendly": "Biological sex",
             "enum": [
                 "female", 
                 "male", 
                 "mixed", 
                 "unknown"
             ],
-            "user_friendly": "Biological sex",
             ...
         },
         "project_role": {
@@ -181,7 +180,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    If the *enum* list is short enough (5 or fewer values), the list of valid values can be included in the *example* attribute (*e.g.* the `biological_sex` enum). If the *enum* list is too long to reasonably fit in the *example* attribute, a single valid value can be listed instead (*e.g.* the `project_role` enum).
+    If the *enum* list is short enough (5 or fewer values), the list of valid values should be included in the *example* attribute (*e.g.* the `biological_sex` enum) starting with the phrase "Should be one of:". If the *enum* list is too long to reasonably fit in the *example* attribute, a single valid value should be listed (*e.g.* the `project_role` enum).
     
     Creating an ontology module for a metadata field is preferred over maintaining an *enum* list.
 
@@ -192,11 +191,12 @@ The following attributes are required for each metadata field in an HCA metadata
     Example:
     
         "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, ENA, or SRA.",
             "type": "string",
-            "example": "Must start with DRP, ERP, or SRP.",
+            "example": "SRP0000000.",
             "pattern": "^[D|E|S]RP[0-9]+$",
-            "user_friendly": "INSDC project accession"
+            "user_friendly": "INSDC project accession",
+            ...
         }
 
 ## General rules
