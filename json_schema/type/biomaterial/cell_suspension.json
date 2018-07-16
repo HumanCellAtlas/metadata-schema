@@ -75,6 +75,11 @@
             "minimum": 0,
             "example": "2100",
             "user_friendly": "Total estimated cell count"
+        },
+        "plate_based_sequencing" : {
+            "description": "Fields specific for plate-based sequencing experiments.",
+            "type": "object",
+            "$ref": "module/process/sequencing/plate_based_sequencing.json"
         }
      }
 }
