@@ -65,7 +65,7 @@
             "user_friendly": "Medical history"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the donor.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{

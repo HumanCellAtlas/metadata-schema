@@ -40,7 +40,7 @@
             "$ref": "core/biomaterial/biomaterial_core.json"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the specimen.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
