@@ -187,11 +187,11 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
-length_of_time | Length of time the process took to execute, from start to finish, in an appropriate time unit. | string | no |  | Start time |  | 
-length_of_time_unit | The unit in which the length of time is expressed. Must be one of microsecond, second, minute, hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | second
-process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | process type |  | 
-deviation_from_protocol | Any deviation from the standard protocol provided | string | no |  | Deviation from protocol |  | 
-insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) |  |  | 
+length_of_time | Length of time the process took to execute, from start to finish, in Length of time unit. | string | no |  | Length of time |  | 10
+length_of_time_unit | The unit in which Length of time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | Should be one of: microsecond, second, minute, hour, day, week, month, or year.
+process_type | The type of process. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | sample enrichment
+deviation_from_protocol | Any deviation from the protocol provided. | string | no |  | Deviation from protocol |  | 
+insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment |  | 
 
 ## project
 _A project contains information about the overall project._
