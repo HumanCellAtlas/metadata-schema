@@ -98,8 +98,6 @@
             "description": "The percent a plate surface is covered by cells.",
             "type": "number",
             "example": 60,
-            "maximum": 100,
-            "minimum": 0,
             "user_friendly": "Percent confluency"
         },
         "cell_type": {

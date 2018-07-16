@@ -64,9 +64,8 @@
         },
         "organoid_age": {
             "description": "Age of the organoid in Organoid age unit. Measured from when cell aggregates started differentiating to desired organoid model.",
-            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "type": "string",
-            "example": "55",
+            "type": "number",
+            "example": 55,
             "user_friendly": "Organoid age"
         },
         "organoid_age_unit": {
@@ -129,8 +128,6 @@
             "description": "Percent oxygen level organoid was stored in prior to sequencing.",
             "type": "number",
             "example": 75,
-            "maximum": 100,
-            "minimum": 0,
             "user_friendly": "Organoid stored oxygen level"
         }
     }
