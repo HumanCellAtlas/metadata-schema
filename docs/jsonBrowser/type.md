@@ -194,7 +194,7 @@ deviation_from_protocol | Any deviation from the protocol provided. | string | n
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment |  | 
 
 ## project
-_A project contains information about the overall project._
+_A project entity contains information about the overall project._
 
 Location: type/project/project.json
 
@@ -203,14 +203,14 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 project_core | Core project-level information. | object | no | [See core  project_core](core.md/#project_core) |  |  | 
-contributors | List of people contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) |  |  | List of authors for a publication resulting from this project.
+contributors | List of people contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
 supplementary_files | Project-level supplementary files. | array | no |  | Project supplementary files |  | For example, experimental documents, photos, etc. Please list the file names, separated by double pipes. You will be asked to upload these files separately.
-publications | A list of publications resulting from this project. | array | no | [See module  publication](module.md/#publication) |  |  | 
-insdc_project | An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI. | string | no |  | INSDC project accession |  | Must start with DRP, ERP, or SRP.
-geo_series | GEO accession number, if data has already been submitted to NCBI GEO. | string | no |  | GEO series accession |  | Must start with GSE.
-array_express_investigation | EBI ArrayExpress accession number, if data has already been submitted to ArrayExpress. | string | no |  | ArrayExpress accession |  | Must start with E-.
-insdc_study | An INSDC (International Nucleotide Sequence Database Collaboration) study accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI. | string | no |  | INSDC study accession |  | Must start with PRJE, PRJN, or PRJD.
-funders | A list of funders supporting this project. | array | no | [See module  funder](module.md/#funder) | Project funders |  | 
+publications | A list of publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
+insdc_project | An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if project has been submitted. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRP, SRP, or ERP. | string | no |  | INSDC project accession |  | SRP000000
+geo_series | GEO accession number, if data has been submitted. Accession must start with GSE. | string | no |  | GEO series accession |  | GSE00000
+array_express_investigation | EBI ArrayExpress accession number, if data has been submitted. | string | no |  | ArrayExpress accession |  | E-AAAA-00
+insdc_study | An INSDC (International Nucleotide Sequence Database Collaboration) study accession if study has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD. | string | no |  | INSDC study accession |  | PRJNA000000
+funders | A list of funding source(s) supporting the project. | array | no | [See module  funder](module.md/#funder) | Project funding source(s) |  | 
 
 ## protocol
 _Information about the protocol_
