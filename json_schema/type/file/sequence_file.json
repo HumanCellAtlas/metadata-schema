@@ -40,9 +40,9 @@
             "$ref": "core/file/file_core.json"
         },
         "read_index": {
-            "description": "Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read. If read file represents a single-end, non-indexed library, indicate that here.",
+            "description": "Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read or represents a single-end, non-indexed library.",
             "type": "string",
-            "example": "read1",
+            "example": "Should be one of: read1, read2, index1, index2, or 'single-end, non-indexed'",
             "enum": [
                 "read1",
                 "read2",
@@ -65,13 +65,14 @@
             "user_friendly": "Read length"
         },
         "insdc_run": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Accession must start with DRR, ERR, or SRR.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRR, SRR, or ERR.",
             "type": "array",
             "items": {
                 "pattern": "^[D|E|S]RR[0-9]+$",
                 "type": "string"
             },
-            "user_friendly": "INSDC run"
+            "user_friendly": "INSDC run",
+            "example": "SRR0000000"
         }
     }
 }

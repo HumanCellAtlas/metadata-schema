@@ -20,8 +20,8 @@ biomaterial_description | A general description of the biomaterial. | string | n
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array | yes |  | NCBI taxon ID |  | 9606
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | 
-biosd_biomaterial | A DDBJ, NCBI, or EMBL-EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME. | string | no |  | BioSample ID |  | SAMN00000000
-insdc_biomaterial | An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accessions must start with DRS, SRS, or ERS. | string | no |  | INSDC ID |  | SRS0000000
+biosd_biomaterial | A DDBJ, NCBI, or EMBL-EBI BioSample ID. Accession must start with SAMD, SAMN, or SAME. | string | no |  | BioSample ID |  | SAMN00000000
+insdc_biomaterial | An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRS, SRS, or ERS. | string | no |  | INSDC ID |  | SRS0000000
 
 ## file_core<a name='file_core'></a>
 _A file entity contains information about a file produced from any process._
