@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v6.1.0] - 2018-07-16
+### Added
+Added new optional field `corresponding_contributor` to contact schema. Fixes #409.
+
+### [type/project/project.json - v8.2.0] - 2018-07-16
+### Added
+Added new optional field `corresponding_contributor` to contact schema. Fixes #409.
+
 ### [type/protocol/imaging/imaging_protocol.json - v7.2.0] - 2018-07-16
 ### Added
 Added optional provenance field

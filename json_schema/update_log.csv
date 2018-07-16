@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/project/contact,minor,"Added new optional field `corresponding_contributor` to contact schema. Fixes #409.",,
-
