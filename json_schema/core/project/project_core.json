@@ -3,7 +3,7 @@
     "description": "A project contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-	    "project_shortname",
+        "project_short_name",
         "project_title",
         "project_description"
     ],
@@ -21,22 +21,22 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "project_shortname": {
-            "description": "A unique label for the project.",
+        "project_short_name": {
+            "description": "A short name for the project.",
             "type": "string",
-            "example": "my_project",
+            "example": "For example, a short label by which you refer to the project. This will be used for quick orientation and reference.",
             "user_friendly": "Project label"
         },
         "project_title": {
-            "description": "A summary of the project in one sentence. Approximately 30 words.",
+            "description": "An official title for your project.",
             "type": "string",
-            "example": "A publication title.",
+            "example": "For example, the title of a grant proposal or a publication, approximately 30 words. This is how the project title will appear on the Human Cell Atlas data portal.",
             "user_friendly": "Project title"
         },
         "project_description": {
-            "description": "A longer description of the project which can include research goals and experimental approach. Approximately 300 words.",
+            "description": "A longer description of the project which includes research goals and experimental approach.",
             "type": "string",
-            "example": "An abstract from a publication.",
+            "example": "For example, an abstract from a grant application or publication. Approximately 300 words.",
             "user_friendly": "Project description"
         }
     }

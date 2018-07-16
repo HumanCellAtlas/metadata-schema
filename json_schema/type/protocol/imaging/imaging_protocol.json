@@ -29,6 +29,11 @@
                 "protocol"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "protocol_core" : {
 	        "description": "Core protocol-level information.",
             "type": "object",
