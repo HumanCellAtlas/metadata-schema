@@ -59,7 +59,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
 1. **example:** Directions for how to enter a valid value in the metadata field and/or an example valid value. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
-    Examples:
+    Example:
     
         "project_role": {
             "description": "Primary role of the individual in the project.",
@@ -68,22 +68,22 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    Sometimes including an *example* value is not necessary, including:
-    
-    - When a field imports a core or module schema (*e.g.* `donor_organism.medical_history`) because the core and module schema fields will have their own examples
-    - When including an example for the field could bias data contributors (*e.g.* `donor_organism.biomaterial_id`) 
-
-    Examples can be included for fields that are governed by an ontology, but the example should be the ontology term (text) not the ontology curie.
+    An *example* can be used for fields that are governed by an ontology, but the *example* should be the ontology term (text) not the ontology curie.
     
     Example:
     
         "organ": {
             "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
             "type": "object",
-            "example": "Blood",
+            "example": "blood",
             "$ref": "module/ontology/organ_ontology.json",
             ...
         }
+
+    Sometimes including an *example* value is not necessary, including:
+    
+    - When a field imports a core or module schema (*e.g.* `donor_organism.medical_history`) because the core and module schema fields will have their own examples
+    - When including an example for the field could bias data contributors (*e.g.* `donor_organism.biomaterial_id`) 
 
 1. **user-friendly:** A user-facing, readable term/phrase of what the metadata field is. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
