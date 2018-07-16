@@ -38,8 +38,8 @@ The following attributes are required for each metadata field in an HCA metadata
 
     Example:
 
-        "email": {
-            "description": "Email address for the individual.",
+        "project_role": {
+            "description": "Primary role of the individual in the project.",
             ...
         }
 
@@ -49,8 +49,8 @@ The following attributes are required for each metadata field in an HCA metadata
 
     Example:
     
-        "email": {
-            "description": "Email address for the individual.",
+        "project_role": {
+            "description": "Primary role of the individual in the project.",
             "type": "string",
             ...
         }
@@ -61,12 +61,6 @@ The following attributes are required for each metadata field in an HCA metadata
 
     Examples:
     
-        "email": {
-            "description": "Email address for the individual.",
-            "type": "string",
-            "example": "Enter a valid email address.",
-            ...
-        },
         "project_role": {
             "description": "Primary role of the individual in the project.",
             "type": "string",
@@ -83,11 +77,11 @@ The following attributes are required for each metadata field in an HCA metadata
 
     Example:
     
-        "email": {
-            "description": "Email address for the individual.",
+        "project_role": {
+            "description": "Primary role of the individual in the project.",
             "type": "string",
-            "example": "Enter a valid email address.",
-            "user_friendly": "Email address",
+            "example": "principal investigator",
+            "user_friendly": "Project role",
             ...
         }
 
@@ -129,7 +123,7 @@ The following attributes are required for each metadata field in an HCA metadata
         "email": {
             "description": "Email address for the individual.",
             "type": "string",
-            "example": "Enter a valid email address.",
+            "example": "example_person@email.com",
             "user_friendly": "Email address",
             "format": "email",
             ...
@@ -159,6 +153,7 @@ The following attributes are required for each metadata field in an HCA metadata
             "description": "Primary role of the individual in the project.",
             "type": "string",
             "example": "principal investigator",
+            "user_friendly": "Project role",
             "enum": [
                 "principal investigator",
                 "co investigator",
@@ -171,7 +166,6 @@ The following attributes are required for each metadata field in an HCA metadata
                 "Human Cell Atlas wrangler",
                 "other"
             ],
-            "user_friendly": "Project role",
             ...
         }
 
