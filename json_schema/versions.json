@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-07-17T13:37:50Z",
+    "last_update_date": "2018-07-17T13:46:06Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -20,16 +20,16 @@
         },
         "module": {
             "biomaterial": {
-                "cell_morphology": "6.1.0",
-                "death": "5.3.0",
+                "cell_morphology": "6.1.1",
+                "death": "5.3.1",
                 "familial_relationship": "5.2.1",
-                "growth_conditions": "6.1.1",
-                "human_specific": "1.0.0",
-                "medical_history": "5.2.1",
-                "mouse_specific": "1.0.0",
-                "preservation_storage": "5.3.0",
-                "state_of_specimen": "5.2.2",
-                "timecourse": "1.1.0"
+                "growth_conditions": "6.1.2",
+                "human_specific": "1.0.1",
+                "medical_history": "5.2.2",
+                "mouse_specific": "1.0.1",
+                "preservation_storage": "5.3.1",
+                "state_of_specimen": "5.2.3",
+                "timecourse": "1.1.1"
             },
             "ontology": {
                 "biological_macromolecule_ontology": "5.3.0",
@@ -54,63 +54,63 @@
                 "time_unit_ontology": "5.3.0"
             },
             "process": {
-                "purchased_reagents": "6.0.0",
+                "purchased_reagents": "6.0.1",
                 "sequencing": {
                     "10x": "1.0.0",
-                    "barcode": "5.2.1",
-                    "insdc_experiment": "1.1.1",
-                    "plate_based_sequencing": "1.0.0"
+                    "barcode": "5.2.2",
+                    "insdc_experiment": "1.1.2",
+                    "plate_based_sequencing": "1.0.1"
                 }
             },
             "project": {
-                "contact": "6.1.0",
-                "funder": "1.0.0",
-                "publication": "5.2.1"
+                "contact": "6.1.1",
+                "funder": "1.0.1",
+                "publication": "5.2.2"
             }
         },
         "system": {
             "links": "1.1.1",
-            "provenance": "1.0.0"
+            "provenance": "1.0.1"
         },
         "type": {
             "biomaterial": {
-                "cell_line": "8.3.2",
-                "cell_suspension": "8.3.2",
-                "donor_organism": "8.2.2",
-                "organoid": "8.3.2",
-                "specimen_from_organism": "6.2.2"
+                "cell_line": "8.3.6",
+                "cell_suspension": "8.3.6",
+                "donor_organism": "8.2.7",
+                "organoid": "8.3.3",
+                "specimen_from_organism": "6.2.6"
             },
             "file": {
-                "analysis_file": "5.3.1",
-                "reference_file": "2.2.2",
-                "sequence_file": "6.3.2",
+                "analysis_file": "5.3.2",
+                "reference_file": "2.2.3",
+                "sequence_file": "6.3.3",
                 "supplementary_file": "1.1.1"
             },
             "process": {
-                "process": "4.2.2"
+                "process": "4.2.4"
             },
             "project": {
-                "project": "8.2.2"
+                "project": "8.2.6"
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "7.2.3"
+                    "analysis_protocol": "7.2.4"
                 },
                 "biomaterial_collection": {
-                    "aggregate_generation_protocol": "1.1.2",
-                    "collection_protocol": "8.2.2",
-                    "differentiation_protocol": "1.2.2",
-                    "dissociation_protocol": "4.2.2",
-                    "enrichment_protocol": "2.2.2",
-                    "ipsc_induction_protocol": "1.2.2"
+                    "aggregate_generation_protocol": "1.1.3",
+                    "collection_protocol": "8.2.4",
+                    "differentiation_protocol": "1.2.4",
+                    "dissociation_protocol": "4.2.4",
+                    "enrichment_protocol": "2.2.3",
+                    "ipsc_induction_protocol": "1.2.4"
                 },
                 "imaging": {
-                    "imaging_protocol": "7.2.1"
+                    "imaging_protocol": "7.2.2"
                 },
-                "protocol": "6.3.2",
+                "protocol": "6.3.3",
                 "sequencing": {
-                    "library_preparation_protocol": "4.2.2",
-                    "sequencing_protocol": "8.1.0"
+                    "library_preparation_protocol": "4.2.5",
+                    "sequencing_protocol": "8.1.1"
                 }
             }
         }
