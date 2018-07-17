@@ -56,7 +56,7 @@
             "process": {
                 "purchased_reagents": "6.0.0",
                 "sequencing": {
-		    "10x": "v1.0.0",
+                    "10x": "0.0.0",
                     "barcode": "5.2.1",
                     "insdc_experiment": "1.1.1",
                     "plate_based_sequencing": "1.0.0"

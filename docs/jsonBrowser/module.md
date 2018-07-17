@@ -366,6 +366,18 @@ lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batc
 expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
 kit_titer | Appropriate titer and volume recommendations found in each kit's Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7 
 
+## 10x<a name='10x'></a>
+_This module describes information specific to 10x experiments._
+
+Location: module/process/sequencing/10x.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+fastq_method | Method used for the generation of fastq files from bcl files. | string | no |  | Fastq creation method |  | Cellranger mkfastq
+fastq_method_version | Version of the program used for fastq generation. | string | no |  | Fastq creation method version |  | Cellranger 2.1.1
+pooled_channels | The number of channels pooled within a sequencing lane. | number | no |  | Pooled channels |  | 4
+drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | yes
+
 ## barcode<a name='barcode'></a>
 _This module describes barcodes used in a library preparation process._
 
