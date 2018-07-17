@@ -258,7 +258,7 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
 aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
 
-## biomaterial_protocol
+## collection_protocol
 _Information about the biomaterial collection protocol._
 
 Location: type/protocol/biomaterial_collection/collection_protocol.json

@@ -117,7 +117,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 aggregate_formation_method | Method used to form cell aggreagtes. | string |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
-### biomaterial_protocol
+### collection_protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
@@ -195,8 +195,8 @@ _There are no required properties in schema state_of_specimen_
 ### timecourse<a name='timecourse'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-timecourse_value | The numerical value associated with a time interval used in the experiment. | string |  |  |  | 2
-timecourse_unit | The unit in which the timecourse value is expressed. | object | [See module  time_unit_ontology](module.md/#time_unit_ontology) |  |  | day
+timecourse_value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  |  |  | 2
+timecourse_unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md/#time_unit_ontology) |  |  | day
 ### biological_macromolecule_ontology<a name='biological_macromolecule_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -282,13 +282,13 @@ _There are no required properties in schema purchased_reagents_
 ### barcode<a name='barcode'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-barcode_read | The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | 
-barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer |  | Barcode offset |  | 
-barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 
+barcode_read | The read that the barcode is found in. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer |  | Barcode offset |  | 0
+barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 28
 ### insdc_experiment<a name='insdc_experiment'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string |  | INSDC experiment |  | 
+insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession if experiment has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI.  Accession must start with DRX, ERX, or SRX. | string |  | INSDC experiment |  | SRX0000000
 ### plate_based_sequencing<a name='plate_based_sequencing'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -296,12 +296,12 @@ plate_id | An ID for the plate that the well is located on. | string |  | Well p
 ### contact<a name='contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-contact_name | Name of any individual who has contributed to this project. | string |  | Contact name |  | Format: 'first, middle, last name', middle can be initial or left blank. Example: John,D,Smith.
-institution | Name of primary institute where the individual works. | string |  | Institute |  | 
+contact_name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe. Format: first name, middle name or initial, last name.
+institution | Name of primary institute where the individual works. | string |  | Institute |  | EMBL-EBI
 ### funder<a name='funder'></a>
 _There are no required properties in schema funder_
 ### publication<a name='publication'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-authors | A list of authors associated with the publication in 'surname initials' format. | array |  | Authors |  | Smith JD
-publication_title | The full title of the publication. | string |  | Publication title |  | 
+authors | A list of authors associated with the publication in 'surname initials' format. | array |  | Authors |  | Doe JD
+publication_title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body

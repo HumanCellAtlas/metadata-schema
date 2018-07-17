@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about a journal article, book, web page, or other external available documentation on a project.",
+    "description": "Information about a journal article, book, web page, or other external available documentation for a project.",
     "additionalProperties": false,
     "required": [
         "authors",
@@ -23,28 +23,29 @@
         "authors": {
             "description": "A list of authors associated with the publication in 'surname initials' format.",
             "type": "array",
-            "example":  "Smith JD",
+            "example":  "Doe JD",
             "items": {
                 "type": "string"
             }, 
             "user_friendly": "Authors"
         },
         "publication_title": {
-            "description": "The full title of the publication.",
+            "description": "The title of the publication.",
             "type": "string",
-            "user_friendly": "Publication title"
+            "user_friendly": "Publication title",
+            "example": "Study of single cells in the human body"
         },
         "doi": {
-            "description": "The publication digital object identifier.",
+            "description": "The publication digital object identifier (doi).",
             "type": "string",
             "example": "10.1016/j.cell.2016.07.054",
-            "user_friendly": "DOI"
+            "user_friendly": "Publication DOI"
         }, 
         "pmid": {
             "description": "The PubMed ID of the publication.",
             "type": "integer",
             "example": "27565351",
-            "user_friendly": "PMID"
+            "user_friendly": "Publication PMID"
         },
         "publication_url": {
             "description": "A URL, preferably not behind a paywall, for the publication.",

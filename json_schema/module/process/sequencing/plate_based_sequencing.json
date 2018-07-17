@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "This module describes information specific to plate-based sequencing experiments.",
+    "description": "Information specific to plate-based sequencing experiments.",
     "additionalProperties": false,
     "required": [
         "plate_id"
@@ -26,7 +26,7 @@
             "example": "2217"
         },
         "well_id": {
-            "description": "An ID or name for the well. Should be unique for the plate",
+            "description": "An ID or name for the well. Should be unique for the plate.",
             "type": "string",
             "user_friendly": "Well ID",
             "example": "A1"
@@ -41,7 +41,7 @@
                 "low quality cell"
             ],
             "user_friendly": "Cell quality",
-            "example": "Must be one of: 'OK', 'control, 2-cell well', 'control, empty well', 'low quality cell'."
+            "example": "Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'."
         }
     }
 }
