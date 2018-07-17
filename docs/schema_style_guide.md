@@ -114,27 +114,16 @@ The following attributes are required for each metadata schema in the HCA metada
             }
         }
 
-The following `id` attribute is **not** included in the JSON schemas in GitHub, but rather is inserted at the time a schema is released to the HCA metadata standard. 
+**NB:** The `id` attribute is **not** included in JSON schemas in GitHub, but rather is inserted automatically at the time schemas are published to the HCA metadata standard on `schema.humancellatlas.org`.
 
-    Example:
-    
-        {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "id": "http://schema.humancellatlas.org/type/biomaterial/8.3.3/organoid",
-            "description": "Information about an organoid biomaterial.",
-            "additionalProperties": false,
-            "required": [
-                "describedBy",
-                "schema_type",
-                "biomaterial_core",
-                "model_for_organ"
-            ],
-            "title": "organoid",
-            "type": "object",
-            "properties": {
-                ...
-            }
-        }
+Example:
+
+    {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "id": "http://schema.humancellatlas.org/type/biomaterial/8.3.3/organoid",
+        "description": "Information about an organoid biomaterial.",
+        ...
+    }
 
 ## Field formatting
 
