@@ -376,7 +376,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 fastq_method | Method used for the generation of fastq files from bcl files. | string | no |  | Fastq creation method |  | Cellranger mkfastq
 fastq_method_version | Version of the program used for fastq generation. | string | no |  | Fastq creation method version |  | Cellranger 2.1.1
 pooled_channels | The number of channels pooled within a sequencing lane. | number | no |  | Pooled channels |  | 4
-drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | yes
+drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | Should be one of: yes, or no.
 
 ## barcode<a name='barcode'></a>
 _This module describes barcodes used in a library preparation process._

@@ -37,7 +37,7 @@
 		"drop_uniformity": {
 			"description": "Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run.",
 			"type": "boolean",
-			"example": "yes",
+			"example": "Should be one of: yes, or no.",
 			"user_friendly": "Drop uniformity"
 		}
     }
