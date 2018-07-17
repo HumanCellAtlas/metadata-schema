@@ -7,6 +7,250 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/cell_morphology.json - v6.1.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/death.json - v5.3.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/growth_conditions.json - v6.1.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/human_specific.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/medical_history.json - v5.2.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/mouse_specific.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/preservation_storage.json - v5.3.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/state_of_specimen.json - v5.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/timecourse.json - v1.1.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/sequencing/barcode.json - v5.2.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/sequencing/insdc_experiment.json - v1.1.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/purchased_reagents.json - v6.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/project/contact.json - v6.1.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/project/funder.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/project/publication.json - v5.2.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [system/provenance.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/cell_suspension.json - v8.3.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.6] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/process/process.json - v4.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.1] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/protocol.json - v6.3.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/donor_organism.json - v8.2.7] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/project/project.json - v8.2.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/organoid.json - v8.3.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/process/process.json - v4.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/imaging/imaging_protocol.json - v7.2.2] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.5] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/file/reference_file.json - v2.2.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/file/analysis_file.json - v5.3.2] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/cell_suspension.json - v8.3.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/file/sequence_file.json - v6.3.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
 ### [module/process/sequencing/10x.json - v1.0.0] - 2018-07-17
 ### Added
 Added module with 10x-specific fields.

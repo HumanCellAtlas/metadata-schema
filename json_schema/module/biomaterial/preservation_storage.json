@@ -17,7 +17,7 @@
             "example": "4.6.1"
         },
         "storage_method": {
-            "description": "The method by which a biomaterial was stored.",
+            "description": "The method by which a biomaterial was stored after preservation or before another protocol was used.",
             "type": "string",
             "enum": [
                 "ambient temperature",
@@ -31,7 +31,7 @@
                 "RNAlater, frozen",
                 "TRIzol, frozen"
             ],
-            "comment": "Refers to how a biomaterial was stored after preservation or before another protocol was used.",
+            "example": "frozen, liquid nitrogen",
             "user_friendly": "Storage method"
         },
         "storage_time": {
@@ -44,11 +44,11 @@
             "description": "The unit in which Storage time is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "example": "days",
+            "example": "day",
             "user_friendly": "Storage time unit"
         },
         "preservation_method": {
-            "description": "The method by which a biomaterial was preserved or not.",
+            "description": "The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. Enter 'fresh' if not preserved.",
             "type": "string",
             "enum": [
                 "cryopreservation in liquid nitrogen (dead tissue)",
@@ -60,7 +60,7 @@
                 "formalin fixed and paraffin embedded",
                 "fresh"
             ],
-            "comment": "Refers to the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration of a biomaterial.",
+            "example": "cryopreservation in liquid nitrogen (dead tissue)",
             "user_friendly": "Preservation method"
         }
     }
