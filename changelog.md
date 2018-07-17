@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [core/biomaterial/biomaterial_core.json - v7.0.1] - 2018-07-16
 ### Changed
 Changed descriptions, user-friendly names, and examples.
@@ -338,8 +340,6 @@ Changed `project_shortname` to `project_short_name`. Fixes #378.
 ### [type/project/project.json - v7.0.0] - 2018-07-12
 ### Changed
 Changed `project_shortname` to `project_short_name`. Fixes #378.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/project/contact.json - v5.3.0] - 2018-07-12
 ### Added
