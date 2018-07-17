@@ -1,18 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information added or generated at time of ingest." ,
+    "description": "Provenance information added or generated at time of ingest." ,
     "additionalProperties": false,
     "required": [
         "document_id",
-        "submissionDate"
+        "submission_date"
     ],
-    "title": "ingest",
+    "title": "provenance",
 	"type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/bundle/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/ingest_audit"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/provenance"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -20,7 +20,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "submissionDate": {
+        "submission_date": {
             "description": "When project was first submitted to database.", 
             "type": "string",
             "format": "date-time"
@@ -29,7 +29,7 @@
             "description": "ID of contact who first submitted project", 
             "type": "string"
         },
-        "updateDate": {
+        "update_date": {
             "description": "When project was last updated", 
             "type": "string",
             "format": "date-time"

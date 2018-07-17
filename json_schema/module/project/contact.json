@@ -4,7 +4,7 @@
     "additionalProperties": false,
     "required": [
         "contact_name",
-        "email"
+        "institution"
     ],
     "title": "contact",
     "type": "object",
@@ -59,6 +59,12 @@
             "description": "Country where the individual works.",
             "type": "string",
             "user_friendly": "Country"
+        },
+        "corresponding_contributor": {
+            "description": "Whether the individual is a corresponding contributor for this project.",
+            "type": "boolean",
+            "user_friendly": "Corresponding contributor?",
+            "example": "Must be either yes or no."
         },
         "project_role": {
             "description": "Primary role of the person in the project.",

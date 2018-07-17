@@ -1,32 +1,21 @@
 {
-    "last_update_date": "2018-07-13T10:57:24Z",
+    "last_update_date": "2018-07-16T17:14:20Z",
     "version_numbers": {
-        "bundle": {
-            "biomaterial": "11.2.0",
-            "file": "2.1.1",
-            "ingest_audit": "5.2.1",
-            "links": "1.1.1",
-            "process": "8.1.0",
-            "project": "7.0.0",
-            "protocol": "10.3.0",
-            "reference": "2.1.0",
-            "submission": "5.2.1"
-        },
         "core": {
             "biomaterial": {
-                "biomaterial_core": "7.0.0"
+                "biomaterial_core": "7.0.1"
             },
             "file": {
-                "file_core": "5.2.1"
+                "file_core": "5.2.2"
             },
             "process": {
-                "process_core": "7.0.0"
+                "process_core": "7.0.1"
             },
             "project": {
-                "project_core": "7.0.0"
+                "project_core": "7.0.1"
             },
             "protocol": {
-                "protocol_core": "5.2.1"
+                "protocol_core": "5.2.2"
             }
         },
         "module": {
@@ -69,54 +58,58 @@
                 "sequencing": {
                     "barcode": "5.2.1",
                     "insdc_experiment": "1.1.1",
-                    "smartseq2": "5.2.1"
+                    "plate_based_sequencing": "1.0.0"
                 }
             },
             "project": {
-                "contact": "5.3.0",
+                "contact": "6.1.0",
                 "funder": "1.0.0",
                 "publication": "5.2.1"
             }
         },
+        "system": {
+            "links": "1.1.1",
+            "provenance": "1.0.0"
+        },
         "type": {
             "biomaterial": {
-                "cell_line": "8.2.0",
-                "cell_suspension": "8.1.0",
-                "donor_organism": "8.1.0",
-                "organoid": "8.2.0",
-                "specimen_from_organism": "6.1.0"
+                "cell_line": "8.3.2",
+                "cell_suspension": "8.3.2",
+                "donor_organism": "8.2.2",
+                "organoid": "8.3.2",
+                "specimen_from_organism": "6.2.2"
             },
             "file": {
-                "analysis_file": "5.2.1",
-                "supplemental_file": "1.0.0",
-                "reference_file": "2.1.0",
-                "sequence_file": "6.1.1"
+                "analysis_file": "5.3.1",
+                "reference_file": "2.2.2",
+                "sequence_file": "6.3.2",
+                "supplementary_file": "1.1.1"
             },
             "process": {
-                "process": "4.1.0"
+                "process": "4.2.2"
             },
             "project": {
-                "project": "7.0.0"
+                "project": "8.2.2"
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "7.1.0"
+                    "analysis_protocol": "7.2.3"
                 },
                 "biomaterial_collection": {
-                    "aggregate_generation_protocol": "1.0.0",
-                    "collection_protocol": "8.1.0",
-                    "differentiation_protocol": "1.1.0",
-                    "dissociation_protocol": "4.1.0",
-                    "enrichment_protocol": "2.1.0",
-                    "ipsc_induction_protocol": "1.0.0"
+                    "aggregate_generation_protocol": "1.1.2",
+                    "collection_protocol": "8.2.2",
+                    "differentiation_protocol": "1.2.2",
+                    "dissociation_protocol": "4.2.2",
+                    "enrichment_protocol": "2.2.2",
+                    "ipsc_induction_protocol": "1.2.2"
                 },
                 "imaging": {
-                    "imaging_protocol": "7.1.0"
+                    "imaging_protocol": "7.2.1"
                 },
-                "protocol": "6.2.0",
+                "protocol": "6.3.2",
                 "sequencing": {
-                    "library_preparation_protocol": "4.1.0",
-                    "sequencing_protocol": "7.1.0"
+                    "library_preparation_protocol": "4.2.2",
+                    "sequencing_protocol": "7.2.2"
                 }
             }
         }

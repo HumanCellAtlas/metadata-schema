@@ -387,18 +387,16 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX. | string | yes |  | INSDC experiment |  | 
 
-## smartseq2<a name='smartseq2'></a>
-_This module describes information specific to SmartSeq2 experiments._
+## plate_based_sequencing<a name='plate_based_sequencing'></a>
+_This module describes information specific to plate-based sequencing experiments._
 
-Location: module/process/sequencing/smartseq2.json
+Location: module/process/sequencing/plate_based_sequencing.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-plate_id | An ID for the plate that the well is located on. | string | no |  | Well plate ID |  | 
-well_name | A name for the well. Should be unique for the plate | string | no |  | Well name |  | 
-well_row | Well row in plate. | string | no |  | Well row |  | 
-well_column | Well column in plate. | string | no |  | Well column |  | 
-cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | 
+plate_id | An ID for the plate that the well is located on. | string | yes |  | Well plate ID |  | 2217
+well_id | An ID or name for the well. Should be unique for the plate | string | no |  | Well ID |  | A1
+cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | Must be one of: 'OK', 'control, 2-cell well', 'control, empty well', 'low quality cell'.
 
 ## contact<a name='contact'></a>
 _Information about a person who submitted or contributed to a project._
@@ -408,12 +406,13 @@ Location: module/project/contact.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 contact_name | Name of any individual who has contributed to this project. | string | yes |  | Contact name |  | Format: 'first, middle, last name', middle can be initial or left blank. Example: John,D,Smith.
-email | Email address for the individual. | string | yes |  | Email address |  | Enter a valid email address.
+email | Email address for the individual. | string | no |  | Email address |  | Enter a valid email address.
 phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | Enter a valid phone number, including country code.
-institution | Name of primary institute where the individual works. | string | no |  | Institute |  | 
+institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | 
 laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | 
 address | Street address where the individual works. | string | no |  | Address |  | Include street name and number, city, country division, postal code.
 country | Country where the individual works. | string | no |  | Country |  | 
+corresponding_contributor | Whether the individual is a corresponding contributor for this project. | boolean | no |  | Corresponding contributor? |  | Must be either yes or no.
 project_role | Primary role of the person in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator
 orcid_id | The contacts ORCID ID linked to their previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
 

@@ -31,6 +31,11 @@
                 "protocol"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "protocol_core" : {
             "description": "Core protocol-level information.",
             "type": "object",
@@ -46,20 +51,22 @@
         "local_machine_name": {
             "description": "Local name for the particular machine on which the biomaterial was sequenced.",
             "type": "string",
-            "user_friendly": "Local machine name"
+            "user_friendly": "Local machine name",
+            "example": "Machine1"
         },
         "paired_ends": {
-            "description": "Was a paired-end sequencing strategy used? Must be either yes or no.",
+            "description": "Was a paired-end sequencing strategy used?",
             "type": "boolean",
-            "example": "yes",
+            "example": "Should be one of: yes, no.",
             "comment": "If 10x, then put no.",
             "user_friendly": "Paired ends?"
         },
         "sequencing_approach": {
-            "description": "The general approach for sequencing. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000070.",
+            "description": "The general approach for sequencing.",
             "type": "object",
             "$ref": "module/ontology/sequencing_ontology.json",
-            "user_friendly": "Protocol type"
+            "user_friendly": "Protocol type",
+            "example": "full length single cell RNA sequencing"
         }
     }
 }
