@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/process/sequencing/10x.json - v1.0.0] - 2018-07-17
+### Added
+Added module with 10x-specific fields.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.0] - 2018-07-17
+### Added
+Added reference to optional 10x module.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.0.0] - 2018-07-17
+### Added
+Added module with 10x-specific fields.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [core/biomaterial/biomaterial_core.json - v7.0.1] - 2018-07-16

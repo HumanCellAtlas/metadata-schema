@@ -396,4 +396,5 @@ instrument_manufacturer_model | The manufacturer and model of the sequencer used
 local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | Machine1
 paired_ends | Was a paired-end sequencing strategy used? | boolean | yes |  | Paired ends? |  | Should be one of: yes, no.
 sequencing_approach | The general approach for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | full length single cell RNA sequencing
+10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 
 

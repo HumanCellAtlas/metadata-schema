@@ -279,6 +279,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 text | The name of a time unit being used. | string |  |  |  | 
 ### purchased_reagents<a name='purchased_reagents'></a>
 _There are no required properties in schema purchased_reagents_
+### 10x<a name='10x'></a>
+_There are no required properties in schema 10x_
 ### barcode<a name='barcode'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
