@@ -317,27 +317,27 @@ The following attributes are required for each metadata field in an HCA metadata
 
     Example:
 
-        biomaterial_id
+    `biomaterial_id`
 
 1. Short, meaningful field names should be chosen over longer, vaguer field names. 
 
+    Examples:
+    
+    `biomaterial_id` is preferred over `id`
+    
+    `paired_ends` is preferred over `does_sequencing_use_paired_ends`
+
+1. The same field name should not appear within the same or across multiple schemas. If similar field names are needed, supplement the field names with context to differentiate them.
+
     Example:
     
-        
+    `umi_barcode` and `cell_barcode`
 
-1. The same field name should not appear within the same or across multiple schemas. If similar field names are needed, prepend the field names with context to differentiate them.
-
-    Example:
-    
-        umi_barcode
-        cell_barcode
-
-1. If a number field requires a corresponding unit field, append `_unit` to the number field name for the unit field name.
+1. If a number field requires a corresponding unit field, append `_unit` to the number field name to generate the unit field name.
 
     Example:
 
-        organism_age
-        organism_age_unit
+    `organism_age` and `organism_age_unit`
 
 ### Tone and voice
 
