@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "This module describes barcodes used in a library preparation process.",
+    "description": "Information relating to an INSDC experiment.",
     "additionalProperties": false,
     "required": [
         "insdc_experiment"
@@ -20,10 +20,11 @@
             "example": "4.6.1"
         },
         "insdc_experiment": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. Accession must start with DRX, ERX, or SRX.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession if experiment has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI.  Accession must start with DRX, ERX, or SRX.",
             "pattern": "^[D|E|S]RX[0-9]+$",
             "type": "string",
-            "user_friendly": "INSDC experiment"
+            "user_friendly": "INSDC experiment",
+            "example": "SRX0000000"
         }
 	}
 }

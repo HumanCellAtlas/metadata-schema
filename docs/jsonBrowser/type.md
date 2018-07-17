@@ -258,7 +258,7 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
 aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
 
-## biomaterial_protocol
+## collection_protocol
 _Information about the biomaterial collection protocol._
 
 Location: type/protocol/biomaterial_collection/collection_protocol.json
@@ -396,4 +396,5 @@ instrument_manufacturer_model | The manufacturer and model of the sequencer used
 local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | Machine1
 paired_ends | Was a paired-end sequencing strategy used? | boolean | yes |  | Paired ends? |  | Should be one of: yes, no.
 sequencing_approach | The general approach for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Protocol type |  | full length single cell RNA sequencing
+10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 
 

@@ -8,7 +8,7 @@
         "protocol_core",
         "collection_method"
     ],
-    "title": "biomaterial_protocol",
+    "title": "collection_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
