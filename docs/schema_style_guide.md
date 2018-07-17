@@ -10,7 +10,7 @@
 
 >**DISCLAIMER:** At this time, the HCA Metadata Standard development team is actively working towards adhering to this style and formatting guide. In some cases, the Standard might not yet follow all the guidelines outlined in this document.
 
-This document describes the style and formatting rules followed by the HCA Metadata Standard.
+This document describes the style and formatting rules followed by the HCA Metadata Standard for schemas and fields.
 
 **What is in this document**
 - General style guidelines and formatting for metadata schema and fields
@@ -26,7 +26,95 @@ This document describes the style and formatting rules followed by the HCA Metad
 
 ## Schema formatting
 
-TBD
+The following attributes are required for each metadata schema in the HCA metadata standard. 
+
+1. **$schema:** The JSON draft version being used. **NB:** Migration to draft-07 will occur soon.
+
+    Example:
+    
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            ...
+        }
+
+1. **description:** A clear, concise description of the schema. 
+
+    Example:
+    
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "description": "Information about an organoid biomaterial.",
+            ...
+        }
+
+1. **additionalProperties:** Whether additional fields not in the schema will be allowed. The *additionalProperties* attribute should always be set to `false`. 
+
+    Example:
+    
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "description": "Information about an organoid biomaterial.",
+            "additionalProperties": false,
+            ...
+        }
+
+1. **required:** An array indicating which fields in the schema are required. If no fields are required, omit this attribute.  
+
+    Example:
+    
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "description": "Information about an organoid biomaterial.",
+            "additionalProperties": false,
+            "required": [
+                "describedBy",
+                "schema_type",
+                "biomaterial_core",
+                "model_for_organ"
+            ],
+            ...
+        }
+
+1. **title:** A title for the schema. The *title* is the name of the schema which should be in all lowercase and snake_case.  
+
+    Example:
+    
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "description": "Information about an organoid biomaterial.",
+            "additionalProperties": false,
+            "required": [
+                "describedBy",
+                "schema_type",
+                "biomaterial_core",
+                "model_for_organ"
+            ],
+            "title": "organoid",
+            ...
+        }
+
+1. **type** and **properties:** The *type* of the schema (should always be `object`) followed by the metadata fields (`properties`).  
+
+    Example:
+    
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "description": "Information about an organoid biomaterial.",
+            "additionalProperties": false,
+            "required": [
+                "describedBy",
+                "schema_type",
+                "biomaterial_core",
+                "model_for_organ"
+            ],
+            "title": "organoid",
+            "type": "object",
+            "properties": {
+                ...
+            }
+        }
+
+`$id` field is omitted from JSON schemas on GitHub and is inserted at the time schemas are released. 
 
 ## Field formatting
 
