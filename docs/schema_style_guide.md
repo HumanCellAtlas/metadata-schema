@@ -154,7 +154,7 @@ The following attributes are required for each metadata field in an HCA metadata
         
     Example valid *type* values include: string, number, boolean, array (when a field is an array of values), and object (when a field references another schema). The specification of valid JSON *type* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1). 
 
-1. **user-friendly:** A user-facing, readable term/phrase for the metadata field. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
+1. **user-friendly:** A user-facing, readable term or phrase for the metadata field. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
     
@@ -166,12 +166,6 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    Having *user-friendly* values for metadata fields has many advantages, including: 
-    
-    1. Unlike the programmatic metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
-    1. Changing a *user-friendly* value is considered a patch change to the schema version and is thus easier and simpler to implement than changing a metadata field name (which is a major change to the schema version).
-    1. A *user-friendly* value can be templated to allow for custom displays. For example, concatenation of a schema name to a field name can improve clarity: if the *user-friendly* value of the `biomaterial_id` field is set to "${schema} ID", then `donor_organism.biomaterial_id` will render as "Donor organism ID" while `cell_line.biomaterial_id` will render as "Cell line ID".
-    
     Each *user-friendly* value should be a short term or phrase written in sentence case (*i.e.* only the first word capitalized). Exceptions can be made for acronyms or other special capitalization schemes.
     
     Examples:
@@ -184,6 +178,12 @@ The following attributes are required for each metadata field in an HCA metadata
         
         Programmatic: min_size_selected
         User-friendly: Minimum size selected
+    
+    Having *user-friendly* values for metadata fields has many advantages, including: 
+    
+    1. Unlike the programmatic metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
+    1. Changing a *user-friendly* value is considered a patch change to the schema version and is thus easier and simpler to implement than changing a metadata field name (which is a major change to the schema version).
+    1. A *user-friendly* value can be templated to allow for custom displays. For example, appending a schema name to a *user-friendly* name can improve clarity: if the *user-friendly* value of the `biomaterial_id` field is set to `"${schema} ID"`, then `donor_organism.biomaterial_id` will render as "Donor organism ID" while `cell_line.biomaterial_id` will render as "Cell line ID".
     
 ### Conditional required field attributes
 
