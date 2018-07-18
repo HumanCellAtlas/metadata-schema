@@ -198,7 +198,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    An *example* can be used for fields that are governed by an ontology, but the *example* should be the ontology term (text) not the ontology curie.
+    An *example* value can be supplied for fields that are governed by an ontology, but the value should be the ontology term (text) not the ontology curie.
     
     Example:
     
