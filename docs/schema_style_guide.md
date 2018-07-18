@@ -210,12 +210,12 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    An *example* should not be provided when:
+    An *example* should **not** be provided when:
     
     - A field imports a core or module schema, *e.g.* the `donor_organism.medical_history`, because the fields contained in the core or module schema will have their own examples.
-    - An example for a field could bias data contributors, *e.g.* providing an example ID for a cell line in the `cell_line.biomaterial_id` field. 
+    - An example for a field could bias data contributors, *e.g.* providing an example ID for a biomaterial in the `biomaterial_id` field. 
 
-1. **$ref:** The relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself and should always be used with `"type": "object"`.
+1. **$ref:** The relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself, and it should always be used with `"type": "object"`.
 
     Examples:
 
@@ -232,7 +232,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         },
         "organism_age_unit": {
-            "description": "The unit in which age is expressed.",
+            "description": "The unit in which Organism age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             ...
@@ -325,7 +325,7 @@ The following attributes are required for each metadata field in an HCA metadata
     
     `biomaterial_id` is preferred over `id` as it limits the field context to biomaterials.
     
-    `paired_ends` is preferred over `does_sequencing_use_paired_ends` because it is much shorter but still conveys full context.
+    `paired_ends` is preferred over `does_sequencing_use_paired_ends` because it is shorter but still conveys full context.
 
 1. The same field name should not appear within the same or across multiple schemas. If two fields require the same name, include context to differentiate them.
 
