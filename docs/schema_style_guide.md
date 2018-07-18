@@ -114,7 +114,7 @@ The following attributes are required for each metadata schema in the HCA metada
             }
         }
 
-**NB:** The `id` attribute is **not** included in JSON schemas in GitHub, but rather is inserted automatically at the time schemas are published to the HCA metadata standard on `schema.humancellatlas.org`.
+**NB:** The `id` attribute is **not** included in JSON schemas in GitHub, but rather is inserted automatically at the time schemas are published to the HCA metadata standard on schema.humancellatlas.org.
 
 Example:
 
