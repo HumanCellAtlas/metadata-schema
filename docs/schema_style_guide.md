@@ -154,34 +154,6 @@ The following attributes are required for each metadata field in an HCA metadata
         
     Example valid *type* values include: string, number, boolean, array (when a field is an array of values), and object (when a field references another schema). The specification of valid JSON *type* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1). 
 
-1. **example:** Directions for how to enter a valid value in the metadata field and/or an example valid value. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
-
-    Example:
-    
-        "project_role": {
-            "description": "Primary role of the individual in the project.",
-            "type": "string",
-            "example": "principal investigator",
-            ...
-        }
-
-    An *example* can be used for fields that are governed by an ontology, but the *example* should be the ontology term (text) not the ontology curie.
-    
-    Example:
-    
-        "organ": {
-            "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
-            "type": "object",
-            "example": "blood",
-            "$ref": "module/ontology/organ_ontology.json",
-            ...
-        }
-
-    Sometimes having an *example* is not necessary, including when:
-    
-    - A field imports a core or module schema (*e.g.* `donor_organism.medical_history`) because the core and module schema fields will have their own examples.
-    - An example for a field could bias data contributors (*e.g.* `donor_organism.biomaterial_id`). 
-
 1. **user-friendly:** A user-facing, readable term/phrase for the metadata field. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
@@ -214,6 +186,34 @@ The following attributes are required for each metadata field in an HCA metadata
         User-friendly: Minimum size selected
     
 ### Conditional required field attributes
+
+1. **example:** Directions for how to enter a valid value in the metadata field and/or an example valid value. This attribute is required for all fields except those that reference another schema and those for which providing an example might bias data contributors. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
+
+    Example:
+    
+        "project_role": {
+            "description": "Primary role of the individual in the project.",
+            "type": "string",
+            "example": "principal investigator",
+            ...
+        }
+
+    An *example* can be used for fields that are governed by an ontology, but the *example* should be the ontology term (text) not the ontology curie.
+    
+    Example:
+    
+        "organ": {
+            "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
+            "type": "object",
+            "example": "blood",
+            "$ref": "module/ontology/organ_ontology.json",
+            ...
+        }
+
+    An *example* should not be provided when:
+    
+    - A field imports a core or module schema, *e.g.* the `donor_organism.medical_history`, because the fields contained in the core or module schema will have their own examples.
+    - An example for a field could bias data contributors, *e.g.* providing an example ID for a cell line in the `cell_line.biomaterial_id` field. 
 
 1. **$ref:** The relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself and should always be used with `"type": "object"`.
 
