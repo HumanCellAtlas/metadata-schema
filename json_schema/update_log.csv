@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+type/process/analysis/analysis_process,major,Added schema for analysis_process as required by the analysis team,,
+type/protocol/analysis/analysis_protocol,major,Removed a number of fields from analysis protocol as they are more appropriate in analysis_process,,

@@ -87,7 +87,10 @@
                 "supplementary_file": "1.1.1"
             },
             "process": {
-                "process": "4.2.4"
+                "process": "4.2.4",
+                "analysis": {
+                    "analysis_process": "5.1.0"
+                }
             },
             "project": {
                 "project": "8.2.6"
