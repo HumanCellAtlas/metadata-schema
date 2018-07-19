@@ -184,7 +184,7 @@
                 "no",
                 "unknown"
             ],
-            "user_friendly": "Normothermic regional perfusion",
+            "user_friendly": "Normothermic regional perfusion?",
             "example": "Should be one of: yes, no, or unknown."
         }
     }
