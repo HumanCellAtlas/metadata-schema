@@ -170,7 +170,7 @@
             "example": "60"
         },
         "weight_unit": {
-            "description": "The unit in which weight is expressed.",
+            "description": "The unit in which Weight is expressed.",
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit",
