@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/process/analysis/analysis_process.json - v6.0.0] - 2018-07-19
+### Added
+Added schema for analysis_process as required by the analysis team
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.0] - 2018-07-19
+### Removed
+Removed a number of fields from analysis protocol as they are more appropriate in analysis_process
+
 ### [module/biomaterial/cell_morphology.json - v6.1.1] - 2018-07-17
 ### Changed
 Changed descriptions, user-friendly names, and examples.
