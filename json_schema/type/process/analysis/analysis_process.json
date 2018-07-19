@@ -106,6 +106,11 @@
                 "process"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
@@ -163,6 +168,10 @@
                 "run",
                 "copy-forward"
             ]
+        },
+        "reference_bundle": {
+            "description": "Bundle containing the reference used in running the pipeline.",
+            "type": "string"
         }
     }
 }

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A file entity contains information about a data file produced from any process.",
+    "description": "A file entity contains information about a file produced from any process.",
     "additionalProperties": false,
     "required": [
 	    "file_name",
@@ -21,17 +21,18 @@
             "example": "4.6.1"
         },
         "file_name": {
-            "description": "The filename of the data file.",
+            "description": "The filename of the file.",
             "type": "string",
             "user_friendly": "File name"
         },
         "file_format": {
-            "description": "The format of the data file.",
+            "description": "The format of the file.",
             "type": "string",
-            "user_friendly": "File format"
+            "user_friendly": "File format",
+            "example": "fastq.gz"
         }, 
         "checksum": {
-            "description": "MD5 checksum of the data file.",
+            "description": "MD5 checksum of the file.",
             "type": "string",
             "user_friendly": "Checksum"
 	    }

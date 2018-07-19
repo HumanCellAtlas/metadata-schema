@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid.",
+    "description": "Information on how a pluripotent cell is differentiated to a desired cell type or organoid.",
     "additionalProperties": false,
     "required": [
       "describedBy",
@@ -29,6 +29,11 @@
                 "protocol"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "protocol_core": {
             "description": "Core protocol-level information.",
             "type": "object",
@@ -41,18 +46,18 @@
             "comment": "Consider making this an ontology in the future.",
             "example": "Embryoid Body, Monolayer, Inductive Co-Culture"
         },
-	"differentiation_media":{
-	    "description": "Culture media used to induce a specific differentiation response.",
-	    "type": "string",
-	    "user_friendly": "Differentiation media",
-	    "example": "RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium"
-	},
-	"differentiation_small_molecules":{
-	    "description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
-	    "type": "string",
-	    "user_friendly": "Small molecules",
-	    "example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
-	},
+        "differentiation_media":{
+            "description": "Culture media used to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Differentiation media",
+            "example": "RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium"
+        },
+        "differentiation_small_molecules":{
+            "description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Small molecules",
+            "example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
+        },
         "differentiation_target_cell_yield": {
             "description": "Percent of target cells obtained after directed differentiation of origin cell.",
             "type": "number",

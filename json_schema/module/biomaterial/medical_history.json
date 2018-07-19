@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the medical history of an organism.",
+    "description": "Information about the medical history of a donor.",
     "additionalProperties": false,
     "title": "medical_history",
     "type": "object",
@@ -17,29 +17,33 @@
             "example": "4.6.1"
         },
         "alcohol_history": {
-            "description": "Number of drinks consumed on a typical day.",
+            "description": "Estimated number of drink units consumed per day.",
             "type": "string",
-            "user_friendly": "Alcohol history"
+            "user_friendly": "Alcohol history",
+            "example": "3-6 units/day"
         },
         "medication": {
-           "description": "List of medications the organism was currently taking at time of biomaterial donation.",
-           "type": "string",
-            "user_friendly": "Medications"
+            "description": "List of medications the individual was taking at time of biomaterial collection.",
+            "type": "string",
+            "user_friendly": "Medications",
+            "example": "Naproxen 500mg/day, "
         },
         "nutritional_state": {
-            "description": "Should be one of normal, fasting, or feeding tube removed.",
+            "description": "Nutritional state of individual at time of biomaterial collection.",
             "type": "string",
             "enum": [
                 "normal",
                 "fasting",
                 "feeding tube removed"
             ],
-            "user_friendly": "Nutritional state"
+            "user_friendly": "Nutritional state",
+            "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
         "smoking_history": {
             "description": "Estimated number of cigarettes smoked per day and for how many years.",
             "type": "string",
-            "user_friendly": "Smoking history"
+            "user_friendly": "Smoking history",
+            "example": "Smoker, 20/day for 25 years, stopped 2000"
         },
         "test_results": {
             "description": "Results from any medical tests performed on the individual.",
@@ -47,7 +51,7 @@
             "user_friendly": "Test results"
         },
         "treatment": {
-            "description": "Any treatments the individual has undergone.",
+            "description": "Description of treatments the individual has undergone prior to biomaterial collection.",
             "type": "string",
             "user_friendly": "Treatments"
         }
