@@ -388,16 +388,16 @@ The following conventions should be followed when deciding on a new metadata fie
 
 ### Ontology or enum?
 
-Using an ontology to define valid values for a metadata field is preferred over using a JSON *enum* when...
+Using an ontology to define valid values for a metadata field is preferred over using a JSON *enum* in most cases, provided that an appropriate ontology with good or full coverage is available.
 
 The advantages of using an HCA ontology over an *enum* include:
 
-1. Ontology can adapt to changing needs without requiring the metadata schema to change...
-1. Displaying, filtering, and sorting in the HCA Data Portal becomes easier...
-1. Others?
+1. Ontology can be adapted to changing needs without requiring the metadata schema to change.
+1. Displaying, filtering, and sorting in the HCA Data Portal becomes easier.
+1. Annotating HCA metadata with ontology terms improves the semantic interoperability of the data.
 
-Instance when an *enum* is preferred over an ontology include:
+Instances when an *enum* are preferred over an ontology include:
 
 1. The list of valid values is short and unlikely to change. For example, the valid values for the `donor_organism.is_living` field will always be "yes", "no", or "unknown".
-1. The list of valid values is too diverse to be organized into a meaningful ontology. For example,...
-1. Others?
+1. The list of valid values has to include options such as "unknown", "other" or "NR".
+1. The list of valid values is too diverse to be organized into a meaningful ontology or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with one of the HCA ontologists!
