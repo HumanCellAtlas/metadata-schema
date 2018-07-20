@@ -399,5 +399,5 @@ The advantages of using an HCA ontology over an *enum* include:
 Instances when an *enum* are preferred over an ontology include:
 
 1. The list of valid values is short and unlikely to change. For example, the valid values for the `donor_organism.is_living` field will always be "yes", "no", or "unknown".
-1. The list of valid values has to include options such as "unknown", "other" or "NR".
+1. The list of valid values has to include options such as "unknown", "other", or "not reported".
 1. The list of valid values is too diverse to be organized into a meaningful ontology or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with one of the HCA ontologists!
