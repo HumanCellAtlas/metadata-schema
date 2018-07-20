@@ -114,7 +114,7 @@ The following attributes are required for each metadata schema in the HCA metada
             }
         }
 
-**NB:** The `id` attribute is **not** included in JSON schemas in GitHub, but rather is inserted automatically at the time schemas are published to the HCA metadata standard on schema.humancellatlas.org.
+**NB:** The `id` attribute is **not** included in JSON schemas in GitHub. Instead, it is inserted automatically at the time schemas are published to the HCA metadata standard on schema.humancellatlas.org.
 
 Example:
 
@@ -170,15 +170,15 @@ The following attributes are required for each metadata field in an HCA metadata
     
     Examples:
     
+        Programmatic: min_size_selected
+        User-friendly: Minimum size selected
+        
         Programmatic: ncbi_taxon_id
-        User-friendly: NCBI taxon ID
+        User-friendly: NCBI Taxonomy ID
         
         Programmatic: paired_ends
         User-friendly: Paired ends?
         
-        Programmatic: min_size_selected
-        User-friendly: Minimum size selected
-    
     Having *user-friendly* values for metadata fields has many advantages, including: 
     
     1. Unlike the programmatic metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
@@ -187,7 +187,7 @@ The following attributes are required for each metadata field in an HCA metadata
     
 ### Conditional required field attributes
 
-1. **example:** Directions for how to enter a valid value in the metadata field and/or an example valid value. This attribute is required for all fields except those that reference another schema and those for which providing an example might bias data contributors. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
+1. **example:** An example valid value for the metadata field. This attribute is required for all fields except those that reference a core, module, or ontology schema and those for which providing an example might bias data contributors. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
     
@@ -212,7 +212,8 @@ The following attributes are required for each metadata field in an HCA metadata
 
     An *example* should **not** be provided when:
     
-    - A field imports a core or module schema, *e.g.* the `donor_organism.medical_history`, because the fields contained in the core or module schema will have their own examples.
+    - A field imports a core or module schema, *e.g.* `donor_organism.medical_history`, because the fields in the imported schema will have their own example valid values.
+    - A field uses an ontology, *e.g.* `genus_species`, because the fields in the imported ontology schema will have their own example valid values.
     - An example for a field could bias data contributors, *e.g.* providing an example ID for a biomaterial in the `biomaterial_id` field. 
 
 1. **$ref:** The relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself, and it should always be used with `"type": "object"`.
@@ -309,9 +310,23 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
+1. **guidelines:** Instructions for how to fill in a valid value for the metadata field. This attribute is can be included on an as-needed basis when further clarification for how to fill in a metadata field would be helpful to data contributors. The *guidelines* value will appear in the metadata spreadsheet. 
+
+    Example:
+    
+        "address": {
+            "description": "Street address where the individual works.",
+            "type": "string",
+            "example": "0000 Main Street, Nowheretown, MA, 12091",
+            "guidelines": "Include street name and number, city, country division, and postal code.",
+            "user_friendly": "Street address"
+        }
+
 ## General rules
 
-### Field naming conventions
+### Field name conventions
+
+The following conventions should be followed when deciding on a new metadata field name or suggesting changes to a current metadata field name.
 
 1. Field names should be all lower case and snake_case.
 
@@ -339,7 +354,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
     `organism_age` and `organism_age_unit`
 
-### Tone and voice
+### Field description tone and voice
 
 1. Make a statement instead of a demand in the field description. For example:
 
@@ -371,4 +386,18 @@ The following attributes are required for each metadata field in an HCA metadata
     
         "description": "Your email address."
 
-### 
+### Ontology or enum?
+
+Using an ontology to define valid values for a metadata field is preferred over using a JSON *enum* when...
+
+The advantages of using an HCA ontology over an *enum* include:
+
+1. Ontology can adapt to changing needs without requiring the metadata schema to change...
+1. Displaying, filtering, and sorting in the HCA Data Portal becomes easier...
+1. Others?
+
+Instance when an *enum* is preferred over an ontology include:
+
+1. The list of valid values is short and unlikely to change. For example, the valid values for the `donor_organism.is_living` field will always be "yes", "no", or "unknown".
+1. The list of valid values is too diverse to be organized into a meaningful ontology. For example,...
+1. Others?
