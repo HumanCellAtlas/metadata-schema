@@ -7,6 +7,38 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v8.2.8] - 2018-07-23
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/state_of_specimen.json - v5.2.4] - 2018-07-23
+### Changed
+Changed example.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.7] - 2018-07-23
+### Changed
+Changed example.
+
+### [module/biomaterial/growth_conditions.json - v6.2.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/biomaterial/cell_line.json - v8.4.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/biomaterial/cell_suspension.json - v8.4.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/process/analysis/analysis_process.json - v6.0.0] - 2018-07-19
+### Added
+Added schema for analysis_process as required by the analysis team
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.0] - 2018-07-19
+### Removed
+Removed a number of fields from analysis protocol as they are more appropriate in analysis_process
+
 ### [module/biomaterial/cell_morphology.json - v6.1.1] - 2018-07-17
 ### Changed
 Changed descriptions, user-friendly names, and examples.

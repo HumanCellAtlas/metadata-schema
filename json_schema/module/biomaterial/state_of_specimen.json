@@ -63,7 +63,8 @@
         "microscopic_description": {
             "description": "How the specimen looks under the microscope and how it compares with normal cells.",
             "type": "string",
-            "user_friendly": "Microscopic description"
+            "user_friendly": "Microscopic description",
+            "example": "Mixture of different cell sizes apparent."
         }, 
         "microscopic_image": {
             "description": "List of filenames of photographs of specimen under microscope. Must be of format JPEG, TIFF, or PNG.",

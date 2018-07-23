@@ -54,11 +54,12 @@ Location: module/biomaterial/growth_conditions.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-passage_number | The number of passages the cell line has been through. | integer | no |  | Passage number |  | 22
+passage_number | The number of passages (as an integer) that the biomaterial has been through. | integer | no |  | Passage number |  | 22
 growth_medium | The solid, liquid, or semi-solid medium used to support growth. | string | no |  | Growth medium |  | lysogeny broth (LB) medium
 mycoplasma_testing_method | The method by which the biomaterial was tested for mycoplasma contamination. | string | no |  | Mycoplasma testing method | Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay | Should be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, or Microbiological assay.
 mycoplasma_testing_results | Whether the biomaterial passed or failed the mycoplasma test. | string | no |  | Mycoplasma testing results | pass, fail | Should be one of: pass, or fail.
 drug_treatment | Description of drugs added to the growth medium. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin
+feeder_layer_type | Type of feeder layer cells biomaterial was grown on. | string | no |  | Feeder layer type | feeder-free, feeder-dependent, JK1 feeder cells, feeder-dependent, SNL 76/7 feeder cells, feeder-dependent, human marrow stromal cells, feeder-dependent, bovine embryonic fibroblast cells, feeder-dependent, mouse embryonic fibroblast cells, feeder-dependent, mouse fibroblast STO cells, feeder-dependent, mouse bone marrow stromal cells, feeder-dependent, mouse yolk sac-derived endothelial cells, feeder-dependent, human foreskin fibroblast cells, feeder-dependent, human newborn fibroblast cells, feeder-dependent, human fetal lung fibroblast cells, feeder-dependent, human uterine endometrial cells, feeder-dependent, human breast parenchymal cells, feeder-dependent, human embryonic fibroblast cells, feeder-dependent, human adipose stromal cells, feeder-dependent, human amniotic epithelial cells, feeder-dependent, human placental fibroblast cells, feeder-dependent, human umbilical cord stromal cells, feeder-dependent, human fetal muscle cells, feeder-dependent, human fetal skin cells, feeder-dependent, human fetal liver stromal cells, feeder-dependent, human fallopian tubal epithelial cells, feeder-dependent, human amniotic mesenchymal cells | feeder-dependent, mouse embryonic fibroblast cells
 
 ## human_specific<a name='human_specific'></a>
 _Information specific to a donor that is a human (Homo sapiens)._
@@ -117,7 +118,7 @@ gross_description | Color, size, and other aspects of specimen as visible to nak
 gross_image | List of filenames of photographs of specimen without magnification. Must be of format JPEG, TIFF, or PNG. | array | no |  | Gross image |  | my_gross_image_file.jpg
 ischemic_temperature | Whether specimen experienced warm or cold ischemia. | string | no |  | Ischemic temperature | warm, cold | Should be one of: warm, or cold.
 ischemic_time | Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. | integer | no |  | Ischemic time |  | 7200
-microscopic_description | How the specimen looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | 
+microscopic_description | How the specimen looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | Mixture of different cell sizes apparent.
 microscopic_image | List of filenames of photographs of specimen under microscope. Must be of format JPEG, TIFF, or PNG. | array | no |  | Microscopic image |  | my_microscopic_image_file.jpg
 postmortem_interval | Duration of time, in seconds, between when death was declared and when the specimen was preserved or processed. | integer | no |  | Post-mortem interval |  | 2400
 

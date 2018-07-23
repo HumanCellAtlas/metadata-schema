@@ -63,23 +63,23 @@ provenance | Provenance information provided by the system. | object | no | [See
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 human_specific | Fields specific to human (homo sapiens) organisms. | object | no | [See module  human_specific](module.md/#human_specific) | Human-specific |  | 
 mouse_specific | Fields specific to mouse (mus musculus) organisms. | object | no | [See module  mouse_specific](module.md/#mouse_specific) | Mouse-specific |  | 
-death | Information about conditions of death of an organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
-medical_history | Information about the medical history of an organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
-genus_species | The scientific binomial name for the species of the donor. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-organism_age | Age in Organism age unit. Measured since birth. | string | no |  | Organism age |  | 20
-organism_age_unit | The unit in which Organism age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organism age unit |  | year
+death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
+medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
+genus_species | The scientific binomial name for the species of the organism. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
+organism_age | Age of organism in Organism age unit. Measured since birth. | string | no |  | Organism age |  | 20
+organism_age_unit | The unit in which Organism age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organism age unit |  | Should be one of: hour, day, week, month, or year.
 development_stage | A classification of the developmental stage of the organism. | object | no | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | adult
-disease | Short description of known disease(s) of the organism. Enter normal if no known disease. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | bone squamous cell carcinoma
+disease | Short description of known disease(s) of the organism. Enter 'normal' if no known disease. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | bone squamous cell carcinoma
 familial_relationship | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
-gestational_age | Gestational age in Gestational age unit. Measured since fertilization. | string | no |  | Gestational age |  | 5-7
-gestational_age_unit | The unit in which Gestational age is expressed. Must be one of hour, day, week, month, or year. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | week
+gestational_age | Gestational age of organism in Gestational age unit. Measured since fertilization. | string | no |  | Gestational age |  | 5-7
+gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | Should be one of: hour, day, week, month, or year.
 height | Height of organism in Height unit. | string | no |  | Height |  | 160
-height_unit | The unit in which height is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | centimeter
+height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | centimeter
 is_living | Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known. | string | yes |  | Is living? | yes, no, unknown | Should be one of: yes, no, unknown.
 biological_sex | The biological sex of the organism. | string | yes |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60
-weight_unit | The unit in which weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | kilogram
-normothermic_regional_perfusion | Yes if body (but not limbs) was perfused with warm oxygenated blood. No otherwise. | string | no |  | Normothermic regional perfusion | yes, no, unknown | Should be one of: yes, no, unknown.
+weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | kilogram
+normothermic_regional_perfusion | Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise. | string | no |  | Normothermic regional perfusion? | yes, no, unknown | Should be one of: yes, no, or unknown.
 
 ## organoid
 _Information about an organoid biomaterial._
@@ -193,6 +193,26 @@ process_type | The type of process. | object | no | [See module  process_type_on
 deviation_from_protocol | Any deviation from the protocol provided. | string | no |  | Deviation from protocol |  | 
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment |  | 
 
+## analysis_process
+_Information about the analysis process_
+
+Location: type/process/analysis/analysis_process.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
+process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  |  |  | 
+tasks | Descriptions of tasks in the workflow. | array | yes |  |  |  | 
+input_bundles | The input bundles used in this analysis run. | array | yes |  |  |  | 
+outputs | Output generated by the pipeline run. | array | yes | [See   analysis_file](.md/#analysis_file) |  |  | 
+timestamp_start_utc | Initial start time of the full pipeline. | string | yes |  |  |  | 
+timestamp_stop_utc | Terminal stop time of the full pipeline. | string | yes |  |  |  | 
+analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string | yes |  |  | run, copy-forward | 
+reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
+
 ## project
 _A project entity contains information about the overall project._
 
@@ -235,15 +255,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  |  |  | 
-reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
-tasks | Descriptions of tasks in the workflow. | array | yes |  |  |  | 
-timestamp_stop_utc | Terminal stop time of the full pipeline. | string | yes |  |  |  | 
-input_bundles | The input bundles used in this analysis run. | array | yes |  |  |  | 
-outputs | Output generated by the pipeline run. | array | yes | [See   analysis_file](.md/#analysis_file) |  |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  |  |  | 
-timestamp_start_utc | Initial start time of the full pipeline. | string | yes |  |  |  | 
-analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string | yes |  |  | run, copy-forward | 
 
 ## aggregate_generation_protocol
 _Information on how cultured cells are developed into cell aggregates._
