@@ -223,7 +223,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "example": "Homo sapiens",
             ...
