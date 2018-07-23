@@ -1,0 +1,16 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.0.0/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment1"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108"
+    },
+    "provenance": {
+        "document_id": "d2d57618-fa80-4b98-8c76-3c96b76c44bf",
+        "submission_date": "2018-07-22T23:38:36.163Z",
+        "update_date": "2018-07-22T23:38:44.095Z"
+    }
+}
