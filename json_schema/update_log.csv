@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,patch,"Changed descriptions, user-friendly names, and examples.",,
-module/biomaterial/state_of_specimen,patch,"Changed example.",,
