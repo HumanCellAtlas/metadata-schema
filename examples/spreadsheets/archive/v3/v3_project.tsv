@@ -1,0 +1,28 @@
+project	entity level object.  Lives as a separate file in a data bundle.			
+A project contain information about a series of related assays.  Typically all assays within a project will be combined after analysis into a single gene-cell table.				
+				
+Field Name	Source	Priority	Type	Description
+core	ingest	Required	core module	The unique id and schema definition for a project
+id	ingest	Required	local id	A unique ID for project, may be GEO or Array Express ID for imported projects
+submitter	ingest	Required	contact module	id of contact who first submitted project
+submit_date	ingest	High	date	When project was first submitted to database.
+updater	ingest	High	contact module	id of contact who last updated project
+update_date	ingest	High	date	When project was last updated
+				
+title	submitter	Required	text	A sentence long or so title for the project
+description	submitter	Required	text	A paragraph or so description of the the project
+contributors	submitter	Required	array of contact modules	List of scientists contributing to project
+experimental_design	submitter	High	array of ontology	A short description of overall experiment type, such as "single cell RNA sequencing."
+experimental_factor_name	submitter	High	array of text	A list of the factors that vary between samples in the experiment.
+publications	submitter	High	array of module	An array of publication modules.
+protocols	submitter	Required	array of module	An array of protocol modules.  Assay and project protocols reference this.
+supplementary_files	submitter	Optional	array of file/url	Project level supplementary files such as experimental design documents, lab spreadsheets,  manuscripts in preparation.
+related_projects	submitter	Optional	array of local ID	List of other projects that may be logically grouped with this one.
+				
+array_express_investigation	ext DB	Optional	ext ID	EBI Array Express investigation accession
+ddjb_trace	ext DB	Optional	ext ID	Japanese trace archive project accession.
+geo_series	ext DB	Optional	ext ID	NCBI GEO series accession
+ncbi_bioproject	ext DB	Optional	ext ID	NCBI bioproject ID
+sra_project	ext DB	Optional	ext ID	NCBI SRA project accession
+				
+characteristics_*	submitter	Optional	text	FIelds that begin with characteristics_ can contain any value, and the field name can be anything after the prefix

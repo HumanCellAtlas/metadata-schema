@@ -29,25 +29,18 @@
                 "biomaterial"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
             "$ref": "core/biomaterial/biomaterial_core.json"
         },
-        "cell_morphology": {
-            "description": "Features relating to the morphology of cells in a biomaterial.",
-            "type": "object",
-            "$ref": "module/biomaterial/cell_morphology.json",
-            "user_friendly": "Cell morphology"
-        },
-        "growth_conditions": {
-            "description": "Features relating to the growth and/or maintenance of a biomaterial.",
-            "type": "object",
-            "$ref": "module/biomaterial/growth_conditions.json",
-            "user_friendly": "Growth conditions"
-        },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the organoid.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
@@ -59,22 +52,50 @@
             "description":  "Organ for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
+            "example": "brain",
             "user_friendly": "Organ model"
         },
+        "model_organ_part": {
+            "description":  "Organ part for which this organoid is a model system.",
+            "type": "object",
+            "$ref": "module/ontology/organ_part_ontology.json",
+            "example": "cortex",
+            "user_friendly": "Organ part model"
+        },
         "organoid_age": {
-            "description": "Age of the organoid.",
+            "description": "Age of the organoid in Organoid age unit. Measured from when cell aggregates started differentiating to desired organoid model.",
             "type": "number",
             "example": 55,
             "user_friendly": "Organoid age"
         },
         "organoid_age_unit": {
-            "description": "The unit in which organoid age is expressed. Must be one of hour, day, week, month, or year.",
+            "description": "The unit in which Organoid age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
+            "example": "Should be one of: minute, hour, day, week, month, or year.",
             "user_friendly": "Organoid age unit"
         },
+        "organoid_size": {
+            "description": "Size of the organoid in Organoid size unit.",
+            "type": "number",
+            "example": 4,
+            "user_friendly": "Organoid size"
+        },
+        "organoid_size_unit": {
+            "description": "The unit in which the Organoid size is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/length_unit_ontology.json",
+            "example": "millimeter",
+            "user_friendly": "Organoid size unit"
+        },
+        "organoid_morphology": {
+            "description": "General description of the organoid morphology.",
+            "type": "string",
+            "example": "Epithelial monolayer with budding crypt-like domains.",
+            "user_frinedly": "Organoid morphology"
+        },
         "organoid_type": {
-            "description": "The type of organoid. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
+            "description": "The type of organoid.",
             "type": "string",
             "enum": [
                 "primary",
@@ -82,7 +103,32 @@
                 "stem cell-derived",
                 "synthetic"
             ],
+            "example": "Should be one of: primary, immortalized, stem cell-derived, or synthetic.",
             "user_friendly": "Organoid type"
+        },
+        "embedded_in_matrigel": {
+            "description": "Whether the organoid is embedded in a matrigel.",
+            "type": "boolean",
+            "example": "Should be one of: yes, no.",
+            "user_friendly": "Organoid embeddded in matrigel?"
+        },
+        "organoid_growth_environment": {
+            "description": "Growth environment in which the organoid is grown.",
+            "type": "string",
+            "example": "matrigel, liquid suspension, adherent",
+            "user_friendly": "Organoid growth environment"
+        },
+        "input_aggregate_cell_count": {
+            "description": "Estimated number of cells per input cell aggregate.",
+            "type": "number",
+            "example": 10000,
+            "user_friendly": "Input aggregate cell count"
+        },
+        "organoid_stored_oxygen_levels": {
+            "description": "Percent oxygen level organoid was stored in prior to sequencing.",
+            "type": "number",
+            "example": 75,
+            "user_friendly": "Organoid stored oxygen level"
         }
     }
 }

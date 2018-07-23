@@ -1,0 +1,11 @@
+text field	ontology field	ontology	term	allow descendants	include root	leaf only
+sample.organ	sample.body_part.organ_ontology	UBERON,EFO	UBERON_0001062,EFO_0000635	TRUE	FALSE	FALSE
+sample.name	sample.body_part.name_ontology	UBERON,EFO	UBERON_0001062,EFO_0000635	TRUE	FALSE	FALSE
+sample.cell_line.name	sample.cell_line.ontology	CLO,EFO	EFO_0000322,CLO_0000031	TRUE	FALSE	FALSE
+donor.age_unit		UO	UO_0000149	TRUE	FALSE	FALSE
+death.cause_of_death		ICD?				
+donor.development_stage	sample.donor.development_stage_ontology	EFO	EFO_0000399	TRUE	FALSE	FALSE
+donor.life_stage		EFO?				
+donor.species	sample.donor.species_ontology	NCBITaxon	NCBITaxon_1	TRUE	FALSE	TRUE
+protocol.type	sample.protocol_type_ontology	EFO,OBI	OBI_0000272	TRUE	FALSE	FALSE
+well.submitted_cell_type	sample.submitted_cell_type.ontology	CL	EFO_0000324, CL_0000000	TRUE	FALSE	FALSE

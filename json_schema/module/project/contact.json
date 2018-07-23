@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about a person who submitted or contributed to a project.",
+    "description": "Information about an individual who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [
         "contact_name",
-        "email"
+        "institution"
     ],
     "title": "contact",
     "type": "object",
@@ -21,41 +21,77 @@
             "example": "4.6.1"
         },
         "contact_name": {
-            "description": "The contact's name. Should be in the format 'first, middle, last name'. Middle can be initial or left blank.",
+            "description": "Name of individual who has contributed to the project.",
             "type": "string",
-            "example": "John,D,Doe",
+            "example": "John,D,Doe. Format: first name, middle name or initial, last name.",
             "user_friendly": "Contact name"
         },
         "email": {
-            "description": "An email address for the contact.",
+            "description": "Email address for the individual.",
             "type": "string",
+            "example": "dummy@email.com. Enter a valid email address.",
             "format": "email",
-            "user_friendly": "Email"
+            "user_friendly": "Email address"
         },
         "phone": {
-            "description": "Phone number (including country code) of contact or contact's lab.",
+            "description": "Phone number of the individual or their lab.",
             "type": "string",
+            "example": "(+1) 234-555-6789. Enter a valid phone number, including country code.",
             "user_friendly": "Phone number"
         },
         "institution": {
-            "description": "Name of primary institute where contact works.",
+            "description": "Name of primary institute where the individual works.",
             "type": "string",
-            "user_friendly": "Institution"
+            "user_friendly": "Institute",
+            "example": "EMBL-EBI"
         },
         "laboratory": {
-            "description": "Name of lab (often the PI name) within institute where contact works.",
+            "description": "Name of lab or department within the institute where the individual works.",
             "type": "string",
-            "user_friendly": "Laboratory"
+            "user_friendly": "Laboratory/Department",
+            "example": "Department of Biology"
         },
         "address": {
-            "description": "Street address where contact works. Should include street name and number, city, country division, postal code.",
+            "description": "Street address where the individual works.",
             "type": "string",
-            "user_friendly": "Address"
+            "example": "0000 Main Street, Nowheretown, MA, 12091. Include street name and number, city, country division, and postal code.",
+            "user_friendly": "Street address"
         },
         "country": {
-            "description": "Country where contact works.",
+            "description": "Country where the individual works.",
             "type": "string",
-            "user_friendly": "Country"
+            "user_friendly": "Country",
+            "example": "USA"
+        },
+        "corresponding_contributor": {
+            "description": "Whether the individual is a corresponding contributor for the project.",
+            "type": "boolean",
+            "user_friendly": "Corresponding contributor?",
+            "example": "Should be one of: yes, or no."
+        },
+        "project_role": {
+            "description": "Primary role of the individual in the project.",
+            "type": "string",
+            "enum": [
+                "principal investigator",
+                "co investigator",
+                "experimental scientist",
+                "computational scientist",
+                "clinician",
+                "pathologist",
+                "technician",
+                "external curator",
+                "Human Cell Atlas wrangler",
+                "other"
+            ],
+            "example": "principal investigator",
+            "user_friendly": "Project role"
+        },
+        "orcid_id": {
+            "description": "The individual's ORCID ID linked to previous work.",
+            "type": "string",
+            "example": "0000-1111-2222-3333",
+            "user_friendly": "ORCID ID"
         }
     }
 }

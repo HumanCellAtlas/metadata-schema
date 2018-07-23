@@ -25,13 +25,13 @@
             "user_friendly": "Passage number"
         },
         "growth_medium": {
-            "description": "The solid, liquid, or semi-solid medium used to support the growth of the biomaterial.",
+            "description": "The solid, liquid, or semi-solid medium used to support growth.",
             "type": "string",
             "example": "lysogeny broth (LB) medium",
             "user_friendly": "Growth medium"
         },
         "mycoplasma_testing_method": {
-            "description": "The method by which a biomaterial is tested for mycoplasma contamination. Must be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay.",
+            "description": "The method by which the biomaterial was tested for mycoplasma contamination.",
             "type": "string",
             "enum": [
                 "Direct DNA stain",
@@ -45,21 +45,21 @@
                 "Cell-based assay",
                 "Microbiological assay"
             ],
-            "example": "Indirect DNA stain",
+            "example": "Should be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, or Microbiological assay.",
             "user_friendly": "Mycoplasma testing method"
         },
         "mycoplasma_testing_results": {
-            "description": "Whether the biomaterial passed or failed the mycoplasma test. Must be pass or fail.",
+            "description": "Whether the biomaterial passed or failed the mycoplasma test.",
             "type": "string",
             "enum": [
                 "pass",
                 "fail"
             ],
-            "example": "pass",
+            "example": "Should be one of: pass, or fail.",
             "user_friendly": "Mycoplasma testing results"
         },
         "drug_treatment": {
-            "description": "Description of drugs added to the growth medium for this biomaterial.",
+            "description": "Description of drugs added to the growth medium.",
             "type": "string",
             "example": "100 ug/mL ampicillin",
             "user_friendly": "Drug treatment"
