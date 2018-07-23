@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/growth_conditions.json - v6.2.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/biomaterial/cell_line.json - v8.4.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/biomaterial/cell_suspension.json - v8.4.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
 ### [type/process/analysis/analysis_process.json - v6.0.0] - 2018-07-19
 ### Added
 Added schema for analysis_process as required by the analysis team
