@@ -198,23 +198,36 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    An *example* value can be supplied for fields that are governed by an ontology, but the value should be the ontology term (text) not the ontology curie.
-    
-    Example:
-    
-        "organ": {
-            "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
-            "type": "object",
-            "example": "blood",
-            "$ref": "module/ontology/organ_ontology.json",
-            ...
-        }
-
     An *example* should **not** be provided when:
     
     - A field imports a core or module schema, *e.g.* `donor_organism.medical_history`, because the fields in the imported schema will have their own example valid values.
     - A field uses an ontology, *e.g.* `genus_species`, because the fields in the imported ontology schema will have their own example valid values.
     - An example for a field could bias data contributors, *e.g.* providing an example ID for a biomaterial in the `biomaterial_id` field. 
+
+    *Example* values can be supplied for fields that are governed by an ontology by including them in the ontology schema. The `text`, `ontology`, and `ontology_label` fields can all take *example* valid values. **N.B.** Currently, ontology *examples* are generally lacking, and an example valid ontology value is provided for the field that imports the ontology.
+    
+    Example:
+    
+        module/ontology/species_ontology.json:
+        
+        "text": {
+            "description": "The name of the species to which the organism belongs.",
+            "type": "string",
+            "example": "Human",
+            ...
+        },
+        "ontology": {
+            "description": "An ontology term identifier in the form prefix:accession",
+            "type": "string",
+            "example": "NCBITaxon:9606",
+            ...
+        },
+        "ontology_label": {
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "type": "string",
+            "example": "Homo sapiens",
+            ...
+        }
 
 1. **$ref:** The relative path to a core, module, or ontology schema which is imported by the metadata field. This attribute is required when a field imports a module, core, or ontology schema. The *$ref* value is not displayed to users outside of the JSON schema itself, and it should always be used with `"type": "object"`.
 
@@ -254,7 +267,7 @@ The following attributes are required for each metadata field in an HCA metadata
     Example valid *format* values include: date-time, email. The specification of valid JSON *format* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.7.3). 
 
 
-1. **enum:** A defined list of valid values for the metadata field. This attribute is required when a field should only be given a limited set of values, and an appropriate ontology is not available. The *enum* values currently are not displayed to users outside of the JSON schema itself, but in the future will be shown in the metadata spreadsheet.
+1. **enum:** A defined list of valid values for the metadata field. This attribute is required when a field should be governed by a controlled vocabulary and an appropriate ontology is not available. The *enum* values currently are not displayed to users outside of the JSON schema, but in the future they will be shown in the metadata spreadsheet.
 
     Example:
     
@@ -293,7 +306,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
     If the *enum* list is short enough (5 or fewer values), the list of valid values should be included in the *example* attribute (*e.g.* the `biological_sex` enum) starting with the phrase "Should be one of:". If the *enum* list is too long to reasonably fit in the *example* attribute, a single valid value should be listed (*e.g.* the `project_role` enum).
     
-    Creating an ontology module for a metadata field is preferred over maintaining an *enum* list.
+    Creating an ontology module for a metadata field is preferred over maintaining an *enum* list. See the [Ontology versus enum for a controlled vocabulary](#ontology-or-enum) section below for more details.
 
 ### Optional field attributes
 
@@ -386,7 +399,7 @@ The following conventions should be followed when deciding on a new metadata fie
     
         "description": "Your email address."
 
-### Ontology or enum?
+### Ontology versus enum for a controlled vocabulary
 
 Using an ontology to define valid values for a metadata field is preferred over using a JSON *enum* in most cases, provided that an appropriate ontology with good or full coverage is available.
 
@@ -396,7 +409,7 @@ The advantages of using an HCA ontology over an *enum* include:
 1. Displaying, filtering, and sorting in the HCA Data Portal becomes easier.
 1. Annotating HCA metadata with ontology terms improves the semantic interoperability of the data.
 
-Instances when an *enum* are preferred over an ontology include:
+Instances when an *enum* is preferred over an ontology include:
 
 1. The list of valid values is short and unlikely to change. For example, the valid values for the `donor_organism.is_living` field will always be "yes", "no", or "unknown".
 1. The list of valid values has to include options such as "unknown", "other", or "not reported".
