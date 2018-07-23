@@ -1,3 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,patch,"Changed descriptions, user-friendly names, and examples.",,
-module/biomaterial/state_of_speciment,patch,"Changed example.",,
+module/biomaterial/growth_conditions,minor,"Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.",,
