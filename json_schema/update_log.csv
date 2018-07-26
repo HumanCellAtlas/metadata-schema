@@ -1,2 +1,4 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/familial_relationship,major,Changed familial relationship names to short names,,
+module/biomaterial/familial_relationship,major,Changed is_parent_of to child,,
+module/biomaterial/familial_relationship,major,Changed is_child_of to parent,,
+module/biomaterial/familial_relationship,major,Changed is_sibling_of to sibling,,
