@@ -55,6 +55,19 @@
             "user_friendly": "Input nucleic acid molecule",
             "example": "polyA RNA"
         },
+        "nucleic_acid_source": {
+            "description": "Source cells or organelles from which nucleic acid molecules were collected.",
+            "type": "string",
+            "enum": [
+                "bulk cell",
+                "single cell",
+                "single nucleus",
+                "bulk nuclei",
+                "mitochondria"
+            ],
+            "user_friendly": "Nucleic acid source",
+            "example": "Should be one of: bulk cell, single cell, single nucleus, bulk nuclei, or mitochondria."
+        },
         "library_construction_approach": {
             "description": "The general approach for sequencing library construction.",
             "type": "object",
