@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-07-17T13:46:06Z",
+    "last_update_date": "2018-07-26T10:54:48Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -23,12 +23,12 @@
                 "cell_morphology": "6.1.1",
                 "death": "5.3.1",
                 "familial_relationship": "5.2.1",
-                "growth_conditions": "6.1.2",
+                "growth_conditions": "6.2.0",
                 "human_specific": "1.0.1",
                 "medical_history": "5.2.2",
                 "mouse_specific": "1.0.1",
                 "preservation_storage": "5.3.1",
-                "state_of_specimen": "5.2.3",
+                "state_of_specimen": "5.2.4",
                 "timecourse": "1.1.1"
             },
             "ontology": {
@@ -74,11 +74,11 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "8.3.6",
-                "cell_suspension": "8.3.6",
-                "donor_organism": "8.2.7",
+                "cell_line": "8.4.0",
+                "cell_suspension": "8.4.0",
+                "donor_organism": "8.2.8",
                 "organoid": "8.3.3",
-                "specimen_from_organism": "6.2.6"
+                "specimen_from_organism": "6.2.7"
             },
             "file": {
                 "analysis_file": "5.3.2",
@@ -87,6 +87,9 @@
                 "supplementary_file": "1.1.1"
             },
             "process": {
+                "analysis": {
+                    "analysis_process": "6.0.0"
+                },
                 "process": "4.2.4"
             },
             "project": {
@@ -94,13 +97,13 @@
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "7.2.4"
+                    "analysis_protocol": "8.0.0"
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "1.1.3",
                     "collection_protocol": "8.2.4",
                     "differentiation_protocol": "1.2.4",
-                    "dissociation_protocol": "4.2.4",
+                    "dissociation_protocol": "5.0.0",
                     "enrichment_protocol": "2.2.3",
                     "ipsc_induction_protocol": "1.2.4"
                 },
@@ -109,7 +112,7 @@
                 },
                 "protocol": "6.3.3",
                 "sequencing": {
-                    "library_preparation_protocol": "4.2.5",
+                    "library_preparation_protocol": "4.3.0",
                     "sequencing_protocol": "8.1.1"
                 }
             }
