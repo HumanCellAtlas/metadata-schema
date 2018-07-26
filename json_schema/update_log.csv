@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+core/process/process_core,major,Changed process_location to location,,
+core/process/process_core,major,Changed operator_identity to operator,,
