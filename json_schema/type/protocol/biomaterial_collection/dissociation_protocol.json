@@ -47,19 +47,6 @@
             "user_friendly": "Dissociation method",
             "example": "enzymatic dissociation"
         },
-        "nucleic_acid_source": {
-            "description": "Source cells or organelles from which nucleic acid molecules were collected.",
-            "type": "string",
-            "enum": [
-                "bulk cell",
-                "single cell",
-                "single nucleus",
-                "bulk nuclei",
-                "mitochondria"
-            ],
-            "user_friendly": "Nucleic acid source",
-            "example": "Should be one of: bulk cell, single cell, single nucleus, bulk nuclei, or mitochondria."
-        },
         "protocol_reagents": {
             "description": "A list of purchased reagents used in this protocol.",
             "type": "array",

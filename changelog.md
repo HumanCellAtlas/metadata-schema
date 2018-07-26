@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.3.0] - 2018-07-26
+### Added
+Added optional nucleic_acid_source field. Fixes #385.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.0] - 2018-07-26
+### Removed
+Removed nucleic_acid_source field. Fixes #385.
+
 ### [type/biomaterial/donor_organism.json - v8.2.8] - 2018-07-23
 ### Changed
 Changed descriptions, user-friendly names, and examples.
