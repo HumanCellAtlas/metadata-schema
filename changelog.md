@@ -9,6 +9,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/process/sequencing/10x.json - v1.0.1] - 2018-07-26
+### Fixes
+Fixes 10x url bug
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.2] - 2018-07-26
+### Fixes
+Fixes 10x url bug
+
 ### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.1] - 2018-07-26
 ### Removed
 Removed requirement for non-existent field.
