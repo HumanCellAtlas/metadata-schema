@@ -6,8 +6,7 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "dissociation_method",
-        "nucleic_acid_source"
+        "dissociation_method"
     ],
     "title": "dissociation_protocol",
     "type": "object",
@@ -46,19 +45,6 @@
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Dissociation method",
             "example": "enzymatic dissociation"
-        },
-        "nucleic_acid_source": {
-            "description": "Source cells or organelles from which nucleic acid molecules were collected.",
-            "type": "string",
-            "enum": [
-                "bulk cell",
-                "single cell",
-                "single nucleus",
-                "bulk nuclei",
-                "mitochondria"
-            ],
-            "user_friendly": "Nucleic acid source",
-            "example": "Should be one of: bulk cell, single cell, single nucleus, bulk nuclei, or mitochondria."
         },
         "protocol_reagents": {
             "description": "A list of purchased reagents used in this protocol.",
