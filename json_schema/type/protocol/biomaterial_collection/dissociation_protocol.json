@@ -6,8 +6,7 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "dissociation_method",
-        "nucleic_acid_source"
+        "dissociation_method"
     ],
     "title": "dissociation_protocol",
     "type": "object",
