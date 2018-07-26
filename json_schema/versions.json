@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-07-26T10:54:48Z",
+    "last_update_date": "2018-07-26T13:16:52Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -103,7 +103,7 @@
                     "aggregate_generation_protocol": "1.1.3",
                     "collection_protocol": "8.2.4",
                     "differentiation_protocol": "1.2.4",
-                    "dissociation_protocol": "5.0.0",
+                    "dissociation_protocol": "5.0.1",
                     "enrichment_protocol": "2.2.3",
                     "ipsc_induction_protocol": "1.2.4"
                 },
