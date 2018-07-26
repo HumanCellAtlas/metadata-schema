@@ -16,7 +16,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "is_child_of": {
+        "parent": {
             "description": "This organism is a child of the indicated organism.",
             "type": "string",
             "user_friendly": "Child of"
