@@ -1,0 +1,26 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.2.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "Q4_DEMO-donor_MGH30",
+        "biomaterial_name": "Q4 DEMO donor MGH30",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "medical_history": {
+        "smoking_history": "yes"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens"
+        }
+    ],
+    "is_living": false,
+    "biological_sex": "unknown",
+    "provenance": {
+        "document_id": "dcbe0115-7871-41de-8502-b68f6ca024ab",
+        "submission_date": "2018-07-22T23:38:35.835Z",
+        "update_date": "2018-07-22T23:38:44.151Z"
+    }
+}
