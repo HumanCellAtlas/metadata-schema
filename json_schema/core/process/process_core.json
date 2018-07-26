@@ -40,7 +40,7 @@
             "example": "Wellcome Trust Sanger Institute",
             "user_friendly": "Location"
          },
-         "operator_identity": {
+         "operator": {
            "description": "Identifier for individual(s) who executed the process.",
            "type": "array",
            "example": "Technician 1",
