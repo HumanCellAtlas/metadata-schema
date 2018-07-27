@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information a single microscope channel. Not required if codebook is used.",
+    "additionalProperties": false,
+    "title": "imaging_channel",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/process/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaging_channel"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "channel_name": {
+            "description": "An identifier used for this channel within the experiment. This should align with the way channels are referenced in file_names or file manifests.",
+            "type": "string",
+            "example": "red channel or channel 1",
+            "user_friendly": "Channel name"
+        },
+        "probe": {
+            "description": "The probe used for target detection.",
+            "type": "object",
+            "$ref": "module/process/purchased_reagents.json",
+            "user_friendly": "Probe"
+        },
+        "target_molecule": {
+            "description": "The molecule targeted by the probe in this channel.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "module/ontology/biological_macromolecule_ontology.json"
+            },
+            "user_friendly": "Target molecule"
+        },
+        "target_structure": {
+            "description": "The structure targeted by the probe in this channel.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "module/ontology/cell_structure_ontology.json"
+            },
+            "user_friendly": "Target"
+        }
+    }
+}
