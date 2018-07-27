@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information about the preparation protocol of the biomaterial (slice of tissue or cell suspension) used in an imaging experiment",
+    "additionalProperties": false,
+    "required": [
+        "describedBy",
+        "schema_type",
+        "protocol_core",
+        "protocol_type"
+    ],
+    "title": "slice_preparation_protocol",
+    "type": "object",
+    "properties": {
+         "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/protocol/imaging/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/slice_preparation_protocol"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "protocol"
+            ]
+        },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
+        "protocol_core" : {
+	        "description": "Core protocol-level information.",
+            "type": "object",
+            "$ref": "core/protocol/protocol_core.json"
+        },
+        "fresh_slicing_method" : {
+            "description": "Fresh slicing method used: i.e tissue chopper or vibratome",
+            "type": "string",
+            "user_friendly": "Fresh slicing method",
+            "example": "vibratome"
+        },
+        "fresh_slice_thickness": {
+            "description": "Fresh slice thickness",
+            "type" : "string",
+            "example": "3",
+            "user_friendly": "Fresh slice thickness"
+        },
+        "final_slice_thickness_unit": {
+            "description": "The unit in which final slice thickness is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/length_unit_ontology.json",
+            "user_friendly": "Final slice thickness unit",
+            "example": "micrometer"
+        },
+        "final_slicing_method" : {
+            "description": "Final slicing method used: i.e cryosectioning",
+            "type": "string",
+            "user_friendly": "Final slicing method",
+            "example": "vibratome"
+        },
+        "post_resection_interval" : {
+            "description": "Length of time between surgical resection and fresh slicing of tissue",
+            "type": "string",
+            "user_friendly": "Time between resection and fresh slicing",
+            "example": "5"
+        },
+        "post_resection_interval_unit": {
+            "description": "The unit of time in which the post resection interval is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
+            "user_friendly": "Post resection interval time unit",
+            "example": "day"
+        },
+        "pre_final_slice_preservation_method": {
+            "description": "Tissue preservation method used prior to final slicing",
+            "type": "object",
+            "$ref": "module/biomaterial/preservation_storage.json",
+            "user_friendly": "Pre-final slice preservation method"
+        },
+        "fixation_buffer": {
+            "description": "The buffer used to fix cells.",
+            "type" : "string",
+            "example": "4% PFA in 1XPBS",
+            "user_friendly": "Fixation buffer"
+        },
+        "fixation_temperature": {
+            "description": "The buffer temperature used for fixation in degrees celsius.",
+            "type" : "string",
+            "example": "4",
+            "user_friendly": "Fixation temperature"
+        },
+        "fixation_time": {
+            "description": "Time in fixing buffer.",
+            "type" : "string",
+            "example": "15",
+            "user_friendly": "Fixation time"
+        },
+        "fixation_time_unit": {
+            "description": "Unit in fixing time is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
+            "example": "hour",
+            "user_friendly": "Fixation time"
+        },
+        "dehydration_buffer": {
+            "description": "Dehydration buffer, such as methanol, ethanol or isopropanol.",
+            "type" : "string",
+            "example": "methanol",
+            "user_friendly": "Dehydration buffer"
+        },
+        "clearing_method": {
+            "description": "Clearing method, if performed, such as active, passive, SDS treatment, RI matching, etc.",
+            "type" : "string",
+            "example": "active",
+            "user_friendly": "Clearing method"
+        },
+        "post_final_slicing_interval": {
+            "description": "Days between secondary slicing and hybridization.",
+            "type" : "string",
+            "example": "7",
+            "user_friendly": "Post final slicing interval"
+        }
+    }
+}
+
+
+        
