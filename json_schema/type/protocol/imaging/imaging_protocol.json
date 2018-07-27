@@ -39,10 +39,17 @@
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
-         "embedding": {
-            "description": "Description of embedding conditions.",
+         "embedding_conditions": {
+            "description": "Description of embedding conditions and buffers.",
             "type": "string",
+            "example" : "4% (vol/vol) of 19:1 acrylamide/bis-acrylamide (BioRad), 60 mM Tris⋅HCl pH 8 (Thermo Fisher Scientific), 0.3 M NaCl (Thermo Fisher Scientific), 0.2% (vol/vol) Tetramethylethylenediamine (TEMED) (Sigma)",
             "user_friendly": "Embedding conditions"
+         },
+         "fiducial_marker": {
+            "description": "Fiducial markers (generally beads) for the alignment of images taken across multiple rounds of imaging.",
+            "type": "string",
+            "example" : "0.1-µm-diameter carboxylate-modified orange fluorescent beads (2% solids, Life Technologies), 1:25,000 dilution",
+            "user_friendly": "Fiducial marker"
          },
          "exposure_time": {
             "description": "Exposure time - as a floating point number - in seconds.",
@@ -51,49 +58,19 @@
             "minimum": 1e-9,
             "user_friendly": "Exposure time"
          },
-         "field_counts": {
-            "description": "Number of fields in x and y dimensions.",
-            "type": "array",
-            "items": {
-                "type": "integer"
-            },
-            "user_friendly": "Field count"
-         },
-         "field_microns": {
-            "description": "Microns covered by a field in x, y, and z. Z includes all focal planes in a single file.",
-            "type": "array",
-            "items": {
-                "type": "integer"
-            },
-            "user_friendly": "Field microns"
-         },
-         "field_resolution": {
-            "description": "x, y, and z (number of focal planes) resolution of an individual field.",
-            "type": "array",
-            "items": {
-                "type": "integer"
-            },
-            "user_friendly": "Field resolution"
-         },
-         "fixation": {
-            "description": "Description of fixation conditions.",
+         "microscope_setup_description": {
+            "description": "Description of the microscope setup including manufacturer and model information about the stand, camera and objective.",
             "type": "string",
-            "user_friendly": "Fixation"
+            "example" : "sCMOS camera (Zyla 4.2; Andor) in combination with a high numerical aperture (NA = 1.3) and objective (UPLSAPO 60 × S2; Olympus)",
+            "user_friendly": "Description of the microscope setup"
          },
-         "microscope": {
-            "description": "Microscope used for imaging.",
-            "enum": [
-                "generic confocal",
-                "generic two photon"
-            ],
-            "user_friendly": "Microscope"
-         },
-         "probes": {
-            "description": "A file containing information on probe sequence, genes they cover, and colors.",
+         "objective": {
+            "description": "Objective used for imaging.",
             "type": "string",
-            "user_friendly": "Probes"
+            "example" : "60×) silicone oil objective",
+            "user_friendly": "Objective"
          },
-        "protocol_type": {
+         "protocol_type": {
             "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
@@ -101,3 +78,14 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
