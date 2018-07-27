@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information about the slice of tissue that was taken from the specimen.",
+    "additionalProperties": false,
+    "required": [
+        "describedBy",
+        "schema_type",
+        "biomaterial_core"
+    ],
+    "title": "slice_from_specimen",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/slice_from_specimen"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial"
+            ]
+        },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
+        "biomaterial_core" : {
+            "description": "Core biomaterial-level information.",
+            "type": "object",
+            "$ref": "core/biomaterial/biomaterial_core.json"
+        },
+        "final_slice_thickness": {
+            "description": "Final slice thickness",
+            "type" : "string",
+            "example": "3",
+            "user_friendly": "Final slice thickness"
+        },
+        "final_slice_thickness_unit": {
+            "description": "The unit in which final slice thickness is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/length_unit_ontology.json",
+            "user_friendly": "Final slice thickness unit",
+            "example": "micrometer"
+        }
+    }
+}
