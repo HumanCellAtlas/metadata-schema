@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-7/schema#",
     "description": "Contains information on how a sample was treated to become an induced pluripotent stem cell.",
     "additionalProperties": false,
     "required": [

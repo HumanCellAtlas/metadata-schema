@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-7/schema#",
     "description": "Information relating to pathological and morphological features of cells.",
     "additionalProperties": false,
     "title": "cell_morphology",

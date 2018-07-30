@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-7/schema#",
     "description": "A file entity contains information about a file produced from any process.",
     "additionalProperties": false,
     "required": [
