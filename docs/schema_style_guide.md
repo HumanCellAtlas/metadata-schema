@@ -25,7 +25,7 @@ This document describes the style and formatting rules followed by the HCA Metad
 - Directions for [making changes to metadata schemas](metadata-schema/docs/committers.md)
 
 ## Schema conceptual model
-The JSON format that is the canonical representation of HCA metadata is a programming language-neutral, persistent method of storing data structures.  See [ECMA-404 The JSON Data Interchange Standard] (http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) specification for technical details of the format. JSON objects are analogous to C structs, objects in JAVA and Python, and to an extent, SQL tables.  The design of JSON metadata objects follows the common approaches used in designing computational data structures for programmers.  The schema is used to describe the contents of the JSON data objects for both programmatic access and human understanding.
+The JSON format that is the canonical representation of HCA metadata is a programming language-neutral, persistent method of storing data structures.  See [ECMA-404 The JSON Data Interchange Standard](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) specification for technical details of the format. JSON objects are analogous to C structs, objects in JAVA and Python, and to an extent, SQL tables.  The design of JSON metadata objects follows the common approaches used in designing computational data structures for programmers.  The schema is used to describe the contents of the JSON data objects for both programmatic access and human understanding.
 
 Naming fields in data structures is challenging because of the tension between longer names for clarity and brevity to avoid cumbersome code.  Some principles to use in thinking about naming are:
 
