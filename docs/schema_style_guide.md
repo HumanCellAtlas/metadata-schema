@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Schema conceptual model](#schema-conceptual-model)
 - [Schema formatting](#schema-formatting)
 - [Field formatting](#field-formatting)
 - [General rules](#general-rules)
