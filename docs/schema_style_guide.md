@@ -352,9 +352,9 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Field name conventions
 
-The following conventions should be followed when deciding on a new metadata field name or suggesting changes to a current metadata field name.
+The following conventions should be followed when defining a new field name or suggesting changes to a current field name.
 
-1. Field names should be all lower case and snake_case.
+1. Field names should be all lowercase and snake_case.
 
     Example:
 
@@ -366,7 +366,7 @@ The following conventions should be followed when deciding on a new metadata fie
 
     Example:
 
-    `paired_ends` is preferred over `does_sequencing_use_paired_ends` because it is shorter but still conveys full meaning.
+    `paired_ends` is preferred over `were_paired_ends_sequenced` because it is shorter but still conveys full meaning.
 
     `species` is preferred over `the_species`, as the grammatically determiner does not improve clarity.
 
