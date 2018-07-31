@@ -19,7 +19,7 @@
         "parent": {
             "description": "This organism is a child of the indicated organism.",
             "type": "string",
-            "user_friendly": "Child of"
+            "user_friendly": "Parent"
         },
          "child": {
             "description": "This organism is a parent of the indicated organism.",
