@@ -29,7 +29,7 @@
          "sibling": {
             "description": "This organism is a sibling of the indicated organism.",
             "type": "string",
-            "user_friendly": "Sibling of"
+            "user_friendly": "Sibling"
         }
     }
 }
