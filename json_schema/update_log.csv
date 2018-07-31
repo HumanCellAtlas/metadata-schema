@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/familial_relationship,major,"Changed is_parent_of to child, is_child_of to parent, and is_sibling_of to sibling.",,
