@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/familial_relationship.json - v6.0.0] - 2018-07-31
+### Changed
+Changed is_parent_of to child, is_child_of to parent, and is_sibling_of to sibling.
+
+### [type/biomaterial/donor_organism.json - v9.0.0] - 2018-07-31
+### Changed
+Changed is_parent_of to child, is_child_of to parent, and is_sibling_of to sibling.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/process/sequencing/10x.json - v1.0.1] - 2018-07-26

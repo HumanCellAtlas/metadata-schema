@@ -37,15 +37,15 @@ time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:
 organ_donation_death_type | Type of death preceding organ donation (for organ donors only). | string | no |  | Organ donation death type | Donation after circulatory death (DCD), Donation after brainstem death (DBD) | Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).
 
 ## familial_relationship<a name='familial_relationship'></a>
-_Information about other organisms that this organism is related to._
+_Information about other individuals that this individual is related to._
 
 Location: module/biomaterial/familial_relationship.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-is_child_of | This organism is a child of the indicated organism. | string | no |  | Child of |  | 
-is_parent_of | This organism is a parent of the indicated organism. | string | no |  | Parent of |  | 
-is_sibling_of | This organism is a sibling of the indicated organism. | string | no |  | Sibling of |  | 
+parent | The individual's parent. | string | no |  | Parent |  | 
+child | The individual's child. | string | no |  | Child |  | 
+sibling | The individual's sibling. | string | no |  | Sibling |  | 
 
 ## growth_conditions<a name='growth_conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
