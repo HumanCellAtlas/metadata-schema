@@ -25,7 +25,7 @@ This document serves as an SOP for super users who are responsible for merging P
 
 ## Preliminaries
 
-Committers who regularly interact with the metadata schema repo and who do PR merges should have the metadata pre-commit githook enabled that rebuilds the markdown docs on each commit. ***You only need to do this once***
+Committers who regularly interact with the metadata-schema repo and who merge PRs should have the metadata pre-commit githook enabled that rebuilds the markdown docs on each commit. ***You only need to do this once***
 
 1. **Check** that you have Git version 2.9 or greater
 
@@ -45,7 +45,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Check out** the pull request branch and make sure your local copy is up to date
 
-    `git checkout name_of_branch`
+    `git checkout <name_of_branch>`
 
     `git pull`
 
@@ -85,9 +85,9 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Commit** your changes back to the branch and push to github
 
-    `git commit -a -m "Sensible commit message goes here"`
+    `git commit -a -m "Ran release_prepare.py script."`
 
-    `git push origin name_of_branch`
+    `git push origin <name_of_branch>`
 
 1. **Wait** for the Travis build to pass, the **merge** then PR into develop.
 
