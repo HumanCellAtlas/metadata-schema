@@ -5,7 +5,7 @@
 - [General steps of the update process](#general-steps-of-the-update-process)
 - [Specific how-to for making changes](#specific-how-to-for-making-changes)
 - [Schema update acceptance process](#schema-update-acceptance-process)
-- [Observed guidelines](#observed-guidelines)
+- [Committer guidelines](#committer-guidelines)
 
 ## Introduction
 
@@ -192,13 +192,13 @@ Hopefully negative marks or a lack of consensus will be very rare occurrence but
 
 For proposed changes where consensus looks unlikely, as the review deadline looms (~ 1 day before if possible), the assigned committer should schedule a phone call to discuss the issue with the interested parties. If no consensus can be reached, the process should be extended by 5 working days for more interaction. At the end of these 5 days, if no consensus has been reached, the two possible solutions should be presented to the committers and a vote should be called with the committers to the metadata-schemas repo, the solution with most votes being taken forward.
 
-## Observed guidelines
+## Committer guidelines
 
 1. *Do not merge your own PR.* This ensures that at least one other person has reviewed the suggested changes and has approved them. 
     1. Exception 1: For PRs that affect documentation only, the same person can make/merge the PR if another person with commit privileges specifically approves it using the GitHub approval mechanism.
     1. Exception 2: A reviewer can merges changes they made by running the `release_prepare.py` script.
-1. *Be clear and descriptive in PR comments.* 
-    1. Refer to GitHub issues that they PR addresses by adding `Fixes #000` to at least 1 commit statement in the PR (where 000 is replaced by the actual GitHub issue number). 
+1. *Be clear and descriptive in PR comments/commits.* 
+    1. Refer to GitHub issues that the PR addresses by adding `Fixes #000` to at least 1 commit statement in the PR (where 000 is replaced by the actual GitHub issue number). 
     1. Tag a specific person if the PR addresses their issue or if the change affects their work.
     1. Include reasoning behind changes that could be controversial (e.g. reason why a field name changes, but no reason needed to fix a typo in a field description).
 
