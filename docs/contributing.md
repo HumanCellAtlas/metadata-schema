@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Requesting or suggesting changes](#requesting-or-suggesting-changes-to-the-metadata-schema)
-- [Example request for schema change](#example-request-for-schema-change)
+- [Example request for update to schema](#example-request-for-update-to-schema)
 - [Reporting bugs](#reporting-bugs)
 
 ## Introduction
@@ -68,9 +68,7 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
 
 1.  **Notification of acceptance.** Once the review period is over and the update is accepted, the changes will be merged into the metadata standard on your behalf. You can join the HCA Slack community by following these [instructions.](https://github.com/HumanCellAtlas/wiki/wiki)
 
-## Example request for schema change
-
-Example **update** request for a **new field**:
+## Example request for update to schema
 
 **For which schema is a change/update being suggested?**
 
@@ -90,7 +88,7 @@ I would like to add a new field - `random_integer` - to this schema to allow dat
 
 **Why is the change requested?**
 
-*e.g.*: Some scientists need to be able to assign a random integer to a cell line in order to keep track of it.
+Some scientists need to be able to assign a random integer to a cell line in order to keep track of it.
 
 ## Reporting bugs
 
