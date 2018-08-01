@@ -2,9 +2,9 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Steps of the update process](#steps-of-the-update-process)
+- [General steps of the update process](#general-steps-of-the-update-process)
+- [Specific how-to for making changes](#specific-how-to-for-making-changes)
 - [Schema update acceptance process](#schema-update-acceptance-process)
-- [Specific steps for making changes](#specific-steps-for-making-changes)
 - [Observed guidelines](#observed-guidelines)
 
 ## Introduction
@@ -22,7 +22,7 @@ This document serves as an SOP for committers who are ultimately responsible for
 - Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
 - Directions for [reporting bugs](contributing.md#reporting-bugs) in the metadata schema
 
-## Steps of the update process
+## General steps of the update process
 
 1. **Receive request for update to the metadata standard.** Any person (a "Contributor") can suggest changes to the metadata standards via three main routes:
     1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
@@ -71,6 +71,67 @@ This document serves as an SOP for committers who are ultimately responsible for
 7. **Pre-release the update.** Once the review period is over, if the update is accepted then the Reviewer merges the pull request into develop following the [release process](release_process.md). The update is now considered "pre-released".
 
 8. **Announce accepted update to community**. The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. 
+
+## Specific how-to for making changes
+
+This section outlines steps for contributors to suggest changes to the metadata schema via pull requests.
+
+1. **Clone** the metadata-schema repository into your local environment (should only need to do this once).
+
+        git clone git@github.com:HumanCellAtlas/metadata-schema
+
+1. **Navigate** to the metadata-schema repo.
+
+        cd metadata-schema
+    
+1. **Switch** to the develop branch. All suggested changes should be based on the current develop branch.
+
+        git checkout develop
+
+1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `initials-brief-desc-of-branch-scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) or JIRA ticket (e.g. `HCA-123`) in the branch name.
+
+        git checkout -b mf-new-mouse-module-Issue222
+
+1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` and `src/json_examples_validate_against_schema.py` scripts locally (which are also run by Travis CI after each commit). The first script checks whether each .json file in the `json_schema/` folder is valid JSON format. The second script attempts to validate example JSON files in the `schema_test_files/` directory against their corresponding schemas. Some of the JSON files are meant to fail (*e.g.* they are lacking required fields) and as their failure is expected behavior, the script should exit with status 0. Ensure both scripts exit with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If either test fails, you will have to debug and fix the errors in the changes you made.
+
+1. **Document** the changes in the `update_log.csv` file. This file is used by the automated release scripts to build the release changelog and increment the version number for the correct metadata schema. Unlike the changelog file, which is a running log of all metadata schema changes, the update_log file should only contain the documented changes for this branch, so the file should be empty apart from the header row when you first check out a new branch. An entry into `update_log.csv` should contain the path to the schema that was changed, the type of change (major, minor, or patch) and the description of the change that should go into the changelog, for example:
+
+    `module/ontology/disease_ontology,patch,Fixed a typo in description of text field in disease_ontology. Fixes #000,,`
+
+    Only list one schema per line and only list schemas that you have actually changed as the release script will automatically identify dependent schemas. If multiple schemas are being updated in a single PR, order the lines in the `update_log.csv` file with patch changes first, then minor, then major. Each line should end in a double comma, signifying the empty columns for version number and release date, which will be filled in by the release script. Not including the commas will cause the release script to fail. If there is a comma in the change message, the message needs to be quoted:
+
+    `type/biomaterial/organoid,patch,"Added user friendly names for fields a, b, c and d",,`
+
+    The change message should start with one of: *Added, Changed, Removed, Fixed, Deprecated, or Security*. These keywords are used in the changelog to classify types of changes.  
+
+    ***New schemas only***
+
+    1. If you added a new schema, **add** the name of the new schema in `json_schema/versions.json` in the correct location and with version number 0.0.0. For example, if you added a new biomaterial module `my_new_module`, your addition to the `versions.json` file would be:
+
+           [...]
+            "module": {
+            "biomaterial": {
+                [...],
+                "my_new_module": 0.0.0
+            },
+            [...]
+
+    1. The corresponding entry in the `update_log.csv` file should be marked a major version update so that the release script sets the version number of the new schema to `1.0.0`.
+
+1. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes and to increase granularity for rollbacks (if needed). Use helpful/short messages in commit statements. If the commit specifically fixes/addresses a current GitHub issue, add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issue. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
+
+        git add <changed files>
+        git commit -m "Helpful commit message here. Fixes #000."
+    
+    Example commit message: "Created new mouse module with mouse-specific fields. Fixes #142."
+
+1. **Push** the committed changes to the working branch.
+
+        git checkout -b mf-new-mouse-module-Issue222
+
+1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
+
+1. **Request** a reviewer to send notifications that a PR needs to be reviewed and merged. **Do not merge your own PR.** If the changes are ultimately approved, the old branch will be deleted unless otherwise specified by the contributor.
 
 ## Schema update acceptance process
 
@@ -131,71 +192,13 @@ Hopefully negative marks or a lack of consensus will be very rare occurrence but
 
 For proposed changes where consensus looks unlikely, as the review deadline looms (~ 1 day before if possible), the assigned committer should schedule a phone call to discuss the issue with the interested parties. If no consensus can be reached, the process should be extended by 5 working days for more interaction. At the end of these 5 days, if no consensus has been reached, the two possible solutions should be presented to the committers and a vote should be called with the committers to the metadata-schemas repo, the solution with most votes being taken forward.
 
-## Specific steps for making changes
-
-This section outlines steps for contributors to suggest changes to the metadata schema via pull requests.
-
-1. **Clone** the metadata-schema repository into your local environment.
-
-    `git clone git@github.com:HumanCellAtlas/metadata-schema`
-
-1. **Navigate** to the metadata-schema repo.
-
-    `cd metadata-schema`
-    
-1. **Switch** to the develop branch. All suggested changes should be based on the current develop branch.
-
-    `git checkout develop`
-
-1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `initials-brief_desc_of_branch_scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) or JIRA ticket (e.g. `HCA-123`) in the branch name.
-
-    `git checkout -b mf-new_mouse_module-Issue222`
-
-1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` and `src/json_examples_validate_against_schema.py` scripts (which are run by Travis CI). The first script checks whether each .json file in the `json_schema` folder is valid JSON format. The second script attempts to validate example JSON files in the `schema_test_files` directory against their corresponding schemas. Some of the JSON files are meant to fail (e.g. they are lacking required fields) and as their failure is expected behavior, the script should exit with status 0. Ensure both scripts exit with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If either test fails, you will have to debug and fix the errors in the changes you made.
-
-1. **Document** the changes in the update_log.csv file. This file is used by the automated release scripts to build the release changelog and increment the version number for the correct metadata schema. Unlike the changelog file, which is a running log of all metadata schema changes, the update_log file should only contain the documented changes for this branch, so the file should be empty apart from the header row when you first check out a new branch. An entry into update_log.csv should contain the path to the schema that was changed, the type of change (major, minor or patch) and the description of the change that should go into the changelog, for example:
-
-    `module/ontology/disease_ontology,patch,Fixed a typo in description of text field in disease_ontology. Fixes #000,,`
-
-    Only list one schema per line and only list schemas that you have actually changed as the release script will automatically identify dependent schemas. Each line should end in a double comma, signifying the empty columns for version number and release date, which will be filled in by the release script. Not including the commas will cause the release script to fail. If there is a comma in the change message, the message needs to be quoted:
-
-    `type/biomaterial/organoid,patch,"Added user friendly names for fields a, b, c and d",,`
-
-    The change message should start with one of *Added, Changed, Removed, Fixed, Deprecated or Security*
-
-    ***New schemas only***
-
-    1. If you added a new schema, **add** the name of the new schema in `json_schema/versions.json` in the correct location and with version number 0.0.0. For example, if you added a new biomaterial module `my_new_module`, your addition to the `versions.json` file would be:
-
-           `[...]
-            "module": {
-            "biomaterial": {
-                [...],
-                "my_new_module": 0.0.0
-            },
-            [...]`
-
-    2. The corresponding entry in the `update_log.csv` file should be marked a major version update so that the release script sets the version number of the new schema to `1.0.0`.
-
-
-1. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes and to increase granularity for rollbacks (if needed). Use helpful/short messages in commit statements. If the commit specifically fixes/addresses a current GitHub issue, you can add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issue. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
-
-    `git add <changed files>`
-    
-    `git commit -m "Helpful commit message here. Fixes #000."`
-    
-    Example commit message: "Created new mouse module with mouse-specific fields. Fixes #142."
-
-1. **Push** the committed changes to the working branch.
-
-    `git push origin mf-new_mouse_module-Issue222`
-
-1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In the GitHub UI, **create** a pull request (PR) against the `develop` branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
-
-1. **Request** a reviewer to send notifications that a PR needs to be reviewed and merged. **Do not merge your own PR.** If the changes are ultimately approved, the old branch will be deleted unless otherwise specified by the contributor.
-
 ## Observed guidelines
 
-- *Do not merge your own PR.* This ensures that at least one other person has reviewed the suggested changes and has approved them. The only exception is if another person specifically "approves" your PR, but doesn't actually merge it. In this scenario, because the other person gave approval that they agree with the changes, the original PRer is allowed to merge their own changes.
-- *Be clear and descriptive in PR comments.* Include references to current GitHub issues when appropriate. Reference specific people if the PR addresses someones concerns. Include reasoning behind changes that could be controversial (e.g. reason why a field name changes, but no reason needed to fix a typo in a field description).
+1. *Do not merge your own PR.* This ensures that at least one other person has reviewed the suggested changes and has approved them. 
+    1. Exception 1: For PRs that affect documentation only, the same person can make/merge the PR if another person with commit privileges specifically approves it using the GitHub approval mechanism.
+    1. Exception 2: A reviewer can merges changes they made by running the `release_prepare.py` script.
+1. *Be clear and descriptive in PR comments.* 
+    1. Refer to GitHub issues that they PR addresses by adding `Fixes #000` to at least 1 commit statement in the PR (where 000 is replaced by the actual GitHub issue number). 
+    1. Tag a specific person if the PR addresses their issue or if the change affects their work.
+    1. Include reasoning behind changes that could be controversial (e.g. reason why a field name changes, but no reason needed to fix a typo in a field description).
 
