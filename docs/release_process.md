@@ -23,7 +23,6 @@ This document serves as an SOP for super users who are responsible for merging P
 - Directions for [reporting bugs](metadata-schema/docs/contributing.md#reporting-bugs) in the metadata schema
 - Directions of [making changes to metadata schemas](metadata-schema/docs/committers.md)
 
-
 ## Preliminaries
 
 Committers who regularly interact with the metadata-schema repo and who merge PRs should have the metadata pre-commit githook enabled that rebuilds the markdown docs on each commit. ***This only needs to be done once.***
@@ -37,7 +36,6 @@ Committers who regularly interact with the metadata-schema repo and who merge PR
         git config core.hooksPath .githooks
 
 From now on, every time you commit anything in the metadata schema repo using the `git commit` command, the git hook will be triggered to build the jsonBrowser markdown docs and add them to your commit.
-
 
 ## Steps of the pre-release process
 
@@ -94,7 +92,6 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Wait** for the Travis build to pass, the **merge** then PR into develop immediately.
 
-
 ## Steps of the release process
 
 ### Primary release
@@ -122,14 +119,8 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Create a pull request** from *develop* to *integration* for easy tracability but immediately merge this yourself. ***Only merge your own pull request in this particular scenario!***
 
-
 ### Release propagation
 
 Promotion of changes from integration to staging and staging to production should be done in line with the general DCP release schedule. These release propagations should be straight forward merge operations through the environments, with no manual changes being required.
 
 The designated **release manager** for the week is in charge of the relevant propagation steps.
-
-
-
-
-
