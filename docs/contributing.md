@@ -23,7 +23,7 @@ This document describes how you can contribute to the development of the HCA met
 - Information about contributing **data** to the HCA. This information can be found on the HCA DCP website
 - Directions for committing changes to this repo, which is currently restricted to a core group of Committers
 - Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
-- Directions for [submitting pull requests](committers.md) for changes
+- Directions for submitting pull requests for changes
 
 ## Requesting or suggesting changes to the metadata schema
 
