@@ -13,7 +13,6 @@ This document describes how you can contribute to the development of the HCA met
 **What is in this document?**
  - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes-to-the-metadata-schema) to the metadata schema
  - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
- - Expectations for suggestions to be accepted or rejected
 
 **Who should be reading this document?**
  - Data contributors
@@ -22,7 +21,7 @@ This document describes how you can contribute to the development of the HCA met
 
 **What *isn't* in this document?**
 - Information about contributing **data** to the HCA. This information can be found on the HCA DCP website
-- Directions for committing changes to this repo, which is currently restricted to a core group of committers for this repo
+- Directions for committing changes to this repo, which is currently restricted to a core group of Committers
 - Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
 - Directions for [submitting pull requests](committers.md) for changes
 
