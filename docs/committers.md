@@ -56,25 +56,23 @@ This document serves as an SOP for committers who are ultimately responsible for
     
     If the suggested update comes in the form of a pull request, the above information should be self-evident between the JSON schema itself and the pull request message. If this isn’t clear either from the pull request or the message sent through email or git, then the assigned committer will seek clarification before continuing to step 3.
 
-2. **Assign committer to review the suggestion.** A person (the "Reviewer") with commit rights on the metadata-standards repo will be assigned to each suggestion (issue/email/PR). The Reviewer will be responsible for reviewing the suggestion, noting any consequences of the suggestion, contacting appropriate HCA teams for feedback, and making announcements to ensure the whole community has an opportunity to provide input. 
+1. **Assign committer to review the suggestion.** A person (the "Committer") with commit rights on the metadata-standards repo will be assigned to each suggestion (issue/email/PR). The Committer will be responsible for reviewing the suggestion, noting any consequences of the suggestion, contacting appropriate HCA teams for feedback, and making announcements to ensure the whole community has an opportunity to provide input. 
 
-3. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Reviewer needs to make the suggested update and a pull request against develop. If the Contributor has a GitHub account, s/he should be encouraged to make the suggested update and a pull request. When a pull request is made, a test suite of tools will automatically run that validates the updates. 
+1. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Committer needs to make the suggested update and a pull request against develop. If the Contributor has a GitHub account, they should be encouraged to make the suggested update and a pull request. When a pull request is made, a test suite of tools will automatically run that validates the updates. 
 
     **NB** Currently this test suite of tools is not complete, and the tools that do exist must be run manually by the Reviewer.
 
-4. **Annotate the pull request (version, stability) and run unit tests.** The Reviewer should classify the suggested update by the type of version change (major, minor, patch) and the stability category (high, medium, or low). These classifications can be indicated in the pull request description. Specifically, the version change classification will be indicated in the `update_log.csv` file. The Reviewer should also ensure the metadata-schema repo unit tests have been run and pass. Example spreadsheets and JSON documents will potentially need to be updated.
+1. **Annotate the pull request (version, stability) and run unit tests.** The Committer should classify the suggested update by the type of version change (major, minor, patch) and the stability category (high, medium, or low). These classifications can be indicated in the pull request description. Specifically, the version change classification will be indicated in the `update_log.csv` file. The Committer should also ensure the metadata-schema repo unit tests have been run and pass. Example spreadsheets and JSON documents will potentially need to be updated.
 
-5. **Notify community about the update request.** The Reviewer should announce the suggested update/PR on the #hca-metadata and #dcp Slack channels so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change. The Reviewer should also tag specific developers who could be impacted by the change. 
+1. **Notify community about the update request.** The Committer should announce the suggested update/PR on the #hca-metadata and #dcp Slack channels so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change. The Committer should also tag specific developers who could be impacted by the change. 
 
-6. **Start the community review period.** The Reviewer starts the clock on the review period as indicated by the [update acceptance process](schema-update-acceptance-process). The Reviewer and any other assigned internal reviewers should actively respond to feedback on the proposed update, making any indicated changes in the pull request.
+1. **Start the community review period.** The Committer starts the clock on the review period as indicated by the [update acceptance process](schema-update-acceptance-process). The Committer and any other assigned internal reviewers ("Reviewers") should actively respond to feedback on the proposed update, making any indicated changes in the pull request.
 
-7. **Pre-release the update.** Once the review period is over, if the update is accepted then the Reviewer merges the pull request into develop following the [release process](release_process.md). The update is now considered "pre-released".
-
-8. **Announce accepted update to community**. The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. 
+1. **Pre-release the update.** Once the review period is over, if the update is accepted then the Committer merges the pull request into develop following the [release process](release_process.md). The update is now considered "pre-released".
 
 ## Specific how-to for making changes
 
-This section outlines steps for contributors to suggest changes to the metadata schema via pull requests.
+This section outlines steps for Committers to make suggested changes to the metadata schema via pull requests.
 
 1. **Clone** the metadata-schema repository into your local environment (should only need to do this once).
 
@@ -131,41 +129,41 @@ This section outlines steps for contributors to suggest changes to the metadata 
 
 1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
 
-1. **Request** a reviewer to send notifications that a PR needs to be reviewed and merged. **Do not merge your own PR.** If the changes are ultimately approved, the old branch will be deleted unless otherwise specified by the contributor.
+1. **Request** additional Reviewer(s) in GitHub signalling that a PR needs to be reviewed. Announce the update on Slack. If the changes are ultimately approved by all indicated Reviewers and no objections were raised, one of the assigned Reviewers should run the pre-release process and merge the PR. **The Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
 
 ## Schema update acceptance process
 
 There are three types of update acceptance verification: full, medium, and light. These three levels aim to facilitate agility for simple changes with few downstream dependencies but ensure that appropriate consideration is required for changes which are likely to trigger software updates. All reviews should consider what need is met by the requested change and what the impact of the change is on the existing systems, ensuring that updates which require major version changes also bring value to the DCP as a whole.
 
-The *review timeframe* should start when the committer responsible for the suggestion has notified the #hca-metadata slack channel and the metadata-wg email list about the pull request. Weekend days do not count for the review timeframe.
+The *review timeframe* starts when the Committer responsible for the suggestion has announced it on the #hca-metadata and #dcp Slack channels. Weekend days and US/UK holidays do not count towards the review timeframe.
 
-The *minimum reviewer number* is the minimum number of people who need to have seen and agreed to the change before the pull request can be accepted. This agreement must be active and result in at least +1 on the pull request thread. If a DCP team member or metadata-schema repo committer are the person to suggest a change, they should not be counted as one of the reviewers needed for agreement.
+The *minimum reviewer number* is the minimum number of Reviewers who need to have seen and agreed to the change before the pull request can be accepted. This agreement must be active and result in at least +1 on the pull request thread. If a DCP team member or metadata-schema repo committer is the person who suggested the change, they should not be counted as one of the Reviewers needed for agreement.
 
 Any *negative marks* (-1) against a proposal that can not be resolved in the allotted timeframe will need to extend the review process. The full details of this are described below. 
 
-If during this process there is any disagreement about the best approach, the assigned committer should work with the contributor and other concerned third parties to find an acceptable solution for all concerned. If consensus still cannot be reached, a vote between the committers for the metadata schema repo should decide the right solution.
+If during this process there is any disagreement about the best approach, the assigned Committer should work with the Contributor and other concerned third parties to find an acceptable solution for all concerned. If consensus still cannot be reached, a vote between the committers for the metadata-schema repo should decide the solution.
 
 ### Full acceptance
 
 **Review timeframe**: 10 working days
 
-**Minimum reviewer number**: 3 (a committer, and two relevant third parties)
+**Minimum reviewer number**: 3 (a Committer, and two relevant third parties (Reviewer))
 
 Full acceptance is used when making major version changes to high stability modules. This means the module being changed is likely to trigger a new software release for a DCP service. The DCP service which is most likely to be affected by any metadata update would be the Ingest Infrastructure. This should be a rare occurrence. The DCP metadata and code should have a clear separation of concerns and the dependencies between the two should be minimal. That being said, the ingest infrastructure, in particular, needs some knowledge of the metadata structure in order to enable ID fields to be assigned and to allow the system to know the relationships between the submitted entities. Any module which contains these fields must be considered high stability.
 
-This process should take 10 working days. The assigned committer should identify at least two developers from the DCP team to review the change and comment as well as themselves. If the contributor making the suggestion was a developer from a DCP team, the two reviewers should be other DCP developers. 
+This process should take 10 working days. The assigned Committer should identify at least two developers from the DCP team to review the change and comment as well as themselves. If the Contributor making the suggestion was a developer from a DCP team, the two Reviewers should be other DCP developers. 
 
 ### Medium acceptance
 
 **Review timeframe**: 120 hours (5 working days)
 
-**Minimum reviewer number**: 2 (a committer and one relevant third party)
+**Minimum reviewer number**: 2 (a Committer and one relevant third party (Reviewer))
 
 Medium acceptance is the process used for major version changes to medium stability modules and minor version changes to both high and medium stability modules. 
 
 Generally this is a suitable acceptance process for changes which don’t require DCP software updates but are likely to affect how the metadata can be queried from a scientific perspective. It is expected for these types of updates to happen more frequently than those which require full acceptance as they will concerns fields with scientific meaning. New experiments and changes in technology may require new fields or changes to existing fields.
 
-The process should take 5 working days. The assigned committer should identify at least one interested third party from the secondary and tertiary analysis groups to provide review. As before if it the contributor is a member of the secondary or tertiary analysis group, another person should be selected as the reviewer.
+The process should take 5 working days. The assigned Committer should identify at least one interested third party (Reviewer) from the secondary and tertiary analysis groups to provide review. As before, if the Contributor is a member of the secondary or tertiary analysis group, another person should be selected as the Reviewer.
 
 ### Light acceptance
 
@@ -177,7 +175,7 @@ Light acceptance is the process used for all patch versions, regardless of stabi
 
 Light acceptance is lightweight process which allows rapid iteration for new technologies where the requirements are not precisely defined and the processes are changing quickly.  Downstream users of this data should be aware that the metadata is changing rapidly and understand any dependencies they create on specific structures will be broken in future.
 
-The process should take 3 working days. The assigned committer does not need to recruit an additional reviewer though should ensure that as many people as possible have seen the suggestion via slack messages or email.
+The process should take 3 working days. The assigned Committer does not need to recruit an additional Reviewer though should ensure that as many people as possible have seen the suggestion via Slack messages or GitHub notifications.
 
 | | Major version | Minor Version  | Patch version |
 |:-|:-|:-|:-|
@@ -188,6 +186,7 @@ The process should take 3 working days. The assigned committer does not need to 
 > Table 1: Which update acceptance process to use for which category of suggested change.
 
 ### How to manage negative marks against a suggested change.
+
 Hopefully negative marks or a lack of consensus will be very rare occurrence but this process does contain the possibility of disagreement on the best solution. 
 
 For proposed changes where consensus looks unlikely, as the review deadline looms (~ 1 day before if possible), the assigned committer should schedule a phone call to discuss the issue with the interested parties. If no consensus can be reached, the process should be extended by 5 working days for more interaction. At the end of these 5 days, if no consensus has been reached, the two possible solutions should be presented to the committers and a vote should be called with the committers to the metadata-schemas repo, the solution with most votes being taken forward.
