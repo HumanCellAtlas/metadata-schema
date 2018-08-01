@@ -223,8 +223,8 @@ The following attributes are required for each metadata field in an HCA metadata
         Programmatic: ncbi_taxon_id
         User-friendly: NCBI Taxonomy ID
         
-        Programmatic: paired_ends
-        User-friendly: Paired ends?
+        Programmatic: paired_end
+        User-friendly: Paired-end?
         
     Having *user-friendly* values for metadata fields has many advantages, including: 
     
