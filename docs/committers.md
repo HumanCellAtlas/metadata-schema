@@ -130,7 +130,7 @@ This section outlines steps for Committers to make suggested changes to the meta
 
 1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
 
-1. **Request** additional Reviewer(s) in GitHub signalling that a PR needs to be reviewed. Announce the update on Slack. If the changes are ultimately approved by all indicated Reviewers and no objections were raised, one of the assigned Reviewers should run the pre-release process and merge the PR. **The Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
+1. **Request** additional Reviewer(s), if required, in GitHub to signal that a PR needs to be reviewed. Announce the update on Slack. If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, a Reviewer should run the pre-release process and merge the PR. **The Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
 
 ## Schema update acceptance process
 
@@ -148,7 +148,7 @@ If during this process there is any disagreement about the best approach, the as
 
 **Review timeframe**: 10 working days
 
-**Minimum reviewer number**: 3 (a Committer, and two relevant third parties (Reviewer))
+**Minimum reviewer number**: 3 (a Committer, and two relevant third parties (Reviewers))
 
 Full acceptance is used when making major version changes to high stability modules. This means the module being changed is likely to trigger a new software release for a DCP service. The DCP service which is most likely to be affected by any metadata update would be the Ingest Infrastructure. This should be a rare occurrence. The DCP metadata and code should have a clear separation of concerns and the dependencies between the two should be minimal. That being said, the ingest infrastructure, in particular, needs some knowledge of the metadata structure in order to enable ID fields to be assigned and to allow the system to know the relationships between the submitted entities. Any module which contains these fields must be considered high stability.
 
@@ -170,7 +170,7 @@ The process should take 5 working days. The assigned Committer should identify a
 
 **Review timeframe**: 72 hours (3 working days)
 
-**Minimum reviewer number**: 1 (a committer)
+**Minimum reviewer number**: 1 (a Committer)
 
 Light acceptance is the process used for all patch versions, regardless of stability and for all changes to low stability modules.
 
