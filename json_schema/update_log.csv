@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-core/process/process_core,major,Changed operator_identity to operator,,
+core/process/process_core,major,"Changed operator_identity to operator. Fixes #377.",,
