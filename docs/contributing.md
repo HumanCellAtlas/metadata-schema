@@ -32,42 +32,42 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
 
 1. **Gather information** requested for submitting feedback. There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).
 
-    1. To request an **update** to an existing schema, please supply the following pieces of information:
+    1. To request an **update** to an existing schema, the following pieces of information are required:
 
-        1. Which schema would you like to be changed?
-        1. What field(s) in that schema would you like to be changed, and what should the change be?
+        1. For which schema is a change/update being suggested?
+        1. What should the change/update be?
         1. What new field(s) need to be added?
             - Details for requesting **new field(s)** outlined below
-        1. Why is the change needed?
+        1. Why is the change requested?
 
-    1. To request a **new** schema, you need to supply the following pieces of information:
+    1. To request a **new** schema, the following pieces of information are required:
 
         1. What is the proposed name of the new schema?
         1. What field(s) should the new schema contain?
             - Details for requesting **new field(s)** outlined below
         1. Why is the new schema needed? Specifically, why does the current metadata standard not meet your need?
     
-    For **each new field** requested, please supply the following pieces of information:
+    For **each new field** requested, the following pieces of information are required:
     
-    1. Field name (required)
-    1. Field description (required)
-    1. Whether the field should be optional or required (required)
-    1. An example valid value for this field (optional)
-    1. If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed (optional)
+    1. Field name
+    1. Field description
+    1. Whether the field should be optional or required
+    1. An example valid value for this field
+    1. If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed.
     
-1. **Submit request on the HCA metadata standard.** Anyone can suggest/request changes to the metadata standards via three main routes:
+1. **Submit request** for update to the HCA metadata standard. Anyone can suggest/request changes to the metadata standards via three main routes:
 
-    1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema repo
+    1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) in the metadata-schema repo using the provided template
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema repo (only recommended for users with familiarity with GitHub)
     
     Whichever method is chosen, the information indicated in Step 1 is requested to be submitted.
 
-1. **Track progress of request.** Within 2 working days, your request will be reviewed by an HCA DCP member. You may be asked for clarification on your request, and additional input may be sough from the appropriate HCA communities.
+1. **Track progress of request.** Within 2 working days, your request will be reviewed by an HCA DCP member. You may be asked for clarification on your request, and additional input may be sought from the appropriate HCA communities.
 
-1. **Review and comment on proposed update.** A proposed schema update to address to your request will be developed by an HCA DCP member and then posted to the #hca-metadata Slack channel and on GitHub. Making the proposed update public allows everyone the opportunity to comment or raise concerns. The amount of time an update remains public for comments depends on the severity of the change. These timeframes can be found [here](committers.md#schema-update-acceptance-process).
+1. **Review and comment on proposed update.** A proposed schema update to address to your request will be made by an HCA DCP member and then posted to the #hca-metadata and #dcp Slack channels and on GitHub. Making the proposed update public allows everyone the opportunity to comment or raise concerns. The amount of time an update remains public for comments depends on the severity of the change and can be found [here](committers.md#schema-update-acceptance-process).
 
-1.  **Notification of acceptance.** Once the review period is over and the update is accepted, the changes will be merged into the metadata standard on your behalf. The update will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list. You can join the HCA slack community follow these [instructions.](https://github.com/HumanCellAtlas/wiki/wiki)
+1.  **Notification of acceptance.** Once the review period is over and the update is accepted, the changes will be merged into the metadata standard on your behalf. You can join the HCA Slack community by following these [instructions.](https://github.com/HumanCellAtlas/wiki/wiki)
 
 ## Example request for schema change
 
@@ -95,9 +95,43 @@ I would like to add a new field - `random_integer` - to this schema to allow dat
 
 ## Reporting bugs
 
-Report all bugs and issues (schema-related or other) by creating a [new GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) in this repo. Please add the "bug" label to the issue and summarize the expected behavior, actual behavior, and steps to reproduce the bug. Specific instructions can be found in GitHub when a new issue is raise, but briefly please report:
+Report any bugs (schema-related or other) by creating a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=bug_report.md) using the provided template. Please add the "bug" label to the issue. Briefly, the following information should be reported for all bugs:
 
-1. On which version of the code did the bug occur? (git hash, date, branch, be specific)
-1. Expected behavior
-1. Actual behavior
-1. Steps to reproduce the behavior
+**Give the bug a title**
+
+Please give the bug a title that includes a short description. *e.g.*:
+
+* `something.json` schema missing `type` attribute for the `something_cool` field\
+* `test.xlsx` spreadsheet fails validation against current released schemas
+
+**To Reproduce**
+
+Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing). *e.g.*:
+
+Steps to reproduce the behaviour:
+1. Go to '...'
+1. Click on '...'
+1. Scroll down to '...'
+1. See error
+
+**Schema versions**
+
+Please list any schema versions related to this bug. *e.g.*:
+    
+I was using `something.json` schema v6.0.1.
+
+**Expected behavior**
+
+Please explain what you expected to happen. *e.g.*:
+    
+I expected the example spreadsheet in the `current` folder to validate against the current schemas.
+
+**Actual behavior**
+
+Please explain what actually happened. *e.g.*:
+
+I uploaded the spreadsheet and got an error message saying a required field was missing.
+
+**Screenshots or Messages**
+
+If applicable, add screenshots to help explain your problem or the text of any error messages.
