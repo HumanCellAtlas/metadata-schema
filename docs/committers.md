@@ -24,7 +24,7 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 ## Steps of the update process
 
-1. **Acquire feedback on the HCA metadata standard.** Anyone can suggest changes to the metadata standards via three main routes:
+1. **Receive request for update to the metadata standard.** Any person (a "Contributor") can suggest changes to the metadata standards via three main routes:
     1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new) on the metadata-schema GitHub repo
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema GitHub repo
@@ -39,24 +39,24 @@ This document serves as an SOP for committers who are ultimately responsible for
             - Details for requesting **new field(s)** outlined below
         1. Why is the change requested?
 
-    1. To request a **new** schema, you need to supply the following pieces of information:
+    1. To request a **new** schema, the following pieces of information are required:
 
         1. What is the proposed name of the new schema?
         1. What field(s) should the new schema contain?
             - Details for requesting **new field(s)** outlined below
         1. Why is the new schema needed? Specifically, why does the current metadata standard not meet your need?
     
-    For **each new field** requested, please supply the following pieces of information:
+    For **each new field** requested, the following pieces of information are required:
     
-    1. Field name (required)
-    1. Field description (required)
-    1. Whether the field should be optional or required (required)
-    1. An example valid value for this field (optional)
-    1. If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed (optional)
+    1. Field name
+    1. Field description
+    1. Whether the field should be optional or required
+    1. An example valid value for this field
+    1. If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed.
     
-    If the suggested update comes in the form of the pull request, the required information should be self-evident between the JSON schema itself and the pull request message. If this isn’t clear either from the pull request or the message sent through email or git, then the assigned committer will seek clarification before moving onto step 3.
+    If the suggested update comes in the form of a pull request, the above information should be self-evident between the JSON schema itself and the pull request message. If this isn’t clear either from the pull request or the message sent through email or git, then the assigned committer will seek clarification before continuing to step 3.
 
-2. **Assign a committer to review the suggestion.** A person with commit rights on the metadata-standards repo should be assigned to the review process for each suggestions. This person will be responsible for reviewing the suggestion and ensuring upstream and downstream consequences are noted. They will contact the appropriate HCA teams and making the general community announcements ensuring the whole community has opportunity to give input. 
+2. **Assign committer to review the suggestion.** A person (the "Reviewer") with commit rights on the metadata-standards repo will be assigned to each suggestion (issue/email/PR). The Reviewer will be responsible for reviewing the suggestion, noting any consequences of the suggestion, contacting appropriate HCA teams for feedback, and making announcements to ensure the whole community has an opportunity to provide input. 
 
 3. **Make pull request (if one doesn’t exist already).** If the feedback didn’t come in the form of the pull request, then one needs to be created. If the contributor has a GitHub account, they should be encouraged to make a pull request for their proposed change. ,If that is not possible, the committer who is handling the feedback should translate it into a JSON schema update and create the pull request. If this happens, another committer should be added to review and merge the pull request.
 
