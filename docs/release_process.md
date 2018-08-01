@@ -41,7 +41,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ## Steps of the pre-release process
 
-***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the general acceptance process.
+***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](metadata-schema/docs/committers#schema-update-acceptance-process).
 
 
 1. **Check out** the pull request branch and make sure your local copy is up to date
