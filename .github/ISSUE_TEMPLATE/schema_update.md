@@ -20,7 +20,7 @@ labels: content
 * New fields
 * Updates to repo documentation or examples-->
 
-*e.g.*: The `cell_line.json` schema description needs to be updated to reflect that the cell line schema is for describing both cell lines and cultures, and all of primary, immortalized, etc. of those types.
+*e.g.*: I would like to add a new field - `random_integer` - to this schema to allow data contributors to assign a random integer to the cell line.
 
 **What new field(s) need to be changed/added?**
 
@@ -35,7 +35,7 @@ labels: content
 *e.g.*:
 * Field name: random_integer
 * Field description: Any random integer.
-* Required: yes
+* Required: no
 * Example: 42
 * CV or enum: no
 
@@ -43,5 +43,5 @@ labels: content
 
 <!-- Please provide the motivation for the requested change/update. Please cite user feedback or results of UX sessions if possible.-->
 
-*e.g.*: Some scientists use the language "cell culture" to describe a biomaterial that will be modelled with the cell line schema. The name of the schema (cell_line) is less important than having the description be accurate, as the description will be what is displayed to users via the UI and other guides/documentation.
+*e.g.*: Some scientists need to be able to assign a random integer to a cell line in order to keep track of it.
 
