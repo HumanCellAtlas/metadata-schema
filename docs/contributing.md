@@ -99,38 +99,37 @@ Report any bugs (schema-related or other) by creating a [GitHub issue](https://g
 
 **Give the bug a title**
 
-Please give the bug a title that includes a short description. *e.g.*:
+Please give the bug a title that includes a short description.
 
-* `something.json` schema missing `type` attribute for the `something_cool` field\
-* `test.xlsx` spreadsheet fails validation against current released schemas
+*e.g.*: Typo in description for `publication.title` field.
 
 **To Reproduce**
 
-Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing). *e.g.*:
+Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing).
 
-Steps to reproduce the behaviour:
-1. Go to '...'
-1. Click on '...'
-1. Scroll down to '...'
-1. See error
+*e.g.*:
+
+Steps to reproduce the behavior:
+1. Go to `publication.json` schema on develop branch
+1. Observe typo in description for `title` field
 
 **Schema versions**
 
-Please list any schema versions related to this bug. *e.g.*:
-    
-I was using `something.json` schema v6.0.1.
+Please list any schema versions related to this bug.
+ 
+*e.g.*: `publication.json` schema v6.0.1
 
 **Expected behavior**
 
-Please explain what you expected to happen. *e.g.*:
-    
-I expected the example spreadsheet in the `current` folder to validate against the current schemas.
+Please explain what you expected to happen.
+ 
+*e.g.*: I expected the description to say "Title of publication."
 
 **Actual behavior**
 
-Please explain what actually happened. *e.g.*:
+Please explain what actually happened.
 
-I uploaded the spreadsheet and got an error message saying a required field was missing.
+*e.g.*: The description says "Title of *publicatoin*."
 
 **Screenshots or Messages**
 
