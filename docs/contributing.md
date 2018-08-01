@@ -11,8 +11,8 @@
 This document describes how you can contribute to the development of the HCA metadata standard by suggesting or requesting changes to and reporting bugs in the metadata schema via GitHub or email. This document also covers our rationale for acceptance or rejection of suggestions.
 
 **What is in this document?**
- - Directions for [requesting or suggesting changes](#requesting-or-suggesting-changes-to-the-metadata-schema) to the metadata schema
- - Directions for [reporting bugs](#reporting-bugs) in the metadata schema
+ - Directions for requesting or suggesting changes to the metadata schema
+ - Directions for reporting bugs in the metadata schema
 
 **Who should be reading this document?**
  - Data contributors
@@ -27,7 +27,7 @@ This document describes how you can contribute to the development of the HCA met
 
 ## Requesting or suggesting changes to the metadata schema
 
-As a prerequisite to this section, you may want to look at [how the metadata is structured](structure.md)
+As a prerequisite to this section, you may want to look at [how the metadata is structured](structure.md).
 
 1. **Gather information** requested for submitting feedback. There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).
 
@@ -56,9 +56,9 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
     
 1. **Submit request** for update to the HCA metadata standard. Anyone can suggest/request changes to the metadata standards via three main routes:
 
-    1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) in the metadata-schema repo using the provided template
+    1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md)
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
-    1. Make a pull request against the develop branch of the metadata-schema repo (only recommended for users with familiarity with GitHub)
+    1. Make a pull request against the develop branch of the metadata-schema repo (recommended for users familiar with GitHub)
     
     Whichever method is chosen, the information indicated in Step 1 is requested to be submitted.
 
