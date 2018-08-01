@@ -124,6 +124,16 @@ The following attributes are required for each metadata schema in the HCA metada
 
 Example:
 
+*GitHub*
+
+    {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "description": "Information about an organoid biomaterial.",
+        ...
+    }
+
+*schema.humancellatlas.org*
+
     {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "id": "http://schema.humancellatlas.org/type/biomaterial/8.3.3/organoid",
@@ -138,6 +148,29 @@ Naming fields in data structures is challenging because of the desire to optimiz
 1. *Field names are programming constructs, not GUI constructs.* Field names are only intended for use by programmers, including those writing textual queries. Attempting to have a field name that is both a good GUI name and a good programmatic name makes the naming problem far more difficult. For example, simple field name changes to make a GUI clearer creates complex, breaking changes for any code accessing the data structures. It also makes GUI implementation more difficult as often one needs different labels for data depending on how data is being presented. The schema object and field names should be keys to looking up natural language documentation.
 
 1. *Field names don't exist outside of the context of their containing structure.* Fields in objects are not standalone, and the field names should not redundantly contain the structure name.
+
+**mf**: This isn't always the case. One exception is in the spreadsheet. Each *biomaterial*, *protocol*, and *file* schema exists as its own tab in the spreadsheet (e.g. the organoid tab or the enrichment protocol tab). In these cases, the fields in the schemas are within their context. The `id` fields in these schemas additionally exist in other tabs to enable linking between biomaterials and protocols. All of the *process* schema fields exist in relation to protocols, by which I mean that there isn't a process spreadsheet tab, but rather process fields exist in the protocol tabs. The *project* schema exists in its own tab, although there are 3 fields (funders, contributors, and publications) which reference multi-field schema module and thus are made into their own tabs. There might be another exception with elastic search queries. I know the queries are changing because of the new way we are storing metadata files in the data store, so I'll work on getting some concrete examples. An old example query looked like:
+
+    {
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "files.protocol_json.protocols.content.library_construction_approach.text": "10X sequencing"
+              }
+            },
+            {
+              "match": {
+                "files.biomaterial_json.biomaterials.content.biomaterial_core.ncbi_taxon_id": 9606
+              }
+            }
+          ]
+        }
+      }
+    }
+
+In which case there was loss of the type entity (`library_preparation_protocol` for the first match, `donor_organism` for the second match). We need to re-assess context after the data store updates to the new way files are being store.
 
 The section [Field name conventions](#field-name-conventions) provides guidelines to use when defining names.
 
