@@ -71,29 +71,27 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
 
 ## Example request for schema change
 
-Example **update** request for two **new field(s)**:
+Example **update** request for a **new field**:
 
-1. *Which schema needs to be changed?* I would like to request a change to the project_core schema.
+**For which schema is a change/update being suggested?**
 
-1. *What field(s) in that schema would you like to be changed, and what should the change be?* I am not requesting field changes, only new fields.
-1. *What new field(s) need to be added?* I would like to request the addition of a 2 new fields to capture information about the funder or grant supporting the project.
+I would like to request an update the the `cell_line.json` schema.
 
-    New field 1\
-    i. Funder\
-    ii. The name of the funding agency that awarded the grant.\
-    iii. Not required\
-    vi. NSF\
-    v. Should be a controlled vocabulary
+**What should the change/update be?**
 
-    New field 2\
-    i. Grant ID\
-    ii. The identifier of the grant funding the project.\
-    iii. Not required\
-    vi. 0903629\
-    v. Not CV or ontology at this time, free text is fine.
+I would like to add a new field - `random_integer` - to this schema to allow data contributors to assign a random integer to the cell line.
 
-1. *Why is the change needed?* This change is being requested to help HCA funders track and understand specifically what data they have supported. Ideally, a funder would be able to browse or identify exactly which data they have supported and also the specific grant/program that the data came out of. It will be critical to rationalizing funding and also a metric that funders can track to evaluate impact/effectiveness of specific programs.
+**What new field(s) need to be changed/added?**
 
+* Field name: random_integer
+* Field description: Any random integer.
+* Required: no
+* Example: 42
+* CV or enum: no
+
+**Why is the change requested?**
+
+*e.g.*: Some scientists need to be able to assign a random integer to a cell line in order to keep track of it.
 
 ## Reporting bugs
 
