@@ -6,7 +6,7 @@ labels: content
 
 **For which schema is a change/update being suggested?**
 
-<!--Please indicate the name of the schema for which a change/update is being requested. If a new schema is being requested, please suggest a name for the schema.-->
+<!--Please indicate the name of the schema for which a change/update is being requested.-->
 
 *e.g.*: I would like to request an update the the `cell_line.json` schema.
 
@@ -17,7 +17,7 @@ labels: content
 * Updates to field names
 * Updates to field or schema descriptions
 * Updates to field examples or user-friendly names
-* New schemas or fields
+* New fields
 * Updates to repo documentation or examples-->
 
 *e.g.*: The `cell_line.json` schema description needs to be updated to reflect that the cell line schema is for describing both cell lines and cultures, and all of primary, immortalized, etc. of those types.
