@@ -26,7 +26,7 @@ This document serves as an SOP for committers who are ultimately responsible for
 ## General steps of the update process
 
 1. **Receive request for update to the metadata standard.** A person (the "Contributor") can suggest changes to the metadata standards via three main routes:
-    1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) on the metadata-schema GitHub repo
+    1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md)
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema GitHub repo
 
