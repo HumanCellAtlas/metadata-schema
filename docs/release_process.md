@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Preliminaries](#preliminaries)
 - [Steps of the pre-release process](#steps-of-the-pre-release-process)
 - [Steps of the release process](#steps-of-the-release-process)
 
@@ -25,15 +26,15 @@ This document serves as an SOP for super users who are responsible for merging P
 
 ## Preliminaries
 
-Committers who regularly interact with the metadata-schema repo and who merge PRs should have the metadata pre-commit githook enabled that rebuilds the markdown docs on each commit. ***You only need to do this once***
+Committers who regularly interact with the metadata-schema repo and who merge PRs should have the metadata pre-commit githook enabled that rebuilds the markdown docs on each commit. ***This only needs to be done once.***
 
 1. **Check** that you have Git version 2.9 or greater
 
-    `git --version`
+        git --version
 
 2. In your local metadata schema repo, **redirect** git hooks to the .githooks directory
 
-    `git config core.hooksPath .githooks`
+        git config core.hooksPath .githooks
 
 From now on, every time you commit anything in the metadata schema repo using the `git commit` command, the git hook will be triggered to build the jsonBrowser markdown docs and add them to your commit.
 
