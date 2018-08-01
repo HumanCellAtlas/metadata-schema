@@ -31,13 +31,13 @@ This document serves as an SOP for committers who are ultimately responsible for
 
     There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).
 
-    1. To request an **update** to an existing schema, please supply the following pieces of information:
+    1. To request an **update** to an existing schema, the following pieces of information are required:
 
-        1. Which schema would you like to be changed?
-        1. What field(s) in that schema would you like to be changed, and what should the change be?
+        1. For which schema is a change/update being suggested?
+        1. What should the change/update be?
         1. What new field(s) need to be added?
             - Details for requesting **new field(s)** outlined below
-        1. Why is the change needed?
+        1. Why is the change requested?
 
     1. To request a **new** schema, you need to supply the following pieces of information:
 
