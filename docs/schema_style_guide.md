@@ -382,6 +382,8 @@ The following attributes are required for each metadata field in an HCA metadata
             "user_friendly": "Street address"
         }
 
+    **mf**: We might merge the example and guidelines attributes into just the example attribute. We need to discuss use cases for separating them or keeping them together. 
+
 ## General rules
 
 ### Field name conventions
