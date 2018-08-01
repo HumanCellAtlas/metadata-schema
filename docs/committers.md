@@ -6,6 +6,7 @@
 - [Specific how-to for making changes](#specific-how-to-for-making-changes)
 - [Schema update acceptance process](#schema-update-acceptance-process)
 - [Committer guidelines](#committer-guidelines)
+- [Glossary of roles](#glossary-of-roles)
 
 ## Introduction
 
@@ -24,7 +25,7 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 ## General steps of the update process
 
-1. **Receive request for update to the metadata standard.** Any person (a "Contributor") can suggest changes to the metadata standards via three main routes:
+1. **Receive request for update to the metadata standard.** A person (the "Contributor") can suggest changes to the metadata standards via three main routes:
     1. Create a [GitHub issue](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) on the metadata-schema GitHub repo
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema GitHub repo
@@ -56,7 +57,7 @@ This document serves as an SOP for committers who are ultimately responsible for
     
     If the suggested update comes in the form of a pull request, the above information should be self-evident between the JSON schema itself and the pull request message. If this isn’t clear either from the pull request or the message sent through email or git, then the assigned committer will seek clarification before continuing to step 3.
 
-1. **Assign committer to review the suggestion.** A person (the "Committer") with commit rights on the metadata-standards repo will be assigned to each suggestion (issue/email/PR). The Committer will be responsible for reviewing the suggestion, noting any consequences of the suggestion, contacting appropriate HCA teams for feedback, and making announcements to ensure the whole community has an opportunity to provide input. 
+1. **Assign Committer to review the suggestion.** A person (the "Committer") with commit rights on the metadata-schema repo will be assigned to each suggestion (issue/email/PR). The Committer will be responsible for reviewing the suggestion, noting any consequences of the suggestion, contacting appropriate HCA teams for feedback, and making announcements to ensure the whole community has an opportunity to provide input. 
 
 1. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Committer needs to make the suggested update and a pull request against develop. If the Contributor has a GitHub account, they should be encouraged to make the suggested update and a pull request. When a pull request is made, a test suite of tools will automatically run that validates the updates. 
 
@@ -201,3 +202,28 @@ For proposed changes where consensus looks unlikely, as the review deadline loom
     1. Tag a specific person if the PR addresses their issue or if the change affects their work.
     1. Include reasoning behind changes that could be controversial (e.g. reason why a field name changes, but no reason needed to fix a typo in a field description).
 
+## Glossary of roles
+
+**Contributor**
+
+- Does not have commit/merge privileges to metadata-schema repo
+- Suggests changes to the metadata standard (email/issue/PR)
+- Reviews PRs
+
+**Committer**
+
+- Has commit/merge privileges to the metadata-schema repo
+- Turns update requests into GitHub issues
+- Is assigned to GitHub issues by Committer
+- Makes changes/PRs
+- Announces PRs to community
+- Reviews PRs
+- Merges PRs
+
+**Reviewer**
+
+- Is assigned to review PRs by Committer
+- Reviews PRs
+- If also a Committer:
+    - Has commit/merge privileges to the metadata-schema repo
+    - Merges PRs
