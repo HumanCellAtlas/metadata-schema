@@ -13,7 +13,7 @@
 This document serves as an SOP for committers who are ultimately responsible for changes to the metadata standards.
 
 **What is in this document?**
- - Directions for [how to incorporate feedback](#steps-of-the-update-process) into the metadata standards
+ - Directions for how to incorporate feedback into the metadata standards
  - Expectations for contributions to be accepted or rejected
 
 **Who should be reading this document?**
