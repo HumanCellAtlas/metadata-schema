@@ -60,11 +60,7 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 3. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Reviewer needs to make the suggested update and a pull request. If the Contributor has a GitHub account, s/he should be encouraged to make the suggested update and a pull request. If this happens, another committer should be added to review and merge the pull request.
 
-4. **Annotate the pull request with suitable labels and run unit tests.** The assigned reviewer should classify the suggested change by the type of change it is from a versioning perspective (patch, minor, or major) and the stability category of the module being changed (high, medium, or low). These labels can be setup in the GitHub repo so which pull requests have been flagged with which category are easy to see and filter. 
-
-    The reviewer should also ensure the integration tests have been run. Minor and patch version changes should not cause the tests to fail. A major version change may cause test failures, especially when in a high stability module and this should help the reviewer to select the appropriate people to assist with the review.
-
-    We aim for steps 1 to 4 to be completed less than 48 hours from the initial request being received.
+4. **Annotate the pull request with suitable labels and run unit tests.** The Reviewer should classify the suggested update by the type of version change (major, minor, patch) and the stability category (high, medium, or low). These classifications can be indicated in the pull request description. Specifically, the version change classification will be indicated in the `update_log.csv` file. The Reviewer should also ensure the metadata-schema repo unit tests have been run and pass. Example spreadsheets and JSON documents will potentially need to be updated.
 
 5. **Notify community about the change request.** The pull request should be posted to the #hca-metadata Slack channel and the metadata-wg mailing list so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change.
 
