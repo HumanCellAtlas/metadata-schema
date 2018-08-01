@@ -2,15 +2,16 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Schema conceptual model](#schema-conceptual-model)
 - [Schema formatting](#schema-formatting)
 - [Field formatting](#field-formatting)
 - [General rules](#general-rules)
 
 ## Introduction
 
->**DISCLAIMER:** At this time, the HCA Metadata Standard development team is actively working towards adhering to this style and formatting guide. In some cases, the Standard might not yet follow all the guidelines outlined in this document.
+>**DISCLAIMER:** At this time, the HCA Metadata Standard development team is actively working towards adhering to this style and formatting guide. In some cases, the Standard might not yet follow all the guidelines outlined in this document. Your patience is appreciated!
 
-This document describes the style and formatting rules followed by the HCA Metadata Standard for schemas and fields.
+This document describes the style and formatting rules followed by the HCA Metadata Standard for JSON schemas and fields.
 
 **What is in this document**
 - General style guidelines for naming and formatting for metadata schemas and fields
@@ -21,26 +22,19 @@ This document describes the style and formatting rules followed by the HCA Metad
 - Members of external projects seeking alignment with HCA metadata standards
 
 **What *isn't* in this document?**
-- Directions for [requesting or suggesting changes](metadata-schema/docs/contributing.md) to the metadata schema
-- Directions for [making changes to metadata schemas](metadata-schema/docs/committers.md)
+- Directions for [requesting or suggesting changes](contributing.md) to the metadata schema
 
 ## Schema conceptual model
-The JSON format that is the canonical representation of HCA metadata is a programming language-neutral, persistent method of storing data structures.  See [ECMA-404 The JSON Data Interchange Standard] (http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) specification for technical details of the format. JSON objects are analogous to C structs, objects in JAVA and Python, and to an extent, SQL tables.  The design of JSON metadata objects follows the common approaches used in designing computational data structures for programmers.  The schema is used to describe the contents of the JSON data objects for both programmatic access and human understanding.
 
-Naming fields in data structures is challenging because of the tension between longer names for clarity and brevity to avoid cumbersome code.  Some principles to use in thinking about naming are:
+The JSON format that is the canonical representation of the HCA Metadata Standard is a programming language-neutral, persistent method of storing data structures. See [ECMA-404 The JSON Data Interchange Standard](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) specification for technical details of the format. JSON objects are analogous to C structs, objects in JAVA and Python, and to an extent, SQL tables. The design of JSON metadata objects follows the common approaches used in designing computational data structures for programmers. The schema is used to describe the contents of the JSON data objects for both programmatic access and human understanding.
 
-1. Field names are programming constructs, not GUI constructs.  They are only intended for use by programmers, including those writing textual queries.  Attempting to have a field name that is both a good GUI name and a good programmer name makes the naming problem far more difficult.  This leads to a complex system where simple changes to make a GUI clear creates breaking changes for all code accessing data structure.  It also makes GUI implementation more difficult as often one needs different labels for data depending on how data is being presented.  The object and field names should be keys to looking up natural language descriptions.
-
-1. Fields names don't exist outside of the context of their containing structure.  Fields in objects are not standalone and the field names should not redundantly contain the structure name.
-
-The section [Field name conventions](#field-name-conventions) provides guidelines to use when defining names.
-
+As implemented for the HCA Metadata Standard, each JSON schema contains a set of related fields (also called properties). For example, the `cell_line.json` schema contains fields specific to describing cell lines. The following sections describe style and formatting rules followed by HCA metadata schemas and fields.
 
 ## Schema formatting
 
 The following attributes are required for each metadata schema in the HCA metadata standard. 
 
-1. **$schema:** The JSON draft version being used. **NB:** Migration to draft-07 will occur soon.
+1. **$schema:** The JSON draft version being used. **NB** Migration to draft-07 will occur soon.
 
     Example:
     
@@ -138,6 +132,14 @@ Example:
     }
 
 ## Field formatting
+
+Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. Some principles the HCA Metadata Standard follows regarding naming of fields are:
+
+1. *Field names are programming constructs, not GUI constructs.* Field names are only intended for use by programmers, including those writing textual queries. Attempting to have a field name that is both a good GUI name and a good programmatic name makes the naming problem far more difficult. For example, simple field name changes to make a GUI clearer creates complex, breaking changes for any code accessing the data structures. It also makes GUI implementation more difficult as often one needs different labels for data depending on how data is being presented. The schema object and field names should be keys to looking up natural language documentation.
+
+1. *Field names don't exist outside of the context of their containing structure.* Fields in objects are not standalone, and the field names should not redundantly contain the structure name.
+
+The section [Field name conventions](#field-name-conventions) provides guidelines to use when defining names.
 
 ### Required field attributes
 
@@ -351,24 +353,25 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Field name conventions
 
-The following conventions should be followed when deciding on a new metadata field name or suggesting changes to a current metadata field name.
+The following conventions should be followed when defining a new field name or suggesting changes to a current field name.
 
-1. Field names should be all lower case and snake_case.
+1. Field names should be all lowercase and snake_case.
 
     Example:
 
     `publication_doi`
     
-    **markd: I change this from  `biomaterial_id`, as `id` field named have a bit if a sticky history related to SQL we should discuss***
+    **markd: I change this from  `biomaterial_id`, as `id` field named have a bit if a sticky history related to SQL we should discuss**
 
 1. Field names should be kept as short as possible while still naturally readable, without attempting to be fully grammatically correct. They should be clear within their context.
 
     Example:
 
-    `paired_ends` is preferred over `does_sequencing_use_paired_ends` because it is shorter but still conveys full meaning.
+    `paired_ends` is preferred over `were_paired_ends_sequenced` because it is shorter but still conveys full meaning.
 
-    `species` is preferred over `the_species`, as the grammatically determiner does not improve clarity.
-
+    `species` is preferred over `the_species` because the grammatically determiner does not improve clarity.
+    
+    **mf: `species` isn't actually a field in the HCA metadata schema, so we should consider another example to avoid confusion.**
 
 1. Field names should be plural if their values are their values are arrays.:
 
