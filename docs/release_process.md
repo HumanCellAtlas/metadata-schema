@@ -89,27 +89,25 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Commit** your changes back to the branch and push to github
 
-    `git commit -a -m "Ran release_prepare.py script."`
+        git commit -a -m "Ran release_prepare.py script."
+        git push origin <name_of_branch>
 
-    `git push origin <name_of_branch>`
-
-1. **Wait** for the Travis build to pass, the **merge** then PR into develop.
-
+1. **Wait** for the Travis build to pass, the **merge** then PR into develop immediately.
 
 
 ## Steps of the release process
 
 ### Primary release
 
-1. **Check out** develop to your local machine.
+1. **Check out** develop to your local machine
 
 1. **Verify** that there are no merge conflicts between develop and integration by running
 
-    `git pull origin integration`
+        git pull origin integration
 
     1. **Fix** any merge conflicts that might arise, giving priority to changes in the develop branch *except* if a hotfix was propagated ahead of develop.
 
-1. **Open** changelog.md and cut/paste the line
+1. **Open** `changelog.md` and cut/paste the line
 
     `## [Released](https://github.com/HumanCellAtlas/metadata-schema/)`
 
@@ -117,13 +115,12 @@ From now on, every time you commit anything in the metadata schema repo using th
 
     `## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)`
 
-1. **Commit** your changes back to Github
+1. **Commit** your changes
 
-    `git commit -a -m "Release from develop to integration YYYY-MM-DD"`
+        git commit -a -m "Release from develop to integration YYYY-MM-DD"
+        git push origin develop
 
-    `git push origin develop`
-
-1. **Create a pull request** from *develop* to *integration* for easy tracability but immediately merge this yourself. ***Only merge your own pull requests in this particular scenario!***
+1. **Create a pull request** from *develop* to *integration* for easy tracability but immediately merge this yourself. ***Only merge your own pull request in this particular scenario!***
 
 
 ### Release propagation
