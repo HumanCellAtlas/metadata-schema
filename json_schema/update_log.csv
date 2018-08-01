@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,major,Changed biological_sex to sex,,
+type/biomaterial/donor_organism,major,"Changed biological_sex to sex. Fixes #384.",,
