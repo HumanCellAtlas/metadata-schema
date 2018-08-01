@@ -44,45 +44,48 @@ From now on, every time you commit anything in the metadata schema repo using th
 ***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](metadata-schema/docs/committers#schema-update-acceptance-process).
 
 
-1. **Check out** the pull request branch and make sure your local copy is up to date
+1. **Check out** the pull request branch and make sure your local copy is up-to-date
 
-    `git checkout <name_of_branch>`
+        git checkout <name_of_branch>
+        git pull
 
-    `git pull`
-
-1. **Verify** whether there are any merge conflicts between the PR branch and develop. You can do this in github. If merge conflicts exist between the branch and develop,
+1. **Verify** whether there are any merge conflicts between the PR branch and develop. You can do this in github or on your computer. If merge conflicts exist between the branch and develop:
 
     1. **Pull** develop into the PR branch locally (on your computer)
 
-        `git pull origin develop`
+            git pull origin develop
 
         This is equivalent to merging develop into the PR branch and reveals all the conflicts.
 
     1. **Open** any files with conflicts, ideally in an environment that is able to help with merge conflicts such as PyCharm (but a text editor is also fine)
 
-    1. **Fix** the merge conflicts and commit.
+    1. **Fix** the merge conflicts and commit
 
         ***NB*** If merge conflicts are limited to files in the `/docs` directory, you can designate the version in your branch as the correct version over the files in `develop` by using:
 
-        `git merge --strategy-option ours`
+            git merge --strategy-option ours
 
 1. **Check json_schema/update_log.csv** to make sure that all metadata changes in this branch have been documented. There should be two commas at the end of each line in this file.
 
-1. **Run** the release preparation script from the src directory. The script should be run with Python 3 and takes no direct input arguments, but does require update_log.csv to be filled in correctly.
+1. **Run** the release preparation script from the `/src` directory. The script should be run with Python 3 and takes no direct input arguments, but does require `update_log.csv` to be filled in correctly.
 
-    `cd src`
+        cd src
+        python3 release_prepare.py
 
-    `python3 release_prepare.py`
+    The script updates the version numbers of the schemas listed in `update_log.csv` using the indicated increment type (major, minor or patch) in the `json_schema/versions.json` file as well as any dependent schemas. It then builds the `changelog.md` file. Finally, it deletes the content of `update_log.csv` apart from the header row.
 
-    The script updates the version numbers of the schemas listed in update_log.csv using the indicated increment type (major, minor or patch) in the json_schema/versions.json file as well as any dependent schemas. It then builds the changelog.md file. Finally, it deletes the content of update_log.csv apart from the header row.
+1. **Check** that both `json_schema/versions.json` and `changelog.md` were updated.
 
-1. **Check** that both json_schema/versions.json and changelog.md were updated.
+        git status
 
-    `git status`
+    You can review the changes to all files using
 
-    You can also review the specific changes to files using
-
-    `git diff`
+        git diff
+    
+    Or for a specific file
+    
+        git diff ../json_schema/versions.json
+        git diff ../changelog.md
 
 1. **Commit** your changes back to the branch and push to github
 
