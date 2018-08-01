@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about other organisms that this organism is related to.",
+    "description": "Information about other individuals that this individual is related to.",
     "additionalProperties": false,
     "title": "familial_relationship",
     "type": "object",
@@ -16,20 +16,20 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "is_child_of": {
-            "description": "This organism is a child of the indicated organism.",
+        "parent": {
+            "description": "The individual's parent.",
             "type": "string",
-            "user_friendly": "Child of"
+            "user_friendly": "Parent"
         },
-         "is_parent_of": {
-            "description": "This organism is a parent of the indicated organism.",
+         "child": {
+            "description": "The individual's child.",
             "type": "string",
-            "user_friendly": "Parent of"
+            "user_friendly": "Child"
         },
-         "is_sibling_of": {
-            "description": "This organism is a sibling of the indicated organism.",
+         "sibling": {
+            "description": "The individual's sibling.",
             "type": "string",
-            "user_friendly": "Sibling of"
+            "user_friendly": "Sibling"
         }
     }
 }
