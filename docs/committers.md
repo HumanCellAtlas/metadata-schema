@@ -67,7 +67,7 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 1. **Notify community about the update request.** The Committer should announce the suggested update/PR on the #hca-metadata and #dcp Slack channels so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change. The Committer should also tag specific developers who could be impacted by the change. 
 
-1. **Start the community review period.** The Committer starts the clock on the review period as indicated by the [update acceptance process](schema-update-acceptance-process). The Committer and any other assigned internal reviewers ("Reviewers") should actively respond to feedback on the proposed update, making any indicated changes in the pull request.
+1. **Start the community review period.** The Committer starts the clock on the review period as indicated by the [update acceptance process](#schema-update-acceptance-process). The Committer and any other assigned internal reviewers ("Reviewers") should actively respond to feedback on the proposed update, making any indicated changes in the pull request.
 
 1. **Pre-release the update.** Once the review period is over, if the update is accepted then the Committer merges the pull request into develop following the [release process](release_process.md). The update is now considered "pre-released".
 
