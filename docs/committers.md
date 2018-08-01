@@ -58,19 +58,19 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 2. **Assign committer to review the suggestion.** A person (the "Reviewer") with commit rights on the metadata-standards repo will be assigned to each suggestion (issue/email/PR). The Reviewer will be responsible for reviewing the suggestion, noting any consequences of the suggestion, contacting appropriate HCA teams for feedback, and making announcements to ensure the whole community has an opportunity to provide input. 
 
-3. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Reviewer needs to make the suggested update and a pull request. If the Contributor has a GitHub account, s/he should be encouraged to make the suggested update and a pull request. If this happens, another committer should be added to review and merge the pull request.
+3. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Reviewer needs to make the suggested update and a pull request. If the Contributor has a GitHub account, s/he should be encouraged to make the suggested update and a pull request. When a pull request is made, a test suite of tools will automatically run that validates the updates. 
+
+    **NB** Currently this test suite of tools is not complete, and the tools that do exist must be run manually by the Reviewer.
 
 4. **Annotate the pull request with suitable labels and run unit tests.** The Reviewer should classify the suggested update by the type of version change (major, minor, patch) and the stability category (high, medium, or low). These classifications can be indicated in the pull request description. Specifically, the version change classification will be indicated in the `update_log.csv` file. The Reviewer should also ensure the metadata-schema repo unit tests have been run and pass. Example spreadsheets and JSON documents will potentially need to be updated.
 
-5. **Notify community about the change request.** The pull request should be posted to the #hca-metadata Slack channel and the metadata-wg mailing list so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change.
+5. **Notify community about the update request.** The Reviewer should announce the suggested update/PR on the #hca-metadata and #dcp Slack channels so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change. The Reviewer should also tag specific developers who could be impacted by the change. 
 
-    The committer leading this effort should ensure appropriate developers from any system which could be impacted by the change are watching the thread on the pull request.
+6. **Start the update acceptance process.** The Reviewer starts the clock on the review period as indicated by the [update acceptance process](schema-update-acceptance-process). The Reviewer and any other assigned internal reviewers should actively respond to feedback on the proposed update, making any indicated changes in the pull request.
 
-6. **Start the update acceptance process.** The assigned committer now starts the clock on the update acceptance process (see below). They should ensure the community is reminded about the proposed change at least once during the review timeframe. They also need to ensure any other assigned reviewer actively accepts the change and/or provides feedback on the change. 
+7. **Accept or reject the update.** Once the review period is over, if the update is accepted then the Reviewer merges the pull request int. The pull request merge should trigger automated updates to the documentation and propagation of the new schemas through the ingest system. The precise timing of the new schema version into production will depend on any software consequences for the change. Any patch or minor version change should be usable very quickly but major version changes might take longer depending on how long it takes any affected piece of software to be updated to function with the new schema.
 
-7. **Accept or reject the change.** Once the review period is over, if the change is accepted into the repository, the pull request will be merged. The pull request merge should trigger automated updates to the documentation and propagation of the new schemas through the ingest system. The precise timing of the new schema version into production will depend on any software consequences for the change. Any patch or minor version change should be usable very quickly but major version changes might take longer depending on how long it takes any affected piece of software to be updated to function with the new schema.
-
-8. **Announce accepted change to community**. The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. 
+8. **Announce accepted update to community**. The change will be announced both on #hca-metadata Slack channel and the metadata-wg mailing list by the committer. 
 
 ## Schema update acceptance process
 
