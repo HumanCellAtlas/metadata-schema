@@ -443,7 +443,7 @@ funder_name | The name of the funding organization. | string | no |  | Funding o
 ## license<a name='license'></a>
 _Information about the project license._
 
-Location: module/project/licensing.json
+Location: module/project/license.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
