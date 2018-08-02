@@ -396,7 +396,7 @@ The following conventions should be followed when defining a new field name or s
 
     `publication_doi`
 
-1. Field names should be kept as short as possible while still naturally readable, without attempting to be fully grammatically correct. They should be clear within their context.
+1. Field names should be as short as possible while still naturally readable, without attempting to be fully grammatically correct. They should be clear within their context.
 
     Example:
 
@@ -406,9 +406,11 @@ The following conventions should be followed when defining a new field name or s
     
 1. Field names should be plural if their values are arrays.
 
-    Example
+    Example:
 
-    `children` for an array of children vs `child` if there can only be one value or the value can be omitted.
+    `children` is preferred if the field can indicate more than 1 child. 
+    
+    `child` is preferred if the field can only only indicate 1 child.
 
 1. If a number field requires a corresponding unit field, append `_unit` to the number field name to generate the unit field name.
 
