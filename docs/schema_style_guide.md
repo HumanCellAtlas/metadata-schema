@@ -395,8 +395,10 @@ The following conventions should be followed when defining a new field name or s
     Example:
 
     `publication_doi`
+    
+    `plate_based_sequencing`
 
-1. Field names should be as short as possible while still naturally readable, without attempting to be fully grammatically correct. They should be clear within their context.
+1. Field names should be as short as possible while still naturally readable, without attempting to be fully grammatically correct. They should be clear within their context and should not contain articles.
 
     Example:
 
@@ -416,7 +418,7 @@ The following conventions should be followed when defining a new field name or s
 
     Example:
 
-    `organism_age` and `organism_age_unit`
+    `height` and `height_unit`
 
 ### Field description tone and voice
 
