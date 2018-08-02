@@ -1,0 +1,37 @@
+sample	A sample is an entity level object.  It exists as a separate file in a data bundle			
+A sample contains information on the biosample that was sequenced or imaged.  This includes donor, body part, and anything that comes between removing the sample from a body and the assay.				
+				
+Field Name	source	Priority	Type	Description
+core	ingest	Required	core module	The schema definition for a sample
+id	ingest	Required	local ID	A unique ID for this sample
+project_id	ingest	Required	local ID	The id field of the project that this connects to
+submitter_id	ingest	High	local ID	ID of contact who first submitted project
+submit_date	ingest	High	date	When project was first submitted to database.
+updater_id	ingest	High	local ID	ID of contact who last updated project
+update_date	ingest	High	date	When project was last updated
+				
+name	submitter	High	text	A short descriptive name for sample.  Should be enough to distinguish it from other samples in the project
+title	submitter	Optional	text	A descriptive phrase or sentence, ideally about 60 characters.
+donor	submitter	Required	module	Information on the donor that the sample came from.
+protocol_ids	submitter	Optional	array of protocol IDs	IDs or all protocols used by sample.  Should be protocols found in project.protocol  
+				
+organ	submitter	Required	ontology	The organ that the sample came from.  "Blood" and "connective tissue" count as organs.
+body_part	submitter	Required	ontology	A more detailed position within the organ where body came from.
+cell_cycle	submitter	Optional	ontology	If sample is synchronized growing cells or a cell in a known phase of cell cycle, put which phase here
+preservation	submitter	Optional	module	State of body_part at collection and how it was preserved after removal.
+supplementary_files	submitter	Optional	array of file/url	Sample level supplementary files.
+well	submitter	Optional	module	If sample was isolated in a well in plate (or fluidics chip), information about that
+disassociation_protocol	submitter	Optional	protocol	How body part was treated to disassociate it into cells that can float individually in solution in sorter or microfluidics device.
+enrichment	submitter	Optional	array of module	How cells were enriched for specific type or to weed out common types after disassociation.
+total_estimated_cells	submitter	Optional	number	Total estimated number of cells in sample.  May be 1 for well based assays.
+culture_type	submitter	High	CV	either "tissue," "primary culture," "cell_line," "differentiation," or "organoid."
+cell_line	submitter	Optional	module	Description of cell line if any that this came from.
+brain	submitter	Optional	module	Detailed positional information if it is a brain sample
+heart	submitter	Optional	module	Detailed positional information if it is a heart sample
+				
+biosd_sample	ext DB	Optional	ext ID	EBI biosample ID
+ena_sample	ext DB	Optional	ext ID	European nucleotide archive sample ID
+geo_sample	ext DB	Optional	ext ID	NCBI GEO sample accession
+ncbi_biosample	ext DB	Optional	ext ID	NCBI biosample ID
+				
+characteristics_*	submitter	Optional	text	FIelds that begin with sample.characteristics_ can contain any value, and the field name can be anything after the prefix

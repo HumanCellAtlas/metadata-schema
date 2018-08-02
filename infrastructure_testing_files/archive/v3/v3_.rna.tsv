@@ -1,0 +1,13 @@
+rna	This is a subobject module used in the assay entity				
+Information about how RNA was converted to DNA or otherwise prepared for assay					
+					
+Field Name	source	Priority	Applies to	Type	Description
+core	ingest	required	all	core module	id and schema for rna object
+					
+end_bias	submitter	required	All RNA	CV	"3' bias" or "5' bias" or "3' end" or "5' end" or "none"
+library_construction	submitter	required	all	CV	Something like smart-seq2, true-seq.
+library_protocol	submitter	Optional	All RNA	protocol	RNA preparation protocol.  The library_construction in more detail.
+primer	submitter	Optional	All RNA	CV	Primer for cDNA synthesis from RNA.  Usually random or poly-dt
+spike_in	submitter	Optional	All RNA with spike in	CV	Name of RNA spike in kit.  Usually ERCC
+spike_in_dilution	submitter	Optional	All RNA with spike in	number	Dilution of RNA spike in
+strand	submitter	Optional	All RNA	CV	Single stranded?

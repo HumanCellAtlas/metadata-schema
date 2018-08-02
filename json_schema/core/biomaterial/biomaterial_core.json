@@ -21,7 +21,7 @@
             "example": "4.6.1"
         },
         "biomaterial_id":{
-            "description": "A unique ID for this biomaterial.",
+            "description": "A unique ID for the biomaterial.",
             "type": "string",
             "user_friendly": "Biomaterial ID"
         },
@@ -36,22 +36,19 @@
             "user_friendly": "Biomaterial description"
         },
         "ncbi_taxon_id" : {
-            "description": "A taxonomy ID (taxonID) from NCBI. Multiple IDs can be provided for multi-species samples.",
+            "description": "A taxonomy ID (taxonID) from NCBI.",
             "type" : "array",
             "items":{
                 "type": "integer"
             },
-            "user_friendly": "NCBI taxon ID"
+            "user_friendly": "NCBI taxon ID",
+            "example": 9606
         },
         "genotype": {
-            "description": "Genotype of biomaterial including strain, cross, and genetic modification information.",
+            "description": "Genotype of the biomaterial.",
             "type": "string",
-            "user_friendly": "Genotype"
-        },
-        "karyotype": {
-            "description": "The karyotype of the biomaterial.",
-            "type": "string",
-            "user_friendly": "Karyotype"
+            "user_friendly": "Genotype",
+            "example": "DRB1 0401 protective allele"
         },
         "supplementary_files": {
             "description": "A list of filenames of biomaterial-level supplementary files.",
@@ -62,16 +59,18 @@
             "user_friendly": "Supplementary files"
         },
         "biosd_biomaterial": {
-            "description": "A DDBJ, NCBI, or EBI BioSample ID. Accessions must start with SAMD, SAMN, or SAME.",
+            "description": "A DDBJ, NCBI, or EMBL-EBI BioSample ID. Accession must start with SAMD, SAMN, or SAME.",
             "type": "string",
             "pattern": "^SAM(D|N|E([AG]?))[0-9]+$",
-            "user_friendly": "BioSample ID"
+            "user_friendly": "BioSample ID",
+            "example": "SAMN00000000"
         },
         "insdc_biomaterial": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with DRS, ERS, or SRS.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRS, SRS, or ERS.",
             "type": "string",
             "pattern": "^[D|E|S]RS[0-9]+$",
-            "user_friendly": "INSDC ID"
+            "user_friendly": "INSDC ID",
+            "example": "SRS0000000"
         }
     }
 }

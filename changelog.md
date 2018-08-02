@@ -7,13 +7,1129 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/project/project.json - v5.?+1.0] - 2018-06-14
-### Added
-Added optional new field to project referencing the new license module.
+### [core/process/process_core.json - v9.0.0] - 2018-08-01
+### Changed
+Changed operator_identity to operator. Fixes #377.
 
-### [module/project/license.json - v1.0.0] - 2018-06-14
+### [type/process/process.json - v6.0.0] - 2018-08-01
+### Changed
+Changed operator_identity to operator. Fixes #377.
+
+### [type/process/analysis/analysis_process.json - v8.0.0] - 2018-08-01
+### Changed
+Changed operator_identity to operator. Fixes #377.
+
+### [module/biomaterial/familial_relationship.json - v6.0.0] - 2018-07-31
+### Changed
+Changed is_parent_of to child, is_child_of to parent, and is_sibling_of to sibling.
+
+### [type/biomaterial/donor_organism.json - v9.0.0] - 2018-07-31
+### Changed
+Changed is_parent_of to child, is_child_of to parent, and is_sibling_of to sibling.
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/process/sequencing/10x.json - v1.0.1] - 2018-07-26
+### Fixes
+Fixes 10x url bug
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.2] - 2018-07-26
+### Fixes
+Fixes 10x url bug
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.1] - 2018-07-26
+### Removed
+Removed requirement for non-existent field.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.3.0] - 2018-07-26
 ### Added
-Added a module to capture the license under which the data is released.
+Added optional nucleic_acid_source field. Fixes #385.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.0] - 2018-07-26
+### Removed
+Removed nucleic_acid_source field. Fixes #385.
+
+### [type/biomaterial/donor_organism.json - v8.2.8] - 2018-07-23
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/state_of_specimen.json - v5.2.4] - 2018-07-23
+### Changed
+Changed example.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.7] - 2018-07-23
+### Changed
+Changed example.
+
+### [module/biomaterial/growth_conditions.json - v6.2.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/biomaterial/cell_line.json - v8.4.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/biomaterial/cell_suspension.json - v8.4.0] - 2018-07-23
+### Added
+Added a new field - `feeder_layer_type` - to capture the type of feeder layer cells biomaterial is grown on as this may have different effects on biomaterial growth/proliferation.
+
+### [type/process/analysis/analysis_process.json - v6.0.0] - 2018-07-19
+### Added
+Added schema for analysis_process as required by the analysis team
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.0] - 2018-07-19
+### Removed
+Removed a number of fields from analysis protocol as they are more appropriate in analysis_process
+
+### [module/biomaterial/cell_morphology.json - v6.1.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/death.json - v5.3.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/growth_conditions.json - v6.1.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/human_specific.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/medical_history.json - v5.2.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/mouse_specific.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/preservation_storage.json - v5.3.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/state_of_specimen.json - v5.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/biomaterial/timecourse.json - v1.1.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/sequencing/barcode.json - v5.2.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/sequencing/insdc_experiment.json - v1.1.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/process/purchased_reagents.json - v6.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/project/contact.json - v6.1.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/project/funder.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/project/publication.json - v5.2.2] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [system/provenance.json - v1.0.1] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/cell_suspension.json - v8.3.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.6] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/process/process.json - v4.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.3] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.4] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.5] - 2018-07-17
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.1] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/protocol.json - v6.3.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/donor_organism.json - v8.2.7] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/project/project.json - v8.2.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/organoid.json - v8.3.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/process/process.json - v4.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/imaging/imaging_protocol.json - v7.2.2] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.5] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/file/reference_file.json - v2.2.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/file/analysis_file.json - v5.3.2] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/cell_suspension.json - v8.3.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/file/sequence_file.json - v6.3.3] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.4] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.6] - 2018-07-17
+### Changed
+Changed descriptions.
+
+### [module/process/sequencing/10x.json - v1.0.0] - 2018-07-17
+### Added
+Added module with 10x-specific fields.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.0] - 2018-07-17
+### Added
+Added reference to optional 10x module.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.0.0] - 2018-07-17
+### Added
+Added module with 10x-specific fields.
+
+### [core/biomaterial/biomaterial_core.json - v7.0.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/file/file_core.json - v5.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/process/process_core.json - v7.0.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/project/project_core.json - v7.0.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [core/protocol/protocol_core.json - v5.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/organoid.json - v8.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/reference_file.json - v2.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/sequence_file.json - v6.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/process/process.json - v4.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/protocol.json - v6.3.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.3] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/donor_organism.json - v8.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_suspension.json - v8.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/organoid.json - v8.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/biomaterial/cell_line.json - v8.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/analysis_file.json - v5.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/supplementary_file.json - v1.1.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/reference_file.json - v2.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/file/sequence_file.json - v6.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/process/process.json - v4.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/project/project.json - v8.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.2] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/protocol.json - v6.3.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/imaging/imaging_protocol.json - v7.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.1] - 2018-07-16
+### Changed
+Changed descriptions, user-friendly names, and examples.
+
+### [module/sequencing/plate_based_sequencing.json - v1.0.0] - 2018-07-16
+### Added
+Added module plate_based_sequencing. Fixes Issue #397
+
+### [module/sequencing/smartseq2.json - v5.2.1] - 2018-07-16
+### Deprecated
+Deprecated module smartseq2 in favour of a more generic plate_based_sequncing module. Fixes Issue #397
+
+### [type/biomaterial/cell_suspension.json - v8.3.0] - 2018-07-16
+### Added
+Added field `plate_based_sequencing` importing the module of the same name. Fixes Issue #397.
+
+### [type/file/sequence_file.json - v6.3.0] - 2018-07-16
+### Removed
+Removed field `smartseq2` as the module has been deprecated. Fixes Issue #397.
+
+### [module/project/contact.json - v6.1.0] - 2018-07-16
+### Added
+Added new optional field `corresponding_contributor` to contact schema. Fixes #409.
+
+### [type/project/project.json - v8.2.0] - 2018-07-16
+### Added
+Added new optional field `corresponding_contributor` to contact schema. Fixes #409.
+
+### [type/protocol/imaging/imaging_protocol.json - v7.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/protocol.json - v6.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/cell_line.json - v8.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/cell_suspension.json - v8.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/donor_organism.json - v8.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/organoid.json - v8.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/analysis_file.json - v5.3.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/reference_file.json - v2.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/sequence_file.json - v6.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/file/supplemental_file.json - v1.1.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/process/process.json - v4.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/project/project.json - v8.1.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/analysis/analysis_protocol.json - v7.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.2.0] - 2018-07-16
+### Added
+Added optional provenance field
+
+### [module/project/contact.json - v6.0.0] - 2018-07-16
+### Changed
+Changed email to be optional. Changed institution to be required. Fixes #411.
+
+### [type/project/project.json - v8.0.0] - 2018-07-16
+### Changed
+Changed email to be optional. Changed institution to be required. Fixes #411.
+
+### [bundle/protocol.json - v10.4.0] - 2018-07-16
+### Added
+Added optional iPSC induction factors field to iPSC induction protocol.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.1.0] - 2018-07-16
+### Added
+Added optional iPSC induction factors field to iPSC induction protocol.
+
+### [type/file/supplemental_file.json - v1.0.0] - 2018-07-13
+### Added
+A new file type entity for supplemental files. Fixes #422.
+
+### [core/project/project_core.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
+### [bundle/project.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
+### [type/project/project.json - v7.0.0] - 2018-07-12
+### Changed
+Changed `project_shortname` to `project_short_name`. Fixes #378.
+
+### [module/project/contact.json - v5.3.0] - 2018-07-12
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
+### [bundle/project.json - v6.1.0] - 2018-07-12
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
+### [type/project/project.json - v6.1.0] - 2018-07-12
+### Added
+Added two new optional fields - `project_role` and `orcid_id`. Fixes #352.
+
+### [bundle/project.json - v6.0.2] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+### [type/project/project.json - v6.0.2] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+### [core/project/project_core.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions and examples for fields in the project_core and project_type schemas.
+
+### Added
+Added some examples to fields in the project_core and project_type schemas.
+
+### [bundle/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [type/project/project.json - v6.0.1] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [module/project/contact.json - v5.2.2] - 2018-07-06
+### Changed
+Changed descriptions, examples, and user friendly names in the contact module.
+
+### [bundle/biomaterial.json - v11.2.0] - 2018-07-06
+### Added
+Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
+
+### Changed
+Changed `organoid_age` description
+
+### [type/biomaterial/organoid.json - v8.2.0] - 2018-07-06
+### Added
+Added `model_organ_part`, `organoid_size`, `organoid_size_unit`, `organoid_morphology`, `embedded_in_matrigel`, `organoid_growth_environment`, `input_aggregate_cell_count` and `organoid_stored_oxygen_levels` optional fields. Fixes #344. Fixes #347.
+
+### Changed
+Changed `organoid_age` description
+
+### [bundle/biomaterial.json - v11.1.0] - 2018-07-06
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism. Fixes #362.
+
+### [type/biomaterial/donor_organism.json - v8.1.0] - 2018-07-06
+### Added
+Added optional field `normothermic_regional_perfusion` to donor_organism. Fixes #362.
+
+### [bundle/biomaterial.json - v11.0.0] - 2018-07-06
+### Changed
+Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
+
+### [type/biomaterial/donor_organism.json - v8.0.0] - 2018-07-06
+### Changed
+Renamed field `mus_musculus_specific` to `mouse_specific` and updated relevant refs. Fixes #387
+
+### [module/biomaterial/human_specific.json - v1.0.0] - 2018-07-06
+### Added
+Added module `human_specific` to replace deprecated `homo_sapiens_specific`. Fixes #387
+
+### [module/biomaterial/mouse_specific.json - v1.0.0] - 2018-07-06
+### Added
+Added module `mouse_specific` to replace deprecated `mus_musculus _specific`. Fixes #387
+
+### [module/biomaterial/homo_sapiens_specific.json - v5.3.0] - 2018-07-06
+### Deprecated
+Deprecated module `homo_sapiens_specific` in favour of common name module `human_specific`. Fixes #387
+
+### [module/biomaterial/mus_musculus_specific.json - v5.3.0] - 2018-07-06
+### Deprecated
+Deprecated module `mus_musculus_specific` in favour of common name module `mouse_specific`. Fixes #387
+
+### [bundle/process.json - v8.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [type/process/process.json - v4.1.0] - 2018-07-06
+### Added
+Added optional fields `length_of_time` and `length_of_time_unit` to process. Fixes #400
+
+### [bundle/process.json - v8.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [type/process/process.json - v4.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [core/process/process_core.json - v7.0.0] - 2018-07-06
+### Removed
+Removed `length_of_time` and `length_of_time_unit` from process_core. Fixes #400
+
+### [module/ontology/enrichment_ontology.json - v1.2.1] - 2018-07-06
+### Changed
+Fixed a typo in the curie for the enrichment ontology root class.
+
+### [bundle/biomaterial.json - v10.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
+### [type/biomaterial/donor_organism.json - v7.2.1] - 2018-07-04
+### Fixed
+Fixed typo in `is_living` enum from "unkown" to "unknown"
+
+### [bundle/biomaterial.json - v10.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/process.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/protocol.json - v10.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/reference.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [core/process/process_core.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/cell_morphology.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/homo_sapiens_specific.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/mus_musculus_specific.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/preservation_storage.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/biomaterial/timecourse.json - v1.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/cell_line.json - v8.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/cell_suspension.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/donor_organism.json - v7.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/organoid.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/biomaterial/specimen_from_organism.json - v6.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/file/reference_file.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/process/process.json - v3.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/analysis/analysis_protocol.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v4.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/protocol.json - v6.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [type/protocol/sequencing/sequencing_protocol.json - v7.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/cell_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/development_stage_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/disease_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/enrichment_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/ethnicity_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/instrument_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/length_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/library_amplification_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/library_construction_ontology.json - v1.2.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/mass_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/organ_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/organ_part_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/process_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/protocol_type_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/sequencing_ontology.json - v1.1.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/species_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/strain_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [module/ontology/time_unit_ontology.json - v5.3.0] - 2018-06-26
+### Added
+Added optional field `ontology_label` to all ontology modules.
+Fixes Issue #383
+
+### [bundle/biomaterial.json - v10.1.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [type/biomaterial/donor_organism.json - v7.1.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [module/biomaterial/death.json - v5.3.0] - 2018-06-25
+### Added
+Added optional field `organ_donation_death_type` to module death.
+Fixes Issue #361.
+
+### [bundle/biomaterial.json - v10.0.0] - 2018-06-25
+### Changed
+Changed the type of is_living to a string and added an enum to accommodate "unknown" as well as yes/no.
+Fixes Issue #371.
+
+### [type/biomaterial/donor_organism.json - v7.0.0] - 2018-06-25
+### Changed
+Changed the type of is_living to a string and added an enum to accommodate "unknown" as well as yes/no.
+Fixes Issue #371.
+
+### [bundle/protocol.json v10.2.0] - 2018-06-25
+### Added
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json v1.0.0] - 2018-06-25
+### Added
+Added new aggregate_generation_protocol.json schema.
+Fixes Issue #345.
+
+### [bundle/protocol.json - v10.1.1] - 2018-06-25
+### Added
+Added optionals small_molecules and differentiation_media fields.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.1.1] - 2018-06-25
+### Added
+Added optionals small_molecules and differentiation_media fields.
+
+### [bundle/biomaterial.json - v9.1.1] - 2018-06-20
+### Changed
+Updated the schema URL pattern to cell_line.
+
+### [type/biomaterial/cell_line.json - v8.1.1] - 2018-06-20
+### Changed
+Updated the schema URL pattern to cell_line.
+
+### [bundle/process.json - v7.0.0] - 2018-06-11
+### Changed
+Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
+
+### Added
+Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
+
+### [type/process/process.json - v3.0.0] - 2018-06-11
+### Changed
+Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
+
+### Added
+Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
+
+### [core/process/process_core.json - v6.0.0] - 2018-06-11
+### Changed
+Renamed `start_time` to `length_of_time` with updated description and added a number-only patterns.
+
+### Added
+Added `length_of_time_unit` referencing the time unit ontology module to provide a time unit for the duration in the `length_of_time` field.
+
+### [bundle/biomaterial.json - v9.1.0] - 2018-06-11
+### Added
+Added optional field `confluency` to cell_line
+
+### [type/biomaterial/cell_line.json - v8.1.0] - 2018-06-11
+### Added
+Added optional field `confluency` to cell_line
+
+### [bundle/biomaterial.json - v9.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/cell_suspension.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/donor_organism.json - v6.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/organoid.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/specimen_from_organism.json - v6.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [type/biomaterial/cell_line.json - v8.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### Added
+Added optional field `karyotype` to cell_line
+
+### [core/biomaterial/biomaterial_core.json - v9.0.0] - 2018-06-11
+### Removed
+Removed field `karyotype` from biomaterial_core as it does not apply to all biomaterials.
+
+### [bundle/biomaterial.json - v8.0.0] - 2018-06-11
+### Removed
+Removed fields `growth_conditions` and `cell_morphology` from organoid.
+
+### [type/biomaterial/organoid.json - v7.0.0] - 2018-06-11
+### Removed
+Removed fields `growth_conditions` and `cell_morphology` from organoid.
 
 ### [bundle/biomaterial.json - v7.2.0] - 2018-06-11
 ### Added
@@ -42,8 +1158,6 @@ Made project_description a required field.
 ### [bundle/project.json - v6.0.0] - 2018-06-11
 ### Changed
 Made project_description a required field.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [bundle/biomaterial.json - v7.0.1] - 2018-06-07
 ### Changed

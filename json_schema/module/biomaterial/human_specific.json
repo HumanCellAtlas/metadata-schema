@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information specific to a donor that is a human (Homo sapiens).",
+    "additionalProperties": false,
+    "title": "human_specific",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/human_specific"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "body_mass_index": {
+            "description": "The body mass index of the donor organism.",
+            "type": "number",
+            "maximum": 100,
+            "minimum": 5,
+             "example": 36.4,
+            "user_friendly": "Body mass index"
+        },
+        "ethnicity": {
+            "description": "Ethnicity of the donor organism using ontology terms from EMBL-EBI's Ancestry Ontology.",
+            "type": "array",
+            "items": {
+                "$ref": "module/ontology/ethnicity_ontology.json"
+            },
+            "user_friendly": "Ethnicity",
+            "example": "European, White, British"
+        }
+    }
+}
