@@ -7,7 +7,7 @@
         "schema_type",
         "protocol_core",
         "instrument_manufacturer_model",
-        "paired_ends",
+        "paired_end",
         "sequencing_approach"
     ],
     "title": "sequencing_protocol",
