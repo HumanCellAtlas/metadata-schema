@@ -402,13 +402,11 @@ The following conventions should be followed when defining a new field name or s
 
     Example:
 
-    `paired_ends` is preferred over `were_paired_ends_sequenced` because it is shorter but still conveys full meaning.
+    `paired_end` is preferred over `was_paired_end_sequencing_done` because it is shorter but still conveys full meaning.
 
-    `species` is preferred over `the_species` because the grammatically determiner does not improve clarity.
+    `funders` is preferred over `the_funders` because the grammatical determiner (`the`) does not improve clarity.
     
-    **mf: `species` isn't actually a field in the HCA metadata schema, so we should consider another example to avoid confusion.**
-
-1. Field names should be plural if their values are their values are arrays.:
+1. Field names should be plural if their values are arrays.:
 
     Example
 
