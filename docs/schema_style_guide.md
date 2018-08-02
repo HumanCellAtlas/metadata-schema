@@ -395,8 +395,6 @@ The following conventions should be followed when defining a new field name or s
     Example:
 
     `publication_doi`
-    
-    **markd: I change this from  `biomaterial_id`, as `id` field named have a bit if a sticky history related to SQL we should discuss**
 
 1. Field names should be kept as short as possible while still naturally readable, without attempting to be fully grammatically correct. They should be clear within their context.
 
@@ -406,7 +404,7 @@ The following conventions should be followed when defining a new field name or s
 
     `funders` is preferred over `the_funders` because the grammatical determiner (`the`) does not improve clarity.
     
-1. Field names should be plural if their values are arrays.:
+1. Field names should be plural if their values are arrays.
 
     Example
 
