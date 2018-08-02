@@ -1,1 +1,1 @@
-Schema,Change type,Change message,Version,Date
+type/protocol/sequencing/sequencing_protocol,major,Changed paired_ends to paired_end,,
