@@ -7,7 +7,7 @@
         "schema_type",
         "protocol_core",
         "instrument_manufacturer_model",
-        "paired_ends",
+        "paired_end",
         "sequencing_approach"
     ],
     "title": "sequencing_protocol",
@@ -54,12 +54,12 @@
             "user_friendly": "Local machine name",
             "example": "Machine1"
         },
-        "paired_ends": {
+        "paired_end": {
             "description": "Was a paired-end sequencing strategy used?",
             "type": "boolean",
             "example": "Should be one of: yes, no.",
             "comment": "If 10x, then put no.",
-            "user_friendly": "Paired ends?"
+            "user_friendly": "Paired end?"
         },
         "sequencing_approach": {
             "description": "The general approach for sequencing.",
