@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.3] - 2018-08-03
+### Changed
+Changed sequencing_approach friendly name to Sequencing approach. Fixes #469.
+
 ### [core/process/process_core.json - v9.0.0] - 2018-08-01
 ### Changed
 Changed operator_identity to operator. Fixes #377.
