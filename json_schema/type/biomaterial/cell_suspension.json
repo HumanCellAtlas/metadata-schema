@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the cell suspension derived from the collected or cultured specimen",
+    "description": "Information about the suspension of cells or nuclei derived from the collected or cultured specimen.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -51,7 +51,7 @@
             "user_friendly": "Growth conditions"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the suspension.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
@@ -60,7 +60,7 @@
             "user_friendly": "Genus species"
         },
         "selected_cell_type": {
-            "description" : "The cell type(s) selected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
+            "description" : "The cell type(s) selected to be present in the suspension.",
             "type": "array",
             "items": {
 		        "$ref": "module/ontology/cell_type_ontology.json"
@@ -69,12 +69,18 @@
             "user_friendly": "Selected cell type"
        },
         "total_estimated_cells": {
-            "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
+            "description": "Total estimated number of cells in the suspension. May be 1 for well-based assays.",
             "type": "integer",
             "maximum": 1000000000,
             "minimum": 0,
-            "example": "2100",
+            "example": 2100,
             "user_friendly": "Total estimated cell count"
+        },
+        "plate_based_sequencing" : {
+            "description": "Fields specific for plate-based sequencing experiments.",
+            "type": "object",
+            "$ref": "module/process/sequencing/plate_based_sequencing.json",
+            "user_friendly": "Plate-based sequencing"
         }
      }
 }

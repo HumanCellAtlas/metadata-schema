@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "State of body part at collection and how it was preserved after removal and/or cell enrichment",
+    "description": "State of specimen at time of collection.",
     "additionalProperties": false,
     "title": "state_of_specimen",
     "type": "object",
@@ -17,63 +17,70 @@
             "example": "4.6.1"
         },
         "autolysis_score": {
-            "description": "State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate.",
+            "description": "State of tissue breakdown due to self-digestion.",
             "type": "string",
             "enum": [
                 "none", 
                 "mild", 
                 "moderate"
             ],
-            "user_friendly": "Autolysis score"
+            "user_friendly": "Autolysis score",
+            "example": "Should be one of: none, mild, or moderate."
         }, 
         "gross_description": {
             "description": "Color, size, and other aspects of specimen as visible to naked eye.",
             "type": "string",
             "user_friendly": "Gross description"
-        }, 
+        },
         "gross_image": {
-            "description": "List of filenames of photographs of body part without magnification. Must be of format JPEG, TIFF, or PNG.",
+            "description": "List of filenames of photographs of specimen without magnification. Must be of format JPEG, TIFF, or PNG.",
             "type": "array",
             "items": {
                 "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
                 "type": "string"
             },
-            "user_friendly": "Gross image"
+            "user_friendly": "Gross image",
+            "example": "my_gross_image_file.jpg"
         }, 
         "ischemic_temperature": {
-            "description": "Whether warm or cold ischemia.",
+            "description": "Whether specimen experienced warm or cold ischemia.",
             "type": "string",
             "enum": [
                 "warm",
                 "cold"
             ],
-            "user_friendly": "Ischemic temperature"
+            "user_friendly": "Ischemic temperature",
+            "example": "Should be one of: warm, or cold."
         }, 
         "ischemic_time": {
-            "description": "Duration of time, in seconds, between when the donor organism or body part stopped receiving oxygen and when the tissue was preserved or processed.",
+            "description": "Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed.",
             "type": "integer",
             "maximum": 1000000,
             "minimum": 0,
+            "example": 7200,
             "user_friendly": "Ischemic time"
         }, 
         "microscopic_description": {
-            "description": "How the biomaterial looks under the microscope and how it compares with normal cells.",
+            "description": "How the specimen looks under the microscope and how it compares with normal cells.",
             "type": "string",
-            "user_friendly": "Microscopic description"
+            "user_friendly": "Microscopic description",
+            "example": "Mixture of different cell sizes apparent."
         }, 
         "microscopic_image": {
-            "description": "List of filenames of photographs of body part under microscope. Must be of format JPEG, TIFF, or PNG.",
+            "description": "List of filenames of photographs of specimen under microscope. Must be of format JPEG, TIFF, or PNG.",
             "type": "array",
             "items": {
                 "type": "string",
                 "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$"
             },
-            "user_friendly": "Microscopic image"
-        }, 
+            "user_friendly": "Microscopic image",
+            "example": "my_microscopic_image_file.jpg"
+        },
         "postmortem_interval": {
-            "description": "Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed.",
+            "description": "Duration of time, in seconds, between when death was declared and when the specimen was preserved or processed.",
             "type": "integer",
             "minimum": 0,
+            "example": 2400,
             "user_friendly": "Post-mortem interval"
         }
     }

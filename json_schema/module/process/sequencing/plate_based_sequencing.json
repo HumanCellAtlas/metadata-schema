@@ -1,8 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "This module describes information specific to SmartSeq2 experiments.",
+    "description": "Information specific to plate-based sequencing experiments.",
     "additionalProperties": false,
-    "title": "smartseq2",
+    "required": [
+        "plate_id"
+    ],
+    "title": "plate_based_sequencing",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -19,22 +22,14 @@
         "plate_id": {
             "description": "An ID for the plate that the well is located on.",
             "type": "string",
-            "user_friendly": "Well plate ID"
+            "user_friendly": "Well plate ID",
+            "example": "2217"
         },
-        "well_name": {
-            "description": "A name for the well. Should be unique for the plate",
+        "well_id": {
+            "description": "An ID or name for the well. Should be unique for the plate.",
             "type": "string",
-            "user_friendly": "Well name"
-        }, 
-        "well_row": {
-            "description": "Well row in plate.",
-            "type": "string",
-            "user_friendly": "Well row"
-        },
-         "well_column": {
-            "description": "Well column in plate.",
-            "type": "string",
-            "user_friendly": "Well column"
+            "user_friendly": "Well ID",
+            "example": "A1"
         },
         "cell_quality": {
             "description": "Note on how good cell looks if imaged in well before sequencing.",
@@ -45,7 +40,8 @@
                 "control, empty well",
                 "low quality cell"
             ],
-            "user_friendly": "Cell quality"
+            "user_friendly": "Cell quality",
+            "example": "Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'."
         }
     }
 }
