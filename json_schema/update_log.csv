@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/file/sequence_file,minor,Added optional field `technical_replicate_group` fixes #421,,
