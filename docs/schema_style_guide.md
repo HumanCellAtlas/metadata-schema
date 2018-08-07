@@ -187,7 +187,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    Each *description* should be one or more phrases or sentences and end in a full stop (period).
+    Each *description* should be 1 phrase and end in a full stop (period). An additional phrase or sentence is allowed if required for improved clarity of the description.
 
 1. **type:** The JSON type of value required for the metadata field. The *type* value will be displayed in the Metadata Dictionary on the Data Portal.
 
@@ -412,7 +412,7 @@ The following conventions should be followed when defining a new field name or s
 
     `children` is preferred if the field can indicate more than 1 child. 
     
-    `child` is preferred if the field can only only indicate 1 child.
+    `child` is preferred if the field can only indicate 1 child.
 
 1. If a number field requires a corresponding unit field, append `_unit` to the number field name to generate the unit field name.
 
@@ -422,7 +422,7 @@ The following conventions should be followed when defining a new field name or s
 
 ### Field description tone and voice
 
-1. Make a statement instead of a demand in the field description. For example:
+1. Make a statement instead of a demand. For example:
 
     Use
 
@@ -432,7 +432,7 @@ The following conventions should be followed when defining a new field name or s
     
         "description": "Enter the age of the donor."
     
-1. Be concise instead of verbose in the field description. For example:
+1. Be concise. For example:
 
     Use
     
@@ -451,6 +451,35 @@ The following conventions should be followed when defining a new field name or s
     not 
     
         "description": "Your email address."
+
+### Field example conventions
+
+1. Include one example per field, when appropriate ([see above](#conditional-required-field-attributes)). For example:
+
+    Use
+    
+        "example": "bone squamous cell carcinoma"
+        
+    not
+    
+        "example": "bone squamous cell carcinoma, type 2 diabetes mellitus"
+
+1. Do not include instructions for entering a value. Instructions should be entered in the "guidelines" attribute. For example: 
+
+    Use
+    
+        "insdc_study": {
+            "guidelines": "Accession must start with PRJE, PRJN, or PRJD.",
+            "example": "PRJNA000000",
+            ...
+        },
+        
+    not
+    
+        "insdc_study": {
+            "example": "Accession must start with PRJE, PRJN, or PRJD. e.g. PRJNA000000",
+            ...
+        },
 
 ### Ontology versus enum for a controlled vocabulary
 
