@@ -71,7 +71,7 @@
                 "pattern": "^[D|E|S]RR[0-9]+$",
                 "type": "string"
             },
-	        "user_friendly": "INSDC run",
+            "user_friendly": "INSDC run",
             "example": "SRR0000000"
         },
         "technical_replicate_group" : {
