@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information relating to pathological features of cells.",
+    "description": "Information relating to pathological and morphological features of cells.",
     "additionalProperties": false,
     "title": "cell_morphology",
     "type": "object",
@@ -17,26 +17,27 @@
             "example": "4.6.1"
         },
         "cell_morphology": {
-            "description": "General description of the morphology of the cells in the cell suspension.",
+            "description": "General description of the morphology of cells.",
             "type": "string",
-            "user_friendly": "Cell morphology"
+            "user_friendly": "Cell morphology",
+            "example": "adherent cells, form single layer colonies"
         },
         "cell_size": {
-            "description": "The size of the cells. Average cell size is acceptable.",
+            "description": "Size of cells in Cell size unit. Average value is acceptable.",
             "type": "string",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "example": "20-30",
-            "user_friendly": "Cell size number"
+            "user_friendly": "Cell size"
         },
         "cell_size_unit": {
-            "description": "The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
+            "description": "The unit in which the Cell size is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
             "example": "micrometer",
             "user_friendly": "Cell size unit"
         },
         "percent_cell_viability": {
-            "description": "Percent of cells determined to be viable. Please enter a single number. An average value is acceptable.",
+            "description": "Percent of cells determined to be viable. Average value is acceptable.",
             "type": "number",
             "example": 98.7,
             "user_friendly": "Percent cell viability"
@@ -48,19 +49,20 @@
             "user_friendly": "Cell viability method"
         },
         "cell_viability_result": {
-            "description": "Whether the result of the cell viability test is pass or fail.",
+            "description": "Result of the cell viability test.",
             "type": "string",
             "enum": [
                 "pass",
                 "fail"
             ],
-            "example": "pass",
+            "example": "Must be one of: pass, fail",
             "user_friendly": "Cell viability pass/fail result"
         },
         "percent_necrosis": {
             "description" : "Percent of cells identified to be necrotic.",
             "type": "number",
-            "user_friendly": "Percent necrosis"
+            "example": 10,
+            "user_friendly": "Percent necrotic cells"
         }
     }
 }

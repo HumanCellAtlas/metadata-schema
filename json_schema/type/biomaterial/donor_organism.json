@@ -1,13 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the organism from which a specimen was collected.",
+    "description": "Information about the donor organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
         "biomaterial_core",
         "is_living",
-        "biological_sex"
+        "sex"
     ],
     "title": "donor_organism",
     "type": "object",
@@ -43,25 +43,29 @@
         "human_specific": {
             "description": "Fields specific to human (homo sapiens) organisms.",
             "type": "object",
-            "$ref": "module/biomaterial/human_specific.json"
+            "$ref": "module/biomaterial/human_specific.json",
+            "user_friendly": "Human-specific"
         },
         "mouse_specific": {
             "description": "Fields specific to mouse (mus musculus) organisms.",
             "type": "object",
-            "$ref": "module/biomaterial/mouse_specific.json"
+            "$ref": "module/biomaterial/mouse_specific.json",
+            "user_friendly": "Mouse-specific"
         },
         "death": {
-            "description": "Information about conditions of death of an organism.",
+            "description": "Information about conditions of death of the organism.",
             "type": "object",
-            "$ref": "module/biomaterial/death.json"
+            "$ref": "module/biomaterial/death.json",
+            "user_friendly": "Death conditions"
         },
         "medical_history": {
-            "description": "Information about the medical history of an organism.",
+            "description": "Information about the medical history of the organism.",
             "type": "object",
-            "$ref": "module/biomaterial/medical_history.json"
+            "$ref": "module/biomaterial/medical_history.json",
+            "user_friendly": "Medical history"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the organism.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
@@ -70,31 +74,34 @@
             "user_friendly": "Genus species"
         },
         "organism_age": {
-            "description": "Age in age_units. Measured since birth.",
+            "description": "Age of organism in Organism age unit. Measured since birth.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
-            "user_friendly": "Organism age"
+            "user_friendly": "Organism age",
+            "example": "20"
         }, 
         "organism_age_unit": {
-            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
+            "description": "The unit in which Organism age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Organism age unit",
-            "example": "year"
+            "example": "Should be one of: hour, day, week, month, or year."
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
             "type": "object",
             "$ref": "module/ontology/development_stage_ontology.json",
-            "user_friendly": "Development stage"
+            "user_friendly": "Development stage",
+            "example": "adult"
         }, 
         "disease": {
-            "description": "Short description of disease status of the organism.",
+            "description": "Short description of known disease(s) of the organism. Enter 'normal' if no known disease.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
-            "user_friendly": "Disease"
+            "user_friendly": "Known disease(s)",
+            "example": "bone squamous cell carcinoma"
         },
         "familial_relationship": {
             "description": "Information about other organisms related to this organism.",
@@ -105,28 +112,32 @@
             "user_friendly": "Familial relationship"
         },
         "gestational_age": {
-            "description": "Gestational age in gestational_age_units. Measured since fertilization.",
+            "description": "Gestational age of organism in Gestational age unit. Measured since fertilization.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
-            "user_friendly": "Gestational age"
+            "user_friendly": "Gestational age",
+            "example": "5-7"
         },
         "gestational_age_unit": {
-            "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
+            "description": "The unit in which Gestational age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Gestational age unit"
+            "user_friendly": "Gestational age unit",
+            "example": "Should be one of: hour, day, week, month, or year."
         },
         "height": {
-            "description": "Height of organism in height units.",
+            "description": "Height of organism in Height unit.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
-            "user_friendly": "Height"
+            "user_friendly": "Height",
+            "example": "160"
         },
         "height_unit": {
-            "description": "The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
+            "description": "The unit in which Height is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-            "user_friendly": "Height unit"
+            "user_friendly": "Height unit",
+            "example": "centimeter"
         },
         "is_living": {
             "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
@@ -136,10 +147,11 @@
                 "no",
                 "unknown"
             ],
-            "user_friendly": "Is living?"
+            "user_friendly": "Is living?",
+            "example": "Should be one of: yes, no, unknown."
         }, 
-        "biological_sex": {
-            "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
+        "sex": {
+            "description": "The biological sex of the organism.",
             "type": "string",
             "enum": [
                 "female", 
@@ -147,29 +159,33 @@
                 "mixed", 
                 "unknown"
             ],
-            "user_friendly": "Biological sex"
+            "user_friendly": "Biological sex",
+            "example": "Should be one of: male, female, mixed, or unknown."
         },
         "weight": {
-            "description": "Weight of organism in kilograms.",
+            "description": "Weight of organism in Weight unit.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
-            "user_friendly": "Weight"
+            "user_friendly": "Weight",
+            "example": "60"
         },
         "weight_unit": {
-            "description": "The unit in which weight is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000002.",
+            "description": "The unit in which Weight is expressed.",
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
-            "user_friendly": "Weight unit"
+            "user_friendly": "Weight unit",
+            "example": "kilogram"
         },
         "normothermic_regional_perfusion": {
-            "description": "Yes if donor's body (but not limbs) was perfused with warm oxygenated blood from the donor. No otherwise.",
+            "description": "Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise.",
             "type": "string",
             "enum": [
                 "yes",
                 "no",
                 "unknown"
             ],
-            "user_friendly": "Normothermic regional perfusion"
+            "user_friendly": "Normothermic regional perfusion?",
+            "example": "Should be one of: yes, no, or unknown."
         }
     }
 }

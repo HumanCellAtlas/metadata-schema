@@ -1,0 +1,15 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/biomaterial/6.1.1/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "Q4_DEMO-cellsus_SAMN02797092",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "provenance": {
+        "document_id": "cb5b6f2b-8561-4cfa-96f0-ca1dda3b661c",
+        "submission_date": "2018-07-22T23:38:35.874Z",
+        "update_date": "2018-07-22T23:38:43.913Z"
+    }
+}
