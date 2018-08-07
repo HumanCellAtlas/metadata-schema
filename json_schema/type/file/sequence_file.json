@@ -74,11 +74,6 @@
 	    "user_friendly": "INSDC run",
             "example": "SRR0000000"
         },
-         "smartseq2" : {
-	        "description": "Fields specific for SmartSeq2 experiments.",
-            "type": "object",
-            "$ref": "module/process/sequencing/smartseq2.json"
-        },
         "technical_replicate_group" : {
             "description": "A project wide unique label to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same sequencing library. Leave blank if files are biological replicates.",
             "type": "string",
