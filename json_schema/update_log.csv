@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/file/sequence_file,minor,"Removed deprecated smartseq2 field that was accidentally re-added.",,
