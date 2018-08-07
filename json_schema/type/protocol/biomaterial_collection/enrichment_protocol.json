@@ -40,10 +40,11 @@
             "$ref": "core/protocol/protocol_core.json"
         },
         "enrichment_method": {
-            "description": "The method by which enrichment was achieved. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0002694.",
+            "description": "The method by which enrichment was achieved.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Enrichment method"
+            "user_friendly": "Enrichment method",
+            "example": "fluorescence-activated cell sorting"
         },
         "markers": {
             "description": "A space-delimited list of markers with +/-.",
@@ -56,14 +57,16 @@
             "type": "number",
             "maximum": 10000,
             "minimum": 0.01,
-            "user_friendly": "Minimum size selected"
+            "user_friendly": "Minimum size selected",
+            "example": 70
         },
         "max_size_selected": {
             "description": "Maximum cell or organelle size passing selection, in microns.",
             "type": "number",
             "maximum": 10000,
             "minimum": 0.01,
-            "user_friendly": "Maximum size selected"
+            "user_friendly": "Maximum size selected",
+            "example": 90
         }
     }
 }
