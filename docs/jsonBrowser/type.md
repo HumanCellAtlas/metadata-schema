@@ -250,7 +250,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 project_core | Core project-level information. | object | no | [See core  project_core](core.md/#project_core) |  |  | 
 contributors | List of people contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
-supplementary_files | Project-level supplementary files. | array | no |  | Project supplementary files |  | For example, experimental documents, photos, etc. Please list the file names, separated by double pipes. You will be asked to upload these files separately.
+supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris
 publications | A list of publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
 insdc_project | An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if project has been submitted. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRP, SRP, or ERP. | string | no |  | INSDC project accession |  | SRP000000
 geo_series | GEO accession number, if data has been submitted. Accession must start with GSE. | string | no |  | GEO series accession |  | GSE00000

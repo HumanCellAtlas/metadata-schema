@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/project/project.json - v9.0.0] - 2018-08-09
+### Changed
+Changed supplementary_files to supplementary_links.
+
 ### [type/file/sequence_file.json - v6.5.0] - 2018-08-07
 ### Removed
 Removed deprecated smartseq2 field that was accidentally re-added.
