@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/ontology/ethnicity_ontology,patch,Fixed the ontology reference to work with the new hancestro,,
