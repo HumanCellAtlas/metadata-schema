@@ -54,10 +54,25 @@ class ReleasePrepare:
                         log_content[val][self.version_column] = versionUpdates[key]
                     else:
                         # add dependeny updates to the update log
-                        new_row = log_content[val].copy()
-                        new_row[self.version_column] = versionUpdates[key]
-                        new_row[self.schema_column] = key
-                        log_content.append(new_row)
+                        row_updated = False
+                        # first check whether the dependent schema is also updated separately:
+                        for alt_val in range(1, len(log_content)):
+                            if schema == log_content[alt_val][self.schema_column] and not log_content[alt_val][self.version_column]:
+                                if log_content[alt_val][self.type_column] == change_type:
+                                    log_content[alt_val][self.version_column] = versionUpdates[key]
+                                    row_updated = True
+                                elif (log_content[alt_val][self.type_column] == 'major') or (log_content[alt_val][self.type_column] == 'minor' and change_type == 'patch'):
+                                    row_updated = True
+                                else:
+                                    log_content[alt_val][self.version_column] = versionUpdates[key]
+                                    row_updated = True
+
+                        # if the depdency isn't listed separately, add a new row to the update log
+                        if not row_updated:
+                            new_row = log_content[val].copy()
+                            new_row[self.version_column] = versionUpdates[key]
+                            new_row[self.schema_column] = key
+                            log_content.append(new_row)
         return log_content
 
     def buildChangeLog(self, log_content):
