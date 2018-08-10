@@ -9,6 +9,50 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/project/project.json - v9.0.0] - 2018-08-09
+### Changed
+Changed supplementary_files to supplementary_links.
+
+### [type/file/sequence_file.json - v6.5.0] - 2018-08-07
+### Removed
+Removed deprecated smartseq2 field that was accidentally re-added.
+
+### [type/file/sequence_file.json - v6.4.0] - 2018-08-06
+### Added
+Added optional field `technical_replicate_group` fixes #421
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.0] - 2018-08-03
+### Changed
+Changed paired_ends to paired_end. Fixes #467.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v8.1.3] - 2018-08-03
+### Changed
+Changed sequencing_approach friendly name to Sequencing approach. Fixes #469.
+
+### [type/biomaterial/donor_organism.json - v10.0.0] - 2018-08-03
+### Changed
+Changed biological_sex to sex. Fixes #384.
+
+### [core/process/process_core.json - v9.0.0] - 2018-08-01
+### Changed
+Changed operator_identity to operator. Fixes #377.
+
+### [type/process/process.json - v6.0.0] - 2018-08-01
+### Changed
+Changed operator_identity to operator. Fixes #377.
+
+### [type/process/analysis/analysis_process.json - v8.0.0] - 2018-08-01
+### Changed
+Changed operator_identity to operator. Fixes #377.
+
+### [module/biomaterial/familial_relationship.json - v6.0.0] - 2018-07-31
+### Changed
+Changed is_parent_of to child, is_child_of to parent, and is_sibling_of to sibling.
+
+### [type/biomaterial/donor_organism.json - v9.0.0] - 2018-07-31
+### Changed
+Changed is_parent_of to child, is_child_of to parent, and is_sibling_of to sibling.
+
 ### [module/process/sequencing/10x.json - v1.0.1] - 2018-07-26
 ### Fixes
 Fixes 10x url bug

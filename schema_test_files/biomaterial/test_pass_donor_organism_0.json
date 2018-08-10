@@ -10,7 +10,7 @@
     ]
   },
   "is_living": "yes",
-  "biological_sex": "male",
+  "sex": "male",
   "development_stage": {
     "text": "adult",
     "ontology": "EFO_0001272"
