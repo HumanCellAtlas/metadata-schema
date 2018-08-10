@@ -42,17 +42,16 @@ class ReleasePrepare:
         # find any row where the version column is empty and increment the version number
         # using the version_update script and log parameters
 
-        all_schemas = []
-
-        for v in range(1, len(log_content)):
-            all_schemas.append(log_content[v][self.schema_column])
-
-
         for val in range(1, len(log_content)):
+            #generate a list of independent schemas from the update log
+            independent_schemas = []
+            for v in range(1, len(log_content)):
+                independent_schemas.append(log_content[v][self.schema_column])
+
             if not log_content[val][self.version_column]:
                 schema = log_content[val][self.schema_column]
                 change_type = log_content[val][self.type_column]
-                version_options = options(self.schemafolder, schema,change_type,all_schemas)
+                version_options = options(self.schemafolder, schema,change_type,independent_schemas)
                 versionUpdater = VersionUpdater(version_options)
                 versionUpdates = versionUpdater.updateVersions(True)
 
