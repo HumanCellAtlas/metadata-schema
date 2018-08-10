@@ -41,11 +41,18 @@ class ReleasePrepare:
     def updateVersions(self, log_content):
         # find any row where the version column is empty and increment the version number
         # using the version_update script and log parameters
+
+        all_schemas = []
+
+        for v in range(1, len(log_content)):
+            all_schemas.append(log_content[v][self.schema_column])
+
+
         for val in range(1, len(log_content)):
             if not log_content[val][self.version_column]:
                 schema = log_content[val][self.schema_column]
                 change_type = log_content[val][self.type_column]
-                version_options = options(self.schemafolder, schema,change_type)
+                version_options = options(self.schemafolder, schema,change_type,all_schemas)
                 versionUpdater = VersionUpdater(version_options)
                 versionUpdates = versionUpdater.updateVersions(True)
 
@@ -54,25 +61,10 @@ class ReleasePrepare:
                         log_content[val][self.version_column] = versionUpdates[key]
                     else:
                         # add dependeny updates to the update log
-                        row_updated = False
-                        # first check whether the dependent schema is also updated separately:
-                        for alt_val in range(1, len(log_content)):
-                            if schema == log_content[alt_val][self.schema_column] and not log_content[alt_val][self.version_column]:
-                                if log_content[alt_val][self.type_column] == change_type:
-                                    log_content[alt_val][self.version_column] = versionUpdates[key]
-                                    row_updated = True
-                                elif (log_content[alt_val][self.type_column] == 'major') or (log_content[alt_val][self.type_column] == 'minor' and change_type == 'patch'):
-                                    row_updated = True
-                                else:
-                                    log_content[alt_val][self.version_column] = versionUpdates[key]
-                                    row_updated = True
-
-                        # if the depdency isn't listed separately, add a new row to the update log
-                        if not row_updated:
-                            new_row = log_content[val].copy()
-                            new_row[self.version_column] = versionUpdates[key]
-                            new_row[self.schema_column] = key
-                            log_content.append(new_row)
+                        new_row = log_content[val].copy()
+                        new_row[self.version_column] = versionUpdates[key]
+                        new_row[self.schema_column] = key
+                        log_content.append(new_row)
         return log_content
 
     def buildChangeLog(self, log_content):
@@ -135,11 +127,11 @@ class ReleasePrepare:
 
 
 class options:
-    def __init__(self, p, s, i):
+    def __init__(self, p, s, i, e):
         self.path = p
         self.schema = s
         self.increment_type = i
-
+        self.exclude = e
 
 
 if __name__ == '__main__':
