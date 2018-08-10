@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-7/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about an individual who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [

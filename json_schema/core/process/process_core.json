@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-7/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity.",
     "additionalProperties": false,
     "required": [

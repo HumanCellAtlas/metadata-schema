@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-7/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "protocol by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
     "additionalProperties": false,
     "required": [

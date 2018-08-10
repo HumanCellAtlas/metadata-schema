@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-7/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about the imaging protocol",
     "additionalProperties": false,
     "required": [
