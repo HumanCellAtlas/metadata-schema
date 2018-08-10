@@ -7,6 +7,278 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/biomaterial/biomaterial_core.json - v7.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [core/file/file_core.json - v5.2.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [core/process/process_core.json - v9.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [core/project/project_core.json - v7.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [core/protocol/protocol_core.json - v5.2.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/cell_morphology.json - v6.1.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/death.json - v5.3.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/familial_relationship.json - v6.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/growth_conditions.json - v6.2.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/human_specific.json - v1.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/medical_history.json - v5.2.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/mouse_specific.json - v1.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/preservation_storage.json - v5.3.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/state_of_specimen.json - v5.2.5] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/biomaterial/timecourse.json - v1.1.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/cell_type_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/development_stage_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/disease_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/enrichment_ontology.json - v1.2.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/ethnicity_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/instrument_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/length_unit_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/library_amplification_ontology.json - v1.2.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/library_construction_ontology.json - v1.2.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/mass_unit_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/organ_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/organ_part_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/process_type_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/protocol_type_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/sequencing_ontology.json - v1.1.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/species_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/strain_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/ontology/time_unit_ontology.json - v5.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/process/sequencing/10x.json - v1.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/process/sequencing/barcode.json - v5.2.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/process/sequencing/insdc_experiment.json - v1.1.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/process/purchased_reagents.json - v6.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/project/contact.json - v6.1.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/project/funder.json - v1.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [module/project/publication.json - v5.2.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [system/links.json - v1.1.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [system/provenance.json - v1.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/biomaterial/cell_line.json - v8.4.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/biomaterial/cell_suspension.json - v8.4.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/biomaterial/donor_organism.json - v10.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/biomaterial/organoid.json - v8.3.4] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.8] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/file/analysis_file.json - v5.3.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/file/reference_file.json - v2.2.4] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/file/sequence_file.json - v6.5.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/file/supplementary_file.json - v1.1.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/process/analysis/analysis_process.json - v8.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/process/process.json - v6.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/project/project.json - v9.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/protocol.json - v6.3.4] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.4] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.5] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.5] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.2] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.4] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v1.2.5] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/imaging/imaging_protocol.json - v7.2.3] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.3.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.1] - 2018-08-10
+### Changed
+Changed from json-schema draft-4 to draft-07
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/project/project.json - v9.0.0] - 2018-08-09
