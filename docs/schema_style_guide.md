@@ -338,7 +338,7 @@ The following attributes are required for each metadata field in an HCA metadata
         "project_role": {
             "description": "Primary role of the individual in the project.",
             "type": "string",
-            "example": "principal investigator",
+            "example": "principal investigator; clinician",
             "user_friendly": "Project role",
             "enum": [
                 "principal investigator",
@@ -355,7 +355,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-    If the *enum* list is short enough (5 or fewer values), the list of valid values should be included in the *example* attribute (*e.g.* the `biological_sex` enum) starting with the phrase "Should be one of:". If the *enum* list is too long to reasonably fit in the *example* attribute, a single valid value should be listed (*e.g.* the `project_role` enum).
+    If the *enum* list is short enough (5 or fewer values), the list of valid values should be included in the *example* attribute (*e.g.* the `biological_sex` enum) starting with the phrase "Should be one of:". If the *enum* list is too long to reasonably fit in the *example* attribute, one or two valid values should be listed separated by a semicolon (*e.g.* the `project_role` enum).
     
     Creating an ontology module for a metadata field is preferred over maintaining an *enum* list. See the [Ontology versus enum for a controlled vocabulary](#ontology-or-enum) section below for more details.
 
@@ -458,15 +458,23 @@ The following conventions should be followed when defining a new field name or s
 
 ### Field example conventions
 
-1. Include one example per field, when appropriate ([see above](#conditional-required-field-attributes)). For example:
+1. Include one or two examples per field, when appropriate ([see above](#conditional-required-field-attributes)). Two examples - separated by a semicolon - should be used when a range of values are valid to illustrate potential breadth of values. A single example should be used otherwise to illustrate general usage of the field. For example:
 
     Use
     
-        "example": "bone squamous cell carcinoma"
+        "example": "bone squamous cell carcinoma; type 2 diabetes mellitus"
         
     not
     
-        "example": "bone squamous cell carcinoma, type 2 diabetes mellitus"
+        "example": "bone squamous cell carcinoma"
+
+    Use
+    
+        "example": "0000 Main Street, Nowheretown, MA, 12091"
+        
+    not
+    
+        "example": "0000 Main Street, Nowheretown, MA, 12091; 9999 Main Avenue, Noplaceville, CA, 91120"
 
 1. Do not include instructions for entering a value. Instructions should be entered in the "guidelines" attribute. For example: 
 
