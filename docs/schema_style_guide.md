@@ -53,7 +53,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
 
-1. **additionalProperties:** Whether additional fields not in the schema will be allowed. The *additionalProperties* attribute should always be set to `false`. Currently, the HCA is not accepting user-supplied fields. The process for extending the metadata standard to include new fields is outlined in our contributing documentation [here](contributing.md).
+1. **additionalProperties:** Whether additional fields not in the schema will be allowed. The *additionalProperties* attribute should always be set to `false`. Currently, user-supplied fields are not accepted without consultation with the metadata team. The process for requesting updates to the Metadata Standard to include new fields is outlined in our contributing documentation [here](contributing.md#requesting-or-suggesting-changes-to-the-metadata-schema).
 
     Example:
     
