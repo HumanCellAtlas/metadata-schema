@@ -236,14 +236,14 @@ The following attributes are required for each metadata field in an HCA metadata
     
 ### Conditional required field attributes
 
-1. **example:** An example valid value for the metadata field. This attribute is required for all fields except those that reference a core, module, or ontology schema and those for which providing an example might bias data contributors. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
+1. **example:** Two example valid values for the metadata field, separated by a semicolon. This attribute is required for all fields except those that reference a core, module, or ontology schema and those for which providing an example might bias data contributors. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
     
         "project_role": {
             "description": "Primary role of the individual in the project.",
             "type": "string",
-            "example": "principal investigator",
+            "example": "principal investigator; clinician",
             ...
         }
 
@@ -253,6 +253,8 @@ The following attributes are required for each metadata field in an HCA metadata
     - A field uses an ontology, *e.g.* `genus_species`, because the fields in the imported ontology schema will have their own example valid values.
     - An example for a field could bias data contributors, *e.g.* providing an example ID for a biomaterial in the `biomaterial_id` field. 
 
+    **Special case: Ontology examples**
+    
     *Example* values can be supplied for fields that are governed by an ontology by including them in the ontology schema. The `text`, `ontology`, and `ontology_label` fields can all take *example* valid values. **N.B.** Currently, ontology *examples* are generally lacking, and an example valid ontology value is provided for the field that imports the ontology.
     
     Example:
