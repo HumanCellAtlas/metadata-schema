@@ -64,7 +64,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
 
-1. **required:** An array indicating which fields in the schema are required. If no fields are required, omit this attribute.  
+1. **required:** An array indicating which fields in the schema are required. If no fields are required, omit this attribute. Fields are determined to be required if they are necessary for downstream software components.
 
     Example:
     
