@@ -138,7 +138,7 @@ Example:
 
     {
         "$schema": "http://json-schema.org/draft-07/schema#",
-        "#id": "http://schema.humancellatlas.org/type/biomaterial/8.3.4/organoid",
+        "$id": "http://schema.humancellatlas.org/type/biomaterial/8.3.4/organoid",
         "description": "Information about an organoid biomaterial.",
         ...
     }
