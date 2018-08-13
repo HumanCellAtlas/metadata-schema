@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/ethnicity_ontology.json - v5.3.2] - 2018-08-10
+### Fixed
+Fixed the ontology reference to work with the new hancestro
+
+### [type/biomaterial/donor_organism.json - v10.0.2] - 2018-08-10
+### Fixed
+Fixed the ontology reference to work with the new hancestro
+
+### [module/biomaterial/human_specific.json - v1.0.3] - 2018-08-10
+### Fixed
+Fixed the ontology reference to work with the new hancestro
+
 ### [core/biomaterial/biomaterial_core.json - v7.0.2] - 2018-08-10
 ### Changed
 Changed from json-schema draft-4 to draft-07
