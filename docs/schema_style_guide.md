@@ -124,26 +124,26 @@ The following attributes are required for each metadata schema in the HCA metada
 
 1. **$id:** A persistent URI for the schema. The `$id` attribute is **not** included in JSON schemas in GitHub. Instead, it is inserted automatically at the time schemas are published to the HCA Metadata Standard at [schema.humancellatlas.org](https://schema.humancellatlas.org/).
 
-Example:
-
-*GitHub*
-
-    {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "description": "Information about an organoid biomaterial.",
-        ...
-    }
-
-*schema.humancellatlas.org*
-
-    {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "http://schema.humancellatlas.org/type/biomaterial/8.3.4/organoid",
-        "description": "Information about an organoid biomaterial.",
-        ...
-    }
+    Example:
     
-The specification for using the JSON `$id` keyword can be found [here](http://json-schema.org/latest/json-schema-core.html#rfc.section.8.2)
+    *GitHub*
+    
+        {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "description": "Information about an organoid biomaterial.",
+            ...
+        }
+    
+    *schema.humancellatlas.org*
+    
+        {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "$id": "http://schema.humancellatlas.org/type/biomaterial/8.3.4/organoid",
+            "description": "Information about an organoid biomaterial.",
+            ...
+        }
+        
+    The specification for using the JSON `$id` keyword can be found [here](http://json-schema.org/latest/json-schema-core.html#rfc.section.8.2)
 
 ## Field formatting
 
