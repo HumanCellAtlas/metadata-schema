@@ -28,6 +28,8 @@ This document describes the style and formatting rules followed by the HCA Metad
 
 The JSON format that is the canonical representation of the HCA Metadata Standard is a programming language-neutral, persistent method of storing data structures. See [ECMA-404 The JSON Data Interchange Standard](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) specification for technical details of the format. JSON objects are analogous to C structs, objects in JAVA and Python, and to an extent, SQL tables. The design of JSON metadata objects follows the common approaches used in designing computational data structures for programmers. The schema is used to describe the contents of the JSON data objects for both programmatic access and human understanding.
 
+The JSON schemas that make up the HCA Metadata Standard are publicly developed and maintained in GitHub [HumanCellAtlas/metadata-schema](https://github.com/HumanCellAtlas/metadata-schema). The official published and released JSON schemas are hosted at [schema.humancellatlas.org](https://schema.humancellatlas.org/).
+
 As implemented for the HCA Metadata Standard, each JSON schema contains a set of related fields (also called properties). For example, the `cell_line.json` schema contains fields specific to describing cell lines. The following sections describe style and formatting rules followed by HCA metadata schemas and fields.
 
 ## Schema formatting
@@ -201,7 +203,7 @@ The following attributes are required for each metadata field in an HCA metadata
         
     Example valid *type* values include: string, number, boolean, array (when a field is an array of values), and object (when a field references another schema). The specification of valid JSON *type* values can be found [here](http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.1.1). 
 
-1. **user-friendly:** A user-facing, readable term or phrase for the metadata field. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
+1. **user-friendly:** A user-facing, readable term or phrase for the metadata field name. The *user-friendly* value will appear in the metadata spreadsheet, be displayed in the Data Browser, and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
     
@@ -224,7 +226,7 @@ The following attributes are required for each metadata field in an HCA metadata
         User-friendly: NCBI Taxonomy ID
         
         Programmatic: paired_end
-        User-friendly: Paired-end?
+        User-friendly: Paired-end
         
     Having *user-friendly* values for metadata fields has many advantages, including: 
     
