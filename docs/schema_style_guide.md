@@ -142,6 +142,8 @@ Example:
         "description": "Information about an organoid biomaterial.",
         ...
     }
+    
+The specification for using the JSON `$id` keyword can be found [here](http://json-schema.org/latest/json-schema-core.html#rfc.section.8.2)
 
 ## Field formatting
 
