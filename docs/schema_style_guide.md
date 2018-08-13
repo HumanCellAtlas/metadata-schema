@@ -231,7 +231,7 @@ The following attributes are required for each metadata field in an HCA metadata
     Having *user-friendly* values for metadata fields has many advantages, including: 
     
     1. Unlike the programmatic metadata field name, the *user-friendly* value can contain punctuation, spaces, capitalization, and other basic formatting to make the interpretation of the field easier for data contributors and consumers.
-    1. Changing a *user-friendly* value is considered a patch change to the schema version and is thus easier and simpler to implement than changing a metadata field name (which is a major change to the schema version).
+    1. Changing a *user-friendly* value is a patch change to the schema version and is thus easier and simpler to implement than changing a field name (which is a major change to the schema version).
     1. A *user-friendly* value can be templated to allow for custom displays. For example, appending a schema name to a *user-friendly* name can improve clarity: if the *user-friendly* value of the `biomaterial_id` field is set to `"${schema} ID"`, then `donor_organism.biomaterial_id` will render as "Donor organism ID" while `cell_line.biomaterial_id` will render as "Cell line ID".
     
 ### Conditional required field attributes
