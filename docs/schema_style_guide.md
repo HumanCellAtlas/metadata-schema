@@ -34,12 +34,12 @@ As implemented for the HCA Metadata Standard, each JSON schema contains a set of
 
 The following attributes are required for each metadata schema in the HCA metadata standard. 
 
-1. **$schema:** The JSON draft version being used. **NB** Migration to draft-07 will occur soon.
+1. **$schema:** The JSON draft version being used.
 
     Example:
     
         {
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             ...
         }
 
@@ -48,7 +48,7 @@ The following attributes are required for each metadata schema in the HCA metada
     Example:
     
         {
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "description": "Information about an organoid biomaterial.",
             ...
         }
@@ -58,7 +58,7 @@ The following attributes are required for each metadata schema in the HCA metada
     Example:
     
         {
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "description": "Information about an organoid biomaterial.",
             "additionalProperties": false,
             ...
@@ -69,7 +69,7 @@ The following attributes are required for each metadata schema in the HCA metada
     Example:
     
         {
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "description": "Information about an organoid biomaterial.",
             "additionalProperties": false,
             "required": [
@@ -86,7 +86,7 @@ The following attributes are required for each metadata schema in the HCA metada
     Example:
     
         {
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "description": "Information about an organoid biomaterial.",
             "additionalProperties": false,
             "required": [
@@ -104,7 +104,7 @@ The following attributes are required for each metadata schema in the HCA metada
     Example:
     
         {
-            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$schema": "http://json-schema.org/draft-07/schema#",
             "description": "Information about an organoid biomaterial.",
             "additionalProperties": false,
             "required": [
@@ -127,7 +127,7 @@ Example:
 *GitHub*
 
     {
-        "$schema": "http://json-schema.org/draft-04/schema#",
+        "$schema": "http://json-schema.org/draft-07/schema#",
         "description": "Information about an organoid biomaterial.",
         ...
     }
@@ -135,7 +135,7 @@ Example:
 *schema.humancellatlas.org*
 
     {
-        "$schema": "http://json-schema.org/draft-04/schema#",
+        "$schema": "http://json-schema.org/draft-07/schema#",
         "id": "http://schema.humancellatlas.org/type/biomaterial/8.3.3/organoid",
         "description": "Information about an organoid biomaterial.",
         ...
