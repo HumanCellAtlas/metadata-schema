@@ -83,7 +83,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
 
-1. **title:** A title for the schema. The *title* is the name of the schema which should be in all lowercase and snake_case.  
+1. **title:** A title for the schema. The *title* is the name of the schema which should be in all lowercase and snake_case. **WHERE DO WE CURRENTLY USE THIS?**
 
     Example:
     
