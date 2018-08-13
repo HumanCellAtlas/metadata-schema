@@ -11,7 +11,7 @@
 
 >**DISCLAIMER:** At this time, the HCA Metadata Standard development team is actively working towards adhering to this style and formatting guide. In some cases, the Standard might not yet follow all the guidelines outlined in this document. Your patience is appreciated!
 
-This document describes the style and formatting rules followed by the HCA Metadata Standard for JSON schemas and fields.
+This document describes the style and formatting rules followed by the HCA Metadata Standard for JSON schemas and fields. The goals of the Metadata Standard are to improve the accessibility, (re-)usability, and quality of data submitted to the HCA. In order to develop a high-quality, robust Metadata Standard, we propose the following guidelines and aim to adhere to them as the Standard evolves and adapts to changing technologies. 
 
 **What is in this document**
 - General style guidelines for naming and formatting for metadata schemas and fields
