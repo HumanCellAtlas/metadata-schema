@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about other individuals that this individual is related to.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about other organisms that this organism is related to.",
     "additionalProperties": false,
     "title": "familial_relationship",
     "type": "object",
