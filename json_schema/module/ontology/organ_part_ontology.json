@@ -32,6 +32,10 @@
                 "direct": false,
                 "include_self": true
             }
+        },
+        "ontology_label": {
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "type": "string"
         }
     },
     "type": "object"

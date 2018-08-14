@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about the project funder.",
+    "description": "Information about the project funding source.",
     "additionalProperties": false,
     "title": "funder",
     "type": "object",
@@ -23,7 +23,7 @@
             "user_friendly": "Grant title"
         },
         "grant_id": {
-            "description": "The unique grant identifier or reference for the project.",
+            "description": "The unique grant identifier or reference.",
             "type": "string",
             "example": "BB/P0000001/1",
             "user_friendly": "Grant ID"
@@ -32,7 +32,7 @@
             "description": "The name of the funding organization.",
             "type": "string",
             "example": "Biotechnology and Biological Sciences Research Council (BBSRC)",
-            "user_friendly": "Name of grant funder"
+            "user_friendly": "Funding organization"
         }
 
     }
