@@ -44,8 +44,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 process_id | A unique ID for the process. | string | yes |  | Process ID |  | 
 process_name | A short, descriptive name for the process that need not be unique. | string | no |  | Process name |  | 
 process_description | A general description of the process. | string | no |  | Process description |  | 
-process_location | Location where the process took place. | string | no |  | Location |  | Wellcome Trust Sanger Institute
-operator_identity | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1
+process_location | Location where the process took place. | string | no |  | Process location |  | Wellcome Trust Sanger Institute
+operator | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1
 
 ## project_core<a name='project_core'></a>
 _A project entity contains information about the overall project._

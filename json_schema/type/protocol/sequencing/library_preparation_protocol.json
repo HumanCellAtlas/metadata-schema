@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about how a sequencing library was created.",
     "additionalProperties": false,
     "required": [
@@ -54,6 +54,19 @@
             "$ref": "module/ontology/biological_macromolecule_ontology.json",
             "user_friendly": "Input nucleic acid molecule",
             "example": "polyA RNA"
+        },
+        "nucleic_acid_source": {
+            "description": "Source cells or organelles from which nucleic acid molecules were collected.",
+            "type": "string",
+            "enum": [
+                "bulk cell",
+                "single cell",
+                "single nucleus",
+                "bulk nuclei",
+                "mitochondria"
+            ],
+            "user_friendly": "Nucleic acid source",
+            "example": "Should be one of: bulk cell, single cell, single nucleus, bulk nuclei, or mitochondria."
         },
         "library_construction_approach": {
             "description": "The general approach for sequencing library construction.",

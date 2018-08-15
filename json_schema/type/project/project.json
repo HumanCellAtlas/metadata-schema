@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A project entity contains information about the overall project.",
     "additionalProperties": false,
     "required": [
@@ -45,14 +45,14 @@
             },
             "user_friendly": "Contributors"
         },
-        "supplementary_files": {
-            "description": "Project-level supplementary files.",
+        "supplementary_links": {
+            "description": "External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded.",
             "type": "array",
-            "example": "For example, experimental documents, photos, etc. Please list the file names, separated by double pipes. You will be asked to upload these files separately.",
+            "example": "https://github.com/czbiohub/tabula-muris",
             "items": {
                 "type": "string"
             },
-            "user_friendly": "Project supplementary files"
+            "user_friendly": "Supplementary link(s)"
         },
         "publications": {
             "description": "A list of publications resulting from this project.",

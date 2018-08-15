@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity.",
     "additionalProperties": false,
     "required": [
@@ -38,9 +38,9 @@
             "description": "Location where the process took place.",
             "type": "string",
             "example": "Wellcome Trust Sanger Institute",
-            "user_friendly": "Location"
+            "user_friendly": "Process location"
          },
-         "operator_identity": {
+         "operator": {
            "description": "Identifier for individual(s) who executed the process.",
            "type": "array",
            "example": "Technician 1",

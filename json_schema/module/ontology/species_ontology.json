@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A term that may be associated with a species-related ontology term",
     "additionalProperties": false,
     "required": [
