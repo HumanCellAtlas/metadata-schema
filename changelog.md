@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v8.4.2] - 2018-08-15
+### Added
+Added stem cell to cell line type enum. Fixes #498.
+
 ### [module/ontology/ethnicity_ontology.json - v5.3.2] - 2018-08-10
 ### Fixed
 Fixed the ontology reference to work with the new hancestro
