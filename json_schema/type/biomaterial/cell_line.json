@@ -77,9 +77,10 @@
                 "immortalized",
                 "stem cell-derived",
                 "synthetic",
-                "induced pluripotent"
+                "induced pluripotent",
+                "stem cell"
             ],
-            "example": "Should be one of: primary, immortalized, stem cell-derived, induced pluripotent, or synthetic.",
+            "example": "Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.",
             "user_friendly": "Cell line type"
         },
         "cell_morphology": {
