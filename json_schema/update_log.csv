@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/growth_conditions,minor,"Added new culture_environment field. Fixes #234.",,
