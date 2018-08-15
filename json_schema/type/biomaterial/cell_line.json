@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about the cell line or cell culture biomaterial.",
     "additionalProperties": false,
     "required": [
@@ -77,9 +77,10 @@
                 "immortalized",
                 "stem cell-derived",
                 "synthetic",
-                "induced pluripotent"
+                "induced pluripotent",
+                "stem cell"
             ],
-            "example": "Should be one of: primary, immortalized, stem cell-derived, induced pluripotent, or synthetic.",
+            "example": "Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.",
             "user_friendly": "Cell line type"
         },
         "cell_morphology": {
