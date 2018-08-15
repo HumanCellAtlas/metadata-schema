@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/growth_conditions.json - v6.4.0] - 2018-08-15
+### Added
+Added new culture_environment field. Fixes #234.
+
+### [type/biomaterial/cell_line.json - v8.6.0] - 2018-08-15
+### Added
+Added new culture_environment field. Fixes #234.
+
+### [type/biomaterial/cell_suspension.json - v8.6.0] - 2018-08-15
+### Added
+Added new culture_environment field. Fixes #234.
+
 ### [type/biomaterial/cell_line.json - v8.4.2] - 2018-08-15
 ### Added
 Added stem cell to cell line type enum. Fixes #498.
