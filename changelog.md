@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v2.0.0] - 2018-08-16
+### Changed
+Changed several field names from induced_pluripotent_cell_* to ipsc_*
+
 ### [module/biomaterial/growth_conditions.json - v6.4.0] - 2018-08-15
 ### Added
 Added new culture_environment field. Fixes #234.

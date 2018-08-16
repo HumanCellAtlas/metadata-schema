@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/biomaterial_collection/ipsc_induction_protocol,major,Changed several field names from induced_pluripotent_cell_* to ipsc_*,,
