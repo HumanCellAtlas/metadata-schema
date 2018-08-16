@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-08-10T15:50:45Z",
+    "last_update_date": "2018-08-15T12:37:54Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -23,7 +23,7 @@
                 "cell_morphology": "6.1.2",
                 "death": "5.3.2",
                 "familial_relationship": "6.0.1",
-                "growth_conditions": "6.2.1",
+                "growth_conditions": "6.4.0",
                 "human_specific": "1.0.3",
                 "medical_history": "5.2.3",
                 "mouse_specific": "1.0.2",
@@ -74,8 +74,8 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "8.4.1",
-                "cell_suspension": "8.4.1",
+                "cell_line": "8.6.0",
+                "cell_suspension": "8.6.0",
                 "donor_organism": "10.0.2",
                 "organoid": "8.3.4",
                 "specimen_from_organism": "6.2.8"
