@@ -1,8 +1,8 @@
 {
-  "describedBy": "http://schema.integration.data.humancellatlas.org/type/process/analysis/8.0.0/analysis_process",
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/process/analysis/8.0.0/analysis_process",
+  "schema_version" : "8.0.0",
   "schema_type": "process",
   "process_core": {
-    "describedBy": "http://schema.integration.data.humancellatlas.org/core/process/9.0.0/process_core",
     "process_id": "analysis_process_id_1"
   },
   "process_type": {
@@ -40,10 +40,7 @@
   ],
   "outputs": [
     {
-      "describedBy": "http://schema.integration.data.humancellatlas.org/type/file/5.3.2/analysis_file",
-      "schema_type": "file",
       "file_core": {
-        "describedBy": "http://schema.integration.data.humancellatlas.org/core/file/5.2.2/file_core",
         "file_format": "bam",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_qc.bam"
       }
