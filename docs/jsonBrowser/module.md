@@ -37,7 +37,7 @@ time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:
 organ_donation_death_type | Type of death preceding organ donation (for organ donors only). | string | no |  | Organ donation death type | Donation after circulatory death (DCD), Donation after brainstem death (DBD) | Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).
 
 ## familial_relationship<a name='familial_relationship'></a>
-_Information about other individuals that this individual is related to._
+_Information about other organisms that this organism is related to._
 
 Location: module/biomaterial/familial_relationship.json
 
@@ -56,6 +56,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 passage_number | The number of passages (as an integer) that the biomaterial has been through. | integer | no |  | Passage number |  | 22
 growth_medium | The solid, liquid, or semi-solid medium used to support growth. | string | no |  | Growth medium |  | lysogeny broth (LB) medium
+culture_environment | Cell culture environment in which cells are grown. | string | no |  | Culture environment |  | adherent culture
 mycoplasma_testing_method | The method by which the biomaterial was tested for mycoplasma contamination. | string | no |  | Mycoplasma testing method | Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay | Should be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, or Microbiological assay.
 mycoplasma_testing_results | Whether the biomaterial passed or failed the mycoplasma test. | string | no |  | Mycoplasma testing results | pass, fail | Should be one of: pass, or fail.
 drug_treatment | Description of drugs added to the growth medium. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin
