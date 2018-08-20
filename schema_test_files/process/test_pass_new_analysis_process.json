@@ -5,7 +5,9 @@
     "describedBy": "http://schema.integration.data.humancellatlas.org/core/process/9.0.0/process_core",
     "process_id": "analysis_process_id_1"
   },
-  "process_type": "",
+  "process_type": {
+    "text": "analysis"
+  },
   "timestamp_start_utc": "2018-08-14T14:07:33.381Z",
   "timestamp_stop_utc": "2018-08-14T14:08:33.381Z",
   "input_bundles": [
