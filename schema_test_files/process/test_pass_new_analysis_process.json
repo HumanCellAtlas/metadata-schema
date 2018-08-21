@@ -1,0 +1,50 @@
+{
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/process/analysis/8.0.0/analysis_process",
+  "schema_version" : "8.0.0",
+  "schema_type": "process",
+  "process_core": {
+    "process_id": "analysis_process_id_1"
+  },
+  "process_type": {
+    "text": "analysis"
+  },
+  "timestamp_start_utc": "2018-08-14T14:07:33.381Z",
+  "timestamp_stop_utc": "2018-08-14T14:08:33.381Z",
+  "input_bundles": [
+    "f3942c14-2024-4756-9360-92d89d515c9b"
+  ],
+  "reference_bundle": "a57feb96-22d7-45ea-8376-91ace2ee9e81",
+  "tasks": [
+    {
+      "task_name": "index",
+      "start_time": "2018-08-14T14:07:34.381Z",
+      "stop_time": "2018-08-14T14:08:32.381Z",
+      "disk_size": "large",
+      "docker_image": "docker_1",
+      "cpus": 4,
+      "memory": "lots",
+      "zone": "eu-west-3"
+    }
+  ],
+  "inputs": [
+    {
+      "checksum": "d0f7d08f1980f7980f",
+      "parameter_name": "gene_ref_flat",
+      "parameter_value": "gs://hca-dcp-mint-test-data/reference/GRCh38_Gencode/GRCh38_gencode.v27.refFlat.txt"
+    },
+    {
+      "checksum": "d0f7d08f1980f7980f",
+      "parameter_name": "hisat2_ref_index",
+      "parameter_value": "gs://hca-dcp-mint-test-data/reference/HISAT2/genome_snp_tran.tar.gz"
+    }
+  ],
+  "outputs": [
+    {
+      "file_core": {
+        "file_format": "bam",
+        "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_qc.bam"
+      }
+    }
+  ],
+  "analysis_run_type": "copy-forward"
+}

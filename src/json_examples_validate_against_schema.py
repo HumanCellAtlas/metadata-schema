@@ -21,6 +21,14 @@ print('base URI: %s' % base_uri)
 # Specific JSON file example tests
 
 # Testing valid project JSON example
+# print('\nValidating type/process/analysis/analysis_process.json schema')
+# sv = get_validator('type/process/analysis/analysis_process.json', base_uri)
+# print('Validating process/test_pass_new_analysis_process.json JSON against schema')
+# p1 = get_json_from_file('../schema_test_files/process/test_pass_new_analysis_process.json')
+# if not validate(sv, p1):
+#     status_flag = False
+
+# Testing valid project JSON example
 print('\nValidating type/project/project.json schema')
 sv = get_validator('type/project/project.json', base_uri)
 print('Validating project/test_pass_project_0.json JSON against schema')
