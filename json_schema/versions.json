@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-08-16T08:54:55Z",
+    "last_update_date": "2018-08-21T16:59:48Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -24,9 +24,9 @@
                 "death": "5.3.2",
                 "familial_relationship": "6.0.1",
                 "growth_conditions": "6.4.0",
-                "human_specific": "1.0.3",
+                "human_specific": "1.0.4",
                 "medical_history": "5.2.3",
-                "mouse_specific": "1.0.2",
+                "mouse_specific": "1.0.3",
                 "preservation_storage": "5.3.2",
                 "state_of_specimen": "5.2.5",
                 "timecourse": "1.1.2"
@@ -36,21 +36,21 @@
                 "cell_cycle_ontology": "5.3.1",
                 "cell_type_ontology": "5.3.1",
                 "development_stage_ontology": "5.3.1",
-                "disease_ontology": "5.3.1",
+                "disease_ontology": "5.3.2",
                 "enrichment_ontology": "1.2.2",
-                "ethnicity_ontology": "5.3.2",
+                "ethnicity_ontology": "5.3.3",
                 "instrument_ontology": "5.3.1",
                 "length_unit_ontology": "5.3.1",
                 "library_amplification_ontology": "1.2.1",
                 "library_construction_ontology": "1.2.1",
                 "mass_unit_ontology": "5.3.1",
-                "organ_ontology": "5.3.1",
+                "organ_ontology": "5.3.2",
                 "organ_part_ontology": "5.3.1",
                 "process_type_ontology": "5.3.1",
                 "protocol_type_ontology": "5.3.1",
                 "sequencing_ontology": "1.1.1",
                 "species_ontology": "5.3.1",
-                "strain_ontology": "5.3.1",
+                "strain_ontology": "5.3.2",
                 "time_unit_ontology": "5.3.1"
             },
             "process": {
@@ -74,11 +74,11 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "8.6.0",
+                "cell_line": "8.6.1",
                 "cell_suspension": "8.6.0",
-                "donor_organism": "10.0.2",
-                "organoid": "8.3.4",
-                "specimen_from_organism": "6.2.8"
+                "donor_organism": "10.0.3",
+                "organoid": "8.3.5",
+                "specimen_from_organism": "6.2.9"
             },
             "file": {
                 "analysis_file": "5.3.3",
