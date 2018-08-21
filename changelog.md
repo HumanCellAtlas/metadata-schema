@@ -7,6 +7,46 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/disease_ontology.json - v5.3.2] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [module/ontology/organ_ontology.json - v5.3.2] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [module/ontology/strain_ontology.json - v5.3.2] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [module/ontology/ethnicity_ontology.json - v5.3.3] - 2018-08-21
+### Fixed
+Fixed schema validation by correcting a casing issue
+
+### [type/biomaterial/donor_organism.json - v10.0.3] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [type/biomaterial/cell_line.json - v8.6.1] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [type/biomaterial/specimen_from_organism.json - v6.2.9] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [type/biomaterial/organoid.json - v8.3.5] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [module/biomaterial/mouse_specific.json - v1.0.3] - 2018-08-21
+### Fixed
+Fixed schema validation by setting include_self to true
+
+### [module/biomaterial/human_specific.json - v1.0.4] - 2018-08-21
+### Fixed
+Fixed schema validation by correcting a casing issue
+
 ### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v2.0.0] - 2018-08-16
 ### Changed
 Changed several field names from induced_pluripotent_cell_* to ipsc_*
