@@ -26,7 +26,7 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hancestro"],
-                "classes": ["hancestro:0004"],
+                "classes": ["HANCESTRO:0004"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false

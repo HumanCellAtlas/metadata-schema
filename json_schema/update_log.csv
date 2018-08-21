@@ -1,1 +1,5 @@
 Schema,Change type,Change message,Version,Date
+module/ontology/disease_ontology,patch,Fixed schema validation by setting include_self to true,,
+module/ontology/organ_ontology,patch,Fixed schema validation by setting include_self to true,,
+module/ontology/strain_ontology,patch,Fixed schema validation by setting include_self to true,,
+module/ontology/ethnicity_ontology,patch,Fixed schema validation by correcting a casing issue,,

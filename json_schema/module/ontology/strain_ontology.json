@@ -30,7 +30,7 @@
                 "classes": ["NCBITaxon:10090"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": false
+                "include_self": true
             }
         },
         "ontology_label": {

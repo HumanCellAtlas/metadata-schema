@@ -29,7 +29,7 @@
                 "classes": ["MONDO:0000001", "PATO:0000461"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": false
+                "include_self": true
             }
         },
         "ontology_label": {
