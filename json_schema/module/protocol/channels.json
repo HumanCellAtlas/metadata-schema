@@ -59,7 +59,7 @@
         },
         "exposure_time": {
             "description": "Exposure time - as a floating point number - in miliseconds",
-                "type": "float",
+            "type": "float",
             "example": "400",
             "user_friendly": "Exposure time"
         }

@@ -67,16 +67,7 @@
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "example": "MerFish, smFISH, immunofluorescence, fluorescent cell stain",
-            "user_friendly": "Assay type",
-
-        },
-        "assay_type": {
-            "description": "Type of assay used to detect target e.g. MERFISH",
-            "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "example": "MerFish, smFISH, immunofluorescence, fluorescent cell stain",
-            "user_friendly": "Assay type",
-
+            "user_friendly": "Assay type"
         },
         "multiplexed": {
             "description": "Is this target part of a multiplexed experiment? Should be yes or no.",
