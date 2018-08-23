@@ -177,27 +177,27 @@ instrument_manufacturer_model | The manufacturer and model of the sequencer used
 paired_end | Was a paired-end sequencing strategy used? | boolean |  | Paired end? |  | Should be one of: yes, no.
 sequencing_approach | The general approach for sequencing. | object | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing approach |  | full length single cell RNA sequencing
 ## Module
-### cell_morphology<a name='cell_morphology'></a>
-_There are no required properties in schema cell_morphology_
-### death<a name='death'></a>
+### Cell morphology<a name='Cell morphology'></a>
+_There are no required properties in schema Cell morphology_
+### Death<a name='Death'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string |  | Cause of death |  | 
-### familial_relationship<a name='familial_relationship'></a>
-_There are no required properties in schema familial_relationship_
-### growth_conditions<a name='growth_conditions'></a>
-_There are no required properties in schema growth_conditions_
-### human_specific<a name='human_specific'></a>
-_There are no required properties in schema human_specific_
-### medical_history<a name='medical_history'></a>
-_There are no required properties in schema medical_history_
-### mouse_specific<a name='mouse_specific'></a>
-_There are no required properties in schema mouse_specific_
-### preservation_storage<a name='preservation_storage'></a>
-_There are no required properties in schema preservation_storage_
-### state_of_specimen<a name='state_of_specimen'></a>
-_There are no required properties in schema state_of_specimen_
-### timecourse<a name='timecourse'></a>
+### Familial relationship<a name='Familial relationship'></a>
+_There are no required properties in schema Familial relationship_
+### Growth conditions<a name='Growth conditions'></a>
+_There are no required properties in schema Growth conditions_
+### Human-specific<a name='Human-specific'></a>
+_There are no required properties in schema Human-specific_
+### Medical history<a name='Medical history'></a>
+_There are no required properties in schema Medical history_
+### Mouse-specific<a name='Mouse-specific'></a>
+_There are no required properties in schema Mouse-specific_
+### Preservation and storage<a name='Preservation and storage'></a>
+_There are no required properties in schema Preservation and storage_
+### State of specimen<a name='State of specimen'></a>
+_There are no required properties in schema State of specimen_
+### Timecourse<a name='Timecourse'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 timecourse_value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  |  |  | 2

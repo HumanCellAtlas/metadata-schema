@@ -2,7 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "State of specimen at time of collection.",
     "additionalProperties": false,
-    "title": "state_of_specimen",
+    "title": "State of specimen",
+    "name": "state_of_specimen",
     "type": "object",
     "properties": {
         "describedBy":  {

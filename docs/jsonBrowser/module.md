@@ -7,7 +7,7 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
-## cell_morphology<a name='cell_morphology'></a>
+## Cell morphology<a name='Cell morphology'></a>
 _Information relating to pathological and morphological features of cells._
 
 Location: module/biomaterial/cell_morphology.json
@@ -22,7 +22,7 @@ cell_viability_method | The method by which cell viability was determined. | str
 cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability pass/fail result | pass, fail | Must be one of: pass, fail
 percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrotic cells |  | 10
 
-## death<a name='death'></a>
+## Death<a name='Death'></a>
 _Information relating to the death of an organism._
 
 Location: module/biomaterial/death.json
@@ -36,7 +36,7 @@ hardy_scale | Value of 4-point Hardy scale cause of death classification: (0) ve
 time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ. | string | no |  | Time of death |  | 2016-01-21T00:00:00Z
 organ_donation_death_type | Type of death preceding organ donation (for organ donors only). | string | no |  | Organ donation death type | Donation after circulatory death (DCD), Donation after brainstem death (DBD) | Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).
 
-## familial_relationship<a name='familial_relationship'></a>
+## Familial relationship<a name='Familial relationship'></a>
 _Information about other organisms that this organism is related to._
 
 Location: module/biomaterial/familial_relationship.json
@@ -47,7 +47,7 @@ parent | The individual's parent. | string | no |  | Parent |  |
 child | The individual's child. | string | no |  | Child |  | 
 sibling | The individual's sibling. | string | no |  | Sibling |  | 
 
-## growth_conditions<a name='growth_conditions'></a>
+## Growth conditions<a name='Growth conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
 
 Location: module/biomaterial/growth_conditions.json
@@ -62,7 +62,7 @@ mycoplasma_testing_results | Whether the biomaterial passed or failed the mycopl
 drug_treatment | Description of drugs added to the growth medium. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin
 feeder_layer_type | Type of feeder layer cells biomaterial was grown on. | string | no |  | Feeder layer type | feeder-free, feeder-dependent, JK1 feeder cells, feeder-dependent, SNL 76/7 feeder cells, feeder-dependent, human marrow stromal cells, feeder-dependent, bovine embryonic fibroblast cells, feeder-dependent, mouse embryonic fibroblast cells, feeder-dependent, mouse fibroblast STO cells, feeder-dependent, mouse bone marrow stromal cells, feeder-dependent, mouse yolk sac-derived endothelial cells, feeder-dependent, human foreskin fibroblast cells, feeder-dependent, human newborn fibroblast cells, feeder-dependent, human fetal lung fibroblast cells, feeder-dependent, human uterine endometrial cells, feeder-dependent, human breast parenchymal cells, feeder-dependent, human embryonic fibroblast cells, feeder-dependent, human adipose stromal cells, feeder-dependent, human amniotic epithelial cells, feeder-dependent, human placental fibroblast cells, feeder-dependent, human umbilical cord stromal cells, feeder-dependent, human fetal muscle cells, feeder-dependent, human fetal skin cells, feeder-dependent, human fetal liver stromal cells, feeder-dependent, human fallopian tubal epithelial cells, feeder-dependent, human amniotic mesenchymal cells | feeder-dependent, mouse embryonic fibroblast cells
 
-## human_specific<a name='human_specific'></a>
+## Human-specific<a name='Human-specific'></a>
 _Information specific to a donor that is a human (Homo sapiens)._
 
 Location: module/biomaterial/human_specific.json
@@ -72,7 +72,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 body_mass_index | The body mass index of the donor organism. | number | no |  | Body mass index |  | 36.4
 ethnicity | Ethnicity of the donor organism using ontology terms from EMBL-EBI's Ancestry Ontology. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | European, White, British
 
-## medical_history<a name='medical_history'></a>
+## Medical history<a name='Medical history'></a>
 _Information about the medical history of a donor._
 
 Location: module/biomaterial/medical_history.json
@@ -86,7 +86,7 @@ smoking_history | Estimated number of cigarettes smoked per day and for how many
 test_results | Results from any medical tests performed on the individual. | string | no |  | Test results |  | 
 treatment | Description of treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | 
 
-## mouse_specific<a name='mouse_specific'></a>
+## Mouse-specific<a name='Mouse-specific'></a>
 _Information specific to an organism that is a mouse (Mus musculus)._
 
 Location: module/biomaterial/mouse_specific.json
@@ -95,7 +95,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 strain | The name of the mouse strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Mouse strain |  | C57BL/6
 
-## preservation_storage<a name='preservation_storage'></a>
+## Preservation and storage<a name='Preservation and storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
 
 Location: module/biomaterial/preservation_storage.json
@@ -107,7 +107,7 @@ storage_time | Length of time the biomaterial was stored for in Storage time uni
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | day
 preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. Enter 'fresh' if not preserved. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, fresh | cryopreservation in liquid nitrogen (dead tissue)
 
-## state_of_specimen<a name='state_of_specimen'></a>
+## State of specimen<a name='State of specimen'></a>
 _State of specimen at time of collection._
 
 Location: module/biomaterial/state_of_specimen.json
@@ -123,7 +123,7 @@ microscopic_description | How the specimen looks under the microscope and how it
 microscopic_image | List of filenames of photographs of specimen under microscope. Must be of format JPEG, TIFF, or PNG. | array | no |  | Microscopic image |  | my_microscopic_image_file.jpg
 postmortem_interval | Duration of time, in seconds, between when death was declared and when the specimen was preserved or processed. | integer | no |  | Post-mortem interval |  | 2400
 
-## timecourse<a name='timecourse'></a>
+## Timecourse<a name='Timecourse'></a>
 _Information relating to a timecourse._
 
 Location: module/biomaterial/timecourse.json
