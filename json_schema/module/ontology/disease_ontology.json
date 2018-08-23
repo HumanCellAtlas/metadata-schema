@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A term that may be associated with a disease-related ontology term",
     "additionalProperties": false,
     "required": [
@@ -29,7 +29,7 @@
                 "classes": ["MONDO:0000001", "PATO:0000461"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": false
+                "include_self": true
             }
         },
         "ontology_label": {

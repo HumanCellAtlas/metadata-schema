@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about the donor organism from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
@@ -7,7 +7,7 @@
         "schema_type",
         "biomaterial_core",
         "is_living",
-        "biological_sex"
+        "sex"
     ],
     "title": "donor_organism",
     "type": "object",
@@ -150,7 +150,7 @@
             "user_friendly": "Is living?",
             "example": "Should be one of: yes, no, unknown."
         }, 
-        "biological_sex": {
+        "sex": {
             "description": "The biological sex of the organism.",
             "type": "string",
             "enum": [

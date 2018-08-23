@@ -4,7 +4,7 @@
   "protocol_core": {
     "protocol_id": "seq_protocol_1"
   },
-  "paired_ends": true,
+  "paired_end": true,
   "instrument_manufacturer_model": {
     "text": "Illumina HiSeq 4000"
   },

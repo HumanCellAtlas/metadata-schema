@@ -1,3 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/project/project,minor,"Added optional field referencing new licensing module. Fixes #338.",,
-module/project/license,major,"Added module to capture license under which data are released. Fixes #338.",,
+system/license,major,"Added system entity to capture license under which data are released. Fixes #338.",,
