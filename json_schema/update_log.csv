@@ -1,1 +1,9 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/sequencing/library_preparation_protocol,major,Added new schema,0.0.0,
+module/ontologycell_structure_ontology.json,major,Added new schema,0.0.0,
+module/protocol/targets.json,major,Added new schema,0.0.0,
+module/protocol/channels.json,major,Added new schema,0.0.0,
+type/biomaterial/imaged_specimen.json,major,Added new schema,0.0.0,
+type/file/image_file.json,major,Added new schema,0.0.0,
+type/protocol/imaging/imaging_preparation_protocol.json,major,Added new schema,0.0.0,
+type/protocol/imaging/imaging_protocol.json,major,Added new schema,,
