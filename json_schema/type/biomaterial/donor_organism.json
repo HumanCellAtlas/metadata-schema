@@ -9,7 +9,8 @@
         "is_living",
         "sex"
     ],
-    "title": "donor_organism",
+    "title": "Donor",
+    "name": "donor_organism",
     "type": "object",
     "properties": {
         "describedBy":  {

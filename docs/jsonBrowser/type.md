@@ -7,7 +7,7 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
-## cell_line
+## Cell line
 _Information about the cell line or cell culture biomaterial._
 
 Location: type/biomaterial/cell_line.json
@@ -34,7 +34,7 @@ disease | Short description of any disease association to the cell type. | objec
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
 publications | One or more publications in which the cell line creation was cited. | array | no | [See module  publication](module.md/#publication) | Cell line publications |  | 
 
-## cell_suspension
+## Cell suspension
 _Information about the suspension of cells or nuclei derived from the collected or cultured specimen._
 
 Location: type/biomaterial/cell_suspension.json
@@ -51,7 +51,7 @@ selected_cell_type | The cell type(s) selected to be present in the suspension. 
 total_estimated_cells | Total estimated number of cells in the suspension. May be 1 for well-based assays. | integer | no |  | Total estimated cell count |  | 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) | Plate-based sequencing |  | 
 
-## donor_organism
+## Donor
 _Information about the donor organism from which a specimen was collected._
 
 Location: type/biomaterial/donor_organism.json
@@ -81,7 +81,7 @@ weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | kilogram
 normothermic_regional_perfusion | Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise. | string | no |  | Normothermic regional perfusion? | yes, no, unknown | Should be one of: yes, no, or unknown.
 
-## organoid
+## Organoid
 _Information about an organoid biomaterial._
 
 Location: type/biomaterial/organoid.json
@@ -105,7 +105,7 @@ organoid_growth_environment | Growth environment in which the organoid is grown.
 input_aggregate_cell_count | Estimated number of cells per input cell aggregate. | number | no |  | Input aggregate cell count |  | 10000
 organoid_stored_oxygen_levels | Percent oxygen level organoid was stored in prior to sequencing. | number | no |  | Organoid stored oxygen level |  | 75
 
-## specimen_from_organism
+## Specimen
 _Information about the specimen that was collected from the donor organism._
 
 Location: type/biomaterial/specimen_from_organism.json

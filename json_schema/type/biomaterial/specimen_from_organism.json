@@ -8,7 +8,8 @@
         "biomaterial_core",
 	    "organ"
     ],
-    "title": "specimen_from_organism",
+    "title": "Specimen",
+    "name": "specimen_from_organism",
     "type": "object",
     "properties": {
         "describedBy":  {
