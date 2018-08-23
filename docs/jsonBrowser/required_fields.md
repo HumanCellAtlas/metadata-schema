@@ -1,27 +1,27 @@
 # Required fields
 _This document contains a list of all required fields in the HCA metadata schema. For a fulldescription of each schema, please refer to the relevant entity specification document._
 ## Core
-### biomaterial_core<a name='biomaterial_core'></a>
+### Biomaterial core<a name='Biomaterial core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 biomaterial_id | A unique ID for the biomaterial. | string |  | Biomaterial ID |  | 
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array |  | NCBI taxon ID |  | 9606
-### file_core<a name='file_core'></a>
+### File core<a name='File core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 file_name | The filename of the file. | string |  | File name |  | 
 file_format | The format of the file. | string |  | File format |  | fastq.gz
-### process_core<a name='process_core'></a>
+### Process core<a name='Process core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 process_id | A unique ID for the process. | string |  | Process ID |  | 
-### project_core<a name='project_core'></a>
+### Project core<a name='Project core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 project_short_name | A short name for the project. | string |  | Project label |  | For example, a short label by which you refer to the project. This label will be used for quick reference.
 project_title | An official title for the project. | string |  | Project title |  | For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.
 project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
-### protocol_core<a name='protocol_core'></a>
+### Protocol core<a name='Protocol core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 protocol_id | A unique ID for the protocol. | string |  | Protocol ID |  | 
