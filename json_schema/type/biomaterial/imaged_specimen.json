@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information about a tissue specimen after it has been sectioned and prepared for imaging.",
+    "additionalProperties": false,
+    "required": [
+        "describedBy",
+        "schema_type",
+        "biomaterial_core",
+        "final_slice_thickness"
+    ],
+    "title": "imaged_specimen",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaged_specimen"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "biomaterial"
+            ]
+        },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
+        "biomaterial_core" : {
+            "description": "Core biomaterial-level information.",
+            "type": "object",
+            "$ref": "core/biomaterial/biomaterial_core.json"
+        },
+        "overview_image": {
+            "description": "List of filenames of photographs of specimen. Must be of format JPEG, TIFF, or PNG.",
+            "type": "array",
+            "items": {
+                "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
+                "type": "string"
+            },
+            "user_friendly": "Gross image",
+            "example": "my_mage_file.jpg"
+        },
+        "final_slice_thickness": {
+            "description": "Final slice thickness in micrometres.",
+            "type" : "float",
+            "example": "3",
+            "user_friendly": "Final slice thickness"
+        },
+        "internal_structures": {
+            "description": "Internal structures visible in overview_image (e.g. cortical layer boundaries).",
+            "type": "object",
+            "$ref": "module/ontology/organ_part_ontology.json ",
+            "user_friendly": "Internal tissue structures"
+        }
+    }
+}
