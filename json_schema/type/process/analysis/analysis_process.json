@@ -16,7 +16,8 @@
         "outputs",
         "analysis_run_type"
     ],
-    "title": "analysis_process",
+    "title": "Analysis process",
+    "name": "analysis_process",
     "type": "object",
     "definitions": {
         "task": {

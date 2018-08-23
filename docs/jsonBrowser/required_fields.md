@@ -82,12 +82,12 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
 file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
-### process
+### Process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
 process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) |  |  | 
-### analysis_process
+### Analysis process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
@@ -101,7 +101,7 @@ timestamp_start_utc | Initial start time of the full pipeline. | string |  |  | 
 timestamp_stop_utc | Terminal stop time of the full pipeline. | string |  |  |  | 
 analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string |  |  | run, copy-forward | 
 reference_bundle | Bundle containing the reference used in running the pipeline. | string |  |  |  | 
-### project
+### Project
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | project | 

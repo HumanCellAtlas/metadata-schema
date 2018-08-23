@@ -178,7 +178,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | fil
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
 file_description | A short description of the file content. This could include information about how the file was generated. | string | no |  | File description |  | Enrichment protocol
 
-## process
+## Process
 _Information about the process_
 
 Location: type/process/process.json
@@ -194,7 +194,7 @@ process_type | The type of process. | object | no | [See module  process_type_on
 deviation_from_protocol | Any deviation from the protocol provided. | string | no |  | Deviation from protocol |  | 
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment |  | 
 
-## analysis_process
+## Analysis process
 _Information about the analysis process_
 
 Location: type/process/analysis/analysis_process.json
@@ -214,7 +214,7 @@ timestamp_stop_utc | Terminal stop time of the full pipeline. | string | yes |  
 analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string | yes |  |  | run, copy-forward | 
 reference_bundle | Bundle containing the reference used in running the pipeline. | string | yes |  |  |  | 
 
-## project
+## Project
 _A project entity contains information about the overall project._
 
 Location: type/project/project.json
