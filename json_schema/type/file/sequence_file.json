@@ -8,7 +8,8 @@
         "file_core",
         "read_index"
     ],
-    "title": "sequence_file",
+    "title": "Sequence file",
+    "name": "sequence_file",
     "type": "object",
     "properties": {
         "describedBy": {
