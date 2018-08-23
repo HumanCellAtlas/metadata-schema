@@ -8,7 +8,8 @@
         "protocol_core",
         "protocol_type"
     ],
-    "title": "imaging_protocol",
+    "title": "Imaging protocol",
+    "name": "imaging_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {

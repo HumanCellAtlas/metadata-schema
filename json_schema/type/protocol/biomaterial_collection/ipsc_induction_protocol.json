@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Contains information on how a sample was treated to become an induced pluripotent stem cell.",
+    "description": "Information about how a biomaterial is treated to become an induced pluripotent stem cell.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -8,7 +8,8 @@
         "protocol_core",
         "ipsc_induction_method"
     ],
-    "title": "ipsc_induction_protocol",
+    "title": "iPCS induction protocol",
+    "name": "ipsc_induction_protocol",
     "type": "object",
     "properties": {
         "describedBy": {

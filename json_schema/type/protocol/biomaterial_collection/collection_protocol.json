@@ -8,7 +8,8 @@
         "protocol_core",
         "collection_method"
     ],
-    "title": "collection_protocol",
+    "title": "Collection protocol",
+    "name": "collection_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {

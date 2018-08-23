@@ -233,7 +233,7 @@ array_express_investigation | EBI ArrayExpress accession number, if data has bee
 insdc_study | An INSDC (International Nucleotide Sequence Database Collaboration) study accession if study has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD. | string | no |  | INSDC study accession |  | PRJNA000000
 funders | A list of funding source(s) supporting the project. | array | no | [See module  funder](module.md/#funder) | Project funding source(s) |  | 
 
-## protocol
+## Protocol
 _Information about the protocol._
 
 Location: type/protocol/protocol.json
@@ -245,7 +245,7 @@ provenance | Provenance information provided by the system. | object | no | [See
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 protocol_type | The type of protocol. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | sample enrichment
 
-## analysis_protocol
+## Analysis protocol
 _Information about the analysis protocol._
 
 Location: type/protocol/analysis/analysis_protocol.json
@@ -258,8 +258,8 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  |  |  | 
 
-## aggregate_generation_protocol
-_Information on how cultured cells are developed into cell aggregates._
+## Aggregate generation protocol
+_Information about how cultured cells are developed into cell aggregates._
 
 Location: type/protocol/biomaterial_collection/aggregate_generation_protocol.json
 
@@ -271,7 +271,7 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
 aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
 
-## collection_protocol
+## Collection protocol
 _Information about the biomaterial collection protocol._
 
 Location: type/protocol/biomaterial_collection/collection_protocol.json
@@ -284,8 +284,8 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 collection_method | How the biomaterial was collected. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | blood draw
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
 
-## differentiation_protocol
-_Information on how a pluripotent cell is differentiated to a desired cell type or organoid._
+## Differentiation protocol
+_Information about how a cell is differentiated to a desired cell type or organoid._
 
 Location: type/protocol/biomaterial_collection/differentiation_protocol.json
 
@@ -303,8 +303,8 @@ differentiation_target_pathway | Targeted pathway for specific differentiation r
 differentiation_validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining
 differentiation_validation_results | Results confirming successful differentiation to target cell type. | string | no |  | Validation results |  | CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative
 
-## dissociation_protocol
-_Contains information on the dissociation protocol used to separate the cells in a specimen._
+## Dissociation protocol
+_Information about the dissociation protocol used to separate individual cells or nuclei._
 
 Location: type/protocol/biomaterial_collection/dissociation_protocol.json
 
@@ -316,8 +316,8 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 dissociation_method | How cells or organelles were dissociated. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | enzymatic dissociation
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
 
-## enrichment_protocol
-_protocol by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest._
+## Enrichment protocol
+_Information about how a biomaterial is enriched for a feature or characteristic of interest._
 
 Location: type/protocol/biomaterial_collection/enrichment_protocol.json
 
@@ -331,8 +331,8 @@ markers | A space-delimited list of markers with +/-. | string | no |  | Markers
 min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 70
 max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 90
 
-## ipsc_induction_protocol
-_Contains information on how a sample was treated to become an induced pluripotent stem cell._
+## iPCS induction protocol
+_Information about how a biomaterial is treated to become an induced pluripotent stem cell._
 
 Location: type/protocol/biomaterial_collection/ipsc_induction_protocol.json
 
@@ -350,7 +350,7 @@ pluripotency_vector_removed | Whether a viral vector was removed after induction
 ipsc_induction_produced_in_house | Whether the induced pluripotent stem cell was prepared in-house. | boolean | no |  | iPSC prepared in-house? |  | Should be one of: yes, no.
 protocol_reagents | A list of additional purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Additional protocol reagents |  | 
 
-## imaging_protocol
+## Imaging protocol
 _Information about the imaging protocol_
 
 Location: type/protocol/imaging/imaging_protocol.json
@@ -370,8 +370,8 @@ microscope | Microscope used for imaging. |  | no |  | Microscope | generic conf
 probes | A file containing information on probe sequence, genes they cover, and colors. | string | no |  | Probes |  | 
 protocol_type | The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 
-## library_preparation_protocol
-_Information about how a sequencing library was created._
+## Library preparation protocol
+_Information about how a sequencing library was prepared._
 
 Location: type/protocol/sequencing/library_preparation_protocol.json
 
@@ -395,8 +395,8 @@ umi_barcode | Information about unique molecular identifier (UMI) barcodes. | ob
 library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | PCR
 cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | PCR
 
-## sequencing_protocol
-_Information about the sequencing protocol_
+## Sequencing protocol
+_Information about the sequencing protocol._
 
 Location: type/protocol/sequencing/sequencing_protocol.json
 
