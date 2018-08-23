@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "library_amplification_ontology",
+    "title": "Library amplification ontology",
+    "name": "library_amplification_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",

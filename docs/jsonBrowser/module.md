@@ -134,7 +134,7 @@ timecourse_value | The numerical value in Timecourse unit associated with a time
 timecourse_unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md/#time_unit_ontology) |  |  | day
 timecourse_relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  |  |  | Collection after tumor cells injected into the mammary gland.
 
-## biological_macromolecule_ontology<a name='biological_macromolecule_ontology'></a>
+## Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 _A term that may be associated with a biological macromolecule-related ontology term_
 
 Location: module/ontology/biological_macromolecule_ontology.json
@@ -145,7 +145,7 @@ text | The name of the biological macromolecule being used. | string | yes |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## cell_cycle_ontology<a name='cell_cycle_ontology'></a>
+## Cell cycle ontology<a name='Cell cycle ontology'></a>
 _A term that may be associated with a cell cycle-related ontology term_
 
 Location: module/ontology/cell_cycle_ontology.json
@@ -156,7 +156,7 @@ text | The name of a cell cycle of the cells in the specimen. | string | yes |  
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## cell_type_ontology<a name='cell_type_ontology'></a>
+## Cell type ontology<a name='Cell type ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
 Location: module/ontology/cell_type_ontology.json
@@ -167,7 +167,7 @@ text | The name of a cell type supplied by a user. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## development_stage_ontology<a name='development_stage_ontology'></a>
+## Development stage ontology<a name='Development stage ontology'></a>
 _A term that may be associated with a development stage-related ontology term_
 
 Location: module/ontology/development_stage_ontology.json
@@ -178,7 +178,7 @@ text | The name of the development stage of the organism. | string | yes |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## disease_ontology<a name='disease_ontology'></a>
+## Disease ontology<a name='Disease ontology'></a>
 _A term that may be associated with a disease-related ontology term_
 
 Location: module/ontology/disease_ontology.json
@@ -189,7 +189,7 @@ text | The text for the term as the user provides it. | string | yes |  |  |  |
 ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## enrichment_ontology<a name='enrichment_ontology'></a>
+## Enrichment ontology<a name='Enrichment ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
 Location: module/ontology/enrichment_ontology.json
@@ -200,7 +200,7 @@ text | The name of an enrichment approach being used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## ethnicity_ontology<a name='ethnicity_ontology'></a>
+## Ethnicity ontology<a name='Ethnicity ontology'></a>
 _A term that may be associated with a ethnicity-related ontology term_
 
 Location: module/ontology/ethnicity_ontology.json
@@ -211,7 +211,7 @@ text | The ethnicity of the human donor. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## instrument_ontology<a name='instrument_ontology'></a>
+## Instrument ontology<a name='Instrument ontology'></a>
 _A term that may be associated with a instrument-related ontology term_
 
 Location: module/ontology/instrument_ontology.json
@@ -222,7 +222,7 @@ text | The full name of the instrument used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## length_unit_ontology<a name='length_unit_ontology'></a>
+## Length unit ontology<a name='Length unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
 Location: module/ontology/length_unit_ontology.json
@@ -233,7 +233,7 @@ text | The name of a length unit being used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## library_amplification_ontology<a name='library_amplification_ontology'></a>
+## Library amplification ontology<a name='Library amplification ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
 Location: module/ontology/library_amplification_ontology.json
@@ -244,7 +244,7 @@ text | The name of a library amplification approach being used. | string | yes |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## library_construction_ontology<a name='library_construction_ontology'></a>
+## Library construction ontology<a name='Library construction ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
 Location: module/ontology/library_construction_ontology.json
@@ -255,7 +255,7 @@ text | The name of a library construction approach being used. | string | yes | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## mass_unit_ontology<a name='mass_unit_ontology'></a>
+## Mass unit ontology<a name='Mass unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
 Location: module/ontology/mass_unit_ontology.json
@@ -266,7 +266,7 @@ text | The name of a mass unit being used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## organ_ontology<a name='organ_ontology'></a>
+## Organ ontology<a name='Organ ontology'></a>
 _A term that may be associated with an anatomy-related ontology term._
 
 Location: module/ontology/organ_ontology.json
@@ -277,7 +277,7 @@ text | The text for the term as the user provides it. | string | yes |  |  |  |
 ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## organ_part_ontology<a name='organ_part_ontology'></a>
+## Organ part ontology<a name='Organ part ontology'></a>
 _A term that may be associated with an anatomy-related ontology term_
 
 Location: module/ontology/organ_part_ontology.json
@@ -288,7 +288,7 @@ text | The text for the term as the user provides it. | string | yes |  |  |  |
 ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## process_type_ontology<a name='process_type_ontology'></a>
+## Process type ontology<a name='Process type ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
 Location: module/ontology/process_type_ontology.json
@@ -299,7 +299,7 @@ text | The name of a process type being used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## protocol_type_ontology<a name='protocol_type_ontology'></a>
+## Protocol type ontology<a name='Protocol type ontology'></a>
 _A term that may be associated with a protocol-related ontology term_
 
 Location: module/ontology/protocol_type_ontology.json
@@ -310,7 +310,7 @@ text | The name of a protocol type used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## sequencing_ontology<a name='sequencing_ontology'></a>
+## Sequencing ontology<a name='Sequencing ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
 Location: module/ontology/sequencing_ontology.json
@@ -321,7 +321,7 @@ text | The name of a sequencing approach being used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## species_ontology<a name='species_ontology'></a>
+## Species ontology<a name='Species ontology'></a>
 _A term that may be associated with a species-related ontology term_
 
 Location: module/ontology/species_ontology.json
@@ -332,7 +332,7 @@ text | The name of the species to which the organism belongs. | string | yes |  
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## strain_ontology<a name='strain_ontology'></a>
+## Strain ontology<a name='Strain ontology'></a>
 _A term that may be associated with a strain-related ontology term_
 
 Location: module/ontology/strain_ontology.json
@@ -343,7 +343,7 @@ text | The name of the strain to which the organism belongs (mouse-specific). | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## time_unit_ontology<a name='time_unit_ontology'></a>
+## Time unit ontology<a name='Time unit ontology'></a>
 _A term that may be associated with a time unit-related ontology term_
 
 Location: module/ontology/time_unit_ontology.json

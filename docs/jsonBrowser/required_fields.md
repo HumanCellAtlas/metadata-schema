@@ -202,83 +202,83 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 timecourse_value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  |  |  | 2
 timecourse_unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md/#time_unit_ontology) |  |  | day
-### biological_macromolecule_ontology<a name='biological_macromolecule_ontology'></a>
+### Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the biological macromolecule being used. | string |  |  |  | 
-### cell_cycle_ontology<a name='cell_cycle_ontology'></a>
+### Cell cycle ontology<a name='Cell cycle ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a cell cycle of the cells in the specimen. | string |  |  |  | 
-### cell_type_ontology<a name='cell_type_ontology'></a>
+### Cell type ontology<a name='Cell type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a cell type supplied by a user. | string |  |  |  | 
-### development_stage_ontology<a name='development_stage_ontology'></a>
+### Development stage ontology<a name='Development stage ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the development stage of the organism. | string |  |  |  | 
-### disease_ontology<a name='disease_ontology'></a>
+### Disease ontology<a name='Disease ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  |  |  | 
-### enrichment_ontology<a name='enrichment_ontology'></a>
+### Enrichment ontology<a name='Enrichment ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of an enrichment approach being used. | string |  |  |  | 
-### ethnicity_ontology<a name='ethnicity_ontology'></a>
+### Ethnicity ontology<a name='Ethnicity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The ethnicity of the human donor. | string |  |  |  | 
-### instrument_ontology<a name='instrument_ontology'></a>
+### Instrument ontology<a name='Instrument ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The full name of the instrument used. | string |  |  |  | 
-### length_unit_ontology<a name='length_unit_ontology'></a>
+### Length unit ontology<a name='Length unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a length unit being used. | string |  |  |  | 
-### library_amplification_ontology<a name='library_amplification_ontology'></a>
+### Library amplification ontology<a name='Library amplification ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a library amplification approach being used. | string |  |  |  | 
-### library_construction_ontology<a name='library_construction_ontology'></a>
+### Library construction ontology<a name='Library construction ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a library construction approach being used. | string |  |  |  | 
-### mass_unit_ontology<a name='mass_unit_ontology'></a>
+### Mass unit ontology<a name='Mass unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a mass unit being used. | string |  |  |  | 
-### organ_ontology<a name='organ_ontology'></a>
+### Organ ontology<a name='Organ ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  |  |  | 
-### organ_part_ontology<a name='organ_part_ontology'></a>
+### Organ part ontology<a name='Organ part ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  |  |  | 
-### process_type_ontology<a name='process_type_ontology'></a>
+### Process type ontology<a name='Process type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a process type being used. | string |  |  |  | 
-### protocol_type_ontology<a name='protocol_type_ontology'></a>
+### Protocol type ontology<a name='Protocol type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a protocol type used. | string |  |  |  | 
-### sequencing_ontology<a name='sequencing_ontology'></a>
+### Sequencing ontology<a name='Sequencing ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a sequencing approach being used. | string |  |  |  | 
-### species_ontology<a name='species_ontology'></a>
+### Species ontology<a name='Species ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the species to which the organism belongs. | string |  |  |  | 
-### strain_ontology<a name='strain_ontology'></a>
+### Strain ontology<a name='Strain ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the strain to which the organism belongs (mouse-specific). | string |  |  |  | 
-### time_unit_ontology<a name='time_unit_ontology'></a>
+### Time unit ontology<a name='Time unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a time unit being used. | string |  |  |  | 
