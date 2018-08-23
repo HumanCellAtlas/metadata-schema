@@ -282,21 +282,21 @@ text | The name of the strain to which the organism belongs (mouse-specific). | 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a time unit being used. | string |  |  |  | 
-### purchased_reagents<a name='purchased_reagents'></a>
-_There are no required properties in schema purchased_reagents_
-### 10x<a name='10x'></a>
-_There are no required properties in schema 10x_
-### barcode<a name='barcode'></a>
+### Purchased reagents<a name='Purchased reagents'></a>
+_There are no required properties in schema Purchased reagents_
+### 10x-specific<a name='10x-specific'></a>
+_There are no required properties in schema 10x-specific_
+### Barcode<a name='Barcode'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 barcode_read | The read that the barcode is found in. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
 barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer |  | Barcode offset |  | 0
 barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 28
-### insdc_experiment<a name='insdc_experiment'></a>
+### INSDC experiment<a name='INSDC experiment'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession if experiment has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI.  Accession must start with DRX, ERX, or SRX. | string |  | INSDC experiment |  | SRX0000000
-### plate_based_sequencing<a name='plate_based_sequencing'></a>
+### Plate-based sequencing<a name='Plate-based sequencing'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 plate_id | An ID for the plate that the well is located on. | string |  | Well plate ID |  | 2217

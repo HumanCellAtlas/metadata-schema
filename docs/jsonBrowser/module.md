@@ -354,7 +354,7 @@ text | The name of a time unit being used. | string | yes |  |  |  |
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
-## purchased_reagents<a name='purchased_reagents'></a>
+## Purchased reagents<a name='Purchased reagents'></a>
 _Information describing purchased kits or reagents used in a protocol._
 
 Location: module/process/purchased_reagents.json
@@ -368,7 +368,7 @@ lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batc
 expiry_date | The date of expiration for the kit/reagent in the format YYYY-MM-DD. | string | no |  | Expiry date |  | 2018-01-31
 kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7
 
-## 10x<a name='10x'></a>
+## 10x-specific<a name='10x-specific'></a>
 _This module describes information specific to 10x experiments._
 
 Location: module/process/sequencing/10x.json
@@ -380,7 +380,7 @@ fastq_method_version | Version of the program used for fastq generation. | strin
 pooled_channels | The number of channels pooled within a sequencing lane. | number | no |  | Pooled channels |  | 4
 drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | Should be one of: yes, or no.
 
-## barcode<a name='barcode'></a>
+## Barcode<a name='Barcode'></a>
 _Information about barcodes used in a protocol._
 
 Location: module/process/sequencing/barcode.json
@@ -392,7 +392,7 @@ barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of 
 barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
 white_list_file | Name of file containing legitimate barcode sequences, if known. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
 
-## insdc_experiment<a name='insdc_experiment'></a>
+## INSDC experiment<a name='INSDC experiment'></a>
 _Information relating to an INSDC experiment._
 
 Location: module/process/sequencing/insdc_experiment.json
@@ -401,7 +401,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession if experiment has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI.  Accession must start with DRX, ERX, or SRX. | string | yes |  | INSDC experiment |  | SRX0000000
 
-## plate_based_sequencing<a name='plate_based_sequencing'></a>
+## Plate-based sequencing<a name='Plate-based sequencing'></a>
 _Information specific to plate-based sequencing experiments._
 
 Location: module/process/sequencing/plate_based_sequencing.json
