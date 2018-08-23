@@ -412,7 +412,7 @@ plate_id | An ID for the plate that the well is located on. | string | yes |  | 
 well_id | An ID or name for the well. Should be unique for the plate. | string | no |  | Well ID |  | A1
 cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
 
-## contact<a name='contact'></a>
+## Contact<a name='Contact'></a>
 _Information about an individual who submitted or contributed to a project._
 
 Location: module/project/contact.json
@@ -430,7 +430,7 @@ corresponding_contributor | Whether the individual is a corresponding contributo
 project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator
 orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
 
-## funder<a name='funder'></a>
+## Funder<a name='Funder'></a>
 _Information about the project funding source._
 
 Location: module/project/funder.json
@@ -441,7 +441,7 @@ grant_title | The name of the grant funding the project. Approximately 30 words.
 grant_id | The unique grant identifier or reference. | string | no |  | Grant ID |  | BB/P0000001/1
 funder_name | The name of the funding organization. | string | no |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC)
 
-## publication<a name='publication'></a>
+## Publication<a name='Publication'></a>
 _Information about a journal article, book, web page, or other external available documentation for a project._
 
 Location: module/project/publication.json
