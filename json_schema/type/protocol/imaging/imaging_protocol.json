@@ -56,7 +56,7 @@
         "microscopy_technique": {
             "description": "The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
             "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
+            "$ref": "module/ontology/microscopy_ontology.json",
             "user_friendly": "Microscopy technique"
         },
         "magnification": {
