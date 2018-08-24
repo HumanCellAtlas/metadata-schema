@@ -8,7 +8,8 @@
         "biomaterial_core",
         "final_slice_thickness"
     ],
-    "title": "imaged_specimen",
+    "title": "Imaged specimen",
+    "name": "imaged_specimen",
     "type": "object",
     "properties": {
         "describedBy":  {

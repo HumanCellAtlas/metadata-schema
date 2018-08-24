@@ -7,7 +7,8 @@
         "multiplexed",
         "channel"
     ],
-    "title": "imaging_channels",
+    "title": "Imaging targets",
+    "name": "imaging_targets",
     "type": "object",
     "properties": {
         "describedBy":  {

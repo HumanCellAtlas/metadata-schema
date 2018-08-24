@@ -15,7 +15,8 @@
         "targets",
         "pixel_size"
     ],
-    "title": "imaging_protocol",
+    "title": "Imaging Protocol",
+    "name": "imaging_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {

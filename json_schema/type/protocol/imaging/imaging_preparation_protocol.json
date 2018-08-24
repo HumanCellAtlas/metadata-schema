@@ -7,7 +7,8 @@
         "schema_type",
         "protocol_core"
     ],
-    "title": "imaging_preparation_protocol",
+    "title": "Imaging preparation protocol",
+    "name": "imaging_preparation_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
