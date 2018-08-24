@@ -83,7 +83,7 @@
          },
         "pixel_size": {
             "description": "Pixel size in nanometres (scaling factor).",
-            "type": "float",
+            "type": "number",
             "user_friendly": "Pixel size",
             "example": "109"
          },
@@ -95,17 +95,17 @@
          },
         "tile_size_y": {
             "description": "Y size of the tile in micrometres.",
-            "type": "float",
+            "type": "number",
             "user_friendly": "Tile size Y"
          },
         "tile_size_x": {
             "description": "X size of the tile in micrometres.",
-            "type": "float",
+            "type": "number",
             "user_friendly": "Tile size X"
          },
         "z_stack_step_size": {
             "description": "Z-stack step size in nanometres.",
-            "type": "float",
+            "type": "number",
             "user_friendly": "Z stack step size",
             "example": "200"
          },
@@ -123,7 +123,7 @@
             "enum": [
                 "yes", 
                 "no"
-            ],
+            ]
          },      
         "channels": {
             "description": "Information about each channel used in the imaging protocol.",

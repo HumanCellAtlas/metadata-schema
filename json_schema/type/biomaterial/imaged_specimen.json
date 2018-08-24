@@ -51,7 +51,7 @@
         },
         "final_slice_thickness": {
             "description": "Final slice thickness in micrometres.",
-            "type" : "float",
+            "type" : "number",
             "example": "3",
             "user_friendly": "Final slice thickness"
         },

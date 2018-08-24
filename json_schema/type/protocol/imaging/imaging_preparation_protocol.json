@@ -46,7 +46,7 @@
         },
         "final_slice_thickness": {
             "description": "The thickness of the final slice in micrometres.",
-            "type" : "float",
+            "type" : "number",
             "example": "3",
             "user_friendly": "Fresh slice thickness"
         },
@@ -58,7 +58,7 @@
         },
         "post_resection_interval" : {
             "description": "Length of time between surgical resection and fresh slicing of tissue.",
-            "type": "float",
+            "type": "number",
             "user_friendly": "Time between resection and fresh slicing",
             "example": "5"
         },
@@ -77,7 +77,7 @@
         },
         "post_final_slicing_interval": {
             "description": "Length of time between secondary slicing and hybridization.",
-            "type" : "float",
+            "type" : "number",
             "example": "7",
             "user_friendly": "Post final slicing interval"
         },

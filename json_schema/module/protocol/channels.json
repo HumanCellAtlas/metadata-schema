@@ -31,7 +31,7 @@
         },
         "excitation_wavelength": {
             "description": "Excitation wavelength of the lightsource in nm.",
-            "type": "float",
+            "type": "number",
             "example": "640",
             "user_friendly": "Excitation wavelength"
         },
@@ -59,7 +59,7 @@
         },
         "exposure_time": {
             "description": "Exposure time - as a floating point number - in miliseconds",
-            "type": "float",
+            "type": "number",
             "example": "400",
             "user_friendly": "Exposure time"
         }
