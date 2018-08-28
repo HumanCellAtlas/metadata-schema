@@ -64,7 +64,7 @@
             "comment": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
-        "disease": {
+        "diseases": {
             "description": "Short description of known disease(s) of the specimen. Enter normal if no known disease.",
             "type": "array",
             "items": {
