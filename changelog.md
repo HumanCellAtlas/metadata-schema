@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v10.1.0] - 2018-08-28
+### Changed
+Changed optional field disease to diseases
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.0] - 2018-08-28
+### Changed
+Changed optional field disease to diseases
+
 ### [module/ontology/disease_ontology.json - v5.3.2] - 2018-08-21
 ### Fixed
 Fixed schema validation by setting include_self to true
