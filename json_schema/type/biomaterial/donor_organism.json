@@ -94,7 +94,7 @@
             "user_friendly": "Development stage",
             "example": "adult"
         }, 
-        "disease": {
+        "diseases": {
             "description": "Short description of known disease(s) of the organism. Enter 'normal' if no known disease.",
             "type": "array",
             "items": {
