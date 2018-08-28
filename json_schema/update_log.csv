@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/donor_organism,minor,Changed optional field disease to diseases,,
+type/biomaterial/specimen_from_organism,minor,Changed optional field disease to diseases,,
