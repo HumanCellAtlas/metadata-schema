@@ -9,8 +9,8 @@
         "exposure_time",
         "multiplexed"
     ],
-    "title": "Imaging channels",
-    "name": "imaging_channels",
+    "title": "Imaging channel",
+    "name": "imaging_channel",
     "type": "object",
     "properties": {
         "describedBy":  {

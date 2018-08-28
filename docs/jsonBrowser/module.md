@@ -7,7 +7,7 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
-## Imaging targets<a name='Imaging targets'></a>
+## Imaging target<a name='Imaging target'></a>
 _Information about a single microscope channel._
 
 Location: module/protocol/targets.json
@@ -25,7 +25,7 @@ assay_type | Type of assay used to detect target e.g. MERFISH | object | yes | [
 multiplexed | Is this target part of a multiplexed experiment? Should be yes or no. | string | yes |  | Multiplexed? | yes, no | yes
 channel | One or more channel names corresponding channels in imaging channels tab. | string | yes |  | Channel |  | far red
 
-## Imaging channels<a name='Imaging channels'></a>
+## Imaging channel<a name='Imaging channel'></a>
 _Information about a single microscope channel._
 
 Location: module/protocol/channels.json

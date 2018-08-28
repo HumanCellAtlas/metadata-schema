@@ -198,13 +198,13 @@ timestamp_stop_utc | Terminal stop time of the full pipeline. | string |  |  |  
 analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string |  |  | run, copy-forward | 
 reference_bundle | Bundle containing the reference used in running the pipeline. | string |  |  |  | 
 ## Module
-### Imaging targets<a name='Imaging targets'></a>
+### Imaging target<a name='Imaging target'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 assay_type | Type of assay used to detect target e.g. MERFISH | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MerFish, smFISH, immunofluorescence, fluorescent cell stain
 multiplexed | Is this target part of a multiplexed experiment? Should be yes or no. | string |  | Multiplexed? | yes, no | yes
 channel | One or more channel names corresponding channels in imaging channels tab. | string |  | Channel |  | far red
-### Imaging channels<a name='Imaging channels'></a>
+### Imaging channel<a name='Imaging channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 channel_name | User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book. | string |  | Channel name |  | far red
