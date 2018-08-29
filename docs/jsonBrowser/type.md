@@ -370,7 +370,7 @@ provenance | Provenance information provided by the system. | object | no | [See
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 overview_image | List of filenames of photographs of specimen. Must be of format JPEG, TIFF, or PNG. | array | no |  | Gross image |  | my_mage_file.jpg
 final_slice_thickness | Final slice thickness in micrometres. | number | yes |  | Final slice thickness |  | 3
-internal_structures | Internal structures visible in overview_image (e.g. cortical layer boundaries). | object | no | [See module  organ_part_ontology ](module.md/#organ_part_ontology ) | Internal tissue structures |  | 
+internal_anatomical_structures | Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample. | array | no | [See module  organ_part_ontology ](module.md/#organ_part_ontology ) | Internal tissue structures |  | 
 
 ## donor_organism
 _Information about the donor organism from which a specimen was collected._
