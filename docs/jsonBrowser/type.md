@@ -249,7 +249,7 @@ pre_final_slice_preservation_method | Tissue preservation method used prior to f
 post_final_slicing_interval | Length of time between secondary slicing and hybridization. | number | no |  | Post final slicing interval |  | 7
 post_final_slicing_interval_unit | The unit of time in which the post final slicing interval is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Post final slicing interval time unit |  | day
 fiducial_marker | Fiducial markers for the alignment of images taken across multiple rounds of imaging. | string | no |  | Fiducial marker |  | 
-expansion_shrinkage | Tissue scaling factor pre and post embedding in micrometres with format x, y, z. | string | no |  | Expansion scaling factor |  | 0.2, 0.2, 0.2
+expansion_factor | Factor by which the imaged tissue was expanded. | number | no |  | Expansion factor |  | 3
 
 ## Imaging Protocol
 _Information about the imaging protocol_
@@ -262,7 +262,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 microscope_setup_description | Description of the microscope setup including manufacturer and model information about the stand, camera and objective. | string | no |  | Microscope setup description |  | Motorized stage (SCAN IM 112 × 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus).
-microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Microscopy technique |  | 
+microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
 magnification | Magnification used for imaging. | string | yes |  | Magnification |  | 60x
 numerical_aperture | Numerical aperture. | string | yes |  | Numerical aperture |  | 1.3 NA
 immersion_medium | Immersion medium. Should be one of air, water or oil. | string | no |  | Immersion medium | air, water, oil | air

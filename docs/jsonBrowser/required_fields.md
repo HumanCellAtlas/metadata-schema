@@ -131,7 +131,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Microscopy technique |  | 
+microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
 magnification | Magnification used for imaging. | string |  | Magnification |  | 60x
 numerical_aperture | Numerical aperture. | string |  | Numerical aperture |  | 1.3 NA
 pixel_size | Pixel size in nanometres (scaling factor). | number |  | Pixel size |  | 109
@@ -224,6 +224,10 @@ text | The name of a cell cycle of the cells in the specimen. | string |  |  |  
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a library amplification approach being used. | string |  |  |  | 
+### cell_cycle_ontology<a name='cell_cycle_ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of the type of microscopy used in an imaging experiment. | string |  |  |  | 
 ### ethnicity_ontology<a name='ethnicity_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

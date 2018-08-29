@@ -94,11 +94,11 @@
             "type" : "string",
             "user_friendly": "Fiducial marker"
         },
-        "expansion_shrinkage": {
-            "description": "Tissue scaling factor pre and post embedding in micrometres with format x, y, z.",
-            "type" : "string",
-            "example": "0.2, 0.2, 0.2",
-            "user_friendly": "Expansion scaling factor"
+        "expansion_factor": {
+            "description": "Factor by which the imaged tissue was expanded.",
+            "type" : "number",
+            "example": "3",
+            "user_friendly": "Expansion factor"
         }
     }
 }

@@ -15,8 +15,8 @@ Location: module/protocol/targets.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 target_molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying code book, the name here should correspond to the target name used in the code book. | string | no |  | Target molecule name |  | ACTA1
-target_molecule_ID | An identifier refering to the the target molecule.  For small molecules this should be from the ChEBI ontology.  For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot). | string | no |  | Target molecule identifier |  | CHEBI:85345, ensembl_9606
-target_subcellular_structure | Subcellular structures imaged in this experiment.  This should be a term from the GO cell component ontology. | object | no | [See module  cell_structure_ontology](module.md/#cell_structure_ontology) | Target subcellular structure |  | 
+target_molecule_ID | An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot). | string | no |  | Target molecule identifier. |  | CHEBI:85345, ensembl_9606
+target_subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cell_structure_ontology](module.md/#cell_structure_ontology) | Target subcellular structure |  | 
 reagent_name | Name of reagent used to detect target. | string | no |  | Reagent name |  | 
 purchased_reagent_details | Name of reagent used to detect target. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased reagent details |  | 
 probe_sequence | Sequence of a probe used to capture the target. | string | no |  | Probe sequence |  | 
@@ -69,6 +69,17 @@ Location: module/ontology/library_amplification_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of a library amplification approach being used. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+
+## cell_cycle_ontology<a name='cell_cycle_ontology'></a>
+_A term that may be associated with a microscopy-related ontology term_
+
+Location: module/ontology/microscopy_onotogy.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the type of microscopy used in an imaging experiment. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 
