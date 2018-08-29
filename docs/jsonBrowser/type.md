@@ -265,13 +265,13 @@ microscope_setup_description | Description of the microscope setup including man
 microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
 magnification | Magnification used for imaging. | string | yes |  | Magnification |  | 60x
 numerical_aperture | Numerical aperture. | string | yes |  | Numerical aperture |  | 1.3 NA
-immersion_medium | Immersion medium. Should be one of air, water or oil. | string | no |  | Immersion medium | air, water, oil | air
+immersion_medium | Immersion medium. Should be one of air, water, oil or other. | string | no |  | Immersion medium | air, water, oil, other | air
 pixel_size | Pixel size in nanometres (scaling factor). | number | yes |  | Pixel size |  | 109
 number_of_tiles | Number of XY tiles in the experiment. | integer | no |  | Number of tiles |  | 2000
 tile_size_y | Y size of the tile in micrometres. | number | no |  | Tile size Y |  | 
 tile_size_x | X size of the tile in micrometres. | number | no |  | Tile size X |  | 
 z_stack_step_size | Z-stack step size in nanometres. | number | no |  | Z stack step size |  | 200
-number_of_z_stacks | Number of z stacks per image. | integer | no |  | Number of Z stacks |  | 40
+number_of_z_steps | Number of steps in a Z stack. | integer | no |  | Number of Z steps |  | 40
 overlapping_tiles | Were tiles collected with overlap? | string | yes |  | Overlapping tiles? | yes, no | no
 channels | Information about each channel used in the imaging protocol. | array | yes | [See module  imaging_channels](module.md/#imaging_channels) | Channels |  | 
 targets | Information about each target in the imaging experiment. | array | yes | [See module  targets](module.md/#targets) | Targets |  | 
