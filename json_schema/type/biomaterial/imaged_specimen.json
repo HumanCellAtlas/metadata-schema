@@ -56,10 +56,10 @@
             "example": "3",
             "user_friendly": "Final slice thickness"
         },
-        "internal_structures": {
-            "description": "Internal structures visible in overview_image (e.g. cortical layer boundaries).",
-            "type": "object",
-            "$ref": "module/ontology/organ_part_ontology.json ",
+        "internal_anatomical_structures": {
+            "description": "Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample.",
+            "type": "array",
+            "items": { "$ref": "module/ontology/organ_part_ontology.json " },
             "user_friendly": "Internal tissue structures"
         }
     }
