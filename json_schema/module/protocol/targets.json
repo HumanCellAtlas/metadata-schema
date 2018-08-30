@@ -64,7 +64,7 @@
             "user_friendly": "Fluorophore"
         },
         "assay_type": {
-            "description": "Type of assay used to detect target e.g. MERFISH".,
+            "description": "Type of assay used to detect target e.g. MERFISH.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "example": "MerFish, smFISH, immunofluorescence, fluorescent cell stain",
