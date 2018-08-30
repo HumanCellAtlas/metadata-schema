@@ -66,10 +66,10 @@
             "example": "60x"
          },
         "numerical_aperture": {
-            "description": "Numerical aperture.",
-            "type": "string",
+            "description": "Numerical aperture of the objective.",
+            "type": "number",
             "user_friendly": "Numerical aperture",
-            "example": "1.3 NA"
+            "example": "1.3"
          },
         "immersion_medium": {
             "description": "Immersion medium. Should be one of air, water, oil or other.",
