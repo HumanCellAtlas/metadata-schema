@@ -19,7 +19,7 @@ excitation_wavelength | Excitation wavelength of the lightsource in nanometers. 
 filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
 multiplexed | Is this channel part of a multiplexed experiment? Should be yes or no. | string | yes |  | Multiplexed? | yes, no | yes
 target_fluorophore | The name(s) of the fluorophore(s) this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
-exposure_time | Exposure time - as a floating point number - in miliseconds | number | yes |  | Exposure time |  | 400
+exposure_time | Acquisition time for a single image per channel in miliseconds | number | yes |  | Exposure time |  | 400
 
 ## Imaging target<a name='Imaging target'></a>
 _Information about a single microscope channel._

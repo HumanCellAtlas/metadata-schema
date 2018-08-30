@@ -59,7 +59,7 @@
             "user_friendly": "Target fluorophore"
         },
         "exposure_time": {
-            "description": "Exposure time - as a floating point number - in miliseconds",
+            "description": "Acquisition time for a single image per channel in miliseconds",
             "type": "number",
             "example": "400",
             "user_friendly": "Exposure time"
