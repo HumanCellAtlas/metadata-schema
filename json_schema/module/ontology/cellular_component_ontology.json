@@ -5,13 +5,13 @@
     "required": [
         "text"
     ],
-    "title": "cell_structure_ontology",
+    "title": "cellular_component_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cell_structure_ontology"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cellular_component_ontology"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
