@@ -101,7 +101,7 @@ Location: module/ontology/cellular_component_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the cellular structure being used. | string | yes |  |  |  | 
+text | The name of a subcellular structure. | string | yes |  |  |  | 
 ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
 

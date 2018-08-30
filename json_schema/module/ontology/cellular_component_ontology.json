@@ -20,7 +20,7 @@
             "example": "4.6.1"
         },
         "text": {
-            "description": "The name of the cellular structure being used.",
+            "description": "The name of a subcellular structure.",
             "type": "string"
         },
         "ontology": {

@@ -236,7 +236,7 @@ text | The ethnicity of the human donor. | string |  |  |  |
 ### cellular_component_ontology<a name='cellular_component_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the cellular structure being used. | string |  |  |  | 
+text | The name of a subcellular structure. | string |  |  |  | 
 ### library_construction_ontology<a name='library_construction_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
