@@ -45,11 +45,11 @@
             "user_friendly": "Fresh slicing method",
             "example": "vibrotome"
         },
-        "final_slice_thickness": {
-            "description": "The thickness of the final slice in micrometres.",
+        "imaged_slice_thickness": {
+            "description": "The thickness of the imaged slice in micrometres.",
             "type" : "number",
-            "example": "3",
-            "user_friendly": "Fresh slice thickness"
+            "example": "10",
+            "user_friendly": "Imaged slice thickness"
         },
         "final_slicing_method" : {
             "description": "The method by which the final slice was obtained (e.g. cryosectioning).",
