@@ -48,7 +48,8 @@
         },
         "computational_method": {
             "description": "A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Computational method"
         }
     }
 }
