@@ -11,8 +11,8 @@
         "magnification",
         "numerical_aperture",
         "overlapping_tiles",
-        "channels",
-        "targets",
+        "channel",
+        "imaging_target",
         "pixel_size"
     ],
     "title": "Imaging Protocol",
@@ -127,21 +127,21 @@
                 "no"
             ]
          },      
-        "channels": {
+        "channel": {
             "description": "Information about each channel used in the imaging protocol.",
             "type": "array",
             "items": {
-                "$ref": "/module/protocol/imaging_channels.json"
+                "$ref": "/module/protocol/channel.json"
             },
-            "user_friendly": "Channels"
+            "user_friendly": "Channel"
         },
-        "targets": {
-            "description": "Information about each target in the imaging experiment.",
+        "imaging_target": {
+            "description": "Information about each imaging target in the imaging experiment.",
             "type": "array",
             "items": {
-                "$ref": "/module/protocol/targets.json"
+                "$ref": "/module/protocol/imaging_target.json"
             },
-            "user_friendly": "Targets"
+            "user_friendly": "Imaging target"
         }
     }
 }

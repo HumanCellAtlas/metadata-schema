@@ -137,8 +137,8 @@ magnification | Magnification used for imaging. | string |  | Magnification |  |
 numerical_aperture | Numerical aperture. | string |  | Numerical aperture |  | 1.3 NA
 pixel_size | Pixel size in nanometres (scaling factor). | number |  | Pixel size |  | 109
 overlapping_tiles | Were tiles collected with overlap? | string |  | Overlapping tiles? | yes, no | no
-channels | Information about each channel used in the imaging protocol. | array | [See module  imaging_channels](module.md/#imaging_channels) | Channels |  | 
-targets | Information about each target in the imaging experiment. | array | [See module  targets](module.md/#targets) | Targets |  | 
+channel | Information about each channel used in the imaging protocol. | array | [See module  channel](module.md/#channel) | Channel |  | 
+imaging_target | Information about each imaging target in the imaging experiment. | array | [See module  imaging_target](module.md/#imaging_target) | Imaging target |  | 
 ### project
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
