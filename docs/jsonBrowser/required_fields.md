@@ -205,7 +205,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 channel_name | User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book. | string |  | Channel name |  | far red
 excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number |  | Excitation wavelength |  | 640
 filter_range | Wavelength range of the emission filter in nanometers. | string |  | Filter range |  | 665 - 705
-multiplexed | Is this channel part of a multiplexed experiment? Should be yes or no. | string |  | Multiplexed? | yes, no | yes
+multiplexed | Were multiple targets detected simultaneously in this channel? Should be yes or no. | string |  | Is this a multiplexed experiment? | yes, no | yes
 exposure_time | Acquisition time for a single image per channel in miliseconds | number |  | Exposure time |  | 400
 ### Imaging target<a name='Imaging target'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 

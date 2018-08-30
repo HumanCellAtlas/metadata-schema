@@ -43,14 +43,14 @@
             "user_friendly": "Filter range"
         },
         "multiplexed": {
-            "description": "Is this channel part of a multiplexed experiment? Should be yes or no.",
+            "description": "Were multiple targets detected simultaneously in this channel? Should be yes or no.",
             "type": "string",
             "enum":[
                 "yes",
                 "no"
             ],
             "example": "yes",
-            "user_friendly": "Multiplexed?"
+            "user_friendly": "Is this a multiplexed experiment?"
         },
         "target_fluorophore": {
             "description": "The name(s) of the fluorophore(s) this channel is designed to assay.",
