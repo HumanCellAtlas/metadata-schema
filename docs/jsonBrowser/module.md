@@ -7,10 +7,24 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
+## Channel<a name='Channel'></a>
+_Information about a single microscope channel._
+
+Location: module/protocol/channel.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+channel_name | User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book. | string | yes |  | Channel name |  | far red
+excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
+filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
+multiplexed | Is this channel part of a multiplexed experiment? Should be yes or no. | string | yes |  | Multiplexed? | yes, no | yes
+target_fluorophore | The name(s) of the fluorophore(s) this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
+exposure_time | Exposure time - as a floating point number - in miliseconds | number | yes |  | Exposure time |  | 400
+
 ## Imaging target<a name='Imaging target'></a>
 _Information about a single microscope channel._
 
-Location: module/protocol/targets.json
+Location: module/protocol/imaging_target.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -24,20 +38,6 @@ fluorophore | Fluorophore used to detect target in non-multiplexed experiments. 
 assay_type | Type of assay used to detect target e.g. MERFISH. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MerFish, smFISH, immunofluorescence, fluorescent cell stain
 multiplexed | Is this target part of a multiplexed experiment? Should be yes or no. | string | yes |  | Multiplexed? | yes, no | yes
 channel | Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab. | string | yes |  | Channel |  | far red
-
-## Channel<a name='Channel'></a>
-_Information about a single microscope channel._
-
-Location: module/protocol/channels.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-channel_name | User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book. | string | yes |  | Channel name |  | far red
-excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
-filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
-multiplexed | Is this channel part of a multiplexed experiment? Should be yes or no. | string | yes |  | Multiplexed? | yes, no | yes
-target_fluorophore | The name(s) of the fluorophore(s) this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
-exposure_time | Exposure time - as a floating point number - in miliseconds | number | yes |  | Exposure time |  | 400
 
 ## length_unit_ontology<a name='length_unit_ontology'></a>
 _A term that may be associated with a cell type-related ontology term_

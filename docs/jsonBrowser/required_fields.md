@@ -199,12 +199,6 @@ timestamp_stop_utc | Terminal stop time of the full pipeline. | string |  |  |  
 analysis_run_type | Indicator of whether the analysis actually ran or was just copied forward as an optimization. | string |  |  | run, copy-forward | 
 reference_bundle | Bundle containing the reference used in running the pipeline. | string |  |  |  | 
 ## Module
-### Imaging target<a name='Imaging target'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-assay_type | Type of assay used to detect target e.g. MERFISH. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MerFish, smFISH, immunofluorescence, fluorescent cell stain
-multiplexed | Is this target part of a multiplexed experiment? Should be yes or no. | string |  | Multiplexed? | yes, no | yes
-channel | Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab. | string |  | Channel |  | far red
 ### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -213,6 +207,12 @@ excitation_wavelength | Excitation wavelength of the lightsource in nanometers. 
 filter_range | Wavelength range of the emission filter in nanometers. | string |  | Filter range |  | 665 - 705
 multiplexed | Is this channel part of a multiplexed experiment? Should be yes or no. | string |  | Multiplexed? | yes, no | yes
 exposure_time | Exposure time - as a floating point number - in miliseconds | number |  | Exposure time |  | 400
+### Imaging target<a name='Imaging target'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+assay_type | Type of assay used to detect target e.g. MERFISH. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MerFish, smFISH, immunofluorescence, fluorescent cell stain
+multiplexed | Is this target part of a multiplexed experiment? Should be yes or no. | string |  | Multiplexed? | yes, no | yes
+channel | Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab. | string |  | Channel |  | far red
 ### length_unit_ontology<a name='length_unit_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

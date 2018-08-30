@@ -1,7 +1,7 @@
 Schema,Change type,Change message,Version,Date
 module/ontology/cellular_component_ontology.json,major,Added new schema,,
-module/protocol/targets.json,major,Added new schema,,
-module/protocol/channels.json,major,Added new schema,,
+module/protocol/imaging_target.json,major,Added new schema,,
+module/protocol/channel.json,major,Added new schema,,
 type/biomaterial/imaged_specimen.json,major,Added new schema,,
 type/file/image_file.json,major,Added new schema,,
 type/protocol/imaging/imaging_preparation_protocol.json,major,Added new schema,,
