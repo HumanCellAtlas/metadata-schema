@@ -37,7 +37,7 @@
         "target_subcellular_structure": {
             "description": "Target subcellular structure. This should be a term from the GO cell component ontology.",
             "type": "object",
-            "$ref": "module/ontology/cell_structure_ontology.json",
+            "$ref": "module/ontology/cellular_component_ontology.json",
             "user_friendly": "Target subcellular structure"
         },
         "reagent_name": {

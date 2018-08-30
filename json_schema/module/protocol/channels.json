@@ -31,7 +31,7 @@
             "user_friendly": "Channel name"
         },
         "excitation_wavelength": {
-            "description": "Excitation wavelength of the lightsource in nm.",
+            "description": "Excitation wavelength of the lightsource in nanometers.",
             "type": "number",
             "example": "640",
             "user_friendly": "Excitation wavelength"

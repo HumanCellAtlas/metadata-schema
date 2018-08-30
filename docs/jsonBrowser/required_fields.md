@@ -36,6 +36,7 @@ read_index | Whether the read file contains the read1, read2, index1, or index2 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
+file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
 ### supplementary_file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -208,7 +209,7 @@ channel | One or more channel names corresponding channels in imaging channels t
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 channel_name | User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book. | string |  | Channel name |  | far red
-excitation_wavelength | Excitation wavelength of the lightsource in nm. | number |  | Excitation wavelength |  | 640
+excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number |  | Excitation wavelength |  | 640
 filter_range | Wavelength range of the emission filter in nanometers. | string |  | Filter range |  | 665 - 705
 multiplexed | Is this channel part of a multiplexed experiment? Should be yes or no. | string |  | Multiplexed? | yes, no | yes
 exposure_time | Exposure time - as a floating point number - in miliseconds | number |  | Exposure time |  | 400
@@ -232,6 +233,10 @@ text | The name of the type of microscopy used in an imaging experiment. | strin
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The ethnicity of the human donor. | string |  |  |  | 
+### cellular_component_ontology<a name='cellular_component_ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of the cellular structure being used. | string |  |  |  | 
 ### library_construction_ontology<a name='library_construction_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -264,10 +269,6 @@ text | The name of an enrichment approach being used. | string |  |  |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  |  |  | 
-### cell_structure_ontology<a name='cell_structure_ontology'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-text | The name of the cellular structure being used. | string |  |  |  | 
 ### time_unit_ontology<a name='time_unit_ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
