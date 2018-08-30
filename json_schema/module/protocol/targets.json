@@ -14,7 +14,7 @@
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/process/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaging_channels"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/protocol/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaging_channels"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -64,7 +64,7 @@
             "user_friendly": "Fluorophore"
         },
         "assay_type": {
-            "description": "Type of assay used to detect target e.g. MERFISH",
+            "description": "Type of assay used to detect target e.g. MERFISH".,
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "example": "MerFish, smFISH, immunofluorescence, fluorescent cell stain",
@@ -81,7 +81,7 @@
             "user_friendly": "Multiplexed?"
         },
         "channel": {
-            "description": "One or more channel names corresponding channels in imaging channels tab.",
+            "description": "Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab.",
             "type": "string",
             "example": "far red",
             "user_friendly": "Channel"
