@@ -265,7 +265,8 @@ microscope_setup_description | Description of the microscope setup including man
 microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
 magnification | Magnification used for imaging. | string | yes |  | Magnification |  | 60x
 numerical_aperture | Numerical aperture of the objective. | number | yes |  | Numerical aperture |  | 1.3
-immersion_medium | Immersion medium. Should be one of air, water, oil or other. | string | no |  | Immersion medium | air, water, oil, other | air
+immersion_medium_type | Immersion medium used for imaging. | string | no |  | Immersion medium |  | oil
+immersion_medium_refractive_index | Refractive index of the immersion medium used for imaging. | number | no |  | Refractive index of the immersion medium |  | 1.5
 pixel_size | Pixel size in nanometres (scaling factor). | number | yes |  | Pixel size |  | 109
 number_of_tiles | Number of XY tiles in the experiment. | integer | no |  | Number of tiles |  | 2000
 tile_size_y | Y size of the tile in micrometres. | number | no |  | Tile size Y |  | 

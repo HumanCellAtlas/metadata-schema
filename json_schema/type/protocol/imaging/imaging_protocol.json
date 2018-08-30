@@ -71,17 +71,17 @@
             "user_friendly": "Numerical aperture",
             "example": "1.3"
          },
-        "immersion_medium": {
-            "description": "Immersion medium. Should be one of air, water, oil or other.",
+        "immersion_medium_type": {
+            "description": "Immersion medium used for imaging.",
             "type": "string",
-            "enum": [
-                "air", 
-                "water", 
-                "oil",
-                "other"
-            ],
             "user_friendly": "Immersion medium",
-            "example": "air"
+            "example": "oil"
+         },
+        "immersion_medium_refractive_index": {
+            "description": "Refractive index of the immersion medium used for imaging.",
+            "type": "number",
+            "user_friendly": "Refractive index of the immersion medium",
+            "example": "1.5"
          },
         "pixel_size": {
             "description": "Pixel size in nanometres (scaling factor).",
