@@ -69,8 +69,8 @@
                 "publication": "5.2.3"
             },
             "protocol":{
-                "targets": "0.0.0",
-                "channels": "0.0.0"
+                "imaging_target": "0.0.0",
+                "channel": "0.0.0"
             }
         },
         "system": {
