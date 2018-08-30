@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-        "final_slice_thickness"
+        "imaged_slice_thickness"
     ],
     "title": "Imaged specimen",
     "name": "imaged_specimen",
@@ -50,11 +50,11 @@
             "user_friendly": "Gross image",
             "example": "my_mage_file.jpg"
         },
-        "final_slice_thickness": {
-            "description": "Final slice thickness in micrometres.",
+        "imaged_slice_thickness": {
+            "description": "Imaged slice thickness in micrometres.",
             "type" : "number",
             "example": "3",
-            "user_friendly": "Final slice thickness"
+            "user_friendly": "Imaged slice thickness"
         },
         "internal_anatomical_structures": {
             "description": "Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample.",
