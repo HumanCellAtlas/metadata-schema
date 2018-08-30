@@ -205,7 +205,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 assay_type | Type of assay used to detect target e.g. MERFISH | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MerFish, smFISH, immunofluorescence, fluorescent cell stain
 multiplexed | Is this target part of a multiplexed experiment? Should be yes or no. | string |  | Multiplexed? | yes, no | yes
 channel | One or more channel names corresponding channels in imaging channels tab. | string |  | Channel |  | far red
-### Imaging channel<a name='Imaging channel'></a>
+### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 channel_name | User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book. | string |  | Channel name |  | far red

@@ -9,14 +9,14 @@
         "exposure_time",
         "multiplexed"
     ],
-    "title": "Imaging channel",
-    "name": "imaging_channel",
+    "title": "Channel",
+    "name": "channel",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/process/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaging_channels"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/protocol/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaging_channels"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
