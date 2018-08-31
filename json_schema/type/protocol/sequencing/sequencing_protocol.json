@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Information about the sequencing protocol",
+    "description": "Information about the sequencing protocol.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -10,7 +10,8 @@
         "paired_end",
         "sequencing_approach"
     ],
-    "title": "sequencing_protocol",
+    "title": "Sequencing protocol",
+    "name": "sequencing_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {

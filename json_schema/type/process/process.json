@@ -7,7 +7,8 @@
         "schema_type",
         "process_core"
     ],
-    "title": "process",
+    "title": "Process",
+    "name": "process",
     "type": "object",
     "properties": {
          "describedBy":  {

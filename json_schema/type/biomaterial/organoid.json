@@ -8,7 +8,8 @@
         "biomaterial_core",
         "model_for_organ"
     ],
-    "title": "organoid",
+    "title": "Organoid",
+    "name": "organoid",
     "type": "object",
     "properties": {
         "describedBy":  {

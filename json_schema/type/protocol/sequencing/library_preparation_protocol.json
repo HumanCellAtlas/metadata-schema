@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Information about how a sequencing library was created.",
+    "description": "Information about how a sequencing library was prepared.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -11,7 +11,8 @@
         "strand",
         "input_nucleic_acid_molecule"
     ],
-    "title": "library_preparation_protocol",
+    "title": "Library preparation protocol",
+    "name": "library_preparation_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {

@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "protocol_type_ontology",
+    "title": "Protocol type ontology",
+    "name": "protocol_type_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",

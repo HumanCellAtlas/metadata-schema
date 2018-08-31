@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "organ_part_ontology",
+    "title": "Organ part ontology",
+    "name": "organ_part_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
