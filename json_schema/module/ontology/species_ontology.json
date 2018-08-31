@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "species_ontology",
+    "title": "Species ontology",
+    "name": "species_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",

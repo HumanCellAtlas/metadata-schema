@@ -12,7 +12,8 @@
         "reference_type",
         "reference_version"
     ],
-    "title": "reference_file",
+    "title": "Reference file",
+    "name": "reference_file",
     "type": "object",
     "properties": {
         "describedBy": {

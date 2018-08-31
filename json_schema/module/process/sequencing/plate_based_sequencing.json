@@ -5,7 +5,8 @@
     "required": [
         "plate_id"
     ],
-    "title": "plate_based_sequencing",
+    "title": "Plate-based sequencing",
+    "name": "plate_based_sequencing",
     "type": "object",
     "properties": {
         "describedBy":  {

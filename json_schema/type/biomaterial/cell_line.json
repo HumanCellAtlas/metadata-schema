@@ -8,7 +8,8 @@
         "biomaterial_core",
         "cell_line_type"
     ],
-    "title": "cell_line",
+    "title": "Cell line",
+    "name": "cell_line",
     "type": "object",
     "properties": {
         "describedBy":  {

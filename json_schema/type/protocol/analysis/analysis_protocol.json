@@ -9,7 +9,8 @@
         "computational_method",
         "protocol_type"
     ],
-    "title": "analysis_protocol",
+    "title": "Analysis protocol",
+    "name": "analysis_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {

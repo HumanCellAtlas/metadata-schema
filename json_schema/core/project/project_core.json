@@ -7,7 +7,8 @@
         "project_title",
         "project_description"
     ],
-    "title": "project_core",
+    "title": "Project core",
+    "name": "project_core",
     "type": "object",
     "properties": {
         "describedBy": {
