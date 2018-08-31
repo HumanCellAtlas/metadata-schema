@@ -123,10 +123,10 @@
             "user_friendly": "Overlapping tiles?",
             "example": "no",
             "enum": [
-                "yes", 
+                "yes",
                 "no"
             ]
-         },      
+         },
         "channel": {
             "description": "Information about each channel used in the imaging protocol.",
             "type": "array",

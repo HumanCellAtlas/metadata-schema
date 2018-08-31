@@ -7,6 +7,330 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/cellular_component_ontology.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [module/ontology/microscopy_ontology.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [module/protocol/imaging_target.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [module/protocol/channel.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/biomaterial/imaged_specimen.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/file/image_file.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/protocol/imaging/imaging_protocol.json - v8.0.0] - 2018-08-31
+### Added
+Added several new fields including new required fields to address imaging use cases
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.3.0] - 2018-08-31
+### Removed
+Removed differentiation from 7 fields. Fixes #517
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.3] - 2018-08-31
+### Added
+Added user-friendly name to some properties
+
+### [type/process/analysis/analysis_process.json - v8.0.3] - 2018-08-31
+### Added
+Added user-friendly name to some properties
+
+### [core/biomaterial/biomaterial_core.json - v7.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [core/file/file_core.json - v5.2.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [core/process/process_core.json - v9.0.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [core/project/project_core.json - v7.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [core/protocol/protocol_core.json - v5.2.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/cell_morphology.json - v6.1.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/death.json - v5.3.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/familial_relationship.json - v6.0.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/growth_conditions.json - v6.4.1] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/human_specific.json - v1.0.5] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/medical_history.json - v5.2.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/mouse_specific.json - v1.0.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/preservation_storage.json - v5.3.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/state_of_specimen.json - v5.2.6] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/biomaterial/timecourse.json - v1.1.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/cell_type_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/development_stage_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/disease_ontology.json - v5.3.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/enrichment_ontology.json - v1.2.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/ethnicity_ontology.json - v5.3.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/instrument_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/length_unit_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/library_amplification_ontology.json - v1.2.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/library_construction_ontology.json - v1.2.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/mass_unit_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/organ_ontology.json - v5.3.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/organ_part_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/process_type_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/protocol_type_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/sequencing_ontology.json - v1.1.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/species_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/strain_ontology.json - v5.3.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/ontology/time_unit_ontology.json - v5.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/process/purchased_reagents.json - v6.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/process/sequencing/10x.json - v1.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/process/sequencing/barcode.json - v5.2.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/process/sequencing/insdc_experiment.json - v1.1.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/project/contact.json - v6.1.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/project/funder.json - v1.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [module/project/publication.json - v5.2.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [system/links.json - v1.1.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [system/provenance.json - v1.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/biomaterial/cell_line.json - v8.6.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/biomaterial/cell_suspension.json - v8.6.1] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/biomaterial/donor_organism.json - v10.1.1] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/biomaterial/organoid.json - v8.3.6] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.1] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/file/analysis_file.json - v5.3.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/file/reference_file.json - v2.2.5] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/file/sequence_file.json - v6.5.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/file/supplementary_file.json - v1.1.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/process/analysis/analysis_process.json - v8.0.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/process/process.json - v6.0.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/project/project.json - v9.0.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.5] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.6] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.2.6] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.3] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.5] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v2.0.1] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/imaging/imaging_protocol.json - v7.2.4] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/protocol.json - v6.3.5] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.3.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.2] - 2018-08-31
+### Added
+Added schema name. Updated schema title. Fixes #501
+
+### [type/biomaterial/donor_organism.json - v10.1.0] - 2018-08-28
+### Changed
+Changed optional field disease to diseases
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.0] - 2018-08-28
+### Changed
+Changed optional field disease to diseases
+
 ### [module/ontology/disease_ontology.json - v5.3.2] - 2018-08-21
 ### Fixed
 Fixed schema validation by setting include_self to true

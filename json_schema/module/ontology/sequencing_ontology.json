@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "sequencing_ontology",
+    "title": "Sequencing ontology",
+    "name": "sequencing_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",

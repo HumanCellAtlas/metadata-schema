@@ -6,7 +6,8 @@
         "authors",
         "publication_title"
     ],
-    "title": "publication",
+    "title": "Publication",
+    "name": "publication",
     "type": "object",
     "properties": {
         "describedBy": {

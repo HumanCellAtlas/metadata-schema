@@ -5,7 +5,8 @@
     "required": [
         "insdc_experiment"
     ],
-    "title": "insdc_experiment",
+    "title": "INSDC experiment",
+    "name": "insdc_experiment",
     "type": "object",
     "properties": {
         "describedBy":  {

@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "process_type_ontology",
+    "title": "Process type ontology",
+    "name": "process_type_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",

@@ -6,7 +6,8 @@
     "describedBy",
     "schema_type"
   ],
-  "title": "links",
+  "title": "Links",
+  "name": "links",
   "type": "object",
   "definitions": {
     "protocol_links": {
