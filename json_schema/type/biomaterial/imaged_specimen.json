@@ -51,7 +51,7 @@
             "example": "my_mage_file.jpg"
         },
         "imaged_slice_thickness": {
-            "description": "Imaged slice thickness in micrometres.",
+            "description": "Thickness of the imaged slice in micrometres.",
             "type" : "number",
             "example": "14",
             "user_friendly": "Imaged slice thickness"

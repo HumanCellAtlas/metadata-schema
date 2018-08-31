@@ -370,7 +370,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | bio
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
 overview_image | List of filenames of photographs of specimen. Must be of format JPEG, TIFF, or PNG. | array | no |  | Gross image |  | my_mage_file.jpg
-imaged_slice_thickness | Imaged slice thickness in micrometres. | number | yes |  | Imaged slice thickness |  | 14
+imaged_slice_thickness | Thickness of the imaged slice in micrometres. | number | yes |  | Imaged slice thickness |  | 14
 internal_anatomical_structures | Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample. | array | no | [See module  organ_part_ontology ](module.md/#organ_part_ontology ) | Internal tissue structures |  | 
 
 ## donor_organism

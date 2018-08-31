@@ -165,7 +165,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-imaged_slice_thickness | Imaged slice thickness in micrometres. | number |  | Imaged slice thickness |  | 14
+imaged_slice_thickness | Thickness of the imaged slice in micrometres. | number |  | Imaged slice thickness |  | 14
 ### donor_organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
