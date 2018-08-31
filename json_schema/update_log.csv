@@ -1,7 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/ontology/cellular_component_ontology,patch,Updated schema to json-schema draft-07,,
-module/protocol/channel,patch,Updated schema to json-schema draft-07,,
-module/protocol/imaging_target,patch,Updated schema to json-schema draft-07,,
-type/biomaterial/imaged_specimen,patch,Updated schema to json-schema draft-07,,
-type/file/image_file,patch,Updated schema to json-schema draft-07,,
-type/protocol/imaging/imaging_preparation_protocol,patch,Updated schema to json-schema draft-07,,

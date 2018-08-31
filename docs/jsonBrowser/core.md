@@ -7,6 +7,31 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
+## File core<a name='File core'></a>
+_A file entity contains information about a file produced from any process._
+
+Location: core/file/file_core.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+file_name | The filename of the file. | string | yes |  | File name |  | 
+file_format | The format of the file. | string | yes |  | File format |  | fastq.gz
+checksum | MD5 checksum of the file. | string | no |  | Checksum |  | 
+
+## Protocol core<a name='Protocol core'></a>
+_A protocol entity contains information about an intended protocol that was followed in the project._
+
+Location: core/protocol/protocol_core.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+protocol_id | A unique ID for the protocol. | string | yes |  | Protocol ID |  | 
+protocol_name | A short, descriptive name for the protocol that need not be unique. | string | no |  | Protocol name |  | 
+protocol_description | A general description of the protocol. | string | no |  | Protocol description |  | 
+publication_doi | The publication digital object identifier (doi) for the protocol. | string | no |  | Publication DOI |  | 10.1101/193219
+protocols_io_doi | The protocols.io digital object identifier (doi) for the protocol. | string | no |  | protocols.io DOI |  | 10.17504/protocols.io.mgjc3un
+document | A filename of a PDF document containing the details of the protocol. | string | no |  | Document filename |  | my_cool_protocol.pdf
+
 ## Project core<a name='Project core'></a>
 _A project entity contains information about the overall project._
 
@@ -25,14 +50,14 @@ Location: core/biomaterial/biomaterial_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-insdc_biomaterial | An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRS, SRS, or ERS. | string | no |  | INSDC ID |  | SRS0000000
-supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | 
+biomaterial_id | A unique ID for the biomaterial. | string | yes |  | Biomaterial ID |  | 
+biomaterial_name | A short, descriptive name for the biomaterial that need not be unique. | string | no |  | Biomaterial name |  | 
 biomaterial_description | A general description of the biomaterial. | string | no |  | Biomaterial description |  | 
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array | yes |  | NCBI taxon ID |  | 9606
-biomaterial_name | A short, descriptive name for the biomaterial that need not be unique. | string | no |  | Biomaterial name |  | 
-biomaterial_id | A unique ID for the biomaterial. | string | yes |  | Biomaterial ID |  | 
-biosd_biomaterial | A DDBJ, NCBI, or EMBL-EBI BioSample ID. Accession must start with SAMD, SAMN, or SAME. | string | no |  | BioSample ID |  | SAMN00000000
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele
+supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | 
+biosd_biomaterial | A DDBJ, NCBI, or EMBL-EBI BioSample ID. Accession must start with SAMD, SAMN, or SAME. | string | no |  | BioSample ID |  | SAMN00000000
+insdc_biomaterial | An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRS, SRS, or ERS. | string | no |  | INSDC ID |  | SRS0000000
 
 ## Process core<a name='Process core'></a>
 _A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity._
@@ -41,34 +66,9 @@ Location: core/process/process_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-operator | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1
-process_name | A short, descriptive name for the process that need not be unique. | string | no |  | Process name |  | 
 process_id | A unique ID for the process. | string | yes |  | Process ID |  | 
-process_location | Location where the process took place. | string | no |  | Process location |  | Wellcome Trust Sanger Institute
+process_name | A short, descriptive name for the process that need not be unique. | string | no |  | Process name |  | 
 process_description | A general description of the process. | string | no |  | Process description |  | 
-
-## Protocol core<a name='Protocol core'></a>
-_A protocol entity contains information about an intended protocol that was followed in the project._
-
-Location: core/protocol/protocol_core.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-protocol_name | A short, descriptive name for the protocol that need not be unique. | string | no |  | Protocol name |  | 
-protocols_io_doi | The protocols.io digital object identifier (doi) for the protocol. | string | no |  | protocols.io DOI |  | 10.17504/protocols.io.mgjc3un
-document | A filename of a PDF document containing the details of the protocol. | string | no |  | Document filename |  | my_cool_protocol.pdf
-protocol_description | A general description of the protocol. | string | no |  | Protocol description |  | 
-publication_doi | The publication digital object identifier (doi) for the protocol. | string | no |  | Publication DOI |  | 10.1101/193219
-protocol_id | A unique ID for the protocol. | string | yes |  | Protocol ID |  | 
-
-## File core<a name='File core'></a>
-_A file entity contains information about a file produced from any process._
-
-Location: core/file/file_core.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-file_format | The format of the file. | string | yes |  | File format |  | fastq.gz
-checksum | MD5 checksum of the file. | string | no |  | Checksum |  | 
-file_name | The filename of the file. | string | yes |  | File name |  | 
+process_location | Location where the process took place. | string | no |  | Process location |  | Wellcome Trust Sanger Institute
+operator | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1
 
