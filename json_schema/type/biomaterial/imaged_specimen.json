@@ -60,7 +60,7 @@
             "description": "Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample.",
             "type": "array",
             "items": {
-                "$ref": "module/ontology/organ_part_ontology.json "
+                "$ref": "module/ontology/organ_part_ontology.json"
             },
             "user_friendly": "Internal tissue structures"
         }
