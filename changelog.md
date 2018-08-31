@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.3.0] - 2018-08-31
+### Removed
+Removed differentiation from 7 fields. Fixes #517
+
 ### [type/protocol/analysis/analysis_protocol.json - v8.0.3] - 2018-08-31
 ### Added
 Added user-friendly name to some properties
