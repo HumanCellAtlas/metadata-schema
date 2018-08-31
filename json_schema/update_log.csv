@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/biomaterial_collection/differentiation_protocol,major,Removed differentiation from 8 fields,,
+type/protocol/biomaterial_collection/differentiation_protocol,minor,Removed differentiation from 7 fields. Fixes #517,,
