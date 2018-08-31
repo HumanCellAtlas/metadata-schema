@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about a tissue specimen after it has been sectioned and prepared for imaging.",
     "additionalProperties": false,
     "required": [
