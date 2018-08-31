@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Information on how a pluripotent cell is differentiated to a desired cell type or organoid.",
+    "description": "Information about how a cell is differentiated to a desired cell type or organoid.",
     "additionalProperties": false,
     "required": [
       "describedBy",
@@ -8,7 +8,8 @@
       "protocol_core",
       "differentiation_method"
     ],
-    "title": "differentiation_protocol",
+    "title": "Differentiation protocol",
+    "name": "differentiation_protocol",
     "type": "object",
     "properties": {
         "describedBy": {

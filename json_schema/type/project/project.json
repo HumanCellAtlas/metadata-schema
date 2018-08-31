@@ -6,7 +6,8 @@
         "describedBy",
         "schema_type"
     ],
-    "title": "project",
+    "title": "Project",
+    "name": "project",
     "type": "object",
     "properties": {
         "describedBy":  {

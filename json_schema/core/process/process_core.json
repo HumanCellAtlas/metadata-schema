@@ -5,7 +5,8 @@
     "required": [
         "process_id"
     ],
-    "title": "process_core",
+    "title": "Process core",
+    "name": "process_core",
     "type": "object",
     "properties": {
         "describedBy": {

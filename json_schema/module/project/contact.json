@@ -6,7 +6,8 @@
         "contact_name",
         "institution"
     ],
-    "title": "contact",
+    "title": "Contact",
+    "name": "contact",
     "type": "object",
     "properties": {
         "describedBy": {

@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "mass_unit_ontology",
+    "title": "Mass unit ontology",
+    "name": "mass_unit_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {

@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "enrichment_ontology",
+    "title": "Enrichment ontology",
+    "name": "enrichment_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
