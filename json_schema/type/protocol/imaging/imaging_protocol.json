@@ -131,7 +131,7 @@
             "description": "Information about each channel used in the imaging protocol.",
             "type": "array",
             "items": {
-                "$ref": "/module/protocol/channel.json"
+                "$ref": "module/protocol/channel.json"
             },
             "user_friendly": "Channel"
         },
@@ -139,7 +139,7 @@
             "description": "Information about each imaging target in the imaging experiment.",
             "type": "array",
             "items": {
-                "$ref": "/module/protocol/imaging_target.json"
+                "$ref": "module/protocol/imaging_target.json"
             },
             "user_friendly": "Imaging target"
         }
