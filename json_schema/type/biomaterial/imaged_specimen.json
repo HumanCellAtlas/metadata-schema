@@ -53,7 +53,7 @@
         "imaged_slice_thickness": {
             "description": "Imaged slice thickness in micrometres.",
             "type" : "number",
-            "example": "3",
+            "example": "14",
             "user_friendly": "Imaged slice thickness"
         },
         "internal_anatomical_structures": {
