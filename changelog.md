@@ -7,6 +7,38 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/cellular_component_ontology.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [module/ontology/microscopy_ontology.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [module/protocol/imaging_target.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [module/protocol/channel.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/biomaterial/imaged_specimen.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/file/image_file.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v1.0.0] - 2018-08-31
+### Added
+Added new schema
+
+### [type/protocol/imaging/imaging_protocol.json - v8.0.0] - 2018-08-31
+### Added
+Added several new fields including new required fields to address imaging use cases
+
 ### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.3.0] - 2018-08-31
 ### Removed
 Removed differentiation from 7 fields. Fixes #517

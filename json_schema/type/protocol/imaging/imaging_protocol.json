@@ -6,9 +6,16 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "protocol_type"
+        "protocol_type",
+        "microscopy_technique",
+        "magnification",
+        "numerical_aperture",
+        "overlapping_tiles",
+        "channel",
+        "imaging_target",
+        "pixel_size"
     ],
-    "title": "Imaging protocol",
+    "title": "Imaging Protocol",
     "name": "imaging_protocol",
     "type": "object",
     "properties": {
@@ -40,65 +47,101 @@
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
-         "embedding": {
-            "description": "Description of embedding conditions.",
+        "microscope_setup_description": {
+            "description": "Description of the microscope setup including manufacturer and model information about the stand, camera and objective.",
             "type": "string",
-            "user_friendly": "Embedding conditions"
+            "user_friendly": "Microscope setup description",
+            "example": "Motorized stage (SCAN IM 112 × 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus)."
          },
-         "exposure_time": {
-            "description": "Exposure time - as a floating point number - in seconds.",
-            "type": "number",
-            "maximum": 1000,
-            "minimum": 1e-9,
-            "user_friendly": "Exposure time"
-         },
-         "field_counts": {
-            "description": "Number of fields in x and y dimensions.",
-            "type": "array",
-            "items": {
-                "type": "integer"
-            },
-            "user_friendly": "Field count"
-         },
-         "field_microns": {
-            "description": "Microns covered by a field in x, y, and z. Z includes all focal planes in a single file.",
-            "type": "array",
-            "items": {
-                "type": "integer"
-            },
-            "user_friendly": "Field microns"
-         },
-         "field_resolution": {
-            "description": "x, y, and z (number of focal planes) resolution of an individual field.",
-            "type": "array",
-            "items": {
-                "type": "integer"
-            },
-            "user_friendly": "Field resolution"
-         },
-         "fixation": {
-            "description": "Description of fixation conditions.",
-            "type": "string",
-            "user_friendly": "Fixation"
-         },
-         "microscope": {
-            "description": "Microscope used for imaging.",
-            "enum": [
-                "generic confocal",
-                "generic two photon"
-            ],
-            "user_friendly": "Microscope"
-         },
-         "probes": {
-            "description": "A file containing information on probe sequence, genes they cover, and colors.",
-            "type": "string",
-            "user_friendly": "Probes"
-         },
-        "protocol_type": {
-            "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+        "microscopy_technique": {
+            "description": "The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
             "type": "object",
-            "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Protocol type"
+            "$ref": "module/ontology/microscopy_ontology.json",
+            "user_friendly": "Microscopy technique"
+        },
+        "magnification": {
+            "description": "Magnification of the objective used for imaging.",
+            "type": "string",
+            "user_friendly": "Magnification",
+            "example": "60x"
+         },
+        "numerical_aperture": {
+            "description": "Numerical aperture of the objective.",
+            "type": "number",
+            "user_friendly": "Numerical aperture",
+            "example": "1.3"
+         },
+        "immersion_medium_type": {
+            "description": "Immersion medium used for imaging.",
+            "type": "string",
+            "user_friendly": "Immersion medium",
+            "example": "oil"
+         },
+        "immersion_medium_refractive_index": {
+            "description": "Refractive index of the immersion medium used for imaging.",
+            "type": "number",
+            "user_friendly": "Refractive index of the immersion medium",
+            "example": "1.5"
+         },
+        "pixel_size": {
+            "description": "Pixel size in nanometres (scaling factor).",
+            "type": "number",
+            "user_friendly": "Pixel size",
+            "example": "109"
+         },
+        "number_of_tiles": {
+            "description": "Number of XY tiles in the experiment.",
+            "type": "integer",
+            "user_friendly": "Number of tiles",
+            "example": "2000"
+         },
+        "tile_size_y": {
+            "description": "Y size of the tile in micrometres.",
+            "type": "number",
+            "user_friendly": "Tile size Y"
+         },
+        "tile_size_x": {
+            "description": "X size of the tile in micrometres.",
+            "type": "number",
+            "user_friendly": "Tile size X"
+         },
+        "z_stack_step_size": {
+            "description": "Z-stack step size in nanometres.",
+            "type": "number",
+            "user_friendly": "Z stack step size",
+            "example": "200"
+         },
+        "number_of_z_steps": {
+            "description": "Number of steps in a Z stack.",
+            "type": "integer",
+            "user_friendly": "Number of Z steps",
+            "example": "40"
+         },
+        "overlapping_tiles": {
+            "description": "Were tiles collected with overlap?",
+            "type": "string",
+            "user_friendly": "Overlapping tiles?",
+            "example": "no",
+            "enum": [
+                "yes",
+                "no"
+            ]
+         },
+        "channel": {
+            "description": "Information about each channel used in the imaging protocol.",
+            "type": "array",
+            "items": {
+                "$ref": "module/protocol/channel.json"
+            },
+            "user_friendly": "Channel"
+        },
+        "imaging_target": {
+            "description": "Information about each imaging target in the imaging experiment.",
+            "type": "array",
+            "items": {
+                "$ref": "module/protocol/imaging_target.json"
+            },
+            "user_friendly": "Imaging target"
         }
     }
 }

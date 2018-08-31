@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Information about a single microscope channel.",
+    "additionalProperties": false,
+    "required": [
+        "assay_type",
+        "multiplexed",
+        "channel"
+    ],
+    "title": "Imaging target",
+    "name": "imaging_target",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/protocol/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaging_target"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "target_molecule_name": {
+            "description": "The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook.",
+
+            "type": "string",
+            "example": "ACTA1",
+            "user_friendly": "Target molecule name"
+        },
+        "target_molecule_ID": {
+            "description": "An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot).",
+            "type": "string",
+            "example": "CHEBI:85345, ensembl_9606",
+            "user_friendly": "Target molecule identifier."
+        },
+        "target_subcellular_structure": {
+            "description": "Target subcellular structure. This should be a term from the GO cell component ontology.",
+            "type": "object",
+            "$ref": "module/ontology/cellular_component_ontology.json",
+            "user_friendly": "Target subcellular structure"
+        },
+        "reagent_name": {
+            "description": "Name of reagent used to detect target.",
+            "type": "string",
+            "user_friendly": "Reagent name"
+        },
+        "purchased_reagent_details": {
+            "description": "Information describing purchased reagent used to detect target.",
+            "type": "object",
+            "$ref": "module/process/purchased_reagents.json",
+            "user_friendly": "Purchased reagent details"
+        },
+        "probe_sequence": {
+            "pattern": "[ATGCUatgcu]+",
+            "description": "Sequence of a probe used to detect target.",
+            "type": "string",
+            "user_friendly": "Probe sequence"
+        },
+        "fluorophore": {
+            "description": "Fluorophore used to detect target in non-multiplexed experiments.",
+            "type": "string",
+            "example": "FITC",
+            "user_friendly": "Fluorophore"
+        },
+        "assay_type": {
+            "description": "Type of assay used to detect target.",
+            "type": "object",
+            "$ref": "module/ontology/process_type_ontology.json",
+            "example": "MERFISH, smFISH, immunofluorescence, fluorescent cell stain",
+            "user_friendly": "Assay type"
+        },
+        "multiplexed": {
+            "description": "Were multiple targets detected simultaneously in one channel? Should be yes or no.",
+            "type": "string",
+            "enum":[
+                "yes",
+                "no"
+            ],
+            "example": "yes",
+            "user_friendly": "Is this a multiplexed experiment?"
+        },
+        "channel": {
+            "description": "Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab.",
+            "type": "string",
+            "example": "far red",
+            "user_friendly": "Channel"
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
