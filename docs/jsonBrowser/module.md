@@ -14,11 +14,11 @@ Location: module/protocol/channel.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-channel_name | User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book. | string | yes |  | Channel name |  | far red
+channel_name | User given name.  If there is an accompanying codebook, this name should correspond to a channel name used in the codebook. | string | yes |  | Channel name |  | far red
 excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
 filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
 multiplexed | Were multiple targets detected simultaneously in this channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
-target_fluorophore | The name(s) of the fluorophore(s) this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
+target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
 exposure_time | Acquisition time for a single image per channel in miliseconds | number | yes |  | Exposure time |  | 400
 
 ## Imaging target<a name='Imaging target'></a>

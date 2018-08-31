@@ -25,7 +25,7 @@
             "example": "4.6.1"
         },
         "channel_name": {
-            "description": "User given name e.g. blue.  If there is an accompanying code book, the name here should correspond to a channel number used in the code book.",
+            "description": "User given name.  If there is an accompanying codebook, this name should correspond to a channel name used in the codebook.",
             "type": "string",
             "example": "far red",
             "user_friendly": "Channel name"
@@ -53,7 +53,7 @@
             "user_friendly": "Is this a multiplexed experiment?"
         },
         "target_fluorophore": {
-            "description": "The name(s) of the fluorophore(s) this channel is designed to assay.",
+            "description": "The name of the fluorophore this channel is designed to assay.",
             "type": "string",
             "example": "Alexa 647",
             "user_friendly": "Target fluorophore"
