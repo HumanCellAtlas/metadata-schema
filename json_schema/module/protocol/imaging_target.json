@@ -23,7 +23,8 @@
             "example": "4.6.1"
         },
         "target_molecule_name": {
-            "description": "The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying code book, the name here should correspond to the target name used in the code book.",
+            "description": "The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook.",
+
             "type": "string",
             "example": "ACTA1",
             "user_friendly": "Target molecule name"
@@ -46,14 +47,14 @@
             "user_friendly": "Reagent name"
         },
         "purchased_reagent_details": {
-            "description": "Name of reagent used to detect target.",
+            "description": "Information describing purchased reagent used to detect target.",
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Purchased reagent details"
         },
         "probe_sequence": {
             "pattern": "[ATGCUatgcu]+",
-            "description": "Sequence of a probe used to capture the target.",
+            "description": "Sequence of a probe used to detect target.",
             "type": "string",
             "user_friendly": "Probe sequence"
         },
@@ -64,21 +65,21 @@
             "user_friendly": "Fluorophore"
         },
         "assay_type": {
-            "description": "Type of assay used to detect target e.g. MERFISH.",
+            "description": "Type of assay used to detect target.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "example": "MerFish, smFISH, immunofluorescence, fluorescent cell stain",
+            "example": "MERFISH, smFISH, immunofluorescence, fluorescent cell stain",
             "user_friendly": "Assay type"
         },
         "multiplexed": {
-            "description": "Is this target part of a multiplexed experiment? Should be yes or no.",
+            "description": "Were multiple targets detected simultaneously in one channel? Should be yes or no.",
             "type": "string",
             "enum":[
                 "yes",
                 "no"
             ],
             "example": "yes",
-            "user_friendly": "Multiplexed?"
+            "user_friendly": "Is this a multiplexed experiment?"
         },
         "channel": {
             "description": "Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab.",
