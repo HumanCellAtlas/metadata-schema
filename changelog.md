@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/analysis/analysis_protocol.json - v8.0.3] - 2018-08-31
+### Added
+Added user-friendly name to some properties
+
+### [type/process/analysis/analysis_process.json - v8.0.3] - 2018-08-31
+### Added
+Added user-friendly name to some properties
+
 ### [core/biomaterial/biomaterial_core.json - v7.0.3] - 2018-08-31
 ### Added
 Added schema name. Updated schema title. Fixes #501
