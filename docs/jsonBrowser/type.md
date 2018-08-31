@@ -263,7 +263,7 @@ provenance | Provenance information provided by the system. | object | no | [See
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 microscope_setup_description | Description of the microscope setup including manufacturer and model information about the stand, camera and objective. | string | no |  | Microscope setup description |  | Motorized stage (SCAN IM 112 × 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus).
 microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
-magnification | Magnification used for imaging. | string | yes |  | Magnification |  | 60x
+magnification | Magnification of the objective used for imaging. | string | yes |  | Magnification |  | 60x
 numerical_aperture | Numerical aperture of the objective. | number | yes |  | Numerical aperture |  | 1.3
 immersion_medium_type | Immersion medium used for imaging. | string | no |  | Immersion medium |  | oil
 immersion_medium_refractive_index | Refractive index of the immersion medium used for imaging. | number | no |  | Refractive index of the immersion medium |  | 1.5

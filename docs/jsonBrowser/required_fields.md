@@ -133,7 +133,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
 microscopy_technique | The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
-magnification | Magnification used for imaging. | string |  | Magnification |  | 60x
+magnification | Magnification of the objective used for imaging. | string |  | Magnification |  | 60x
 numerical_aperture | Numerical aperture of the objective. | number |  | Numerical aperture |  | 1.3
 pixel_size | Pixel size in nanometres (scaling factor). | number |  | Pixel size |  | 109
 overlapping_tiles | Were tiles collected with overlap? | string |  | Overlapping tiles? | yes, no | no

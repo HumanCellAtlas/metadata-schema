@@ -60,7 +60,7 @@
             "user_friendly": "Microscopy technique"
         },
         "magnification": {
-            "description": "Magnification used for imaging.",
+            "description": "Magnification of the objective used for imaging.",
             "type": "string",
             "user_friendly": "Magnification",
             "example": "60x"
