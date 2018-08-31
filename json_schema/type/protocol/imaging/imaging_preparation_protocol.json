@@ -92,7 +92,8 @@
         "fiducial_marker": {
             "description": "Fiducial markers for the alignment of images taken across multiple rounds of imaging.",
             "type" : "string",
-            "user_friendly": "Fiducial marker"
+            "user_friendly": "Fiducial marker",
+            "example": "beads"
         },
         "expansion_factor": {
             "description": "Factor by which the imaged tissue was expanded.",
