@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "cellular_component_ontology",
+    "title": "Cellular component ontology",
+    "name": "cellular_component_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {
