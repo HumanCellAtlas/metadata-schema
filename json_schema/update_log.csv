@@ -1,4 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/ontology/cellular_component_ontology,patch,Fixed name/title mix-up bug,,
-module/ontology/microscopy_ontology,patch,Fixed name/title mix-up bug,,
-type/file/supplementary_file,patch,Fixed name/title mix-up bug,,
