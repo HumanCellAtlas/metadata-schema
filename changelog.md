@@ -7,6 +7,26 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/cellular_component_ontology.json - v1.0.2] - 2018-09-04
+### Fixed
+Fixed name/title mix-up bug
+
+### [module/ontology/microscopy_ontology.json - v1.0.1] - 2018-09-04
+### Fixed
+Fixed name/title mix-up bug
+
+### [type/file/supplementary_file.json - v1.1.4] - 2018-09-04
+### Fixed
+Fixed name/title mix-up bug
+
+### [module/protocol/imaging_target.json - v1.0.2] - 2018-09-04
+### Fixed
+Fixed name/title mix-up bug
+
+### [type/protocol/imaging/imaging_protocol.json - v8.0.2] - 2018-09-04
+### Fixed
+Fixed name/title mix-up bug
+
 ### [module/ontology/cellular_component_ontology.json - v1.0.1] - 2018-08-31
 ### Updated
 Updated schema to json-schema draft-07
