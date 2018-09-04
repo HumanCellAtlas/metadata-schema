@@ -167,12 +167,14 @@ The following attributes are required for each metadata schema in the HCA metada
 
 ## Field formatting
 
-Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. To help chose field names that are both clear and brief, it is vital to consider the context in which field names are referred. In structured programming languages, an *unqualified* field name is a name local to its class/context (in this case, to its schema). When combined with its class/context (in this case, to the schema name), an unqualified field name is considered a *qualified* field name. Qualified field names are usually expressed as a concatenation of the containing class name and the unqualified field name. For example:
+Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. To help chose field names that are both clear and brief, it is vital to consider the context in which field names are referred. In structured programming languages, an *unqualified* field name is a name local to its class/context (in this case, to its schema). When combined with its class/context (in this case, with its schema name), an unqualified field name is considered a *qualified* field name. Qualified field names are usually expressed as a concatenation of the containing class name and the unqualified field name. For example:
     
 > HCA unqualified field name: `diseases`
 >
 > HCA qualified field name: `donor_organism.diseases`\
 > HCA qualified field name: `specimen_from_organism.diseases`
+
+In the HCA DCP, qualified field names are used by the Ingestion Service to convert metadata spreadsheets to JSON, by the Data Store Service (DSS) to index JSON documents, and by the Secondary Analysis Service and Data Browser to query for metadata in the DSS. Unqualified field names are not used in isolation by any DCP component, although the corresponding *user-friendly* names (see below) are used in the metadata spreadsheet, the Data Browser, and the Metadata Dictionary on the Data Portal. 
 
 Some principles the HCA Metadata Standard follows regarding field and schema names are:
 
@@ -184,15 +186,18 @@ Some principles the HCA Metadata Standard follows regarding field and schema nam
 
 1. *Unqualified field names should not contain context.* Unqualified field names do not stand alone, meaning they are not accessed or used outside of their context (*i.e.* their schema). Therefore, additional context should be removed from unqualified field names unless there is a justification for including it<sup>**</sup>. For example:
 
-    > Unqualified field name for media in a differentiation protocol\
+    > Unqualified field name for media in a differentiation protocol:\
     > Correct: `media`\
     > Incorrect: `differentiation_media`
     >    
-    > Corresponding qualified field name\
+    > Corresponding qualified field name:\
     > Correct: `differentiation_protocol.media`\
     > Incorrect: `differentiation_protocol.differentiation_media`
     
-**MAYBE SPELL OUT THESE CAVEATS
+    **Potential caveats for including context in an unqualified field name can include:
+    
+    1. There are two or more similar field names in a single schema, and including context helps disambiguate between the similar field (*e.g.* `organism_age` and `gestational_age` in the `donor_organism` schema).
+    1. The field name is too ambiguous or overloaded, and including context helps reduce confusion about the field name's usage (*e.g.* `type` or `method` fields in )
 
 The section [Field name conventions](#field-name-conventions) provides guidelines to use when defining names.
 
