@@ -184,12 +184,12 @@ Some principles the HCA Metadata Standard follows regarding field and schema nam
 
 1. *Unqualified field names should not contain context.* Unqualified field names do not stand alone, meaning they are not accessed or used outside of their context (*i.e.* their schema). Therefore, additional context should be removed from unqualified field names unless there is a justification for including it<sup>**</sup>. For example:
 
-    > Unqualified field name for media in a differentiation protocol
-    > Correct: `media`
+    > Unqualified field name for media in a differentiation protocol\
+    > Correct: `media`\
     > Incorrect: `differentiation_media`
     >    
-    > Corresponding qualified field name
-    > Correct: `differentiation_protocol.media`
+    > Corresponding qualified field name\
+    > Correct: `differentiation_protocol.media`\
     > Incorrect: `differentiation_protocol.differentiation_media`
     
 **MAYBE SPELL OUT THESE CAVEATS
