@@ -373,7 +373,7 @@ The following attributes are required for each metadata field in an HCA metadata
             ...
         }
 
-1. **guidelines:** Instructions for how to fill in a valid value for the metadata field. This attribute is can be included on an as-needed basis when further clarification for how to fill in a metadata field would be helpful to data contributors. The *guidelines* value will appear in the metadata spreadsheet. 
+1. **guidelines:** Instructions for how to fill in a valid value for the metadata field. This attribute can be included on an as-needed basis when further clarification for how to fill in a metadata field would be helpful to data contributors. In otherwords, when the description and example attributes are not clear enough. The *guidelines* value will appear in the metadata spreadsheet. 
 
     Example:
     
@@ -384,8 +384,6 @@ The following attributes are required for each metadata field in an HCA metadata
             "guidelines": "Include street name and number, city, country division, and postal code.",
             "user_friendly": "Street address"
         }
-
-    **mf**: We might merge the example and guidelines attributes into just the example attribute. We need to discuss use cases for separating them or keeping them together. 
 
 ## General rules
 
