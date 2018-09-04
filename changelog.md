@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/supplementary_file.json - v1.1.5] - 2018-09-04
+### Added
+Added missing provenance field
+
 ### [module/ontology/cellular_component_ontology.json - v1.0.2] - 2018-09-04
 ### Fixed
 Fixed name/title mix-up bug
