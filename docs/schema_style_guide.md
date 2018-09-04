@@ -167,11 +167,27 @@ The following attributes are required for each metadata schema in the HCA metada
 
 ## Field formatting
 
-Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. Some principles the HCA Metadata Standard follows regarding naming of fields are:
+Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. In order to help chose field names that are both clear and brief, it is vital to consider the context in which field names are referred. In structured programming languages, an *unqualified* field name is a name local to its class/context (in this case, to its schema). When combined with its class/context (in this case, to the schema name), an unqualified field name is considered a *qualified* field name. Qualified field names are usually expressed as a concatenation of the containing class name and the unqualified field name. For example:
+    
+    HCA unqualified field name: `diseases`
+    
+    HCA qualified field name: `donor_organism.diseases` and `specimen_from_organism.diseases`
 
-1. *Field names are programming constructs, not GUI constructs.* Field names are only intended for use by programmers, including those writing textual queries. Attempting to have a field name that is both a good GUI name and a good programmatic name makes the naming problem far more difficult. For example, simple field name changes to make a GUI clearer creates complex, breaking changes for any code accessing the data structures. It also makes GUI implementation more difficult as often one needs different labels for data depending on how data is being presented. The schema object and field names should be keys to looking up natural language documentation.
+Some principles the HCA Metadata Standard follows regarding field and schema names are:
 
-1. *Field names do not exist outside of the context of their containing structure.* Fields in objects are not standalone, and the field names should not redundantly contain the structure name. **NB** This principle may change.
+1. *Field names and schema names are programming constructs, not GUI constructs.* Field and schema names are only intended for use by programmers, including those writing textual queries. Attempting to have a field name that is both a good GUI name and a good programmatic name makes the naming problem more difficult. For example, field name changes to make a GUI clearer potentially creates breaking changes for any code accessing the data structures. Additionally, GUI implementation from field and schemas names is difficult as different labels for data are often needed depending on how data are being presented. Therefore, field and schemas names are used as keys to looking up natural language documentation (*e.g.* to look up schema titles and field user-friendly names).
+
+1. *Unqualified field names need to be unique within a schema, but do not need to be globally unique among all schemas.* Within a single schema document, no two field names should be identical. However, the same field name can exist in two different schemas, as their qualified names will be different. For example, the field name `diseases` can exist in both the `donor_organism.json` and `specimen_from_organism.json` schemas because the qualified field names would be `donor_organism.diseases` and `specimen_from_organism.diseases`, respectively.
+
+1. *Qualified field names need to be unique among all schemas.* Fully qualified field names need to be globally unique across the HCA Metadata Standard. Qualified field names are used by the HCA DCP software, including for building queries to mine the Data Store, and thus need to be unique so that only a single field is accessed/returned for a given qualified field name request.
+
+1. *Unqualified field names should not contain context.* Unqualified field names do not stand alone, meaning they are not accessed or used outside of their context (*i.e.* their schema). Therefore, additional context should be removed from unqualified field names unless there is a justification for including it<sup>**</sup>. For example:
+
+    Unqualified field name for media in a differentiation protocol should be: `media` not `differentiation_media`
+    
+    Because the qualified field name would be: `differentiation_protocol.media`
+    
+**MAYBE SPELL OUT THESE CAVEATS
 
 The section [Field name conventions](#field-name-conventions) provides guidelines to use when defining names.
 
@@ -503,4 +519,4 @@ The advantages of using an HCA ontology over an *enum* include:
 Instances when an *enum* is preferred over an ontology include:
 
 1. The list of valid values is short and unlikely to change. For example, the valid values for the `donor_organism.is_living` field will always be "yes", "no", or "unknown".
-1. The list of valid values is too diverse to be organized into a meaningful ontology or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with one of the HCA ontologists!
+1. The list of valid values is too diverse to be organized into a meaningful ontology or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with one of the HCA ontologists.
