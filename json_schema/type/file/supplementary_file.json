@@ -7,8 +7,8 @@
         "schema_type",
         "file_core"
     ],
-    "title": "supplementary_file",
-    "name": "Supplementary file",
+    "title": "Supplementary file",
+    "name": "supplementary_file",
     "type": "object",
     "properties": {
         "describedBy": {
