@@ -83,7 +83,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
 
-1. **title:** A title for the schema. The *title* is the name of the schema which should be in all lowercase and snake_case. **WHERE DO WE CURRENTLY USE THIS?**
+1. **title:** A title for the schema. The *title* is the user-friendly name of the schema which should be in sentence case. This attribute is displayed in the metadata spreadsheet and the Data Browser.
 
     Example:
     
@@ -97,7 +97,26 @@ The following attributes are required for each metadata schema in the HCA metada
                 "biomaterial_core",
                 "model_for_organ"
             ],
-            "title": "organoid",
+            "title": "Organoid",
+            ...
+        }
+
+1. **name:** A programmatic name for the schema. The *name* is the name of the schema which should be in all lowercase and snake_case. This attribute is used by the DCP software to identify the schema, and the *name* should match the filename of the schema absent the `.json` file extension.
+
+    Example:
+    
+        {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "description": "Information about an organoid biomaterial.",
+            "additionalProperties": false,
+            "required": [
+                "describedBy",
+                "schema_type",
+                "biomaterial_core",
+                "model_for_organ"
+            ],
+            "title": "Organoid",
+            "name": "organoid",
             ...
         }
 
@@ -115,7 +134,8 @@ The following attributes are required for each metadata schema in the HCA metada
                 "biomaterial_core",
                 "model_for_organ"
             ],
-            "title": "organoid",
+            "title": "Organoid",
+            "name": "organoid",
             "type": "object",
             "properties": {
                 ...
