@@ -163,7 +163,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
         
-    The specification for using the JSON `$id` keyword can be found [here](http://json-schema.org/latest/json-schema-core.html#rfc.section.8.2)
+    The `$id` attribute is a resolvable URL which points to the published schema hosted by the Human Cell Atlas. This attribute is inserted at build time as it must contain the version of the schema which is not defined within the schema document itself on GitHub. The list of latest schema versions is maintained in the `versions.json` file in GitHub, separate from the JSON schema documents themselves, in order to enable unit testing. The specification for using the JSON `$id` keyword can be found [here](http://json-schema.org/latest/json-schema-core.html#rfc.section.8.2)
 
 ## Field formatting
 
