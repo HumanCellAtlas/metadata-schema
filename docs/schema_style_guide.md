@@ -167,11 +167,12 @@ The following attributes are required for each metadata schema in the HCA metada
 
 ## Field formatting
 
-Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. In order to help chose field names that are both clear and brief, it is vital to consider the context in which field names are referred. In structured programming languages, an *unqualified* field name is a name local to its class/context (in this case, to its schema). When combined with its class/context (in this case, to the schema name), an unqualified field name is considered a *qualified* field name. Qualified field names are usually expressed as a concatenation of the containing class name and the unqualified field name. For example:
+Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. To help chose field names that are both clear and brief, it is vital to consider the context in which field names are referred. In structured programming languages, an *unqualified* field name is a name local to its class/context (in this case, to its schema). When combined with its class/context (in this case, to the schema name), an unqualified field name is considered a *qualified* field name. Qualified field names are usually expressed as a concatenation of the containing class name and the unqualified field name. For example:
     
-    HCA unqualified field name: `diseases`
-    
-    HCA qualified field name: `donor_organism.diseases` and `specimen_from_organism.diseases`
+> HCA unqualified field name: `diseases`
+>
+> HCA qualified field name: `donor_organism.diseases`\
+> HCA qualified field name: `specimen_from_organism.diseases`
 
 Some principles the HCA Metadata Standard follows regarding field and schema names are:
 
@@ -183,9 +184,9 @@ Some principles the HCA Metadata Standard follows regarding field and schema nam
 
 1. *Unqualified field names should not contain context.* Unqualified field names do not stand alone, meaning they are not accessed or used outside of their context (*i.e.* their schema). Therefore, additional context should be removed from unqualified field names unless there is a justification for including it<sup>**</sup>. For example:
 
-    Unqualified field name for media in a differentiation protocol should be: `media` not `differentiation_media`
-    
-    Because the qualified field name would be: `differentiation_protocol.media`
+    > Unqualified field name for media in a differentiation protocol should be: `media` not `differentiation_media`
+    >    
+    > Because the qualified field name should be: `differentiation_protocol.media` not `differentiation_protocol.differentiation_media`
     
 **MAYBE SPELL OUT THESE CAVEATS
 
