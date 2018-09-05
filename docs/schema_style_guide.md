@@ -519,7 +519,9 @@ The following conventions should be followed when defining a new field name or s
 
 ### Ontology vs. enum vs. free text
 
-Many fields in the HCA metadata standard benefit from using a controlled vocabulary to restrict valid values. Such restrictions benefit data consumers who might filter, search, or order fields based on values of interest. For example,  Using an ontology to define a set of valid values for a metadata field is preferred over using a JSON *enum* in most cases, provided that an appropriate ontology with good or full coverage is available.
+Metadata fields will benefit from using a controlled vocabulary to restrict valid values. Such restrictions enable data consumers to filter, search, or order fields based on values of interest without having to account for different values that mean the same thing. For example, the `genus_species` field benefits from using a controlled vocabulary so that all human data is annotated with `"genus_species": "Homo sapiens"` instead of with other possible values such as "Human" (colloquial term), "homo sapiens" (different case), "Homo sapeins" (misspelling), or "Hs" (shorthand). 
+
+The HCA Metadata Standard is committed to using controlled vocabularies - in the form of externally maintained **ontologies** and JSON **enums** - to standardize valid values for metadata fields. In most cases, using an ontology is preferred over using a JSON *enum* provided that an appropriate ontology with good or full coverage is available. 
 
 The advantages of using an HCA ontology over an *enum* include:
 
@@ -530,4 +532,7 @@ The advantages of using an HCA ontology over an *enum* include:
 Instances when an *enum* is preferred over an ontology include:
 
 1. The list of valid values is short and unlikely to change. For example, the valid values for the `donor_organism.is_living` field will always be "yes", "no", or "unknown".
-1. The list of valid values is too diverse to be organized into a meaningful ontology or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with one of the HCA ontologists.
+1. The list of valid values is short but too diverse to be organized into a meaningful ontology, or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with an HCA ontologist.
+
+Finally, if the list of valid values for a field is very long - for example more than ten valid values - and does not have an appropriate ontology, a free text field is preferred as it means data submitters will not need to constantly validate against the enum (which can be frustrating).
+
