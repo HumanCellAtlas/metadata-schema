@@ -166,7 +166,7 @@ The following attributes are required for each metadata schema in the HCA metada
         
     The `$id` attribute is a resolvable URL which points to the published schema hosted by the Human Cell Atlas. This attribute is inserted at build time as it must contain the version of the schema which is not defined within the schema document itself on GitHub. The list of latest schema versions is maintained in the `versions.json` file in GitHub, separate from the JSON schema documents themselves, in order to enable unit testing. The specification for using the JSON `$id` keyword can be found [here](http://json-schema.org/latest/json-schema-core.html#rfc.section.8.2)
 
-## Field style formatting
+## Field style and formatting
 
 Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. To help chose field names that are both clear and brief, it is vital to consider the context in which field names are referred. In structured programming languages, an *unqualified* field name is a name local to its class/context (in this case, to its schema). When combined with its class/context (in this case, with its schema name), an unqualified field name is considered a *qualified* field name. Qualified field names are usually expressed as a concatenation of the containing class name and the unqualified field name. For example:
     
