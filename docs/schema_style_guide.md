@@ -2,9 +2,9 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Schema conceptual model](#schema-conceptual-model)
-- [Schema formatting](#schema-formatting)
-- [Field formatting](#field-formatting)
+- [Schema model](#schema-model)
+- [Schema style and formatting](#schema-style-and-formatting)
+- [Field style and formatting](#field-style-and-formatting)
 - [General rules](#general-rules)
 
 ## Introduction
@@ -15,6 +15,7 @@ This document describes the style and formatting rules followed by the HCA Metad
 
 **What is in this document**
 - General style guidelines for naming and formatting for metadata schemas and fields
+- Rationale for why the guidelines were chosen
 
 **Who should be reading this document?**
 - HCA DCP developers
@@ -24,7 +25,7 @@ This document describes the style and formatting rules followed by the HCA Metad
 **What *isn't* in this document?**
 - Directions for [requesting or suggesting changes](contributing.md) to the metadata schema
 
-## Schema conceptual model
+## Schema model
 
 The JSON format that is the canonical representation of the HCA Metadata Standard is a programming language-neutral, persistent method of storing data structures. See [ECMA-404 The JSON Data Interchange Standard](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) specification for technical details of the format. JSON objects are analogous to C structs, objects in JAVA and Python, and to an extent, SQL tables. The design of JSON metadata objects follows the common approaches used in designing computational data structures for programmers. The schema is used to describe the contents of the JSON data objects for both programmatic access and human understanding.
 
@@ -32,7 +33,7 @@ The JSON schemas that make up the HCA Metadata Standard are publicly developed a
 
 As implemented for the HCA Metadata Standard, each JSON schema contains a set of related fields (also called properties). For example, the `cell_line.json` schema contains fields specific to describing cell lines. The following sections describe style and formatting rules followed by HCA metadata schemas and fields.
 
-## Schema formatting
+## Schema style and formatting
 
 The following attributes are required for each metadata schema in the HCA metadata standard. 
 
@@ -165,7 +166,7 @@ The following attributes are required for each metadata schema in the HCA metada
         
     The `$id` attribute is a resolvable URL which points to the published schema hosted by the Human Cell Atlas. This attribute is inserted at build time as it must contain the version of the schema which is not defined within the schema document itself on GitHub. The list of latest schema versions is maintained in the `versions.json` file in GitHub, separate from the JSON schema documents themselves, in order to enable unit testing. The specification for using the JSON `$id` keyword can be found [here](http://json-schema.org/latest/json-schema-core.html#rfc.section.8.2)
 
-## Field formatting
+## Field style formatting
 
 Naming fields in data structures is challenging because of the desire to optimize for both clarity to avoid ambiguity and brevity to avoid cumbersome code. To help chose field names that are both clear and brief, it is vital to consider the context in which field names are referred. In structured programming languages, an *unqualified* field name is a name local to its class/context (in this case, to its schema). When combined with its class/context (in this case, with its schema name), an unqualified field name is considered a *qualified* field name. Qualified field names are usually expressed as a concatenation of the containing class name and the unqualified field name. For example:
     
@@ -516,9 +517,9 @@ The following conventions should be followed when defining a new field name or s
             ...
         },
 
-### Ontology versus enum for a controlled vocabulary
+### Ontology vs. enum vs. free text
 
-Using an ontology to define valid values for a metadata field is preferred over using a JSON *enum* in most cases, provided that an appropriate ontology with good or full coverage is available.
+Many fields in the HCA metadata standard benefit from using a controlled vocabulary to restrict valid values. Such restrictions benefit data consumers who might filter, search, or order fields based on values of interest. For example,  Using an ontology to define a set of valid values for a metadata field is preferred over using a JSON *enum* in most cases, provided that an appropriate ontology with good or full coverage is available.
 
 The advantages of using an HCA ontology over an *enum* include:
 
