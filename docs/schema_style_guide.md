@@ -56,7 +56,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
 
-1. **additionalProperties:** Whether additional fields not in the schema will be allowed. The *additionalProperties* attribute should always be set to `false`. Currently, user-supplied fields are not accepted without consultation with the metadata team. The process for requesting updates to the Metadata Standard to include new fields is outlined in our contributing documentation [here](contributing.md#requesting-or-suggesting-changes-to-the-metadata-schema).
+1. **additionalProperties:** Whether additional fields not in the schema will be allowed. The *additionalProperties* attribute should always be set to `false`. Currently, user-supplied fields are not accepted without consultation. The metadata team actively encourages data contributors who want new fields to contact them so the new fields can be added to the schema following the process for requesting updates to the Metadata Standard to include new fields is outlined in our contributing documentation [here](contributing.md#requesting-or-suggesting-changes-to-the-metadata-schema).
 
     Example:
     
@@ -67,7 +67,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
 
-1. **required:** An array indicating which fields in the schema are required. If no fields are required, omit this attribute. Fields are determined to be required if they are necessary for downstream software components.
+1. **required:** An array indicating which fields in the schema are required. If no fields are required, omit this attribute. Fields are determined to be required if they are necessary to enable downstream analysis and visualization.
 
     Example:
     
@@ -281,7 +281,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
     **Special case: Ontology examples**
     
-    *Example* values can be supplied for fields that are governed by an ontology by including them in the ontology schema. The `text`, `ontology`, and `ontology_label` fields can all take *example* valid values. **N.B.** Currently, ontology *examples* are generally lacking, and an example valid ontology value is provided for the field that imports the ontology.
+    *Example* values can be supplied for fields that are governed by an ontology by including them in the ontology schema. The `text`, `ontology`, and `ontology_label` fields can all take *example* valid values.
     
     Example:
     
