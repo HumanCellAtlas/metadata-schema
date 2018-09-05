@@ -1,4 +1,4 @@
-# The Human Cell Atlas: Proposed Metadata Schema Style and Formatting Guide
+# The Human Cell Atlas: Metadata Schema Style and Formatting Guide
 
 ## Table of Contents
 - [Introduction](#introduction)
