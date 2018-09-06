@@ -535,4 +535,3 @@ Instances when an *enum* is preferred over an ontology include:
 1. The list of valid values is short but too diverse to be organized into a meaningful ontology, or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with an HCA ontologist.
 
 Finally, if the list of valid values for a field is very long - for example more than ten valid values - and does not have an appropriate ontology, a free text field is preferred as it means data submitters will not need to constantly validate against the enum (which can be frustrating).
-
