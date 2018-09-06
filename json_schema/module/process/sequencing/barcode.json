@@ -7,7 +7,8 @@
         "barcode_length",
         "barcode_read"
     ],
-    "title": "barcode",
+    "title": "Barcode",
+    "name": "barcode",
     "type": "object",
     "properties": {
         "describedBy":  {

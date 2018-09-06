@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "disease_ontology",
+    "title": "Disease ontology",
+    "name": "disease_ontology",
     "properties": {
         "describedBy":  {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/disease_ontology",
@@ -29,7 +30,7 @@
                 "classes": ["MONDO:0000001", "PATO:0000461"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": false
+                "include_self": true
             }
         },
         "ontology_label": {

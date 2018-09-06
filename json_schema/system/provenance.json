@@ -6,7 +6,8 @@
         "document_id",
         "submission_date"
     ],
-    "title": "provenance",
+    "title": "Provenance",
+    "name": "provenance",
 	"type": "object",
     "properties": {
         "describedBy":  {

@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "length_unit_ontology",
+    "title": "Length unit ontology",
+    "name": "length_unit_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {

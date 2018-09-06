@@ -2,7 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information specific to an organism that is a mouse (Mus musculus).",
     "additionalProperties": false,
-    "title": "mouse_specific",
+    "title": "Mouse-specific",
+    "name": "mouse_specific",
     "type": "object",
     "properties": {
         "describedBy":  {

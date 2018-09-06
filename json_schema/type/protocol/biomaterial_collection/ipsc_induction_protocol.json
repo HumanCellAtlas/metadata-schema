@@ -1,14 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Contains information on how a sample was treated to become an induced pluripotent stem cell.",
+    "description": "Information about how a biomaterial is treated to become an induced pluripotent stem cell.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
         "protocol_core",
-        "induced_pluripotent_cell_induction_method"
+        "ipsc_induction_method"
     ],
-    "title": "ipsc_induction_protocol",
+    "title": "iPCS induction protocol",
+    "name": "ipsc_induction_protocol",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -39,7 +40,7 @@
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
-        "induced_pluripotent_cell_induction_method": {
+        "ipsc_induction_method": {
             "description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
             "type": "string",
             "enum": [
@@ -63,7 +64,7 @@
             "user_friendly": "Induction factors",
             "example": "POU5F1, SOX2, KLF4, c-MYC"
 	    },
-        "induced_pluripotent_cell_induction_kit": {
+        "ipsc_induction_kit": {
             "description": "Kit used to induce pluripotent stem cell generation.",
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
@@ -92,7 +93,7 @@
             "user_friendly": "Pluripotent vector removed?",
             "example": "Should be one of: yes, no, or unknown."
         },
-        "induced_pluripotent_cell_induction_produced_in_house": {
+        "ipsc_induction_produced_in_house": {
             "description": "Whether the induced pluripotent stem cell was prepared in-house.",
             "type": "boolean",
             "user_friendly": "iPSC prepared in-house?",

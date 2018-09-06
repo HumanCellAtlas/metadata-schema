@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "library_construction_ontology",
+    "title": "Library construction ontology",
+    "name": "library_construction_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",

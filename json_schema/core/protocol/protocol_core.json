@@ -5,7 +5,8 @@
     "required": [
         "protocol_id"
     ],
-    "title": "protocol_core",
+    "title": "Protocol core",
+    "name": "protocol_core",
     "type": "object",
     "properties": {
         "describedBy": {

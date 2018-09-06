@@ -8,7 +8,8 @@
         "biomaterial_core",
         "cell_line_type"
     ],
-    "title": "cell_line",
+    "title": "Cell line",
+    "name": "cell_line",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -77,9 +78,10 @@
                 "immortalized",
                 "stem cell-derived",
                 "synthetic",
-                "induced pluripotent"
+                "induced pluripotent",
+                "stem cell"
             ],
-            "example": "Should be one of: primary, immortalized, stem cell-derived, induced pluripotent, or synthetic.",
+            "example": "Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.",
             "user_friendly": "Cell line type"
         },
         "cell_morphology": {

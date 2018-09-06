@@ -6,7 +6,8 @@
         "biomaterial_id",
         "ncbi_taxon_id"
     ],
-    "title": "biomaterial_core",
+    "title": "Biomaterial core",
+    "name": "biomaterial_core",
     "type": "object",
     "properties": {
         "describedBy": {

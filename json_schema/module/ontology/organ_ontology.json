@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "organ_ontology",
+    "title": "Organ ontology",
+    "name": "organ_ontology",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
@@ -30,7 +31,7 @@
                 "classes": ["UBERON:0000062","UBERON:0000179"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": false
+                "include_self": true
             }
         },
         "ontology_label": {

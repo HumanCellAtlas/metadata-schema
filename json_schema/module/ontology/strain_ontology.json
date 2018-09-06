@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "strain_ontology",
+    "title": "Strain ontology",
+    "name": "strain_ontology",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
@@ -30,7 +31,7 @@
                 "classes": ["NCBITaxon:10090"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": false
+                "include_self": true
             }
         },
         "ontology_label": {

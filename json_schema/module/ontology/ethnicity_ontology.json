@@ -5,7 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "ethnicity_ontology",
+    "title": "Ethnicity ontology",
+    "name": "ethnicity_ontology",
     "properties": {
         "describedBy" : {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/ethnicity_ontology",
@@ -26,7 +27,7 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hancestro"],
-                "classes": ["hancestro:0004"],
+                "classes": ["HANCESTRO:0004"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false

@@ -2,7 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information relating to how a biomaterial was grown and/or maintained in a laboratory setting.",
     "additionalProperties": false,
-    "title": "growth_conditions",
+    "title": "Growth conditions",
+    "name": "growth_conditions",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -29,6 +30,12 @@
             "type": "string",
             "example": "lysogeny broth (LB) medium",
             "user_friendly": "Growth medium"
+        },
+        "culture_environment": {
+            "description": "Cell culture environment in which cells are grown.",
+            "type": "string",
+            "example": "adherent culture",
+            "user_friendly": "Culture environment"
         },
         "mycoplasma_testing_method": {
             "description": "The method by which the biomaterial was tested for mycoplasma contamination.",
