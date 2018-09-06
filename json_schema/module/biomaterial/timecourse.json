@@ -1,12 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information relating to a timecourse.",
     "additionalProperties": false,
     "required": [
         "timecourse_value",
         "timecourse_unit"
     ],
-    "title": "timecourse",
+    "title": "Timecourse",
+    "name": "timecourse",
     "type": "object",
     "properties": {
         "describedBy":  {

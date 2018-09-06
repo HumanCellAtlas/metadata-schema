@@ -1,8 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information specific to a donor that is a human (Homo sapiens).",
     "additionalProperties": false,
-    "title": "human_specific",
+    "title": "Human-specific",
+    "name": "human_specific",
     "type": "object",
     "properties": {
         "describedBy":  {

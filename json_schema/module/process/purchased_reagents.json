@@ -1,8 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information describing purchased kits or reagents used in a protocol.",
     "additionalProperties": false,
-    "title": "purchased_reagents",
+    "title": "Purchased reagents",
+    "name": "purchased_reagents",
     "type": "object",
     "properties": {
         "describedBy":  {

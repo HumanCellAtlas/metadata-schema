@@ -1,34 +1,33 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A term that may be associated with a process-related ontology term",
+    "description": "A term that may be associated with a microscopy-related ontology term",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "Sequencing ontology",
-    "name": "sequencing_ontology",
+    "title": "Microscopy ontology",
+    "name": "microscopy_ontology",
     "properties": {
-        "describedBy":  {
-            "description": "The URL reference to the schema.",
-            "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/sequencing_ontology"
+        "describedBy": {
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/microscopy_ontology",
+            "type": "string"
         },
         "schema_version": {
-            "description": "The version number of the schema in major.minor.patch format.",
+            "description": "Version number in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
         "text": {
-            "description": "The name of a sequencing approach being used.",
+            "description": "The name of the type of microscopy used in an imaging experiment.",
             "type": "string"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:efo"],
-                "classes": ["OBI:0000070"],
+                "ontologies" : ["obo:hcao", "obo:fbbi"],
+                "classes": ["FBbi:00000241"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false

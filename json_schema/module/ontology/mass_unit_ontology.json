@@ -1,11 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A term that may be associated with a cell type-related ontology term",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "mass_unit_ontology",
+    "title": "Mass unit ontology",
+    "name": "mass_unit_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {

@@ -1,11 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A term that may be associated with a biological macromolecule-related ontology term",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "biological_macromolecule_ontology",
+    "title": "Biological macromolecule ontology",
+    "name": "biological_macromolecule_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {

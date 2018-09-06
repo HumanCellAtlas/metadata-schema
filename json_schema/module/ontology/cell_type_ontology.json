@@ -1,11 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A term that may be associated with a cell type-related ontology term",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "cell_type_ontology",
+    "title": "Cell type ontology",
+    "name": "cell_type_ontology",
     "properties": {
         "describedBy":  {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cell_type_ontology",

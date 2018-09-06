@@ -1,11 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A term that may be associated with a process-related ontology term",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "process_type_ontology",
+    "title": "Process type ontology",
+    "name": "process_type_ontology",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",

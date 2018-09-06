@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about barcodes used in a protocol.",
     "additionalProperties": false,
     "required": [
@@ -7,7 +7,8 @@
         "barcode_length",
         "barcode_read"
     ],
-    "title": "barcode",
+    "title": "Barcode",
+    "name": "barcode",
     "type": "object",
     "properties": {
         "describedBy":  {

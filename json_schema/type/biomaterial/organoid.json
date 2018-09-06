@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about an organoid biomaterial.",
     "additionalProperties": false,
     "required": [
@@ -8,7 +8,8 @@
         "biomaterial_core",
         "model_for_organ"
     ],
-    "title": "organoid",
+    "title": "Organoid",
+    "name": "organoid",
     "type": "object",
     "properties": {
         "describedBy":  {
