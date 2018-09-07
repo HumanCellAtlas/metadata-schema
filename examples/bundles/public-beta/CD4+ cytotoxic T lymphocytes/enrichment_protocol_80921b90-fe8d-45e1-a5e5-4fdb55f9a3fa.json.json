@@ -1,0 +1,19 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_1",
+        "protocol_name": "PBMC Enrichment",
+        "protocol_description": "CD4 memory cell types were isolated from PBMCs and directly sorted by Flow cytometry into a 96-well plate wells with lysis buffer with RNAase inhibitor (Takara) - Described in Picelli et al. Nat Protoc. 2014, PMID:24385147. No particular cell growth procedure was required.",
+        "publication_doi": "10.1073/pnas.1305227110"
+    },
+    "enrichment_method": {
+        "text": "Ficoll-Hypaque method",
+        "ontology": "EFO:0009110"
+    },
+    "provenance": {
+        "document_id": "80921b90-fe8d-45e1-a5e5-4fdb55f9a3fa",
+        "submission_date": "2018-09-05T09:48:40.213Z",
+        "update_date": "2018-09-05T09:52:05.683Z"
+    }
+}
