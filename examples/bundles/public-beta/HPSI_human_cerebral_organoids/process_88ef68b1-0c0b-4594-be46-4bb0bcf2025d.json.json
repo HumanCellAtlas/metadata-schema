@@ -1,0 +1,12 @@
+{
+    "process_core": {
+        "process_id": "tech_rep_1"
+    },
+    "schema_type": "process",
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/process/6.0.2/process",
+    "provenance": {
+        "document_id": "88ef68b1-0c0b-4594-be46-4bb0bcf2025d",
+        "submission_date": "2018-09-05T09:25:02.691Z",
+        "update_date": "2018-09-05T09:25:10.851Z"
+    }
+}
