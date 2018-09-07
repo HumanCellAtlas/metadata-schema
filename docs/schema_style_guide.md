@@ -24,6 +24,8 @@ This document describes the style and formatting rules followed by the HCA Metad
 
 **What *isn't* in this document?**
 - Directions for [requesting or suggesting changes](contributing.md) to the metadata schema
+- Explanation of [how fields are determined to be core, type, or module fields](structure.md) (TBD)
+- Discussion of [reasons and rationale for implementation and design choices](rationale.md) for the metadata standard
 
 ## Schema model
 
