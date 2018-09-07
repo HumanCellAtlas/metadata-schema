@@ -185,7 +185,7 @@ Some principles the HCA Metadata Standard follows regarding field and schema nam
 
 1. *Qualified field names need to be unique among all schemas.* Fully qualified field names need to be globally unique across the HCA Metadata Standard. Qualified field names are used by multiple services, thus they need to be globally unique so that only a single field is accessed/returned for a given qualified field name request.
 
-1. *Unqualified field names should not contain context.* Unqualified field names do not stand alone, meaning they are not accessed or used outside of their context (*i.e.* their schema). Therefore, additional context should be removed from unqualified field names unless there is justification for including it<sup>**</sup>. For example:
+1. *Unqualified field names should not contain context.* Unqualified field names do not stand alone, meaning they are not accessed or used outside of their context (*i.e.* their schema). Therefore, additional context should be removed from unqualified field names unless there is justification for including it. For example:
 
     > Unqualified field name for media in a differentiation protocol:\
     > Correct: `media`\
@@ -195,7 +195,7 @@ Some principles the HCA Metadata Standard follows regarding field and schema nam
     > Correct: `differentiation_protocol.media`\
     > Incorrect: `differentiation_protocol.differentiation_media`
     
-    **Potential caveats for including context in an unqualified field name can include:
+    Potential caveats for including context in an unqualified field name include:
     
     1. There are two or more similar field names in a single schema and including context helps disambiguate between them (*e.g.* `organism_age` and `gestational_age` in the `donor_organism` schema).
     1. The field name is generally ambiguous or overloaded and including context helps reduce confusion about the field's usage (*e.g.* `type` fields in biomaterial schemas or `method` fields in protocol schemas).
