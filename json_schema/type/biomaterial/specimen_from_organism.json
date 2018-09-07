@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about the specimen that was collected from the donor organism.",
     "additionalProperties": false,
     "required": [
@@ -8,7 +8,8 @@
         "biomaterial_core",
 	    "organ"
     ],
-    "title": "specimen_from_organism",
+    "title": "Specimen from organism",
+    "name": "specimen_from_organism",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -64,7 +65,7 @@
             "comment": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
-        "disease": {
+        "diseases": {
             "description": "Short description of known disease(s) of the specimen. Enter normal if no known disease.",
             "type": "array",
             "items": {

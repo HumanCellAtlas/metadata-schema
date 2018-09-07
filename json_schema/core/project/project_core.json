@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A project entity contains information about the overall project.",
     "additionalProperties": false,
     "required": [
@@ -7,7 +7,8 @@
         "project_title",
         "project_description"
     ],
-    "title": "project_core",
+    "title": "Project core",
+    "name": "project_core",
     "type": "object",
     "properties": {
         "describedBy": {

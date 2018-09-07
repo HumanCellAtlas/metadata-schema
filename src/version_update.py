@@ -24,6 +24,9 @@ class VersionUpdater:
         self.update_type = options.increment_type
         self.versions = self._getJson(self.path + "/versions.json")
 
+        if options.exclude:
+            self.exclude = options.exclude
+
     def updateVersions(self, versionTracker=False):
 
         toUpdate = []
@@ -148,7 +151,7 @@ class VersionUpdater:
                 if ref == item:
                     d = s.replace(self.path+"/", "")
                     d = d.replace(".json", "")
-                    if d not in dependencies:
+                    if d not in dependencies and d not in self.exclude:
                         dependencies.append(d)
         return dependencies
 
@@ -163,6 +166,8 @@ if __name__ == '__main__':
                       help="Schemas that were changed")
     parser.add_option("-i", "--increment_type", dest="increment_type",
                       help="The type of change that was made. Must be one of patch, minor or major.")
+    parser.add_option("-e", "--exclude", dest="exclude",
+                      help="List of schemas to exclude from this version update.")
 
     (options, args) = parser.parse_args()
 

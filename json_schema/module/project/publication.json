@@ -1,12 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about a journal article, book, web page, or other external available documentation for a project.",
     "additionalProperties": false,
     "required": [
         "authors",
         "publication_title"
     ],
-    "title": "publication",
+    "title": "Publication",
+    "name": "publication",
     "type": "object",
     "properties": {
         "describedBy": {

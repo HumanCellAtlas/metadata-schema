@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information on how cultured cells are developed into cell aggregates.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about how cultured cells are developed into cell aggregates.",
     "additionalProperties": false,
     "required": [
       "describedBy",
@@ -8,7 +8,8 @@
       "protocol_core",
       "aggregate_formation_method"
     ],
-    "title": "aggregate_generation_protocol",
+    "title": "Aggregate generation protocol",
+    "name": "aggregate_generation_protocol",
     "type": "object",
     "properties": {
         "describedBy": {

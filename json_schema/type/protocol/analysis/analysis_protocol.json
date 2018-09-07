@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about the analysis protocol.",
     "additionalProperties": false,
     "required": [
@@ -9,7 +9,8 @@
         "computational_method",
         "protocol_type"
     ],
-    "title": "analysis_protocol",
+    "title": "Analysis protocol",
+    "name": "analysis_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
@@ -48,7 +49,8 @@
         },
         "computational_method": {
             "description": "A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Computational method"
         }
     }
 }

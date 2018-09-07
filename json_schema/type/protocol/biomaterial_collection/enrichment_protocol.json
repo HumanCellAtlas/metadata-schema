@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "protocol by which one biomaterial was produced from another biomaterial to favor a feature or characteristic of interest.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about how a biomaterial is enriched for a feature or characteristic of interest.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -8,7 +8,8 @@
         "protocol_core",
         "enrichment_method"
     ],
-    "title": "enrichment_protocol",
+    "title": "Enrichment protocol",
+    "name": "enrichment_protocol",
     "type": "object",
     "properties": {
         "describedBy":  {

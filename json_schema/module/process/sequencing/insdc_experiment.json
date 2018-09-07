@@ -1,11 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information relating to an INSDC experiment.",
     "additionalProperties": false,
     "required": [
         "insdc_experiment"
     ],
-    "title": "insdc_experiment",
+    "title": "INSDC experiment",
+    "name": "insdc_experiment",
     "type": "object",
     "properties": {
         "describedBy":  {

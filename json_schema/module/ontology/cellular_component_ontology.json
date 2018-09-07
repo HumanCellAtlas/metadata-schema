@@ -1,17 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A term that may be associated with a process-related ontology term",
+    "description": "A term that may be associated with an intra-cellular structure ontology term",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "Sequencing ontology",
-    "name": "sequencing_ontology",
+    "title": "Cellular component ontology",
+    "name": "cellular_component_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/sequencing_ontology"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cellular_component_ontology"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -20,15 +21,15 @@
             "example": "4.6.1"
         },
         "text": {
-            "description": "The name of a sequencing approach being used.",
+            "description": "The name of a subcellular structure.",
             "type": "string"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:efo"],
-                "classes": ["OBI:0000070"],
+                "ontologies" : ["obo:hcao", "obo:go"],
+                "classes": ["GO:0005575"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
@@ -38,6 +39,5 @@
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
             "type": "string"
         }
-    },
-    "type": "object"
+    }
 }

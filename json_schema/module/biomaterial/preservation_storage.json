@@ -1,8 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
     "additionalProperties": false,
-    "title": "preservation_storage",
+    "title": "Preservation and storage",
+    "name": "preservation_storage",
     "type": "object",
     "properties": {
         "describedBy":  {

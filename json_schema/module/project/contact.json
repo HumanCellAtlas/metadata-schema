@@ -1,12 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about an individual who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [
         "contact_name",
         "institution"
     ],
-    "title": "contact",
+    "title": "Contact",
+    "name": "contact",
     "type": "object",
     "properties": {
         "describedBy": {

@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Contains information on the dissociation protocol used to separate the cells in a specimen.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about the dissociation protocol used to separate individual cells or nuclei.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -8,7 +8,8 @@
         "protocol_core",
         "dissociation_method"
     ],
-    "title": "dissociation_protocol",
+    "title": "Dissociation protocol",
+    "name": "dissociation_protocol",
     "type": "object",
     "properties": {
         "describedBy":  {
