@@ -1,0 +1,34 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "21784_6#10",
+        "ncbi_taxon_id": [
+            10090
+        ],
+        "supplementary_files": [
+            "FACS_sorting_markers.pdf"
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Mus musculus",
+            "ontology": "NCBITaxon:10090"
+        }
+    ],
+    "selected_cell_type": [
+        {
+            "text": "CD11b+ Macrophages/monocytes"
+        }
+    ],
+    "total_estimated_cells": 1,
+    "plate_based_sequencing": {
+        "plate_id": "607",
+        "well_id": "A05"
+    },
+    "provenance": {
+        "document_id": "1446ca36-ba75-45ea-b6ab-a80641a88812",
+        "submission_date": "2018-09-04T12:44:38.405Z",
+        "update_date": "2018-09-04T13:12:52.699Z"
+    }
+}
