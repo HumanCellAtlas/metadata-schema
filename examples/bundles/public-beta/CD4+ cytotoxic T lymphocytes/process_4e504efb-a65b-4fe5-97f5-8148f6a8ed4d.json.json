@@ -1,0 +1,13 @@
+{
+    "process_core": {
+        "process_location": "Sri Lanka",
+        "process_id": "process_id_16"
+    },
+    "schema_type": "process",
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/process/6.0.2/process",
+    "provenance": {
+        "document_id": "4e504efb-a65b-4fe5-97f5-8148f6a8ed4d",
+        "submission_date": "2018-09-05T09:48:40.463Z",
+        "update_date": "2018-09-05T09:55:08.214Z"
+    }
+}

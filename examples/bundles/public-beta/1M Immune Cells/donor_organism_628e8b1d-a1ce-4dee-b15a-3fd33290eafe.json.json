@@ -1,0 +1,54 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "BM1",
+        "biomaterial_name": "Bone Marrow donor 1",
+        "biomaterial_description": "Bone Marrow donor 1",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "organism_age": "52",
+    "organism_age_unit": {
+        "text": "year",
+        "ontology": "UO:0000036"
+    },
+    "development_stage": {
+        "text": "adult",
+        "ontology": "EFO:0001272"
+    },
+    "is_living": "yes",
+    "sex": "female",
+    "medical_history": {
+        "smoking_history": "no"
+    },
+    "human_specific": {
+        "ethnicity": [
+            {
+                "text": "Caucasian"
+            }
+        ]
+    },
+    "weight": "69",
+    "weight_unit": {
+        "text": "kilogram",
+        "ontology": "UO:0000009"
+    },
+    "height": "165",
+    "height_unit": {
+        "text": "centimeter",
+        "ontology": "UO:0000015"
+    },
+    "provenance": {
+        "document_id": "628e8b1d-a1ce-4dee-b15a-3fd33290eafe",
+        "submission_date": "2018-09-04T12:26:40.051Z",
+        "update_date": "2018-09-04T12:27:10.175Z"
+    }
+}

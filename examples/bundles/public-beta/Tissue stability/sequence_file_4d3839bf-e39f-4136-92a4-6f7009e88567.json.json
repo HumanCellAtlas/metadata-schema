@@ -1,0 +1,18 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/6.5.2/sequence_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "HCATisStabAug177078016_S1_L001_I1_001.fastq.gz",
+        "file_format": "fastq.gz"
+    },
+    "read_index": "index1",
+    "lane_index": 1,
+    "insdc_run": [
+        "ERR2508319"
+    ],
+    "provenance": {
+        "document_id": "4d3839bf-e39f-4136-92a4-6f7009e88567",
+        "submission_date": "2018-09-05T09:14:54.400Z",
+        "update_date": "2018-09-05T09:14:56.841Z"
+    }
+}

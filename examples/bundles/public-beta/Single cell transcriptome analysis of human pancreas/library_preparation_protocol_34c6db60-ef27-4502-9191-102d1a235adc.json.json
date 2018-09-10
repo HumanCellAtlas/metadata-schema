@@ -1,0 +1,28 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/4.3.2/library_preparation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "library_preparation_protocol_1"
+    },
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA",
+        "ontology": "OBI:0000869"
+    },
+    "library_construction_approach": {
+        "text": "smart-seq2",
+        "ontology": "EFO:0008931"
+    },
+    "library_construction_kit": {
+        "retail_name": "Nextera XT kit",
+        "manufacturer": "Illumina"
+    },
+    "end_bias": "full length",
+    "primer": "poly-dT",
+    "strand": "unstranded",
+    "nucleic_acid_source": "single cell",
+    "provenance": {
+        "document_id": "34c6db60-ef27-4502-9191-102d1a235adc",
+        "submission_date": "2018-09-06T14:18:31.859Z",
+        "update_date": "2018-09-06T14:18:35.854Z"
+    }
+}

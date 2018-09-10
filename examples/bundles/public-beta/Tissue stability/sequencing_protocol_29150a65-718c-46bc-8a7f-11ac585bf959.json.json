@@ -1,0 +1,24 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/9.0.2/sequencing_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "sequencing_protocol_1",
+        "protocol_name": "10x_v2 sequencing",
+        "protocol_description": "ChromiumTM Single Cell 3' Library & Gel Bead Kit v2",
+        "document": "10x_sequencing_protocol.pdf"
+    },
+    "instrument_manufacturer_model": {
+        "text": "Illumina HiSeq 4000",
+        "ontology": "EFO:0008563"
+    },
+    "paired_end": true,
+    "sequencing_approach": {
+        "text": "tag based single cell RNA sequencing",
+        "ontology": "EFO:0008440"
+    },
+    "provenance": {
+        "document_id": "29150a65-718c-46bc-8a7f-11ac585bf959",
+        "submission_date": "2018-09-05T09:14:54.986Z",
+        "update_date": "2018-09-05T09:15:02.167Z"
+    }
+}

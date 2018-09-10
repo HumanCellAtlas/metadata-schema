@@ -1,0 +1,32 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/4.3.2/library_preparation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "library_preparation_protocol_1",
+        "protocol_name": "Library preparation for sequencing",
+        "protocol_description": "Single-cell RNA-seq libraries were generated as described in Picelli et al., 2014, Full-length RNA-seq from single cells using Smart-seq2, Nature Protocols.",
+        "publication_doi": "10.1038/nprot.2014.006"
+    },
+    "library_construction_approach": {
+        "text": "Smart-seq2",
+        "ontology": "EFO:0008931"
+    },
+    "nucleic_acid_source": "single cell",
+    "end_bias": "full length",
+    "primer": "poly-dT",
+    "strand": "unstranded",
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA",
+        "ontology": "OBI:0000869"
+    },
+    "spike_in_dilution": 40000,
+    "spike_in_kit": {
+        "retail_name": "External RNA Controls Consortium (ERCC)",
+        "manufacturer": "Ambion, Life Technologies"
+    },
+    "provenance": {
+        "document_id": "079bc155-71c9-45ab-bd12-cab025890d82",
+        "submission_date": "2018-09-05T12:11:53.080Z",
+        "update_date": "2018-09-05T12:17:48.051Z"
+    }
+}

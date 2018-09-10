@@ -1,0 +1,15 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/1.1.3/supplementary_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "SOP_MACS Live Dead Separation V3.pdf",
+        "file_format": "pdf",
+        "checksum": "NEED"
+    },
+    "file_description": "Enrichment for live cells",
+    "provenance": {
+        "document_id": "c3ce4634-ba98-45a7-a546-a2e3f4873d4c",
+        "submission_date": "2018-09-05T09:14:54.357Z",
+        "update_date": "2018-09-05T09:14:56.869Z"
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/project/9.0.2/project",
+    "schema_type": "project",
+    "project_core": {
+        "project_short_name": "Mouse Melanoma",
+        "project_title": "Melanoma infiltration of stromal and immune cells",
+        "project_description": "The cancer microenvironment is a complex ecosystem characterized by dynamic interactions between diverse cell types, including malignant, immune and stromal cells. Here, we performed single-cell RNA sequencing on CD45+ and CD45- cells isolated from tumour and lymph nodes during a mouse model of melanoma. The transcriptional profiles of these individual cells taken at different time points coupled with assembled T cell receptor sequences, allowed us to identify distinct immune subpopulations and delineate their developmental trajectory. Our study provides insights into the complex interplay among cells within the tumour microenvironment and presents a valuable resource for future translational applications."
+    },
+    "contributors": [
+        {
+            "contact_name": "Sarah,A,Teichmann",
+            "email": "st9@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Sarah Teichmann",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Mirjana,,Efremova",
+            "email": "me5@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Sarah Teichmann",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Bidesh,,Mahata",
+            "email": "bm11@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Sarah Teichmann",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Jacqueline,D,Shields",
+            "email": "JS970@MRCCU.cam.ac.uk",
+            "institution": "University of Cambridge",
+            "laboratory": "MRC Cancer Unit",
+            "address": "Box 197, Cambridge Biomedical Campus, Cambridge, CB2 0XZ",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Sarah,,Davidson",
+            "email": "SED49@MRCCU.cam.ac.uk",
+            "institution": "University of Cambridge",
+            "laboratory": "MRC Cancer Unit",
+            "address": "Box 197, Cambridge Biomedical Campus, Cambridge, CB2 0XZ",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Angela,,Riedel",
+            "email": "a.riedel@dkfz-heidelberg.de",
+            "institution": "DKFZ German Cancer Research Center",
+            "country": "Germany"
+        },
+        {
+            "contact_name": "Roser,,Vento-Tormo",
+            "email": "rv4@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Sarah Teichmann",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Jhuma,,Pramanik",
+            "email": "jp19@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Sarah Teichmann",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Gozde,,Kar",
+            "email": "gkar@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Sarah Teichmann",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Jani,,Huuhtanen",
+            "email": "jani.huuhtanen@helsinki.fi",
+            "institution": "University of Helsinki",
+            "country": "Finland"
+        },
+        {
+            "contact_name": "Mallory,Ann,Freeberg",
+            "email": "mfreeberg@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-2949-3921",
+            "corresponding_contributor": false
+        },
+        {
+            "contact_name": "Danielle,,Welter",
+            "email": "dwelter@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-1058-2668",
+            "corresponding_contributor": false
+        }
+    ],
+    "provenance": {
+        "document_id": "092574d1-a391-4c09-a0c4-d06104a503f6",
+        "submission_date": "2018-09-04T12:44:36.854Z",
+        "update_date": "2018-09-04T13:08:08.264Z"
+    }
+}

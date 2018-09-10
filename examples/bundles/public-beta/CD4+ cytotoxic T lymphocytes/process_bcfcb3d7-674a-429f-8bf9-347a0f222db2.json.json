@@ -1,0 +1,15 @@
+{
+    "insdc_experiment": {
+        "insdc_experiment": "SRX3364233"
+    },
+    "process_core": {
+        "process_id": "process_id_2273"
+    },
+    "schema_type": "process",
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/process/6.0.2/process",
+    "provenance": {
+        "document_id": "bcfcb3d7-674a-429f-8bf9-347a0f222db2",
+        "submission_date": "2018-09-05T09:49:29.182Z",
+        "update_date": "2018-09-05T09:56:34.501Z"
+    }
+}

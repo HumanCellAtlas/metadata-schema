@@ -1,0 +1,19 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/8.2.6/collection_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "collection_protocol_2",
+        "protocol_name": "Blood sample collection",
+        "protocol_description": "Blood sample collection",
+        "publication_doi": "10.1126/sciimmunol.aan8664"
+    },
+    "collection_method": {
+        "text": "blood draw",
+        "ontology": "EFO:0009121"
+    },
+    "provenance": {
+        "document_id": "f8d9778f-0f72-4432-a929-1096fd9ca2f4",
+        "submission_date": "2018-09-05T09:48:40.196Z",
+        "update_date": "2018-09-05T09:52:05.472Z"
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/project/9.0.2/project",
+    "schema_type": "project",
+    "project_core": {
+        "project_short_name": "CD4+ cytotoxic T lymphocytes",
+        "project_title": "Precursors of human CD4+ cytotoxic T lymphocytes identified by single-cell transcriptome analysis",
+        "project_description": "CD4+ cytotoxic T lymphocytes (CD4-CTLs) have been reported to play a protective role in several viral infections. However, little is known in humans about the biology of CD4-CTL generation, their functional properties, heterogeneity and clonal diversity, especially in relation to other well-described CD4+ memory T cell subsets. We performed single-cell RNA-seq in over 9000 cells to unravel CD4-CTL heterogeneity, transcriptional profile and clonality in humans. The single-cell differential gene expression analysis, revealed a spectrum of known transcripts, including several linked to cytotoxic and co-stimulatory function, and transcripts of unknown cytotoxicity-related function that are expressed at higher levels in the TEMRA subset, which is highly enriched for CD4-CTLs, compared to cells in the central and effector memory subsets (TCM, TEM). Simultaneous T cells antigen receptor (TCR) analysis in single-cells and bulk subsets revealed that CD4-TEMRA cells show marked clonal expansion compared to TCM and TEM cells and that the majority of CD4-TEMRA were dengue virus (DENV)-specific in subjects with previous DENV infection. The profile of CD4-TEMRA was highly heterogeneous across subjects, with four distinct clusters identified by the single-cell analysis. Most importantly, we identified distinct clusters of CD4-CTL effector and precursor cells in the TEMRA subset; the precursor cells shared TCR clonotypes with CD4-CTL effectors and were distinguished by high expression of the interleukin-7 receptor. Our identification of a CD4-CTL precursor population may allow further investigation of how CD4-CTLs arise in humans and thus could provide insights into the mechanisms that may be utilized to generate durable and effective CD4-CTL immunity."
+    },
+    "insdc_project": "SRP124157",
+    "geo_series": "GSE106540",
+    "insdc_study": "PRJNA417191",
+    "supplementary_links": [
+        "https://www.ebi.ac.uk/gxa/sc/experiments/E-GEOD-106540/Results"
+    ],
+    "contributors": [
+        {
+            "contact_name": "Pandurangan,,Vijayanand",
+            "email": "vijay@lji.org",
+            "institution": "La Jolla Institute for Allergy and Immunology",
+            "laboratory": "Division of Vaccine Discovery",
+            "address": "La Jolla, CA 92037",
+            "country": "USA",
+            "corresponding_contributor": true
+        },
+        {
+            "contact_name": "Mallory,Ann,Freeberg",
+            "email": "mfreeberg@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-2949-3921",
+            "corresponding_contributor": false
+        },
+        {
+            "contact_name": "Laura,,Huerta",
+            "email": "lauhuema@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Molecular Atlas",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK",
+            "project_role": "external curator",
+            "orcid_id": "0000-0002-8748-599X",
+            "corresponding_contributor": false
+        }
+    ],
+    "funders": [
+        {
+            "grant_id": "U19AI118626",
+            "funder_name": "National Institutes of Health (NIH)"
+        },
+        {
+            "grant_id": "U19AI118610",
+            "funder_name": "National Institutes of Health (NIH)"
+        },
+        {
+            "grant_id": "R01HL114093",
+            "funder_name": "National Institutes of Health (NIH)"
+        },
+        {
+            "grant_id": "R24AI108564",
+            "funder_name": "National Institutes of Health (NIH)"
+        },
+        {
+            "funder_name": "William K. Bowes Jr. Foundation"
+        }
+    ],
+    "publications": [
+        {
+            "authors": [
+                "Patil VS, Madrigal A, Schmiedel BJ, Clarke J, O'Rourke P, Harris E, de Silva AD, Harris E, Peters B, Seumois G, Weiskopf D, Sette A, Vijayanand P"
+            ],
+            "publication_title": "Precursors of human CD4+ cytotoxic T lymphocytes identified by single-cell transcriptome analysis.",
+            "doi": "10.1126/sciimmunol.aan8664",
+            "pmid": 29352091,
+            "publication_url": "http://immunology.sciencemag.org/content/3/19/eaan8664.long"
+        }
+    ],
+    "provenance": {
+        "document_id": "ee5b3a17-4128-40ff-88f4-44903ef1ab54",
+        "submission_date": "2018-09-05T09:47:20.825Z",
+        "update_date": "2018-09-05T09:50:15.608Z"
+    }
+}

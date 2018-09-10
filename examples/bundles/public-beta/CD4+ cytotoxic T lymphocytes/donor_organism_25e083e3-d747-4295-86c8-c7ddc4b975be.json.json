@@ -1,0 +1,43 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "Subject10",
+        "biomaterial_name": "Subject10",
+        "biomaterial_description": "Subject10",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "is_living": "yes",
+    "sex": "unknown",
+    "medical_history": {
+        "test_results": "dengue virus negative"
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461"
+        }
+    ],
+    "development_stage": {
+        "text": "adult",
+        "ontology": "EFO:0001272"
+    },
+    "organism_age": "18-60",
+    "organism_age_unit": {
+        "text": "year",
+        "ontology": "UO:0000036"
+    },
+    "provenance": {
+        "document_id": "25e083e3-d747-4295-86c8-c7ddc4b975be",
+        "submission_date": "2018-09-05T09:47:20.947Z",
+        "update_date": "2018-09-05T09:50:15.914Z"
+    }
+}

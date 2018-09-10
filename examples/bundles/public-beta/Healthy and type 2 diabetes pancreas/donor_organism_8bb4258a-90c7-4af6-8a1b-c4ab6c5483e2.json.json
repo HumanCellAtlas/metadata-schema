@@ -1,0 +1,46 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "H1",
+        "biomaterial_name": "Normal Donor 1",
+        "biomaterial_description": "Normal Donor 1",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "is_living": "no",
+    "sex": "male",
+    "medical_history": {
+        "test_results": "HbA1c 5.0%"
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461"
+        }
+    ],
+    "development_stage": {
+        "text": "adult",
+        "ontology": "EFO:0001272"
+    },
+    "organism_age": "43",
+    "organism_age_unit": {
+        "text": "year",
+        "ontology": "UO:0000036"
+    },
+    "human_specific": {
+        "body_mass_index": 30.8
+    },
+    "provenance": {
+        "document_id": "8bb4258a-90c7-4af6-8a1b-c4ab6c5483e2",
+        "submission_date": "2018-09-05T12:09:41.702Z",
+        "update_date": "2018-09-05T12:14:26.204Z"
+    }
+}
