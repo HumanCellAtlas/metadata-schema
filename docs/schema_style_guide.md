@@ -104,7 +104,7 @@ The following attributes are required for each metadata schema in the HCA metada
             ...
         }
 
-1. **name:** A programmatic name for the schema. The *name* is the name of the schema which should be in all lowercase and snake_case. This attribute is used by the DCP software to identify the schema, and the *name* should match the filename of the schema absent the `.json` file extension.
+1. **name:** A programmatic, unqualified name for the schema. The *name* is the name of the schema which should be in all lowercase and snake_case. This attribute is used by the DCP software to identify the schema, and the *name* should match the filename of the schema absent the `.json` file extension.
 
     Example:
     
