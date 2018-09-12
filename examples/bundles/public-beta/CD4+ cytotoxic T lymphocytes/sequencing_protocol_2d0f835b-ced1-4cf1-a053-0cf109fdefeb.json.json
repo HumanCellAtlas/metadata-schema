@@ -1,0 +1,23 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/9.0.2/sequencing_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "sequencing_protocol_1",
+        "protocol_name": "SmartSeq 2 single cell sequencing",
+        "protocol_description": "Libraries were sequenced on the Illumina HiSeq 2500 platform to obtain 50-bp single end reads (barcoded Illumina sequencing libraries (Nextera XT library preparation kit, Illumina))."
+    },
+    "sequencing_approach": {
+        "text": "full length single cell RNA sequencing",
+        "ontology": "EFO:0008441"
+    },
+    "instrument_manufacturer_model": {
+        "text": "Illumina HiSeq 2500",
+        "ontology": "EFO:0008565"
+    },
+    "paired_end": false,
+    "provenance": {
+        "document_id": "2d0f835b-ced1-4cf1-a053-0cf109fdefeb",
+        "submission_date": "2018-09-05T09:48:40.296Z",
+        "update_date": "2018-09-05T09:51:58.194Z"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/6.5.2/sequence_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "MantonBM1_HiSeq_1_S1_L007_I1_001.fastq.gz",
+        "file_format": "fastq.gz"
+    },
+    "read_index": "index1",
+    "lane_index": 7,
+    "read_length": 8,
+    "technical_replicate_group": "1_BM1_cells_r1",
+    "provenance": {
+        "document_id": "36d7f891-8a43-4ae4-8472-a34dcb2be643",
+        "submission_date": "2018-09-04T12:26:43.089Z",
+        "update_date": "2018-09-04T12:27:39.827Z"
+    }
+}

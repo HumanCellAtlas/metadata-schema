@@ -1,0 +1,24 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/9.0.2/sequencing_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "10x_v2_sequencing_protocol_1",
+        "protocol_name": "Sequencing bone marrow donor 1-4",
+        "protocol_description": "Single cell sequencing of cDNAs by 10x"
+    },
+    "instrument_manufacturer_model": {
+        "text": "Illumina Hiseq X 10",
+        "ontology": "EFO:0008567"
+    },
+    "local_machine_name": "HXE",
+    "paired_end": true,
+    "sequencing_approach": {
+        "text": "tag based single cell RNA sequencing",
+        "ontology": "EFO:0008440"
+    },
+    "provenance": {
+        "document_id": "aaa08845-5150-4a4f-9c44-5ea22add1fc3",
+        "submission_date": "2018-09-04T12:26:55.003Z",
+        "update_date": "2018-09-04T12:27:50.911Z"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/6.3.1/specimen_from_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "DID_scRSq04_pancreas",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "organ": {
+        "text": "pancreas",
+        "ontology": "UBERON:0001264"
+    },
+    "organ_part": {
+        "text": "islet of Langerhans",
+        "ontology": "UBERON:0000006"
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461"
+        }
+    ],
+    "provenance": {
+        "document_id": "07282a68-dca4-449e-81b6-7b0da34230df",
+        "submission_date": "2018-09-06T14:14:54.969Z",
+        "update_date": "2018-09-06T14:24:20.677Z"
+    }
+}

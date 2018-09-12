@@ -1,0 +1,43 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "1131",
+        "biomaterial_name": "Mouse_day8_rep10",
+        "ncbi_taxon_id": [
+            10090
+        ]
+    },
+    "mouse_specific": {
+        "strain": [
+            {
+                "text": "C57BL/6",
+                "ontology": "EFO:0004472"
+            }
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Mus musculus",
+            "ontology": "NCBITaxon:10090"
+        }
+    ],
+    "organism_age": "6-12",
+    "organism_age_unit": {
+        "text": "week",
+        "ontology": "UO:0000034"
+    },
+    "diseases": [
+        {
+            "text": "subcutaneous melanoma",
+            "ontology": "MONDO:0005105"
+        }
+    ],
+    "is_living": "no",
+    "sex": "female",
+    "provenance": {
+        "document_id": "b56697f5-d350-4e1d-93b2-72eee68c972e",
+        "submission_date": "2018-09-04T12:44:37.445Z",
+        "update_date": "2018-09-04T13:08:09.637Z"
+    }
+}

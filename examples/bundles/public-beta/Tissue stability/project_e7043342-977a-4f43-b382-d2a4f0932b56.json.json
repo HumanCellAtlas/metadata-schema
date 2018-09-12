@@ -1,0 +1,148 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/project/9.0.2/project",
+    "schema_type": "project",
+    "project_core": {
+        "project_short_name": "Tissue stability",
+        "project_title": "Ischaemic sensitivity of human tissue by single cell RNA seq",
+        "project_description": "Assessment of ischaemic sensitivity of human tissues using 10x 3' single cell RNA sequencing. Currently, this project contains data for spleen and oesophagus. Ultimately we aim to collect data from three tissues expected to have different sensitivity to ischaemia: spleen (expected least sensitive), oesophagus (in the middle), and lung. Samples will be collected fresh (i.e. as soon as possible) and at 12h, 24h, and 72h post onset of ischaemia in the donor. Single cell RNA sequencing data will be generated at each time point using the 10x genomics single cell 3' method."
+    },
+    "insdc_project": "ERP107913",
+    "insdc_study": "PRJEB25946",
+    "contributors": [
+        {
+            "contact_name": "Mike,,Stubbington",
+            "email": "ms31@sanger.ac.uk",
+            "phone": "44 (0)1223 834244",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Human Cell Atlas (Mike Stubbington)",
+            "address": "Wellcome Trust Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge. CB10 1SA.",
+            "country": "UK",
+            "orcid_id": "0000-0001-5924-3566"
+        },
+        {
+            "contact_name": "Phillipa,,Harding",
+            "email": "ph11@sanger.ac.uk",
+            "phone": "44 (0)1223 834244",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Human Cell Atlas (Mike Stubbington)",
+            "address": "Wellcome Trust Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge. CB10 1SA.",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Anna,,Wilbrey-Clark",
+            "email": "aw24@sanger.ac.uk",
+            "phone": "44 (0)1223 834244",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Human Cell Atlas (Mike Stubbington)",
+            "address": "Wellcome Trust Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge. CB10 1SA.",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Krzysztof,,Polanski",
+            "email": "kp9@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Human Cell Atlas (Mike Stubbington)",
+            "address": "Wellcome Trust Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge. CB10 1SA.",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Kevin,,Loudon",
+            "email": "kevinloudon@doctors.org.uk",
+            "institution": "University of Cambridge",
+            "laboratory": "Molecular Immunity Unit, Department of Medicine",
+            "address": "Cambridge CB2 0QQ",
+            "country": "UK"
+        },
+        {
+            "contact_name": "John,R,Ferdinand",
+            "email": "jrf58@cam.ac.uk",
+            "institution": "University of Cambridge",
+            "laboratory": "Molecular Immunity Unit, Department of Medicine",
+            "address": "Cambridge CB2 0QQ",
+            "country": "UK",
+            "orcid_id": "0000-0003-0936-0128"
+        },
+        {
+            "contact_name": "Krishnaa,,Mahbubani",
+            "email": "ktam2@cam.ac.uk",
+            "institution": "University of Cambridge",
+            "laboratory": "Cambridge Biorepository for Translational Medicine",
+            "address": "Cambridge CB2 0QQ",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Nikitas,,Georgakopoulos",
+            "email": "ng395@cam.ac.uk",
+            "institution": "University of Cambridge",
+            "laboratory": "Cambridge Biorepository for Translational Medicine",
+            "address": "Cambridge CB2 0QQ",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Kerstin,B,Meyer",
+            "email": "km16@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "address": "Wellcome Trust Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge. CB10 1SA.",
+            "country": "UK",
+            "corresponding_contributor": true
+        },
+        {
+            "contact_name": "Kourosh,,Saeb-Parsy",
+            "email": "ks10014@cam.ac.uk",
+            "institution": "University of Cambridge",
+            "address": "Cambridge CB2 0QQ",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Karol,,Nowicki-Osuch",
+            "email": "kpn25@mrc-cu.cam.ac.uk",
+            "institution": "MRC Cancer Unit",
+            "laboratory": "Rebecca Fitzgerald",
+            "address": "MRC Cancer Unit, Hutchison-MRC Research Centre, University of Cambridge, Cambridge CB2 0XZ.",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Rebecca,,Fitzgerald",
+            "email": "rcf29@mrc-cu.cam.ac.uk",
+            "institution": "MRC Cancer Unit",
+            "laboratory": "Rebecca Fitzgerald",
+            "address": "MRC Cancer Unit, Hutchison-MRC Research Centre, University of Cambridge, Cambridge CB2 0XZ.",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Ricardo,J,Miragaia",
+            "email": "rm13@sanger.ac.uk",
+            "institution": "Wellcome Trust Sanger Institute",
+            "laboratory": "Human Cell Atlas (Sarah Teichmann)",
+            "address": "Wellcome Trust Sanger Institute, Wellcome Genome Campus, Hinxton, Cambridge. CB10 1SA.",
+            "country": "UK"
+        },
+        {
+            "contact_name": "Mallory,Ann,Freeberg",
+            "email": "mfreeberg@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-2949-3921",
+            "corresponding_contributor": false
+        },
+        {
+            "contact_name": "Danielle,,Welter",
+            "email": "dwelter@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-1058-2668",
+            "corresponding_contributor": false
+        }
+    ],
+    "provenance": {
+        "document_id": "e7043342-977a-4f43-b382-d2a4f0932b56",
+        "submission_date": "2018-09-05T09:14:54.288Z",
+        "update_date": "2018-09-05T09:15:01.681Z"
+    }
+}

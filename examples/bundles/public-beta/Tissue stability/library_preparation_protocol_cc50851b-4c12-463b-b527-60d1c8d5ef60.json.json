@@ -1,0 +1,36 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/4.3.2/library_preparation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "library_preparation_protocol_1",
+        "protocol_name": "Library preparation for 10x_v2 sequencing",
+        "protocol_description": "ChromiumTM Single Cell 3' Library & Gel Bead Kit v2",
+        "document": "10x_sequencing_protocol.pdf"
+    },
+    "cell_barcode": {
+        "barcode_read": "Read 1",
+        "barcode_offset": 0,
+        "barcode_length": 16
+    },
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA",
+        "ontology": "OBI:0000869"
+    },
+    "library_construction_approach": {
+        "text": "10X sequencing",
+        "ontology": "EFO:0008995"
+    },
+    "nucleic_acid_source": "single cell",
+    "end_bias": "3 prime tag",
+    "strand": "second",
+    "umi_barcode": {
+        "barcode_read": "Read 1",
+        "barcode_offset": 16,
+        "barcode_length": 10
+    },
+    "provenance": {
+        "document_id": "cc50851b-4c12-463b-b527-60d1c8d5ef60",
+        "submission_date": "2018-09-05T09:14:54.945Z",
+        "update_date": "2018-09-05T09:15:02.223Z"
+    }
+}

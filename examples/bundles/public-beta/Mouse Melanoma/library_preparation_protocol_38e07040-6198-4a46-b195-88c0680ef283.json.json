@@ -1,0 +1,31 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/4.3.2/library_preparation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "SmartSeq2_RTPCR_protocol",
+        "protocol_name": "Make/amplify cDNA for each cell",
+        "document": "SmartSeq2_RTPCR_protocol.pdf"
+    },
+    "nucleic_acid_source": "single cell",
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA",
+        "ontology": "OBI:0000869"
+    },
+    "library_construction_approach": {
+        "text": "Smart-seq2",
+        "ontology": "EFO:0008931"
+    },
+    "end_bias": "full length",
+    "primer": "poly-dT",
+    "strand": "unstranded",
+    "umi_barcode": {
+        "barcode_read": "Read 1",
+        "barcode_offset": 0,
+        "barcode_length": 16
+    },
+    "provenance": {
+        "document_id": "38e07040-6198-4a46-b195-88c0680ef283",
+        "submission_date": "2018-09-04T12:53:51.109Z",
+        "update_date": "2018-09-04T12:55:56.069Z"
+    }
+}

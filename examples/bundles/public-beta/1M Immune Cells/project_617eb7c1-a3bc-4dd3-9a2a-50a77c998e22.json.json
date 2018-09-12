@@ -1,0 +1,144 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/project/9.0.2/project",
+    "schema_type": "project",
+    "project_core": {
+        "project_short_name": "1M Immune Cells",
+        "project_title": "Census of Immune Cells",
+        "project_description": "Diverse cells of the immune system maintain and protect tissue function, integrity, and homeostasis upon changes in functional demands and diverse perturbations. Recent advances such as massively parallel single-cell RNA-sequencing and sophisticated computational methods help shed new light on this complexity. This immune cell census aims to profile up to 2M immunocytes, the first tranche of this is currently available. With computational methods optimized to a massive scale, we can readily identify cell types and markers, as well as the process of hematopoietic differentiation. The high quality and comprehensive reference map is provided as an open community resource for understanding human health and disease."
+    },
+    "contributors": [
+        {
+            "contact_name": "Aviv,,Regev",
+            "email": "aregev@broadinstitute.org",
+            "phone": "(617) 714-7020",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Bo,,Li",
+            "email": "libo@broadinstitute.org",
+            "phone": "(617) 714-8681",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Monika,S,Kowalczyk",
+            "email": "msk.kowalczyk@gmail.com",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Danielle,,Dionne",
+            "email": "dionne@broadinstitute.org",
+            "phone": "(617) 714-8147",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Timothy,,Tickle",
+            "email": "ttickle@broadinstitute.org",
+            "phone": "(617) 714-7084",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Jane,,Lee",
+            "email": "janelee@broadinstitute.org",
+            "phone": "(617) 714-7448",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Orit,,Rozenblatt-Rosen",
+            "email": "orit@broadinstitute.org",
+            "phone": "(617) 714-7789",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Orr,,Ashenberg",
+            "email": "orr@broadinstitute.org",
+            "phone": "(617) 714-8681",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Marcin,,Tabaka",
+            "email": "mtabaka@broadinstitute.org",
+            "phone": "(617) 714-7470",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Karthik,,Shekhar",
+            "email": "karthik@broadinstitute.org",
+            "phone": "(617) 714-8067",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Michal,,Slyper",
+            "email": "mslyper@broadinstitute.org",
+            "phone": "(617) 714-7199",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Julia,,Waldman",
+            "email": "jwaldman@broadinstitute.org",
+            "institution": "Broad Institute",
+            "laboratory": "Regev Lab",
+            "address": "415 Main Street, Cambridge, MA",
+            "country": "USA"
+        },
+        {
+            "contact_name": "Mallory,Ann,Freeberg",
+            "email": "mfreeberg@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-2949-3921",
+            "corresponding_contributor": false
+        },
+        {
+            "contact_name": "Danielle,,Welter",
+            "email": "dwelter@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-1058-2668",
+            "corresponding_contributor": false
+        }
+    ],
+    "provenance": {
+        "document_id": "617eb7c1-a3bc-4dd3-9a2a-50a77c998e22",
+        "submission_date": "2018-09-04T12:26:40.041Z",
+        "update_date": "2018-09-04T12:27:09.930Z"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/6.3.1/specimen_from_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "1_BM1",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "organ": {
+        "text": "bone",
+        "ontology": "UBERON:0001474"
+    },
+    "organ_part": {
+        "text": "bone marrow",
+        "ontology": "UBERON:0002371"
+    },
+    "purchased_specimen": {
+        "manufacturer": "Stem Cell Technologies"
+    },
+    "provenance": {
+        "document_id": "6228558b-436a-46c9-9cd3-ea9b5c123070",
+        "submission_date": "2018-09-04T12:26:40.206Z",
+        "update_date": "2018-09-04T12:27:13.378Z"
+    }
+}
