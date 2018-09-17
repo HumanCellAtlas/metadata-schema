@@ -27,33 +27,35 @@ This document describes the principles and standards by which the HCA metadata s
 
 All metadata schemas will be versioned using [semantic versioning](http://semver.org/) which gives each schema version a specific number in the form `vX.Y.Z` where `X` is the major version number, `Y` is the minor version number, and `Z` is the patch version number.
 
-Schema version numbers change when a schema update is made. The principles we follow to decide which of the three numbers to update are described below. These principles primarily consider **backwards compatibility**. This considers if the new schema is compatible with the old schema. This is the view from the producer of metadata. There are three kinds of changes that may or may not affect backwards compatibility: major, minor, and patch.
+Schema version numbers change when a schema update is made. The principles used to decide which version number to update primarily consider **backwards compatibility** with metadata created using a previous version. In other words, backwards compatibility is broken if a metadata JSON document generated for and valid against a previous schema version is now invalid against the updated schema version. The  three categories of version changes are outlined below along with example HCA metadata schema changes for each category:
 
-**Major (increment to X)**: Any change to the schema that breaks compatibility with metadata created using the previous version. Specific examples include:
+**Major (increment to X)**: Any change to the schema that breaks backwards compatibility with metadata created using the previous version. Specific examples include:
 - Adding a required field.
 - Removing a required or optional field.
 - Moving a required field from one schema to another (increment both schemas).
+- Changing the name of a required or optional field.
 - Making an optional field required.
 - Changing the type of a field (e.g. number to string, string to ontology/enum).
 - Changing the ontology source for an ontologized field.
-- Changing the name of a required or optional field.
 - Removing a value from a controlled vocabulary.
+- Adding a regular expression.
 - Unpacking an overloaded field (a field which serves multiple purposes e.g. complex biomaterial name)
 
-**Minor (increment to Y)**: Any change to the schema that ensures compatibility with metadata created using the previous version. Specific examples include:
+**Minor (increment to Y)**: Any change to the schema that ensures backwards compatibility with metadata created using the previous version. Specific examples include:
 - Adding an optional field.
 - Making a required field optional.
 - Updating the field description in a way that changes the meaning of the field.
 - Adding a new module (increment the type schema that references the new module).
 - Removing controlled vocabulary from a field (but the field type stays the same).
 
-**Patch (increment to Z)**: A change to auxiliary information that does affect the structure or semantics of the schema itself. Specific examples include:
+**Patch (increment to Z)**: Any change to auxiliary information that does not affect the structure or semantics of the schema itself. Also, any bug fixes to the schema. Specific examples include:
 - Adding or updating the field description to improve readability.
 - Adding or updating the field example.
 - Adding or updating the field comment.
 - Adding or updating the field user-friendly name.
 - Extending a controlled vocabulary enumeration.
-- Fixing an incorrect regular expression.
+- Correcting a regular expression.
+- Correcting an ontology source.
 
 **Forwards compatibility** refers to whether data generated with a newer version will be compatible with conformance requirements of an older version. This is the version from the consumer perspective, for example an analysis tool or a conformance requirement. We use a syntax based on a subset of that allowed by npm (a JavaScript package manager), whereby a consumer specifies the version of a schema it needs and whether it will tolerate alternative versions in any of the three fields. As an example, if a conformance requires version 1.0.4 of a package, it can state that requirement as:
 
