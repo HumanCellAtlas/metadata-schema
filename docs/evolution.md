@@ -25,9 +25,9 @@ This document describes the principles and standards by which the HCA metadata s
 
 ## Schema versioning
 
-The schema modules will be versioned using [semantic versioning](http://semver.org/). This gives each version a specific number in the form `vX.Y.Z`. 
+All metadata schemas will be versioned using [semantic versioning](http://semver.org/) which gives each schema version a specific number in the form `vX.Y.Z` where `X` is the major version number, `Y` is the minor version number, and `Z` is the patch version number.
 
-The version numbers change when a schema update is made. The principles we follow to decide which of the three numbers to update are described below. These principles primarily consider **backwards compatibility**. This considers if the new schema is compatible with the old schema. This is the view from the producer of metadata. There are three kinds of changes that may or may not affect backwards compatibility: major, minor, and patch.
+Schema version numbers change when a schema update is made. The principles we follow to decide which of the three numbers to update are described below. These principles primarily consider **backwards compatibility**. This considers if the new schema is compatible with the old schema. This is the view from the producer of metadata. There are three kinds of changes that may or may not affect backwards compatibility: major, minor, and patch.
 
 **Major (increment to X)**: Any change to the schema that breaks compatibility with metadata created using the previous version. Specific examples include:
 - Adding a required field.
