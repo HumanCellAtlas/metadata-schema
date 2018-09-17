@@ -104,7 +104,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
     1. **Fix** any merge conflicts that might arise, giving priority to changes in the develop branch *except* if a hotfix was propagated ahead of develop.
 
-1. **Open** `changelog.md` and cut/paste the line
+1. **Open** `changelog.md` and move the line
 
     `## [Released](https://github.com/HumanCellAtlas/metadata-schema/)`
 
