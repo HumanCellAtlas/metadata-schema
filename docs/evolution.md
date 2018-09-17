@@ -62,27 +62,27 @@ It is important to note that the stability of a schema is not the same as the sc
 
 ### High Stability
 
-High stability schemas are schemas where the DCP infrastructure has specific knowledge about its structure and updating it would require an update to DCP component software. Fields in high stability schemas should be very limited and contain no scientific meaning. They are likely to be fields assigned by the Ingest infrastructure rather than provided by submitters. The process for requesting updates to fields in high stability schemas require consultation with the users of and developers of the Ingest service and a reasonable timeframe to update the software and educate users about the change before it enters production. The *core* entity schemas are an example of high stability schemas.
+A high stability schema is a schema which is expected to rarely change. Updating high stability schemas would require one or more major updates to DCP component software. The process for requesting updates to high stability schemas requires consultation with appropriate metadata users and DCP software developers and a reasonable timeframe to update the software and educate users about the change before it enters production. The `biomaterial_core.json` and `provenance.json` schemas are examples of high stability schemas.
 
 ### Medium Stability
 
-Medium stability schemas are schemas which tend to contain scientific fields on which downstream users - such as the pipeline infrastructure or portal developers - have dependencies. Changing fields in these schemas should not require major software updates for the DCP but may alter how the pipelines or portals query for new data. As these fields are likely to have scientific meaning, this increases the likelihood that they might change as our understanding evolves. The schema update process needs to be agile and able to react to changes in the subject. These changes may have significant downstream consequences for the automated processes that run the pipelines or portals, so strong agreement is needed for a change before it happens. The *type* entity schemas are generally considered medium-stability schemas.
+A medium stability schema is a schema which is expected to change periodically in response to scientific advancement or exposure to different types of data. Updating medium stability schemas should not require major updates to DCP component software but may affect how data consumers interpret data. Because updates may have significant downstream consequences, agreement among appropriate metadata users and DCP software developers is strongly recommended. The process for requesting updates to medium stability schemas needs to be agile and able to react to scientific changes, as well. The `cell_suspension.json` and `enrichment_protocol.json` schemas are examples of medium stability schemas.
 
 ### Low Stability
 
-Low stability schemas are schemas which are those associated with rapidly evolving sample collection or experimental techniques. Developers should avoid depending on the fields in these schemas. The update process should be rapid and use a minimal approval process such as a small number of +1s on a GitHub pull request. The *module* entity schemas are generally considered low-stability schemas.
+A low stability schema is a schema which is associated with rapidly evolving sample types or experimental techniques. DCP component software developers should avoid depending on fields in these schemas given that they are prone to rapid updates. The process for requesting updates to low stability schemas should be rapid and require minimal approval among appropriate metadata users. The `10x.json` and `imaging_target.json` schemas are examples of low stability schemas.
 
 ### Reviewing Stability levels
 
-The metadata working group should review the stability level of different schemas on a quarterly or bi-annual basis to decide if changes are needed.
+The Metadata Working Group should review the stability level of schemas on a quarterly or bi-annual basis to decide if changes are needed. For example, a new, low stability schema might become standard over time and be promoted to medium or even high stability once it has been reviewed and agreed upon by the HCA community.
 
 ## Governance of schema updates
 
 The Metadata Working Group will report progress to the HCA executive committee. The Metadata Working Group will review the update process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes will be made to ensure metadata update is not a blocker for the consortium as a whole. The working group will provide written updates on the following matters at the start of each month:
 
-- Changes to the metadata specification
-  - Updates to existing modules
-  - Addition of new modules
+- Changes to the metadata standard and specification
+  - Updates to existing schemas
+  - Addition of new schemasS
 - New members of the metadata working group
 - New committers to the metadata-schema git repo
 
