@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Schema versioning](#schema-versioning)
-- [Module stability](#module-stability)
+- [Schema stability](#schema-stability)
 - [Adding new committers to metadata working group](#adding-new-committers-to-metadata-working-group)
 - [Governance of schema updates](#governance-of-schema-updates)
 
@@ -53,7 +53,7 @@ Schema version numbers change when a schema update is made. The principles used 
 - Correcting a regular expression.
 - Correcting an ontology source.
 
-## Module stability
+## Schema stability
 
 The modular design of the HCA metadata standard allows for different rates of change for different schemas. In order to understand the downstream consequences of a suggested update, each schema is annotated with a stability level (high, medium, or low) indicating the expected rate of change. High stability schemas are expected to rarely change while low stability schemas are expected to rapidly change.
 
