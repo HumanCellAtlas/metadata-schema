@@ -4,7 +4,6 @@
 - [Introduction](#introduction)
 - [Schema versioning](#schema-versioning)
 - [Schema stability](#schema-stability)
-- [Adding new committers to metadata working group](#adding-new-committers-to-metadata-working-group)
 - [Governance of schema updates](#governance-of-schema-updates)
 
 ## Introduction
@@ -63,27 +62,19 @@ It is important to note that the stability of a schema is not the same as the sc
 
 ### High Stability
 
-High stability schemas are those where the DCP infrastructure has specific knowledge about the schema's structure and changing it would require a new DCP component software version. The ingest service is the most likely component to require high stability schemas. Fields in these schemas should be very limited and contain no scientific meaning. They are likely to be fields assigned by the Ingest infrastructure rather than provided by submitters. The process for requesting and getting updates to these fields should require a large scale consultation with the users of and developers of the Ingest service and a reasonable timeframe to update the software and educate users about the change before it enters production. The *core* entity schemas are generally considered high-stability schemas.
+High stability schemas are schemas where the DCP infrastructure has specific knowledge about its structure and updating it would require an update to DCP component software. Fields in high stability schemas should be very limited and contain no scientific meaning. They are likely to be fields assigned by the Ingest infrastructure rather than provided by submitters. The process for requesting updates to fields in high stability schemas require consultation with the users of and developers of the Ingest service and a reasonable timeframe to update the software and educate users about the change before it enters production. The *core* entity schemas are an example of high stability schemas.
 
 ### Medium Stability
 
-Medium stability schemas are those which tend to contain scientific fields on which downstream users - such as the pipeline infrastructure or portal developers - have dependencies. Changing fields in these schemas should not require major software updates for the DCP but may alter how the pipelines or portals query for new data. As these fields are likely to have scientific meaning, this increases the likelihood that they might change as our understanding evolves. The schema update process needs to be agile and able to react to changes in the subject. These changes may have significant downstream consequences for the automated processes that run the pipelines or portals, so strong agreement is needed for a change before it happens. The *type* entity schemas are generally considered medium-stability schemas.
+Medium stability schemas are schemas which tend to contain scientific fields on which downstream users - such as the pipeline infrastructure or portal developers - have dependencies. Changing fields in these schemas should not require major software updates for the DCP but may alter how the pipelines or portals query for new data. As these fields are likely to have scientific meaning, this increases the likelihood that they might change as our understanding evolves. The schema update process needs to be agile and able to react to changes in the subject. These changes may have significant downstream consequences for the automated processes that run the pipelines or portals, so strong agreement is needed for a change before it happens. The *type* entity schemas are generally considered medium-stability schemas.
 
 ### Low Stability
 
-Schemas which are labeled as low stability are those associated with rapidly evolving sample collection or experimental techniques. Developers should avoid depending on the fields in these schemas. The update process should be rapid and use a minimal approval process such as a small number of +1s on a GitHub pull request. The *module* entity schemas are generally considered low-stability schemas.
+Low stability schemas are schemas which are those associated with rapidly evolving sample collection or experimental techniques. Developers should avoid depending on the fields in these schemas. The update process should be rapid and use a minimal approval process such as a small number of +1s on a GitHub pull request. The *module* entity schemas are generally considered low-stability schemas.
 
 ### Reviewing Stability levels
 
 The metadata working group should review the stability level of different schemas on a quarterly or bi-annual basis to decide if changes are needed.
-
-## Adding new committers to metadata working group
-
-A nominated group of metadata working group members will have commit access to the metadata-schema repo.  Committers are members of the working group who have permission to merge and accept pull requests to the metadata-schema repo.
-
-Committers are not allowed to skip the review process. Any person including the committers who wish to make a change to a metadata schema module this process must be followed.
-
-Anyone can request to join the committer team. When a request is received, the existing committers will discuss the request and vote on the addition of the new member. This process should be rapid and the requestor should hear the outcome within 72 hours.
 
 ## Governance of schema updates
 
