@@ -27,7 +27,7 @@ This document describes the principles and standards by which the HCA metadata s
 
 All metadata schemas will be versioned using [semantic versioning](http://semver.org/) which gives each schema version a specific number in the form `vX.Y.Z` where `X` is the major version number, `Y` is the minor version number, and `Z` is the patch version number.
 
-Schema version numbers change when a schema update is made. The principles used to decide which version number to update primarily consider **backwards compatibility** with metadata created using a previous version. In other words, backwards compatibility is broken if a metadata JSON document generated for and valid against a previous schema version is now invalid against the updated schema version. The three categories of version changes are outlined below along with examples of HCA metadata schema changes for each category:
+Schema version numbers change when a schema update is made. The principles used to decide which version number to update primarily consider **backwards compatibility** with metadata created using a previous version. In other words, backwards compatibility is broken if a metadata JSON document generated for and valid against a previous schema version is now invalid against the updated schema version. Understanding backwards compatibility is especially important for HCA data generators and submitters. The three categories of version changes are outlined below along with examples of HCA metadata schema changes for each category:
 
 **Major (increment to X)**: Any schema change that breaks backwards compatibility with metadata created using the previous version.
 - Adding a required field.
@@ -53,7 +53,7 @@ Schema version numbers change when a schema update is made. The principles used 
 - Correcting a regular expression.
 - Correcting an ontology source.
 
-**Forwards compatibility** refers to whether data generated with a newer version will be compatible with conformance requirements of an older version. This is the version from the consumer perspective, for example an analysis tool or a conformance requirement. We use a syntax based on a subset of that allowed by npm (a JavaScript package manager), whereby a consumer specifies the version of a schema it needs and whether it will tolerate alternative versions in any of the three fields. As an example, if a conformance requires version 1.0.4 of a package, it can state that requirement as:
+In the context of HCA metadata, **forwards compatibility** refers to when a metadata JSON document generated for and valid against the current schema version is also valid against an older version of that schema. Understanding forwards compatibility is especially important for HCA data consumers, for example for an analysis tool or a tertiary portal developer. We use a syntax based on a subset of that allowed by npm (a JavaScript package manager), whereby a consumer specifies the version of a schema it needs and whether it will tolerate alternative versions in any of the three fields. As an example, if a conformance requires version 1.0.4 of a package, it can state that requirement as:
 
 - 1.0.4 -- requires exactly 1.0.4 and no other version
 - ^1.0.4 -- requires exactly 1.0.4 and higher patch versions (e.g. 1.0.6, 1.0.7)
