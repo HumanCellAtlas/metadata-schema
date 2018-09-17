@@ -53,17 +53,13 @@ Schema version numbers change when a schema update is made. The principles used 
 - Correcting a regular expression.
 - Correcting an ontology source.
 
-In the context of HCA metadata, **forwards compatibility** refers to when a metadata JSON document generated for and valid against the current schema version is also valid against an older version of that schema. Understanding forwards compatibility is especially important for HCA data consumers, for example for an analysis tool or a tertiary portal developer. We use a syntax based on a subset of that allowed by npm (a JavaScript package manager), whereby a consumer specifies the version of a schema it needs and whether it will tolerate alternative versions in any of the three fields. As an example, if a conformance requires version 1.0.4 of a package, it can state that requirement as:
-
-- 1.0.4 -- requires exactly 1.0.4 and no other version
-- ^1.0.4 -- requires exactly 1.0.4 and higher patch versions (e.g. 1.0.6, 1.0.7)
-- 1.0.x -- requires exactly 1.0 but accepts any patch versions (e.g. 1.0.2, 1.0.7)
-- 1.x -- requires exactly 1 but accepts any minor or patch versions (e.g. 1.1.0, 1.4.2)
-- x -- accepts any major, minor, or patch version
-
 ## Module stability
 
-This modular schema design allows us to have different rates of change for different schemas. In order to manage this, each different schema needs to be annotated with a stability level so everyone can understand the impact of a suggested change to a particular schema. This design also allows us to define appropriate governance for each stability level. Schemas labeled at a particular stability level are expected to be that stable, so high-stability modules should rarely change but low-stability modules should be free to iterate quickly. This annotation of stability is not the same as versioning, rather, it’s complimentary: it’s a way of indicating whether a schema is undergoing rapid changes to its version (low stability) or if the version hasn’t changed in awhile and is unlikely to change (high stability). 
+The modular design of the HCA metadata standard allows for different rates of change for different schemas. In order to understand the downstream consequences of a suggested update, each schema is annotated with a stability level (high, medium, or low) indicating the expected rate of change. High stability schemas are expected to rarely change while low stability schemas are expected to rapidly change.
+
+Assigning stability to schemas also enables distinct governance rules for each stability level. For example, an update to a high stability schema requires more rigorous review and a wider acceptance than an update to a low stability schema.
+
+It is important to note that the stability of a schema is not the same as the schema version, although the two ideas are related. There are no restrictions on the type of update (major, minor, patch) that can happen to a schema based on its stability; however, the consequences of a major update on a high stability schema are much more severe than a patch update to a low stability schema, for example. Both schema stability and update type should be considered when proposing a schema update.
 
 ### High Stability
 
