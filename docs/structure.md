@@ -37,7 +37,7 @@ There are five major entities supported by the HCA metadata standard: Projects, 
 
 ![Entities](images/entities.jpg)
 
-The entities are arranged in units the represent different parts of an experiment. For example, the diagram below is an abstract illustratation of an input *biomaterial* (*e.g.* a tissue sample) undergoing some *process* (*e.g.* dissociation) to produce another *biomaterial* (*e.g.* a sample of dissociated cells). The *process* that was actually executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
+The entities are arranged in units that represent different parts of an experiment. For example, the diagram below is an abstract illustratation of an input *biomaterial* (*e.g.*, a tissue sample) undergoing some *process* (*e.g.*, dissociation) to produce another *biomaterial* (*e.g.*, a sample of dissociated cells). The *process* that was actually executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
 
 ![Entities](images/unit_of_hierarcy.jpg)
 
@@ -57,7 +57,7 @@ Below is an example single-cell sequencing experiment modeled using the HCA meta
 
 ### Recording the standard
 
-The schema will be stored as a series of individual documents which are related to entities and modules associated with them *e.g* project.json, biomaterial.json, sequencing_process.json. These documents are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their contents, and the update process. Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
+The schema will be stored as a series of individual documents which are related to entities and modules associated with them (*e.g.*, project.json, biomaterial.json, sequencing_process.json). These documents are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their content, and the update process. Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
 
 ## Specifying schema URLs
 
@@ -72,14 +72,14 @@ As we are requiring JSON schemas to be self-describing, all *Type* entities will
 For `donor_organism.json` schema, these fields will look like: 
 
 ``` 
-"$schema": "http://json-schema.org/draft-04/schema#"
-"$id": "https://schema.humancellatlas.org/type/biomaterial/5.0.0/donor_organism"
+"$schema": "http://json-schema.org/draft-07/schema#"
+"$id": "https://schema.humancellatlas.org/type/biomaterial/10.1.1/donor_organism"
 "additionalProperties": false,
 "properties" : {
     "describedBy": {
         "description": "The URL reference to the schema.",
         "type": "string",
-        "pattern": "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
+        "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/donor_organism"
     },
     ...
 }
@@ -94,11 +94,11 @@ Each JSON document needs to explicitly indicate the JSON schema and schema versi
 where
 
 - `{primary_directory}` is one of [core, type, module]
-- `{secondary/directory/structure}` describes the path to the `{filename}` *e.g.* biomaterial, process/sequencing
-- `{version}` is the version number of the schema file *e.g.* 5.0.1
+- `{secondary/directory/structure}` describes the path to the `{filename}`, *e.g.*, biomaterial, process/sequencing
+- `{version}` is the version number of the schema file, *e.g.,* 10.1.1
 - `{schema_filename}` is the ultimate name of the JSON schema document
 
-Some example URIs includ:
+Some example URIs include:
 
 ```
 http://schema.humancellatlas.org/core/biomaterial/5.0.1/biomaterial_core
