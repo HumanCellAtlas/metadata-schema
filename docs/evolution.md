@@ -78,7 +78,7 @@ The Metadata Working Group should review the stability level of schemas on a qua
 
 ## Governance of schema updates
 
-The Metadata Working Group will report progress to the HCA executive committee. The Metadata Working Group will review the update process on a yearly basis and ensure it is meeting the needs of the working group. If at any point the process becomes problematic, changes will be made to ensure metadata update is not a blocker for the consortium as a whole. The working group will provide written updates on the following matters at the start of each month:
+The Metadata Working Group will review the update process on a yearly basis and ensure it is meeting the needs of the group. If the process becomes problematic, changes will be made to ensure metadata updates are not a blocker for the consortium as a whole. The working group will provide written updates on the following matters at the start of each quarter:
 
 - Changes to the metadata standard and specification
   - Updates to existing schemas
