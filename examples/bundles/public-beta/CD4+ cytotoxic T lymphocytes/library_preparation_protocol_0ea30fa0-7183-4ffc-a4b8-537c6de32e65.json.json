@@ -1,0 +1,35 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/4.3.2/library_preparation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "library_preparation_protocol_1",
+        "protocol_name": "Preparation of mRNAs for single cell SmartSeq2 sequencing",
+        "protocol_description": "Single cell RNAseq was performed as described in Picelli et al.Nat Protoc. 2014, PMID:24385147. We performed 23 cycles of amplification. Barcoded Illumina sequencing libraries (Nextera XT library preparation kit, Illumina) were prepared as following manufacturers protocol.",
+        "publication_doi": "10.1038/nprot.2014.006"
+    },
+    "library_construction_approach": {
+        "text": "Smart-seq2",
+        "ontology": "EFO:0008931"
+    },
+    "nucleic_acid_source": "single cell",
+    "end_bias": "full length",
+    "primer": "poly-dT",
+    "strand": "unstranded",
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA",
+        "ontology": "OBI:0000869"
+    },
+    "library_construction_kit": {
+        "retail_name": "Nextera XT library preparation kit",
+        "manufacturer": "Illumina"
+    },
+    "library_preamplification_method": {
+        "text": "PCR",
+        "ontology": "OBI:0000415"
+    },
+    "provenance": {
+        "document_id": "0ea30fa0-7183-4ffc-a4b8-537c6de32e65",
+        "submission_date": "2018-09-05T09:48:40.286Z",
+        "update_date": "2018-09-05T09:52:00.867Z"
+    }
+}

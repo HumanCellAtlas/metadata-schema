@@ -1,0 +1,46 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "DID_scRSq04",
+        "ncbi_taxon_id": [
+            9696
+        ]
+    },
+    "human_specific": {
+        "body_mass_index": 28.4,
+        "ethnicity": [
+            {
+                "text": "European",
+                "ontology": "hancestro:0005"
+            }
+        ]
+    },
+    "death": {
+        "cause_of_death": "anoxia"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "organism_age": "21",
+    "organism_age_unit": {
+        "text": "year",
+        "ontology": "UO:0000036"
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461"
+        }
+    ],
+    "is_living": "no",
+    "sex": "male",
+    "provenance": {
+        "document_id": "cd379b0c-7b23-4093-b0b0-65d592ab2839",
+        "submission_date": "2018-09-06T14:14:54.645Z",
+        "update_date": "2018-09-06T14:23:05.946Z"
+    }
+}

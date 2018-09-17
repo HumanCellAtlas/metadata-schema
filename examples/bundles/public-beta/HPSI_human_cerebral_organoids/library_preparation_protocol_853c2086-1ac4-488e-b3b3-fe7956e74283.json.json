@@ -1,0 +1,41 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/4.3.2/library_preparation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "10x_3'_library_preparation",
+        "protocol_name": "10x 3' single cell library preparation",
+        "protocol_description": "10x Chromium single cell 3' v2 library preparation",
+        "document": "CG00052_SingleCell3_ReagentKitv2UserGuide_RevE.pdf"
+    },
+    "nucleic_acid_source": "single cell",
+    "input_nucleic_acid_molecule": {
+        "text": "polyA RNA",
+        "ontology": "OBI:0000869"
+    },
+    "library_construction_approach": {
+        "text": "Chromium 3' Single Cell v2",
+        "ontology": "EFO:0008995"
+    },
+    "end_bias": "3 prime end bias",
+    "primer": "poly-dT",
+    "strand": "unstranded",
+    "cell_barcode": {
+        "barcode_read": "Read 1",
+        "barcode_offset": 0,
+        "barcode_length": 16
+    },
+    "umi_barcode": {
+        "barcode_read": "Read 1",
+        "barcode_offset": 15,
+        "barcode_length": 10
+    },
+    "library_construction_kit": {
+        "retail_name": "10X Chromium Single Cell 3' Solution v2 Chemistry",
+        "manufacturer": "10X Genomics"
+    },
+    "provenance": {
+        "document_id": "853c2086-1ac4-488e-b3b3-fe7956e74283",
+        "submission_date": "2018-09-05T09:25:02.667Z",
+        "update_date": "2018-09-05T09:25:09.008Z"
+    }
+}

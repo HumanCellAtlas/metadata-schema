@@ -1,0 +1,35 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/6.3.1/specimen_from_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "Subject10_DENV negative_PBMC_TEMRA",
+        "biomaterial_name": "Subject10_DENV negative_PBMC_TEMRA",
+        "biomaterial_description": "Subject10_DENV negative_PBMC_TEMRA",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "organ": {
+        "text": "blood",
+        "ontology": "UBERON:0000178"
+    },
+    "organ_part": {
+        "text": "peripheral blood mononuclear cell",
+        "ontology": "CL:2000001"
+    },
+    "preservation_storage": {
+        "preservation_method": "cryopreservation, other",
+        "storage_method": "frozen, liquid nitrogen"
+    },
+    "provenance": {
+        "document_id": "ff63b5d7-e702-40da-bbe9-619e52131b63",
+        "submission_date": "2018-09-05T09:47:21.215Z",
+        "update_date": "2018-09-05T09:50:44.523Z"
+    }
+}

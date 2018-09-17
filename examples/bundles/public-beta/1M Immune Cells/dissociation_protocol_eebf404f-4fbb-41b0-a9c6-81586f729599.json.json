@@ -1,0 +1,18 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/5.0.3/dissociation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "dissociation_protocol_1",
+        "protocol_name": "mononuclear cell isolation",
+        "protocol_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing."
+    },
+    "dissociation_method": {
+        "text": "10x sequencing",
+        "ontology": "EFO:0008995"
+    },
+    "provenance": {
+        "document_id": "eebf404f-4fbb-41b0-a9c6-81586f729599",
+        "submission_date": "2018-09-04T12:26:54.982Z",
+        "update_date": "2018-09-04T12:26:56.433Z"
+    }
+}

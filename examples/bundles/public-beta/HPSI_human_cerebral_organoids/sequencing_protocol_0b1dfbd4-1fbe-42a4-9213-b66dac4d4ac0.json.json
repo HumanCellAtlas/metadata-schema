@@ -1,0 +1,24 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/9.0.2/sequencing_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "10x_scRNASeq",
+        "protocol_name": "10x single cell RNA Sequencing",
+        "protocol_description": "10x RNA sequencing",
+        "document": "CG00052_SingleCell3_ReagentKitv2UserGuide_RevE.pdf"
+    },
+    "instrument_manufacturer_model": {
+        "text": "Illumina HiSeq 2500",
+        "ontology": "EFO:0008565"
+    },
+    "paired_end": true,
+    "sequencing_approach": {
+        "text": "tag based single cell RNA sequencing",
+        "ontology": "EFO:0008440"
+    },
+    "provenance": {
+        "document_id": "0b1dfbd4-1fbe-42a4-9213-b66dac4d4ac0",
+        "submission_date": "2018-09-05T09:25:02.679Z",
+        "update_date": "2018-09-05T09:25:09.017Z"
+    }
+}

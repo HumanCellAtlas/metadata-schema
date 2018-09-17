@@ -1,0 +1,19 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/5.0.3/dissociation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "dissociation_protocol_1",
+        "protocol_name": "Dissociation by FACS into single cells",
+        "protocol_description": "Dissociation by FACS into single cells",
+        "publication_doi": "10.1126/sciimmunol.aan8664"
+    },
+    "dissociation_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108"
+    },
+    "provenance": {
+        "document_id": "a934e15c-e1ce-423b-b554-9203d4e93f41",
+        "submission_date": "2018-09-05T09:48:40.205Z",
+        "update_date": "2018-09-05T09:51:59.418Z"
+    }
+}

@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/file/supplementary_file.json - v1.1.5] - 2018-09-04
 ### Added
 Added missing provenance field
@@ -726,8 +728,6 @@ Changed from json-schema draft-4 to draft-07
 ### [type/protocol/sequencing/sequencing_protocol.json - v9.0.1] - 2018-08-10
 ### Changed
 Changed from json-schema draft-4 to draft-07
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/project/project.json - v9.0.0] - 2018-08-09
 ### Changed

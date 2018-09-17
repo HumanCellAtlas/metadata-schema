@@ -1,0 +1,25 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "A1-Spl-0-TL5_cells",
+        "biomaterial_name": "cells from fresh spleen",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "biosd_biomaterial": "SAMEA1098924",
+        "insdc_biomaterial": "ERS2392443"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "total_estimated_cells": 1970,
+    "provenance": {
+        "document_id": "932dae75-ba79-42a6-915a-c6a67b39835c",
+        "submission_date": "2018-09-05T09:14:54.798Z",
+        "update_date": "2018-09-05T09:15:05.597Z"
+    }
+}
