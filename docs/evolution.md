@@ -15,7 +15,6 @@ This document describes the principles and standards by which the HCA metadata s
  - How versioning of metadata schemas is defined
  - Definitions of the stability of metadata schemas
  - How schema updates are governed
- - How different stakeholders might be affected by schema updates
 
 **Who should be reading this document?**
  - Members of external projects seeking alignment with HCA metadata standards
