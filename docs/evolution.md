@@ -27,7 +27,7 @@ This document describes the principles and standards by which the HCA metadata s
 
 All metadata schemas will be versioned using [semantic versioning](http://semver.org/) which gives each schema version a specific number in the form `vX.Y.Z` where `X` is the major version number, `Y` is the minor version number, and `Z` is the patch version number.
 
-Schema version numbers change when a schema update is made. The principles used to decide which version number to update primarily consider **backwards compatibility** with metadata created using a previous version. In other words, backwards compatibility is broken if a metadata JSON document generated for and valid against a previous schema version is now invalid against the updated schema version. The  three categories of version changes are outlined below along with examples of HCA metadata schema changes for each category:
+Schema version numbers change when a schema update is made. The principles used to decide which version number to update primarily consider **backwards compatibility** with metadata created using a previous version. In other words, backwards compatibility is broken if a metadata JSON document generated for and valid against a previous schema version is now invalid against the updated schema version. The three categories of version changes are outlined below along with examples of HCA metadata schema changes for each category:
 
 **Major (increment to X)**: Any schema change that breaks backwards compatibility with metadata created using the previous version.
 - Adding a required field.
@@ -39,7 +39,6 @@ Schema version numbers change when a schema update is made. The principles used 
 - Changing the ontology source for an ontologized field.
 - Removing a value from a controlled vocabulary.
 - Adding a regular expression to a field.
-- Unpacking an overloaded field (a field which serves multiple purposes e.g. complex biomaterial name)
 
 **Minor (increment to Y)**: Any schema change that ensures backwards compatibility with metadata created using the previous version.
 - Adding an optional field.
