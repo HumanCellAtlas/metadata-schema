@@ -74,16 +74,16 @@ A low stability schema is a schema which is associated with rapidly evolving sam
 
 ### Reviewing Stability levels
 
-The Metadata Working Group should review the stability level of schemas on a quarterly or bi-annual basis to decide if changes are needed. For example, a new, low stability schema might become standard over time and be promoted to medium or even high stability once it has been reviewed and agreed upon by the HCA community.
+The metadata team should review the stability level of schemas on a quarterly or bi-annual basis to decide if changes are needed. For example, a new, low stability schema might become standard over time and be promoted to medium or even high stability once it has been reviewed and agreed upon by the HCA community.
 
 ## Governance of schema updates
 
-The metadata working group will review the update process on a yearly basis and ensure it is meeting the needs of the group. If the process becomes problematic, changes will be made to ensure metadata updates are not a blocker for the consortium as a whole. The working group will provide written updates on the following matters at the start of each quarter:
+The metadata team will review the update process on a yearly basis and ensure it is meeting the needs of the group. If the process becomes problematic, changes will be made to ensure metadata updates are not a blocker for the consortium as a whole. The metadata team will provide written updates on the following matters at the start of each quarter:
 
 - Changes to the metadata standard and specification
   - Updates to existing schemas
   - Addition of new schemasS
-- New members of the metadata working group
-- New committers to the metadata-schema git repo
+- New members of the metadata team
+- New committers to the metadata-schema GitHub repo
 
 The reporting frequency and process will be reviewed on a yearly basis and modifications made as required.
