@@ -70,7 +70,7 @@ As the metadata standard evolves, different schemas will likely evolve at differ
 
 ### Flexibility
 
-Significant experimental diversity is expected. Our methods for iterating metadata must allow for both the flexible capture of new data variants (*e.g.*, new experimental assays), as well as the subsequent easy adoption of new schema as methods reach common usage. Any data contributor should always be able to add arbitrary additional fields to the metadata objects without causing process failure.
+Significant experimental diversity among HCA datasets is expected. The metadata evolution process must be flexible to allow for submission of new data types and subsequent easy adoption of new schema/fields as methods reach common usage. Data contributors should be able to request new metadata fields to describe their datasets without causing process failure.
 
 ### Separation of (metadata) concerns
 
