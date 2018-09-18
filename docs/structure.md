@@ -55,55 +55,64 @@ Below is an example single cell sequencing experiment modeled using the HCA meta
 * *Type entities* = Entities that are a specific instance of a *Core* entity. Type entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
 * *Module entities* = Small, flexible entities that are extensions of an existing *Type* entity. Module entities contain extra fields related to a *Type* but that are domain- or user-specific.
 
+Each project, biomaterial, protocol, process, and file entity is represented by a Type schema. Each Type schema inherits a Core entity and zero or more Module entities. 
+
 ### Recording the standard
 
-The metadata standard is stored as a series of individual schemas which represent the entities and fields associated with them (*e.g.*, project.json, biomaterial.json, sequencing_protocol.json). The schemas are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their content, and the update process. Anyone is able to propose changes to the schema through GitHub pull requests and issues. Only a specific list of committers will be allowed to approve pull requests and release new versions of the metadata schemas.
+The metadata standard is stored as a series of individual schemas which represent the entities and fields associated with them (*e.g.*, `project.json`, `biomaterial_core.json`, `sequencing_protocol.json`). The schemas are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their content, and the update process. Anyone is able to propose changes to the schema through GitHub pull requests and issues. Only a specific list of committers will be allowed to approve pull requests and release new versions of the metadata schemas.
 
-## Specifying schema URLs
+## Specifying JSON schemas
 
-### JSON schemas
+### Self-describing metadata schemas
 
-Each JSON schema is self-describing using the `$id` field with a URL to the location of the version of the current document. An example of how the version is indicated in schema URL: 
+Each JSON metadata schema is self-describing using the `$id` field with a URL to the location of that specific version of the schema. 
 
-`https://schema.humancellatlas.org/core/biomaterial/5.0.0/biomaterial_core`
+In the `donor_organism.json` schema, the `$id` field looks like: 
 
-As we are requiring JSON schemas to be self-describing, all *Type* entities will require a property called `describedBy`. 
+    {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "https://schema.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+        ...
+    }
 
-For `donor_organism.json` schema, these fields will look like: 
+### Metadata documents
 
-``` 
-"$schema": "http://json-schema.org/draft-07/schema#"
-"$id": "https://schema.humancellatlas.org/type/biomaterial/10.1.1/donor_organism"
-"additionalProperties": false,
-"properties" : {
+Each metadata document for a Type entity requires a property - `describedBy` - that explicitly records the URI of the metadata schema which represents it.  
+
+In the `donor_organism.json` schema, the `describedBy` field is specified as: 
+
     "describedBy": {
         "description": "The URL reference to the schema.",
         "type": "string",
         "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/donor_organism"
-    },
-    ...
-}
-```
+    }
+    
+In a metadata document representing a Donor organism entity, the `describedBy` field is expressed as:
 
-### JSON documents
+    {
+        "describedBy": "http://schema.staging.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+        ...
+    }
 
-Each JSON document needs to explicitly indicate the JSON schema and schema version which it manifests. The proposed structure of the metadata schema URIs is:
+### Schema URI structure
 
-`http://schema.humancellatlas.org/{primary_directory}/{secondary/directory/structure}/{version}/{schema_filename}`
+The structure of metadata schema URIs follows the convention:
+
+`http://schema.humancellatlas.org/{primary_directory}/{secondary/directory/structure}/{version}/{unqualified_schema_name}`
 
 where
 
-- `{primary_directory}` is one of [core, type, module]
-- `{secondary/directory/structure}` describes the path to the `{filename}`, *e.g.*, biomaterial, process/sequencing
-- `{version}` is the version number of the schema file, *e.g.,* 10.1.1
-- `{schema_filename}` is the ultimate name of the JSON schema document
+- `{primary_directory}` is one of [`core`, `type`, `module`]
+- `{secondary/directory/structure}` describes the path to the schema, *e.g.* `biomaterial`, `process/sequencing`
+- `{version}` is the version number of the schema, *e.g.* `10.1.1`
+- `{unqualified_schema_name}` is the unqualified name of the schema, *e.g.* `donor_organism`
 
 Some example URIs include:
 
 ```
 http://schema.humancellatlas.org/core/biomaterial/5.0.1/biomaterial_core
 http://schema.humancellatlas.org/type/biomaterial/5.0.0/cell_line
-http://schema.humancellatlas.org/type/process/sequencing/5.0.0/library_preparation_process
+http://schema.humancellatlas.org/type/protocol/sequencing/5.0.0/library_preparation_protocol
 http://schema.humancellatlas.org/module/ontology/5.0.0/cell_type_ontology
 http://schema.humancellatlas.org/module/process/sequencing/5.2.0/barcode
 ```
