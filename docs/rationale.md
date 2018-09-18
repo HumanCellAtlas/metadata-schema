@@ -23,8 +23,8 @@ This document describes the rationale behind certain implementation and design c
  
 ## Definitions
 
-- *metadata document* A file containing metadata according to the specification.
-- *metadata schema* A file containing the specification for metadata. Currently, this specification is in JSON format.
+**metadata document**  A file containing metadata according to the specification.
+**metadata schema**  A file containing the specification for metadata. Currently, this specification is in JSON format.
 
 ## Implementation choices
 
@@ -50,7 +50,7 @@ All metadata documents are self-describing, *i.e.*, explicitly indicate the sche
 
 ### Flat metadata instantiation
 
-Metadata files, containing metadata elements from multiple schema, are flattened into single files for storage or transmission (*e.g.*, project.json). The actual contents of a given metadata file are subject to conformance specifications, which indicate the module schema and version that the metadata must conform to.
+A metadata document, which contains metadata elements from one or more schemas, is flattened into a single file for storage and transmission. The contents of a metadata document are subject to conformance specifications, which indicate the schema name and version to which the metadata must conform.
 
 ### Schema language
 
