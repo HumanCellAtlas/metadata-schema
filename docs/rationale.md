@@ -36,11 +36,11 @@ The basis for defining a collection of fields and objects in a particular schema
 
 ### Machine readable
 
-All metadata, metadata schema, and metadata conformance are described in machine-readable, well-specified, web-accessible, and versioned file formats.
+All metadata standards, metadata schema, and metadata conformance are described in machine-readable, well-specified, web-accessible, and versioned file formats.
 
 ### Self-describing metadata
 
-All metadata files are self-describing, *i.e.*, explicitly indicate the schema and schema version which they manifest. Ideally, this is done by using a URL so that any metadata consumer can trivially fetch all schema associated with a metadata file.
+All metadata documents are self-describing, *i.e.*, explicitly indicate the schema name and version which they manifest. Currently, the schema name and version is declared in the `describedBy` field using a URL. This approach allows a metadata consumer to fetch the schema associated with a metadata document.
 
 ### Flat metadata instantiation
 
