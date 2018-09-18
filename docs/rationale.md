@@ -66,7 +66,7 @@ The HCA foresees active development of sample handling, assays, and analyses, an
 
 ### Modularity
 
-As the metadata evolves, different components will likely evolve at different rates than others. For example, the specification of contact info may never change, whereas entirely new objects will be required when a new experimental technology is invented. A modular design will ensure that different components of the metadata can evolve flexibly and independently. 
+As the metadata standard evolves, different schemas will likely evolve at different rates. For example, the specification of contact info may never change, whereas entirely new schemas might be required when a new experimental technology is invented. A modular design will ensure that different components of the metadata standard can evolve independently. 
 
 ### Flexibility
 
