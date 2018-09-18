@@ -25,11 +25,11 @@ This document describes the structure of the HCA metadata standards. More detail
 
 ### Motivation
 
-The primary motivations behind the HCA metadata entity model include:
+The primary motivations for the HCA metadata entity model are to:
 
-1. Process-based schema for handling transitions between biomaterial and file entities
-1. Modular schemas to support independent versioning and domain-specific metadata fields
-1. Flexible and reusable metadata structure to enable modeling of future experiment types
+1. handle transitions between biomaterial and file entities
+1. enable independent versioning of schemas representing different entities
+1. support modeling of future sample and experiment types easily and without needing to drastically alter the current entity model
 
 ### Entities
 
@@ -37,7 +37,7 @@ There are five major entities supported by the HCA metadata standard: Projects, 
 
 ![Entities](images/entities.jpg)
 
-The entities are arranged in units that represent different parts of an experiment. For example, the diagram below is an abstract illustratation of an input *biomaterial* (*e.g.*, a tissue sample) undergoing some *process* (*e.g.*, dissociation) to produce another *biomaterial* (*e.g.*, a sample of dissociated cells). The *process* that was actually executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
+The entities are arranged in units that represent different parts of an experiment. For example, the diagram below is an abstract illustration of an input *biomaterial* (*e.g.*, a tissue sample) undergoing some *process* (*e.g.*, dissociation) to produce another *biomaterial* (*e.g.*, a sample of dissociated cells). The *process* that was actually executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
 
 ![Entities](images/unit_of_hierarcy.jpg)
 
