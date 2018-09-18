@@ -61,18 +61,18 @@ Schema are a superset of JSON schema and JSON schema validation (json-schema.org
 
 The HCA metadata standards are developed and updated in a transparent and open manner to ensure that the whole HCA community can participate in the process. The following principles will be adhered to for the update process.
 
-### Agility
+### Agile
 
 The HCA foresees active development of sample handling, assays, and analyses, and will include both stable and rapidly evolving methods. As such, the metadata standard needs to be able to adapt accordingly, with regular updates and a process for managing and tracking schema versions.
 
-### Modularity
+### Modular
 
 As the metadata standard evolves, different schemas will likely evolve at different rates. For example, the specification of contact info may never change, whereas entirely new schemas might be required when a new experimental technology is invented. A modular design will ensure that different components of the metadata standard can evolve independently. 
 
-### Flexibility
+### Flexible
 
 Significant experimental diversity among HCA datasets is expected. The metadata evolution process must be flexible to allow for submission of new data types and subsequent easy adoption of new schema/fields as methods reach common usage. Data contributors should be able to request new metadata fields to describe their datasets without causing process failure.
 
-### Separation of metadata concerns
+### Decoupled
 
-It must be possible to separate different concerns related to metadata. For example, the metadata validation process should be driven by the schema, and depend only on having access to the schema, not the particular content of the schema or its semantics. Similarly, it should be possible to store metadata documents on disk without understanding its syntax or semantics.
+It must be possible to decouple software concerns related to metadata from the metadata standard itself. For example, the metadata validation process should depend only on having access to the schema, not the particular content of the schema or its semantics. Similarly, metadata documents should be able to be stored, searched over, and displayed with little to no understanding of their content.
