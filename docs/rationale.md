@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This document describes reasons and rationale behind certain implementation and design choices for how the metadata standard is developed and maintained.
+This document describes the rationale behind certain implementation and design choices for how the metadata standard is developed and maintained.
 
 **What is in this document?**
 - Rationale for how the HCA metadata standard is designed and implemented
@@ -18,7 +18,7 @@ This document describes reasons and rationale behind certain implementation and 
  - Members of external projects seeking alignment with HCA metadata standards
 
 **What *isn't* in this document?**
-- The [structure of metadata standards](structure.md) that resulted from following the design and implementation choices outlined here.
+- The [structure of the metadata standards](structure.md) based on the design and implementation choices
  
 ## Implementation choices
 
