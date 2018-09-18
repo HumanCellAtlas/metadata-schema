@@ -28,11 +28,11 @@ A detailed specification for the structure of the schema documents can be found 
 
 Metadata fields are organized into biologically-meaningful *type* schemas, for example a cell suspension schema or an enrichment protocol schema. Each type schema inherits a  core schema, containing the minimal fields necessary for that type, and any relevant modules that customize the schema for a particular dataset or analysis. Using this modular design, each schema has its own independent version (as described below), and any particular dataset is defined by a collection of appropriate schemas.
 
-It is worth noting the basis for defining a collection of fields and objects in a particular module can be considered along two different axises: 
- - do the fields/objects make sense together from a scientific point of view, *e.g.*, they are all fields associated with the same assay or sample type like Drop-Seq or a Brain section; and
- - do the fields have the same stability requirement, *e.g.*, changing a field will result in software update requirements for either ingest or pipelines or not. 
+The basis for defining a collection of fields and objects in a particular schema can be considered along two axes: 
+ 1. The fields/objects relate to each other from a scientific point of view. *e.g.* they describe the same assay or sample type like Drop-Seq or a brain section.
+ 1. The fields/objects have the same stability requirement. *e.g.* adding a new set of fields will not require any DCP software updates. 
  
- Fields which belong together scientifically and have broadly the same stability level should be grouped together in a single module.
+ Fields which relate scientifically and have similar stability level should be grouped together in a schema.
 
 ### Machine readable
 
