@@ -1,12 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Fields to capture timecourse information.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information relating to a timecourse.",
     "additionalProperties": false,
     "required": [
         "timecourse_value",
         "timecourse_unit"
     ],
-    "title": "timecourse",
+    "title": "Timecourse",
+    "name": "timecourse",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -21,21 +22,21 @@
             "example": "4.6.1"
         },
         "timecourse_value": {
-            "description": "The numerical value associated with a time interval used in the experiment.",
+            "description": "The numerical value in Timecourse unit associated with a time interval used in the experiment.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "example": "2",
             "user-friendly": "Timecourse value"
         },
         "timecourse_unit": {
-            "description": "The unit in which the timecourse value is expressed.",
+            "description": "The unit in which the Timecourse value is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "example": "day",
             "user-friendly": "Timecourse unit"
         },
         "timecourse_relevance": {
-            "description": "The relevance of the timecourse value/unit to the experiment.",
+            "description": "Relevance of the Timecourse value/unit to the experiment.",
             "type": "string",
             "example": "Collection after tumor cells injected into the mammary gland.",
             "user-friendly": "Timecourse relevance"

@@ -1,0 +1,101 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/project/9.0.2/project",
+    "schema_type": "project",
+    "project_core": {
+        "project_short_name": "Healthy and type 2 diabetes pancreas",
+        "project_title": "Single-cell RNA-seq analysis of human pancreas from healthy individuals and type 2 diabetes patients",
+        "project_description": "We used single-cell RNA-sequencing to generate transcriptional profiles of endocrine and exocrine cell types of the human pancreas. Pancreatic tissue and islets were obtained from six healthy and four T2D cadaveric donors. Islets were cultured and dissociated into single-cell suspension. Viable individual cells were distributed via fluorescence-activated cell sorted (FACS) into 384-well plates containing lysis buffer. Single-cell cDNA libraries were generated using the Smart-seq2 protocol. Gene expression was quantified as reads per kilobase transcript and per million mapped reads (RPKM) using rpkmforgenes. Bioinformatics analysis was used to classify cells into cell types without knowledge of cell types or prior purification of cell populations. We revealed subpopulations in endocrine and exocrine cell types, identified genes with interesting correlations to body mass index (BMI) in specific cell types and found transcriptional alterations in T2D.  Complementary whole-islet RNA-seq data have also been deposited at ArrayExpress under accession number E-MTAB-5060 (http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5060)."
+    },
+    "insdc_project": "ERP017126",
+    "array_express_investigation": "E-MTAB-5061",
+    "insdc_study": "PRJEB15401",
+    "supplementary_links": [
+        "https://www.ebi.ac.uk/gxa/sc/experiments/E-MTAB-5061/Results"
+    ],
+    "contributors": [
+        {
+            "contact_name": "Athanasia,,Palasantza",
+            "email": "Athanasia.Palasantza@ki.se",
+            "institution": "Karolinska Institutet",
+            "laboratory": "Department of Cell and Molecular Biology (CMB)",
+            "address": "Nobels vag 3, 171 77, Stockholm",
+            "country": "Sweden",
+            "corresponding_contributor": false
+        },
+        {
+            "contact_name": "Rickard,,Sandberg",
+            "email": "Rickard.Sandberg@ki.se",
+            "institution": "Karolinska Institutet",
+            "laboratory": "Department of Cell and Molecular Biology (CMB)",
+            "address": "Nobels vag 3, 171 77, Stockholm",
+            "country": "Sweden",
+            "orcid_id": "0000-0001-6473-1740",
+            "corresponding_contributor": true
+        },
+        {
+            "contact_name": "Asa,,Segerstolpe",
+            "email": "Asa.Segerstolpe@ki.se",
+            "institution": "Karolinska Institutet",
+            "laboratory": "Department of Cell and Molecular Biology (CMB)",
+            "address": "Nobels vag 3, 171 77, Stockholm",
+            "country": "Sweden",
+            "corresponding_contributor": false
+        },
+        {
+            "contact_name": "Mallory,Ann,Freeberg",
+            "email": "mfreeberg@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Human Cell Atlas Data Coordination Platform",
+            "address": "Wellcome Trust Genome Campus, Cambridge",
+            "country": "UK",
+            "project_role": "Human Cell Atlas wrangler",
+            "orcid_id": "0000-0003-2949-3921",
+            "corresponding_contributor": false
+        },
+        {
+            "contact_name": "Laura,,Huerta",
+            "email": "lauhuema@ebi.ac.uk",
+            "institution": "EMBL-EBI",
+            "laboratory": "Molecular Atlas",
+            "address": "Wellcome Trust Genome Campus, Cambridge UK",
+            "country": "UK",
+            "project_role": "external curator",
+            "orcid_id": "0000-0002-8748-599X",
+            "corresponding_contributor": false
+        }
+    ],
+    "funders": [
+        {
+            "grant_id": "648842",
+            "funder_name": "European Research Council"
+        },
+        {
+            "funder_name": "Swedish Research Council"
+        },
+        {
+            "funder_name": "Swedish Foundation for Strategic Research"
+        },
+        {
+            "funder_name": "Swedish Cancer Society"
+        },
+        {
+            "funder_name": "Center for Innovative Medicine"
+        }
+    ],
+    "publications": [
+        {
+            "authors": [
+                "Segerstolpe A, Palasantza A, Eliasson P, Andersson EM, Andreasson AC, Sun X, Picelli S, Sabirsh A, Clausen M, Bjursell MK, Smith DM, Kasper M, Ammala C, Sandberg R"
+            ],
+            "publication_title": "Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes",
+            "doi": "10.1016/j.cmet.2016.08.020",
+            "pmid": 27667667,
+            "publication_url": "https://europepmc.org/abstract/MED/27667667"
+        }
+    ],
+    "provenance": {
+        "document_id": "6751cc10-8cc3-452f-929c-4dcb98ee1435",
+        "submission_date": "2018-09-05T12:09:41.693Z",
+        "update_date": "2018-09-05T12:14:26.167Z"
+    }
+}

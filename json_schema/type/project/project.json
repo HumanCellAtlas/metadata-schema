@@ -1,12 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A project contains information about the overall project.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A project entity contains information about the overall project.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type"
     ],
-    "title": "project",
+    "title": "Project",
+    "name": "project",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -27,6 +28,11 @@
                 "project"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",
@@ -35,62 +41,63 @@
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
             "type": "array",
-            "example": "List of authors for a publication resulting from this project.",
             "items": {
                 "$ref": "module/project/contact.json"
-            }
+            },
+            "user_friendly": "Contributors"
         },
-        "supplementary_files": {
-            "description": "Project-level supplementary files.",
+        "supplementary_links": {
+            "description": "External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded.",
             "type": "array",
-            "example": "For example, experimental documents, photos, etc. Please list the file names, separated by double pipes. You will be asked to upload these files separately.",
+            "example": "https://github.com/czbiohub/tabula-muris",
             "items": {
                 "type": "string"
             },
-            "user_friendly": "Project supplementary files"
+            "user_friendly": "Supplementary link(s)"
         },
         "publications": {
             "description": "A list of publications resulting from this project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/publication.json"
-            }
+            },
+            "user_friendly": "Publications"
         },
         "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if project has been submitted. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRP, SRP, or ERP.",
             "type": "string",
             "pattern": "^[D|E|S]RP[0-9]+$",
-            "example": "Must start with DRP, ERP, or SRP.",
+            "example": "SRP000000",
             "user_friendly": "INSDC project accession"
         },
         "geo_series": {
-            "description": "GEO accession number, if data has already been submitted to NCBI GEO.",
+            "description": "GEO accession number, if data has been submitted. Accession must start with GSE.",
             "type": "string",
             "pattern": "^GSE.*$",
-            "example": "Must start with GSE.",
+            "example": "GSE00000",
             "user_friendly": "GEO series accession"
         },
         "array_express_investigation": {
-            "description": "EBI ArrayExpress accession number, if data has already been submitted to ArrayExpress.",
+            "description": "EBI ArrayExpress accession number, if data has been submitted.",
             "type": "string",
             "pattern": "^E-....-.*$",
-            "example": "Must start with E-.",
+            "example": "E-AAAA-00",
             "user_friendly": "ArrayExpress accession"
         },
         "insdc_study": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession, if data has already been submitted to the DDBJ, EMBL-EBI, or NCBI.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession if study has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD.",
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
-            "example": "Must start with PRJE, PRJN, or PRJD.",
+            "example": "PRJNA000000",
             "user_friendly": "INSDC study accession"
         },
         "funders": {
-            "description": "A list of funders supporting this project.",
+            "description": "A list of funding source(s) supporting the project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/funder.json"
             },
-            "user_friendly": "Project funders"
+            "user_friendly": "Project funding source(s)"
         }
     }
 }

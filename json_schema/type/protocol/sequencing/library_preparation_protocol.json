@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about how a sequencing library was created.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about how a sequencing library was prepared.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -11,7 +11,8 @@
         "strand",
         "input_nucleic_acid_molecule"
     ],
-    "title": "library_preparation_protocol",
+    "title": "Library preparation protocol",
+    "name": "library_preparation_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
@@ -32,28 +33,48 @@
                 "protocol"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "protocol_core" : {
             "description": "Core protocol-level information.",
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
         "cell_barcode": {
-            "description": "Information about cell identifier barcode.",
+            "description": "Information about cell identifier barcodes.",
             "type": "object",
             "$ref": "module/process/sequencing/barcode.json",
             "user_friendly": "Cell barcode"
         },
         "input_nucleic_acid_molecule": {
-            "description": "Starting nucleic acid molecule isolated for sequencing. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0004446.",
+            "description": "Starting nucleic acid molecule isolated for sequencing.",
             "type": "object",
             "$ref": "module/ontology/biological_macromolecule_ontology.json",
-            "user_friendly": "Input nucleic acid molecule"
+            "user_friendly": "Input nucleic acid molecule",
+            "example": "polyA RNA"
+        },
+        "nucleic_acid_source": {
+            "description": "Source cells or organelles from which nucleic acid molecules were collected.",
+            "type": "string",
+            "enum": [
+                "bulk cell",
+                "single cell",
+                "single nucleus",
+                "bulk nuclei",
+                "mitochondria"
+            ],
+            "user_friendly": "Nucleic acid source",
+            "example": "Should be one of: bulk cell, single cell, single nucleus, bulk nuclei, or mitochondria."
         },
         "library_construction_approach": {
-            "description": "The general approach for sequencing library construction. Should be a child term of EFO - library preparation",
+            "description": "The general approach for sequencing library construction.",
             "type": "object",
             "$ref": "module/ontology/library_construction_ontology.json",
-            "user_friendly": "Library construction approach"
+            "user_friendly": "Library construction approach",
+            "example": "Smart-seq2"
         },
         "library_construction_kit": {
             "description": "Name of kit used to construct the sequencing library.",
@@ -68,9 +89,9 @@
             "user_friendly": "Nucleic acid conversion kit"
         },
         "end_bias": {
-            "description": "The type of tag or end bias the library has. Must be one of 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.",
+            "description": "The type of tag or end bias the library has.",
             "type": "string",
-            "example": "3_prime_tag",
+            "example": "Should be one of: 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.",
             "enum": [
                 "3 prime tag",
                 "3 prime end bias",
@@ -81,55 +102,59 @@
             "user_friendly": "End bias"
         },
         "primer": {
-            "description": "Primer used for cDNA synthesis from RNA. Must be either poly-dT or random.",
+            "description": "Primer used for cDNA synthesis from RNA.",
             "type": "string",
             "enum": [
                 "poly-dT",
                 "random"
             ],
-            "user_friendly": "Primer"
+            "user_friendly": "Primer",
+            "example": "Should be one of: poly-dT, or random."
         },
         "strand": {
-            "description": "Library strandedness. Must be one of first, second, or unstranded.",
+            "description": "Library strandedness.",
             "type": "string",
             "enum": [
                 "first",
                 "second",
                 "unstranded"
             ],
-            "example": "unstranded",
+            "example": "Should be one of: first, second, or unstranded.",
             "user_friendly": "Strand"
         },
         "spike_in_kit": {
-            "description": "Name of spike-in kit.",
+            "description": "Information about a spike-in kit, if used.",
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Spike-in kit"
         },
         "spike_in_dilution": {
-            "description": "Dilution of spike-in.",
+            "description": "Dilution of spike-in, if used.",
             "type": "integer",
             "maximum": 1000000,
             "minimum": 1,
-            "user_friendly": "Spike-in dilution"
+            "user_friendly": "Spike-in dilution",
+            "example": 100
         },
         "umi_barcode": {
-            "description": "Information about unique molecular identifier (UMI) barcode sequences.",
+            "description": "Information about unique molecular identifier (UMI) barcodes.",
             "type": "object",
             "$ref": "module/process/sequencing/barcode.json",
             "user_friendly": "UMI barcode"
         },
         "library_preamplification_method": {
-            "description": "The method used to amplify RNA prior to adaptor ligation. Should be a child term of EFO - nucleic acid preparation",
+            "description": "The method used to amplify RNA prior to adaptor ligation.",
             "type": "object",
             "$ref": "module/ontology/library_amplification_ontology.json",
-            "user_friendly": "Library pre-amplification method"
+            "user_friendly": "Library pre-amplification method",
+            "example": "PCR"
         },
         "cdna_library_amplification_method": {
-            "description": "The method used to amplify a cDNA library prior to sequencing. Should be a child term of EFO - nucleic acid preparation",
+            "description": "The method used to amplify a cDNA library prior to sequencing.",
             "type": "object",
             "$ref": "module/ontology/library_amplification_ontology.json",
-            "user_friendly": "cDNA library amplification method"
+            "user_friendly": "cDNA library amplification method",
+            "example": "PCR"
         }
     }
 }

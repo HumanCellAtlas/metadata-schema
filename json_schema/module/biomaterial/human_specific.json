@@ -1,8 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information specific to an organism that is a human (homo sapiens).",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information specific to a donor that is a human (Homo sapiens).",
     "additionalProperties": false,
-    "title": "human_specific",
+    "title": "Human-specific",
+    "name": "human_specific",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -16,20 +17,22 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-         "body_mass_index": {
-            "description": "The body mass index of the organism.",
+        "body_mass_index": {
+            "description": "The body mass index of the donor organism.",
             "type": "number",
             "maximum": 100,
             "minimum": 5,
+             "example": 36.4,
             "user_friendly": "Body mass index"
         },
         "ethnicity": {
-            "description": "An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates.",
+            "description": "Ethnicity of the donor organism using ontology terms from EMBL-EBI's Ancestry Ontology.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/ethnicity_ontology.json"
             },
-            "user_friendly": "Ethnicity"
+            "user_friendly": "Ethnicity",
+            "example": "European, White, British"
         }
     }
 }

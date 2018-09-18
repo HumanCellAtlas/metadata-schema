@@ -1,13 +1,14 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "A project contains information about the overall project.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A project entity contains information about the overall project.",
     "additionalProperties": false,
     "required": [
-	"project_shortname",
+        "project_short_name",
         "project_title",
         "project_description"
     ],
-    "title": "project_core",
+    "title": "Project core",
+    "name": "project_core",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -21,16 +22,16 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "project_shortname": {
+        "project_short_name": {
             "description": "A short name for the project.",
             "type": "string",
-            "example": "For example, a short label by which you refer to the project. This will be used for quick orientation and reference.",
+            "example": "For example, a short label by which you refer to the project. This label will be used for quick reference.",
             "user_friendly": "Project label"
         },
         "project_title": {
-            "description": "An official title for your project.",
+            "description": "An official title for the project.",
             "type": "string",
-            "example": "For example, the title of a grant proposal or a publication, approximately 30 words. This is how the project title will appear on the Human Cell Atlas data portal.",
+            "example": "For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.",
             "user_friendly": "Project title"
         },
         "project_description": {

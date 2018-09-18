@@ -1,12 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Information about a person who submitted or contributed to a project.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about an individual who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [
         "contact_name",
-        "email"
+        "institution"
     ],
-    "title": "contact",
+    "title": "Contact",
+    "name": "contact",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -21,47 +22,56 @@
             "example": "4.6.1"
         },
         "contact_name": {
-            "description": "Name of any individual who has contributed to this project.",
+            "description": "Name of individual who has contributed to the project.",
             "type": "string",
-            "example": "Format: 'first, middle, last name', middle can be initial or left blank. Example: John,D,Smith.",
+            "example": "John,D,Doe. Format: first name, middle name or initial, last name.",
             "user_friendly": "Contact name"
         },
         "email": {
             "description": "Email address for the individual.",
             "type": "string",
-            "example": "Enter a valid email address.",
+            "example": "dummy@email.com. Enter a valid email address.",
             "format": "email",
             "user_friendly": "Email address"
         },
         "phone": {
             "description": "Phone number of the individual or their lab.",
             "type": "string",
-            "example": "Enter a valid phone number, including country code.",
+            "example": "(+1) 234-555-6789. Enter a valid phone number, including country code.",
             "user_friendly": "Phone number"
         },
         "institution": {
             "description": "Name of primary institute where the individual works.",
             "type": "string",
-            "user_friendly": "Institute"
+            "user_friendly": "Institute",
+            "example": "EMBL-EBI"
         },
         "laboratory": {
             "description": "Name of lab or department within the institute where the individual works.",
             "type": "string",
-            "user_friendly": "Laboratory/Department"
+            "user_friendly": "Laboratory/Department",
+            "example": "Department of Biology"
         },
         "address": {
             "description": "Street address where the individual works.",
             "type": "string",
-            "example": "Include street name and number, city, country division, postal code.",
-            "user_friendly": "Address"
+            "example": "0000 Main Street, Nowheretown, MA, 12091. Include street name and number, city, country division, and postal code.",
+            "user_friendly": "Street address"
         },
         "country": {
             "description": "Country where the individual works.",
             "type": "string",
-            "user_friendly": "Country"
+            "user_friendly": "Country",
+            "example": "USA"
+        },
+        "corresponding_contributor": {
+            "description": "Whether the individual is a corresponding contributor for the project.",
+            "type": "boolean",
+            "user_friendly": "Corresponding contributor?",
+            "example": "Should be one of: yes, or no."
         },
         "project_role": {
-            "description": "Primary role of the person in the project.",
+            "description": "Primary role of the individual in the project.",
             "type": "string",
             "enum": [
                 "principal investigator",
@@ -79,7 +89,7 @@
             "user_friendly": "Project role"
         },
         "orcid_id": {
-            "description": "The contacts ORCID ID linked to their previous work.",
+            "description": "The individual's ORCID ID linked to previous work.",
             "type": "string",
             "example": "0000-1111-2222-3333",
             "user_friendly": "ORCID ID"

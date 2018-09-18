@@ -1,6 +1,6 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Contains information on how a pluripotent cell is differentiated to a desired cell type or organoid.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about how a cell is differentiated to a desired cell type or organoid.",
     "additionalProperties": false,
     "required": [
       "describedBy",
@@ -8,7 +8,8 @@
       "protocol_core",
       "differentiation_method"
     ],
-    "title": "differentiation_protocol",
+    "title": "Differentiation protocol",
+    "name": "differentiation_protocol",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -29,6 +30,11 @@
                 "protocol"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "protocol_core": {
             "description": "Core protocol-level information.",
             "type": "object",
@@ -41,25 +47,25 @@
             "comment": "Consider making this an ontology in the future.",
             "example": "Embryoid Body, Monolayer, Inductive Co-Culture"
         },
-	"differentiation_media":{
-	    "description": "Culture media used to induce a specific differentiation response.",
-	    "type": "string",
-	    "user_friendly": "Differentiation media",
-	    "example": "RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium"
-	},
-	"differentiation_small_molecules":{
-	    "description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
-	    "type": "string",
-	    "user_friendly": "Small molecules",
-	    "example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
-	},
-        "differentiation_target_cell_yield": {
+        "media":{
+            "description": "Culture media used to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Differentiation media",
+            "example": "RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium"
+        },
+        "small_molecules":{
+            "description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
+            "type": "string",
+            "user_friendly": "Small molecules",
+            "example": "Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4"
+        },
+        "target_cell_yield": {
             "description": "Percent of target cells obtained after directed differentiation of origin cell.",
             "type": "number",
             "example": 95,
             "user_friendly": "Percent target cell yield"
         },
-        "differentiation_reagents": {
+        "reagents": {
             "description": "A list of purchased reagents used in the differentiation protocol.",
             "type": "array",
             "items": {
@@ -67,23 +73,23 @@
             },
             "user_friendly": "Differentiation reagents"
         },
-        "differentiation_target_pathway": {
+        "target_pathway": {
             "description": "Targeted pathway for specific differentiation response.",
             "type": "string",
             "user_friendly": "Target pathway",
             "example": "Wnt Pathway",
             "comment": "Consider making this an ontology in the future."
         },
-        "differentiation_validation_method": {
+        "validation_method": {
             "description": "Method used to validate origin cell successfully differentiated to target cell.",
             "type": "string",
             "user_friendly": "Differentiation validation method",
             "example": "Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining"
         },
-        "differentiation_validation_results": {
-            "description": "Results confirming successful differentiation to target cell type.",
+        "validation_result": {
+            "description": "Result confirming successful differentiation to target cell type.",
             "type": "string",
-            "user_friendly": "Validation results",
+            "user_friendly": "Validation result",
             "example": "CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative"
         }
     }

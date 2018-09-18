@@ -1,0 +1,14 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/1.1.3/supplementary_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "CG00052_SingleCell3_ReagentKitv2UserGuide_RevE.pdf",
+        "file_format": "pdf"
+    },
+    "file_description": "10x Chromium single cell 3' v2 library preparation",
+    "provenance": {
+        "document_id": "a0eb3208-97e4-498c-993b-20757231b233",
+        "submission_date": "2018-09-05T09:25:01.832Z",
+        "update_date": "2018-09-05T09:25:02.972Z"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "Single-cell_RNA-seq_Subject10_TEMRA_Cell001",
+        "biomaterial_name": "Single-cell_RNA-seq_Subject10_TEMRA_Cell001",
+        "biomaterial_description": "Single-cell_RNA-seq_Subject10_TEMRA_Cell001",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "insdc_biomaterial": "SRS2661967"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "selected_cell_type": [
+        {
+            "text": "TEMRA",
+            "ontology": "CL:0000625"
+        }
+    ],
+    "total_estimated_cells": 1,
+    "plate_based_sequencing": {
+        "plate_id": "subject9-10_batch1",
+        "cell_quality": "OK"
+    },
+    "provenance": {
+        "document_id": "cc0d9bf0-6ad5-4489-994b-db26ff761c5a",
+        "submission_date": "2018-09-05T09:47:21.355Z",
+        "update_date": "2018-09-05T09:53:09.415Z"
+    }
+}

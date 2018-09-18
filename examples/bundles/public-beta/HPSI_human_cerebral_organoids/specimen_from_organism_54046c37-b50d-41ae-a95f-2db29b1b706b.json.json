@@ -1,0 +1,37 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/6.3.1/specimen_from_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "HPSI0314i-hoik_skin",
+        "biomaterial_name": "Skin cells from HPSI0314i-hoik_skin",
+        "biomaterial_description": "Skin cells from HPSI0314i-hoik_skin",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "organ": {
+        "text": "skin of body",
+        "ontology": "UBERON:0002097"
+    },
+    "organ_part": {
+        "text": "skin epidermis",
+        "ontology": "UBERON:0001003"
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461"
+        }
+    ],
+    "provenance": {
+        "document_id": "54046c37-b50d-41ae-a95f-2db29b1b706b",
+        "submission_date": "2018-09-05T09:25:02.318Z",
+        "update_date": "2018-09-05T09:25:10.219Z"
+    }
+}

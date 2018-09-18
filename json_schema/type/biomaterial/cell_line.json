@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about the cell line or cell culture biomaterial.",
     "additionalProperties": false,
     "required": [
@@ -8,7 +8,8 @@
         "biomaterial_core",
         "cell_line_type"
     ],
-    "title": "cell_line",
+    "title": "Cell line",
+    "name": "cell_line",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -28,6 +29,11 @@
             "enum": [
                 "biomaterial"
             ]
+        },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
         },
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
@@ -58,32 +64,34 @@
             "user_friendly": "Catalog URL"
         },
         "cell_cycle": {
-            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/go/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGO_0007049.",
+            "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
             "type": "object",
             "$ref": "module/ontology/cell_cycle_ontology.json",
-            "user_friendly": "Cell cycle"
+            "user_friendly": "Cell cycle",
+            "example": "mitotic cell cycle"
         },
         "cell_line_type": {
-            "description": "The type of cell line. Must be one of primary, immortalized, stem cell-derived, or synthetic.",
+            "description": "The type of cell line.",
             "type": "string",
             "enum": [
                 "primary",
                 "immortalized",
                 "stem cell-derived",
                 "synthetic",
-                "induced pluripotent"
+                "induced pluripotent",
+                "stem cell"
             ],
-            "example": "induced pluripotent",
+            "example": "Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.",
             "user_friendly": "Cell line type"
         },
         "cell_morphology": {
-            "description": "Features relating to the morphology of cells in a biomaterial.",
+            "description": "Features relating to the morphology of the cells.",
             "type": "object",
             "$ref": "module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
         "growth_conditions": {
-            "description": "Features relating to the growth and/or maintenance of a biomaterial.",
+            "description": "Features relating to the growth and/or maintenance of the cell lines.",
             "type": "object",
             "$ref": "module/biomaterial/growth_conditions.json",
             "user_friendly": "Growth conditions"
@@ -95,36 +103,40 @@
             "user_friendly": "Percent confluency"
         },
         "cell_type": {
-            "description": "The cell type that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
+            "description": "The cell type that the cell line represents.",
             "type": "object",
             "$ref": "module/ontology/cell_type_ontology.json",
-            "user_friendly": "Cell type"
+            "user_friendly": "Cell type",
+            "example": "cardiac muscle cell"
         },
         "karyotype": {
-            "description": "The karyotype of the biomaterial.",
+            "description": "The karyotype of the cell line.",
             "type": "string",
             "user_friendly": "Karyotype"
         },
         "tissue": {
-            "description": "The tissue that the cell line was derived from. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000465",
+            "description": "The tissue that the cell line was derived from.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
-            "user_friendly": "Tissue"
+            "user_friendly": "Tissue",
+            "example": "bone marrow"
         },
         "date_established": {
             "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
             "type": "string",
             "format": "date-time",
-            "user_friendly": "Date established"
+            "user_friendly": "Date established",
+            "example": "2017-03-19"
         },
         "disease": {
-            "description": "Free text describing any disease association to the cell type. Should be an EFO ontology.",
+            "description": "Short description of any disease association to the cell type.",
             "type": "object",
             "$ref": "module/ontology/disease_ontology.json",
-            "user_friendly": "Disease"
+            "user_friendly": "Disease",
+            "example": "bone squamous cell carcinoma"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the cell line.",
             "type" : "array",
             "example": "Homo sapiens",
             "items":{
@@ -138,7 +150,7 @@
             "items": {
                 "$ref": "module/project/publication.json"
             },
-            "user_friendly": "Publications"
+            "user_friendly": "Cell line publications"
         }
 
     }

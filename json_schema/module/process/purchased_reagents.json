@@ -1,8 +1,9 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "This module describes purchased kits or reagents used in any process.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information describing purchased kits or reagents used in a protocol.",
     "additionalProperties": false,
-    "title": "purchased_reagents",
+    "title": "Purchased reagents",
+    "name": "purchased_reagents",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -41,16 +42,16 @@
            "user_friendly": "Batch/lot number"
         },
         "expiry_date": {
-           "description": "The date of expiration for the kit/reagent.",
+           "description": "The date of expiration for the kit/reagent in the format YYYY-MM-DD.",
             "type": "string",
             "format": "date",
             "example": "2018-01-31",
             "user_friendly": "Expiry date"
         },
         "kit_titer": {
-            "description": "Appropriate titer and volume recommendations found in each kit's Certificate of Analysis.",
+            "description": "Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis.",
             "type": "string",
-            "example": "Titer: Specification is 3.0x10^7 ",
+            "example": "Titer: Specification is 3.0x10^7",
             "user_friendly": "Kit titer"
 	    }
 	}

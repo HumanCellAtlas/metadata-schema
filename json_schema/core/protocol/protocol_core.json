@@ -1,11 +1,12 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A protocol entity contains information about an intended protocol that was followed in the project.",
     "additionalProperties": false,
     "required": [
         "protocol_id"
     ],
-    "title": "protocol_core",
+    "title": "Protocol core",
+    "name": "protocol_core",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -20,7 +21,7 @@
             "example": "4.6.1"
         },
         "protocol_id":{
-            "description": "A unique ID for this protocol.",
+            "description": "A unique ID for the protocol.",
             "type": "string",
             "user_friendly": "Protocol ID"
         },
@@ -35,13 +36,13 @@
             "user_friendly": "Protocol description"
         },
         "publication_doi": {
-            "description": "The publication digital object identifier (doi) associated with the protocol.",
+            "description": "The publication digital object identifier (doi) for the protocol.",
             "type": "string",
             "example": "10.1101/193219",
             "user_friendly": "Publication DOI"
         },
         "protocols_io_doi": {
-            "description": "The protocols.io digital object identifier (doi) associated with the protocol.",
+            "description": "The protocols.io digital object identifier (doi) for the protocol.",
             "type": "string",
             "example": "10.17504/protocols.io.mgjc3un",
             "user_friendly": "protocols.io DOI"
@@ -50,7 +51,8 @@
             "description": "A filename of a PDF document containing the details of the protocol.",
             "type": "string",
             "pattern": "^.*.pdf$",
-            "user_friendly": "Document filename"
+            "user_friendly": "Document filename",
+            "example": "my_cool_protocol.pdf"
         }
     }
 }

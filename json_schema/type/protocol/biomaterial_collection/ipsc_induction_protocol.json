@@ -1,14 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "Contains information on how a sample was treated to become an induced pluripotent stem cell.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about how a biomaterial is treated to become an induced pluripotent stem cell.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
         "protocol_core",
-        "induced_pluripotent_cell_induction_method"
+        "ipsc_induction_method"
     ],
-    "title": "ipsc_induction_protocol",
+    "title": "iPCS induction protocol",
+    "name": "ipsc_induction_protocol",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -29,12 +30,17 @@
                 "protocol"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "protocol_core": {
             "description": "Core protocol-level information.",
             "type": "object",
             "$ref": "core/protocol/protocol_core.json"
         },
-        "induced_pluripotent_cell_induction_method": {
+        "ipsc_induction_method": {
             "description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
             "type": "string",
             "enum": [
@@ -52,7 +58,13 @@
             "comment": "Consider making this field an ontology in the future",
             "example": "piggyBac transposon"
         },
-        "induced_pluripotent_cell_induction_kit": {
+        "ipsc_induction_factors": {
+            "description": "Induction factors added to primary cell culture to induce pluripotency.",
+            "type": "string",
+            "user_friendly": "Induction factors",
+            "example": "POU5F1, SOX2, KLF4, c-MYC"
+	    },
+        "ipsc_induction_kit": {
             "description": "Kit used to induce pluripotent stem cell generation.",
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
@@ -71,7 +83,7 @@
             "user_friendly": "Percent pluripotency"
         },
         "pluripotency_vector_removed": {
-            "description": "Whether a viral vector was removed after induction. Must be one of: yes, no, unknown.",
+            "description": "Whether a viral vector was removed after induction.",
             "type": "string",
             "enum": [
                 "yes",
@@ -79,13 +91,13 @@
                 "unknown"
             ],
             "user_friendly": "Pluripotent vector removed?",
-            "example": "yes"
+            "example": "Should be one of: yes, no, or unknown."
         },
-        "induced_pluripotent_cell_induction_produced_in_house": {
-            "description": "Whether the induced pluripotent stem cell was prepared in-house. Must be one of: yes, no.",
+        "ipsc_induction_produced_in_house": {
+            "description": "Whether the induced pluripotent stem cell was prepared in-house.",
             "type": "boolean",
             "user_friendly": "iPSC prepared in-house?",
-            "example": "yes"
+            "example": "Should be one of: yes, no."
         },
         "protocol_reagents": {
             "description": "A list of additional purchased reagents used in this protocol.",
@@ -93,7 +105,7 @@
             "items": {
                 "$ref": "module/process/purchased_reagents.json"
             },
-            "user_friendly": "Additional reagents"
+            "user_friendly": "Additional protocol reagents"
         }
     }
 }
