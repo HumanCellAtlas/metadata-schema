@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Overview of the metadata structure](#structure-overview)
+- [Structure overview](#structure-overview)
 - [Specifying schema URLs](#specifying-schema-urls)
 
 ## Introduction
