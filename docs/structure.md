@@ -57,7 +57,7 @@ Below is an example single cell sequencing experiment modeled using the HCA meta
 
 ### Recording the standard
 
-The schema will be stored as a series of individual documents which are related to entities and modules associated with them (*e.g.*, project.json, biomaterial.json, sequencing_process.json). These documents are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their content, and the update process. Using GitHub, anyone will be able to propose changes to the schema through pull requests. Only a specified list of committers will be allowed to approve pull requests and issue new versions of the metadata standards.
+The metadata standard is stored as a series of individual schemas which represent the entities and fields associated with them (*e.g.*, project.json, biomaterial.json, sequencing_protocol.json). The schemas are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their content, and the update process. Anyone is able to propose changes to the schema through GitHub pull requests and issues. Only a specific list of committers will be allowed to approve pull requests and release new versions of the metadata schemas.
 
 ## Specifying schema URLs
 
