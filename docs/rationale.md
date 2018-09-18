@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Definitions](#definitions)
 - [Implementation choices](#implementation-choices)
 - [Design choices](#design-choices)
 
@@ -20,6 +21,11 @@ This document describes the rationale behind certain implementation and design c
 **What *isn't* in this document?**
 - The [structure of the metadata standards](structure.md) based on the design and implementation choices
  
+## Definitions
+
+- *metadata document* A file containing metadata according to the specification.
+- *metadata schema* A file containing the specification for metadata. Currently, this specification is in JSON format.
+
 ## Implementation choices
 
 A detailed specification for the structure of the schema documents can be found in [this document](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?usp=sharing). It is concerned with the detailed format and syntax of the metadata schema and their instantiation, including schema referencing, manifestation as files, composition, modular design, and other details of the format and syntax. The design principles that this structure follows are:
