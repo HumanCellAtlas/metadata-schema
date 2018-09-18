@@ -59,7 +59,7 @@ Schema are a superset of JSON schema and JSON schema validation (json-schema.org
 
 ## Design choices
 
-The HCA metadata standards are developed and updated in a transparent and open manner to ensure that the whole HCA community can participate in the process. The following principles will be adhered to for the update process.
+The HCA metadata standard is developed in a transparent and open manner so that the whole HCA community can participate in the process. The following design principles serve as a foundation for the metadata standard in order to ensure it meets the needs of HCA data contributors and consumers.
 
 ### Agile
 
