@@ -54,15 +54,15 @@ A metadata document, which contains metadata elements from one or more schemas, 
 
 ### Schema language
 
-Schema are a superset of JSON schema and JSON schema validation (json-schema.org) with all extensions declarative in nature (*i.e.*,  no code is required to specify a schema). Extensions to the native JSON schema validation will be needed to support validation of ontology identifiers or other specific HCA requirements. 
+Schema are a superset of JSON schema and JSON schema validation (json-schema.org) with all extensions declarative in nature (*i.e.* no code is required to specify a schema). Extensions to the native JSON schema validation will be needed to support validation of ontology identifiers or other specific HCA requirements. 
 
 ## Design choices
 
-The HCA metadata standards are developed and updated in a transparent and open manner to ensure that the whole community can participate in the process. The following principles will be adhered to for the update process.
+The HCA metadata standards are developed and updated in a transparent and open manner to ensure that the whole HCA community can participate in the process. The following principles will be adhered to for the update process.
 
 ### Agility
 
-The HCA foresees active development of sample handling, assays, and analyses, and will include both stable and rapidly evolving methods. As such, the metadata schema needs to be able to adapt accordingly, with regular updates (*e.g.*, weekly or monthly), and a process for managing and tracking schema and data versions.
+The HCA foresees active development of sample handling, assays, and analyses, and will include both stable and rapidly evolving methods. As such, the metadata standard needs to be able to adapt accordingly, with regular updates and a process for managing and tracking schema versions.
 
 ### Modularity
 
