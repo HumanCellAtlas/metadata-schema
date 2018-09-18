@@ -27,9 +27,9 @@ This document describes the structure of the HCA metadata standards. More detail
 
 The primary motivations for the HCA metadata entity model are to:
 
-1. handle transitions between biomaterial and file entities
-1. enable independent versioning of schemas representing different entities
-1. support modeling of future sample and experiment types easily and without needing to drastically alter the current entity model
+1. Handle transitions between biomaterial and file entities
+1. Enable independent versioning of schemas representing different entities
+1. Support modeling of future sample and experiment types easily and without needing to drastically alter the current entity model
 
 ### Entities
 
@@ -37,23 +37,23 @@ There are five major entities supported by the HCA metadata standard: Projects, 
 
 ![Entities](images/entities.jpg)
 
-The entities are arranged in units that represent different parts of an experiment. For example, the diagram below is an abstract illustration of an input *biomaterial* (*e.g.*, a tissue sample) undergoing some *process* (*e.g.*, dissociation) to produce another *biomaterial* (*e.g.*, a sample of dissociated cells). The *process* that was actually executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
+The entities are arranged in units that represent different parts of an experiment. For example, the diagram below is an abstract illustration of an input *biomaterial* (*e.g.*, a tissue sample) undergoing a *process* (*e.g.*, dissociation) to produce another *biomaterial* (*e.g.*, a sample of dissociated cells). The *process* that was executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
 
 ![Entities](images/unit_of_hierarcy.jpg)
 
-The metadata entity model supports units that can have either biomaterials or data files as input or output. If the input is a biomaterial and the output is a data file, we typically refer to this as an assay. If both the input and output is a data file, we refer to this as an analysis. This flexible model also allows for the possibility of modeling synthetic biology experiments - for example a data file is used as input to produce a custom biomaterial - in the future.
+The metadata entity model supports units that can have one or more biomaterials or files as inputs or outputs. If the input is a biomaterial entity and the output is a file entity, the unit represents an assay. If both the input and output entities are files, the unit represents an analysis. This flexible model allows for the possibility of modeling synthetic biology experiments - for example a file is used as an input to produce a custom biomaterial - in the future.
 
 ![Entities](images/unit_scenarios.jpg)
 
-Below is an example single-cell sequencing experiment modeled using the HCA metadata entity model described here.
+Below is an example single cell sequencing experiment modeled using the HCA metadata entity model.
 
 ![Entities](images/project_scenario.jpg)
 
 ### Metadata field organisation 
 
-* *Core fields* = Very stable, high-level entities that are referenced by a respective *Type*. These entities contain core fields that apply to and are inherited by corresponding *Type* entities.
-* *Type fields* = An entity that is a specific instance of *Core* entity type. These entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
-* *Module fields* = Small, evolvable entities that are extensions of an existing *Type* entity. These entities contain extra fields specific to a *Type* but are domain- or user-specific.
+* *Core entities* = Very stable, high-level entities that are referenced by *Type* entities. Core entities contain fields that apply to and are inherited by all corresponding *Type* entities.
+* *Type entities* = Entities that are a specific instance of a *Core* entity. Type entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
+* *Module entities* = Small, flexible entities that are extensions of an existing *Type* entity. Module entities contain extra fields related to a *Type* but that are domain- or user-specific.
 
 ### Recording the standard
 
