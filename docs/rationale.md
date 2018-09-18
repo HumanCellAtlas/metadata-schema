@@ -22,11 +22,11 @@ This document describes the rationale behind certain implementation and design c
  
 ## Implementation choices
 
-A detailed specification for the structure of the schema documents can be found in [this document](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?usp=sharing). The design principles that this structure follows are:
+A detailed specification for the structure of the schema documents can be found in [this document](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?usp=sharing). It is concerned with the detailed format and syntax of the metadata schema and their instantiation, including schema referencing, manifestation as files, composition, modular design, and other details of the format and syntax. The design principles that this structure follows are:
 
 ### Modular schema components
 
-Metadata fields should be organized into `modules`, each with a piece of schema, including a `core` schema, containing the minimal schema necessary for all possible data and analyses, and a collection of additional `modules` that can be mixed and matched for each particular dataset or analysis. In this design, each schema module has its own independent version and lifecycle (as described below), and any particular dataset is defined by a collection of the appropriate modules.
+Metadata fields are organized into biologically-meaningful *type* schemas, for example a cell suspension schema or an enrichment protocol schema. Each type schema inherits a  core schema, containing the minimal fields necessary for that type, and any relevant modules that customize the schema for a particular dataset or analysis. Using this modular design, each schema has its own independent version (as described below), and any particular dataset is defined by a collection of appropriate schemas.
 
 It is worth noting the basis for defining a collection of fields and objects in a particular module can be considered along two different axises: 
  - do the fields/objects make sense together from a scientific point of view, *e.g.*, they are all fields associated with the same assay or sample type like Drop-Seq or a Brain section; and
