@@ -118,7 +118,7 @@
                 "first",
                 "second",
                 "unstranded",
-                "unknown"
+                "not provided"
             ],
             "example": "Should be one of: first, second, or unstranded.",
             "user_friendly": "Strand"

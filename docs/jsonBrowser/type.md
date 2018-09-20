@@ -441,7 +441,7 @@ library_construction_kit | Name of kit used to construct the sequencing library.
 nucleic_acid_conversion_kit | Name of kit used to convert RNA to DNA for sequencing. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Nucleic acid conversion kit |  | 
 end_bias | The type of tag or end bias the library has. | string | yes |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | Should be one of: 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.
 primer | Primer used for cDNA synthesis from RNA. | string | no |  | Primer | poly-dT, random | Should be one of: poly-dT, or random.
-strand | Library strandedness. | string | yes |  | Strand | first, second, unstranded, unknown | Should be one of: first, second, or unstranded.
+strand | Library strandedness. | string | yes |  | Strand | first, second, unstranded, not provided | Should be one of: first, second, or unstranded.
 spike_in_kit | Information about a spike-in kit, if used. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Spike-in kit |  | 
 spike_in_dilution | Dilution of spike-in, if used. | integer | no |  | Spike-in dilution |  | 100
 umi_barcode | Information about unique molecular identifier (UMI) barcodes. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 

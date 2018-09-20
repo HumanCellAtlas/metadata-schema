@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/sequencing/library_preparation_protocol,patch,"Added unknown to enum for strand field. Fixes #544.",,
+type/protocol/sequencing/library_preparation_protocol,patch,"Added 'not provided' to enum for strand field. Fixes #544.",,
