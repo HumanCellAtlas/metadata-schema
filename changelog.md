@@ -9,6 +9,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/ontology/organ_ontology.json - v5.3.4] - 2018-09-18
+### Fixed
+Fixed organ validation issue by including embryo and children as allowed values
+
+### [type/biomaterial/organoid.json - v8.3.7] - 2018-09-18
+### Fixed
+Fixed organ validation issue by including embryo and children as allowed values
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.2] - 2018-09-18
+### Fixed
+Fixed organ validation issue by including embryo and children as allowed values
+
 ### [type/file/supplementary_file.json - v1.1.5] - 2018-09-04
 ### Added
 Added missing provenance field
