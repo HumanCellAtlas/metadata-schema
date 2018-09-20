@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/sequencing/library_preparation_protocol,path,"Added unknown to enum for strand field. Fixes #544.",,
