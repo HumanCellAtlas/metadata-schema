@@ -29,28 +29,28 @@ All metadata schemas will be versioned using [semantic versioning](http://semver
 Schema version numbers change when a schema update is made. The principles used to decide which version number to update primarily consider **backwards compatibility** with metadata created using a previous version. In other words, backwards compatibility is broken if a metadata JSON document generated for and valid against a previous schema version is now invalid against the updated schema version. Understanding backwards compatibility is especially important for HCA data generators and submitters. The three categories of version changes are outlined below along with examples of HCA metadata schema changes for each category:
 
 **Major (increment to X)**: Any schema change that breaks backwards compatibility with metadata created using the previous version.
-- Adding a required field.
-- Removing a required or optional field.
-- Moving a required field from one schema to another (increment both schemas).
-- Changing the unqualified name of a required or optional field.
-- Making an optional field required.
-- Changing the type of a field (e.g. number to string, string to ontology/enum).
-- Changing the ontology source for an ontologized field.
-- Removing a value from a controlled vocabulary.
-- Adding a regular expression to a field.
+- Adding a required field
+- Removing a required or optional field
+- Moving a required field from one schema to another (increment both schemas)
+- Changing the unqualified name of a required or optional field
+- Making an optional field required
+- Changing the type of a field (e.g. number to string, string to ontology/enum)
+- Changing the ontology source for an ontologized field
+- Removing a value from a controlled vocabulary
+- Adding a regular expression to a field
 
 **Minor (increment to Y)**: Any schema change that ensures backwards compatibility with metadata created using the previous version.
-- Adding an optional field.
-- Making a required field optional.
-- Removing a controlled vocabulary from a field (but the field type stays the same).
-- Removing a regular expression from a field.
+- Adding an optional field
+- Making a required field optional
+- Changing a field from a controlled vocabulary to free text without changing the field type
+- Removing a regular expression from a field
 
 **Patch (increment to Z)**: Any change to auxiliary information that does not affect the structure or semantics of the schema itself. Also, any bug fixes to the schema.
-- Adding or updating the field description to improve readability.
-- Adding or updating the field example, comment, or user-friendly name.
-- Extending a controlled vocabulary enumeration.
-- Correcting a regular expression.
-- Correcting an ontology source.
+- Adding or updating the field description to improve readability
+- Adding or updating the field example, comment, or user-friendly name
+- Extending a controlled vocabulary enumeration
+- Correcting a regular expression
+- Correcting an ontology source
 
 ## Schema stability
 
