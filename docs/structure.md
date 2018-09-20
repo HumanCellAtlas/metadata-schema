@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This document describes the structure of the HCA metadata standards. More detailed specification of the format and syntax of the metadata schemas and their instantiation can be found in the [metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) on Google Drive.
+This document describes the structure of the HCA metadata standard as implemented and utilized by the Data Coordination Platform (DCP). More detailed specification of the format and syntax of the metadata schemas and their instantiation can be found in the [metadata schema structure specification](https://docs.google.com/document/d/1pxQj7BfM8HHgD4ilm4dlvZuZATfJkNC5s_-TUoA4lYA/edit?ts=59b16455) on Google Drive.
 
 **What is in this document?**
  - High-level [overview of the schema structure](#structure-overview)
@@ -51,11 +51,23 @@ Below is an example single cell sequencing experiment modeled using the HCA meta
 
 ### Metadata field organisation 
 
-* *Core entities* = Very stable, high-level entities that are referenced by *Type* entities. Core entities contain fields that apply to and are inherited by all corresponding *Type* entities.
-* *Type entities* = Entities that are a specific instance of a *Core* entity. Type entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
-* *Module entities* = Small, flexible entities that are extensions of an existing *Type* entity. Module entities contain extra fields related to a *Type* but that are domain- or user-specific.
+- *Core entities* = Very stable, high-level entities that are referenced by *Type* entities. Core entities contain fields that apply to and are inherited by all corresponding *Type* entities.
+- *Type entities* = Entities that are a specific instance of a *Core* entity. Type entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
+- *Module entities* = Small, flexible entities that are extensions of an existing *Type* entity. Module entities contain extra fields related to a *Type* but that are domain- or user-specific.
 
 Each project, biomaterial, protocol, process, and file entity is represented by a Type schema. Each Type schema inherits a Core entity and zero or more Module entities. 
+
+### User-supplied versus ingest-supplied metadata fields
+
+Most metadata fields in Core, Type, and Module entity schemas are provided by data generators via metadata spreadsheets. A subset of metadata fields in the standard, however, are not provided by data generators, but rather are provided by the Ingestion Service component of the DCP. These fields are referred to as "ingest-supplied" fields, and include the following:
+
+- `provenance` field in all Type schemas
+- `describedBy`, `schema_version`, `schema_type` fields in all schemas
+- all fields in `links.json` and `provenance.json` schemas
+
+The ingest-supplied fields contain information about the metadata submission (*e.g.* when metadata was uploaded to the DCP) and about the metadata schema being used. Data generators will never submit values to these fields directly, and they do not appear in the metadata spreadsheet.
+
+In addition to ingest-supplied metadata fields, the `ontology` and `ontology_label` fields present in all ontology schemas will not be supplied by data generators in many cases. Data generators who choose to submit programmatically using their own JSON files might choose to supply values for these fields, and therefore the fields are not strictly ingest-supplied.
 
 ### Recording the standard
 
