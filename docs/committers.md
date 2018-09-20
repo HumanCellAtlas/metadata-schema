@@ -162,7 +162,7 @@ This process should take 10 working days. The assigned Committer should identify
 
 Medium acceptance is the process used for major version changes to medium stability modules and minor version changes to both high and medium stability modules. 
 
-Generally this is a suitable acceptance process for changes which don’t require DCP software updates but are likely to affect how the metadata can be queried from a scientific perspective. It is expected for these types of updates to happen more frequently than those which require full acceptance as they will concerns fields with scientific meaning. New experiments and changes in technology may require new fields or changes to existing fields.
+Generally this is a suitable acceptance process for changes which don’t require DCP software updates but are likely to affect how the metadata can be queried from a scientific perspective. It is expected for these types of updates to happen more frequently than those which require full acceptance as they concern fields with scientific meaning. New experiments and changes in technology may require new fields or changes to existing fields.
 
 The process should take 5 working days. The assigned Committer should identify at least one interested third party (Reviewer) from the secondary and tertiary analysis groups to provide review. As before, if the Contributor is a member of the secondary or tertiary analysis group, another person should be selected as the Reviewer.
 
