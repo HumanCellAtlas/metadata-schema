@@ -59,7 +59,7 @@ Each project, biomaterial, protocol, process, and file entity is represented by 
 
 ### User-supplied versus ingest-supplied metadata fields
 
-Most metadata fields in Core, Type, and Module entity schemas are provided by data generators via metadata spreadsheets. A subset of metadata fields in the standard, however, are not provided by data generators, but rather are provided by the Ingestion Service component of the DCP. These fields are referred to as "ingest-supplied" fields, and include the following:
+Most metadata fields in Core, Type, and Module schemas are provided by data generators via metadata spreadsheets. A subset of metadata fields in the standard, however, are not provided by data generators, but rather are provided by the Ingestion Service component of the DCP. These fields are referred to as "ingest-supplied" fields, and include the following:
 
 - `provenance` field in all Type schemas
 - `describedBy`, `schema_version`, `schema_type` fields in all schemas
