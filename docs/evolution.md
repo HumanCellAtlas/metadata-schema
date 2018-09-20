@@ -49,8 +49,8 @@ Schema version numbers change when a schema update is made. The principles used 
 - Adding or updating the field description to improve readability
 - Adding or updating the field example, comment, or user-friendly name
 - Extending a controlled vocabulary enumeration
-- Correcting a regular expression
-- Correcting an ontology source
+- Fixing an incorrect regular expression
+- Fixing an incorrect ontology source
 
 ## Schema stability
 
