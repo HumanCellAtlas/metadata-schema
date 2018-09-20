@@ -152,7 +152,7 @@ If during this process there is any disagreement about the best approach, the as
 
 Full acceptance is used when making major version changes to high stability modules. This means the module being changed is likely to trigger a new software release for a DCP service. The DCP service which is most likely to be affected by any metadata update would be the Ingest Infrastructure. This should be a rare occurrence. The DCP metadata and code should have a clear separation of concerns and the dependencies between the two should be minimal. That being said, the ingest infrastructure, in particular, needs some knowledge of the metadata structure in order to enable ID fields to be assigned and to allow the system to know the relationships between the submitted entities. Any module which contains these fields must be considered high stability.
 
-This process should take 10 working days. The assigned Committer should identify at least two developers from the DCP team to review the change and comment as well as themselves. If the Contributor making the suggestion was a developer from a DCP team, the two Reviewers should be other DCP developers. 
+This process should take 10 working days. The assigned Committer should identify at least two developers from the DCP team to review the change and comment. If the Contributor making the suggestion was a developer from a DCP team, the two Reviewers should be other DCP developers. 
 
 ### Medium acceptance
 
