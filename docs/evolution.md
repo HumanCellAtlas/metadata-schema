@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This document describes the principles and standards by which the HCA metadata schema will evolve as well as the semantics for versioning and updating the schema. The HCA is collecting data from complex biological samples and assays with rich metadata. We expect over the lifetime of the project that the schemas that captures these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
+This document describes the principles and standards by which the HCA metadata schema will evolve as well as the semantics for versioning and updating the schema. The HCA is collecting data from complex biological samples and assays with rich metadata. We expect over the lifetime of the project that the schemas that capture these metadata will need to change. These changes will always be to support the main goal of the HCA Data Coordination Platform (DCP): enabling downstream use and interpretation of the data. As our understanding of the data changes, the metadata we need may also change. The schemas, therefore, will also need to evolve to support new assays and changing practices in the contributing labs as the precise steps conducted for a particular assay are improved.
 
 **What is in this document?**
  - How versioning of metadata schemas is defined
@@ -82,7 +82,7 @@ The metadata team will review the update process on a yearly basis and ensure it
 
 - Changes to the metadata standard and specification
   - Updates to existing schemas
-  - Addition of new schemasS
+  - Addition of new schemas
 - New members of the metadata team
 - New committers to the metadata-schema GitHub repo
 
