@@ -78,7 +78,7 @@ The metadata team should review the stability level of schemas on a quarterly or
 
 ## Governance of schema updates
 
-The metadata team will review the update process on a yearly basis and ensure it is meeting the needs of the group. If the process becomes problematic, changes will be made to ensure metadata updates are not a blocker for the consortium as a whole. The metadata team will provide written updates on the following matters at the start of each quarter:
+The metadata team will review the update process on a yearly basis and ensure it is meeting the needs of the group. If the process becomes problematic, changes will be made to ensure metadata updates are not a blocker for the consortium as a whole. The metadata team will provide updates on the following matters at regular DCP-wide meetings:
 
 - Changes to the metadata standard and specification
   - Updates to existing schemas
