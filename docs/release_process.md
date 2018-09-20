@@ -19,9 +19,9 @@ This document serves as an SOP for super users who are responsible for merging P
  - HCA DCP internal developers with authorisation to do metadata pre-releases and releases.
 
  **What *isn't* in this document?**
-- Description of what defines [major, minor, and patch changes](metadata-schema/docs/evolution.md#schema-versioning) to the metadata schema
-- Directions for [reporting bugs](metadata-schema/docs/contributing.md#reporting-bugs) in the metadata schema
-- Directions of [making changes to metadata schemas](metadata-schema/docs/committers.md)
+- Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
+- Directions for [reporting bugs](contributing.md#reporting-bugs) in the metadata schema
+- Directions for [making changes to metadata schemas](committers.md)
 
 ## Preliminaries
 
@@ -39,7 +39,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ## Steps of the pre-release process
 
-***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](metadata-schema/docs/committers#schema-update-acceptance-process).
+***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](committers.md#schema-update-acceptance-process).
 
 
 1. **Check out** the pull request branch and make sure your local copy is up-to-date
@@ -90,7 +90,7 @@ From now on, every time you commit anything in the metadata schema repo using th
         git commit -a -m "Ran release_prepare.py script."
         git push origin <name_of_branch>
 
-1. **Wait** for the Travis build to pass, the **merge** then PR into develop immediately.
+1. **Wait** for the Travis build to pass, then **merge** this PR into develop immediately.
 
 ## Steps of the release process
 
@@ -104,7 +104,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
     1. **Fix** any merge conflicts that might arise, giving priority to changes in the develop branch *except* if a hotfix was propagated ahead of develop.
 
-1. **Open** `changelog.md` and cut/paste the line
+1. **Open** `changelog.md` and move the line
 
     `## [Released](https://github.com/HumanCellAtlas/metadata-schema/)`
 
@@ -117,7 +117,7 @@ From now on, every time you commit anything in the metadata schema repo using th
         git commit -a -m "Release from develop to integration YYYY-MM-DD"
         git push origin develop
 
-1. **Create a pull request** from *develop* to *integration* for easy tracability but immediately merge this yourself. ***Only merge your own pull request in this particular scenario!***
+1. **Create a pull request** from *develop* to *integration* for easy traceability but immediately merge this yourself. ***Only merge your own pull request in this particular scenario!***
 
 ### Release propagation
 
