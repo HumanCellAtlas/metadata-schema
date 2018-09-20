@@ -58,7 +58,7 @@ The modular design of the HCA metadata standard allows for different rates of ch
 
 Assigning stability to schemas also enables distinct governance rules for each stability level. For example, an update to a high stability schema requires more rigorous review and a wider acceptance than an update to a low stability schema.
 
-It is important to note that the stability of a schema is not the same as the schema version, although the two ideas are related. There are no restrictions on the type of update (major, minor, patch) that can happen to a schema based on its stability; however, the consequences of a major update on a high stability schema are much more severe than a patch update to a low stability schema, for example. Both schema stability and update type should be considered when proposing a schema update.
+It is important to note that the stability of a schema is not the same as the schema version, although the two ideas are related. There are no restrictions on the type of update (major, minor, patch) that can happen to a schema based on its stability; however, the consequences of a major update on a high stability schema are much more severe than a major update to a low stability schema, for example. Both schema stability and update type should be considered when proposing a schema update.
 
 ### High Stability
 
