@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v9.0.0] - 2018-09-21
+### Made
+Made publication a single object instead of an array of objects. Fixes #557
+
 ### [type/project/project.json - v9.0.3] - 2018-09-21
 ### Fixed
 Fixed missing required field project_core

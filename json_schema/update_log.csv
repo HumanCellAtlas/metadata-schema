@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/cell_line,major,"Made publication a single object instead of an array of objects. Fixes #557",,
