@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/project/project.json - v9.0.3] - 2018-09-21
+### Fixed
+Fixed missing required field project_core
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/organ_ontology.json - v5.3.4] - 2018-09-18
