@@ -114,17 +114,17 @@ Please list any schema versions related to this bug.
  
 *e.g.*: `publication.json` schema v6.0.1
 
+**Observed behavior**
+
+Please explain what happens.
+
+*e.g.*: The description says "Title of *publicatoin*."
+
 **Expected behavior**
 
 Please explain what you expected to happen.
  
-*e.g.*: I expected the description to say "Title of publication."
-
-**Actual behavior**
-
-Please explain what actually happened.
-
-*e.g.*: The description says "Title of *publicatoin*."
+*e.g.*: I expect the description to say "Title of publication."
 
 **Screenshots or Messages**
 
