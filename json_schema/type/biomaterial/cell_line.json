@@ -144,13 +144,11 @@
             },
             "user_friendly": "Genus species"
         },
-        "publications": {
-            "description": "One or more publications in which the cell line creation was cited.",
-            "type": "array",
-            "items": {
-                "$ref": "module/project/publication.json"
-            },
-            "user_friendly": "Cell line publications"
+        "publication": {
+            "description": "A publication that cites the cell line creation.",
+            "type": "object",
+            "$ref": "module/project/publication.json",
+            "user_friendly": "Cell line publication"
         }
 
     }

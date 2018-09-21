@@ -32,7 +32,7 @@ tissue | The tissue that the cell line was derived from. | object | no | [See mo
 date_established | When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ. | string | no |  | Date established |  | 2017-03-19
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | bone squamous cell carcinoma
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-publications | One or more publications in which the cell line creation was cited. | array | no | [See module  publication](module.md/#publication) | Cell line publications |  | 
+publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md/#publication) | Cell line publication |  | 
 
 ## Cell suspension
 _Information about the suspension of cells or nuclei derived from the collected or cultured specimen._
