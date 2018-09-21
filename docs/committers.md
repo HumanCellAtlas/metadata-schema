@@ -207,16 +207,16 @@ For proposed changes where consensus looks unlikely, as the review deadline loom
 **Contributor**
 
 - Does not have commit/merge privileges to metadata-schema repo
-- Suggests changes to the metadata standard (email/issue/PR)
+- Suggests changes to the metadata standard (email/GitHub issue/PR)
 - Reviews PRs
 
 **Committer**
 
 - Has commit/merge privileges to the metadata-schema repo
 - Turns update requests into GitHub issues
-- Is assigned to GitHub issues by Committer
+- Is assigned to GitHub issues by himself/herself or another Committer
 - Makes changes/PRs
-- Announces PRs to community
+- Announces PRs to community (Slack/mailing list)
 - Reviews PRs
 - Merges PRs
 
