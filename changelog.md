@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.3.3] - 2018-09-21
+### Added
+Added 'not provided' to enum for strand field. Fixes #544.
+
 ### [type/biomaterial/cell_line.json - v9.0.0] - 2018-09-21
 ### Made
 Made publication a single object instead of an array of objects. Fixes #557
