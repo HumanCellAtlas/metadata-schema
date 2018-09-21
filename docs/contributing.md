@@ -122,7 +122,7 @@ Please explain what happens.
 
 **Expected behavior**
 
-Please explain what you expected to happen.
+Please explain what you expect to happen.
  
 *e.g.*: I expect the description to say "Title of publication."
 
