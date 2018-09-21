@@ -6,6 +6,7 @@
 - [Specific how-to for making changes](#specific-how-to-for-making-changes)
 - [Schema update acceptance process](#schema-update-acceptance-process)
 - [Committer guidelines](#committer-guidelines)
+- [Adding new committers](#adding-new-committers)
 - [Glossary of roles](#glossary-of-roles)
 
 ## Introduction
@@ -152,7 +153,7 @@ If during this process there is any disagreement about the best approach, the as
 
 Full acceptance is used when making major version changes to high stability modules. This means the module being changed is likely to trigger a new software release for a DCP service. The DCP service which is most likely to be affected by any metadata update would be the Ingest Infrastructure. This should be a rare occurrence. The DCP metadata and code should have a clear separation of concerns and the dependencies between the two should be minimal. That being said, the ingest infrastructure, in particular, needs some knowledge of the metadata structure in order to enable ID fields to be assigned and to allow the system to know the relationships between the submitted entities. Any module which contains these fields must be considered high stability.
 
-This process should take 10 working days. The assigned Committer should identify at least two developers from the DCP team to review the change and comment as well as themselves. If the Contributor making the suggestion was a developer from a DCP team, the two Reviewers should be other DCP developers. 
+This process should take 10 working days. The assigned Committer should identify at least two developers from the DCP team to review the change and comment. If the Contributor making the suggestion was a developer from a DCP team, the two Reviewers should be other DCP developers. 
 
 ### Medium acceptance
 
@@ -162,7 +163,7 @@ This process should take 10 working days. The assigned Committer should identify
 
 Medium acceptance is the process used for major version changes to medium stability modules and minor version changes to both high and medium stability modules. 
 
-Generally this is a suitable acceptance process for changes which don’t require DCP software updates but are likely to affect how the metadata can be queried from a scientific perspective. It is expected for these types of updates to happen more frequently than those which require full acceptance as they will concerns fields with scientific meaning. New experiments and changes in technology may require new fields or changes to existing fields.
+Generally this is a suitable acceptance process for changes which don’t require DCP software updates but are likely to affect how the metadata can be queried from a scientific perspective. It is expected for these types of updates to happen more frequently than those which require full acceptance as they concern fields with scientific meaning. New experiments and changes in technology may require new fields or changes to existing fields.
 
 The process should take 5 working days. The assigned Committer should identify at least one interested third party (Reviewer) from the secondary and tertiary analysis groups to provide review. As before, if the Contributor is a member of the secondary or tertiary analysis group, another person should be selected as the Reviewer.
 
@@ -174,7 +175,7 @@ The process should take 5 working days. The assigned Committer should identify a
 
 Light acceptance is the process used for all patch versions, regardless of stability and for all changes to low stability modules.
 
-Light acceptance is lightweight process which allows rapid iteration for new technologies where the requirements are not precisely defined and the processes are changing quickly.  Downstream users of this data should be aware that the metadata is changing rapidly and understand any dependencies they create on specific structures will be broken in future.
+Light acceptance is lightweight process which allows rapid iteration for new technologies where the requirements are not precisely defined and the processes are changing quickly.  Downstream users of this data should be aware that the metadata is changing rapidly and understand that any dependencies they create on specific structures will be broken in the future.
 
 The process should take 3 working days. The assigned Committer does not need to recruit an additional Reviewer though should ensure that as many people as possible have seen the suggestion via Slack messages or GitHub notifications.
 
@@ -196,27 +197,36 @@ For proposed changes where consensus looks unlikely, as the review deadline loom
 
 1. *Do not merge your own PR.* This ensures that at least one other person has reviewed the suggested changes and has approved them. 
     1. Exception 1: For PRs that affect documentation only, the same person can make/merge the PR if another person with commit privileges specifically approves it using the GitHub approval mechanism.
-    1. Exception 2: A reviewer can merges changes they made by running the `release_prepare.py` script.
+    1. Exception 2: The same person can make/merge PRs when doing a schema release from _develop_ to _integration_, _integration_ to _staging_, or _staging_ to _master_. 
 1. *Be clear and descriptive in PR comments/commits.* 
     1. Refer to GitHub issues that the PR addresses by adding `Fixes #000` to at least 1 commit statement in the PR (where 000 is replaced by the actual GitHub issue number). 
     1. Tag a specific person if the PR addresses their issue or if the change affects their work.
     1. Include reasoning behind changes that could be controversial (e.g. reason why a field name changes, but no reason needed to fix a typo in a field description).
+
+## Adding new committers
+
+A nominated group of metadata working group members will have commit access to the metadata-schema repo.  Committers are members of the working group who have permission to merge and accept pull requests to the metadata-schema repo.
+
+Committers are not allowed to skip the review process. Any person including the committers who wish to make a change to a metadata schema module this process must be followed.
+
+Anyone can request to join the committer team. When a request is received, the existing committers will discuss the request and vote on the addition of the new member. This process should be rapid and the requestor should hear the outcome within 72 hours.
+
 
 ## Glossary of roles
 
 **Contributor**
 
 - Does not have commit/merge privileges to metadata-schema repo
-- Suggests changes to the metadata standard (email/issue/PR)
+- Suggests changes to the metadata standard (email/GitHub issue/PR)
 - Reviews PRs
 
 **Committer**
 
 - Has commit/merge privileges to the metadata-schema repo
 - Turns update requests into GitHub issues
-- Is assigned to GitHub issues by Committer
+- Is assigned to GitHub issues by himself/herself or another Committer
 - Makes changes/PRs
-- Announces PRs to community
+- Announces PRs to community (Slack/mailing list)
 - Reviews PRs
 - Merges PRs
 
