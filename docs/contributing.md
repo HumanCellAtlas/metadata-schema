@@ -33,30 +33,32 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
 
     1. To request an **update** to an existing schema, the following pieces of information are required:
 
-        - For which schema is a change/update being suggested?
-        - What should the change/update be?
-        - What new field(s) need to be added?
-        - Why is the change requested?
+        1. For which schema is a change/update being suggested?
+        1. What should the change/update be?
+        1. What new field(s) need to be added?
+           - Details for requesting new field(s) outlined below
+        1. Why is the change requested?
 
     1. To request a **new** schema, the following pieces of information are required:
 
-        - What is the proposed name of the new schema?
-        - What field(s) should the new schema contain?
-        - Why is the new schema needed? Specifically, why does the current metadata standard not meet your need?
+        1. What is the proposed name of the new schema?
+        1. What field(s) should the new schema contain?
+           - Details for requesting new field(s) outlined below
+        1. Why is the new schema needed? Specifically, why does the current metadata standard not meet your need?
     
     For **each new field** requested, the following pieces of information are required:
     
-    * Field name
-    * Field description
-    * Whether the field should be optional or required
-    * An example valid value for this field
-    * If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed.
+    1. Field name
+    1. Field description
+    1. Whether the field should be optional or required
+    1. An example valid value for this field
+    1. If this field needs a controlled vocabulary or ontology. If yes, what those values should be or which ontology should be followed.
     
 1. **Submit request** for update to the HCA metadata standard. Anyone can suggest/request changes to the metadata standards via three main routes:
 
-    - Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md)
-    - Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
-    - Make a pull request against the develop branch of the metadata-schema repo (recommended for users familiar with GitHub)
+    1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md)
+    1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
+    1. Make a pull request against the develop branch of the metadata-schema repo (recommended for users familiar with GitHub)
     
     Whichever method is chosen, the information indicated in Step 1 is requested to be submitted.
 
