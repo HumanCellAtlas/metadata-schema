@@ -6,6 +6,7 @@
 - [Specific how-to for making changes](#specific-how-to-for-making-changes)
 - [Schema update acceptance process](#schema-update-acceptance-process)
 - [Committer guidelines](#committer-guidelines)
+- [Adding new committers](#adding-new-committers)
 - [Glossary of roles](#glossary-of-roles)
 
 ## Introduction
@@ -201,6 +202,15 @@ For proposed changes where consensus looks unlikely, as the review deadline loom
     1. Refer to GitHub issues that the PR addresses by adding `Fixes #000` to at least 1 commit statement in the PR (where 000 is replaced by the actual GitHub issue number). 
     1. Tag a specific person if the PR addresses their issue or if the change affects their work.
     1. Include reasoning behind changes that could be controversial (e.g. reason why a field name changes, but no reason needed to fix a typo in a field description).
+
+## Adding new committers
+
+A nominated group of metadata working group members will have commit access to the metadata-schema repo.  Committers are members of the working group who have permission to merge and accept pull requests to the metadata-schema repo.
+
+Committers are not allowed to skip the review process. Any person including the committers who wish to make a change to a metadata schema module this process must be followed.
+
+Anyone can request to join the committer team. When a request is received, the existing committers will discuss the request and vote on the addition of the new member. This process should be rapid and the requestor should hear the outcome within 72 hours.
+
 
 ## Glossary of roles
 
