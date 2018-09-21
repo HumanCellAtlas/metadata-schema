@@ -4,7 +4,8 @@
     "additionalProperties": false,
     "required": [
         "describedBy",
-        "schema_type"
+        "schema_type",
+        "project_core"
     ],
     "title": "Project",
     "name": "project",
