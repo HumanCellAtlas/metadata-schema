@@ -196,7 +196,7 @@ For proposed changes where consensus looks unlikely, as the review deadline loom
 
 1. *Do not merge your own PR.* This ensures that at least one other person has reviewed the suggested changes and has approved them. 
     1. Exception 1: For PRs that affect documentation only, the same person can make/merge the PR if another person with commit privileges specifically approves it using the GitHub approval mechanism.
-    1. Exception 2: A reviewer can merges changes they made by running the `release_prepare.py` script.
+    1. Exception 2: The same person can make/merge PRs from _develop_ to _integration_. 
 1. *Be clear and descriptive in PR comments/commits.* 
     1. Refer to GitHub issues that the PR addresses by adding `Fixes #000` to at least 1 commit statement in the PR (where 000 is replaced by the actual GitHub issue number). 
     1. Tag a specific person if the PR addresses their issue or if the change affects their work.
