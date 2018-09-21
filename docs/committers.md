@@ -174,7 +174,7 @@ The process should take 5 working days. The assigned Committer should identify a
 
 Light acceptance is the process used for all patch versions, regardless of stability and for all changes to low stability modules.
 
-Light acceptance is lightweight process which allows rapid iteration for new technologies where the requirements are not precisely defined and the processes are changing quickly.  Downstream users of this data should be aware that the metadata is changing rapidly and understand any dependencies they create on specific structures will be broken in future.
+Light acceptance is lightweight process which allows rapid iteration for new technologies where the requirements are not precisely defined and the processes are changing quickly.  Downstream users of this data should be aware that the metadata is changing rapidly and understand that any dependencies they create on specific structures will be broken in the future.
 
 The process should take 3 working days. The assigned Committer does not need to recruit an additional Reviewer though should ensure that as many people as possible have seen the suggestion via Slack messages or GitHub notifications.
 
