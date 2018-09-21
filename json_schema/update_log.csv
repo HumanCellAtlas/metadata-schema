@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-core/project/project_core,patch,Fixed missing required field project_core,,
+type/project/project,patch,Fixed missing required field project_core,,
