@@ -36,14 +36,14 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
         1. For which schema is a change/update being suggested?
         1. What should the change/update be?
         1. What new field(s) need to be added?
-          - Details for requesting **new field(s)** outlined below
+            - Details for requesting **new field(s)** outlined below
         1. Why is the change requested?
 
     1. To request a **new** schema, the following pieces of information are required:
 
         1. What is the proposed name of the new schema?
         1. What field(s) should the new schema contain?
-          - Details for requesting **new field(s)** outlined below
+            - Details for requesting **new field(s)** outlined below
         1. Why is the new schema needed? Specifically, why does the current metadata standard not meet your need?
     
     For **each new field** requested, the following pieces of information are required:
