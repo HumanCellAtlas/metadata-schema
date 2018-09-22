@@ -26,17 +26,20 @@ Steps to reproduce the behavior:
  
 *e.g.*: `publication.json` schema v6.0.1
 
-**Expected behavior**
 
-<!-- Please explain what you expected to happen. -->
- 
-*e.g.*: I expected the description to say "Title of publication."
+**Observed behavior**
 
-**Actual behavior**
-
-<!-- Please explain what actually happened. -->
+<!-- Please explain what happens. -->
 
 *e.g.*: The description says "Title of *publicatoin*."
+
+
+**Expected behavior**
+
+<!-- Please explain what you expect to happen. -->
+ 
+*e.g.*: I expect the description to say "Title of publication."
+
 
 **Screenshots or Messages**
 
