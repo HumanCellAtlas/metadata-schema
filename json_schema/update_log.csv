@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,patch,"Updated user-friendly term for is_living.",,
