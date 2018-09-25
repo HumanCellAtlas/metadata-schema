@@ -100,7 +100,7 @@ Please give the bug a title that includes a short description.
 
 Typo in description for `publication.title` field.
 
-**To Reproduce**
+**To reproduce**
 
 Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing).
 
@@ -112,7 +112,7 @@ Steps to reproduce the behavior:
 
 Please list any schema versions related to this bug.
  
-`publication.json` schema v6.0.1
+`publication.json`: 6.0.1
 
 **Observed behavior**
 
