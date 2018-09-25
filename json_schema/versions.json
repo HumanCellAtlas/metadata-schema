@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-09-24T16:47:42Z",
+    "last_update_date": "2018-09-25T11:35:50Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -46,7 +46,7 @@
                 "library_construction_ontology": "1.2.2",
                 "mass_unit_ontology": "5.3.2",
                 "microscopy_ontology": "1.0.1",
-                "organ_ontology": "5.3.4",
+                "organ_ontology": "5.3.5",
                 "organ_part_ontology": "5.3.2",
                 "process_type_ontology": "5.3.2",
                 "protocol_type_ontology": "5.3.2",
@@ -84,8 +84,8 @@
                 "cell_suspension": "8.6.1",
                 "donor_organism": "10.1.2",
                 "imaged_specimen": "1.0.1",
-                "organoid": "8.3.7",
-                "specimen_from_organism": "6.3.2"
+                "organoid": "8.3.8",
+                "specimen_from_organism": "6.3.3"
             },
             "file": {
                 "analysis_file": "5.3.4",
