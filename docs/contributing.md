@@ -98,13 +98,11 @@ Report any bugs (schema-related or other) by creating a [GitHub issue](https://g
 
 Please give the bug a title that includes a short description.
 
-*e.g.*: Typo in description for `publication.title` field.
+Typo in description for `publication.title` field.
 
 **To Reproduce**
 
 Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing).
-
-*e.g.*:
 
 Steps to reproduce the behavior:
 1. Go to `publication.json` schema on develop branch
@@ -114,19 +112,19 @@ Steps to reproduce the behavior:
 
 Please list any schema versions related to this bug.
  
-*e.g.*: `publication.json` schema v6.0.1
+`publication.json` schema v6.0.1
+
+**Observed behavior**
+
+Please explain what you observed.
+
+The description says "Title of *publicatoin*."
 
 **Expected behavior**
 
 Please explain what you expect to happen.
  
-*e.g.*: I expected the description to say "Title of publication."
-
-**Actual behavior**
-
-Please explain what actually happened.
-
-*e.g.*: The description says "Title of *publicatoin*."
+I expect the description to say "Title of publication."
 
 **Screenshots or Messages**
 
