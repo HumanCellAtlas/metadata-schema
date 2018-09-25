@@ -20,7 +20,7 @@ This document describes how you can contribute to the development of the HCA met
  - Anyone reporting a bug in the schema
 
 **What *isn't* in this document?**
-- Information about contributing **data** to the HCA. This information can be found on the HCA DCP website
+- Information about contributing **data** to the HCA. This information can be found on the HCA Data Portal
 - Directions for committing changes to this repo, which is currently restricted to a core group of Committers
 - Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
 - Directions for submitting pull requests for changes
@@ -56,7 +56,7 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
     
 1. **Submit request** for update to the HCA metadata standard. Anyone can suggest/request changes to the metadata standards via three main routes:
 
-    1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md)
+    1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md). Please add the "content" label to the issue.
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema repo (recommended for users familiar with GitHub)
     
