@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/organ_ontology.json - v5.3.5] - 2018-09-25
+### Fixed
+Fixed issue with organ ontology assignment by using less stringent term restriction. Fixes #567.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.3] - 2018-09-25
+### Fixed
+Fixed issue with organ ontology assignment by using less stringent term restriction. Fixes #567.
+
+### [type/biomaterial/organoid.json - v8.3.8] - 2018-09-25
+### Fixed
+Fixed issue with organ ontology assignment by using less stringent term restriction. Fixes #567.
+
 ### [type/biomaterial/donor_organism.json - v10.1.2] - 2018-09-24
 ### Updated
 Updated user-friendly term for is_living.
