@@ -96,36 +96,36 @@ Report any bugs (schema-related or other) by creating a [GitHub issue](https://g
 
 **Give the bug a title**
 
-Please give the bug a title that includes a short description.
+*Please give the bug a title that includes a short description.*
 
 Typo in description for `publication.title` field.
 
 **To reproduce**
 
-Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing).
+*Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing).*
 
 Steps to reproduce the behavior:
 1. Go to `publication.json` schema on develop branch
 1. Observe typo in description for `title` field
 
-**Schema versions**
+**Schema version(s)**
 
-Please list any schema versions related to this bug.
+*Please list any schema versions related to this bug.*
  
 `publication.json`: 6.0.1
 
 **Observed behavior**
 
-Please explain what you observed.
+*Please explain what you observed.*
 
-The description says "Title of *publicatoin*."
+The description says "Title of *publicatoin*".
 
 **Expected behavior**
 
-Please explain what you expect to happen.
+*Please explain what you expect to happen.*
  
-I expect the description to say "Title of publication."
+I expect the description to say "Title of publication".
 
 **Screenshots or Messages**
 
-If applicable, add screenshots to help explain your problem or the text of any error messages.
+*If applicable, add screenshots to help explain your problem or the text of any error messages.*
