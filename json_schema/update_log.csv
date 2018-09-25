@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/ontology/organ_ontology,patch,Fixed issue with organ ontology assignment by using less stringent term restriction,,
