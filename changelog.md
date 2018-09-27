@@ -9,6 +9,34 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/ontology/organ_ontology.json - v5.3.5] - 2018-09-25
+### Fixed
+Fixed issue with organ ontology assignment by using less stringent term restriction. Fixes #567.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.3] - 2018-09-25
+### Fixed
+Fixed issue with organ ontology assignment by using less stringent term restriction. Fixes #567.
+
+### [type/biomaterial/organoid.json - v8.3.8] - 2018-09-25
+### Fixed
+Fixed issue with organ ontology assignment by using less stringent term restriction. Fixes #567.
+
+### [type/biomaterial/donor_organism.json - v10.1.2] - 2018-09-24
+### Updated
+Updated user-friendly term for is_living.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.3.3] - 2018-09-21
+### Added
+Added 'not provided' to enum for strand field. Fixes #544.
+
+### [type/biomaterial/cell_line.json - v9.0.0] - 2018-09-21
+### Made
+Made publication a single object instead of an array of objects. Fixes #557
+
+### [type/project/project.json - v9.0.3] - 2018-09-21
+### Fixed
+Fixed missing required field project_core
+
 ### [module/ontology/organ_ontology.json - v5.3.4] - 2018-09-18
 ### Fixed
 Fixed organ validation issue by including embryo and children as allowed values
