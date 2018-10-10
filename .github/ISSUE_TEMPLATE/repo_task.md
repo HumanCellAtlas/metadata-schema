@@ -4,9 +4,9 @@ about: Create an issue for any repo-related task.
 labels: task
 ---
 
-<!-- Please indicate the concrete goal of the Issue in the issue Title. -->
+<!-- Please indicate the concrete goal of the Issue in the issue Title.
 
-*e.g.*: Define SLO documentation for metadata schemas
+*e.g.*: Define SLO documentation for metadata schemas  -->
 
 **Description**
 
