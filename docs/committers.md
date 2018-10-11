@@ -127,7 +127,7 @@ This section outlines steps for Committers to make suggested changes to the meta
 
 1. **Push** the committed changes to the working branch.
 
-        git checkout -b mf-new-mouse-module-Issue222
+        git push origin mf-new-mouse-module-Issue222
 
 1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
 
