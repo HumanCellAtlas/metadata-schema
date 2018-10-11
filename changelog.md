@@ -7,11 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/protocol/imaging/imaging_protocol.json - v8.0.3] - 2018-10-11
 ### Removed
 Removed required field `protocol_type` from imaging_protocol (not actually in the schema). Fixes #572.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/organ_ontology.json - v5.3.5] - 2018-09-25
 ### Fixed
