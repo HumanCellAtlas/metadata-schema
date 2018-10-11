@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/imaging/imaging_protocol,major,Removed required field `protocol_type` from imaging_protocol,,
+type/protocol/imaging/imaging_protocol,patch,Removed required field `protocol_type` from imaging_protocol,,
