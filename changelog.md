@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/protocol/imaging/imaging_protocol.json - v8.0.3] - 2018-10-11
+### Removed
+Removed required field `protocol_type` from imaging_protocol (not actually in the schema). Fixes #572.
+
 ### [module/ontology/organ_ontology.json - v5.3.5] - 2018-09-25
 ### Fixed
 Fixed issue with organ ontology assignment by using less stringent term restriction. Fixes #567.

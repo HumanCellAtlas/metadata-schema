@@ -6,7 +6,6 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "protocol_type",
         "microscopy_technique",
         "magnification",
         "numerical_aperture",
