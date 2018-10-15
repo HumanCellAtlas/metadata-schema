@@ -27,7 +27,7 @@ The following rules are followed by HCA JSON schemas:
 1. Module schemas can only reference Ontology schemas.
 1. A set of fields that are logically grouped or only applicable in certain situations should be put into their own Module schema.
 
-### Directory structure of schemas
+## Directory structure of schemas
 
 ```
 core/
