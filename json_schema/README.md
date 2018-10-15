@@ -26,6 +26,7 @@ The following rules are followed by HCA JSON schemas:
 1. All Type schemas must reference their associated Core schema.
 1. Module schemas can only reference Ontology schemas.
 1. A set of fields that are logically grouped or only applicable in certain situations should be put into their own Module schema.
+1. Core, Type, and Module schemas are grouped by their entity category (Biomaterial, File, Process, Project, Protocol).
 
 ## Directory structure of schemas
 
