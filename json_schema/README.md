@@ -1,6 +1,6 @@
 # The Human Cell Atlas Metadata Standards: JSON Schemas
 
-This repo contains the HCA metadata JSON schemas for **Core**, **Type**, and **Module** entities. Below is a brief description of the structure of the HCA JSON schemas. More details about the schema structure can be found in the [structure document](../../docs/structure.md).
+This repo contains the HCA metadata JSON schemas for **Core**, **Type**, and **Module** entities. Below is a brief description of the structure of the HCA JSON schemas. More details about the schema structure can be found in the [structure document](../docs/structure.md).
 
 ## Schema structure overview
 
