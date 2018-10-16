@@ -56,7 +56,7 @@
             "example": "Machine1"
         },
         "paired_end": {
-            "description": "Was a paired-end sequencing strategy used?",
+            "description": "Was the sequenced molecule sequenced from both ends?",
             "type": "boolean",
             "example": "Should be one of: yes, no.",
             "comment": "If 10x, then put no.",
