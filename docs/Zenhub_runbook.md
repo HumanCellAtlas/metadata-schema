@@ -66,14 +66,11 @@ Icebox Issues should:
 
 ### Epics
 
-DEFINITION: Epics are longer/more complex tasks that (usually) cannot be completed with one Issue. Epics should be written like user stories. The Epic *title* should define the concrete goal, and the Epic *description* should define the type of user, what they want, and why they want it. An example Epic is:
+DEFINITION: Epics are longer, more complex tasks that (usually) cannot be addressed with one Issue. Epics should be written like user stories. The Epic *title* should define the concrete goal, and the Epic *description* should define the type of user, what they want, and why they want it. An example Epic is:
 
-> *Title*: Release first draft of schemas to support imaging spatial
-> transcriptomics
+> *Title*: Release first draft of schemas to support imaging spatial transcriptomics
 >
-> *Description*: As a SpaceTx developer, I want to be able to
-> incorporate SpaceTx metadata into the HCA metadata schema in order to
-> describe imaging data using the HCA metadata schema.
+> *Description*: As a SpaceTx developer, I want to be able to incorporate SpaceTx metadata into the HCA metadata schema in order to describe imaging data using the HCA metadata schema.
 
 Epics should:
 -   be assigned appropriate label(s)
