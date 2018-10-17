@@ -34,7 +34,7 @@ New Issues of type 4 should:
 -   have as many of the sections of the issue template filled out as possible*
 -   not be assigned to someone
 
-* Acceptance Criteria may be left blank until Sprint Planning
+\* *Acceptance Criteria may be left blank until Sprint Planning*
 
 Anyone (on Metadata Team or not) can create Issues in the metadata-schema repo. Every two weeks during Sprint Planning, the Metadata Team and Product Owner will go through the New Issues and update the following:
 
