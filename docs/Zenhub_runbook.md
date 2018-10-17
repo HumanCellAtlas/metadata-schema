@@ -105,7 +105,7 @@ To Do/Ready Issues should:
 
 ### In Progress
 
-DEFINITION: In Progress Issues are issues that a Committer has selected to work on. The Issue is currently being addressed in a new branch made by the Committer off of the develop branch.
+DEFINITION: In Progress Issues are issues that a Committer has selected to work on. The Issue is currently being addressed in a new branch made by the Committer off of the develop branch. **Before making a PR, Committer should run tests over their branch that test whether the schema updates adhere to the metadata standards. We don't have these tests right now.**
 
 In Progress Issues should:
 -   already have been assigned appropriate label(s)
@@ -130,7 +130,7 @@ Review/QA Issues should:
 
 ### Done
 
-DEFINITION: Done Issues are Issues for which the associated branch with changes has been merged into develop. **At this point, there should be some tests that run in metadata-schema repo and/or ingest infrastructure, but we don't have these tests right now.**
+DEFINITION: Done Issues are Issues for which the associated branch with changes has been merged into develop. **At this point, some tests should run over develop that test integration of schema updates. We don't have these tests right now.**
 
 Done Issues should:
 -   be assigned the "Done" label
