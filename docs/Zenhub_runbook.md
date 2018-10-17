@@ -42,7 +42,7 @@ New Issues (after Sprint Planning) should:
 -   be assigned appropriate label(s)
 -   not be assigned to someone
 -   not be assigned a milestone
--   be assigned estimated points
+-   be assigned estimated points, if applicable
 -   be assigned to an Epic, if applicable
 -   be updated with **Acceptance Criteria** (type 4 Issues only)
 
@@ -60,7 +60,7 @@ Icebox Issues should:
 -   already have been assigned appropriate label(s)
 -   not be assigned to someone
 -   not be assigned milestone
--   already have been assigned estimated points
+-   already have been assigned estimated points, if applicable
 -   already have been assigned to an Epic, if applicable
 -   be moved to Backlog pipeline if determined to now be in scope and priorities of the project
 
