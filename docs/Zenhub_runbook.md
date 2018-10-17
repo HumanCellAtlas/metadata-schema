@@ -89,11 +89,11 @@ Backlog Issues should:
 -   not be assigned milestone(s)
 -   already have been assigned estimated points
 -   already have been assigned to Epic(s), if appropriate
--   be moved to To Do/Ready pipeline when the Issue is in the current milestone
+-   be moved to To Do/Ready pipeline when the Issue is in the scope of the current milestone
 
 ### To Do/Ready
 
-DEFINITION: To Do/Ready Issues are issues that are in the current milestone (sprint). The Metadata Team does not currently run in typical "sprints", but we are going to try working in 1 month intervals and see how that works.
+DEFINITION: To Do/Ready Issues are issues that are in the scope of the current milestone. The Metadata Team does not currently run in typical "sprints", but are going to try working in 1 month intervals and see how that works.
 
 To Do/Ready Issues should:
 -   already have been assigned appropriate label(s)
