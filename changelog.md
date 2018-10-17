@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.3] - 2018-10-17
+### Changed
+Changed description for paired_end. Fixes #592.
+
 ### [type/protocol/imaging/imaging_protocol.json - v8.0.3] - 2018-10-11
 ### Removed
 Removed required field `protocol_type` from imaging_protocol (not actually in the schema). Fixes #572.
