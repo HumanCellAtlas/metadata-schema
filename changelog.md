@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.3] - 2018-10-17
+### Changed
+Changed description for paired_end. Fixes #592.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/imaging/imaging_protocol.json - v8.0.3] - 2018-10-11
