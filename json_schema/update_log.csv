@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/sequencing/sequencing_protocol,patch,"Changed description for paired_end. Fixes #592.",,
