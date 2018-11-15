@@ -119,8 +119,7 @@
             "description": "The tissue that the cell line was derived from.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
-            "user_friendly": "Tissue",
-            "example": "bone marrow"
+            "user_friendly": "Tissue"
         },
         "date_established": {
             "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
