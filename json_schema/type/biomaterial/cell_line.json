@@ -107,8 +107,7 @@
             "description": "The cell type that the cell line represents.",
             "type": "object",
             "$ref": "module/ontology/cell_type_ontology.json",
-            "user_friendly": "Cell type",
-            "example": "cardiac muscle cell"
+            "user_friendly": "Cell type"
         },
         "karyotype": {
             "description": "The karyotype of the cell line.",
