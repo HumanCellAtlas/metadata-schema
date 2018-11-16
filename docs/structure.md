@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Structure overview](#structure-overview)
-- [Specifying schema URLs](#specifying-schema-urls)
+- [Specifying JSON schemas](#specifying-json-schemas)
 
 ## Introduction
 
