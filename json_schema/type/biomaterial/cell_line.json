@@ -38,12 +38,13 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "core/biomaterial/biomaterial_core.json"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "supplier": {
            "description": "The supplier of the cell line.",
            "type": "string",
-           "example": "HipSci",
+           "example": "HipSci, ATCC",
            "user_friendly": "Supplier"
         },
         "catalog_number": {
@@ -68,8 +69,7 @@
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
             "type": "object",
             "$ref": "module/ontology/cell_cycle_ontology.json",
-            "user_friendly": "Cell cycle",
-            "example": "mitotic cell cycle"
+            "user_friendly": "Cell cycle"
         },
         "cell_line_type": {
             "description": "The type of cell line.",
@@ -147,7 +147,7 @@
             "description": "A publication that cites the cell line creation.",
             "type": "object",
             "$ref": "module/project/publication.json",
-            "user_friendly": "Cell line publication"
+            "user_friendly": "Publication"
         }
 
     }

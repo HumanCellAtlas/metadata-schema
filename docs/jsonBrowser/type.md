@@ -16,12 +16,12 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci, ATCC
 catalog_number | The supplier catalogue number for the cell line. | string | no |  | Catalog number |  | 77650057
 lot_number | The supplier lot or batch number for the cell line. | string | no |  | Lot/batch number |  | 24.10.14
 catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | https://www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc
-cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | mitotic cell cycle
+cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
 cell_line_type | The type of cell line. | string | yes |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent, stem cell | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
 cell_morphology | Features relating to the morphology of the cells. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
 growth_conditions | Features relating to the growth and/or maintenance of the cell lines. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
@@ -32,7 +32,7 @@ tissue | The tissue that the cell line was derived from. | object | no | [See mo
 date_established | When the cell line was established. | string | no |  | Date established |  | 2017-03-19
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
-publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md/#publication) | Cell line publication |  | 
+publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md/#publication) | Publication |  | 
 
 ## Cell suspension
 _Information about the suspension of cells or nuclei derived from the collected or cultured specimen._
