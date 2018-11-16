@@ -63,7 +63,7 @@
             "description": "The supplier catalogue URL for the cell line.",
             "type": "string",
             "user_friendly": "Catalog URL",
-            "example": "https://www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc"
+            "example": "www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc"
         },
         "cell_cycle": {
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
