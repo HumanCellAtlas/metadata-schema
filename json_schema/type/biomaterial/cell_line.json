@@ -112,7 +112,8 @@
         "karyotype": {
             "description": "The karyotype of the cell line.",
             "type": "string",
-            "user_friendly": "Karyotype"
+            "user_friendly": "Karyotype",
+            "example": "sex chromosome complement of XY, del(2) (q11)"
         },
         "tissue": {
             "description": "The tissue that the cell line was derived from.",

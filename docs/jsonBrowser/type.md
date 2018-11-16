@@ -27,7 +27,7 @@ cell_morphology | Features relating to the morphology of the cells. | object | n
 growth_conditions | Features relating to the growth and/or maintenance of the cell lines. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 confluency | The percent a plate surface is covered by cells. | number | no |  | Percent confluency |  | 60
 cell_type | The cell type that the cell line represents. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
-karyotype | The karyotype of the cell line. | string | no |  | Karyotype |  | 
+karyotype | The karyotype of the cell line. | string | no |  | Karyotype |  | sex chromosome complement of XY, del(2) (q11)
 tissue | The tissue that the cell line was derived from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Tissue |  | 
 date_established | When the cell line was established. | string | no |  | Date established |  | 2017-03-19
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
