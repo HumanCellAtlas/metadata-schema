@@ -33,6 +33,10 @@ class SchemaGuideTests(unittest.TestCase):
         with open(filepath, 'rb') as json_file:
             return json.load(json_file)
 
+    def test_has_an_id(self):
+        for schema_json in SchemaGuideTests.schemas:
+            self.assertTrue("$id" in schema_json)
+
     def test_is_version_7(self):
         for schema_json in SchemaGuideTests.schemas:
             self.assertEqual(schema_json['$schema'], 'http://json-schema.org/draft-07/schema#', "Schema with id " + schema_json["$id"] + " does not adhere to draft-07")
