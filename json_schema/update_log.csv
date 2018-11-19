@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/imaging_target,minor,Changed channel field to optional,,
