@@ -28,8 +28,6 @@ class SchemaGuideTests(unittest.TestCase):
         print("Checking %d schemas" % len(schemas_found))
         return schemas_found
 
-
-
     @staticmethod
     def get_json_from_file(filepath):
         with open(filepath, 'rb') as json_file:
@@ -43,5 +41,6 @@ class SchemaGuideTests(unittest.TestCase):
 if __name__ == '__main__':
     schema_guide_tests = SchemaGuideTests()
     print(schema_guide_tests.setUpClass())
+    print(schema_guide_tests.schemas)
 
 
