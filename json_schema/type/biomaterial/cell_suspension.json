@@ -67,7 +67,6 @@
             "items": {
 		        "$ref": "module/ontology/cell_type_ontology.json"
 	        },
-            "example": "fetal cardiomyocyte",
             "user_friendly": "Selected cell type"
        },
         "total_estimated_cells": {
