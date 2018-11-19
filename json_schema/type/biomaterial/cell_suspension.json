@@ -37,7 +37,8 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "core/biomaterial/biomaterial_core.json"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "cell_morphology": {
             "description": "Features relating to the morphology of cells in a biomaterial.",
