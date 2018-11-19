@@ -74,7 +74,7 @@
             "maximum": 1000000000,
             "minimum": 0,
             "example": 2100,
-            "user_friendly": "Total estimated cell count",
+            "user_friendly": "Estimated cell count",
             "guidelines": "Enter 1 for well-based assays."
         },
         "plate_based_sequencing" : {
