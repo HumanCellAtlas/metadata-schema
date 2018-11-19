@@ -6,9 +6,18 @@ SCHEMAS_DIR_PATHS = ["core", "module", "type"]
 
 class schema_guide_tests(unittest.TestCase):
 
-    schemas = []
-
     @classmethod
+
+    def get_schema_paths(cls):
+        schema_path = '../json_schema'
+
+        schemas = [os.path.join(dirpath, f)
+                   for dirpath, dirnames, files in os.walk(schema_path)
+                   for f in files if f.endswith('.json')]
+
+        print("Checking %d schemas" % len(schemas))
+        return schemas
+
     def setUpClass(cls):
         cls.schemas.append(map(lambda schema_filename: cls.get_json_from_file(schema_filename),cls.get_schemas(SCHEMAS_DIR_PATHS)))
 
@@ -34,5 +43,6 @@ class schema_guide_tests(unittest.TestCase):
 if __name__ == '__main__':
     schema_guide_tests = schema_guide_tests()
     print(schema_guide_tests.setUpClass())
+    print(schema_guide_tests.schemas)
 
 
