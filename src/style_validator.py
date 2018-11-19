@@ -2,24 +2,25 @@ import unittest
 import json
 import os, sys
 
-SCHEMAS_DIR_PATHS = ["core", "module", "type"]
 
 class schema_guide_tests(unittest.TestCase):
 
     @classmethod
 
+    def setUpClass(cls):
+        cls.schemas.append(map(lambda schema_filename: cls.get_json_from_file(schema_filename),cls.get_schemas(schema_paths)))
+
     def get_schema_paths(cls):
         schema_path = '../json_schema'
 
-        schemas = [os.path.join(dirpath, f)
+        schema_paths = [os.path.join(dirpath, f)
                    for dirpath, dirnames, files in os.walk(schema_path)
                    for f in files if f.endswith('.json')]
 
-        print("Checking %d schemas" % len(schemas))
-        return schemas
+        print("Checking %d schemas" % len(schema_paths))
+        return schema_paths
 
-    def setUpClass(cls):
-        cls.schemas.append(map(lambda schema_filename: cls.get_json_from_file(schema_filename),cls.get_schemas(SCHEMAS_DIR_PATHS)))
+    schema_paths = get_schema_paths()
 
     def get_schemas(schema_paths):
         schemas_found = []
