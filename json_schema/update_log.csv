@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/imaged_specimen,patch,Fixed examples and wording in imaged_specimen to match the Style Guide,,
