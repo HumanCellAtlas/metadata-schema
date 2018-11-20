@@ -11,6 +11,9 @@ SCHEMAS_DIR_PATHS = list(map(lambda schema_subdir: os.path.join(SCHEMA_BASE_DIR,
 
 
 class SchemaGuideTests(unittest.TestCase):
+
+    # setup
+
     schemas = []
 
     @classmethod
@@ -33,6 +36,8 @@ class SchemaGuideTests(unittest.TestCase):
         with open(filepath, 'rb') as json_file:
             return json.load(json_file)
 
+    # test methods
+
     def test_has_a_dollar_schema(self):
         for schema_json in SchemaGuideTests.schemas:
             self.assertTrue("$schema" in schema_json)
@@ -42,9 +47,13 @@ class SchemaGuideTests(unittest.TestCase):
             self.assertEqual(schema_json['$schema'], 'http://json-schema.org/draft-07/schema#')
 
 
+
 if __name__ == '__main__':
-    schema_guide_tests = SchemaGuideTests()
-    print(schema_guide_tests.setUpClass())
-    print(schema_guide_tests.schemas)
+    unittest.main()
+
+
+
+    # schema_guide_tests = SchemaGuideTests()
+    # print(schema_guide_tests.get_schemas())
 
 
