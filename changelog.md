@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/protocol/imaging_target.json - v1.1.0] - 2018-11-19
 ### Changed
 Changed channel field to optional
@@ -14,8 +16,6 @@ Changed channel field to optional
 ### [type/protocol/imaging/imaging_protocol.json - v8.1.0] - 2018-11-19
 ### Changed
 Changed channel field to optional
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/sequencing/sequencing_protocol.json - v9.0.3] - 2018-10-17
 ### Changed
