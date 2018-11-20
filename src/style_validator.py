@@ -40,37 +40,28 @@ class SchemaGuideTests(unittest.TestCase):
             return json.load(json_file)
 
 
-    @staticmethod
-    def schema_assert:
-
-
-    # test methods
-
-    def test_has_a_dollar_schema(self):
-        for schema_json in SchemaGuideTests.schemas:
-            self.assertTrue("$schema" in schema_json)
-
-
-     def test_some_schema(self):
-         schema_assert(<condition>, "Failed because");
-
-    def test_is_version_7(self):
+    def schema_assert(self, assertion):
         schemas_test_results = []
 
         for schema_json in SchemaGuideTests.schemas:
             schemas_test_results.append({
                 "schema": schema_json,
-                "result": schema_json['$schema'] == 'http://json-schema.org/draft-06/schema#'
+                "result": assertion(schema_json)
             })
 
         failed_schemas = [schemas_test_result["schema"] for schemas_test_result in schemas_test_results if schemas_test_result["result"] == False]
         failed_schema_names = [schema["name"] for schema in failed_schemas]
+        msg = "Failed for schemas " + str(failed_schema_names)
+        self.assertTrue(len(failed_schemas) == 0, msg=msg)
 
-        self.assertTrue(len(failed_schemas) == 0, msg="Schema with names "+ str(failed_schema_names) + " does not adhere to draft-07")
+    # test methods
+    def test_has_a_dollar_schema(self):
+        for schema_json in SchemaGuideTests.schemas:
+            self.assertTrue("$schema" in schema_json)
 
-            # self.assertEqual(schema_json['$schema'], 'http://json-schema.org/draft-06/schema#', msg='Schema with name '+ str(schema_json['name']) + ' does not adhere to draft-07')
-
-
+    def test_is_version_7(self):
+        draft7_assertion = (lambda schema_json: schema_json["$schema"] == 'http://json-schema.org/draft-06/schema#')
+        self.schema_assert(draft7_assertion)
 
 
 if __name__ == '__main__':
