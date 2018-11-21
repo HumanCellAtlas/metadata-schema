@@ -37,7 +37,7 @@ probe_sequence | Sequence of a probe used to detect target. | string | no |  | P
 fluorophore | Fluorophore used to detect target in non-multiplexed experiments. | string | no |  | Fluorophore |  | FITC
 assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH, smFISH, immunofluorescence, fluorescent cell stain
 multiplexed | Were multiple targets detected simultaneously in one channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
-channel | Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab. | array | no |  | Channel |  | far red
+channel | Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab. | string | no |  | Channel |  | far red
 
 ## Length unit ontology<a name='Length unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_

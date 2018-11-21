@@ -82,7 +82,7 @@
         },
         "channel": {
             "description": "Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab.",
-            "type": "array",
+            "type": "string",
             "example": "far red",
             "user_friendly": "Channel"
         }
