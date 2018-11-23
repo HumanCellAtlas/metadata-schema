@@ -1,0 +1,200 @@
+var expect = require('chai').expect;
+const readdirp = require("readdirp");
+const path = require('path');
+const fs = require('fs');
+const Ajv = require('ajv');
+
+// get all the custom extensions
+// only use the graph_extension keyword
+let { ElixirValidator, GraphRestriction} = require('elixir-jsonschema-validator');
+
+const schemaDirs = 'json_schema';
+const exampleDataDirs = 'schema_test_files';
+
+// set the base schema path
+let baseSchemaPath = path.join(__dirname, '..', schemaDirs);
+
+// set the example data path
+let baseDataPath = path.join(__dirname, '..', exampleDataDirs);
+
+let ajvOptions = {baseSchemaPath: baseSchemaPath};
+let validator = new ElixirValidator([GraphRestriction], ajvOptions);
+var ajv = new Ajv(ajvOptions);
+
+// cache of all schema file paths
+let schemaFiles = [];
+
+// dynamically test a number of file against a schema
+// extend this object to add new tests
+var tests = [
+    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expected: 'valid'},
+    {args: ['type/project/project.json', 'project/test_pass_project_0.json'], expected: 'valid'},
+    {args: ['type/project/project.json', 'project/test_fail_project_0.json'], expected: 'invalid'},
+    {args: ['type/biomaterial/donor_organism.json', 'biomaterial/test_pass_donor_organism_0.json'], expected: 'valid'},
+    {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_pass_specimen_0.json'], expected: 'valid'},
+    {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_fail_specimen_0.json'], expected: 'valid'},
+    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_analysis_process.json'], expected: 'valid'},
+    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expected: 'valid'}
+];
+
+
+// start by reading all the files in the base path with e file filter
+getFiles(baseSchemaPath, '*.json');
+
+// wait 5 seconds until all files have ben cached, then dynamically run a number of
+// unit tests on each file using the mocha testing framework
+setTimeout(function() {
+
+    describe('Testing schema is valid', function() {
+
+        // for each schema file in the cache execute a test
+        schemaFiles.forEach(function(fileInfo) {
+            it('Testing schema is valid ' + fileInfo.path, function() {
+
+                // get the full path to the file
+                let filePath = path.join(baseSchemaPath, fileInfo.path);
+                console.log("testing " + filePath);
+
+                // read the file from disk
+                let inputSchema = fs.readFileSync(filePath);
+
+                // check it is json
+                let jsonSchema = JSON.parse(inputSchema);
+                expect(jsonSchema).to.be.an('object');
+
+                // set the $async property, needed for custom keyword validation with AJV
+                jsonSchema["$async"] = true;
+
+                // check the schema validates
+                return validateSchema(jsonSchema).then( (data) => {
+
+                    // if we get the file must be valid as no errors were thrown
+                    expect(data).to.not.equal(null);
+                    expect(data.errors).to.equal(null);
+                    console.log(filePath + " is valid");
+
+                }).catch(  (err) => {
+
+                    // errors were thrown, file must be invalid, log the message
+                    expect.fail("invalid schema => " + err.message)
+                })
+            });
+        });
+    });
+
+    describe ('Testing example data validates against schemas', function () {
+
+        tests.forEach(function(testObject) {
+
+            it('Testing ' + testObject.args[0] + ' against ' + testObject.args[1], function () {
+
+                // get the schema file
+                let inputSchema = fs.readFileSync(path.join(baseSchemaPath, testObject.args[0]));
+                let inputData = fs.readFileSync(path.join(baseDataPath, testObject.args[1]));
+
+                let jsonSchema = JSON.parse(inputSchema);
+                // set the $async property, needed for custom keyword validation with AJV
+                jsonSchema["$async"] = true;
+
+                // check it is json
+                let jsonDoc = JSON.parse(inputData);
+                expect(jsonDoc).to.be.an('object');
+
+                return validator.validate(jsonSchema, jsonDoc).then((data) => {
+
+                    expect(testObject.expected).to.be.equal('valid');
+                    expect(data).to.be.an('object');
+                    expect(data.validationErrors.length).to.equal(0);
+                }).catch ( (err) => {
+                    console.log(err.message);
+                    expect(testObject.expected).to.be.equal('invalid')
+
+                });
+
+
+            })
+
+        });
+
+    });
+
+    run();
+}, 5000);
+
+/**
+ *
+ * recursively read all the JSON schema file under the baseSchemaPath
+ * @returns {Promise<*>} that will resolve a file entity from readdirp lib
+ */
+function getFiles(basePath, filter) {
+
+    return new Promise((resolve, reject) => {
+
+        readdirp(
+            { root: basePath, fileFilter: filter },
+            function(fileInfo) {
+                console.log("reading file " + fileInfo.path);
+                if (fileInfo.name != "versions.json") {
+                    schemaFiles.push(fileInfo)
+                }
+            },
+            function (err, res)  {
+                resolve(schemaFiles);
+            });
+
+    });
+}
+
+/**
+ *
+ * Used to resolve local filesystem $refs when parsing JSON schema
+ * @param relativePath
+ * @returns {Promise<any>}
+ */
+function loadRefs(relativePath) {
+
+    return new Promise((resolve, reject) => {
+
+        let ref = path.join(baseSchemaPath, relativePath);
+        console.log('loading ref ' + ref);
+        try {
+            jsonSchema = fs.readFileSync(ref);
+            console.log("setting async for ref " + relativePath)
+            jsonSchema["$async"] = true;
+
+            resolve(JSON.parse(jsonSchema))
+        } catch (err) {
+            reject(err)
+        }
+    });
+}
+
+/**
+ * Perform a number of validation and checks against a JSON schema
+ * @param jsonSchema
+ * @returns {PromiseLike<ajv.ValidateFunction | never>}
+ */
+function validateSchema(jsonSchema) {
+
+    return ajv.compileAsync(jsonSchema)
+        .then(customSchemaChecksValid(jsonSchema))
+
+}
+
+/**
+ * One custom check that all JSON schemas must declare a $schema, add any addition
+ * custom checks into this function
+ * @param schema
+ * @returns {Promise<any>}
+ */
+function customSchemaChecksValid(schema) {
+
+    return new Promise((resolve, reject) => {
+
+        if (! schema["$schema"]) {
+            reject("Schema doesn't declare a schema version")
+        }
+        resolve(true)
+    });
+}
+
