@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+system/links.json,patch,Fixed a bug in the links schema still referencing core instead of system,,
