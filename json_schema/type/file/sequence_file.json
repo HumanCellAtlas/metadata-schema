@@ -76,7 +76,7 @@
             "example": "SRR0000000"
         },
         "library_prep_id" : {
-            "description": "A project wide unique label to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same sequencing library. Leave blank if files are biological replicates.",
+            "description": "Indicate which samples were from the same library preparation by providing a unique identifier for each library preparation.",
             "type": "string",
             "example": "tech_rep_group_001",
             "user_friendly": "Technical replicate group"
