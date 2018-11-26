@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/donor_organism.json,major,"Removed normothermic_regional_perfusion",,
+module/biomaterial/death.json,minor,"Added normothermic_regional_perfusion",,
