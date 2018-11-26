@@ -75,7 +75,7 @@
             "user_friendly": "INSDC run",
             "example": "SRR0000000"
         },
-        "technical_replicate_group" : {
+        "library_prep_id" : {
             "description": "A project wide unique label to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same sequencing library. Leave blank if files are biological replicates.",
             "type": "string",
             "example": "tech_rep_group_001",
