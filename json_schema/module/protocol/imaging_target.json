@@ -80,10 +80,10 @@
             "example": "yes",
             "user_friendly": "Is this a multiplexed experiment?"
         },
-        "channel": {
-            "description": "Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab.",
+        "channel_id": {
+            "description": "Channel ID used to assay signal. Should be consistent with the ID in the channel tab.",
             "type": "string",
-            "example": "far red",
+            "example": "1, A",
             "user_friendly": "Channel"
         }
     }
