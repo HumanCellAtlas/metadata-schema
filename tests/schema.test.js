@@ -48,8 +48,10 @@ schemaFiles = getFilesSync(baseSchemaPath, '.json');
 describe('Testing schema is valid', function() {
 
     // for each schema file in the cache execute a test
-    schemaFiles.forEach(function(jsonSchema) {
-        it('Testing schema is valid ' + jsonSchema["$schema"], function() {
+    schemaFiles.forEach(function(jsonSchemaInfo) {
+        let jsonSchema = jsonSchemaInfo.schema;
+        let schemaPath = jsonSchemaInfo.path;
+        it('Testing schema is valid ' + schemaPath, function() {
             expect(jsonSchema).to.be.an('object');
 
             // set the $async property, needed for custom keyword validation with AJV
@@ -131,7 +133,15 @@ function getFiles(basePath, filter) {
     });
 }
 
-function getFilesSync(basePath, filter) {
+/**
+ *
+ * recursively read all the JSON schema file under the baseSchemaPath
+ *
+ * @param basePath
+ * @param filter
+ * @returns {*|T[]|string} A list of objects of format {schema: <a json schema>, path: <full path to schema file> }
+ */
+function getFilesSync(basePath, filter, relPath) {
     // remove versions.json
     const versionsJsonFilter = (dirEntry) => dirEntry !== "versions.json";
     const dirEntries =
@@ -146,7 +156,7 @@ function getFilesSync(basePath, filter) {
     const jsonFilePaths = R.filter(jsonFileFilterFn, dirEntries);
     const subDirPaths = R.filter(dirEntryFilterFn, dirEntries);
 
-    const jsonFiles = R.map((jsonFilePath) => JSON.parse(fs.readFileSync(jsonFilePath)), jsonFilePaths);
+    const jsonFiles = R.map((jsonFilePath) => {return {schema: JSON.parse(fs.readFileSync(jsonFilePath)), path: jsonFilePath} }, jsonFilePaths);
 
     return jsonFiles.concat(
         R.reduce(
