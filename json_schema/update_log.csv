@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/protocol/imaging_target,major,Changed optional field name channel to channel_id,,
