@@ -3,6 +3,7 @@ const readdirp = require("readdirp");
 const path = require('path');
 const fs = require('fs');
 const Ajv = require('ajv');
+const R = require('ramda');
 
 // get all the custom extensions
 // only use the graph_extension keyword
@@ -39,7 +40,8 @@ var tests = [
 
 
 // start by reading all the files in the base path with e file filter
-getFiles(baseSchemaPath, '*.json');
+schemaFiles = getFilesSync(baseSchemaPath, '.json');
+var x = 1;
 
 // wait 5 seconds until all files have ben cached, then dynamically run a number of
 // unit tests on each file using the mocha testing framework
@@ -144,6 +146,33 @@ function getFiles(basePath, filter) {
 
     });
 }
+
+function getFilesSync(basePath, filter) {
+    // remove versions.json
+    const versionsJsonFilter = (dirEntry) => dirEntry !== "versions.json";
+    const dirEntries =
+        R.map(
+            dirEntryName => basePath + "/" + dirEntryName,
+            R.filter(versionsJsonFilter, fs.readdirSync(basePath))
+        );
+
+    const jsonFileFilterFn = (dirEntryPath) => fs.lstatSync(dirEntryPath).isFile() && dirEntryPath.endsWith(filter);
+    const dirEntryFilterFn = (dirEntryPath) => fs.lstatSync(dirEntryPath).isDirectory();
+
+    const jsonFilePaths = R.filter(jsonFileFilterFn, dirEntries);
+    const subDirPaths = R.filter(dirEntryFilterFn, dirEntries);
+
+    const jsonFiles = R.map((jsonFilePath) => JSON.parse(fs.readFileSync(jsonFilePath)), jsonFilePaths);
+
+    return jsonFiles.concat(
+        R.reduce(
+            (acc, jsonFiles) => acc.concat(jsonFiles),
+            [],
+            R.map(subDirPath => getFilesSync(subDirPath, filter), subDirPaths)
+        )
+    )
+}
+
 
 /**
  *
