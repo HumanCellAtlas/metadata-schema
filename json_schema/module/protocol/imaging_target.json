@@ -82,7 +82,7 @@
         },
         "channel_id": {
             "description": "Channel ID used to assay signal. Should be consistent with the ID in the channel tab.",
-            "type": "string",
+            "type": "array",
             "example": "1, A",
             "user_friendly": "Channel"
         }
