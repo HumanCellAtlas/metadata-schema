@@ -4,7 +4,7 @@
   "description": "a series of tests for the HCA metadata",
   "main": "index.js",
   "scripts": {
-    "test": "mocha schema.test.js --delay"
+    "test": "mocha schema.test.js"
   },
   "author": "",
   "license": "ISC",
