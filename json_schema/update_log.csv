@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/channel,major,Changed name of the required field channel_name to channel_id ,,
+module/protocol/channel,major,Changed name of the required field channel_name to channel_id,,
