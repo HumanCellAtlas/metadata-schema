@@ -72,7 +72,7 @@
              "items": {
                "description": "Type and UUID of a protocol entity.",
                "type": "object",
-               "$ref": "core/links.json#/definitions/protocol_links"
+               "$ref": "system/links.json#/definitions/protocol_links"
              }
            }
          }
@@ -82,7 +82,7 @@
     "describedBy": {
       "description": "The URL reference to the schema.",
       "type": "string",
-      "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/core/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/links"
+      "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/links"
     },
     "schema_version": {
       "description": "The version number of the schema in major.minor.patch format.",
@@ -101,7 +101,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "core/links.json#/definitions/bundle_links"
+        "$ref": "system/links.json#/definitions/bundle_links"
       }
     }
   }
