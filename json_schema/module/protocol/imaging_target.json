@@ -4,8 +4,7 @@
     "additionalProperties": false,
     "required": [
         "assay_type",
-        "multiplexed",
-        "channel"
+        "multiplexed"
     ],
     "title": "Imaging target",
     "name": "imaging_target",
