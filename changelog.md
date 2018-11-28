@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v10.2.0] - 2018-11-28
+### Added
+Added optional field `timecourse`
+
 ### [system/links.json - v1.1.4] - 2018-11-27
 ### Fixed
 Fixed a bug in the links schema still referencing core instead of system
