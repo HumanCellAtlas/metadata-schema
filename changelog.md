@@ -15,6 +15,23 @@ Changed name of the required field channel_name to channel_id
 ### Changed
 Changed name of the required field channel_name to channel_id
 
+### [type/biomaterial/donor_organism.json - v10.2.0] - 2018-11-28
+### Added
+Added optional field `timecourse`
+
+### [system/links.json - v1.1.4] - 2018-11-27
+### Fixed
+Fixed a bug in the links schema still referencing core instead of system
+
+### [module/protocol/imaging_target.json - v2.0.0] - 2018-11-21
+### Changed
+Changed channel field type to array
+
+### [type/protocol/imaging/imaging_protocol.json - v9.0.0] - 2018-11-21
+### Changed
+Changed channel field type to array
+
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/imaging_target.json - v1.1.0] - 2018-11-19
