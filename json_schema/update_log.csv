@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/imaging_target,major,Changed channel_id from string to array,,

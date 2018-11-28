@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/imaging_target.json - v3.0.0] - 2018-11-28
+### Changed
+Changed channel_id from string to array
+
+### [type/protocol/imaging/imaging_protocol.json - v10.0.0] - 2018-11-28
+### Changed
+Changed channel_id from string to array
+
 ### [system/links.json - v1.1.4] - 2018-11-27
 ### Fixed
 Fixed a bug in the links schema still referencing core instead of system
