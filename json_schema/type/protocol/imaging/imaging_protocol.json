@@ -11,7 +11,7 @@
         "numerical_aperture",
         "overlapping_tiles",
         "channel",
-        "imaging_target",
+        "target",
         "pixel_size"
     ],
     "title": "Imaging Protocol",
@@ -134,11 +134,11 @@
             },
             "user_friendly": "Channel"
         },
-        "imaging_target": {
+        "target": {
             "description": "Information about each imaging target in the imaging experiment.",
             "type": "array",
             "items": {
-                "$ref": "module/protocol/imaging_target.json"
+                "$ref": "module/protocol/target.json"
             },
             "user_friendly": "Imaging target"
         }
