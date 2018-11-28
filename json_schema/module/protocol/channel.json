@@ -3,7 +3,7 @@
     "description": "Information about a single microscope channel.",
     "additionalProperties": false,
     "required": [
-        "channel_name",
+        "channel_id",
         "excitation_wavelength",
         "filter_range",
         "exposure_time",
@@ -24,11 +24,11 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "channel_name": {
-            "description": "User given name.  If there is an accompanying codebook, this name should correspond to a channel name used in the codebook.",
+        "channel_id": {
+            "description": "User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook.",
             "type": "string",
-            "example": "far red",
-            "user_friendly": "Channel name"
+            "example": "1, A",
+            "user_friendly": "Channel ID"
         },
         "excitation_wavelength": {
             "description": "Excitation wavelength of the lightsource in nanometers.",
