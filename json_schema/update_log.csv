@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/protocol/target,major,Added new schema target.json instead of imaging_target.json,0.0.0,
