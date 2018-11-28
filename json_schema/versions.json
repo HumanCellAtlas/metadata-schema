@@ -1,4 +1,5 @@
 {
+
     "last_update_date": "2018-11-28T12:09:06Z",
     "version_numbers": {
         "core": {
@@ -70,7 +71,7 @@
                 "publication": "5.2.4"
             },
             "protocol": {
-                "channel": "1.0.1",
+                "channel": "2.0.0",
                 "imaging_target": "3.0.0"
             }
         },
@@ -82,7 +83,7 @@
             "biomaterial": {
                 "cell_line": "9.0.0",
                 "cell_suspension": "8.6.1",
-                "donor_organism": "10.1.2",
+                "donor_organism": "10.2.0",
                 "imaged_specimen": "1.0.1",
                 "organoid": "8.3.8",
                 "specimen_from_organism": "6.3.3"
