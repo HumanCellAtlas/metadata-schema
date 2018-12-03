@@ -80,6 +80,7 @@ height_unit | The unit in which Height is expressed. | object | no | [See module
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | kilogram
 normothermic_regional_perfusion | Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise. | string | no |  | Normothermic regional perfusion? | yes, no, unknown | Should be one of: yes, no, or unknown.
+timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
 
 ## Imaged specimen
 _Information about a tissue specimen after it has been sectioned and prepared for imaging._
@@ -91,8 +92,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
-overview_image | List of filenames of photographs of specimen. Must be of format JPEG, TIFF, or PNG. | array | no |  | Gross image |  | my_mage_file.jpg
-imaged_slice_thickness | Thickness of the imaged slice in micrometres. | number | yes |  | Imaged slice thickness |  | 14
+overview_images | List of filenames of photographs of specimen. | array | no |  | Gross image |  | my_image_file.jpg, overview_image.tiff
+slice_thickness | Thickness of the imaged slice in micrometres. | number | no |  | Imaged slice thickness |  | 14, 30
 internal_anatomical_structures | Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample. | array | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Internal tissue structures |  | 
 
 ## Organoid
