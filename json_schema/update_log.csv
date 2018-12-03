@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/imaged_specimen,major,Changed field names and updated examples in imaged_specimen to match the Style Guide,,
