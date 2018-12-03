@@ -7,6 +7,42 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+
+### [module/protocol/imaging_target.json - v3.0.0] - 2018-11-28
+### Changed
+Changed channel_id from string to array
+
+### [type/protocol/imaging/imaging_protocol.json - v10.0.0] - 2018-11-28
+### Changed
+Changed channel_id from string to array
+
+### [module/protocol/channel.json - v2.0.0] - 2018-11-28
+### Changed
+Changed name of the required field channel_name to channel_id
+
+### [type/protocol/imaging/imaging_protocol.json - v9.0.0] - 2018-11-28
+### Changed
+Changed name of the required field channel_name to channel_id
+
+### [type/biomaterial/donor_organism.json - v10.2.0] - 2018-11-28
+### Added
+Added optional field `timecourse`
+
+### [system/links.json - v1.1.4] - 2018-11-27
+### Fixed
+Fixed a bug in the links schema still referencing core instead of system
+
+### [module/protocol/imaging_target.json - v2.0.0] - 2018-11-21
+### Changed
+Changed channel field type to array
+
+### [type/protocol/imaging/imaging_protocol.json - v9.0.0] - 2018-11-21
+### Changed
+Changed channel field type to array
+
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/protocol/imaging_target.json - v1.1.0] - 2018-11-19
 ### Changed
 Changed channel field to optional
@@ -14,8 +50,6 @@ Changed channel field to optional
 ### [type/protocol/imaging/imaging_protocol.json - v8.1.0] - 2018-11-19
 ### Changed
 Changed channel field to optional
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/sequencing/sequencing_protocol.json - v9.0.3] - 2018-10-17
 ### Changed
