@@ -140,7 +140,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Gestational age",
-            "example": "5-7",
+            "example": "22, 5-7",
             "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "gestational_age_unit": {
