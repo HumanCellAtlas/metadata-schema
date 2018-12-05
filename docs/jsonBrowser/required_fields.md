@@ -180,7 +180,7 @@ numerical_aperture | Numerical aperture of the objective. | number |  | Numerica
 pixel_size | Pixel size in nanometres (scaling factor). | number |  | Pixel size |  | 109
 overlapping_tiles | Were tiles collected with overlap? | string |  | Overlapping tiles? | yes, no | no
 channel | Information about each channel used in the imaging protocol. | array | [See module  channel](module.md/#channel) | Channel |  | 
-imaging_target | Information about each imaging target in the imaging experiment. | array | [See module  imaging_target](module.md/#imaging_target) | Imaging target |  | 
+target | Information about each imaging target in the imaging experiment. | array | [See module  target](module.md/#target) | Imaging target |  | 
 ### Library preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -350,7 +350,7 @@ excitation_wavelength | Excitation wavelength of the lightsource in nanometers. 
 filter_range | Wavelength range of the emission filter in nanometers. | string |  | Filter range |  | 665 - 705
 multiplexed | Were multiple targets detected simultaneously in this channel? Should be yes or no. | string |  | Is this a multiplexed experiment? | yes, no | yes
 exposure_time | Acquisition time for a single image per channel in miliseconds | number |  | Exposure time |  | 400
-### Imaging target<a name='Imaging target'></a>
+### Target<a name='Target'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH, smFISH, immunofluorescence, fluorescent cell stain
