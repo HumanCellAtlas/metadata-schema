@@ -129,7 +129,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
 genus_species | The scientific binomial name for the species of the specimen. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
 organ | The organ that the biomaterial came from. Blood and connective tissue are considered organs. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | blood
 organ_part | A term for a specific part of the organ that the biomaterial came from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | umbilical cord blood
