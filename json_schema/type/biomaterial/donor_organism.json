@@ -90,7 +90,7 @@
             "description": "Age of organism in Organism age unit. Measured since birth.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
-            "user_friendly": "Organism age",
+            "user_friendly": "Age",
             "example": "20"
         }, 
         "organism_age_unit": {
