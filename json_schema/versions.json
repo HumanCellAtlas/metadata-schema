@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-10-17T09:51:18Z",
+    "last_update_date": "2018-12-05T10:21:46Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -80,7 +80,7 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "9.0.0",
+                "cell_line": "9.0.1",
                 "cell_suspension": "8.6.1",
                 "donor_organism": "10.1.2",
                 "imaged_specimen": "1.0.1",
