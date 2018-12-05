@@ -87,14 +87,14 @@
             "guidelines": "Enter yes if organism was alive at time of biomaterial collection, no if organism was dead, unknown if not known."
         }, 
         "organism_age": {
-            "description": "Age of organism in Organism age unit. Measured since birth.",
+            "description": "Age of organism in Age units measured since birth.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Age",
             "example": "20, 45-65"
         }, 
         "organism_age_unit": {
-            "description": "The unit in which Organism age is expressed.",
+            "description": "The unit in which Age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Age unit"
@@ -135,7 +135,7 @@
             "user_friendly": "Medical history"
         },
         "gestational_age": {
-            "description": "Gestational age of organism in Gestational age unit. Measured since fertilization.",
+            "description": "Gestational age of organism in Gestational age units measured since fertilization.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Gestational age",
