@@ -39,7 +39,7 @@
             "description": "Core biomaterial-level information.",
             "type": "object",
             "$ref": "core/biomaterial/biomaterial_core.json",
-            "user_friendly": "Biomaterial core656"
+            "user_friendly": "Biomaterial core"
         },
         "overview_images": {
             "description": "List of filenames of photographs of specimen.",
