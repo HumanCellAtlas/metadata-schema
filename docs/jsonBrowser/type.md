@@ -113,7 +113,7 @@ organoid_age | Age of the organoid in Age units measured from when cell aggregat
 organoid_age_unit | The unit in which Age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Age unit |  | 
 organoid_size | Size of the organoid in Organoid size unit. | number | no |  | Organoid size |  | 4
 organoid_size_unit | The unit in which the Organoid size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Organoid size unit |  | 
-organoid_morphology | General description of the organoid morphology. | string | no |  |  |  | Epithelial monolayer with budding crypt-like domains.
+organoid_morphology | General description of the organoid morphology. | string | no |  |  |  | Epithelial monolayer with budding crypt-like domains, Optic cup structure
 organoid_type | The type of organoid. | string | no |  | Organoid type | primary, immortalized, stem cell-derived, synthetic | Should be one of: primary, immortalized, stem cell-derived, or synthetic.
 embedded_in_matrigel | Whether the organoid is embedded in a matrigel. | boolean | no |  | Organoid embeddded in matrigel? |  | Should be one of: yes, no.
 organoid_growth_environment | Growth environment in which the organoid is grown. | string | no |  | Organoid growth environment |  | matrigel, liquid suspension, adherent
