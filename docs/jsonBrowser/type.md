@@ -75,9 +75,9 @@ familial_relationship | Information about other organisms related to this organi
 medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
 gestational_age | Gestational age of organism in Gestational age units measured since fertilization. | string | no |  | Gestational age |  | 22, 5-7
 gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | 
-height | Height of organism in Height unit. | string | no |  | Height |  | 160
+height | Height of organism in Height unit. | string | no |  | Height |  | 160, 120-140
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | 
-weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60
+weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60, 40-60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | 
 normothermic_regional_perfusion | Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise. | string | no |  | Normothermic regional perfusion? | yes, no, unknown | Should be one of: yes, no, or unknown.
 timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
