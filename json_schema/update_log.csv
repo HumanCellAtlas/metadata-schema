@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/file/sequence_file,major,"Changed technical_replicate_group_id to library_preparation_id",,
+type/file/sequence_file,major,"Changed technical_replicate_group_id to library_preparation_id. Fixes #262.",,
