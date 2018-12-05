@@ -49,7 +49,7 @@
             },
             "user_friendly": "Genus species"
         },
-        "model_for_organ": {
+        "model_organ": {
             "description":  "Organ for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
