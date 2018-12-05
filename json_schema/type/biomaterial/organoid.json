@@ -89,7 +89,7 @@
             "example": "millimeter",
             "user_friendly": "Organoid size unit"
         },
-        "organoid_morphology": {
+        "morphology": {
             "description": "General description of the organoid morphology.",
             "type": "string",
             "example": "Epithelial monolayer with budding crypt-like domains.",
