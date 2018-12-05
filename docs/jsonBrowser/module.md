@@ -483,7 +483,7 @@ Location: module/protocol/channel.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-channel_name | User given name.  If there is an accompanying codebook, this name should correspond to a channel name used in the codebook. | string | yes |  | Channel name |  | far red
+channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string | yes |  | Channel ID |  | 1, A
 excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
 filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
 multiplexed | Were multiple targets detected simultaneously in this channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
@@ -506,5 +506,5 @@ probe_sequence | Sequence of a probe used to detect target. | string | no |  | P
 fluorophore | Fluorophore used to detect target in non-multiplexed experiments. | string | no |  | Fluorophore |  | FITC
 assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH, smFISH, immunofluorescence, fluorescent cell stain
 multiplexed | Were multiple targets detected simultaneously in one channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
-channel | Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab. | string | no |  | Channel |  | far red
+channel_id | Channel ID used to assay signal. Should be consistent with the ID in the channel tab. | array | no |  | Channel |  | 1, A
 
