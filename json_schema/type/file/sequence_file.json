@@ -80,7 +80,7 @@
             "type": "string",
             "example": "tech_rep_group_001",
             "user_friendly": "Library preparation ID",
-            "guidelines": "Indicate which samples are from the same library preparation by providing a unique identifier for each library preparation.",
+            "guidelines": "Indicate which samples are from the same library preparation by providing a unique identifier for each library preparation."
         }
     }
 }
