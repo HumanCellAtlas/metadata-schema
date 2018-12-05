@@ -125,7 +125,7 @@
             "example": 10000,
             "user_friendly": "Input aggregate cell count"
         },
-        "organoid_stored_oxygen_levels": {
+        "stored_oxygen_levels": {
             "description": "Percent oxygen level organoid was stored in prior to sequencing.",
             "type": "number",
             "example": 75,
