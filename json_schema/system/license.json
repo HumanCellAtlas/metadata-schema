@@ -18,25 +18,25 @@
         },
         "identifier": {
             "type": "string",
-            "description": "Identifier of the license under which this dataset is made available",
+            "description": "Identifier of the license under which this dataset is made available.",
             "example": "CC-BY",
-            "user_friendly": "License description"
+            "user_friendly": "License identifier"
         },
         "full_name": {
             "type": "string",
-            "description": "Full name of the license under which this dataset is made available",
+            "description": "Full name of the license under which this dataset is made available.",
             "example": "Attribution 4.0 International (CC BY 4.0)",
             "user_friendly": "License description"
         },
         "url": {
             "type": "string",
-            "description": "URL of the license under which this data is available",
+            "description": "URL of the license under which this data is available.",
             "example": "https://creativecommons.org/licenses/by/4.0/",
             "user_friendly": "License URL"
         },
         "icon_url": {
             "type": "string",
-            "description": "URL of the icon associated with this license",
+            "description": "URL of the icon associated with this license.",
             "example": "https://preview.data.humancellatlas.org/images/icon/icon-cc-by@1x.png",
             "user_friendly": "License icon URL"
         }
