@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/imaged_specimen,patch,Added user-friendly name for biomaterial_core. Fixes #656,,
