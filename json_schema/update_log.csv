@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,patch,Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #650.,,
+type/biomaterial/donor_organism,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #650.",,
