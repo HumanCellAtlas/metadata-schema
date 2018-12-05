@@ -79,7 +79,8 @@
             "description": "Indicate which samples were from the same library preparation by providing a unique identifier for each library preparation.",
             "type": "string",
             "example": "tech_rep_group_001",
-            "user_friendly": "Technical replicate group"
+            "user_friendly": "Technical replicate group",
+            "guidelines": "Indicate which samples are from the same library preparation by providing a unique identifier for each library preparation.",
         }
     }
 }
