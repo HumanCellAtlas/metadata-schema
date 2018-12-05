@@ -154,7 +154,8 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Height",
-            "example": "160, 120-140"
+            "example": "160, 120-140",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "height_unit": {
             "description": "The unit in which Height is expressed.",
@@ -167,7 +168,8 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Weight",
-            "example": "60, 40-60"
+            "example": "60, 40-60",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "weight_unit": {
             "description": "The unit in which Weight is expressed.",
