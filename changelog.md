@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.0] - 2018-12-05
+### Added
+Added new optional fields nominal_length and nominal_sdev. Fixes #594.
+
 ### [type/file/sequence_file.json - v7.0.0] - 2018-12-05
 ### Changed
 Changed technical_replicate_group_id to library_preparation_id. Fixes #262.

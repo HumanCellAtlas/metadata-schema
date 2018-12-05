@@ -448,6 +448,8 @@ spike_in_dilution | Dilution of spike-in, if used. | integer | no |  | Spike-in 
 umi_barcode | Information about unique molecular identifier (UMI) barcodes. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 
 library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | PCR
 cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | PCR
+nominal_length | Average (insert) size of the fragments being sequenced. | integer | no |  | Nominal length |  | 250
+nominal_sdev | Standard deviation of the (insert) size of the fragments being sequenced. | integer | no |  | Nominal standard deviation |  | 30
 
 ## Sequencing protocol
 _Information about the sequencing protocol._
