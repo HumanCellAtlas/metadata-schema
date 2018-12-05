@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/sequence_file.json - v7.0.0] - 2018-12-05
+### Changed
+Changed technical_replicate_group_id to library_preparation_id. Fixes #262.
+
 ### [type/biomaterial/cell_suspension.json - v8.6.2] - 2018-12-05
 ### Changed
 Changed user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #620.
