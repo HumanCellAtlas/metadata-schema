@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-12-05T12:09:30Z",
+    "last_update_date": "2018-12-05T12:27:37Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -121,7 +121,7 @@
                 },
                 "protocol": "6.3.5",
                 "sequencing": {
-                    "library_preparation_protocol": "4.3.3",
+                    "library_preparation_protocol": "4.4.0",
                     "sequencing_protocol": "9.0.3"
                 }
             }
