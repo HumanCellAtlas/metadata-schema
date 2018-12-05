@@ -11,10 +11,13 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ### Changed
 Changed user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #620.
 
+### [type/biomaterial/cell_line.json - v9.0.1] - 2018-12-05
+### Changed
+Changed user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #612.
+
 ### [type/biomaterial/imaged_specimen.json - v2.0.0] - 2018-12-03
 ### Changed
 Changed field names and updated examples in imaged_specimen to match the Style Guide
-
 
 ### [module/protocol/imaging_target.json - v3.0.0] - 2018-11-28
 ### Changed
@@ -47,7 +50,6 @@ Changed channel field type to array
 ### [type/protocol/imaging/imaging_protocol.json - v9.0.0] - 2018-11-21
 ### Changed
 Changed channel field type to array
-
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
