@@ -62,13 +62,13 @@
             "user_friendly": "Organ part model"
         },
         "organoid_age": {
-            "description": "Age of the organoid in Organoid age unit. Measured from when cell aggregates started differentiating to desired organoid model.",
+            "description": "Age of the organoid in Age units measured from when cell aggregates started differentiating to desired organoid model.",
             "type": "number",
             "example": 55,
             "user_friendly": "Organoid age"
         },
         "organoid_age_unit": {
-            "description": "The unit in which Organoid age is expressed.",
+            "description": "The unit in which Age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Organoid age unit"
