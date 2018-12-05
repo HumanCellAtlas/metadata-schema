@@ -69,7 +69,7 @@
             "example": 55,
             "user_friendly": "Organoid age"
         },
-        "organoid_age_unit": {
+        "age_unit": {
             "description": "The unit in which Organoid age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
