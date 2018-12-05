@@ -91,7 +91,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Age",
-            "example": "20"
+            "example": "20, 45-65"
         }, 
         "organism_age_unit": {
             "description": "The unit in which Organism age is expressed.",
