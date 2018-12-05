@@ -106,12 +106,13 @@
             "user_friendly": "Development stage"
         },
         "diseases": {
-            "description": "Short description of known disease(s) of the organism. Enter 'normal' if no known disease.",
+            "description": "Short description of known disease(s) of the organism.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
-            "user_friendly": "Known disease(s)"
+            "user_friendly": "Known disease(s)",
+            "guidelines": "Enter 'normal' if no known disease."
         },
         "death": {
             "description": "Information about conditions of death of the organism.",
