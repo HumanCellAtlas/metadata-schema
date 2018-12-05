@@ -76,7 +76,7 @@
             "example": "SRR0000000"
         },
         "library_prep_id" : {
-            "description": "Indicate which samples were from the same library preparation by providing a unique identifier for each library preparation.",
+            "description": "A unique ID for the library preparation.",
             "type": "string",
             "example": "tech_rep_group_001",
             "user_friendly": "Library preparation ID",
