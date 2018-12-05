@@ -44,7 +44,6 @@
         "genus_species": {
             "description": "The scientific binomial name for the species of the specimen.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
                 "$ref": "module/ontology/species_ontology.json"
             },
@@ -54,7 +53,6 @@
             "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
-            "example": "blood",
             "comment": "The term organ is very broadly defined here.",
             "user_friendly": "Organ"
         },
@@ -62,7 +60,6 @@
             "description": "A term for a specific part of the organ that the biomaterial came from.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
-            "example": "umbilical cord blood",
             "comment": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
@@ -72,8 +69,7 @@
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
-            "user_friendly": "Known disease(s)",
-            "example": "bone squamous cell carcinoma"
+            "user_friendly": "Known disease(s)"
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
