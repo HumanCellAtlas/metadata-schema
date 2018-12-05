@@ -75,7 +75,7 @@
             "example": "Should be one of: male, female, mixed, or unknown."
         },
         "is_living": {
-            "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
+            "description": "Whether organism was alive at time of biomaterial collection.",
             "type": "string",
             "enum": [
                 "yes",
@@ -83,7 +83,8 @@
                 "unknown"
             ],
             "user_friendly": "Alive at collection?",
-            "example": "Should be one of: yes, no, unknown."
+            "example": "Should be one of: yes, no, unknown.",
+            "guidelines": "Enter yes if organism was alive at time of biomaterial collection, no if organism was dead, unknown if not known."
         }, 
         "organism_age": {
             "description": "Age of organism in Organism age unit. Measured since birth.",
