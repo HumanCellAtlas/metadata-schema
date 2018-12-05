@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/target.json - v1.0.0] - 2018-12-05
+### Added
+Added new schema target.json to replace deprecated imaging_target.json. Fixes #641
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.0] - 2018-12-05
+### Added
+Added new schema target.json to replace deprecated imaging_target.json. Fixes #641
+
 ### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.0] - 2018-12-05
 ### Added
 Added new optional fields nominal_length and nominal_sdev. Fixes #594.
