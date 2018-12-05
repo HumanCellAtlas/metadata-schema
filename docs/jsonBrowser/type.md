@@ -191,7 +191,7 @@ read_index | Whether the read file contains the read1, read2, index1, or index2 
 lane_index | The index of the lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
 insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRR, SRR, or ERR. | array | no |  | INSDC run |  | SRR0000000
-technical_replicate_group | A project wide unique label to indicate which groups of files are technical replicates. Technical replicates are sequence files generated from the same sequencing library. Leave blank if files are biological replicates. | string | no |  | Technical replicate group |  | tech_rep_group_001
+library_prep_id | A unique ID for the library preparation. | string | no |  | Library preparation ID |  | tech_rep_group_001
 
 ## Supplementary file
 _Supplementary files belonging to a project._
@@ -422,7 +422,7 @@ z_stack_step_size | Z-stack step size in nanometres. | number | no |  | Z stack 
 number_of_z_steps | Number of steps in a Z stack. | integer | no |  | Number of Z steps |  | 40
 overlapping_tiles | Were tiles collected with overlap? | string | yes |  | Overlapping tiles? | yes, no | no
 channel | Information about each channel used in the imaging protocol. | array | yes | [See module  channel](module.md/#channel) | Channel |  | 
-imaging_target | Information about each imaging target in the imaging experiment. | array | yes | [See module  imaging_target](module.md/#imaging_target) | Imaging target |  | 
+target | Information about each imaging target in the imaging experiment. | array | yes | [See module  target](module.md/#target) | Imaging target |  | 
 
 ## Library preparation protocol
 _Information about how a sequencing library was prepared._
@@ -448,6 +448,8 @@ spike_in_dilution | Dilution of spike-in, if used. | integer | no |  | Spike-in 
 umi_barcode | Information about unique molecular identifier (UMI) barcodes. | object | no | [See module  barcode](module.md/#barcode) | UMI barcode |  | 
 library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | Library pre-amplification method |  | PCR
 cdna_library_amplification_method | The method used to amplify a cDNA library prior to sequencing. | object | no | [See module  library_amplification_ontology](module.md/#library_amplification_ontology) | cDNA library amplification method |  | PCR
+nominal_length | Average (insert) size of the fragments being sequenced. | integer | no |  | Nominal length |  | 250
+nominal_sdev | Standard deviation of the (insert) size of the fragments being sequenced. | integer | no |  | Nominal standard deviation |  | 30
 
 ## Sequencing protocol
 _Information about the sequencing protocol._
