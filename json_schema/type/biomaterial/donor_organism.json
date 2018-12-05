@@ -57,7 +57,6 @@
         "genus_species": {
             "description": "The scientific binomial name for the species of the organism.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
                 "$ref": "module/ontology/species_ontology.json"
             },
