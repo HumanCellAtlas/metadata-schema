@@ -63,7 +63,7 @@
             "example": "cortex",
             "user_friendly": "Organ part model"
         },
-        "organoid_age": {
+        "age": {
             "description": "Age of the organoid in Organoid age unit. Measured from when cell aggregates started differentiating to desired organoid model.",
             "type": "number",
             "example": 55,
