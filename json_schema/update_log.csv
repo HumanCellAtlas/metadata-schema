@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/target,major,Added new schema target.json instead of imaging_target.json,,
+module/protocol/target,major,"Added new schema target.json to replace deprecated imaging_target.json. Fixes #641",,
