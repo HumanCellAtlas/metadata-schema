@@ -82,7 +82,7 @@
             "example": 4,
             "user_friendly": "Organoid size"
         },
-        "organoid_size_unit": {
+        "size_unit": {
             "description": "The unit in which the Organoid size is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
