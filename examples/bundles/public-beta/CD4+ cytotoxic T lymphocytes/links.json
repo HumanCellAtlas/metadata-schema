@@ -1,0 +1,70 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/system/1.1.1/links",
+    "schema_type": "link_bundle",
+    "schema_version": "1.1.1",
+    "links": [
+        {
+            "process": "bcfcb3d7-674a-429f-8bf9-347a0f222db2",
+            "inputs": [
+                "cc0d9bf0-6ad5-4489-994b-db26ff761c5a"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "a5806f2e-3f85-486a-9015-e02e5c805285"
+            ],
+            "output_type": "file",
+            "protocols": [
+                {
+                    "protocol_type": "library_preparation_protocol",
+                    "protocol_id": "0ea30fa0-7183-4ffc-a4b8-537c6de32e65"
+                },
+                {
+                    "protocol_type": "sequencing_protocol",
+                    "protocol_id": "2d0f835b-ced1-4cf1-a053-0cf109fdefeb"
+                }
+            ]
+        },
+        {
+            "process": "f8e3c0b7-ed2a-464d-bff4-b80fac2a3849",
+            "inputs": [
+                "ff63b5d7-e702-40da-bbe9-619e52131b63"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "cc0d9bf0-6ad5-4489-994b-db26ff761c5a"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "dissociation_protocol",
+                    "protocol_id": "a934e15c-e1ce-423b-b554-9203d4e93f41"
+                },
+                {
+                    "protocol_type": "enrichment_protocol",
+                    "protocol_id": "77c71448-fb32-472f-9d44-ea9a42867a41"
+                }
+            ]
+        },
+        {
+            "process": "4e504efb-a65b-4fe5-97f5-8148f6a8ed4d",
+            "inputs": [
+                "25e083e3-d747-4295-86c8-c7ddc4b975be"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "ff63b5d7-e702-40da-bbe9-619e52131b63"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "collection_protocol",
+                    "protocol_id": "f8d9778f-0f72-4432-a929-1096fd9ca2f4"
+                },
+                {
+                    "protocol_type": "enrichment_protocol",
+                    "protocol_id": "80921b90-fe8d-45e1-a5e5-4fdb55f9a3fa"
+                }
+            ]
+        }
+    ]
+}

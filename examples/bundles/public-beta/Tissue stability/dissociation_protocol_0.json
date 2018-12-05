@@ -1,0 +1,18 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/5.0.3/dissociation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "dissociation_protocol_1",
+        "protocol_name": "Dissociation of spleen tissue sample into cell suspension",
+        "document": "Human_spleen_dissociation_protocol.pdf"
+    },
+    "dissociation_method": {
+        "text": "mechanical",
+        "ontology": "EFO:0009129"
+    },
+    "provenance": {
+        "document_id": "f1f2f791-f5f0-4eaa-8a4d-d6de9cf6807b",
+        "submission_date": "2018-09-05T09:14:54.916Z",
+        "update_date": "2018-09-05T09:15:02.163Z"
+    }
+}

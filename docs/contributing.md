@@ -20,7 +20,7 @@ This document describes how you can contribute to the development of the HCA met
  - Anyone reporting a bug in the schema
 
 **What *isn't* in this document?**
-- Information about contributing **data** to the HCA. This information can be found on the HCA DCP website
+- Information about contributing **data** to the HCA. This information can be found on the HCA Data Portal
 - Directions for committing changes to this repo, which is currently restricted to a core group of Committers
 - Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
 - Directions for submitting pull requests for changes
@@ -56,7 +56,7 @@ As a prerequisite to this section, you may want to look at [how the metadata is 
     
 1. **Submit request** for update to the HCA metadata standard. Anyone can suggest/request changes to the metadata standards via three main routes:
 
-    1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md)
+    1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md). Please add the "content" label to the issue.
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
     1. Make a pull request against the develop branch of the metadata-schema repo (recommended for users familiar with GitHub)
     
@@ -96,38 +96,36 @@ Report any bugs (schema-related or other) by creating a [GitHub issue](https://g
 
 **Give the bug a title**
 
-Please give the bug a title that includes a short description.
+*Please give the bug a title that includes a short description.*
 
-*e.g.*: Typo in description for `publication.title` field.
+Typo in description for `publication.title` field.
 
-**To Reproduce**
+**To reproduce**
 
-Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing).
-
-*e.g.*:
+*Please explain as much as you can about what you were doing when the bug was observed (to help us reproduce the error for testing).*
 
 Steps to reproduce the behavior:
 1. Go to `publication.json` schema on develop branch
 1. Observe typo in description for `title` field
 
-**Schema versions**
+**Schema version(s)**
 
-Please list any schema versions related to this bug.
+*Please list any schema versions related to this bug.*
  
-*e.g.*: `publication.json` schema v6.0.1
+`publication.json`: 6.0.1
+
+**Observed behavior**
+
+*Please explain what you observed.*
+
+The description says "Title of *publicatoin*".
 
 **Expected behavior**
 
-Please explain what you expected to happen.
+*Please explain what you expect to happen.*
  
-*e.g.*: I expected the description to say "Title of publication."
-
-**Actual behavior**
-
-Please explain what actually happened.
-
-*e.g.*: The description says "Title of *publicatoin*."
+I expect the description to say "Title of publication".
 
 **Screenshots or Messages**
 
-If applicable, add screenshots to help explain your problem or the text of any error messages.
+*If applicable, add screenshots to help explain your problem or the text of any error messages.*

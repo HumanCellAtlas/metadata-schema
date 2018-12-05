@@ -1,0 +1,45 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "HPSI0314i-hoik",
+        "biomaterial_name": "donor HPSI0314i-hoik",
+        "biomaterial_description": "donor HPSI0314i-hoik_1, iPSC, cell line, skin",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "biosd_biomaterial": "SAMEA2399961"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "sex": "female",
+    "organism_age": "40-44",
+    "organism_age_unit": {
+        "text": "year",
+        "ontology": "UO:0000036"
+    },
+    "human_specific": {
+        "ethnicity": [
+            {
+                "text": "European, White, British",
+                "ontology": "hancestro:0462"
+            }
+        ]
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461"
+        }
+    ],
+    "is_living": "yes",
+    "provenance": {
+        "document_id": "62ee5119-4fa1-4508-95f3-59c7b0fddd34",
+        "submission_date": "2018-09-05T09:25:02.257Z",
+        "update_date": "2018-09-05T09:25:09.841Z"
+    }
+}

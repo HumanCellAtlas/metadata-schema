@@ -1,0 +1,18 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/6.5.2/sequence_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "SRR3562210_2.fastq.gz",
+        "file_format": "fastq.gz"
+    },
+    "read_index": "read2",
+    "read_length": 75,
+    "insdc_run": [
+        "SRR3562210"
+    ],
+    "provenance": {
+        "document_id": "0494ee09-b1e2-437a-986f-06d5df4a6858",
+        "submission_date": "2018-09-06T14:16:32.894Z",
+        "update_date": "2018-09-06T14:29:33.843Z"
+    }
+}

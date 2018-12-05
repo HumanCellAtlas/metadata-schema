@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Information about how a sequencing library was created.",
+    "description": "Information about how a sequencing library was prepared.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -11,7 +11,8 @@
         "strand",
         "input_nucleic_acid_molecule"
     ],
-    "title": "library_preparation_protocol",
+    "title": "Library preparation protocol",
+    "name": "library_preparation_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
@@ -116,7 +117,8 @@
             "enum": [
                 "first",
                 "second",
-                "unstranded"
+                "unstranded",
+                "not provided"
             ],
             "example": "Should be one of: first, second, or unstranded.",
             "user_friendly": "Strand"
@@ -154,6 +156,18 @@
             "$ref": "module/ontology/library_amplification_ontology.json",
             "user_friendly": "cDNA library amplification method",
             "example": "PCR"
+        },
+        "nominal_length": {
+            "description": "Average (insert) size of the fragments being sequenced.",
+            "type": "integer",
+            "user_friendly": "Nominal length",
+            "example": "250"
+        },
+        "nominal_sdev": {
+            "description": "Standard deviation of the (insert) size of the fragments being sequenced.",
+            "type": "integer",
+            "user_friendly": "Nominal standard deviation",
+            "example": "30"
         }
     }
 }

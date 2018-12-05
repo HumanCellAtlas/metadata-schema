@@ -1,0 +1,45 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/10.1.1/donor_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "HPSI0314i-sojd",
+        "biomaterial_name": "donor HPSI0314i-sojd",
+        "biomaterial_description": "donor HPSI0314i-sojd_3, iPSC, cell line, skin",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "biosd_biomaterial": "SAMEA2418245"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "sex": "female",
+    "organism_age": "45-49",
+    "organism_age_unit": {
+        "text": "year",
+        "ontology": "UO:0000036"
+    },
+    "human_specific": {
+        "ethnicity": [
+            {
+                "text": "White - other, Ad Mixed American",
+                "ontology": "hancestro:0463"
+            }
+        ]
+    },
+    "diseases": [
+        {
+            "text": "normal",
+            "ontology": "PATO:0000461"
+        }
+    ],
+    "is_living": "yes",
+    "provenance": {
+        "document_id": "5554b939-a268-4619-9cef-0f09151454fc",
+        "submission_date": "2018-09-05T09:25:02.273Z",
+        "update_date": "2018-09-05T09:25:09.818Z"
+    }
+}

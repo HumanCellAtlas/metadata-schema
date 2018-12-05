@@ -5,7 +5,8 @@
     "required": [
     	"cause_of_death"
     ],
-    "title": "death",
+    "title": "Death",
+    "name": "death",
     "type": "object",
     "properties": {
         "describedBy":  {

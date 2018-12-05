@@ -1,0 +1,47 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.6.2/cell_line",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "HPSI0314i-sojd_3",
+        "biomaterial_name": "iPS cell line sojd_3",
+        "biomaterial_description": "iPS cell line sojd_3",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "biosd_biomaterial": "SAMEA2627569"
+    },
+    "diseases": {
+        "text": "normal",
+        "ontology": "PATO:0000461"
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "cell_type": {
+        "text": "pluripotent stem cell",
+        "ontology": "CL:0002248"
+    },
+    "catalog_number": "77650126",
+    "catalog_url": "http://www.hipsci.org/lines/#/lines/HPSI0314i-sojd_3",
+    "cell_line_type": "induced pluripotent",
+    "cell_morphology": {
+        "cell_viability_method": "Growth to confluence post-thaw"
+    },
+    "growth_conditions": {
+        "passage_number": 22,
+        "growth_medium": "E8",
+        "feeder_layer_type": "feeder-free",
+        "drug_treatment": "Cells were cultured in presence of Penicillin and Streptomycin",
+        "mycoplasma_testing_method": "PCR",
+        "mycoplasma_testing_results": "pass"
+    },
+    "date_established": "2015-01-09T00:00:00Z",
+    "provenance": {
+        "document_id": "6953e086-13cc-4467-b059-4d5f91f6f268",
+        "submission_date": "2018-09-05T09:25:02.407Z",
+        "update_date": "2018-09-05T09:25:05.636Z"
+    }
+}

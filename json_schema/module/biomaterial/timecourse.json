@@ -6,7 +6,8 @@
         "timecourse_value",
         "timecourse_unit"
     ],
-    "title": "timecourse",
+    "title": "Timecourse",
+    "name": "timecourse",
     "type": "object",
     "properties": {
         "describedBy":  {

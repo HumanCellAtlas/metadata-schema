@@ -1,0 +1,26 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/6.3.1/specimen_from_organism",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "1131_LN",
+        "biomaterial_name": "Mouse_day8_LN_rep10",
+        "ncbi_taxon_id": [
+            10090
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Mus musculus",
+            "ontology": "NCBITaxon:10090"
+        }
+    ],
+    "organ": {
+        "text": "lymph node",
+        "ontology": "UBERON:0000029"
+    },
+    "provenance": {
+        "document_id": "6dc01fb6-6aba-432e-828e-ae3045914f34",
+        "submission_date": "2018-09-04T12:44:38.074Z",
+        "update_date": "2018-09-04T13:10:12.581Z"
+    }
+}

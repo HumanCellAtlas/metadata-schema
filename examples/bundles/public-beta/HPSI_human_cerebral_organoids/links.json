@@ -1,0 +1,234 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/system/1.1.1/links",
+    "schema_type": "link_bundle",
+    "schema_version": "1.1.1",
+    "links": [
+        {
+            "process": "88ef68b1-0c0b-4594-be46-4bb0bcf2025d",
+            "inputs": [
+                "8fc8b364-98bb-4082-98af-e3fdffcf82b7"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "740b2221-41c6-498d-87de-8b2937a5ebed",
+                "a3f614b3-e6cf-4751-a15d-ff623efea62a",
+                "56c2a158-e389-40a3-97a7-0f2966a393b8"
+            ],
+            "output_type": "file",
+            "protocols": [
+                {
+                    "protocol_type": "library_preparation_protocol",
+                    "protocol_id": "853c2086-1ac4-488e-b3b3-fe7956e74283"
+                },
+                {
+                    "protocol_type": "sequencing_protocol",
+                    "protocol_id": "0b1dfbd4-1fbe-42a4-9213-b66dac4d4ac0"
+                }
+            ]
+        },
+        {
+            "process": "d3c8ba6e-e552-48cc-ab34-38a95712b3f7",
+            "inputs": [
+                "77a87953-5d2d-4e22-9c8b-c012fa8656b9",
+                "e4307721-7d92-4f92-a6f1-6f1d4ecf1835",
+                "08936dad-6f12-4f43-8bd2-b6863f166a21",
+                "dfd95ce4-c5be-4175-9e9a-249b1b09f5d9"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "8fc8b364-98bb-4082-98af-e3fdffcf82b7"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "dissociation_protocol",
+                    "protocol_id": "58334256-af4f-4754-9455-668fb31bbcff"
+                }
+            ]
+        },
+        {
+            "process": "3ef770a1-1f72-47f2-952e-9fd584e74598",
+            "inputs": [
+                "cc5c8bd6-3bd6-49d6-87b3-b24ef3a577a4"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "77a87953-5d2d-4e22-9c8b-c012fa8656b9"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "differentiation_protocol",
+                    "protocol_id": "537b3c44-998f-43c2-8146-7e3e2932c30b"
+                }
+            ]
+        },
+        {
+            "process": "1c4b3da5-41c3-40bd-b128-4a4a94fb876e",
+            "inputs": [
+                "440a306a-54c6-4193-9b60-ad4423c8a62b"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "cc5c8bd6-3bd6-49d6-87b3-b24ef3a577a4"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "ipsc_induction_protocol",
+                    "protocol_id": "9e3b5ef9-cbb0-43ef-a194-1ce1969cfd62"
+                }
+            ]
+        },
+        {
+            "process": "359f3d8c-e29c-41f1-b058-1854a7d7e79e",
+            "inputs": [
+                "eea3dd19-90e0-45c4-803d-4620d1fab90d"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "440a306a-54c6-4193-9b60-ad4423c8a62b"
+            ],
+            "output_type": "biomaterial",
+            "protocols": []
+        },
+        {
+            "process": "df40cef2-60ae-400c-bece-947329b40946",
+            "inputs": [
+                "304fadde-e22a-4ff9-9544-f8ec097b6135"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "e4307721-7d92-4f92-a6f1-6f1d4ecf1835"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "differentiation_protocol",
+                    "protocol_id": "537b3c44-998f-43c2-8146-7e3e2932c30b"
+                }
+            ]
+        },
+        {
+            "process": "0ec71414-3c56-4347-85a2-a2b66a4a147d",
+            "inputs": [
+                "4eb07fdb-dcd8-4805-89ad-6068071c80c9"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "304fadde-e22a-4ff9-9544-f8ec097b6135"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "ipsc_induction_protocol",
+                    "protocol_id": "9e3b5ef9-cbb0-43ef-a194-1ce1969cfd62"
+                }
+            ]
+        },
+        {
+            "process": "9c2903a9-d93e-41a4-88bf-61647c6990a6",
+            "inputs": [
+                "fbd4c071-58bd-4818-8ddd-2c31ddb60363"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "4eb07fdb-dcd8-4805-89ad-6068071c80c9"
+            ],
+            "output_type": "biomaterial",
+            "protocols": []
+        },
+        {
+            "process": "1ff79cfa-57e9-4af1-a754-51bdf36c4414",
+            "inputs": [
+                "8bd345cb-4635-4bf5-9435-bf144013b938"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "08936dad-6f12-4f43-8bd2-b6863f166a21"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "differentiation_protocol",
+                    "protocol_id": "537b3c44-998f-43c2-8146-7e3e2932c30b"
+                }
+            ]
+        },
+        {
+            "process": "94b7d3a9-2a09-40d1-ba0e-80e8410b3d55",
+            "inputs": [
+                "54046c37-b50d-41ae-a95f-2db29b1b706b"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "8bd345cb-4635-4bf5-9435-bf144013b938"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "ipsc_induction_protocol",
+                    "protocol_id": "9e3b5ef9-cbb0-43ef-a194-1ce1969cfd62"
+                }
+            ]
+        },
+        {
+            "process": "85e8adfd-f23b-47fb-9617-e51593923405",
+            "inputs": [
+                "62ee5119-4fa1-4508-95f3-59c7b0fddd34"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "54046c37-b50d-41ae-a95f-2db29b1b706b"
+            ],
+            "output_type": "biomaterial",
+            "protocols": []
+        },
+        {
+            "process": "f999e1a4-31fc-4298-b958-8f567511935e",
+            "inputs": [
+                "6953e086-13cc-4467-b059-4d5f91f6f268"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "dfd95ce4-c5be-4175-9e9a-249b1b09f5d9"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "differentiation_protocol",
+                    "protocol_id": "537b3c44-998f-43c2-8146-7e3e2932c30b"
+                }
+            ]
+        },
+        {
+            "process": "4e60bff4-9ede-42e2-9152-7f8f445938f5",
+            "inputs": [
+                "2b541914-778d-4b24-9680-9d2643cfeff9"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "6953e086-13cc-4467-b059-4d5f91f6f268"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "ipsc_induction_protocol",
+                    "protocol_id": "9e3b5ef9-cbb0-43ef-a194-1ce1969cfd62"
+                }
+            ]
+        },
+        {
+            "process": "6ecf593a-c3d6-42a8-bf4e-a47549e7bb1f",
+            "inputs": [
+                "5554b939-a268-4619-9cef-0f09151454fc"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "2b541914-778d-4b24-9680-9d2643cfeff9"
+            ],
+            "output_type": "biomaterial",
+            "protocols": []
+        }
+    ]
+}

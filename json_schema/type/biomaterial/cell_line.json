@@ -8,7 +8,8 @@
         "biomaterial_core",
         "cell_line_type"
     ],
-    "title": "cell_line",
+    "title": "Cell line",
+    "name": "cell_line",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -37,12 +38,13 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "core/biomaterial/biomaterial_core.json"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "supplier": {
            "description": "The supplier of the cell line.",
            "type": "string",
-           "example": "HipSci",
+           "example": "HipSci, ATCC",
            "user_friendly": "Supplier"
         },
         "catalog_number": {
@@ -60,14 +62,14 @@
         "catalog_url": {
             "description": "The supplier catalogue URL for the cell line.",
             "type": "string",
-            "user_friendly": "Catalog URL"
+            "user_friendly": "Catalog URL",
+            "example": "www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc"
         },
         "cell_cycle": {
             "description": "The cell cycle phase if the cell line is synchronized growing cells or the phase is known.",
             "type": "object",
             "$ref": "module/ontology/cell_cycle_ontology.json",
-            "user_friendly": "Cell cycle",
-            "example": "mitotic cell cycle"
+            "user_friendly": "Cell cycle"
         },
         "cell_line_type": {
             "description": "The type of cell line.",
@@ -105,51 +107,47 @@
             "description": "The cell type that the cell line represents.",
             "type": "object",
             "$ref": "module/ontology/cell_type_ontology.json",
-            "user_friendly": "Cell type",
-            "example": "cardiac muscle cell"
+            "user_friendly": "Cell type"
         },
         "karyotype": {
             "description": "The karyotype of the cell line.",
             "type": "string",
-            "user_friendly": "Karyotype"
+            "user_friendly": "Karyotype",
+            "example": "sex chromosome complement of XY, del(2) (q11)"
         },
         "tissue": {
             "description": "The tissue that the cell line was derived from.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
-            "user_friendly": "Tissue",
-            "example": "bone marrow"
+            "user_friendly": "Tissue"
         },
         "date_established": {
-            "description": "When the cell line was established, in date-time format. yyyy-mm-ddThh:mm:ssZ.",
+            "description": "When the cell line was established.",
             "type": "string",
             "format": "date-time",
             "user_friendly": "Date established",
-            "example": "2017-03-19"
+            "example": "2017-03-19",
+            "guidelines": "Enter the date established in date format: yyyy-mm-dd."
         },
         "disease": {
             "description": "Short description of any disease association to the cell type.",
             "type": "object",
             "$ref": "module/ontology/disease_ontology.json",
-            "user_friendly": "Disease",
-            "example": "bone squamous cell carcinoma"
+            "user_friendly": "Disease"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the cell line.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
                 "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
-        "publications": {
-            "description": "One or more publications in which the cell line creation was cited.",
-            "type": "array",
-            "items": {
-                "$ref": "module/project/publication.json"
-            },
-            "user_friendly": "Cell line publications"
+        "publication": {
+            "description": "A publication that cites the cell line creation.",
+            "type": "object",
+            "$ref": "module/project/publication.json",
+            "user_friendly": "Publication"
         }
 
     }

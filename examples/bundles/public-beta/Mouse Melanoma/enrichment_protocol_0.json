@@ -1,0 +1,18 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "FACS3",
+        "protocol_name": "FACS sorting cells by surface markers"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108"
+    },
+    "markers": "CD45+ CD3e- B220- CD11b+",
+    "provenance": {
+        "document_id": "4a19c599-e429-4eda-9644-3a46c1202c7f",
+        "submission_date": "2018-09-04T12:53:51.016Z",
+        "update_date": "2018-09-04T12:57:51.962Z"
+    }
+}

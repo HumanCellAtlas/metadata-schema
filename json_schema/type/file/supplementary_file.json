@@ -7,7 +7,8 @@
         "schema_type",
         "file_core"
     ],
-    "title": "supplementary_file",
+    "title": "Supplementary file",
+    "name": "supplementary_file",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -27,6 +28,11 @@
             "enum": [
                 "file"
             ]
+        },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
         },
         "file_core" : {
             "description": "Core file-level information.",

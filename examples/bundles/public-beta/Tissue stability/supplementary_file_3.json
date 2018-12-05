@@ -1,0 +1,15 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/1.1.3/supplementary_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "Clinical_metadata.xlsx",
+        "file_format": "xlsx",
+        "checksum": "NEED"
+    },
+    "file_description": "Clinical metadata about donors.",
+    "provenance": {
+        "document_id": "903bc97d-addf-45fa-ae35-cf7e31d0c20b",
+        "submission_date": "2018-09-05T09:14:54.333Z",
+        "update_date": "2018-09-05T09:14:56.827Z"
+    }
+}

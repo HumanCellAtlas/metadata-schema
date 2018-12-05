@@ -1,0 +1,35 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.3.6/organoid",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "Org_HPSI0314i-sojd_3_1",
+        "biomaterial_name": "human cerebral organoid sojd_3",
+        "biomaterial_description": "human cerebral organoid sojd_3, 62d",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "model_for_organ": {
+        "text": "Brain",
+        "ontology": "UBERON:0000955"
+    },
+    "organoid_age": 62,
+    "organoid_age_unit": {
+        "text": "day",
+        "ontology": "UO:0000033"
+    },
+    "organoid_type": "stem cell-derived",
+    "embedded_in_matrigel": false,
+    "organoid_growth_environment": "suspension",
+    "provenance": {
+        "document_id": "dfd95ce4-c5be-4175-9e9a-249b1b09f5d9",
+        "submission_date": "2018-09-05T09:25:02.561Z",
+        "update_date": "2018-09-05T09:25:10.134Z"
+    }
+}

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Information about the sequencing protocol",
+    "description": "Information about the sequencing protocol.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -10,7 +10,8 @@
         "paired_end",
         "sequencing_approach"
     ],
-    "title": "sequencing_protocol",
+    "title": "Sequencing protocol",
+    "name": "sequencing_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
@@ -55,10 +56,10 @@
             "example": "Machine1"
         },
         "paired_end": {
-            "description": "Was a paired-end sequencing strategy used?",
+            "description": "Was the sequenced molecule sequenced from both ends?",
             "type": "boolean",
             "example": "Should be one of: yes, no.",
-            "comment": "If 10x, then put no.",
+            "guidelines": "If 10x was used, enter no.",
             "user_friendly": "Paired end?"
         },
         "sequencing_approach": {

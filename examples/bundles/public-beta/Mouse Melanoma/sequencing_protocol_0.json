@@ -1,0 +1,22 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/9.0.2/sequencing_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "SmartSeq2_sequencing_protocol",
+        "protocol_name": "Sequencing SmartSeq2 cells"
+    },
+    "instrument_manufacturer_model": {
+        "text": "Illumina HiSeq 2500",
+        "ontology": "EFO:0008567"
+    },
+    "paired_end": true,
+    "sequencing_approach": {
+        "text": "Smart-seq2",
+        "ontology": "EFO:0008931"
+    },
+    "provenance": {
+        "document_id": "2c530a47-d87a-4d50-bfb9-74d15fdb1fd9",
+        "submission_date": "2018-09-04T12:53:51.118Z",
+        "update_date": "2018-09-04T12:57:59.862Z"
+    }
+}

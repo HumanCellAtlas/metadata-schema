@@ -1,0 +1,30 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "HPSI_organoids_pooled_1",
+        "biomaterial_name": "pooled cells from 4 dissociated organoids",
+        "biomaterial_description": "pooled cells from 4 dissociated organoids (wibj_2, kucg_2, hoik_1, sojd_3)",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "selected_cell_type": [
+        {
+            "text": "neural cell",
+            "ontology": "CL:0002319"
+        }
+    ],
+    "total_estimated_cells": 6316,
+    "provenance": {
+        "document_id": "8fc8b364-98bb-4082-98af-e3fdffcf82b7",
+        "submission_date": "2018-09-05T09:25:02.595Z",
+        "update_date": "2018-09-05T09:25:12.353Z"
+    }
+}

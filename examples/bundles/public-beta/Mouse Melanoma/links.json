@@ -1,0 +1,61 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/system/1.1.1/links",
+    "schema_type": "link_bundle",
+    "schema_version": "1.1.1",
+    "links": [
+        {
+            "process": "e9c888db-256a-4c78-af5d-2977fa6bc22c",
+            "inputs": [
+                "1446ca36-ba75-45ea-b6ab-a80641a88812"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "b93897c4-0681-407a-bc0c-fb791b919fa4"
+            ],
+            "output_type": "file",
+            "protocols": [
+                {
+                    "protocol_type": "library_preparation_protocol",
+                    "protocol_id": "38e07040-6198-4a46-b195-88c0680ef283"
+                },
+                {
+                    "protocol_type": "sequencing_protocol",
+                    "protocol_id": "2c530a47-d87a-4d50-bfb9-74d15fdb1fd9"
+                }
+            ]
+        },
+        {
+            "process": "3c85210e-6554-450c-88fb-c5d5035cf134",
+            "inputs": [
+                "6dc01fb6-6aba-432e-828e-ae3045914f34"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "1446ca36-ba75-45ea-b6ab-a80641a88812"
+            ],
+            "output_type": "biomaterial",
+            "protocols": [
+                {
+                    "protocol_type": "dissociation_protocol",
+                    "protocol_id": "7142ed25-3237-4156-b10d-0aa74b2c37b3"
+                },
+                {
+                    "protocol_type": "enrichment_protocol",
+                    "protocol_id": "4a19c599-e429-4eda-9644-3a46c1202c7f"
+                }
+            ]
+        },
+        {
+            "process": "ab9f0b8f-3195-4ccd-8bdf-52d91a2c9029",
+            "inputs": [
+                "b56697f5-d350-4e1d-93b2-72eee68c972e"
+            ],
+            "input_type": "biomaterial",
+            "outputs": [
+                "6dc01fb6-6aba-432e-828e-ae3045914f34"
+            ],
+            "output_type": "biomaterial",
+            "protocols": []
+        }
+    ]
+}

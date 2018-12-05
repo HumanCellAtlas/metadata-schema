@@ -1,0 +1,19 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_1",
+        "protocol_name": "Enrichment for live cells",
+        "document": "Human_spleen_dissociation_protocol.pdf"
+    },
+    "enrichment_method": {
+        "text": "magnetic affinity cell sorting",
+        "ontology": "EFO:0009109"
+    },
+    "markers": "LiveCells",
+    "provenance": {
+        "document_id": "e8c1f3fe-d694-467c-a823-01426f44ed71",
+        "submission_date": "2018-09-05T09:14:54.896Z",
+        "update_date": "2018-09-05T09:15:02.160Z"
+    }
+}

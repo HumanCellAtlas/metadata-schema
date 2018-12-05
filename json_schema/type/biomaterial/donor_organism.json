@@ -9,7 +9,8 @@
         "is_living",
         "sex"
     ],
-    "title": "donor_organism",
+    "title": "Donor organism",
+    "name": "donor_organism",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -52,18 +53,6 @@
             "$ref": "module/biomaterial/mouse_specific.json",
             "user_friendly": "Mouse-specific"
         },
-        "death": {
-            "description": "Information about conditions of death of the organism.",
-            "type": "object",
-            "$ref": "module/biomaterial/death.json",
-            "user_friendly": "Death conditions"
-        },
-        "medical_history": {
-            "description": "Information about the medical history of the organism.",
-            "type": "object",
-            "$ref": "module/biomaterial/medical_history.json",
-            "user_friendly": "Medical history"
-        },
         "genus_species": {
             "description": "The scientific binomial name for the species of the organism.",
             "type" : "array",
@@ -73,6 +62,29 @@
             },
             "user_friendly": "Genus species"
         },
+        "sex": {
+            "description": "The biological sex of the organism.",
+            "type": "string",
+            "enum": [
+                "female", 
+                "male", 
+                "mixed", 
+                "unknown"
+            ],
+            "user_friendly": "Biological sex",
+            "example": "Should be one of: male, female, mixed, or unknown."
+        },
+        "is_living": {
+            "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "user_friendly": "Alive at collection?",
+            "example": "Should be one of: yes, no, unknown."
+        }, 
         "organism_age": {
             "description": "Age of organism in Organism age unit. Measured since birth.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
@@ -94,7 +106,7 @@
             "user_friendly": "Development stage",
             "example": "adult"
         }, 
-        "disease": {
+        "diseases": {
             "description": "Short description of known disease(s) of the organism. Enter 'normal' if no known disease.",
             "type": "array",
             "items": {
@@ -103,6 +115,12 @@
             "user_friendly": "Known disease(s)",
             "example": "bone squamous cell carcinoma"
         },
+        "death": {
+            "description": "Information about conditions of death of the organism.",
+            "type": "object",
+            "$ref": "module/biomaterial/death.json",
+            "user_friendly": "Death conditions"
+        },
         "familial_relationship": {
             "description": "Information about other organisms related to this organism.",
             "type": "array",
@@ -110,6 +128,12 @@
                 "$ref": "module/biomaterial/familial_relationship.json"
                 },
             "user_friendly": "Familial relationship"
+        },
+        "medical_history": {
+            "description": "Information about the medical history of the organism.",
+            "type": "object",
+            "$ref": "module/biomaterial/medical_history.json",
+            "user_friendly": "Medical history"
         },
         "gestational_age": {
             "description": "Gestational age of organism in Gestational age unit. Measured since fertilization.",
@@ -139,29 +163,6 @@
             "user_friendly": "Height unit",
             "example": "centimeter"
         },
-        "is_living": {
-            "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
-            "type": "string",
-            "enum": [
-                "yes",
-                "no",
-                "unknown"
-            ],
-            "user_friendly": "Is living?",
-            "example": "Should be one of: yes, no, unknown."
-        }, 
-        "sex": {
-            "description": "The biological sex of the organism.",
-            "type": "string",
-            "enum": [
-                "female", 
-                "male", 
-                "mixed", 
-                "unknown"
-            ],
-            "user_friendly": "Biological sex",
-            "example": "Should be one of: male, female, mixed, or unknown."
-        },
         "weight": {
             "description": "Weight of organism in Weight unit.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
@@ -186,6 +187,12 @@
             ],
             "user_friendly": "Normothermic regional perfusion?",
             "example": "Should be one of: yes, no, or unknown."
+        },
+        "timecourse": {
+            "description": "Information relating to a timecourse associated with this biomaterial.",
+            "type": "object",
+            "$ref": "module/biomaterial/timecourse.json",
+            "user_friendly": "Timecourse"
         }
     }
 }

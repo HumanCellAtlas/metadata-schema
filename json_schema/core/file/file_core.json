@@ -6,7 +6,8 @@
 	    "file_name",
 	    "file_format"
     ],
-    "title": "file_core",
+    "title": "File core",
+    "name": "file_core",
     "type": "object",
     "properties": {
         "describedBy": {
