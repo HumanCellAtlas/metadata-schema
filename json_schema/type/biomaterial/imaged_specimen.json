@@ -40,20 +40,21 @@
             "type": "object",
             "$ref": "core/biomaterial/biomaterial_core.json"
         },
-        "overview_image": {
-            "description": "List of filenames of photographs of specimen. Must be of format JPEG, TIFF, or PNG.",
+        "overview_images": {
+            "description": "List of filenames of photographs of specimen.",
             "type": "array",
             "items": {
                 "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
                 "type": "string"
             },
             "user_friendly": "Gross image",
-            "example": "my_mage_file.jpg"
+            "example": "my_image_file.jpg, overview_image.tiff",
+            "guidelines": "Must be of format JPEG, TIFF, or PNG."
         },
-        "imaged_slice_thickness": {
+        "slice_thickness": {
             "description": "Thickness of the imaged slice in micrometres.",
             "type" : "number",
-            "example": "14",
+            "example": "14, 30",
             "user_friendly": "Imaged slice thickness"
         },
         "internal_anatomical_structures": {

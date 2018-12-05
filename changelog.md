@@ -7,6 +7,25 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.0] - 2018-12-05
+### Added
+Added new optional fields nominal_length and nominal_sdev. Fixes #594.
+
+### [type/file/sequence_file.json - v7.0.0] - 2018-12-05
+### Changed
+Changed technical_replicate_group_id to library_preparation_id. Fixes #262.
+
+### [type/biomaterial/cell_suspension.json - v8.6.2] - 2018-12-05
+### Changed
+Changed user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #620.
+
+### [type/biomaterial/cell_line.json - v9.0.1] - 2018-12-05
+### Changed
+Changed user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #612.
+
+### [type/biomaterial/imaged_specimen.json - v2.0.0] - 2018-12-03
+### Changed
+Changed field names and updated examples in imaged_specimen to match the Style Guide
 
 ### [module/protocol/imaging_target.json - v3.0.0] - 2018-11-28
 ### Changed
@@ -39,7 +58,6 @@ Changed channel field type to array
 ### [type/protocol/imaging/imaging_protocol.json - v9.0.0] - 2018-11-21
 ### Changed
 Changed channel field type to array
-
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
