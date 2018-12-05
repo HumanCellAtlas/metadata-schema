@@ -50,10 +50,10 @@
             "user_friendly": "Genus species"
         },
         "organ": {
-            "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
+            "description": "The organ that the biomaterial came from.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
-            "comment": "The term organ is very broadly defined here.",
+            "guidelines": "Blood and connective tissue are considered organs.",
             "user_friendly": "Organ"
         },
         "organ_part": {
