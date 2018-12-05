@@ -64,12 +64,13 @@
             "user_friendly": "Organ part"
         },
         "diseases": {
-            "description": "Short description of known disease(s) of the specimen. Enter normal if no known disease.",
+            "description": "Short description of known disease(s) of the specimen.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
-            "user_friendly": "Known disease(s)"
+            "user_friendly": "Known disease(s)",
+            "guidelines": "Enter normal if no known diseases."
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
