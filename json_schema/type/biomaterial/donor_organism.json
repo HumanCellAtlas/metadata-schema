@@ -97,7 +97,7 @@
             "description": "The unit in which Organism age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Organism age unit"
+            "user_friendly": "Age unit"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",

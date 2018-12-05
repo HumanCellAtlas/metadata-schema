@@ -67,7 +67,7 @@ genus_species | The scientific binomial name for the species of the organism. | 
 sex | The biological sex of the organism. | string | yes |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
 is_living | Whether organism was alive at time of biomaterial collection. | string | yes |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, unknown.
 organism_age | Age of organism in Organism age unit. Measured since birth. | string | no |  | Age |  | 20, 45-65
-organism_age_unit | The unit in which Organism age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organism age unit |  | 
+organism_age_unit | The unit in which Organism age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Age unit |  | 
 development_stage | A classification of the developmental stage of the organism. | object | no | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 diseases | Short description of known disease(s) of the organism. Enter 'normal' if no known disease. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
