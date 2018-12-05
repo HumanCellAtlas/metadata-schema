@@ -97,24 +97,21 @@
             "description": "The unit in which Organism age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Organism age unit",
-            "example": "Should be one of: hour, day, week, month, or year."
+            "user_friendly": "Organism age unit"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
             "type": "object",
             "$ref": "module/ontology/development_stage_ontology.json",
-            "user_friendly": "Development stage",
-            "example": "adult"
-        }, 
+            "user_friendly": "Development stage"
+        },
         "diseases": {
             "description": "Short description of known disease(s) of the organism. Enter 'normal' if no known disease.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
-            "user_friendly": "Known disease(s)",
-            "example": "bone squamous cell carcinoma"
+            "user_friendly": "Known disease(s)"
         },
         "death": {
             "description": "Information about conditions of death of the organism.",
@@ -147,8 +144,7 @@
             "description": "The unit in which Gestational age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Gestational age unit",
-            "example": "Should be one of: hour, day, week, month, or year."
+            "user_friendly": "Gestational age unit"
         },
         "height": {
             "description": "Height of organism in Height unit.",
@@ -161,8 +157,7 @@
             "description": "The unit in which Height is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-            "user_friendly": "Height unit",
-            "example": "centimeter"
+            "user_friendly": "Height unit"
         },
         "weight": {
             "description": "Weight of organism in Weight unit.",
@@ -175,8 +170,7 @@
             "description": "The unit in which Weight is expressed.",
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
-            "user_friendly": "Weight unit",
-            "example": "kilogram"
+            "user_friendly": "Weight unit"
         },
         "normothermic_regional_perfusion": {
             "description": "Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise.",
