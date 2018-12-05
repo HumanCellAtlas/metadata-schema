@@ -113,7 +113,7 @@
             "example": "Should be one of: yes, no.",
             "user_friendly": "Organoid embeddded in matrigel?"
         },
-        "organoid_growth_environment": {
+        "growth_environment": {
             "description": "Growth environment in which the organoid is grown.",
             "type": "string",
             "example": "matrigel, liquid suspension, adherent",
