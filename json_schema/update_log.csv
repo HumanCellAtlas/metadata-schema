@@ -1,3 +1,3 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/sequencing/library_preparation_protocol,minor,"Added new optional field nominal_length",,
-type/protocol/sequencing/library_preparation_protocol,minor,"Added new optional field nominal_sdev",,
+type/protocol/sequencing/library_preparation_protocol,minor,"Added new optional field nominal_length. Fixes #594.",,
+type/protocol/sequencing/library_preparation_protocol,minor,"Added new optional field nominal_sdev. Fixes #594.",,
