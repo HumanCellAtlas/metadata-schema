@@ -85,11 +85,12 @@
             "user_friendly": "Preservation/Storage"
         },
         "collection_time": {
-            "description": "When the biomaterial was collected, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
+            "description": "When the biomaterial was collected.",
             "type": "string",
             "format": "date-time",
             "user_friendly": "Time of collection",
-            "example": "2017-03-19T07:22:00Z"
+            "example": "2017-03-19T07:22:00Z",
+            "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",
