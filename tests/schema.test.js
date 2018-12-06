@@ -10,7 +10,7 @@ const R = require('ramda');
 let { ElixirValidator, GraphRestriction} = require('elixir-jsonschema-validator');
 
 const schemaDirs = 'json_schema';
-const exampleDataDirs = 'schema_test_files';
+const exampleDataDirs = path.join('tests', 'schema_test_files');
 
 // set the base schema path
 let baseSchemaPath = path.join(__dirname, '..', schemaDirs);
