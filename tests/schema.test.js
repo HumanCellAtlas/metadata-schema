@@ -3,6 +3,7 @@ const readdirp = require("readdirp");
 const path = require('path');
 const fs = require('fs');
 const Ajv = require('ajv');
+const R = require('ramda');
 
 // get all the custom extensions
 // only use the graph_extension keyword
@@ -40,68 +41,58 @@ var tests = [
 
 
 // start by reading all the files in the base path with e file filter
-getFiles(baseSchemaPath, '*.json');
+schemaFiles = getFilesSync(baseSchemaPath, '.json');
 
 // wait 5 seconds until all files have ben cached, then dynamically run a number of
 // unit tests on each file using the mocha testing framework
-setTimeout(function() {
 
-    describe('Testing schema is valid', function() {
+describe('Testing schema is valid', function() {
 
-        // for each schema file in the cache execute a test
-        schemaFiles.forEach(function(fileInfo) {
-            it('Testing schema is valid ' + fileInfo.path, function() {
+    // for each schema file in the cache execute a test
+    schemaFiles.forEach(function(jsonSchemaInfo) {
+        let jsonSchema = jsonSchemaInfo.schema;
+        let schemaPath = jsonSchemaInfo.path;
+        it('Testing schema is valid ' + schemaPath, function() {
+            expect(jsonSchema).to.be.an('object');
 
-                // get the full path to the file
-                let filePath = path.join(baseSchemaPath, fileInfo.path);
-                console.log("testing " + filePath);
+            // set the $async property, needed for custom keyword validation with AJV
+            jsonSchema["$async"] = true;
 
-                // read the file from disk
-                let inputSchema = fs.readFileSync(filePath);
+            // check the schema validates
+            return validateSchema(jsonSchema).then( (data) => {
 
-                // check it is json
-                let jsonSchema = JSON.parse(inputSchema);
-                expect(jsonSchema).to.be.an('object');
+                // if we get the file must be valid as no errors were thrown
+                expect(data).to.not.equal(null);
+                expect(data.errors).to.equal(null);
 
-                // set the $async property, needed for custom keyword validation with AJV
-                jsonSchema["$async"] = true;
+            }).catch(  (err) => {
 
-                // check the schema validates
-                return validateSchema(jsonSchema).then( (data) => {
-
-                    // if we get the file must be valid as no errors were thrown
-                    expect(data).to.not.equal(null);
-                    expect(data.errors).to.equal(null);
-                    console.log(filePath + " is valid");
-
-                }).catch(  (err) => {
-
-                    // errors were thrown, file must be invalid, log the message
-                    expect.fail("invalid schema => " + err.message)
-                })
-            });
+                // errors were thrown, file must be invalid, log the message
+                expect.fail("invalid schema => " + err.message)
+            })
         });
     });
+});
 
-    describe ('Testing example data validates against schemas', function () {
+describe ('Testing example data validates against schemas', function () {
 
-        tests.forEach(function(testObject) {
+    tests.forEach(function(testObject) {
 
-            it('Testing ' + testObject.args[0] + ' against ' + testObject.args[1], function () {
+        it('Testing ' + testObject.args[0] + ' against ' + testObject.args[1], function () {
 
-                // get the schema file
-                let inputSchema = fs.readFileSync(path.join(baseSchemaPath, testObject.args[0]));
-                let inputData = fs.readFileSync(path.join(baseDataPath, testObject.args[1]));
+            // get the schema file
+            let inputSchema = fs.readFileSync(path.join(baseSchemaPath, testObject.args[0]));
+            let inputData = fs.readFileSync(path.join(baseDataPath, testObject.args[1]));
 
-                let jsonSchema = JSON.parse(inputSchema);
-                // set the $async property, needed for custom keyword validation with AJV
-                jsonSchema["$async"] = true;
+            let jsonSchema = JSON.parse(inputSchema);
+            // set the $async property, needed for custom keyword validation with AJV
+            jsonSchema["$async"] = true;
 
-                // check it is json
-                let jsonDoc = JSON.parse(inputData);
-                expect(jsonDoc).to.be.an('object');
+            // check it is json
+            let jsonDoc = JSON.parse(inputData);
+            expect(jsonDoc).to.be.an('object');
 
-                return validator.validate(jsonSchema, jsonDoc).then((data) => {
+            return validator.validate(jsonSchema, jsonDoc).then((data) => {
 
                     expect(testObject.expectedErrors).to.be.equal(data.validationErrors.length);
                     for (let message of data.validationErrors) {
@@ -111,12 +102,9 @@ setTimeout(function() {
 
             })
 
-        });
-
     });
 
-    run();
-}, 5000);
+});
 
 /**
  *
@@ -141,6 +129,41 @@ function getFiles(basePath, filter) {
 
     });
 }
+
+/**
+ *
+ * recursively read all the JSON schema file under the baseSchemaPath
+ *
+ * @param basePath
+ * @param filter
+ * @returns {*|T[]|string} A list of objects of format {schema: <a json schema>, path: <full path to schema file> }
+ */
+function getFilesSync(basePath, filter, relPath) {
+    // remove versions.json
+    const versionsJsonFilter = (dirEntry) => dirEntry !== "versions.json";
+    const dirEntries =
+        R.map(
+            dirEntryName => basePath + "/" + dirEntryName,
+            R.filter(versionsJsonFilter, fs.readdirSync(basePath))
+        );
+
+    const jsonFileFilterFn = (dirEntryPath) => fs.lstatSync(dirEntryPath).isFile() && dirEntryPath.endsWith(filter);
+    const dirEntryFilterFn = (dirEntryPath) => fs.lstatSync(dirEntryPath).isDirectory();
+
+    const jsonFilePaths = R.filter(jsonFileFilterFn, dirEntries);
+    const subDirPaths = R.filter(dirEntryFilterFn, dirEntries);
+
+    const jsonFiles = R.map((jsonFilePath) => {return {schema: JSON.parse(fs.readFileSync(jsonFilePath)), path: jsonFilePath} }, jsonFilePaths);
+
+    return jsonFiles.concat(
+        R.reduce(
+            (acc, jsonFiles) => acc.concat(jsonFiles),
+            [],
+            R.map(subDirPath => getFilesSync(subDirPath, filter), subDirPaths)
+        )
+    )
+}
+
 
 /**
  *
