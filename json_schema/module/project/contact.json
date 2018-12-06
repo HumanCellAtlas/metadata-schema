@@ -38,7 +38,8 @@
         "phone": {
             "description": "Phone number of the individual or their lab.",
             "type": "string",
-            "example": "(+1) 234-555-6789. Enter a valid phone number, including country code.",
+            "example": "(+1) 234-555-6789",
+            "guidelines": "Include the country code.",
             "user_friendly": "Phone number"
         },
         "institution": {

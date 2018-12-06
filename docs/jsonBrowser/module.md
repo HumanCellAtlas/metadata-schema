@@ -443,7 +443,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
 email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com
-phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789. Enter a valid phone number, including country code.
+phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
 institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI
 laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Department of Biology
 address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091. Include street name and number, city, country division, and postal code.
