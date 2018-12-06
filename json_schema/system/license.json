@@ -33,12 +33,6 @@
             "description": "URL of the license under which this data is available.",
             "example": "https://creativecommons.org/licenses/by/4.0/",
             "user_friendly": "License URL"
-        },
-        "icon_url": {
-            "type": "string",
-            "description": "URL of the icon associated with this license.",
-            "example": "https://preview.data.humancellatlas.org/images/icon/icon-cc-by@1x.png",
-            "user_friendly": "License icon URL"
         }
     }
 }
