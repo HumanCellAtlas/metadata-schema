@@ -333,7 +333,7 @@ plate_id | An ID for the plate that the well is located on. | string |  | Well p
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-contact_name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe. Format: first name, middle name or initial, last name.
+contact_name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe
 institution | Name of primary institute where the individual works. | string |  | Institute |  | EMBL-EBI
 ### Funder<a name='Funder'></a>
 _There are no required properties in schema Funder_

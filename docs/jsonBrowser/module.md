@@ -441,7 +441,7 @@ Location: module/project/contact.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe. Format: first name, middle name or initial, last name.
+contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe
 email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com. Enter a valid email address.
 phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789. Enter a valid phone number, including country code.
 institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI
