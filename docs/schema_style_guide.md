@@ -281,7 +281,7 @@ The following attributes are required for each metadata field in an HCA metadata
     - A field references an ontology schema, *e.g.* `genus_species`, because the fields in the imported ontology schema will have their own example valid values.
     - An example for a field could bias data contributors, *e.g.* providing an example ID for a biomaterial in the `biomaterial_id` field.
     
-    In general, fields should include two examples to highlight the range of possible valid values. In some cases, however, including two examples does not provide more clarity than including one example. For instance, the `cell_line.catalog_url` field takes a string value representing the "supplier catalogue URL for the cell line". Including one example catalog URL for this field is sufficient to demonstrate what a valid value looks like, and including a second example would likely not improve clarity in this case.   
+    In general, fields should include two examples to highlight the range of possible valid values. In some cases, however, including two examples does not provide more clarity than including one example. For instance, the `cell_line.catalog_url` field takes a string representing the "supplier catalogue URL for the cell line". Including one example catalog URL for this field is sufficient to demonstrate what a valid value looks like, and including a second example would likely not improve clarity.   
 
     **Special case: Ontology examples**
     
