@@ -29,7 +29,6 @@ let schemaFiles = [];
 // dynamically test a number of file against a schema
 // extend this object to add new tests
 var tests = [
-    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expectedErrors: 0},
     {args: ['type/project/project.json', 'project/test_pass_project_0.json'], expectedErrors: 0},
     {args: ['type/project/project.json', 'project/test_fail_project_0.json'], expectedErrors: 1},
     {args: ['type/biomaterial/donor_organism.json', 'biomaterial/test_pass_donor_organism_0.json'], expectedErrors: 0},
