@@ -31,7 +31,7 @@
         "email": {
             "description": "Email address for the individual.",
             "type": "string",
-            "example": "dummy@email.com. Enter a valid email address.",
+            "example": "dummy@email.com",
             "format": "email",
             "user_friendly": "Email address"
         },
