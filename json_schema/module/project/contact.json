@@ -68,7 +68,7 @@
             "example": "USA"
         },
         "corresponding_contributor": {
-            "description": "Whether the individual is a corresponding contributor for the project.",
+            "description": "Whether the individual is a primary point of contact for the project.",
             "type": "boolean",
             "user_friendly": "Corresponding contributor?",
             "example": "Should be one of: yes, or no."
