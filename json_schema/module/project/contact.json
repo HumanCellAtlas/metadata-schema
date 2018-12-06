@@ -52,7 +52,7 @@
             "description": "Name of lab or department within the institute where the individual works.",
             "type": "string",
             "user_friendly": "Laboratory/Department",
-            "example": "Department of Biology"
+            "example": "Division of Vaccine Discovery; Department of Biology"
         },
         "address": {
             "description": "Street address where the individual works.",
