@@ -449,7 +449,7 @@ laboratory | Name of lab or department within the institute where the individual
 address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
 country | Country where the individual works. | string | no |  | Country |  | USA
 corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor? |  | Should be one of: yes, or no.
-project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator
+project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator; computational scientist
 orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
 
 ## Funder<a name='Funder'></a>

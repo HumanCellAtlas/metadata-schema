@@ -88,7 +88,7 @@
                 "Human Cell Atlas wrangler",
                 "other"
             ],
-            "example": "principal investigator",
+            "example": "principal investigator; computational scientist",
             "user_friendly": "Project role"
         },
         "orcid_id": {
