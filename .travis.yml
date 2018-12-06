@@ -9,5 +9,5 @@ install:
    - npm install
 
 script:
-   - cd tests
+#   - cd tests
    - npm test
