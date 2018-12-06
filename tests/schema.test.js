@@ -17,7 +17,8 @@ let baseSchemaPath = path.join(__dirname, '..', schemaDirs);
 // set the example data path
 let baseDataPath = path.join(__dirname, '..', exampleDataDirs);
 
-let ajvOptions = {baseSchemaPath: baseSchemaPath};
+let ajvOptions = {baseSchemaPath: baseSchemaPath, extendRefs: true, olsApiBaseUrl: 'http://ontology.dev.data.humancellatlas.org/api'};
+
 let validator = new ElixirValidator([GraphRestriction], ajvOptions);
 var ajv = new Ajv(ajvOptions);
 
@@ -27,14 +28,14 @@ let schemaFiles = [];
 // dynamically test a number of file against a schema
 // extend this object to add new tests
 var tests = [
-    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expected: 'valid'},
-    {args: ['type/project/project.json', 'project/test_pass_project_0.json'], expected: 'valid'},
-    {args: ['type/project/project.json', 'project/test_fail_project_0.json'], expected: 'invalid'},
-    {args: ['type/biomaterial/donor_organism.json', 'biomaterial/test_pass_donor_organism_0.json'], expected: 'valid'},
-    {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_pass_specimen_0.json'], expected: 'valid'},
-    {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_fail_specimen_0.json'], expected: 'valid'},
-    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_analysis_process.json'], expected: 'valid'},
-    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expected: 'valid'}
+    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expectedErrors: 0},
+    {args: ['type/project/project.json', 'project/test_pass_project_0.json'], expectedErrors: 0},
+    {args: ['type/project/project.json', 'project/test_fail_project_0.json'], expectedErrors: 1},
+    {args: ['type/biomaterial/donor_organism.json', 'biomaterial/test_pass_donor_organism_0.json'], expectedErrors: 0},
+    {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_pass_specimen_0.json'], expectedErrors: 0},
+    {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_fail_specimen_0.json'], expectedErrors: 1},
+    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_analysis_process.json'], expectedErrors: 0},
+    {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expectedErrors: 0}
 ];
 
 
@@ -102,15 +103,11 @@ setTimeout(function() {
 
                 return validator.validate(jsonSchema, jsonDoc).then((data) => {
 
-                    expect(testObject.expected).to.be.equal('valid');
-                    expect(data).to.be.an('object');
-                    expect(data.validationErrors.length).to.equal(0);
-                }).catch ( (err) => {
-                    console.log(err.message);
-                    expect(testObject.expected).to.be.equal('invalid')
-
+                    expect(testObject.expectedErrors).to.be.equal(data.validationErrors.length);
+                    for (let message of data.validationErrors) {
+                        console.log("Invalid JSON: " + message.message);
+                    }
                 });
-
 
             })
 

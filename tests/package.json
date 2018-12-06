@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "elixir-jsonschema-validator": "^1.3.3",
+    "elixir-jsonschema-validator": "^1.3.7",
     "event-stream": "^4.0.1",
     "file": "^0.2.2",
     "fs": "0.0.1-security",
