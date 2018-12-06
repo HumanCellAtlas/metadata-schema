@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/imaged_specimen.json - v2.0.1] - 2018-12-05
+### Added
+Added user-friendly name for biomaterial_core. Fixes #656
+
 ### [module/protocol/target.json - v1.0.0] - 2018-12-05
 ### Added
 Added new schema target.json to replace deprecated imaging_target.json. Fixes #641
