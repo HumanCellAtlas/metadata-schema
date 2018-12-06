@@ -446,7 +446,7 @@ email | Email address for the individual. | string | no |  | Email address |  | 
 phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
 institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI; University of Washington
 laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Division of Vaccine Discovery; Department of Biology
-address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091. Include street name and number, city, country division, and postal code.
+address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
 country | Country where the individual works. | string | no |  | Country |  | USA
 corresponding_contributor | Whether the individual is a corresponding contributor for the project. | boolean | no |  | Corresponding contributor? |  | Should be one of: yes, or no.
 project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator

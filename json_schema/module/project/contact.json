@@ -57,7 +57,8 @@
         "address": {
             "description": "Street address where the individual works.",
             "type": "string",
-            "example": "0000 Main Street, Nowheretown, MA, 12091. Include street name and number, city, country division, and postal code.",
+            "example": "0000 Main Street, Nowheretown, MA, 12091",
+            "guidelines": "Include street name and number, city, country division, and postal code.",
             "user_friendly": "Street address"
         },
         "country": {
