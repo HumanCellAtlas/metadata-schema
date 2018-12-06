@@ -24,7 +24,7 @@
         "contact_name": {
             "description": "Name of individual who has contributed to the project.",
             "type": "string",
-            "example": "John,D,Doe",
+            "example": "John,D,Doe; Jane,,Smith",
             "guidelines": "Enter in the format: first name,middle name or initial,last name.",
             "user_friendly": "Contact name"
         },
