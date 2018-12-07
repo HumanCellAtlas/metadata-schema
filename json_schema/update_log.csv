@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-system/license,major,"Added system entity to capture license under which data are released. Fixes #338.",,
