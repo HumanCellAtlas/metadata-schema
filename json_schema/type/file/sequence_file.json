@@ -41,7 +41,7 @@
             "$ref": "core/file/file_core.json"
         },
         "read_index": {
-            "description": "Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read or represents a single-end, non-indexed library.",
+            "description": "The sequencing read this file represents.",
             "type": "string",
             "example": "Should be one of: read1, read2, index1, index2, or 'single-end, non-indexed'",
             "enum": [
@@ -51,7 +51,8 @@
                 "index2",
                 "single-end, non-indexed"
             ],
-            "user_friendly": "Read index"
+            "user_friendly": "Read index",
+            "guidelines": "If a sequencing experiment is single-end, enter 'read1'."
         },
         "lane_index": {
             "description": "The index of the lane that this file was sequenced from.",
