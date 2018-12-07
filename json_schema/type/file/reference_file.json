@@ -56,7 +56,6 @@
             "description": "The scientific binomial name for the species of this reference.",
             "type": "object",
             "$ref": "module/ontology/species_ontology.json",
-            "example": "Homo sapiens",
             "user_friendly": "Genus species"
         },
         "assembly_type": {
