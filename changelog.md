@@ -7,6 +7,42 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v6.1.4] - 2018-12-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #662.
+
+### [type/project/project.json - v9.0.4] - 2018-12-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #662.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.4] - 2018-12-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #653.
+
+### [type/biomaterial/organoid.json - v8.3.9] - 2018-12-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #652.
+
+### [type/biomaterial/imaged_specimen.json - v2.0.1] - 2018-12-05
+### Added
+Added user-friendly name for biomaterial_core. Fixes #656
+
+### [module/protocol/target.json - v1.0.0] - 2018-12-05
+### Added
+Added new schema target.json to replace deprecated imaging_target.json. Fixes #641
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.0] - 2018-12-05
+### Added
+Added new schema target.json to replace deprecated imaging_target.json. Fixes #641
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.0] - 2018-12-05
+### Added
+Added new optional fields nominal_length and nominal_sdev. Fixes #594.
+
+### [type/file/sequence_file.json - v7.0.0] - 2018-12-05
+### Changed
+Changed technical_replicate_group_id to library_preparation_id. Fixes #262.
+
 ### [type/biomaterial/cell_suspension.json - v8.6.2] - 2018-12-05
 ### Changed
 Changed user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #620.
