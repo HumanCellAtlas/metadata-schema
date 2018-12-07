@@ -67,14 +67,15 @@
             "user_friendly": "Read length"
         },
         "insdc_run": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRR, SRR, or ERR.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession from the DDBJ, NCBI, or EMBL-EBI.",
             "type": "array",
             "items": {
                 "pattern": "^[D|E|S]RR[0-9]+$",
                 "type": "string"
             },
             "user_friendly": "INSDC run",
-            "example": "SRR0000000"
+            "example": "SRR0000000",
+            "guidelines": "Accession must start with DRR, SRR, or ERR."
         },
         "library_prep_id" : {
             "description": "A unique ID for the library preparation.",
