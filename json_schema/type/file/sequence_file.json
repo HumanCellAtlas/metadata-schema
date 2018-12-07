@@ -38,7 +38,8 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "core/file/file_core.json"
+            "$ref": "core/file/file_core.json",
+            "user_friendly": "File core"
         },
         "read_index": {
             "description": "The sequencing read this file represents.",
