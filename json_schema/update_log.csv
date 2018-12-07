@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/imaged_specimen,patch,"Removed extra example and fixed field name to match Style Guide. Fixes #668",,
