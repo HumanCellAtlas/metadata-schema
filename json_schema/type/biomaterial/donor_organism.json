@@ -39,7 +39,8 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "core/biomaterial/biomaterial_core.json"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "human_specific": {
             "description": "Fields specific to human (homo sapiens) organisms.",
@@ -56,7 +57,6 @@
         "genus_species": {
             "description": "The scientific binomial name for the species of the organism.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
                 "$ref": "module/ontology/species_ontology.json"
             },
@@ -75,7 +75,7 @@
             "example": "Should be one of: male, female, mixed, or unknown."
         },
         "is_living": {
-            "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
+            "description": "Whether organism was alive at time of biomaterial collection.",
             "type": "string",
             "enum": [
                 "yes",
@@ -83,37 +83,37 @@
                 "unknown"
             ],
             "user_friendly": "Alive at collection?",
-            "example": "Should be one of: yes, no, unknown."
+            "example": "Should be one of: yes, no, unknown.",
+            "guidelines": "Enter yes if organism was alive at time of biomaterial collection, no if organism was dead, unknown if not known."
         }, 
         "organism_age": {
-            "description": "Age of organism in Organism age unit. Measured since birth.",
+            "description": "Age of organism in Age units measured since birth.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
-            "user_friendly": "Organism age",
-            "example": "20"
+            "user_friendly": "Age",
+            "example": "20, 45-65",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         }, 
         "organism_age_unit": {
-            "description": "The unit in which Organism age is expressed.",
+            "description": "The unit in which Age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Organism age unit",
-            "example": "Should be one of: hour, day, week, month, or year."
+            "user_friendly": "Age unit"
         },
         "development_stage": {
             "description": "A classification of the developmental stage of the organism.",
             "type": "object",
             "$ref": "module/ontology/development_stage_ontology.json",
-            "user_friendly": "Development stage",
-            "example": "adult"
-        }, 
+            "user_friendly": "Development stage"
+        },
         "diseases": {
-            "description": "Short description of known disease(s) of the organism. Enter 'normal' if no known disease.",
+            "description": "Short description of known disease(s) of the organism.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
             "user_friendly": "Known disease(s)",
-            "example": "bone squamous cell carcinoma"
+            "guidelines": "Enter 'normal' if no known disease."
         },
         "death": {
             "description": "Information about conditions of death of the organism.",
@@ -136,46 +136,46 @@
             "user_friendly": "Medical history"
         },
         "gestational_age": {
-            "description": "Gestational age of organism in Gestational age unit. Measured since fertilization.",
+            "description": "Gestational age of organism in Gestational age units measured since fertilization.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Gestational age",
-            "example": "5-7"
+            "example": "22, 5-7",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "gestational_age_unit": {
             "description": "The unit in which Gestational age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Gestational age unit",
-            "example": "Should be one of: hour, day, week, month, or year."
+            "user_friendly": "Gestational age unit"
         },
         "height": {
             "description": "Height of organism in Height unit.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Height",
-            "example": "160"
+            "example": "160, 120-140",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "height_unit": {
             "description": "The unit in which Height is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-            "user_friendly": "Height unit",
-            "example": "centimeter"
+            "user_friendly": "Height unit"
         },
         "weight": {
             "description": "Weight of organism in Weight unit.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Weight",
-            "example": "60"
+            "example": "60, 40-60",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "weight_unit": {
             "description": "The unit in which Weight is expressed.",
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
-            "user_friendly": "Weight unit",
-            "example": "kilogram"
+            "user_friendly": "Weight unit"
         },
         "normothermic_regional_perfusion": {
             "description": "Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise.",

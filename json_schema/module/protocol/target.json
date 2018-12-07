@@ -28,7 +28,7 @@
             "example": "ACTA1, cFos",
             "user_friendly": "Target molecule name"
         },
-        "molecule_ID": {
+        "molecule_id": {
             "description": "An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot).",
             "type": "string",
             "example": "CHEBI:85345, ensembl_9606",
