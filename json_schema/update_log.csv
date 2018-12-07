@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/donor_organism,major,Changed donor_organism to make development_stage required. Fixes #607,,
