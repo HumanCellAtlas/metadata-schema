@@ -13,12 +13,12 @@
   "sex": "male",
   "development_stage": {
     "text": "adult",
-    "ontology": "EFO_0001272"
+    "ontology": "EFO:0001272"
   },
   "genus_species": [
     {
     "text": "Homo sapiens",
-    "ontology": "NCBITAXON_9606"
+    "ontology": "NCBITAXON:9606"
     }
   ]
 }

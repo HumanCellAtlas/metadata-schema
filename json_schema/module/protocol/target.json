@@ -6,14 +6,14 @@
         "assay_type",
         "multiplexed"
     ],
-    "title": "Imaging target",
-    "name": "imaging_target",
+    "title": "Target",
+    "name": "target",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/protocol/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/imaging_target"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/protocol/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/target"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -21,20 +21,20 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "target_molecule_name": {
+        "molecule_name": {
             "description": "The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook.",
 
             "type": "string",
-            "example": "ACTA1",
+            "example": "ACTA1, cFos",
             "user_friendly": "Target molecule name"
         },
-        "target_molecule_ID": {
+        "molecule_id": {
             "description": "An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot).",
             "type": "string",
             "example": "CHEBI:85345, ensembl_9606",
             "user_friendly": "Target molecule identifier."
         },
-        "target_subcellular_structure": {
+        "subcellular_structure": {
             "description": "Target subcellular structure. This should be a term from the GO cell component ontology.",
             "type": "object",
             "$ref": "module/ontology/cellular_component_ontology.json",
@@ -58,7 +58,7 @@
             "user_friendly": "Probe sequence"
         },
         "fluorophore": {
-            "description": "Fluorophore used to detect target in non-multiplexed experiments.",
+            "description": "Fluorophore used to detect target.",
             "type": "string",
             "example": "FITC",
             "user_friendly": "Fluorophore"
@@ -80,10 +80,10 @@
             "example": "yes",
             "user_friendly": "Is this a multiplexed experiment?"
         },
-        "channel": {
-            "description": "Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab.",
-            "type": "string",
-            "example": "far red",
+        "channel_id": {
+            "description": "Channel ID used to assay signal. Should be consistent with the ID in the channel tab.",
+            "type": "array",
+            "example": "1, A",
             "user_friendly": "Channel"
         }
     }

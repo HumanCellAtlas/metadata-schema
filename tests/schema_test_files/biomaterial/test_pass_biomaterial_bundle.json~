@@ -1,0 +1,68 @@
+{
+  "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/biomaterial",
+  "schema_version": "5.1.0",
+  "schema_type": "biomaterial_bundle",
+  "biomaterials": [
+    {
+      "hca_ingest": {
+        "document_id": "a37dbd93-b93a-4838-a7bb-cd0796b3d9d0",
+        "submissionDate": "2017-10-13T09:18:49.422Z",
+        "updateDate": "2017-10-13T09:19:40.069Z",
+        "accession": "SAM0888697"
+      },
+      "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism",
+        "schema_version" : "5.1.0",
+        "schema_type": "biomaterial",
+        "biomaterial_core": {
+          "biomaterial_id": "d1",
+          "biomaterial_name": "donor1",
+          "ncbi_taxon_id": [
+            9606
+          ]
+        },
+        "is_living": true,
+        "biological_sex": "male",
+        "development_stage": {
+          "text": "adult",
+          "ontology": "EFO_0001272"
+        },
+        "genus_species": [
+          {
+          "text": "Homo sapiens",
+          "ontology": "NCBITAXON_9606"
+          }
+        ]
+      }
+    },
+    {
+      "hca_ingest": {
+        "document_id": "a37dbd93-b93a-4838-a7bb-cd0796b3d9d1",
+        "submissionDate": "2017-10-13T09:18:49.422Z",
+        "updateDate": "2017-10-13T09:19:40.069Z",
+        "accession": "SAM0999697"
+      },
+      "content": {
+        "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism",
+        "schema_version" : "5.1.0",
+        "schema_type": "biomaterial",
+        "biomaterial_core": {
+          "biomaterial_id": "s1",
+          "biomaterial_name": "PBMCs",
+          "biomaterial_description": "peripheral blood mononuclear cells (PBMCs)",
+          "ncbi_taxon_id": [
+            9606
+          ],
+          "has_input_biomaterial": "d1"
+        },
+        "organ": {
+          "text": "blood",
+          "ontology": "UBERON_0000178"
+        },
+        "organ_part": {
+          "text": "peripheral blood mononuclear cells (PBMCs)"
+        }
+      }
+    }
+  ]
+}
