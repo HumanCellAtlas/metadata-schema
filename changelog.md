@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/biomaterial/donor_organism.json - v10.2.1] - 2018-12-07
 ### Changed
 Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #650.
@@ -90,8 +92,6 @@ Changed channel field type to array
 ### [type/protocol/imaging/imaging_protocol.json - v9.0.0] - 2018-11-21
 ### Changed
 Changed channel field type to array
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/imaging_target.json - v1.1.0] - 2018-11-19
 ### Changed
