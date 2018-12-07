@@ -24,38 +24,41 @@
         "contact_name": {
             "description": "Name of individual who has contributed to the project.",
             "type": "string",
-            "example": "John,D,Doe. Format: first name, middle name or initial, last name.",
+            "example": "John,D,Doe; Jane,,Smith",
+            "guidelines": "Enter in the format: first name,middle name or initial,last name.",
             "user_friendly": "Contact name"
         },
         "email": {
             "description": "Email address for the individual.",
             "type": "string",
-            "example": "dummy@email.com. Enter a valid email address.",
+            "example": "dummy@email.com",
             "format": "email",
             "user_friendly": "Email address"
         },
         "phone": {
             "description": "Phone number of the individual or their lab.",
             "type": "string",
-            "example": "(+1) 234-555-6789. Enter a valid phone number, including country code.",
+            "example": "(+1) 234-555-6789",
+            "guidelines": "Include the country code.",
             "user_friendly": "Phone number"
         },
         "institution": {
             "description": "Name of primary institute where the individual works.",
             "type": "string",
             "user_friendly": "Institute",
-            "example": "EMBL-EBI"
+            "example": "EMBL-EBI; University of Washington"
         },
         "laboratory": {
             "description": "Name of lab or department within the institute where the individual works.",
             "type": "string",
             "user_friendly": "Laboratory/Department",
-            "example": "Department of Biology"
+            "example": "Division of Vaccine Discovery; Department of Biology"
         },
         "address": {
             "description": "Street address where the individual works.",
             "type": "string",
-            "example": "0000 Main Street, Nowheretown, MA, 12091. Include street name and number, city, country division, and postal code.",
+            "example": "0000 Main Street, Nowheretown, MA, 12091",
+            "guidelines": "Include street name and number, city, country division, and postal code.",
             "user_friendly": "Street address"
         },
         "country": {
@@ -65,7 +68,7 @@
             "example": "USA"
         },
         "corresponding_contributor": {
-            "description": "Whether the individual is a corresponding contributor for the project.",
+            "description": "Whether the individual is a primary point of contact for the project.",
             "type": "boolean",
             "user_friendly": "Corresponding contributor?",
             "example": "Should be one of: yes, or no."
@@ -85,7 +88,7 @@
                 "Human Cell Atlas wrangler",
                 "other"
             ],
-            "example": "principal investigator",
+            "example": "principal investigator; computational scientist",
             "user_friendly": "Project role"
         },
         "orcid_id": {
