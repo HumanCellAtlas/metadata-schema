@@ -56,7 +56,7 @@
             "guidelines": "If a sequencing experiment is single-end, enter 'read1'."
         },
         "lane_index": {
-            "description": "The index of the lane that this file was sequenced from.",
+            "description": "The lane that this file was sequenced from.",
             "type": "integer",
             "example": 1,
             "user_friendly": "Lane index"
@@ -74,7 +74,7 @@
                 "pattern": "^[D|E|S]RR[0-9]+$",
                 "type": "string"
             },
-            "user_friendly": "INSDC run",
+            "user_friendly": "INSDC run accession",
             "example": "SRR0000000",
             "guidelines": "Accession must start with DRR, SRR, or ERR."
         },
