@@ -49,7 +49,8 @@
             "description": "A taxonomy ID (taxonID) from NCBI.",
             "type": "integer",
             "user_friendly": "NCBI taxon ID",
-            "example": "9606, 10090"
+            "example": "9606, 10090",
+            "guidelines": "NCBI taxonIDs can be looked up at https://www.ncbi.nlm.nih.gov/taxonomy."
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of this reference.",
