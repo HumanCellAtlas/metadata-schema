@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/target.json - v1.0.1] - 2018-12-07
+### Changed
+Changed molecule_ID to lower case in target.json Fixes #666
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.1] - 2018-12-07
+### Changed
+Changed molecule_ID to lower case in target.json Fixes #666
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/imaged_specimen.json - v2.0.2] - 2018-12-07
