@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/protocol/target,patch,Changed molecule_ID to lower case in target.json Fixes #666,,
