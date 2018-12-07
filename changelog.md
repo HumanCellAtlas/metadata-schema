@@ -79,7 +79,7 @@ Changed name of the required field channel_name to channel_id
 
 ### [type/biomaterial/donor_organism.json - v10.2.0] - 2018-11-28
 ### Added
-Added optional field `timecourse`
+Added optional field timecourse.
 
 ### [system/links.json - v1.1.4] - 2018-11-27
 ### Fixed
