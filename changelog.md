@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/organoid.json - v8.3.9] - 2018-12-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #652.
+
 ### [type/biomaterial/imaged_specimen.json - v2.0.1] - 2018-12-05
 ### Added
 Added user-friendly name for biomaterial_core. Fixes #656

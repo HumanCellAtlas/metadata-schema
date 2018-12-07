@@ -38,12 +38,12 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "core/biomaterial/biomaterial_core.json"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the organoid.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
                 "$ref": "module/ontology/species_ontology.json"
             },
@@ -53,28 +53,25 @@
             "description":  "Organ for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
-            "example": "brain",
             "user_friendly": "Organ model"
         },
         "model_organ_part": {
             "description":  "Organ part for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
-            "example": "cortex",
             "user_friendly": "Organ part model"
         },
         "organoid_age": {
-            "description": "Age of the organoid in Organoid age unit. Measured from when cell aggregates started differentiating to desired organoid model.",
+            "description": "Age of the organoid in Age units measured from when cell aggregates started differentiating to desired organoid model.",
             "type": "number",
             "example": 55,
-            "user_friendly": "Organoid age"
+            "user_friendly": "Age"
         },
         "organoid_age_unit": {
-            "description": "The unit in which Organoid age is expressed.",
+            "description": "The unit in which Age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "example": "Should be one of: minute, hour, day, week, month, or year.",
-            "user_friendly": "Organoid age unit"
+            "user_friendly": "Age unit"
         },
         "organoid_size": {
             "description": "Size of the organoid in Organoid size unit.",
@@ -86,13 +83,12 @@
             "description": "The unit in which the Organoid size is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-            "example": "millimeter",
             "user_friendly": "Organoid size unit"
         },
         "organoid_morphology": {
             "description": "General description of the organoid morphology.",
             "type": "string",
-            "example": "Epithelial monolayer with budding crypt-like domains.",
+            "example": "Epithelial monolayer with budding crypt-like domains, Optic cup structure",
             "user_frinedly": "Organoid morphology"
         },
         "organoid_type": {
