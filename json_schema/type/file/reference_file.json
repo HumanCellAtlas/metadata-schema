@@ -42,7 +42,8 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "core/file/file_core.json"
+            "$ref": "core/file/file_core.json",
+            "user_friendly": "File core"
         },
         "ncbi_taxon_id" : {
             "description": "A taxonomy ID (taxonID) from NCBI.",
