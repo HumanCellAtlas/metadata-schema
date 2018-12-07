@@ -44,7 +44,7 @@
         "read_index": {
             "description": "The sequencing read this file represents.",
             "type": "string",
-            "example": "Should be one of: read1, read2, index1, index2, or 'single-end, non-indexed'",
+            "example": "Should be one of: read1, read2, index1, index2",
             "enum": [
                 "read1",
                 "read2",
