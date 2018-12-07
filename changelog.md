@@ -7,11 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/biomaterial/imaged_specimen.json - v2.0.2] - 2018-12-07
 ### Removed
 Removed extra example and fixed field name to match Style Guide. Fixes #668
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/donor_organism.json - v10.2.1] - 2018-12-07
 ### Changed
