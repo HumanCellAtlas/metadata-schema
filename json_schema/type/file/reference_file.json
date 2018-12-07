@@ -59,7 +59,7 @@
             "user_friendly": "Genus species"
         },
         "assembly_type": {
-            "description": "The assembly type of the genome reference.",
+            "description": "The assembly type of the genome reference file.",
             "type": "string",
             "enum": [
                 "primary assembly",
@@ -70,7 +70,7 @@
             "example": "Should be one of: primary assembly, complete assembly, or patch assembly."
         },
         "reference_type": {
-            "description": "The type of the genome reference.",
+            "description": "The type of the reference file.",
             "type": "string",
             "enum": [
                 "genome sequence",
