@@ -22,7 +22,9 @@
         },
         "text": {
             "description": "The name of the biological macromolecule being used.",
-            "type": "string"
+            "type": "string",
+            "example": "polyA RNA, mRNA",
+            "user_friendly": "Biological macromolecule"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -33,11 +35,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "example": "OBI:0000869, CHEBI:33699",
+            "user_friendly": "Biological macromolecule ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "example": "polyA RNA, messenger RNA",
+            "user_friendly": "Biological macromolecule ontology label"
         }
     }
 }
