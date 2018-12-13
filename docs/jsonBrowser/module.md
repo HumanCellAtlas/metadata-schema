@@ -35,6 +35,7 @@ days_on_ventilator | Number of days on ventilator before death occurred. | numbe
 hardy_scale | Value of 4-point Hardy scale cause of death classification: (0) ventilator case, (1) violent and fast death, (2) fast death of natural causes, (3) intermediate death, or (4) slow death. | integer | no |  | Value on Hardy scale |  | 0
 time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ. | string | no |  | Time of death |  | 2016-01-21T00:00:00Z
 organ_donation_death_type | Type of death preceding organ donation (for organ donors only). | string | no |  | Organ donation death type | Donation after circulatory death (DCD), Donation after brainstem death (DBD) | Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).
+normothermic_regional_perfusion | Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise. | string | no |  | Normothermic regional perfusion? | yes, no, unknown | Should be one of: yes, no, or unknown.
 
 ## Familial relationship<a name='Familial relationship'></a>
 _Information about other organisms that this organism is related to._
