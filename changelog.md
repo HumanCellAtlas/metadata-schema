@@ -7,6 +7,32 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/sequence_file.json - v7.0.1] - 2018-12-13
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #672.
+
+### [system/license.json - v1.0.0] - 2018-12-07
+### Added
+Added system entity to capture license under which data are released. Fixes #338.
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/protocol/target.json - v1.0.1] - 2018-12-07
+### Changed
+Changed molecule_ID to lower case in target.json Fixes #666
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.1] - 2018-12-07
+### Changed
+Changed molecule_ID to lower case in target.json Fixes #666
+
+### [type/biomaterial/imaged_specimen.json - v2.0.2] - 2018-12-07
+### Removed
+Removed extra example and fixed field name to match Style Guide. Fixes #668
+
+### [type/biomaterial/donor_organism.json - v10.2.1] - 2018-12-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #650.
+
 ### [module/project/contact.json - v6.1.4] - 2018-12-07
 ### Changed
 Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #662.
@@ -73,7 +99,7 @@ Changed name of the required field channel_name to channel_id
 
 ### [type/biomaterial/donor_organism.json - v10.2.0] - 2018-11-28
 ### Added
-Added optional field `timecourse`
+Added optional field timecourse.
 
 ### [system/links.json - v1.1.4] - 2018-11-27
 ### Fixed
@@ -86,8 +112,6 @@ Changed channel field type to array
 ### [type/protocol/imaging/imaging_protocol.json - v9.0.0] - 2018-11-21
 ### Changed
 Changed channel field type to array
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/imaging_target.json - v1.1.0] - 2018-11-19
 ### Changed

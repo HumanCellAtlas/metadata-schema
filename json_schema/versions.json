@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2018-12-07T10:29:00Z",
+    "last_update_date": "2018-12-13T14:28:19Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -71,10 +71,11 @@
             },
             "protocol": {
                 "channel": "2.0.0",
-                "target": "1.0.0"
+                "target": "1.0.1"
             }
         },
         "system": {
+            "license": "1.0.0",
             "links": "1.1.4",
             "provenance": "1.0.3"
         },
@@ -82,8 +83,8 @@
             "biomaterial": {
                 "cell_line": "9.0.1",
                 "cell_suspension": "8.6.2",
-                "donor_organism": "10.2.0",
-                "imaged_specimen": "2.0.1",
+                "donor_organism": "10.2.1",
+                "imaged_specimen": "2.0.2",
                 "organoid": "8.3.9",
                 "specimen_from_organism": "6.3.4"
             },
@@ -91,7 +92,7 @@
                 "analysis_file": "5.3.4",
                 "image_file": "1.0.1",
                 "reference_file": "2.2.5",
-                "sequence_file": "7.0.0",
+                "sequence_file": "7.0.1",
                 "supplementary_file": "1.1.5"
             },
             "process": {
@@ -117,7 +118,7 @@
                 },
                 "imaging": {
                     "imaging_preparation_protocol": "1.0.1",
-                    "imaging_protocol": "11.0.0"
+                    "imaging_protocol": "11.0.1"
                 },
                 "protocol": "6.3.5",
                 "sequencing": {
