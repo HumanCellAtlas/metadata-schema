@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,major,"Removed normothermic_regional_perfusion. Fixes #590.",,
-module/biomaterial/death,minor,"Added normothermic_regional_perfusion. Fixes #590.",,
