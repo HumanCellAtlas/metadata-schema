@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/sequence_file.json - v7.0.1] - 2018-12-13
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #672.
+
 ### [system/license.json - v1.0.0] - 2018-12-07
 ### Added
 Added system entity to capture license under which data are released. Fixes #338.
