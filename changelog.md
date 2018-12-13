@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v12.0.0] - 2018-12-13
+### Changed
+Changed donor_organism to make development_stage required. Fixes #607
+
 ### [type/biomaterial/donor_organism.json - v11.0.0] - 2018-12-13
 ### Removed
 Removed normothermic_regional_perfusion. Fixes #590.
