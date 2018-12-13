@@ -186,11 +186,11 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
-read_index | Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read or represents a single-end, non-indexed library. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2, or 'single-end, non-indexed'
-lane_index | The index of the lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+read_index | The sequencing read this file represents. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
+lane_index | The lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
-insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRR, SRR, or ERR. | array | no |  | INSDC run |  | SRR0000000
+insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession from the DDBJ, NCBI, or EMBL-EBI. | array | no |  | INSDC run accession |  | SRR0000000
 library_prep_id | A unique ID for the library preparation. | string | no |  | Library preparation ID |  | tech_rep_group_001
 
 ## Supplementary file
