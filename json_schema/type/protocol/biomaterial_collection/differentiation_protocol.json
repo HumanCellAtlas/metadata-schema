@@ -70,6 +70,7 @@
             "description": "A list of purchased reagents used in the differentiation protocol.",
             "type": "array",
             "items": {
+                "type": "object",
                 "$ref": "module/process/purchased_reagents.json"
             },
             "user_friendly": "Differentiation reagents"
