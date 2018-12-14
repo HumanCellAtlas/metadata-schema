@@ -52,7 +52,7 @@
             "description": "Local name for the particular machine on which the biomaterial was sequenced.",
             "type": "string",
             "user_friendly": "Local machine name",
-            "example": "Machine1"
+            "example": "Machine1, HSMA-20"
         },
         "paired_end": {
             "description": "Was the sequenced molecule sequenced from both ends?",
