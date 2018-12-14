@@ -82,11 +82,12 @@
             "guidelines": "Enter accession if project has been archived. Accession must start with GSE."
         },
         "array_express_investigation": {
-            "description": "EBI ArrayExpress accession number, if data has been submitted.",
+            "description": "An ArrayExpress accession.",
             "type": "string",
             "pattern": "^E-....-.*$",
             "example": "E-AAAA-00",
-            "user_friendly": "ArrayExpress accession"
+            "user_friendly": "ArrayExpress accession",
+            "guidelines": "Enter accession if project has been archived. Accession must start with E-."
         },
         "insdc_study": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession if study has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD.",
