@@ -41,10 +41,11 @@
             "user_friendly": "File core"
         },
         "file_description" : {
-            "description": "A short description of the file content. This could include information about how the file was generated.",
+            "description": "A short description of the file contents.",
             "type": "string",
             "example": "Enrichment protocol",
-            "user_friendly": "File description"
+            "user_friendly": "File description",
+            "guidelines": "File description could include information about how the file was generated."
         }
     }
 }
