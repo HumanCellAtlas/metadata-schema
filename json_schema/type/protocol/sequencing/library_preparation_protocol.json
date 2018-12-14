@@ -67,7 +67,7 @@
                 "mitochondria"
             ],
             "user_friendly": "Nucleic acid source",
-            "example": "Should be one of: bulk cell, single cell, single nucleus, bulk nuclei, or mitochondria."
+            "example": "Should be one of: single cell, bulk cell, single nucleus, bulk nuclei, or mitochondria."
         },
         "library_construction_approach": {
             "description": "The general method for sequencing library construction.",
@@ -125,7 +125,7 @@
             "guidelines": "Enter 'first' if sequenced molecule is only the strand generated during first strand synthesis. Enter 'second' if sequenced molecule is only the strand generated during second strand synthesis. Enter 'unstranded' if both strands were sequenced."
         },
         "spike_in_kit": {
-            "description": "Information about a spike-in kit, if used.",
+            "description": "Information about a spike-in kit.",
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Spike-in kit"
