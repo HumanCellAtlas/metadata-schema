@@ -49,10 +49,11 @@
             "example": "fluorescence-activated cell sorting"
         },
         "markers": {
-            "description": "A space-delimited list of markers with +/-.",
+            "description": "A list of markers used to enrich for or against certain cells.",
             "type": "string",
             "example": "CD4+ CD8-",
-            "user_friendly": "Markers"
+            "user_friendly": "Markers",
+            "guidelines": "Format as a space-delimited list of markers with +/- where + means enriched for and - means enriched against."
         },
         "min_size_selected": {
             "description": "Minimum cell or organelle size passing selection, in microns.",
