@@ -90,11 +90,12 @@
             "guidelines": "Enter accession if project has been archived. Accession must start with E-."
         },
         "insdc_study": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession if study has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD.",
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) study accession.",
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "example": "PRJNA000000",
-            "user_friendly": "INSDC study accession"
+            "user_friendly": "INSDC study accession",
+            "guidelines": "Enter accession if study has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with PRJD, PRJN, or PRJE, respectively."
         },
         "funders": {
             "description": "A list of funding source(s) supporting the project.",
