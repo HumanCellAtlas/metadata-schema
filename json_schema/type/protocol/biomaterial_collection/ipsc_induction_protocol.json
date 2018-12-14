@@ -8,7 +8,7 @@
         "protocol_core",
         "ipsc_induction_method"
     ],
-    "title": "iPCS induction protocol",
+    "title": "iPSC induction protocol",
     "name": "ipsc_induction_protocol",
     "type": "object",
     "properties": {
@@ -98,7 +98,7 @@
             "description": "Whether the induced pluripotent stem cell was prepared in-house.",
             "type": "boolean",
             "user_friendly": "iPSC prepared in-house?",
-            "example": "Should be one of: yes, no."
+            "example": "Should be one of: yes, or no."
         },
         "protocol_reagents": {
             "description": "A list of additional purchased reagents used in this protocol.",
