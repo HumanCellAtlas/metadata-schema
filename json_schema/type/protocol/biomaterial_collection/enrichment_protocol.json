@@ -45,8 +45,7 @@
             "description": "The method by which enrichment was achieved.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Enrichment method",
-            "example": "fluorescence-activated cell sorting"
+            "user_friendly": "Enrichment method"
         },
         "markers": {
             "description": "A list of markers used to enrich for or against certain cells.",
