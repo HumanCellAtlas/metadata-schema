@@ -41,7 +41,7 @@
             "user_friendly": "Project core"
         },
         "contributors": {
-            "description": "List of people contributing to any aspect of the project.",
+            "description": "People contributing to any aspect of the project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/contact.json"
@@ -58,7 +58,7 @@
             "user_friendly": "Supplementary link(s)"
         },
         "publications": {
-            "description": "A list of publications resulting from this project.",
+            "description": "Publications resulting from this project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/publication.json"
@@ -98,12 +98,12 @@
             "guidelines": "Enter accession if study has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with PRJD, PRJN, or PRJE, respectively."
         },
         "funders": {
-            "description": "A list of funding source(s) supporting the project.",
+            "description": "Funding source(s) supporting the project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/funder.json"
             },
-            "user_friendly": "Project funding source(s)"
+            "user_friendly": "Funding source(s)"
         }
     }
 }
