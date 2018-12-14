@@ -98,7 +98,8 @@
                 "5 prime end bias",
                 "full length"
             ],
-            "user_friendly": "End bias"
+            "user_friendly": "End bias",
+            "guidelines": "Enter 'full length' if there is no tag or end bias."
         },
         "primer": {
             "description": "Primer used for cDNA synthesis from RNA.",
