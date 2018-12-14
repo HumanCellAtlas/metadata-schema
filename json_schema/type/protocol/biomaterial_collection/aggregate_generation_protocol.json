@@ -44,13 +44,13 @@
         "aggregate_formation_method": {
             "description": "Method used to form cell aggregates.",
             "type": "string",
-            "example": "rocking, suspension cultures, hanging drops, spinner flasks",
+            "example": "rocking; suspension cultures; hanging drops; spinner flasks",
             "user_friendly": "Aggregate formation method"
         },
         "aggregate_cell_uniformity": {
             "description": "Description of uniformity of the cell aggregates after they are formed.",
             "type": "string",
-            "example": "Mostly homogenous EBs of variable cell numbers",
+            "example": "Mostly homogenous embryoid bodies of variable cell numbers",
             "user_friendly": "Aggregate cell uniformity"
         }
     }
