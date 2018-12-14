@@ -43,7 +43,7 @@
             "user_friendly": "Protocol core"
         },
         "protocol_type": {
-            "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+            "description": "The type of protocol.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Protocol type"
