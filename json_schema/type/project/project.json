@@ -66,7 +66,7 @@
             "user_friendly": "Publications"
         },
         "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession.",
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
             "type": "string",
             "pattern": "^[D|E|S]RP[0-9]+$",
             "example": "SRP000000",
@@ -74,7 +74,7 @@
             "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
         "geo_series": {
-            "description": "A GEO series accession.",
+            "description": "A Gene Expression Omnibus (GEO) series accession.",
             "type": "string",
             "pattern": "^GSE.*$",
             "example": "GSE00000",
