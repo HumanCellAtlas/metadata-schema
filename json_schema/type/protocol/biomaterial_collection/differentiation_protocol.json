@@ -55,7 +55,7 @@
             "example": "RPMI 1640 + B27; Neurobasal Media; StemPro-34 Serum-Free Medium"
         },
         "small_molecules":{
-            "description": "Differentiation small molecules added to stem cell medium to induce a specific differentiation response.",
+            "description": "Small molecules added to stem cell medium to induce a specific differentiation response.",
             "type": "string",
             "user_friendly": "Small molecules",
             "example": "Retinoic Acid; CHIR99021 (GSK-inhibitor); Activin A; BMP4"
