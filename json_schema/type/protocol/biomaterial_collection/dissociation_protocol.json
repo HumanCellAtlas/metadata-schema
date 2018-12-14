@@ -38,7 +38,8 @@
         "protocol_core" : {
             "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/protocol/protocol_core.json"
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
         },
         "dissociation_method": {
             "description": "How cells or organelles were dissociated.",
