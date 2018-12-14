@@ -183,7 +183,8 @@
                 "run",
                 "copy-forward"
             ],
-            "user_friendly": "Analysis run type"
+            "user_friendly": "Analysis run type",
+            "example": "Should be one of: run, or copy-forward."
         },
         "reference_bundle": {
             "description": "Bundle containing the reference used in running the pipeline.",
