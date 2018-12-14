@@ -125,12 +125,13 @@
             "user_friendly": "Process type"
         },
         "inputs": {
-            "description": "Input parameters used in the pipeline run, these can be files or string values (settings).",
+            "description": "Input parameters used in the pipeline run.",
             "type": "array",
             "items": {
                 "$ref": "type/process/analysis/analysis_process.json#/definitions/parameter"
             },
-            "user_friendly": "Input parameters"
+            "user_friendly": "Input parameters",
+            "guidelines": "Inputs can be files or string values (settings)."
         },
         "tasks": {
             "description": "Descriptions of tasks in the workflow.",
