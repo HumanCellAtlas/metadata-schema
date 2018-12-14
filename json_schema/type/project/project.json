@@ -51,7 +51,7 @@
         "supplementary_links": {
             "description": "External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded.",
             "type": "array",
-            "example": "https://github.com/czbiohub/tabula-muris",
+            "example": "https://github.com/czbiohub/tabula-muris; http://celltag.org/",
             "items": {
                 "type": "string"
             },
