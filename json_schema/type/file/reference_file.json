@@ -58,17 +58,6 @@
             "$ref": "module/ontology/species_ontology.json",
             "user_friendly": "Genus species"
         },
-        "assembly_type": {
-            "description": "The assembly type of the genome reference file.",
-            "type": "string",
-            "enum": [
-                "primary assembly",
-                "complete assembly",
-                "patch assembly"
-            ],
-            "user_friendly": "Genome assembly type",
-            "example": "Should be one of: primary assembly, complete assembly, or patch assembly."
-        },
         "reference_type": {
             "description": "The type of the reference file.",
             "type": "string",
@@ -82,8 +71,19 @@
             "user_friendly": "Reference type",
             "example": "Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index."
         },
+        "assembly_type": {
+            "description": "The assembly type of the genome reference file.",
+            "type": "string",
+            "enum": [
+                "primary assembly",
+                "complete assembly",
+                "patch assembly"
+            ],
+            "user_friendly": "Genome assembly type",
+            "example": "Should be one of: primary assembly, complete assembly, or patch assembly."
+        },
         "reference_version": {
-            "description": "The genome version of the reference.",
+            "description": "The genome version of the reference file.",
             "type": "string",
             "example": "GencodeV27",
             "user_friendly": "Reference version"
