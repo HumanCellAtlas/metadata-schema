@@ -42,11 +42,11 @@
             "user_friendly": "Protocol core"
         },
         "differentiation_method": {
-            "description": "Differentiation method applied to cell culture to induce a specific differentiation response.",
+            "description": "Method applied to cell culture to induce a specific differentiation response.",
             "type": "string",
             "user_friendly": "Differentiation method",
             "comment": "Consider making this an ontology in the future.",
-            "example": "Embryoid Body, Monolayer, Inductive Co-Culture"
+            "example": "Embryoid Body; Monolayer; Inductive Co-Culture"
         },
         "media":{
             "description": "Culture media used to induce a specific differentiation response.",
