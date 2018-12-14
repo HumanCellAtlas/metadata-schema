@@ -165,7 +165,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-ipsc_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | piggyBac transposon
+ipsc_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
 ### Imaging preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

@@ -57,7 +57,7 @@
             ],
             "user_friendly": "Induction method",
             "comment": "Consider making this field an ontology in the future",
-            "example": "piggyBac transposon"
+            "example": "Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral."
         },
         "ipsc_induction_factors": {
             "description": "Induction factors added to primary cell culture to induce pluripotency.",
