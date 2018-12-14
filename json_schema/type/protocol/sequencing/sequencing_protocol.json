@@ -55,10 +55,10 @@
             "example": "Machine1, HSMA-20"
         },
         "paired_end": {
-            "description": "Was the sequenced molecule sequenced from both ends?",
+            "description": "Whether the sequenced molecule was sequenced from both ends.",
             "type": "boolean",
-            "example": "Should be one of: yes, no.",
-            "guidelines": "If 10x was used, enter no.",
+            "example": "Should be one of: yes, or no.",
+            "guidelines": "If 3' 10x v2 was used, enter no.",
             "user_friendly": "Paired end?"
         },
         "sequencing_approach": {
