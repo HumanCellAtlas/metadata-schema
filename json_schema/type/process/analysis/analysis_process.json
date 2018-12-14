@@ -177,7 +177,7 @@
             "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
         },
         "analysis_run_type": {
-            "description": "Indicator of whether the analysis actually ran or was just copied forward as an optimization.",
+            "description": "Whether the analysis was run or was copied forward as an optimization.",
             "type": "string",
             "enum": [
                 "run",
