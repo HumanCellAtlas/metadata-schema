@@ -229,7 +229,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
+process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) | Process core |  | 
 process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array | yes |  | Input parameters |  | 
 tasks | Descriptions of tasks in the workflow. | array | yes |  | Workflow tasks |  | 
