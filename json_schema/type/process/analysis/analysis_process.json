@@ -128,6 +128,7 @@
             "description": "Input parameters used in the pipeline run.",
             "type": "array",
             "items": {
+                "type": "object",
                 "$ref": "type/process/analysis/analysis_process.json#/definitions/parameter"
             },
             "user_friendly": "Input parameters",
@@ -137,6 +138,7 @@
             "description": "Descriptions of tasks in the workflow.",
             "type": "array",
             "items": {
+                "type": "object",
                 "$ref": "type/process/analysis/analysis_process.json#/definitions/task"
             },
             "user_friendly": "Workflow tasks"
