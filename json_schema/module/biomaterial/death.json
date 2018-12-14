@@ -63,6 +63,17 @@
             ],
             "user_friendly": "Organ donation death type",
             "example": "Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD)."
+        },
+        "normothermic_regional_perfusion": {
+            "description": "Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise.",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "user_friendly": "Normothermic regional perfusion?",
+            "example": "Should be one of: yes, no, or unknown."
         }
     }
 }
