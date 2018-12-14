@@ -158,7 +158,7 @@
                 "type": "object",
                 "$ref": "type/file/analysis_file.json"
             },
-            "user_friendly": "Outputs"
+            "user_friendly": "Output files"
         },
         "timestamp_start_utc": {
             "description": "Initial start time of the full pipeline in UTC.",
