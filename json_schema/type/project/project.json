@@ -37,7 +37,8 @@
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",
-            "$ref": "core/project/project_core.json"
+            "$ref": "core/project/project_core.json",
+            "user_friendly": "Project core"
         },
         "contributors": {
             "description": "List of people contributing to any aspect of the project.",
