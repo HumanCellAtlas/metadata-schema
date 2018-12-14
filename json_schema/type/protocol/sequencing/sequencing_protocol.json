@@ -43,7 +43,7 @@
             "$ref": "core/protocol/protocol_core.json"
         },
          "instrument_manufacturer_model": {
-            "description": "The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548.",
+            "description": "The manufacturer and model of the sequencer used.",
             "type": "object",
             "$ref": "module/ontology/instrument_ontology.json",
             "example": "Illumina HiSeq 4000",
