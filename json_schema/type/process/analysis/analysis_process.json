@@ -135,7 +135,7 @@
             "guidelines": "Inputs can be files or string values (settings)."
         },
         "tasks": {
-            "description": "Descriptions of tasks in the workflow.",
+            "description": "Information about steps in the workflow.",
             "type": "array",
             "items": {
                 "type": "object",
