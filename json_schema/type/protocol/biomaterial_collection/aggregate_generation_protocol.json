@@ -42,7 +42,7 @@
             "user_friendly": "Protocol core"
         },
         "aggregate_formation_method": {
-            "description": "Method used to form cell aggreagtes.",
+            "description": "Method used to form cell aggregates.",
             "type": "string",
             "example": "rocking, suspension cultures, hanging drops, spinner flasks",
             "user_friendly": "Aggregate formation method"
