@@ -44,13 +44,13 @@
             "user-friendly": "Protocol core"
         },
          "instrument_manufacturer_model": {
-            "description": "The manufacturer and model of the sequencer used.",
+            "description": "The manufacturer and model of the sequencer.",
             "type": "object",
             "$ref": "module/ontology/instrument_ontology.json",
             "user_friendly": "Instrument manufacturer and model"
         },
         "local_machine_name": {
-            "description": "Local name for the particular machine on which the biomaterial was sequenced.",
+            "description": "Local name for the particular machine used for sequencing.",
             "type": "string",
             "user_friendly": "Local machine name",
             "example": "Machine1, HSMA-20"
@@ -63,10 +63,10 @@
             "user_friendly": "Paired end?"
         },
         "sequencing_approach": {
-            "description": "The general approach for sequencing.",
+            "description": "The general method for sequencing.",
             "type": "object",
             "$ref": "module/ontology/sequencing_ontology.json",
-            "user_friendly": "Sequencing approach"
+            "user_friendly": "Sequencing method"
         },
         "10x": {
             "description": "Fields specific for 10x experiments.",

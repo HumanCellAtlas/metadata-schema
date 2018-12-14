@@ -197,9 +197,9 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-instrument_manufacturer_model | The manufacturer and model of the sequencer used. | object | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
+instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
 paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean |  | Paired end? |  | Should be one of: yes, or no.
-sequencing_approach | The general approach for sequencing. | object | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing approach |  | 
+sequencing_approach | The general method for sequencing. | object | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
 ## Module
 ### Cell morphology<a name='Cell morphology'></a>
 _There are no required properties in schema Cell morphology_
