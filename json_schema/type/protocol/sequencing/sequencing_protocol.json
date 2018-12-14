@@ -46,7 +46,6 @@
             "description": "The manufacturer and model of the sequencer used.",
             "type": "object",
             "$ref": "module/ontology/instrument_ontology.json",
-            "example": "Illumina HiSeq 4000",
             "user_friendly": "Instrument manufacturer and model"
         },
         "local_machine_name": {
@@ -66,8 +65,7 @@
             "description": "The general approach for sequencing.",
             "type": "object",
             "$ref": "module/ontology/sequencing_ontology.json",
-            "user_friendly": "Sequencing approach",
-            "example": "full length single cell RNA sequencing"
+            "user_friendly": "Sequencing approach"
         },
         "10x": {
             "description": "Fields specific for 10x experiments.",
