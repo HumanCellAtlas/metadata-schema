@@ -71,14 +71,15 @@
             "pattern": "^[D|E|S]RP[0-9]+$",
             "example": "SRP000000",
             "user_friendly": "INSDC project accession",
-            "guidelines": "Enter accession is project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
+            "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
         "geo_series": {
-            "description": "GEO accession number, if data has been submitted. Accession must start with GSE.",
+            "description": "A GEO series accession.",
             "type": "string",
             "pattern": "^GSE.*$",
             "example": "GSE00000",
-            "user_friendly": "GEO series accession"
+            "user_friendly": "GEO series accession",
+            "guidelines": "Enter accession if project has been archived. Accession must start with GSE."
         },
         "array_express_investigation": {
             "description": "EBI ArrayExpress accession number, if data has been submitted.",
