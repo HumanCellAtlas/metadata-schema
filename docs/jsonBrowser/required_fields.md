@@ -104,7 +104,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
 process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) | Process core |  | 
-process_type | The type of process. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+process_type | The type of process. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run, these can be files or string values (settings). | array |  | Input parameters |  | 
 tasks | Descriptions of tasks in the workflow. | array |  | Workflow tasks |  | 
 input_bundles | The input bundles used in this analysis run. | array |  | Input bundles |  | 
