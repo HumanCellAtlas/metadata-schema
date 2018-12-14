@@ -51,7 +51,7 @@
         "markers": {
             "description": "A list of markers used to enrich for or against certain cells.",
             "type": "string",
-            "example": "CD4+ CD8-",
+            "example": "CD4+ CD8-; HLA-G+",
             "user_friendly": "Markers",
             "guidelines": "Format as a space-delimited list of markers with +/- where + means enriched for and - means enriched against."
         },
