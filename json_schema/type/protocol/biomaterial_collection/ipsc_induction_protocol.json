@@ -75,7 +75,7 @@
             "description": "Description of how pluripotency was tested in induced pluripotent stem cells.",
             "type": "string",
             "user_friendly": "Pluripotency test",
-            "example": "teratoma assay"
+            "example": "Teratoma formation; PluriTest; Rt-PCR"
         },
         "percent_pluripotency": {
             "description": "Percent of iPSCs that passed the pluripotency test.",
