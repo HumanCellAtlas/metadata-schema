@@ -295,7 +295,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 aggregate_formation_method | Method used to form cell aggregates. | string | yes |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
-aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous embryoid bodies of variable cell numbers
+aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous embryoid bodies of variable cell numbers; Low-homogeneity in morphology and size
 
 ## Collection protocol
 _Information about the biomaterial collection protocol._

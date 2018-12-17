@@ -50,7 +50,7 @@
         "aggregate_cell_uniformity": {
             "description": "Description of uniformity of the cell aggregates after they are formed.",
             "type": "string",
-            "example": "Mostly homogenous embryoid bodies of variable cell numbers",
+            "example": "Mostly homogenous embryoid bodies of variable cell numbers; Low-homogeneity in morphology and size",
             "user_friendly": "Aggregate cell uniformity"
         }
     }
