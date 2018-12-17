@@ -79,7 +79,7 @@
             "description": "Targeted pathway for specific differentiation response.",
             "type": "string",
             "user_friendly": "Target pathway",
-            "example": "Wnt Pathway",
+            "example": "WNT pathway; Hedgehog signaling pathway",
             "comment": "Consider making this an ontology in the future."
         },
         "validation_method": {
