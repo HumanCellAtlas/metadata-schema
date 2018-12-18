@@ -81,11 +81,11 @@ Location: module/biomaterial/medical_history.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
-medication | Medications the individual was taking at time of biomaterial collection. | string | no |  | Medications |  | Naproxen 500mg/day
-smoking_history | Estimated number of cigarettes smoked per day and for how many years. | string | no |  | Smoking history |  | 20 cigarettes/day for 25 years, stopped 2000
+medication | Medications the individual was taking at time of biomaterial collection. | string | no |  | Medications |  | Naproxen 500mg/day; Citalopram 20mg/day
+smoking_history | Estimated number of cigarettes smoked per day. | string | no |  | Smoking history |  | 20 cigarettes/day for 25 years, stopped 2000
 nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
-test_results | Results from any medical tests performed on the individual. | string | no |  | Test results |  | 
-treatment | Description of treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | 
+test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | 
+treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | 
 
 ## Mouse-specific<a name='Mouse-specific'></a>
 _Information specific to an organism that is a mouse (Mus musculus)._

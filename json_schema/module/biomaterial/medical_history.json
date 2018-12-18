@@ -22,17 +22,17 @@
             "type": "string",
             "user_friendly": "Alcohol history",
             "example": "3-6 alcohol units/day; 1 drink per day",
-            "guidelines": "Indicate the amount consumed per day with units such as alcohol units (10mL or 8g of alcohol) or drinks (14g of alcohol)."
+            "guidelines": "Enter the amount consumed per day using units such as alcohol units (10mL or 8g of alcohol) or drinks (14g of alcohol)."
         },
         "medication": {
             "description": "Medications the individual was taking at time of biomaterial collection.",
             "type": "string",
             "user_friendly": "Medications",
-            "example": "Naproxen 500mg/day",
-            "guidelines": "Enter the medication and approximate dosage."
+            "example": "Naproxen 500mg/day; Citalopram 20mg/day",
+            "guidelines": "Enter the medication and dosage. Separate multiple medications with commas."
         },
         "smoking_history": {
-            "description": "Estimated number of cigarettes smoked per day and for how many years.",
+            "description": "Estimated number of cigarettes smoked per day.",
             "type": "string",
             "user_friendly": "Smoking history",
             "example": "20 cigarettes/day for 25 years, stopped 2000",
@@ -50,12 +50,12 @@
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
         "test_results": {
-            "description": "Results from any medical tests performed on the individual.",
+            "description": "Results from medical tests performed on the individual.",
             "type": "string",
             "user_friendly": "Test results"
         },
         "treatment": {
-            "description": "Description of treatments the individual has undergone prior to biomaterial collection.",
+            "description": "Treatments the individual has undergone prior to biomaterial collection.",
             "type": "string",
             "user_friendly": "Treatments"
         }
