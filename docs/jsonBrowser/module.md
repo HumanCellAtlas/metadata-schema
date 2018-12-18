@@ -441,15 +441,15 @@ Location: module/project/contact.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe. Format: first name, middle name or initial, last name.
-email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com. Enter a valid email address.
-phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789. Enter a valid phone number, including country code.
-institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI
-laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Department of Biology
-address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091. Include street name and number, city, country division, and postal code.
+contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
+email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com
+phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
+institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI; University of Washington
+laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Division of Vaccine Discovery; Department of Biology
+address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
 country | Country where the individual works. | string | no |  | Country |  | USA
-corresponding_contributor | Whether the individual is a corresponding contributor for the project. | boolean | no |  | Corresponding contributor? |  | Should be one of: yes, or no.
-project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator
+corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor? |  | Should be one of: yes, or no.
+project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator; computational scientist
 orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
 
 ## Funder<a name='Funder'></a>
@@ -483,28 +483,28 @@ Location: module/protocol/channel.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-channel_name | User given name.  If there is an accompanying codebook, this name should correspond to a channel name used in the codebook. | string | yes |  | Channel name |  | far red
+channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string | yes |  | Channel ID |  | 1, A
 excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
 filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
 multiplexed | Were multiple targets detected simultaneously in this channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
 target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
 exposure_time | Acquisition time for a single image per channel in miliseconds | number | yes |  | Exposure time |  | 400
 
-## Imaging target<a name='Imaging target'></a>
+## Target<a name='Target'></a>
 _Information about a single microscope channel._
 
-Location: module/protocol/imaging_target.json
+Location: module/protocol/target.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-target_molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook. | string | no |  | Target molecule name |  | ACTA1
-target_molecule_ID | An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot). | string | no |  | Target molecule identifier. |  | CHEBI:85345, ensembl_9606
-target_subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
+molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook. | string | no |  | Target molecule name |  | ACTA1, cFos
+molecule_id | An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot). | string | no |  | Target molecule identifier. |  | CHEBI:85345, ensembl_9606
+subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
 reagent_name | Name of reagent used to detect target. | string | no |  | Reagent name |  | 
 purchased_reagent_details | Information describing purchased reagent used to detect target. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased reagent details |  | 
 probe_sequence | Sequence of a probe used to detect target. | string | no |  | Probe sequence |  | 
-fluorophore | Fluorophore used to detect target in non-multiplexed experiments. | string | no |  | Fluorophore |  | FITC
+fluorophore | Fluorophore used to detect target. | string | no |  | Fluorophore |  | FITC
 assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH, smFISH, immunofluorescence, fluorescent cell stain
 multiplexed | Were multiple targets detected simultaneously in one channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
-channel | Channel name used to assay signal in non-multiplexed experiments. Should be consistent with the name in channel tab. | string | yes |  | Channel |  | far red
+channel_id | Channel ID used to assay signal. Should be consistent with the ID in the channel tab. | array | no |  | Channel |  | 1, A
 

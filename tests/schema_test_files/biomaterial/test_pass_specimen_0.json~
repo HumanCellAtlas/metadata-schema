@@ -1,0 +1,21 @@
+{
+  "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism",
+  "schema_version" : "5.1.0",
+  "schema_type": "biomaterial",
+  "biomaterial_core": {
+    "biomaterial_id": "s1",
+    "biomaterial_name": "PBMCs",
+    "biomaterial_description": "peripheral blood mononuclear cells (PBMCs)",
+    "ncbi_taxon_id": [
+      9606
+    ],
+    "has_input_biomaterial": "d1"
+  },
+  "organ": {
+    "text": "blood",
+    "ontology": "UBERON_0000178"
+  },
+  "organ_part": {
+    "text": "peripheral blood mononuclear cells (PBMCs)"
+  }
+}
