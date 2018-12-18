@@ -18,16 +18,25 @@
             "example": "4.6.1"
         },
         "alcohol_history": {
-            "description": "Estimated number of drink units consumed per day.",
+            "description": "Estimated amount of alcohol consumed per day.",
             "type": "string",
             "user_friendly": "Alcohol history",
-            "example": "3-6 units/day"
+            "example": "3-6 alcohol units/day; 1 drink per day",
+            "guidelines": "Indicate the amount consumed per day with units such as alcohol units (10mL or 8g of alcohol) or drinks (14g of alcohol)."
         },
         "medication": {
-            "description": "List of medications the individual was taking at time of biomaterial collection.",
+            "description": "Medications the individual was taking at time of biomaterial collection.",
             "type": "string",
             "user_friendly": "Medications",
-            "example": "Naproxen 500mg/day, "
+            "example": "Naproxen 500mg/day",
+            "guidelines": "Enter the medication and approximate dosage."
+        },
+        "smoking_history": {
+            "description": "Estimated number of cigarettes smoked per day and for how many years.",
+            "type": "string",
+            "user_friendly": "Smoking history",
+            "example": "20 cigarettes/day for 25 years, stopped 2000",
+            "guidelines": "Enter an estimated number of cigarettes smoked per day and for how many years."
         },
         "nutritional_state": {
             "description": "Nutritional state of individual at time of biomaterial collection.",
@@ -39,12 +48,6 @@
             ],
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
-        },
-        "smoking_history": {
-            "description": "Estimated number of cigarettes smoked per day and for how many years.",
-            "type": "string",
-            "user_friendly": "Smoking history",
-            "example": "Smoker, 20/day for 25 years, stopped 2000"
         },
         "test_results": {
             "description": "Results from any medical tests performed on the individual.",
