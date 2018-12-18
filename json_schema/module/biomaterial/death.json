@@ -21,14 +21,14 @@
             "example": "4.6.1"
         },
         "cause_of_death": {
-            "description": "Conditions resulting in death of a donor or mouse.",
+            "description": "Conditions resulting in death.",
             "type": "string",
             "user_friendly": "Cause of death",
             "example": "Hypoxic brain damage; Sudden cardiac arrest",
             "guidelines": "Determined from death report for human donor or from research lab for mouse."
         }, 
         "cold_perfused": {
-            "description": "Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise.",
+            "description": "Whether perfusion with cold fluid was used to help preserve tissues before heart stopped.",
             "type": "boolean",
             "user_friendly": "Cold perfused?",
             "example": "Should be one of: yes, no.",
