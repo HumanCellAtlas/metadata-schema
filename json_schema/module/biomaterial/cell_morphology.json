@@ -57,14 +57,15 @@
                 "pass",
                 "fail"
             ],
-            "example": "Must be one of: pass, fail",
+            "example": "Should be one of: pass, fail",
             "user_friendly": "Cell viability pass/fail result"
         },
         "percent_necrosis": {
             "description" : "Percent of cells identified to be necrotic.",
             "type": "number",
             "example": 10,
-            "user_friendly": "Percent necrotic cells"
+            "user_friendly": "Percent necrotic cells",
+            "guidelines": "Enter a single number."
         }
     }
 }
