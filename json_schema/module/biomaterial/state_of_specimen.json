@@ -80,11 +80,12 @@
             "guidelines": "File must be of format JPEG, TIFF, or PNG."
         },
         "postmortem_interval": {
-            "description": "Duration of time, in seconds, between when death was declared and when the specimen was preserved or processed.",
+            "description": "Duration of time between when death was declared and when the specimen was preserved or processed.",
             "type": "integer",
             "minimum": 0,
             "example": 2400,
-            "user_friendly": "Post-mortem interval"
+            "user_friendly": "Post-mortem interval",
+            "guidelines": "Enter time in seconds."
         }
     }
 }
