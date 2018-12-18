@@ -27,7 +27,7 @@
             "description": "Size of cells in Cell size unit.",
             "type": "string",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "example": "20-30",
+            "example": "15; 20-30",
             "user_friendly": "Cell size",
             "guidelines": "Enter a single value or a range. Average value is acceptable."
         },
@@ -47,7 +47,7 @@
         "cell_viability_method": {
             "description": "The method by which cell viability was determined.",
             "type": "string",
-            "example": "Fluorescein diacetate hydrolysis assay",
+            "example": "Fluorescein diacetate hydrolysis; ATP test",
             "user_friendly": "Cell viability method"
         },
         "cell_viability_result": {
