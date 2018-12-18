@@ -29,7 +29,7 @@ Location: module/biomaterial/death.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string | yes |  | Cause of death |  | 
+cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string | yes |  | Cause of death |  | Hypoxic brain damage; Sudden cardiac arrest
 cold_perfused | Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise. | boolean | no |  | Cold perfused? |  | Should be one of: yes, no.
 days_on_ventilator | Number of days on ventilator before death occurred. | number | no |  | Number of days on ventilator |  | 4
 hardy_scale | Value of 4-point Hardy scale cause of death classification: (0) ventilator case, (1) violent and fast death, (2) fast death of natural causes, (3) intermediate death, or (4) slow death. | integer | no |  | Value on Hardy scale |  | 0
