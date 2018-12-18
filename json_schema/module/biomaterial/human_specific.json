@@ -31,8 +31,7 @@
             "items": {
                 "$ref": "module/ontology/ethnicity_ontology.json"
             },
-            "user_friendly": "Ethnicity",
-            "example": "European, White, British"
+            "user_friendly": "Ethnicity"
         }
     }
 }
