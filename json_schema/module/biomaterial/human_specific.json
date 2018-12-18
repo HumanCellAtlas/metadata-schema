@@ -22,7 +22,7 @@
             "type": "number",
             "maximum": 100,
             "minimum": 5,
-             "example": 36.4,
+            "example": 36.4,
             "user_friendly": "Body mass index"
         },
         "ethnicity": {
