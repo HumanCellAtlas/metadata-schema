@@ -48,7 +48,7 @@
             "user_friendly": "Storage time unit"
         },
         "preservation_method": {
-            "description": "The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. Enter 'fresh' if not preserved.",
+            "description": "The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration.",
             "type": "string",
             "enum": [
                 "cryopreservation in liquid nitrogen (dead tissue)",
@@ -61,7 +61,8 @@
                 "fresh"
             ],
             "example": "cryopreservation in liquid nitrogen (dead tissue); fresh",
-            "user_friendly": "Preservation method"
+            "user_friendly": "Preservation method",
+            "guidelines": "Enter 'fresh' if not preserved."
         }
     }
 }
