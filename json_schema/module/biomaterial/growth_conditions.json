@@ -18,12 +18,13 @@
             "example": "4.6.1"
         },
         "passage_number": {
-            "description": "The number of passages (as an integer) that the biomaterial has been through.",
+            "description": "The number of passages that the biomaterial has been through.",
             "maximum": 1000,
             "minimum": 0,
             "type": "integer",
             "example": 22,
-            "user_friendly": "Passage number"
+            "user_friendly": "Passage number",
+            "guidelines": "Enter a single integer."
         },
         "growth_medium": {
             "description": "The solid, liquid, or semi-solid medium used to support growth.",
@@ -68,11 +69,12 @@
         "drug_treatment": {
             "description": "Description of drugs added to the growth medium.",
             "type": "string",
-            "example": "100 ug/mL ampicillin; 1.0 uL/mL tetracycline",
-            "user_friendly": "Drug treatment"
+            "example": "100 ug/mL ampicillin; 15 ug/mL tetracycline",
+            "user_friendly": "Drug treatment",
+            "guidelines": "Provide the drug name and concentration with units. List multiple drugs separated by commas."
         },
         "feeder_layer_type": {
-            "description": "Type of feeder layer cells biomaterial was grown on.",
+            "description": "Type of feeder layer cells on which biomaterial was grown.",
             "type": "string",
             "enum": [
                 "feeder-free",
