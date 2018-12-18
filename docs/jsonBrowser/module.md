@@ -15,7 +15,7 @@ Location: module/biomaterial/cell_morphology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells, form single layer colonies
-cell_size | Size of cells in Cell size unit. Average value is acceptable. | string | no |  | Cell size |  | 20-30
+cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 20-30
 cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | micrometer
 percent_cell_viability | Percent of cells determined to be viable. Average value is acceptable. | number | no |  | Percent cell viability |  | 98.7
 cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis assay

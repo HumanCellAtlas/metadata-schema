@@ -24,11 +24,12 @@
             "example": "adherent cells, form single layer colonies"
         },
         "cell_size": {
-            "description": "Size of cells in Cell size unit. Average value is acceptable.",
+            "description": "Size of cells in Cell size unit.",
             "type": "string",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "example": "20-30",
-            "user_friendly": "Cell size"
+            "user_friendly": "Cell size",
+            "guidelines": "Enter a single value or a range. Average value is acceptable."
         },
         "cell_size_unit": {
             "description": "The unit in which the Cell size is expressed.",
