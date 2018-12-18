@@ -51,7 +51,8 @@
         "computational_method": {
             "description": "A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository.",
             "type": "string",
-            "user_friendly": "Computational method"
+            "user_friendly": "Computational method",
+            "example": "SmartSeq2SingleCell; 10x"
         }
     }
 }
