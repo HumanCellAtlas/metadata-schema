@@ -26,12 +26,13 @@
             "user_friendly": "Body mass index"
         },
         "ethnicity": {
-            "description": "Ethnicity of the donor organism using ontology terms from EMBL-EBI's Ancestry Ontology.",
+            "description": "Ethnicity of the donor.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/ethnicity_ontology.json"
             },
-            "user_friendly": "Ethnicity"
+            "user_friendly": "Ethnicity",
+            "guidelines": "Enter one or more ethnicities, separated by a comma."
         }
     }
 }

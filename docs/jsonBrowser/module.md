@@ -71,7 +71,7 @@ Location: module/biomaterial/human_specific.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 body_mass_index | The body mass index of the donor organism. | number | no |  | Body mass index |  | 36.4
-ethnicity | Ethnicity of the donor organism using ontology terms from EMBL-EBI's Ancestry Ontology. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
+ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
 
 ## Medical history<a name='Medical history'></a>
 _Information about the medical history of a donor._
