@@ -38,20 +38,21 @@
          "protocol_core" : {
             "description": "Core protocol-level information.",
              "type": "object",
-            "$ref": "core/protocol/protocol_core.json"
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
         },
         "enrichment_method": {
             "description": "The method by which enrichment was achieved.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Enrichment method",
-            "example": "fluorescence-activated cell sorting"
+            "user_friendly": "Enrichment method"
         },
         "markers": {
-            "description": "A space-delimited list of markers with +/-.",
+            "description": "A list of markers used to enrich for or against certain cells.",
             "type": "string",
-            "example": "CD4+ CD8-",
-            "user_friendly": "Markers"
+            "example": "CD4+ CD8-; HLA-G+",
+            "user_friendly": "Markers",
+            "guidelines": "Format as a space-delimited list of markers with +/- where + means enriched for and - means enriched against."
         },
         "min_size_selected": {
             "description": "Minimum cell or organelle size passing selection, in microns.",
