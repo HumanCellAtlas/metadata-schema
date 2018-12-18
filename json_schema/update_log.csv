@@ -1,7 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/biomaterial_collection/aggregate_generation_protocol,patch,Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.,,
-type/protocol/biomaterial_collection/collection_protocol,patch,Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.,,
-type/protocol/biomaterial_collection/differentiation_protocol,patch,Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.,,
-type/protocol/biomaterial_collection/dissociation_protocol,patch,Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.,,
-type/protocol/biomaterial_collection/enrichment_protocol,patch,Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.,,
-type/protocol/biomaterial_collection/ipsc_induction_protocol,patch,Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.,,
