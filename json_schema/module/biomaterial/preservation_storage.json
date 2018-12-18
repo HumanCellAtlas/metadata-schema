@@ -32,7 +32,7 @@
                 "RNAlater, frozen",
                 "TRIzol, frozen"
             ],
-            "example": "frozen, liquid nitrogen",
+            "example": "frozen, liquid nitrogen; fresh",
             "user_friendly": "Storage method"
         },
         "storage_time": {
@@ -61,7 +61,7 @@
                 "formalin fixed and paraffin embedded",
                 "fresh"
             ],
-            "example": "cryopreservation in liquid nitrogen (dead tissue)",
+            "example": "cryopreservation in liquid nitrogen (dead tissue); fresh",
             "user_friendly": "Preservation method"
         }
     }
