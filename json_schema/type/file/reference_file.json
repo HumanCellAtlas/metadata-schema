@@ -85,7 +85,7 @@
         "reference_version": {
             "description": "The genome version of the reference file.",
             "type": "string",
-            "example": "GencodeV27",
+            "example": "GencodeV27; Ensembl 87",
             "user_friendly": "Reference version"
         }
     }
