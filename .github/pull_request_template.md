@@ -1,9 +1,15 @@
-<!-- Please provide a meaningful title for your PR. Do not keep the default title. -->
-<!-- Use the following GitHub keyword if your PR completely resolves an issue: "Fixes #123" -->
+<!-- Please provide a meaningful title for the PR. -->
 
-<!-- Describe how you tested this PR, and how you will test the feature after it is merged. -->
+<!-- If this PR updates the metadata schema:
 
-<!-- If this PR updates the metadata schema, add a note describing the feature which will be added to the changelog. 
-Indicate whether the update is to something Added, Changed, Removed, Fixed, Deprecated, or Securit. 
-Uncomment the heading below:
-### Release notes -->
+1. Include changelog notes under "Release notes"
+2. Indicate how many Reviewers are requested to approve PR before merging -->
+
+### Release notes
+
+- 
+
+### Reviews requested
+
+- Need <> Reviewers to approve
+- Last to review/approve, merge changes
