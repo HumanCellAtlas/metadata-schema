@@ -20,17 +20,22 @@
         "parent": {
             "description": "The individual's parent.",
             "type": "string",
-            "user_friendly": "Parent"
+            "user_friendly": "Parent",
+          "guidelines": "Enter the ID of the parent of this individual."
         },
          "child": {
             "description": "The individual's child.",
             "type": "string",
-            "user_friendly": "Child"
+            "user_friendly": "Child",
+          "guidelines": "Enter the ID of the child of this individual."
+
         },
          "sibling": {
             "description": "The individual's sibling.",
             "type": "string",
-            "user_friendly": "Sibling"
+            "user_friendly": "Sibling",
+          "guidelines": "Enter the ID of the sibling of this individual."
+
         }
     }
 }
