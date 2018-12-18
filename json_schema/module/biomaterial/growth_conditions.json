@@ -28,13 +28,13 @@
         "growth_medium": {
             "description": "The solid, liquid, or semi-solid medium used to support growth.",
             "type": "string",
-            "example": "lysogeny broth (LB) medium",
+            "example": "human placental cord serum; RPMI 1640 + 2mM Glutamine + 10-20% FBS",
             "user_friendly": "Growth medium"
         },
         "culture_environment": {
             "description": "Cell culture environment in which cells are grown.",
             "type": "string",
-            "example": "adherent culture",
+            "example": "Adherent cell culture; Suspension cell culture",
             "user_friendly": "Culture environment"
         },
         "mycoplasma_testing_method": {
@@ -68,7 +68,7 @@
         "drug_treatment": {
             "description": "Description of drugs added to the growth medium.",
             "type": "string",
-            "example": "100 ug/mL ampicillin",
+            "example": "100 ug/mL ampicillin; 1.0 uL/mL tetracycline",
             "user_friendly": "Drug treatment"
         },
         "feeder_layer_type": {
@@ -100,7 +100,7 @@
                 "feeder-dependent, human fallopian tubal epithelial cells",
                 "feeder-dependent, human amniotic mesenchymal cells"
             ],
-            "example": "feeder-dependent, mouse embryonic fibroblast cells",
+            "example": "feeder-free; feeder-dependent, mouse embryonic fibroblast cells",
             "user_friendly": "Feeder layer type"
         }
     }
