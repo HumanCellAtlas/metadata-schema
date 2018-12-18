@@ -35,7 +35,6 @@
             "description": "The unit in which the Cell size is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-            "example": "micrometer",
             "user_friendly": "Cell size unit"
         },
         "percent_cell_viability": {
