@@ -21,7 +21,7 @@
             "description": "General description of the morphology of cells.",
             "type": "string",
             "user_friendly": "Cell morphology",
-            "example": "adherent cells, form single layer colonies"
+            "example": "adherent cells; form single layer colonies"
         },
         "cell_size": {
             "description": "Size of cells in Cell size unit.",
@@ -58,14 +58,14 @@
                 "fail"
             ],
             "example": "Should be one of: pass, fail",
-            "user_friendly": "Cell viability pass/fail result"
+            "user_friendly": "Cell viability result"
         },
         "percent_necrosis": {
             "description" : "Percent of cells identified to be necrotic.",
             "type": "number",
             "example": 10,
             "user_friendly": "Percent necrotic cells",
-            "guidelines": "Enter a single number."
+            "guidelines": "Enter a single number. Average value is acceptable."
         }
     }
 }
