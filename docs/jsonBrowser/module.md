@@ -17,7 +17,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells, form single layer colonies
 cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 15; 20-30
 cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
-percent_cell_viability | Percent of cells determined to be viable. Average value is acceptable. | number | no |  | Percent cell viability |  | 98.7
+percent_cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 98.7
 cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis; ATP test
 cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability pass/fail result | pass, fail | Must be one of: pass, fail
 percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrotic cells |  | 10
