@@ -206,7 +206,7 @@ _There are no required properties in schema Cell morphology_
 ### Death<a name='Death'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string |  | Cause of death |  | Hypoxic brain damage; Sudden cardiac arrest
+cause_of_death | Conditions resulting in death of a donor or mouse. | string |  | Cause of death |  | Hypoxic brain damage; Sudden cardiac arrest
 ### Familial relationship<a name='Familial relationship'></a>
 _There are no required properties in schema Familial relationship_
 ### Growth conditions<a name='Growth conditions'></a>
