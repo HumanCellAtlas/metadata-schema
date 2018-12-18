@@ -83,6 +83,7 @@
                     "type": "string"
                 },
                 "parameter_value": {
+                    "description": "Path to file or setting value.",
                     "type": "string"
                 }
             }
@@ -131,8 +132,7 @@
                 "type": "object",
                 "$ref": "type/process/analysis/analysis_process.json#/definitions/parameter"
             },
-            "user_friendly": "Input parameters",
-            "guidelines": "Inputs can be files or string values (settings)."
+            "user_friendly": "Input parameters"
         },
         "tasks": {
             "description": "Information about steps in the workflow.",
