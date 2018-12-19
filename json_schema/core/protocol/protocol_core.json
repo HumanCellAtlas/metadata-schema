@@ -23,7 +23,8 @@
         "protocol_id":{
             "description": "A unique ID for the protocol.",
             "type": "string",
-            "user_friendly": "Protocol ID"
+            "user_friendly": "Protocol ID",
+            "guidelines": "Protocol ID should have no spaces."
         },
         "protocol_name": {
             "description": "A short name for the protocol.",
