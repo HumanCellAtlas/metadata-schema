@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Information about the process",
+    "description": "Information about a process completed in the experiment.",
     "additionalProperties": false,
     "required": [
         "describedBy",
