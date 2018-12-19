@@ -51,15 +51,13 @@
             "description": "The unit in which Length of time is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Length of time unit",
-            "example": "Should be one of: microsecond, second, minute, hour, day, week, month, or year."
+            "user_friendly": "Length of time unit"
         },
         "process_type": {
             "description": "The type of process.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Process type",
-            "example": "sample enrichment"
+            "user_friendly": "Process type"
         },
         "deviation_from_protocol": {
             "description": "Any deviation from the protocol provided.",
