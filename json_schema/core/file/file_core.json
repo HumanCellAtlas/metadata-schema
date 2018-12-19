@@ -30,12 +30,13 @@
             "description": "The format of the file.",
             "type": "string",
             "user_friendly": "File format",
-            "example": "fastq.gz"
+            "example": "fastq.gz; tif"
         }, 
         "checksum": {
             "description": "MD5 checksum of the file.",
             "type": "string",
-            "user_friendly": "Checksum"
+            "user_friendly": "Checksum",
+            "example": "e09a986c2e630130b1849d4bf9a94c06"
 	    }
     }
 }

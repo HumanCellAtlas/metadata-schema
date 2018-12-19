@@ -49,7 +49,7 @@
             "description": "Genotype of the biomaterial.",
             "type": "string",
             "user_friendly": "Genotype",
-            "example": "DRB1 0401 protective allele"
+            "example": "DRB1 0401 protective allele; HLA-B*3901 allele"
         },
         "supplementary_files": {
             "description": "A list of filenames of biomaterial-level supplementary files.",
