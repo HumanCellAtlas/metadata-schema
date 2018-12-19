@@ -432,7 +432,7 @@ Location: module/process/sequencing/plate_based_sequencing.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 plate_id | An ID for the plate that the well is located on. | string | yes |  | Plate ID |  | 2217
-well_id | An ID or name for the well. Should be unique for the plate. | string | no |  | Well ID |  | A1
+well_id | An ID or name for the well. | string | no |  | Well ID |  | A1
 cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
 
 ## Contact<a name='Contact'></a>
