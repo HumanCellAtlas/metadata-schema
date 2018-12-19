@@ -32,7 +32,7 @@
             "description": "Color, size, and other aspects of specimen as visible to naked eye.",
             "type": "string",
             "user_friendly": "Gross description",
-            "example": ""
+            "example": "focal wedge shaped region of tan-orange discoloration; cystic"
         },
         "gross_image": {
             "description": "List of filenames of photographs of specimen without magnification.",
