@@ -20,7 +20,7 @@
         "grant_title": {
             "description": "The name of the grant funding the project.",
             "type": "string",
-            "example": "A title of a grant proposal.",
+            "example": "Study of single cells in the human body.",
             "user_friendly": "Grant title",
             "guidelines": "Enter a title of approximately 30 words."
         },

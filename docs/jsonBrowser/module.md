@@ -460,7 +460,7 @@ Location: module/project/funder.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-grant_title | The name of the grant funding the project. | string | no |  | Grant title |  | A title of a grant proposal.
+grant_title | The name of the grant funding the project. | string | no |  | Grant title |  | Study of single cells in the human body.
 grant_id | The unique grant identifier or reference. | string | no |  | Grant ID |  | BB/P0000001/1
 funder_name | The name of the funding organization. | string | no |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
 
@@ -472,10 +472,10 @@ Location: module/project/publication.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication in 'surname initials' format. | array | yes |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body
+publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
 doi | The publication digital object identifier (doi). | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
 pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
-publication_url | A URL, preferably not behind a paywall, for the publication. | string | no |  | Publication URL |  | 
+publication_url | A URL, preferably not behind a paywall, for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
 
 ## Channel<a name='Channel'></a>
 _Information about a single microscope channel._

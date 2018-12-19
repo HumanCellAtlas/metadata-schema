@@ -343,7 +343,7 @@ _There are no required properties in schema Funder_
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication in 'surname initials' format. | array |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body
+publication_title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
 ### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

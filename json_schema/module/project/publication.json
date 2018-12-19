@@ -34,7 +34,7 @@
             "description": "The title of the publication.",
             "type": "string",
             "user_friendly": "Publication title",
-            "example": "Study of single cells in the human body"
+            "example": "Study of single cells in the human body."
         },
         "doi": {
             "description": "The publication digital object identifier (doi).",
@@ -51,7 +51,8 @@
         "publication_url": {
             "description": "A URL, preferably not behind a paywall, for the publication.",
             "type": "string",
-            "user_friendly": "Publication URL"
+            "user_friendly": "Publication URL",
+            "example": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/"
         }
     }
 }
