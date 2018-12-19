@@ -34,7 +34,7 @@
             "guidelines": " Well ID should be unique for the plate."
         },
         "cell_quality": {
-            "description": "Note on how good cell looks if imaged in well before sequencing.",
+            "description": "Quality of well if imaged before sequencing.",
             "type": "string",
             "enum": [
                 "OK",

@@ -433,7 +433,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 plate_id | An ID for the plate that the well is located on. | string | yes |  | Plate ID |  | 2217
 well_id | An ID or name for the well. | string | no |  | Well ID |  | A1
-cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+cell_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
 
 ## Contact<a name='Contact'></a>
 _Information about an individual who submitted or contributed to a project._
