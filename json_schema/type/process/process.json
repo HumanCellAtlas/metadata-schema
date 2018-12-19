@@ -37,7 +37,8 @@
         "process_core" : {
             "description": "Core process-level information.",
             "type": "object",
-            "$ref": "core/process/process_core.json"
+            "$ref": "core/process/process_core.json",
+            "user_friendly": "Process core"
         },
         "length_of_time": {
             "description": "Length of time the process took to execute, from start to finish, in Length of time unit.",
@@ -69,7 +70,7 @@
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession.",
             "type": "object",
             "$ref": "module/process/sequencing/insdc_experiment.json",
-            "user_friendly": "INSDC experiment"
+            "user_friendly": "INSDC experiment accession"
         }
     }
 }
