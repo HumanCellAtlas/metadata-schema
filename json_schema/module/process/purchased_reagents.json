@@ -20,7 +20,7 @@
         "retail_name": {
           "description": "The retail name of the kit/reagent.",
           "type": "string",
-          "example": "SureCell WTA 3' Library Prep Kit",
+          "example": "SureCell WTA 3' Library Prep Kit; CytoTune iPS 2.0 Sendai Reprogramming Kit",
           "user_friendly": "Retail name"
         },
         "catalog_number": {
@@ -32,7 +32,7 @@
         "manufacturer": {
            "description": "The manufacturer of the kit/reagent.",
            "type": "string",
-           "example": "Illumina",
+           "example": "Illumina; ThermoFisher Scientific",
            "user_friendly": "Manufacturer"
         },
         "lot_number": {
@@ -42,11 +42,12 @@
            "user_friendly": "Batch/lot number"
         },
         "expiry_date": {
-           "description": "The date of expiration for the kit/reagent in the format YYYY-MM-DD.",
+           "description": "The date of expiration for the kit/reagent.",
             "type": "string",
             "format": "date",
             "example": "2018-01-31",
-            "user_friendly": "Expiry date"
+            "user_friendly": "Expiry date",
+          "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
         },
         "kit_titer": {
             "description": "Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis.",

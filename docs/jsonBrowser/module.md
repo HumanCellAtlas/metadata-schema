@@ -384,11 +384,11 @@ Location: module/process/purchased_reagents.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit
+retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit; CytoTune iPS 2.0 Sendai Reprogramming Kit
 catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
-manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
+manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina; ThermoFisher Scientific
 lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
-expiry_date | The date of expiration for the kit/reagent in the format YYYY-MM-DD. | string | no |  | Expiry date |  | 2018-01-31
+expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
 kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7
 
 ## 10x-specific<a name='10x-specific'></a>
