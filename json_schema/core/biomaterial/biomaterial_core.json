@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components.",
+    "description": "Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components.",
     "additionalProperties": false,
     "required": [
         "biomaterial_id",

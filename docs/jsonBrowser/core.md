@@ -8,7 +8,7 @@ Property name | Description | Type | Required? | Example
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
 ## Biomaterial core<a name='Biomaterial core'></a>
-_A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components._
+_Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components._
 
 Location: core/biomaterial/biomaterial_core.json
 
@@ -24,7 +24,7 @@ biosd_biomaterial | A BioSamples ID. | string | no |  | BioSamples ID |  | SAMN0
 insdc_biomaterial | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC ID |  | SRS0000000
 
 ## File core<a name='File core'></a>
-_A file entity contains information about a file produced from any process._
+_Information about a file produced from any process._
 
 Location: core/file/file_core.json
 
@@ -35,7 +35,7 @@ file_format | The format of the file. | string | yes |  | File format |  | fastq
 checksum | MD5 checksum of the file. | string | no |  | Checksum |  | e09a986c2e630130b1849d4bf9a94c06
 
 ## Process core<a name='Process core'></a>
-_A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity._
+_Information relevant to how a biomaterial or file was converted into another biomaterial or file._
 
 Location: core/process/process_core.json
 
@@ -48,7 +48,7 @@ process_location | Location where the process took place. | string | no |  | Pro
 operator | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1; J.D.
 
 ## Project core<a name='Project core'></a>
-_A project entity contains information about the overall project._
+_Information about the overall project._
 
 Location: core/project/project_core.json
 
@@ -59,7 +59,7 @@ project_title | An official title for the project. | string | yes |  | Project t
 project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | An abstract from a grant application or publication.
 
 ## Protocol core<a name='Protocol core'></a>
-_A protocol entity contains information about an intended protocol that was followed in the project._
+_Information about an intended protocol that was followed in the project._
 
 Location: core/protocol/protocol_core.json
 
