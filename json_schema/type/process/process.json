@@ -45,7 +45,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Length of time",
-            "example": "10",
+            "example": "10; 55-60",
             "guidelines": "Enter a single value or a range of values separated by a hyphen."
          },
         "length_of_time_unit": {
@@ -63,7 +63,8 @@
         "deviation_from_protocol": {
             "description": "A deviation from the protocol provided.",
             "type": "string",
-            "user_friendly": "Deviation from protocol"
+            "user_friendly": "Deviation from protocol",
+            "example": "Skipped ACK lysis step; Used 100um filter instead of 40um filter"
         },
         "insdc_experiment" : {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession.",
