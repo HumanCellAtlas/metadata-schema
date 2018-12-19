@@ -22,13 +22,14 @@
             "example": "4.6.1"
         },
         "authors": {
-            "description": "A list of authors associated with the publication in 'surname initials' format.",
+            "description": "A list of authors associated with the publication.",
             "type": "array",
             "example":  "Doe JD",
             "items": {
                 "type": "string"
             }, 
-            "user_friendly": "Authors"
+            "user_friendly": "Authors",
+            "guidelines": "List each author in 'surname initials' format."
         },
         "publication_title": {
             "description": "The title of the publication.",

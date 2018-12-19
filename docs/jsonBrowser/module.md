@@ -471,7 +471,7 @@ Location: module/project/publication.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-authors | A list of authors associated with the publication in 'surname initials' format. | array | yes |  | Authors |  | Doe JD
+authors | A list of authors associated with the publication. | array | yes |  | Authors |  | Doe JD
 publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
 doi | The publication digital object identifier (doi). | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
 pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
