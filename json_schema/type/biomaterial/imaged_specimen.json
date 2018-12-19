@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-        "imaged_slice_thickness"
+        "slice_thickness"
     ],
     "title": "Imaged specimen",
     "name": "imaged_specimen",
@@ -55,7 +55,7 @@
         "slice_thickness": {
             "description": "Thickness of the imaged slice in micrometres.",
             "type" : "number",
-            "example": "14, 30",
+            "example": "14",
             "user_friendly": "Imaged slice thickness"
         },
         "internal_anatomical_structures": {
