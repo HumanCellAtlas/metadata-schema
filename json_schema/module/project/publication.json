@@ -38,7 +38,7 @@
             "example": "Study of single cells in the human body."
         },
         "doi": {
-            "description": "The publication digital object identifier (doi).",
+            "description": "The publication digital object identifier (doi) of the publication.",
             "type": "string",
             "example": "10.1016/j.cell.2016.07.054",
             "user_friendly": "Publication DOI"
@@ -50,7 +50,7 @@
             "user_friendly": "Publication PMID"
         },
         "publication_url": {
-            "description": "A URL, preferably not behind a paywall, for the publication.",
+            "description": "A URL for the publication.",
             "type": "string",
             "user_friendly": "Publication URL",
             "example": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/"
