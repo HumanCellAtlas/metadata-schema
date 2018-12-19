@@ -47,12 +47,12 @@
             "format": "date",
             "example": "2018-01-31",
             "user_friendly": "Expiry date",
-          "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
+          "guidelines": "Enter the time in date-time format: yyyy-mm-dd."
         },
         "kit_titer": {
             "description": "Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis.",
             "type": "string",
-            "example": "Titer: Specification is 3.0x10^7",
+            "example": "3.0x10^7",
             "user_friendly": "Kit titer"
 	    }
 	}
