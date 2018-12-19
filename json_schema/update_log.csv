@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+module/project/funder,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.",,
+module/project/publication,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.",,
