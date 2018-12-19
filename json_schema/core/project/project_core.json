@@ -25,8 +25,9 @@
         "project_short_name": {
             "description": "A short name for the project.",
             "type": "string",
-            "example": "For example, a short label by which you refer to the project. This label will be used for quick reference.",
-            "user_friendly": "Project label"
+            "example": "For example, a short label by which you refer to the project.",
+            "user_friendly": "Project label",
+            "guidelines": "Project label should have no spaces and be fewer than 50 characters."
         },
         "project_title": {
             "description": "An official title for the project.",

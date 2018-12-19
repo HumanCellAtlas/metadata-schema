@@ -20,8 +20,8 @@ biomaterial_description | A general description of the biomaterial. | string | n
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array | yes |  | NCBI taxon ID |  | 9606
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele; HLA-B*3901 allele
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | 
-biosd_biomaterial | A DDBJ, NCBI, or EMBL-EBI BioSample ID. Accession must start with SAMD, SAMN, or SAME. | string | no |  | BioSample ID |  | SAMN00000000
-insdc_biomaterial | An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRS, SRS, or ERS. | string | no |  | INSDC ID |  | SRS0000000
+biosd_biomaterial | A BioSamples ID. | string | no |  | BioSamples ID |  | SAMN00000000
+insdc_biomaterial | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC ID |  | SRS0000000
 
 ## File core<a name='File core'></a>
 _A file entity contains information about a file produced from any process._
@@ -54,7 +54,7 @@ Location: core/project/project_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-project_short_name | A short name for the project. | string | yes |  | Project label |  | For example, a short label by which you refer to the project. This label will be used for quick reference.
+project_short_name | A short name for the project. | string | yes |  | Project label |  | For example, a short label by which you refer to the project.
 project_title | An official title for the project. | string | yes |  | Project title |  | For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.
 project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
 
