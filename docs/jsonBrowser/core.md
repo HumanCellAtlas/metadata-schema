@@ -30,7 +30,7 @@ Location: core/file/file_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-file_name | The filename of the file. | string | yes |  | File name |  | 
+file_name | The name of the file. | string | yes |  | File name |  | R1.fastq.gz; codebook.json
 file_format | The format of the file. | string | yes |  | File format |  | fastq.gz; tif
 checksum | MD5 checksum of the file. | string | no |  | Checksum |  | e09a986c2e630130b1849d4bf9a94c06
 

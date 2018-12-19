@@ -9,7 +9,7 @@ ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array |  | NCBI taxon ID | 
 ### File core<a name='File core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-file_name | The filename of the file. | string |  | File name |  | 
+file_name | The name of the file. | string |  | File name |  | R1.fastq.gz; codebook.json
 file_format | The format of the file. | string |  | File format |  | fastq.gz; tif
 ### Process core<a name='Process core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 

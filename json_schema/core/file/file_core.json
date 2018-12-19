@@ -22,9 +22,11 @@
             "example": "4.6.1"
         },
         "file_name": {
-            "description": "The filename of the file.",
+            "description": "The name of the file.",
             "type": "string",
-            "user_friendly": "File name"
+            "user_friendly": "File name",
+            "guidelines": "Include the file extension in the file name.",
+            "example": "R1.fastq.gz; codebook.json"
         },
         "file_format": {
             "description": "The format of the file.",
