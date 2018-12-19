@@ -66,7 +66,7 @@ Location: core/protocol/protocol_core.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 protocol_id | A unique ID for the protocol. | string | yes |  | Protocol ID |  | 
-protocol_name | A short, descriptive name for the protocol that need not be unique. | string | no |  | Protocol name |  | 
+protocol_name | A short name for the protocol. | string | no |  | Protocol name |  | 
 protocol_description | A general description of the protocol. | string | no |  | Protocol description |  | 
 publication_doi | The publication digital object identifier (doi) for the protocol. | string | no |  | Publication DOI |  | 10.1101/193219
 protocols_io_doi | The protocols.io digital object identifier (doi) for the protocol. | string | no |  | protocols.io DOI |  | 10.17504/protocols.io.mgjc3un
