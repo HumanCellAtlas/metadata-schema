@@ -54,9 +54,9 @@ Location: core/project/project_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-project_short_name | A short name for the project. | string | yes |  | Project label |  | For example, a short label by which you refer to the project.
-project_title | An official title for the project. | string | yes |  | Project title |  | For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.
-project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
+project_short_name | A short name for the project. | string | yes |  | Project label |  | A short label by which you refer to the project.
+project_title | An official title for the project. | string | yes |  | Project title |  | The title of a grant proposal or a publication.
+project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | An abstract from a grant application or publication.
 
 ## Protocol core<a name='Protocol core'></a>
 _A protocol entity contains information about an intended protocol that was followed in the project._

@@ -18,9 +18,9 @@ process_id | A unique ID for the process. | string |  | Process ID |  |
 ### Project core<a name='Project core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-project_short_name | A short name for the project. | string |  | Project label |  | For example, a short label by which you refer to the project.
-project_title | An official title for the project. | string |  | Project title |  | For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.
-project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
+project_short_name | A short name for the project. | string |  | Project label |  | A short label by which you refer to the project.
+project_title | An official title for the project. | string |  | Project title |  | The title of a grant proposal or a publication.
+project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | An abstract from a grant application or publication.
 ### Protocol core<a name='Protocol core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
