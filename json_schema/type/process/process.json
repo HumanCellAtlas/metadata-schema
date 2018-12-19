@@ -45,7 +45,8 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Length of time",
-            "example": "10"
+            "example": "10",
+            "guidelines": "Enter a single value or a range of values separated by a hyphen."
          },
         "length_of_time_unit": {
             "description": "The unit in which Length of time is expressed.",
