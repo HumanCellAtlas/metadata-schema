@@ -33,7 +33,7 @@
         "funder_name": {
             "description": "The name of the funding organization.",
             "type": "string",
-            "example": "Biotechnology and Biological Sciences Research Council (BBSRC)",
+            "example": "Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)",
             "user_friendly": "Funding organization"
         }
 
