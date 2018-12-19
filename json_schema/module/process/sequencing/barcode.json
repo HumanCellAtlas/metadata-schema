@@ -51,12 +51,12 @@
             "example": 28,
             "user_friendly": "Barcode length"
         },
-	    "white_list_file": {
-	       "description": "Name of file containing legitimate barcode sequences.",
+        "white_list_file": {
+            "description": "Name of file containing legitimate barcode sequences.",
             "type": "string",
             "guidelines": "Unused for randomly generated barcodes.",
             "user_friendly": "White list barcode file",
             "example": "barcode_whitelist_file.txt"
-	   }
-	}
+        }
+    }
 }
