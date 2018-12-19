@@ -23,7 +23,7 @@
             "example": "4.6.1"
         },
         "barcode_read": {
-            "description": "The read that the barcode is found in.",
+            "description": "The read in which the barcode is found.",
             "type": "string",
             "enum": [
                 "Read 1",
@@ -51,7 +51,7 @@
             "user_friendly": "Barcode length"
         },
 	    "white_list_file": {
-	       "description": "Name of file containing legitimate barcode sequences, if known.",
+	       "description": "Name of file containing legitimate barcode sequences.",
             "type": "string",
             "comment": "Unused for randomly generated barcodes.",
             "user_friendly": "White list barcode file",

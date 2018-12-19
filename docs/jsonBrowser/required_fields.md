@@ -321,7 +321,7 @@ _There are no required properties in schema 10x-specific_
 ### Barcode<a name='Barcode'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-barcode_read | The read that the barcode is found in. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_read | The read in which the barcode is found. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
 barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer |  | Barcode offset |  | 0
 barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 28
 ### INSDC experiment<a name='INSDC experiment'></a>
