@@ -44,49 +44,52 @@
         "protocol_core" : {
 	        "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/protocol/protocol_core.json"
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
         },
         "microscope_setup_description": {
-            "description": "Description of the microscope setup including manufacturer and model information about the stand, camera and objective.",
+            "description": "Description of the microscope setup.",
             "type": "string",
             "user_friendly": "Microscope setup description",
-            "example": "Motorized stage (SCAN IM 112 × 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus)."
+            "example": "Motorized stage (SCAN IM 112 × 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus).",
+            "guidelines": "Include manufacturer and model information about the stand, camera and objective."
          },
         "microscopy_technique": {
-            "description": "The type of microscopy. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+            "description": "The type of microscopy.",
             "type": "object",
             "$ref": "module/ontology/microscopy_ontology.json",
-            "user_friendly": "Microscopy technique"
+            "user_friendly": "Microscopy technique",
+            "guidelines": "Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272."
         },
         "magnification": {
             "description": "Magnification of the objective used for imaging.",
             "type": "string",
             "user_friendly": "Magnification",
-            "example": "60x"
+            "example": "60x; 100x"
          },
         "numerical_aperture": {
             "description": "Numerical aperture of the objective.",
             "type": "number",
             "user_friendly": "Numerical aperture",
-            "example": "1.3"
+            "example": "1.3; 0.75"
          },
         "immersion_medium_type": {
             "description": "Immersion medium used for imaging.",
             "type": "string",
             "user_friendly": "Immersion medium",
-            "example": "oil"
+            "example": "oil; air"
          },
         "immersion_medium_refractive_index": {
             "description": "Refractive index of the immersion medium used for imaging.",
             "type": "number",
             "user_friendly": "Refractive index of the immersion medium",
-            "example": "1.5"
+            "example": "1.5; 1"
          },
         "pixel_size": {
-            "description": "Pixel size in nanometres (scaling factor).",
+            "description": "Pixel size in nanometers.",
             "type": "number",
             "user_friendly": "Pixel size",
-            "example": "109"
+            "example": "109",
          },
         "number_of_tiles": {
             "description": "Number of XY tiles in the experiment.",
@@ -95,17 +98,19 @@
             "example": "2000"
          },
         "tile_size_y": {
-            "description": "Y size of the tile in micrometres.",
+            "description": "Y size of the tile in micrometers.",
             "type": "number",
-            "user_friendly": "Tile size Y"
+            "user_friendly": "Tile size Y",
+            "example": "100"
          },
         "tile_size_x": {
-            "description": "X size of the tile in micrometres.",
+            "description": "X size of the tile in micrometers.",
             "type": "number",
-            "user_friendly": "Tile size X"
+            "user_friendly": "Tile size X",
+            "example": "100"
          },
         "z_stack_step_size": {
-            "description": "Z-stack step size in nanometres.",
+            "description": "Z-stack step size in nanometers.",
             "type": "number",
             "user_friendly": "Z stack step size",
             "example": "200"
@@ -117,10 +122,10 @@
             "example": "40"
          },
         "overlapping_tiles": {
-            "description": "Were tiles collected with overlap?",
+            "description": "Whether tiles were collected with overlap.",
             "type": "string",
             "user_friendly": "Overlapping tiles?",
-            "example": "no",
+            "example": "Should be one of: yes, or no.",
             "enum": [
                 "yes",
                 "no"
