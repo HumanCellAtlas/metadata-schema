@@ -143,7 +143,7 @@ target | Information about each imaging target in the imaging experiment. | arra
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
-project_core | Core project-level information. | object | [See core  project_core](core.md/#project_core) |  |  | 
+project_core | Core project-level information. | object | [See core  project_core](core.md/#project_core) | Project core |  | 
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
