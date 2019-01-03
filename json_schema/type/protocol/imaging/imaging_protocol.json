@@ -52,7 +52,7 @@
             "type": "string",
             "user_friendly": "Microscope setup description",
             "example": "Motorized stage (SCAN IM 112 × 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus).",
-            "guidelines": "Include manufacturer and model information about the stand, camera and objective."
+            "guidelines": "Include manufacturer and model information about the stand, camera, and objective."
          },
         "microscopy_technique": {
             "description": "The type of microscopy.",
