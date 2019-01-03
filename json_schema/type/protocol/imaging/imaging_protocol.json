@@ -89,7 +89,7 @@
             "description": "Pixel size in nanometers.",
             "type": "number",
             "user_friendly": "Pixel size",
-            "example": "109",
+            "example": "109"
          },
         "number_of_tiles": {
             "description": "Number of XY tiles in the experiment.",
