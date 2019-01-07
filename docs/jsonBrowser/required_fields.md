@@ -229,7 +229,7 @@ text | The name of a library amplification approach being used. | string |  |  |
 ### Ethnicity ontology<a name='Ethnicity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The ethnicity of the human donor. | string |  |  |  | 
+text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; Hispanic or Latin American
 ### Cellular component ontology<a name='Cellular component ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -285,7 +285,7 @@ text | The name of the development stage of the organism. | string |  |  |  |
 ### Instrument ontology<a name='Instrument ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The full name of the instrument used. | string |  |  |  | 
+text | The full name of the instrument used. | string |  | Instrument |  | Illumina HiSeq 2500; ONT MinION
 ### Mass unit ontology<a name='Mass unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

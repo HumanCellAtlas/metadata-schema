@@ -79,9 +79,9 @@ Location: module/ontology/ethnicity_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The ethnicity of the human donor. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The ethnicity of the human donor. | string | yes |  | Ethnicity |  | European; Hispanic or Latin American
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Ethnicity ontology ID |  | HANCESTRO_0005 ;HANCESTRO_0014
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Ethnicity ontology label |  | European; Hispanic or Latin American
 
 ## Cellular component ontology<a name='Cellular component ontology'></a>
 _A term that may be associated with an intra-cellular structure ontology term_
@@ -168,8 +168,8 @@ Location: module/ontology/enrichment_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of an enrichment approach being used. | string | yes |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
-ontology | An ontology term identifier in the form prefix:accession | string | no |  | Enrichment |  | EFO:0009108; EFO:0009110
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Enrichment ontology ID |  | EFO:0009108; EFO:0009110
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Enrichment ontology label |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
 
 ## Organ part ontology<a name='Organ part ontology'></a>
 _A term that may be associated with an anatomy-related ontology term_
@@ -233,9 +233,9 @@ Location: module/ontology/instrument_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The full name of the instrument used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The full name of the instrument used. | string | yes |  | Instrument |  | Illumina HiSeq 2500; ONT MinION
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Instrument ontology ID |  | EFO:0008565; EFO:0008632
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Instrument ontology label |  | Illumina HiSeq 2500; ONT MinION
 
 ## Mass unit ontology<a name='Mass unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
