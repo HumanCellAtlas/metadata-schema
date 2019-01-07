@@ -277,7 +277,7 @@ text | The name of a library construction approach being used. | string |  | Lib
 ### Mass unit ontology<a name='Mass unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a mass unit being used. | string |  |  |  | 
+text | The name of a mass unit being used. | string |  | Mass unit |  | kilogram; microgram
 ### Microscopy ontology<a name='Microscopy ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

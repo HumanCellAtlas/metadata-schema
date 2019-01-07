@@ -274,9 +274,9 @@ Location: module/ontology/mass_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a mass unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a mass unit being used. | string | yes |  | Mass unit |  | kilogram; microgram
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Mass unit ontology ID |  | UO:0000009; UO:0000023
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Mass unit ontology label |  | kilogram; microgram
 
 ## Microscopy ontology<a name='Microscopy ontology'></a>
 _A term that may be associated with a microscopy-related ontology term_
