@@ -68,9 +68,9 @@ Location: module/ontology/library_amplification_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library amplification approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a library amplification approach being used. | string | yes |  | Library amplification |  | PCR; in vitro transcription
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Library amplification ontology ID |  | OBI:0000415; EFO:0009013
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Library amplification ontology label |  | PCR; in vitro transcription
 
 ## Ethnicity ontology<a name='Ethnicity ontology'></a>
 _A term that may be associated with a ethnicity-related ontology term_
@@ -101,9 +101,9 @@ Location: module/ontology/library_construction_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library construction approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a library construction approach being used. | string | yes |  | Library construction |  | 10X v2 sequencing; Smart-seq2
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Library construction ontology ID |  | EFO:0009310; EFO:0008931
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Library construction ontology label |  | 10X v2 sequencing; Smart-seq2
 
 ## Process type ontology<a name='Process type ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -178,9 +178,9 @@ Location: module/ontology/organ_part_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  | Organ part |  | bone marrow; islet of Langerhans
+ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  | Organ part ontology ID |  | UBERON:0002371; UBERON:0000006
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Organ part ontology label |  | bone marrow; islet of Langerhans
 
 ## Microscopy ontology<a name='Microscopy ontology'></a>
 _A term that may be associated with a microscopy-related ontology term_
@@ -244,9 +244,9 @@ Location: module/ontology/mass_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a mass unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a mass unit being used. | string | yes |  | Mass unit |  | kilogram; microgram
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Mass unit ontology ID |  | UO:0000009; UO:0000023
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Mass unit ontology label |  | kilogram; microgram
 
 ## Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 _A term that may be associated with a biological macromolecule-related ontology term_
@@ -277,9 +277,9 @@ Location: module/ontology/organ_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  | Organ |  | heart; immune system
+ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  | Organ ontology ID |  | UBERON:0000948; UBERON:0002405
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Organ ontology label |  | heart; immune system
 
 ## Funder<a name='Funder'></a>
 _Information about the project funding source._

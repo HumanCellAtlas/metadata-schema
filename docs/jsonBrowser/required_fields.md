@@ -225,7 +225,7 @@ text | The name of a cell cycle of the cells in the specimen. | string |  |  |  
 ### Library amplification ontology<a name='Library amplification ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library amplification approach being used. | string |  |  |  | 
+text | The name of a library amplification approach being used. | string |  | Library amplification |  | PCR; in vitro transcription
 ### Ethnicity ontology<a name='Ethnicity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -237,7 +237,7 @@ text | The name of a subcellular structure. | string |  |  |  |
 ### Library construction ontology<a name='Library construction ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library construction approach being used. | string |  |  |  | 
+text | The name of a library construction approach being used. | string |  | Library construction |  | 10X v2 sequencing; Smart-seq2
 ### Process type ontology<a name='Process type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -265,7 +265,7 @@ text | The name of an enrichment approach being used. | string |  | Enrichment |
 ### Organ part ontology<a name='Organ part ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string |  |  |  | 
+text | The text for the term as the user provides it. | string |  | Organ part |  | bone marrow; islet of Langerhans
 ### Microscopy ontology<a name='Microscopy ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -289,7 +289,7 @@ text | The full name of the instrument used. | string |  | Instrument |  | Illum
 ### Mass unit ontology<a name='Mass unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a mass unit being used. | string |  |  |  | 
+text | The name of a mass unit being used. | string |  | Mass unit |  | kilogram; microgram
 ### Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -301,7 +301,7 @@ text | The name of a cell type supplied by a user. | string |  |  |  |
 ### Organ ontology<a name='Organ ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string |  |  |  | 
+text | The text for the term as the user provides it. | string |  | Organ |  | heart; immune system
 ### Funder<a name='Funder'></a>
 _There are no required properties in schema Funder_
 ### Contact<a name='Contact'></a>

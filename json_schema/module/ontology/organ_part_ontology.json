@@ -21,7 +21,9 @@
         },
         "text": {
             "description": "The text for the term as the user provides it.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Organ part",
+            "example": "bone marrow; islet of Langerhans"
         },
         "ontology": {
             "description": "A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon).",
@@ -32,11 +34,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": true
-            }
+            },
+            "user_friendly": "Organ part ontology ID",
+            "example": "UBERON:0002371; UBERON:0000006"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Organ part ontology label",
+            "example": "bone marrow; islet of Langerhans"
         }
     },
     "type": "object"
