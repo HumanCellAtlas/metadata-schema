@@ -263,9 +263,9 @@ Location: module/ontology/library_construction_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library construction approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a library construction approach being used. | string | yes |  | Library construction |  | 10X v2 sequencing; Smart-seq2
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Library construction ontology ID |  | EFO:0009310; EFO:0008931
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Library construction ontology label |  | 10X v2 sequencing; Smart-seq2
 
 ## Mass unit ontology<a name='Mass unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
