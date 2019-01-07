@@ -112,9 +112,9 @@ Location: module/ontology/process_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a process type being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a process type being used. | string | yes |  | Process type |  | enzymatic dissociation; blood draw
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Process type ontology ID |  | EFO:0009128; EFO:0009121
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Process type ontology label |  | enzymatic dissociation; blood draw
 
 ## Sequencing ontology<a name='Sequencing ontology'></a>
 _A term that may be associated with a process-related ontology term_

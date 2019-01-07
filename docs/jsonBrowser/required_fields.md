@@ -241,7 +241,7 @@ text | The name of a library construction approach being used. | string |  |  | 
 ### Process type ontology<a name='Process type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a process type being used. | string |  |  |  | 
+text | The name of a process type being used. | string |  | Process type |  | enzymatic dissociation; blood draw
 ### Sequencing ontology<a name='Sequencing ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
