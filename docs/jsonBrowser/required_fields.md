@@ -285,7 +285,7 @@ text | The name of the type of microscopy used in an imaging experiment. | strin
 ### Organ ontology<a name='Organ ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string |  |  |  | 
+text | The text for the term as the user provides it. | string |  | Organ |  | heart; immune system
 ### Organ part ontology<a name='Organ part ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
