@@ -249,7 +249,7 @@ text | The name of the development stage of the organism. | string |  |  |  |
 ### Disease ontology<a name='Disease ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string |  |  |  | 
+text | The text for the term as the user provides it. | string |  | Disease |  | type 2 diabetes mellitus; normal
 ### Enrichment ontology<a name='Enrichment ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

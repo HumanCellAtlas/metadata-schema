@@ -21,7 +21,9 @@
         },
         "text": {
             "description": "The name of a cell cycle of the cells in the specimen.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "",
+            "example": ""
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -32,11 +34,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "user_friendly": "",
+            "example": ""
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "",
+            "example": ""
         }
     }
 }

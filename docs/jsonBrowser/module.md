@@ -197,9 +197,9 @@ Location: module/ontology/disease_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  | Disease |  | type 2 diabetes mellitus; normal
+ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  | Disease ontology ID |  | MONDO:0005148; PATO:0000461
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Disease ontology label |  | type 2 diabetes mellitus; normal
 
 ## Enrichment ontology<a name='Enrichment ontology'></a>
 _A term that may be associated with a process-related ontology term_
