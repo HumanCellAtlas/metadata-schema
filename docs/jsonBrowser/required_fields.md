@@ -277,7 +277,7 @@ text | The name of a time unit being used. | string |  | Time unit |  | second; 
 ### Protocol type ontology<a name='Protocol type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a protocol type used. | string |  |  |  | 
+text | The name of a protocol type used. | string |  | Protocol type |  | dissociation; enrichment
 ### Development stage ontology<a name='Development stage ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

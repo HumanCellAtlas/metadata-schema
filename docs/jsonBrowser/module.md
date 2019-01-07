@@ -211,9 +211,9 @@ Location: module/ontology/protocol_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a protocol type used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a protocol type used. | string | yes |  | Protocol type |  | dissociation; enrichment
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Protocol type ontology label |  | EFO:0009088; EFO:0009089
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Protocol type ontology label |  | dissociation; enrichment
 
 ## Development stage ontology<a name='Development stage ontology'></a>
 _A term that may be associated with a development stage-related ontology term_
