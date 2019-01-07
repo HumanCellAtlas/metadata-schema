@@ -307,9 +307,9 @@ Location: module/ontology/organ_part_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  | Organ part |  | bone marrow; islet of Langerhans
+ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  | Organ part ontology ID |  | UBERON:0002371; UBERON:0000006
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Organ part ontology label |  | bone marrow; islet of Langerhans
 
 ## Process type ontology<a name='Process type ontology'></a>
 _A term that may be associated with a process-related ontology term_
