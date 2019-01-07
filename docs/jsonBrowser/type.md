@@ -16,11 +16,11 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
-read_index | Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read or represents a single-end, non-indexed library. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2, or 'single-end, non-indexed'
-lane_index | The index of the lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+read_index | The sequencing read this file represents. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
+lane_index | The lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
-insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRR, SRR, or ERR. | array | no |  | INSDC run |  | SRR0000000
+insdc_run | An INSDC (International Nucleotide Sequence Database Collaboration) run accession from the DDBJ, NCBI, or EMBL-EBI. | array | no |  | INSDC run accession |  | SRR0000000
 library_prep_id | A unique ID for the library preparation. | string | no |  | Library preparation ID |  | tech_rep_group_001
 
 ## Image file
@@ -150,9 +150,9 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-aggregate_formation_method | Method used to form cell aggreagtes. | string | yes |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
-aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous EBs of variable cell numbers
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+aggregate_formation_method | Method used to form cell aggregates. | string | yes |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
+aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous embryoid bodies of variable cell numbers; Low-homogeneity in morphology and size
 
 ## Enrichment protocol
 _Information about how a biomaterial is enriched for a feature or characteristic of interest._
@@ -163,9 +163,9 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-enrichment_method | The method by which enrichment was achieved. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | fluorescence-activated cell sorting
-markers | A space-delimited list of markers with +/-. | string | no |  | Markers |  | CD4+ CD8-
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+enrichment_method | The method by which enrichment was achieved. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
+markers | A list of markers used to enrich for or against certain cells. | string | no |  | Markers |  | CD4+ CD8-; HLA-G+
 min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 70
 max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 90
 
@@ -178,11 +178,11 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-dissociation_method | How cells or organelles were dissociated. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | enzymatic dissociation
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+dissociation_method | How cells or organelles were dissociated. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
 
-## iPCS induction protocol
+## iPSC induction protocol
 _Information about how a biomaterial is treated to become an induced pluripotent stem cell._
 
 Location: type/protocol/biomaterial_collection/ipsc_induction_protocol.json
@@ -191,14 +191,14 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-ipsc_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string | yes |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | piggyBac transposon
-ipsc_induction_factors | Induction factors added to primary cell culture to induce pluripotency. | string | no |  | Induction factors |  | POU5F1, SOX2, KLF4, c-MYC
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+ipsc_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string | yes |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
+ipsc_induction_factors | Induction factors added to primary cell culture to induce pluripotency. | string | no |  | Induction factors |  | POU5F1; SOX2; KLF4; c-MYC
 ipsc_induction_kit | Kit used to induce pluripotent stem cell generation. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Induction kit |  | 
-pluripotency_test | Description of how pluripotency was tested in induced pluripotent stem cells. | string | no |  | Pluripotency test |  | teratoma assay
+pluripotency_test | Description of how pluripotency was tested in induced pluripotent stem cells. | string | no |  | Pluripotency test |  | Teratoma formation; PluriTest; Rt-PCR
 percent_pluripotency | Percent of iPSCs that passed the pluripotency test. | number | no |  | Percent pluripotency |  | 97.2
 pluripotency_vector_removed | Whether a viral vector was removed after induction. | string | no |  | Pluripotent vector removed? | yes, no, unknown | Should be one of: yes, no, or unknown.
-ipsc_induction_produced_in_house | Whether the induced pluripotent stem cell was prepared in-house. | boolean | no |  | iPSC prepared in-house? |  | Should be one of: yes, no.
+ipsc_induction_produced_in_house | Whether the induced pluripotent stem cell was prepared in-house. | boolean | no |  | iPSC prepared in-house? |  | Should be one of: yes, or no.
 protocol_reagents | A list of additional purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Additional protocol reagents |  | 
 
 ## Collection protocol
@@ -210,8 +210,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-collection_method | How the biomaterial was collected. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | blood draw
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+collection_method | Method used to collect the biomaterial. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
 protocol_reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
 
 ## Differentiation protocol
@@ -223,15 +223,15 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-differentiation_method | Differentiation method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body, Monolayer, Inductive Co-Culture
-media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27, Neurobasal Media, StemPro-34 Serum-Free Medium
-small_molecules | Differentiation small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid, CHIR99021 (GSK-inhibitor), Activin A, BMP4
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+differentiation_method | Method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27; Neurobasal Media; StemPro-34 Serum-Free Medium
+small_molecules | Small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid; CHIR99021 (GSK-inhibitor); Activin A; BMP4
 target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
 reagents | A list of purchased reagents used in the differentiation protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Differentiation reagents |  | 
-target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt Pathway
-validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay, qPCR, Flow Cytometry, Immunocytochemistry Staining
-validation_result | Result confirming successful differentiation to target cell type. | string | no |  | Validation result |  | CD103 Positive, Nestin Positive, HCN4 Positive, CD11C Negative
+target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt pathway; Hedgehog signaling pathway
+validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay; qPCR; Flow Cytometry; Immunocytochemistry Staining
+validation_result | Result confirming successful differentiation to target cell type. | string | no |  | Validation result |  | CD103 Positive; Nestin Positive; HCN4 Positive; CD11C Negative
 
 ## Imaging preparation protocol
 _Information about the preparation protocol of the imaged specimen used in an imaging experiment_
@@ -289,15 +289,15 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-project_core | Core project-level information. | object | yes | [See core  project_core](core.md/#project_core) |  |  | 
-contributors | List of people contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
-supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris
-publications | A list of publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
-insdc_project | An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if project has been submitted. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRP, SRP, or ERP. | string | no |  | INSDC project accession |  | SRP000000
-geo_series | GEO accession number, if data has been submitted. Accession must start with GSE. | string | no |  | GEO series accession |  | GSE00000
-array_express_investigation | EBI ArrayExpress accession number, if data has been submitted. | string | no |  | ArrayExpress accession |  | E-AAAA-00
-insdc_study | An INSDC (International Nucleotide Sequence Database Collaboration) study accession if study has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD. | string | no |  | INSDC study accession |  | PRJNA000000
-funders | A list of funding source(s) supporting the project. | array | no | [See module  funder](module.md/#funder) | Project funding source(s) |  | 
+project_core | Core project-level information. | object | yes | [See core  project_core](core.md/#project_core) | Project core |  | 
+contributors | People contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
+supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
+publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
+insdc_project | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | string | no |  | INSDC project accession |  | SRP000000
+geo_series | A Gene Expression Omnibus (GEO) series accession. | string | no |  | GEO series accession |  | GSE00000
+array_express_investigation | An ArrayExpress accession. | string | no |  | ArrayExpress accession |  | E-AAAA-00
+insdc_study | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | string | no |  | INSDC study accession |  | PRJNA000000
+funders | Funding source(s) supporting the project. | array | no | [See module  funder](module.md/#funder) | Funding source(s) |  | 
 
 ## Specimen from organism
 _Information about the specimen that was collected from the donor organism._
@@ -393,7 +393,7 @@ sex | The biological sex of the organism. | string | yes |  | Biological sex | f
 is_living | Whether organism was alive at time of biomaterial collection. | string | yes |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, unknown.
 organism_age | Age of organism in Age units measured since birth. | string | no |  | Age |  | 20, 45-65
 organism_age_unit | The unit in which Age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Age unit |  | 
-development_stage | A classification of the developmental stage of the organism. | object | no | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
+development_stage | A classification of the developmental stage of the organism. | object | yes | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 diseases | Short description of known disease(s) of the organism. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
 familial_relationship | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
@@ -404,7 +404,6 @@ height | Height of organism in Height unit. | string | no |  | Height |  | 160, 
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | 
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60, 40-60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | 
-normothermic_regional_perfusion | Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise. | string | no |  | Normothermic regional perfusion? | yes, no, unknown | Should be one of: yes, no, or unknown.
 timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
 
 ## Organoid

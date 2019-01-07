@@ -7,6 +7,54 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/project/project.json - v9.0.5] - 2019-01-03
+### Added
+Added user-friendly name, examples, and guidelines to adhere to Style Guide
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.6] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.7] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.3.1] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.4] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.6] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v2.0.2] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/biomaterial/donor_organism.json - v12.0.0] - 2018-12-13
+### Changed
+Changed donor_organism to make development_stage required. Fixes #607
+
+### [type/biomaterial/donor_organism.json - v11.0.0] - 2018-12-13
+### Removed
+Removed normothermic_regional_perfusion. Fixes #590.
+
+### [module/biomaterial/death.json - v5.4.0] - 2018-12-13
+### Added
+Added normothermic_regional_perfusion. Fixes #590.
+
+### [type/file/sequence_file.json - v7.0.1] - 2018-12-13
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #672.
+
+### [system/license.json - v1.0.0] - 2018-12-07
+### Added
+Added system entity to capture license under which data are released. Fixes #338.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/target.json - v1.0.1] - 2018-12-07

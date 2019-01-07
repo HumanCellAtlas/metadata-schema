@@ -30,8 +30,8 @@ process_id | A unique ID for the process. | string |  | Process ID |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
-file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
-read_index | Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read or represents a single-end, non-indexed library. | string |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2, or 'single-end, non-indexed'
+file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
+read_index | The sequencing read this file represents. | string |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
 ### Image file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -90,38 +90,38 @@ computational_method | A URI to a versioned workflow and versioned execution env
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-aggregate_formation_method | Method used to form cell aggreagtes. | string |  | Aggregate formation method |  | rocking, suspension cultures, hanging drops, spinner flasks
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+aggregate_formation_method | Method used to form cell aggregates. | string |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
 ### Enrichment protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-enrichment_method | The method by which enrichment was achieved. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | fluorescence-activated cell sorting
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+enrichment_method | The method by which enrichment was achieved. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
 ### Dissociation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-dissociation_method | How cells or organelles were dissociated. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | enzymatic dissociation
-### iPCS induction protocol
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+dissociation_method | How cells or organelles were dissociated. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
+### iPSC induction protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-ipsc_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | piggyBac transposon
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+ipsc_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
 ### Collection protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-collection_method | How the biomaterial was collected. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | blood draw
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+collection_method | Method used to collect the biomaterial. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
 ### Differentiation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-differentiation_method | Differentiation method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body, Monolayer, Inductive Co-Culture
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+differentiation_method | Method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
 ### Imaging preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -143,7 +143,7 @@ target | Information about each imaging target in the imaging experiment. | arra
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
-project_core | Core project-level information. | object | [See core  project_core](core.md/#project_core) |  |  | 
+project_core | Core project-level information. | object | [See core  project_core](core.md/#project_core) | Project core |  | 
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -174,6 +174,7 @@ schema_type | The type of the metadata schema entity. | string |  |  | biomateri
 biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
 sex | The biological sex of the organism. | string |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
 is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, unknown.
+development_stage | A classification of the developmental stage of the organism. | object | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 ### Organoid
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
