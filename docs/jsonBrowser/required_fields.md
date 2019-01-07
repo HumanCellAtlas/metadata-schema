@@ -265,7 +265,7 @@ text | The full name of the instrument used. | string |  | Instrument |  | Illum
 ### Length unit ontology<a name='Length unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a length unit being used. | string |  |  |  | 
+text | The name of a length unit being used. | string |  | Length unit |  | micrometer; inch
 ### Library amplification ontology<a name='Library amplification ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
