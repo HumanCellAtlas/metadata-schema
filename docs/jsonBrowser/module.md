@@ -200,9 +200,9 @@ Location: module/ontology/time_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a time unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a time unit being used. | string | yes |  | Time unit |  | second; week
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Time unit ontology ID |  | UO:0000010; UO:0000034
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Time unit ontology label |  | second; week
 
 ## Protocol type ontology<a name='Protocol type ontology'></a>
 _A term that may be associated with a protocol-related ontology term_

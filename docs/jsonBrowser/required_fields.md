@@ -273,7 +273,7 @@ text | The name of the type of microscopy used in an imaging experiment. | strin
 ### Time unit ontology<a name='Time unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a time unit being used. | string |  |  |  | 
+text | The name of a time unit being used. | string |  | Time unit |  | second; week
 ### Protocol type ontology<a name='Protocol type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
