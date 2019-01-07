@@ -134,9 +134,9 @@ Location: module/ontology/species_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the species to which the organism belongs. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of the species to which the organism belongs. | string | yes |  | Species |  | Homo sapiens; Mus musculus
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Species ontology ID |  | NCBITaxon:9606; NCBITaxon:10090
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Species ontology label |  | Homo sapiens; Mus musculus
 
 ## Disease ontology<a name='Disease ontology'></a>
 _A term that may be associated with a disease-related ontology term_

@@ -249,7 +249,7 @@ text | The name of a sequencing approach being used. | string |  |  |  |
 ### Species ontology<a name='Species ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the species to which the organism belongs. | string |  |  |  | 
+text | The name of the species to which the organism belongs. | string |  | Species |  | Homo sapiens; Mus musculus
 ### Disease ontology<a name='Disease ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
