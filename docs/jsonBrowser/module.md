@@ -123,9 +123,9 @@ Location: module/ontology/sequencing_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a sequencing approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a sequencing approach being used. | string | yes |  | Sequencing approach |  | 10x; Smart-seq2
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Sequencing approach ontology ID |  | EFO:0008440; EFO:0008441
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Sequencing approach ontology label |  | 10x; Smart-seq2
 
 ## Species ontology<a name='Species ontology'></a>
 _A term that may be associated with a species-related ontology term_

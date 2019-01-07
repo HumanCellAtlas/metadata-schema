@@ -245,7 +245,7 @@ text | The name of a process type being used. | string |  |  |  |
 ### Sequencing ontology<a name='Sequencing ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a sequencing approach being used. | string |  |  |  | 
+text | The name of a sequencing approach being used. | string |  | Sequencing approach |  | 10x; Smart-seq2
 ### Species ontology<a name='Species ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
