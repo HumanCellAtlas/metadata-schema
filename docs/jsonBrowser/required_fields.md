@@ -217,7 +217,7 @@ exposure_time | Acquisition time for a single image per channel in miliseconds |
 ### Length unit ontology<a name='Length unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a length unit being used. | string |  |  |  | 
+text | The name of a length unit being used. | string |  | Length unit |  | micrometer; inch
 ### Cell cycle ontology<a name='Cell cycle ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
