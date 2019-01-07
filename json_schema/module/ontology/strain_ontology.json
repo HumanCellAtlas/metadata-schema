@@ -21,7 +21,9 @@
         },
         "text": {
             "description": "The name of the strain to which the organism belongs (mouse-specific).",
-            "type": "string"
+            "type": "string",
+            "example": "C57BL/6; BALB/c",
+            "user_friendly": "Strain"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -32,11 +34,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": true
-            }
+            },
+            "example": "EFO:0004472; EFO:0000602",
+            "user_friendly": "Strain ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "example": "C57BL/6; BALB/c",
+            "user_friendly": "Strain ontology label"
         }
     },
     "type": "object"

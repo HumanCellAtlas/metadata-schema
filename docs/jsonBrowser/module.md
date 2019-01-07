@@ -156,9 +156,9 @@ Location: module/ontology/strain_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  | Strain |  | C57BL/6; BALB/c
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Strain ontology ID |  | EFO:0004472; EFO:0000602
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Strain ontology label |  | C57BL/6; BALB/c
 
 ## Enrichment ontology<a name='Enrichment ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -167,9 +167,9 @@ Location: module/ontology/enrichment_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of an enrichment approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of an enrichment approach being used. | string | yes |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Enrichment |  | EFO:0009108; EFO:0009110
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
 
 ## Organ part ontology<a name='Organ part ontology'></a>
 _A term that may be associated with an anatomy-related ontology term_

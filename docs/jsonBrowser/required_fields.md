@@ -257,11 +257,11 @@ text | The text for the term as the user provides it. | string |  |  |  |
 ### Strain ontology<a name='Strain ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the strain to which the organism belongs (mouse-specific). | string |  |  |  | 
+text | The name of the strain to which the organism belongs (mouse-specific). | string |  | Strain |  | C57BL/6; BALB/c
 ### Enrichment ontology<a name='Enrichment ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of an enrichment approach being used. | string |  |  |  | 
+text | The name of an enrichment approach being used. | string |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
 ### Organ part ontology<a name='Organ part ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
