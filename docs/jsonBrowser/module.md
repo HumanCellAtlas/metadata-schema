@@ -164,9 +164,9 @@ Location: module/ontology/cell_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell type supplied by a user. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a cell type supplied by a user. | string | yes |  |  |  | bone marrow hematopoietic cell; cardiac muscle cell
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | CL:1001610; CL:0000746
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | bone marrow hematopoietic cell; cardiac muscle cell
 
 ## Cellular component ontology<a name='Cellular component ontology'></a>
 _A term that may be associated with an intra-cellular structure ontology term_
