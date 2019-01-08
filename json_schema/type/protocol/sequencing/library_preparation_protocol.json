@@ -41,7 +41,8 @@
         "protocol_core" : {
             "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/protocol/protocol_core.json"
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
         },
         "cell_barcode": {
             "description": "Information about cell identifier barcodes.",
@@ -53,8 +54,7 @@
             "description": "Starting nucleic acid molecule isolated for sequencing.",
             "type": "object",
             "$ref": "module/ontology/biological_macromolecule_ontology.json",
-            "user_friendly": "Input nucleic acid molecule",
-            "example": "polyA RNA"
+            "user_friendly": "Input nucleic acid molecule"
         },
         "nucleic_acid_source": {
             "description": "Source cells or organelles from which nucleic acid molecules were collected.",
@@ -67,14 +67,13 @@
                 "mitochondria"
             ],
             "user_friendly": "Nucleic acid source",
-            "example": "Should be one of: bulk cell, single cell, single nucleus, bulk nuclei, or mitochondria."
+            "example": "Should be one of: single cell, bulk cell, single nucleus, bulk nuclei, or mitochondria."
         },
         "library_construction_approach": {
-            "description": "The general approach for sequencing library construction.",
+            "description": "The general method for sequencing library construction.",
             "type": "object",
             "$ref": "module/ontology/library_construction_ontology.json",
-            "user_friendly": "Library construction approach",
-            "example": "Smart-seq2"
+            "user_friendly": "Library construction method"
         },
         "library_construction_kit": {
             "description": "Name of kit used to construct the sequencing library.",
@@ -99,7 +98,8 @@
                 "5 prime end bias",
                 "full length"
             ],
-            "user_friendly": "End bias"
+            "user_friendly": "End bias",
+            "guidelines": "Enter 'full length' if there is no tag or end bias."
         },
         "primer": {
             "description": "Primer used for cDNA synthesis from RNA.",
@@ -120,17 +120,18 @@
                 "unstranded",
                 "not provided"
             ],
-            "example": "Should be one of: first, second, or unstranded.",
-            "user_friendly": "Strand"
+            "example": "Should be one of: first, second, unstranded, or not provided.",
+            "user_friendly": "Strand",
+            "guidelines": "Enter 'first' if sequenced molecule is only the strand generated during first strand synthesis. Enter 'second' if sequenced molecule is only the strand generated during second strand synthesis. Enter 'unstranded' if both strands were sequenced."
         },
         "spike_in_kit": {
-            "description": "Information about a spike-in kit, if used.",
+            "description": "Information about a spike-in kit.",
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Spike-in kit"
         },
         "spike_in_dilution": {
-            "description": "Dilution of spike-in, if used.",
+            "description": "Dilution of spike-in.",
             "type": "integer",
             "maximum": 1000000,
             "minimum": 1,
@@ -147,27 +148,25 @@
             "description": "The method used to amplify RNA prior to adaptor ligation.",
             "type": "object",
             "$ref": "module/ontology/library_amplification_ontology.json",
-            "user_friendly": "Library pre-amplification method",
-            "example": "PCR"
+            "user_friendly": "Library pre-amplification method"
         },
         "cdna_library_amplification_method": {
-            "description": "The method used to amplify a cDNA library prior to sequencing.",
+            "description": "The method used to amplify cDNA library prior to sequencing.",
             "type": "object",
             "$ref": "module/ontology/library_amplification_ontology.json",
-            "user_friendly": "cDNA library amplification method",
-            "example": "PCR"
+            "user_friendly": "cDNA library amplification method"
         },
         "nominal_length": {
             "description": "Average (insert) size of the fragments being sequenced.",
             "type": "integer",
             "user_friendly": "Nominal length",
-            "example": "250"
+            "example": 250
         },
         "nominal_sdev": {
             "description": "Standard deviation of the (insert) size of the fragments being sequenced.",
             "type": "integer",
             "user_friendly": "Nominal standard deviation",
-            "example": "30"
+            "example": 30
         }
     }
 }
