@@ -7,6 +7,7 @@
     ],
     "title": "Protocol type ontology",
     "name": "protocol_type_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -43,7 +44,5 @@
             "example": "dissociation; enrichment",
             "user_friendly": "Protocol type ontology label"
         }
-
-    },
-    "type": "object"
+    }
 }

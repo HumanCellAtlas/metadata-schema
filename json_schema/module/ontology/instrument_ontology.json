@@ -7,6 +7,7 @@
     ],
     "title": "Instrument ontology",
     "name": "instrument_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/instrument_ontology",
@@ -43,6 +44,5 @@
             "user_friendly": "Instrument ontology label",
             "example": "Illumina HiSeq 2500; ONT MinION"
         }
-    },
-    "type": "object"
+    }
 }

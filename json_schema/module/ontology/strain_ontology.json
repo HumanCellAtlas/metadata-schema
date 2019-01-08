@@ -7,6 +7,7 @@
     ],
     "title": "Strain ontology",
     "name": "strain_ontology",
+    "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
@@ -44,6 +45,5 @@
             "example": "C57BL/6; BALB/c",
             "user_friendly": "Strain ontology label"
         }
-    },
-    "type": "object"
+    }
 }

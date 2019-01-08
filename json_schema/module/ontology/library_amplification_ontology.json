@@ -7,6 +7,7 @@
     ],
     "title": "Library amplification ontology",
     "name": "library_amplification_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -44,6 +45,5 @@
             "user_friendly": "Library amplification ontology label",
             "example": "PCR; in vitro transcription"
         }
-    },
-    "type": "object"
+    }
 }

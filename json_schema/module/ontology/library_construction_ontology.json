@@ -7,6 +7,7 @@
     ],
     "title": "Library construction ontology",
     "name": "library_construction_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -44,6 +45,5 @@
             "user_friendly": "Library construction ontology label",
             "example": "10X v2 sequencing; Smart-seq2"
         }
-    },
-    "type": "object"
+    }
 }

@@ -7,6 +7,7 @@
     ],
     "title": "Organ part ontology",
     "name": "organ_part_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -44,6 +45,5 @@
             "user_friendly": "Organ part ontology label",
             "example": "bone marrow; islet of Langerhans"
         }
-    },
-    "type": "object"
+    }
 }

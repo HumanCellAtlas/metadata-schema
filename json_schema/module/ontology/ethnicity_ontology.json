@@ -7,6 +7,7 @@
     ],
     "title": "Ethnicity ontology",
     "name": "ethnicity_ontology",
+    "type": "object",
     "properties": {
         "describedBy" : {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/ethnicity_ontology",
@@ -43,6 +44,5 @@
             "user_friendly": "Ethnicity ontology label",
             "example": "European; Hispanic or Latin American"
         }
-    },
-    "type": "object"
+    }
 }

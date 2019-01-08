@@ -7,6 +7,7 @@
     ],
     "title": "Organ ontology",
     "name": "organ_ontology",
+    "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
@@ -44,6 +45,5 @@
             "user_friendly": "Organ ontology label",
             "example": "heart; immune system"
         }
-    },
-    "type": "object"
+    }
 }

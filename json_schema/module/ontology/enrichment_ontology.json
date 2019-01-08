@@ -7,6 +7,7 @@
     ],
     "title": "Enrichment ontology",
     "name": "enrichment_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -44,6 +45,5 @@
             "user_friendly": "Enrichment ontology label",
             "example": "fluorescence-activated cell sorting; Ficoll-Hypaque method"
         }
-    },
-    "type": "object"
+    }
 }
