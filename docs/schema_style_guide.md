@@ -264,7 +264,7 @@ The following attributes are required for each metadata field in an HCA metadata
     
 ### Conditional required field attributes
 
-1. **example:** Two example valid values for the metadata field, separated by a semicolon. This attribute is required for all fields except those that reference a core, module, or ontology schema and those for which providing an example might bias data contributors. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
+1. **example:** 1-2 example valid values for the metadata field, separated by a semicolon. This attribute is required for all fields except those that reference a core, module, or ontology schema and those for which providing an example might bias data contributors. The *example* value will appear in the metadata spreadsheet and be displayed in the Metadata Dictionary on the Data Portal. 
 
     Example:
     
@@ -277,9 +277,11 @@ The following attributes are required for each metadata field in an HCA metadata
 
     An *example* should **not** be provided when:
     
-    - A field imports a core or module schema, *e.g.* `donor_organism.medical_history`, because the fields in the imported schema will have their own example valid values.
-    - A field uses an ontology, *e.g.* `genus_species`, because the fields in the imported ontology schema will have their own example valid values.
-    - An example for a field could bias data contributors, *e.g.* providing an example ID for a biomaterial in the `biomaterial_id` field. 
+    - A field references a core or module schema, *e.g.* `donor_organism.medical_history`, because the fields in the imported schema will have their own example valid values.
+    - A field references an ontology schema, *e.g.* `genus_species`, because the fields in the imported ontology schema will have their own example valid values.
+    - An example for a field could bias data contributors, *e.g.* providing an example ID for a biomaterial in the `biomaterial_id` field.
+    
+    In general, fields should include two examples to highlight the range of possible valid values. In some cases, however, including two examples does not provide more clarity than including one example. For instance, the `cell_line.catalog_url` field takes a string representing the "supplier catalogue URL for the cell line". Including one example catalog URL for this field is sufficient to demonstrate what a valid value looks like, and including a second example would likely not improve clarity.   
 
     **Special case: Ontology examples**
     
@@ -389,19 +391,6 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Optional field attributes
 
-1. **pattern:** A regular expression that the metadata field value must follow. The *pattern* value is not displayed to users outside of the JSON schema itself, but the *example* attribute can describe what pattern the value should follow.
-
-    Example:
-    
-        "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, ENA, or SRA.",
-            "type": "string",
-            "example": "SRP0000000.",
-            "pattern": "^[D|E|S]RP[0-9]+$",
-            "user_friendly": "INSDC project accession",
-            ...
-        }
-
 1. **guidelines:** Instructions for how to fill in a valid value for the metadata field. This attribute can be included on an as-needed basis when further clarification for how to fill in a metadata field would be helpful to data contributors. In otherwords, when the description and example attributes are not clear enough. The *guidelines* value will appear in the metadata spreadsheet. 
 
     Example:
@@ -414,7 +403,26 @@ The following attributes are required for each metadata field in an HCA metadata
             "user_friendly": "Street address"
         }
 
+1. **pattern:** A regular expression that the metadata field value must follow. The *pattern* value is not displayed to users outside of the JSON schema itself, but the *example* and *guidelines* attributes can demonstrate and describe what pattern the value should follow.
+
+    Example:
+    
+        "insdc_project": {
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
+            "type": "string",
+            "pattern": "^[D|E|S]RP[0-9]+$",
+            "example": "SRP000000",
+            "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively.",
+            ...
+        },
+
 ## General rules
+
+### Spelling and grammer
+
+1. Use U.S. spelling of words. *e.g.*: "meter" instead of "metre".
+1. Use Oxford comma in lists. Exception is when using a semi-colon to separate multiple example values in the *example* attribute.
+1. Use present tense.
 
 ### Field name conventions
 
