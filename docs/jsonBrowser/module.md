@@ -153,9 +153,9 @@ Location: module/ontology/cell_cycle_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell cycle of the cells in the specimen. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a cell cycle of the cells in the specimen. | string | yes |  | Cell cycle |  | meiotic cell cycle; mitotic G1 phase
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Cell cycle ontology ID |  | GO:0051321; GO:0000080
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Cell cycle ontology label |  | meiotic cell cycle; mitotic G1 phase
 
 ## Cell type ontology<a name='Cell type ontology'></a>
 _A term that may be associated with a cell type-related ontology term_

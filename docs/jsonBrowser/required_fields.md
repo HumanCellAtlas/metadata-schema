@@ -233,7 +233,7 @@ text | The name of the biological macromolecule being used. | string |  | Biolog
 ### Cell cycle ontology<a name='Cell cycle ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell cycle of the cells in the specimen. | string |  |  |  | 
+text | The name of a cell cycle of the cells in the specimen. | string |  | Cell cycle |  | meiotic cell cycle; mitotic G1 phase
 ### Cell type ontology<a name='Cell type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
