@@ -330,7 +330,7 @@ Location: module/ontology/protocol_type_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of a protocol type used. | string | yes |  | Protocol type |  | dissociation; enrichment
-ontology | An ontology term identifier in the form prefix:accession | string | no |  | Protocol type ontology label |  | EFO:0009088; EFO:0009089
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Protocol type ontology ID |  | EFO:0009088; EFO:0009089
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Protocol type ontology label |  | dissociation; enrichment
 
 ## Sequencing ontology<a name='Sequencing ontology'></a>

@@ -35,7 +35,7 @@
                 "direct": false,
                 "include_self": false
             },"example": "EFO:0009088; EFO:0009089",
-            "user_friendly": "Protocol type ontology label"
+            "user_friendly": "Protocol type ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
