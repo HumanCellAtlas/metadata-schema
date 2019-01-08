@@ -312,8 +312,8 @@ institution | Name of primary institute where the individual works. | string |  
 ### Publication<a name='Publication'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-authors | A list of authors associated with the publication in 'surname initials' format. | array |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body
+authors | A list of authors associated with the publication. | array |  | Authors |  | Doe JD
+publication_title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
 ### Human-specific<a name='Human-specific'></a>
 _There are no required properties in schema Human-specific_
 ### Growth conditions<a name='Growth conditions'></a>
