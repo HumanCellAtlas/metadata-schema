@@ -11,6 +11,7 @@ module/ontology/instrument_ontology,patch,"Add examples and user-friendly names.
 module/ontology/length_unit_ontology,patch,"Add examples and user-friendly names. Fixes #613.",,
 module/ontology/library_amplification_ontology,patch,"Add examples and user-friendly names. Fixes #613.",,
 module/ontology/library_construction_ontology,patch,"Add examples and user-friendly names. Fixes #613.",,
+module/ontology/mass_unit,patch,"Add examples and user-friendly names. Fixes #613.",,
 module/ontology/microscopy_ontology,patch,"Add examples and user-friendly names. Fixes #613.",,
 module/ontology/organ_ontology,patch,"Add examples and user-friendly names. Fixes #613.",,
 module/ontology/organ_part_ontology,patch,"Add examples and user-friendly names. Fixes #613.",,
