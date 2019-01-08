@@ -301,7 +301,7 @@ text | The name of a protocol type used. | string |  | Protocol type |  | dissoc
 ### Sequencing ontology<a name='Sequencing ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a sequencing approach being used. | string |  | Sequencing approach |  | 10x; Smart-seq2
+text | The name of a sequencing approach being used. | string |  | Sequencing approach |  | tag based single cell RNA sequencing; full length single cell RNA sequencing
 ### Species ontology<a name='Species ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

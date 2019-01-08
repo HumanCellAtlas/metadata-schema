@@ -7,6 +7,7 @@
     ],
     "title": "Sequencing ontology",
     "name": "sequencing_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -22,7 +23,7 @@
         "text": {
             "description": "The name of a sequencing approach being used.",
             "type": "string",
-            "example": "10x; Smart-seq2",
+            "example": "tag based single cell RNA sequencing; full length single cell RNA sequencing",
             "user_friendly": "Sequencing approach"
         },
         "ontology": {
@@ -41,9 +42,8 @@
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
             "type": "string",
-            "example": "10x; Smart-seq2",
+            "example": "tag based single cell RNA sequencing; full length single cell RNA sequencing",
             "user_friendly": "Sequencing approach ontology label"
         }
-    },
-    "type": "object"
+    }
 }
