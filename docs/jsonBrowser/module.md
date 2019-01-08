@@ -142,9 +142,9 @@ Location: module/ontology/biological_macromolecule_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the biological macromolecule being used. | string | yes |  | Biological macromolecule |  | polyA RNA, mRNA
-ontology | An ontology term identifier in the form prefix:accession | string | no |  | Biological macromolecule ontology ID |  | OBI:0000869, CHEBI:33699
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Biological macromolecule ontology label |  | polyA RNA, messenger RNA
+text | The name of the biological macromolecule being used. | string | yes |  | Biological macromolecule |  | polyA RNA; mRNA
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Biological macromolecule ontology ID |  | OBI:0000869; CHEBI:33699
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Biological macromolecule ontology label |  | polyA RNA; messenger RNA
 
 ## Cell cycle ontology<a name='Cell cycle ontology'></a>
 _A term that may be associated with a cell cycle-related ontology term_

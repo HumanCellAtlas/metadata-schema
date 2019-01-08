@@ -229,7 +229,7 @@ timecourse_unit | The unit in which the Timecourse value is expressed. | object 
 ### Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the biological macromolecule being used. | string |  | Biological macromolecule |  | polyA RNA, mRNA
+text | The name of the biological macromolecule being used. | string |  | Biological macromolecule |  | polyA RNA; mRNA
 ### Cell cycle ontology<a name='Cell cycle ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
