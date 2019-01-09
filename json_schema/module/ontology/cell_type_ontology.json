@@ -7,6 +7,7 @@
     ],
     "title": "Cell type ontology",
     "name": "cell_type_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cell_type_ontology",
@@ -20,7 +21,9 @@
         },
         "text": {
             "description": "The name of a cell type supplied by a user.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Cell type",
+            "example": "bone marrow hematopoietic cell; cardiac muscle cell"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -31,12 +34,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "user_friendly": "Cell type ontology ID",
+            "example": "CL:1001610; CL:0000746"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Cell type ontology label",
+            "example": "bone marrow hematopoietic cell; cardiac muscle cell"
         }
-    },
-    "type": "object"
+    }
 }

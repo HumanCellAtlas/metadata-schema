@@ -7,6 +7,7 @@
     ],
     "title": "Cell cycle ontology",
     "name": "cell_cycle_ontology",
+    "type": "object",
     "properties": {
         "describedBy": {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cell_cycle_ontology",
@@ -20,7 +21,9 @@
         },
         "text": {
             "description": "The name of a cell cycle of the cells in the specimen.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Cell cycle",
+            "example": "meiotic cell cycle; mitotic G1 phase"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -31,12 +34,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "user_friendly": "Cell cycle ontology ID",
+            "example": "GO:0051321; GO:0000080"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Cell cycle ontology label",
+            "example": "meiotic cell cycle; mitotic G1 phase"
         }
-    },
-    "type": "object"
+    }
 }

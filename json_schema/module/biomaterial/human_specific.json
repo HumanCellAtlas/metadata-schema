@@ -18,21 +18,21 @@
             "example": "4.6.1"
         },
         "body_mass_index": {
-            "description": "The body mass index of the donor organism.",
+            "description": "The body mass index of the donor.",
             "type": "number",
             "maximum": 100,
             "minimum": 5,
-             "example": 36.4,
+            "example": 36.4,
             "user_friendly": "Body mass index"
         },
         "ethnicity": {
-            "description": "Ethnicity of the donor organism using ontology terms from EMBL-EBI's Ancestry Ontology.",
+            "description": "Ethnicity of the donor.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/ethnicity_ontology.json"
             },
             "user_friendly": "Ethnicity",
-            "example": "European, White, British"
+            "guidelines": "Enter one or more ethnicities, separated by a comma."
         }
     }
 }

@@ -32,7 +32,7 @@
                 "RNAlater, frozen",
                 "TRIzol, frozen"
             ],
-            "example": "frozen, liquid nitrogen",
+            "example": "frozen, liquid nitrogen; fresh",
             "user_friendly": "Storage method"
         },
         "storage_time": {
@@ -45,11 +45,10 @@
             "description": "The unit in which Storage time is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "example": "day",
             "user_friendly": "Storage time unit"
         },
         "preservation_method": {
-            "description": "The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. Enter 'fresh' if not preserved.",
+            "description": "The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration.",
             "type": "string",
             "enum": [
                 "cryopreservation in liquid nitrogen (dead tissue)",
@@ -61,8 +60,9 @@
                 "formalin fixed and paraffin embedded",
                 "fresh"
             ],
-            "example": "cryopreservation in liquid nitrogen (dead tissue)",
-            "user_friendly": "Preservation method"
+            "example": "cryopreservation in liquid nitrogen (dead tissue); fresh",
+            "user_friendly": "Preservation method",
+            "guidelines": "Enter 'fresh' if not preserved."
         }
     }
 }
