@@ -24,7 +24,7 @@
             "description": "The name of a length unit being used.",
             "type": "string",
             "user_friendly": "Length unit",
-            "example": "micrometer; inch"
+            "example": "micrometer; meter"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -37,13 +37,13 @@
                 "include_self": false
             },
             "user_friendly": "Length unit ontology ID",
-            "example": "UO:0000017; EFO:0004387"
+            "example": "UO:0000017; UO:0000008"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
             "type": "string",
             "user_friendly": "Length unit ontology label",
-            "example": "micrometer; inch"
+            "example": "micrometer; meter"
         }
     }
 }
