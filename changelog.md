@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/timecourse.json - v1.1.5] - 2019-01-09
+### Fixed
+Fixed bug in spelling of user_friendly field in timecourse module. Fixes #710
+
+### [type/biomaterial/donor_organism.json - v12.0.3] - 2019-01-09
+### Fixed
+Fixed bug in spelling of user_friendly field in timecourse module. Fixes #710
+
 ### [core/biomaterial/biomaterial_core.json - v7.0.4] - 2019-01-09
 ### Changed
 Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.

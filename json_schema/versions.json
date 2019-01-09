@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-09T11:15:21Z",
+    "last_update_date": "2019-01-09T11:35:07Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -29,7 +29,7 @@
                 "mouse_specific": "1.0.5",
                 "preservation_storage": "5.3.4",
                 "state_of_specimen": "5.2.6",
-                "timecourse": "1.1.4"
+                "timecourse": "1.1.5"
             },
             "ontology": {
                 "biological_macromolecule_ontology": "5.3.3",
@@ -83,7 +83,7 @@
             "biomaterial": {
                 "cell_line": "9.0.4",
                 "cell_suspension": "8.6.5",
-                "donor_organism": "12.0.2",
+                "donor_organism": "12.0.3",
                 "imaged_specimen": "2.0.4",
                 "organoid": "8.3.11",
                 "specimen_from_organism": "6.3.7"
