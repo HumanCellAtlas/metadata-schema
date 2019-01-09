@@ -23,17 +23,18 @@
         "plate_id": {
             "description": "An ID for the plate that the well is located on.",
             "type": "string",
-            "user_friendly": "Well plate ID",
+            "user_friendly": "Plate ID",
             "example": "2217"
         },
         "well_id": {
-            "description": "An ID or name for the well. Should be unique for the plate.",
+            "description": "An ID or name for the well.",
             "type": "string",
             "user_friendly": "Well ID",
-            "example": "A1"
+            "example": "A1",
+            "guidelines": " Well ID should be unique for the plate."
         },
         "cell_quality": {
-            "description": "Note on how good cell looks if imaged in well before sequencing.",
+            "description": "Quality of well if imaged before sequencing.",
             "type": "string",
             "enum": [
                 "OK",
@@ -41,7 +42,7 @@
                 "control, empty well",
                 "low quality cell"
             ],
-            "user_friendly": "Cell quality",
+            "user_friendly": "Well quality",
             "example": "Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'."
         }
     }
