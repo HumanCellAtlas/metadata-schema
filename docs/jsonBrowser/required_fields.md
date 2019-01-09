@@ -335,8 +335,8 @@ _There are no required properties in schema State of specimen_
 ### Timecourse<a name='Timecourse'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-timecourse_value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  |  |  | 2
-timecourse_unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md/#time_unit_ontology) |  |  | day
+timecourse_value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  | Timecourse value |  | 2
+timecourse_unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Timecourse unit |  | day
 ### Mouse-specific<a name='Mouse-specific'></a>
 _There are no required properties in schema Mouse-specific_
 ### Purchased reagents<a name='Purchased reagents'></a>

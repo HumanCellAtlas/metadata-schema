@@ -438,9 +438,9 @@ Location: module/biomaterial/timecourse.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-timecourse_value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  |  |  | 2
-timecourse_unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md/#time_unit_ontology) |  |  | day
-timecourse_relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  |  |  | Collection after tumor cells injected into the mammary gland.
+timecourse_value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  | Timecourse value |  | 2
+timecourse_unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Timecourse unit |  | day
+timecourse_relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  | Timecourse relevance |  | Collection after tumor cells injected into the mammary gland.
 
 ## Mouse-specific<a name='Mouse-specific'></a>
 _Information specific to an organism that is a mouse (Mus musculus)._
