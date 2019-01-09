@@ -6,6 +6,7 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/cell_morphology.json - v6.1.5] - 2019-01-09
 ### Update
@@ -538,8 +539,6 @@ Changed description, user-friendly, example, and guidelines attributes to adhere
 ### [system/license.json - v1.0.0] - 2018-12-07
 ### Added
 Added system entity to capture license under which data are released. Fixes #338.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/target.json - v1.0.1] - 2018-12-07
 ### Changed
