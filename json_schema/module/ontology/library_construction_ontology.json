@@ -7,6 +7,7 @@
     ],
     "title": "Library construction ontology",
     "name": "library_construction_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -21,7 +22,9 @@
         },
         "text": {
             "description": "The name of a library construction approach being used.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Library construction",
+            "example": "10X v2 sequencing; Smart-seq2"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -32,12 +35,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "user_friendly": "Library construction ontology ID",
+            "example": "EFO:0009310; EFO:0008931"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Library construction ontology label",
+            "example": "10X v2 sequencing; Smart-seq2"
         }
-    },
-    "type": "object"
+    }
 }
