@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-09T10:30:10Z",
+    "last_update_date": "2019-01-09T10:50:07Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -20,40 +20,40 @@
         },
         "module": {
             "biomaterial": {
-                "cell_morphology": "6.1.3",
+                "cell_morphology": "6.1.4",
                 "death": "5.4.0",
                 "familial_relationship": "6.0.2",
                 "growth_conditions": "6.4.1",
-                "human_specific": "1.0.5",
+                "human_specific": "1.0.6",
                 "medical_history": "5.2.4",
-                "mouse_specific": "1.0.4",
-                "preservation_storage": "5.3.3",
+                "mouse_specific": "1.0.5",
+                "preservation_storage": "5.3.4",
                 "state_of_specimen": "5.2.6",
-                "timecourse": "1.1.3"
+                "timecourse": "1.1.4"
             },
             "ontology": {
-                "biological_macromolecule_ontology": "5.3.2",
-                "cell_cycle_ontology": "5.3.2",
-                "cell_type_ontology": "5.3.2",
-                "cellular_component_ontology": "1.0.2",
-                "development_stage_ontology": "5.3.2",
-                "disease_ontology": "5.3.3",
-                "enrichment_ontology": "1.2.3",
-                "ethnicity_ontology": "5.3.4",
-                "instrument_ontology": "5.3.2",
-                "length_unit_ontology": "5.3.2",
-                "library_amplification_ontology": "1.2.2",
-                "library_construction_ontology": "1.2.2",
-                "mass_unit_ontology": "5.3.2",
-                "microscopy_ontology": "1.0.1",
-                "organ_ontology": "5.3.5",
-                "organ_part_ontology": "5.3.2",
-                "process_type_ontology": "5.3.2",
-                "protocol_type_ontology": "5.3.2",
-                "sequencing_ontology": "1.1.2",
-                "species_ontology": "5.3.2",
-                "strain_ontology": "5.3.3",
-                "time_unit_ontology": "5.3.2"
+                "biological_macromolecule_ontology": "5.3.3",
+                "cell_cycle_ontology": "5.3.3",
+                "cell_type_ontology": "5.3.3",
+                "cellular_component_ontology": "1.0.3",
+                "development_stage_ontology": "5.3.3",
+                "disease_ontology": "5.3.4",
+                "enrichment_ontology": "1.2.4",
+                "ethnicity_ontology": "5.3.5",
+                "instrument_ontology": "5.3.3",
+                "length_unit_ontology": "5.3.3",
+                "library_amplification_ontology": "1.2.3",
+                "library_construction_ontology": "1.2.3",
+                "mass_unit_ontology": "5.3.3",
+                "microscopy_ontology": "1.0.2",
+                "organ_ontology": "5.3.6",
+                "organ_part_ontology": "5.3.3",
+                "process_type_ontology": "5.3.3",
+                "protocol_type_ontology": "5.3.3",
+                "sequencing_ontology": "1.1.3",
+                "species_ontology": "5.3.3",
+                "strain_ontology": "5.3.4",
+                "time_unit_ontology": "5.3.3"
             },
             "process": {
                 "purchased_reagents": "6.0.4",
@@ -71,7 +71,7 @@
             },
             "protocol": {
                 "channel": "2.0.0",
-                "target": "1.0.2"
+                "target": "1.0.3"
             }
         },
         "system": {
@@ -81,49 +81,49 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "9.0.2",
-                "cell_suspension": "8.6.3",
-                "donor_organism": "12.0.0",
-                "imaged_specimen": "2.0.2",
-                "organoid": "8.3.9",
-                "specimen_from_organism": "6.3.5"
+                "cell_line": "9.0.3",
+                "cell_suspension": "8.6.4",
+                "donor_organism": "12.0.1",
+                "imaged_specimen": "2.0.3",
+                "organoid": "8.3.10",
+                "specimen_from_organism": "6.3.6"
             },
             "file": {
                 "analysis_file": "5.3.4",
                 "image_file": "1.0.1",
-                "reference_file": "2.2.5",
+                "reference_file": "2.2.7",
                 "sequence_file": "7.0.1",
                 "supplementary_file": "1.1.6"
             },
             "process": {
                 "analysis": {
-                    "analysis_process": "8.0.4"
+                    "analysis_process": "8.0.5"
                 },
-                "process": "6.0.4"
+                "process": "6.0.5"
             },
             "project": {
                 "project": "9.0.6"
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "8.0.4"
+                    "analysis_protocol": "8.0.5"
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "1.1.6",
-                    "collection_protocol": "8.2.8",
+                    "collection_protocol": "8.2.9",
                     "differentiation_protocol": "1.3.2",
-                    "dissociation_protocol": "5.0.5",
-                    "enrichment_protocol": "2.2.6",
+                    "dissociation_protocol": "5.0.6",
+                    "enrichment_protocol": "2.2.7",
                     "ipsc_induction_protocol": "2.0.3"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "1.0.1",
-                    "imaging_protocol": "11.0.3"
+                    "imaging_preparation_protocol": "1.0.2",
+                    "imaging_protocol": "11.0.4"
                 },
-                "protocol": "6.3.5",
+                "protocol": "6.3.6",
                 "sequencing": {
-                    "library_preparation_protocol": "4.4.2",
-                    "sequencing_protocol": "9.0.4"
+                    "library_preparation_protocol": "4.4.3",
+                    "sequencing_protocol": "9.0.5"
                 }
             }
         }
