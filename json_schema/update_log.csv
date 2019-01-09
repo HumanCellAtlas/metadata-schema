@@ -1,6 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/process/purchased_reagents,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.",,
-module/process/sequencing/10x,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.",,
-module/process/sequencing/barcode,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.",,
-module/process/sequencing/insdc_experiment,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.",,
-module/process/sequencing/plate_based_sequencing,patch,"Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.",,

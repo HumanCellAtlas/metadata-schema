@@ -391,19 +391,6 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Optional field attributes
 
-1. **pattern:** A regular expression that the metadata field value must follow. The *pattern* value is not displayed to users outside of the JSON schema itself, but the *example* attribute can describe what pattern the value should follow.
-
-    Example:
-    
-        "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if data has already been submitted to the DDBJ, ENA, or SRA.",
-            "type": "string",
-            "example": "SRP0000000.",
-            "pattern": "^[D|E|S]RP[0-9]+$",
-            "user_friendly": "INSDC project accession",
-            ...
-        }
-
 1. **guidelines:** Instructions for how to fill in a valid value for the metadata field. This attribute can be included on an as-needed basis when further clarification for how to fill in a metadata field would be helpful to data contributors. In otherwords, when the description and example attributes are not clear enough. The *guidelines* value will appear in the metadata spreadsheet. 
 
     Example:
@@ -416,7 +403,26 @@ The following attributes are required for each metadata field in an HCA metadata
             "user_friendly": "Street address"
         }
 
+1. **pattern:** A regular expression that the metadata field value must follow. The *pattern* value is not displayed to users outside of the JSON schema itself, but the *example* and *guidelines* attributes can demonstrate and describe what pattern the value should follow.
+
+    Example:
+    
+        "insdc_project": {
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
+            "type": "string",
+            "pattern": "^[D|E|S]RP[0-9]+$",
+            "example": "SRP000000",
+            "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively.",
+            ...
+        },
+
 ## General rules
+
+### Spelling and grammer
+
+1. Use U.S. spelling of words. *e.g.*: "meter" instead of "metre".
+1. Use Oxford comma in lists. Exception is when using a semi-colon to separate multiple example values in the *example* attribute.
+1. Use present tense.
 
 ### Field name conventions
 
