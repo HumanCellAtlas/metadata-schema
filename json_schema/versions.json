@@ -1,21 +1,21 @@
 {
-    "last_update_date": "2019-01-09T10:50:07Z",
+    "last_update_date": "2019-01-09T11:15:21Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
-                "biomaterial_core": "7.0.3"
+                "biomaterial_core": "7.0.4"
             },
             "file": {
-                "file_core": "5.2.4"
+                "file_core": "5.2.5"
             },
             "process": {
-                "process_core": "9.0.2"
+                "process_core": "9.0.3"
             },
             "project": {
-                "project_core": "7.0.3"
+                "project_core": "7.0.4"
             },
             "protocol": {
-                "protocol_core": "5.2.4"
+                "protocol_core": "5.2.5"
             }
         },
         "module": {
@@ -81,49 +81,49 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "9.0.3",
-                "cell_suspension": "8.6.4",
-                "donor_organism": "12.0.1",
-                "imaged_specimen": "2.0.3",
-                "organoid": "8.3.10",
-                "specimen_from_organism": "6.3.6"
+                "cell_line": "9.0.4",
+                "cell_suspension": "8.6.5",
+                "donor_organism": "12.0.2",
+                "imaged_specimen": "2.0.4",
+                "organoid": "8.3.11",
+                "specimen_from_organism": "6.3.7"
             },
             "file": {
-                "analysis_file": "5.3.4",
-                "image_file": "1.0.1",
-                "reference_file": "2.2.7",
-                "sequence_file": "7.0.1",
-                "supplementary_file": "1.1.6"
+                "analysis_file": "5.3.5",
+                "image_file": "1.0.2",
+                "reference_file": "2.2.8",
+                "sequence_file": "7.0.2",
+                "supplementary_file": "1.1.7"
             },
             "process": {
                 "analysis": {
-                    "analysis_process": "8.0.5"
+                    "analysis_process": "8.0.6"
                 },
-                "process": "6.0.5"
+                "process": "6.0.6"
             },
             "project": {
-                "project": "9.0.6"
+                "project": "9.0.7"
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "8.0.5"
+                    "analysis_protocol": "8.0.6"
                 },
                 "biomaterial_collection": {
-                    "aggregate_generation_protocol": "1.1.6",
-                    "collection_protocol": "8.2.9",
-                    "differentiation_protocol": "1.3.2",
-                    "dissociation_protocol": "5.0.6",
-                    "enrichment_protocol": "2.2.7",
-                    "ipsc_induction_protocol": "2.0.3"
+                    "aggregate_generation_protocol": "1.1.7",
+                    "collection_protocol": "8.2.10",
+                    "differentiation_protocol": "1.3.3",
+                    "dissociation_protocol": "5.0.7",
+                    "enrichment_protocol": "2.2.8",
+                    "ipsc_induction_protocol": "2.0.4"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "1.0.2",
-                    "imaging_protocol": "11.0.4"
+                    "imaging_preparation_protocol": "1.0.3",
+                    "imaging_protocol": "11.0.5"
                 },
-                "protocol": "6.3.6",
+                "protocol": "6.3.7",
                 "sequencing": {
-                    "library_preparation_protocol": "4.4.3",
-                    "sequencing_protocol": "9.0.5"
+                    "library_preparation_protocol": "4.4.4",
+                    "sequencing_protocol": "9.0.6"
                 }
             }
         }
