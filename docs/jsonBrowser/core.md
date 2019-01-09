@@ -48,7 +48,7 @@ process_location | Location where the process took place. | string | no |  | Pro
 operator | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1; J.D.
 
 ## Project core<a name='Project core'></a>
-_Information about the overall project._
+_Information about the project._
 
 Location: core/project/project_core.json
 
