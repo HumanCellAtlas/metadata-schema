@@ -38,19 +38,20 @@
         "protocol_core" : {
             "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/protocol/protocol_core.json"
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
         },
         "collection_method": {
-            "description": "How the biomaterial was collected.",
+            "description": "Method used to collect the biomaterial.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "user_friendly": "Collection method",
-            "example": "blood draw"
+            "user_friendly": "Collection method"
         },
         "protocol_reagents": {
             "description": "A list of purchased reagents used in this protocol.",
             "type": "array",
             "items": {
+                "type": "object",
                 "$ref": "module/process/purchased_reagents.json"
             },
             "user_friendly": "Protocol reagents"
