@@ -21,11 +21,12 @@
             "example": "4.6.1"
         },
         "insdc_experiment": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession if experiment has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI.  Accession must start with DRX, ERX, or SRX.",
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession.",
             "pattern": "^[D|E|S]RX[0-9]+$",
             "type": "string",
-            "user_friendly": "INSDC experiment",
-            "example": "SRX0000000"
+            "user_friendly": "INSDC experiment accession",
+            "example": "SRX0000000",
+            "guidelines": "Enter accession if experiment has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRX, SRX, or ERX, respecitvely."
         }
 	}
 }

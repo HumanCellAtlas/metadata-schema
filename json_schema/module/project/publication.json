@@ -22,22 +22,23 @@
             "example": "4.6.1"
         },
         "authors": {
-            "description": "A list of authors associated with the publication in 'surname initials' format.",
+            "description": "A list of authors associated with the publication.",
             "type": "array",
             "example":  "Doe JD",
             "items": {
                 "type": "string"
             }, 
-            "user_friendly": "Authors"
+            "user_friendly": "Authors",
+            "guidelines": "List each author in 'surname initials' format."
         },
         "publication_title": {
             "description": "The title of the publication.",
             "type": "string",
             "user_friendly": "Publication title",
-            "example": "Study of single cells in the human body"
+            "example": "Study of single cells in the human body."
         },
         "doi": {
-            "description": "The publication digital object identifier (doi).",
+            "description": "The publication digital object identifier (doi) of the publication.",
             "type": "string",
             "example": "10.1016/j.cell.2016.07.054",
             "user_friendly": "Publication DOI"
@@ -49,9 +50,10 @@
             "user_friendly": "Publication PMID"
         },
         "publication_url": {
-            "description": "A URL, preferably not behind a paywall, for the publication.",
+            "description": "A URL for the publication.",
             "type": "string",
-            "user_friendly": "Publication URL"
+            "user_friendly": "Publication URL",
+            "example": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/"
         }
     }
 }
