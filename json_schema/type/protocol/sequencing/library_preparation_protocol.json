@@ -156,6 +156,18 @@
             "$ref": "module/ontology/library_amplification_ontology.json",
             "user_friendly": "cDNA library amplification method",
             "example": "PCR"
+        },
+        "nominal_length": {
+            "description": "Average (insert) size of the fragments being sequenced.",
+            "type": "integer",
+            "user_friendly": "Nominal length",
+            "example": "250"
+        },
+        "nominal_sdev": {
+            "description": "Standard deviation of the (insert) size of the fragments being sequenced.",
+            "type": "integer",
+            "user_friendly": "Nominal standard deviation",
+            "example": "30"
         }
     }
 }
