@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A project entity contains information about the overall project.",
+    "description": "Information about the project.",
     "additionalProperties": false,
     "required": [
         "project_short_name",
@@ -25,20 +25,22 @@
         "project_short_name": {
             "description": "A short name for the project.",
             "type": "string",
-            "example": "For example, a short label by which you refer to the project. This label will be used for quick reference.",
-            "user_friendly": "Project label"
+            "example": "CoolOrganProject.",
+            "user_friendly": "Project label",
+            "guidelines": "Project label is a short label by which you refer to the project, should have no spaces, and should be fewer than 50 characters."
         },
         "project_title": {
             "description": "An official title for the project.",
             "type": "string",
-            "example": "For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.",
-            "user_friendly": "Project title"
+            "example": "Study of single cells in the human body..",
+            "user_friendly": "Project title",
+            "guidelines": "Project title should be fewer than 30 words such as a title of a grant proposal or a publication."
         },
         "project_description": {
             "description": "A longer description of the project which includes research goals and experimental approach.",
             "type": "string",
-            "example": "For example, an abstract from a grant application or publication. Approximately 300 words.",
-            "user_friendly": "Project description"
+            "user_friendly": "Project description",
+            "guidelines": "Project description should be fewer than 300 words such as an abstract from a grant application or publication."
         }
     }
 }

@@ -95,10 +95,10 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
-local_machine_name | Local name for the particular machine on which the biomaterial was sequenced. | string | no |  | Local machine name |  | Machine1
-paired_end | Was the sequenced molecule sequenced from both ends? | boolean | yes |  | Paired end? |  | Should be one of: yes, no.
-sequencing_approach | The general approach for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing approach |  | full length single cell RNA sequencing
+instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
+local_machine_name | Local name for the particular machine used for sequencing. | string | no |  | Local machine name |  | Machine1, HSMA-20
+paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean | yes |  | Paired end? |  | Should be one of: yes, or no.
+sequencing_approach | The general method for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
 10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 
 
 ## Library preparation protocol
@@ -308,9 +308,161 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
-local_machine_name | Local name for the particular machine used for sequencing. | string | no |  | Local machine name |  | Machine1, HSMA-20
-paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean | yes |  | Paired end? |  | Should be one of: yes, or no.
-sequencing_approach | The general method for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
-10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+genus_species | The scientific binomial name for the species of the specimen. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | 
+organ_part | A term for a specific part of the organ that the biomaterial came from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | 
+diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
+state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md/#state_of_specimen) | State of specimen |  | 
+preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md/#preservation_storage) | Preservation/Storage |  | 
+collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2017-03-19T07:22:00Z
+purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased specimen |  | 
+
+## Cell suspension
+_Information about the suspension of cells or nuclei derived from the collected or cultured specimen._
+
+Location: type/biomaterial/cell_suspension.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
+growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
+genus_species | The scientific binomial name for the species of the suspension. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+selected_cell_type | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type |  | 
+total_estimated_cells | Total estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 2100
+plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) | Plate-based sequencing |  | 
+
+## Cell line
+_Information about the cell line or cell culture biomaterial._
+
+Location: type/biomaterial/cell_line.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci, ATCC
+catalog_number | The supplier catalogue number for the cell line. | string | no |  | Catalog number |  | 77650057
+lot_number | The supplier lot or batch number for the cell line. | string | no |  | Lot/batch number |  | 24.10.14
+catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc
+cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
+cell_line_type | The type of cell line. | string | yes |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent, stem cell | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
+cell_morphology | Features relating to the morphology of the cells. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
+growth_conditions | Features relating to the growth and/or maintenance of the cell lines. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
+confluency | The percent a plate surface is covered by cells. | number | no |  | Percent confluency |  | 60
+cell_type | The cell type that the cell line represents. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
+karyotype | The karyotype of the cell line. | string | no |  | Karyotype |  | sex chromosome complement of XY, del(2) (q11)
+tissue | The tissue that the cell line was derived from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Tissue |  | 
+date_established | When the cell line was established. | string | no |  | Date established |  | 2017-03-19
+disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
+genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md/#publication) | Publication |  | 
+
+## Imaged specimen
+_Information about a tissue specimen after it has been sectioned and prepared for imaging._
+
+Location: type/biomaterial/imaged_specimen.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+overview_images | List of filenames of photographs of specimen. | array | no |  | Gross image |  | my_image_file.jpg, overview_image.tiff
+slice_thickness | Thickness of the imaged slice in micrometres. | number | yes |  | Imaged slice thickness |  | 14
+internal_anatomical_structures | Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample. | array | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Internal tissue structures |  | 
+
+## Donor organism
+_Information about the donor organism from which a specimen was collected._
+
+Location: type/biomaterial/donor_organism.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+human_specific | Fields specific to human (homo sapiens) organisms. | object | no | [See module  human_specific](module.md/#human_specific) | Human-specific |  | 
+mouse_specific | Fields specific to mouse (mus musculus) organisms. | object | no | [See module  mouse_specific](module.md/#mouse_specific) | Mouse-specific |  | 
+genus_species | The scientific binomial name for the species of the organism. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+sex | The biological sex of the organism. | string | yes |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
+is_living | Whether organism was alive at time of biomaterial collection. | string | yes |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, unknown.
+organism_age | Age of organism in Age units measured since birth. | string | no |  | Age |  | 20, 45-65
+organism_age_unit | The unit in which Age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Age unit |  | 
+development_stage | A classification of the developmental stage of the organism. | object | yes | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
+diseases | Short description of known disease(s) of the organism. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
+death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
+familial_relationship | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
+medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
+gestational_age | Gestational age of organism in Gestational age units measured since fertilization. | string | no |  | Gestational age |  | 22, 5-7
+gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | 
+height | Height of organism in Height unit. | string | no |  | Height |  | 160, 120-140
+height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | 
+weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60, 40-60
+weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | 
+timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
+
+## Organoid
+_Information about an organoid biomaterial._
+
+Location: type/biomaterial/organoid.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+genus_species | The scientific binomial name for the species of the organoid. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+model_for_organ | Organ for which this organoid is a model system. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
+model_organ_part | Organ part for which this organoid is a model system. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part model |  | 
+organoid_age | Age of the organoid in Age units measured from when cell aggregates started differentiating to desired organoid model. | number | no |  | Age |  | 55
+organoid_age_unit | The unit in which Age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Age unit |  | 
+organoid_size | Size of the organoid in Organoid size unit. | number | no |  | Organoid size |  | 4
+organoid_size_unit | The unit in which the Organoid size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Organoid size unit |  | 
+organoid_morphology | General description of the organoid morphology. | string | no |  |  |  | Epithelial monolayer with budding crypt-like domains, Optic cup structure
+organoid_type | The type of organoid. | string | no |  | Organoid type | primary, immortalized, stem cell-derived, synthetic | Should be one of: primary, immortalized, stem cell-derived, or synthetic.
+embedded_in_matrigel | Whether the organoid is embedded in a matrigel. | boolean | no |  | Organoid embeddded in matrigel? |  | Should be one of: yes, no.
+organoid_growth_environment | Growth environment in which the organoid is grown. | string | no |  | Organoid growth environment |  | matrigel, liquid suspension, adherent
+input_aggregate_cell_count | Estimated number of cells per input cell aggregate. | number | no |  | Input aggregate cell count |  | 10000
+organoid_stored_oxygen_levels | Percent oxygen level organoid was stored in prior to sequencing. | number | no |  | Organoid stored oxygen level |  | 75
+
+## Process
+_Information about a process completed in the experiment._
+
+Location: type/process/process.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) | Process core |  | 
+length_of_time | Length of time the process took to execute in Length of time unit. | string | no |  | Length of time |  | 10; 55-60
+length_of_time_unit | The unit in which Length of time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | 
+process_type | The type of process. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+deviation_from_protocol | A deviation from the protocol provided. | string | no |  | Deviation from protocol |  | Skipped ACK lysis step; Used 100um filter instead of 40um filter
+insdc_experiment | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment accession |  | 
+
+## Analysis process
+_Information about the analysis process_
+
+Location: type/process/analysis/analysis_process.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) | Process core |  | 
+process_type | The type of process. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+inputs | Input parameters used in the pipeline run. | array | yes |  | Input parameters |  | 
+tasks | Information about steps in the workflow. | array | yes |  | Workflow tasks |  | 
+input_bundles | UUID(s) of the input bundle(s) used in running the pipeline. | array | yes |  | Input bundles |  | b816d2d6-5f10-4447-4194-3d0a804454d6
+outputs | Output files generated by the pipeline run. | array | yes | [See   analysis_file](.md/#analysis_file) | Output files |  | 
+timestamp_start_utc | Initial start time of the full pipeline in UTC. | string | yes |  | Start timestamp (UTC) |  | 2018-01-21T09:34:27Z
+timestamp_stop_utc | Terminal stop time of the full pipeline in UTC. | string | yes |  | Stop timestamp (UTC) |  | 2018-01-21T11:35:01Z
+analysis_run_type | Whether the analysis was run or was copied forward as an optimization. | string | yes |  | Analysis run type | run, copy-forward | Should be one of: run, or copy-forward.
+reference_bundle | UUID of the bundle containing the reference used in running the pipeline. | string | yes |  | Reference bundle |  | b816d2d6-5f10-4447-4194-3d0a804454d6
+
