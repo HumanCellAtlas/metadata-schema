@@ -9,8 +9,8 @@ ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array |  | NCBI taxon ID | 
 ### File core<a name='File core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-file_name | The filename of the file. | string |  | File name |  | 
-file_format | The format of the file. | string |  | File format |  | fastq.gz
+file_name | The name of the file. | string |  | File name |  | R1.fastq.gz; codebook.json
+file_format | The format of the file. | string |  | File format |  | fastq.gz; tif
 ### Process core<a name='Process core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -18,9 +18,9 @@ process_id | A unique ID for the process. | string |  | Process ID |  |
 ### Project core<a name='Project core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-project_short_name | A short name for the project. | string |  | Project label |  | For example, a short label by which you refer to the project. This label will be used for quick reference.
-project_title | An official title for the project. | string |  | Project title |  | For example, the title of a grant proposal or a publication. Approximately 30 words. This title will appear on the Human Cell Atlas data portal.
-project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | For example, an abstract from a grant application or publication. Approximately 300 words.
+project_short_name | A short name for the project. | string |  | Project label |  | CoolOrganProject.
+project_title | An official title for the project. | string |  | Project title |  | Study of single cells in the human body..
+project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | 
 ### Protocol core<a name='Protocol core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -77,12 +77,12 @@ file_core | Core file-level information. | object | [See core  file_core](core.m
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
-file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) |  |  | 
-ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer |  | NCBI taxon ID |  | 9606
-genus_species | The scientific binomial name for the species of this reference. | object | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | Homo sapiens
-assembly_type | The assembly type of the reference. This applies to reference genome sequences. | string |  | Assembly type | primary assembly, complete assembly, patch assembly | Should be one of: primary assembly, complete assembly, or patch assembly.
-reference_type | The type of the genome reference. | string |  | Reference type | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index.
-reference_version | The genome version of the reference. | string |  | Reference version |  | GencodeV27
+file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
+ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer |  | NCBI taxon ID |  | 9606, 10090
+genus_species | The scientific binomial name for the species of this reference. | object | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+reference_type | The type of the reference file. | string |  | Reference type | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index.
+assembly_type | The assembly type of the genome reference file. | string |  | Genome assembly type | primary assembly, complete assembly, patch assembly | Should be one of: primary assembly, complete assembly, or patch assembly.
+reference_version | The genome version of the reference file. | string |  | Reference version |  | GencodeV27; Ensembl 87
 ### Sequence file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -98,7 +98,7 @@ file_core | Core file-level information. | object | [See core  file_core](core.m
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
-process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) |  |  | 
+process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) | Process core |  | 
 ### Analysis process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -197,9 +197,9 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-instrument_manufacturer_model | The manufacturer and model of the sequencer used. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fwww.ebi.ac.uk%2Fefo%2FEFO_0000548. | object | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | Illumina HiSeq 4000
-paired_end | Was the sequenced molecule sequenced from both ends? | boolean |  | Paired end? |  | Should be one of: yes, no.
-sequencing_approach | The general approach for sequencing. | object | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing approach |  | full length single cell RNA sequencing
+instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
+paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean |  | Paired end? |  | Should be one of: yes, or no.
+sequencing_approach | The general method for sequencing. | object | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
 ## Module
 ### Cell morphology<a name='Cell morphology'></a>
 _There are no required properties in schema Cell morphology_
@@ -229,91 +229,91 @@ timecourse_unit | The unit in which the Timecourse value is expressed. | object 
 ### Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the biological macromolecule being used. | string |  |  |  | 
+text | The name of the biological macromolecule being used. | string |  | Biological macromolecule |  | polyA RNA; mRNA
 ### Cell cycle ontology<a name='Cell cycle ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell cycle of the cells in the specimen. | string |  |  |  | 
+text | The name of a cell cycle of the cells in the specimen. | string |  | Cell cycle |  | meiotic cell cycle; mitotic G1 phase
 ### Cell type ontology<a name='Cell type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell type supplied by a user. | string |  |  |  | 
+text | The name of a cell type supplied by a user. | string |  | Cell type |  | bone marrow hematopoietic cell; cardiac muscle cell
 ### Cellular component ontology<a name='Cellular component ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a subcellular structure. | string |  |  |  | 
+text | The name of a subcellular structure. | string |  | Subcellular structure |  | cytoplasm; nucleus
 ### Development stage ontology<a name='Development stage ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the development stage of the organism. | string |  |  |  | 
+text | The name of the development stage of the organism. | string |  | Development stage |  | human adult stage; Theiler stage 28
 ### Disease ontology<a name='Disease ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string |  |  |  | 
+text | The text for the term as the user provides it. | string |  | Disease |  | type 2 diabetes mellitus; normal
 ### Enrichment ontology<a name='Enrichment ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of an enrichment approach being used. | string |  |  |  | 
+text | The name of an enrichment approach being used. | string |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
 ### Ethnicity ontology<a name='Ethnicity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The ethnicity of the human donor. | string |  |  |  | 
+text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; Hispanic or Latin American
 ### Instrument ontology<a name='Instrument ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The full name of the instrument used. | string |  |  |  | 
+text | The full name of the instrument used. | string |  | Instrument |  | Illumina HiSeq 2500; ONT MinION
 ### Length unit ontology<a name='Length unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a length unit being used. | string |  |  |  | 
+text | The name of a length unit being used. | string |  | Length unit |  | micrometer; meter
 ### Library amplification ontology<a name='Library amplification ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library amplification approach being used. | string |  |  |  | 
+text | The name of a library amplification approach being used. | string |  | Library amplification |  | PCR; in vitro transcription
 ### Library construction ontology<a name='Library construction ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library construction approach being used. | string |  |  |  | 
+text | The name of a library construction approach being used. | string |  | Library construction |  | 10X v2 sequencing; Smart-seq2
 ### Mass unit ontology<a name='Mass unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a mass unit being used. | string |  |  |  | 
+text | The name of a mass unit being used. | string |  | Mass unit |  | kilogram; microgram
 ### Microscopy ontology<a name='Microscopy ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the type of microscopy used in an imaging experiment. | string |  |  |  | 
+text | The name of the type of microscopy used in an imaging experiment. | string |  | Microscopy |  | confocal microscopy; fluorescence microscopy
 ### Organ ontology<a name='Organ ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string |  |  |  | 
+text | The text for the term as the user provides it. | string |  | Organ |  | heart; immune system
 ### Organ part ontology<a name='Organ part ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string |  |  |  | 
+text | The text for the term as the user provides it. | string |  | Organ part |  | bone marrow; islet of Langerhans
 ### Process type ontology<a name='Process type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a process type being used. | string |  |  |  | 
+text | The name of a process type being used. | string |  | Process type |  | enzymatic dissociation; blood draw
 ### Protocol type ontology<a name='Protocol type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a protocol type used. | string |  |  |  | 
+text | The name of a protocol type used. | string |  | Protocol type |  | dissociation protocol; enrichment protocol
 ### Sequencing ontology<a name='Sequencing ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a sequencing approach being used. | string |  |  |  | 
+text | The name of a sequencing approach being used. | string |  | Sequencing approach |  | tag based single cell RNA sequencing; full length single cell RNA sequencing
 ### Species ontology<a name='Species ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the species to which the organism belongs. | string |  |  |  | 
+text | The name of the species to which the organism belongs. | string |  | Species |  | Homo sapiens; Mus musculus
 ### Strain ontology<a name='Strain ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the strain to which the organism belongs (mouse-specific). | string |  |  |  | 
+text | The name of the strain to which the organism belongs (mouse-specific). | string |  | Strain |  | C57BL/6; BALB/c
 ### Time unit ontology<a name='Time unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of a time unit being used. | string |  |  |  | 
+text | The name of a time unit being used. | string |  | Time unit |  | second; week
 ### Purchased reagents<a name='Purchased reagents'></a>
 _There are no required properties in schema Purchased reagents_
 ### 10x-specific<a name='10x-specific'></a>
@@ -321,17 +321,17 @@ _There are no required properties in schema 10x-specific_
 ### Barcode<a name='Barcode'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-barcode_read | The read that the barcode is found in. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
-barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer |  | Barcode offset |  | 0
+barcode_read | The read in which the barcode is found. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | 0-based offset of start of barcode in read. | integer |  | Barcode offset |  | 0
 barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 28
 ### INSDC experiment<a name='INSDC experiment'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession if experiment has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI.  Accession must start with DRX, ERX, or SRX. | string |  | INSDC experiment |  | SRX0000000
+insdc_experiment | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | string |  | INSDC experiment accession |  | SRX0000000
 ### Plate-based sequencing<a name='Plate-based sequencing'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-plate_id | An ID for the plate that the well is located on. | string |  | Well plate ID |  | 2217
+plate_id | An ID for the plate that the well is located on. | string |  | Plate ID |  | 2217
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
