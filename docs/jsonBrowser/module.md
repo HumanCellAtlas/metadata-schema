@@ -384,15 +384,15 @@ Location: module/process/purchased_reagents.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit
+retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit; CytoTune iPS 2.0 Sendai Reprogramming Kit
 catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
-manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
+manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina; ThermoFisher Scientific
 lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
-expiry_date | The date of expiration for the kit/reagent in the format YYYY-MM-DD. | string | no |  | Expiry date |  | 2018-01-31
-kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Kit titer |  | Titer: Specification is 3.0x10^7
+expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
+kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Titer |  | 3.0x10^7
 
 ## 10x-specific<a name='10x-specific'></a>
-_This module describes information specific to 10x experiments._
+_Information specific to 10x experiments._
 
 Location: module/process/sequencing/10x.json
 
@@ -410,10 +410,10 @@ Location: module/process/sequencing/barcode.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-barcode_read | The read that the barcode is found in. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
-barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer | yes |  | Barcode offset |  | 0
+barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | 0-based offset of start of barcode in read. | integer | yes |  | Barcode offset |  | 0
 barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
-white_list_file | Name of file containing legitimate barcode sequences, if known. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
+white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
 
 ## INSDC experiment<a name='INSDC experiment'></a>
 _Information relating to an INSDC experiment._
@@ -422,7 +422,7 @@ Location: module/process/sequencing/insdc_experiment.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession if experiment has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI.  Accession must start with DRX, ERX, or SRX. | string | yes |  | INSDC experiment |  | SRX0000000
+insdc_experiment | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | string | yes |  | INSDC experiment accession |  | SRX0000000
 
 ## Plate-based sequencing<a name='Plate-based sequencing'></a>
 _Information specific to plate-based sequencing experiments._
@@ -431,9 +431,9 @@ Location: module/process/sequencing/plate_based_sequencing.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-plate_id | An ID for the plate that the well is located on. | string | yes |  | Well plate ID |  | 2217
-well_id | An ID or name for the well. Should be unique for the plate. | string | no |  | Well ID |  | A1
-cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+plate_id | An ID for the plate that the well is located on. | string | yes |  | Plate ID |  | 2217
+well_id | An ID or name for the well. | string | no |  | Well ID |  | A1
+cell_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
 
 ## Contact<a name='Contact'></a>
 _Information about an individual who submitted or contributed to a project._
@@ -460,9 +460,9 @@ Location: module/project/funder.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-grant_title | The name of the grant funding the project. Approximately 30 words. | string | no |  | Grant title |  | A title of a grant proposal.
+grant_title | The name of the grant funding the project. | string | no |  | Grant title |  | Study of single cells in the human body.
 grant_id | The unique grant identifier or reference. | string | no |  | Grant ID |  | BB/P0000001/1
-funder_name | The name of the funding organization. | string | no |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC)
+funder_name | The name of the funding organization. | string | no |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
 
 ## Publication<a name='Publication'></a>
 _Information about a journal article, book, web page, or other external available documentation for a project._
@@ -471,11 +471,11 @@ Location: module/project/publication.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-authors | A list of authors associated with the publication in 'surname initials' format. | array | yes |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body
-doi | The publication digital object identifier (doi). | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
+authors | A list of authors associated with the publication. | array | yes |  | Authors |  | Doe JD
+publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
+doi | The publication digital object identifier (doi) of the publication. | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
 pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
-publication_url | A URL, preferably not behind a paywall, for the publication. | string | no |  | Publication URL |  | 
+publication_url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
 
 ## Channel<a name='Channel'></a>
 _Information about a single microscope channel._
