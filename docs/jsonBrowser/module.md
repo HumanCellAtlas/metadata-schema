@@ -186,9 +186,9 @@ Location: module/ontology/development_stage_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the development stage of the organism. | string | yes |  | Development stage |  | adult; postpartum
-ontology | An ontology term identifier in the form prefix:accession | string | no |  | Development stage ontology ID |  | EFO:0001272; EFO:0008562
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Development stage ontology label |  | adult; postpartum
+text | The name of the development stage of the organism. | string | yes |  | Development stage |  | human adult stage; Theiler stage 28
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Development stage ontology ID |  | HsapDv:0000087; EFO:0002588
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Development stage ontology label |  | human adult stage; Theiler stage 28
 
 ## Disease ontology<a name='Disease ontology'></a>
 _A term that may be associated with a disease-related ontology term_

@@ -245,7 +245,7 @@ text | The name of a subcellular structure. | string |  | Subcellular structure 
 ### Development stage ontology<a name='Development stage ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the development stage of the organism. | string |  | Development stage |  | adult; postpartum
+text | The name of the development stage of the organism. | string |  | Development stage |  | human adult stage; Theiler stage 28
 ### Disease ontology<a name='Disease ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

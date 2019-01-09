@@ -23,7 +23,7 @@
             "description": "The name of the development stage of the organism.",
             "type": "string",
             "user_friendly": "Development stage",
-            "example": "adult; postpartum"
+            "example": "human adult stage; Theiler stage 28"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -36,13 +36,13 @@
                 "include_self": false
             },
             "user_friendly": "Development stage ontology ID",
-            "example": "EFO:0001272; EFO:0008562"
+            "example": "HsapDv:0000087; EFO:0002588"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
             "type": "string",
             "user_friendly": "Development stage ontology label",
-            "example": "adult; postpartum"
+            "example": "human adult stage; Theiler stage 28"
         }
     }
 }
