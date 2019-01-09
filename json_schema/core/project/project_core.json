@@ -25,23 +25,22 @@
         "project_short_name": {
             "description": "A short name for the project.",
             "type": "string",
-            "example": "A short label by which you refer to the project.",
+            "example": "CoolOrganProject.",
             "user_friendly": "Project label",
-            "guidelines": "Project label should have no spaces and be fewer than 50 characters."
+            "guidelines": "Project label is a short label by which you refer to the project, should have no spaces, and should be fewer than 50 characters."
         },
         "project_title": {
             "description": "An official title for the project.",
             "type": "string",
-            "example": "The title of a grant proposal or a publication.",
+            "example": "Study of single cells in the human body..",
             "user_friendly": "Project title",
-            "guidelines": "Project title should be fewer than 30 words."
+            "guidelines": "Project title should be fewer than 30 words such as a title of a grant proposal or a publication."
         },
         "project_description": {
             "description": "A longer description of the project which includes research goals and experimental approach.",
             "type": "string",
-            "example": "An abstract from a grant application or publication.",
             "user_friendly": "Project description",
-            "guidelines": "Project description should be fewer than 300 words."
+            "guidelines": "Project description should be fewer than 300 words such as an abstract from a grant application or publication."
         }
     }
 }
