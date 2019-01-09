@@ -21,15 +21,18 @@
             "example": "4.6.1"
         },
         "cause_of_death": {
-            "description": "Cause of death from death report for human donor, from research lab for mouse.",
+            "description": "Conditions resulting in death.",
             "type": "string",
-            "user_friendly": "Cause of death"
+            "user_friendly": "Cause of death",
+            "example": "Hypoxic brain damage; Sudden cardiac arrest",
+            "guidelines": "Determined from death report for human donor or from research lab for mouse."
         }, 
         "cold_perfused": {
-            "description": "Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise.",
+            "description": "Whether perfusion with cold fluid was used to help preserve tissues before heart stopped.",
             "type": "boolean",
             "user_friendly": "Cold perfused?",
-            "example": "Should be one of: yes, no."
+            "example": "Should be one of: yes, no.",
+            "guidelines": "Enter yes if cold perfused. Otherwise, enter no."
         },  
         "days_on_ventilator": {
             "description": "Number of days on ventilator before death occurred.",
@@ -40,32 +43,35 @@
             "user_friendly": "Number of days on ventilator"
         }, 
         "hardy_scale": {
-            "description": "Value of 4-point Hardy scale cause of death classification: (0) ventilator case, (1) violent and fast death, (2) fast death of natural causes, (3) intermediate death, or (4) slow death.",
+            "description": "Value on 4-point Hardy scale cause of death classification.",
             "maximum": 4, 
             "minimum": 0, 
             "type": "integer",
             "example": 0,
-            "user_friendly": "Value on Hardy scale"
+            "user_friendly": "Value on Hardy scale",
+            "guidelines": "Enter: 0 for ventilator case, 1 for violent and fast death, 2 for fast death of natural causes, 3 for intermediate death, or 4 for slow death."
         }, 
         "time_of_death": {
-            "description": "Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ.",
+            "description": "Date and time when death was declared.",
             "format": "date-time",
             "type": "string",
             "user_friendly": "Time of death",
-            "example": "2016-01-21T00:00:00Z"
+            "example": "2016-01-21T00:00:00Z",
+            "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
         },
         "organ_donation_death_type": {
-            "description": "Type of death preceding organ donation (for organ donors only).",
+            "description": "Type of death preceding organ donation.",
             "type": "string",
             "enum": [
                 "Donation after circulatory death (DCD)",
                 "Donation after brainstem death (DBD)"
             ],
             "user_friendly": "Organ donation death type",
-            "example": "Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD)."
+            "example": "Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).",
+            "guidelines": "Enter value for organ donors only."
         },
         "normothermic_regional_perfusion": {
-            "description": "Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise.",
+            "description": "Whether entire body was perfused with warm oxygenated blood.",
             "type": "string",
             "enum": [
                 "yes",
@@ -73,7 +79,8 @@
                 "unknown"
             ],
             "user_friendly": "Normothermic regional perfusion?",
-            "example": "Should be one of: yes, no, or unknown."
+            "example": "Should be one of: yes, no, or unknown.",
+            "guidelines": "Enter yes if entire body (but not limbs) was perfused with warm oxygenated blood. Otherwise, enter no."
         }
     }
 }
