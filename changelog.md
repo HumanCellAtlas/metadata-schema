@@ -7,6 +7,42 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/process/analysis/analysis_process.json - v8.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #679.
+
+### [type/file/supplementary_file.json - v1.1.6] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #680.
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.4] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #678.
+
+### [module/project/funder.json - v1.0.4] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [module/project/publication.json - v5.2.5] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [type/project/project.json - v9.0.6] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [type/biomaterial/cell_line.json - v9.0.2] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.1] - 2019-01-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #683.
+
+### [type/project/project.json - v9.0.5] - 2019-01-03
+### Added
+Added user-friendly name, examples, and guidelines to adhere to Style Guide
+
 ### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.6] - 2018-12-18
 ### Changed
 Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
