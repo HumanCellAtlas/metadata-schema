@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/imaging/imaging_protocol.json - v11.0.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #706. 
+
 ### [type/process/analysis/analysis_process.json - v8.0.4] - 2019-01-09
 ### Changed
 Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #679.
