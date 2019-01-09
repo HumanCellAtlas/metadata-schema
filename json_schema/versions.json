@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-09T11:35:07Z",
+    "last_update_date": "2019-01-09T12:02:00Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -20,15 +20,15 @@
         },
         "module": {
             "biomaterial": {
-                "cell_morphology": "6.1.4",
-                "death": "5.4.0",
-                "familial_relationship": "6.0.2",
-                "growth_conditions": "6.4.1",
-                "human_specific": "1.0.6",
-                "medical_history": "5.2.4",
-                "mouse_specific": "1.0.5",
-                "preservation_storage": "5.3.4",
-                "state_of_specimen": "5.2.6",
+                "cell_morphology": "6.1.5",
+                "death": "5.4.1",
+                "familial_relationship": "6.0.3",
+                "growth_conditions": "6.4.2",
+                "human_specific": "1.0.7",
+                "medical_history": "5.2.5",
+                "mouse_specific": "1.0.6",
+                "preservation_storage": "5.3.5",
+                "state_of_specimen": "5.2.7",
                 "timecourse": "1.1.5"
             },
             "ontology": {
@@ -81,12 +81,12 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "9.0.4",
-                "cell_suspension": "8.6.5",
-                "donor_organism": "12.0.3",
+                "cell_line": "9.0.5",
+                "cell_suspension": "8.6.6",
+                "donor_organism": "12.0.4",
                 "imaged_specimen": "2.0.4",
                 "organoid": "8.3.11",
-                "specimen_from_organism": "6.3.7"
+                "specimen_from_organism": "6.3.8"
             },
             "file": {
                 "analysis_file": "5.3.5",
@@ -117,7 +117,7 @@
                     "ipsc_induction_protocol": "2.0.4"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "1.0.3",
+                    "imaging_preparation_protocol": "1.0.4",
                     "imaging_protocol": "11.0.5"
                 },
                 "protocol": "6.3.7",

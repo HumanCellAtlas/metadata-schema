@@ -7,6 +7,62 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/cell_morphology.json - v6.1.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/death.json - v5.4.1] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/familial_relationship.json - v6.0.3] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/growth_conditions.json - v6.4.2] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/human_specific.json - v1.0.7] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/medical_history.json - v5.2.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/mouse_specific.json - v1.0.6] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/preservation_storage.json - v5.3.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/state_of_specimen.json - v5.2.7] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/cell_line.json - v9.0.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/cell_suspension.json - v8.6.6] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/donor_organism.json - v12.0.4] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.8] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v1.0.4] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
 ### [module/biomaterial/timecourse.json - v1.1.5] - 2019-01-09
 ### Fixed
 Fixed bug in spelling of user_friendly field in timecourse module. Fixes #710
