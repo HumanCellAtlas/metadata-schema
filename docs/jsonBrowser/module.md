@@ -46,9 +46,9 @@ Location: module/ontology/length_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a length unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a length unit being used. | string | yes |  | Length unit |  | micrometer; meter
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Length unit ontology ID |  | UO:0000017; UO:0000008
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Length unit ontology label |  | micrometer; meter
 
 ## Cell cycle ontology<a name='Cell cycle ontology'></a>
 _A term that may be associated with a cell cycle-related ontology term_
@@ -57,9 +57,9 @@ Location: module/ontology/cell_cycle_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell cycle of the cells in the specimen. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a cell cycle of the cells in the specimen. | string | yes |  | Cell cycle |  | meiotic cell cycle; mitotic G1 phase
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Cell cycle ontology ID |  | GO:0051321; GO:0000080
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Cell cycle ontology label |  | meiotic cell cycle; mitotic G1 phase
 
 ## Library amplification ontology<a name='Library amplification ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -68,9 +68,9 @@ Location: module/ontology/library_amplification_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library amplification approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a library amplification approach being used. | string | yes |  | Library amplification |  | PCR; in vitro transcription
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Library amplification ontology ID |  | OBI:0000415; EFO:0009013
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Library amplification ontology label |  | PCR; in vitro transcription
 
 ## Ethnicity ontology<a name='Ethnicity ontology'></a>
 _A term that may be associated with a ethnicity-related ontology term_
@@ -79,9 +79,9 @@ Location: module/ontology/ethnicity_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The ethnicity of the human donor. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The ethnicity of the human donor. | string | yes |  | Ethnicity |  | European; Hispanic or Latin American
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Ethnicity ontology ID |  | HANCESTRO_0005 ;HANCESTRO_0014
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Ethnicity ontology label |  | European; Hispanic or Latin American
 
 ## Cellular component ontology<a name='Cellular component ontology'></a>
 _A term that may be associated with an intra-cellular structure ontology term_
@@ -90,9 +90,9 @@ Location: module/ontology/cellular_component_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a subcellular structure. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a subcellular structure. | string | yes |  | Subcellular structure |  | cytoplasm; nucleus
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Subcellular structure ontology ID |  | GO:0005737; GO:0005634
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Subcellular structure ontology label |  | cytoplasm; nucleus
 
 ## Library construction ontology<a name='Library construction ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -101,9 +101,9 @@ Location: module/ontology/library_construction_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a library construction approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a library construction approach being used. | string | yes |  | Library construction |  | 10X v2 sequencing; Smart-seq2
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Library construction ontology ID |  | EFO:0009310; EFO:0008931
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Library construction ontology label |  | 10X v2 sequencing; Smart-seq2
 
 ## Process type ontology<a name='Process type ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -112,9 +112,9 @@ Location: module/ontology/process_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a process type being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a process type being used. | string | yes |  | Process type |  | enzymatic dissociation; blood draw
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Process type ontology ID |  | EFO:0009128; EFO:0009121
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Process type ontology label |  | enzymatic dissociation; blood draw
 
 ## Sequencing ontology<a name='Sequencing ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -123,9 +123,9 @@ Location: module/ontology/sequencing_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a sequencing approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a sequencing approach being used. | string | yes |  | Sequencing approach |  | tag based single cell RNA sequencing; full length single cell RNA sequencing
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Sequencing approach ontology ID |  | EFO:0008440; EFO:0008441
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Sequencing approach ontology label |  | tag based single cell RNA sequencing; full length single cell RNA sequencing
 
 ## Species ontology<a name='Species ontology'></a>
 _A term that may be associated with a species-related ontology term_
@@ -134,9 +134,9 @@ Location: module/ontology/species_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the species to which the organism belongs. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of the species to which the organism belongs. | string | yes |  | Species |  | Homo sapiens; Mus musculus
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Species ontology ID |  | NCBITaxon:9606; NCBITaxon:10090
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Species ontology label |  | Homo sapiens; Mus musculus
 
 ## Disease ontology<a name='Disease ontology'></a>
 _A term that may be associated with a disease-related ontology term_
@@ -145,9 +145,9 @@ Location: module/ontology/disease_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  | Disease |  | type 2 diabetes mellitus; normal
+ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  | Disease ontology ID |  | MONDO:0005148; PATO:0000461
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Disease ontology label |  | type 2 diabetes mellitus; normal
 
 ## Strain ontology<a name='Strain ontology'></a>
 _A term that may be associated with a strain-related ontology term_
@@ -156,9 +156,9 @@ Location: module/ontology/strain_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  | Strain |  | C57BL/6; BALB/c
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Strain ontology ID |  | EFO:0004472; EFO:0000602
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Strain ontology label |  | C57BL/6; BALB/c
 
 ## Enrichment ontology<a name='Enrichment ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -167,9 +167,9 @@ Location: module/ontology/enrichment_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of an enrichment approach being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of an enrichment approach being used. | string | yes |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Enrichment ontology ID |  | EFO:0009108; EFO:0009110
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Enrichment ontology label |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
 
 ## Organ part ontology<a name='Organ part ontology'></a>
 _A term that may be associated with an anatomy-related ontology term_
@@ -178,9 +178,9 @@ Location: module/ontology/organ_part_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  | Organ part |  | bone marrow; islet of Langerhans
+ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  | Organ part ontology ID |  | UBERON:0002371; UBERON:0000006
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Organ part ontology label |  | bone marrow; islet of Langerhans
 
 ## Microscopy ontology<a name='Microscopy ontology'></a>
 _A term that may be associated with a microscopy-related ontology term_
@@ -189,9 +189,9 @@ Location: module/ontology/microscopy_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the type of microscopy used in an imaging experiment. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of the type of microscopy used in an imaging experiment. | string | yes |  | Microscopy |  | confocal microscopy; fluorescence microscopy
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Microscopy ontology ID |  | FBbi:00000251; FBbi:00000246
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Microscopy ontology label |  | confocal microscopy; fluorescence microscopy
 
 ## Time unit ontology<a name='Time unit ontology'></a>
 _A term that may be associated with a time unit-related ontology term_
@@ -200,9 +200,9 @@ Location: module/ontology/time_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a time unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a time unit being used. | string | yes |  | Time unit |  | second; week
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Time unit ontology ID |  | UO:0000010; UO:0000034
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Time unit ontology label |  | second; week
 
 ## Protocol type ontology<a name='Protocol type ontology'></a>
 _A term that may be associated with a protocol-related ontology term_
@@ -211,9 +211,9 @@ Location: module/ontology/protocol_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a protocol type used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a protocol type used. | string | yes |  | Protocol type |  | dissociation protocol; enrichment protocol
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Protocol type ontology ID |  | EFO:0009088; EFO:0009089
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Protocol type ontology label |  | dissociation protocol; enrichment protocol
 
 ## Development stage ontology<a name='Development stage ontology'></a>
 _A term that may be associated with a development stage-related ontology term_
@@ -222,9 +222,9 @@ Location: module/ontology/development_stage_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the development stage of the organism. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of the development stage of the organism. | string | yes |  | Development stage |  | human adult stage; Theiler stage 28
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Development stage ontology ID |  | HsapDv:0000087; EFO:0002588
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Development stage ontology label |  | human adult stage; Theiler stage 28
 
 ## Instrument ontology<a name='Instrument ontology'></a>
 _A term that may be associated with a instrument-related ontology term_
@@ -233,9 +233,9 @@ Location: module/ontology/instrument_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The full name of the instrument used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The full name of the instrument used. | string | yes |  | Instrument |  | Illumina HiSeq 2500; ONT MinION
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Instrument ontology ID |  | EFO:0008565; EFO:0008632
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Instrument ontology label |  | Illumina HiSeq 2500; ONT MinION
 
 ## Mass unit ontology<a name='Mass unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
@@ -244,9 +244,9 @@ Location: module/ontology/mass_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a mass unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a mass unit being used. | string | yes |  | Mass unit |  | kilogram; microgram
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Mass unit ontology ID |  | UO:0000009; UO:0000023
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Mass unit ontology label |  | kilogram; microgram
 
 ## Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 _A term that may be associated with a biological macromolecule-related ontology term_
@@ -255,9 +255,9 @@ Location: module/ontology/biological_macromolecule_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of the biological macromolecule being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of the biological macromolecule being used. | string | yes |  | Biological macromolecule |  | polyA RNA; mRNA
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Biological macromolecule ontology ID |  | OBI:0000869; CHEBI:33699
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Biological macromolecule ontology label |  | polyA RNA; messenger RNA
 
 ## Cell type ontology<a name='Cell type ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
@@ -266,9 +266,9 @@ Location: module/ontology/cell_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The name of a cell type supplied by a user. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The name of a cell type supplied by a user. | string | yes |  | Cell type |  | bone marrow hematopoietic cell; cardiac muscle cell
+ontology | An ontology term identifier in the form prefix:accession | string | no |  | Cell type ontology ID |  | CL:1001610; CL:0000746
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Cell type ontology label |  | bone marrow hematopoietic cell; cardiac muscle cell
 
 ## Organ ontology<a name='Organ ontology'></a>
 _A term that may be associated with an anatomy-related ontology term._
@@ -277,9 +277,9 @@ Location: module/ontology/organ_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  |  |  | 
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  |  |  | 
+text | The text for the term as the user provides it. | string | yes |  | Organ |  | heart; immune system
+ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  | Organ ontology ID |  | UBERON:0000948; UBERON:0002405
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Organ ontology label |  | heart; immune system
 
 ## Funder<a name='Funder'></a>
 _Information about the project funding source._
