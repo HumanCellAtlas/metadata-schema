@@ -32,6 +32,7 @@
             "description": "The format of the file.",
             "type": "string",
             "user_friendly": "File format",
+            "guidelines": "Indicate the full file extension including compression exensions.",
             "example": "fastq.gz; tif"
         }, 
         "checksum": {
