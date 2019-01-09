@@ -1,1 +1,10 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/cell_morphology,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/death,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/familial_relationship,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/growth_conditions,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/human_specific,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/medical_history,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/mouse_specific,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/preservation_storage,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
+module/biomaterial/state_of_specimen,patch,"Update examples, description, user-friendly names, and guideslines. Fixes #690.",,
