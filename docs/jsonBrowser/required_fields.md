@@ -185,7 +185,7 @@ model_for_organ | Organ for which this organoid is a model system. | object | [S
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
-process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) |  |  | 
+process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) | Process core |  | 
 ### Analysis process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

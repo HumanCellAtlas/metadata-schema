@@ -431,7 +431,7 @@ input_aggregate_cell_count | Estimated number of cells per input cell aggregate.
 organoid_stored_oxygen_levels | Percent oxygen level organoid was stored in prior to sequencing. | number | no |  | Organoid stored oxygen level |  | 75
 
 ## Process
-_Information about the process_
+_Information about a process completed in the experiment._
 
 Location: type/process/process.json
 
@@ -439,12 +439,12 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) |  |  | 
-length_of_time | Length of time the process took to execute, from start to finish, in Length of time unit. | string | no |  | Length of time |  | 10
-length_of_time_unit | The unit in which Length of time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | Should be one of: microsecond, second, minute, hour, day, week, month, or year.
-process_type | The type of process. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | sample enrichment
-deviation_from_protocol | Any deviation from the protocol provided. | string | no |  | Deviation from protocol |  | 
-insdc_experiment | An INSDC (International Nucleotide Sequence Database Collaboration) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment |  | 
+process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) | Process core |  | 
+length_of_time | Length of time the process took to execute in Length of time unit. | string | no |  | Length of time |  | 10; 55-60
+length_of_time_unit | The unit in which Length of time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | 
+process_type | The type of process. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+deviation_from_protocol | A deviation from the protocol provided. | string | no |  | Deviation from protocol |  | Skipped ACK lysis step; Used 100um filter instead of 40um filter
+insdc_experiment | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment accession |  | 
 
 ## Analysis process
 _Information about the analysis process_
