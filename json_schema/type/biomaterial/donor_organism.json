@@ -7,7 +7,8 @@
         "schema_type",
         "biomaterial_core",
         "is_living",
-        "sex"
+        "sex",
+        "development_stage"
     ],
     "title": "Donor organism",
     "name": "donor_organism",
@@ -176,17 +177,6 @@
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
-        },
-        "normothermic_regional_perfusion": {
-            "description": "Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise.",
-            "type": "string",
-            "enum": [
-                "yes",
-                "no",
-                "unknown"
-            ],
-            "user_friendly": "Normothermic regional perfusion?",
-            "example": "Should be one of: yes, no, or unknown."
         },
         "timecourse": {
             "description": "Information relating to a timecourse associated with this biomaterial.",

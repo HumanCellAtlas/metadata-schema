@@ -31,17 +31,19 @@
         "gross_description": {
             "description": "Color, size, and other aspects of specimen as visible to naked eye.",
             "type": "string",
-            "user_friendly": "Gross description"
+            "user_friendly": "Gross description",
+            "example": "focal wedge shaped region of tan-orange discoloration; cystic"
         },
         "gross_image": {
-            "description": "List of filenames of photographs of specimen without magnification. Must be of format JPEG, TIFF, or PNG.",
+            "description": "List of filenames of photographs of specimen without magnification.",
             "type": "array",
             "items": {
                 "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$", 
                 "type": "string"
             },
             "user_friendly": "Gross image",
-            "example": "my_gross_image_file.jpg"
+            "example": "my_gross_image_file.jpg",
+            "guidelines": "File must be of format JPEG, TIFF, or PNG."
         }, 
         "ischemic_temperature": {
             "description": "Whether specimen experienced warm or cold ischemia.",
@@ -65,24 +67,26 @@
             "description": "How the specimen looks under the microscope and how it compares with normal cells.",
             "type": "string",
             "user_friendly": "Microscopic description",
-            "example": "Mixture of different cell sizes apparent."
+            "example": "Mixture of different cell sizes apparent; Dead cells are quite faint on microscope"
         }, 
         "microscopic_image": {
-            "description": "List of filenames of photographs of specimen under microscope. Must be of format JPEG, TIFF, or PNG.",
+            "description": "List of filenames of photographs of specimen under microscope.",
             "type": "array",
             "items": {
                 "type": "string",
                 "pattern": "^.*.jpg$|^.*.jpeg$|^.*.tiff$|^.*.png$"
             },
             "user_friendly": "Microscopic image",
-            "example": "my_microscopic_image_file.jpg"
+            "example": "my_microscopic_image_file.jpg",
+            "guidelines": "File must be of format JPEG, TIFF, or PNG."
         },
         "postmortem_interval": {
-            "description": "Duration of time, in seconds, between when death was declared and when the specimen was preserved or processed.",
+            "description": "Duration of time between when death was declared and when the specimen was preserved or processed.",
             "type": "integer",
             "minimum": 0,
             "example": 2400,
-            "user_friendly": "Post-mortem interval"
+            "user_friendly": "Post-mortem interval",
+            "guidelines": "Enter time in seconds."
         }
     }
 }

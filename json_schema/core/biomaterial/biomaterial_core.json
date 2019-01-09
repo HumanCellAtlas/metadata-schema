@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A biomaterial entity contains information about biological material that was generated/used in the project and includes everything from a whole organism down to subcellular components.",
+    "description": "Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components.",
     "additionalProperties": false,
     "required": [
         "biomaterial_id",
@@ -49,7 +49,7 @@
             "description": "Genotype of the biomaterial.",
             "type": "string",
             "user_friendly": "Genotype",
-            "example": "DRB1 0401 protective allele"
+            "example": "DRB1 0401 protective allele; HLA-B*3901 allele"
         },
         "supplementary_files": {
             "description": "A list of filenames of biomaterial-level supplementary files.",
@@ -60,18 +60,20 @@
             "user_friendly": "Supplementary files"
         },
         "biosd_biomaterial": {
-            "description": "A DDBJ, NCBI, or EMBL-EBI BioSample ID. Accession must start with SAMD, SAMN, or SAME.",
+            "description": "A BioSamples ID.",
             "type": "string",
             "pattern": "^SAM(D|N|E([AG]?))[0-9]+$",
-            "user_friendly": "BioSample ID",
-            "example": "SAMN00000000"
+            "user_friendly": "BioSamples ID",
+            "example": "SAMN00000000",
+            "guidelines": "Enter ID if sample has been archived. ID can be from the DDBJ, NCBI, or EMBL-EBI and must start with SAMD, SAMN, or SAME, respectively."
         },
         "insdc_biomaterial": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) sample accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRS, SRS, or ERS.",
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) sample accession.",
             "type": "string",
             "pattern": "^[D|E|S]RS[0-9]+$",
             "user_friendly": "INSDC ID",
-            "example": "SRS0000000"
+            "example": "SRS0000000",
+            "guidelines": "Enter accession if sample has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRS, SRS, or ERS, respecitvely."
         }
     }
 }

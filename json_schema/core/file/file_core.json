@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A file entity contains information about a file produced from any process.",
+    "description": "Information about a file produced from any process.",
     "additionalProperties": false,
     "required": [
 	    "file_name",
@@ -22,20 +22,24 @@
             "example": "4.6.1"
         },
         "file_name": {
-            "description": "The filename of the file.",
+            "description": "The name of the file.",
             "type": "string",
-            "user_friendly": "File name"
+            "user_friendly": "File name",
+            "guidelines": "Include the file extension in the file name.",
+            "example": "R1.fastq.gz; codebook.json"
         },
         "file_format": {
             "description": "The format of the file.",
             "type": "string",
             "user_friendly": "File format",
-            "example": "fastq.gz"
+            "guidelines": "Indicate the full file extension including compression extensions.",
+            "example": "fastq.gz; tif"
         }, 
         "checksum": {
             "description": "MD5 checksum of the file.",
             "type": "string",
-            "user_friendly": "Checksum"
+            "user_friendly": "Checksum",
+            "example": "e09a986c2e630130b1849d4bf9a94c06"
 	    }
     }
 }

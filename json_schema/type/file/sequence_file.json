@@ -38,12 +38,13 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "core/file/file_core.json"
+            "$ref": "core/file/file_core.json",
+            "user_friendly": "File core"
         },
         "read_index": {
-            "description": "Whether the read file contains the read1, read2, index1, or index2 part of the sequencing read or represents a single-end, non-indexed library.",
+            "description": "The sequencing read this file represents.",
             "type": "string",
-            "example": "Should be one of: read1, read2, index1, index2, or 'single-end, non-indexed'",
+            "example": "Should be one of: read1, read2, index1, index2",
             "enum": [
                 "read1",
                 "read2",
@@ -51,10 +52,11 @@
                 "index2",
                 "single-end, non-indexed"
             ],
-            "user_friendly": "Read index"
+            "user_friendly": "Read index",
+            "guidelines": "If a sequencing experiment is single-end, enter 'read1'."
         },
         "lane_index": {
-            "description": "The index of the lane that this file was sequenced from.",
+            "description": "The lane that this file was sequenced from.",
             "type": "integer",
             "example": 1,
             "user_friendly": "Lane index"
@@ -66,14 +68,15 @@
             "user_friendly": "Read length"
         },
         "insdc_run": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRR, SRR, or ERR.",
+            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession from the DDBJ, NCBI, or EMBL-EBI.",
             "type": "array",
             "items": {
                 "pattern": "^[D|E|S]RR[0-9]+$",
                 "type": "string"
             },
-            "user_friendly": "INSDC run",
-            "example": "SRR0000000"
+            "user_friendly": "INSDC run accession",
+            "example": "SRR0000000",
+            "guidelines": "Accession must start with DRR, SRR, or ERR."
         },
         "library_prep_id" : {
             "description": "A unique ID for the library preparation.",
