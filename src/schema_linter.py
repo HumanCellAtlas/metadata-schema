@@ -49,11 +49,11 @@ class SchemaLinter:
                 elif kw not in property_keywords:
                     print("Keyword `" + kw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
-                    if isinstance(properties[property][kw], dict):
-                        for nkw in properties[property][kw].keys:
-                            if nkw not in property_keywords:
-                                print(
-                                    "Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
+                if isinstance(properties[property][kw], dict) and property != 'ontology':
+                    for nkw in properties[property][kw].keys():
+                        if nkw not in property_keywords:
+                            print(
+                                "Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
         if "additionalProperties" in schema and schema['additionalProperties'] == True:
             print("Schema " + path + " should not allow additional properties")
