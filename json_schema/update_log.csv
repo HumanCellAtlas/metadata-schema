@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/process/sequencing/10x,patch,Added second example for fastq creation method and fastq creation method version.,,
+module/process/sequencing/10x,patch,Added second example for fastq creation method and fastq creation method version.Fixes#723,,
