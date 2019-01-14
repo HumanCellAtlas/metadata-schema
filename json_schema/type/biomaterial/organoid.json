@@ -89,7 +89,7 @@
             "description": "General description of the organoid morphology.",
             "type": "string",
             "example": "Epithelial monolayer with budding crypt-like domains, Optic cup structure",
-            "user_frinedly": "Organoid morphology"
+            "user_friendly": "Organoid morphology"
         },
         "organoid_type": {
             "description": "The type of organoid.",

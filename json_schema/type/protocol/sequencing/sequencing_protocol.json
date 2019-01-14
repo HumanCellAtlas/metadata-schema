@@ -41,7 +41,7 @@
             "description": "Core protocol-level information.",
             "type": "object",
             "$ref": "core/protocol/protocol_core.json",
-            "user-friendly": "Protocol core"
+            "user_friendly": "Protocol core"
         },
          "instrument_manufacturer_model": {
             "description": "The manufacturer and model of the sequencer.",
