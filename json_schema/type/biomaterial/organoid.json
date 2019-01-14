@@ -62,7 +62,7 @@
             "user_friendly": "Organ part model"
         },
         "age": {
-            "description": "Age of the organoid in Organoid age unit. Measured from when cell aggregates started differentiating to desired organoid model.",
+            "description": "Age of the organoid in Organoid age unit measured from when cell aggregates started differentiating to desired organoid model.",
             "type": "number",
             "example": 55,
             "user_friendly": "Organoid age"
@@ -71,7 +71,7 @@
             "description": "The unit in which Organoid age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Age unit"
+            "user_friendly": "Organoid age unit"
         },
         "size": {
             "description": "Size of the organoid in Organoid size unit.",
@@ -107,13 +107,13 @@
             "description": "Whether the organoid is embedded in a matrigel.",
             "type": "boolean",
             "example": "Should be one of: yes, no.",
-            "user_friendly": "Organoid embeddded in matrigel?"
+            "user_friendly": "Embeddded in matrigel?"
         },
         "growth_environment": {
             "description": "Growth environment in which the organoid is grown.",
             "type": "string",
-            "example": "matrigel, liquid suspension, adherent",
-            "user_friendly": "Organoid growth environment"
+            "example": "matrigel; liquid suspension; adherent",
+            "user_friendly": "Growth environment"
         },
         "input_aggregate_cell_count": {
             "description": "Estimated number of cells per input cell aggregate.",
@@ -125,7 +125,7 @@
             "description": "Percent oxygen level organoid was stored in prior to sequencing.",
             "type": "number",
             "example": 75,
-            "user_friendly": "Organoid stored oxygen level"
+            "user_friendly": "Stored oxygen level"
         }
     }
 }
