@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/project/project_core.json - v7.0.5] - 2019-01-14
+### Update
+Update field examples/descriptions for grammar. Fixes #729.
+
+### [type/project/project.json - v9.0.8] - 2019-01-14
+### Update
+Update field examples/descriptions for grammar. Fixes #729.
+
 ### [type/biomaterial/organoid.json - v8.3.12] - 2019-01-14
 ### Fixed
 Fixed typo in field user_friendly in property organoid_morphology. Fixes #726
