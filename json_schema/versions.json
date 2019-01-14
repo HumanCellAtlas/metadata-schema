@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-09T12:02:00Z",
+    "last_update_date": "2019-01-14T13:22:28Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -85,7 +85,7 @@
                 "cell_suspension": "8.6.6",
                 "donor_organism": "12.0.4",
                 "imaged_specimen": "2.0.4",
-                "organoid": "8.3.11",
+                "organoid": "8.3.12",
                 "specimen_from_organism": "6.3.8"
             },
             "file": {
@@ -123,7 +123,7 @@
                 "protocol": "6.3.7",
                 "sequencing": {
                     "library_preparation_protocol": "4.4.4",
-                    "sequencing_protocol": "9.0.6"
+                    "sequencing_protocol": "9.0.7"
                 }
             }
         }

@@ -6,7 +6,15 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [type/biomaterial/organoid.json - v8.3.12] - 2019-01-14
+### Fixed
+Fixed typo in field user_friendly in property organoid_morphology. Fixes #726
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.7] - 2019-01-14
+### Fixed
+Fixed typo in field user_friendly in property protocol_core. Fixes #726
+
 
 ### [module/biomaterial/cell_morphology.json - v6.1.5] - 2019-01-09
 ### Update

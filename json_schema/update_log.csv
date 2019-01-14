@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/organoid,patch,Fixed typo in field user_friendly in property organoid_morphology. Fixes #726,,
-type/protocol/sequencing/sequencing_protocol,patch,Fixed typo in field user_friendly in property protocol_core. Fixes #726,,
