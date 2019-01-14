@@ -55,7 +55,7 @@ Location: core/project/project_core.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 project_short_name | A short name for the project. | string | yes |  | Project label |  | CoolOrganProject.
-project_title | An official title for the project. | string | yes |  | Project title |  | Study of single cells in the human body..
+project_title | An official title for the project. | string | yes |  | Project title |  | Study of single cells in the human body.
 project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | 
 
 ## Protocol core<a name='Protocol core'></a>
