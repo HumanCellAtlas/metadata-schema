@@ -83,7 +83,7 @@
             "biomaterial": {
                 "cell_line": "9.0.5",
                 "cell_suspension": "8.6.6",
-                "donor_organism": "12.0.4",
+                "donor_organism": "12.0.5",
                 "imaged_specimen": "2.0.4",
                 "organoid": "8.3.12",
                 "specimen_from_organism": "6.3.8"

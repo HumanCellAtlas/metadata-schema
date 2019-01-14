@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v12.0.5] - 2019-01-14
+### Update
+Update examples to be separated by semicolon instead of comma. Fixes #728.
+
 ### [core/project/project_core.json - v7.0.5] - 2019-01-14
 ### Update
 Update field examples/descriptions for grammar. Fixes #729.

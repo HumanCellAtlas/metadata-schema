@@ -173,7 +173,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
 sex | The biological sex of the organism. | string |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
-is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, unknown.
+is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, or unknown.
 development_stage | A classification of the developmental stage of the organism. | object | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 ### Organoid
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
