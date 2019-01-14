@@ -7,6 +7,7 @@
     ],
     "title": "Development stage ontology",
     "name": "development_stage_ontology",
+    "type": "object",
     "properties": {
         "describedBy": {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/development_stage_ontology",
@@ -20,7 +21,9 @@
         },
         "text": {
             "description": "The name of the development stage of the organism.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Development stage",
+            "example": "human adult stage; Theiler stage 28"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -31,12 +34,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "user_friendly": "Development stage ontology ID",
+            "example": "HsapDv:0000087; EFO:0002588"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Development stage ontology label",
+            "example": "human adult stage; Theiler stage 28"
         }
-    },
-    "type": "object"
+    }
 }

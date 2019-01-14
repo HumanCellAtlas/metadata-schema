@@ -26,20 +26,20 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "example": "2",
-            "user-friendly": "Timecourse value"
+            "user_friendly": "Timecourse value"
         },
         "timecourse_unit": {
             "description": "The unit in which the Timecourse value is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "example": "day",
-            "user-friendly": "Timecourse unit"
+            "user_friendly": "Timecourse unit"
         },
         "timecourse_relevance": {
             "description": "Relevance of the Timecourse value/unit to the experiment.",
             "type": "string",
             "example": "Collection after tumor cells injected into the mammary gland.",
-            "user-friendly": "Timecourse relevance"
+            "user_friendly": "Timecourse relevance"
         }
     }
 }

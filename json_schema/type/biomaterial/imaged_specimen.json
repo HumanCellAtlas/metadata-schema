@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-        "imaged_slice_thickness"
+        "slice_thickness"
     ],
     "title": "Imaged specimen",
     "name": "imaged_specimen",
@@ -38,7 +38,8 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "core/biomaterial/biomaterial_core.json"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "overview_images": {
             "description": "List of filenames of photographs of specimen.",
@@ -54,7 +55,7 @@
         "slice_thickness": {
             "description": "Thickness of the imaged slice in micrometres.",
             "type" : "number",
-            "example": "14, 30",
+            "example": "14",
             "user_friendly": "Imaged slice thickness"
         },
         "internal_anatomical_structures": {

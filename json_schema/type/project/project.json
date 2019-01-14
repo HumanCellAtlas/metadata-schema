@@ -37,10 +37,11 @@
         "project_core" : {
             "description": "Core project-level information.",
             "type": "object",
-            "$ref": "core/project/project_core.json"
+            "$ref": "core/project/project_core.json",
+            "user_friendly": "Project core"
         },
         "contributors": {
-            "description": "List of people contributing to any aspect of the project.",
+            "description": "People contributing to any aspect of the project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/contact.json"
@@ -50,14 +51,14 @@
         "supplementary_links": {
             "description": "External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded.",
             "type": "array",
-            "example": "https://github.com/czbiohub/tabula-muris",
+            "example": "https://github.com/czbiohub/tabula-muris; http://celltag.org/",
             "items": {
                 "type": "string"
             },
             "user_friendly": "Supplementary link(s)"
         },
         "publications": {
-            "description": "A list of publications resulting from this project.",
+            "description": "Publications resulting from this project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/publication.json"
@@ -65,40 +66,44 @@
             "user_friendly": "Publications"
         },
         "insdc_project": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) project accession, if project has been submitted. Can be from the DDBJ, NCBI, or EMBL-EBI. Accession must start with DRP, SRP, or ERP.",
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
             "type": "string",
             "pattern": "^[D|E|S]RP[0-9]+$",
             "example": "SRP000000",
-            "user_friendly": "INSDC project accession"
+            "user_friendly": "INSDC project accession",
+            "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
         "geo_series": {
-            "description": "GEO accession number, if data has been submitted. Accession must start with GSE.",
+            "description": "A Gene Expression Omnibus (GEO) series accession.",
             "type": "string",
             "pattern": "^GSE.*$",
             "example": "GSE00000",
-            "user_friendly": "GEO series accession"
+            "user_friendly": "GEO series accession",
+            "guidelines": "Enter accession if project has been archived. Accession must start with GSE."
         },
         "array_express_investigation": {
-            "description": "EBI ArrayExpress accession number, if data has been submitted.",
+            "description": "An ArrayExpress accession.",
             "type": "string",
             "pattern": "^E-....-.*$",
             "example": "E-AAAA-00",
-            "user_friendly": "ArrayExpress accession"
+            "user_friendly": "ArrayExpress accession",
+            "guidelines": "Enter accession if project has been archived. Accession must start with E-."
         },
         "insdc_study": {
-            "description": "An INSDC (International Nucleotide Sequence Database Collaboration) study accession if study has been submitted. Can be from the DDBJ, EMBL-EBI, or NCBI. Accession must start with PRJE, PRJN, or PRJD.",
+            "description": "An International Nucleotide Sequence Database Collaboration (INSDC) study accession.",
             "type": "string",
             "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
             "example": "PRJNA000000",
-            "user_friendly": "INSDC study accession"
+            "user_friendly": "INSDC study accession",
+            "guidelines": "Enter accession if study has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with PRJD, PRJN, or PRJE, respectively."
         },
         "funders": {
-            "description": "A list of funding source(s) supporting the project.",
+            "description": "Funding source(s) supporting the project.",
             "type": "array",
             "items": {
                 "$ref": "module/project/funder.json"
             },
-            "user_friendly": "Project funding source(s)"
+            "user_friendly": "Funding source(s)"
         }
     }
 }

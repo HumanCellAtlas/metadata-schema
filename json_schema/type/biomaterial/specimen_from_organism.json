@@ -38,41 +38,39 @@
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "core/biomaterial/biomaterial_core.json"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of the specimen.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
                 "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
         "organ": {
-            "description": "The organ that the biomaterial came from. Blood and connective tissue are considered organs.",
+            "description": "The organ that the biomaterial came from.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
-            "example": "blood",
-            "comment": "The term organ is very broadly defined here.",
+            "guidelines": "Blood and connective tissue are considered organs.",
             "user_friendly": "Organ"
         },
         "organ_part": {
             "description": "A term for a specific part of the organ that the biomaterial came from.",
             "type": "object",
             "$ref": "module/ontology/organ_part_ontology.json",
-            "example": "umbilical cord blood",
-            "comment": "The term organ part is very broadly defined here.",
+            "guidelines": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
         "diseases": {
-            "description": "Short description of known disease(s) of the specimen. Enter normal if no known disease.",
+            "description": "Short description of known disease(s) of the specimen.",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
             "user_friendly": "Known disease(s)",
-            "example": "bone squamous cell carcinoma"
+            "guidelines": "Enter normal if no known diseases."
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
@@ -87,11 +85,12 @@
             "user_friendly": "Preservation/Storage"
         },
         "collection_time": {
-            "description": "When the biomaterial was collected, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
+            "description": "When the biomaterial was collected.",
             "type": "string",
             "format": "date-time",
             "user_friendly": "Time of collection",
-            "example": "2017-03-19T07:22:00Z"
+            "example": "2017-03-19T07:22:00Z",
+            "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",
