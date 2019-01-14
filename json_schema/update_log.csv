@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,patch,"Update examples to be separated by semicolon instead of comma. Fixes #728.",,
