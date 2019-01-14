@@ -14,7 +14,7 @@ protocol_id | A unique ID for the protocol. | string |  | Protocol ID |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 project_short_name | A short name for the project. | string |  | Project label |  | CoolOrganProject.
-project_title | An official title for the project. | string |  | Project title |  | Study of single cells in the human body..
+project_title | An official title for the project. | string |  | Project title |  | Study of single cells in the human body.
 project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | 
 ### Biomaterial core<a name='Biomaterial core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
