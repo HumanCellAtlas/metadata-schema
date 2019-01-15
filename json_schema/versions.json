@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-14T14:06:52Z",
+    "last_update_date": "2019-01-15T09:25:26Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -58,7 +58,7 @@
             "process": {
                 "purchased_reagents": "6.0.4",
                 "sequencing": {
-                    "10x": "1.0.4",
+                    "10x": "1.0.5",
                     "barcode": "5.2.5",
                     "insdc_experiment": "1.1.5",
                     "plate_based_sequencing": "1.0.4"
@@ -123,7 +123,7 @@
                 "protocol": "6.3.7",
                 "sequencing": {
                     "library_preparation_protocol": "4.4.4",
-                    "sequencing_protocol": "9.0.7"
+                    "sequencing_protocol": "9.0.8"
                 }
             }
         }
