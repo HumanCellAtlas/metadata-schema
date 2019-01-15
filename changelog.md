@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/process/sequencing/10x.json - v1.0.5] - 2019-01-15
+### Added
+Added second example for fastq creation method and fastq creation method version.Fixes #723
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.8] - 2019-01-15
+### Added
+Added second example for fastq creation method and fastq creation method version.Fixes #723
+
 ### [type/biomaterial/donor_organism.json - v12.0.5] - 2019-01-14
 ### Update
 Update examples to be separated by semicolon instead of comma. Fixes #728.
