@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/organoid,major,"Updated field names to remove organoid_ prefix. Fixes #480.",,
