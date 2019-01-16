@@ -7,6 +7,7 @@
     ],
     "title": "Ethnicity ontology",
     "name": "ethnicity_ontology",
+    "type": "object",
     "properties": {
         "describedBy" : {
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/ethnicity_ontology",
@@ -20,7 +21,9 @@
         },
         "text": {
             "description": "The ethnicity of the human donor.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Ethnicity",
+            "example": "European; Hispanic or Latin American"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -31,12 +34,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "user_friendly": "Ethnicity ontology ID",
+            "example": "HANCESTRO_0005 ;HANCESTRO_0014"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Ethnicity ontology label",
+            "example": "European; Hispanic or Latin American"
         }
-    },
-    "type": "object"
+    }
 }

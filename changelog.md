@@ -9,6 +9,566 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/process/sequencing/10x.json - v1.0.5] - 2019-01-15
+### Added
+Added second example for fastq creation method and fastq creation method version.Fixes #723
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.8] - 2019-01-15
+### Added
+Added second example for fastq creation method and fastq creation method version.Fixes #723
+
+### [type/biomaterial/donor_organism.json - v12.0.5] - 2019-01-14
+### Update
+Update examples to be separated by semicolon instead of comma. Fixes #728.
+
+### [core/project/project_core.json - v7.0.5] - 2019-01-14
+### Update
+Update field examples/descriptions for grammar. Fixes #729.
+
+### [type/project/project.json - v9.0.8] - 2019-01-14
+### Update
+Update field examples/descriptions for grammar. Fixes #729.
+
+### [type/biomaterial/organoid.json - v8.3.12] - 2019-01-14
+### Fixed
+Fixed typo in field user_friendly in property organoid_morphology. Fixes #726
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.7] - 2019-01-14
+### Fixed
+Fixed typo in field user_friendly in property protocol_core. Fixes #726
+
+### [module/biomaterial/cell_morphology.json - v6.1.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/death.json - v5.4.1] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/familial_relationship.json - v6.0.3] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/growth_conditions.json - v6.4.2] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/human_specific.json - v1.0.7] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/medical_history.json - v5.2.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/mouse_specific.json - v1.0.6] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/preservation_storage.json - v5.3.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/state_of_specimen.json - v5.2.7] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/cell_line.json - v9.0.5] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/cell_suspension.json - v8.6.6] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/donor_organism.json - v12.0.4] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.8] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v1.0.4] - 2019-01-09
+### Update
+Update examples, description, user-friendly names, and guideslines. Fixes #690.
+
+### [module/biomaterial/timecourse.json - v1.1.5] - 2019-01-09
+### Fixed
+Fixed bug in spelling of user_friendly field in timecourse module. Fixes #710
+
+### [type/biomaterial/donor_organism.json - v12.0.3] - 2019-01-09
+### Fixed
+Fixed bug in spelling of user_friendly field in timecourse module. Fixes #710
+
+### [core/biomaterial/biomaterial_core.json - v7.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [core/file/file_core.json - v5.2.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [core/process/process_core.json - v9.0.3] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [core/project/project_core.json - v7.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [core/protocol/protocol_core.json - v5.2.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/biomaterial/cell_suspension.json - v8.6.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/biomaterial/organoid.json - v8.3.11] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/biomaterial/cell_line.json - v9.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/biomaterial/imaged_specimen.json - v2.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/biomaterial/donor_organism.json - v12.0.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.7] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/file/supplementary_file.json - v1.1.7] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/file/image_file.json - v1.0.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/file/sequence_file.json - v7.0.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/process/analysis/analysis_process.json - v8.0.6] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/file/analysis_file.json - v5.3.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/file/reference_file.json - v2.2.8] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/process/process.json - v6.0.6] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/project/project.json - v9.0.7] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.7] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.10] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.7] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/protocol.json - v6.3.7] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.8] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v1.0.3] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v2.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.6] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.3.3] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.6] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #703.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #685.
+
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/cell_type_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/cellular_component_ontology.json - v1.0.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/development_stage_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/disease_ontology.json - v5.3.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/enrichment_ontology.json - v1.2.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/ethnicity_ontology.json - v5.3.5] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/instrument_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/length_unit_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/library_amplification_ontology.json - v1.2.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/library_construction_ontology.json - v1.2.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/mass_unit_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/microscopy_ontology.json - v1.0.2] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/organ_ontology.json - v5.3.6] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/organ_part_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/process_type_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/protocol_type_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/sequencing_ontology.json - v1.1.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/species_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/strain_ontology.json - v5.3.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/ontology/time_unit_ontology.json - v5.3.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/biomaterial/cell_line.json - v9.0.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/biomaterial/cell_suspension.json - v8.6.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/protocol/target.json - v1.0.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/biomaterial/donor_organism.json - v12.0.1] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.6] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/biomaterial/human_specific.json - v1.0.6] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.5] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/biomaterial/cell_morphology.json - v6.1.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/biomaterial/organoid.json - v8.3.10] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/biomaterial/imaged_specimen.json - v2.0.3] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/protocol.json - v6.3.6] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.7] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.5] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/process/process.json - v6.0.5] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.6] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/process/analysis/analysis_process.json - v8.0.5] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.9] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/file/reference_file.json - v2.2.7] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/biomaterial/mouse_specific.json - v1.0.5] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/biomaterial/timecourse.json - v1.1.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [module/biomaterial/preservation_storage.json - v5.3.4] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v1.0.2] - 2019-01-09
+### Add
+Add examples and user-friendly names. Fixes #613.
+
+### [type/file/reference_file.json - v2.2.6] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #674.
+
+### [type/process/process.json - v6.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #697.
+
+### [module/process/purchased_reagents.json - v6.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [module/process/sequencing/10x.json - v1.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [module/process/sequencing/barcode.json - v5.2.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [module/process/sequencing/insdc_experiment.json - v1.1.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.8] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/biomaterial/specimen_from_organism.json - v6.3.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.3.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [module/protocol/target.json - v1.0.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.3] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.5] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v2.0.3] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/process/process.json - v6.0.3] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/biomaterial/cell_suspension.json - v8.6.3] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #699.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.2] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #706. 
+
+### [type/process/analysis/analysis_process.json - v8.0.4] - 2019-01-09
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #679.
+
+### [type/file/supplementary_file.json - v1.1.6] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #680.
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.4] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #678.
+
+### [module/project/funder.json - v1.0.4] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [module/project/publication.json - v5.2.5] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [type/project/project.json - v9.0.6] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [type/biomaterial/cell_line.json - v9.0.2] - 2019-01-08
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #701.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.1] - 2019-01-07
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #683.
+
+### [type/project/project.json - v9.0.5] - 2019-01-03
+### Added
+Added user-friendly name, examples, and guidelines to adhere to Style Guide
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v1.1.6] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.7] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v1.3.1] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.4] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.6] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v2.0.2] - 2018-12-18
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #687.
+
+### [type/biomaterial/donor_organism.json - v12.0.0] - 2018-12-13
+### Changed
+Changed donor_organism to make development_stage required. Fixes #607
+
+### [type/biomaterial/donor_organism.json - v11.0.0] - 2018-12-13
+### Removed
+Removed normothermic_regional_perfusion. Fixes #590.
+
+### [module/biomaterial/death.json - v5.4.0] - 2018-12-13
+### Added
+Added normothermic_regional_perfusion. Fixes #590.
+
+### [type/file/sequence_file.json - v7.0.1] - 2018-12-13
+### Changed
+Changed description, user-friendly, example, and guidelines attributes to adhere to Style Guide. Fixes #672.
+
+### [system/license.json - v1.0.0] - 2018-12-07
+### Added
+Added system entity to capture license under which data are released. Fixes #338.
+
 ### [module/protocol/target.json - v1.0.1] - 2018-12-07
 ### Changed
 Changed molecule_ID to lower case in target.json Fixes #666

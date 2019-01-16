@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity.",
+    "description": "Information relevant to how a biomaterial or file was converted into another biomaterial or file.",
     "additionalProperties": false,
     "required": [
         "process_id"
@@ -38,13 +38,13 @@
          "process_location": {
             "description": "Location where the process took place.",
             "type": "string",
-            "example": "Wellcome Trust Sanger Institute",
+            "example": "Wellcome Trust Sanger Institute; Cancer Institute, Stanford University",
             "user_friendly": "Process location"
          },
          "operator": {
            "description": "Identifier for individual(s) who executed the process.",
            "type": "array",
-           "example": "Technician 1",
+           "example": "Technician 1; J.D.",
            "items":{
                 "type": "string"
            },

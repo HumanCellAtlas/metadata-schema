@@ -7,6 +7,7 @@
     ],
     "title": "Species ontology",
     "name": "species_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -21,7 +22,9 @@
         },
         "text": {
             "description": "The name of the species to which the organism belongs.",
-            "type": "string"
+            "type": "string",
+            "example": "Homo sapiens; Mus musculus",
+            "user_friendly": "Species"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -32,12 +35,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "example": "NCBITaxon:9606; NCBITaxon:10090",
+            "user_friendly": "Species ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "example": "Homo sapiens; Mus musculus",
+            "user_friendly": "Species ontology label"
         }
-    },
-    "type": "object"
+    }
 }
