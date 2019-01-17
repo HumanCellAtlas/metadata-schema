@@ -223,7 +223,7 @@ _There are no required properties in schema State of specimen_
 ### Timecourse<a name='Timecourse'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  | Timecourse value |  | 2
+value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  | Timecourse value |  | 2; 5.5-10.5
 unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Timecourse unit |  | 
 ### Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
