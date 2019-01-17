@@ -3,8 +3,8 @@
     "description": "Information relating to a timecourse.",
     "additionalProperties": false,
     "required": [
-        "timecourse_value",
-        "timecourse_unit"
+        "value",
+        "unit"
     ],
     "title": "Timecourse",
     "name": "timecourse",
@@ -21,21 +21,21 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "timecourse_value": {
+        "value": {
             "description": "The numerical value in Timecourse unit associated with a time interval used in the experiment.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "example": "2",
             "user_friendly": "Timecourse value"
         },
-        "timecourse_unit": {
+        "unit": {
             "description": "The unit in which the Timecourse value is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "example": "day",
             "user_friendly": "Timecourse unit"
         },
-        "timecourse_relevance": {
+        "relevance": {
             "description": "Relevance of the Timecourse value/unit to the experiment.",
             "type": "string",
             "example": "Collection after tumor cells injected into the mammary gland.",
