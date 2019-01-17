@@ -13,5 +13,11 @@
       "corresponding_contributor": true,
       "institution": "Wellcome Trust Sanger Institute"
     }
+  ],
+  "funders": [
+    {
+      "grant_id": "BB/P0000001/1",
+      "funder_name": "Biotechnology and Biological Sciences Research Council (BBSRC)"
+    }
   ]
 }
