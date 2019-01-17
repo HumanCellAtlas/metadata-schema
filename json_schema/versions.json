@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-15T09:25:26Z",
+    "last_update_date": "2019-01-16T16:59:18Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -85,7 +85,7 @@
                 "cell_suspension": "8.6.6",
                 "donor_organism": "12.0.5",
                 "imaged_specimen": "2.0.4",
-                "organoid": "8.3.12",
+                "organoid": "9.0.0",
                 "specimen_from_organism": "6.3.8"
             },
             "file": {
