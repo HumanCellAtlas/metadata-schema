@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+core/file/file_core,major,"Added required content_description field. Fixes #542.",,
