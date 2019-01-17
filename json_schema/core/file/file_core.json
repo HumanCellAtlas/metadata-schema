@@ -4,7 +4,8 @@
     "additionalProperties": false,
     "required": [
 	    "file_name",
-	    "file_format"
+	    "file_format",
+        "content_description"
     ],
     "title": "File core",
     "name": "file_core",
@@ -34,7 +35,22 @@
             "user_friendly": "File format",
             "guidelines": "Indicate the full file extension including compression extensions.",
             "example": "fastq.gz; tif"
-        }, 
+        },
+        "content_description": {
+            "description": "General description of the contents of the file.",
+            "type": "string",
+            "user_friendly": "Content description",
+            "enum": [
+                "protocol",
+                "sample image",
+                "expression matrix",
+                "count matrix",
+                "quality control metrics",
+                "log",
+                "gene list"
+            ],
+            "example": "sample image; expression matrix"
+        },
         "checksum": {
             "description": "MD5 checksum of the file.",
             "type": "string",
