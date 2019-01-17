@@ -4,7 +4,7 @@
     "additionalProperties": false,
     "required": [
         "grant_id",
-        "funder_name"
+        "organization"
     ],
     "title": "Funder",
     "name": "funder",
@@ -34,7 +34,7 @@
             "example": "BB/P0000001/1",
             "user_friendly": "Grant ID"
         },
-        "funder_name": {
+        "organization": {
             "description": "The name of the funding organization.",
             "type": "string",
             "example": "Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)",

@@ -462,7 +462,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 grant_title | The name of the grant funding the project. | string | no |  | Grant title |  | Study of single cells in the human body.
 grant_id | The unique grant identifier or reference. | string | yes |  | Grant ID |  | BB/P0000001/1
-funder_name | The name of the funding organization. | string | yes |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+organization | The name of the funding organization. | string | yes |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
 
 ## Publication<a name='Publication'></a>
 _Information about a journal article, book, web page, or other external available documentation for a project._
