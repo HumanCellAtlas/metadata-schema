@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+module/project/funder,major,"Changed grant_id and funder_name to be required. Fixes #731.",,
+type/project/project,major,"Changed funders to be required. Fixes #731.",,
