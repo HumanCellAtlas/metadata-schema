@@ -42,14 +42,13 @@
             "user_friendly": "Content description",
             "enum": [
                 "protocol",
-                "sample image",
                 "expression matrix",
                 "count matrix",
                 "quality control metrics",
                 "log",
                 "gene list"
             ],
-            "example": "sample image; expression matrix"
+            "example": "protocol; expression matrix"
         },
         "checksum": {
             "description": "MD5 checksum of the file.",

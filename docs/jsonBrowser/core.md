@@ -32,7 +32,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 file_name | The name of the file. | string | yes |  | File name |  | R1.fastq.gz; codebook.json
 file_format | The format of the file. | string | yes |  | File format |  | fastq.gz; tif
-content_description | General description of the contents of the file. | string | yes |  | Content description | protocol, sample image, expression matrix, count matrix, quality control metrics, log, gene list | sample image; expression matrix
+content_description | General description of the contents of the file. | string | yes |  | Content description | protocol, expression matrix, count matrix, quality control metrics, log, gene list | protocol; expression matrix
 checksum | MD5 checksum of the file. | string | no |  | Checksum |  | e09a986c2e630130b1849d4bf9a94c06
 
 ## Process core<a name='Process core'></a>
