@@ -11,7 +11,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 file_name | The name of the file. | string |  | File name |  | R1.fastq.gz; codebook.json
 file_format | The format of the file. | string |  | File format |  | fastq.gz; tif
-content_description | General description of the contents of the file. | string |  | Content description | protocol, expression matrix, count matrix, quality control metrics, log, gene list | protocol; expression matrix
+content_description | General description of the contents of the file. | string |  | Content description | protocol, expression matrix, count matrix, quality control metrics, log, gene list, read alignment | protocol; expression matrix
 ### Process core<a name='Process core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

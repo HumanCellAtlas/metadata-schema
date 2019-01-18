@@ -46,7 +46,8 @@
                 "count matrix",
                 "quality control metrics",
                 "log",
-                "gene list"
+                "gene list",
+                "read alignment"
             ],
             "example": "protocol; expression matrix"
         },
