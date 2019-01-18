@@ -356,7 +356,8 @@
       "file_core": {
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "model",
-        "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.model"
+        "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.model",
+        "content_description": "expression matrix"
       },
       "schema_type": "file"
     },
