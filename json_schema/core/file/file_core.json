@@ -5,7 +5,7 @@
     "required": [
 	    "file_name",
 	    "file_format",
-        "content_description"
+	    "content_description"
     ],
     "title": "File core",
     "name": "file_core",
