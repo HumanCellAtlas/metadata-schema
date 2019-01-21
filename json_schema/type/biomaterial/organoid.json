@@ -49,7 +49,7 @@
             },
             "user_friendly": "Genus species"
         },
-        "model_for_organ": {
+        "model_organ": {
             "description":  "Organ for which this organoid is a model system.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
@@ -61,34 +61,34 @@
             "$ref": "module/ontology/organ_part_ontology.json",
             "user_friendly": "Organ part model"
         },
-        "organoid_age": {
-            "description": "Age of the organoid in Age units measured from when cell aggregates started differentiating to desired organoid model.",
+        "age": {
+            "description": "Age of the organoid in Organoid age unit measured from when cell aggregates started differentiating to desired organoid model.",
             "type": "number",
             "example": 55,
-            "user_friendly": "Age"
+            "user_friendly": "Organoid age"
         },
-        "organoid_age_unit": {
-            "description": "The unit in which Age is expressed.",
+        "age_unit": {
+            "description": "The unit in which Organoid age is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
-            "user_friendly": "Age unit"
+            "user_friendly": "Organoid age unit"
         },
-        "organoid_size": {
+        "size": {
             "description": "Size of the organoid in Organoid size unit.",
             "type": "number",
             "example": 4,
             "user_friendly": "Organoid size"
         },
-        "organoid_size_unit": {
+        "size_unit": {
             "description": "The unit in which the Organoid size is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
             "user_friendly": "Organoid size unit"
         },
-        "organoid_morphology": {
+        "morphology": {
             "description": "General description of the organoid morphology.",
             "type": "string",
-            "example": "Epithelial monolayer with budding crypt-like domains, Optic cup structure",
+            "example": "Epithelial monolayer with budding crypt-like domains; Optic cup structure",
             "user_friendly": "Organoid morphology"
         },
         "organoid_type": {
@@ -107,13 +107,13 @@
             "description": "Whether the organoid is embedded in a matrigel.",
             "type": "boolean",
             "example": "Should be one of: yes, no.",
-            "user_friendly": "Organoid embeddded in matrigel?"
+            "user_friendly": "Embeddded in matrigel?"
         },
-        "organoid_growth_environment": {
+        "growth_environment": {
             "description": "Growth environment in which the organoid is grown.",
             "type": "string",
-            "example": "matrigel, liquid suspension, adherent",
-            "user_friendly": "Organoid growth environment"
+            "example": "matrigel; liquid suspension; adherent",
+            "user_friendly": "Growth environment"
         },
         "input_aggregate_cell_count": {
             "description": "Estimated number of cells per input cell aggregate.",
@@ -121,11 +121,11 @@
             "example": 10000,
             "user_friendly": "Input aggregate cell count"
         },
-        "organoid_stored_oxygen_levels": {
+        "stored_oxygen_levels": {
             "description": "Percent oxygen level organoid was stored in prior to sequencing.",
             "type": "number",
             "example": 75,
-            "user_friendly": "Organoid stored oxygen level"
+            "user_friendly": "Stored oxygen level"
         }
     }
 }
