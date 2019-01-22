@@ -6,6 +6,8 @@ import json
 
 boiler_plate = ["describedBy", "schema_version"]
 
+
+
 class MarkdownGenerator:
 
     def __init__(self):
@@ -27,10 +29,8 @@ class MarkdownGenerator:
                    "schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1\n"
                    "\n")
 
-    def get_json_from_file(filename, warn=False):
-        """Loads json from a file.
-        Optionally specify warn = True to warn, rather than
-        fail if file not found."""
+    def get_json_from_file(filename):
+        """Loads json from a file."""
         f = open(filename, 'r')
         return json.loads(f.read())
 
@@ -44,7 +44,7 @@ class MarkdownGenerator:
 
         for path in schemas:
 
-            schema = get_json_from_file(path)
+            schema = self.get_json_from_file(path)
 
             if (entity_type == "module" or entity_type == "core"):
                 file.write("## " + schema["title"] + "<a name='" + schema["title"] + "'></a>\n")
