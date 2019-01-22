@@ -31,13 +31,89 @@
     }
   ],
   "protocol_linking": {
-    "specimen_from_organism": "collection_protocol",
-    "cell_suspension": ["dissociation_protocol", "differentiation_protocol", "enrichment_protocol"],
-    "organoid": ["aggregate_generation_protocol", "differentiation_protocol"],
-    "cell_line": ["dissociation_protocol", "enrichment_protocol", "ipsc_induction_protocol"],
-    "imaged_specimen": "imaging_preparation_protocol",
-    "image_file": "imaging_protocol",
-    "sequence_file": ["library_preparation_protocol", "sequencing_protocol"]
+    "collection_protocol": [
+      {
+        "source": "donor_organism",
+        "output": "specimen_from_organism"
+      }
+    ],
+    "aggregate_generation_protocol": [
+      {
+        "source": "cell_line",
+        "output": "organoid"
+      },
+      {
+        "source": "specimen_from_organism",
+        "output": "organoid"
+      }
+    ],
+    "differentiation_protocol": [
+      {
+        "source": "cell_line",
+        "output": "cell_suspension"
+      },
+      {
+        "source": "cell_line",
+        "output": "organoid"
+      }
+    ],
+    "dissociation_protocol": [
+       {
+        "source": "specimen_from_organism",
+        "output": "cell_line"
+      },
+      {
+        "source": "specimen_from_organism",
+        "output": "cell_suspension"
+      }
+    ],
+    "enrichment_protocol": [
+      {
+        "source": "specimen_from_organism",
+        "output": "cell_line"
+      },
+      {
+        "source": "specimen_from_organism",
+        "output": "cell_suspension"
+      },
+      {
+        "source": "cell_line",
+        "output": "cell_suspension"
+      }
+    ],
+    "ipsc_induction_protocol": [
+       {
+        "source": "cell_line",
+        "output": "cell_line"
+      },
+      {
+        "source": "specimen_from_organism",
+        "output": "cell_line"
+      }
+    ],
+    "imaging_preparation_protocol": [
+      {
+        "source": "specimen_from_organism",
+        "output": "imaged_specimen"
+      }
+    ],
+    "imaging_protocol": [
+      {
+        "source": "imaged_specimen",
+        "output": "image_file"
+      }
+    ],
+    "library_preparation_protocol": [
+      {
+        "source": "cell_suspension",
+        "output": "sequence_file"
+      }
+    ],
+    "sequencing_protocol": [
+      {
+        "source": "cell_suspension",
+        "output": "sequence_file"
+      }
+    ]
   }
-
 }
