@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-        "model_for_organ"
+        "model_organ"
     ],
     "title": "Organoid",
     "name": "organoid",
