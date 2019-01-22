@@ -7,6 +7,7 @@
     ],
     "title": "Process type ontology",
     "name": "process_type_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
@@ -21,7 +22,9 @@
         },
         "text": {
             "description": "The name of a process type being used.",
-            "type": "string"
+            "type": "string",
+            "example": "enzymatic dissociation; blood draw",
+            "user_friendly": "Process type"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession",
@@ -32,12 +35,15 @@
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
-            }
+            },
+            "example": "EFO:0009128; EFO:0009121",
+            "user_friendly": "Process type ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
-            "type": "string"
+            "type": "string",
+            "example": "enzymatic dissociation; blood draw",
+            "user_friendly": "Process type ontology label"
         }
-    },
-    "type": "object"
+    }
 }

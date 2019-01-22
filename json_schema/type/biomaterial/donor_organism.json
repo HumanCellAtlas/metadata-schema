@@ -7,7 +7,8 @@
         "schema_type",
         "biomaterial_core",
         "is_living",
-        "sex"
+        "sex",
+        "development_stage"
     ],
     "title": "Donor organism",
     "name": "donor_organism",
@@ -83,7 +84,7 @@
                 "unknown"
             ],
             "user_friendly": "Alive at collection?",
-            "example": "Should be one of: yes, no, unknown.",
+            "example": "Should be one of: yes, no, or unknown.",
             "guidelines": "Enter yes if organism was alive at time of biomaterial collection, no if organism was dead, unknown if not known."
         }, 
         "organism_age": {
@@ -91,7 +92,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Age",
-            "example": "20, 45-65",
+            "example": "20; 45-65",
             "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         }, 
         "organism_age_unit": {
@@ -140,7 +141,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Gestational age",
-            "example": "22, 5-7",
+            "example": "22; 5-7",
             "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "gestational_age_unit": {
@@ -154,7 +155,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Height",
-            "example": "160, 120-140",
+            "example": "160; 120-140",
             "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "height_unit": {
@@ -168,7 +169,7 @@
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Weight",
-            "example": "60, 40-60",
+            "example": "60; 40-60",
             "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "weight_unit": {
@@ -176,17 +177,6 @@
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
-        },
-        "normothermic_regional_perfusion": {
-            "description": "Yes if entire body (but not limbs) was perfused with warm oxygenated blood. No otherwise.",
-            "type": "string",
-            "enum": [
-                "yes",
-                "no",
-                "unknown"
-            ],
-            "user_friendly": "Normothermic regional perfusion?",
-            "example": "Should be one of: yes, no, or unknown."
         },
         "timecourse": {
             "description": "Information relating to a timecourse associated with this biomaterial.",

@@ -21,32 +21,33 @@
             "description": "General description of the morphology of cells.",
             "type": "string",
             "user_friendly": "Cell morphology",
-            "example": "adherent cells, form single layer colonies"
+            "example": "adherent cells; form single layer colonies"
         },
         "cell_size": {
-            "description": "Size of cells in Cell size unit. Average value is acceptable.",
+            "description": "Size of cells in Cell size unit.",
             "type": "string",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "example": "20-30",
-            "user_friendly": "Cell size"
+            "example": "15; 20-30",
+            "user_friendly": "Cell size",
+            "guidelines": "Enter a single value or a range. Average value is acceptable."
         },
         "cell_size_unit": {
             "description": "The unit in which the Cell size is expressed.",
             "type": "object",
             "$ref": "module/ontology/length_unit_ontology.json",
-            "example": "micrometer",
             "user_friendly": "Cell size unit"
         },
         "percent_cell_viability": {
-            "description": "Percent of cells determined to be viable. Average value is acceptable.",
+            "description": "Percent of cells determined to be viable.",
             "type": "number",
             "example": 98.7,
-            "user_friendly": "Percent cell viability"
+            "user_friendly": "Percent cell viability",
+            "guidelines": "Enter a single number. Average value is acceptable."
         },
         "cell_viability_method": {
             "description": "The method by which cell viability was determined.",
             "type": "string",
-            "example": "Fluorescein diacetate hydrolysis assay",
+            "example": "Fluorescein diacetate hydrolysis; ATP test",
             "user_friendly": "Cell viability method"
         },
         "cell_viability_result": {
@@ -56,14 +57,15 @@
                 "pass",
                 "fail"
             ],
-            "example": "Must be one of: pass, fail",
-            "user_friendly": "Cell viability pass/fail result"
+            "example": "Should be one of: pass, fail",
+            "user_friendly": "Cell viability result"
         },
         "percent_necrosis": {
             "description" : "Percent of cells identified to be necrotic.",
             "type": "number",
             "example": 10,
-            "user_friendly": "Percent necrotic cells"
+            "user_friendly": "Percent necrotic cells",
+            "guidelines": "Enter a single number. Average value is acceptable."
         }
     }
 }
