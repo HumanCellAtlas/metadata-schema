@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/preservation_storage,major,"Change enum list to remove commas from values. Fixes #743.",,

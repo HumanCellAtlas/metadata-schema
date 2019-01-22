@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/preservation_storage.json - v6.0.0] - 2019-01-22
+### Change
+Change enum list to remove commas from values. Fixes #743.
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.0] - 2019-01-22
+### Change
+Change enum list to remove commas from values. Fixes #743.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.0] - 2019-01-22
+### Change
+Change enum list to remove commas from values. Fixes #743.
+
 ### [module/project/funder.json - v2.0.0] - 2019-01-22
 ### Changed
 Changed grant_id and funder_name to be required. Fixes #731.
