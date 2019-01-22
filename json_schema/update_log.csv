@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/organoid,major,"Removed organoid_type field. Fixes #736.",,
