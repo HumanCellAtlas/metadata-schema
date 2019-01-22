@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/funder.json - v2.0.0] - 2019-01-22
+### Changed
+Changed grant_id and funder_name to be required. Fixes #731.
+
+### [type/project/project.json - v10.0.0] - 2019-01-22
+### Changed
+Changed funders to be required. Fixes #731.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/timecourse.json - v2.0.0] - 2019-01-18
