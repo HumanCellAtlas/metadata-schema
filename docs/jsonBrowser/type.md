@@ -257,7 +257,7 @@ insdc_project | An International Nucleotide Sequence Database Collaboration (INS
 geo_series | A Gene Expression Omnibus (GEO) series accession. | string | no |  | GEO series accession |  | GSE00000
 array_express_investigation | An ArrayExpress accession. | string | no |  | ArrayExpress accession |  | E-AAAA-00
 insdc_study | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | string | no |  | INSDC study accession |  | PRJNA000000
-funders | Funding source(s) supporting the project. | array | no | [See module  funder](module.md/#funder) | Funding source(s) |  | 
+funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
 
 ## Protocol
 _Information about the protocol._

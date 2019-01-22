@@ -1,7 +1,7 @@
 from optparse import OptionParser
 import logging
 import os
-from schema_test_suite import get_json_from_file
+import json
 
 
 boiler_plate = ["describedBy", "schema_version"]
@@ -25,8 +25,14 @@ class MarkdownGenerator:
                    "--- | --- | --- | --- | ---\n "
                    "describedBy | The URL reference to the schema. | string | no |  |  |  | \n"
                    "schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1\n"
-                   "\n"
-)
+                   "\n")
+
+    def get_json_from_file(filename, warn=False):
+        """Loads json from a file.
+        Optionally specify warn = True to warn, rather than
+        fail if file not found."""
+        f = open(filename, 'r')
+        return json.loads(f.read())
 
     def generateMarkdown(self, schemas, entity_type):
         file = open("../docs/jsonBrowser/" + entity_type + ".md", "w")
