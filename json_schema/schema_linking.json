@@ -1,0 +1,43 @@
+{
+  "biomaterial_linking": [
+    {
+      "specimen_from_organism": "donor_organism",
+      "cell_suspension": "specimen_from_organism",
+      "sequence_file": "cell_suspension"
+    },
+    {
+      "specimen_from_organism": "donor_organism",
+      "cell_line": "specimen_from_organism",
+      "cell_suspension": "cell_line",
+      "sequence_file": "cell_suspension"
+    },
+    {
+      "specimen_from_organism": "donor_organism",
+      "cell_line": ["specimen_from_organism", "cell_line"],
+      "cell_suspension": "cell_line",
+      "sequence_file": "cell_suspension"
+    },
+    {
+      "specimen_from_organism": "donor_organism",
+      "cell_line": "specimen_from_organism",
+      "organoid": "cell_line",
+      "cell_suspension": "organoid",
+      "sequence_file": "cell_suspension"
+    },
+    {
+      "specimen_from_organism": "donor_organism",
+      "imaged_specimen": "specimen_from_organism",
+      "image_file": "imaged_specimen"
+    }
+  ],
+  "protocol_linking": {
+    "specimen_from_organism": "collection_protocol",
+    "cell_suspension": ["dissociation_protocol", "differentiation_protocol", "enrichment_protocol"],
+    "organoid": ["aggregate_generation_protocol", "differentiation_protocol"],
+    "cell_line": ["dissociation_protocol", "enrichment_protocol", "ipsc_induction_protocol"],
+    "imaged_specimen": "imaging_preparation_protocol",
+    "image_file": "imaging_protocol",
+    "sequence_file": ["library_preparation_protocol", "sequencing_protocol"]
+  }
+
+}
