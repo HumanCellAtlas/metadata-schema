@@ -88,10 +88,13 @@
             "user_friendly": "GEO series accession",
             "guidelines": "Enter accession if project has been archived. Accession must start with GSE."
         },
-        "array_express_investigation": {
+        "array_express_accessions": {
             "description": "An ArrayExpress accession.",
-            "type": "string",
-            "pattern": "^E-....-.*$",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^E-....-.*$"
+            },
             "example": "E-AAAA-00",
             "user_friendly": "ArrayExpress accession",
             "guidelines": "Enter accession if project has been archived. Accession must start with E-."
