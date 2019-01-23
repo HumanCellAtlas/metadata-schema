@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/project/project,major,"Change accession fields to arrays and changed field names to adhere to Style Guide. Fixes #324.",,
