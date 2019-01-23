@@ -9,6 +9,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/biomaterial/timecourse.json - v2.0.0] - 2019-01-18
+### Changed
+Changed fields to remove timecourse_. Fixes #745.
+
+### [type/biomaterial/donor_organism.json - v13.0.0] - 2019-01-18
+### Changed
+Changed fields to remove timecourse_. Fixes #745.
+
+### [type/biomaterial/organoid.json - v9.0.0] - 2019-01-16
+### Updated
+Updated field names to remove organoid_ prefix. Fixes #480.
+
 ### [module/process/sequencing/10x.json - v1.0.5] - 2019-01-15
 ### Added
 Added second example for fastq creation method and fastq creation method version.Fixes #723
