@@ -66,10 +66,13 @@
             },
             "user_friendly": "Publications"
         },
-        "insdc_project": {
+        "insdc_project_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
-            "type": "string",
-            "pattern": "^[D|E|S]RP[0-9]+$",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^[D|E|S]RP[0-9]+$"
+            },
             "example": "SRP000000",
             "user_friendly": "INSDC project accession",
             "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
