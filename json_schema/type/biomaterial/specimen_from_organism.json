@@ -56,7 +56,7 @@
             "guidelines": "Blood and connective tissue are considered organs.",
             "user_friendly": "Organ"
         },
-        "organ_part": {
+        "organ_parts": {
             "description": "A term for a specific part of the organ that the biomaterial came from.",
             "type": "array",
             "items": {
