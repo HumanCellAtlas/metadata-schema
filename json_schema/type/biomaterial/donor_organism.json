@@ -126,7 +126,6 @@
             "description": "Information about other organisms related to this organism.",
             "type": "array",
             "items": {
-                "type": "object",
                 "$ref": "module/biomaterial/familial_relationship.json"
                 },
             "user_friendly": "Familial relationship"
