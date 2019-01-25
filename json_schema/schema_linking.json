@@ -54,6 +54,10 @@
       },
       {
         "source": "cell_line",
+        "output": "cell_line"
+      },
+      {
+        "source": "cell_line",
         "output": "organoid"
       }
     ],
@@ -64,6 +68,14 @@
       },
       {
         "source": "specimen_from_organism",
+        "output": "cell_suspension"
+      },
+      {
+        "source": "cell_line",
+        "output": "cell_suspension"
+      },
+       {
+        "source": "organoid",
         "output": "cell_suspension"
       }
     ],
@@ -78,6 +90,10 @@
       },
       {
         "source": "cell_line",
+        "output": "cell_suspension"
+      },
+      {
+        "source": "organoid",
         "output": "cell_suspension"
       }
     ],
