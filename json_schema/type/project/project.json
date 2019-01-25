@@ -5,7 +5,8 @@
     "required": [
         "describedBy",
         "schema_type",
-        "project_core"
+        "project_core",
+        "funders"
     ],
     "title": "Project",
     "name": "project",

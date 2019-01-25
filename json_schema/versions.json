@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-16T16:59:18Z",
+    "last_update_date": "2019-01-22T11:53:44Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -27,9 +27,9 @@
                 "human_specific": "1.0.7",
                 "medical_history": "5.2.5",
                 "mouse_specific": "1.0.6",
-                "preservation_storage": "5.3.5",
+                "preservation_storage": "6.0.0",
                 "state_of_specimen": "5.2.7",
-                "timecourse": "1.1.5"
+                "timecourse": "2.0.0"
             },
             "ontology": {
                 "biological_macromolecule_ontology": "5.3.3",
@@ -66,7 +66,7 @@
             },
             "project": {
                 "contact": "6.1.4",
-                "funder": "1.0.4",
+                "funder": "2.0.0",
                 "publication": "5.2.5"
             },
             "protocol": {
@@ -83,10 +83,10 @@
             "biomaterial": {
                 "cell_line": "9.0.5",
                 "cell_suspension": "8.6.6",
-                "donor_organism": "12.0.5",
+                "donor_organism": "13.0.0",
                 "imaged_specimen": "2.0.4",
                 "organoid": "9.0.0",
-                "specimen_from_organism": "6.3.8"
+                "specimen_from_organism": "7.0.0"
             },
             "file": {
                 "analysis_file": "5.3.5",
@@ -102,7 +102,7 @@
                 "process": "6.0.6"
             },
             "project": {
-                "project": "9.0.8"
+                "project": "10.0.0"
             },
             "protocol": {
                 "analysis": {
@@ -117,7 +117,7 @@
                     "ipsc_induction_protocol": "2.0.4"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "1.0.4",
+                    "imaging_preparation_protocol": "2.0.0",
                     "imaging_protocol": "11.0.5"
                 },
                 "protocol": "6.3.7",
