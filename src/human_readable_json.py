@@ -1,10 +1,12 @@
 from optparse import OptionParser
 import logging
 import os
-from schema_test_suite import get_json_from_file
+import json
 
 
 boiler_plate = ["describedBy", "schema_version"]
+
+
 
 class MarkdownGenerator:
 
@@ -25,8 +27,12 @@ class MarkdownGenerator:
                    "--- | --- | --- | --- | ---\n "
                    "describedBy | The URL reference to the schema. | string | no |  |  |  | \n"
                    "schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1\n"
-                   "\n"
-)
+                   "\n")
+
+    def get_json_from_file(self, filename):
+        """Loads json from a file."""
+        f = open(filename, 'r')
+        return json.loads(f.read())
 
     def generateMarkdown(self, schemas, entity_type):
         file = open("../docs/jsonBrowser/" + entity_type + ".md", "w")
@@ -38,7 +44,7 @@ class MarkdownGenerator:
 
         for path in schemas:
 
-            schema = get_json_from_file(path)
+            schema = self.get_json_from_file(path)
 
             if (entity_type == "module" or entity_type == "core"):
                 file.write("## " + schema["title"] + "<a name='" + schema["title"] + "'></a>\n")
