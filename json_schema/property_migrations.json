@@ -1,0 +1,10 @@
+{
+  "migrations": [
+    {
+      "property": "donor_organism.biomaterial_core.biomaterial_id",
+      "replaced_by": "donor_organism.donor_id",
+      "effective_from" : "14.0.0",
+      "reason": "Schema demodularisation"
+    }
+  ]
+}
