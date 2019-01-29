@@ -5,6 +5,22 @@
       "replaced_by": "donor_organism.donor_id",
       "effective_from" : "14.0.0",
       "reason": "Schema demodularisation"
+    },
+    {
+      "property": "specimen_from_organism.biomaterial_core.biomaterial_id",
+      "replaced_by": "specimen_from_organism.specimen_id",
+      "effective_from" : "8.0.0",
+      "reason": "Schema demodularisation"
+    },
+    {
+      "property": "specimen_from_organism.diseases.ontology_label",
+      "effective_from" : "8.0.0",
+      "reason": "Ontology clean-up"
+    },
+    {
+      "property": "donor_organism.diseases.ontology_label",
+      "effective_from" : "14.0.0",
+      "reason": "Ontology clean-up"
     }
   ]
 }

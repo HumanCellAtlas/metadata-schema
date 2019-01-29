@@ -13,7 +13,19 @@ class Migrator:
 
 
     def remove_property(self, json_doc, migration):
-        print("foo")
+        source_prop = migration["property"].split(".")
+
+        # value = json_doc
+        # for key in source_prop[1:]:
+        #     value = value[key]
+        # for part in reversed(new_prop.split('.')[1:]):
+        #     value = {part: value}
+        #
+        # json_doc = self._mergeDict(json_doc, value)
+
+        json_doc = self._removeSourceProp(json_doc, source_prop)
+
+        return self._update_schema_version(json_doc, migration)
 
     def rename_property(self, json_doc, migration):
         print("foo")
@@ -66,25 +78,22 @@ class Migrator:
 
     def _removeSourceProp(self, json_dict, prop):
         new_dict = defaultdict(list)
-        print(prop[-1])
         for k,v in chain(json_dict.items()):
-            print(k)
             if k == prop[-1]:
                 print("Not adding " + k + " " + v)
             else:
-                # if k in new_dict:
-                    if isinstance(v, dict):
-                        d = self._removeSourceProp(v, prop)
-                        # new_dict[k].update(d)
-                        if k in new_dict:
-                            new_dict[k].update(self._mergeDict(new_dict[k], d))
-                        else:
-                            new_dict[k] = d
-                    elif isinstance(v, list) and isinstance(new_dict[k], list) and len(v) == len(new_dict[k]):
-                        for index, e in enumerate(v):
-                            new_dict[k][index].update(self._mergeDict(new_dict[k][index], e))
+                if isinstance(v, dict):
+                    d = self._removeSourceProp(v, prop)
+                    # new_dict[k].update(d)
+                    if k in new_dict:
+                        new_dict[k].update(self._mergeDict(new_dict[k], d))
                     else:
-                        new_dict[k] = v
+                        new_dict[k] = d
+                elif isinstance(v, list) and isinstance(new_dict[k], list) and len(v) == len(new_dict[k]):
+                    for index, e in enumerate(v):
+                        new_dict[k][index].update(self._mergeDict(new_dict[k][index], e))
+                else:
+                    new_dict[k] = v
         return new_dict
 
 
@@ -134,21 +143,21 @@ if __name__ == '__main__':
                     new_doc = Migrator().add_property(doc, m)
                     _save_json("updated_file_" + str(counter) + ".json", new_doc)
                     counter += 1
-        if "replaced_by" not in m:
-                for doc in docs:
-                    if m["property"].split(".")[0] in doc["describedBy"]:
-                        new_doc = Migrator().remove_property(doc, m)
-                        _save_json("updated_file_" + str(counter) + ".json", new_doc)
-                        counter += 1
+        elif "replaced_by" not in m:
+            for doc in docs:
+                if m["property"].split(".")[0] in doc["describedBy"]:
+                    new_doc = Migrator().remove_property(doc, m)
+                    _save_json("updated_file_" + str(counter) + ".json", new_doc)
+                    counter += 1
 
-        if m["property"].split(".")[0] == m["replaced_by"].split(".")[0]:
+        elif m["property"].split(".")[0] == m["replaced_by"].split(".")[0]:
                 for doc in docs:
                     if m["property"].split(".")[0] in doc["describedBy"]:
                         new_doc = Migrator().move_property_in_schema(doc, m)
                         _save_json("updated_file_" + str(counter) + ".json", new_doc)
                         counter += 1
 
-        if m["property"].split(".")[0] != m["replaced_by"].split(".")[0]:
+        elif m["property"].split(".")[0] != m["replaced_by"].split(".")[0]:
             for doc in docs:
                 if m["property"].split(".")[0] in doc["describedBy"]:
                     source_doc = doc
@@ -157,7 +166,8 @@ if __name__ == '__main__':
             new_docs = Migrator().move_property_across_schemas(source_doc, target_doc, m)
             for nd in new_docs:
                 _save_json("updated_file_" + str(counter) + ".json", nd)
-                counter += 1
+
+            counter += 1
 
 
 
