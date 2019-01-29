@@ -66,18 +66,25 @@ class Migrator:
 
     def _removeSourceProp(self, json_dict, prop):
         new_dict = defaultdict(list)
+        print(prop[-1])
         for k,v in chain(json_dict.items()):
-            if k not in prop or (k in prop and not isinstance(v, dict)):
-                if isinstance(v, dict):
-                    for d in self._removeSourceProp(v, prop):
-                        new_dict[k] = d
-                elif isinstance(v, list):
-                    for index, e in enumerate(v):
-                        new_dict[k][index] = e
-                else:
-                    new_dict[k] = v
-            else:
+            print(k)
+            if k == prop[-1]:
                 print("Not adding " + k + " " + v)
+            else:
+                # if k in new_dict:
+                    if isinstance(v, dict):
+                        d = self._removeSourceProp(v, prop)
+                        # new_dict[k].update(d)
+                        if k in new_dict:
+                            new_dict[k].update(self._mergeDict(new_dict[k], d))
+                        else:
+                            new_dict[k] = d
+                    elif isinstance(v, list) and isinstance(new_dict[k], list) and len(v) == len(new_dict[k]):
+                        for index, e in enumerate(v):
+                            new_dict[k][index].update(self._mergeDict(new_dict[k][index], e))
+                    else:
+                        new_dict[k] = v
         return new_dict
 
 
@@ -96,7 +103,7 @@ def _save_json(path, data):
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument("-f", "--f", dest="files", action="append",
-                      help="JSON document to migrate")
+                      help="JSON documents to migrate")
     parser.add_argument("-m", "--m", dest="migration",
                       help="Migration document")
 
