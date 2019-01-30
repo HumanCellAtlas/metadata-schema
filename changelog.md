@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v2.0.0] - 2019-01-30
+### Update
+Update field names/descriptions. Fixes #746.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/preservation_storage.json - v6.0.0] - 2019-01-22
