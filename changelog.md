@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/organoid.json - v10.0.0] - 2019-01-30
+### Removed
+Removed organoid_type field. Fixes #736.
+
 ### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v2.0.0] - 2019-01-30
 ### Update
 Update field names/descriptions. Fixes #746.
