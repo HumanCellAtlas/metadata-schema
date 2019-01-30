@@ -133,6 +133,10 @@ Anyone on the metadata team can trigger a primary release from develop to integr
    
    No additional Reviewers are required for this step, but if you are unsure about anything, do not hesitate to ask for a review from someone.
 
+1. **Trigger** ingest core to redeploy in order to grab the newly released schemas by running:
+
+   `curl -X POST https://api.ingest.integration.data.humancellatlas.org/schemas/update`
+
 1. **Trigger** a DCP-wide integration test to run in the integration environment to confirm that the changes do not break the integration test. If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken.
 
 ### Release propagation

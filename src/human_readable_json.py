@@ -29,7 +29,7 @@ class MarkdownGenerator:
                    "schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1\n"
                    "\n")
 
-    def get_json_from_file(filename):
+    def get_json_from_file(self, filename):
         """Loads json from a file."""
         f = open(filename, 'r')
         return json.loads(f.read())
