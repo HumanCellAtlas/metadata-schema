@@ -15,14 +15,6 @@ class Migrator:
     def remove_property(self, json_doc, migration):
         source_prop = migration["property"].split(".")
 
-        # value = json_doc
-        # for key in source_prop[1:]:
-        #     value = value[key]
-        # for part in reversed(new_prop.split('.')[1:]):
-        #     value = {part: value}
-        #
-        # json_doc = self._mergeDict(json_doc, value)
-
         json_doc = self._removeSourceProp(json_doc, source_prop)
 
         return self._update_schema_version(json_doc, migration)
@@ -41,9 +33,7 @@ class Migrator:
             value = {part: value}
 
         json_doc = self._mergeDict(json_doc, value)
-
         json_doc = self._removeSourceProp(json_doc, source_prop)
-
 
         return self._update_schema_version(json_doc, migration)
 
@@ -77,25 +67,21 @@ class Migrator:
         return dict3
 
     def _removeSourceProp(self, json_dict, prop):
-        new_dict = defaultdict(list)
-        for k,v in chain(json_dict.items()):
-            if k == prop[-1]:
-                print("Not adding " + k + " " + v)
-            else:
-                if isinstance(v, dict):
-                    d = self._removeSourceProp(v, prop)
-                    # new_dict[k].update(d)
-                    if k in new_dict:
-                        new_dict[k].update(self._mergeDict(new_dict[k], d))
-                    else:
-                        new_dict[k] = d
-                elif isinstance(v, list) and isinstance(new_dict[k], list) and len(v) == len(new_dict[k]):
-                    for index, e in enumerate(v):
-                        new_dict[k][index].update(self._mergeDict(new_dict[k][index], e))
-                else:
-                    new_dict[k] = v
-        return new_dict
-
+        for k in json_dict.keys():
+            if k in prop:
+                if isinstance(json_dict[k], dict):
+                    self._removeSourceProp(json_dict[k], prop)
+                elif isinstance(json_dict[k], list):
+                    for item in json_dict[k]:
+                        if isinstance(item, dict):
+                            self._removeSourceProp(item, prop)
+                        elif k == prop[-1]:
+                            del json_dict[k]
+                            break
+                elif k == prop[-1]:
+                    del json_dict[k]
+                    break
+        return json_dict
 
 
 def _open_file(filename):
