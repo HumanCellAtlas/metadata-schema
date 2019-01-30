@@ -81,6 +81,9 @@ class ReleasePrepare:
                 version = log_content[val][self.version_column]
                 type = change_message.split(' ')[0]
 
+                if type not in ['Added', 'Changed', 'Removed', 'Fixed', 'Deprecated', 'Security']:
+                    print("WARNING: Change type in log message does not match one of 'Added', 'Changed', 'Removed', 'Fixed', 'Deprecated', 'Security'")
+
                 markdown_message = "### [" + schema + ".json - v" + version + "] - " + update_date + "\n" + "### " + type  + "\n" + change_message  + "\n"
                 log_insert = log_insert + markdown_message  + "\n"
 
