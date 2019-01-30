@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-01-30T11:37:15Z",
+    "last_update_date": "2019-01-30T12:44:30Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -102,7 +102,7 @@
                 "process": "6.0.6"
             },
             "project": {
-                "project": "10.0.0"
+                "project": "11.0.0"
             },
             "protocol": {
                 "analysis": {
