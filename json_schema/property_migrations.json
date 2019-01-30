@@ -21,6 +21,19 @@
       "property": "donor_organism.diseases.ontology_label",
       "effective_from" : "14.0.0",
       "reason": "Ontology clean-up"
+    },
+    {
+      "replaced_by": "donor_organism.new_dummy_property",
+      "default_value": "foobar",
+      "effective_from" : "15.0.0",
+      "reason": "Migration testing"
+    },
+    {
+      "property": "donor_organism.development_stage",
+      "replaced_by": "specimen_from_organism.dummy_development_stage",
+      "effective_from_source" : "16.0.0",
+      "effective_from_target": "9.0.0",
+      "reason": "Migration testing"
     }
   ]
 }

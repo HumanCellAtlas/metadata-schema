@@ -7,20 +7,22 @@ from itertools import chain
 class Migrator:
 
     def add_property(self, json_doc, migration):
-        new_prop = migration["replaced_by"].split(".")
+        new_prop = migration["replaced_by"]
+        if "default_value" in migration:
+            value = migration["default_value"]
 
+            for part in reversed(new_prop.split('.')[1:]):
+                value = {part: value}
 
-
+            json_doc = self._mergeDict(json_doc, value)
+        return self._update_schema_version(json_doc, migration["effective_from"])
 
     def remove_property(self, json_doc, migration):
         source_prop = migration["property"].split(".")
 
         json_doc = self._removeSourceProp(json_doc, source_prop)
 
-        return self._update_schema_version(json_doc, migration)
-
-    def rename_property(self, json_doc, migration):
-        print("foo")
+        return self._update_schema_version(json_doc, migration["effective_from"])
 
     def move_property_in_schema(self, json_doc, migration):
         source_prop = migration["property"].split(".")
@@ -35,15 +37,26 @@ class Migrator:
         json_doc = self._mergeDict(json_doc, value)
         json_doc = self._removeSourceProp(json_doc, source_prop)
 
-        return self._update_schema_version(json_doc, migration)
+        return self._update_schema_version(json_doc, migration["effective_from"])
 
     def move_property_across_schemas(self, json_doc, target_doc, migration):
-        print("foo")
+        source_prop = migration["property"].split(".")
+        new_prop = migration["replaced_by"]
 
-    def _update_schema_version(self, json_doc, migration):
+        value = json_doc
+        for key in source_prop[1:]:
+            value = value[key]
+        for part in reversed(new_prop.split('.')[1:]):
+            value = {part: value}
+
+        target_doc = self._mergeDict(target_doc, value)
+        json_doc = self._removeSourceProp(json_doc, source_prop)
+
+        return self._update_schema_version(json_doc, migration["effective_from_source"]), self._update_schema_version(target_doc, migration["effective_from_target"])
+
+    def _update_schema_version(self, json_doc, new_version):
         schema_uri = json_doc["describedBy"]
         current_version = json_doc["schema_version"]
-        new_version = migration["effective_from"]
 
         new_uri = schema_uri.replace(current_version, new_version)
 
