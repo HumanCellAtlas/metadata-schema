@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-        "model_for_organ"
+        "model_organ"
     ],
     "title": "Organoid",
     "name": "organoid",
@@ -90,18 +90,6 @@
             "type": "string",
             "example": "Epithelial monolayer with budding crypt-like domains; Optic cup structure",
             "user_friendly": "Organoid morphology"
-        },
-        "organoid_type": {
-            "description": "The type of organoid.",
-            "type": "string",
-            "enum": [
-                "primary",
-                "immortalized",
-                "stem cell-derived",
-                "synthetic"
-            ],
-            "example": "Should be one of: primary, immortalized, stem cell-derived, or synthetic.",
-            "user_friendly": "Organoid type"
         },
         "embedded_in_matrigel": {
             "description": "Whether the organoid is embedded in a matrigel.",
