@@ -144,6 +144,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
 project_core | Core project-level information. | object | [See core  project_core](core.md/#project_core) | Project core |  | 
+funders | Funding source(s) supporting the project. | array | [See module  funder](module.md/#funder) | Funding source(s) |  | 
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -302,7 +303,10 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  | Organ |  | heart; immune system
 ### Funder<a name='Funder'></a>
-_There are no required properties in schema Funder_
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+grant_id | The unique grant identifier or reference. | string |  | Grant ID |  | BB/P0000001/1
+organization | The name of the funding organization. | string |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
