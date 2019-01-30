@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v10.0.0] - 2019-01-30
+### Added
+Added required model_organ field to cell line schema. Fixes #606.
+
 ### [type/biomaterial/organoid.json - v10.0.0] - 2019-01-30
 ### Removed
 Removed organoid_type field. Fixes #736.
