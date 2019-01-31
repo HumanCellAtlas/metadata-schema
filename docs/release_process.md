@@ -39,7 +39,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ## Steps of the pre-release process
 
-***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](committers.md#schema-update-acceptance-process).
+***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](committers.md#schema-update-acceptance-process). It is the responsibility of the last Reviewer of the PR to merge it into develop.
 
 
 1. **Check out** the pull request branch and make sure your local copy is up-to-date
@@ -92,9 +92,13 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Wait** for the Travis build to pass, then **merge** this PR into develop immediately.
 
+1. **Delete** the PR branch, unless otherwise noted by the person who opened the PR.
+
 ## Steps of the release process
 
 ### Primary release
+
+Anyone on the metadata team can trigger a primary release from develop to integration. Please note that the DCP-wide release from integration to staging happens each Wednesday. It is preferable to do a primary release no later than Monday so that any issues that might arise can be addressed without disrupting the DCP-wide release process.
 
 1. **Check out** develop to your local machine
 
@@ -114,13 +118,29 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Commit** your changes
 
-        git commit -a -m "Release from develop to integration YYYY-MM-DD"
+        git commit -a -m "Release from develop to integration YYYY-MM-DD."
         git push origin develop
 
-1. **Create a pull request** from *develop* to *integration* for easy traceability but immediately merge this yourself. ***Only merge your own pull request in this particular scenario!***
+1. **Create a pull request** from *develop* to *integration* for easy traceability. The PR should be tagged with the "release" label and should contain **Release notes** split into two sections:
+   1. *Versions*: Enter schema names and version numbers for any updated schemas. Enter the current version as shown in versions.json, skipping over intermediate versions.
+   1. *Functionality changes*: Describe any changes in how the schema will function in the context of other DCP components. Include all the major and minor schema changes and any code changes, e.g. changes to the schema validation code.
+    
+   See example of *develop* to *integration* PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/665) 
+
+1. **Wait** for the Travis build to pass, then **merge** this PR into develop immediately.
+ 
+   ***Merge your own pull request in this particular scenario!***
+   
+   No additional Reviewers are required for this step, but if you are unsure about anything, do not hesitate to ask for a review from someone.
+
+1. **Trigger** ingest core to redeploy in order to grab the newly released schemas by running:
+
+   `curl -X POST https://api.ingest.integration.data.humancellatlas.org/schemas/update`
+
+1. **Trigger** a DCP-wide integration test to run in the integration environment to confirm that the changes do not break the integration test. If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken.
 
 ### Release propagation
 
-Promotion of changes from integration to staging and staging to production should be done in line with the general DCP release schedule. These release propagations should be straight forward merge operations through the environments, with no manual changes being required.
+Promotion of changes from integration to staging and staging to production should be done in line with the general [DCP release schedule](https://docs.google.com/spreadsheets/d/1Tqhs20tj_3FqdO_1Cam1iLSaqE-y9Piu8lDJ6KEdP80/edit#gid=1508723546). These release propagations should be straight forward merge operations through the environments, with no manual changes being required.
+The designated **release manager** for the week is in charge of the relevant propagation steps. DCP-wide SOP for release operation can be found [here](https://allspark.dev.data.humancellatlas.org/dcp-ops/docs/wikis/SOP:%20Releasing%20new%20Versions%20of%20DCP%20Software). Metadata-specific SOP can be found [here](https://docs.google.com/document/d/1gNq5I42xY5ie8jqENSVEswn3NXHKUYgrfFgwMK_Vh8A/edit). 
 
-The designated **release manager** for the week is in charge of the relevant propagation steps.

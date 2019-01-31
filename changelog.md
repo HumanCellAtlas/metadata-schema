@@ -6,7 +6,84 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
+
+### [type/project/project.json - v11.0.0] - 2019-01-30
+### Change
+Change accession fields to arrays. Changed field names to adhere to Style Guide. Fixes #324.
+
+### [type/biomaterial/cell_line.json - v10.0.0] - 2019-01-30
+### Added
+Added required model_organ field to cell line schema. Fixes #606.
+
+### [type/biomaterial/organoid.json - v10.0.0] - 2019-01-30
+### Removed
+Removed organoid_type field. Fixes #736.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v2.0.0] - 2019-01-30
+### Update
+Update field names/descriptions. Fixes #746.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/biomaterial/preservation_storage.json - v6.0.0] - 2019-01-22
+### Change
+Change enum list to remove commas from values. Fixes #743.
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.0] - 2019-01-22
+### Change
+Change enum list to remove commas from values. Fixes #743.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.0] - 2019-01-22
+### Change
+Change enum list to remove commas from values. Fixes #743.
+
+### [module/project/funder.json - v2.0.0] - 2019-01-22
+### Changed
+Changed grant_id and funder_name to be required. Fixes #731.
+
+### [type/project/project.json - v10.0.0] - 2019-01-22
+### Changed
+Changed funders to be required. Fixes #731.
+
+### [module/biomaterial/timecourse.json - v2.0.0] - 2019-01-18
+### Changed
+Changed fields to remove timecourse_. Fixes #745.
+
+### [type/biomaterial/donor_organism.json - v13.0.0] - 2019-01-18
+### Changed
+Changed fields to remove timecourse_. Fixes #745.
+
+### [type/biomaterial/organoid.json - v9.0.0] - 2019-01-16
+### Updated
+Updated field names to remove organoid_ prefix. Fixes #480.
+
+### [module/process/sequencing/10x.json - v1.0.5] - 2019-01-15
+### Added
+Added second example for fastq creation method and fastq creation method version.Fixes #723
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.8] - 2019-01-15
+### Added
+Added second example for fastq creation method and fastq creation method version.Fixes #723
+
+### [type/biomaterial/donor_organism.json - v12.0.5] - 2019-01-14
+### Update
+Update examples to be separated by semicolon instead of comma. Fixes #728.
+
+### [core/project/project_core.json - v7.0.5] - 2019-01-14
+### Update
+Update field examples/descriptions for grammar. Fixes #729.
+
+### [type/project/project.json - v9.0.8] - 2019-01-14
+### Update
+Update field examples/descriptions for grammar. Fixes #729.
+
+### [type/biomaterial/organoid.json - v8.3.12] - 2019-01-14
+### Fixed
+Fixed typo in field user_friendly in property organoid_morphology. Fixes #726
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.7] - 2019-01-14
+### Fixed
+Fixed typo in field user_friendly in property protocol_core. Fixes #726
 
 ### [module/biomaterial/cell_morphology.json - v6.1.5] - 2019-01-09
 ### Update

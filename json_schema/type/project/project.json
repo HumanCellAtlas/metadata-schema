@@ -5,7 +5,8 @@
     "required": [
         "describedBy",
         "schema_type",
-        "project_core"
+        "project_core",
+        "funders"
     ],
     "title": "Project",
     "name": "project",
@@ -65,34 +66,46 @@
             },
             "user_friendly": "Publications"
         },
-        "insdc_project": {
+        "insdc_project_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
-            "type": "string",
-            "pattern": "^[D|E|S]RP[0-9]+$",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^[D|E|S]RP[0-9]+$"
+            },
             "example": "SRP000000",
             "user_friendly": "INSDC project accession",
             "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
-        "geo_series": {
+        "geo_series_accessions": {
             "description": "A Gene Expression Omnibus (GEO) series accession.",
-            "type": "string",
-            "pattern": "^GSE.*$",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^GSE.*$"
+            },
             "example": "GSE00000",
             "user_friendly": "GEO series accession",
             "guidelines": "Enter accession if project has been archived. Accession must start with GSE."
         },
-        "array_express_investigation": {
+        "array_express_accessions": {
             "description": "An ArrayExpress accession.",
-            "type": "string",
-            "pattern": "^E-....-.*$",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^E-....-.*$"
+            },
             "example": "E-AAAA-00",
             "user_friendly": "ArrayExpress accession",
             "guidelines": "Enter accession if project has been archived. Accession must start with E-."
         },
-        "insdc_study": {
+        "insdc_study_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) study accession.",
-            "type": "string",
-            "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$"
+            },
             "example": "PRJNA000000",
             "user_friendly": "INSDC study accession",
             "guidelines": "Enter accession if study has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with PRJD, PRJN, or PRJE, respectively."
