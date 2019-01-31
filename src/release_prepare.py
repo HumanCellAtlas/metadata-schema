@@ -81,9 +81,6 @@ class ReleasePrepare:
                 version = log_content[val][self.version_column]
                 type = change_message.split(' ')[0]
 
-                if type not in ['Added', 'Changed', 'Removed', 'Fixed', 'Deprecated', 'Security']:
-                    print("WARNING: Change type in log message does not match one of 'Added', 'Changed', 'Removed', 'Fixed', 'Deprecated', 'Security'")
-
                 markdown_message = "### [" + schema + ".json - v" + version + "] - " + update_date + "\n" + "### " + type  + "\n" + change_message  + "\n"
                 log_insert = log_insert + markdown_message  + "\n"
 
@@ -127,6 +124,14 @@ class ReleasePrepare:
             writer.writerow(h)
         writeChangeLog.close()
 
+    def checkUpdateLog(self, update_log):
+        for val in range(1, len(update_log)):
+            change_message = update_log[val][self.message_column]
+            type = change_message.split(' ')[0]
+            if type not in ['Added', 'Changed', 'Removed', 'Fixed', 'Deprecated', 'Security']:
+                print(
+                    "WARNING: Change type in log message does not match one of 'Added', 'Changed', 'Removed', 'Fixed', 'Deprecated', 'Security'")
+                exit(2)
 
 class options:
     def __init__(self, p, s, i, e):
@@ -141,6 +146,8 @@ if __name__ == '__main__':
     releasePrep = ReleasePrepare()
 
     content_log = releasePrep.openUpdateLog()
+
+    releasePrep.checkUpdateLog(content_log)
 
     updated_versions = releasePrep.updateVersions(content_log)
 
