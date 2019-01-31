@@ -68,6 +68,9 @@ if __name__ == '__main__':
 
     linter = SchemaLinter()
 
+    # for dirpath, dirnames, files in os.walk(schema_path):
+    #     for name in files:
+    #         print os.path.join(dirpath, name)
     schemas = [os.path.join(dirpath, f)
                for dirpath, dirnames, files in os.walk(schema_path)
                for f in files if f.endswith('.json')]
