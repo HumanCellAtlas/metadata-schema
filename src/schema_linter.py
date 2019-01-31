@@ -88,6 +88,14 @@ class SchemaLinter:
                 if properties[property]['type'] == "array" and 'items' not in properties[property].keys():
                     print("Schema " + path + ": Property `" + property + "` is type array but doesn't contain items")
 
+                # Check that property of type array contains the attribute items and items have the type or $ref attribute
+                if properties[property]['type'] == "array" and 'items' in properties[property].keys() and ('$ref' in properties[property]['items'].keys() or 'type' in properties[property]['items'].keys()):
+                    print("Schema " + path + ": Property `" + property + "` is type array but items attribute doesn't contain type attribute")
+
+                # Check that property of type object also contains the attribute $ref
+                if properties[property]['type'] == "object" and '$ref' not in properties[property].keys():
+                    print("Schema " + path + ": Property `" + property + "` is type object but doesn't contain $ref")
+
             for kw in properties[property].keys():
                 if property == 'ontology' and kw == 'graph_restriction':
                     nested_keywords = properties[property][kw]
@@ -100,8 +108,7 @@ class SchemaLinter:
                 if isinstance(properties[property][kw], dict) and property != 'ontology':
                     for nkw in properties[property][kw].keys():
                         if nkw not in property_keywords:
-                            print(
-                                "Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
+                            print("Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
 
 if __name__ == '__main__':
