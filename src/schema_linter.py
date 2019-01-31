@@ -21,6 +21,7 @@ class SchemaLinter:
 
     def lintSchema(self, path):
         schema = get_json_from_file(path)
+        schema_filename = path.split("/")[-1].split(".")[0]
 
         # Check that all root level fields in the schema are part of the list of allowed root level fields
         for key in schema.keys():
@@ -55,8 +56,27 @@ class SchemaLinter:
                             print(
                                 "Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
+        # Check that additionalProperties is set to false
         if "additionalProperties" in schema and schema['additionalProperties'] == True:
             print("Schema " + path + " should not allow additional properties")
+
+        # Check that $schema is set to draft-07
+        if "$schema" in schema and schema['$schema'] != "http://json-schema.org/draft-07/schema#":
+            print("Schema " + path + " must have $schema set to http://json-schema.org/draft-07/schema#")
+
+        # Check that the name of the schema in the describedBy URL is set to the schema filename
+        if properties['describedBy']['pattern'].split("/")[-1] != schema_filename:
+            print("Schema " + path + " the end of the describedBy URL (" + properties['describedBy']['pattern'].split("/")[-1] + ") must match the schema filename (" + schema_filename + ")")
+
+        # Check that the schema name attribute is set to the schema filename
+        if "name" in schema and schema['name'] != schema_filename:
+            print("Schema " + path + " the schema name attribute (" + schema['name'] + ") must match the schema filename (" + schema_filename + ")")
+
+        # Check that schema type is set to object
+        if "type" in schema and schema['type'] != "object":
+            print("Schema " + path + " must have type set to object")
+
+        # Check that all required fields are actually in the schema
         if "required" in schema:
             for req_prop in schema["required"]:
                 if req_prop not in properties:
@@ -68,9 +88,6 @@ if __name__ == '__main__':
 
     linter = SchemaLinter()
 
-    # for dirpath, dirnames, files in os.walk(schema_path):
-    #     for name in files:
-    #         print os.path.join(dirpath, name)
     schemas = [os.path.join(dirpath, f)
                for dirpath, dirnames, files in os.walk(schema_path)
                for f in files if f.endswith('.json')]
@@ -79,5 +96,5 @@ if __name__ == '__main__':
 
     for s in schemas:
         if 'versions.json' not in s:
-            print('Checking %s' % s)
+            # print('Checking %s' % s)
             linter.lintSchema(s)
