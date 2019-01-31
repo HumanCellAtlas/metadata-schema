@@ -1,36 +1,45 @@
 {
   "migrations": [
     {
-      "property": "donor_organism.biomaterial_core.biomaterial_id",
-      "replaced_by": "donor_organism.donor_id",
+      "source_schema": "donor_organism",
+      "property": "biomaterial_core.biomaterial_id",
+      "target_schema": "donor_organism",
+      "replaced_by": "donor_id",
       "effective_from" : "14.0.0",
       "reason": "Schema demodularisation"
     },
     {
-      "property": "specimen_from_organism.biomaterial_core.biomaterial_id",
-      "replaced_by": "specimen_from_organism.specimen_id",
+      "source_schema": "specimen_from_organism",
+      "property": "biomaterial_core.biomaterial_id",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "specimen_id",
       "effective_from" : "8.0.0",
       "reason": "Schema demodularisation"
     },
     {
-      "property": "specimen_from_organism.diseases.ontology_label",
+      "source_schema": "specimen_from_organism",
+      "property": "diseases.ontology_label",
       "effective_from" : "8.0.0",
       "reason": "Ontology clean-up"
     },
     {
-      "property": "donor_organism.diseases.ontology_label",
+      "source_schema": "donor_organism",
+      "property": "diseases.ontology_label",
       "effective_from" : "14.0.0",
       "reason": "Ontology clean-up"
     },
     {
-      "replaced_by": "donor_organism.new_dummy_property",
+      "source_schema": "donor_organism",
+      "property": "new_dummy_property",
       "default_value": "foobar",
       "effective_from" : "15.0.0",
       "reason": "Migration testing"
     },
     {
-      "property": "donor_organism.development_stage",
-      "replaced_by": "specimen_from_organism.dummy_development_stage",
+      "source_schema": "donor_organism",
+      "property": "development_stage",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "dummy_development_stage",
       "effective_from_source" : "16.0.0",
       "effective_from_target": "9.0.0",
       "reason": "Migration testing"
