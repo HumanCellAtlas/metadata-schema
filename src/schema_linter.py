@@ -21,6 +21,10 @@ class SchemaLinter:
 
     def lintSchema(self, path):
         schema = get_json_from_file(path)
+        properties = schema['properties']
+
+        # SCHEMA-LEVEL CHECKS
+
         schema_filename = path.split("/")[-1].split(".")[0]
 
         # Check that all root level fields in the schema are part of the list of allowed root level fields
@@ -32,29 +36,6 @@ class SchemaLinter:
         for prop in required_root_level_keywords:
             if prop not in schema.keys():
                 print("Schema " + path + " is missing required root level field `" + prop + "`")
-
-        properties = schema['properties']
-
-        # Check that essential properties `describedBy` and `schema_version` are present
-        for ep in essential_properties:
-            if ep not in properties:
-                print("Schema " + path + " is missing required property `" + ep + "`")
-
-        for property in properties:
-            for kw in properties[property].keys():
-                if property == 'ontology' and kw == 'graph_restriction':
-                    nested_keywords = properties[property][kw]
-                    for nkw in nested_keywords.keys():
-                        if nkw not in ontology_keywords:
-                            print("Keyword `" + nkw + "` is not in the list of acceptable ontology keyword properties")
-                elif kw not in property_keywords:
-                    print("Keyword `" + kw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
-
-                if isinstance(properties[property][kw], dict) and property != 'ontology':
-                    for nkw in properties[property][kw].keys():
-                        if nkw not in property_keywords:
-                            print(
-                                "Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
         # Check that additionalProperties is set to false
         if "additionalProperties" in schema and schema['additionalProperties'] == True:
@@ -81,6 +62,46 @@ class SchemaLinter:
             for req_prop in schema["required"]:
                 if req_prop not in properties:
                     print("Property `" + req_prop + "` is listed as required in schema " + path + " but is undefined")
+
+        # PROPERTY-LEVEL CHECKS
+
+        # Check that essential properties `describedBy` and `schema_version` are present
+        for ep in essential_properties:
+            if ep not in properties:
+                print("Schema " + path + " is missing required property `" + ep + "`")
+
+        for property in properties:
+            # Check that property contains description attribute
+            if 'description' not in properties[property].keys():
+                print("Schema " + path + ": Keyword `description` is missing from property `" + property + "`")
+
+            # Check that property contains type attribute
+            if 'type' not in properties[property].keys():
+                print("Schema " + path + ": Keyword `type` is missing from property `" + property + "`")
+
+            else:
+                # Check that property contains type attribute and it is set to one of the valid JSON types
+                if properties[property]['type'] not in ["string", "number", "boolean", "array", "object", "integer"]:
+                    print("Schema " + path + ": Keyword `" + properties[property]['type'] + "` is not a valid JSON type")
+
+                # Check that property of type array also contains the attribute items
+                if properties[property]['type'] == "array" and 'items' not in properties[property].keys():
+                    print("Schema " + path + ": Property `" + property + "` is type array but doesn't contain items")
+
+            for kw in properties[property].keys():
+                if property == 'ontology' and kw == 'graph_restriction':
+                    nested_keywords = properties[property][kw]
+                    for nkw in nested_keywords.keys():
+                        if nkw not in ontology_keywords:
+                            print("Keyword `" + nkw + "` is not in the list of acceptable ontology keyword properties")
+                elif kw not in property_keywords:
+                    print("Keyword `" + kw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
+
+                if isinstance(properties[property][kw], dict) and property != 'ontology':
+                    for nkw in properties[property][kw].keys():
+                        if nkw not in property_keywords:
+                            print(
+                                "Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
 
 if __name__ == '__main__':
