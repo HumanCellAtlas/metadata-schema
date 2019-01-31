@@ -23,6 +23,7 @@ lot_number | The supplier lot or batch number for the cell line. | string | no |
 catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc
 cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
 cell_line_type | The type of cell line. | string | yes |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent, stem cell | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
+model_organ | Organ for which this cell line is a model. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
 cell_morphology | Features relating to the morphology of the cells. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
 growth_conditions | Features relating to the growth and/or maintenance of the cell lines. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 confluency | The percent a plate surface is covered by cells. | number | no |  | Percent confluency |  | 60
@@ -52,7 +53,7 @@ total_estimated_cells | Total estimated number of cells in the suspension. | int
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) | Plate-based sequencing |  | 
 
 ## Donor organism
-_Information about the donor organism from which a specimen was collected._
+_Information about the donor from which a specimen was collected._
 
 Location: type/biomaterial/donor_organism.json
 
@@ -71,7 +72,7 @@ organism_age_unit | The unit in which Age is expressed. | object | no | [See mod
 development_stage | A classification of the developmental stage of the organism. | object | yes | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 diseases | Short description of known disease(s) of the organism. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
-familial_relationship | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
+familial_relationships | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
 medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
 gestational_age | Gestational age of organism in Gestational age units measured since fertilization. | string | no |  | Gestational age |  | 22; 5-7
 gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | 
@@ -106,14 +107,13 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | bio
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
 genus_species | The scientific binomial name for the species of the organoid. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
-model_organ | Organ for which this organoid is a model system. | object | no | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
+model_organ | Organ for which this organoid is a model system. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
 model_organ_part | Organ part for which this organoid is a model system. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part model |  | 
 age | Age of the organoid in Organoid age unit measured from when cell aggregates started differentiating to desired organoid model. | number | no |  | Organoid age |  | 55
 age_unit | The unit in which Organoid age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organoid age unit |  | 
 size | Size of the organoid in Organoid size unit. | number | no |  | Organoid size |  | 4
 size_unit | The unit in which the Organoid size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Organoid size unit |  | 
 morphology | General description of the organoid morphology. | string | no |  | Organoid morphology |  | Epithelial monolayer with budding crypt-like domains; Optic cup structure
-organoid_type | The type of organoid. | string | no |  | Organoid type | primary, immortalized, stem cell-derived, synthetic | Should be one of: primary, immortalized, stem cell-derived, or synthetic.
 embedded_in_matrigel | Whether the organoid is embedded in a matrigel. | boolean | no |  | Embeddded in matrigel? |  | Should be one of: yes, no.
 growth_environment | Growth environment in which the organoid is grown. | string | no |  | Growth environment |  | matrigel; liquid suspension; adherent
 input_aggregate_cell_count | Estimated number of cells per input cell aggregate. | number | no |  | Input aggregate cell count |  | 10000
@@ -253,10 +253,10 @@ project_core | Core project-level information. | object | yes | [See core  proje
 contributors | People contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
 supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
 publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
-insdc_project | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | string | no |  | INSDC project accession |  | SRP000000
-geo_series | A Gene Expression Omnibus (GEO) series accession. | string | no |  | GEO series accession |  | GSE00000
-array_express_investigation | An ArrayExpress accession. | string | no |  | ArrayExpress accession |  | E-AAAA-00
-insdc_study | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | string | no |  | INSDC study accession |  | PRJNA000000
+insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
+geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
+array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
+insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
 
 ## Protocol
@@ -294,8 +294,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-aggregate_formation_method | Method used to form cell aggregates. | string | yes |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
-aggregate_cell_uniformity | Description of uniformity of the cell aggregates after they are formed. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous embryoid bodies of variable cell numbers; Low-homogeneity in morphology and size
+formation_method | Method used to form cell aggregates. | string | yes |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
+cell_uniformity | Description of the cell aggregates uniformity after formation. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous embryoid bodies of variable cell numbers; Low-homogeneity in morphology and size
 
 ## Collection protocol
 _Information about the biomaterial collection protocol._

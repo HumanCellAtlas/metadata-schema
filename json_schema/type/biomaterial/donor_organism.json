@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Information about the donor organism from which a specimen was collected.",
+    "description": "Information about the donor from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
         "describedBy",
@@ -126,7 +126,6 @@
             "description": "Information about other organisms related to this organism.",
             "type": "array",
             "items": {
-                "type": "object",
                 "$ref": "module/biomaterial/familial_relationship.json"
                 },
             "user_friendly": "Familial relationship"
