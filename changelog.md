@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v14.0.0] - 2019-01-31
+### Changed
+Changed familial_relationship to be plural. Fixes #768.
+
 ### [type/project/project.json - v11.0.0] - 2019-01-30
 ### Change
 Change accession fields to arrays. Changed field names to adhere to Style Guide. Fixes #324.
