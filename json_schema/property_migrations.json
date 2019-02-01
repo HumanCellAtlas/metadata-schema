@@ -19,20 +19,20 @@
     {
       "source_schema": "specimen_from_organism",
       "property": "diseases.ontology_label",
-      "effective_from" : "8.0.0",
+      "effective_from" : "9.0.0",
       "reason": "Ontology clean-up"
     },
     {
       "source_schema": "donor_organism",
       "property": "diseases.ontology_label",
-      "effective_from" : "14.0.0",
+      "effective_from" : "15.0.0",
       "reason": "Ontology clean-up"
     },
     {
       "source_schema": "donor_organism",
       "property": "new_dummy_property",
       "default_value": "foobar",
-      "effective_from" : "15.0.0",
+      "effective_from" : "16.0.0",
       "reason": "Migration testing"
     },
     {
@@ -40,8 +40,8 @@
       "property": "development_stage",
       "target_schema": "specimen_from_organism",
       "replaced_by": "dummy_development_stage",
-      "effective_from_source" : "16.0.0",
-      "effective_from_target": "9.0.0",
+      "effective_from_source" : "17.0.0",
+      "effective_from_target": "10.0.0",
       "reason": "Migration testing"
     }
   ]
