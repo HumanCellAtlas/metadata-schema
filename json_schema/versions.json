@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-02-01T08:21:43Z",
+    "last_update_date": "2019-02-01T12:12:46Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -89,7 +89,7 @@
                 "specimen_from_organism": "7.0.0"
             },
             "file": {
-                "analysis_file": "5.3.5",
+                "analysis_file": "5.3.6",
                 "image_file": "1.0.2",
                 "reference_file": "2.2.8",
                 "sequence_file": "7.0.2",
@@ -97,7 +97,7 @@
             },
             "process": {
                 "analysis": {
-                    "analysis_process": "8.0.6"
+                    "analysis_process": "8.0.7"
                 },
                 "process": "6.0.6"
             },
@@ -120,7 +120,7 @@
                     "imaging_preparation_protocol": "2.0.0",
                     "imaging_protocol": "11.0.5"
                 },
-                "protocol": "6.3.7",
+                "protocol": "6.3.8",
                 "sequencing": {
                     "library_preparation_protocol": "4.4.4",
                     "sequencing_protocol": "9.0.8"
