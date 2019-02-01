@@ -83,6 +83,12 @@ class SchemaLinter:
             if 'description' not in properties[property].keys():
                 print(schema_filename + ".json: Keyword `description` missing from property `" + property + "`")
 
+            # Check that description attribute is sentence case
+            if 'description' in properties[property].keys():
+                # Start with capital letter and end with full stop or question mark
+                if not re.match('^[A-Z][^?!]*[?.]$', properties[property]['description']):
+                    print(schema_filename + ".json: The `description` for property `" + property + "` is not a sentence (" + properties[property]['description'] + ")")
+
             # Check that property contains user-friendly attribute
             # Currently excludes ingest-supplied fields
             # Currently excludes links.json and provenance.json
