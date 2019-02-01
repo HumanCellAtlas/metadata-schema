@@ -8,7 +8,7 @@
         "file_core"
     ],
     "title": "Image file",
-    "name": "imaging_file",
+    "name": "image_file",
     "type": "object",
     "properties": {
         "describedBy": {
