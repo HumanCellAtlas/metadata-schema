@@ -1,6 +1,7 @@
 from schema_test_suite import get_json_from_file
 import logging
 import os
+import re
 
 
 allowed_root_level_keywords = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions']
@@ -71,6 +72,10 @@ class SchemaLinter:
                 print("Schema " + path + " is missing required property `" + ep + "`")
 
         for property in properties:
+            # Check that property name contains only lowercase letters and underscore
+            if not re.match("^[a-z_]+$", property) and property not in ['describedBy']:
+                print("Schema " + path + ": Property `" + property + "` contains non-lowercase/underscore characters.")
+
             # Check that property contains description attribute
             if 'description' not in properties[property].keys():
                 print("Schema " + path + ": Keyword `description` is missing from property `" + property + "`")
