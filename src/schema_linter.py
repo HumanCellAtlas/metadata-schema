@@ -75,6 +75,12 @@ class SchemaLinter:
             if 'description' not in properties[property].keys():
                 print("Schema " + path + ": Keyword `description` is missing from property `" + property + "`")
 
+            # Check that property contains user-friendly attribute
+            # Currently excludes ingest-supplied fields
+            # Could also exclude links.json and provenance.json in the future
+            if property not in ['provenance', 'schema_version', 'schema_type', 'describedBy'] and 'user_friendly' not in properties[property].keys():
+                print("Schema " + path + ": Keyword `user_friendly` is missing from property `" + property + "`")
+
             # Check that property contains type attribute
             if 'type' not in properties[property].keys():
                 print("Schema " + path + ": Keyword `type` is missing from property `" + property + "`")
