@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-02-01T12:21:05Z",
+    "last_update_date": "2019-02-01T12:29:26Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -61,7 +61,7 @@
                     "10x": "1.0.5",
                     "barcode": "5.2.5",
                     "insdc_experiment": "1.1.5",
-                    "plate_based_sequencing": "1.0.4"
+                    "plate_based_sequencing": "1.0.5"
                 }
             },
             "project": {
@@ -82,7 +82,7 @@
         "type": {
             "biomaterial": {
                 "cell_line": "10.0.1",
-                "cell_suspension": "8.7.1",
+                "cell_suspension": "8.7.2",
                 "donor_organism": "14.0.1",
                 "imaged_specimen": "2.0.4",
                 "organoid": "10.0.0",
@@ -90,7 +90,7 @@
             },
             "file": {
                 "analysis_file": "5.3.6",
-                "image_file": "1.0.2",
+                "image_file": "1.0.3",
                 "reference_file": "2.2.8",
                 "sequence_file": "7.0.2",
                 "supplementary_file": "1.1.7"

@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/image_file.json - v1.0.3] - 2019-02-01
+### Fixed
+Fixed incorrect name field value identified by linter. Fixes #776
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.5] - 2019-02-01
+### Fixed
+Fixed incorrect describedBy field pattern identified by linter. Fixes #776
+
+### [type/biomaterial/cell_suspension.json - v8.7.2] - 2019-02-01
+### Fixed
+Fixed incorrect describedBy field pattern identified by linter. Fixes #776
+
 ### [module/ontology/cell_cycle_ontology.json - v5.3.4] - 2019-02-01
 ### Fixed
 Fixed missing description field in describedBy property. Fixes #780
