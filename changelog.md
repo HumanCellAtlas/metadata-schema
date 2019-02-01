@@ -7,6 +7,190 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/cell_type_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/cellular_component_ontology.json - v1.0.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/development_stage_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/disease_ontology.json - v5.3.6] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/enrichment_ontology.json - v1.2.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/ethnicity_ontology.json - v5.3.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/instrument_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/length_unit_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/library_amplification_ontology.json - v1.2.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/library_construction_ontology.json - v1.2.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/mass_unit_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/microscopy_ontology.json - v1.0.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/organ_ontology.json - v5.3.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/organ_part_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/process_type_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/protocol_type_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/sequencing_ontology.json - v1.1.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/species_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/strain_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/time_unit_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/cell_line.json - v10.0.3] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/cell_suspension.json - v8.7.3] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.8] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/protocol/target.json - v1.0.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/donor_organism.json - v14.0.2] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.2] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/human_specific.json - v1.0.9] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.11] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/cell_morphology.json - v6.1.6] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/organoid.json - v10.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/imaged_specimen.json - v2.0.6] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.8] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/protocol.json - v6.3.9] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/process/analysis/analysis_process.json - v8.0.8] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.9] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.11] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/process/process.json - v6.0.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/file/reference_file.json - v2.2.10] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/mouse_specific.json - v1.0.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/timecourse.json - v2.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/preservation_storage.json - v6.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
 ### [module/protocol/channel.json - v2.0.1] - 2019-02-01
 ### Fixed
 Fixed examples that were separated by comma instead of semi-colon. Fixes #784

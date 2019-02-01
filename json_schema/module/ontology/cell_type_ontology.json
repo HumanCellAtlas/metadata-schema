@@ -27,7 +27,7 @@
             "example": "bone marrow hematopoietic cell; cardiac muscle cell"
         },
         "ontology": {
-            "description": "An ontology term identifier in the form prefix:accession",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hcao", "obo:cl"],
@@ -40,7 +40,7 @@
             "example": "CL:1001610; CL:0000746"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "user_friendly": "Cell type ontology label",
             "example": "bone marrow hematopoietic cell; cardiac muscle cell"
