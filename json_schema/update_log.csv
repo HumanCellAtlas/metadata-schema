@@ -1,1 +1,9 @@
 Schema,Change type,Change message,Version,Date
+module/protocol/channel,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
+module/protocol/target,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
+type/biomaterial/cell_line,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
+type/biomaterial/imaged_specimen,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
+type/file/reference_file,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
+type/file/supplementary_file,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
+type/protocol/imaging/imaging_protocol,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
+type/protocol/sequencing/sequencing_protocol,patch,"Fixed examples that were separated by comma instead of semi-colon. Fixes #784",,
