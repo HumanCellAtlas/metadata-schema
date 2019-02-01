@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/analysis_file.json - v5.3.6] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in file_core. Fixes #778.
+
+### [type/protocol/protocol.json - v6.3.8] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in protocol_core. Fixes 778
+
+### [type/process/analysis/analysis_process.json - v8.0.7] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in file_core. Fixes #778.
+
 ### [type/biomaterial/cell_suspension.json - v8.7.0] - 2019-02-01
 ### Added
 Added timecourse field to schema. Fixes #755.
