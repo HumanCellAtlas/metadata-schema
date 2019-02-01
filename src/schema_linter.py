@@ -83,11 +83,9 @@ class SchemaLinter:
             if 'description' not in properties[property].keys():
                 print(schema_filename + ".json: Keyword `description` missing from property `" + property + "`")
 
-            # Check that description attribute is sentence case
-            if 'description' in properties[property].keys():
-                # Start with capital letter and end with full stop
-                if not re.match('^[A-Z][^?!]*[.]$', properties[property]['description']):
-                    print(schema_filename + ".json: The `description` for property `" + property + "` is not a sentence (" + properties[property]['description'] + ")")
+            # Check that description attribute is a sentence - start with capital letter and end with full stop
+            if 'description' in properties[property].keys() and not re.match('^[A-Z][^?!]*[.]$', properties[property]['description']):
+                print(schema_filename + ".json: The `description` for property `" + property + "` is not a sentence (" + properties[property]['description'] + ")")
 
             # Check that property contains user-friendly attribute
             # Currently excludes ingest-supplied fields
@@ -99,6 +97,10 @@ class SchemaLinter:
             # Check that if property contains format attribute, format is valid JSON format
             if 'format' in properties[property].keys() and properties[property]['format'] not in ["date", "date-time", "email"]:
                 print(schema_filename + ".json: Format `" + properties[property]['format'] + "` is not a valid JSON format)")
+
+            # Check that guidelines attribute is a sentence
+            if 'guidelines' in properties[property].keys() and not re.match('^[A-Z][^?!]*[.]$', properties[property]['guidelines']):
+                print(schema_filename + ".json: The `guidelines` for property `" + property + "` is not a sentence (" + properties[property]['guidelines'] + ")")
 
             # Check that property contains type attribute
             if 'type' not in properties[property].keys():
