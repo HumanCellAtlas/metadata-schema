@@ -44,9 +44,9 @@ class Migrator:
         new_prop = migration["replaced_by"]
 
         value = json_doc
-        for key in source_prop[1:]:
+        for key in source_prop:
             value = value[key]
-        for part in reversed(new_prop.split('.')[1:]):
+        for part in reversed(new_prop.split('.')):
             value = {part: value}
 
         target_doc = self._mergeDict(target_doc, value)

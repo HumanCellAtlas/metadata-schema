@@ -36,7 +36,7 @@
     "ontology_label": "year"
   },
   "development_stage": {
-    "text": "Adult",
+    "text": "adult",
     "ontology": "EFO:0001272",
     "ontology_label": "adult"
   },
