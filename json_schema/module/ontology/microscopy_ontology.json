@@ -27,7 +27,7 @@
             "user_friendly": "Microscopy"
         },
         "ontology": {
-            "description": "An ontology term identifier in the form prefix:accession",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hcao", "obo:fbbi"],
@@ -40,7 +40,7 @@
             "user_friendly": "Microscopy ontology ID"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "example": "confocal microscopy; fluorescence microscopy",
             "user_friendly": "Microscopy ontology label"

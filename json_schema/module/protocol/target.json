@@ -25,13 +25,13 @@
             "description": "The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook.",
 
             "type": "string",
-            "example": "ACTA1, cFos",
+            "example": "ACTA1; cFos",
             "user_friendly": "Target molecule name"
         },
         "molecule_id": {
             "description": "An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot).",
             "type": "string",
-            "example": "CHEBI:85345, ensembl_9606",
+            "example": "CHEBI:85345; ensembl_9606",
             "user_friendly": "Target molecule identifier."
         },
         "subcellular_structure": {
@@ -67,7 +67,7 @@
             "description": "Type of assay used to detect target.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "example": "MERFISH, smFISH, immunofluorescence, fluorescent cell stain",
+            "example": "MERFISH; smFISH; immunofluorescence; fluorescent cell stain",
             "user_friendly": "Assay type"
         },
         "multiplexed": {
@@ -83,7 +83,10 @@
         "channel_id": {
             "description": "Channel ID used to assay signal. Should be consistent with the ID in the channel tab.",
             "type": "array",
-            "example": "1, A",
+            "items": {
+                "type": "string"
+            },
+            "example": "1; A",
             "user_friendly": "Channel"
         }
     }
