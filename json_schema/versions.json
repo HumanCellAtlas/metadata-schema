@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-02-01T08:21:43Z",
+    "last_update_date": "2019-02-01T12:21:05Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -24,7 +24,7 @@
                 "death": "5.4.1",
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
-                "human_specific": "1.0.7",
+                "human_specific": "1.0.8",
                 "medical_history": "5.2.5",
                 "mouse_specific": "1.0.6",
                 "preservation_storage": "6.0.0",
@@ -33,19 +33,19 @@
             },
             "ontology": {
                 "biological_macromolecule_ontology": "5.3.3",
-                "cell_cycle_ontology": "5.3.3",
-                "cell_type_ontology": "5.3.3",
+                "cell_cycle_ontology": "5.3.4",
+                "cell_type_ontology": "5.3.4",
                 "cellular_component_ontology": "1.0.3",
-                "development_stage_ontology": "5.3.3",
-                "disease_ontology": "5.3.4",
+                "development_stage_ontology": "5.3.4",
+                "disease_ontology": "5.3.5",
                 "enrichment_ontology": "1.2.4",
-                "ethnicity_ontology": "5.3.5",
-                "instrument_ontology": "5.3.3",
+                "ethnicity_ontology": "5.3.6",
+                "instrument_ontology": "5.3.4",
                 "length_unit_ontology": "5.3.3",
                 "library_amplification_ontology": "1.2.3",
                 "library_construction_ontology": "1.2.3",
                 "mass_unit_ontology": "5.3.3",
-                "microscopy_ontology": "1.0.2",
+                "microscopy_ontology": "1.0.3",
                 "organ_ontology": "5.3.6",
                 "organ_part_ontology": "5.3.3",
                 "process_type_ontology": "5.3.3",
@@ -81,15 +81,15 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "10.0.0",
-                "cell_suspension": "8.7.0",
-                "donor_organism": "14.0.0",
+                "cell_line": "10.0.1",
+                "cell_suspension": "8.7.1",
+                "donor_organism": "14.0.1",
                 "imaged_specimen": "2.0.4",
                 "organoid": "10.0.0",
-                "specimen_from_organism": "7.0.0"
+                "specimen_from_organism": "7.0.1"
             },
             "file": {
-                "analysis_file": "5.3.5",
+                "analysis_file": "5.3.6",
                 "image_file": "1.0.2",
                 "reference_file": "2.2.8",
                 "sequence_file": "7.0.2",
@@ -97,7 +97,7 @@
             },
             "process": {
                 "analysis": {
-                    "analysis_process": "8.0.6"
+                    "analysis_process": "8.0.7"
                 },
                 "process": "6.0.6"
             },
@@ -118,12 +118,12 @@
                 },
                 "imaging": {
                     "imaging_preparation_protocol": "2.0.0",
-                    "imaging_protocol": "11.0.5"
+                    "imaging_protocol": "11.0.6"
                 },
-                "protocol": "6.3.7",
+                "protocol": "6.3.8",
                 "sequencing": {
                     "library_preparation_protocol": "4.4.4",
-                    "sequencing_protocol": "9.0.8"
+                    "sequencing_protocol": "9.0.9"
                 }
             }
         }

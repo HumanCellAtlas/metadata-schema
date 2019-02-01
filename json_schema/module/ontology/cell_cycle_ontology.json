@@ -10,6 +10,7 @@
     "type": "object",
     "properties": {
         "describedBy": {
+            "description": "The URL reference to the schema.",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cell_cycle_ontology",
             "type": "string"
         },

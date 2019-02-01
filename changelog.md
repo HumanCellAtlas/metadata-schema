@@ -7,6 +7,74 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/cell_cycle_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/cell_type_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/development_stage_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/disease_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/ethnicity_ontology.json - v5.3.6] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/instrument_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/microscopy_ontology.json - v1.0.3] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/cell_line.json - v10.0.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/cell_suspension.json - v8.7.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/donor_organism.json - v14.0.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/biomaterial/human_specific.json - v1.0.8] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.9] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.6] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/file/analysis_file.json - v5.3.6] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in file_core. Fixes #778.
+
+### [type/protocol/protocol.json - v6.3.8] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in protocol_core. Fixes 778
+
+### [type/process/analysis/analysis_process.json - v8.0.7] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in file_core. Fixes #778.
+
 ### [type/biomaterial/cell_suspension.json - v8.7.0] - 2019-02-01
 ### Added
 Added timecourse field to schema. Fixes #755.
