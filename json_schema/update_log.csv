@@ -1,1 +1,8 @@
 Schema,Change type,Change message,Version,Date
+ontology/cell_cycle_ontology,patch,"Fixed missing description field in describedBy property. Fixes #780",,
+ontology/cell_type_ontology,patch,"Fixed missing description field in describedBy property. Fixes #780",,
+ontology/development_stage_ontology,patch,"Fixed missing description field in describedBy property. Fixes #780",,
+ontology/disease_ontology,patch,"Fixed missing description field in describedBy property. Fixes #780",,
+ontology/ethnicity_ontology,patch,"Fixed missing description field in describedBy property. Fixes #780",,
+ontology/instrument_ontology,patch,"Fixed missing description field in describedBy property. Fixes #780",,
+ontology/microscopy_ontology,patch,"Fixed missing description field in describedBy property. Fixes #780",,
