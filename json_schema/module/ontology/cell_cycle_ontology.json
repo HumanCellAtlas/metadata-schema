@@ -27,7 +27,7 @@
             "example": "meiotic cell cycle; mitotic G1 phase"
         },
         "ontology": {
-            "description": "An ontology term identifier in the form prefix:accession",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hcao", "obo:go"],
@@ -40,7 +40,7 @@
             "example": "GO:0051321; GO:0000080"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "user_friendly": "Cell cycle ontology label",
             "example": "meiotic cell cycle; mitotic G1 phase"

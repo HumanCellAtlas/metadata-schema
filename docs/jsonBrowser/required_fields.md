@@ -311,7 +311,7 @@ text | The name of the species to which the organism belongs. | string |  | Spec
 ### Strain ontology<a name='Strain ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the strain to which the organism belongs (mouse-specific). | string |  | Strain |  | C57BL/6; BALB/c
+text | The name of the strain to which the organism belongs. | string |  | Strain |  | C57BL/6; BALB/c
 ### Time unit ontology<a name='Time unit ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
