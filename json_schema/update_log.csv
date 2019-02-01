@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+type/file/image_file,patch,"Fixed incorrect name field value identified by linter. Fixes #776",,
+module/process/sequencing/plate_based_sequencing,patch,"Fixed incorrect describedBy field pattern identified by linter. Fixes #776",,
