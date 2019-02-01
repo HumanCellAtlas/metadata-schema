@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+type/file/analysis_file,patch,"Fixed missing user_friendly field in file_core. Fixes #778.",,
+type/protocol/protocol,patch,"Fixed missing user_friendly field in protocol_core. Fixes 778",,
