@@ -7,6 +7,38 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/channel.json - v2.0.1] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [module/protocol/target.json - v1.0.4] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/biomaterial/cell_line.json - v10.0.2] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/biomaterial/imaged_specimen.json - v2.0.5] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/file/reference_file.json - v2.2.9] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/file/supplementary_file.json - v1.1.8] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.7] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.10] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
 ### [type/file/image_file.json - v1.0.3] - 2019-02-01
 ### Fixed
 Fixed incorrect name field value identified by linter. Fixes #776
