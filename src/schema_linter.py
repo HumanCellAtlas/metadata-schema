@@ -15,6 +15,8 @@ property_keywords = ['description', 'type', 'pattern', 'example', 'enum', '$ref'
 
 ontology_keywords = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
+system_supplied_properties = ['describedBy', 'schema_version', 'schema_type', 'provenance']
+
 
 class SchemaLinter:
     def __init__(self):
@@ -72,6 +74,7 @@ class SchemaLinter:
                 print(schema_filename + ".json: Missing required property `" + ep + "`")
 
         for property in properties:
+            # print(property)
             # Check that property name contains only lowercase letters and underscore
             if not re.match("^[a-z_]+$", property) and property not in ['describedBy']:
                 print(schema_filename + ".json: Property `" + property + "` contains non-lowercase/underscore characters")
@@ -111,6 +114,22 @@ class SchemaLinter:
                 # Check that property of type object also contains the attribute $ref
                 if properties[property]['type'] == "object" and '$ref' not in properties[property].keys():
                     print(schema_filename + ".json: Property `" + property + "` is type object but doesn't contain $ref")
+
+            # Check that property contains example attribute
+            # Except for system-supplied fields
+            # Except when importing module ($ref)
+            if 'example' not in properties[property].keys() and property not in system_supplied_properties and schema_filename not in ['links', 'provenance']:
+                if 'items' in properties[property].keys() and '$ref' not in properties[property]['items'].keys():
+                    print(schema_filename + ".json: Keyword `example` missing from property `" + property + "`")
+                elif 'items' not in properties[property].keys() and '$ref' not in properties[property].keys():
+                    print(schema_filename + ".json: Keyword `example` missing from property `" + property + "`")
+            # Check that there are 1 or 2 examples separated by semicolon
+            # Excludes enums that list all valid values (Should be one of)
+            elif 'example' in properties[property].keys() and property not in system_supplied_properties and schema_filename not in ['links', 'provenance']:
+                if not re.match("^Should be one of", str(properties[property]['example'])):
+                    ex = str(properties[property]['example']).split(";")
+                    if len(ex) == 1 and re.search(",", ex[0]):
+                        print(schema_filename + ".json: Property `" + property + "` might have multiple examples that aren't separated by a semicolon (" + str(properties[property]['example']) + ")")
 
             # Check that _unit properties having matching property w/o unit
             if re.match("^[a-z_]+_unit$", property):
