@@ -40,7 +40,7 @@
             "example": "MONDO:0005148; PATO:0000461"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "user_friendly": "Disease ontology label",
             "example": "type 2 diabetes mellitus; normal"
