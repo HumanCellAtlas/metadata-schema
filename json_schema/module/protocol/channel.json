@@ -27,7 +27,7 @@
         "channel_id": {
             "description": "User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook.",
             "type": "string",
-            "example": "1, A",
+            "example": "1; A",
             "user_friendly": "Channel ID"
         },
         "excitation_wavelength": {
