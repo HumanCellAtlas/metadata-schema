@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/target.json - v1.0.6] - 2019-02-01
+### Fixed
+Fixed channel_id field which was declared as an array but missing items{} block Fixes #777
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.9] - 2019-02-01
+### Fixed
+Fixed channel_id field which was declared as an array but missing items{} block Fixes #777
+
 ### [module/ontology/biological_macromolecule_ontology.json - v5.3.4] - 2019-02-01
 ### Fixed
 Fixed descriptions to end in full stops. Fixes #785
