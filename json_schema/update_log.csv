@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/state_of_specimen,major,"Fixed array field names to be plural to adhere to Style Guide. Fixes #792.",,
