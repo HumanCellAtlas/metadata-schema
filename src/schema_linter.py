@@ -80,7 +80,7 @@ class SchemaLinter:
                 print("Schema " + path + ": Keyword `type` is missing from property `" + property + "`")
 
             else:
-                # Check that property contains type attribute and it is set to one of the valid JSON types
+                # Check that 'type' attribute is set to one of the valid JSON types
                 if properties[property]['type'] not in ["string", "number", "boolean", "array", "object", "integer"]:
                     print("Schema " + path + ": Keyword `" + properties[property]['type'] + "` is not a valid JSON type")
 
@@ -88,9 +88,9 @@ class SchemaLinter:
                 if properties[property]['type'] == "array" and 'items' not in properties[property].keys():
                     print("Schema " + path + ": Property `" + property + "` is type array but doesn't contain items")
 
-                # Check that property of type array contains the attribute items and items have the type or $ref attribute
-                if properties[property]['type'] == "array" and 'items' in properties[property].keys() and ('$ref' in properties[property]['items'].keys() or 'type' in properties[property]['items'].keys()):
-                    print("Schema " + path + ": Property `" + property + "` is type array but items attribute doesn't contain type attribute")
+                # Check that a property of type array contains the attribute items and items has either the type or $ref attribute
+                if properties[property]['type'] == "array" and 'items' in properties[property].keys() and '$ref' not in properties[property]['items'].keys() and 'type' not in properties[property]['items'].keys():
+                    print("Schema " + path + ": Property `" + property + "` is type array but items attribute doesn't contain type or $ref attribute")
 
                 # Check that property of type object also contains the attribute $ref
                 if properties[property]['type'] == "object" and '$ref' not in properties[property].keys():
