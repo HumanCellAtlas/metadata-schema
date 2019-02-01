@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/protocol/target.json - v1.0.6] - 2019-02-01
 ### Fixed
 Fixed channel_id field which was declared as an array but missing items{} block Fixes #777
@@ -334,8 +336,6 @@ Removed organoid_type field. Fixes #736.
 ### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v2.0.0] - 2019-01-30
 ### Update
 Update field names/descriptions. Fixes #746.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/preservation_storage.json - v6.0.0] - 2019-01-22
 ### Change
