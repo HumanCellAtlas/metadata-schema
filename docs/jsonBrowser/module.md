@@ -1,399 +1,532 @@
 # Module
-## length_unit_ontology<a name='length_unit_ontology'></a>
-_A term that may be associated with a cell type-related ontology term_
+## Common fields
+_Fields common to all schemas in this document_
 
-Location: module/ontology/length_unit_ontology.json
+Property name | Description | Type | Required? | Example 
+--- | --- | --- | --- | ---
+ describedBy | The URL reference to the schema. | string | no |  |  |  | 
+schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of a length unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+## brain_specific<a name='brain_specific'></a>
+_Information relating to biomaterials used specifically in projects studying the brain._
 
-## cell_cycle_ontology<a name='cell_cycle_ontology'></a>
-_A term that may be associated with a cell cycle-related ontology term_
-
-Location: module/ontology/cell_cycle_ontology.json
+Location: module/biomaterial/brain_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of a cell cycle of the cells in the specimen. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+required_brain_specific_field | This is a general brain-specific field that was considered required by brain experts. | string | yes |  | Brain-specific field |  | Cool brain feature
+optional_brain_initiative_specific_field | This is a BRAIN Initiative-specific field not relevant to other projects. | string | no |  | Another brain-specific field |  | Cool brain feature
+optional_brain_specific_field | Specific region of the brain. Must be a child term of the Allen Human Brain Atlas ontology in the NIF Standard Ontology. | string | no | [See module  reference_human_atlas_structure_ontology](module.md/#reference_human_atlas_structure_ontology) | Allen Human Brain Atlas structure |  | caudal orbital frontal cortex (area 13)
 
-## ethnicity_ontology<a name='ethnicity_ontology'></a>
-_A term that may be associated with a ethnicity-related ontology term_
+## Cell morphology<a name='Cell morphology'></a>
+_Information relating to pathological and morphological features of cells._
 
-Location: module/ontology/ethnicity_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The ethnicity of the human donor. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## process_type_ontology<a name='process_type_ontology'></a>
-_A term that may be associated with a process-related ontology term_
-
-Location: module/ontology/process_type_ontology.json
+Location: module/biomaterial/cell_morphology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of a process type being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells; form single layer colonies
+cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 15; 20-30
+cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
+percent_cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 98.7
+cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis; ATP test
+cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability result | pass, fail | Should be one of: pass, fail
+percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrotic cells |  | 10
 
-## species_ontology<a name='species_ontology'></a>
-_A term that may be associated with a species-related ontology term_
-
-Location: module/ontology/species_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of the species to which the organism belongs. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## disease_ontology<a name='disease_ontology'></a>
-_A term that may be associated with a disease-related ontology term_
-
-Location: module/ontology/disease_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | An optional ontology reference in format where prefix_ indicates which ontology | string | no |  |  |  | 
-
-## strain_ontology<a name='strain_ontology'></a>
-_A term that may be associated with a strain-related ontology term_
-
-Location: module/ontology/strain_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of the strain to which the organism belongs (mouse-specific). | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## organ_part_ontology<a name='organ_part_ontology'></a>
-_A term that may be associated with an anatomy-related ontology term_
-
-Location: module/ontology/organ_part_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term for a specific part of an organ from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon). | string | no |  |  |  | 
-
-## time_unit_ontology<a name='time_unit_ontology'></a>
-_A term that may be associated with a time unit-related ontology term_
-
-Location: module/ontology/time_unit_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of a time unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## protocol_type_ontology<a name='protocol_type_ontology'></a>
-_A term that may be associated with a protocol-related ontology term_
-
-Location: module/ontology/protocol_type_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of a protocol type used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## development_stage_ontology<a name='development_stage_ontology'></a>
-_A term that may be associated with a development stage-related ontology term_
-
-Location: module/ontology/development_stage_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of the development stage of the organism. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## instrument_ontology<a name='instrument_ontology'></a>
-_A term that may be associated with a instrument-related ontology term_
-
-Location: module/ontology/instrument_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-text | The full name of the instrument used. | string | yes |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## mass_unit_ontology<a name='mass_unit_ontology'></a>
-_A term that may be associated with a cell type-related ontology term_
-
-Location: module/ontology/mass_unit_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of a mass unit being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## biological_macromolecule_ontology<a name='biological_macromolecule_ontology'></a>
-_A term that may be associated with a biological macromolecule-related ontology term_
-
-Location: module/ontology/biological_macromolecule_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of the biological macromolecule being used. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## cell_type_ontology<a name='cell_type_ontology'></a>
-_A term that may be associated with a cell type-related ontology term_
-
-Location: module/ontology/cell_type_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy |  | string | no |  |  |  | 
-schema_version | Version number in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The name of a cell type supplied by a user. | string | yes |  |  |  | 
-ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
-
-## organ_ontology<a name='organ_ontology'></a>
-_A term that may be associated with an anatomy-related ontology term._
-
-Location: module/ontology/organ_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-text | The text for the term as the user provides it. | string | yes |  |  |  | 
-ontology | A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph. | string | no |  |  |  | 
-
-## contact<a name='contact'></a>
-_Information about a person who submitted or contributed to a project._
-
-Location: module/project/contact.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-contact_name | The contact's name. Should be in the format 'first, middle, last name'. Middle can be initial or left blank. | string | yes |  | Contact name |  | John,D,Doe
-email | An email address for the contact. | string | yes |  | Email |  | 
-phone | Phone number (including country code) of contact or contact's lab. | string | no |  | Phone number |  | 
-institution | Name of primary institute where contact works. | string | no |  | Institution |  | 
-laboratory | Name of lab (often the PI name) within institute where contact works. | string | no |  | Laboratory |  | 
-address | Street address where contact works. Should include street name and number, city, country division, postal code. | string | no |  | Address |  | 
-country | Country where contact works. | string | no |  | Country |  | 
-
-## publication<a name='publication'></a>
-_Information about a journal article, book, web page, or other external available documentation on a project._
-
-Location: module/project/publication.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-authors | A list of authors associated with the publication in 'surname initials' format. | array | yes |  | Authors |  | Smith JD
-publication_title | The full title of the publication. | string | yes |  | Publication title |  | 
-doi | The publication digital object identifier. | string | no |  | DOI |  | 10.1016/j.cell.2016.07.054
-pmid | The PubMed ID of the publication. | integer | no |  | PMID |  | 27565351
-publication_url | A URL, preferably not behind a paywall, for the publication. | string | no |  | Publication URL |  | 
-
-## growth_conditions<a name='growth_conditions'></a>
-_Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
-
-Location: module/biomaterial/growth_conditions.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-passage_number | The number of passages the cell line has been through. | integer | no |  | Passage number |  | 
-growth_medium | The solid, liquid, or semi-solid medium used to support the growth of the biomaterial. | string | no |  | Growth medium |  | lysogeny broth (LB) medium
-mycoplasma_testing_method | The method used for detecting mycoplasma contamination of a biomaterial culture. | string | no |  | Mycoplasma testing method |  | Indirect DNA stain using Hoechst 33258 with 3T3 indicator cells
-mycoplasma_testing_results | Results of mycoplasma testing of a biomaterial culture. | string | no |  | Mycoplasma testing results |  | No spots of bright blue stain observed at high magnification
-drug_treatment | Description of drugs added to the growth medium for this biomaterial. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin
-
-## preservation_storage<a name='preservation_storage'></a>
-_Information relating to how a biomaterial was preserved and/or stored over a period of time._
-
-Location: module/biomaterial/preservation_storage.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-storage_method | The method by which a biomaterial was stored. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen, -70C freezer, frozen, -150C freezer, frozen, liquid nitrogen, frozen, vapor phase, paraffin block, RNAlater, frozen, TRIzol, frozen | 
-storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
-storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | days
-preservation_method | The method by which a biomaterial was preserved or not. | string | no |  | Storage method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, Fresh | 
-
-## homo_sapiens_specific<a name='homo_sapiens_specific'></a>
-_Information specific to an organism that is a homo sapiens._
-
-Location: module/biomaterial/homo_sapiens_specific.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-body_mass_index | The body mass index of the organism. | number | no |  | Body mass index |  | 
-ethnicity | An array of ontology terms from EMBL-EBI's Ancestry Ontology describing ancestral groups, uncategorised ancestral groups, and population isolates. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
-
-## death<a name='death'></a>
+## Death<a name='Death'></a>
 _Information relating to the death of an organism._
 
 Location: module/biomaterial/death.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-cause_of_death | Cause of death from death report for human donor, from research lab for mouse. | string | yes |  | Cause of death |  | 
-cold_perfused | Yes if perfused with cold fluid to help preserve tissues before heart stopped. No otherwise. | boolean | no |  | Cold perfused? |  | 
-days_on_ventilator | Days on ventilator before dying. | number | no |  | Number of days on ventilator |  | 
-hardy_scale | Should be integer representing: (0) ventilator case, (1) violent and fast death, (2) fast death of natural causes, (3) intermediate death, or (4) slow death. | integer | no |  | Value on Hardy scale |  | 
-time_of_death | Date and time of death of the organism, in format yyyy-mm-ddThh:mm:ssZ. | string | no |  | Time of death |  | 
+cause_of_death | Conditions resulting in death. | string | yes |  | Cause of death |  | Hypoxic brain damage; Sudden cardiac arrest
+cold_perfused | Whether perfusion with cold fluid was used to help preserve tissues before heart stopped. | boolean | no |  | Cold perfused? |  | Should be one of: yes, no.
+days_on_ventilator | Number of days on ventilator before death occurred. | number | no |  | Number of days on ventilator |  | 4
+hardy_scale | Value on 4-point Hardy scale cause of death classification. | integer | no |  | Value on Hardy scale |  | 0
+time_of_death | Date and time when death was declared. | string | no |  | Time of death |  | 2016-01-21T00:00:00Z
+organ_donation_death_type | Type of death preceding organ donation. | string | no |  | Organ donation death type | Donation after circulatory death (DCD), Donation after brainstem death (DBD) | Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).
+normothermic_regional_perfusion | Whether entire body was perfused with warm oxygenated blood. | string | no |  | Normothermic regional perfusion? | yes, no, unknown | Should be one of: yes, no, or unknown.
 
-## familial_relationship<a name='familial_relationship'></a>
+## Familial relationship<a name='Familial relationship'></a>
 _Information about other organisms that this organism is related to._
 
 Location: module/biomaterial/familial_relationship.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-is_child_of | This organism is a child of the indicated organism. | string | no |  | Child of |  | 
-is_parent_of | This organism is a parent of the indicated organism. | string | no |  | Parent of |  | 
-is_sibling_of | This organism is a sibling of the indicated organism. | string | no |  | Sibling of |  | 
+parent | The individual's parent. | string | no |  | Parent |  | 
+child | The individual's child. | string | no |  | Child |  | 
+sibling | The individual's sibling. | string | no |  | Sibling |  | 
 
-## medical_history<a name='medical_history'></a>
-_Information about the medical history of an organism._
+## Growth conditions<a name='Growth conditions'></a>
+_Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
+
+Location: module/biomaterial/growth_conditions.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+passage_number | The number of passages that the biomaterial has been through. | integer | no |  | Passage number |  | 22
+growth_medium | The solid, liquid, or semi-solid medium used to support growth. | string | no |  | Growth medium |  | human placental cord serum; RPMI 1640 + 2mM Glutamine + 10-20% FBS
+culture_environment | Cell culture environment in which cells are grown. | string | no |  | Culture environment |  | Adherent cell culture; Suspension cell culture
+mycoplasma_testing_method | The method by which the biomaterial was tested for mycoplasma contamination. | string | no |  | Mycoplasma testing method | Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay | Should be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, or Microbiological assay.
+mycoplasma_testing_results | Whether the biomaterial passed or failed the mycoplasma test. | string | no |  | Mycoplasma testing results | pass, fail | Should be one of: pass, or fail.
+drug_treatment | Description of drugs added to the growth medium. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin; 15 ug/mL tetracycline
+feeder_layer_type | Type of feeder layer cells on which biomaterial was grown. | string | no |  | Feeder layer type | feeder-free, feeder-dependent, JK1 feeder cells, feeder-dependent, SNL 76/7 feeder cells, feeder-dependent, human marrow stromal cells, feeder-dependent, bovine embryonic fibroblast cells, feeder-dependent, mouse embryonic fibroblast cells, feeder-dependent, mouse fibroblast STO cells, feeder-dependent, mouse bone marrow stromal cells, feeder-dependent, mouse yolk sac-derived endothelial cells, feeder-dependent, human foreskin fibroblast cells, feeder-dependent, human newborn fibroblast cells, feeder-dependent, human fetal lung fibroblast cells, feeder-dependent, human uterine endometrial cells, feeder-dependent, human breast parenchymal cells, feeder-dependent, human embryonic fibroblast cells, feeder-dependent, human adipose stromal cells, feeder-dependent, human amniotic epithelial cells, feeder-dependent, human placental fibroblast cells, feeder-dependent, human umbilical cord stromal cells, feeder-dependent, human fetal muscle cells, feeder-dependent, human fetal skin cells, feeder-dependent, human fetal liver stromal cells, feeder-dependent, human fallopian tubal epithelial cells, feeder-dependent, human amniotic mesenchymal cells | feeder-free; feeder-dependent, mouse embryonic fibroblast cells
+
+## Human-specific<a name='Human-specific'></a>
+_Information specific to a donor that is a human (Homo sapiens)._
+
+Location: module/biomaterial/human_specific.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
+ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
+
+## Medical history<a name='Medical history'></a>
+_Information about the medical history of a donor._
 
 Location: module/biomaterial/medical_history.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-alcohol_history | Number of drinks consumed on a typical day. | string | no |  | Alcohol history |  | 
-medication | List of medications the organism was currently taking at time of biomaterial donation. | string | no |  | Medications |  | 
-nutritional_state | Should be one of normal, fasting, or feeding tube removed. |  | no |  | Nutritional state | normal, fasting, feeding tube removed | 
-smoking_history | Estimated number of cigarettes smoked per day and for how many years. | string | no |  | Smoking history |  | 
-test_results | Results from any medical tests performed on the individual. | string | no |  | Test results |  | 
-treatment | Any treatments the individual has undergone. | string | no |  | Treatments |  | 
+alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
+medication | Medications the individual was taking at time of biomaterial collection. | string | no |  | Medications |  | Naproxen 500mg/day; Citalopram 20mg/day
+smoking_history | Estimated number of cigarettes smoked per day. | string | no |  | Smoking history |  | 20 cigarettes/day for 25 years, stopped 2000
+nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | 
+treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | 
 
-## cell_pathology<a name='cell_pathology'></a>
-_Information relating to pathological features of cells._
+## Mouse-specific<a name='Mouse-specific'></a>
+_Information specific to an organism that is a mouse (Mus musculus)._
 
-Location: module/biomaterial/cell_morphology.json
+Location: module/biomaterial/mouse_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-cell_morphology | General description of the morphology of the cells in the cell suspension. | string | no |  | Cell morphology |  | 
-cell_size | The size of the cells. Average cell size is acceptable. | number | no |  | Cell size number |  | 
-cell_size_unit | The unit in which the cell size is expressed. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
-cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 
-cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | 
-percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrosis |  | 
+strain | The name of the mouse strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Mouse strain |  | 
 
-## state_of_specimen<a name='state_of_specimen'></a>
-_State of body part at collection and how it was preserved after removal and/or cell enrichment_
+## Preservation and storage<a name='Preservation and storage'></a>
+_Information relating to how a biomaterial was preserved and/or stored over a period of time._
+
+Location: module/biomaterial/preservation_storage.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+storage_method | The method by which a biomaterial was stored after preservation or before another protocol was used. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen at -70C, frozen at -150C, frozen in liquid nitrogen, frozen in vapor phase, paraffin block, RNAlater at 4C, RNAlater at 25C, RNAlater at -20C | frozen in liquid nitrogen; fresh
+storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
+storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | 
+preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
+
+## State of specimen<a name='State of specimen'></a>
+_State of specimen at time of collection._
 
 Location: module/biomaterial/state_of_specimen.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-autolysis_score | State of tissue breakdown due to self-digestion. Must be one of: none, mild, moderate. | string | no |  | Autolysis score | none, mild, moderate | 
-gross_description | Color, size, and other aspects of specimen as visible to naked eye. | string | no |  | Gross description |  | 
-gross_image | List of filenames of photographs of body part without magnification. Must be of format JPEG, TIFF, or PNG. | array | no |  | Gross image |  | 
-ischemic_temperature | Whether warm or cold ischemia. | string | no |  | Ischemic temperature | warm, cold | 
-ischemic_time | Duration of time, in seconds, that the body part had insufficient blood supply. | integer | no |  | Ischemic time |  | 
-microscopic_description | How the biomaterial looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | 
-microscopic_image | List of filenames of photographs of body part under microscope. Must be of format JPEG, TIFF, or PNG. | array | no |  | Microscopic image |  | 
-postmortem_interval | Duration of time, in seconds, between when death is declared and when the tissue is preserved or processed. | integer | no |  | Post-mortem interval |  | 
+autolysis_score | State of tissue breakdown due to self-digestion. | string | no |  | Autolysis score | none, mild, moderate | Should be one of: none, mild, or moderate.
+gross_description | Color, size, and other aspects of specimen as visible to naked eye. | string | no |  | Gross description |  | focal wedge shaped region of tan-orange discoloration; cystic
+gross_image | List of filenames of photographs of specimen without magnification. | array | no |  | Gross image |  | my_gross_image_file.jpg
+ischemic_temperature | Whether specimen experienced warm or cold ischemia. | string | no |  | Ischemic temperature | warm, cold | Should be one of: warm, or cold.
+ischemic_time | Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. | integer | no |  | Ischemic time |  | 7200
+microscopic_description | How the specimen looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | Mixture of different cell sizes apparent; Dead cells are quite faint on microscope
+microscopic_image | List of filenames of photographs of specimen under microscope. | array | no |  | Microscopic image |  | my_microscopic_image_file.jpg
+postmortem_interval | Duration of time between when death was declared and when the specimen was preserved or processed. | integer | no |  | Post-mortem interval |  | 2400
 
-## mus_musculus_specific<a name='mus_musculus_specific'></a>
-_Information specific to an organism that is a mouse (mus musculus)._
+## Timecourse<a name='Timecourse'></a>
+_Information relating to a timecourse._
 
-Location: module/biomaterial/mus_musculus_specific.json
+Location: module/biomaterial/timecourse.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-strain | The name of the strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Strain |  | C57BL/6.
+value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  | Timecourse value |  | 2; 5.5-10.5
+unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Timecourse unit |  | 
+relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  | Timecourse relevance |  | Collection after tumor cells injected into the mammary gland; Time tissue underwent liberase digestion
 
-## purchased_reagents<a name='purchased_reagents'></a>
-_This module describes purchased kits or reagents used in any process._
+## Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
+_A term that may be associated with a biological macromolecule-related ontology term_
+
+Location: module/ontology/biological_macromolecule_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the biological macromolecule being used. | string | yes |  | Biological macromolecule |  | polyA RNA; mRNA
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Biological macromolecule ontology ID |  | OBI:0000869; CHEBI:33699
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Biological macromolecule ontology label |  | polyA RNA; messenger RNA
+
+## Cell cycle ontology<a name='Cell cycle ontology'></a>
+_A term that may be associated with a cell cycle-related ontology term_
+
+Location: module/ontology/cell_cycle_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a cell cycle of the cells in the specimen. | string | yes |  | Cell cycle |  | meiotic cell cycle; mitotic G1 phase
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Cell cycle ontology ID |  | GO:0051321; GO:0000080
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Cell cycle ontology label |  | meiotic cell cycle; mitotic G1 phase
+
+## Cell type ontology<a name='Cell type ontology'></a>
+_A term that may be associated with a cell type-related ontology term_
+
+Location: module/ontology/cell_type_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a cell type supplied by a user. | string | yes |  | Cell type |  | bone marrow hematopoietic cell; cardiac muscle cell
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Cell type ontology ID |  | CL:1001610; CL:0000746
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Cell type ontology label |  | bone marrow hematopoietic cell; cardiac muscle cell
+
+## Cellular component ontology<a name='Cellular component ontology'></a>
+_A term that may be associated with an intra-cellular structure ontology term_
+
+Location: module/ontology/cellular_component_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a subcellular structure. | string | yes |  | Subcellular structure |  | cytoplasm; nucleus
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Subcellular structure ontology ID |  | GO:0005737; GO:0005634
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Subcellular structure ontology label |  | cytoplasm; nucleus
+
+## Development stage ontology<a name='Development stage ontology'></a>
+_A term that may be associated with a development stage-related ontology term_
+
+Location: module/ontology/development_stage_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the development stage of the organism. | string | yes |  | Development stage |  | human adult stage; Theiler stage 28
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Development stage ontology ID |  | HsapDv:0000087; EFO:0002588
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Development stage ontology label |  | human adult stage; Theiler stage 28
+
+## Disease ontology<a name='Disease ontology'></a>
+_A term that may be associated with a disease-related ontology term_
+
+Location: module/ontology/disease_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The text for the term as the user provides it. | string | yes |  | Disease |  | type 2 diabetes mellitus; normal
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Disease ontology ID |  | MONDO:0005148; PATO:0000461
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field | string | no |  | Disease ontology label |  | type 2 diabetes mellitus; normal
+
+## Enrichment ontology<a name='Enrichment ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/enrichment_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of an enrichment approach being used. | string | yes |  | Enrichment |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Enrichment ontology ID |  | EFO:0009108; EFO:0009110
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Enrichment ontology label |  | fluorescence-activated cell sorting; Ficoll-Hypaque method
+
+## Ethnicity ontology<a name='Ethnicity ontology'></a>
+_A term that may be associated with a ethnicity-related ontology term_
+
+Location: module/ontology/ethnicity_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The ethnicity of the human donor. | string | yes |  | Ethnicity |  | European; Hispanic or Latin American
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Ethnicity ontology ID |  | HANCESTRO_0005 ;HANCESTRO_0014
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Ethnicity ontology label |  | European; Hispanic or Latin American
+
+## Instrument ontology<a name='Instrument ontology'></a>
+_A term that may be associated with a instrument-related ontology term_
+
+Location: module/ontology/instrument_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The full name of the instrument used. | string | yes |  | Instrument |  | Illumina HiSeq 2500; ONT MinION
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Instrument ontology ID |  | EFO:0008565; EFO:0008632
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Instrument ontology label |  | Illumina HiSeq 2500; ONT MinION
+
+## Length unit ontology<a name='Length unit ontology'></a>
+_A term that may be associated with a cell type-related ontology term_
+
+Location: module/ontology/length_unit_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a length unit being used. | string | yes |  | Length unit |  | micrometer; meter
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Length unit ontology ID |  | UO:0000017; UO:0000008
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Length unit ontology label |  | micrometer; meter
+
+## Library amplification ontology<a name='Library amplification ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/library_amplification_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a library amplification approach being used. | string | yes |  | Library amplification |  | PCR; in vitro transcription
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Library amplification ontology ID |  | OBI:0000415; EFO:0009013
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Library amplification ontology label |  | PCR; in vitro transcription
+
+## Library construction ontology<a name='Library construction ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/library_construction_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a library construction approach being used. | string | yes |  | Library construction |  | 10X v2 sequencing; Smart-seq2
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Library construction ontology ID |  | EFO:0009310; EFO:0008931
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Library construction ontology label |  | 10X v2 sequencing; Smart-seq2
+
+## Mass unit ontology<a name='Mass unit ontology'></a>
+_A term that may be associated with a cell type-related ontology term_
+
+Location: module/ontology/mass_unit_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a mass unit being used. | string | yes |  | Mass unit |  | kilogram; microgram
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Mass unit ontology ID |  | UO:0000009; UO:0000023
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Mass unit ontology label |  | kilogram; microgram
+
+## Microscopy ontology<a name='Microscopy ontology'></a>
+_A term that may be associated with a microscopy-related ontology term_
+
+Location: module/ontology/microscopy_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the type of microscopy used in an imaging experiment. | string | yes |  | Microscopy |  | confocal microscopy; fluorescence microscopy
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Microscopy ontology ID |  | FBbi:00000251; FBbi:00000246
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Microscopy ontology label |  | confocal microscopy; fluorescence microscopy
+
+## Organ ontology<a name='Organ ontology'></a>
+_A term that may be associated with an anatomy-related ontology term._
+
+Location: module/ontology/organ_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The text for the term as the user provides it. | string | yes |  | Organ |  | heart; immune system
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Organ ontology ID |  | UBERON:0000948; UBERON:0002405
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Organ ontology label |  | heart; immune system
+
+## Organ part ontology<a name='Organ part ontology'></a>
+_A term that may be associated with an anatomy-related ontology term_
+
+Location: module/ontology/organ_part_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The text for the term as the user provides it. | string | yes |  | Organ part |  | bone marrow; islet of Langerhans
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Organ part ontology ID |  | UBERON:0002371; UBERON:0000006
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Organ part ontology label |  | bone marrow; islet of Langerhans
+
+## Process type ontology<a name='Process type ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/process_type_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a process type being used. | string | yes |  | Process type |  | enzymatic dissociation; blood draw
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Process type ontology ID |  | EFO:0009128; EFO:0009121
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Process type ontology label |  | enzymatic dissociation; blood draw
+
+## Protocol type ontology<a name='Protocol type ontology'></a>
+_A term that may be associated with a protocol-related ontology term_
+
+Location: module/ontology/protocol_type_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a protocol type used. | string | yes |  | Protocol type |  | dissociation protocol; enrichment protocol
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Protocol type ontology ID |  | EFO:0009088; EFO:0009089
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Protocol type ontology label |  | dissociation protocol; enrichment protocol
+
+## mass_unit_ontology<a name='mass_unit_ontology'></a>
+_A term associated with a specific structure of the human brain._
+
+Location: module/ontology/reference_human_atlas_structure_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The specific structure of the human brain. | string | yes |  |  |  | 
+ontology | An ontology term identifier in the form prefix:accession | string | no |  |  |  | 
+
+## Sequencing ontology<a name='Sequencing ontology'></a>
+_A term that may be associated with a process-related ontology term_
+
+Location: module/ontology/sequencing_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a sequencing approach being used. | string | yes |  | Sequencing approach |  | tag based single cell RNA sequencing; full length single cell RNA sequencing
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Sequencing approach ontology ID |  | EFO:0008440; EFO:0008441
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Sequencing approach ontology label |  | tag based single cell RNA sequencing; full length single cell RNA sequencing
+
+## Species ontology<a name='Species ontology'></a>
+_A term that may be associated with a species-related ontology term_
+
+Location: module/ontology/species_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the species to which the organism belongs. | string | yes |  | Species |  | Homo sapiens; Mus musculus
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Species ontology ID |  | NCBITaxon:9606; NCBITaxon:10090
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Species ontology label |  | Homo sapiens; Mus musculus
+
+## Strain ontology<a name='Strain ontology'></a>
+_A term that may be associated with a strain-related ontology term_
+
+Location: module/ontology/strain_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the strain to which the organism belongs. | string | yes |  | Strain |  | C57BL/6; BALB/c
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Strain ontology ID |  | EFO:0004472; EFO:0000602
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Strain ontology label |  | C57BL/6; BALB/c
+
+## Time unit ontology<a name='Time unit ontology'></a>
+_A term that may be associated with a time unit-related ontology term_
+
+Location: module/ontology/time_unit_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a time unit being used. | string | yes |  | Time unit |  | second; week
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Time unit ontology ID |  | UO:0000010; UO:0000034
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Time unit ontology label |  | second; week
+
+## Purchased reagents<a name='Purchased reagents'></a>
+_Information describing purchased kits or reagents used in a protocol._
 
 Location: module/process/purchased_reagents.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit
+retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit; CytoTune iPS 2.0 Sendai Reprogramming Kit
 catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
-manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina
-batch_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
+manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina; ThermoFisher Scientific
+lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
 expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
+kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Titer |  | 3.0x10^7
 
-## barcode<a name='barcode'></a>
-_This module describes barcodes used in a library preparation process._
+## 10x-specific<a name='10x-specific'></a>
+_Information specific to 10x experiments._
+
+Location: module/process/sequencing/10x.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+fastq_method | Method used for the generation of fastq files from bcl files. | string | no |  | Fastq creation method |  | Cellranger mkfastq; bcl2fastq2
+fastq_method_version | Version of the program used for fastq generation. | string | no |  | Fastq creation method version |  | Cellranger 2.1.1; v2.20
+pooled_channels | The number of channels pooled within a sequencing lane. | number | no |  | Pooled channels |  | 4
+drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | Should be one of: yes, or no.
+
+## Barcode<a name='Barcode'></a>
+_Information about barcodes used in a protocol._
 
 Location: module/process/sequencing/barcode.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-barcode_read | The read that the barcode is found in. Should be one of Read 1, Read 2, i7 Index, or i5 Index. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | 
-barcode_offset | 0-based offset of start of barcode in read. 0 for beginning of read. | integer | yes |  | Barcode offset |  | 
-barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 
-white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | 
+barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | 0-based offset of start of barcode in read. | integer | yes |  | Barcode offset |  | 0
+barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
+white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
 
-## smartseq2<a name='smartseq2'></a>
-_This module describes information specific to SmartSeq2 experiments._
+## INSDC experiment<a name='INSDC experiment'></a>
+_Information relating to an INSDC experiment._
 
-Location: module/process/sequencing/smartseq2.json
+Location: module/process/sequencing/insdc_experiment.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy | The URL reference to the schema. | string | no |  |  |  | 
-schema_version | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
-plate_id | An ID for the plate that the well is located on. | string | no |  | Well plate ID |  | 
-well_name | A name for the well. Should be unique for the plate | string | no |  | Well name |  | 
-well_row | Well row in plate. | string | no |  | Well row |  | 
-well_column | Well column in plate. | string | no |  | Well column |  | 
-cell_quality | Note on how good cell looks if imaged in well before sequencing. | string | no |  | Cell quality | OK, control, 2-cell well, control, empty well, low quality cell | 
+insdc_experiment | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | string | yes |  | INSDC experiment accession |  | SRX0000000
+
+## Plate-based sequencing<a name='Plate-based sequencing'></a>
+_Information specific to plate-based sequencing experiments._
+
+Location: module/process/sequencing/plate_based_sequencing.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+plate_id | An ID for the plate that the well is located on. | string | yes |  | Plate ID |  | 2217
+well_id | An ID or name for the well. | string | no |  | Well ID |  | A1
+cell_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+
+## Contact<a name='Contact'></a>
+_Information about an individual who submitted or contributed to a project._
+
+Location: module/project/contact.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
+email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com
+phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
+institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI; University of Washington
+laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Division of Vaccine Discovery; Department of Biology
+address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
+country | Country where the individual works. | string | no |  | Country |  | USA
+corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor? |  | Should be one of: yes, or no.
+project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, external curator, Human Cell Atlas wrangler, other | principal investigator; computational scientist
+orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
+
+## Funder<a name='Funder'></a>
+_Information about the project funding source._
+
+Location: module/project/funder.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+grant_title | The name of the grant funding the project. | string | no |  | Grant title |  | Study of single cells in the human body.
+grant_id | The unique grant identifier or reference. | string | yes |  | Grant ID |  | BB/P0000001/1
+organization | The name of the funding organization. | string | yes |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+
+## Publication<a name='Publication'></a>
+_Information about a journal article, book, web page, or other external available documentation for a project._
+
+Location: module/project/publication.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+authors | A list of authors associated with the publication. | array | yes |  | Authors |  | Doe JD
+publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
+doi | The publication digital object identifier (doi) of the publication. | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
+pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
+publication_url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
+
+## Channel<a name='Channel'></a>
+_Information about a single microscope channel._
+
+Location: module/protocol/channel.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string | yes |  | Channel ID |  | 1; A
+excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
+filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
+multiplexed | Were multiple targets detected simultaneously in this channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
+target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
+exposure_time | Acquisition time for a single image per channel in miliseconds | number | yes |  | Exposure time |  | 400
+
+## Target<a name='Target'></a>
+_Information about a single microscope channel._
+
+Location: module/protocol/target.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook. | string | no |  | Target molecule name |  | ACTA1; cFos
+molecule_id | An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot). | string | no |  | Target molecule identifier. |  | CHEBI:85345; ensembl_9606
+subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
+reagent_name | Name of reagent used to detect target. | string | no |  | Reagent name |  | 
+purchased_reagent_details | Information describing purchased reagent used to detect target. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased reagent details |  | 
+probe_sequence | Sequence of a probe used to detect target. | string | no |  | Probe sequence |  | 
+fluorophore | Fluorophore used to detect target. | string | no |  | Fluorophore |  | FITC
+assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; smFISH; immunofluorescence; fluorescent cell stain
+multiplexed | Were multiple targets detected simultaneously in one channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
+channel_id | Channel ID used to assay signal. Should be consistent with the ID in the channel tab. | array | no |  | Channel |  | 1; A
 

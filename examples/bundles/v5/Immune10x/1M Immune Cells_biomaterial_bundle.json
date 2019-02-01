@@ -1,0 +1,2231 @@
+{
+    "biomaterials": [
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 3971, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "3_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:35.770Z", 
+                "updateDate": "2018-03-22T13:06:25.575Z", 
+                "document_id": "89d19831-90b4-491f-9557-02927de49331"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.147Z", 
+                "updateDate": "2018-03-22T13:06:25.542Z", 
+                "document_id": "14252822-624b-4ec0-966c-80f6002239b8"
+            }
+        }, 
+        {
+            "content": {
+                "is_living": true, 
+                "biological_sex": "female", 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "development_stage": {
+                    "text": "adult", 
+                    "ontology": "EFO:0001272"
+                }, 
+                "organism_age": "52", 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "BM1", 
+                    "biomaterial_name": "Bone Marrow donor 1"
+                }, 
+                "organism_age_unit": {
+                    "text": "years", 
+                    "ontology": "UO:0000036"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.313Z", 
+                "updateDate": "2018-03-22T13:05:08.886Z", 
+                "document_id": "5a53deea-f93b-4731-a8c3-92d0a43403c7"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4322, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "4_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:36.135Z", 
+                "updateDate": "2018-03-22T13:06:22.266Z", 
+                "document_id": "12f816b7-811c-44ce-bfd7-53591416be20"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:41.506Z", 
+                "updateDate": "2018-03-22T13:06:22.067Z", 
+                "document_id": "0173627a-0cd9-4236-a785-8f89c2674122"
+            }
+        }, 
+        {
+            "content": {
+                "is_living": true, 
+                "biological_sex": "male", 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "development_stage": {
+                    "text": "adult", 
+                    "ontology": "EFO:0001272"
+                }, 
+                "organism_age": "39", 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "BM3", 
+                    "biomaterial_name": "Bone Marrow donor 3"
+                }, 
+                "organism_age_unit": {
+                    "text": "years", 
+                    "ontology": "UO:0000036"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.286Z", 
+                "updateDate": "2018-03-22T13:05:08.678Z", 
+                "document_id": "8a4c86c2-e988-49c3-8aab-d5dfe317ed5d"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 5280, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "3_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:36.930Z", 
+                "updateDate": "2018-03-22T13:05:50.384Z", 
+                "document_id": "6a7cc495-e55f-4c71-af82-279ad5e14b16"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:46.118Z", 
+                "updateDate": "2018-03-22T13:05:35.012Z", 
+                "document_id": "129af8c9-beaa-4640-a942-8bcba996efe9"
+            }
+        }, 
+        {
+            "content": {
+                "is_living": true, 
+                "biological_sex": "male", 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "development_stage": {
+                    "text": "adult", 
+                    "ontology": "EFO:0001272"
+                }, 
+                "organism_age": "50", 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "BM2", 
+                    "biomaterial_name": "Bone Marrow donor 2"
+                }, 
+                "organism_age_unit": {
+                    "text": "years", 
+                    "ontology": "UO:0000036"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.256Z", 
+                "updateDate": "2018-03-22T13:05:10.161Z", 
+                "document_id": "65757fa2-3dd1-4ecd-9581-a22c0f4fd40e"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4234, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "7_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:36.964Z", 
+                "updateDate": "2018-03-22T13:05:50.533Z", 
+                "document_id": "ff6aac07-14db-4b86-bd1f-f81cf3ae8d5f"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:49.282Z", 
+                "updateDate": "2018-03-22T13:05:31.705Z", 
+                "document_id": "8531a59d-dbc1-47dd-ad41-9e493f949252"
+            }
+        }, 
+        {
+            "content": {
+                "is_living": true, 
+                "biological_sex": "male", 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "development_stage": {
+                    "text": "adult", 
+                    "ontology": "EFO:0001272"
+                }, 
+                "organism_age": "29", 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "BM4", 
+                    "biomaterial_name": "Bone Marrow donor 4"
+                }, 
+                "organism_age_unit": {
+                    "text": "years", 
+                    "ontology": "UO:0000036"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.392Z", 
+                "updateDate": "2018-03-22T13:05:08.625Z", 
+                "document_id": "561a59a0-3510-49f9-9ef4-cb241ba432ad"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4258, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "6_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.066Z", 
+                "updateDate": "2018-03-22T13:05:50.586Z", 
+                "document_id": "865fc7dc-5868-4100-a10c-1fc52465c62b"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:47.845Z", 
+                "updateDate": "2018-03-22T13:05:31.554Z", 
+                "document_id": "471b1b1c-112a-4f78-9947-67f547362d5d"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4067, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "1_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.261Z", 
+                "updateDate": "2018-03-22T13:06:20.155Z", 
+                "document_id": "0d4b6e66-dd41-4699-9c6d-542efb27bd0d"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.095Z", 
+                "updateDate": "2018-03-22T13:06:20.070Z", 
+                "document_id": "d0456548-ebbe-4817-9711-ec72c67e5d8b"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4178, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "3_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.325Z", 
+                "updateDate": "2018-03-22T13:05:50.801Z", 
+                "document_id": "e19068e8-b32a-4b87-821b-ddb5f8367b6b"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.106Z", 
+                "updateDate": "2018-03-22T13:05:35.315Z", 
+                "document_id": "8b557d50-2ed9-4161-bb20-0a2fdb3a6a1e"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4190, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "5_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.380Z", 
+                "updateDate": "2018-03-22T13:06:24.408Z", 
+                "document_id": "8cbf17ab-0491-4729-bca0-f7ca1ca46ac5"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:48.460Z", 
+                "updateDate": "2018-03-22T13:06:24.352Z", 
+                "document_id": "54041f00-5425-4841-aeb0-44635493f863"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4219, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "7_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.498Z", 
+                "updateDate": "2018-03-22T13:06:24.925Z", 
+                "document_id": "f3d33937-c174-440a-826b-288c3ab6fecb"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:49.515Z", 
+                "updateDate": "2018-03-22T13:06:24.702Z", 
+                "document_id": "d7c43b62-84db-42f8-8e24-f6977352be3a"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 5107, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "2_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.748Z", 
+                "updateDate": "2018-03-22T13:05:50.906Z", 
+                "document_id": "0a25319a-b1fc-49e0-bb82-bf59ae59140f"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:47.583Z", 
+                "updateDate": "2018-03-22T13:05:34.944Z", 
+                "document_id": "ad2a5c80-406d-4a01-83e5-37d0b7086bbd"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4075, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "4_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:38.202Z", 
+                "updateDate": "2018-03-22T13:06:19.311Z", 
+                "document_id": "17cde1c9-bfb0-4b80-9bf9-708a8fb467cd"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:41.790Z", 
+                "updateDate": "2018-03-22T13:06:19.248Z", 
+                "document_id": "b78c82c0-ad5f-461f-9fce-e67c97602faa"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4294, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "1_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:38.319Z", 
+                "updateDate": "2018-03-22T13:06:25.290Z", 
+                "document_id": "f536a3c7-1bc3-468e-9855-d8d23bb39834"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:38.739Z", 
+                "updateDate": "2018-03-22T13:06:25.239Z", 
+                "document_id": "44340079-15ba-4072-be93-4d439bb9cb9b"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4161, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "1_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:38.413Z", 
+                "updateDate": "2018-03-22T13:05:51.043Z", 
+                "document_id": "7e7349c4-2a65-4f91-9c6d-d4dd0e18f8f4"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.028Z", 
+                "updateDate": "2018-03-22T13:05:34.321Z", 
+                "document_id": "78a2c734-4024-42c3-9c75-9ada4d7de247"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 3969, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "2_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.868Z", 
+                "updateDate": "2018-03-22T13:06:19.998Z", 
+                "document_id": "200ebc6a-586c-4b8f-915f-9e400565a5fa"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:47.532Z", 
+                "updateDate": "2018-03-22T13:06:19.966Z", 
+                "document_id": "1f28f8bc-c09a-444b-b2e9-d3be138186cd"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 5118, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "4_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.927Z", 
+                "updateDate": "2018-03-22T13:05:51.088Z", 
+                "document_id": "ea3cba4b-ef22-4494-a935-642d1d4f5978"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:41.612Z", 
+                "updateDate": "2018-03-22T13:05:34.718Z", 
+                "document_id": "1038bf6e-2d8c-4ca4-83a3-62b377a18697"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 3854, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "3_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.017Z", 
+                "updateDate": "2018-03-22T13:06:19.881Z", 
+                "document_id": "e45d3448-bcd1-4293-9e25-2c1a7d0ba665"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "3_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:49.385Z", 
+                "updateDate": "2018-03-22T13:06:19.712Z", 
+                "document_id": "5c8daa49-91e8-430e-85aa-c6ad16fc2278"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4995, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "8_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.140Z", 
+                "updateDate": "2018-03-22T13:05:51.116Z", 
+                "document_id": "f35f8611-5315-4bb8-a291-c3ae3c86c052"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.718Z", 
+                "updateDate": "2018-03-22T13:05:34.026Z", 
+                "document_id": "3bb6ddca-c2de-45b5-8a07-60f1a74882d7"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4132, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "7_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.188Z", 
+                "updateDate": "2018-03-22T13:06:20.944Z", 
+                "document_id": "6ca02d67-7c07-41c6-ba75-a17208d794b9"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:49.434Z", 
+                "updateDate": "2018-03-22T13:06:20.538Z", 
+                "document_id": "64365171-a7ee-4f18-848e-8c29085ff5d6"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4226, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "8_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.512Z", 
+                "updateDate": "2018-03-22T13:06:23.458Z", 
+                "document_id": "5f48613e-f677-4c57-87ed-078d56c17163"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.664Z", 
+                "updateDate": "2018-03-22T13:06:23.373Z", 
+                "document_id": "85b72e84-64b6-4f22-9cf2-6f3252800866"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4466, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "6_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.772Z", 
+                "updateDate": "2018-03-22T13:06:21.245Z", 
+                "document_id": "9a13b82d-7773-4a05-ba83-1e520e2c33dd"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.086Z", 
+                "updateDate": "2018-03-22T13:06:21.128Z", 
+                "document_id": "076c7d30-47d7-4acf-8f6d-94dfdc0c277d"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4354, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "2_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:40.860Z", 
+                "updateDate": "2018-03-22T13:05:51.168Z", 
+                "document_id": "cd69ca24-cc43-4698-9442-683cd2a226e6"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:47.555Z", 
+                "updateDate": "2018-03-22T13:05:35.249Z", 
+                "document_id": "cc7a3845-20b7-4640-81ab-8a796cdbc2d1"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 5018, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "7_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:41.184Z", 
+                "updateDate": "2018-03-22T13:05:51.191Z", 
+                "document_id": "cdbb6dc0-bb40-47ad-8094-d506c92098da"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "7_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:46.228Z", 
+                "updateDate": "2018-03-22T13:05:34.529Z", 
+                "document_id": "a1d76852-1e0d-4b1f-bb29-94b2212a10bf"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4302, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "5_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:41.948Z", 
+                "updateDate": "2018-03-22T13:06:21.890Z", 
+                "document_id": "263030e5-e237-4ba3-98c5-3ca6c5726fb8"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:48.520Z", 
+                "updateDate": "2018-03-22T13:06:21.667Z", 
+                "document_id": "70c50dd3-ce5e-4ce2-aa61-e1ec8570dfd4"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4866, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "1_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:42.105Z", 
+                "updateDate": "2018-03-22T13:06:23.841Z", 
+                "document_id": "f946baa0-b873-4479-a92d-f8e6194ed6a5"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "1_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:38.897Z", 
+                "updateDate": "2018-03-22T13:06:23.742Z", 
+                "document_id": "b634472e-142d-486e-abc5-e1bcc39ecedf"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 5247, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "5_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:42.268Z", 
+                "updateDate": "2018-03-22T13:05:51.341Z", 
+                "document_id": "86096168-a19d-4572-99f0-27672b07901c"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:48.483Z", 
+                "updateDate": "2018-03-22T13:05:34.863Z", 
+                "document_id": "2f8aa9ca-2935-4a05-bec6-698888d44568"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 5102, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "6_BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM2_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:42.904Z", 
+                "updateDate": "2018-03-22T13:05:51.462Z", 
+                "document_id": "d34f61f8-a755-4b43-8f3a-27ac16c6f0d6"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM2"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:46.164Z", 
+                "updateDate": "2018-03-22T13:05:34.374Z", 
+                "document_id": "60ac9ec8-1cc1-4f92-bef3-e28a865092b1"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4039, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "4_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:43.168Z", 
+                "updateDate": "2018-03-22T13:06:24.222Z", 
+                "document_id": "0cc46076-07b1-4a74-a85c-f896741b3c29"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "4_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:41.432Z", 
+                "updateDate": "2018-03-22T13:06:24.029Z", 
+                "document_id": "f2001495-b87d-4d06-afc0-8faba100cb9b"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4353, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "8_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:44.209Z", 
+                "updateDate": "2018-03-22T13:05:51.574Z", 
+                "document_id": "b9d0ac36-4f59-41bb-a40a-470d60783b6f"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.420Z", 
+                "updateDate": "2018-03-22T13:05:31.825Z", 
+                "document_id": "6a388900-9cd7-482e-b9be-028dbb6e50e9"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4122, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "2_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:44.344Z", 
+                "updateDate": "2018-03-22T13:06:25.432Z", 
+                "document_id": "84bacf41-cc60-4884-9c37-db252fd1dc95"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "2_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:47.751Z", 
+                "updateDate": "2018-03-22T13:06:25.384Z", 
+                "document_id": "24ec3b31-7ca1-4c29-af02-f5b56d2cb997"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4136, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "5_BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM4_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:46.889Z", 
+                "updateDate": "2018-03-22T13:06:19.085Z", 
+                "document_id": "71853e95-36f0-411c-9165-29f3d96fbd61"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM4", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "5_BM4"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:48.333Z", 
+                "updateDate": "2018-03-22T13:06:18.975Z", 
+                "document_id": "375805c0-19cc-4d64-bc66-adc361e3dc45"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4278, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "8_BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM3_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:47.996Z", 
+                "updateDate": "2018-03-22T13:06:20.378Z", 
+                "document_id": "e5e00763-04e8-412b-83da-ed4bd926936e"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM3", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "8_BM3"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:39.694Z", 
+                "updateDate": "2018-03-22T13:06:20.314Z", 
+                "document_id": "2f34d70a-25b6-49a0-a8e3-0c9ef987883f"
+            }
+        }, 
+        {
+            "content": {
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "total_estimated_cells": 4353, 
+                "target_cell_type": [
+                    {
+                        "text": "bone marrow hematopoietic cell", 
+                        "ontology": "CL:1001610"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "6_BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM1_cells"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:48.723Z", 
+                "updateDate": "2018-03-22T13:06:24.532Z", 
+                "document_id": "966a0995-5c2c-4464-85a1-4e0cc1d8749e"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "hematopoietic system", 
+                    "ontology": "UBERON:0002390"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BM1", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "6_BM1"
+                }, 
+                "organ_part": {
+                    "text": "bone marrow", 
+                    "ontology": "UBERON:0002371"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:37.126Z", 
+                "updateDate": "2018-03-22T13:06:24.506Z", 
+                "document_id": "c887997e-4aad-41a2-a846-fbc4e4ef1d7f"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/biomaterial", 
+    "schema_version": "5.1.0", 
+    "schema_type": "biomaterial_bundle"
+}

@@ -1,0 +1,14 @@
+{
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/protocol/sequencing/5.1.0/sequencing_protocol",
+  "schema_type": "protocol",
+  "protocol_core": {
+    "protocol_id": "seq_protocol_1"
+  },
+  "paired_end": true,
+  "instrument_manufacturer_model": {
+    "text": "Illumina HiSeq 4000"
+  },
+  "sequencing_approach": {
+    "text": "10x sequencing"
+  }
+}

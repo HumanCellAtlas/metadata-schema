@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/medical_history",
-    "description": "Information about the medical history of an organism.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about the medical history of a donor.",
     "additionalProperties": false,
-    "title": "medical_history",
+    "title": "Medical history",
+    "name": "medical_history",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/medical_history"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/medical_history"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -18,36 +18,44 @@
             "example": "4.6.1"
         },
         "alcohol_history": {
-            "description": "Number of drinks consumed on a typical day.",
+            "description": "Estimated amount of alcohol consumed per day.",
             "type": "string",
-            "user_friendly": "Alcohol history"
+            "user_friendly": "Alcohol history",
+            "example": "3-6 alcohol units/day; 1 drink per day",
+            "guidelines": "Enter the amount consumed per day using units such as alcohol units (10mL or 8g of alcohol) or drinks (14g of alcohol)."
         },
         "medication": {
-           "description": "List of medications the organism was currently taking at time of biomaterial donation.",
-           "type": "string",
-            "user_friendly": "Medications"
+            "description": "Medications the individual was taking at time of biomaterial collection.",
+            "type": "string",
+            "user_friendly": "Medications",
+            "example": "Naproxen 500mg/day; Citalopram 20mg/day",
+            "guidelines": "Enter the medication and dosage. Separate multiple medications with commas."
+        },
+        "smoking_history": {
+            "description": "Estimated number of cigarettes smoked per day.",
+            "type": "string",
+            "user_friendly": "Smoking history",
+            "example": "20 cigarettes/day for 25 years, stopped 2000",
+            "guidelines": "Enter an estimated number of cigarettes smoked per day and for how many years."
         },
         "nutritional_state": {
-            "description": "Should be one of normal, fasting, or feeding tube removed.",
+            "description": "Nutritional state of individual at time of biomaterial collection.",
+            "type": "string",
             "enum": [
                 "normal",
                 "fasting",
                 "feeding tube removed"
             ],
-            "user_friendly": "Nutritional state"
-        },
-        "smoking_history": {
-            "description": "Estimated number of cigarettes smoked per day and for how many years.",
-            "type": "string",
-            "user_friendly": "Smoking history"
+            "user_friendly": "Nutritional state",
+            "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
         "test_results": {
-            "description": "Results from any medical tests performed on the individual.",
+            "description": "Results from medical tests performed on the individual.",
             "type": "string",
             "user_friendly": "Test results"
         },
         "treatment": {
-            "description": "Any treatments the individual has undergone.",
+            "description": "Treatments the individual has undergone prior to biomaterial collection.",
             "type": "string",
             "user_friendly": "Treatments"
         }

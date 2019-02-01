@@ -1,0 +1,23 @@
+{
+    "protocols": [
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_description": "SmartSeq2 sequencing protocol", 
+                    "protocol_id": "seq_protocol_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-15T15:58:19.606Z", 
+                "updateDate": "2018-03-15T15:58:30.442Z", 
+                "document_id": "6838a918-58a4-4bf8-a273-4191cabc2663"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/protocol", 
+    "schema_version": "5.1.0", 
+    "schema_type": "protocol_bundle"
+}

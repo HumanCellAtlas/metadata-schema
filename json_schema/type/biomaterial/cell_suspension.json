@@ -1,20 +1,20 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension",
-    "description": "Information about the cell suspension derived from the collected or cultured specimen",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about the suspension of cells or nuclei derived from the collected or cultured specimen.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
         "biomaterial_core"
     ],
-    "title": "cell_suspension",
+    "title": "Cell suspension",
+    "name": "cell_suspension",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/cell_suspension"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/cell_suspension"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -29,46 +29,65 @@
                 "biomaterial"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/biomaterial/5.1.0/biomaterial_core"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "cell_morphology": {
             "description": "Features relating to the morphology of cells in a biomaterial.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/cell_morphology",
+            "$ref": "module/biomaterial/cell_morphology.json",
             "user_friendly": "Cell morphology"
         },
         "growth_conditions": {
             "description": "Features relating to the growth and/or maintenance of a biomaterial.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/growth_conditions",
+            "$ref": "module/biomaterial/growth_conditions.json",
             "user_friendly": "Growth conditions"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the suspension.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/species_ontology"
+                "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
-        "target_cell_type": {
-            "description" : "Cell types expected to be present in the suspension. Should be a child term of https://www.ebi.ac.uk/ols/ontologies/clo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCL_0000003.",
+        "selected_cell_type": {
+            "description" : "The cell type(s) selected to be present in the suspension.",
             "type": "array",
             "items": {
-		        "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/cell_type_ontology"
+		        "$ref": "module/ontology/cell_type_ontology.json"
 	        },
-            "user_friendly": "Target cell type"
+            "user_friendly": "Selected cell type"
        },
         "total_estimated_cells": {
-            "description": "Total estimated number of cells in biomaterial. May be 1 for well-based assays.",
+            "description": "Total estimated number of cells in the suspension.",
             "type": "integer",
             "maximum": 1000000000,
             "minimum": 0,
-            "user_friendly": "Total estimated cell count"
+            "example": 2100,
+            "user_friendly": "Estimated cell count",
+            "guidelines": "Enter 1 for well-based assays."
+        },
+        "plate_based_sequencing" : {
+            "description": "Fields specific for plate-based sequencing experiments.",
+            "type": "object",
+            "$ref": "module/process/sequencing/plate_based_sequencing.json",
+            "user_friendly": "Plate-based sequencing"
+        },
+        "timecourse": {
+            "description": "Information relating to a timecourse associated with this cell suspension.",
+            "type": "object",
+            "$ref": "module/biomaterial/timecourse.json",
+            "user_friendly": "Timecourse"
         }
      }
 }

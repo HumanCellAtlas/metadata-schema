@@ -1,5 +1,58 @@
 {
-    "protocols": [], 
+    "protocols": [
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_description": "dissociating tissues into single cells", 
+                    "protocol_id": "dis_protocol_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-16T17:12:32.317Z", 
+                "updateDate": "2018-03-16T17:12:50.547Z", 
+                "document_id": "9f99ce84-55de-4bd3-843b-8d81b53dd930"
+            }
+        }, 
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_description": "single-cell sorting in 96-well plates followed by cDNA preparation using Smart-seq2", 
+                    "protocol_id": "lib_prep_protocol_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "protocol_type": {
+                    "text": "nucleic acid library construction protocol", 
+                    "ontology": "EFO:0004184"
+                }, 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-16T17:12:32.329Z", 
+                "updateDate": "2018-03-16T17:12:51.582Z", 
+                "document_id": "8d38be60-7410-4ce3-baca-130b9dcbc548"
+            }
+        }, 
+        {
+            "content": {
+                "protocol_core": {
+                    "protocol_description": "SmartSeq2 sequencing protocol", 
+                    "protocol_id": "seq_protocol_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/protocol/5.1.0/protocol", 
+                "schema_type": "protocol"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-16T17:12:32.340Z", 
+                "updateDate": "2018-03-16T17:12:52.608Z", 
+                "document_id": "fc9f6a03-6a60-4679-a76d-616207399206"
+            }
+        }
+    ], 
     "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/protocol", 
     "schema_version": "5.1.0", 
     "schema_type": "protocol_bundle"

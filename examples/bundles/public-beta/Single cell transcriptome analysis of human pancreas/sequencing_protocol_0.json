@@ -1,0 +1,20 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/sequencing/9.0.2/sequencing_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "sequencing_protocol_1"
+    },
+    "instrument_manufacturer_model": {
+        "text": "Illumina NextSeq 500",
+        "ontology": "EFO:0008566"
+    },
+    "paired_end": true,
+    "sequencing_approach": {
+        "text": "RNA-Seq"
+    },
+    "provenance": {
+        "document_id": "319dd8c8-e9d6-40df-bf72-e0423f4f5418",
+        "submission_date": "2018-09-06T14:18:31.870Z",
+        "update_date": "2018-09-06T14:18:35.890Z"
+    }
+}

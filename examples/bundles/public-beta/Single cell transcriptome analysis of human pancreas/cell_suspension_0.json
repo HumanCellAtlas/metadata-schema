@@ -1,0 +1,24 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "GSM2171880 1",
+        "biomaterial_description": "Single cell from human pancreas",
+        "ncbi_taxon_id": [
+            9606
+        ],
+        "insdc_biomaterial": "SRS1458605"
+    },
+    "selected_cell_type": [
+        {
+            "text": "pancreatic A cell",
+            "ontology": "CL:0000171"
+        }
+    ],
+    "total_estimated_cells": 1,
+    "provenance": {
+        "document_id": "c61125ab-d5e0-4d93-b0a7-2deac1729f65",
+        "submission_date": "2018-09-06T14:14:55.036Z",
+        "update_date": "2018-09-06T14:25:54.342Z"
+    }
+}

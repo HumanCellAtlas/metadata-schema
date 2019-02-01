@@ -3,7 +3,7 @@
         {
             "content": {
                 "file_core": {
-                    "file_name": "SRR3934351_1.fastq.gz", 
+                    "file_name": "SRR3934349_1.fastq.gz", 
                     "file_format": "fastq.gz"
                 }, 
                 "read_index": "read1", 
@@ -11,14 +11,14 @@
                 "schema_type": "file"
             }, 
             "hca_ingest": {
-                "submissionDate": "2018-03-14T14:22:31.409Z", 
-                "document_id": "8b436953-485e-4a30-a842-33d9f41744fe"
+                "submissionDate": "2018-03-16T17:12:33.057Z", 
+                "document_id": "f75a4cce-973e-44d4-ad2e-a0d0ad457ed3"
             }
         }, 
         {
             "content": {
                 "file_core": {
-                    "file_name": "SRR3934351_2.fastq.gz", 
+                    "file_name": "SRR3934349_2.fastq.gz", 
                     "file_format": "fastq.gz"
                 }, 
                 "read_index": "read2", 
@@ -26,12 +26,12 @@
                 "schema_type": "file"
             }, 
             "hca_ingest": {
-                "submissionDate": "2018-03-14T14:22:31.425Z", 
-                "document_id": "5f3dbe2e-734d-4523-be15-7787afdf2cbb"
+                "submissionDate": "2018-03-16T17:12:33.068Z", 
+                "document_id": "5bbcad91-0102-4f4a-a86d-9ec7a5b76cae"
             }
         }
     ], 
-    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/file", 
+    "describedBy": "https://schema.humancellatlas.org/bundle/1.0.0/file", 
     "schema_version": "1.0.0", 
     "schema_type": "file_bundle"
 }

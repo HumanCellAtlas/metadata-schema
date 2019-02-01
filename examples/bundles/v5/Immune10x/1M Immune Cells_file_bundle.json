@@ -1,0 +1,3271 @@
+{
+    "files": [
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_1_S1_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:08.987Z", 
+                "document_id": "019f823a-715d-4ad7-88db-c05652b0e7fe"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_1_S1_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.078Z", 
+                "document_id": "30556506-9afc-4c13-9c15-c72c5e48c32f"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_1_S1_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.104Z", 
+                "document_id": "78f89950-af62-4481-a1d9-aaedae6031c8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_1_S1_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.150Z", 
+                "document_id": "5b005db6-3398-4f75-b81a-a2ef1280d260"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_1_S1_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.213Z", 
+                "document_id": "792917fd-e6a1-4907-8a46-b451937849c8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_1_S1_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.231Z", 
+                "document_id": "5998be97-22df-41ac-9995-f2f4143e6c56"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_2_S2_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.261Z", 
+                "document_id": "34ba642c-768c-4d4d-8a59-dc0ab00d0aa3"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_2_S2_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.284Z", 
+                "document_id": "50f4026c-b229-4e9c-bd0c-70736be8c6ef"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_2_S2_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.317Z", 
+                "document_id": "6094f25d-7c41-4cdc-b50e-6e23e3839994"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_2_S2_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.332Z", 
+                "document_id": "643e2c13-5872-48d1-9b5d-3f31e3d097bb"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_2_S2_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.344Z", 
+                "document_id": "cfbbd032-9f0d-4c4b-b8eb-b1bad18bc598"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_2_S2_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.385Z", 
+                "document_id": "d99af0bf-51a2-45cf-bb1d-efb626e8246a"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_3_S3_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.396Z", 
+                "document_id": "3887646d-550c-494a-b4bc-f3e943329da8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_3_S3_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.410Z", 
+                "document_id": "89bbcc4f-adfc-44ad-a438-004c68dad18d"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_3_S3_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.424Z", 
+                "document_id": "b8eaaa0e-90bc-4bb3-8e5b-a940c1394b85"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_3_S3_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.442Z", 
+                "document_id": "8c537af0-2b8f-4a34-b1c8-bce7162b2235"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_3_S3_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.459Z", 
+                "document_id": "7fcf2c9d-40df-4e2c-affb-495c5ae14a6d"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_3_S3_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.488Z", 
+                "document_id": "1d2b2266-b453-4e0a-bb99-dd2026afd6c1"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_4_S4_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.506Z", 
+                "document_id": "8c9a1c88-0f03-41b7-af24-bde404bd0aa2"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_4_S4_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.520Z", 
+                "document_id": "6f89954f-92a3-4270-8a8a-1e710666b65d"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_4_S4_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.535Z", 
+                "document_id": "15867319-035e-4022-abae-1fd592637029"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_4_S4_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.549Z", 
+                "document_id": "9ec64d3a-5d90-419c-ad46-48ab7c85ae75"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_4_S4_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.561Z", 
+                "document_id": "c5d7e225-c73a-43e0-a607-6c2495abd058"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_4_S4_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.574Z", 
+                "document_id": "e505b0f0-9eb4-498d-aac7-3524c444b288"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_5_S5_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.601Z", 
+                "document_id": "94537221-af16-4902-8676-a004003996b3"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_5_S5_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.612Z", 
+                "document_id": "8c774988-aa9a-49ff-b23c-9d048f64f779"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_5_S5_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.623Z", 
+                "document_id": "7da8a105-e87f-4f96-8d56-cec6397469dc"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_5_S5_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.635Z", 
+                "document_id": "70338172-62be-42a2-bdd1-e9aa45dd98b5"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_5_S5_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.647Z", 
+                "document_id": "eb53bb84-9ceb-4dcf-9a6c-5ee15589b1a8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_5_S5_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.657Z", 
+                "document_id": "a94a3d7f-03b3-4776-9da2-204145e13812"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_6_S6_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.666Z", 
+                "document_id": "5ea7f69f-28cc-49e2-9eb3-da58d40a2268"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_6_S6_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.679Z", 
+                "document_id": "507c5569-28a9-4b4e-aab4-f3da8b4515d2"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_6_S6_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.704Z", 
+                "document_id": "c7238915-d32c-4626-8a2c-27caa0384dcb"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_6_S6_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.724Z", 
+                "document_id": "87305615-162d-462d-99e0-f8b728c8457e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_6_S6_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.765Z", 
+                "document_id": "3d047ba5-944b-4c51-bb75-656458696482"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_6_S6_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.789Z", 
+                "document_id": "812e8421-a9c2-4a30-96b0-7b584d5926d4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_7_S7_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.815Z", 
+                "document_id": "9a356f39-47e6-4192-b043-ffb96e1285cf"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_7_S7_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.844Z", 
+                "document_id": "f612fcc8-aad0-49d5-a480-5a3954637feb"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_7_S7_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.867Z", 
+                "document_id": "7bdf364a-5460-4e15-9b6f-2b01be61d727"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_7_S7_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.882Z", 
+                "document_id": "a73ca09b-1734-41cb-8cfa-a21dd023f487"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_7_S7_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.912Z", 
+                "document_id": "718979fb-2a0f-466c-8a8c-c36f128d8ba3"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_7_S7_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.939Z", 
+                "document_id": "47bf7f80-a1b0-4b9f-a65d-7e7b3397d475"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_8_S8_L007_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.974Z", 
+                "document_id": "220d738d-3593-4c63-8c68-1e36bbe8e992"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_8_S8_L007_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:09.992Z", 
+                "document_id": "e9643f8e-6654-4675-b905-d696e11c2a6b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 7, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_8_S8_L007_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.009Z", 
+                "document_id": "fc833937-258e-4af1-bcb9-48ad5b39f247"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_8_S8_L008_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.028Z", 
+                "document_id": "eb86cc34-cb41-4e67-b4c7-a02077d866d5"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_8_S8_L008_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.037Z", 
+                "document_id": "80c0a2aa-d791-459f-91f7-1d2dc7b90234"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 8, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM1_HiSeq_8_S8_L008_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.055Z", 
+                "document_id": "c08d60a0-6ec2-4b70-8776-4bcd5897f9b2"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_1_S9_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.066Z", 
+                "document_id": "f449a216-4e6f-4aa8-9d06-869fb5938c5b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_1_S9_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.078Z", 
+                "document_id": "29e73f27-878f-4b8b-b4fa-fafe0203c794"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_1_S9_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.101Z", 
+                "document_id": "f4b5b11e-5a93-4965-a9ea-39acc0d03bf0"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_1_S9_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.123Z", 
+                "document_id": "81ffa5dd-f092-48e8-9201-4d6046d0cf98"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_1_S9_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.135Z", 
+                "document_id": "9a60ef59-8074-4e23-9792-e1f34b20cbb0"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_1_S9_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.148Z", 
+                "document_id": "36d8c45e-0cc2-4273-9cc4-ac31765e2884"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_2_S10_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.165Z", 
+                "document_id": "511dc3c0-cf27-44ad-a67a-7335668b09da"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_2_S10_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.182Z", 
+                "document_id": "f6856d53-7844-4af6-95ef-3e5ab8bec9a4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_2_S10_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.195Z", 
+                "document_id": "1f93e902-45a3-47ca-97fc-c4ec672dde22"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_2_S10_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.210Z", 
+                "document_id": "46bec6d8-c2fa-4c19-82c1-97bce9e413f4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_2_S10_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.223Z", 
+                "document_id": "26062300-3ee4-442a-9411-b2d4814ca694"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_2_S10_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.244Z", 
+                "document_id": "a72abe71-bf49-4b87-9fbd-5988854302e6"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_3_S11_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.307Z", 
+                "document_id": "1e0b5572-9eba-4df4-9d74-dbcf43d19600"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_3_S11_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.334Z", 
+                "document_id": "6aa7b9eb-6222-4b76-8d65-4bb58b20be3a"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_3_S11_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.370Z", 
+                "document_id": "5cdbc278-d69c-4d1d-9051-7d05747713c8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_3_S11_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.394Z", 
+                "document_id": "a53f591c-7807-43b4-a4ab-39f8e071d2c6"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_3_S11_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.434Z", 
+                "document_id": "079b45af-d3a0-4c6e-9f18-4cfae70d8643"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_3_S11_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.464Z", 
+                "document_id": "cb98b1ec-dd26-45c8-b4fa-9547daa4fa06"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_4_S12_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.489Z", 
+                "document_id": "5469d559-f586-42d6-af3b-82ba29688072"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_4_S12_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.506Z", 
+                "document_id": "4d45aaed-ec86-4b78-984f-07baf9411851"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_4_S12_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.566Z", 
+                "document_id": "122fdc3e-57dc-4cb5-8f0a-b3797a0847f2"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_4_S12_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.584Z", 
+                "document_id": "ac1eee42-d2b2-4d92-aee7-db9da794ad61"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_4_S12_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.604Z", 
+                "document_id": "d10a6d88-4fc8-4150-b9e2-77e58730c9b2"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_4_S12_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.613Z", 
+                "document_id": "e5babc91-9147-4c06-8978-155a1d50e0d2"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_5_S13_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.648Z", 
+                "document_id": "a2dbefd0-7976-4580-9766-597bfe546638"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_5_S13_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.675Z", 
+                "document_id": "f1a2db10-0e7a-4764-aa15-3fc0aad0b16e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_5_S13_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.700Z", 
+                "document_id": "26bd341c-93e8-45c1-b3c0-3ec9363a696e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_5_S13_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.764Z", 
+                "document_id": "612b2d69-59e3-4409-98f0-c5e4553a620a"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_5_S13_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.875Z", 
+                "document_id": "e429dd1a-120c-49ee-aa47-272af91e4ef9"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_5_S13_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.931Z", 
+                "document_id": "4849eeb7-148d-499d-ba74-da7552b126bf"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_6_S14_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.962Z", 
+                "document_id": "46667349-235d-4c02-9b96-97a936c8cf81"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_6_S14_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:10.993Z", 
+                "document_id": "126f6148-b2b5-4244-a0d2-d0a410622b84"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_6_S14_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.021Z", 
+                "document_id": "96c11217-8d75-443c-bd0d-f39e72748330"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_6_S14_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.050Z", 
+                "document_id": "ee8e68d9-850b-4a4e-8f46-3e1aab4029af"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_6_S14_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.066Z", 
+                "document_id": "3d3310b6-e3b4-45b3-a425-be77a1dcc1f0"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_6_S14_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.099Z", 
+                "document_id": "e3fa6848-f2b3-4ca4-a08f-c453e3d7f1cd"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_7_S15_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.120Z", 
+                "document_id": "f6bc5b4a-b0bf-4f5f-8545-08100e6f3e5c"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_7_S15_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.132Z", 
+                "document_id": "5990597c-fd5f-4ed6-ba80-33bfca33fce4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_7_S15_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.165Z", 
+                "document_id": "154afe7d-49c9-4968-9f3e-7752c6592b07"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_7_S15_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.175Z", 
+                "document_id": "3aa08d44-207c-4c6e-a72e-28e43c5a1332"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_7_S15_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.188Z", 
+                "document_id": "7865d902-50da-495a-aa92-4945690a91b7"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_7_S15_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.199Z", 
+                "document_id": "8890ecb3-8407-4d96-8920-c06bd1e65e2e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_8_S16_L005_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.208Z", 
+                "document_id": "4956764a-d946-40d5-8ad7-4265653728c6"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_8_S16_L005_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.222Z", 
+                "document_id": "2f544a1c-787d-491e-8c2c-e27667607274"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 5, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_8_S16_L005_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.238Z", 
+                "document_id": "63d42eb3-4670-4b53-ad55-690b7670c304"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_8_S16_L006_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.273Z", 
+                "document_id": "a61af8d2-3999-48e8-acb4-f95cba4ba5d4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_8_S16_L006_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.293Z", 
+                "document_id": "86b0b255-5c59-441f-94e7-1e8bc28ce541"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 6, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM2_HiSeq_8_S16_L006_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.318Z", 
+                "document_id": "3b2b42d0-811e-4418-9340-f31e98ae46e4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_1_S17_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.341Z", 
+                "document_id": "3420fb89-8a5a-472e-9e9a-42cacaf1c4df"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_1_S17_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.384Z", 
+                "document_id": "43d16095-1bb0-45da-82bb-9156b9d115f9"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_1_S17_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.401Z", 
+                "document_id": "601663ac-8d1a-4ff8-97f6-a472b1d057f7"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_1_S17_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.417Z", 
+                "document_id": "e9aa8e8e-3e4c-422a-b46b-070af3586477"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_1_S17_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.445Z", 
+                "document_id": "ab8c0e66-517d-4296-b790-a9a77b9f487b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_1_S17_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.464Z", 
+                "document_id": "2711bfaa-34e0-48e7-87c9-303f241af6d4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_2_S18_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.480Z", 
+                "document_id": "4e866693-02e8-46ee-b45f-eb2201047507"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_2_S18_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.526Z", 
+                "document_id": "1d03325b-6950-4cad-a7c5-12193e7cd924"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_2_S18_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.550Z", 
+                "document_id": "a75302c6-3f4b-4a02-8f5f-3d3bfd577961"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_2_S18_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.568Z", 
+                "document_id": "7bc06c2c-0726-425e-8747-8a5c48c9caf1"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_2_S18_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.589Z", 
+                "document_id": "76b1f75a-8d62-470e-85ed-2495d956a155"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_2_S18_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.613Z", 
+                "document_id": "2b48b31a-9767-46ad-8f19-d7029f8075b5"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_3_S19_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.636Z", 
+                "document_id": "2916d777-2339-4e64-bd57-ae47751a9756"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_3_S19_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.659Z", 
+                "document_id": "139b3596-2d04-47f1-ad48-db9dd1c0c4a6"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_3_S19_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.690Z", 
+                "document_id": "df0bc365-39db-4a5f-938b-0be03372178f"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_3_S19_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.700Z", 
+                "document_id": "0a207a4c-ed00-41c2-a033-f14fa3aa603d"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_3_S19_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.737Z", 
+                "document_id": "2fbe17d6-f17d-4109-99ae-d7936668dd55"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_3_S19_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.834Z", 
+                "document_id": "40cc8f56-6f33-4e81-ab7d-9d5dfb21b197"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_4_S20_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.868Z", 
+                "document_id": "57603793-a478-42e9-9001-2199d90c40ed"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_4_S20_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.924Z", 
+                "document_id": "624a6823-ab0c-42d7-9a02-a0ae066eba03"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_4_S20_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:11.980Z", 
+                "document_id": "0fc5a080-0aab-43bd-91d3-8ca37f9e815e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_4_S20_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.069Z", 
+                "document_id": "a9cf92b2-2e1e-405a-8af7-e6c5659075cf"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_4_S20_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.098Z", 
+                "document_id": "b4d3cbe9-e2b0-4997-b9e7-07514210f355"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_4_S20_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.164Z", 
+                "document_id": "ae10c444-64e0-4d5d-b7b2-dab8cf3e1fa2"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_5_S21_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.205Z", 
+                "document_id": "10055e5b-92aa-45c7-8581-a2b7b4c327d8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_5_S21_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.229Z", 
+                "document_id": "642530b9-8cc9-437f-bb95-cf975dbc3456"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_5_S21_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.252Z", 
+                "document_id": "d4573d74-3eaf-4021-8fc9-bd88947fb0df"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_5_S21_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.269Z", 
+                "document_id": "0ad7141f-1a10-4331-b96f-700c4f2e0dfd"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_5_S21_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.287Z", 
+                "document_id": "c1a81f18-25ed-42a8-b650-1332a3da9477"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_5_S21_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.300Z", 
+                "document_id": "70e33e9b-c86a-4c20-ae98-87ea8b6f804d"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_6_S22_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.314Z", 
+                "document_id": "49f91f26-c8d2-4a03-a8f9-566ca0b0c5f5"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_6_S22_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.327Z", 
+                "document_id": "414f2c4e-97a9-4bb4-ad79-8b41d26e5c60"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_6_S22_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.346Z", 
+                "document_id": "8a893577-e24f-4686-91a2-9ebc8fb2fc87"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_6_S22_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.376Z", 
+                "document_id": "d7acb4e5-3617-48c4-8857-c48a535cbe04"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_6_S22_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.408Z", 
+                "document_id": "65303dbe-cd67-48af-9e22-004fb74b36b4"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_6_S22_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.427Z", 
+                "document_id": "30ec3f28-8a99-48db-9b41-819b24fd6308"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_7_S23_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.446Z", 
+                "document_id": "37bd185c-9cca-4a4e-9c6f-0e7caffe014d"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_7_S23_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.460Z", 
+                "document_id": "4efefd6c-33ae-45a7-a4f3-e87010c66b1a"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_7_S23_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.470Z", 
+                "document_id": "30876462-d5d7-4127-a999-4f4e5fa3d0ed"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_7_S23_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.501Z", 
+                "document_id": "61cf7676-677e-44f5-96ab-c93becb7a198"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_7_S23_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.521Z", 
+                "document_id": "d6724023-2b71-4774-b0ae-135c66e2688c"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_7_S23_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.534Z", 
+                "document_id": "de298799-d788-4d5e-8008-066f843013d3"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_8_S24_L003_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.581Z", 
+                "document_id": "b69333fa-017e-4a66-b150-acdde00d413b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_8_S24_L003_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.603Z", 
+                "document_id": "80b9fb40-6423-4f98-a9c6-ae6ebfcf44e8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 3, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_8_S24_L003_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.636Z", 
+                "document_id": "4e2ac7f8-ffd4-4020-bc99-a56d79460e48"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_8_S24_L004_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.693Z", 
+                "document_id": "4f1778b8-36ba-491c-8f81-52290c53c2c8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_8_S24_L004_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.725Z", 
+                "document_id": "7faa6c76-82b0-4ccc-924a-e485532487ad"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 4, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM3_HiSeq_8_S24_L004_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.735Z", 
+                "document_id": "9aad75dc-5dcf-4df0-baca-8499c2d924e6"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_1_S25_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.764Z", 
+                "document_id": "37435578-ad84-4cda-b26e-e324ec14d55f"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_1_S25_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.902Z", 
+                "document_id": "301fbd32-122f-4bcb-ae92-d38bb2467675"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_1_S25_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.952Z", 
+                "document_id": "0e8cd28a-f749-41c3-942b-2798afc9543b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_1_S25_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.974Z", 
+                "document_id": "418810a8-0250-45c0-a870-4f6d5a531296"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_1_S25_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:12.993Z", 
+                "document_id": "cd1577ff-9674-479d-a78e-fc284db4459b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_1_S25_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.010Z", 
+                "document_id": "102341b8-301b-4e18-a286-276b41ff6473"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_2_S26_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.029Z", 
+                "document_id": "b2e77a13-90bd-489f-88dd-416ecdd03d40"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_2_S26_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.044Z", 
+                "document_id": "4ec184d8-3da9-4cd3-ba80-720c22e00b8e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_2_S26_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.062Z", 
+                "document_id": "d47309ea-337b-4b0e-98f9-eac360f830fe"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_2_S26_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.099Z", 
+                "document_id": "b0ab7ea0-118a-4d50-a3ee-18d95f350045"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_2_S26_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.129Z", 
+                "document_id": "14458c29-a8ac-41f9-b947-5c51dcfd2e09"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_2_S26_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.165Z", 
+                "document_id": "0741fe90-7b33-4fde-ab15-5220da955cf0"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_3_S27_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.190Z", 
+                "document_id": "80e21fbc-608d-4d34-80ad-fc9f6012b5d8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_3_S27_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.211Z", 
+                "document_id": "f6335c18-6b33-4a2c-b9d3-b885e8d9d7fc"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_3_S27_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.286Z", 
+                "document_id": "5aecd21e-67c8-417c-bce9-d1d72d368f1f"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_3_S27_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.346Z", 
+                "document_id": "af0bd27c-71a2-4293-8ab1-12cf4da49460"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_3_S27_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.372Z", 
+                "document_id": "56b4752a-e57f-4247-b0ca-daf8bc76a9e9"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_3_S27_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.399Z", 
+                "document_id": "75291774-3870-4b66-a23d-92d5979ab9a0"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_4_S28_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.437Z", 
+                "document_id": "9c0e7076-c3dc-48fe-9b88-85b3f9570d9a"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_4_S28_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.484Z", 
+                "document_id": "117ea643-8c19-48ec-baa3-5bd3c1753b50"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_4_S28_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.592Z", 
+                "document_id": "d13c4ade-2a55-4e4c-a24f-24b728164efe"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_4_S28_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.610Z", 
+                "document_id": "9304d784-61a3-4fbb-a95b-e4bffc9b05ab"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_4_S28_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.630Z", 
+                "document_id": "6b7d00d0-5f3f-4f4c-975a-404a7586bdc8"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_4_S28_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.655Z", 
+                "document_id": "ec7b9dc6-d33e-4e6a-9e48-e9d578a73054"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_5_S29_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.668Z", 
+                "document_id": "4be6b391-17d7-401e-b7ab-8b5d7fc50143"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_5_S29_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.678Z", 
+                "document_id": "2e16daf6-9661-4fb8-8ff7-4cdc1fcf9368"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_5_S29_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.692Z", 
+                "document_id": "0bb2a5a7-ecf1-4502-bbaa-16c880de5441"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_5_S29_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.703Z", 
+                "document_id": "ec473f16-a44c-4d0a-b51b-76ed28fa8c63"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_5_S29_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.721Z", 
+                "document_id": "3fbbdf3f-059a-4010-a0df-ba9f519d735c"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_5_S29_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.732Z", 
+                "document_id": "1d683c4d-3b12-475d-bc52-6437217c4f6d"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_6_S30_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.746Z", 
+                "document_id": "662ab692-d447-4624-9034-812ab7b9f755"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_6_S30_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.910Z", 
+                "document_id": "3e556534-3205-4b43-88a3-4c877747a81e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_6_S30_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:13.987Z", 
+                "document_id": "9353b62f-03aa-4917-a27a-af88512f9339"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_6_S30_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.017Z", 
+                "document_id": "dc948f6e-2b17-4d97-b018-64bffe2ef822"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_6_S30_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.038Z", 
+                "document_id": "13ee6d8b-8e19-4c03-802e-289f1fca6ab7"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_6_S30_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.054Z", 
+                "document_id": "a69c1bf2-1bc1-4827-b18a-a3eba71e41a7"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_7_S31_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.082Z", 
+                "document_id": "effde1a9-2e04-4fae-bbbb-f90d0c61563b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_7_S31_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.100Z", 
+                "document_id": "bb0357ec-6ceb-429e-8325-5a64139e1e1a"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_7_S31_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.112Z", 
+                "document_id": "2e02998a-6785-4e03-857d-9a901984b8ae"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_7_S31_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.141Z", 
+                "document_id": "be101c62-f76e-4714-957e-316db7672e2e"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_7_S31_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.178Z", 
+                "document_id": "0b2be11b-4c09-4cdb-8c5b-a9c858493258"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_7_S31_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.192Z", 
+                "document_id": "8f7dfc21-a587-4172-af2a-b37388fd9b4b"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_8_S32_L001_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.217Z", 
+                "document_id": "a7216db3-9078-4ea2-83d1-8c6164ae8262"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_8_S32_L001_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.230Z", 
+                "document_id": "e52564df-887f-4e6f-98b1-7abe107df20a"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 1, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_8_S32_L001_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.271Z", 
+                "document_id": "e934c462-c462-4c23-9aea-42120a71de08"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "index1", 
+                "read_length": 8, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_8_S32_L002_I1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.297Z", 
+                "document_id": "4acb7754-e7a4-4dee-895f-3e7c072bc122"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read1", 
+                "read_length": 26, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_8_S32_L002_R1_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.357Z", 
+                "document_id": "786c94d3-39f7-442a-aa52-14b672db62eb"
+            }
+        }, 
+        {
+            "content": {
+                "lane_index": 2, 
+                "read_index": "read2", 
+                "read_length": 98, 
+                "schema_type": "file", 
+                "file_core": {
+                    "file_name": "MantonBM4_HiSeq_8_S32_L002_R2_001.fastq.gz", 
+                    "file_format": "fastq.gz"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/file/5.1.0/sequence_file"
+            }, 
+            "hca_ingest": {
+                "submissionDate": "2018-03-22T13:05:14.480Z", 
+                "document_id": "1c0f5f0b-4350-4674-93aa-ed5577795249"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/1.0.0/file", 
+    "schema_version": "1.0.0", 
+    "schema_type": "file_bundle"
+}

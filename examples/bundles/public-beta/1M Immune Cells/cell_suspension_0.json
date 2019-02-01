@@ -1,0 +1,28 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/biomaterial/8.6.1/cell_suspension",
+    "schema_type": "biomaterial",
+    "biomaterial_core": {
+        "biomaterial_id": "1_BM1_cells",
+        "ncbi_taxon_id": [
+            9606
+        ]
+    },
+    "genus_species": [
+        {
+            "text": "Homo sapiens",
+            "ontology": "NCBITaxon:9606"
+        }
+    ],
+    "selected_cell_type": [
+        {
+            "text": "bone marrow hematopoietic cell",
+            "ontology": "CL:1001610"
+        }
+    ],
+    "total_estimated_cells": 4294,
+    "provenance": {
+        "document_id": "7b53bae2-2424-44c0-9d80-ad72e8bca136",
+        "submission_date": "2018-09-04T12:26:41.629Z",
+        "update_date": "2018-09-04T12:27:19.625Z"
+    }
+}

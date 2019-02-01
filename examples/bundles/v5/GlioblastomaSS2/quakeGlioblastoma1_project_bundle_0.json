@@ -3,9 +3,6 @@
         "contributors": [
             {
                 "country": "USA", 
-                "project_core": {
-                    "project_shortname": "quakeGlioblastoma1"
-                }, 
                 "email": "spyros.darmanis@gmail.com", 
                 "phone": "650-696-0861", 
                 "address": "Clark Center, E300; Stanford, California 94305 USA", 
@@ -26,12 +23,6 @@
         "geo_series": "GSE84465", 
         "publications": [
             {
-                "doi": "10.1016/j.celrep.2017.10.030", 
-                "publication_url": "http://www.cell.com/cell-reports/fulltext/S2211-1247(17)31462-6", 
-                "project_core": {
-                    "project_shortname": "quakeGlioblastoma1"
-                }, 
-                "publication_title": "Single-Cell RNA-Seq Analysis of Infiltrating Neoplastic Cells at the Migrating Front of Human Glioblastoma", 
                 "authors": [
                     "Darmanis S", 
                     "Sloan SA", 
@@ -51,7 +42,10 @@
                     "Gephart MH", 
                     "Quake SR"
                 ], 
-                "pmid": "29091775"
+                "doi": "10.1016/j.celrep.2017.10.030", 
+                "publication_title": "Single-Cell RNA-Seq Analysis of Infiltrating Neoplastic Cells at the Migrating Front of Human Glioblastoma", 
+                "pmid": 29091775, 
+                "publication_url": "http://www.cell.com/cell-reports/fulltext/S2211-1247(17)31462-6"
             }
         ], 
         "schema_type": "project", 
@@ -59,9 +53,9 @@
     }, 
     "hca_ingest": {
         "accession": "", 
-        "submissionDate": "2018-03-14T14:22:30.784Z", 
-        "updateDate": "2018-03-14T14:22:42.614Z", 
-        "document_id": "710eadea-8753-4b32-9d30-83e7a261befe"
+        "submissionDate": "2018-03-16T17:12:32.305Z", 
+        "updateDate": "2018-03-16T17:12:49.520Z", 
+        "document_id": "30312353-36a9-4bc9-9c68-47b568577ede"
     }, 
     "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/project", 
     "schema_version": "5.1.0", 

@@ -1,18 +1,18 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/core/process/5.1.0/process_core",
-    "description": "A process entity contains information relevant to how a biomaterial/file entity was converted into another biomaterial/file entity.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information relevant to how a biomaterial or file was converted into another biomaterial or file.",
     "additionalProperties": false,
     "required": [
         "process_id"
     ],
-    "title": "process_core",
+    "title": "Process core",
+    "name": "process_core",
     "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/core/process/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/process_core"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/core/process/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/process_core"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -21,7 +21,7 @@
             "example": "4.6.1"
         },
         "process_id": {
-            "description": "A unique ID for this process.",
+            "description": "A unique ID for the process.",
             "type": "string",
             "user_friendly": "Process ID"
         },
@@ -35,23 +35,16 @@
             "type": "string",
             "user_friendly": "Process description"
         },
-         "start_time": {
-            "description": "When the process started, in date-time format, yyyy-mm-ddThh:mm:ssZ.",
-            "type": "string",
-            "format": "date-time",
-            "example": "2018-01-31T08:30:00Z",
-            "user_friendly": "Start time"
-         },
          "process_location": {
-            "description": "Where the process took place.",
+            "description": "Location where the process took place.",
             "type": "string",
-            "example": "Wellcome Sanger Institute, Teichman Lab.",
-            "user_friendly": "Location"
+            "example": "Wellcome Trust Sanger Institute; Cancer Institute, Stanford University",
+            "user_friendly": "Process location"
          },
-         "operator_identity": {
-           "description": "Identifier for individual(s) who executed this process.",
+         "operator": {
+           "description": "Identifier for individual(s) who executed the process.",
            "type": "array",
-           "example": "Technician 1",
+           "example": "Technician 1; J.D.",
            "items":{
                 "type": "string"
            },

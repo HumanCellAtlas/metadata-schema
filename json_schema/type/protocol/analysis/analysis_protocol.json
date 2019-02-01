@@ -1,20 +1,22 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/protocol/analysis/5.1.0/analysis_protocol",
-    "description": "Information about the analysis protocol",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about the analysis protocol.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
-        "protocol_core"
+        "protocol_core",
+        "computational_method",
+        "protocol_type"
     ],
-    "title": "analysis_protocol",
+    "title": "Analysis protocol",
+    "name": "analysis_protocol",
     "type": "object",
     "properties": {
          "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/protocol/analysis/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/analysis_protocol"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/protocol/analysis/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/analysis_protocol"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -29,16 +31,28 @@
                 "protocol"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "protocol_core" : {
             "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/protocol/5.1.0/protocol_core"
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
         },
         "protocol_type": {
-            "description": "The type of protocol. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000272.",
+            "description": "The type of protocol.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/protocol_type_ontology",
+            "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Protocol type"
+        },
+        "computational_method": {
+            "description": "A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository.",
+            "type": "string",
+            "user_friendly": "Computational method",
+            "example": "SmartSeq2SingleCell; 10x"
         }
     }
 }

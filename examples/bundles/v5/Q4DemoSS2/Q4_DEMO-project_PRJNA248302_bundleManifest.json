@@ -1,0 +1,40 @@
+{
+    "fileProjectMap": {
+        "98197a8b-9745-4c38-910e-c69a35bf4a90": [
+            "441666bb-e94d-43f2-b1b9-ba2c07a9c5ca"
+        ]
+    }, 
+    "dataFiles": [
+        "621e28f3-4fbe-4d0f-b750-438883b19b15", 
+        "a6a4995f-2975-4935-855f-66e8e143e1b2"
+    ], 
+    "fileProtocolMap": {
+        "937e9c26-cb03-4fbe-a51c-261933c96218": [
+            "1cd2bffd-9281-45c3-963a-afce27329362", 
+            "de4c3326-7e0c-41f2-a8a9-bc9bdd95c0a9", 
+            "e6f7a3c6-92ce-4a9d-a8b7-f076c4c68902"
+        ]
+    }, 
+    "envelopeUuid": "5ab389d5f7f0310006d4b56b", 
+    "bundleUuid": "b46ce514-fd50-4261-a434-10cdc82aac89", 
+    "fileBiomaterialMap": {
+        "d8815640-4299-4659-bfee-eb96e53199b0": [
+            "71e26994-bdbd-49a7-b99c-1b7b28719742", 
+            "c07a95b3-05b2-418c-a047-da5bd5d9e4eb"
+        ]
+    }, 
+    "fileProcessMap": {
+        "81e2cd35-1f74-4ae3-97fa-7032191cb649": [
+            "4b47943d-b39f-4c7e-9595-1a45f6a0024a", 
+            "a21e2cba-4e53-43e8-9742-9f9b325ea704", 
+            "32b2061a-48da-4566-840b-e9d571022116", 
+            "2826140f-bdd2-4ac1-8d98-032e8684589f"
+        ]
+    }, 
+    "fileFilesMap": {
+        "64e75679-c41f-4435-8f3f-427984ac9785": [
+            "621e28f3-4fbe-4d0f-b750-438883b19b15", 
+            "a6a4995f-2975-4935-855f-66e8e143e1b2"
+        ]
+    }
+}

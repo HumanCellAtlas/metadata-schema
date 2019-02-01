@@ -1,15 +1,17 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A term that may be associated with a disease-related ontology term",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "disease_ontology",
+    "title": "Disease ontology",
+    "name": "disease_ontology",
+    "type": "object",
     "properties": {
         "describedBy":  {
-            "pattern" : "https://schema.humancellatlas.org/module/ontology/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/disease_ontology",
+            "description": "The URL reference to the schema.",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/disease_ontology",
             "type": "string"
         },
         "schema_version": {
@@ -20,19 +22,28 @@
         },
         "text": {
             "description": "The text for the term as the user provides it.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Disease",
+            "example": "type 2 diabetes mellitus; normal"
         },
         "ontology": {
-            "description": "An optional ontology reference in format where prefix_ indicates which ontology",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:efo"],
-                "classes": ["MONDO:0000001", "EFO:0000408", "PATO:0000461"],
+                "ontologies" : ["obo:mondo", "obo:efo"],
+                "classes": ["MONDO:0000001", "PATO:0000461"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": false
-            }
+                "include_self": true
+            },
+            "user_friendly": "Disease ontology ID",
+            "example": "MONDO:0005148; PATO:0000461"
+        },
+        "ontology_label": {
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "type": "string",
+            "user_friendly": "Disease ontology label",
+            "example": "type 2 diabetes mellitus; normal"
         }
-    },
-    "type": "object"
+    }
 }

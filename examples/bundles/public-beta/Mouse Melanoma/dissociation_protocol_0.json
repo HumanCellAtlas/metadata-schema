@@ -1,0 +1,18 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/5.0.3/dissociation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "tissue_dissociation_protocol",
+        "protocol_name": "Extracting cells from lymph nodes",
+        "document": "TissueDissociationProtocol.pdf"
+    },
+    "dissociation_method": {
+        "text": "mechanical dissociation",
+        "ontology": "EFO:0009129"
+    },
+    "provenance": {
+        "document_id": "7142ed25-3237-4156-b10d-0aa74b2c37b3",
+        "submission_date": "2018-09-04T12:53:50.982Z",
+        "update_date": "2018-09-04T12:58:01.497Z"
+    }
+}

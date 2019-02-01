@@ -1,0 +1,62 @@
+{
+    "processes": [
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "schema_type": "process", 
+                "dissociation_method": "FACS", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "process_core": {
+                    "process_id": "dis_proc_3"
+                }
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-15T15:58:20.761Z", 
+                "updateDate": "2018-03-15T15:58:31.772Z", 
+                "document_id": "336c7184-70a7-41b3-ab31-98f78b0ab092"
+            }
+        }, 
+        {
+            "content": {
+                "schema_type": "process", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "process_core": {
+                    "process_id": "sampling_process_3"
+                }
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-15T15:58:20.219Z", 
+                "updateDate": "2018-03-15T15:58:30.764Z", 
+                "document_id": "8c01ac9e-751b-4426-9032-c4235503a164"
+            }
+        }, 
+        {
+            "content": {
+                "paired_ends": true, 
+                "instrument_manufacturer_model": {
+                    "text": "Illumina NextSeq 500"
+                }, 
+                "process_core": {
+                    "process_id": "seq_proc_2"
+                }, 
+                "smartseq2": {
+                    "well_name": "B4", 
+                    "plate_id": "1001000173"
+                }, 
+                "schema_type": "process", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-15T15:58:21.974Z", 
+                "updateDate": "2018-03-15T15:58:32.684Z", 
+                "document_id": "412d2e81-18e0-4f23-b6ff-d579882d8efd"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.2.1/process", 
+    "schema_version": "5.2.1", 
+    "schema_type": "process_bundle"
+}

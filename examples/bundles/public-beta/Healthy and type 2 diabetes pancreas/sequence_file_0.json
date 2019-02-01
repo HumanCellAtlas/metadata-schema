@@ -1,0 +1,18 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/6.5.2/sequence_file",
+    "schema_type": "file",
+    "file_core": {
+        "file_name": "AZ_B8.fastq.gz",
+        "file_format": "fastq.gz"
+    },
+    "read_index": "read1",
+    "read_length": 43,
+    "insdc_run": [
+        "ERR1630035"
+    ],
+    "provenance": {
+        "document_id": "60471337-a47b-4b9c-95e7-4a19349a5e05",
+        "submission_date": "2018-09-05T12:10:45.476Z",
+        "update_date": "2018-09-05T12:27:42.525Z"
+    }
+}

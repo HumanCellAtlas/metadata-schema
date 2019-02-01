@@ -1,22 +1,23 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism",
-    "description": "Information about the organism from which a specimen was collected.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about the donor from which a specimen was collected.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
         "biomaterial_core",
         "is_living",
-        "biological_sex"
+        "sex",
+        "development_stage"
     ],
-    "title": "donor_organism",
+    "title": "Donor organism",
+    "name": "donor_organism",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/type/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/donor_organism"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/donor_organism"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -31,106 +32,39 @@
                 "biomaterial"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "biomaterial_core" : {
             "description": "Core biomaterial-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/biomaterial/5.1.0/biomaterial_core"
+            "$ref": "core/biomaterial/biomaterial_core.json",
+            "user_friendly": "Biomaterial core"
         },
         "human_specific": {
             "description": "Fields specific to human (homo sapiens) organisms.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/homo_sapiens_specific"
+            "$ref": "module/biomaterial/human_specific.json",
+            "user_friendly": "Human-specific"
         },
-        "mus_musculus_specific": {
+        "mouse_specific": {
             "description": "Fields specific to mouse (mus musculus) organisms.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/mus_musculus_specific"
-        },
-        "death": {
-            "description": "Information about conditions of death of an organism.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/death"
-        },
-        "medical_history": {
-            "description": "Information about the medical history of an organism.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/medical_history"
+            "$ref": "module/biomaterial/mouse_specific.json",
+            "user_friendly": "Mouse-specific"
         },
         "genus_species": {
-            "description": "The scientific binomial name for the species of the biomaterial.",
+            "description": "The scientific binomial name for the species of the organism.",
             "type" : "array",
-            "example": "Homo sapiens",
             "items":{
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/species_ontology"
+                "$ref": "module/ontology/species_ontology.json"
             },
             "user_friendly": "Genus species"
         },
-        "organism_age": {
-            "description": "Age in age_units. Measured since birth.",
-            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "type": "string",
-            "user_friendly": "Organism age"
-        }, 
-        "organism_age_unit": {
-            "description": "The unit in which age is expressed. Must be one of hour, day, week, month, or year.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/time_unit_ontology",
-            "user_friendly": "Organism age unit",
-            "example": "year"
-        },
-        "development_stage": {
-            "description": "A classification of the developmental stage of the organism.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/development_stage_ontology",
-            "user_friendly": "Development stage"
-        }, 
-        "disease": {
-            "description": "Short description of disease status of the organism.",
-            "type": "array",
-            "items": {
-                "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/disease_ontology"
-	        },
-            "user_friendly": "Disease"
-        },
-        "familial_relationship": {
-            "description": "Information about other organisms related to this organism.",
-            "type": "array",
-            "items": {
-                "$ref": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/familial_relationship"
-                },
-            "user_friendly": "Familial relationship"
-        },
-        "gestational_age": {
-            "description": "Gestational age in gestational_age_units. Measured since fertilization.",
-            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "type": "string",
-            "user_friendly": "Gestational age"
-        },
-        "gestational_age_unit": {
-            "description": "The unit in which gestational age is expressed. Must be one of hour, day, week, month, or year.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/time_unit_ontology",
-            "user_friendly": "Gestational age unit"
-        },
-        "height": {
-            "description": "Height of organism in height units.",
-            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
-            "type": "string",
-            "user_friendly": "Height"
-        },
-        "height_unit": {
-            "description": "The unit in which height is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000001.",
-            "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/length_unit_ontology",
-            "user_friendly": "Height unit"
-        },
-        "is_living": {
-            "description": "Yes if organism is living at time of biomaterial collection. No otherwise.",
-            "type": "boolean",
-            "user_friendly": "Is living?"
-        }, 
-        "biological_sex": {
-            "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
+        "sex": {
+            "description": "The biological sex of the organism.",
             "type": "string",
             "enum": [
                 "female", 
@@ -138,19 +72,117 @@
                 "mixed", 
                 "unknown"
             ],
-            "user_friendly": "Biological sex"
+            "user_friendly": "Biological sex",
+            "example": "Should be one of: male, female, mixed, or unknown."
         },
-        "weight": {
-            "description": "Weight of organism in kilograms.",
+        "is_living": {
+            "description": "Whether organism was alive at time of biomaterial collection.",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "unknown"
+            ],
+            "user_friendly": "Alive at collection?",
+            "example": "Should be one of: yes, no, or unknown.",
+            "guidelines": "Enter yes if organism was alive at time of biomaterial collection, no if organism was dead, unknown if not known."
+        }, 
+        "organism_age": {
+            "description": "Age of organism in Age units measured since birth.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
-            "user_friendly": "Weight"
+            "user_friendly": "Age",
+            "example": "20; 45-65",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
+        }, 
+        "organism_age_unit": {
+            "description": "The unit in which Age is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
+            "user_friendly": "Age unit"
+        },
+        "development_stage": {
+            "description": "A classification of the developmental stage of the organism.",
+            "type": "object",
+            "$ref": "module/ontology/development_stage_ontology.json",
+            "user_friendly": "Development stage"
+        },
+        "diseases": {
+            "description": "Short description of known disease(s) of the organism.",
+            "type": "array",
+            "items": {
+                "$ref": "module/ontology/disease_ontology.json"
+	        },
+            "user_friendly": "Known disease(s)",
+            "guidelines": "Enter 'normal' if no known disease."
+        },
+        "death": {
+            "description": "Information about conditions of death of the organism.",
+            "type": "object",
+            "$ref": "module/biomaterial/death.json",
+            "user_friendly": "Death conditions"
+        },
+        "familial_relationships": {
+            "description": "Information about other organisms related to this organism.",
+            "type": "array",
+            "items": {
+                "$ref": "module/biomaterial/familial_relationship.json"
+                },
+            "user_friendly": "Familial relationship"
+        },
+        "medical_history": {
+            "description": "Information about the medical history of the organism.",
+            "type": "object",
+            "$ref": "module/biomaterial/medical_history.json",
+            "user_friendly": "Medical history"
+        },
+        "gestational_age": {
+            "description": "Gestational age of organism in Gestational age units measured since fertilization.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "user_friendly": "Gestational age",
+            "example": "22; 5-7",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
+        },
+        "gestational_age_unit": {
+            "description": "The unit in which Gestational age is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
+            "user_friendly": "Gestational age unit"
+        },
+        "height": {
+            "description": "Height of organism in Height unit.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "user_friendly": "Height",
+            "example": "160; 120-140",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
+        },
+        "height_unit": {
+            "description": "The unit in which Height is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/length_unit_ontology.json",
+            "user_friendly": "Height unit"
+        },
+        "weight": {
+            "description": "Weight of organism in Weight unit.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "user_friendly": "Weight",
+            "example": "60; 40-60",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "weight_unit": {
-            "description": "The unit in which weight is expressed. Must be a child term of https://www.ebi.ac.uk/ols/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000002.",
+            "description": "The unit in which Weight is expressed.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/mass_unit_ontology",
+            "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
+        },
+        "timecourse": {
+            "description": "Information relating to a timecourse associated with this biomaterial.",
+            "type": "object",
+            "$ref": "module/biomaterial/timecourse.json",
+            "user_friendly": "Timecourse"
         }
     }
 }

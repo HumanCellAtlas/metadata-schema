@@ -1,0 +1,20 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/2.2.5/enrichment_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "enrichment_protocol_2",
+        "protocol_name": "TEMRA Enrichment",
+        "protocol_description": "For single-cell RNA-seq experiments, live and singlet gated cells were further gated to sort 1) TCM; CD3+CD4+CD8\u03b1/CD14/CD19-CD45RA-CCR7+, 2) TEM; CD3+CD4+CD8\u03b1/CD14/CD19-CD45RA-CCR7-, 3) TEMRA; CD3+CD4+CD8\u03b1/CD14/CD19-CD45RA+CCR7-, 4) IL-7Rhigh TEMRA (CD4-CTL precursors); CD3+CD4+CD8\u03b1/CD14/CD19-CD45RA+CCR7-CD127high, 5) IL-7R- TEMRA (CD4-CTL effectors); CD3+CD4+CD8\u03b1/CD14/CD19-CD45RA+CCR7- CD127-. Single cells were directly sorted into 96 well plate with lysis buffer for downstream processing using Smart-seq2 method",
+        "publication_doi": "10.1126/sciimmunol.aan8664"
+    },
+    "enrichment_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108"
+    },
+    "markers": "CD3+CD4+CD8alpha/CD14/CD19-CD45RA+CCR7-",
+    "provenance": {
+        "document_id": "77c71448-fb32-472f-9d44-ea9a42867a41",
+        "submission_date": "2018-09-05T09:48:40.222Z",
+        "update_date": "2018-09-05T09:51:58.823Z"
+    }
+}

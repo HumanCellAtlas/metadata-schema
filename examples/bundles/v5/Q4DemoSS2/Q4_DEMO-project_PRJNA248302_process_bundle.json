@@ -1,0 +1,87 @@
+{
+    "processes": [
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.255Z", 
+                "updateDate": "2018-03-22T10:47:56.380Z", 
+                "document_id": "4b47943d-b39f-4c7e-9595-1a45f6a0024a"
+            }
+        }, 
+        {
+            "content": {
+                "enrichment_method": "FACS", 
+                "process_core": {
+                    "process_id": "enrichment1"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/enrichment_process", 
+                "process_type": {
+                    "text": "enrichment process"
+                }, 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.328Z", 
+                "updateDate": "2018-03-22T10:47:57.465Z", 
+                "document_id": "a21e2cba-4e53-43e8-9742-9f9b325ea704"
+            }
+        }, 
+        {
+            "content": {
+                "input_nucleic_acid_molecule": {
+                    "text": "polyA RNA"
+                }, 
+                "process_type": {
+                    "text": "nucleic acid librarly construction process"
+                }, 
+                "process_core": {
+                    "process_id": "preparation1"
+                }, 
+                "library_construction_approach": "Smart-seq2", 
+                "schema_type": "process", 
+                "end_bias": "5 prime end bias", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process", 
+                "strand": "unstranded"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.313Z", 
+                "updateDate": "2018-03-22T10:47:55.024Z", 
+                "document_id": "32b2061a-48da-4566-840b-e9d571022116"
+            }
+        }, 
+        {
+            "content": {
+                "paired_ends": true, 
+                "instrument_manufacturer_model": {
+                    "text": "Illumina HiSeq 2500"
+                }, 
+                "process_type": {
+                    "text": "single cell sequencing process"
+                }, 
+                "process_core": {
+                    "process_id": "sequencing1"
+                }, 
+                "schema_type": "process", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T10:47:49.297Z", 
+                "updateDate": "2018-03-22T10:47:55.043Z", 
+                "document_id": "2826140f-bdd2-4ac1-8d98-032e8684589f"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.2.1/process", 
+    "schema_version": "5.2.1", 
+    "schema_type": "process_bundle"
+}

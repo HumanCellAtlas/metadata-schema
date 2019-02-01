@@ -1,0 +1,19 @@
+{
+    "describedBy": "http://schema.dev.data.humancellatlas.org/type/protocol/biomaterial_collection/5.0.3/dissociation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "dissociation_protocol_1",
+        "protocol_name": "Single cell dissociation",
+        "protocol_description": "Islets were dissociated into single-cell suspension and viable individual cells were distributed by FACS into 384-well plates containing lysis buffer.",
+        "publication_doi": "10.1016/j.cmet.2016.08.020"
+    },
+    "dissociation_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108"
+    },
+    "provenance": {
+        "document_id": "6029a289-861c-4349-9614-4c244103be21",
+        "submission_date": "2018-09-05T12:11:53.063Z",
+        "update_date": "2018-09-05T12:17:49.721Z"
+    }
+}

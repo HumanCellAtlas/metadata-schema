@@ -1,0 +1,1160 @@
+{
+    "processes": [
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_3"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:25.467Z", 
+                "updateDate": "2018-03-22T13:06:41.037Z", 
+                "document_id": "fb767aa1-8ce2-474f-8f93-f9e63976c2d7"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_13"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:51.488Z", 
+                "updateDate": "2018-03-22T13:05:24.237Z", 
+                "document_id": "c372ebb0-d03f-4898-b63f-cd0aad82a396"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_20"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:21.948Z", 
+                "updateDate": "2018-03-22T13:06:37.912Z", 
+                "document_id": "7f8bad8c-4a61-468b-ad6a-d1b5e3eb374e"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_51"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:56.795Z", 
+                "updateDate": "2018-03-22T13:05:24.450Z", 
+                "document_id": "3735807e-acda-41c7-9d05-a81290faaf62"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_11"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:34.979Z", 
+                "updateDate": "2018-03-22T13:06:08.020Z", 
+                "document_id": "1633fbe3-c21c-4c15-b0a9-30c4588bbd74"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_87"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:02.361Z", 
+                "updateDate": "2018-03-22T13:05:32.349Z", 
+                "document_id": "657d43ff-257c-456c-b5a1-45274dd04f77"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_31"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:31.643Z", 
+                "updateDate": "2018-03-22T13:06:05.909Z", 
+                "document_id": "ee46a909-c699-413d-8067-3bf2e1286490"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_123"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:08.474Z", 
+                "updateDate": "2018-03-22T13:05:35.553Z", 
+                "document_id": "497ae06e-f5c7-4de1-8094-03046d8ab568"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_30"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:31.524Z", 
+                "updateDate": "2018-03-22T13:06:06.159Z", 
+                "document_id": "2703de6d-4d06-4935-bc23-c6a131fb3692"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_100"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:05.142Z", 
+                "updateDate": "2018-03-22T13:05:31.895Z", 
+                "document_id": "2b92e276-66a0-41c2-b698-985b25132100"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_25"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:20.030Z", 
+                "updateDate": "2018-03-22T13:06:37.994Z", 
+                "document_id": "b765fbad-9085-4c59-8d74-87eac788c1b1"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_38"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:55.816Z", 
+                "updateDate": "2018-03-22T13:05:24.113Z", 
+                "document_id": "d5bbe158-38aa-4c96-9258-183dc31e95d9"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_19"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:35.289Z", 
+                "updateDate": "2018-03-22T13:06:08.007Z", 
+                "document_id": "f28be080-969b-4805-b725-ba80d178a8ce"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_11"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:51.271Z", 
+                "updateDate": "2018-03-22T13:05:20.294Z", 
+                "document_id": "af648df5-06b1-416e-9388-f9c58f68dc6d"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_5"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:24.252Z", 
+                "updateDate": "2018-03-22T13:06:38.993Z", 
+                "document_id": "ece32a28-9c8e-4d3e-a9e8-eede73bceacb"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_113"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:07.643Z", 
+                "updateDate": "2018-03-22T13:05:34.533Z", 
+                "document_id": "cb71a8f2-b01c-4124-a21c-cc40c635ffd3"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_7"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:24.567Z", 
+                "updateDate": "2018-03-22T13:06:40.969Z", 
+                "document_id": "eabd0bb0-7014-4772-b15f-883d72842665"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_127"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:08.735Z", 
+                "updateDate": "2018-03-22T13:05:34.594Z", 
+                "document_id": "14c95a0e-9567-4ba8-bd93-19aa74889fe3"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_10"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:34.920Z", 
+                "updateDate": "2018-03-22T13:06:09.022Z", 
+                "document_id": "d4ca625d-1587-4ea6-83dc-fd4fb3966e2c"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_97"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:04.417Z", 
+                "updateDate": "2018-03-22T13:05:30.854Z", 
+                "document_id": "b7c91575-d6ac-49e2-bfce-ae1d902ad5aa"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_28"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:19.149Z", 
+                "updateDate": "2018-03-22T13:06:35.978Z", 
+                "document_id": "09e4ec42-ab5b-4224-b98e-88abe34df774"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_54"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:57.208Z", 
+                "updateDate": "2018-03-22T13:05:26.610Z", 
+                "document_id": "aedcef75-bacb-4f59-96fb-1ed217e0cd37"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_1"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:25.204Z", 
+                "updateDate": "2018-03-22T13:06:40.980Z", 
+                "document_id": "f0c47169-7a25-4a28-af09-9f0939f15c7e"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_35"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:55.126Z", 
+                "updateDate": "2018-03-22T13:05:20.947Z", 
+                "document_id": "4b9411b9-63be-4146-b6cc-bbb2ade8a36c"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_17"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:34.243Z", 
+                "updateDate": "2018-03-22T13:06:07.089Z", 
+                "document_id": "89c96cb1-b1da-4089-a533-9406d09dd816"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_37"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:55.557Z", 
+                "updateDate": "2018-03-22T13:05:21.269Z", 
+                "document_id": "4cb529ec-e91b-47a4-ae72-fdefc4ab1a74"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_26"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:19.925Z", 
+                "updateDate": "2018-03-22T13:06:37.207Z", 
+                "document_id": "3fb88ed3-e644-44d1-a7f8-4825aaeb6998"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_95"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:04.191Z", 
+                "updateDate": "2018-03-22T13:05:30.979Z", 
+                "document_id": "8f7d1462-1bb0-4490-847e-7e182b5f418e"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_12"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:34.663Z", 
+                "updateDate": "2018-03-22T13:06:06.307Z", 
+                "document_id": "56a4fda5-22a1-4e5e-9f71-63b23a7af347"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_52"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:56.996Z", 
+                "updateDate": "2018-03-22T13:05:25.824Z", 
+                "document_id": "2eb87d8b-af12-43e3-9b21-a38f2b554794"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_27"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:19.395Z", 
+                "updateDate": "2018-03-22T13:06:35.902Z", 
+                "document_id": "d6dc917b-9948-4496-b4c8-7a640aec1670"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_125"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:08.590Z", 
+                "updateDate": "2018-03-22T13:05:31.505Z", 
+                "document_id": "7a53aced-5718-4291-af70-49bc4d7a2781"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_16"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:33.980Z", 
+                "updateDate": "2018-03-22T13:06:07.960Z", 
+                "document_id": "f1020f46-df03-48d8-aa05-1d05ecb7afa2"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_47"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:56.445Z", 
+                "updateDate": "2018-03-22T13:05:26.505Z", 
+                "document_id": "7648aec8-da8d-4c11-996e-f83555e63a80"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_23"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:20.430Z", 
+                "updateDate": "2018-03-22T13:06:36.984Z", 
+                "document_id": "84305c8c-c92c-4c41-ae78-8238a9211896"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_126"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:08.654Z", 
+                "updateDate": "2018-03-22T13:05:35.515Z", 
+                "document_id": "2eae677b-4523-4b49-8e8f-81010f419bf3"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_8"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:23.283Z", 
+                "updateDate": "2018-03-22T13:06:38.985Z", 
+                "document_id": "e5aea94a-7c38-4271-b0d3-964ebda55450"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_45"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:56.333Z", 
+                "updateDate": "2018-03-22T13:05:25.503Z", 
+                "document_id": "82ad3151-15ce-478f-9abb-d4e962e2ab6c"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_22"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:21.047Z", 
+                "updateDate": "2018-03-22T13:06:37.983Z", 
+                "document_id": "4e03e987-b4ef-40bb-bcc8-a920720f87e7"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_10"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:51.117Z", 
+                "updateDate": "2018-03-22T13:05:21.312Z", 
+                "document_id": "a19589b1-1361-4c11-a878-88939047ae2f"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_18"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:35.063Z", 
+                "updateDate": "2018-03-22T13:06:07.868Z", 
+                "document_id": "2f3b0f40-06da-4c08-98cc-f7fb331298bd"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_96"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:04.294Z", 
+                "updateDate": "2018-03-22T13:05:32.344Z", 
+                "document_id": "71e02ab3-b434-41b8-8d7f-4338438d9f76"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_15"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:34.424Z", 
+                "updateDate": "2018-03-22T13:06:05.898Z", 
+                "document_id": "f8f8289c-6c67-4a89-baad-e1f71bac0730"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_89"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:02.513Z", 
+                "updateDate": "2018-03-22T13:05:31.478Z", 
+                "document_id": "9c6527db-1b45-4123-bbc9-7d7f29add4f5"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_21"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:21.364Z", 
+                "updateDate": "2018-03-22T13:06:38.026Z", 
+                "document_id": "9c0e948b-92e5-4057-beb4-26663fd3af01"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_115"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:07.984Z", 
+                "updateDate": "2018-03-22T13:05:35.399Z", 
+                "document_id": "42cae345-5068-4b9b-bae3-718c9956d5f6"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_9"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:23.576Z", 
+                "updateDate": "2018-03-22T13:06:40.020Z", 
+                "document_id": "93a837fb-3da5-426a-9d04-01d464a03ceb"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_36"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:55.385Z", 
+                "updateDate": "2018-03-22T13:05:23.350Z", 
+                "document_id": "1b767317-65a6-4b25-b572-77b73f8dffc4"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_13"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:34.835Z", 
+                "updateDate": "2018-03-22T13:06:06.931Z", 
+                "document_id": "70d8b0c6-2be3-4c84-9f87-013ff5dd27a6"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_114"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:07.814Z", 
+                "updateDate": "2018-03-22T13:05:33.534Z", 
+                "document_id": "da1ab752-308f-4d29-b197-d9da70c68bdc"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_14"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:34.356Z", 
+                "updateDate": "2018-03-22T13:06:06.060Z", 
+                "document_id": "f119161b-c7bb-4a2d-9351-19fe7c891c24"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_88"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:02.468Z", 
+                "updateDate": "2018-03-22T13:05:35.485Z", 
+                "document_id": "af5be1ee-50a4-4081-8697-27009088fcb8"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_4"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:23.940Z", 
+                "updateDate": "2018-03-22T13:06:38.966Z", 
+                "document_id": "963e5c44-7d3d-44b3-bad9-88b8c92b182e"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_50"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:56.618Z", 
+                "updateDate": "2018-03-22T13:05:23.309Z", 
+                "document_id": "a413ad5f-420f-485a-9d23-d761c8c557e9"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_32"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:31.783Z", 
+                "updateDate": "2018-03-22T13:06:04.897Z", 
+                "document_id": "81fa462e-1d7d-4d52-b888-23af846556ea"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_43"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:56.231Z", 
+                "updateDate": "2018-03-22T13:05:22.259Z", 
+                "document_id": "12368127-60eb-42ad-8c4b-e976af06b8e5"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_2"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:25.339Z", 
+                "updateDate": "2018-03-22T13:06:40.955Z", 
+                "document_id": "1d016e2d-6254-4611-ab48-2c8b1910d5e8"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_98"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:04.575Z", 
+                "updateDate": "2018-03-22T13:05:32.012Z", 
+                "document_id": "e3221eef-20a0-46b5-89b8-38a04dbce8c8"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_29"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:18.872Z", 
+                "updateDate": "2018-03-22T13:06:37.091Z", 
+                "document_id": "9ef3d075-98ce-431f-8133-56d32614f573"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_108"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:07.237Z", 
+                "updateDate": "2018-03-22T13:05:34.524Z", 
+                "document_id": "c1d7531f-30a7-42ae-9e56-04fdde13a9e5"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_24"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:20.257Z", 
+                "updateDate": "2018-03-22T13:06:37.099Z", 
+                "document_id": "a06e80c6-1e52-400c-bd2e-0073cfce89f8"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_46"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:56.389Z", 
+                "updateDate": "2018-03-22T13:05:25.249Z", 
+                "document_id": "da49bd2f-19a8-46b7-adce-d1a55f78af0b"
+            }
+        }, 
+        {
+            "content": {
+                "nucleic_acid_source": "single cell", 
+                "process_core": {
+                    "process_name": "mononuclear cell isolation", 
+                    "process_description": "We isolated mononuclear cells for all samples in preparation for 10x sequencing.", 
+                    "process_id": "dissociation_process_6"
+                }, 
+                "dissociation_method": "10x_v2", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/biomaterial_collection/5.1.0/dissociation_process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:06:24.440Z", 
+                "updateDate": "2018-03-22T13:06:40.000Z", 
+                "document_id": "b5182411-4b30-43b5-a7ad-076eb7fb988d"
+            }
+        }, 
+        {
+            "content": {
+                "process_core": {
+                    "process_id": "sampling_process_12"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process", 
+                "schema_type": "process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:04:51.422Z", 
+                "updateDate": "2018-03-22T13:05:22.267Z", 
+                "document_id": "f66474ee-16ae-41ac-88fe-f1aad31c4224"
+            }
+        }, 
+        {
+            "content": {
+                "input_nucleic_acid_molecule": {
+                    "text": "polyA RNA", 
+                    "ontology": "OBI:0000869"
+                }, 
+                "process_type": {
+                    "text": "10x sequencing process"
+                }, 
+                "process_core": {
+                    "process_id": "library_preparation_process_1", 
+                    "process_name": "Preparing RNA for sequencing by 10x"
+                }, 
+                "umi_barcode": {
+                    "barcode_offset": 16, 
+                    "barcode_length": 10, 
+                    "barcode_read": "Read 1"
+                }, 
+                "library_construction_approach": "10x_v2", 
+                "cell_barcode": {
+                    "barcode_offset": 0, 
+                    "barcode_length": 16, 
+                    "barcode_read": "Read 1"
+                }, 
+                "schema_type": "process", 
+                "end_bias": "3 prime tag", 
+                "primer": "poly-dT", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/library_preparation_process", 
+                "strand": "second"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:30.360Z", 
+                "updateDate": "2018-03-22T13:06:05.811Z", 
+                "document_id": "a0a3d381-3cbc-42c5-8cf6-54b91ba0c8c0"
+            }
+        }, 
+        {
+            "content": {
+                "paired_ends": true, 
+                "local_machine_name": "HXE", 
+                "instrument_manufacturer_model": {
+                    "text": "Illumina Hiseq X 10", 
+                    "ontology": "EFO:0008567"
+                }, 
+                "process_type": {
+                    "text": "10x sequencing process"
+                }, 
+                "process_core": {
+                    "process_description": "Single cell sequencing of cDNAs by 10x", 
+                    "process_name": "Sequencing bone marrow donor 1-4", 
+                    "process_id": "10x_v2_sequencing_process_1", 
+                    "start_time": "2017-09-22T04:06:00Z", 
+                    "process_location": "Broad Institute"
+                }, 
+                "schema_type": "process", 
+                "describedBy": "https://schema.humancellatlas.org/type/process/sequencing/5.1.0/sequencing_process"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-22T13:05:30.429Z", 
+                "updateDate": "2018-03-22T13:06:12.444Z", 
+                "document_id": "83cf2d59-93aa-4ef4-a65f-aed25f0afb03"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.2.1/process", 
+    "schema_version": "5.2.1", 
+    "schema_type": "process_bundle"
+}

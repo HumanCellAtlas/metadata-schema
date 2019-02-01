@@ -1,36 +1,39 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/familial_relationship",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about other organisms that this organism is related to.",
     "additionalProperties": false,
-    "title": "familial_relationship",
+    "title": "Familial relationship",
+    "name": "familial_relationship",
     "type": "object",
     "properties": {
-        "describedBy":  {
-            "description": "The URL reference to the schema.",
-            "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/familial_relationship"
+        "describedBy": {
+          "description": "The URL reference to the schema.",
+          "type": "string",
+          "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/familial_relationship"
         },
         "schema_version": {
-            "description": "The version number of the schema in major.minor.patch format.",
-            "type": "string",
-            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
-            "example": "4.6.1"
+          "description": "The version number of the schema in major.minor.patch format.",
+          "type": "string",
+          "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+          "example": "4.6.1"
         },
-        "is_child_of": {
-            "description": "This organism is a child of the indicated organism.",
-            "type": "string",
-            "user_friendly": "Child of"
+        "parent": {
+          "description": "The individual's parent.",
+          "type": "string",
+          "user_friendly": "Parent",
+          "guidelines": "Enter the ID of the parent of this individual."
         },
-         "is_parent_of": {
-            "description": "This organism is a parent of the indicated organism.",
-            "type": "string",
-            "user_friendly": "Parent of"
+        "child": {
+          "description": "The individual's child.",
+          "type": "string",
+          "user_friendly": "Child",
+          "guidelines": "Enter the ID of the child of this individual."
         },
-         "is_sibling_of": {
-            "description": "This organism is a sibling of the indicated organism.",
-            "type": "string",
-            "user_friendly": "Sibling of"
+        "sibling": {
+          "description": "The individual's sibling.",
+          "type": "string",
+          "user_friendly": "Sibling",
+          "guidelines": "Enter the ID of the sibling of this individual."
         }
     }
 }

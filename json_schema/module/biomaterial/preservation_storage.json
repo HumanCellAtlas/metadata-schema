@@ -1,15 +1,15 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/module/biomaterial/5.1.0/preservation_storage",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information relating to how a biomaterial was preserved and/or stored over a period of time.",
     "additionalProperties": false,
-    "title": "preservation_storage",
+    "title": "Preservation and storage",
+    "name": "preservation_storage",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/module/biomaterial/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/preservation_storage"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/preservation_storage"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -18,21 +18,22 @@
             "example": "4.6.1"
         },
         "storage_method": {
-            "description": "The method by which a biomaterial was stored.",
+            "description": "The method by which a biomaterial was stored after preservation or before another protocol was used.",
             "type": "string",
             "enum": [
                 "ambient temperature",
                 "cut slide",
                 "fresh",
-                "frozen, -70C freezer",
-                "frozen, -150C freezer",
-                "frozen, liquid nitrogen",
-                "frozen, vapor phase",
+                "frozen at -70C",
+                "frozen at -150C",
+                "frozen in liquid nitrogen",
+                "frozen in vapor phase",
                 "paraffin block",
-                "RNAlater, frozen",
-                "TRIzol, frozen"
+                "RNAlater at 4C",
+                "RNAlater at 25C",
+                "RNAlater at -20C"
             ],
-            "comment": "Refers to how a biomaterial was stored after preservation or before another protocol was used.",
+            "example": "frozen in liquid nitrogen; fresh",
             "user_friendly": "Storage method"
         },
         "storage_time": {
@@ -44,12 +45,11 @@
         "storage_time_unit": {
             "description": "The unit in which Storage time is expressed.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.1.0/time_unit_ontology",
-            "example": "days",
+            "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Storage time unit"
         },
         "preservation_method": {
-            "description": "The method by which a biomaterial was preserved or not.",
+            "description": "The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration.",
             "type": "string",
             "enum": [
                 "cryopreservation in liquid nitrogen (dead tissue)",
@@ -59,10 +59,11 @@
                 "formalin fixed, unbuffered",
                 "formalin fixed, buffered",
                 "formalin fixed and paraffin embedded",
-                "Fresh"
+                "fresh"
             ],
-            "comment": "Refers to the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration of a biomaterial.",
-            "user_friendly": "Storage method"
+            "example": "cryopreservation in liquid nitrogen (dead tissue); fresh",
+            "user_friendly": "Preservation method",
+            "guidelines": "Enter 'fresh' if not preserved."
         }
     }
 }

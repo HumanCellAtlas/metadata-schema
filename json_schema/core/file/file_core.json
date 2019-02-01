@@ -1,19 +1,19 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/core/file/5.1.0/file_core",
-    "description": "A file entity contains information about a data file produced from any process.",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about a file produced from any process.",
     "additionalProperties": false,
     "required": [
 	    "file_name",
 	    "file_format"
     ],
-    "title": "file_core",
+    "title": "File core",
+    "name": "file_core",
     "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "https://schema.humancellatlas.org/core/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/file_core"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/core/file/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/file_core"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -22,19 +22,24 @@
             "example": "4.6.1"
         },
         "file_name": {
-            "description": "The filename of the data file.",
+            "description": "The name of the file.",
             "type": "string",
-            "user_friendly": "File name"
+            "user_friendly": "File name",
+            "guidelines": "Include the file extension in the file name.",
+            "example": "R1.fastq.gz; codebook.json"
         },
         "file_format": {
-            "description": "The format of the data file.",
+            "description": "The format of the file.",
             "type": "string",
-            "user_friendly": "File format"
+            "user_friendly": "File format",
+            "guidelines": "Indicate the full file extension including compression extensions.",
+            "example": "fastq.gz; tif"
         }, 
         "checksum": {
-            "description": "MD5 checksum of the data file.",
+            "description": "MD5 checksum of the file.",
             "type": "string",
-            "user_friendly": "Checksum"
+            "user_friendly": "Checksum",
+            "example": "e09a986c2e630130b1849d4bf9a94c06"
 	    }
     }
 }

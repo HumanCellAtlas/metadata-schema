@@ -1,0 +1,7 @@
+{
+    "process_core": {
+        "process_id": "wrapper_process_1"
+    }, 
+    "schema_type": "process", 
+    "describedBy": "https://schema.humancellatlas.org/type/process/1.0.0/process"
+}

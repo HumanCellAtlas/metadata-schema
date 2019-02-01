@@ -1,20 +1,25 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://schema.humancellatlas.org/type/file/1.0.0/reference_file",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A reference file used by a secondary reference pipeline.",
     "additionalProperties": false,
     "required": [
         "describedBy",
         "schema_type",
-        "file_core"
+        "file_core",
+        "ncbi_taxon_id",
+        "genus_species",
+        "assembly_type",
+        "reference_type",
+        "reference_version"
     ],
-    "title": "reference_file",
+    "title": "Reference file",
+    "name": "reference_file",
     "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern": "https://schema.humancellatlas.org/type/file/[0-9]{1,}.[0-9]{1,}.[0-9]{1,}/reference_file"
+            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/file/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/reference_file"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -29,34 +34,32 @@
                 "file"
             ]
         },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/core/file/5.0.0/file_core"
+            "$ref": "core/file/file_core.json",
+            "user_friendly": "File core"
         },
         "ncbi_taxon_id" : {
             "description": "A taxonomy ID (taxonID) from NCBI.",
             "type": "integer",
-            "user_friendly": "NCBI taxon ID"
+            "user_friendly": "NCBI taxon ID",
+            "example": "9606; 10090",
+            "guidelines": "NCBI taxonIDs can be looked up at https://www.ncbi.nlm.nih.gov/taxonomy."
         },
         "genus_species": {
             "description": "The scientific binomial name for the species of this reference.",
             "type": "object",
-            "$ref": "https://schema.humancellatlas.org/module/ontology/5.0.0/species_ontology",
-            "example": "Homo sapiens",
+            "$ref": "module/ontology/species_ontology.json",
             "user_friendly": "Genus species"
         },
-        "assembly_type": {
-            "description": "The assembly type of this reference. This applies to reference genome sequences.",
-            "type": "string",
-            "enum": [
-                "primary assembly",
-                "complete assembly",
-                "patch assembly"
-            ]
-        },
         "reference_type": {
-            "description": "The type of the genome reference.",
+            "description": "The type of the reference file.",
             "type": "string",
             "enum": [
                 "genome sequence",
@@ -64,12 +67,26 @@
                 "annotation reference",
                 "transcriptome index",
                 "genome sequence index"
-            ]
+            ],
+            "user_friendly": "Reference type",
+            "example": "Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index."
+        },
+        "assembly_type": {
+            "description": "The assembly type of the genome reference file.",
+            "type": "string",
+            "enum": [
+                "primary assembly",
+                "complete assembly",
+                "patch assembly"
+            ],
+            "user_friendly": "Genome assembly type",
+            "example": "Should be one of: primary assembly, complete assembly, or patch assembly."
         },
         "reference_version": {
-            "description": "The genome version of the reference.",
+            "description": "The genome version of the reference file.",
             "type": "string",
-            "example": "GencodeV27"
+            "example": "GencodeV27; Ensembl 87",
+            "user_friendly": "Reference version"
         }
     }
 }

@@ -1,0 +1,97 @@
+{
+    "biomaterials": [
+        {
+            "content": {
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BT_S2_T", 
+                    "biomaterial_name": "Single cell from Tumor,1001000173.B4", 
+                    "supplementary_files": [
+                        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2243nnn/GSM2243441/suppl/GSM2243441_1001000173.B4.csv.gz"
+                    ], 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "GSM2243441", 
+                    "biosd_biomaterial": "SAMN05421108"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/cell_suspension", 
+                "total_estimated_cells": 1, 
+                "schema_type": "biomaterial"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-15T15:58:20.062Z", 
+                "updateDate": "2018-03-15T15:58:30.722Z", 
+                "document_id": "317d865b-1d94-439d-a1bc-0da63bbe2348"
+            }
+        }, 
+        {
+            "content": {
+                "organ": {
+                    "text": "brain", 
+                    "ontology": "UBERON:0000955"
+                }, 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "has_input_biomaterial": "BT_S2", 
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "BT_S2_T", 
+                    "biomaterial_description": "Tumor"
+                }, 
+                "organ_part": {
+                    "text": "temporal lobe"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/specimen_from_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-15T15:58:19.876Z", 
+                "updateDate": "2018-03-15T15:58:30.959Z", 
+                "document_id": "7c72f20a-8199-497a-bba7-1316520ba847"
+            }
+        }, 
+        {
+            "content": {
+                "is_living": true, 
+                "biological_sex": "unknown", 
+                "genus_species": [
+                    {
+                        "text": "Homo sapiens", 
+                        "ontology": "NCBITaxon:9606"
+                    }
+                ], 
+                "schema_type": "biomaterial", 
+                "biomaterial_core": {
+                    "ncbi_taxon_id": [
+                        9606
+                    ], 
+                    "biomaterial_id": "BT_S2"
+                }, 
+                "describedBy": "https://schema.humancellatlas.org/type/biomaterial/5.1.0/donor_organism"
+            }, 
+            "hca_ingest": {
+                "accession": "", 
+                "submissionDate": "2018-03-15T15:58:19.698Z", 
+                "updateDate": "2018-03-15T15:58:30.777Z", 
+                "document_id": "cd9d52fa-e89d-4c37-bb0e-997a2affe1dc"
+            }
+        }
+    ], 
+    "describedBy": "https://schema.humancellatlas.org/bundle/5.1.0/biomaterial", 
+    "schema_version": "5.1.0", 
+    "schema_type": "biomaterial_bundle"
+}

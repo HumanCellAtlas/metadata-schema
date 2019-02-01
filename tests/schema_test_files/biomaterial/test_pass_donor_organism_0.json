@@ -1,0 +1,24 @@
+{
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/biomaterial/5.1.0/donor_organism",
+  "schema_version" : "5.1.0",
+  "schema_type": "biomaterial",
+  "biomaterial_core": {
+    "biomaterial_id": "d1",
+    "biomaterial_name": "donor1",
+    "ncbi_taxon_id": [
+      9606
+    ]
+  },
+  "is_living": "yes",
+  "sex": "male",
+  "development_stage": {
+    "text": "adult",
+    "ontology": "EFO:0001272"
+  },
+  "genus_species": [
+    {
+    "text": "Homo sapiens",
+    "ontology": "NCBITAXON:9606"
+    }
+  ]
+}

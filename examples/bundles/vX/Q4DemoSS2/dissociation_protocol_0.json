@@ -1,0 +1,17 @@
+{
+    "describedBy": "https://schema.humancellatlas.org/type/protocol/biomaterial_collection/2.0.0/dissociation_protocol",
+    "schema_type": "protocol",
+    "protocol_core": {
+        "protocol_id": "dissociation_1",
+        "protocol_name": "a FACS method to separate cells"
+    },
+    "dissociation_method": {
+        "text": "fluorescence-activated cell sorting",
+        "ontology": "EFO:0009108"
+    },
+    "provenance": {
+        "document_id": "500215c8-7877-4e20-8b30-e3820bd098e4",
+        "submission_date": "2018-07-22T23:38:36.133Z",
+        "update_date": "2018-07-22T23:38:43.914Z"
+    }
+}
