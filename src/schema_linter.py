@@ -36,76 +36,86 @@ class SchemaLinter:
         # Check that all required root level fields are present in the schema
         for prop in required_root_level_keywords:
             if prop not in schema.keys():
-                print("Schema " + path + " is missing required root level field `" + prop + "`")
+                print(schema_filename + ".json: Missing required root level field `" + prop + "`")
 
         # Check that additionalProperties is set to false
         if "additionalProperties" in schema and schema['additionalProperties'] == True:
-            print("Schema " + path + " should not allow additional properties")
+            print(schema_filename + ".json: Should not allow additional properties")
 
         # Check that $schema is set to draft-07
         if "$schema" in schema and schema['$schema'] != "http://json-schema.org/draft-07/schema#":
-            print("Schema " + path + " must have $schema set to http://json-schema.org/draft-07/schema#")
+            print(schema_filename + ".json: Must have $schema set to http://json-schema.org/draft-07/schema#")
 
         # Check that the name of the schema in the describedBy URL is set to the schema filename
         if properties['describedBy']['pattern'].split("/")[-1] != schema_filename:
-            print("Schema " + path + " the end of the describedBy URL (" + properties['describedBy']['pattern'].split("/")[-1] + ") must match the schema filename (" + schema_filename + ")")
+            print(schema_filename + ".json: End of `describedBy` URL (" + properties['describedBy']['pattern'].split("/")[-1] + ") must match schema filename (" + schema_filename + ")")
 
         # Check that the schema name attribute is set to the schema filename
         if "name" in schema and schema['name'] != schema_filename:
-            print("Schema " + path + " the schema name attribute (" + schema['name'] + ") must match the schema filename (" + schema_filename + ")")
+            print(schema_filename + ".json: The `name` attribute (" + schema['name'] + ") must match the schema filename (" + schema_filename + ")")
 
         # Check that schema type is set to object
         if "type" in schema and schema['type'] != "object":
-            print("Schema " + path + " must have type set to object")
+            print(schema_filename + ".json: The `type` attribute must be set to object")
 
         # Check that all required fields are actually in the schema
         if "required" in schema:
             for req_prop in schema["required"]:
                 if req_prop not in properties:
-                    print("Property `" + req_prop + "` is listed as required in schema " + path + " but is undefined")
+                    print("Property `" + req_prop + "` is required in " + schema_filename + ".json but is undefined")
 
         # PROPERTY-LEVEL CHECKS
 
         # Check that essential properties `describedBy` and `schema_version` are present
         for ep in essential_properties:
             if ep not in properties:
-                print("Schema " + path + " is missing required property `" + ep + "`")
+                print(schema_filename + ".json: Missing required property `" + ep + "`")
 
         for property in properties:
             # Check that property name contains only lowercase letters and underscore
             if not re.match("^[a-z_]+$", property) and property not in ['describedBy']:
-                print("Schema " + path + ": Property `" + property + "` contains non-lowercase/underscore characters.")
+                print(schema_filename + ".json: Property `" + property + "` contains non-lowercase/underscore characters")
 
             # Check that property contains description attribute
             if 'description' not in properties[property].keys():
-                print("Schema " + path + ": Keyword `description` is missing from property `" + property + "`")
+                print(schema_filename + ".json: Keyword `description` missing from property `" + property + "`")
 
             # Check that property contains user-friendly attribute
             # Currently excludes ingest-supplied fields
-            # Could also exclude links.json and provenance.json in the future
+            # Currently excludes links.json and provenance.json
             if property not in ['provenance', 'schema_version', 'schema_type', 'describedBy'] and 'user_friendly' not in properties[property].keys():
-                print("Schema " + path + ": Keyword `user_friendly` is missing from property `" + property + "`")
+                if schema_filename not in ["links", "provenance"]:
+                    print(schema_filename + ".json: Keyword `user_friendly` missing from property `" + property + "`")
+
+            # Check that if property contains format attribute, format is valid JSON format
+            if 'format' in properties[property].keys() and properties[property]['format'] not in ["date", "date-time", "email"]:
+                print(schema_filename + ".json: Format `" + properties[property]['format'] + "` is not a valid JSON format)")
 
             # Check that property contains type attribute
             if 'type' not in properties[property].keys():
-                print("Schema " + path + ": Keyword `type` is missing from property `" + property + "`")
+                print(schema_filename + ".json: Keyword `type` missing from property `" + property + "`")
 
             else:
                 # Check that 'type' attribute is set to one of the valid JSON types
                 if properties[property]['type'] not in ["string", "number", "boolean", "array", "object", "integer"]:
-                    print("Schema " + path + ": Keyword `" + properties[property]['type'] + "` is not a valid JSON type")
+                    print(schema_filename + ".json: Type `" + properties[property]['type'] + "` is not a valid JSON type")
 
                 # Check that property of type array also contains the attribute items
                 if properties[property]['type'] == "array" and 'items' not in properties[property].keys():
-                    print("Schema " + path + ": Property `" + property + "` is type array but doesn't contain items")
+                    print(schema_filename + ".json: Property `" + property + "` is type array but doesn't contain items")
 
                 # Check that a property of type array contains the attribute items and items has either the type or $ref attribute
                 if properties[property]['type'] == "array" and 'items' in properties[property].keys() and '$ref' not in properties[property]['items'].keys() and 'type' not in properties[property]['items'].keys():
-                    print("Schema " + path + ": Property `" + property + "` is type array but items attribute doesn't contain type or $ref attribute")
+                    print(schema_filename + ".json: Property `" + property + "` is type array but items attribute doesn't contain type or $ref attribute")
 
                 # Check that property of type object also contains the attribute $ref
                 if properties[property]['type'] == "object" and '$ref' not in properties[property].keys():
-                    print("Schema " + path + ": Property `" + property + "` is type object but doesn't contain $ref")
+                    print(schema_filename + ".json: Property `" + property + "` is type object but doesn't contain $ref")
+
+            # Check that _unit properties having matching property w/o unit
+            if re.match("^[a-z_]+_unit$", property):
+                if property.split("_unit")[0] not in properties:
+                    print(schema_filename + ".json: Has unit property `" + property + "` but no corresponding `" + property.split("_unit")[0] + "` property")
 
             for kw in properties[property].keys():
                 if property == 'ontology' and kw == 'graph_restriction':
