@@ -6,6 +6,7 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/process/sequencing/plate_based_sequencing.json - v1.0.6] - 2019-02-05
 ### Fixed
@@ -54,8 +55,6 @@ Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
 ### [type/biomaterial/cell_line.json - v10.0.4] - 2019-02-05
 ### Fixed
 Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/target.json - v1.0.6] - 2019-02-01
 ### Fixed
