@@ -10,6 +10,7 @@
     "type": "object",
     "properties": {
         "describedBy" : {
+            "description": "The URL reference to the schema.",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/ethnicity_ontology",
             "type": "string"
         },
@@ -26,7 +27,7 @@
             "example": "European; Hispanic or Latin American"
         },
         "ontology": {
-            "description": "An ontology term identifier in the form prefix:accession",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hancestro"],
@@ -39,7 +40,7 @@
             "example": "HANCESTRO_0005 ;HANCESTRO_0014"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "user_friendly": "Ethnicity ontology label",
             "example": "European; Hispanic or Latin American"
