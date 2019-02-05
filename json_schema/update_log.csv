@@ -1,6 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/process/sequencing/plate_based_sequencing,patch,"Fixed inconsistencies with Style Guide as caught by linter. Fixes #789",,
-module/process/sequencing/barcode,patch,"Fixed inconsistencies with Style Guide as caught by linter. Fixes #789",,
-system/links,patch,"Fixed inconsistencies with Style Guide as caught by linter. Fixes #789",,
-core/biomaterial/biomaterial_core,patch,"Fixed inconsistencies with Style Guide as caught by linter. Fixes #789",,
-module/ontology/disease_ontology,patch,"Fixed inconsistencies with Style Guide as caught by linter. Fixes #789",,
