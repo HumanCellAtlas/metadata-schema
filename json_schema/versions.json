@@ -1,9 +1,9 @@
 {
-    "last_update_date": "2019-02-01T15:00:40Z",
+    "last_update_date": "2019-02-05T11:03:57Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
-                "biomaterial_core": "7.0.4"
+                "biomaterial_core": "7.0.5"
             },
             "file": {
                 "file_core": "5.2.5"
@@ -37,7 +37,7 @@
                 "cell_type_ontology": "5.3.5",
                 "cellular_component_ontology": "1.0.4",
                 "development_stage_ontology": "5.3.5",
-                "disease_ontology": "5.3.6",
+                "disease_ontology": "5.3.7",
                 "enrichment_ontology": "1.2.5",
                 "ethnicity_ontology": "5.3.7",
                 "instrument_ontology": "5.3.5",
@@ -59,9 +59,9 @@
                 "purchased_reagents": "6.0.4",
                 "sequencing": {
                     "10x": "1.0.5",
-                    "barcode": "5.2.5",
+                    "barcode": "5.2.6",
                     "insdc_experiment": "1.1.5",
-                    "plate_based_sequencing": "1.0.5"
+                    "plate_based_sequencing": "1.0.6"
                 }
             },
             "project": {
@@ -76,17 +76,17 @@
         },
         "system": {
             "license": "1.0.0",
-            "links": "1.1.4",
+            "links": "1.1.5",
             "provenance": "1.0.3"
         },
         "type": {
             "biomaterial": {
-                "cell_line": "10.0.3",
-                "cell_suspension": "8.7.3",
-                "donor_organism": "14.0.2",
-                "imaged_specimen": "2.0.6",
-                "organoid": "10.0.1",
-                "specimen_from_organism": "7.0.2"
+                "cell_line": "10.0.4",
+                "cell_suspension": "9.0.0",
+                "donor_organism": "14.0.3",
+                "imaged_specimen": "2.0.7",
+                "organoid": "10.0.2",
+                "specimen_from_organism": "7.0.3"
             },
             "file": {
                 "analysis_file": "5.3.6",
@@ -122,7 +122,7 @@
                 },
                 "protocol": "6.3.9",
                 "sequencing": {
-                    "library_preparation_protocol": "4.4.5",
+                    "library_preparation_protocol": "4.4.6",
                     "sequencing_protocol": "9.0.11"
                 }
             }

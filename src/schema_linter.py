@@ -1,7 +1,8 @@
-from schema_test_suite import get_json_from_file
+# from schema_test_suite import get_json_from_file
 import logging
 import os
 import re
+import json
 
 
 allowed_root_level_keywords = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions']
@@ -23,7 +24,7 @@ class SchemaLinter:
         self.logger = logging.getLogger(__name__)
 
     def lintSchema(self, path):
-        schema = get_json_from_file(path)
+        schema = self.get_json_from_file(path)
         properties = schema['properties']
 
         # SCHEMA-LEVEL CHECKS
@@ -157,6 +158,14 @@ class SchemaLinter:
                     for nkw in properties[property][kw].keys():
                         if nkw not in property_keywords:
                             print("Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
+
+
+    def get_json_from_file(self, filename, warn = False):
+        """Loads json from a file.
+        Optionally specify warn = True to warn, rather than
+        fail if file not found."""
+        f = open(filename, 'r')
+        return json.loads(f.read())
 
 
 if __name__ == '__main__':
