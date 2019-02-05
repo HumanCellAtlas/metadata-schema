@@ -9,6 +9,58 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/biomaterial/cell_suspension.json - v9.0.0] - 2019-02-05
+### Changed
+Changed total_estimated_cells to estimated_cell_count. Fixes #649.
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.6] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [module/process/sequencing/barcode.json - v5.2.6] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [system/links.json - v1.1.5] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [core/biomaterial/biomaterial_core.json - v7.0.5] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [module/ontology/disease_ontology.json - v5.3.7] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/cell_suspension.json - v8.7.4] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.6] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/imaged_specimen.json - v2.0.7] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.3] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/donor_organism.json - v14.0.3] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/organoid.json - v10.0.2] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/cell_line.json - v10.0.4] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
 ### [module/protocol/target.json - v1.0.6] - 2019-02-01
 ### Fixed
 Fixed channel_id field which was declared as an array but missing items{} block Fixes #777
