@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/cell_suspension,major,"Updated total_estimated_cells to estimated_cell_count. Fixes #649.",,

@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_suspension.json - v9.0.0] - 2019-02-05
+### Changed
+Changed total_estimated_cells to estimated_cell_count. Fixes #649.
+
 ### [module/process/sequencing/plate_based_sequencing.json - v1.0.6] - 2019-02-05
 ### Fixed
 Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
