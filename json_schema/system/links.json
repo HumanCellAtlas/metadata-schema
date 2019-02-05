@@ -97,7 +97,7 @@
       ]
     },
     "links": {
-      "description": "An array of linking objects",
+      "description": "An array of linking objects.",
       "type": "array",
       "items": {
         "type": "object",
