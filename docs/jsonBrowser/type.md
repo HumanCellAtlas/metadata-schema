@@ -17,7 +17,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci, ATCC
+supplier | The supplier of the cell line. | string | no |  | Supplier |  | HipSci; ATCC
 catalog_number | The supplier catalogue number for the cell line. | string | no |  | Catalog number |  | 77650057
 lot_number | The supplier lot or batch number for the cell line. | string | no |  | Lot/batch number |  | 24.10.14
 catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc
@@ -28,7 +28,7 @@ cell_morphology | Features relating to the morphology of the cells. | object | n
 growth_conditions | Features relating to the growth and/or maintenance of the cell lines. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 confluency | The percent a plate surface is covered by cells. | number | no |  | Percent confluency |  | 60
 cell_type | The cell type that the cell line represents. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
-karyotype | The karyotype of the cell line. | string | no |  | Karyotype |  | sex chromosome complement of XY, del(2) (q11)
+karyotype | The karyotype of the cell line. | string | no |  | Karyotype |  | sex chromosome complement of XY; del(2) (q11)
 tissue | The tissue that the cell line was derived from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Tissue |  | 
 date_established | When the cell line was established. | string | no |  | Date established |  | 2017-03-19
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
@@ -49,11 +49,12 @@ cell_morphology | Features relating to the morphology of cells in a biomaterial.
 growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 genus_species | The scientific binomial name for the species of the suspension. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
 selected_cell_type | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type |  | 
-total_estimated_cells | Total estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 2100
+estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) | Plate-based sequencing |  | 
+timecourse | Information relating to a timecourse associated with this cell suspension. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
 
 ## Donor organism
-_Information about the donor organism from which a specimen was collected._
+_Information about the donor from which a specimen was collected._
 
 Location: type/biomaterial/donor_organism.json
 
@@ -72,7 +73,7 @@ organism_age_unit | The unit in which Age is expressed. | object | no | [See mod
 development_stage | A classification of the developmental stage of the organism. | object | yes | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 diseases | Short description of known disease(s) of the organism. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
-familial_relationship | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
+familial_relationships | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
 medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
 gestational_age | Gestational age of organism in Gestational age units measured since fertilization. | string | no |  | Gestational age |  | 22; 5-7
 gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | 
@@ -92,7 +93,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-overview_images | List of filenames of photographs of specimen. | array | no |  | Gross image |  | my_image_file.jpg, overview_image.tiff
+overview_images | List of filenames of photographs of specimen. | array | no |  | Gross image |  | my_image_file.jpg; overview_image.tiff
 slice_thickness | Thickness of the imaged slice in micrometres. | number | yes |  | Imaged slice thickness |  | 14
 internal_anatomical_structures | Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample. | array | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Internal tissue structures |  | 
 
@@ -147,7 +148,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
 
 ## Image file
 _Information about an image file generated by an imaging experiment._
@@ -170,7 +171,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | yes |  | NCBI taxon ID |  | 9606, 10090
+ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | yes |  | NCBI taxon ID |  | 9606; 10090
 genus_species | The scientific binomial name for the species of this reference. | object | yes | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
 reference_type | The type of the reference file. | string | yes |  | Reference type | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index.
 assembly_type | The assembly type of the genome reference file. | string | yes |  | Genome assembly type | primary assembly, complete assembly, patch assembly | Should be one of: primary assembly, complete assembly, or patch assembly.
@@ -202,7 +203,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-file_description | A short description of the file contents. | string | no |  | File description |  | Protocol for FACS enrichment, Image of spleen sample collection location
+file_description | A short description of the file contents. | string | no |  | File description |  | Protocol for FACS enrichment; Image of spleen sample collection location
 
 ## Process
 _Information about a process completed in the experiment._
@@ -268,7 +269,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 protocol_type | The type of protocol. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | sample enrichment
 
 ## Analysis protocol
@@ -407,7 +408,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-microscope_setup_description | Description of the microscope setup. | string | no |  | Microscope setup description |  | Motorized stage (SCAN IM 112 × 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus).
+microscope_setup_description | Description of the microscope setup. | string | no |  | Microscope setup description |  | Motorized stage (SCAN IM 112 x 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus).
 microscopy_technique | The type of microscopy. | object | yes | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
 magnification | Magnification of the objective used for imaging. | string | yes |  | Magnification |  | 60x; 100x
 numerical_aperture | Numerical aperture of the objective. | number | yes |  | Numerical aperture |  | 1.3; 0.75
@@ -461,7 +462,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
-local_machine_name | Local name for the particular machine used for sequencing. | string | no |  | Local machine name |  | Machine1, HSMA-20
+local_machine_name | Local name for the particular machine used for sequencing. | string | no |  | Local machine name |  | Machine1; HSMA-20
 paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean | yes |  | Paired end? |  | Should be one of: yes, or no.
 sequencing_approach | The general method for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
 10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 

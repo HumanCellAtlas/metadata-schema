@@ -45,7 +45,7 @@
         "supplier": {
            "description": "The supplier of the cell line.",
            "type": "string",
-           "example": "HipSci, ATCC",
+           "example": "HipSci; ATCC",
            "user_friendly": "Supplier"
         },
         "catalog_number": {
@@ -120,7 +120,7 @@
             "description": "The karyotype of the cell line.",
             "type": "string",
             "user_friendly": "Karyotype",
-            "example": "sex chromosome complement of XY, del(2) (q11)"
+            "example": "sex chromosome complement of XY; del(2) (q11)"
         },
         "tissue": {
             "description": "The tissue that the cell line was derived from.",

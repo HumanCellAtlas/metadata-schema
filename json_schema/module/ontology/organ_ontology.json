@@ -27,7 +27,7 @@
             "example": "heart; immune system"
         },
         "ontology": {
-            "description": "A term from the ontology [UBERON](https://www.ebi.ac.uk/ols/ontologies/uberon) for an organ or a cellular bodily fluid such as blood or lymph.",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hcao", "obo:uberon"],
@@ -40,7 +40,7 @@
             "example": "UBERON:0000948; UBERON:0002405"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "user_friendly": "Organ ontology label",
             "example": "heart; immune system"
