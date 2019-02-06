@@ -4,7 +4,7 @@
 - [Introduction](#introduction)
 - [General steps of the update process](#general-steps-of-the-update-process)
 - [Specific how-to for making changes](#specific-how-to-for-making-changes)
-- [Schema update acceptance process](#schema-update-acceptance-process)
+- [Schema update review process](#schema-update-review-process)
 - [Committer guidelines](#committer-guidelines)
 - [Adding new committers](#adding-new-committers)
 - [Glossary of roles](#glossary-of-roles)
