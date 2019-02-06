@@ -13,5 +13,5 @@ For <> schema:
 
 ### Reviews requested
 
-- Need <number> Reviewers to approve because <reason>
-- Last to review/approve, merge changes by <deadline>
+- Need <number> Reviewers to approve because this is a <major, minor, patch> update
+- Last Reviewer to review/approve, merge changes by <deadline>
