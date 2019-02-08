@@ -32,7 +32,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) |  |  | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
 
 ## Supplementary file
 _Supplementary files belonging to a project._
