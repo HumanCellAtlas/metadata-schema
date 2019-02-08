@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-02-05T11:03:57Z",
+    "last_update_date": "2019-02-08T11:15:16Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -90,7 +90,7 @@
             },
             "file": {
                 "analysis_file": "5.3.6",
-                "image_file": "1.0.3",
+                "image_file": "1.0.4",
                 "reference_file": "2.2.10",
                 "sequence_file": "7.0.2",
                 "supplementary_file": "1.1.8"

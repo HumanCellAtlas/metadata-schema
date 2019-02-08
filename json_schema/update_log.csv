@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/file/image_file,patch,"Added user_friendly name to file_core in image_file. Fixes #798",,
