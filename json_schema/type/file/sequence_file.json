@@ -67,7 +67,7 @@
             "example": 51,
             "user_friendly": "Read length"
         },
-        "insdc_run": {
+        "insdc_run_accessions": {
             "description": "An INSDC (International Nucleotide Sequence Database Collaboration) run accession from the DDBJ, NCBI, or EMBL-EBI.",
             "type": "array",
             "items": {
