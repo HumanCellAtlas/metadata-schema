@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "collection_method"
+        "method"
     ],
     "title": "Collection protocol",
     "name": "collection_protocol",
@@ -41,7 +41,7 @@
             "$ref": "core/protocol/protocol_core.json",
             "user_friendly": "Protocol core"
         },
-        "collection_method": {
+        "method": {
             "description": "Method used to collect the biomaterial.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
