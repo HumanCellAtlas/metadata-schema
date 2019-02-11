@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+module/process/sequencing/insdc_experiment,major,"Fixed insdc_experiment_accession field to adhere to Style Guide. Fixes #809.",,
+module/process/sequencing/plate_based_sequencing,major,"Fixed well_quality field. Fixes #809.",,
