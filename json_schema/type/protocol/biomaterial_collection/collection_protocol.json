@@ -47,7 +47,7 @@
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Collection method"
         },
-        "protocol_reagents": {
+        "reagents": {
             "description": "A list of purchased reagents used in this protocol.",
             "type": "array",
             "items": {
