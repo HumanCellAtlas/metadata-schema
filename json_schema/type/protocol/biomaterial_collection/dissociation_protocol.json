@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "dissociation_method"
+        "method"
     ],
     "title": "Dissociation protocol",
     "name": "dissociation_protocol",
@@ -41,13 +41,13 @@
             "$ref": "core/protocol/protocol_core.json",
             "user_friendly": "Protocol core"
         },
-        "dissociation_method": {
+        "method": {
             "description": "How cells or organelles were dissociated.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Dissociation method"
         },
-        "protocol_reagents": {
+        "reagents": {
             "description": "A list of purchased reagents used in this protocol.",
             "type": "array",
             "items": {
