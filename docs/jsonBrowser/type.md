@@ -464,6 +464,6 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
 local_machine_name | Local name for the particular machine used for sequencing. | string | no |  | Local machine name |  | Machine1; HSMA-20
 paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean | yes |  | Paired end? |  | Should be one of: yes, or no.
-sequencing_approach | The general method for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
+method | The general method for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
 10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 
 
