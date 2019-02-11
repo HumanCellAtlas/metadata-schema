@@ -1,2 +1,3 @@
 Schema,Change type,Change message,Version,Date
 type/protocol/biomaterial_collection/collection_protocol,major,"Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.",,
+type/protocol/biomaterial_collection/dissociation_protocol,major,"Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.",,
