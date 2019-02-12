@@ -1,1 +1,4 @@
 Schema,Change type,Change message,Version,Date
+module/protocol/target,patch,"Changed u-f, examples, and description for some fields. Fixes #816.",,
+module/protocol/channel,patch,"Changed u-f, examples, and description for some fields. Fixes #816.",,
+module/biomaterial/medical_history,patch,"Added examples. Fixes #816.",,
