@@ -48,12 +48,12 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Check out** the pull request branch and make sure your local copy is up-to-date
 
-        git checkout <name_of_branch>
+        git checkout <name_of_pull_request_branch>
         git pull
 
-1. **Verify** whether there are any merge conflicts between the PR branch and develop. You can do this in github or on your computer. If merge conflicts exist between the branch and develop:
+1. **Verify** whether there are any merge conflicts between the PR branch and develop. You can do this in GitHub or on your computer.
 
-    1. **Pull** develop into the PR branch locally (on your computer)
+    1. **Pull** develop into the pull request branch locally (on your computer)
 
             git pull origin develop
 
@@ -63,7 +63,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
         There are a few different ways to fix merge conflicts. Some approaches are:
         
-        1. Open files an environment that is able to help with merge conflicts such as PyCharm. Right-click anywhere in the directory browser on the left and choose Git ->  Resolve conflicts. In the pop-up, click on each file and either choose to keep Yours, Theirs, or Merge (if the conflicts are more complicated).
+        1. Open files in an environment that is able to help with merge conflicts such as PyCharm. Right-click anywhere in the directory browser on the left and choose Git ->  Resolve Conflicts. In the pop-up, click on each file and either choose to keep Yours, Theirs, or Merge (if the conflicts are more complicated).
         
         1. Open files with an in-line text editor or text editing app. Follow directions [here](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/) for how to fix the conflicts.
 
@@ -71,7 +71,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
     1. **Commit** merge conflict fixes
 
-1. **Check json_schema/update_log.csv** to make sure that all metadata changes in this branch have been documented. There should be two commas at the end of each line in this file.
+1. **Check** json_schema/update_log.csv to make sure that all metadata changes in this branch have been documented. There should be two commas at the end of each line in this file.
 
 1. **Run** the release preparation script from the `/src` directory. The script should be run with Python 3 and takes no direct input arguments, but does require `update_log.csv` to be filled in correctly.
 
@@ -93,14 +93,16 @@ From now on, every time you commit anything in the metadata schema repo using th
         git diff ../json_schema/versions.json
         git diff ../changelog.md
 
-1. **Commit** your changes back to the branch and push to github
+1. **Commit** your changes back to the branch and push to GitHub
 
         git commit -a -m "Ran release_prepare.py script."
-        git push origin <name_of_branch>
+        git push origin <name_of_pull_request_branch>
 
-1. **Wait** for the Travis build to pass, then **merge** this PR into develop immediately.
+1. **Wait** for the Travis build to pass, then **merge** the PR into develop immediately.
 
 1. **Delete** the PR branch, unless otherwise noted by the person who opened the PR.
+
+1. **Mark** any linked GitHub issues with the "done" label, and then **close** the issue.
 
 ## Steps of the release process
 
@@ -108,7 +110,15 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 Anyone on the metadata team can trigger a primary release from develop to integration. Please note that the DCP-wide release from integration to staging happens each Wednesday. It is preferable to do a primary release no later than Monday so that any issues that might arise can be addressed without disrupting the DCP-wide release process.
 
-1. **Check out** develop to your local machine
+1. **Check out** the integration branch and pull any changes to make sure it is up-to-date
+
+        git checkout integration
+        git pull
+
+1. **Check out** the develop branch to your local machine
+
+        git checkout develop
+        git pull
 
 1. **Verify** that there are no merge conflicts between develop and integration by running
 
