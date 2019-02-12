@@ -63,7 +63,7 @@
             "type": "number",
             "example": "400",
             "user_friendly": "Exposure time",
-            "guidelines": "Enter value in milliseconds"
+            "guidelines": "Enter value in milliseconds."
         }
     }
 }
