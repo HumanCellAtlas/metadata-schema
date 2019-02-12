@@ -37,7 +37,7 @@
                 "include_self": false
             },
             "user_friendly": "Ethnicity ontology ID",
-            "example": "HANCESTRO:0005 ;HANCESTRO:0014"
+            "example": "HANCESTRO:0005; HANCESTRO:0014"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
