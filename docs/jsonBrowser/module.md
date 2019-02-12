@@ -506,6 +506,6 @@ purchased_reagent_details | Information describing purchased reagent used to det
 probe_sequence | Sequence of a probe used to detect target. | string | no |  | Probe sequence |  | 
 fluorophore | Fluorophore used to detect target. | string | no |  | Fluorophore |  | FITC
 assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; smFISH; immunofluorescence; fluorescent cell stain
-multiplexed | Were multiple targets detected simultaneously in one channel? Should be yes or no. | string | yes |  | Is this a multiplexed experiment? | yes, no | yes
+multiplexed | Whether multiple targets were detected simultaneously in this channel. | string | yes |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
 channel_id | Channel ID used to assay signal. Should be consistent with the ID in the channel tab. | array | no |  | Channel |  | 1; A
 
