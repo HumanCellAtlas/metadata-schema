@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/ontology/ethnicity_ontology.json,patch,"Changed hancestro example from underscore to colon",,
+module/ontology/ethnicity_ontology,patch,"Changed hancestro example from underscore to colon",,
