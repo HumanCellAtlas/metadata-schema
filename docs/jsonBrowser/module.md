@@ -498,8 +498,8 @@ Location: module/protocol/target.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook. | string | no |  | Target molecule name |  | ACTA1; cFos
-molecule_id | An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot). | string | no |  | Target molecule identifier. |  | CHEBI:85345; ensembl_9606
+molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. | string | no |  | Target molecule name |  | ACTA1; cFos
+molecule_id | An identifier referring to the the target molecule. | string | no |  | Target molecule identifier |  | CHEBI:85345; ensembl_9606
 subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
 reagent_name | Name of reagent used to detect target. | string | no |  | Reagent name |  | 
 purchased_reagent_details | Information describing purchased reagent used to detect target. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased reagent details |  | 
