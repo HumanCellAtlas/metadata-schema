@@ -355,7 +355,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string |  | Channel ID |  | 1; A
 excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number |  | Excitation wavelength |  | 640
 filter_range | Wavelength range of the emission filter in nanometers. | string |  | Filter range |  | 665 - 705
-multiplexed | Were multiple targets detected simultaneously in this channel? Should be yes or no. | string |  | Is this a multiplexed experiment? | yes, no | yes
+multiplexed | Whether multiple targets were detected simultaneously in this channel. | string |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
 exposure_time | Acquisition time for a single image per channel, in milliseconds. | number |  | Exposure time |  | 400
 ### Target<a name='Target'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
