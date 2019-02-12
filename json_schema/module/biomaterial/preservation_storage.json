@@ -24,15 +24,16 @@
                 "ambient temperature",
                 "cut slide",
                 "fresh",
-                "frozen, -70C freezer",
-                "frozen, -150C freezer",
-                "frozen, liquid nitrogen",
-                "frozen, vapor phase",
+                "frozen at -70C",
+                "frozen at -150C",
+                "frozen in liquid nitrogen",
+                "frozen in vapor phase",
                 "paraffin block",
-                "RNAlater, frozen",
-                "TRIzol, frozen"
+                "RNAlater at 4C",
+                "RNAlater at 25C",
+                "RNAlater at -20C"
             ],
-            "example": "frozen, liquid nitrogen; fresh",
+            "example": "frozen in liquid nitrogen; fresh",
             "user_friendly": "Storage method"
         },
         "storage_time": {
