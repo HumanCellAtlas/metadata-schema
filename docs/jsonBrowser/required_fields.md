@@ -172,7 +172,7 @@ ipsc_induction_method | Induction method applied to primary cell culture to indu
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) |  |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 ### Imaging Protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

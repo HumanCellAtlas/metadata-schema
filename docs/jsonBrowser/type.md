@@ -386,17 +386,17 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) |  |  | 
-fresh_slicing_method | The method by which fresh tissue was sliced (e.g. vibrotome) | string | no |  | Fresh slicing method |  | vibrotome
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+fresh_slicing_method | The method by which fresh tissue was sliced. | string | no |  | Fresh slicing method |  | vibrotome
 imaged_slice_thickness | Thickness of the imaged slice in micrometres. | number | no |  | Imaged slice thickness |  | 10
-final_slicing_method | The method by which the final slice was obtained (e.g. cryosectioning). | string | no |  | Final slicing method |  | cryosectioning
+final_slicing_method | The method by which the final slice was obtained. | string | no |  | Final slicing method |  | cryosectioning
 post_resection_interval | Length of time between surgical resection and fresh slicing of tissue. | number | no |  | Time between resection and fresh slicing |  | 5
 post_resection_interval_unit | The unit of time in which the post resection interval is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Post resection interval time unit |  | day
-pre_final_slice_preservation_method | Tissue preservation method used prior to final slicing (e.g. freezing). | object | no | [See module  preservation_storage](module.md/#preservation_storage) | Pre-final slice preservation method |  | 
+pre_final_slice_preservation_method | Tissue preservation method used prior to final slicing. | object | no | [See module  preservation_storage](module.md/#preservation_storage) | Pre-final slice preservation method |  | freezing
 post_final_slicing_interval | Length of time between secondary slicing and hybridization. | number | no |  | Post final slicing interval |  | 7
 post_final_slicing_interval_unit | The unit of time in which the post final slicing interval is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Post final slicing interval time unit |  | day
 fiducial_marker | Fiducial markers for the alignment of images taken across multiple rounds of imaging. | string | no |  | Fiducial marker |  | beads
-expansion_factor | Factor by which the imaged tissue was expanded. | number | no |  | Expansion factor |  | 3
+expansion_factor | Factor by which the imaged tissue was expanded in one dimension. | number | no |  | Expansion factor |  | 3
 
 ## Imaging Protocol
 _Information about the imaging protocol_
