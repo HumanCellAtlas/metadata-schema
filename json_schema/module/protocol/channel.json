@@ -59,10 +59,11 @@
             "user_friendly": "Target fluorophore"
         },
         "exposure_time": {
-            "description": "Acquisition time for a single image per channel in miliseconds",
+            "description": "Acquisition time for a single image per channel, in milliseconds.",
             "type": "number",
             "example": "400",
-            "user_friendly": "Exposure time"
+            "user_friendly": "Exposure time",
+            "guidelines": "Enter value in milliseconds"
         }
     }
 }
