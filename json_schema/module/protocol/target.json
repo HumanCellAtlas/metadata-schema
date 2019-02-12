@@ -46,8 +46,7 @@
             "description": "Name of reagent used to detect target.",
             "type": "string",
             "user_friendly": "Reagent name",
-            "guidelines": "Please list any encoding probes, readout probes, oligonucleotide probes conjugated to secondary antibody.",
-            "example": ""
+            "guidelines": "Please list any encoding probes, readout probes, oligonucleotide probes conjugated to secondary antibody."
         },
         "purchased_reagent_details": {
             "description": "Information describing purchased reagent used to detect target.",
