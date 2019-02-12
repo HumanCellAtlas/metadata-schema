@@ -55,13 +55,17 @@ From now on, every time you commit anything in the metadata schema repo using th
 
         This is equivalent to merging develop into the PR branch and reveals all the conflicts.
 
-    1. **Open** any files with conflicts, ideally in an environment that is able to help with merge conflicts such as PyCharm (but a text editor is also fine)
+    1. **Fix** any merge conflicts
 
-    1. **Fix** the merge conflicts and commit
+        There are a few different ways to fix merge conflicts. Some approaches are:
+        
+        1. Open files an environment that is able to help with merge conflicts such as PyCharm. Right-click anywhere in the directory browser on the left and choose Git ->  Resolve conflicts. In the pop-up, click on each file and either choose to keep Yours, Theirs, or Merge (if the conflicts are more complicated).
+        
+        1. Open files with an in-line text editor or text editing app. Follow directions [here](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/) for how to fix the conflicts.
 
-        ***NB*** If merge conflicts are limited to files in the `/docs` directory, you can designate the version in your branch as the correct version over the files in `develop` by using:
+        **NB**If merge conflicts are limited to files in the `/docs` directory, always keep *Your* changes as they will be the most up-to-date.
 
-            git merge --strategy-option ours
+    1. **Commit** merge conflict fixes
 
 1. **Check json_schema/update_log.csv** to make sure that all metadata changes in this branch have been documented. There should be two commas at the end of each line in this file.
 
