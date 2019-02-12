@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This document serves as an SOP for super users who are responsible for merging PRs into develop ("pre-release") and propagate metadata schemas from develop to integration, to staging, to production ("release").
+This document is an SOP for super users who are responsible for merging PRs into develop ("pre-release") and propagate metadata schemas from develop to integration, to staging, to production ("release").
 
 **What is in this document**
 - Steps for merging pull requests (PRs) into the develop branch aka "pre-release"
@@ -41,6 +41,10 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](committers.md#schema-update-acceptance-process). It is the responsibility of the last Reviewer of the PR to merge it into develop.
 
+1. **Check out** the develop branch and pull any changes to make sure it is up-to-date
+
+        git checkout develop
+        git pull
 
 1. **Check out** the pull request branch and make sure your local copy is up-to-date
 
@@ -63,7 +67,7 @@ From now on, every time you commit anything in the metadata schema repo using th
         
         1. Open files with an in-line text editor or text editing app. Follow directions [here](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/) for how to fix the conflicts.
 
-        **NB**If merge conflicts are limited to files in the `/docs` directory, always keep *Your* changes as they will be the most up-to-date.
+        **NB** If merge conflicts are limited to files in the `/docs` directory, always keep *Your* changes as they will be the most up-to-date.
 
     1. **Commit** merge conflict fixes
 
