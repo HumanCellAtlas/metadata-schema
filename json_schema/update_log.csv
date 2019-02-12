@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/imaging/imaging_preparation_protocol,patch,"Changed guidelines, descriptions, and user-friendly names. Fixes #796.",,
