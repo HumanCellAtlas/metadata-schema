@@ -1,3 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/file/image_file,patch,"Added user-friendly name to file_core. Fixes #797.",,
 module/protocol/target,patch,"Updated guidelines, descriptions, and user-friendly names. Fixes #797.",,
