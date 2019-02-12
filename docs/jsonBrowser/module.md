@@ -220,7 +220,7 @@ Location: module/ontology/ethnicity_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The ethnicity of the human donor. | string | yes |  | Ethnicity |  | European; Hispanic or Latin American
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Ethnicity ontology ID |  | HANCESTRO_0005 ;HANCESTRO_0014
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Ethnicity ontology ID |  | HANCESTRO:0005; HANCESTRO:0014
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Ethnicity ontology label |  | European; Hispanic or Latin American
 
 ## Instrument ontology<a name='Instrument ontology'></a>

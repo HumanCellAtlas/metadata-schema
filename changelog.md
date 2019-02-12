@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/ethnicity_ontology.json - v5.3.8] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [module/biomaterial/human_specific.json - v1.0.10] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [type/biomaterial/donor_organism.json - v14.0.4] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
 ### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.2] - 2019-02-12
 ### Changed
 Changed guidelines, descriptions, and user-friendly names. Fixes #796.
