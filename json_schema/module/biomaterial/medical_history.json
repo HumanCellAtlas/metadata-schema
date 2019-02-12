@@ -52,7 +52,8 @@
         "test_results": {
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
-            "user_friendly": "Test results"
+            "user_friendly": "Test results",
+            "example": "lipid panel shows normal level of LDL (124 mg/dL)"
         },
         "treatment": {
             "description": "Treatments the individual has undergone prior to biomaterial collection.",
