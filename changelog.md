@@ -7,6 +7,22 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v5.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
 ### [type/file/image_file.json - v1.0.4] - 2019-02-08
 ### Added
 Added user_friendly name to file_core in image_file. Fixes #798
