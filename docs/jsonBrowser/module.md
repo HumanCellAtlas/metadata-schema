@@ -85,7 +85,7 @@ medication | Medications the individual was taking at time of biomaterial collec
 smoking_history | Estimated number of cigarettes smoked per day. | string | no |  | Smoking history |  | 20 cigarettes/day for 25 years, stopped 2000
 nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | 
-treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | 
+treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
 
 ## Mouse-specific<a name='Mouse-specific'></a>
 _Information specific to an organism that is a mouse (Mus musculus)._
