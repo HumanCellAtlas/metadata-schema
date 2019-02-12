@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/target.json - v1.0.7] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.10] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
 ### [type/protocol/biomaterial_collection/collection_protocol.json - v9.0.0] - 2019-02-12
 ### Fixed
 Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
