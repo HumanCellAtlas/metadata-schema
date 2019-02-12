@@ -58,7 +58,8 @@
             "pattern": "[ATGCUatgcu]+",
             "description": "Sequence of a probe used to detect target.",
             "type": "string",
-            "user_friendly": "Probe sequence"
+            "user_friendly": "Probe sequence",
+            "example": "AGGCTATAGCGGAGCTACG; aggctatagcggagctacg"
         },
         "fluorophore": {
             "description": "Fluorophore used to detect target.",
