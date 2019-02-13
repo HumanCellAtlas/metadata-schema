@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/file/sequence_file,major,"Fixed array field names to be plural to adhere to Style Guide. Fixes #805.",,
