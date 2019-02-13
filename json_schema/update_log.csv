@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/cell_line,major,"Changed date_established from date-time to date format. Fixes #821.",,
