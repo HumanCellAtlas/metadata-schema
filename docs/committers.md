@@ -4,7 +4,7 @@
 - [Introduction](#introduction)
 - [General steps of the update process](#general-steps-of-the-update-process)
 - [Specific how-to for making changes](#specific-how-to-for-making-changes)
-- [Schema update acceptance process](#schema-update-acceptance-process)
+- [Schema update review process](#schema-update-review-process)
 - [Committer guidelines](#committer-guidelines)
 - [Adding new committers](#adding-new-committers)
 - [Glossary of roles](#glossary-of-roles)
@@ -129,69 +129,29 @@ This section outlines steps for Committers to make suggested changes to the meta
 
         git push origin mf-new-mouse-module-Issue222
 
-1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, write a general description of the changes followed by a bulleted list of the specific changes made in the files. 
+1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, fill out "Release notes" and "Reviews requested" sections as directed by the PR template. 
 
-1. **Request** additional Reviewer(s), if required, in GitHub to signal that a PR needs to be reviewed. Announce the update on Slack. If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, a Reviewer should run the pre-release process and merge the PR. **The Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
+1. **Request** additional Reviewer(s), if required, in GitHub to signal that a PR needs to be reviewed. If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, the last Reviewer should run the pre-release process and merge the PR. **The Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
 
-## Schema update acceptance process
+## Schema update review process
 
-There are three types of update acceptance verification: full, medium, and light. These three levels aim to facilitate agility for simple changes with few downstream dependencies but ensure that appropriate consideration is required for changes which are likely to trigger software updates. All reviews should consider what need is met by the requested change and what the impact of the change is on the existing systems, ensuring that updates which require major version changes also bring value to the DCP as a whole.
+A pull request should be reviewed within a specified **review timeframe**. The review timeframe starts when the Committer who opens the PR tags the appropriate number of Reviewers to review. Patch schema updates should be given 3 working days to review, while major and minor schema updates should be given 5 working days to review. Exceptions can be made if a PR is particularly complex. Weekend days and US/UK holidays do not count towards the review timeframe. 
 
-The *review timeframe* starts when the Committer responsible for the suggestion has announced it on the #hca-metadata and #dcp Slack channels. Weekend days and US/UK holidays do not count towards the review timeframe.
+The **reviewer number** is the number of Reviewers who need to have reviewed the pull request before it is merged. Patch schema updates should be assigned 1 Reviewer, while major and minor schema updates should be assigned 2 Reviewers. Exceptions can be made if a PR is particularly complex or specific persons are required for a review.
 
-The *minimum reviewer number* is the minimum number of Reviewers who need to have seen and agreed to the change before the pull request can be accepted. This agreement must be active and result in at least +1 on the pull request thread. If a DCP team member or metadata-schema repo committer is the person who suggested the change, they should not be counted as one of the Reviewers needed for agreement.
+In cases of more than 1 requested Reviewer:
+- The first reviewer should review the pull request and approve or reject the changes. If changes are approved, the first reviewer should tag the remaining Reviewer in a comment. If changes are rejected, the Reviewer should request further changes and then follow up with a review of the new changes from the Committer.
+- The second reviewer should review the pull request and approve or reject the changes. If changes are approved, the second reviewer should merge the pull request. If changes are rejected, the Reviewer should request further changes and then follow up with a review of the new changes from the Committer. If the changes are then approved, the second reviewer should merge the pull request.
+- If a Reviewer can not do the review in the assigned timeframe, the Reviewer is responsible for unassigning himself or herself as a Reviewer, assigning a replacement Reviewer, and notifying the new Reviewer in a tagged comment in the pull request.
 
-Any *negative marks* (-1) against a proposal that can not be resolved in the allotted timeframe will need to extend the review process. The full details of this are described below. 
+In cases of 1 requested Reviewer, the Reviewer fulfills the roles of both first and second Reviewer.
 
-If during this process there is any disagreement about the best approach, the assigned Committer should work with the Contributor and other concerned third parties to find an acceptable solution for all concerned. If consensus still cannot be reached, a vote between the committers for the metadata-schema repo should decide the solution.
-
-### Full acceptance
-
-**Review timeframe**: 10 working days
-
-**Minimum reviewer number**: 3 (a Committer, and two relevant third parties (Reviewers))
-
-Full acceptance is used when making major version changes to high stability modules. This means the module being changed is likely to trigger a new software release for a DCP service. The DCP service which is most likely to be affected by any metadata update would be the Ingest Infrastructure. This should be a rare occurrence. The DCP metadata and code should have a clear separation of concerns and the dependencies between the two should be minimal. That being said, the ingest infrastructure, in particular, needs some knowledge of the metadata structure in order to enable ID fields to be assigned and to allow the system to know the relationships between the submitted entities. Any module which contains these fields must be considered high stability.
-
-This process should take 10 working days. The assigned Committer should identify at least two developers from the DCP team to review the change and comment. If the Contributor making the suggestion was a developer from a DCP team, the two Reviewers should be other DCP developers. 
-
-### Medium acceptance
-
-**Review timeframe**: 120 hours (5 working days)
-
-**Minimum reviewer number**: 2 (a Committer and one relevant third party (Reviewer))
-
-Medium acceptance is the process used for major version changes to medium stability modules and minor version changes to both high and medium stability modules. 
-
-Generally this is a suitable acceptance process for changes which don’t require DCP software updates but are likely to affect how the metadata can be queried from a scientific perspective. It is expected for these types of updates to happen more frequently than those which require full acceptance as they concern fields with scientific meaning. New experiments and changes in technology may require new fields or changes to existing fields.
-
-The process should take 5 working days. The assigned Committer should identify at least one interested third party (Reviewer) from the secondary and tertiary analysis groups to provide review. As before, if the Contributor is a member of the secondary or tertiary analysis group, another person should be selected as the Reviewer.
-
-### Light acceptance
-
-**Review timeframe**: 72 hours (3 working days)
-
-**Minimum reviewer number**: 1 (a Committer)
-
-Light acceptance is the process used for all patch versions, regardless of stability and for all changes to low stability modules.
-
-Light acceptance is lightweight process which allows rapid iteration for new technologies where the requirements are not precisely defined and the processes are changing quickly.  Downstream users of this data should be aware that the metadata is changing rapidly and understand that any dependencies they create on specific structures will be broken in the future.
-
-The process should take 3 working days. The assigned Committer does not need to recruit an additional Reviewer though should ensure that as many people as possible have seen the suggestion via Slack messages or GitHub notifications.
-
-| | Major version | Minor Version  | Patch version |
+| | Major update | Minor update  | Patch update |
 |:-|:-|:-|:-|
-| High Stability | Full acceptance | Medium acceptance | Light acceptance |
-| Medium Stability | Medium acceptance | Medium acceptance | Light acceptance |
-| Low Stability | Light acceptance | Light acceptance | Light acceptance |
+| Review timeframe | 5 working days | 5 working days | 3 working days |
+| Reviewer number | 2 | 2 | 1 |
 
-> Table 1: Which update acceptance process to use for which category of suggested change.
-
-### How to manage negative marks against a suggested change.
-
-Hopefully negative marks or a lack of consensus will be very rare occurrence but this process does contain the possibility of disagreement on the best solution. 
-
-For proposed changes where consensus looks unlikely, as the review deadline looms (~ 1 day before if possible), the assigned committer should schedule a phone call to discuss the issue with the interested parties. If no consensus can be reached, the process should be extended by 5 working days for more interaction. At the end of these 5 days, if no consensus has been reached, the two possible solutions should be presented to the committers and a vote should be called with the committers to the metadata-schemas repo, the solution with most votes being taken forward.
+> Table 1: Review timeframe and reviewer numbers for types of schema updates
 
 ## Committer guidelines
 
