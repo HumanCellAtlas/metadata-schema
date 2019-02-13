@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v11.0.0] - 2019-02-13
+### Changed
+Changed date_established from date-time to date format. Fixes #821.
+
 ### [module/protocol/target.json - v1.0.8] - 2019-02-12
 ### Changed
 Changed u-f, examples, and description for some fields. Fixes #816.
