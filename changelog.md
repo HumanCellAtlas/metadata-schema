@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/sequence_file.json - v8.0.0] - 2019-02-13
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #805.
+
 ### [type/biomaterial/cell_line.json - v11.0.0] - 2019-02-13
 ### Changed
 Changed date_established from date-time to date format. Fixes #821.
