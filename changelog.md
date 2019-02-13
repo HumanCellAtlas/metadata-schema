@@ -7,6 +7,70 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v11.0.0] - 2019-02-13
+### Changed
+Changed date_established from date-time to date format. Fixes #821.
+
+### [module/protocol/target.json - v1.0.8] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [module/protocol/channel.json - v2.0.2] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [module/biomaterial/medical_history.json - v5.2.6] - 2019-02-12
+### Added
+Added examples. Fixes #816.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.11] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [type/biomaterial/donor_organism.json - v14.0.5] - 2019-02-12
+### Added
+Added examples. Fixes #816.
+
+### [module/ontology/ethnicity_ontology.json - v5.3.8] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [module/biomaterial/human_specific.json - v1.0.10] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [type/biomaterial/donor_organism.json - v14.0.4] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.2] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #796.
+
+### [module/protocol/target.json - v1.0.7] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.10] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v5.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
 ### [type/file/image_file.json - v1.0.4] - 2019-02-08
 ### Added
 Added user_friendly name to file_core in image_file. Fixes #798
