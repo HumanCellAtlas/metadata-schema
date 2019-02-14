@@ -37,10 +37,11 @@
         "protocol_core" : {
 	        "description": "Core protocol-level information.",
             "type": "object",
-            "$ref": "core/protocol/protocol_core.json"
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
         },
         "fresh_slicing_method" : {
-            "description": "The method by which fresh tissue was sliced (e.g. vibrotome)",
+            "description": "The method by which fresh tissue was sliced.",
             "type": "string",
             "user_friendly": "Fresh slicing method",
             "example": "vibrotome"
@@ -52,7 +53,7 @@
             "user_friendly": "Imaged slice thickness"
         },
         "final_slicing_method" : {
-            "description": "The method by which the final slice was obtained (e.g. cryosectioning).",
+            "description": "The method by which the final slice was obtained.",
             "type": "string",
             "user_friendly": "Final slicing method",
             "example": "cryosectioning"
@@ -71,10 +72,11 @@
             "example": "day"
         },
         "pre_final_slice_preservation_method": {
-            "description": "Tissue preservation method used prior to final slicing (e.g. freezing).",
+            "description": "Tissue preservation method used prior to final slicing.",
             "type": "object",
             "$ref": "module/biomaterial/preservation_storage.json",
-            "user_friendly": "Pre-final slice preservation method"
+            "user_friendly": "Pre-final slice preservation method",
+            "example": "freezing"
         },
         "post_final_slicing_interval": {
             "description": "Length of time between secondary slicing and hybridization.",
@@ -96,7 +98,7 @@
             "example": "beads"
         },
         "expansion_factor": {
-            "description": "Factor by which the imaged tissue was expanded.",
+            "description": "Factor by which the imaged tissue was expanded in one dimension.",
             "type" : "number",
             "example": "3",
             "user_friendly": "Expansion factor"
