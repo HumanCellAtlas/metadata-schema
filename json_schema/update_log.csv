@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/preservation_storage,minor,"Added enum value to preservation_storage. Fixes #831.",,
+module/biomaterial/preservation_storage,patch,"Added enum value to preservation_storage. Fixes #831.",,
