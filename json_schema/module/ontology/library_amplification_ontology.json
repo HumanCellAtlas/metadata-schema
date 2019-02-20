@@ -27,7 +27,7 @@
             "example": "PCR; in vitro transcription"
         },
         "ontology": {
-            "description": "An ontology term identifier in the form prefix:accession",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:efo"],
@@ -40,7 +40,7 @@
             "example": "OBI:0000415; EFO:0009013"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "user_friendly": "Library amplification ontology label",
             "example": "PCR; in vitro transcription"

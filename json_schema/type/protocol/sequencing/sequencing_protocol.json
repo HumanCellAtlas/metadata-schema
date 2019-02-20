@@ -53,7 +53,7 @@
             "description": "Local name for the particular machine used for sequencing.",
             "type": "string",
             "user_friendly": "Local machine name",
-            "example": "Machine1, HSMA-20"
+            "example": "Machine1; HSMA-20"
         },
         "paired_end": {
             "description": "Whether the sequenced molecule was sequenced from both ends.",
