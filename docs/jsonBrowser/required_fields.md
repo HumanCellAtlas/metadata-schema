@@ -206,7 +206,7 @@ reference_bundle | UUID of the bundle containing the reference used in running t
 ### Target<a name='Target'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; smFISH; immunofluorescence; fluorescent cell stain
+assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
 multiplexed | Whether multiple targets were detected simultaneously in this channel. | string |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
 ### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
