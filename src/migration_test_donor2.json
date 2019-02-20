@@ -1,6 +1,6 @@
 {
   "describedBy": "https://schema.humancellatlas.org/type/biomaterial/13.0.0/donor_organism",
-  "schema_version" : "13.0.0",
+  "schema_version" : "15.0.0",
   "schema_type": "biomaterial",
   "biomaterial_core": {
     "biomaterial_id": "donor_BxA14",
@@ -36,7 +36,7 @@
     "ontology_label": "year"
   },
   "development_stage": {
-    "text": "Adult",
+    "text": "adult",
     "ontology": "EFO:0001272",
     "ontology_label": "adult"
   },

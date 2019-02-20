@@ -2,7 +2,7 @@ from argparse import ArgumentParser
 import json
 from collections import defaultdict
 from itertools import chain
-
+import copy
 
 class Migrator:
 
@@ -14,15 +14,17 @@ class Migrator:
             for part in reversed(new_prop.split('.')):
                 value = {part: value}
 
-            json_doc = self._mergeDict(json_doc, value)
-        return self._update_schema_version(json_doc, migration["effective_from"])
+            new_json_doc = copy.deepcopy(json_doc)
+            new_json_doc = self._mergeDict(new_json_doc, value)
+        return self._update_schema_version(new_json_doc, migration["effective_from"])
 
     def remove_property(self, json_doc, migration):
         source_prop = migration["property"].split(".")
 
-        json_doc = self._removeSourceProp(json_doc, source_prop)
+        new_json_doc = copy.deepcopy(json_doc)
+        new_json_doc = self._removeSourceProp(new_json_doc, source_prop)
 
-        return self._update_schema_version(json_doc, migration["effective_from"])
+        return self._update_schema_version(new_json_doc, migration["effective_from"])
 
     def move_property_in_schema(self, json_doc, migration):
         source_prop = migration["property"].split(".")
@@ -34,25 +36,27 @@ class Migrator:
         for part in reversed(new_prop.split('.')):
             value = {part: value}
 
-        json_doc = self._mergeDict(json_doc, value)
-        json_doc = self._removeSourceProp(json_doc, source_prop)
+        new_json_doc = copy.deepcopy(json_doc)
+        new_json_doc = self._mergeDict(new_json_doc, value)
+        new_json_doc = self._removeSourceProp(new_json_doc, source_prop)
 
-        return self._update_schema_version(json_doc, migration["effective_from"])
+        return self._update_schema_version(new_json_doc, migration["effective_from"])
 
     def move_property_across_schemas(self, json_doc, target_doc, migration):
         source_prop = migration["property"].split(".")
         new_prop = migration["replaced_by"]
 
         value = json_doc
-        for key in source_prop[1:]:
+        for key in source_prop:
             value = value[key]
-        for part in reversed(new_prop.split('.')[1:]):
+        for part in reversed(new_prop.split('.')):
             value = {part: value}
 
-        target_doc = self._mergeDict(target_doc, value)
-        json_doc = self._removeSourceProp(json_doc, source_prop)
+        if new_prop.split('.')[0] not in target_doc.keys():
+            new_target_doc = self._mergeDict(target_doc, value)
+        new_json_doc = self._removeSourceProp(json_doc, source_prop)
 
-        return self._update_schema_version(json_doc, migration["effective_from_source"]), self._update_schema_version(target_doc, migration["effective_from_target"])
+        return self._update_schema_version(new_json_doc, migration["effective_from_source"]), self._update_schema_version(new_target_doc, migration["effective_from_target"])
 
     def _update_schema_version(self, json_doc, new_version):
         schema_uri = json_doc["describedBy"]
@@ -132,50 +136,31 @@ if __name__ == '__main__':
         print("You have to provide a migration strategy document")
         exit(2)
 
-    counter = 0
-    for m in migration["migrations"]:
-
-        #     check the first part of property or replaced_by against the doc's describedBy link
-        if "replaced_by" not in m and "default_value" in m:
-            for doc in docs:
-                if m["source_schema"] in doc["describedBy"]:
-                    new_doc = Migrator().add_property(doc, m)
-                    docs[docs.index(doc)] = new_doc
-                    # _save_json("updated_file_" + str(counter) + ".json", new_doc)
-                    # counter += 1
-        elif "replaced_by" not in m and "default_value" not in m:
-            for doc in docs:
-                if m["source_schema"] in doc["describedBy"]:
-                    new_doc = Migrator().remove_property(doc, m)
-                    # _save_json("updated_file_" + str(counter) + ".json", new_doc)
-                    docs[docs.index(doc)] = new_doc
-                    # counter += 1
-
-        elif m["source_schema"] == m["target_schema"]:
-                for doc in docs:
-                    if m["source_schema"] in doc["describedBy"]:
-                        new_doc = Migrator().move_property_in_schema(doc, m)
-                        # _save_json("updated_file_" + str(counter) + ".json", new_doc)
-                        # counter += 1
+    for doc in docs:
+        for m in migration["migrations"]:
+            if m["source_schema"] in doc["describedBy"]:
+                if "effective_from" in m and int(m["effective_from"].split(".")[0]) >= int(doc["schema_version"].split(".")[0]):
+                    if "replaced_by" not in m and "default_value" in m:
+                        new_doc = Migrator().add_property(doc, m)
                         docs[docs.index(doc)] = new_doc
-
-
-        elif m["source_schema"] != m["target_schema"]:
-            for doc in docs:
-                if m["source_schema"] in doc["describedBy"]:
-                    source_doc = doc
-
+                        doc = new_doc
+                    elif "replaced_by" not in m and "default_value" not in m:
+                        new_doc = Migrator().remove_property(doc, m)
+                        docs[docs.index(doc)] = new_doc
+                        doc = new_doc
+                    elif m["source_schema"] == m["target_schema"]:
+                        new_doc = Migrator().move_property_in_schema(doc, m)
+                        docs[docs.index(doc)] = new_doc
+                        doc = new_doc
+                elif "effective_from_source" in m and int(m["effective_from_source"].split(".")[0]) >= int(doc["schema_version"].split(".")[0]):
                     for target_doc in docs:
-                        if m["target_schema"] in target_doc["describedBy"]:
-                            new_docs = Migrator().move_property_across_schemas(source_doc, target_doc, m)
+                        if m["target_schema"] in target_doc["describedBy"] and int(m["effective_from_target"].split(".")[0]) >= int(doc["schema_version"].split(".")[0]):
+                            new_docs = Migrator().move_property_across_schemas(doc, target_doc, m)
                             docs[docs.index(doc)] = new_docs[0]
                             docs[docs.index(target_doc)] = new_docs[1]
+                            doc = new_docs[0]
 
-            # for nd in new_docs:
-            #     _save_json("updated_file_" + str(counter) + ".json", nd)
-            #
-            # counter += 1
-
+    counter = 0
     for doc in docs:
         _save_json("updated_file_" + str(counter) + ".json", doc)
         counter += 1
