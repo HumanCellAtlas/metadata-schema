@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/preservation_storage.json - v6.0.2] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.4] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.3] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
 ### [type/file/sequence_file.json - v8.0.0] - 2019-02-13
 ### Fixed
 Fixed array field names to be plural to adhere to Style Guide. Fixes #805.
