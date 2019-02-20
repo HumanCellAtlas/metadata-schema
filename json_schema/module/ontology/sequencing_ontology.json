@@ -27,7 +27,7 @@
             "user_friendly": "Sequencing approach"
         },
         "ontology": {
-            "description": "An ontology term identifier in the form prefix:accession",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:efo"],
@@ -40,7 +40,7 @@
             "user_friendly": "Sequencing approach ontology ID"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "example": "tag based single cell RNA sequencing; full length single cell RNA sequencing",
             "user_friendly": "Sequencing approach ontology label"

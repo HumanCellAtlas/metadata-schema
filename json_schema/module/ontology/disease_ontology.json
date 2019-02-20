@@ -10,6 +10,7 @@
     "type": "object",
     "properties": {
         "describedBy":  {
+            "description": "The URL reference to the schema.",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/disease_ontology",
             "type": "string"
         },
@@ -26,7 +27,7 @@
             "example": "type 2 diabetes mellitus; normal"
         },
         "ontology": {
-            "description": "An optional ontology reference in format where prefix_ indicates which ontology",
+            "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:mondo", "obo:efo"],
@@ -39,7 +40,7 @@
             "example": "MONDO:0005148; PATO:0000461"
         },
         "ontology_label": {
-            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field",
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "user_friendly": "Disease ontology label",
             "example": "type 2 diabetes mellitus; normal"

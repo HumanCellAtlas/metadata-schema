@@ -22,17 +22,19 @@
             "example": "4.6.1"
         },
         "molecule_name": {
-            "description": "The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. If there is an accompanying codebook, this name should correspond to the target name used in the codebook.",
+            "description": "The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment.",
 
             "type": "string",
-            "example": "ACTA1, cFos",
-            "user_friendly": "Target molecule name"
+            "example": "ACTA1; cFos",
+            "user_friendly": "Target molecule name",
+            "guidelines": "If there is an accompanying codebook, this name should correspond to the target name used in the codebook."
         },
         "molecule_id": {
-            "description": "An identifier referring to the the target molecule. For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot).",
+            "description": "An identifier referring to the the target molecule.",
             "type": "string",
-            "example": "CHEBI:85345, ensembl_9606",
-            "user_friendly": "Target molecule identifier."
+            "example": "CHEBI:85345; ensembl_9606",
+            "user_friendly": "Target molecule identifier",
+            "guidelines": "For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot)."
         },
         "subcellular_structure": {
             "description": "Target subcellular structure. This should be a term from the GO cell component ontology.",
@@ -43,7 +45,8 @@
         "reagent_name": {
             "description": "Name of reagent used to detect target.",
             "type": "string",
-            "user_friendly": "Reagent name"
+            "user_friendly": "Reagent name",
+            "guidelines": "Please list any encoding probes, readout probes, oligonucleotide probes conjugated to secondary antibody."
         },
         "purchased_reagent_details": {
             "description": "Information describing purchased reagent used to detect target.",
@@ -55,7 +58,8 @@
             "pattern": "[ATGCUatgcu]+",
             "description": "Sequence of a probe used to detect target.",
             "type": "string",
-            "user_friendly": "Probe sequence"
+            "user_friendly": "Probe sequence",
+            "example": "AGGCTATAGCGGAGCTACG; aggctatagcggagctacg"
         },
         "fluorophore": {
             "description": "Fluorophore used to detect target.",
@@ -67,23 +71,26 @@
             "description": "Type of assay used to detect target.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "example": "MERFISH, smFISH, immunofluorescence, fluorescent cell stain",
+            "example": "MERFISH; smFISH; immunofluorescence; fluorescent cell stain",
             "user_friendly": "Assay type"
         },
         "multiplexed": {
-            "description": "Were multiple targets detected simultaneously in one channel? Should be yes or no.",
+            "description": "Whether multiple targets were detected simultaneously in this channel.",
             "type": "string",
             "enum":[
                 "yes",
                 "no"
             ],
-            "example": "yes",
-            "user_friendly": "Is this a multiplexed experiment?"
+            "example": "Should be one of: yes, or no.",
+            "user_friendly": "Multiplexed experiment?"
         },
         "channel_id": {
             "description": "Channel ID used to assay signal. Should be consistent with the ID in the channel tab.",
             "type": "array",
-            "example": "1, A",
+            "items": {
+                "type": "string"
+            },
+            "example": "1; A",
             "user_friendly": "Channel"
         }
     }

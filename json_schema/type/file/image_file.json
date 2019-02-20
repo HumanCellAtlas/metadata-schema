@@ -8,7 +8,7 @@
         "file_core"
     ],
     "title": "Image file",
-    "name": "imaging_file",
+    "name": "image_file",
     "type": "object",
     "properties": {
         "describedBy": {
@@ -37,7 +37,8 @@
         "file_core" : {
             "description": "Core file-level information.",
             "type": "object",
-            "$ref": "core/file/file_core.json"
+            "$ref": "core/file/file_core.json",
+            "user_friendly": "File core"
         }
     }
 }

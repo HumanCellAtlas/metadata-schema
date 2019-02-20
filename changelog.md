@@ -7,6 +7,460 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/sequence_file.json - v8.0.0] - 2019-02-13
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #805.
+
+### [type/biomaterial/cell_line.json - v11.0.0] - 2019-02-13
+### Changed
+Changed date_established from date-time to date format. Fixes #821.
+
+### [module/protocol/target.json - v1.0.8] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [module/protocol/channel.json - v2.0.2] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [module/biomaterial/medical_history.json - v5.2.6] - 2019-02-12
+### Added
+Added examples. Fixes #816.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.11] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [type/biomaterial/donor_organism.json - v14.0.5] - 2019-02-12
+### Added
+Added examples. Fixes #816.
+
+### [module/ontology/ethnicity_ontology.json - v5.3.8] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [module/biomaterial/human_specific.json - v1.0.10] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [type/biomaterial/donor_organism.json - v14.0.4] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.2] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #796.
+
+### [module/protocol/target.json - v1.0.7] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.10] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v5.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
+### [type/file/image_file.json - v1.0.4] - 2019-02-08
+### Added
+Added user_friendly name to file_core in image_file. Fixes #798
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [type/biomaterial/cell_suspension.json - v9.0.0] - 2019-02-05
+### Changed
+Changed total_estimated_cells to estimated_cell_count. Fixes #649.
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.6] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [module/process/sequencing/barcode.json - v5.2.6] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [system/links.json - v1.1.5] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [core/biomaterial/biomaterial_core.json - v7.0.5] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [module/ontology/disease_ontology.json - v5.3.7] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/cell_suspension.json - v8.7.4] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.6] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/imaged_specimen.json - v2.0.7] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.3] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/donor_organism.json - v14.0.3] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/organoid.json - v10.0.2] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [type/biomaterial/cell_line.json - v10.0.4] - 2019-02-05
+### Fixed
+Fixed inconsistencies with Style Guide as caught by linter. Fixes #789
+
+### [module/protocol/target.json - v1.0.6] - 2019-02-01
+### Fixed
+Fixed channel_id field which was declared as an array but missing items{} block Fixes #777
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.9] - 2019-02-01
+### Fixed
+Fixed channel_id field which was declared as an array but missing items{} block Fixes #777
+
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/cell_type_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/cellular_component_ontology.json - v1.0.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/development_stage_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/disease_ontology.json - v5.3.6] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/enrichment_ontology.json - v1.2.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/ethnicity_ontology.json - v5.3.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/instrument_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/length_unit_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/library_amplification_ontology.json - v1.2.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/library_construction_ontology.json - v1.2.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/mass_unit_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/microscopy_ontology.json - v1.0.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/organ_ontology.json - v5.3.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/organ_part_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/process_type_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/protocol_type_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/sequencing_ontology.json - v1.1.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/species_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/strain_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/ontology/time_unit_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v4.4.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/cell_line.json - v10.0.3] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/cell_suspension.json - v8.7.3] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.8] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/protocol/target.json - v1.0.5] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/donor_organism.json - v14.0.2] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.2] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/human_specific.json - v1.0.9] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.11] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/cell_morphology.json - v6.1.6] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/organoid.json - v10.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/biomaterial/imaged_specimen.json - v2.0.6] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v5.0.8] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/protocol.json - v6.3.9] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/process/analysis/analysis_process.json - v8.0.8] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v2.2.9] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v8.2.11] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/analysis/analysis_protocol.json - v8.0.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/process/process.json - v6.0.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/file/reference_file.json - v2.2.10] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/mouse_specific.json - v1.0.7] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/timecourse.json - v2.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/biomaterial/preservation_storage.json - v6.0.1] - 2019-02-01
+### Fixed
+Fixed descriptions to end in full stops. Fixes #785
+
+### [module/protocol/channel.json - v2.0.1] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [module/protocol/target.json - v1.0.4] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/biomaterial/cell_line.json - v10.0.2] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/biomaterial/imaged_specimen.json - v2.0.5] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/file/reference_file.json - v2.2.9] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/file/supplementary_file.json - v1.1.8] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.7] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.10] - 2019-02-01
+### Fixed
+Fixed examples that were separated by comma instead of semi-colon. Fixes #784
+
+### [type/file/image_file.json - v1.0.3] - 2019-02-01
+### Fixed
+Fixed incorrect name field value identified by linter. Fixes #776
+
+### [module/process/sequencing/plate_based_sequencing.json - v1.0.5] - 2019-02-01
+### Fixed
+Fixed incorrect describedBy field pattern identified by linter. Fixes #776
+
+### [type/biomaterial/cell_suspension.json - v8.7.2] - 2019-02-01
+### Fixed
+Fixed incorrect describedBy field pattern identified by linter. Fixes #776
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/cell_type_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/development_stage_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/disease_ontology.json - v5.3.5] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/ethnicity_ontology.json - v5.3.6] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/instrument_ontology.json - v5.3.4] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/ontology/microscopy_ontology.json - v1.0.3] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/cell_line.json - v10.0.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/cell_suspension.json - v8.7.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/donor_organism.json - v14.0.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.1] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [module/biomaterial/human_specific.json - v1.0.8] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/protocol/sequencing/sequencing_protocol.json - v9.0.9] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.6] - 2019-02-01
+### Fixed
+Fixed missing description field in describedBy property. Fixes #780
+
+### [type/file/analysis_file.json - v5.3.6] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in file_core. Fixes #778.
+
+### [type/protocol/protocol.json - v6.3.8] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in protocol_core. Fixes 778
+
+### [type/process/analysis/analysis_process.json - v8.0.7] - 2019-02-01
+### Fixed
+Fixed missing user_friendly field in file_core. Fixes #778.
+
+### [type/biomaterial/cell_suspension.json - v8.7.0] - 2019-02-01
+### Added
+Added timecourse field to schema. Fixes #755.
+
+### [type/biomaterial/donor_organism.json - v14.0.0] - 2019-01-31
+### Changed
+Changed familial_relationship to be plural. Fixes #768.
+
+### [type/project/project.json - v11.0.0] - 2019-01-30
+### Change
+Change accession fields to arrays. Changed field names to adhere to Style Guide. Fixes #324.
+
+### [type/biomaterial/cell_line.json - v10.0.0] - 2019-01-30
+### Added
+Added required model_organ field to cell line schema. Fixes #606.
+
+### [type/biomaterial/organoid.json - v10.0.0] - 2019-01-30
+### Removed
+Removed organoid_type field. Fixes #736.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v2.0.0] - 2019-01-30
+### Update
+Update field names/descriptions. Fixes #746.
+
 ### [module/biomaterial/preservation_storage.json - v6.0.0] - 2019-01-22
 ### Change
 Change enum list to remove commas from values. Fixes #743.
@@ -26,8 +480,6 @@ Changed grant_id and funder_name to be required. Fixes #731.
 ### [type/project/project.json - v10.0.0] - 2019-01-22
 ### Changed
 Changed funders to be required. Fixes #731.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/timecourse.json - v2.0.0] - 2019-01-18
 ### Changed

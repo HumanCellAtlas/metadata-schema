@@ -30,7 +30,7 @@ The `examples/` directory contains example JSON files and spreadsheets to illust
 
 ## Contributing
 
-The HCA is committed to building and evolving the metadata standards based on the needs of the scientific community. Everyone is welcome to suggest updates, changes, or additions to the HCA metadata standards by [creating GitHub issues](https://github.com/HumanCellAtlas/metadata-schema/issues/new) or emailing [data-help@humancellaltas.org](data-help@humancellaltas.org). More details on [how to contribute](docs/contributing.md) to the HCA metadata standards are available. 
+The HCA is committed to building and evolving the metadata standards based on the needs of the scientific community. Everyone is welcome to suggest updates or additions to the HCA metadata standards by [creating GitHub issues](https://github.com/HumanCellAtlas/metadata-schema/issues/new) or emailing [data-help@humancellaltas.org](data-help@humancellaltas.org). More details on [how to contribute](docs/contributing.md) to the HCA metadata standards are available. 
 
 Follow our community discussion of HCA metadata by joining the #hca-metadata channel on the [HCA Slack group](http://join-slack.humancellatlas.org/).
 

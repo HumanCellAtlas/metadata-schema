@@ -57,7 +57,8 @@
             "items": {
                 "type": "string"
             },
-            "user_friendly": "Supplementary files"
+            "user_friendly": "Supplementary files",
+            "example": "sample_site_image.jpg"
         },
         "biosd_biomaterial": {
             "description": "A BioSamples ID.",
