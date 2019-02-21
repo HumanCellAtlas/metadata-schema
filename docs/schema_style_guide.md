@@ -420,7 +420,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Spelling and grammer
 
-1. Use U.S. spelling of words. *e.g.*: "meter" instead of "metre".
+1. Use American English spelling of words. *e.g.*: "meter" instead of "metre". This standard is in line with the HCA DCP.
 1. Use Oxford comma in lists. Exception is when using a semi-colon to separate multiple example values in the *example* attribute.
 1. Use present tense.
 
