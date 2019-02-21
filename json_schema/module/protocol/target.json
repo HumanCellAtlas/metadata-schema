@@ -34,7 +34,7 @@
             "type": "string",
             "example": "CHEBI:85345; ENSG00000170345",
             "user_friendly": "Target molecule identifier",
-            "guidelines": "For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot)."
+            "guidelines": "For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier from e.g. Ensembl or UniProt."
         },
         "subcellular_structure": {
             "description": "Target subcellular structure. This should be a term from the GO cell component ontology.",
