@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/sequencing/library_preparation_protocol,major,"Changed nucleic_acid_source field to be required. Fixes #824.",,
