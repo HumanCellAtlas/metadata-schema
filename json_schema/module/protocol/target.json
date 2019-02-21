@@ -32,9 +32,9 @@
         "molecule_id": {
             "description": "An identifier referring to the the target molecule.",
             "type": "string",
-            "example": "CHEBI:85345; ensembl_9606",
+            "example": "CHEBI:85345; ENSG00000170345",
             "user_friendly": "Target molecule identifier",
-            "guidelines": "For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier (e.g. ensembl, uniprot)."
+            "guidelines": "For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier from e.g. Ensembl or UniProt."
         },
         "subcellular_structure": {
             "description": "Target subcellular structure. This should be a term from the GO cell component ontology.",
@@ -71,7 +71,7 @@
             "description": "Type of assay used to detect target.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
-            "example": "MERFISH; smFISH; immunofluorescence; fluorescent cell stain",
+            "example": "MERFISH; in situ sequencing",
             "user_friendly": "Assay type"
         },
         "multiplexed": {
