@@ -202,6 +202,8 @@ Some principles the HCA Metadata Standard follows regarding field and schema nam
     1. There are two or more similar field names in a single schema and including context helps disambiguate between them (*e.g.* `organism_age` and `gestational_age` in the `donor_organism` schema).
     1. The field name is generally ambiguous or overloaded and including context helps reduce confusion about the field's usage (*e.g.* `type` fields in biomaterial schemas or `method` fields in protocol schemas).
 
+1. *Field names should only include `id` if their values are guaranteed to be unique within the DSS.* There are two contexts in which the uniqueness of metadata values are considered: within the whole DCP Data Store and within a single submission in Ingest. For fields whose values are guaranteed to be unique within the DCP Data Store for the single entity/concept they represent, *e.g.* NCBI Taxon ID (`ncbi_taxon_id`) or ORCID ID (`orcid_id`), the field name should contain `_id`. For fields whose values are guaranteed to be unique only within a submission in Ingest, *e.g.* Biomaterial label (`biomaterial_label`) or Well label (`well_label`), the field name should **not** contain `_id` but rather can contain `_label` or some other indication. For ID and label fields, the scope of the uniqueness should be indicated in the field description or guidelines attribute.
+
 The section [Field name conventions](#field-name-conventions) provides guidelines to use when defining names.
 
 ### Required field attributes
