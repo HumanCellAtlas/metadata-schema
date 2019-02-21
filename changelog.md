@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/target.json - v1.0.9] - 2019-02-21
+### Changed
+Changed examples in molecule_id and assay_type. Fixes #830.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.12] - 2019-02-21
+### Changed
+Changed examples in molecule_id and assay_type. Fixes #830.
+
 ### [module/biomaterial/preservation_storage.json - v6.0.2] - 2019-02-20
 ### Added
 Added enum value to preservation_storage. Fixes #831.
