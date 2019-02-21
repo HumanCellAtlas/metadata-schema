@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/target,patch,"Changed examples in molecule_id and assay_type. Fixes #830.",,
+module/protocol/target,patch,"Changed examples in molecule_id and assay_type. Fixes #830.",,
