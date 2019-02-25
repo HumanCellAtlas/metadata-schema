@@ -26,5 +26,17 @@
       "zone": "eu-west-3"
     }
   ],
+  "inputs": [
+    {
+      "checksum": "d0f7d08f1980f7980f",
+      "parameter_name": "gene_ref_flat",
+      "parameter_value": "gs://hca-dcp-mint-test-data/reference/GRCh38_Gencode/GRCh38_gencode.v27.refFlat.txt"
+    },
+    {
+      "checksum": "d0f7d08f1980f7980f",
+      "parameter_name": "hisat2_ref_index",
+      "parameter_value": "gs://hca-dcp-mint-test-data/reference/HISAT2/genome_snp_tran.tar.gz"
+    }
+  ],
   "analysis_run_type": "copy-forward"
 }
