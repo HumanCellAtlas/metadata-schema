@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/state_of_specimen.json - v6.0.0] - 2019-02-25
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #792.
+
+### [type/biomaterial/specimen_from_organism.json - v8.0.0] - 2019-02-25
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #792.
+
 ### [module/protocol/target.json - v1.0.9] - 2019-02-21
 ### Changed
 Changed examples in molecule_id and assay_type. Fixes #830.
