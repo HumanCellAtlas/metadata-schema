@@ -360,5 +360,9 @@ exposure_time | Acquisition time for a single image per channel, in milliseconds
 ### Target<a name='Target'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
+<<<<<<< HEAD
 assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; smFISH; immunofluorescence; fluorescent cell stain
+=======
+assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+>>>>>>> 90ce6fe9cd38f05dc737f9e2e8e88c96af2fdb99
 multiplexed | Whether multiple targets were detected simultaneously in this channel. | string |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
