@@ -333,7 +333,7 @@ insdc_experiment | An International Nucleotide Sequence Database Collaboration (
 ### Plate-based sequencing<a name='Plate-based sequencing'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-plate_label | A label or name for the plate that the well is located on. | string |  | Plate label |  | 2217
+plate_label | A label or name for the plate on which the well is located. | string |  | Plate label |  | 2217
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
