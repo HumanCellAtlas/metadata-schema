@@ -232,6 +232,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) | Process core |  | 
 process_type | The type of process. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+inputs | Input parameters used in the pipeline run. | array | yes |  | Input parameters |  | 
 tasks | Information about steps in the workflow. | array | yes |  | Workflow tasks |  | 
 input_bundles | UUID(s) of the input bundle(s) used in running the pipeline. | array | yes |  | Input bundles |  | b816d2d6-5f10-4447-4194-3d0a804454d6
 timestamp_start_utc | Initial start time of the full pipeline in UTC. | string | yes |  | Start timestamp (UTC) |  | 2018-01-21T09:34:27Z

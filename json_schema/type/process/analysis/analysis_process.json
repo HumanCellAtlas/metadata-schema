@@ -12,6 +12,7 @@
         "input_bundles",
         "reference_bundle",
         "tasks",
+        "inputs",
         "analysis_run_type"
     ],
     "title": "Analysis process",
@@ -122,6 +123,15 @@
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Process type"
+        },
+        "inputs": {
+            "description": "Input parameters used in the pipeline run.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "type/process/analysis/analysis_process.json#/definitions/parameter"
+            },
+            "user_friendly": "Input parameters"
         },
         "tasks": {
             "description": "Information about steps in the workflow.",
