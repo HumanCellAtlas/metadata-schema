@@ -5,7 +5,7 @@
     "f3942c14-2024-4756-9360-92d89d515c9b"
   ],
   "inputs": [
-        {
+    {
       "checksum": "d0f7d08f1980f7980f",
       "parameter_name": "fastq1",
       "parameter_value": "gs://org-humancellatlas-dss-dev/blobs/01ec41e1dda933a5c4bd9423ee2e832ad3d54cc0ae836783594fe0893e2b2593.c55e7f722d00d6f5671b1e01a0a226864e55c60b.09fcd0ef129b4c205e6053b10a10dbef.1a7ad2f7"
