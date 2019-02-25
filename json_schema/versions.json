@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-02-21T11:22:28Z",
+    "last_update_date": "2019-02-25T11:12:42Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -28,7 +28,7 @@
                 "medical_history": "5.2.6",
                 "mouse_specific": "1.0.7",
                 "preservation_storage": "6.0.2",
-                "state_of_specimen": "5.2.7",
+                "state_of_specimen": "6.0.0",
                 "timecourse": "2.0.1"
             },
             "ontology": {
@@ -86,7 +86,7 @@
                 "donor_organism": "14.0.5",
                 "imaged_specimen": "2.0.7",
                 "organoid": "10.0.2",
-                "specimen_from_organism": "7.0.4"
+                "specimen_from_organism": "8.0.0"
             },
             "file": {
                 "analysis_file": "5.3.6",
