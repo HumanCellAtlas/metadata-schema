@@ -24,10 +24,11 @@
             "description": "A label or name for the plate that the well is located on.",
             "type": "string",
             "user_friendly": "Plate label",
-            "example": "2217"
+            "example": "2217",
+            "guidelines": "Plate label should be unique in the project."
         },
         "well_label": {
-            "description": "A label or name for the well.",
+            "description": "A label or name for the well that the cell is located in.",
             "type": "string",
             "user_friendly": "Well label",
             "example": "A1",
