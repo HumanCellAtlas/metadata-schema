@@ -26,12 +26,12 @@
             "user_friendly": "Plate ID",
             "example": "2217"
         },
-        "well_id": {
-            "description": "An ID or name for the well.",
+        "well_label": {
+            "description": "A label or name for the well.",
             "type": "string",
-            "user_friendly": "Well ID",
+            "user_friendly": "Well label",
             "example": "A1",
-            "guidelines": "Well ID should be unique for the plate."
+            "guidelines": "Well label should be unique for the plate."
         },
         "cell_quality": {
             "description": "Quality of well if imaged before sequencing.",
