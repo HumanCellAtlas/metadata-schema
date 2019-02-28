@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v6.1.5] - 2019-02-28
+### Added
+Added administrator value to project role enum. Fixes #845.
+
+### [type/project/project.json - v11.0.1] - 2019-02-28
+### Added
+Added administrator value to project role enum. Fixes #845.
+
 ### [module/biomaterial/state_of_specimen.json - v6.0.0] - 2019-02-25
 ### Fixed
 Fixed array field names to be plural to adhere to Style Guide. Fixes #792.
