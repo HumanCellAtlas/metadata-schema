@@ -7,13 +7,37 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
+<<<<<<< HEAD
 ## Cell morphology<a name='Cell morphology'></a>
 _Information relating to pathological and morphological features of cells._
+=======
+## Target<a name='Target'></a>
+_Information about a single microscope channel._
+
+Location: module/protocol/target.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. | string | no |  | Target molecule name |  | ACTA1; cFos
+molecule_id | An identifier referring to the the target molecule. | string | no |  | Target molecule identifier |  | CHEBI:85345; ENSG00000170345
+subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
+reagent_name | Name of reagent used to detect target. | string | no |  | Reagent name |  | 
+purchased_reagent_details | Information describing purchased reagent used to detect target. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased reagent details |  | 
+probe_sequence | Sequence of a probe used to detect target. | string | no |  | Probe sequence |  | AGGCTATAGCGGAGCTACG; aggctatagcggagctacg
+fluorophore | Fluorophore used to detect target. | string | no |  | Fluorophore |  | FITC
+assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+multiplexed | Whether multiple targets were detected simultaneously in this channel. | string | yes |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
+channel_id | Channel ID used to assay signal. Should be consistent with the ID in the channel tab. | array | no |  | Channel |  | 1; A
+
+## Channel<a name='Channel'></a>
+_Information about a single microscope channel._
+>>>>>>> aa35abdd925041183091d9691e0d368419234efc
 
 Location: module/biomaterial/cell_morphology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+<<<<<<< HEAD
 cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells; form single layer colonies
 cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 15; 20-30
 cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
@@ -21,6 +45,14 @@ percent_cell_viability | Percent of cells determined to be viable. | number | no
 cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis; ATP test
 cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability result | pass, fail | Should be one of: pass, fail
 percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrotic cells |  | 10
+=======
+channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string | yes |  | Channel ID |  | 1; A
+excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
+filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
+multiplexed | Whether multiple targets were detected simultaneously in this channel. | string | yes |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
+target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
+exposure_time | Acquisition time for a single image per channel, in milliseconds. | number | yes |  | Exposure time |  | 400
+>>>>>>> aa35abdd925041183091d9691e0d368419234efc
 
 ## Death<a name='Death'></a>
 _Information relating to the death of an organism._
@@ -70,8 +102,14 @@ Location: module/biomaterial/human_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+<<<<<<< HEAD
 body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
 ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
+=======
+text | The ethnicity of the human donor. | string | yes |  | Ethnicity |  | European; Hispanic or Latin American
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Ethnicity ontology ID |  | HANCESTRO:0005; HANCESTRO:0014
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Ethnicity ontology label |  | European; Hispanic or Latin American
+>>>>>>> aa35abdd925041183091d9691e0d368419234efc
 
 ## Medical history<a name='Medical history'></a>
 _Information about the medical history of a donor._
@@ -245,8 +283,23 @@ text | The name of a length unit being used. | string | yes |  | Length unit |  
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Length unit ontology ID |  | UO:0000017; UO:0000008
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Length unit ontology label |  | micrometer; meter
 
+<<<<<<< HEAD
 ## Library amplification ontology<a name='Library amplification ontology'></a>
 _A term that may be associated with a process-related ontology term_
+=======
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
+email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com
+phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
+institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI; University of Washington
+laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Division of Vaccine Discovery; Department of Biology
+address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
+country | Country where the individual works. | string | no |  | Country |  | USA
+corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor? |  | Should be one of: yes, or no.
+project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, administrator, external curator, Human Cell Atlas wrangler, other | principal investigator; computational scientist
+orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
+>>>>>>> aa35abdd925041183091d9691e0d368419234efc
 
 Location: module/ontology/library_amplification_ontology.json
 
@@ -296,9 +349,16 @@ Location: module/ontology/organ_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+<<<<<<< HEAD
 text | The text for the term as the user provides it. | string | yes |  | Organ |  | heart; immune system
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Organ ontology ID |  | UBERON:0000948; UBERON:0002405
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Organ ontology label |  | heart; immune system
+=======
+storage_method | The method by which a biomaterial was stored after preservation or before another protocol was used. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen at -70C, frozen at -150C, frozen in liquid nitrogen, frozen in vapor phase, paraffin block, RNAlater at 4C, RNAlater at 25C, RNAlater at -20C | frozen in liquid nitrogen; fresh
+storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
+storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | 
+preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
+>>>>>>> aa35abdd925041183091d9691e0d368419234efc
 
 ## Organ part ontology<a name='Organ part ontology'></a>
 _A term that may be associated with an anatomy-related ontology term_
@@ -329,9 +389,18 @@ Location: module/ontology/protocol_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+<<<<<<< HEAD
 text | The name of a protocol type used. | string | yes |  | Protocol type |  | dissociation protocol; enrichment protocol
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Protocol type ontology ID |  | EFO:0009088; EFO:0009089
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Protocol type ontology label |  | dissociation protocol; enrichment protocol
+=======
+alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
+medication | Medications the individual was taking at time of biomaterial collection. | string | no |  | Medications |  | Naproxen 500mg/day; Citalopram 20mg/day
+smoking_history | Estimated number of cigarettes smoked per day. | string | no |  | Smoking history |  | 20 cigarettes/day for 25 years, stopped 2000
+nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL)
+treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+>>>>>>> aa35abdd925041183091d9691e0d368419234efc
 
 ## Sequencing ontology<a name='Sequencing ontology'></a>
 _A term that may be associated with a process-related ontology term_
@@ -351,9 +420,20 @@ Location: module/ontology/species_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+<<<<<<< HEAD
 text | The name of the species to which the organism belongs. | string | yes |  | Species |  | Homo sapiens; Mus musculus
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Species ontology ID |  | NCBITaxon:9606; NCBITaxon:10090
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Species ontology label |  | Homo sapiens; Mus musculus
+=======
+autolysis_score | State of tissue breakdown due to self-digestion. | string | no |  | Autolysis score | none, mild, moderate | Should be one of: none, mild, or moderate.
+gross_description | Color, size, and other aspects of specimen as visible to naked eye. | string | no |  | Gross description |  | focal wedge shaped region of tan-orange discoloration; cystic
+gross_images | List of filenames of photographs of specimen without magnification. | array | no |  | Gross image |  | my_gross_image_file.jpg
+ischemic_temperature | Whether specimen experienced warm or cold ischemia. | string | no |  | Ischemic temperature | warm, cold | Should be one of: warm, or cold.
+ischemic_time | Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. | integer | no |  | Ischemic time |  | 7200
+microscopic_description | How the specimen looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | Mixture of different cell sizes apparent; Dead cells are quite faint on microscope
+microscopic_images | List of filenames of photographs of specimen under microscope. | array | no |  | Microscopic image |  | my_microscopic_image_file.jpg
+postmortem_interval | Duration of time between when death was declared and when the specimen was preserved or processed. | integer | no |  | Post-mortem interval |  | 2400
+>>>>>>> aa35abdd925041183091d9691e0d368419234efc
 
 ## Strain ontology<a name='Strain ontology'></a>
 _A term that may be associated with a strain-related ontology term_

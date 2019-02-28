@@ -76,8 +76,8 @@ class SchemaLinter:
 
         for property in properties:
             # print(property)
-            # Check that property name contains only lowercase letters and underscore
-            if not re.match("^[a-z_]+$", property) and property not in ['describedBy']:
+            # Check that property name contains only lowercase letters, numbers, and underscores
+            if not re.match("^[a-z0-9_]+$", property) and property not in ['describedBy']:
                 print(schema_filename + ".json: Property `" + property + "` contains non-lowercase/underscore characters")
 
             # Check that property contains description attribute

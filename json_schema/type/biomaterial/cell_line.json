@@ -131,7 +131,7 @@
         "date_established": {
             "description": "When the cell line was established.",
             "type": "string",
-            "format": "date-time",
+            "format": "date",
             "user_friendly": "Date established",
             "example": "2017-03-19",
             "guidelines": "Enter the date established in date format: yyyy-mm-dd."

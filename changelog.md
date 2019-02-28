@@ -7,6 +7,110 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v6.1.5] - 2019-02-28
+### Added
+Added administrator value to project role enum. Fixes #845.
+
+### [type/project/project.json - v11.0.1] - 2019-02-28
+### Added
+Added administrator value to project role enum. Fixes #845.
+
+### [module/biomaterial/state_of_specimen.json - v6.0.0] - 2019-02-25
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #792.
+
+### [type/biomaterial/specimen_from_organism.json - v8.0.0] - 2019-02-25
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #792.
+
+### [module/protocol/target.json - v1.0.9] - 2019-02-21
+### Changed
+Changed examples in molecule_id and assay_type. Fixes #830.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.12] - 2019-02-21
+### Changed
+Changed examples in molecule_id and assay_type. Fixes #830.
+
+### [module/biomaterial/preservation_storage.json - v6.0.2] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.4] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.3] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
+### [type/file/sequence_file.json - v8.0.0] - 2019-02-13
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #805.
+
+### [type/biomaterial/cell_line.json - v11.0.0] - 2019-02-13
+### Changed
+Changed date_established from date-time to date format. Fixes #821.
+
+### [module/protocol/target.json - v1.0.8] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [module/protocol/channel.json - v2.0.2] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [module/biomaterial/medical_history.json - v5.2.6] - 2019-02-12
+### Added
+Added examples. Fixes #816.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.11] - 2019-02-12
+### Changed
+Changed u-f, examples, and description for some fields. Fixes #816.
+
+### [type/biomaterial/donor_organism.json - v14.0.5] - 2019-02-12
+### Added
+Added examples. Fixes #816.
+
+### [module/ontology/ethnicity_ontology.json - v5.3.8] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [module/biomaterial/human_specific.json - v1.0.10] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [type/biomaterial/donor_organism.json - v14.0.4] - 2019-02-12
+### Changed
+Changed hancestro example from underscore to colon
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.2] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #796.
+
+### [module/protocol/target.json - v1.0.7] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.10] - 2019-02-12
+### Changed
+Changed guidelines, descriptions, and user-friendly names. Fixes #797.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.0.0] - 2019-02-12
+### Fixed
+Fixed reagent and method field names to remove redundancy to adhere to Style Guide. Fixes #807.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v5.0.0] - 2019-02-12
+### Fixed
+Fixed method field name to be consistent with other protocols. Fixes #807.
+
 ### [type/file/image_file.json - v1.0.4] - 2019-02-08
 ### Added
 Added user_friendly name to file_core in image_file. Fixes #798
