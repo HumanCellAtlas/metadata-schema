@@ -43,7 +43,7 @@
         "file_description" : {
             "description": "A short description of the file contents.",
             "type": "string",
-            "example": "Protocol for FACS enrichment, Image of spleen sample collection location",
+            "example": "Protocol for FACS enrichment; Image of spleen sample collection location",
             "user_friendly": "File description",
             "guidelines": "File description could include information about how the file was generated."
         }

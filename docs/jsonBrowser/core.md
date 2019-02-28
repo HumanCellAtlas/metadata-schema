@@ -55,7 +55,7 @@ biomaterial_name | A short, descriptive name for the biomaterial that need not b
 biomaterial_description | A general description of the biomaterial. | string | no |  | Biomaterial description |  | 
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array | yes |  | NCBI taxon ID |  | 9606
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele; HLA-B*3901 allele
-supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | 
+supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | sample_site_image.jpg
 biosd_biomaterial | A BioSamples ID. | string | no |  | BioSamples ID |  | SAMN00000000
 insdc_biomaterial | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC ID |  | SRS0000000
 

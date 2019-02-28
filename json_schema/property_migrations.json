@@ -5,22 +5,56 @@
       "property": "total_estimated_cells",
       "target_schema": "cell_suspension",
       "replaced_by": "estimated_cell_count",
-      "effective_from" : "10.0.0",
+      "effective_from" : "9.0.0",
       "reason": "Field clarification"
     },
     {
-      "source_schema": "cell_line",
-      "property": "model_organ.text",
-      "default_value": "material anatomical entity",
-      "effective_from" : "10.0.0",
-      "reason": "Schema optimisation"
+      "source_schema": "library_preparation_protocol",
+      "property": "library_construction_approach",
+      "target_schema": "library_preparation_protocol",
+      "replaced_by": "library_construction_method",
+      "effective_from" : "5.0.0",
+      "reason": "Schema consistency update"
     },
      {
-      "source_schema": "cell_line",
-      "property": "model_organ.ontology",
-      "default_value": "UBERON:0000465",
+      "source_schema": "sequencing_protocol",
+      "property": "sequencing_approach",
+      "target_schema": "sequencing_protocol",
+      "replaced_by": "method",
       "effective_from" : "10.0.0",
-      "reason": "Schema optimisation"
+      "reason": "Schema consistency update"
+    },
+     {
+      "source_schema": "dissociation_protocol",
+      "property": "dissociation_method",
+      "target_schema": "dissociation_protocol",
+      "replaced_by": "method",
+      "effective_from" : "6.0.0",
+      "reason": "Schema consistency update"
+    },
+     {
+      "source_schema": "dissociation_protocol",
+      "property": "protocol_reagents",
+      "target_schema": "dissociation_protocol",
+      "replaced_by": "reagents",
+      "effective_from" : "6.0.0",
+      "reason": "Schema consistency update"
+    },
+     {
+      "source_schema": "collection_protocol",
+      "property": "collection_method",
+      "target_schema": "collection_protocol",
+      "replaced_by": "method",
+      "effective_from" : "9.0.0",
+      "reason": "Schema consistency update"
+    },
+    {
+      "source_schema": "collection_protocol",
+      "property": "protocol_reagents",
+      "target_schema": "collection_protocol",
+      "replaced_by": "reagents",
+      "effective_from" : "9.0.0",
+      "reason": "Schema consistency update"
     }
   ]
 }

@@ -52,12 +52,14 @@
         "test_results": {
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
-            "user_friendly": "Test results"
+            "user_friendly": "Test results",
+            "example": "lipid panel shows normal level of LDL (124 mg/dL)"
         },
         "treatment": {
             "description": "Treatments the individual has undergone prior to biomaterial collection.",
             "type": "string",
-            "user_friendly": "Treatments"
+            "user_friendly": "Treatments",
+            "example": "Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer"
         }
     }
 }
