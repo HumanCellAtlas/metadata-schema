@@ -7,6 +7,42 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v6.1.5] - 2019-02-28
+### Added
+Added administrator value to project role enum. Fixes #845.
+
+### [type/project/project.json - v11.0.1] - 2019-02-28
+### Added
+Added administrator value to project role enum. Fixes #845.
+
+### [module/biomaterial/state_of_specimen.json - v6.0.0] - 2019-02-25
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #792.
+
+### [type/biomaterial/specimen_from_organism.json - v8.0.0] - 2019-02-25
+### Fixed
+Fixed array field names to be plural to adhere to Style Guide. Fixes #792.
+
+### [module/protocol/target.json - v1.0.9] - 2019-02-21
+### Changed
+Changed examples in molecule_id and assay_type. Fixes #830.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.12] - 2019-02-21
+### Changed
+Changed examples in molecule_id and assay_type. Fixes #830.
+
+### [module/biomaterial/preservation_storage.json - v6.0.2] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
+### [type/biomaterial/specimen_from_organism.json - v7.0.4] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.0.3] - 2019-02-20
+### Added
+Added enum value to preservation_storage. Fixes #831.
+
 ### [type/file/sequence_file.json - v8.0.0] - 2019-02-13
 ### Fixed
 Fixed array field names to be plural to adhere to Style Guide. Fixes #805.

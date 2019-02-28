@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-02-13T14:22:47Z",
+    "last_update_date": "2019-02-28T12:53:29Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -27,8 +27,8 @@
                 "human_specific": "1.0.10",
                 "medical_history": "5.2.6",
                 "mouse_specific": "1.0.7",
-                "preservation_storage": "6.0.1",
-                "state_of_specimen": "5.2.7",
+                "preservation_storage": "6.0.2",
+                "state_of_specimen": "6.0.0",
                 "timecourse": "2.0.1"
             },
             "ontology": {
@@ -65,13 +65,13 @@
                 }
             },
             "project": {
-                "contact": "6.1.4",
+                "contact": "6.1.5",
                 "funder": "2.0.0",
                 "publication": "5.2.5"
             },
             "protocol": {
                 "channel": "2.0.2",
-                "target": "1.0.8"
+                "target": "1.0.9"
             }
         },
         "system": {
@@ -86,7 +86,7 @@
                 "donor_organism": "14.0.5",
                 "imaged_specimen": "2.0.7",
                 "organoid": "10.0.2",
-                "specimen_from_organism": "7.0.3"
+                "specimen_from_organism": "8.0.0"
             },
             "file": {
                 "analysis_file": "5.3.6",
@@ -102,7 +102,7 @@
                 "process": "6.0.7"
             },
             "project": {
-                "project": "11.0.0"
+                "project": "11.0.1"
             },
             "protocol": {
                 "analysis": {
@@ -117,8 +117,8 @@
                     "ipsc_induction_protocol": "2.0.4"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "2.0.2",
-                    "imaging_protocol": "11.0.11"
+                    "imaging_preparation_protocol": "2.0.3",
+                    "imaging_protocol": "11.0.12"
                 },
                 "protocol": "6.3.9",
                 "sequencing": {
