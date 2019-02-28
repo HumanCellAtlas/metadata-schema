@@ -1,0 +1,26 @@
+{
+  "migrations": [
+    {
+      "source_schema": "cell_suspension",
+      "property": "total_estimated_cells",
+      "target_schema": "cell_suspension",
+      "replaced_by": "estimated_cell_count",
+      "effective_from" : "10.0.0",
+      "reason": "Field clarification"
+    },
+    {
+      "source_schema": "cell_line",
+      "property": "model_organ.text",
+      "default_value": "material anatomical entity",
+      "effective_from" : "10.0.0",
+      "reason": "Schema optimisation"
+    },
+     {
+      "source_schema": "cell_line",
+      "property": "model_organ.ontology",
+      "default_value": "UBERON:0000465",
+      "effective_from" : "10.0.0",
+      "reason": "Schema optimisation"
+    }
+  ]
+}
