@@ -55,6 +55,30 @@
       "replaced_by": "reagents",
       "effective_from" : "9.0.0",
       "reason": "Schema consistency update"
+    },
+    {
+      "source_schema": "sequence_file",
+      "property": "insdc_run",
+      "target_schema": "sequence_file",
+      "replaced_by": "insdc_run_accessions",
+      "effective_from" : "8.0.0",
+      "reason": "Schema consistency update"
+    },
+     {
+      "source_schema": "specimen_from_organism",
+      "property": "state_of_specimen.gross_image",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "state_of_specimen.gross_images",
+      "effective_from" : "8.0.0",
+      "reason": "Schema consistency update"
+    },
+    {
+      "source_schema": "specimen_from_organism",
+      "property": "state_of_specimen.microscopic_image",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "state_of_specimen.microscopic_images",
+      "effective_from" : "8.0.0",
+      "reason": "Schema consistency update"
     }
   ]
 }
