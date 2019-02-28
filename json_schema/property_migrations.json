@@ -6,7 +6,8 @@
       "target_schema": "cell_suspension",
       "replaced_by": "estimated_cell_count",
       "effective_from" : "9.0.0",
-      "reason": "Field clarification"
+      "reason": "Field clarification",
+      "type": "renamed property"
     },
     {
       "source_schema": "library_preparation_protocol",
@@ -14,7 +15,8 @@
       "target_schema": "library_preparation_protocol",
       "replaced_by": "library_construction_method",
       "effective_from" : "5.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     },
      {
       "source_schema": "sequencing_protocol",
@@ -22,7 +24,8 @@
       "target_schema": "sequencing_protocol",
       "replaced_by": "method",
       "effective_from" : "10.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     },
      {
       "source_schema": "dissociation_protocol",
@@ -30,15 +33,17 @@
       "target_schema": "dissociation_protocol",
       "replaced_by": "method",
       "effective_from" : "6.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     },
      {
-      "source_schema": "dissociation_protocol",
-      "property": "protocol_reagents",
-      "target_schema": "dissociation_protocol",
-      "replaced_by": "reagents",
-      "effective_from" : "6.0.0",
-      "reason": "Schema consistency update"
+       "source_schema": "dissociation_protocol",
+       "property": "protocol_reagents",
+       "target_schema": "dissociation_protocol",
+       "replaced_by": "reagents",
+       "effective_from" : "6.0.0",
+       "reason": "Schema consistency update",
+       "type": "renamed property"
     },
      {
       "source_schema": "collection_protocol",
@@ -46,7 +51,8 @@
       "target_schema": "collection_protocol",
       "replaced_by": "method",
       "effective_from" : "9.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+       "type": "renamed property"
     },
     {
       "source_schema": "collection_protocol",
@@ -54,7 +60,8 @@
       "target_schema": "collection_protocol",
       "replaced_by": "reagents",
       "effective_from" : "9.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     },
     {
       "source_schema": "sequence_file",
@@ -62,7 +69,8 @@
       "target_schema": "sequence_file",
       "replaced_by": "insdc_run_accessions",
       "effective_from" : "8.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     },
      {
       "source_schema": "specimen_from_organism",
@@ -70,7 +78,8 @@
       "target_schema": "specimen_from_organism",
       "replaced_by": "state_of_specimen.gross_images",
       "effective_from" : "8.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     },
     {
       "source_schema": "specimen_from_organism",
@@ -78,7 +87,8 @@
       "target_schema": "specimen_from_organism",
       "replaced_by": "state_of_specimen.microscopic_images",
       "effective_from" : "8.0.0",
-      "reason": "Schema consistency update"
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     }
   ]
 }
