@@ -203,7 +203,6 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-file_description | A short description of the file contents. | string | no |  | File description |  | Protocol for FACS enrichment; Image of spleen sample collection location
 
 ## Process
 _Information about a process completed in the experiment._
