@@ -1,0 +1,57 @@
+{
+  "describedBy": "https://schema.humancellatlas.org/type/biomaterial/13.0.0/donor_organism",
+  "schema_version" : "15.0.0",
+  "schema_type": "biomaterial",
+  "biomaterial_core": {
+    "biomaterial_id": "donor_BxA14",
+    "biomaterial_name": "Kidney Donor BxA14",
+    "biomaterial_description": "21 YO Male Donor",
+    "ncbi_taxon_id": [
+      9606
+    ]
+  },
+  "human_specific": {
+    "ethnicity": [
+      {
+        "text": "European",
+        "ontology": "HANCESTRO:0005",
+        "ontology_label": "European"
+      }
+    ]
+  },
+  "medical_history": {
+    "medication": "tacrolimus, mycophenolic acid, prednisone"
+  },
+  "genus_species": [
+    {
+      "text": "Homo sapiens",
+      "ontology": "NCBITaxon:9606",
+      "ontology_label": "Homo sapiens"
+    }
+  ],
+  "organism_age": "21",
+  "organism_age_unit": {
+    "text": "year",
+    "ontology": "UO:0000036",
+    "ontology_label": "year"
+  },
+  "development_stage": {
+    "text": "adult",
+    "ontology": "EFO:0001272",
+    "ontology_label": "adult"
+  },
+  "diseases": [
+    {
+      "text": "ESRD",
+      "ontology": "MONDO:0004375",
+      "ontology_label": "end stage renal failure"
+    },
+    {
+      "text": "hemolytic uremic syndrome",
+      "ontology": "MONDO:0001549",
+      "ontology_label": "hemolytic-uremic syndrome"
+    }
+  ],
+  "is_living": "yes",
+  "sex": "male"
+}

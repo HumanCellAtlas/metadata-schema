@@ -173,9 +173,13 @@ if __name__ == '__main__':
 
     linter = SchemaLinter()
 
-    schemas = [os.path.join(dirpath, f)
+    jsons = [os.path.join(dirpath, f)
                for dirpath, dirnames, files in os.walk(schema_path)
                for f in files if f.endswith('.json')]
+
+    # Exclude top-level JSON files like versions.json and property_migrations.json
+    # by including JSON file only if the path contains "core", "module", "system", or "type"
+    schemas = [j for j in jsons if any(substring in j for substring in ("core", "module", "system", "type"))]
 
     print("Checking %d schemas" % len(schemas))
 
