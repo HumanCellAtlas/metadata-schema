@@ -6,10 +6,11 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "end_bias",
         "library_construction_method",
-        "strand",
-        "input_nucleic_acid_molecule"
+        "input_nucleic_acid_molecule",
+        "nucleic_acid_source",
+        "end_bias",
+        "strand"
     ],
     "title": "Library preparation protocol",
     "name": "library_preparation_protocol",
