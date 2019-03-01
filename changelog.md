@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.0.0] - 2019-03-01
+### Changed
+Changed nucleic_acid_source field to be required. Fixes #824.
+
 ### [type/process/analysis/analysis_process.json - v9.0.0] - 2019-03-01
 ### Removed
 Removed required outputs fields. Fixes #664.
