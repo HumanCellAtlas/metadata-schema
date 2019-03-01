@@ -35,7 +35,7 @@
             "example": "Should be one of: Read 1, Read 2, i7 Index, or i5 Index."
         },
         "barcode_offset": {
-            "description": "0-based offset of start of barcode in read.",
+            "description": "The 0-based offset of start of barcode in read.",
             "type": "integer",
             "maximum": 50,
             "minimum": 0,
