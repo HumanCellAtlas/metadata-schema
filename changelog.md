@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/process/analysis/analysis_process.json - v9.0.0] - 2019-03-01
+### Removed
+Removed required outputs fields. Fixes #664.
+
 ### [module/process/sequencing/insdc_experiment.json - v2.0.0] - 2019-02-28
 ### Fixed
 Fixed insdc_experiment_accession field to adhere to Style Guide. Fixes #809.
