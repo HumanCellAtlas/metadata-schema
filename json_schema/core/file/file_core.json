@@ -45,7 +45,8 @@
                 "sample annotation",
                 "gene expression matrix",
                 "count matrix",
-                "sequence alignment"
+                "sequence alignment",
+                "quality control metrics"
             ],
             "example": "protocol; gene expression matrix"
         },

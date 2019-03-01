@@ -77,7 +77,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "bam",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_qc.bam",
-        "content_description": "read alignment"
+        "content_description": "sequence alignment"
       },
       "schema_type": "file"
     },
@@ -207,7 +207,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "log",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_qc.log",
-        "content_description": "log"
+        "content_description": "quality control metrics"
       },
       "schema_type": "file"
     },
@@ -297,7 +297,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "bam",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.bam",
-        "content_description": "read alignment"
+        "content_description": "sequence alignment"
       },
       "schema_type": "file"
     },
@@ -307,7 +307,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "log",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.log",
-        "content_description": "log"
+        "content_description": "quality control metrics"
       },
       "schema_type": "file"
     },
@@ -337,7 +337,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "results",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.genes.results",
-        "content_description": "expression matrix"
+        "content_description": "gene expression matrix"
       },
       "schema_type": "file"
     },
@@ -347,7 +347,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "results",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.isoforms.results",
-        "content_description": "expression matrix"
+        "content_description": "gene expression matrix"
       },
       "schema_type": "file"
     },
@@ -357,7 +357,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "model",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.model",
-        "content_description": "expression matrix"
+        "content_description": "gene expression matrix"
       },
       "schema_type": "file"
     },
@@ -367,7 +367,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "theta",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.theta",
-        "content_description": "expression matrix"
+        "content_description": "gene expression matrix"
       },
       "schema_type": "file"
     },
@@ -377,7 +377,7 @@
         "describedBy": "https://schema.dev.data.humancellatlas.org/core/file/5.0.0/file_core",
         "file_format": "time",
         "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_rsem.time",
-        "content_description": "expression matrix"
+        "content_description": "gene expression matrix"
       },
       "schema_type": "file"
     }
