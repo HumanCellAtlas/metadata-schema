@@ -1,7 +1,8 @@
-from schema_test_suite import get_json_from_file
+# from schema_test_suite import get_json_from_file
 import logging
 import os
 import re
+import json
 
 
 allowed_root_level_keywords = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions']
@@ -23,7 +24,7 @@ class SchemaLinter:
         self.logger = logging.getLogger(__name__)
 
     def lintSchema(self, path):
-        schema = get_json_from_file(path)
+        schema = self.get_json_from_file(path)
         properties = schema['properties']
 
         # SCHEMA-LEVEL CHECKS
@@ -75,8 +76,8 @@ class SchemaLinter:
 
         for property in properties:
             # print(property)
-            # Check that property name contains only lowercase letters and underscore
-            if not re.match("^[a-z_]+$", property) and property not in ['describedBy']:
+            # Check that property name contains only lowercase letters, numbers, and underscores
+            if not re.match("^[a-z0-9_]+$", property) and property not in ['describedBy']:
                 print(schema_filename + ".json: Property `" + property + "` contains non-lowercase/underscore characters")
 
             # Check that property contains description attribute
@@ -159,14 +160,26 @@ class SchemaLinter:
                             print("Keyword `" + nkw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
 
+    def get_json_from_file(self, filename, warn = False):
+        """Loads json from a file.
+        Optionally specify warn = True to warn, rather than
+        fail if file not found."""
+        f = open(filename, 'r')
+        return json.loads(f.read())
+
+
 if __name__ == '__main__':
     schema_path = '../json_schema'
 
     linter = SchemaLinter()
 
-    schemas = [os.path.join(dirpath, f)
+    jsons = [os.path.join(dirpath, f)
                for dirpath, dirnames, files in os.walk(schema_path)
                for f in files if f.endswith('.json')]
+
+    # Exclude top-level JSON files like versions.json and property_migrations.json
+    # by including JSON file only if the path contains "core", "module", "system", or "type"
+    schemas = [j for j in jsons if any(substring in j for substring in ("core", "module", "system", "type"))]
 
     print("Checking %d schemas" % len(schemas))
 

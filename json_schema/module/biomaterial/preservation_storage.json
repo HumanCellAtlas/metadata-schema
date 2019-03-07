@@ -59,6 +59,7 @@
                 "formalin fixed, unbuffered",
                 "formalin fixed, buffered",
                 "formalin fixed and paraffin embedded",
+                "hypothermic preservation media at 2-8C",
                 "fresh"
             ],
             "example": "cryopreservation in liquid nitrogen (dead tissue); fresh",

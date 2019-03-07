@@ -8,7 +8,7 @@
         "protocol_core",
         "instrument_manufacturer_model",
         "paired_end",
-        "sequencing_approach"
+        "method"
     ],
     "title": "Sequencing protocol",
     "name": "sequencing_protocol",
@@ -62,7 +62,7 @@
             "guidelines": "If 3' 10x v2 was used, enter no.",
             "user_friendly": "Paired end?"
         },
-        "sequencing_approach": {
+        "method": {
             "description": "The general method for sequencing.",
             "type": "object",
             "$ref": "module/ontology/sequencing_ontology.json",
