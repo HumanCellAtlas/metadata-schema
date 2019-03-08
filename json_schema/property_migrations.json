@@ -92,12 +92,28 @@
     },
     {
       "source_schema": "process",
-      "property": "insdc_experiment",
+      "property": "insdc_experiment.insdc_experiment",
       "target_schema": "process",
-      "replaced_by": "insdc_experiment_accession",
+      "replaced_by": "insdc_experiment.insdc_experiment_accession",
       "effective_from" : "7.0.0",
       "reason": "Schema consistency update",
       "type": "renamed property"
-    }
+    },
+    {
+      "source_schema": "analysis_process",
+      "property": "outputs",
+      "effective_from" : "9.0.0",
+      "reason": "Field not used and violated metadata entity model",
+      "type": "deprecated property"
+    },
+    {
+      "source_schema": "cell_suspension",
+      "property": "plate_based_sequencing.cell_quality",
+      "target_schema": "cell_suspension",
+      "replaced_by": "plate_based_sequencing.well_quality",
+      "effective_from" : "10.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
   ]
 }
