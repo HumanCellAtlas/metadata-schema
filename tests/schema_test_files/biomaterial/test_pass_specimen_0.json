@@ -14,7 +14,9 @@
     "text": "blood",
     "ontology": "UBERON:0000178"
   },
-  "organ_part": {
-    "text": "peripheral blood mononuclear cells (PBMCs)"
-  }
+  "organ_parts": [
+    {
+      "text": "peripheral blood mononuclear cells (PBMCs)"
+    }
+  ]
 }
