@@ -114,6 +114,6 @@
       "effective_from" : "10.0.0",
       "reason": "Field clarification",
       "type": "renamed property"
-    },
+    }
   ]
 }
