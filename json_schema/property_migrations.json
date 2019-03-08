@@ -89,6 +89,15 @@
       "effective_from" : "8.0.0",
       "reason": "Schema consistency update",
       "type": "renamed property"
+    },
+    {
+      "source_schema": "process",
+      "property": "insdc_experiment",
+      "target_schema": "process",
+      "replaced_by": "insdc_experiment_accession",
+      "effective_from" : "7.0.0",
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     }
   ]
 }
