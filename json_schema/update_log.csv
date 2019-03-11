@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/medical_history,patch,"Added second example to test_results. Fixes #846.",,
