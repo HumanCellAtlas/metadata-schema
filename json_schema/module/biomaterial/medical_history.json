@@ -53,7 +53,7 @@
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
             "user_friendly": "Test results",
-            "example": "lipid panel shows normal level of LDL (124 mg/dL)"
+            "example": "lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative"
         },
         "treatment": {
             "description": "Treatments the individual has undergone prior to biomaterial collection.",
