@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/medical_history.json - v5.2.8] - 2019-03-12
+### Added
+Added second example to test_results. Fixes #846.
+
+### [type/biomaterial/donor_organism.json - v14.0.7] - 2019-03-12
+### Added
+Added second example to test_results. Fixes #846.
+
+### [type/biomaterial/specimen_from_organism.json - v9.0.0] - 2019-03-08
+### Changed
+Changed organ_part to organ_parts since it is an array. Fixes #648.
+
 ### [type/protocol/sequencing/library_preparation_protocol.json - v6.0.0] - 2019-03-01
 ### Changed
 Changed nucleic_acid_source field to be required. Fixes #824.

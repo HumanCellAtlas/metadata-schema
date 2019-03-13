@@ -132,7 +132,7 @@ provenance | Provenance information provided by the system. | object | no | [See
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
 genus_species | The scientific binomial name for the species of the specimen. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
 organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | 
-organ_part | A term for a specific part of the organ that the biomaterial came from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | 
+organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | 
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md/#state_of_specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md/#preservation_storage) | Preservation/Storage |  | 
