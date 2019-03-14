@@ -39,6 +39,26 @@ multiplexed | Whether multiple targets were detected simultaneously in this chan
 target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
 exposure_time | Acquisition time for a single image per channel, in milliseconds. | number | yes |  | Exposure time |  | 400
 
+## Probe<a name='Probe'></a>
+_Information about probes used to detect targets._
+
+Location: module/protocol/probe.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+probe_label | The label of a probe used to detect target in this experiment. | string | yes |  | Probe label |  | ACTA1; cFos
+probe_sequence | Sequence of a probe used to detect target. | string | yes |  | Probe sequence |  | AGGCTATAGCGGAGCTACG; aggctatagcggagctacg
+target_codebook_label | A label used in the codebook for the target. | string | no |  | Target label in codebook |  | AKT1; CFOS
+target_label | An identifier for the target molecule. | string | yes |  | Target label |  | CHEBI:85345; ENSG00000170345
+subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
+manufacturer | The manufacturer of the probe. | string | no |  | Manufacturer |  | ACDbio; in house
+catalog_number | The catalog number of the probe used to detect target. | string | no |  | Catalog number |  | 316921
+lot_number | The batch or lot number of the probe. | string | no |  | Batch/lot number |  | 10001A
+assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+fluorophore | Fluorophore used to detect target. | string | no |  | Fluorophore |  | Cy5
+channel_label | Channel ID used to assay signal. Should be consistent with the ID in the channel tab. | array | no |  | Channel |  | 1; A
+codeword | In which channel you expect to see a probe over sequencing cycles. | string | no |  | Assay type |  | TTAAGTA
+
 ## Length unit ontology<a name='Length unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
