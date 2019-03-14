@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/biomaterial/medical_history.json - v5.2.8] - 2019-03-12
 ### Added
 Added second example to test_results. Fixes #846.
@@ -150,8 +152,6 @@ Fixed method field name to be consistent with other protocols. Fixes #807.
 ### [type/file/image_file.json - v1.0.4] - 2019-02-08
 ### Added
 Added user_friendly name to file_core in image_file. Fixes #798
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/cell_suspension.json - v9.0.0] - 2019-02-05
 ### Changed
