@@ -38,15 +38,5 @@
       "parameter_value": "gs://hca-dcp-mint-test-data/reference/HISAT2/genome_snp_tran.tar.gz"
     }
   ],
-  "outputs": [
-    {
-      "file_core": {
-        "file_format": "bam",
-        "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_qc.bam"
-      },
-      "schema_type": "file",
-      "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/5.3.4/analysis_file"
-    }
-  ],
   "analysis_run_type": "copy-forward"
 }

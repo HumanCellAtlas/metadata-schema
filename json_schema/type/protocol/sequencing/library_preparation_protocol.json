@@ -6,10 +6,11 @@
         "describedBy",
         "schema_type",
         "protocol_core",
+        "library_construction_method",
+        "input_nucleic_acid_molecule",
+        "nucleic_acid_source",
         "end_bias",
-        "library_construction_approach",
-        "strand",
-        "input_nucleic_acid_molecule"
+        "strand"
     ],
     "title": "Library preparation protocol",
     "name": "library_preparation_protocol",
@@ -69,7 +70,7 @@
             "user_friendly": "Nucleic acid source",
             "example": "Should be one of: single cell, bulk cell, single nucleus, bulk nuclei, or mitochondria."
         },
-        "library_construction_approach": {
+        "library_construction_method": {
             "description": "The general method for sequencing library construction.",
             "type": "object",
             "$ref": "module/ontology/library_construction_ontology.json",
