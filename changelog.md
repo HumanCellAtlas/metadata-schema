@@ -3,9 +3,11 @@
 All notable changes to the HCA metadata schema will be documented in this file. Starting with v5.0.0, the schema will be versioned independently. Therefore, this changelog will contain notes for independent updates/releases per schema.
 
 Starting after v5.0.0 release, updates will be declared for schemas independently in the form `[<schema_name>.json vX.Y.Z] - Release-date`. Changes will be organized across six categories: Added, Changed, Removed, Fixed, Deprecated, and Security. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
+and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/medical_history.json - v5.2.8] - 2019-03-12
 ### Added
@@ -150,8 +152,6 @@ Fixed method field name to be consistent with other protocols. Fixes #807.
 ### [type/file/image_file.json - v1.0.4] - 2019-02-08
 ### Added
 Added user_friendly name to file_core in image_file. Fixes #798
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/cell_suspension.json - v9.0.0] - 2019-02-05
 ### Changed
