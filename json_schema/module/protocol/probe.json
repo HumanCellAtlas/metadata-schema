@@ -4,7 +4,6 @@
     "additionalProperties": false,
     "required": [
         "probe_label",
-        "probe_sequence",
         "target_label",
         "assay_type"
     ],
@@ -52,10 +51,11 @@
             "guidelines": "For small molecules this should be from the ChEBI ontology. For gene products this should be a standard gene or gene product identifier from e.g. Ensembl or UniProt."
         },
         "subcellular_structure": {
-            "description": "Target subcellular structure. This should be a term from the GO cell component ontology.",
+            "description": "Target subcellular structure.",
             "type": "object",
             "$ref": "module/ontology/cellular_component_ontology.json",
-            "user_friendly": "Target subcellular structure"
+            "user_friendly": "Target subcellular structure",
+            "guidelines": "This should be a term from the GO cell component ontology."
         },
         "manufacturer": {
             "description": "The manufacturer of the probe.",
@@ -86,11 +86,11 @@
         "fluorophore": {
             "description": "Fluorophore used to detect target.",
             "type": "string",
-            "example": "Cy5",
+            "example": "Cy5; Alexa 488",
             "user_friendly": "Fluorophore"
         },
         "channel_label": {
-            "description": "Channel ID used to assay signal. Should be consistent with the ID in the channel tab.",
+            "description": "Channel label used to assay signal.",
             "type": "array",
             "items": {
                 "type": "string"
@@ -98,12 +98,6 @@
             "example": "1; A",
             "user_friendly": "Channel",
             "guidelines": "Should be the same as in Channel tab."
-         },
-        "codeword": {
-            "description": "In which channel you expect to see a probe over sequencing cycles.",
-            "type": "string",
-            "example": "TTAAGTA",
-            "user_friendly": "Assay type"
         }
     }
 }

@@ -220,7 +220,6 @@ exposure_time | Acquisition time for a single image per channel, in milliseconds
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 probe_label | The label of a probe used to detect target in this experiment. | string |  | Probe label |  | ACTA1; cFos
-probe_sequence | Sequence of a probe used to detect target. | string |  | Probe sequence |  | AGGCTATAGCGGAGCTACG; aggctatagcggagctacg
 target_label | An identifier for the target molecule. | string |  | Target label |  | CHEBI:85345; ENSG00000170345
 assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
 ### Length unit ontology<a name='Length unit ontology'></a>
