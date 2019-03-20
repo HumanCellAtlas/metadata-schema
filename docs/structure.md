@@ -79,7 +79,7 @@ In addition to ingest-supplied metadata fields, the `ontology` and `ontology_lab
 
 ### Recording the standard
 
-The metadata standard is stored as a series of individual schemas which represent the entities and fields associated with them (*e.g.*, `project.json`, `biomaterial_core.json`, `sequencing_protocol.json`). The schemas are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their content, and the update process. Anyone is able to propose changes to the schema through GitHub pull requests and issues. Only a specific list of committers will be allowed to approve pull requests and release new versions of the metadata schemas.
+The metadata standard is stored as a series of individual schemas which represent the entities and fields associated with them (*e.g.*, `project.json`, `biomaterial_core.json`, `sequencing_protocol.json`). The schemas are stored in a single versioned control GitHub repository alongside documentation about the schema, the meaning of their content, and the update process. Anyone can propose changes to the schema through GitHub pull requests and issues. Only a specific list of committers will be allowed to approve pull requests and release new versions of the metadata schemas.
 
 ## Specifying JSON schemas
 
