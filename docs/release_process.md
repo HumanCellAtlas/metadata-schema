@@ -80,6 +80,8 @@ From now on, every time you commit anything in the metadata schema repo using th
         python3 release_prepare.py
 
     The script updates the version numbers of the schemas listed in `update_log.csv` using the indicated increment type (major, minor or patch) in the `json_schema/versions.json` file as well as any dependent schemas. It then builds the `changelog.md` file. Finally, it deletes the content of `update_log.csv` apart from the header row.
+    
+    > If the release_prepare.py script fails for any reason, run `git checkout -- <file>` replacing <file> with the name of each file that was changed (you can check this by running `git status`). This command with discard any changes that might have been made before the release prepare script failed. Once all the changes have been discarded, determine the cause of the error, make any adjustments to avoid the error, and repeat from Step 4.
 
 1. **Check** that both `json_schema/versions.json` and `changelog.md` were updated.
 
@@ -93,6 +95,8 @@ From now on, every time you commit anything in the metadata schema repo using th
     
         git diff ../json_schema/versions.json
         git diff ../changelog.md
+        
+     > If `json_schema/versions.json` and `changelog.md` do not appear to have been updated correctly, you can try running release_prepare.py again after discarding all the current changes (`git checkout -- <file>`).
 
 1. **Commit** your changes back to the branch and push to GitHub
 
