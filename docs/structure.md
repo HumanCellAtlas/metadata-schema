@@ -67,15 +67,15 @@ Each instance of a project, biomaterial, protocol, process, and file entity is r
 
 ### User-supplied versus ingest-supplied metadata fields
 
-Most metadata fields in Core, Type, and Module schemas are provided by data generators via metadata spreadsheets. A subset of metadata fields in the standard, however, are not provided by data generators, but rather are provided by the Ingestion Service component of the DCP. These fields are referred to as "ingest-supplied" fields, and include the following:
+Most metadata fields in Core, Type, and Module schemas are provided by data contributors during the submission process. A subset of fields in the metadata standard, however, are provided by the Ingestion Service component of the DCP. These ingest-supplied fields include the following:
 
 - `provenance` field in all Type schemas
 - `describedBy`, `schema_version`, `schema_type` fields in all schemas
 - all fields in `links.json` and `provenance.json` schemas
 
-The ingest-supplied fields contain information about the metadata submission (*e.g.* when metadata was uploaded to the DCP) and about the metadata schema being used. Data generators will never submit values to these fields directly, and they do not appear in the metadata spreadsheet.
+Ingest-supplied fields contain metadata about the submission (*e.g.* when metadata was uploaded to the DCP) and about the schema being used. Data contributors will never submit values to these fields directly.
 
-In addition to ingest-supplied metadata fields, the `ontology` and `ontology_label` fields present in all ontology schemas will not be supplied by data generators in many cases. Data generators who choose to submit programmatically using their own JSON files might choose to supply values for these fields, and therefore the fields are not strictly ingest-supplied.
+In addition to ingest-supplied metadata fields, the `ontology` and `ontology_label` fields present in all ontology schemas will be populated by a look-up service based on the value supplied by data contributors in the corresponding `text` field in each ontology schema.
 
 ### Recording the standard
 
