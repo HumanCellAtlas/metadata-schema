@@ -146,7 +146,7 @@ Anyone on the metadata team can trigger a primary release from develop to integr
    1. *Versions*: Enter schema names and version numbers for any updated schemas. Enter the current version as shown in versions.json, skipping over intermediate versions.
    1. *Functionality changes*: Describe any changes in how the schema will function in the context of other DCP components. Include all the major and minor schema changes and any code changes, e.g. changes to the schema validation code.
     
-   See example of *develop* to *integration* PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/665) 
+   See example of *develop* to *integration* release PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/665) 
 
 1. **Wait** for the Travis build to pass, then **merge** this PR into develop immediately.
  
