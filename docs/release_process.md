@@ -105,7 +105,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Mark** any linked GitHub issues with the "done" label, and then **close** the issue.
 
-1. **Check** deployment status (see below for details).
+1. **Check** deployment status (see [below](#check-deployment-status) for details).
 
 ## Steps of the release process
 
@@ -154,7 +154,7 @@ Anyone on the metadata team can trigger a primary release from develop to integr
    
    No additional Reviewers are required for this step, but if you are unsure about anything, do not hesitate to ask for a review from someone.
 
-1. **Check** deployment status (see below for details).
+1. **Check** deployment status (see [below](#check-deployment-status) for details).
 
 ### Release propagation
 
@@ -167,7 +167,7 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 
 1. **Check** that the schema changes were detected in the #schema-pub-events Slack channel in the correct environment. The phrase "New schema changes published:" should appear with the list of the newly released schemas and their versions. This check confirms that schema updates were detected by the publisher.
 
-1. **Wait** for 5 minutes after the schema changes are published to the #schema-pub-events Slack channel while the cache of schema versions are cleared. **NB** This workaround will be fixed by enhancements in Ingestion Service.
+1. **Wait** for 5 minutes after the schema changes are published to the #schema-pub-events Slack channel while the cache of schema versions are cleared. **NB** This workaround of waiting for the cache to be cleared will be fixed by an enhancement to the Ingestion Service in the future.
 
 1. **Trigger** ingest core to redeploy in order to grab the newly released schemas (after the cache is cleared) by running:
 
