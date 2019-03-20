@@ -3,8 +3,9 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Preliminaries](#preliminaries)
-- [Steps of the pre-release process](#steps-of-the-pre-release-process)
-- [Steps of the release process](#steps-of-the-release-process)
+- [Steps of the pre-release process](#pre-release-process)
+- [Steps of the release process](#release-process)
+- [Check deployment status](#check-deployment-status)
 
 ## Introduction
 
@@ -37,7 +38,7 @@ Committers who regularly interact with the metadata-schema repo and who merge PR
 
 From now on, every time you commit anything in the metadata schema repo using the `git commit` command, the git hook will be triggered to build the jsonBrowser markdown docs and add them to your commit.
 
-## Steps of the pre-release process
+## Pre-release process
 
 ***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](committers.md#schema-update-acceptance-process). It is the responsibility of the last Reviewer of the PR to merge it into develop.
 
@@ -104,6 +105,8 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Mark** any linked GitHub issues with the "done" label, and then **close** the issue.
 
+1. **Check** deployment status (see below for details).
+
 ## Steps of the release process
 
 ### Primary release
@@ -151,14 +154,36 @@ Anyone on the metadata team can trigger a primary release from develop to integr
    
    No additional Reviewers are required for this step, but if you are unsure about anything, do not hesitate to ask for a review from someone.
 
-1. **Trigger** ingest core to redeploy in order to grab the newly released schemas by running:
-
-   `curl -X POST https://api.ingest.integration.data.humancellatlas.org/schemas/update`
-
-1. **Trigger** a DCP-wide integration test to run in the integration environment to confirm that the changes do not break the integration test. If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken.
+1. **Check** deployment status (see below for details).
 
 ### Release propagation
 
 Promotion of changes from integration to staging and staging to production should be done in line with the general [DCP release schedule](https://docs.google.com/spreadsheets/d/1Tqhs20tj_3FqdO_1Cam1iLSaqE-y9Piu8lDJ6KEdP80/edit#gid=1508723546). These release propagations should be straight forward merge operations through the environments, with no manual changes being required.
 The designated **release manager** for the week is in charge of the relevant propagation steps. DCP-wide SOP for release operation can be found [here](https://allspark.dev.data.humancellatlas.org/dcp-ops/docs/wikis/SOP:%20Releasing%20new%20Versions%20of%20DCP%20Software). Metadata-specific SOP can be found [here](https://docs.google.com/document/d/1gNq5I42xY5ie8jqENSVEswn3NXHKUYgrfFgwMK_Vh8A/edit). 
+
+## Check deployment status
+
+Whether doing a pre-release or a release, the person merging the pre-/release PR is responsible for determining whether the deployment was successful. A successful deployment results in the just-released schemas being available for use by the Ingestion Service, other DCP components, or third party software. The following steps should be followed to confirm deployment:
+
+1. **Check** that the schema changes were detected in the #schema-pub-events Slack channel in the correct environment. The title "New schema changes published:" should appear with the list of the new schema versions. This check confirms that schema updates were detected by the publisher.
+
+1. **Wait** for 5 minutes after the schema changes are published to the #schema-pub-events Slack channel while the cache of schema versions are cleared. **NB** This workaround will be fixed by enhancements in Ingestion Service.
+
+1. **Trigger** ingest core to redeploy in order to grab the newly released schemas (after the cache is cleared) by running:
+
+   `curl -X POST https://api.ingest.<env>.data.humancellatlas.org/schemas/update`
+   
+   Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command.
+   
+1. **Check** that the newly released schemas are available by checking
+
+    `https://api.ingest.<env>.data.humancellatlas.org/schemas/search/latestSchemas?size=1000`
+    
+    Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command. Spot check at least 1 schema name and confirm the displayed version is the newly released version.
+    
+    If the newest version is not displayed, go back to step 2 and repeat.
+    
+    If the newest version is displayed, continue to last step.
+
+1. **Trigger** a DCP-wide integration test *only* if releasing to the integration environment to confirm that the changes do not break the integration test. If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken. For releasing to staging or production, the DCP-wide Release Manager for the week will trigger the integration test after all components have deployed.
 
