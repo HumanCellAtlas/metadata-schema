@@ -39,9 +39,9 @@ The primary motivations for entity model chosen to describe the HCA metadata sta
 1. Enable independent versioning of schemas representing different entities
 1. Support modeling of future sample and experiment types without needing to drastically alter the current model
 
-### Entities
+### Metadata entity model
 
-There are five major entities supported by the HCA metadata standard: Projects, Biomaterials (samples), Protocols, Processes, and Files.
+There are five major entities supported by the HCA metadata standard: Projects, Biomaterials (biological samples), Protocols, Processes, and Files.
 
 ![Entities](images/entities.jpg)
 
@@ -49,7 +49,7 @@ The entities are arranged in units that represent different parts of an experime
 
 ![Entities](images/unit_of_hierarcy.jpg)
 
-The metadata entity model supports units that can have one or more biomaterials or files as inputs or outputs. If the input is a biomaterial entity and the output is a file entity, the unit represents an assay. If both the input and output entities are files, the unit represents an analysis. This flexible model allows for the possibility of modeling synthetic biology experiments - for example a file is used as an input to produce a custom biomaterial - in the future.
+The metadata entity model supports units that can have one or more biomaterials or files as inputs or outputs. If both the input and output of a process are biomaterials, this unit represents some form of sample preparation. If the input is a biomaterial and the output is a file, the unit represents what many scientists refer to as an "assay". If both the input and output of a process are files, the unit represents an analysis. This flexible model allows for the possibility of modeling synthetic biology experiments - for example a file is used as an input to produce a custom biomaterial - in the future.
 
 ![Entities](images/unit_scenarios.jpg)
 
