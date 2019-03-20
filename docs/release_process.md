@@ -163,9 +163,9 @@ The designated **release manager** for the week is in charge of the relevant pro
 
 ## Check deployment status
 
-Whether doing a pre-release or a release, the person merging the pre-/release PR is responsible for determining whether the deployment was successful. A successful deployment results in the just-released schemas being available for use by the Ingestion Service, other DCP components, or third party software. The following steps should be followed to confirm deployment:
+Whether doing a pre-release or a release, the person merging the pre-/release PR is responsible for determining whether the deployment was successful. A successful deployment results in the just-released schemas being available for use by the Ingestion Service, other DCP components, and third party software at schema.humancellatlas.org. The following steps should be followed to confirm deployment:
 
-1. **Check** that the schema changes were detected in the #schema-pub-events Slack channel in the correct environment. The title "New schema changes published:" should appear with the list of the new schema versions. This check confirms that schema updates were detected by the publisher.
+1. **Check** that the schema changes were detected in the #schema-pub-events Slack channel in the correct environment. The phrase "New schema changes published:" should appear with the list of the newly released schemas and their versions. This check confirms that schema updates were detected by the publisher.
 
 1. **Wait** for 5 minutes after the schema changes are published to the #schema-pub-events Slack channel while the cache of schema versions are cleared. **NB** This workaround will be fixed by enhancements in Ingestion Service.
 
@@ -179,11 +179,10 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 
     `https://api.ingest.<env>.data.humancellatlas.org/schemas/search/latestSchemas?size=1000`
     
-    Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command. Spot check at least 1 schema name and confirm the displayed version is the newly released version.
+    Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command. Spot check at least 1 schema name and confirm the displayed version is the newly released version. This check confirms that the schema updates will be retrieved using the /latestSchemas endpoint.
     
-    If the newest version is not displayed, go back to step 2 and repeat.
-    
-    If the newest version is displayed, continue to last step.
+    - If the newest version *is not* displayed, go back to step 2 and repeat.
+    - If the newest version *is* displayed, continue to last step.
 
 1. **Trigger** a DCP-wide integration test *only* if releasing to the integration environment to confirm that the changes do not break the integration test. If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken. For releasing to staging or production, the DCP-wide Release Manager for the week will trigger the integration test after all components have deployed.
 
