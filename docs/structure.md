@@ -29,7 +29,7 @@ The primary motivations for the HCA metadata entity model are to:
 
 1. Handle transitions between biomaterial and file entities
 1. Enable independent versioning of schemas representing different entities
-1. Support modeling of future sample and experiment types easily and without needing to drastically alter the current entity model
+1. Support modeling of future sample and experiment types without needing to drastically alter the current model
 
 ### Entities
 
