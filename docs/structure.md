@@ -33,7 +33,7 @@ The primary motivations for having a structured HCA metadata standard are to:
 1. Adhere to [FAIR data principles](https://www.force11.org/group/fairgroup/fairprinciples) ([paper](https://www.nature.com/articles/sdata201618))
 
 
-The primary motivations for entity model chosen to describe the HCA metadata standard are to:
+The primary motivations for the entity model chosen to describe the HCA metadata standard are to:
 
 1. Handle transitions between biomaterial and file entities
 1. Enable independent versioning of schemas representing different entities
@@ -59,11 +59,11 @@ Below is an example single cell sequencing experiment modeled using the HCA meta
 
 ### Metadata field organisation 
 
+Each instance of a project, biomaterial, protocol, process, and file entity is represented by a specific *Type* metadata schema. For example, in the HCA metadata standard each donor biomaterial is represented and described by the donor schema and each sequencing protocol is represented and described by the sequencing protocol schema. Each Type schema includes a set of fields specific to describing that particular entity, and also inherits a set of core fields for that entity type - represented in *Core entity* schemas - and an optional set of thematically related fields - each set represented in *Module entity* schemas. 
+
 - *Core entities* = Very stable, high-level entities that are referenced by *Type* entities. Core entities contain fields that apply to and are inherited by all corresponding *Type* entities.
 - *Type entities* = Entities that are a specific instance of a *Core* entity. Type entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
 - *Module entities* = Small, flexible entities that are extensions of an existing *Type* entity. Module entities contain extra fields related to a *Type* but that are domain- or user-specific.
-
-Each project, biomaterial, protocol, process, and file entity is represented by a Type schema. Each Type schema inherits a Core entity and zero or more Module entities. 
 
 ### User-supplied versus ingest-supplied metadata fields
 
