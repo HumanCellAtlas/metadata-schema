@@ -20,7 +20,8 @@ This document describes the structure of the HCA metadata standard as implemente
 
 **What *isn't* in this document?**
  - The set of [principles](rationale.md#design-choices) specifically guiding the schema structure design
- 
+ - How metadata standard is [semantically versioned](evolution.md#schema-versioning)
+
 ## Structure overview
 
 ### Motivation
@@ -95,7 +96,7 @@ In the `donor_organism.json` schema, the `$id` field looks like:
         ...
     }
 
-### Metadata documents
+### Self-describing metadata documents
 
 Each metadata document for a Type entity requires a property - `describedBy` - that explicitly records the URI of the metadata schema which represents it.  
 
