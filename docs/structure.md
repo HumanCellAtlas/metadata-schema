@@ -57,13 +57,13 @@ Below is an example single cell sequencing experiment modeled using the HCA meta
 
 ![Entities](images/project_scenario.jpg)
 
-### Metadata field organisation 
+### Metadata field organization 
 
-Each instance of a project, biomaterial, protocol, process, and file entity is represented by a specific *Type* metadata schema. For example, in the HCA metadata standard each donor biomaterial is represented and described by the donor schema and each sequencing protocol is represented and described by the sequencing protocol schema. Each Type schema includes a set of fields specific to describing that particular entity, and also inherits a set of core fields for that entity type - represented in *Core entity* schemas - and an optional set of thematically related fields - each set represented in *Module entity* schemas. 
+Each instance of a project, biomaterial, protocol, process, and file entity is represented by a specific *Type* metadata schema. For example, in the HCA metadata standard each donor biomaterial is represented and described by the donor schema. Each Type schema includes a set of fields specific to describing that particular entity, and also inherits a set of core fields for that entity type - represented in a *Core entity* schema - and an optional set of thematically related fields - each set represented in a *Module entity* schema.
 
-- *Core entities* = Very stable, high-level entities that are referenced by *Type* entities. Core entities contain fields that apply to and are inherited by all corresponding *Type* entities.
-- *Type entities* = Entities that are a specific instance of a *Core* entity. Type entities contain fields specific to that *Type* and inherit core fields from the corresponding *Core* entity.
-- *Module entities* = Small, flexible entities that are extensions of an existing *Type* entity. Module entities contain extra fields related to a *Type* but that are domain- or user-specific.
+- *Type entities* = A specific instance of a project, biomaterial, protocol, process, or file entity. Type entities contain fields specific to that Type and inherit core fields from the corresponding Core entity.
+- *Core entities* = Very stable, high-level entities that are referenced by Type entities. Core entities contain fields that apply to and are inherited by all corresponding Type entities.
+- *Module entities* = Small, flexible entities that are extensions of an existing Type entity. Module entities contain extra fields related to a Type but that are thematically related.
 
 ### User-supplied versus ingest-supplied metadata fields
 
