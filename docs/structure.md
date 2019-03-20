@@ -25,7 +25,15 @@ This document describes the structure of the HCA metadata standard as implemente
 
 ### Motivation
 
-The primary motivations for the HCA metadata entity model are to:
+The primary motivations for having a structured HCA metadata standard are to:
+
+1. Enable data contributors to describe their project in a way that produces high-quality data that can be maximally exploited by consumers and developers
+1. Enable data consumers to interpret data efficiently and in a standardized way
+1. Support developers who rely on metadata to develop and implement analysis and visualization tools
+1. Adhere to [FAIR data principles](https://www.force11.org/group/fairgroup/fairprinciples) ([paper](https://www.nature.com/articles/sdata201618))
+
+
+The primary motivations for entity model chosen to describe the HCA metadata standard are to:
 
 1. Handle transitions between biomaterial and file entities
 1. Enable independent versioning of schemas representing different entities
