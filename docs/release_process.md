@@ -3,8 +3,8 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Preliminaries](#preliminaries)
-- [Steps of the pre-release process](#pre-release-process)
-- [Steps of the release process](#release-process)
+- [Steps of the pre-release process](#steps-of-the-pre-release-process)
+- [Steps of the release process](#steps-of-the-release-process)
 - [Check deployment status](#check-deployment-status)
 
 ## Introduction
@@ -38,7 +38,7 @@ Committers who regularly interact with the metadata-schema repo and who merge PR
 
 From now on, every time you commit anything in the metadata schema repo using the `git commit` command, the git hook will be triggered to build the jsonBrowser markdown docs and add them to your commit.
 
-## Pre-release process
+## Steps of the pre-release process
 
 ***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](committers.md#schema-update-acceptance-process). It is the responsibility of the last Reviewer of the PR to merge it into develop.
 
