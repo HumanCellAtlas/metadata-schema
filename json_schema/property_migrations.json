@@ -114,6 +114,33 @@
       "effective_from" : "10.0.0",
       "reason": "Field clarification",
       "type": "renamed property"
+    },
+     {
+      "source_schema": "specimen_from_organism",
+      "property": "organ_part",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "organ_parts",
+      "effective_from" : "9.0.0",
+      "reason": "Field change to array",
+      "type": "renamed property"
+    },
+     {
+      "source_schema": "cell_suspension",
+      "property": "plate_based_sequencing.plate_id",
+      "target_schema": "cell_suspension",
+      "replaced_by": "plate_based_sequencing.plate_label",
+      "effective_from" : "11.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+     {
+      "source_schema": "cell_suspension",
+      "property": "plate_based_sequencing.well_id",
+      "target_schema": "cell_suspension",
+      "replaced_by": "plate_based_sequencing.well_label",
+      "effective_from" : "11.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
     }
   ]
 }
