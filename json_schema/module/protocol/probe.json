@@ -33,7 +33,7 @@
             "description": "Sequence of a probe used to detect target.",
             "type": "string",
             "user_friendly": "Probe sequence",
-            "guidelines": "Only include endogenous nucleotide sequence.",
+            "guidelines": "Only include transcript-specific hybridization region.",
             "example": "AGGCTATAGCGGAGCTACG; aggctatagcggagctacg"
         },
         "target_codebook_label": {
