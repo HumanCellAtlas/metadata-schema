@@ -297,6 +297,7 @@ insdc_project_accessions | An International Nucleotide Sequence Database Collabo
 geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
 array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
 insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
+biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
 
 ## Specimen from organism
