@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/process/sequencing/plate_based_sequencing.json - v3.0.0] - 2019-03-15
 ### Changed
 Changed well and plate ID to label. Fixes #837.
@@ -14,8 +16,6 @@ Changed well and plate ID to label. Fixes #837.
 ### [type/biomaterial/cell_suspension.json - v11.0.0] - 2019-03-15
 ### Changed
 Changed well and plate ID to label. Fixes #837.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/medical_history.json - v5.2.8] - 2019-03-12
 ### Added
