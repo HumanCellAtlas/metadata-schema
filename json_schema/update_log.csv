@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/probe,major,"Changed probe_sequence to be not required field in probe.json. Updated examples and guidelines. Removed codeword field. Fixes #813",,
+module/protocol/probe,patch,"Updated guidelines. Fixes #813",,
