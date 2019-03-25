@@ -85,7 +85,10 @@
         },
         "fluorophore": {
             "description": "Fluorophore used to detect target.",
-            "type": "string",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
             "example": "Cy5; Alexa 488",
             "user_friendly": "Fluorophore"
         },

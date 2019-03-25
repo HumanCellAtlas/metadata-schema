@@ -55,7 +55,7 @@ manufacturer | The manufacturer of the probe. | string | no |  | Manufacturer | 
 catalog_number | The catalog number of the probe used to detect target. | string | no |  | Catalog number |  | 316921
 lot_number | The batch or lot number of the probe. | string | no |  | Batch/lot number |  | 10001A
 assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
-fluorophore | Fluorophore used to detect target. | string | no |  | Fluorophore |  | Cy5; Alexa 488
+fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
 channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
 
 ## Length unit ontology<a name='Length unit ontology'></a>
