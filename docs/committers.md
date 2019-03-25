@@ -118,6 +118,16 @@ This section outlines steps for Committers to make suggested changes to the meta
 
     1. The corresponding entry in the `update_log.csv` file should be marked a major version update so that the release script sets the version number of the new schema to `1.0.0`.
 
+    ***Breaking changes only***
+
+    1. If you made a breaking (major) change to a property, including adding a new required property, renaming a property, removing a property or moving a property to a different schema, please fill in the `property_migrations.json` file following the correct pattern. Example migrations can be found in `examples/sample_property_migrations.json`.
+
+    1. If you are unsure how to fill in the `property_migrations.json` file, contact Dani for help.
+
+    1. Tag Dani in the merging PR specifically to review the migrations file.
+
+    ***Note:*** *We currently don't have a process for capturing breaking changes not included in the above categories, such as changing the type of a field from a string to a number or from free text to ontology. Therefore such changes don't need to be captured in `property_migrations.json` for now.*
+
 1. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes and to increase granularity for rollbacks (if needed). Use helpful/short messages in commit statements. If the commit specifically fixes/addresses a current GitHub issue, add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issue. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
 
         git add <changed files>

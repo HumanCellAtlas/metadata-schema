@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-03-01T10:44:36Z",
+    "last_update_date": "2019-03-15T10:54:40Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -25,7 +25,7 @@
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
                 "human_specific": "1.0.10",
-                "medical_history": "5.2.6",
+                "medical_history": "5.2.8",
                 "mouse_specific": "1.0.7",
                 "preservation_storage": "6.0.2",
                 "state_of_specimen": "6.0.0",
@@ -61,7 +61,7 @@
                     "10x": "1.0.5",
                     "barcode": "5.2.6",
                     "insdc_experiment": "2.0.0",
-                    "plate_based_sequencing": "2.0.0"
+                    "plate_based_sequencing": "3.0.0"
                 }
             },
             "project": {
@@ -82,11 +82,11 @@
         "type": {
             "biomaterial": {
                 "cell_line": "11.0.0",
-                "cell_suspension": "10.0.0",
-                "donor_organism": "14.0.5",
+                "cell_suspension": "11.0.0",
+                "donor_organism": "14.0.7",
                 "imaged_specimen": "2.0.7",
                 "organoid": "10.0.2",
-                "specimen_from_organism": "8.0.0"
+                "specimen_from_organism": "9.0.0"
             },
             "file": {
                 "analysis_file": "5.3.6",
