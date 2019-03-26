@@ -30,13 +30,13 @@
             "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:hcao", "obo:xxx"],
-                "classes": ["xxx"],
+                "ontologies" : ["obo:efo"],
+                "classes": ["EFO:0002012"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
             },
-            "example": "XXX; XXX",
+            "example": "EFO:0009736; EFO:0009741",
             "user_friendly": "Contributor role ontology ID"
         },
         "ontology_label": {
