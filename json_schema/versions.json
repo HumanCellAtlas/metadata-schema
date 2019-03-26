@@ -50,6 +50,7 @@
                 "organ_part_ontology": "5.3.4",
                 "process_type_ontology": "5.3.4",
                 "protocol_type_ontology": "5.3.4",
+                "project_role_ontology": "0.0.0",
                 "sequencing_ontology": "1.1.4",
                 "species_ontology": "5.3.4",
                 "strain_ontology": "5.3.5",
