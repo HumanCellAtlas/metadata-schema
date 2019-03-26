@@ -179,6 +179,17 @@ text | The name of a subcellular structure. | string | yes |  | Subcellular stru
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Subcellular structure ontology ID |  | GO:0005737; GO:0005634
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Subcellular structure ontology label |  | cytoplasm; nucleus
 
+## Contributor role ontology<a name='Contributor role ontology'></a>
+_A term that describes the role of a contributor in the project._
+
+Location: module/ontology/contributor_role_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The primary role of the contributor in the project. | string | yes |  | Contributor role |  | principal investigator; experimental scientist
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Contributor role ontology ID |  | XXX; XXX
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Contributor role ontology label |  | principal investigator; experimental scientist
+
 ## Development stage ontology<a name='Development stage ontology'></a>
 _A term that may be associated with a development stage-related ontology term_
 
@@ -321,17 +332,6 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The name of a process type being used. | string | yes |  | Process type |  | enzymatic dissociation; blood draw
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Process type ontology ID |  | EFO:0009128; EFO:0009121
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Process type ontology label |  | enzymatic dissociation; blood draw
-
-## Project role ontology<a name='Project role ontology'></a>
-_A term that describes the role of a contributor in the project._
-
-Location: module/ontology/project_role_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | The primary role of the contributor in the project. | string | yes |  | Project role |  | principal investigator; experimental scientist
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Project role ontology ID |  | XXX; XXX
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Project role ontology label |  | principal investigator; experimental scientist
 
 ## Protocol type ontology<a name='Protocol type ontology'></a>
 _A term that may be associated with a protocol-related ontology term_

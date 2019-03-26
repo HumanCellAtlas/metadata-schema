@@ -5,13 +5,13 @@
     "required": [
         "text"
     ],
-    "title": "Project role ontology",
-    "name": "project_role_ontology",
+    "title": "Contributor role ontology",
+    "name": "contributor_role_ontology",
     "type": "object",
     "properties": {
         "describedBy": {
             "description": "The URL reference to the schema.",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/project_role_ontology",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/contributor_role_ontology",
             "type": "string"
         },
         "schema_version": {
@@ -24,7 +24,7 @@
             "description": "The primary role of the contributor in the project.",
             "type": "string",
             "example": "principal investigator; experimental scientist",
-            "user_friendly": "Project role"
+            "user_friendly": "Contributor role"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession.",
@@ -37,13 +37,13 @@
                 "include_self": false
             },
             "example": "XXX; XXX",
-            "user_friendly": "Project role ontology ID"
+            "user_friendly": "Contributor role ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "example": "principal investigator; experimental scientist",
-            "user_friendly": "Project role ontology label"
+            "user_friendly": "Contributor role ontology label"
         }
     }
 }

@@ -244,6 +244,10 @@ text | The name of a cell type supplied by a user. | string |  | Cell type |  | 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a subcellular structure. | string |  | Subcellular structure |  | cytoplasm; nucleus
+### Contributor role ontology<a name='Contributor role ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The primary role of the contributor in the project. | string |  | Contributor role |  | principal investigator; experimental scientist
 ### Development stage ontology<a name='Development stage ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -296,10 +300,6 @@ text | The text for the term as the user provides it. | string |  | Organ part |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a process type being used. | string |  | Process type |  | enzymatic dissociation; blood draw
-### Project role ontology<a name='Project role ontology'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-text | The primary role of the contributor in the project. | string |  | Project role |  | principal investigator; experimental scientist
 ### Protocol type ontology<a name='Protocol type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
