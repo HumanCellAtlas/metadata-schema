@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/channel,patch,"Changed example and guidelines in filter_range. Fixes#878.",,
