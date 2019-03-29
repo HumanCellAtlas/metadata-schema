@@ -63,16 +63,14 @@ The HCA metadata standard is developed in a transparent and open manner so that 
 
 ### Agile
 
-The HCA foresees active development of sample handling, assays, and analyses, and will include both stable and rapidly evolving methods. As such, the metadata standard needs to be able to adapt accordingly, with regular updates and a process for managing and tracking schema versions.
-
-### Modular
-
-As the metadata standard evolves, different schemas will likely evolve at different rates. For example, the specification of contact info may never change, whereas entirely new schemas might be required when a new experimental technology is invented. A modular design will ensure that different components of the metadata standard can evolve independently. 
+The HCA foresees active development of sample handling techniques, new experimental assays, and new data processing and analysis approaches in the field of cellular resolution biology. As such, the metadata standard needs to be able to adapt accordingly, with regular updates and a process for managing and tracking schema versions. By designing with this principle in mind, data requiring updates to the metadata standard can quickly be submitted to the HCA and made available to consumers.
 
 ### Flexible
 
-Significant experimental diversity among HCA datasets is expected. The metadata evolution process must be flexible to allow for submission of new data types and subsequent easy adoption of new schema/fields as methods reach common usage. Data contributors should be able to request new metadata fields to describe their datasets without causing process failure.
+Significant experimental diversity among HCA datasets is expected. The metadata standard must be flexible to support current as well as future predicted and unknown data types. This means that the same metadata standard should be able to describe data from plate-based single cell sequencing of organoids as well as RNAScope in situ hybridization experiments of preserved primary tissue samples. We anticipate that the HCA will expand to support other data modalities including controlled access data, model organism data, data from disease cohorts, proteomic, metabolomics, genomic, and metagenomic data, and possibly data from genetically engineered biological samples. By designing with the principle of flexibility in mind, the HCA metadata standard will be prepared to support all future data.
 
-### Decoupled
+### Self-describing
 
-It must be possible to decouple software concerns related to metadata from the metadata standard itself. For example, the metadata validation process should depend only on having access to the schema, not the particular content of the schema or its semantics. Similarly, metadata documents should be able to be stored, searched over, and displayed with little to no understanding of their content.
+To ensure those relying on the metadata standard are able to keep up with potentially rapid changes, the metadata standard is designed to be self-describing. The standard is stored as a series of individual JSON schemas which represent the entities and fields associated with them. These schemas contain all the information required to understand and interpret the metadata. Including field attributes such as a description and a user-facing, friendly term means one needs only to inspect the schema to be able to produce a variety of projections based on user requirements. The specifications for what metadata schemas must contain are fully described in the [HCA Metadata Schema Style and Formatting Guide](schema_style_guide.md).
+
+Some fields in the metadata standard accept a controlled set of vocabulary terms organized and structured in an ontology. For such fields, the metadata standard explicitly identifies the relevant ontology or a subset of the ontology that expresses valid values for that field. Metadata schemas also contain the requirements for validation of metadata documents against the standard. Each schema explicitly states which metadata fields are required, the JSON specification the schema adheres to, and that no custom or additional properties are allowed.

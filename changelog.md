@@ -3,9 +3,31 @@
 All notable changes to the HCA metadata schema will be documented in this file. Starting with v5.0.0, the schema will be versioned independently. Therefore, this changelog will contain notes for independent updates/releases per schema.
 
 Starting after v5.0.0 release, updates will be declared for schemas independently in the form `[<schema_name>.json vX.Y.Z] - Release-date`. Changes will be organized across six categories: Added, Changed, Removed, Fixed, Deprecated, and Security. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
+and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
+
+### [type/project/project.json - v11.1.0] - 2019-03-25
+### Added
+Added optional biostudies_accesssion field. Fixes #852.
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/process/sequencing/plate_based_sequencing.json - v3.0.0] - 2019-03-15
+### Changed
+Changed well and plate ID to label. Fixes #837.
+
+### [type/biomaterial/cell_suspension.json - v11.0.0] - 2019-03-15
+### Changed
+Changed well and plate ID to label. Fixes #837.
+
+### [module/biomaterial/medical_history.json - v5.2.8] - 2019-03-12
+### Added
+Added second example to test_results. Fixes #846.
+
+### [type/biomaterial/donor_organism.json - v14.0.7] - 2019-03-12
+### Added
+Added second example to test_results. Fixes #846.
 
 ### [type/biomaterial/specimen_from_organism.json - v9.0.0] - 2019-03-08
 ### Changed
@@ -142,8 +164,6 @@ Fixed method field name to be consistent with other protocols. Fixes #807.
 ### [type/file/image_file.json - v1.0.4] - 2019-02-08
 ### Added
 Added user_friendly name to file_core in image_file. Fixes #798
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/cell_suspension.json - v9.0.0] - 2019-02-05
 ### Changed
