@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-03-29T10:54:06Z",
+    "last_update_date": "2019-04-02T15:58:33Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -36,7 +36,7 @@
                 "cell_cycle_ontology": "5.3.5",
                 "cell_type_ontology": "5.3.5",
                 "cellular_component_ontology": "1.0.4",
-                "contributor_role_ontology": "0.0.0",
+                "contributor_role_ontology": "1.0.0",
                 "development_stage_ontology": "5.3.5",
                 "disease_ontology": "5.3.7",
                 "enrichment_ontology": "1.2.5",

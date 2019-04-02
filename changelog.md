@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/contributor_role_ontology.json - v1.0.0] - 2019-04-02
+### Added
+Added new contributor_role_ontology schema. Fixes #893.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/channel.json - v2.0.3] - 2019-03-29
