@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/ontology/contributor_role_ontology,major,"Added new contributor_role_ontology schema. Fixes #893.",,
