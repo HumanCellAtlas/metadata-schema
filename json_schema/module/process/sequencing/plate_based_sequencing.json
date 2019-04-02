@@ -3,7 +3,7 @@
     "description": "Information specific to plate-based sequencing experiments.",
     "additionalProperties": false,
     "required": [
-        "plate_id"
+        "plate_label"
     ],
     "title": "Plate-based sequencing",
     "name": "plate_based_sequencing",
@@ -20,20 +20,21 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "plate_id": {
-            "description": "An ID for the plate that the well is located on.",
+        "plate_label": {
+            "description": "A label or name for the plate on which the well is located.",
             "type": "string",
-            "user_friendly": "Plate ID",
-            "example": "2217"
+            "user_friendly": "Plate label",
+            "example": "2217",
+            "guidelines": "Plate label should be unique in the project."
         },
-        "well_id": {
-            "description": "An ID or name for the well.",
+        "well_label": {
+            "description": "A label or name for the well in which the cell is located.",
             "type": "string",
-            "user_friendly": "Well ID",
+            "user_friendly": "Well label",
             "example": "A1",
-            "guidelines": "Well ID should be unique for the plate."
+            "guidelines": "Well label should be unique for the plate."
         },
-        "cell_quality": {
+        "well_quality": {
             "description": "Quality of well if imaged before sequencing.",
             "type": "string",
             "enum": [

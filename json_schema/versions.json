@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-02-05T11:03:57Z",
+    "last_update_date": "2019-03-15T10:54:40Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -24,11 +24,11 @@
                 "death": "5.4.1",
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
-                "human_specific": "1.0.9",
-                "medical_history": "5.2.5",
+                "human_specific": "1.0.10",
+                "medical_history": "5.2.8",
                 "mouse_specific": "1.0.7",
-                "preservation_storage": "6.0.1",
-                "state_of_specimen": "5.2.7",
+                "preservation_storage": "6.0.2",
+                "state_of_specimen": "6.0.0",
                 "timecourse": "2.0.1"
             },
             "ontology": {
@@ -39,7 +39,7 @@
                 "development_stage_ontology": "5.3.5",
                 "disease_ontology": "5.3.7",
                 "enrichment_ontology": "1.2.5",
-                "ethnicity_ontology": "5.3.7",
+                "ethnicity_ontology": "5.3.8",
                 "instrument_ontology": "5.3.5",
                 "length_unit_ontology": "5.3.4",
                 "library_amplification_ontology": "1.2.4",
@@ -60,18 +60,18 @@
                 "sequencing": {
                     "10x": "1.0.5",
                     "barcode": "5.2.6",
-                    "insdc_experiment": "1.1.5",
-                    "plate_based_sequencing": "1.0.6"
+                    "insdc_experiment": "2.0.0",
+                    "plate_based_sequencing": "3.0.0"
                 }
             },
             "project": {
-                "contact": "6.1.4",
+                "contact": "6.1.5",
                 "funder": "2.0.0",
                 "publication": "5.2.5"
             },
             "protocol": {
-                "channel": "2.0.1",
-                "target": "1.0.6"
+                "channel": "2.0.2",
+                "target": "1.0.9"
             }
         },
         "system": {
@@ -81,28 +81,28 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "10.0.4",
-                "cell_suspension": "9.0.0",
-                "donor_organism": "14.0.3",
+                "cell_line": "11.0.0",
+                "cell_suspension": "11.0.0",
+                "donor_organism": "14.0.7",
                 "imaged_specimen": "2.0.7",
                 "organoid": "10.0.2",
-                "specimen_from_organism": "7.0.3"
+                "specimen_from_organism": "9.0.0"
             },
             "file": {
                 "analysis_file": "5.3.6",
-                "image_file": "1.0.3",
+                "image_file": "1.0.4",
                 "reference_file": "2.2.10",
-                "sequence_file": "7.0.2",
+                "sequence_file": "8.0.0",
                 "supplementary_file": "1.1.8"
             },
             "process": {
                 "analysis": {
-                    "analysis_process": "8.0.8"
+                    "analysis_process": "9.0.0"
                 },
-                "process": "6.0.7"
+                "process": "7.0.0"
             },
             "project": {
-                "project": "11.0.0"
+                "project": "11.0.1"
             },
             "protocol": {
                 "analysis": {
@@ -110,20 +110,20 @@
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "2.0.0",
-                    "collection_protocol": "8.2.11",
+                    "collection_protocol": "9.0.0",
                     "differentiation_protocol": "1.3.3",
-                    "dissociation_protocol": "5.0.8",
+                    "dissociation_protocol": "6.0.0",
                     "enrichment_protocol": "2.2.9",
                     "ipsc_induction_protocol": "2.0.4"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "2.0.1",
-                    "imaging_protocol": "11.0.9"
+                    "imaging_preparation_protocol": "2.0.3",
+                    "imaging_protocol": "11.0.12"
                 },
                 "protocol": "6.3.9",
                 "sequencing": {
-                    "library_preparation_protocol": "4.4.6",
-                    "sequencing_protocol": "9.0.11"
+                    "library_preparation_protocol": "6.0.0",
+                    "sequencing_protocol": "10.0.0"
                 }
             }
         }
