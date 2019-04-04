@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/preservation_storage,minor Change, added 'frozen at -80C' to storage_method field,,
+module/biomaterial/preservation_storage,minor Change,"added 'frozen at -80C' to storage_method field. Fixes #916",,
