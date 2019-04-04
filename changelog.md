@@ -9,6 +9,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/protocol/channel.json - v2.0.3] - 2019-03-29
+### Changed
+Changed example and guidelines in filter_range. Fixes#878.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.13] - 2019-03-29
+### Changed
+Changed example and guidelines in filter_range. Fixes#878.
+
+### [type/project/project.json - v11.1.0] - 2019-03-25
+### Added
+Added optional biostudies_accesssion field. Fixes #852.
+
 ### [module/process/sequencing/plate_based_sequencing.json - v3.0.0] - 2019-03-15
 ### Changed
 Changed well and plate ID to label. Fixes #837.

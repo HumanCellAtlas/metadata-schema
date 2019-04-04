@@ -37,10 +37,11 @@
             "user_friendly": "Excitation wavelength"
         },
         "filter_range": {
-            "description": "Wavelength range of the emission filter in nanometers.",
+            "description": "Emission filter in nanometers.",
             "type": "string",
-            "example": "665 - 705",
-            "user_friendly": "Filter range"
+            "example": "461/70",
+            "user_friendly": "Filter range",
+            "guidelines": "Enter in CWL/BW format."
         },
         "multiplexed": {
             "description": "Whether multiple targets were detected simultaneously in this channel.",
