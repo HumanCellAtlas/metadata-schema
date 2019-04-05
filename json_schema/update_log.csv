@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+core/biomaterial/biomaterial_core,major,"Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929.",,
