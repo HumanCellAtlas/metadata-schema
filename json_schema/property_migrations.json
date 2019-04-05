@@ -141,6 +141,24 @@
       "effective_from" : "11.0.0",
       "reason": "Field clarification",
       "type": "renamed property"
+    },
+    {
+      "source_schema": "biomaterial_core",
+      "property": "biosd_biomaterial",
+      "target_schema": "biomaterial_core",
+      "replaced_by": "biosamples_accession",
+      "effective_from" : "8.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "biomaterial_core",
+      "property": "insdc_biomaterial",
+      "target_schema": "biomaterial_core",
+      "replaced_by": "insdc_sample_accession",
+      "effective_from" : "8.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
     }
   ]
 }
