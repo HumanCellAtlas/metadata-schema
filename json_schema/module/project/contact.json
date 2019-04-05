@@ -75,20 +75,8 @@
         },
         "project_role": {
             "description": "Primary role of the individual in the project.",
-            "type": "string",
-            "enum": [
-                "principal investigator",
-                "co investigator",
-                "experimental scientist",
-                "computational scientist",
-                "clinician",
-                "pathologist",
-                "technician",
-                "administrator",
-                "external curator",
-                "Human Cell Atlas wrangler",
-                "other"
-            ],
+            "type": "object",
+            "$ref": "module/ontology/contributor_role_ontology.json",
             "example": "principal investigator; computational scientist",
             "user_friendly": "Project role"
         },

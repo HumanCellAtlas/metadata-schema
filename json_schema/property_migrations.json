@@ -141,6 +141,15 @@
       "effective_from" : "11.0.0",
       "reason": "Field clarification",
       "type": "renamed property"
+    },
+     {
+      "source_schema": "project",
+      "property": "contributors.project_role",
+      "target_schema": "project",
+      "replaced_by": "contributors.project_role.text",
+      "effective_from" : "12.0.0",
+      "reason": "Field standardization",
+      "type": "moved property"
     }
   ]
 }

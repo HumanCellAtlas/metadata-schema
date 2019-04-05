@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/project/contact,major,"Changed project_role from enum to ontology. Fixes #894",,
