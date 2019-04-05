@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/project/publication,major,"Changed publication_title to title and publication_url to url. Fixes #928.",,
