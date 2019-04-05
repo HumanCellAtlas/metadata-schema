@@ -49,7 +49,7 @@
             "example": "27565351",
             "user_friendly": "Publication PMID"
         },
-        "publication_url": {
+        "url": {
             "description": "A URL for the publication.",
             "type": "string",
             "user_friendly": "Publication URL",
