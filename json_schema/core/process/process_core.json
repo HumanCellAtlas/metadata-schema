@@ -41,7 +41,7 @@
             "example": "Wellcome Trust Sanger Institute; Cancer Institute, Stanford University",
             "user_friendly": "Process location"
          },
-         "operator": {
+         "operators": {
            "description": "Identifier for individual(s) who executed the process.",
            "type": "array",
            "example": "Technician 1; J.D.",
