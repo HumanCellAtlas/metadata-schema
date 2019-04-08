@@ -133,13 +133,22 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
+    {
       "source_schema": "cell_suspension",
       "property": "plate_based_sequencing.well_id",
       "target_schema": "cell_suspension",
       "replaced_by": "plate_based_sequencing.well_label",
       "effective_from" : "11.0.0",
       "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "cell_line",
+      "property": "cell_line_type",
+      "target_schema": "cell_line",
+      "replaced_by": "type",
+      "effective_from" : "12.0.0",
+      "reason": "Schema consistency update",
       "type": "renamed property"
     }
   ]
