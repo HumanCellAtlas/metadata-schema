@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-04-02T15:58:33Z",
+    "last_update_date": "2019-04-04T14:26:29Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -27,7 +27,7 @@
                 "human_specific": "1.0.10",
                 "medical_history": "5.2.8",
                 "mouse_specific": "1.0.7",
-                "preservation_storage": "6.0.2",
+                "preservation_storage": "6.1.0",
                 "state_of_specimen": "6.0.0",
                 "timecourse": "2.0.1"
             },
@@ -87,7 +87,7 @@
                 "donor_organism": "14.0.7",
                 "imaged_specimen": "2.0.7",
                 "organoid": "10.0.2",
-                "specimen_from_organism": "9.0.0"
+                "specimen_from_organism": "9.1.0"
             },
             "file": {
                 "analysis_file": "5.3.6",
@@ -118,7 +118,7 @@
                     "ipsc_induction_protocol": "2.0.4"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "2.0.3",
+                    "imaging_preparation_protocol": "2.1.0",
                     "imaging_protocol": "11.0.13"
                 },
                 "protocol": "6.3.9",

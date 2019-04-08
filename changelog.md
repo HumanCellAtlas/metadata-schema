@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/biomaterial/preservation_storage.json - v6.1.0] - 2019-04-04
+### Added
+Added 'frozen at -80C' to storage_method field. Fixes #916.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.1.0] - 2019-04-04
+### Added
+Added 'frozen at -80C' to storage_method field. Fixes #916.
+
+### [type/biomaterial/specimen_from_organism.json - v9.1.0] - 2019-04-04
+### Added
+Added 'frozen at -80C' to storage_method field. Fixes #916.
+
 ### [module/ontology/contributor_role_ontology.json - v1.0.0] - 2019-04-02
 ### Added
 Added new contributor_role_ontology schema. Fixes #893.
