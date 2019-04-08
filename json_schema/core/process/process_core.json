@@ -35,7 +35,7 @@
             "type": "string",
             "user_friendly": "Process description"
         },
-         "process_location": {
+         "location": {
             "description": "Location where the process took place.",
             "type": "string",
             "example": "Wellcome Trust Sanger Institute; Cancer Institute, Stanford University",
