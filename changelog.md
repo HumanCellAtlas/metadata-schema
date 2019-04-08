@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v12.0.0] - 2019-04-08
+### Changed
+Changed cell_line_type to type. Fixes #935.
+
+### [module/project/contact.json - v7.0.0] - 2019-04-08
+### Changed
+Changed project_role from enum to ontology. Fixes #894
+
+### [type/project/project.json - v12.0.0] - 2019-04-08
+### Changed
+Changed project_role from enum to ontology. Fixes #894
+
 ### [module/biomaterial/preservation_storage.json - v6.1.0] - 2019-04-04
 ### Added
 Added 'frozen at -80C' to storage_method field. Fixes #916.

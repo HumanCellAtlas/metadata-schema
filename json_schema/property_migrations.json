@@ -133,7 +133,7 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
+    {
       "source_schema": "cell_suspension",
       "property": "plate_based_sequencing.well_id",
       "target_schema": "cell_suspension",
@@ -142,41 +142,23 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
-      "source_schema": "project",
-      "property": "publications.publication_title",
-      "target_schema": "project",
-      "replaced_by": "publications.title",
-      "effective_from" : "12.0.0",
-      "reason": "Schema consistency update",
-      "type": "renamed property"
-    },
-     {
-      "source_schema": "project",
-      "property": "publications.publication_url",
-      "target_schema": "project",
-      "replaced_by": "publications.url",
-      "effective_from" : "12.0.0",
-      "reason": "Schema consistency update",
-      "type": "renamed property"
-    },
-     {
+    {
       "source_schema": "cell_line",
-      "property": "publication.publication_title",
+      "property": "cell_line_type",
       "target_schema": "cell_line",
-      "replaced_by": "publication.title",
+      "replaced_by": "type",
       "effective_from" : "12.0.0",
       "reason": "Schema consistency update",
       "type": "renamed property"
     },
-     {
-      "source_schema": "cell_line",
-      "property": "publication.publication_url",
-      "target_schema": "cell_line",
-      "replaced_by": "publication.url",
+    {
+      "source_schema": "project",
+      "property": "contributors.project_role",
+      "target_schema": "project",
+      "replaced_by": "contributors.project_role.text",
       "effective_from" : "12.0.0",
-      "reason": "Schema consistency update",
-      "type": "renamed property"
+      "reason": "Field standardization",
+      "type": "moved property"
     }
   ]
 }
