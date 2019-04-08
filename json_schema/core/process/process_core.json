@@ -38,17 +38,18 @@
          "location": {
             "description": "Location where the process took place.",
             "type": "string",
-            "example": "Wellcome Trust Sanger Institute; Cancer Institute, Stanford University",
-            "user_friendly": "Process location"
+            "example": "Wellcome Trust Sanger Institute; Cancer Institute Stanford University",
+            "user_friendly": "Location"
          },
          "operators": {
            "description": "Identifier for individual(s) who executed the process.",
            "type": "array",
-           "example": "Technician 1; J.D.",
+           "example": "Technician 1; JD; John Doe",
            "items":{
                 "type": "string"
            },
-           "user_friendly": "Operator identity"
+           "user_friendly": "Operator(s)",
+           "guidelines": "Enter either the name(s) or identifier(s) of the individual(s)."
          }
     }
 }
