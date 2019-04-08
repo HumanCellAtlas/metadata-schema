@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-04-08T14:17:02Z",
+    "last_update_date": "2019-04-08T11:44:54Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -68,7 +68,7 @@
             "project": {
                 "contact": "7.0.0",
                 "funder": "2.0.0",
-                "publication": "5.2.5"
+                "publication": "6.0.0"
             },
             "protocol": {
                 "channel": "2.0.3",
@@ -82,7 +82,7 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "12.0.0",
+                "cell_line": "13.0.0",
                 "cell_suspension": "11.0.0",
                 "donor_organism": "14.0.7",
                 "imaged_specimen": "2.0.7",
@@ -103,7 +103,7 @@
                 "process": "7.0.0"
             },
             "project": {
-                "project": "12.0.0"
+                "project": "13.0.0"
             },
             "protocol": {
                 "analysis": {

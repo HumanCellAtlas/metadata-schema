@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/publication.json - v6.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/project/project.json - v13.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/biomaterial/cell_line.json - v13.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
 ### [type/biomaterial/cell_line.json - v12.0.0] - 2019-04-08
 ### Changed
 Changed cell_line_type to type. Fixes #935.
