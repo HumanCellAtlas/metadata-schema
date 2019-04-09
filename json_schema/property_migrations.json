@@ -222,6 +222,13 @@
       "effective_from" : "3.0.0",
       "reason": "Schema consistency update",
       "type": "renamed property"
+    },
+    {
+      "source_schema": "ipsc_induction_protocol",
+      "property": "ipsc_induction_produced_in_house",
+      "effective_from" : "3.0.0",
+      "reason": "Redundant with process.location",
+      "type": "deprecated property"
     }
   ]
 }
