@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/biomaterial_collection/enrichment_protocol,major,"Changed 'enrichment_method' to 'method', 'min_size_selected' to 'minimum_size' and 'max_size_selected' to 'maximum_size'. Fixes #925.",,

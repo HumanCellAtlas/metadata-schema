@@ -150,6 +150,33 @@
       "effective_from" : "12.0.0",
       "reason": "Field standardization",
       "type": "moved property"
+    },
+     {
+      "source_schema": "enrichment_protocol",
+      "property": "enrichment_method",
+      "target_schema": "enrichment_protocol",
+      "replaced_by": "method",
+      "effective_from" : "3.0.0",
+      "reason": "Adherence to style guide",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "enrichment_protocol",
+      "property": "min_size_selected",
+      "target_schema": "enrichment_protocol",
+      "replaced_by": "minimum_size",
+      "effective_from" : "3.0.0",
+      "reason": "Adherence to style guide",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "enrichment_protocol",
+      "property": "max_size_selected",
+      "target_schema": "enrichment_protocol",
+      "replaced_by": "maximum_size",
+      "effective_from" : "3.0.0",
+      "reason": "Adherence to style guide",
+      "type": "renamed property"
     }
   ]
 }
