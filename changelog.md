@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v2.0.0] - 2019-04-09
+### Changed
+Changed differentiation_method to method. Fixes #924.
+
 ### [module/project/publication.json - v6.0.0] - 2019-04-08
 ### Changed
 Changed publication_title to title and publication_url to url. Fixes #928.
