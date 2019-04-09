@@ -100,14 +100,14 @@
             "user_friendly": "iPSC prepared in-house?",
             "example": "Should be one of: yes, or no."
         },
-        "protocol_reagents": {
-            "description": "A list of additional purchased reagents used in this protocol.",
+        "reagents": {
+            "description": "Additional purchased reagents used in this protocol.",
             "type": "array",
             "items": {
                 "type": "object",
                 "$ref": "module/process/purchased_reagents.json"
             },
-            "user_friendly": "Additional protocol reagents"
+            "user_friendly": "Additional reagents"
         }
     }
 }
