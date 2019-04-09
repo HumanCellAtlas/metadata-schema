@@ -67,7 +67,7 @@
 		        "$ref": "module/ontology/cell_type_ontology.json"
 	        },
             "user_friendly": "Selected cell type(s)",
-            "guidelines": "Enter the cell type(s) selected for, not determined post-analysis."
+            "guidelines": "Enter the cell type(s) selected for, not the cell type(s) determined to be present post-analysis."
        },
         "estimated_cell_count": {
             "description": "Estimated number of cells in the suspension.",

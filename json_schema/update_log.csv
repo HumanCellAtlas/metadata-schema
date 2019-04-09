@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/cell_suspension,major,"Changed selected_cell_type to selected_cell_types. Fixes #923.",,
