@@ -197,6 +197,15 @@
       "type": "renamed property"
     },
     {
+      "source_schema": "differentiation_protocol",
+      "property": "differentiation_method",
+      "target_schema": "differentiation_protocol",
+      "replaced_by": "method",
+      "effective_from" : "2.0.0",
+      "reason": "Schema consistency update",
+      "type": "renamed property"
+    },
+    {
       "source_schema": "cell_line",
       "property": "biomaterial_core.biosd_biomaterial",
       "target_schema": "cell_line",
