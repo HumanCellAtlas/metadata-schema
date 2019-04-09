@@ -94,12 +94,6 @@
             "user_friendly": "Pluripotent vector removed?",
             "example": "Should be one of: yes, no, or unknown."
         },
-        "ipsc_induction_produced_in_house": {
-            "description": "Whether the induced pluripotent stem cell was prepared in-house.",
-            "type": "boolean",
-            "user_friendly": "iPSC prepared in-house?",
-            "example": "Should be one of: yes, or no."
-        },
         "reagents": {
             "description": "Additional purchased reagents used in this protocol.",
             "type": "array",
