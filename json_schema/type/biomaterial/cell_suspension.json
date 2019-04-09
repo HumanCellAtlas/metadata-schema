@@ -60,13 +60,14 @@
             },
             "user_friendly": "Genus species"
         },
-        "selected_cell_type": {
+        "selected_cell_types": {
             "description" : "The cell type(s) selected to be present in the suspension.",
             "type": "array",
             "items": {
 		        "$ref": "module/ontology/cell_type_ontology.json"
 	        },
-            "user_friendly": "Selected cell type"
+            "user_friendly": "Selected cell type(s)",
+            "guidelines": "Enter the cell type(s) selected for, not determined post-analysis."
        },
         "estimated_cell_count": {
             "description": "Estimated number of cells in the suspension.",
