@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "ipsc_induction_method"
+        "method"
     ],
     "title": "iPSC induction protocol",
     "name": "ipsc_induction_protocol",
@@ -41,7 +41,7 @@
             "$ref": "core/protocol/protocol_core.json",
             "user_friendly": "Protocol core"
         },
-        "ipsc_induction_method": {
+        "method": {
             "description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
             "type": "string",
             "enum": [
