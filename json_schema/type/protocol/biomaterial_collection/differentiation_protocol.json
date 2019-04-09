@@ -6,7 +6,7 @@
       "describedBy",
       "schema_type",
       "protocol_core",
-      "differentiation_method"
+      "method"
     ],
     "title": "Differentiation protocol",
     "name": "differentiation_protocol",
@@ -41,7 +41,7 @@
             "$ref": "core/protocol/protocol_core.json",
             "user_friendly": "Protocol core"
         },
-        "differentiation_method": {
+        "method": {
             "description": "Method applied to cell culture to induce a specific differentiation response.",
             "type": "string",
             "user_friendly": "Differentiation method",
