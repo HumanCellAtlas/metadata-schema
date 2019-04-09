@@ -204,6 +204,114 @@
       "effective_from" : "2.0.0",
       "reason": "Schema consistency update",
       "type": "renamed property"
+    },
+    {
+      "source_schema": "cell_line",
+      "property": "biomaterial_core.biosd_biomaterial",
+      "target_schema": "cell_line",
+      "replaced_by": "biomaterial_core.biosamples_accession",
+      "effective_from" : "14.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "cell_line",
+      "property": "biomaterial_core.insdc_biomaterial",
+      "target_schema": "cell_line",
+      "replaced_by": "biomaterial_core.insdc_sample_accession",
+      "effective_from" : "14.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+     {
+      "source_schema": "cell_suspension",
+      "property": "biomaterial_core.biosd_biomaterial",
+      "target_schema": "cell_suspension",
+      "replaced_by": "biomaterial_core.biosamples_accession",
+      "effective_from" : "12.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "cell_suspension",
+      "property": "biomaterial_core.insdc_biomaterial",
+      "target_schema": "cell_suspension",
+      "replaced_by": "biomaterial_core.insdc_sample_accession",
+      "effective_from" : "12.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+     {
+      "source_schema": "donor_organism",
+      "property": "biomaterial_core.biosd_biomaterial",
+      "target_schema": "donor_organism",
+      "replaced_by": "biomaterial_core.biosamples_accession",
+      "effective_from" : "15.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "donor_organism",
+      "property": "biomaterial_core.insdc_biomaterial",
+      "target_schema": "donor_organism",
+      "replaced_by": "biomaterial_core.insdc_sample_accession",
+      "effective_from" : "15.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+     {
+      "source_schema": "imaged_specimen",
+      "property": "biomaterial_core.biosd_biomaterial",
+      "target_schema": "imaged_specimen",
+      "replaced_by": "biomaterial_core.biosamples_accession",
+      "effective_from" : "3.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "imaged_specimen",
+      "property": "biomaterial_core.insdc_biomaterial",
+      "target_schema": "imaged_specimen",
+      "replaced_by": "biomaterial_core.insdc_sample_accession",
+      "effective_from" : "3.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+     {
+      "source_schema": "organoid",
+      "property": "biomaterial_core.biosd_biomaterial",
+      "target_schema": "organoid",
+      "replaced_by": "biomaterial_core.biosamples_accession",
+      "effective_from" : "11.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "organoid",
+      "property": "biomaterial_core.insdc_biomaterial",
+      "target_schema": "organoid",
+      "replaced_by": "biomaterial_core.insdc_sample_accession",
+      "effective_from" : "11.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+     {
+      "source_schema": "specimen_from_organism",
+      "property": "biomaterial_core.biosd_biomaterial",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "biomaterial_core.biosamples_accession",
+      "effective_from" : "10.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "specimen_from_organism",
+      "property": "biomaterial_core.insdc_biomaterial",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "biomaterial_core.insdc_sample_accession",
+      "effective_from" : "10.0.0",
+      "reason": "Field clarification",
+      "type": "renamed property"
     }
   ]
 }
