@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/process/process_core.json - v10.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
+### [type/process/process.json - v8.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
+### [type/process/analysis/analysis_process.json - v10.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
 ### [type/protocol/biomaterial_collection/enrichment_protocol.json - v3.0.0] - 2019-04-11
 ### Changed
 Changed 'enrichment_method' to 'method', 'min_size_selected' to 'minimum_size' and 'max_size_selected' to 'maximum_size'. Fixes #925.
