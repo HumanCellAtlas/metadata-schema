@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/probe,major,"Changed fluorophore field to array. Fixes #813",,
+module/protocol/probe,minor,"Added optional fields target_name and probe_reagents. Fixes #813",,
