@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-        "cell_line_type",
+        "type",
         "model_organ"
     ],
     "title": "Cell line",
@@ -72,16 +72,16 @@
             "$ref": "module/ontology/cell_cycle_ontology.json",
             "user_friendly": "Cell cycle"
         },
-        "cell_line_type": {
+        "type": {
             "description": "The type of cell line.",
             "type": "string",
             "enum": [
                 "primary",
                 "immortalized",
+                "stem cell",
                 "stem cell-derived",
-                "synthetic",
                 "induced pluripotent",
-                "stem cell"
+                "synthetic"
             ],
             "example": "Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.",
             "user_friendly": "Cell line type"

@@ -7,6 +7,54 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v2.0.0] - 2019-04-09
+### Changed
+Changed differentiation_method to method. Fixes #924.
+
+### [core/biomaterial/biomaterial_core.json - v8.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/specimen_from_organism.json - v10.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/cell_suspension.json - v12.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/organoid.json - v11.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/cell_line.json - v14.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/donor_organism.json - v15.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/imaged_specimen.json - v3.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [module/project/publication.json - v6.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/project/project.json - v13.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/biomaterial/cell_line.json - v13.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/biomaterial/cell_line.json - v12.0.0] - 2019-04-08
+### Changed
+Changed cell_line_type to type. Fixes #935.
+
 ### [module/project/contact.json - v7.0.0] - 2019-04-08
 ### Changed
 Changed project_role from enum to ontology. Fixes #894

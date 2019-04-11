@@ -60,19 +60,19 @@
             "user_friendly": "Supplementary files",
             "example": "sample_site_image.jpg"
         },
-        "biosd_biomaterial": {
-            "description": "A BioSamples ID.",
+        "biosamples_accession": {
+            "description": "A BioSamples accession.",
             "type": "string",
             "pattern": "^SAM(D|N|E([AG]?))[0-9]+$",
-            "user_friendly": "BioSamples ID",
+            "user_friendly": "BioSamples accession",
             "example": "SAMN00000000",
-            "guidelines": "Enter ID if sample has been archived. ID can be from the DDBJ, NCBI, or EMBL-EBI and must start with SAMD, SAMN, or SAME, respectively."
+            "guidelines": "Enter accession if sample has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with SAMD, SAMN, or SAME, respectively."
         },
-        "insdc_biomaterial": {
+        "insdc_sample_accession": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) sample accession.",
             "type": "string",
             "pattern": "^[D|E|S]RS[0-9]+$",
-            "user_friendly": "INSDC ID",
+            "user_friendly": "INSDC sample accession",
             "example": "SRS0000000",
             "guidelines": "Enter accession if sample has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRS, SRS, or ERS, respecitvely."
         }
