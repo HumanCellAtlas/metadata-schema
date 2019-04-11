@@ -36,6 +36,12 @@
             "guidelines": "Only include transcript-specific hybridization region.",
             "example": "AGGCTATAGCGGAGCTACG; aggctatagcggagctacg"
         },
+        "target_name": {
+            "description": "The name of the target molecule.",
+            "type": "string",
+            "example": "ACTA1_exon1; nuclear cFos",
+            "user_friendly": "Target name",
+        },
         "target_codebook_label": {
             "description": "A label used in the codebook for the target.",
             "type": "string",
