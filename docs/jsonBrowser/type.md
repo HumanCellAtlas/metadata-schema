@@ -321,7 +321,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-differentiation_method | Method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+method | Method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
 media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27; Neurobasal Media; StemPro-34 Serum-Free Medium
 small_molecules | Small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid; CHIR99021 (GSK-inhibitor); Activin A; BMP4
 target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
@@ -353,10 +353,10 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-enrichment_method | The method by which enrichment was achieved. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
+method | The method by which enrichment was achieved. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
 markers | A list of markers used to enrich for or against certain cells. | string | no |  | Markers |  | CD4+ CD8-; HLA-G+
-min_size_selected | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 70
-max_size_selected | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 90
+minimum_size | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 70
+maximum_size | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 90
 
 ## iPSC induction protocol
 _Information about how a biomaterial is treated to become an induced pluripotent stem cell._
