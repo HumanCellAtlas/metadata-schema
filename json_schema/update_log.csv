@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/probe,major,"Removed optional fields 'manufacturer', 'catalog_number' and 'lot_number'. Fixes #813",,
+module/protocol/probe,major,"Removed optional fields manufacturer, catalog_number and lot_number. Fixes #813",,
