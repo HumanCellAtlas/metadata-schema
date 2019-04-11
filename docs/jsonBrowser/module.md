@@ -483,10 +483,10 @@ Location: module/project/publication.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication. | array | yes |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
+title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
 doi | The publication digital object identifier (doi) of the publication. | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
 pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
-publication_url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
+url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
 
 ## Channel<a name='Channel'></a>
 _Information about a single microscope channel._

@@ -1,6 +1,6 @@
 import os
 import json
-from jsonschema import Draft7Validator
+from jsonschema import Draft4Validator
 from jsonschema import RefResolver, SchemaError
 
 """
@@ -24,7 +24,7 @@ def get_validator(filename, base_uri=''):
     schema = get_json_from_file(filename)
     try:
         # Check schema via class method call. Works, despite IDE complaining
-        Draft7Validator.check_schema(schema)
+        Draft4Validator.check_schema(schema)
         print("Schema %s is valid JSON" % filename)
     except SchemaError:
         raise
@@ -33,7 +33,7 @@ def get_validator(filename, base_uri=''):
                                referrer=filename)
     else:
         resolver = None
-    return Draft7Validator(schema=schema,
+    return Draft4Validator(schema=schema,
                            resolver=resolver)
 
 def get_json_from_file(filename, warn = False):
