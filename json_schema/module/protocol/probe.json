@@ -63,24 +63,11 @@
             "user_friendly": "Target subcellular structure",
             "guidelines": "This should be a term from the GO cell component ontology."
         },
-        "manufacturer": {
-            "description": "The manufacturer of the probe.",
-            "type": "string",
-            "example": "ACDbio; in house",
-            "user_friendly": "Manufacturer",
-            "guidelines": "Enter in-house for probes made in-house."
-        },
-        "catalog_number": {
-            "description": "The catalog number of the probe used to detect target.",
-            "type": "string",
-            "example": "316921",
-            "user_friendly": "Catalog number"
-        },
-        "lot_number": {
-            "description": "The batch or lot number of the probe.",
-            "type": "string",
-            "example": "10001A",
-            "user_friendly": "Batch/lot number"
+        "probe_reagents": {
+            "description": "Name of reagents used to construct the probe.",
+            "type": "object",
+            "$ref": "module/process/purchased_reagents.json",
+            "user_friendly": "Probe construction reagents"
         },
         "assay_type": {
             "description": "Type of assay used to detect target.",
