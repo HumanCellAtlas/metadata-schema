@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/probe.json - v1.0.0] - 2019-04-11
+### Added
+Added new probe.json module. Fixes #813
+
 ### [core/process/process_core.json - v10.0.0] - 2019-04-11
 ### Changed
 Changed process_location to location and operator to operators. Fixes #930.

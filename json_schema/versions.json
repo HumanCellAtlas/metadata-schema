@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-04-11T13:17:33Z",
+    "last_update_date": "2019-04-11T15:01:20Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -72,6 +72,7 @@
             },
             "protocol": {
                 "channel": "2.0.3",
+                "probe": "1.0.0",
                 "target": "1.0.9"
             }
         },
