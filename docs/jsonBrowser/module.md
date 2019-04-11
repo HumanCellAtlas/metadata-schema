@@ -34,7 +34,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string | yes |  | Channel ID |  | 1; A
 excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
-filter_range | Wavelength range of the emission filter in nanometers. | string | yes |  | Filter range |  | 665 - 705
+filter_range | Emission filter in nanometers. | string | yes |  | Filter range |  | 461/70
 multiplexed | Whether multiple targets were detected simultaneously in this channel. | string | yes |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
 target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
 exposure_time | Acquisition time for a single image per channel, in milliseconds. | number | yes |  | Exposure time |  | 400
@@ -90,6 +90,17 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The name of a library amplification approach being used. | string | yes |  | Library amplification |  | PCR; in vitro transcription
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Library amplification ontology ID |  | OBI:0000415; EFO:0009013
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Library amplification ontology label |  | PCR; in vitro transcription
+
+## Contributor role ontology<a name='Contributor role ontology'></a>
+_A term that describes the role of a contributor in the project._
+
+Location: module/ontology/contributor_role_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The primary role of the contributor in the project. | string | yes |  | Contributor role |  | principal investigator; experimental scientist
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Contributor role ontology ID |  | EFO:0009736; EFO:0009741
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Contributor role ontology label |  | principal investigator; experimental scientist
 
 ## Ethnicity ontology<a name='Ethnicity ontology'></a>
 _A term that may be associated with a ethnicity-related ontology term_
@@ -326,7 +337,7 @@ laboratory | Name of lab or department within the institute where the individual
 address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
 country | Country where the individual works. | string | no |  | Country |  | USA
 corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor? |  | Should be one of: yes, or no.
-project_role | Primary role of the individual in the project. | string | no |  | Project role | principal investigator, co investigator, experimental scientist, computational scientist, clinician, pathologist, technician, administrator, external curator, Human Cell Atlas wrangler, other | principal investigator; computational scientist
+project_role | Primary role of the individual in the project. | object | no | [See module  contributor_role_ontology](module.md/#contributor_role_ontology) | Project role |  | principal investigator; computational scientist
 orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
 
 ## Publication<a name='Publication'></a>
@@ -337,10 +348,10 @@ Location: module/project/publication.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication. | array | yes |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
+title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
 doi | The publication digital object identifier (doi) of the publication. | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
 pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
-publication_url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
+url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
 
 ## Human-specific<a name='Human-specific'></a>
 _Information specific to a donor that is a human (Homo sapiens)._
@@ -374,7 +385,7 @@ Location: module/biomaterial/preservation_storage.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-storage_method | The method by which a biomaterial was stored after preservation or before another protocol was used. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen at -70C, frozen at -150C, frozen in liquid nitrogen, frozen in vapor phase, paraffin block, RNAlater at 4C, RNAlater at 25C, RNAlater at -20C | frozen in liquid nitrogen; fresh
+storage_method | The method by which a biomaterial was stored after preservation or before another protocol was used. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen at -70C, frozen at -80C, frozen at -150C, frozen in liquid nitrogen, frozen in vapor phase, paraffin block, RNAlater at 4C, RNAlater at 25C, RNAlater at -20C | frozen in liquid nitrogen; fresh
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | 
 preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
@@ -524,7 +535,7 @@ Location: module/process/sequencing/plate_based_sequencing.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-plate_id | An ID for the plate that the well is located on. | string | yes |  | Plate ID |  | 2217
-well_id | An ID or name for the well. | string | no |  | Well ID |  | A1
+plate_label | A label or name for the plate on which the well is located. | string | yes |  | Plate label |  | 2217
+well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
 well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
 

@@ -224,7 +224,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-differentiation_method | Method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+method | Method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
 media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27; Neurobasal Media; StemPro-34 Serum-Free Medium
 small_molecules | Small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid; CHIR99021 (GSK-inhibitor); Activin A; BMP4
 target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
@@ -297,6 +297,7 @@ insdc_project_accessions | An International Nucleotide Sequence Database Collabo
 geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
 array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
 insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
+biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
 
 ## Specimen from organism
@@ -351,7 +352,7 @@ catalog_number | The supplier catalogue number for the cell line. | string | no 
 lot_number | The supplier lot or batch number for the cell line. | string | no |  | Lot/batch number |  | 24.10.14
 catalog_url | The supplier catalogue URL for the cell line. | string | no |  | Catalog URL |  | www.phe-culturecollections.org.uk/products/celllines/ipsc/detail.jsp?refId=77650057&collection=ecacc_ipsc
 cell_cycle | The cell cycle phase if the cell line is synchronized growing cells or the phase is known. | object | no | [See module  cell_cycle_ontology](module.md/#cell_cycle_ontology) | Cell cycle |  | 
-cell_line_type | The type of cell line. | string | yes |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent, stem cell | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
+type | The type of cell line. | string | yes |  | Cell line type | primary, immortalized, stem cell, stem cell-derived, induced pluripotent, synthetic | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
 model_organ | Organ for which this cell line is a model. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
 cell_morphology | Features relating to the morphology of the cells. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
 growth_conditions | Features relating to the growth and/or maintenance of the cell lines. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 

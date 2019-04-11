@@ -122,7 +122,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-differentiation_method | Method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+method | Method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
 ### Imaging preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -162,7 +162,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-cell_line_type | The type of cell line. | string |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent, stem cell | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
+type | The type of cell line. | string |  | Cell line type | primary, immortalized, stem cell, stem cell-derived, induced pluripotent, synthetic | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
 model_organ | Organ for which this cell line is a model. | object | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
 ### Imaged specimen
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
@@ -213,7 +213,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string |  | Channel ID |  | 1; A
 excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number |  | Excitation wavelength |  | 640
-filter_range | Wavelength range of the emission filter in nanometers. | string |  | Filter range |  | 665 - 705
+filter_range | Emission filter in nanometers. | string |  | Filter range |  | 461/70
 multiplexed | Whether multiple targets were detected simultaneously in this channel. | string |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
 exposure_time | Acquisition time for a single image per channel, in milliseconds. | number |  | Exposure time |  | 400
 ### Probe<a name='Probe'></a>
@@ -234,6 +234,10 @@ text | The name of a cell cycle of the cells in the specimen. | string |  | Cell
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a library amplification approach being used. | string |  | Library amplification |  | PCR; in vitro transcription
+### Contributor role ontology<a name='Contributor role ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The primary role of the contributor in the project. | string |  | Contributor role |  | principal investigator; experimental scientist
 ### Ethnicity ontology<a name='Ethnicity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -324,7 +328,7 @@ institution | Name of primary institute where the individual works. | string |  
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication. | array |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
+title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
 ### Human-specific<a name='Human-specific'></a>
 _There are no required properties in schema Human-specific_
 ### Growth conditions<a name='Growth conditions'></a>
@@ -367,4 +371,4 @@ _There are no required properties in schema 10x-specific_
 ### Plate-based sequencing<a name='Plate-based sequencing'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-plate_id | An ID for the plate that the well is located on. | string |  | Plate ID |  | 2217
+plate_label | A label or name for the plate on which the well is located. | string |  | Plate label |  | 2217

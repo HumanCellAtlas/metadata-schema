@@ -56,8 +56,8 @@ biomaterial_description | A general description of the biomaterial. | string | n
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array | yes |  | NCBI taxon ID |  | 9606
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele; HLA-B*3901 allele
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | sample_site_image.jpg
-biosd_biomaterial | A BioSamples ID. | string | no |  | BioSamples ID |  | SAMN00000000
-insdc_biomaterial | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC ID |  | SRS0000000
+biosamples_accession | A BioSamples accession. | string | no |  | BioSamples accession |  | SAMN00000000
+insdc_sample_accession | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC sample accession |  | SRS0000000
 
 ## Process core<a name='Process core'></a>
 _Information relevant to how a biomaterial or file was converted into another biomaterial or file._
