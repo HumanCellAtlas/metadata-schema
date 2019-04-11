@@ -339,6 +339,42 @@
       "effective_from" : "3.0.0",
       "reason": "Adherence to style guide",
       "type": "renamed property"
+    },
+    {
+      "source_schema": "process",
+      "property": "process_core.process_location",
+      "target_schema": "process",
+      "replaced_by": "process_core.location",
+      "effective_from" : "8.0.0",
+      "reason": "Schema consistency update",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "analysis_process",
+      "property": "process_core.process_location",
+      "target_schema": "analysis_process",
+      "replaced_by": "process_core.location",
+      "effective_from" : "10.0.0",
+      "reason": "Schema consistency update",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "process",
+      "property": "process_core.operator",
+      "target_schema": "process",
+      "replaced_by": "process_core.operators",
+      "effective_from" : "8.0.0",
+      "reason": "Schema consistency update",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "analysis_process",
+      "property": "process_core.operator",
+      "target_schema": "analysis_process",
+      "replaced_by": "process_core.operators",
+      "effective_from" : "10.0.0",
+      "reason": "Schema consistency update",
+      "type": "renamed property"
     }
   ]
 }
