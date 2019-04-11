@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "enrichment_method"
+        "method"
     ],
     "title": "Enrichment protocol",
     "name": "enrichment_protocol",
@@ -41,7 +41,7 @@
             "$ref": "core/protocol/protocol_core.json",
             "user_friendly": "Protocol core"
         },
-        "enrichment_method": {
+        "method": {
             "description": "The method by which enrichment was achieved.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",
@@ -54,7 +54,7 @@
             "user_friendly": "Markers",
             "guidelines": "Format as a space-delimited list of markers with +/- where + means enriched for and - means enriched against."
         },
-        "min_size_selected": {
+        "minimum_size": {
             "description": "Minimum cell or organelle size passing selection, in microns.",
             "type": "number",
             "maximum": 10000,
@@ -62,7 +62,7 @@
             "user_friendly": "Minimum size selected",
             "example": 70
         },
-        "max_size_selected": {
+        "maximum_size": {
             "description": "Maximum cell or organelle size passing selection, in microns.",
             "type": "number",
             "maximum": 10000,

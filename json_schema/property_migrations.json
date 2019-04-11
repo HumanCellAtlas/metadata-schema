@@ -223,7 +223,7 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
+    {
       "source_schema": "cell_suspension",
       "property": "biomaterial_core.biosd_biomaterial",
       "target_schema": "cell_suspension",
@@ -241,7 +241,7 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
+    {
       "source_schema": "donor_organism",
       "property": "biomaterial_core.biosd_biomaterial",
       "target_schema": "donor_organism",
@@ -259,7 +259,7 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
+    {
       "source_schema": "imaged_specimen",
       "property": "biomaterial_core.biosd_biomaterial",
       "target_schema": "imaged_specimen",
@@ -277,7 +277,7 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
+    {
       "source_schema": "organoid",
       "property": "biomaterial_core.biosd_biomaterial",
       "target_schema": "organoid",
@@ -295,7 +295,7 @@
       "reason": "Field clarification",
       "type": "renamed property"
     },
-     {
+    {
       "source_schema": "specimen_from_organism",
       "property": "biomaterial_core.biosd_biomaterial",
       "target_schema": "specimen_from_organism",
@@ -311,6 +311,33 @@
       "replaced_by": "biomaterial_core.insdc_sample_accession",
       "effective_from" : "10.0.0",
       "reason": "Field clarification",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "enrichment_protocol",
+      "property": "enrichment_method",
+      "target_schema": "enrichment_protocol",
+      "replaced_by": "method",
+      "effective_from" : "3.0.0",
+      "reason": "Adherence to style guide",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "enrichment_protocol",
+      "property": "min_size_selected",
+      "target_schema": "enrichment_protocol",
+      "replaced_by": "minimum_size",
+      "effective_from" : "3.0.0",
+      "reason": "Adherence to style guide",
+      "type": "renamed property"
+    },
+    {
+      "source_schema": "enrichment_protocol",
+      "property": "max_size_selected",
+      "target_schema": "enrichment_protocol",
+      "replaced_by": "maximum_size",
+      "effective_from" : "3.0.0",
+      "reason": "Adherence to style guide",
       "type": "renamed property"
     },
     {
