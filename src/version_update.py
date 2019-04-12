@@ -24,6 +24,8 @@ class VersionUpdater:
         self.update_type = options.increment_type
         self.versions = self._getJson(self.path + "/versions.json")
 
+        self.migrations = self._getJson(self.path + "/property_migrations.json")
+
         if options.exclude:
             self.exclude = options.exclude
 
@@ -62,6 +64,22 @@ class VersionUpdater:
 
         # self._saveJson(self.path, versionJson)
         self._saveJson(self.path + "/versions.json", versionJson)
+
+        if self.update_type == 'major':
+            migrationJson = self.migrations
+
+            for migration in migrationJson:
+                if 'effective_from' in migration and migration['effective_from'] == '':
+                    if migration['source_schema'] in updatedVersion.keys:
+                        migration['effective_from'] = updatedVersion[migration['source_schema']]
+
+                elif 'effective_from_source' in migration and migration['effective_from_source'] == '':
+                    if migration['source_schema'] in updatedVersion.keys:
+                        migration['effective_from_source'] = updatedVersion[migration['source_schema']]
+                    if migration['target_schema'] in updatedVersion.keys():
+                        migration['effective_from_target'] = updatedVersion[migration['target_schema']]
+
+            self._saveJson(self.path + "/property_migrations.json", migrationJson)
 
         if versionTracker:
             return updatedVersion
