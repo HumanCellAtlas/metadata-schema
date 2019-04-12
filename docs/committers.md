@@ -122,7 +122,7 @@ This section outlines steps for Committers to make suggested changes to the meta
 
     1. If you made a breaking (major) change to a property, including adding a new required property, renaming a property, removing a property or moving a property to a different schema, please fill in the `property_migrations.json` file following the correct pattern. Example migrations can be found in `examples/sample_property_migrations.json`.
     
-    1. Do **NOT** fill in the `effective_from/_source/_target` property. This will be completed by the release script.
+    1. Do **NOT** fill in a value for the `effective_from/_source/_target` property, just insert blank quotes. This will be completed by the release script.
 
     1. If you are unsure how to fill in the `property_migrations.json` file, contact Dani for help.
 
