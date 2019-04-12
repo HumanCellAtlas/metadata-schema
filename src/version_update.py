@@ -68,16 +68,22 @@ class VersionUpdater:
         if self.update_type == 'major':
             migrationJson = self.migrations
 
+            schemasOnly = {}
+
+            for schema in updatedVersion.keys():
+                s = schema.split("/")[-1]
+                schemasOnly[s] = updatedVersion[schema]
+
             for migration in migrationJson:
                 if 'effective_from' in migration and migration['effective_from'] == '':
-                    if migration['source_schema'] in updatedVersion.keys:
-                        migration['effective_from'] = updatedVersion[migration['source_schema']]
+                    if migration['source_schema'] in schemasOnly.keys:
+                        migration['effective_from'] = schemasOnly[migration['source_schema']]
 
                 elif 'effective_from_source' in migration and migration['effective_from_source'] == '':
-                    if migration['source_schema'] in updatedVersion.keys:
-                        migration['effective_from_source'] = updatedVersion[migration['source_schema']]
-                    if migration['target_schema'] in updatedVersion.keys():
-                        migration['effective_from_target'] = updatedVersion[migration['target_schema']]
+                    if migration['source_schema'] in schemasOnly.keys:
+                        migration['effective_from_source'] = schemasOnly[migration['source_schema']]
+                    if migration['target_schema'] in schemasOnly.keys():
+                        migration['effective_from_target'] = schemasOnly[migration['target_schema']]
 
             self._saveJson(self.path + "/property_migrations.json", migrationJson)
 
