@@ -375,6 +375,24 @@
       "effective_from" : "10.0.0",
       "reason": "Schema consistency update",
       "type": "renamed property"
+    },
+    {
+      "source_schema": "donor_organism",
+      "property": "new_dummy_property",
+      "default_value": "foobar",
+      "effective_from" : "",
+      "reason": "Migration testing",
+      "type": "new required property"
+    },
+    {
+      "source_schema": "donor_organism",
+      "property": "development_stage",
+      "target_schema": "specimen_from_organism",
+      "replaced_by": "dummy_development_stage",
+      "effective_from_source" : "",
+      "effective_from_target": "",
+      "reason": "Migration testing",
+      "type": "moved property"
     }
   ]
 }
