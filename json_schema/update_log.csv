@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,major,Added new required field and removed another,,
-type/biomaterial/specimen_from_organism,major,Added new required field,,
