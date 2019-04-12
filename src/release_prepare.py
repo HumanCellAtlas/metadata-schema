@@ -68,6 +68,7 @@ class ReleasePrepare:
                         new_row[self.schema_column] = key
                         log_content.append(new_row)
 
+        versionUpdater.updateMigrations(migrationUpdates)
 
         return log_content
 

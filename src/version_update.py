@@ -61,7 +61,7 @@ class VersionUpdater:
         versionJson["last_update_date"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
         # self._saveJson(self.path, versionJson)
-        self._saveJson(self.path + "/versions.json", versionJson)
+        self._saveJson(self.path + "/versions.json", versionJson, True)
 
         if versionTracker:
             return updatedVersion
@@ -90,9 +90,9 @@ class VersionUpdater:
         f = open(path, 'r')
         return json.loads(f.read())
 
-    def _saveJson(self, path, data):
+    def _saveJson(self, path, data, sort):
         with open(path, 'w') as outfile:
-            json.dump(data, outfile, indent=4, sort_keys=True)
+            json.dump(data, outfile, indent=4, sort_keys=sort)
 
 
     def find(self, key, dictionary):
@@ -169,7 +169,7 @@ class VersionUpdater:
                 if migration['target_schema'] in updatedVersions.keys():
                     migration['effective_from_target'] = updatedVersions[migration['target_schema']]
 
-        self._saveJson(self.path + "/property_migrations.json", migrationJson)
+        self._saveJson(self.path + "/property_migrations.json", migrationJson, False)
 
 
 if __name__ == '__main__':
