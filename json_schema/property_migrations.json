@@ -389,7 +389,7 @@
             "source_schema": "ipsc_induction_protocol",
             "property": "ipsc_induction_factors",
             "target_schema": "ipsc_induction_protocol",
-            "replaced_by": "factors",
+            "replaced_by": "reprogramming_factors",
             "effective_from" : "3.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
