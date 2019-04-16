@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/biomaterial_collection/ipsc_induction_protocol,major,"Changed ipsc_induction_method to method, ipsc_induction_factors to reprogramming_factors, protocol_reagents to reagents. Removed ipsc_induction_produced_in_house. Fixes #926.",,

@@ -381,7 +381,7 @@
             "property": "ipsc_induction_method",
             "target_schema": "ipsc_induction_protocol",
             "replaced_by": "method",
-            "effective_from" : "3.0.0",
+            "effective_from": "3.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
         },
@@ -390,7 +390,7 @@
             "property": "ipsc_induction_factors",
             "target_schema": "ipsc_induction_protocol",
             "replaced_by": "reprogramming_factors",
-            "effective_from" : "3.0.0",
+            "effective_from": "3.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
         },
@@ -399,14 +399,14 @@
             "property": "protocol_reagents",
             "target_schema": "ipsc_induction_protocol",
             "replaced_by": "reagents",
-            "effective_from" : "3.0.0",
+            "effective_from": "3.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
         },
         {
             "source_schema": "ipsc_induction_protocol",
             "property": "ipsc_induction_produced_in_house",
-            "effective_from" : "3.0.0",
+            "effective_from": "3.0.0",
             "reason": "Redundant with process.location",
             "type": "deprecated property"
         }
