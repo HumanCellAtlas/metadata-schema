@@ -79,7 +79,7 @@
         "HDBR_accession": {
             "description": "A Human Developmental Biology Resource (HDBR) accession.",
             "type": "string",
-            "pattern": "(^[0-9]{5})(,\s[0-9]{1,},\s[a-zA-Z]+$){0,1}",
+            "pattern": "(^[0-9]{5})(,\\s[0-9]{1,},\\s[a-zA-Z]+$){0,1}",
             "user_friendly": "HDBR accession",
             "example": "34526; 14758, 2, liver",
             "guidelines": "Enter accession if the sample has been obtained at a Human Developmental Biology Resource (HDBR) site."
