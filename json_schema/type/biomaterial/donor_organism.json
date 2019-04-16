@@ -137,12 +137,12 @@
             "user_friendly": "Medical history"
         },
         "gestational_age": {
-            "description": "Gestational age of organism in Gestational age units measured since fertilization.",
+            "description": "Gestational age of pregnancy measured from the last menstrual period.",
             "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
             "type": "string",
             "user_friendly": "Gestational age",
             "example": "22; 5-7",
-            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
+            "guidelines": "To calculate add 2 weeks to embryonic post-ovulation age. Enter either a single value or indicate a range of values using a hyphen."
         },
         "gestational_age_unit": {
             "description": "The unit in which Gestational age is expressed.",
