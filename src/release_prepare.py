@@ -42,6 +42,8 @@ class ReleasePrepare:
         # find any row where the version column is empty and increment the version number
         # using the version_update script and log parameters
 
+        migrationUpdates = {}
+
         for val in range(1, len(log_content)):
             #generate a list of independent schemas from the update log
             independent_schemas = []
@@ -58,12 +60,16 @@ class ReleasePrepare:
                 for key in versionUpdates.keys():
                     if key == schema:
                         log_content[val][self.version_column] = versionUpdates[key]
+                        migrationUpdates[schema.split("/")[-1]] = versionUpdates[key]
                     else:
                         # add dependeny updates to the update log
                         new_row = log_content[val].copy()
                         new_row[self.version_column] = versionUpdates[key]
                         new_row[self.schema_column] = key
                         log_content.append(new_row)
+
+        versionUpdater.updateMigrations(migrationUpdates)
+
         return log_content
 
     def buildChangeLog(self, log_content):
