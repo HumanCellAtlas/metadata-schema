@@ -415,7 +415,7 @@
           "property": "selected_cell_type",
           "target_schema": "cell_suspension",
           "replaced_by": "selected_cell_types",
-          "effective_from": "12.0.0",
+          "effective_from": "13.0.0",
           "reason": "Schema consistency update",
           "type": "renamed property"
         }
