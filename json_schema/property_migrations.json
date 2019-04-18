@@ -409,6 +409,15 @@
             "effective_from": "3.0.0",
             "reason": "Redundant with process.location",
             "type": "deprecated property"
+        },
+        {
+            "source_schema": "cell_suspension",
+            "property": "selected_cell_type",
+            "target_schema": "cell_suspension",
+            "replaced_by": "selected_cell_types",
+            "effective_from": "13.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
         }
     ]
 }

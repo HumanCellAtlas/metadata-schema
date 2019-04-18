@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_suspension.json - v13.0.0] - 2019-04-18
+### Changed
+Changed selected_cell_type to selected_cell_types. Fixes #923.
+
 ### [type/biomaterial/cell_line.json - v14.1.0] - 2019-04-18
 ### Added
 Added optional timecourse field. Fixes #917.
