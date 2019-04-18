@@ -409,6 +409,15 @@
             "effective_from": "3.0.0",
             "reason": "Redundant with process.location",
             "type": "deprecated property"
+        },
+        {
+            "source_schema": "project",
+            "property": "contributors.contact_name",
+            "target_schema": "project",
+            "replaced_by": "contributors.name",
+            "effective_from": "",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
         }
     ]
 }
