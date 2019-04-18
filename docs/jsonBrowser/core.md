@@ -22,6 +22,7 @@ genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 04
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | sample_site_image.jpg
 biosamples_accession | A BioSamples accession. | string | no |  | BioSamples accession |  | SAMN00000000
 insdc_sample_accession | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC sample accession |  | SRS0000000
+HDBR_accession | A Human Developmental Biology Resource (HDBR) sample accession. | string | no |  | HDBR accession |  | 34526; 14758, 2, liver
 
 ## File core<a name='File core'></a>
 _Information about a file produced from any process._
