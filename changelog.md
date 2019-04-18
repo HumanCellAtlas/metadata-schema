@@ -7,34 +7,6 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [core/biomaterial/biomaterial_core.json - v8.1.0] - 2019-04-18
-### Added
-Added HDBR_accession to biomaterial_core. Fixes #945.
-
-### [type/biomaterial/specimen_from_organism.json - v10.1.0] - 2019-04-18
-### Added
-Added HDBR_accession to biomaterial_core. Fixes #945.
-
-### [type/biomaterial/cell_line.json - v14.1.0] - 2019-04-18
-### Added
-Added HDBR_accession to biomaterial_core. Fixes #945.
-
-### [type/biomaterial/donor_organism.json - v15.1.0] - 2019-04-18
-### Added
-Added HDBR_accession to biomaterial_core. Fixes #945.
-
-### [type/biomaterial/imaged_specimen.json - v3.1.0] - 2019-04-18
-### Added
-Added HDBR_accession to biomaterial_core. Fixes #945.
-
-### [type/biomaterial/organoid.json - v11.1.0] - 2019-04-18
-### Added
-Added HDBR_accession to biomaterial_core. Fixes #945.
-
-### [type/biomaterial/cell_suspension.json - v12.1.0] - 2019-04-18
-### Added
-Added HDBR_accession to biomaterial_core. Fixes #945.
-
 ### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.0.0] - 2019-04-16
 ### Changed
 Changed ipsc_induction_method to method, ipsc_induction_factors to reprogramming_factors, protocol_reagents to reagents. Removed ipsc_induction_produced_in_house. Fixes #926.
