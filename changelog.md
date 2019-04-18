@@ -7,6 +7,26 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.0.0] - 2019-04-16
+### Changed
+Changed ipsc_induction_method to method, ipsc_induction_factors to reprogramming_factors, protocol_reagents to reagents. Removed ipsc_induction_produced_in_house. Fixes #926.
+
+### [module/protocol/probe.json - v1.0.0] - 2019-04-11
+### Added
+Added new probe.json module. Fixes #813
+
+### [core/process/process_core.json - v10.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
+### [type/process/process.json - v8.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
+### [type/process/analysis/analysis_process.json - v10.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
 ### [type/protocol/biomaterial_collection/enrichment_protocol.json - v3.0.0] - 2019-04-11
 ### Changed
 Changed 'enrichment_method' to 'method', 'min_size_selected' to 'minimum_size' and 'max_size_selected' to 'maximum_size'. Fixes #925.

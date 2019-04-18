@@ -61,7 +61,7 @@ class VersionUpdater:
         versionJson["last_update_date"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
         # self._saveJson(self.path, versionJson)
-        self._saveJson(self.path + "/versions.json", versionJson)
+        self._saveJson(self.path + "/versions.json", versionJson, True)
 
         if versionTracker:
             return updatedVersion
@@ -90,9 +90,9 @@ class VersionUpdater:
         f = open(path, 'r')
         return json.loads(f.read())
 
-    def _saveJson(self, path, data):
+    def _saveJson(self, path, data, sort):
         with open(path, 'w') as outfile:
-            json.dump(data, outfile, indent=4, sort_keys=True)
+            json.dump(data, outfile, indent=4, sort_keys=sort)
 
 
     def find(self, key, dictionary):
@@ -155,7 +155,21 @@ class VersionUpdater:
                         dependencies.append(d)
         return dependencies
 
+    def updateMigrations(self, updatedVersions):
+        migrationJson =  self._getJson(self.path + "/property_migrations.json")
 
+        for migration in migrationJson['migrations']:
+            if 'effective_from' in migration and migration['effective_from'] == '':
+                if migration['source_schema'] in updatedVersions.keys():
+                    migration['effective_from'] = updatedVersions[migration['source_schema']]
+
+            elif 'effective_from_source' in migration and migration['effective_from_source'] == '':
+                if migration['source_schema'] in updatedVersions.keys():
+                    migration['effective_from_source'] = updatedVersions[migration['source_schema']]
+                if migration['target_schema'] in updatedVersions.keys():
+                    migration['effective_from_target'] = updatedVersions[migration['target_schema']]
+
+        self._saveJson(self.path + "/property_migrations.json", migrationJson, False)
 
 
 if __name__ == '__main__':

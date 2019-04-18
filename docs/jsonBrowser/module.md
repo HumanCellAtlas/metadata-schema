@@ -502,6 +502,24 @@ multiplexed | Whether multiple targets were detected simultaneously in this chan
 target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
 exposure_time | Acquisition time for a single image per channel, in milliseconds. | number | yes |  | Exposure time |  | 400
 
+## Probe<a name='Probe'></a>
+_Information about probes used to detect targets._
+
+Location: module/protocol/probe.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+probe_label | The label of a probe used to detect target in this experiment. | string | yes |  | Probe label |  | ACTA1; cFos
+probe_sequence | Sequence of a probe used to detect target. | string | no |  | Probe sequence |  | AGGCTATAGCGGAGCTACG; aggctatagcggagctacg
+target_name | The name of the target molecule. | string | no |  | Target name |  | ACTA1_exon1; nuclear cFos
+target_codebook_label | A label used in the codebook for the target. | string | no |  | Target label in codebook |  | AKT1; CFOS
+target_label | An identifier for the target molecule. | string | yes |  | Target label |  | CHEBI:85345; ENSG00000170345
+subcellular_structure | Target subcellular structure. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
+probe_reagents | Name of reagents used to construct the probe. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Probe construction reagents |  | 
+assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
+channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
+
 ## Target<a name='Target'></a>
 _Information about a single microscope channel._
 
