@@ -1,1 +1,5 @@
 Schema,Change type,Change message,Version,Date
+type/process/analysis/analysis_process,major,"Changed process_type to type. Fixes #931",,
+type/process/process,major,"Changed process_type to type. Fixes #931",,
+type/protocol/analysis/analysis_protocol,major,"Changed protocol_type to type. Fixes #931",,
+type/protocol/protocol,major,"Changed protocol_type to type. Fixes #931",,
