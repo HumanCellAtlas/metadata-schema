@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-core/biomaterial/biomaterial_core,minor,"Added HDBR_accession to biomaterial_core. Fixes#945.",,
+core/biomaterial/biomaterial_core,minor,"Added HDBR_accession to biomaterial_core. Fixes #945.",,
