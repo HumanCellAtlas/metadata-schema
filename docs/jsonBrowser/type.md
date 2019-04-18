@@ -401,7 +401,7 @@ diseases | Short description of known disease(s) of the organism. | array | no |
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
 familial_relationships | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
 medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
-gestational_age | Gestational age of pregnancy measured from the last menstrual period. | string | no |  | Gestational age |  | 22; 8-9
+gestational_age | Gestational age of pregnancy in Gesational age units measured from the last menstrual period. | string | no |  | Gestational age |  | 22; 8-9
 gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | 
 height | Height of organism in Height unit. | string | no |  | Height |  | 160; 120-140
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | 
