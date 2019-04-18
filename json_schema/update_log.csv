@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+core/file/file_core,major,"Changed file_format to format. Fixes #375.",,
