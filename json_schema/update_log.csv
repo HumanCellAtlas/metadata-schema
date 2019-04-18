@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/project/contact,major,"Changed contact_name to name. Fixes #927.",,
