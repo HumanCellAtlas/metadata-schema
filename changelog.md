@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v15.1.1] - 2019-04-18
+### Changed
+Changed description, guidelines and example for gestational_age. Fixes #911.
+
 ### [core/biomaterial/biomaterial_core.json - v8.1.0] - 2019-04-18
 ### Added
 Added HDBR_accession to biomaterial_core. Fixes #945.
