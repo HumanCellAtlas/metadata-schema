@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-04-11T15:01:20Z",
+    "last_update_date": "2019-04-16T21:56:48Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -116,7 +116,7 @@
                     "differentiation_protocol": "2.0.0",
                     "dissociation_protocol": "6.0.0",
                     "enrichment_protocol": "3.0.0",
-                    "ipsc_induction_protocol": "2.0.4"
+                    "ipsc_induction_protocol": "3.0.0"
                 },
                 "imaging": {
                     "imaging_preparation_protocol": "2.1.0",
