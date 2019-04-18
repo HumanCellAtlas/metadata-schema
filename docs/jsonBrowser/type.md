@@ -34,6 +34,7 @@ date_established | When the cell line was established. | string | no |  | Date e
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
 publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md/#publication) | Publication |  | 
+timecourse | Information relating to a timecourse associated with this cell line. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
 
 ## Cell suspension
 _Information about the suspension of cells or nuclei derived from the collected or cultured specimen._

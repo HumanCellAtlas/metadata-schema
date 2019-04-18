@@ -155,7 +155,12 @@
             "type": "object",
             "$ref": "module/project/publication.json",
             "user_friendly": "Publication"
+        },
+        "timecourse": {
+            "description": "Information relating to a timecourse associated with this cell line.",
+            "type": "object",
+            "$ref": "module/biomaterial/timecourse.json",
+            "user_friendly": "Timecourse"
         }
-
     }
 }
