@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/donor_organism/gestational_age,patch,"Changed description, guidelines and example for gestational_age. Fixes #911.",,
