@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/project/contact.json - v8.0.0] - 2019-04-25
+### Changed
+Changed contact_name to name. Fixes #927.
+
+### [type/project/project.json - v14.0.0] - 2019-04-25
+### Changed
+Changed contact_name to name. Fixes #927.
+
 ### [core/file/file_core.json - v6.0.0] - 2019-04-23
 ### Changed
 Changed file_format to format. Fixes #375.

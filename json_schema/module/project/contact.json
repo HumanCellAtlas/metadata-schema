@@ -3,7 +3,7 @@
     "description": "Information about an individual who submitted or contributed to a project.",
     "additionalProperties": false,
     "required": [
-        "contact_name",
+        "name",
         "institution"
     ],
     "title": "Contact",
@@ -21,7 +21,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "contact_name": {
+        "name": {
             "description": "Name of individual who has contributed to the project.",
             "type": "string",
             "example": "John,D,Doe; Jane,,Smith",
