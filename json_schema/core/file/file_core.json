@@ -4,7 +4,7 @@
     "additionalProperties": false,
     "required": [
 	    "file_name",
-	    "file_format"
+	    "format"
     ],
     "title": "File core",
     "name": "file_core",
@@ -28,7 +28,7 @@
             "guidelines": "Include the file extension in the file name.",
             "example": "R1.fastq.gz; codebook.json"
         },
-        "file_format": {
+        "format": {
             "description": "The format of the file.",
             "type": "string",
             "user_friendly": "File format",

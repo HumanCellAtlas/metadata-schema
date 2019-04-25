@@ -49,7 +49,7 @@ biomaterial_core | Core biomaterial-level information. | object | yes | [See cor
 cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
 growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
 genus_species | The scientific binomial name for the species of the suspension. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
-selected_cell_type | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type |  | 
+selected_cell_types | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type(s) |  | 
 estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) | Plate-based sequencing |  | 
 timecourse | Information relating to a timecourse associated with this cell suspension. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
@@ -76,7 +76,7 @@ diseases | Short description of known disease(s) of the organism. | array | no |
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md/#death) | Death conditions |  | 
 familial_relationships | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md/#familial_relationship) | Familial relationship |  | 
 medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md/#medical_history) | Medical history |  | 
-gestational_age | Gestational age of organism in Gestational age units measured since fertilization. | string | no |  | Gestational age |  | 22; 5-7
+gestational_age | Gestational age of pregnancy in Gesational age units measured from the last menstrual period. | string | no |  | Gestational age |  | 22; 8-9
 gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Gestational age unit |  | 
 height | Height of organism in Height unit. | string | no |  | Height |  | 160; 120-140
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Height unit |  | 

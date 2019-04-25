@@ -67,6 +67,7 @@ class ReleasePrepare:
                         new_row[self.version_column] = versionUpdates[key]
                         new_row[self.schema_column] = key
                         log_content.append(new_row)
+                        migrationUpdates[key.split("/")[-1]] = versionUpdates[key]
 
         versionUpdater.updateMigrations(migrationUpdates)
 
