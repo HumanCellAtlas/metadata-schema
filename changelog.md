@@ -7,6 +7,30 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/file/file_core.json - v6.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/reference_file.json - v3.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/supplementary_file.json - v2.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/image_file.json - v2.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/analysis_file.json - v6.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/sequence_file.json - v9.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
 ### [type/biomaterial/donor_organism.json - v15.1.1] - 2019-04-18
 ### Changed
 Changed description, guidelines and example for gestational_age. Fixes #911.
