@@ -7,6 +7,22 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/process/analysis/analysis_process.json - v11.0.0] - 2019-04-26
+### Changed
+Changed process_type to type. Fixes #931
+
+### [type/process/process.json - v9.0.0] - 2019-04-26
+### Changed
+Changed process_type to type. Fixes #931
+
+### [type/protocol/analysis/analysis_protocol.json - v9.0.0] - 2019-04-26
+### Changed
+Changed protocol_type to type. Fixes #931
+
+### [type/protocol/protocol.json - v7.0.0] - 2019-04-26
+### Changed
+Changed protocol_type to type. Fixes #931
+
 ### [module/project/contact.json - v8.0.0] - 2019-04-25
 ### Changed
 Changed contact_name to name. Fixes #927.

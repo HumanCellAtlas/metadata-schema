@@ -478,7 +478,7 @@
             "property": "process_type",
             "target_schema": "process",
             "replaced_by": "type",
-            "effective_from": "",
+            "effective_from": "9.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
         },
@@ -487,7 +487,7 @@
             "property": "process_type",
             "target_schema": "analysis_process",
             "replaced_by": "type",
-            "effective_from": "",
+            "effective_from": "11.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
         },
@@ -496,7 +496,7 @@
             "property": "protocol_type",
             "target_schema": "protocol",
             "replaced_by": "type",
-            "effective_from": "",
+            "effective_from": "7.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
         },
@@ -505,7 +505,7 @@
             "property": "protocol_type",
             "target_schema": "analysis_protocol",
             "replaced_by": "type",
-            "effective_from": "",
+            "effective_from": "9.0.0",
             "reason": "Schema consistency update",
             "type": "renamed property"
         }
