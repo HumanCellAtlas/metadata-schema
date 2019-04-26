@@ -105,14 +105,20 @@
             "type": "object",
             "properties": {
                 "checksum": {
-                    "type": "string"
+                    "description": "MD5 checksum of the file.",
+                    "type": "string",
+                    "user_friendly": "Checksum",
+                    "example": "e09a986c2e630130b1849d4bf9a94c06"
                 },
                 "parameter_name": {
-                    "type": "string"
+                    "description": "Name of parameter.",
+                    "type": "string",
+                    "user_friendly": "Parameter name"
                 },
                 "parameter_value": {
-                    "description": "Path to file or setting value.",
-                    "type": "string"
+                    "description": "Path to file for or value of parameter.",
+                    "type": "string",
+                    "user_friendly": "Parameter value"
                 }
             }
         }
