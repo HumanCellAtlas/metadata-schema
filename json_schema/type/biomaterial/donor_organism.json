@@ -81,7 +81,8 @@
             "enum": [
                 "yes",
                 "no",
-                "unknown"
+                "unknown",
+		"not applicable"
             ],
             "user_friendly": "Alive at collection?",
             "example": "Should be one of: yes, no, or unknown.",
