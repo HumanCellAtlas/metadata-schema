@@ -37,7 +37,8 @@
                     "description": "Name of the disk volume mounted to the VM for the task.",
                     "type": "string",
                     "example": "local-disk 11 HDD",
-                    "user_friendly": "Disk name"
+                    "user_friendly": "Disk name",
+                    "guidelines": "Indicate both disk type and disk size."
                 },
                 "task_name": {
                     "description": "Name of the task.",
