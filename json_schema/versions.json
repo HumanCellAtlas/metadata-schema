@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2019-04-18T09:47:39Z",
+    "last_update_date": "2019-04-25T16:19:24Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
-                "biomaterial_core": "8.0.0"
+                "biomaterial_core": "8.1.0"
             },
             "file": {
-                "file_core": "5.2.5"
+                "file_core": "6.0.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -66,7 +66,7 @@
                 }
             },
             "project": {
-                "contact": "7.0.0",
+                "contact": "8.0.0",
                 "funder": "2.0.0",
                 "publication": "6.0.0"
             },
@@ -83,19 +83,19 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "14.1.0",
-                "cell_suspension": "12.0.0",
-                "donor_organism": "15.0.0",
-                "imaged_specimen": "3.0.0",
-                "organoid": "11.0.0",
-                "specimen_from_organism": "10.0.0"
+                "cell_line": "14.2.0",
+                "cell_suspension": "13.1.0",
+                "donor_organism": "15.1.1",
+                "imaged_specimen": "3.1.0",
+                "organoid": "11.1.0",
+                "specimen_from_organism": "10.1.0"
             },
             "file": {
-                "analysis_file": "5.3.6",
-                "image_file": "1.0.4",
-                "reference_file": "2.2.10",
-                "sequence_file": "8.0.0",
-                "supplementary_file": "1.1.8"
+                "analysis_file": "6.0.0",
+                "image_file": "2.0.0",
+                "reference_file": "3.0.0",
+                "sequence_file": "9.0.0",
+                "supplementary_file": "2.0.0"
             },
             "process": {
                 "analysis": {
@@ -104,7 +104,7 @@
                 "process": "8.0.0"
             },
             "project": {
-                "project": "13.0.0"
+                "project": "14.0.0"
             },
             "protocol": {
                 "analysis": {

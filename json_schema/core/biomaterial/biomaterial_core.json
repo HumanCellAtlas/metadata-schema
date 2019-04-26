@@ -75,6 +75,14 @@
             "user_friendly": "INSDC sample accession",
             "example": "SRS0000000",
             "guidelines": "Enter accession if sample has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRS, SRS, or ERS, respecitvely."
+        },
+        "HDBR_accession": {
+            "description": "A Human Developmental Biology Resource (HDBR) sample accession.",
+            "type": "string",
+            "pattern": "(^[0-9]{5})(,\\s[0-9]{1,},\\s[a-zA-Z]+$){0,1}",
+            "user_friendly": "HDBR accession",
+            "example": "34526; 14758, 2, liver",
+            "guidelines": "Enter accession if sample has been obtained from the Human Developmental Biology Resource (HDBR)."
         }
     }
 }

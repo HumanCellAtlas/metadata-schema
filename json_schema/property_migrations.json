@@ -411,6 +411,69 @@
             "type": "deprecated property"
         },
         {
+            "source_schema": "cell_suspension",
+            "property": "selected_cell_type",
+            "target_schema": "cell_suspension",
+            "replaced_by": "selected_cell_types",
+            "effective_from": "13.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
+        },
+        {
+            "source_schema": "analysis_file",
+            "property": "file_core.file_format",
+            "target_schema": "analysis_file",
+            "replaced_by": "file_core.format",
+            "effective_from": "6.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
+        },
+        {
+            "source_schema": "image_file",
+            "property": "file_core.file_format",
+            "target_schema": "image_file",
+            "replaced_by": "file_core.format",
+            "effective_from": "2.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
+        },
+        {
+            "source_schema": "reference_file",
+            "property": "file_core.file_format",
+            "target_schema": "reference_file",
+            "replaced_by": "file_core.format",
+            "effective_from": "3.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
+        },
+        {
+            "source_schema": "sequence_file",
+            "property": "file_core.file_format",
+            "target_schema": "sequence_file",
+            "replaced_by": "file_core.format",
+            "effective_from": "9.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
+        },
+        {
+            "source_schema": "supplementary_file",
+            "property": "file_core.file_format",
+            "target_schema": "supplementary_file",
+            "replaced_by": "file_core.format",
+            "effective_from": "2.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
+        },
+        {
+            "source_schema": "project",
+            "property": "contributors.contact_name",
+            "target_schema": "project",
+            "replaced_by": "contributors.name",
+            "effective_from": "14.0.0",
+            "reason": "Schema consistency update",
+            "type": "renamed property"
+        },
+        {
             "source_schema": "process",
             "property": "process_type",
             "target_schema": "process",

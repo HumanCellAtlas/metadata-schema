@@ -8,7 +8,7 @@
   },
   "contributors": [
     {
-      "contact_name": "Dummy Person",
+      "name": "Dummy Person",
       "email": "dummy@email.com",
       "corresponding_contributor": true,
       "institution": "Wellcome Trust Sanger Institute"
