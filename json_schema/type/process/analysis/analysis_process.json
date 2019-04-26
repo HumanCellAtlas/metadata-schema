@@ -114,11 +114,13 @@
                 "parameter_name": {
                     "description": "Name of parameter.",
                     "type": "string",
+                    "example": "stranded; rsem_ref_index",
                     "user_friendly": "Parameter name"
                 },
                 "parameter_value": {
                     "description": "Path to file for or value of parameter.",
                     "type": "string",
+                    "example": "NONE; gs://hca-dcp-mint-test-data/reference/GRCh38_Gencode/gencode_v27_primary.tar",
                     "user_friendly": "Parameter value"
                 }
             }
