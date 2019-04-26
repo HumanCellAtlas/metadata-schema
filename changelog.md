@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v15.2.0] - 2019-04-26
+### Added
+Added not applicable to is_living. Fixes #921
+
 ### [type/process/analysis/analysis_process.json - v11.0.0] - 2019-04-26
 ### Changed
 Changed process_type to type. Fixes #931
