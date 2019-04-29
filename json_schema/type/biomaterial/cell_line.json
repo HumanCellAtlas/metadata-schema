@@ -131,10 +131,10 @@
         "date_established": {
             "description": "When the cell line was established.",
             "type": "string",
-            "format": "date",
+            "pattern": "^((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}$",
             "user_friendly": "Date established",
-            "example": "2017-03-19",
-            "guidelines": "Enter the date established in date format: yyyy-mm-dd."
+            "example": "2017-03-19; 2002/03; 1995",
+            "guidelines": "Enter the date and time established in date-time format: yyyy-mm-ddThh:mm:ssZ. Supplying partial date is allowed."
         },
         "disease": {
             "description": "Short description of any disease association to the cell type.",
