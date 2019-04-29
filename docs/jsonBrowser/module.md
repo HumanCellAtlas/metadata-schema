@@ -399,7 +399,7 @@ retail_name | The retail name of the kit/reagent. | string | no |  | Retail name
 catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
 manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina; ThermoFisher Scientific
 lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
-expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31
+expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31; 2018-01
 kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Titer |  | 3.0x10^7
 
 ## 10x-specific<a name='10x-specific'></a>

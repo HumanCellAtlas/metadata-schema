@@ -44,10 +44,10 @@
         "expiry_date": {
             "description": "The date of expiration for the kit/reagent.",
             "type": "string",
-            "example": "2018-01-31",
+            "example": "2018-01-31; 2018-01",
             "user_friendly": "Expiry date",
             "pattern": "^((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}$",
-            "guidelines": "Enter the time in date format: yyyy-mm-dd.Supplying partial date is allowed."
+            "guidelines": "Enter the date in date format: yyyy-mm-dd. Supplying partial date is allowed."
         },
         "kit_titer": {
             "description": "Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis.",
