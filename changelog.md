@@ -7,6 +7,58 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/cell_line.json - v14.3.0] - 2019-04-29
+### Changed
+Changed format for date_established property. Fixes #966
+
+### [module/biomaterial/death.json - v5.5.0] - 2019-04-29
+### Changed
+Changed format for time_of_death property. Fixes #966
+
+### [type/biomaterial/specimen_from_organism.json - v10.2.0] - 2019-04-29
+### Changed
+Changed format for collection_time property. Fixes #966
+
+### [module/process/purchased_reagents.json - v6.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/biomaterial/donor_organism.json - v15.3.0] - 2019-04-29
+### Changed
+Changed format for time_of_death property. Fixes #966
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [module/protocol/probe.json - v1.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v2.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [module/protocol/target.json - v1.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
 ### [type/process/analysis/analysis_process.json - v11.0.1] - 2019-04-29
 ### Added
 Added description, example, user-friendly name, and guidelines to all definition fields. Fixes #955.
