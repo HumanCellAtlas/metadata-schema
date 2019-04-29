@@ -48,11 +48,11 @@
                     "format": "date-time"
                 },
                 {
-                    "pattern": "^((19|20)\\d\\d){1}([- \\.][01]\\d){0,1}([- \\.][0-3]\\d){0,1}$"
+                    "pattern": "^((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}$"
                 }
             ],
             "user_friendly": "Start time",
-            "example": "2019-01-16T12:00:00Z; 2019.10.03",
+            "example": "2019-01-16T12:00:00Z; 2019/01/16",
             "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
         },
         "end_time": {
@@ -63,11 +63,11 @@
                     "format": "date-time"
                 },
                 {
-                    "pattern": "^((19|20)\\d\\d){1}([- \\.][01]\\d){0,1}([- \\.][0-3]\\d){0,1}$"
+                    "pattern": "^((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}$"
                 }
             ],
             "user_friendly": "End time",
-            "example": "2019-01-16T12:00:00Z; 2019.10.03",
+            "example": "2019-01-16T12:00:00Z; 2019/01/16",
             "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
         },
         "length_of_time": {

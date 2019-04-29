@@ -216,8 +216,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) | Process core |  | 
-start_time | Date and time the process started. | string | no |  | Start time |  | 2019-01-16T12:00:00Z; 2019.10.03
-end_time | Date and time the process ended. | string | no |  | End time |  | 2019-01-16T12:00:00Z; 2019.10.03
+start_time | Date and time the process started. | string | no |  | Start time |  | 2019-01-16T12:00:00Z; 2019/01/16
+end_time | Date and time the process ended. | string | no |  | End time |  | 2019-01-16T12:00:00Z; 2019/01/16
 length_of_time | Length of time the process took to execute in Length of time unit. | string | no |  | Length of time |  | 10; 55-60
 length_of_time_unit | The unit in which Length of time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | 
 type | The type of process. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
