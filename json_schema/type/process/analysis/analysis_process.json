@@ -34,36 +34,67 @@
             "type": "object",
             "properties": {
                 "disk_size": {
-                    "type": "string"
+                    "description": "Name of the disk volume mounted to the VM for the task.",
+                    "type": "string",
+                    "example": "local-disk 11 HDD",
+                    "user_friendly": "Disk name",
+                    "guidelines": "Indicate both disk type and disk size."
                 },
                 "task_name": {
-                    "type": "string"
+                    "description": "Name of the task.",
+                    "type": "string",
+                    "example": "CollectDuplicationMetrics; RSEMExpression",
+                    "user_friendly": "Task name"
                 },
                 "zone": {
-                    "type": "string"
+                    "description": "Name of the Google Cloud zone where the task was run.",
+                    "type": "string",
+                    "example": "us-central1-b; europe-north1-a",
+                    "user_friendly": "Zone"
                 },
                 "log_err": {
-                    "type": "string"
+                    "description": "Path where standard error is logged.",
+                    "type": "string",
+                    "user_friendly": "Log error"
                 },
                 "start_time": {
+                    "description": "Date and time when the task started.",
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "example": "2019-04-23T20:25:25.969Z",
+                    "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ.",
+                    "user_friendly": "Start time"
                 },
                 "cpus": {
-                    "type": "integer"
+                    "description": "Number of CPUs used to run this task.",
+                    "type": "integer",
+                    "example": 2,
+                    "user_friendly": "CPUs"
                 },
                 "log_out": {
-                    "type": "string"
+                    "description": "Path where standard output is logged.",
+                    "type": "string",
+                    "user_friendly": "Log out"
                 },
                 "stop_time": {
+                    "description": "Date and time when the task finished.",
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "example": "2019-04-23T20:28:29.830Z",
+                    "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ.",
+                    "user_friendly": "Stop time"
                 },
                 "memory": {
-                    "type": "string"
+                    "description": "Amount of memory allocated for this task.",
+                    "type": "string",
+                    "example": "7.5 GB",
+                    "user_friendly": "Memory"
                 },
                 "docker_image": {
-                    "type": "string"
+                    "description": "Name of docker image where the task is stored and executed.",
+                    "type": "string",
+                    "example": "quay.io/humancellatlas/secondary-analysis-picard:v0.2.2-2.10.10",
+                    "user_friendly": "Docker image"
                 }
             }
         },
@@ -76,14 +107,22 @@
             "type": "object",
             "properties": {
                 "checksum": {
-                    "type": "string"
+                    "description": "MD5 checksum of the file.",
+                    "type": "string",
+                    "user_friendly": "Checksum",
+                    "example": "e09a986c2e630130b1849d4bf9a94c06"
                 },
                 "parameter_name": {
-                    "type": "string"
+                    "description": "Name of parameter.",
+                    "type": "string",
+                    "example": "stranded; rsem_ref_index",
+                    "user_friendly": "Parameter name"
                 },
                 "parameter_value": {
-                    "description": "Path to file or setting value.",
-                    "type": "string"
+                    "description": "Path to file for or value of parameter.",
+                    "type": "string",
+                    "example": "NONE; gs://hca-dcp-mint-test-data/reference/GRCh38_Gencode/gencode_v27_primary.tar",
+                    "user_friendly": "Parameter value"
                 }
             }
         }

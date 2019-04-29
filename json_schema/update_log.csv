@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/process/analysis/analysis_process,patch,"Added description, example, user-friendly name, and guidelines to all definition fields. Fixes #955.",,
