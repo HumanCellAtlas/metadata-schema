@@ -1,5 +1,5 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/cell_line,minor,"Changed date_established property. Fixes #966",,
-module/biomaterial/death,minor,"Changed time_of_death property. Fixes #966",,
-type/biomaterial/specimen_from_organism,minor,"Changed collection_time property. Fixes #966",,
-module/process/purchased_reagents,minor,"Changed expiry_date property. Fixes #966",,
+type/biomaterial/cell_line,minor,"Changed format for date_established property. Fixes #966",,
+module/biomaterial/death,minor,"Changed format for time_of_death property. Fixes #966",,
+type/biomaterial/specimen_from_organism,minor,"Changed format for collection_time property. Fixes #966",,
+module/process/purchased_reagents,minor,"Changed format for expiry_date property. Fixes #966",,
