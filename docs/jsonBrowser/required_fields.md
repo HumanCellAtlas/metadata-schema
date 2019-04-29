@@ -44,7 +44,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
 sex | The biological sex of the organism. | string |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
-is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, or unknown.
+is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection? | yes, no, unknown, not applicable | Should be one of: yes, no, not applicable, or unknown.
 development_stage | A classification of the developmental stage of the organism. | object | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 ### Imaged specimen
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
@@ -105,7 +105,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
 process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) | Process core |  | 
-process_type | The type of process. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+type | The type of process. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run. | array |  | Input parameters |  | 
 tasks | Information about steps in the workflow. | array |  | Workflow tasks |  | 
 input_bundles | UUID(s) of the input bundle(s) used in running the pipeline. | array |  | Input bundles |  | b816d2d6-5f10-4447-4194-3d0a804454d6
@@ -129,7 +129,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-protocol_type | The type of protocol. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+type | The type of protocol. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string |  | Computational method |  | SmartSeq2SingleCell; 10x
 ### Aggregate generation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
@@ -341,7 +341,7 @@ plate_label | A label or name for the plate on which the well is located. | stri
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-contact_name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe; Jane,,Smith
+name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe; Jane,,Smith
 institution | Name of primary institute where the individual works. | string |  | Institute |  | EMBL-EBI; University of Washington
 ### Funder<a name='Funder'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 

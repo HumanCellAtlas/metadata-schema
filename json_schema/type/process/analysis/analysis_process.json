@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "process_core",
-        "process_type",
+        "type",
         "timestamp_start_utc",
         "timestamp_stop_utc",
         "input_bundles",
@@ -118,7 +118,7 @@
             "$ref": "core/process/process_core.json",
             "user_friendly": "Process core"
         },
-        "process_type": {
+        "type": {
             "description": "The type of process.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",

@@ -7,6 +7,34 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/biomaterial/donor_organism.json - v15.2.0] - 2019-04-26
+### Added
+Added not applicable to is_living. Fixes #921
+
+### [type/process/analysis/analysis_process.json - v11.0.0] - 2019-04-26
+### Changed
+Changed process_type to type. Fixes #931
+
+### [type/process/process.json - v9.0.0] - 2019-04-26
+### Changed
+Changed process_type to type. Fixes #931
+
+### [type/protocol/analysis/analysis_protocol.json - v9.0.0] - 2019-04-26
+### Changed
+Changed protocol_type to type. Fixes #931
+
+### [type/protocol/protocol.json - v7.0.0] - 2019-04-26
+### Changed
+Changed protocol_type to type. Fixes #931
+
+### [module/project/contact.json - v8.0.0] - 2019-04-25
+### Changed
+Changed contact_name to name. Fixes #927.
+
+### [type/project/project.json - v14.0.0] - 2019-04-25
+### Changed
+Changed contact_name to name. Fixes #927.
+
 ### [core/file/file_core.json - v6.0.0] - 2019-04-23
 ### Changed
 Changed file_format to format. Fixes #375.

@@ -70,7 +70,7 @@
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Length of time unit"
         },
-        "process_type": {
+        "type": {
             "description": "The type of process.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",

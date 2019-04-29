@@ -68,7 +68,7 @@ human_specific | Fields specific to human (homo sapiens) organisms. | object | n
 mouse_specific | Fields specific to mouse (mus musculus) organisms. | object | no | [See module  mouse_specific](module.md/#mouse_specific) | Mouse-specific |  | 
 genus_species | The scientific binomial name for the species of the organism. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
 sex | The biological sex of the organism. | string | yes |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
-is_living | Whether organism was alive at time of biomaterial collection. | string | yes |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, or unknown.
+is_living | Whether organism was alive at time of biomaterial collection. | string | yes |  | Alive at collection? | yes, no, unknown, not applicable | Should be one of: yes, no, not applicable, or unknown.
 organism_age | Age of organism in Age units measured since birth. | string | no |  | Age |  | 20; 45-65
 organism_age_unit | The unit in which Age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Age unit |  | 
 development_stage | A classification of the developmental stage of the organism. | object | yes | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
@@ -220,7 +220,7 @@ start_time | Date and time the process started. | string | no |  | Start time | 
 end_time | Date and time the process ended. | string | no |  | End time |  | 2019-01-16T12:00:00Z
 length_of_time | Length of time the process took to execute in Length of time unit. | string | no |  | Length of time |  | 10; 55-60
 length_of_time_unit | The unit in which Length of time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Length of time unit |  | 
-process_type | The type of process. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+type | The type of process. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 deviation_from_protocol | A deviation from the protocol provided. | string | no |  | Deviation from protocol |  | Skipped ACK lysis step; Used 100um filter instead of 40um filter
 insdc_experiment | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment accession |  | 
 
@@ -234,7 +234,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | process | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 process_core | Core process-level information. | object | yes | [See core  process_core](core.md/#process_core) | Process core |  | 
-process_type | The type of process. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+type | The type of process. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run. | array | yes |  | Input parameters |  | 
 tasks | Information about steps in the workflow. | array | yes |  | Workflow tasks |  | 
 input_bundles | UUID(s) of the input bundle(s) used in running the pipeline. | array | yes |  | Input bundles |  | b816d2d6-5f10-4447-4194-3d0a804454d6
@@ -273,7 +273,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-protocol_type | The type of protocol. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | sample enrichment
+type | The type of protocol. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | sample enrichment
 
 ## Analysis protocol
 _Information about the analysis protocol._
@@ -285,7 +285,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-protocol_type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  | Computational method |  | SmartSeq2SingleCell; 10x
 
 ## Aggregate generation protocol

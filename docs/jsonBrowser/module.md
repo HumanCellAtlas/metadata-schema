@@ -453,7 +453,7 @@ Location: module/project/contact.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-contact_name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
+name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
 email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com
 phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
 institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI; University of Washington
