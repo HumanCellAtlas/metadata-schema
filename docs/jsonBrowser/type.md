@@ -30,7 +30,7 @@ confluency | The percent a plate surface is covered by cells. | number | no |  |
 cell_type | The cell type that the cell line represents. | object | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Cell type |  | 
 karyotype | The karyotype of the cell line. | string | no |  | Karyotype |  | sex chromosome complement of XY; del(2) (q11)
 tissue | The tissue that the cell line was derived from. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Tissue |  | 
-date_established | When the cell line was established. | string | no |  | Date established |  | 2017-03-19; 2002/03; 1995
+date_established | Date when the cell line was established. | string | no |  | Date established |  | 2017-03-19; 2002/03; 1995
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md/#disease_ontology) | Disease |  | 
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
 publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md/#publication) | Publication |  | 
