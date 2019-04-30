@@ -10,7 +10,7 @@ ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array |  | NCBI taxon ID | 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 file_name | The name of the file. | string |  | File name |  | R1.fastq.gz; codebook.json
-file_format | The format of the file. | string |  | File format |  | fastq.gz; tif
+format | The format of the file. | string |  | File format |  | fastq.gz; tif
 ### Process core<a name='Process core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -31,7 +31,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-cell_line_type | The type of cell line. | string |  | Cell line type | primary, immortalized, stem cell-derived, synthetic, induced pluripotent, stem cell | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
+type | The type of cell line. | string |  | Cell line type | primary, immortalized, stem cell, stem cell-derived, induced pluripotent, synthetic | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
 model_organ | Organ for which this cell line is a model. | object | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
 ### Cell suspension
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
@@ -44,7 +44,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
 biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
 sex | The biological sex of the organism. | string |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
-is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection? | yes, no, unknown | Should be one of: yes, no, or unknown.
+is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection? | yes, no, unknown, not applicable | Should be one of: yes, no, not applicable, or unknown.
 development_stage | A classification of the developmental stage of the organism. | object | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
 ### Imaged specimen
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
@@ -105,7 +105,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
 process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) | Process core |  | 
-process_type | The type of process. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+type | The type of process. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run. | array |  | Input parameters |  | 
 tasks | Information about steps in the workflow. | array |  | Workflow tasks |  | 
 input_bundles | UUID(s) of the input bundle(s) used in running the pipeline. | array |  | Input bundles |  | b816d2d6-5f10-4447-4194-3d0a804454d6
@@ -129,7 +129,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-protocol_type | The type of protocol. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+type | The type of protocol. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string |  | Computational method |  | SmartSeq2SingleCell; 10x
 ### Aggregate generation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
@@ -148,7 +148,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-differentiation_method | Method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+method | Method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
 ### Dissociation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -160,13 +160,13 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-enrichment_method | The method by which enrichment was achieved. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
+method | The method by which enrichment was achieved. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
 ### iPSC induction protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-ipsc_induction_method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
+method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
 ### Imaging preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -244,6 +244,10 @@ text | The name of a cell type supplied by a user. | string |  | Cell type |  | 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a subcellular structure. | string |  | Subcellular structure |  | cytoplasm; nucleus
+### Contributor role ontology<a name='Contributor role ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The primary role of the contributor in the project. | string |  | Contributor role |  | principal investigator; experimental scientist
 ### Development stage ontology<a name='Development stage ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -337,7 +341,7 @@ plate_label | A label or name for the plate on which the well is located. | stri
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-contact_name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe; Jane,,Smith
+name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe; Jane,,Smith
 institution | Name of primary institute where the individual works. | string |  | Institute |  | EMBL-EBI; University of Washington
 ### Funder<a name='Funder'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
@@ -348,7 +352,7 @@ organization | The name of the funding organization. | string |  | Funding organ
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication. | array |  | Authors |  | Doe JD
-publication_title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
+title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
 ### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -357,6 +361,12 @@ excitation_wavelength | Excitation wavelength of the lightsource in nanometers. 
 filter_range | Emission filter in nanometers. | string |  | Filter range |  | 461/70
 multiplexed | Whether multiple targets were detected simultaneously in this channel. | string |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
 exposure_time | Acquisition time for a single image per channel, in milliseconds. | number |  | Exposure time |  | 400
+### Probe<a name='Probe'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+probe_label | The label of a probe used to detect target in this experiment. | string |  | Probe label |  | ACTA1; cFos
+target_label | An identifier for the target molecule. | string |  | Target label |  | CHEBI:85345; ENSG00000170345
+assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
 ### Target<a name='Target'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

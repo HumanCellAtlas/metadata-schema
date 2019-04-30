@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "biomaterial_core",
-        "cell_line_type",
+        "type",
         "model_organ"
     ],
     "title": "Cell line",
@@ -72,16 +72,16 @@
             "$ref": "module/ontology/cell_cycle_ontology.json",
             "user_friendly": "Cell cycle"
         },
-        "cell_line_type": {
+        "type": {
             "description": "The type of cell line.",
             "type": "string",
             "enum": [
                 "primary",
                 "immortalized",
+                "stem cell",
                 "stem cell-derived",
-                "synthetic",
                 "induced pluripotent",
-                "stem cell"
+                "synthetic"
             ],
             "example": "Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.",
             "user_friendly": "Cell line type"
@@ -129,12 +129,12 @@
             "user_friendly": "Tissue"
         },
         "date_established": {
-            "description": "When the cell line was established.",
+            "description": "Date when the cell line was established.",
             "type": "string",
-            "format": "date",
+            "pattern": "^((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}$",
             "user_friendly": "Date established",
-            "example": "2017-03-19",
-            "guidelines": "Enter the date established in date format: yyyy-mm-dd."
+            "example": "2017-03-19; 2002/03; 1995",
+            "guidelines": "Enter the date established in date format: yyyy-mm-dd. Supplying partial date is allowed."
         },
         "disease": {
             "description": "Short description of any disease association to the cell type.",
@@ -155,7 +155,12 @@
             "type": "object",
             "$ref": "module/project/publication.json",
             "user_friendly": "Publication"
+        },
+        "timecourse": {
+            "description": "Information relating to a timecourse associated with this cell line.",
+            "type": "object",
+            "$ref": "module/biomaterial/timecourse.json",
+            "user_friendly": "Timecourse"
         }
-
     }
 }

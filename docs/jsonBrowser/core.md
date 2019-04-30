@@ -20,8 +20,9 @@ biomaterial_description | A general description of the biomaterial. | string | n
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array | yes |  | NCBI taxon ID |  | 9606
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele; HLA-B*3901 allele
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | sample_site_image.jpg
-biosd_biomaterial | A BioSamples ID. | string | no |  | BioSamples ID |  | SAMN00000000
-insdc_biomaterial | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC ID |  | SRS0000000
+biosamples_accession | A BioSamples accession. | string | no |  | BioSamples accession |  | SAMN00000000
+insdc_sample_accession | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC sample accession |  | SRS0000000
+HDBR_accession | A Human Developmental Biology Resource (HDBR) sample accession. | string | no |  | HDBR accession |  | 34526; 14758, 2, liver
 
 ## File core<a name='File core'></a>
 _Information about a file produced from any process._
@@ -31,7 +32,7 @@ Location: core/file/file_core.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 file_name | The name of the file. | string | yes |  | File name |  | R1.fastq.gz; codebook.json
-file_format | The format of the file. | string | yes |  | File format |  | fastq.gz; tif
+format | The format of the file. | string | yes |  | File format |  | fastq.gz; tif
 checksum | MD5 checksum of the file. | string | no |  | Checksum |  | e09a986c2e630130b1849d4bf9a94c06
 
 ## Process core<a name='Process core'></a>
@@ -44,8 +45,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 process_id | A unique ID for the process. | string | yes |  | Process ID |  | 
 process_name | A short, descriptive name for the process that need not be unique. | string | no |  | Process name |  | 
 process_description | A general description of the process. | string | no |  | Process description |  | 
-process_location | Location where the process took place. | string | no |  | Process location |  | Wellcome Trust Sanger Institute; Cancer Institute, Stanford University
-operator | Identifier for individual(s) who executed the process. | array | no |  | Operator identity |  | Technician 1; J.D.
+location | Location where the process took place. | string | no |  | Location |  | Wellcome Trust Sanger Institute; Cancer Institute Stanford University
+operators | Identifier for individual(s) who executed the process. | array | no |  | Operator(s) |  | Technician 1; JD; John Doe
 
 ## Project core<a name='Project core'></a>
 _Information about the project._

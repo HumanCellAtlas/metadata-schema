@@ -73,7 +73,7 @@
   "process_core": {
     "process_id": "92abe9a4-2da6-4e78-95e7-f738c145c4e9"
   },
-  "process_type": {
+  "type": {
     "text": "analysis"
   },
   "reference_bundle": "bf51d668-3e14-4843-9bc7-5d676fdf0e01",
