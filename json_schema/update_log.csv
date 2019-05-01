@@ -1,3 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/process/process,minor,"Added start_date_time to process.json. Fixes #742.",,
-type/process/process,minor,"Added end_date_time to process.json. Fixes #742.",,
+type/process/process,minor,"Added start_time and end_time to process.json. Fixes #742.",,
