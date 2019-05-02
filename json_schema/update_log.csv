@@ -1,1 +1,10 @@
 Schema,Change type,Change message,Version,Date
+module/protocol/target,patch,"Changed multiplexed property friendly name. Fixes #963",,
+module/protocol/channel,patch,"Changed multiplexed property friendly name. Fixes #963",,
+module/project/contact,patch,"Changed corresponding_contributor property friendly name. Fixes #963",,
+module/biomaterial/death,patch,"Changed 2 properties friendly name. Fixes #963",,
+type/protocol/sequencing/sequencing_protocol,patch,"Changed paired_end property friendly name. Fixes #963",,
+type/protocol/biomaterial_collection/ipsc_induction_protocol,patch,"Changed pluripotency_vector_removed property friendly name. Fixes #963",,
+type/protocol/imaging/imaging_protocol,patch,"Changed overlapping_tiles property friendly name. Fixes #963",,
+type/biomaterial/donor_organism,patch,"Changed is_living property friendly name. Fixes #963",,
+type/biomaterial/organoid,patch,"Changed embedded_in_matrigel property friendly name. Fixes #963",,

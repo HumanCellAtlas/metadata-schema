@@ -82,7 +82,7 @@
                 "no"
             ],
             "example": "Should be one of: yes, or no.",
-            "user_friendly": "Multiplexed experiment?"
+            "user_friendly": "Multiplexed experiment"
         },
         "channel_id": {
             "description": "Channel ID used to assay signal. Should be consistent with the ID in the channel tab.",

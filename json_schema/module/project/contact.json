@@ -70,7 +70,7 @@
         "corresponding_contributor": {
             "description": "Whether the individual is a primary point of contact for the project.",
             "type": "boolean",
-            "user_friendly": "Corresponding contributor?",
+            "user_friendly": "Corresponding contributor",
             "example": "Should be one of: yes, or no."
         },
         "project_role": {
