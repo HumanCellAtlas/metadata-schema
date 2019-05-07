@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/imaging/imaging_protocol,major,"Removed target, added probe where relevant in the imaging_protocol",,
