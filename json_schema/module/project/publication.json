@@ -4,7 +4,7 @@
     "additionalProperties": false,
     "required": [
         "authors",
-        "publication_title"
+        "title"
     ],
     "title": "Publication",
     "name": "publication",
@@ -31,7 +31,7 @@
             "user_friendly": "Authors",
             "guidelines": "List each author in 'surname initials' format."
         },
-        "publication_title": {
+        "title": {
             "description": "The title of the publication.",
             "type": "string",
             "user_friendly": "Publication title",
@@ -49,7 +49,7 @@
             "example": "27565351",
             "user_friendly": "Publication PMID"
         },
-        "publication_url": {
+        "url": {
             "description": "A URL for the publication.",
             "type": "string",
             "user_friendly": "Publication URL",

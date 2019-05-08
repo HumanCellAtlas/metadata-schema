@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "ipsc_induction_method"
+        "method"
     ],
     "title": "iPSC induction protocol",
     "name": "ipsc_induction_protocol",
@@ -41,7 +41,7 @@
             "$ref": "core/protocol/protocol_core.json",
             "user_friendly": "Protocol core"
         },
-        "ipsc_induction_method": {
+        "method": {
             "description": "Induction method applied to primary cell culture to induce pluripotent stem cell generation.",
             "type": "string",
             "enum": [
@@ -59,10 +59,10 @@
             "comment": "Consider making this field an ontology in the future",
             "example": "Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral."
         },
-        "ipsc_induction_factors": {
-            "description": "Induction factors added to primary cell culture to induce pluripotency.",
+        "reprogramming_factors": {
+            "description": "Reprogramming factors added to primary cell culture to induce pluripotency.",
             "type": "string",
-            "user_friendly": "Induction factors",
+            "user_friendly": "Reprogramming factors",
             "example": "POU5F1; SOX2; KLF4; c-MYC"
 	    },
         "ipsc_induction_kit": {
@@ -94,20 +94,14 @@
             "user_friendly": "Pluripotent vector removed?",
             "example": "Should be one of: yes, no, or unknown."
         },
-        "ipsc_induction_produced_in_house": {
-            "description": "Whether the induced pluripotent stem cell was prepared in-house.",
-            "type": "boolean",
-            "user_friendly": "iPSC prepared in-house?",
-            "example": "Should be one of: yes, or no."
-        },
-        "protocol_reagents": {
-            "description": "A list of additional purchased reagents used in this protocol.",
+        "reagents": {
+            "description": "Additional purchased reagents used in this protocol.",
             "type": "array",
             "items": {
                 "type": "object",
                 "$ref": "module/process/purchased_reagents.json"
             },
-            "user_friendly": "Additional protocol reagents"
+            "user_friendly": "Additional reagents"
         }
     }
 }
