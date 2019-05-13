@@ -171,22 +171,11 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 
 1. **Check** that the schema changes were detected in the #schema-pub-events Slack channel in the correct environment. The phrase "New schema changes published:" should appear with the list of the newly released schemas and their versions. This check confirms that schema updates were detected by the publisher.
 
-1. **Wait** for 5 minutes after the schema changes are published to the #schema-pub-events Slack channel while the cache of schema versions are cleared. **NB** This workaround of waiting for the cache to be cleared will be fixed by an enhancement to the Ingestion Service in the future.
-
-1. **Trigger** ingest core to redeploy in order to grab the newly released schemas (after the cache is cleared) by running:
-
-   `curl -X POST https://api.ingest.<env>.data.humancellatlas.org/schemas/update`
-   
-   Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command.
-   
 1. **Check** that the newly released schemas are available by checking
 
     `https://api.ingest.<env>.data.humancellatlas.org/schemas/search/latestSchemas?size=1000`
     
-    Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command. Spot check at least 1 schema name and confirm the displayed version is the newly released version. This check confirms that the schema updates will be retrieved using the /latestSchemas endpoint.
-    
-    - If the newest version *is not* displayed, go back to step 2 and repeat.
-    - If the newest version *is* displayed, continue to last step.
+    Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command. Spot check at least 1 schema name and confirm the displayed version is the newly released version. This check confirms that the schema updates will be retrieved using the /latestSchemas endpoint. If the newest version *is not* displayed, contact an ingest developer.
 
-1. **Trigger** a DCP-wide integration test *only* if releasing to the integration environment to confirm that the changes do not break the integration test. If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken. For releasing to staging or production, the DCP-wide Release Manager for the week will trigger the integration test after all components have deployed.
+1. **Trigger** a DCP-wide integration test *only* if releasing to the integration environment to confirm that the changes do not break the integration test. Go to the [integration testing schedule page](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/pipeline_schedules) and click the run button (black triangle) next to the "DCP wide test in integration environment" pipeline in the "integration" environment (if not currently running). If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken. For releasing to staging or production, the DCP-wide Release Manager for the week will trigger the integration test after all components have deployed.
 
