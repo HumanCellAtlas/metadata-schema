@@ -514,7 +514,7 @@
             "property": "target",
             "target_schema": "imaging_protocol",
             "replaced_by": "probe",
-            "effective_from": "",
+            "effective_from": "11.1.1",
             "reason": "Schema consistency update",
             "type": "renamed property"
         }

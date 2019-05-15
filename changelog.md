@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/imaging/imaging_protocol.json - v11.1.1] - 2019-05-15
+### Fixed
+Fixed probe field where relevant in the imaging_protocol. Fixes #980.
+
 ### [type/process/process.json - v9.1.0] - 2019-05-14
 ### Added
 Added start_time and end_time to process.json. Fixes #742.

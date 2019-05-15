@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/imaging/imaging_protocol,patch,"Fixed probe field where relevant in the imaging_protocol. Fixes #980.",,
