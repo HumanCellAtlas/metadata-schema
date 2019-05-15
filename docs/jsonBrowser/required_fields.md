@@ -183,7 +183,7 @@ numerical_aperture | Numerical aperture of the objective. | number |  | Numerica
 pixel_size | Pixel size in nanometers. | number |  | Pixel size |  | 109
 overlapping_tiles | Whether tiles were collected with overlap. | string |  | Overlapping tiles? | yes, no | Should be one of: yes, or no.
 channel | Information about each channel used in the imaging protocol. | array | [See module  channel](module.md/#channel) | Channel |  | 
-target | Information about each imaging target in the imaging experiment. | array | [See module  target](module.md/#target) | Imaging target |  | 
+probe | Information about each probe in the imaging experiment. | array | [See module  probe](module.md/#probe) | Probe |  | 
 ### Library preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -367,8 +367,3 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 probe_label | The label of a probe used to detect target in this experiment. | string |  | Probe label |  | ACTA1; cFos
 target_label | An identifier for the target molecule. | string |  | Target label |  | CHEBI:85345; ENSG00000170345
 assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
-### Target<a name='Target'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
-multiplexed | Whether multiple targets were detected simultaneously in this channel. | string |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.

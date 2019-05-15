@@ -520,21 +520,3 @@ assay_type | Type of assay used to detect target. | object | yes | [See module  
 fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
 channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
 
-## Target<a name='Target'></a>
-_Information about a single microscope channel._
-
-Location: module/protocol/target.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-molecule_name | The name of a target molecule (small molecule or gene product) whose distribution is assayed by this experiment. | string | no |  | Target molecule name |  | ACTA1; cFos
-molecule_id | An identifier referring to the the target molecule. | string | no |  | Target molecule identifier |  | CHEBI:85345; ENSG00000170345
-subcellular_structure | Target subcellular structure. This should be a term from the GO cell component ontology. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
-reagent_name | Name of reagent used to detect target. | string | no |  | Reagent name |  | 
-purchased_reagent_details | Information describing purchased reagent used to detect target. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased reagent details |  | 
-probe_sequence | Sequence of a probe used to detect target. | string | no |  | Probe sequence |  | AGGCTATAGCGGAGCTACG; aggctatagcggagctacg
-fluorophore | Fluorophore used to detect target. | string | no |  | Fluorophore |  | FITC
-assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
-multiplexed | Whether multiple targets were detected simultaneously in this channel. | string | yes |  | Multiplexed experiment? | yes, no | Should be one of: yes, or no.
-channel_id | Channel ID used to assay signal. Should be consistent with the ID in the channel tab. | array | no |  | Channel |  | 1; A
-

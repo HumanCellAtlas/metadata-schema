@@ -424,7 +424,7 @@ z_stack_step_size | Z-stack step size in nanometers. | number | no |  | Z stack 
 number_of_z_steps | Number of steps in a Z stack. | integer | no |  | Number of Z steps |  | 40
 overlapping_tiles | Whether tiles were collected with overlap. | string | yes |  | Overlapping tiles? | yes, no | Should be one of: yes, or no.
 channel | Information about each channel used in the imaging protocol. | array | yes | [See module  channel](module.md/#channel) | Channel |  | 
-target | Information about each imaging target in the imaging experiment. | array | yes | [See module  target](module.md/#target) | Imaging target |  | 
+probe | Information about each probe in the imaging experiment. | array | yes | [See module  probe](module.md/#probe) | Probe |  | 
 
 ## Library preparation protocol
 _Information about how a sequencing library was prepared._
