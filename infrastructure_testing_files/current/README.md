@@ -1,4 +1,4 @@
-# The Human Cell Atlas Metadata Standards: Filled Example Metadata Spreadsheets
+# The Human Cell Atlas Metadata Standards: Metadata Spreadsheets for Integration Tests
 
 This directory (_metadata-schema/infrastructure_testing_files/current_) contains the latest metadata spreadsheets for DCP-wide integration tests.
 
