@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/process/process.json - v9.1.0] - 2019-05-14
+### Added
+Added start_time and end_time to process.json. Fixes #742.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/cell_line.json - v14.3.0] - 2019-04-29
