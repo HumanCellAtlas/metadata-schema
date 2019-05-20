@@ -7,6 +7,44 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
+## Project
+_A project entity contains information about the overall project._
+
+Location: type/project/project.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+project_core | Core project-level information. | object | yes | [See core  project_core](core.md/#project_core) | Project core |  | 
+contributors | People contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
+supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
+publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
+insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
+geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
+array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
+insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
+biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
+funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
+
+## Cell suspension
+_Information about the suspension of cells or nuclei derived from the collected or cultured specimen._
+
+Location: type/biomaterial/cell_suspension.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
+growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
+genus_species | The scientific binomial name for the species of the suspension. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+selected_cell_types | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type(s) |  | 
+estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
+plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) | Plate-based sequencing |  | 
+timecourse | Information relating to a timecourse associated with this cell suspension. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
+
 ## Cell line
 _Information about the cell line or cell culture biomaterial._
 
@@ -36,23 +74,28 @@ genus_species | The scientific binomial name for the species of the cell line. |
 publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md/#publication) | Publication |  | 
 timecourse | Information relating to a timecourse associated with this cell line. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
 
-## Cell suspension
-_Information about the suspension of cells or nuclei derived from the collected or cultured specimen._
+## Organoid
+_Information about an organoid biomaterial._
 
-Location: type/biomaterial/cell_suspension.json
+Location: type/biomaterial/organoid.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-cell_morphology | Features relating to the morphology of cells in a biomaterial. | object | no | [See module  cell_morphology](module.md/#cell_morphology) | Cell morphology |  | 
-growth_conditions | Features relating to the growth and/or maintenance of a biomaterial. | object | no | [See module  growth_conditions](module.md/#growth_conditions) | Growth conditions |  | 
-genus_species | The scientific binomial name for the species of the suspension. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
-selected_cell_types | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md/#cell_type_ontology) | Selected cell type(s) |  | 
-estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
-plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md/#plate_based_sequencing) | Plate-based sequencing |  | 
-timecourse | Information relating to a timecourse associated with this cell suspension. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
+genus_species | The scientific binomial name for the species of the organoid. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+model_organ | Organ for which this organoid is a model system. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
+model_organ_part | Organ part for which this organoid is a model system. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part model |  | 
+age | Age of the organoid in Organoid age unit measured from when cell aggregates started differentiating to desired organoid model. | number | no |  | Organoid age |  | 55
+age_unit | The unit in which Organoid age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organoid age unit |  | 
+size | Size of the organoid in Organoid size unit. | number | no |  | Organoid size |  | 4
+size_unit | The unit in which the Organoid size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Organoid size unit |  | 
+morphology | General description of the organoid morphology. | string | no |  | Organoid morphology |  | Epithelial monolayer with budding crypt-like domains; Optic cup structure
+embedded_in_matrigel | Whether the organoid is embedded in a matrigel. | boolean | no |  | Embeddded in matrigel? |  | Should be one of: yes, no.
+growth_environment | Growth environment in which the organoid is grown. | string | no |  | Growth environment |  | matrigel; liquid suspension; adherent
+input_aggregate_cell_count | Estimated number of cells per input cell aggregate. | number | no |  | Input aggregate cell count |  | 10000
+stored_oxygen_levels | Percent oxygen level organoid was stored in prior to sequencing. | number | no |  | Stored oxygen level |  | 75
 
 ## Donor organism
 _Information about the donor from which a specimen was collected._
@@ -98,29 +141,6 @@ overview_images | List of filenames of photographs of specimen. | array | no |  
 slice_thickness | Thickness of the imaged slice in micrometres. | number | yes |  | Imaged slice thickness |  | 14
 internal_anatomical_structures | Internal (landmark) structures visible in the overview image that are informative about the broader anatomical context/location of the sample. | array | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Internal tissue structures |  | 
 
-## Organoid
-_Information about an organoid biomaterial._
-
-Location: type/biomaterial/organoid.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | biomaterial | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-biomaterial_core | Core biomaterial-level information. | object | yes | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-genus_species | The scientific binomial name for the species of the organoid. | array | no | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
-model_organ | Organ for which this organoid is a model system. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
-model_organ_part | Organ part for which this organoid is a model system. | object | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part model |  | 
-age | Age of the organoid in Organoid age unit measured from when cell aggregates started differentiating to desired organoid model. | number | no |  | Organoid age |  | 55
-age_unit | The unit in which Organoid age is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Organoid age unit |  | 
-size | Size of the organoid in Organoid size unit. | number | no |  | Organoid size |  | 4
-size_unit | The unit in which the Organoid size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Organoid size unit |  | 
-morphology | General description of the organoid morphology. | string | no |  | Organoid morphology |  | Epithelial monolayer with budding crypt-like domains; Optic cup structure
-embedded_in_matrigel | Whether the organoid is embedded in a matrigel. | boolean | no |  | Embeddded in matrigel? |  | Should be one of: yes, no.
-growth_environment | Growth environment in which the organoid is grown. | string | no |  | Growth environment |  | matrigel; liquid suspension; adherent
-input_aggregate_cell_count | Estimated number of cells per input cell aggregate. | number | no |  | Input aggregate cell count |  | 10000
-stored_oxygen_levels | Percent oxygen level organoid was stored in prior to sequencing. | number | no |  | Stored oxygen level |  | 75
-
 ## Specimen from organism
 _Information about the specimen that was collected from the donor organism._
 
@@ -139,72 +159,6 @@ state_of_specimen | State of the specimen at the time of collection. | object | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md/#preservation_storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Purchased specimen |  | 
-
-## Analysis file
-_A file analysis results produced by a secondary analysis pipeline._
-
-Location: type/file/analysis_file.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-
-## Image file
-_Information about an image file generated by an imaging experiment._
-
-Location: type/file/image_file.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-
-## Reference file
-_A reference file used by a secondary reference pipeline._
-
-Location: type/file/reference_file.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | yes |  | NCBI taxon ID |  | 9606; 10090
-genus_species | The scientific binomial name for the species of this reference. | object | yes | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
-reference_type | The type of the reference file. | string | yes |  | Reference type | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index.
-assembly_type | The assembly type of the genome reference file. | string | yes |  | Genome assembly type | primary assembly, complete assembly, patch assembly | Should be one of: primary assembly, complete assembly, or patch assembly.
-reference_version | The genome version of the reference file. | string | yes |  | Reference version |  | GencodeV27; Ensembl 87
-
-## Sequence file
-_A file of read sequences generated by a sequencing experiment._
-
-Location: type/file/sequence_file.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-read_index | The sequencing read this file represents. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
-lane_index | The lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
-read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
-insdc_run_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) run accession. | array | no |  | INSDC run accession |  | SRR0000000
-library_prep_id | A unique ID for the library preparation. | string | no |  | Library preparation ID |  | tech_rep_group_001
-
-## Supplementary file
-_Supplementary files belonging to a project._
-
-Location: type/file/supplementary_file.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-file_description | A short description of the file contents. | string | no |  | File description |  | Protocol for FACS enrichment; Image of spleen sample collection location
 
 ## Process
 _Information about a process completed in the experiment._
@@ -243,26 +197,6 @@ timestamp_stop_utc | Terminal stop time of the full pipeline in UTC. | string | 
 analysis_run_type | Whether the analysis was run or was copied forward as an optimization. | string | yes |  | Analysis run type | run, copy-forward | Should be one of: run, or copy-forward.
 reference_bundle | UUID of the bundle containing the reference used in running the pipeline. | string | yes |  | Reference bundle |  | b816d2d6-5f10-4447-4194-3d0a804454d6
 
-## Project
-_A project entity contains information about the overall project._
-
-Location: type/project/project.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-project_core | Core project-level information. | object | yes | [See core  project_core](core.md/#project_core) | Project core |  | 
-contributors | People contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
-supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
-publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
-insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
-geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
-array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
-insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
-biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
-funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
-
 ## Protocol
 _Information about the protocol._
 
@@ -274,110 +208,6 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 type | The type of protocol. | object | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | sample enrichment
-
-## Analysis protocol
-_Information about the analysis protocol._
-
-Location: type/protocol/analysis/analysis_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  | Computational method |  | SmartSeq2SingleCell; 10x
-
-## Aggregate generation protocol
-_Information about how cultured cells are developed into cell aggregates._
-
-Location: type/protocol/biomaterial_collection/aggregate_generation_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-formation_method | Method used to form cell aggregates. | string | yes |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
-cell_uniformity | Description of the cell aggregates uniformity after formation. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous embryoid bodies of variable cell numbers; Low-homogeneity in morphology and size
-
-## Collection protocol
-_Information about the biomaterial collection protocol._
-
-Location: type/protocol/biomaterial_collection/collection_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | Method used to collect the biomaterial. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
-reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
-
-## Differentiation protocol
-_Information about how a cell is differentiated to a desired cell type or organoid._
-
-Location: type/protocol/biomaterial_collection/differentiation_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | Method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
-media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27; Neurobasal Media; StemPro-34 Serum-Free Medium
-small_molecules | Small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid; CHIR99021 (GSK-inhibitor); Activin A; BMP4
-target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
-reagents | A list of purchased reagents used in the differentiation protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Differentiation reagents |  | 
-target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt pathway; Hedgehog signaling pathway
-validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay; qPCR; Flow Cytometry; Immunocytochemistry Staining
-validation_result | Result confirming successful differentiation to target cell type. | string | no |  | Validation result |  | CD103 Positive; Nestin Positive; HCN4 Positive; CD11C Negative
-
-## Dissociation protocol
-_Information about the dissociation protocol used to separate individual cells or nuclei._
-
-Location: type/protocol/biomaterial_collection/dissociation_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | How cells or organelles were dissociated. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
-reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
-
-## Enrichment protocol
-_Information about how a biomaterial is enriched for a feature or characteristic of interest._
-
-Location: type/protocol/biomaterial_collection/enrichment_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | The method by which enrichment was achieved. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
-markers | A list of markers used to enrich for or against certain cells. | string | no |  | Markers |  | CD4+ CD8-; HLA-G+
-minimum_size | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 70
-maximum_size | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 90
-
-## iPSC induction protocol
-_Information about how a biomaterial is treated to become an induced pluripotent stem cell._
-
-Location: type/protocol/biomaterial_collection/ipsc_induction_protocol.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string | yes |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
-reprogramming_factors | Reprogramming factors added to primary cell culture to induce pluripotency. | string | no |  | Reprogramming factors |  | POU5F1; SOX2; KLF4; c-MYC
-ipsc_induction_kit | Kit used to induce pluripotent stem cell generation. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Induction kit |  | 
-pluripotency_test | Description of how pluripotency was tested in induced pluripotent stem cells. | string | no |  | Pluripotency test |  | Teratoma formation; PluriTest; Rt-PCR
-percent_pluripotency | Percent of iPSCs that passed the pluripotency test. | number | no |  | Percent pluripotency |  | 97.2
-pluripotency_vector_removed | Whether a viral vector was removed after induction. | string | no |  | Pluripotent vector removed? | yes, no, unknown | Should be one of: yes, no, or unknown.
-reagents | Additional purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Additional reagents |  | 
 
 ## Imaging preparation protocol
 _Information about the preparation protocol of the imaged specimen used in an imaging experiment_
@@ -426,6 +256,22 @@ overlapping_tiles | Whether tiles were collected with overlap. | string | yes | 
 channel | Information about each channel used in the imaging protocol. | array | yes | [See module  channel](module.md/#channel) | Channel |  | 
 probe | Information about each probe in the imaging experiment. | array | yes | [See module  probe](module.md/#probe) | Probe |  | 
 
+## Sequencing protocol
+_Information about the sequencing protocol._
+
+Location: type/protocol/sequencing/sequencing_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
+local_machine_name | Local name for the particular machine used for sequencing. | string | no |  | Local machine name |  | Machine1; HSMA-20
+paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean | yes |  | Paired end? |  | Should be one of: yes, or no.
+method | The general method for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
+10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 
+
 ## Library preparation protocol
 _Information about how a sequencing library was prepared._
 
@@ -453,19 +299,173 @@ cdna_library_amplification_method | The method used to amplify cDNA library prio
 nominal_length | Average (insert) size of the fragments being sequenced. | integer | no |  | Nominal length |  | 250
 nominal_sdev | Standard deviation of the (insert) size of the fragments being sequenced. | integer | no |  | Nominal standard deviation |  | 30
 
-## Sequencing protocol
-_Information about the sequencing protocol._
+## Enrichment protocol
+_Information about how a biomaterial is enriched for a feature or characteristic of interest._
 
-Location: type/protocol/sequencing/sequencing_protocol.json
+Location: type/protocol/biomaterial_collection/enrichment_protocol.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | yes | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
-local_machine_name | Local name for the particular machine used for sequencing. | string | no |  | Local machine name |  | Machine1; HSMA-20
-paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean | yes |  | Paired end? |  | Should be one of: yes, or no.
-method | The general method for sequencing. | object | yes | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
-10x | Fields specific for 10x experiments. | object | no | [See module  10x](module.md/#10x) | 10x-specific |  | 
+method | The method by which enrichment was achieved. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
+markers | A list of markers used to enrich for or against certain cells. | string | no |  | Markers |  | CD4+ CD8-; HLA-G+
+minimum_size | Minimum cell or organelle size passing selection, in microns. | number | no |  | Minimum size selected |  | 70
+maximum_size | Maximum cell or organelle size passing selection, in microns. | number | no |  | Maximum size selected |  | 90
+
+## Aggregate generation protocol
+_Information about how cultured cells are developed into cell aggregates._
+
+Location: type/protocol/biomaterial_collection/aggregate_generation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+formation_method | Method used to form cell aggregates. | string | yes |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
+cell_uniformity | Description of the cell aggregates uniformity after formation. | string | no |  | Aggregate cell uniformity |  | Mostly homogenous embryoid bodies of variable cell numbers; Low-homogeneity in morphology and size
+
+## iPSC induction protocol
+_Information about how a biomaterial is treated to become an induced pluripotent stem cell._
+
+Location: type/protocol/biomaterial_collection/ipsc_induction_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string | yes |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
+reprogramming_factors | Reprogramming factors added to primary cell culture to induce pluripotency. | string | no |  | Reprogramming factors |  | POU5F1; SOX2; KLF4; c-MYC
+ipsc_induction_kit | Kit used to induce pluripotent stem cell generation. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Induction kit |  | 
+pluripotency_test | Description of how pluripotency was tested in induced pluripotent stem cells. | string | no |  | Pluripotency test |  | Teratoma formation; PluriTest; Rt-PCR
+percent_pluripotency | Percent of iPSCs that passed the pluripotency test. | number | no |  | Percent pluripotency |  | 97.2
+pluripotency_vector_removed | Whether a viral vector was removed after induction. | string | no |  | Pluripotent vector removed? | yes, no, unknown | Should be one of: yes, no, or unknown.
+reagents | Additional purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Additional reagents |  | 
+
+## Dissociation protocol
+_Information about the dissociation protocol used to separate individual cells or nuclei._
+
+Location: type/protocol/biomaterial_collection/dissociation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+method | How cells or organelles were dissociated. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
+reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
+
+## Differentiation protocol
+_Information about how a cell is differentiated to a desired cell type or organoid._
+
+Location: type/protocol/biomaterial_collection/differentiation_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+method | Method applied to cell culture to induce a specific differentiation response. | string | yes |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+media | Culture media used to induce a specific differentiation response. | string | no |  | Differentiation media |  | RPMI 1640 + B27; Neurobasal Media; StemPro-34 Serum-Free Medium
+small_molecules | Small molecules added to stem cell medium to induce a specific differentiation response. | string | no |  | Small molecules |  | Retinoic Acid; CHIR99021 (GSK-inhibitor); Activin A; BMP4
+target_cell_yield | Percent of target cells obtained after directed differentiation of origin cell. | number | no |  | Percent target cell yield |  | 95
+reagents | A list of purchased reagents used in the differentiation protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Differentiation reagents |  | 
+target_pathway | Targeted pathway for specific differentiation response. | string | no |  | Target pathway |  | Wnt pathway; Hedgehog signaling pathway
+validation_method | Method used to validate origin cell successfully differentiated to target cell. | string | no |  | Differentiation validation method |  | Pancreatic Cell DTZ Detection Assay; qPCR; Flow Cytometry; Immunocytochemistry Staining
+validation_result | Result confirming successful differentiation to target cell type. | string | no |  | Validation result |  | CD103 Positive; Nestin Positive; HCN4 Positive; CD11C Negative
+
+## Collection protocol
+_Information about the biomaterial collection protocol._
+
+Location: type/protocol/biomaterial_collection/collection_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+method | Method used to collect the biomaterial. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
+reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Protocol reagents |  | 
+
+## Analysis protocol
+_Information about the analysis protocol._
+
+Location: type/protocol/analysis/analysis_protocol.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  | Computational method |  | SmartSeq2SingleCell; 10x
+
+## Reference file
+_A reference file used by a secondary reference pipeline._
+
+Location: type/file/reference_file.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer | yes |  | NCBI taxon ID |  | 9606; 10090
+genus_species | The scientific binomial name for the species of this reference. | object | yes | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+reference_type | The type of the reference file. | string | yes |  | Reference type | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index.
+assembly_type | The assembly type of the genome reference file. | string | yes |  | Genome assembly type | primary assembly, complete assembly, patch assembly | Should be one of: primary assembly, complete assembly, or patch assembly.
+reference_version | The genome version of the reference file. | string | yes |  | Reference version |  | GencodeV27; Ensembl 87
+
+## Sequence file
+_A file of read sequences generated by a sequencing experiment._
+
+Location: type/file/sequence_file.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+read_index | The sequencing read this file represents. | string | yes |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
+lane_index | The lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
+read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
+insdc_run_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) run accession. | array | no |  | INSDC run accession |  | SRR0000000
+library_prep_id | A unique ID for the library preparation. | string | no |  | Library preparation ID |  | tech_rep_group_001
+
+## Analysis file
+_A file analysis results produced by a secondary analysis pipeline._
+
+Location: type/file/analysis_file.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+
+## Image file
+_Information about an image file generated by an imaging experiment._
+
+Location: type/file/image_file.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+
+## Supplementary file
+_Supplementary files belonging to a project._
+
+Location: type/file/supplementary_file.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
+file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+file_description | A short description of the file contents. | string | no |  | File description |  | Protocol for FACS enrichment; Image of spleen sample collection location
 
