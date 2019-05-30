@@ -44,19 +44,19 @@ The primary motivations for the entity model chosen to describe the HCA metadata
 
 There are five major entities supported by the HCA metadata standard: Projects, Biomaterials (biological samples), Protocols, Processes, and Files.
 
-![Entities](images/entities.jpg)
+![Entities](images/entities.png)
 
 The entities are arranged in units that represent different parts of an experiment. For example, the diagram below is an abstract illustration of an input *biomaterial* (*e.g.*, a tissue sample) undergoing a *process* (*e.g.*, dissociation) to produce another *biomaterial* (*e.g.*, a sample of dissociated cells). The *process* that was executed followed a specific *protocol* - or intended plan - to produce the output *biomaterial*.
 
-![Entities](images/unit_of_hierarchy.jpg)
+![Entities](images/unit_of_hierarchy.png)
 
 The metadata entity model supports units that can have one or more biomaterials or files as inputs or outputs. If both the input and output of a process are biomaterials, this unit represents some form of sample preparation. If the input is a biomaterial and the output is a file, the unit represents what many scientists refer to as an "assay". If both the input and output of a process are files, the unit represents an analysis. This flexible model allows for the possibility of modeling synthetic biology experiments - for example a file is used as an input to produce a custom biomaterial - in the future.
 
-![Entities](images/unit_scenarios.jpg)
+![Entities](images/unit_scenarios.png)
 
 Below is an example single cell sequencing experiment modeled using the HCA metadata entity model.
 
-![Entities](images/project_scenario.jpg)
+![Entities](images/project_scenario.png)
 
 ### Metadata field organization 
 
