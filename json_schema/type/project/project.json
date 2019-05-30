@@ -110,6 +110,17 @@
             "user_friendly": "INSDC study accession",
             "guidelines": "Enter accession if study has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with PRJD, PRJN, or PRJE, respectively."
         },
+        "biostudies_accessions": {
+            "description": "A BioStudies study accession.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^S-[A-Z]{4}[0-9]+$"
+            },
+            "example": "S-EXMP1; S-HCAS33",
+            "user_friendly": "BioStudies accession",
+            "guidelines": "Enter accession if study has been archived."
+        },
         "funders": {
             "description": "Funding source(s) supporting the project.",
             "type": "array",

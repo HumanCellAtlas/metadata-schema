@@ -5,7 +5,7 @@
   "process_core": {
     "process_id": "analysis_process_id_1"
   },
-  "process_type": {
+  "type": {
     "text": "analysis"
   },
   "timestamp_start_utc": "2018-08-14T14:07:33.381Z",
@@ -36,17 +36,6 @@
       "checksum": "d0f7d08f1980f7980f",
       "parameter_name": "hisat2_ref_index",
       "parameter_value": "gs://hca-dcp-mint-test-data/reference/HISAT2/genome_snp_tran.tar.gz"
-    }
-  ],
-  "outputs": [
-    {
-      "file_core": {
-        "file_format": "bam",
-        "file_name": "03beed16-8eae-4fa4-997b-cea1dddee4a7_qc.bam",
-        "content_description": "sequence alignment"
-      },
-      "schema_type": "file",
-      "describedBy": "http://schema.dev.data.humancellatlas.org/type/file/5.3.4/analysis_file"
     }
   ],
   "analysis_run_type": "copy-forward"

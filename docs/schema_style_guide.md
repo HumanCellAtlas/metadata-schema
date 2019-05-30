@@ -202,6 +202,8 @@ Some principles the HCA Metadata Standard follows regarding field and schema nam
     1. There are two or more similar field names in a single schema and including context helps disambiguate between them (*e.g.* `organism_age` and `gestational_age` in the `donor_organism` schema).
     1. The field name is generally ambiguous or overloaded and including context helps reduce confusion about the field's usage (*e.g.* `type` fields in biomaterial schemas or `method` fields in protocol schemas).
 
+1. *Field names should only include `id` if the values are guaranteed to be globally unique.* There are two contexts in which metadata values are guaranteed to be unique: (1) globally and (2) within a submission in the Ingestion Service. For fields whose values are guaranteed to be globally unique for the entity/concept they represent, the field name should contain `_id`. For example, an NCBI Taxon ID (`ncbi_taxon_id`) only represents one species, and an ORCID ID (`orcid_id`) only represents one person. For fields whose values are guaranteed to be unique within a submission in the Ingestion Service but not globally unique, the field name must **not** contain `_id`. Instead, these fields can use `_label` (or another reasonable alternative). For example, a Biomaterial label (`biomaterial_label`) value must be unique within a submission (in order to generate links between the biomaterials), but the same value could exist in another submission resulting in the same value representing two distinct biomaterials. For `_id` and `_label` fields, the scope of the uniqueness should be indicated in the field description or guidelines attribute.
+
 The section [Field name conventions](#field-name-conventions) provides guidelines to use when defining names.
 
 ### Required field attributes
@@ -420,7 +422,7 @@ The following attributes are required for each metadata field in an HCA metadata
 
 ### Spelling and grammer
 
-1. Use U.S. spelling of words. *e.g.*: "meter" instead of "metre".
+1. Use American English spelling of words. *e.g.*: "meter" instead of "metre". This standard is in line with the HCA DCP.
 1. Use Oxford comma in lists. Exception is when using a semi-colon to separate multiple example values in the *example* attribute.
 1. Use present tense.
 

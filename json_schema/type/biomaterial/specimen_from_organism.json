@@ -56,10 +56,12 @@
             "guidelines": "Blood and connective tissue are considered organs.",
             "user_friendly": "Organ"
         },
-        "organ_part": {
+        "organ_parts": {
             "description": "A term for a specific part of the organ that the biomaterial came from.",
-            "type": "object",
-            "$ref": "module/ontology/organ_part_ontology.json",
+            "type": "array",
+            "items": {
+                "$ref": "module/ontology/organ_part_ontology.json"
+            },
             "guidelines": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
@@ -87,10 +89,17 @@
         "collection_time": {
             "description": "When the biomaterial was collected.",
             "type": "string",
-            "format": "date-time",
             "user_friendly": "Time of collection",
-            "example": "2017-03-19T07:22:00Z",
-            "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
+            "example": "2016-01-21T00:00:00Z; 2016-03",
+            "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ. Supplying partial date is allowed.",
+            "oneOf": [
+                 {
+                    "format": "date-time"
+                 },
+                 {
+                    "pattern": "^((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}$"
+                 }
+              ]
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",

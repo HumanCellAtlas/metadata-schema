@@ -40,7 +40,7 @@
             "$ref": "core/protocol/protocol_core.json",
             "user_friendly": "Protocol core"
         },
-        "protocol_type": {
+        "type": {
             "description": "The type of protocol.",
             "type": "object",
             "$ref": "module/ontology/process_type_ontology.json",

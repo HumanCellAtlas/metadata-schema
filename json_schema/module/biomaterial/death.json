@@ -30,7 +30,7 @@
         "cold_perfused": {
             "description": "Whether perfusion with cold fluid was used to help preserve tissues before heart stopped.",
             "type": "boolean",
-            "user_friendly": "Cold perfused?",
+            "user_friendly": "Cold perfused",
             "example": "Should be one of: yes, no.",
             "guidelines": "Enter yes if cold perfused. Otherwise, enter no."
         },  
@@ -53,11 +53,18 @@
         }, 
         "time_of_death": {
             "description": "Date and time when death was declared.",
-            "format": "date-time",
             "type": "string",
             "user_friendly": "Time of death",
-            "example": "2016-01-21T00:00:00Z",
-            "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ."
+            "example": "2016-01-21T00:00:00Z; 2016-03",
+            "guidelines": "Enter the time in date-time format: yyyy-mm-ddThh:mm:ssZ. Supplying partial date is allowed.",
+            "oneOf": [
+                 {
+                    "format": "date-time"
+                 },
+                 {
+                    "pattern": "^((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}$"
+                 }
+              ]
         },
         "organ_donation_death_type": {
             "description": "Type of death preceding organ donation.",
@@ -78,7 +85,7 @@
                 "no",
                 "unknown"
             ],
-            "user_friendly": "Normothermic regional perfusion?",
+            "user_friendly": "Normothermic regional perfusion",
             "example": "Should be one of: yes, no, or unknown.",
             "guidelines": "Enter yes if entire body (but not limbs) was perfused with warm oxygenated blood. Otherwise, enter no."
         }

@@ -3,9 +3,339 @@
 All notable changes to the HCA metadata schema will be documented in this file. Starting with v5.0.0, the schema will be versioned independently. Therefore, this changelog will contain notes for independent updates/releases per schema.
 
 Starting after v5.0.0 release, updates will be declared for schemas independently in the form `[<schema_name>.json vX.Y.Z] - Release-date`. Changes will be organized across six categories: Added, Changed, Removed, Fixed, Deprecated, and Security. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased but planned changes may be indicated under the `Unreleased` heading.
+and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
+
+### [module/protocol/channel.json - v2.0.4] - 2019-05-30
+### Changed
+Changed multiplexed property friendly name. Fixes #963
+
+### [module/project/contact.json - v8.0.1] - 2019-05-30
+### Changed
+Changed corresponding_contributor property friendly name. Fixes #963
+
+### [module/biomaterial/death.json - v5.5.1] - 2019-05-30
+### Changed
+Changed normothermic_regional_perfusion and cold_perfused friendly names. Fixes #963
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.1] - 2019-05-30
+### Changed
+Changed paired_end property friendly name. Fixes #963
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.1.1] - 2019-05-30
+### Changed
+Changed pluripotency_vector_removed property friendly name. Fixes #963
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.2] - 2019-05-30
+### Changed
+Changed overlapping_tiles property friendly name. Fixes #963
+
+### [type/biomaterial/donor_organism.json - v15.3.1] - 2019-05-30
+### Changed
+Changed is_living property friendly name. Fixes #963
+
+### [type/biomaterial/organoid.json - v11.1.1] - 2019-05-30
+### Changed
+Changed embedded_in_matrigel property friendly name. Fixes #963
+
+### [type/project/project.json - v14.0.1] - 2019-05-30
+### Changed
+Changed corresponding_contributor property friendly name. Fixes #963
+
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.1] - 2019-05-15
+### Fixed
+Fixed probe field where relevant in the imaging_protocol. Fixes #980.
+
+### [type/process/process.json - v9.1.0] - 2019-05-14
+### Added
+Added start_time and end_time to process.json. Fixes #742.
+
+### [type/biomaterial/cell_line.json - v14.3.0] - 2019-04-29
+### Changed
+Changed format for date_established property. Fixes #966
+
+### [module/biomaterial/death.json - v5.5.0] - 2019-04-29
+### Changed
+Changed format for time_of_death property. Fixes #966
+
+### [type/biomaterial/specimen_from_organism.json - v10.2.0] - 2019-04-29
+### Changed
+Changed format for collection_time property. Fixes #966
+
+### [module/process/purchased_reagents.json - v6.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/biomaterial/donor_organism.json - v15.3.0] - 2019-04-29
+### Changed
+Changed format for time_of_death property. Fixes #966
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [module/protocol/probe.json - v1.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v2.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [module/protocol/target.json - v1.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.0] - 2019-04-29
+### Changed
+Changed format for expiry_date property. Fixes #966
+
+### [type/process/analysis/analysis_process.json - v11.0.1] - 2019-04-29
+### Added
+Added description, example, user-friendly name, and guidelines to all definition fields. Fixes #955.
+
+### [type/biomaterial/donor_organism.json - v15.2.0] - 2019-04-26
+### Added
+Added not applicable to is_living. Fixes #921
+
+### [type/process/analysis/analysis_process.json - v11.0.0] - 2019-04-26
+### Changed
+Changed process_type to type. Fixes #931
+
+### [type/process/process.json - v9.0.0] - 2019-04-26
+### Changed
+Changed process_type to type. Fixes #931
+
+### [type/protocol/analysis/analysis_protocol.json - v9.0.0] - 2019-04-26
+### Changed
+Changed protocol_type to type. Fixes #931
+
+### [type/protocol/protocol.json - v7.0.0] - 2019-04-26
+### Changed
+Changed protocol_type to type. Fixes #931
+
+### [module/project/contact.json - v8.0.0] - 2019-04-25
+### Changed
+Changed contact_name to name. Fixes #927.
+
+### [type/project/project.json - v14.0.0] - 2019-04-25
+### Changed
+Changed contact_name to name. Fixes #927.
+
+### [core/file/file_core.json - v6.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/reference_file.json - v3.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/supplementary_file.json - v2.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/image_file.json - v2.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/analysis_file.json - v6.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/file/sequence_file.json - v9.0.0] - 2019-04-23
+### Changed
+Changed file_format to format. Fixes #375.
+
+### [type/biomaterial/donor_organism.json - v15.1.1] - 2019-04-18
+### Changed
+Changed description, guidelines and example for gestational_age. Fixes #911.
+
+### [core/biomaterial/biomaterial_core.json - v8.1.0] - 2019-04-18
+### Added
+Added HDBR_accession to biomaterial_core. Fixes #945.
+
+### [type/biomaterial/cell_line.json - v14.2.0] - 2019-04-18
+### Added
+Added HDBR_accession to biomaterial_core. Fixes #945.
+
+### [type/biomaterial/imaged_specimen.json - v3.1.0] - 2019-04-18
+### Added
+Added HDBR_accession to biomaterial_core. Fixes #945.
+
+### [type/biomaterial/cell_suspension.json - v13.1.0] - 2019-04-18
+### Added
+Added HDBR_accession to biomaterial_core. Fixes #945.
+
+### [type/biomaterial/organoid.json - v11.1.0] - 2019-04-18
+### Added
+Added HDBR_accession to biomaterial_core. Fixes #945.
+
+### [type/biomaterial/donor_organism.json - v15.1.0] - 2019-04-18
+### Added
+Added HDBR_accession to biomaterial_core. Fixes #945.
+
+### [type/biomaterial/specimen_from_organism.json - v10.1.0] - 2019-04-18
+### Added
+Added HDBR_accession to biomaterial_core. Fixes #945.
+
+### [type/biomaterial/cell_suspension.json - v13.0.0] - 2019-04-18
+### Changed
+Changed selected_cell_type to selected_cell_types. Fixes #923.
+
+### [type/biomaterial/cell_line.json - v14.1.0] - 2019-04-18
+### Added
+Added optional timecourse field. Fixes #917.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.0.0] - 2019-04-16
+### Changed
+Changed ipsc_induction_method to method, ipsc_induction_factors to reprogramming_factors, protocol_reagents to reagents. Removed ipsc_induction_produced_in_house. Fixes #926.
+
+### [module/protocol/probe.json - v1.0.0] - 2019-04-11
+### Added
+Added new probe.json module. Fixes #813
+
+### [core/process/process_core.json - v10.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
+### [type/process/process.json - v8.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
+### [type/process/analysis/analysis_process.json - v10.0.0] - 2019-04-11
+### Changed
+Changed process_location to location and operator to operators. Fixes #930.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v3.0.0] - 2019-04-11
+### Changed
+Changed 'enrichment_method' to 'method', 'min_size_selected' to 'minimum_size' and 'max_size_selected' to 'maximum_size'. Fixes #925.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v2.0.0] - 2019-04-09
+### Changed
+Changed differentiation_method to method. Fixes #924.
+
+### [core/biomaterial/biomaterial_core.json - v8.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/specimen_from_organism.json - v10.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/cell_suspension.json - v12.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/organoid.json - v11.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/cell_line.json - v14.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/donor_organism.json - v15.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [type/biomaterial/imaged_specimen.json - v3.0.0] - 2019-04-09
+### Changed
+Changed biosd_biomaterial to biosamples_accession and insdc_biomaterial to insdc_sample_accession. Fixes #929
+
+### [module/project/publication.json - v6.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/project/project.json - v13.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/biomaterial/cell_line.json - v13.0.0] - 2019-04-08
+### Changed
+Changed publication_title to title and publication_url to url. Fixes #928.
+
+### [type/biomaterial/cell_line.json - v12.0.0] - 2019-04-08
+### Changed
+Changed cell_line_type to type. Fixes #935.
+
+### [module/project/contact.json - v7.0.0] - 2019-04-08
+### Changed
+Changed project_role from enum to ontology. Fixes #894
+
+### [type/project/project.json - v12.0.0] - 2019-04-08
+### Changed
+Changed project_role from enum to ontology. Fixes #894
+
+### [module/biomaterial/preservation_storage.json - v6.1.0] - 2019-04-04
+### Added
+Added 'frozen at -80C' to storage_method field. Fixes #916.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.1.0] - 2019-04-04
+### Added
+Added 'frozen at -80C' to storage_method field. Fixes #916.
+
+### [type/biomaterial/specimen_from_organism.json - v9.1.0] - 2019-04-04
+### Added
+Added 'frozen at -80C' to storage_method field. Fixes #916.
+
+### [module/ontology/contributor_role_ontology.json - v1.0.0] - 2019-04-02
+### Added
+Added new contributor_role_ontology schema. Fixes #893.
+
+### [module/protocol/channel.json - v2.0.3] - 2019-03-29
+### Changed
+Changed example and guidelines in filter_range. Fixes#878.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.0.13] - 2019-03-29
+### Changed
+Changed example and guidelines in filter_range. Fixes#878.
+
+### [type/project/project.json - v11.1.0] - 2019-03-25
+### Added
+Added optional biostudies_accesssion field. Fixes #852.
+
+### [module/process/sequencing/plate_based_sequencing.json - v3.0.0] - 2019-03-15
+### Changed
+Changed well and plate ID to label. Fixes #837.
+
+### [type/biomaterial/cell_suspension.json - v11.0.0] - 2019-03-15
+### Changed
+Changed well and plate ID to label. Fixes #837.
+
+### [module/biomaterial/medical_history.json - v5.2.8] - 2019-03-12
+### Added
+Added second example to test_results. Fixes #846.
+
+### [type/biomaterial/donor_organism.json - v14.0.7] - 2019-03-12
+### Added
+Added second example to test_results. Fixes #846.
+
+### [type/biomaterial/specimen_from_organism.json - v9.0.0] - 2019-03-08
+### Changed
+Changed organ_part to organ_parts since it is an array. Fixes #648.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.0.0] - 2019-03-01
+### Changed
+Changed nucleic_acid_source field to be required. Fixes #824.
+
+### [type/process/analysis/analysis_process.json - v9.0.0] - 2019-03-01
+### Removed
+Removed required outputs fields. Fixes #664.
 
 ### [module/process/sequencing/insdc_experiment.json - v2.0.0] - 2019-02-28
 ### Fixed
@@ -130,8 +460,6 @@ Fixed method field name to be consistent with other protocols. Fixes #807.
 ### [type/file/image_file.json - v1.0.4] - 2019-02-08
 ### Added
 Added user_friendly name to file_core in image_file. Fixes #798
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/cell_suspension.json - v9.0.0] - 2019-02-05
 ### Changed
