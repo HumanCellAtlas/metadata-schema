@@ -41,6 +41,7 @@
                 "disease_ontology": "5.3.7",
                 "enrichment_ontology": "1.2.5",
                 "ethnicity_ontology": "5.3.8",
+                "file_content_ontology": "0.0.0",
                 "instrument_ontology": "5.3.5",
                 "length_unit_ontology": "5.3.4",
                 "library_amplification_ontology": "1.2.4",
