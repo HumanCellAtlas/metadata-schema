@@ -37,16 +37,12 @@
         },
         "content_description": {
             "description": "General description of the contents of the file.",
-            "type": "string",
+            "type": "array",
             "user_friendly": "Content description",
-            "enum": [
-                "protocol",
-                "sample annotation",
-                "gene expression matrix",
-                "count matrix",
-                "sequence alignment",
-                "quality control metrics"
-            ],
+            "items":{
+                "type": "object",
+                "$ref": "module/ontology/file_content_ontology.json"
+            },
             "example": "protocol; gene expression matrix"
         },
         "checksum": {
