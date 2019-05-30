@@ -4,8 +4,7 @@
     "additionalProperties": false,
     "required": [
 	    "file_name",
-	    "format",
-	    "content_description"
+	    "format"
     ],
     "title": "File core",
     "name": "file_core",
