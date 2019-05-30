@@ -1,3 +1,2 @@
 Schema,Change type,Change message,Version,Date
 core/file/file_core,minor,"Added content_description field. Fixes #542.",,
-type/file/supplementary_file,major,"Removed file_description field. Fixes #542.",,
