@@ -60,7 +60,7 @@
             "type": "boolean",
             "example": "Should be one of: yes, or no.",
             "guidelines": "If 3' 10x v2 was used, enter no.",
-            "user_friendly": "Paired end?"
+            "user_friendly": "Paired end"
         },
         "method": {
             "description": "The general method for sequencing.",

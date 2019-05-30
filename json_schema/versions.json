@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-05-15T20:22:28Z",
+    "last_update_date": "2019-05-30T13:10:48Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -21,7 +21,7 @@
         "module": {
             "biomaterial": {
                 "cell_morphology": "6.1.6",
-                "death": "5.5.0",
+                "death": "5.5.1",
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
                 "human_specific": "1.0.10",
@@ -66,12 +66,12 @@
                 }
             },
             "project": {
-                "contact": "8.0.0",
+                "contact": "8.0.1",
                 "funder": "2.0.0",
                 "publication": "6.0.0"
             },
             "protocol": {
-                "channel": "2.0.3",
+                "channel": "2.0.4",
                 "probe": "1.1.0"
             }
         },
@@ -84,9 +84,9 @@
             "biomaterial": {
                 "cell_line": "14.3.0",
                 "cell_suspension": "13.1.0",
-                "donor_organism": "15.3.0",
+                "donor_organism": "15.3.1",
                 "imaged_specimen": "3.1.0",
-                "organoid": "11.1.0",
+                "organoid": "11.1.1",
                 "specimen_from_organism": "10.2.0"
             },
             "file": {
@@ -103,7 +103,7 @@
                 "process": "9.1.0"
             },
             "project": {
-                "project": "14.0.0"
+                "project": "14.0.1"
             },
             "protocol": {
                 "analysis": {
@@ -115,16 +115,16 @@
                     "differentiation_protocol": "2.1.0",
                     "dissociation_protocol": "6.1.0",
                     "enrichment_protocol": "3.0.0",
-                    "ipsc_induction_protocol": "3.1.0"
+                    "ipsc_induction_protocol": "3.1.1"
                 },
                 "imaging": {
                     "imaging_preparation_protocol": "2.1.0",
-                    "imaging_protocol": "11.1.1"
+                    "imaging_protocol": "11.1.2"
                 },
                 "protocol": "7.0.0",
                 "sequencing": {
                     "library_preparation_protocol": "6.1.0",
-                    "sequencing_protocol": "10.0.0"
+                    "sequencing_protocol": "10.0.1"
                 }
             }
         }

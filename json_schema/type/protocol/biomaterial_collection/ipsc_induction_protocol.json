@@ -91,7 +91,7 @@
                 "no",
                 "unknown"
             ],
-            "user_friendly": "Pluripotent vector removed?",
+            "user_friendly": "Pluripotent vector removed",
             "example": "Should be one of: yes, no, or unknown."
         },
         "reagents": {
