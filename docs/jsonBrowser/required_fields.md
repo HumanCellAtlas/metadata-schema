@@ -264,6 +264,10 @@ text | The name of an enrichment approach being used. | string |  | Enrichment |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; Hispanic or Latin American
+### File content ontology<a name='File content ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | General description of the contents of the file. | string |  | Content description |  | DNA sequence (raw); Sequence alignment
 ### Instrument ontology<a name='Instrument ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

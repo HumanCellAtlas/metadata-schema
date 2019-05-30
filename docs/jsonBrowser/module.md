@@ -234,6 +234,17 @@ text | The ethnicity of the human donor. | string | yes |  | Ethnicity |  | Euro
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Ethnicity ontology ID |  | HANCESTRO:0005; HANCESTRO:0014
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Ethnicity ontology label |  | European; Hispanic or Latin American
 
+## File content ontology<a name='File content ontology'></a>
+_A term that describes the contents of a file._
+
+Location: module/ontology/file_content_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | General description of the contents of the file. | string | yes |  | Content description |  | DNA sequence (raw); Sequence alignment
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | data:3497; data:0863
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Content description ontology label |  | DNA sequence (raw); Sequence alignment
+
 ## Instrument ontology<a name='Instrument ontology'></a>
 _A term that may be associated with a instrument-related ontology term_
 
