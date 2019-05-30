@@ -7,6 +7,42 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/channel.json - v2.0.4] - 2019-05-30
+### Changed
+Changed multiplexed property friendly name. Fixes #963
+
+### [module/project/contact.json - v8.0.1] - 2019-05-30
+### Changed
+Changed corresponding_contributor property friendly name. Fixes #963
+
+### [module/biomaterial/death.json - v5.5.1] - 2019-05-30
+### Changed
+Changed normothermic_regional_perfusion and cold_perfused friendly names. Fixes #963
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.1] - 2019-05-30
+### Changed
+Changed paired_end property friendly name. Fixes #963
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.1.1] - 2019-05-30
+### Changed
+Changed pluripotency_vector_removed property friendly name. Fixes #963
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.2] - 2019-05-30
+### Changed
+Changed overlapping_tiles property friendly name. Fixes #963
+
+### [type/biomaterial/donor_organism.json - v15.3.1] - 2019-05-30
+### Changed
+Changed is_living property friendly name. Fixes #963
+
+### [type/biomaterial/organoid.json - v11.1.1] - 2019-05-30
+### Changed
+Changed embedded_in_matrigel property friendly name. Fixes #963
+
+### [type/project/project.json - v14.0.1] - 2019-05-30
+### Changed
+Changed corresponding_contributor property friendly name. Fixes #963
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/imaging/imaging_protocol.json - v11.1.1] - 2019-05-15
