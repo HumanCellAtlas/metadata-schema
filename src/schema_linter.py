@@ -151,7 +151,7 @@ class SchemaLinter:
                     nested_keywords = properties[property][kw]
                     for nkw in nested_keywords.keys():
                         if nkw not in ontology_keywords:
-                            sys.exit("Keyword `" + nkw + "` is not in the list of acceptable ontology keyword properties")
+                            print("Keyword `" + nkw + "` is not in the list of acceptable ontology keyword properties")
                 elif kw not in property_keywords:
                     print("Keyword `" + kw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 
