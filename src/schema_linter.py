@@ -15,6 +15,8 @@ allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'requ
 
 required_properties = ['describedBy', 'schema_version']
 
+required_ontology_properties = ['text', 'ontology', 'ontology_label']
+
 system_supplied_properties = ['describedBy', 'schema_version', 'schema_type', 'provenance']
 
 # Exempt from needing examples because an example might bias what value a contributor supplies
@@ -86,6 +88,12 @@ class SchemaLinter:
         for ep in required_properties:
             if ep not in properties:
                 sys.exit(schema_filename + ".json: Missing required property `" + ep + "`.")
+
+        # Properties `text`, `ontology` and `ontology_label` must be present in each ontology schema
+        if "ontology" in schema_filename:
+            for p in required_ontology_properties:
+                if p not in properties:
+                    sys.exit(schema_filename + ".json: Missing required property `" + p + "`.")
 
         # All type schemas must have corresponding _core property
 
