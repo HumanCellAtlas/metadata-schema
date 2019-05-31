@@ -66,7 +66,7 @@ class SchemaLinter:
         if "required" in schema:
             for req_prop in schema["required"]:
                 if req_prop not in properties:
-                    sys.exit("Property `" + req_prop + "` is required in " + schema_filename + ".json but is undefined")
+                    print("Property `" + req_prop + "` is required in " + schema_filename + ".json but is undefined")
 
         # PROPERTY-LEVEL CHECKS
 
@@ -151,7 +151,7 @@ class SchemaLinter:
                     nested_keywords = properties[property][kw]
                     for nkw in nested_keywords.keys():
                         if nkw not in ontology_keywords:
-                            print("Keyword `" + nkw + "` is not in the list of acceptable ontology keyword properties")
+                            sys.exit("Keyword `" + nkw + "` is not in the list of acceptable ontology keyword properties")
                 elif kw not in property_keywords:
                     print("Keyword `" + kw + "` in property `" + property + "` is not in the list of acceptable keyword properties")
 

@@ -42,7 +42,7 @@
             "guidelines": "Include the country code.",
             "user_friendly": "Phone number"
         },
-        "institutionss": {
+        "institution": {
             "description": "Name of primary institute where the individual works.",
             "type": "string",
             "user_friendly": "Institute",

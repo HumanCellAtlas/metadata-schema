@@ -33,7 +33,7 @@
                 "ontologies" : ["obo:efo", "obo:chebi", "obo:obi"],
                 "classes": ["EFO:0004446"],
                 "relations": ["rdfs:subClassOf"],
-                "direct": false,
+                "directsss": false,
                 "include_self": false
             },
             "example": "OBI:0000869; CHEBI:33699",
