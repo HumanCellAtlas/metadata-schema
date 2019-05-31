@@ -3,7 +3,6 @@ import logging
 import os
 import re
 import json
-import sys
 
 
 allowed_root_level_keywords = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions']
