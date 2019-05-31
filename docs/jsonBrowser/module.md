@@ -446,3 +446,77 @@ plate_label | A label or name for the plate on which the well is located. | stri
 well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
 well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
 
+## Contact<a name='Contact'></a>
+_Information about an individual who submitted or contributed to a project._
+
+Location: module/project/contact.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
+email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com
+phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
+institutions | Name of primary institute where the individual works. | string | no |  | Institute |  | EMBL-EBI; University of Washington
+laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Division of Vaccine Discovery; Department of Biology
+address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
+country | Country where the individual works. | string | no |  | Country |  | USA
+corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor |  | Should be one of: yes, or no.
+project_role | Primary role of the individual in the project. | object | no | [See module  contributor_role_ontology](module.md/#contributor_role_ontology) | Project role |  | principal investigator; computational scientist
+orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
+
+## Funder<a name='Funder'></a>
+_Information about the project funding source._
+
+Location: module/project/funder.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+grant_title | The name of the grant funding the project. | string | no |  | Grant title |  | Study of single cells in the human body.
+grant_id | The unique grant identifier or reference. | string | yes |  | Grant ID |  | BB/P0000001/1
+organization | The name of the funding organization. | string | yes |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+
+## Publication<a name='Publication'></a>
+_Information about a journal article, book, web page, or other external available documentation for a project._
+
+Location: module/project/publication.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+authors | A list of authors associated with the publication. | array | yes |  | Authors |  | Doe JD
+title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
+doi | The publication digital object identifier (doi) of the publication. | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
+pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
+url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
+
+## Channel<a name='Channel'></a>
+_Information about a single microscope channel._
+
+Location: module/protocol/channel.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string | yes |  | Channel ID |  | 1; A
+excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number | yes |  | Excitation wavelength |  | 640
+filter_range | Emission filter in nanometers. | string | yes |  | Filter range |  | 461/70
+multiplexed | Whether multiple targets were detected simultaneously in this channel. | string | yes |  | Multiplexed experiment | yes, no | Should be one of: yes, or no.
+target_fluorophore | The name of the fluorophore this channel is designed to assay. | string | no |  | Target fluorophore |  | Alexa 647
+exposure_time | Acquisition time for a single image per channel, in milliseconds. | number | yes |  | Exposure time |  | 400
+
+## Probe<a name='Probe'></a>
+_Information about probes used to detect targets._
+
+Location: module/protocol/probe.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+probe_label | The label of a probe used to detect target in this experiment. | string | yes |  | Probe label |  | ACTA1; cFos
+probe_sequence | Sequence of a probe used to detect target. | string | no |  | Probe sequence |  | AGGCTATAGCGGAGCTACG; aggctatagcggagctacg
+target_name | The name of the target molecule. | string | no |  | Target name |  | ACTA1_exon1; nuclear cFos
+target_codebook_label | A label used in the codebook for the target. | string | no |  | Target label in codebook |  | AKT1; CFOS
+target_label | An identifier for the target molecule. | string | yes |  | Target label |  | CHEBI:85345; ENSG00000170345
+subcellular_structure | Target subcellular structure. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
+probe_reagents | Name of reagents used to construct the probe. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Probe construction reagents |  | 
+assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
+channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
+

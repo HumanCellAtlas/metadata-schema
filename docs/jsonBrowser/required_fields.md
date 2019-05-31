@@ -338,3 +338,31 @@ insdc_experiment_accession | An International Nucleotide Sequence Database Colla
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 plate_label | A label or name for the plate on which the well is located. | string |  | Plate label |  | 2217
+### Contact<a name='Contact'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+name | Name of individual who has contributed to the project. | string |  | Contact name |  | John,D,Doe; Jane,,Smith
+### Funder<a name='Funder'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+grant_id | The unique grant identifier or reference. | string |  | Grant ID |  | BB/P0000001/1
+organization | The name of the funding organization. | string |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+### Publication<a name='Publication'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+authors | A list of authors associated with the publication. | array |  | Authors |  | Doe JD
+title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
+### Channel<a name='Channel'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+channel_id | User given ID.  If there is an accompanying codebook, this name should correspond to the channel id used in the codebook. | string |  | Channel ID |  | 1; A
+excitation_wavelength | Excitation wavelength of the lightsource in nanometers. | number |  | Excitation wavelength |  | 640
+filter_range | Emission filter in nanometers. | string |  | Filter range |  | 461/70
+multiplexed | Whether multiple targets were detected simultaneously in this channel. | string |  | Multiplexed experiment | yes, no | Should be one of: yes, or no.
+exposure_time | Acquisition time for a single image per channel, in milliseconds. | number |  | Exposure time |  | 400
+### Probe<a name='Probe'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+probe_label | The label of a probe used to detect target in this experiment. | string |  | Probe label |  | ACTA1; cFos
+target_label | An identifier for the target molecule. | string |  | Target label |  | CHEBI:85345; ENSG00000170345
+assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
