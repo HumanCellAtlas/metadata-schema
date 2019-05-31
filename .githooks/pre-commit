@@ -13,11 +13,11 @@ cd ..
 
 git add docs/jsonBrowser/*.md
 
-echo "--> Files added to to the index, please commit them"
-
-cd src
+echo "--> Files added to commit"
 
 echo "2. Linting schema files"
+
+cd src
 
 python3 schema_linter.py
 
