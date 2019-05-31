@@ -3,6 +3,7 @@ import logging
 import os
 import re
 import json
+import sys
 
 
 allowed_root_level_keywords = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions']
@@ -65,7 +66,7 @@ class SchemaLinter:
         if "required" in schema:
             for req_prop in schema["required"]:
                 if req_prop not in properties:
-                    print("Property `" + req_prop + "` is required in " + schema_filename + ".json but is undefined")
+                    sys.exit("Property `" + req_prop + "` is required in " + schema_filename + ".json but is undefined")
 
         # PROPERTY-LEVEL CHECKS
 
