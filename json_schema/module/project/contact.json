@@ -6,11 +6,10 @@
         "name",
         "institution"
     ],
-    "title": "Contact",
     "name": "contact",
     "type": "object",
     "properties": {
-        "describedBy2": {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/contact"
