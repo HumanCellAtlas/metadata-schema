@@ -34,7 +34,7 @@
                 "classes": ["DATA:0006"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": true
+                "include_self": false
             },
             "example": "DATA:3497; DATA:0863",
             "user_friendly": "Content description ontology ID"
