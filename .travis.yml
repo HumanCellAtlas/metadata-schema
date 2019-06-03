@@ -2,10 +2,10 @@ language:
    - node_js
    - python
 
-# python version to be used for testing
 node_js:
    - "8"
 
+# python version to be used for linter
 python:
    - "3.6"
 
