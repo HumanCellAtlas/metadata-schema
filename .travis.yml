@@ -1,13 +1,21 @@
-language: node_js
+language:
+   - node_js
+   - python
 
 # python version to be used for testing
 node_js:
    - "8"
 
+python:
+   - "3.6"
+
 install:
    - cd tests
    - npm install
+   - pip install -r requirements.txt
 
 script:
-#   - cd tests
    - npm test
+   - cd src
+   # run schema linter
+   - python schema_linter.py
