@@ -16,6 +16,6 @@ install:
 
 script:
    - npm test
-   - cd src
    # run schema linter
+   - cd ../src
    - python schema_linter.py
