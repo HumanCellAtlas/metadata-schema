@@ -28,9 +28,10 @@ groups:
     conditions:  # the group is activated when all of these statements are true
     - "'*travis*' in statuses.succeeded"
     - "base.ref == 'develop'"
-    ->
-     "'major' in body" # 'major' change is indicated in body of PR -OR-
-     "'minor' in body" # 'minor' change is indicated in body of PR
+    - "'major' in body"
+#    - >
+#     'major' in body or
+#     'minor' in body
 #    - "'content' in labels"
     reviewers:  # people who can approve for this group
       users:
