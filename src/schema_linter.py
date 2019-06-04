@@ -216,11 +216,11 @@ if __name__ == '__main__':
     # by including JSON file only if the path contains "core", "module", "system", or "type"
     schemas = [j for j in jsons if any(substring in j for substring in ("core", "module", "system", "type"))]
 
-    print("Checking %d schemas" % len(schemas))
+    print("Linting %d schemas" % len(schemas))
 
     for s in schemas:
         if 'versions.json' not in s:
             # print('Checking %s' % s)
             linter.lintSchema(s)
 
-    print("\nLinter finished with no errors (may have some warnings).")
+    print("\nLinter finished with no errors, but may have some warnings.")
