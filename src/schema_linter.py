@@ -28,6 +28,8 @@ property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$re
 
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
+graph_restriction_attributes = ['ontologies', 'classes', 'relations', 'direct', 'include_self']
+
 
 class SchemaLinter:
     def __init__(self):
@@ -179,25 +181,29 @@ class SchemaLinter:
             for kw in properties[property].keys():
                 # Ontology field must have graph_restriction property that is an object
                 if property == 'ontology' and 'graph_restriction' not in properties[property].keys():
-                    sys.exit(
-                        schema_filename + ".json: Keyword `graph_restriction` missing from property `" + property + "`.")
+                    sys.exit(schema_filename + ".json: Keyword `graph_restriction` missing from property `" + property + "`.")
 
                 if property == 'ontology' and kw == 'graph_restriction':
                     nested_keywords = properties[property][kw]
+
+                    for gra in graph_restriction_attributes:
+                        if gra not in nested_keywords:
+                            sys.exit(schema_filename + ".json: `graph_restriction` missing a required attribute `" + gra + "`.")
+
                     for nkw in nested_keywords.keys():
 
                         # Attributes for graph_restriction must be one of acceptable values
                         if nkw not in ontology_attributes:
-                            sys.exit("Keyword `" + nkw + "` is not an acceptable graph_restriction keyword property.")
+                            sys.exit(schema_filename + ".json: Keyword `" + nkw + "` is not an acceptable graph_restriction keyword property.")
 
                 # All property attributes must be in the allowed list of property attributes
                 elif kw not in property_attributes:
-                    sys.exit("Keyword `" + kw + "` in property `" + property + "` is not an allowed property.")
+                    sys.exit(schema_filename + ".json: Keyword `" + kw + "` in property `" + property + "` is not an allowed property.")
 
                 if isinstance(properties[property][kw], dict) and property != 'ontology':
                     for nkw in properties[property][kw].keys():
                         if nkw not in property_attributes:
-                            sys.exit("Keyword `" + nkw + "` in property `" + property + "` is not an allowed property.")
+                            sys.exit(schema_filename + ".json: Keyword `" + nkw + "` in property `" + property + "` is not an allowed property.")
 
     def get_json_from_file(self, filename, warn = False):
         """Loads json from a file.
