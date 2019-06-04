@@ -15,7 +15,49 @@ pullapprove_conditions:
 
 notifications:
 - when: pull_request.opened
-  comment: Hey @{{ author }}, thanks for the PR! The review will start once the tests and CI checks have passed.
+  if: "author_association == 'CONTRIBUTOR'" # Only contributing authors get this message
+  comment: |
+    Hey @{{ author }}, thanks for the PR! The review will start once
+    the tests and CI checks have passed.
 - when: pullapprove.approved
-  if: "author_association == 'CONTRIBUTOR'"
+  if: "author_association == 'CONTRIBUTOR'" # Only contributing authors get this message
   comment: "The review is completed. Thanks @{{ author }}."
+
+groups:
+  metadata-updates-major-minor:  # group name
+    conditions:  # the group is activated when all of these statements are true
+    - "'*travis*' in statuses.succeeded"
+    - "base.ref == 'develop'"
+    ->
+     "'major' in body" # 'major' change is indicated in body of PR -OR-
+     "'minor' in body" # 'minor' change is indicated in body of PR
+#    - "'content' in labels"
+    reviewers:  # people who can approve for this group
+      users:
+      - malloryfreeberg
+      - daniwelter
+      - zperova
+      - ESapenaVentura
+      - willrockout
+      - cjvillar
+    reviews:  # settings for approval and reviewer selection
+      required: 2
+      request_order: shuffle  # reviewers will be chosen in a random order
+
+  metadata-updates-patch:  # group name
+    conditions:  # the group is activated when all of these statements are true
+    - "'*travis*' in statuses.succeeded"
+    - "base.ref == 'develop'"
+    - "'patch' in body" # 'patch' change is indicated in body of PR
+    reviewers:  # people who can approve for this group
+      users:
+      - malloryfreeberg
+      - daniwelter
+      - zperova
+      - ESapenaVentura
+      - willrockout
+      - cjvillar
+    reviews:  # settings for approval and reviewer selection
+      required: 1
+      request_order: shuffle  # reviewers will be chosen in a random order
+
