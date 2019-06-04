@@ -289,7 +289,7 @@ if __name__ == '__main__':
         print("\nThe following errors were found:")
         for error_msg in errors:
             print(error_msg)
-        sys.exit()
+        sys.exit(1)
 
     if warnings:
         print("\nLinter finished with the following warnings:")
