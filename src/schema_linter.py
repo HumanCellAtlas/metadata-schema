@@ -201,6 +201,11 @@ class SchemaLinter:
                     if properties['ontology']['graph_restriction']['direct'] is not False:
                         sys.exit(schema_filename + ".json: Keyword 'direct' must be set to 'false', not " + str(properties['ontology']['graph_restriction']['direct']) + ".")
 
+                    # graph_restriction 'include_self' attribute must be 'false' or 'true'
+                    if properties['ontology']['graph_restriction']['include_self'] not in [False, True]:
+                        sys.exit(schema_filename + ".json: Keyword 'include_self' must be set to 'false' or 'true', not " + str(
+                            properties['ontology']['graph_restriction']['include_self']) + ".")
+
                 # All property attributes must be in the allowed list of property attributes
                 elif kw not in property_attributes:
                     sys.exit(schema_filename + ".json: Keyword `" + kw + "` in property `" + property + "` is not an allowed property.")
