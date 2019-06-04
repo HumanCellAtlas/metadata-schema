@@ -19,7 +19,8 @@ required_ontology_properties = ['text', 'ontology', 'ontology_label']
 
 system_supplied_properties = ['describedBy', 'schema_version', 'schema_type', 'provenance']
 
-# Exempt from needing examples because an example might bias what value a contributor supplies
+# The following properties are exempt from needing examples
+# because an example might bias what value a contributor supplies
 example_exempt_properties = ['biomaterial_id', 'biomaterial_name', 'biomaterial_description', 'process_id', 'process_name', 'process_description', 'protocol_id', 'protocol_name', 'protocol_description', 'project_description', 'parent', 'sibling', 'child']
 
 # Property attributes
