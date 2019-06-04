@@ -22,32 +22,38 @@
             "example": "4.6.1"
         },
         "submission_date": {
-            "description": "When project was first submitted to database.", 
+            "description": "When project was first submitted to database.",
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "user_friendly": "Submission date"
         },
         "submitter_id": {
             "description": "ID of individual who first submitted project.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Submitter id"
         },
         "update_date": {
             "description": "When project was last updated.",
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "user_friendly": "Update date"
         },
         "updater_id": {
             "description": "ID of individual who last updated project.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Updater ID"
         },
         "document_id": {
             "description": "Identifier for document.",
             "type": "string",
             "pattern": ".{8}-.{4}-.{4}-.{4}-.{12}",
-            "comment": "This structure supports the current ingest API. It may change in the future."
+            "comment": "This structure supports the current ingest API. It may change in the future.",
+            "user_friendly": "Document ID"
         },
         "accession": {
             "description": "A unique accession for this entity, provided by the broker.",
-            "type": "string"
+            "type": "string",
+            "user_friendly": "Accession"
         }
 
     }
