@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-system/provenance,minor,"Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989",,
+system/provenance,patch,"Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989",,

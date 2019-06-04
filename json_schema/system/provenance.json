@@ -30,7 +30,7 @@
         "submitter_id": {
             "description": "ID of individual who first submitted project.",
             "type": "string",
-            "user_friendly": "Submitter id"
+            "user_friendly": "Submitter ID"
         },
         "update_date": {
             "description": "When project was last updated.",
