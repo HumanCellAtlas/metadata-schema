@@ -206,6 +206,14 @@ class SchemaLinter:
                         sys.exit(schema_filename + ".json: Keyword 'include_self' must be set to 'false' or 'true', not " + str(
                             properties['ontology']['graph_restriction']['include_self']) + ".")
 
+                    # graph_restriction 'relations' attribute must be a list
+                    if not isinstance(properties['ontology']['graph_restriction']['relations'], list):
+                        sys.exit(schema_filename + ".json: Keyword 'relations' must be a list.")
+
+                    # graph_restriction 'relations' must at least contain item "rdfs:subClassOf"
+                    if 'rdfs:subClassOf' not in properties['ontology']['graph_restriction']['relations']:
+                        sys.exit(schema_filename + ".json: Keyword 'relations' must contain item 'rdfs:subClassOf'")
+
                 # All property attributes must be in the allowed list of property attributes
                 elif kw not in property_attributes:
                     sys.exit(schema_filename + ".json: Keyword `" + kw + "` in property `" + property + "` is not an allowed property.")
