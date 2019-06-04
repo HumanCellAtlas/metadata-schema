@@ -116,11 +116,11 @@ class SchemaLinter:
 
             # Property must contain user-friendly attribute
             # Currently excludes ingest-supplied fields and links.json
-            # TODO: Should be sys.exit() but currently provenance fields fail this
-            # TODO: Fix provenance.json fields prior to implementing sys.exit() and removing provenance from list below
+            # TODO: Should apply to provenance fields in Type entities
+            # TODO: Add user-friendly to provenance fields prior to removing provenance from list below
             if 'user_friendly' not in properties[property].keys() and property not in ['schema_version', 'schema_type', 'describedBy', 'provenance']:
                 if schema_filename not in ['links']:
-                    print(schema_filename + ".json: Keyword `user_friendly` missing from property `" + property + "`.")
+                    sys.exit(schema_filename + ".json: Keyword `user_friendly` missing from property `" + property + "`.")
 
             # Property must contain type attribute
             if 'type' not in properties[property].keys():
