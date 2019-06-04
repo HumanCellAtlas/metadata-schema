@@ -12,3 +12,8 @@ pullapprove_conditions:
 - condition: "base.ref == 'develop'"
   unmet_status: "success"
   explanation: "Only merges into develop need to be reviewed."
+
+notifications:
+- when: pullapprove.approved
+  if: "author_association == 'CONTRIBUTOR'"
+  comment: "The review is completed. Thanks @{{ author }}."
