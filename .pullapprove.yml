@@ -3,17 +3,19 @@ version: 3
 extends: https://api.github.com/repos/example/pullapprove-config/contents/.pullapprove.yml
 
 pullapprove_conditions:
-- condition: "'*travis*' in statuses.successful"
-  unmet_status: "failure"
-  explanation: "Travis CI tests must pass before review starts."
-- condition: "'on hold' not in labels"
-  unmet_status: "pending"
-  explanation: "If 'on hold' label used, don't review."
 - condition: "base.ref == 'develop'"
   unmet_status: "success"
-  explanation: "Only merges into develop need to be reviewed."
+  explanation: "Review not required unless merging to develop"
+- condition: "'on hold' not in labels"
+  unmet_status: "pending"
+  explanation: "PR merge is on hold"
+- condition: "'*travis*' in statuses.successful"
+  unmet_status: "failure"
+  explanation: "Travis CI tests must pass before review starts"
 
 notifications:
+- when: pull_request.opened
+  comment: Hey @{{ author }}, thanks for the PR! The review will start once the tests and CI checks have passed.
 - when: pullapprove.approved
   if: "author_association == 'CONTRIBUTOR'"
   comment: "The review is completed. Thanks @{{ author }}."
