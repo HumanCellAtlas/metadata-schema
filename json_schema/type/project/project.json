@@ -133,7 +133,7 @@
             "description": "A digital object identifier (DOI) for this project.",
             "type": "string",
             "pattern": "^(10[.][0-9]{4,}(?:[.][0-9]+)*/(?:(?![%\"#? ])\\S)+)$",
-            "example": "10.1016/j.cell.2016.07.054",
+            "example": "10.1016/biostudies.2016.07.054",
             "user_friendly": "Project DOI",
             "comment": "Regex pattern is from: https://github.com/regexhq/doi-regex/blob/master/index.js"
         }

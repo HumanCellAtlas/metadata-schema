@@ -262,7 +262,7 @@ array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExp
 insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
 biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
-doi | A digital object identifier (DOI) for this project. | string | no |  | Project DOI |  | 10.1016/j.cell.2016.07.054
+doi | A digital object identifier (DOI) for this project. | string | no |  | Project DOI |  | 10.1016/biostudies.2016.07.054
 
 ## Protocol
 _Information about the protocol._
