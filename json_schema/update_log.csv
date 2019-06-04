@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/project/project,minor,"Added optional doi field. Fixes #979.",,
+type/project/project,minor,"Added optional doi field. Fixes #997.",,
