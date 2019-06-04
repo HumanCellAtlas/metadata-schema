@@ -114,7 +114,7 @@ class SchemaLinter:
             # Property must contain user-friendly attribute
             # Currently excludes ingest-supplied fields and links.json
             # TODO: Should be sys.exit() but currently provenance fields fail this
-            # TODO: Need to fix provenance fields prior to implementing sys.exit() and removing provenance from list below
+            # TODO: Fix provenance.json fields prior to implementing sys.exit() and removing provenance from list below
             if 'user_friendly' not in properties[property].keys() and property not in ['schema_version', 'schema_type', 'describedBy', 'provenance']:
                 if schema_filename not in ['links']:
                     print(schema_filename + ".json: Keyword `user_friendly` missing from property `" + property + "`.")
@@ -174,9 +174,14 @@ class SchemaLinter:
                 if property.split("_unit")[0] not in properties:
                     sys.exit(schema_filename + ".json: Has unit property `" + property + "` but no corresponding `" + property.split("_unit")[0] + "` property")
 
-            # ONTOLOGY PROPERTY CHECKS
+            # ADDITIONAL PROPERTY CHECKS & SPECIFIC ONTOLOGY CHECKS
 
             for kw in properties[property].keys():
+                # Ontology field must have graph_restriction property that is an object
+                if property == 'ontology' and 'graph_restriction' not in properties[property].keys():
+                    sys.exit(
+                        schema_filename + ".json: Keyword `graph_restriction` missing from property `" + property + "`.")
+
                 if property == 'ontology' and kw == 'graph_restriction':
                     nested_keywords = properties[property][kw]
                     for nkw in nested_keywords.keys():
@@ -193,7 +198,6 @@ class SchemaLinter:
                     for nkw in properties[property][kw].keys():
                         if nkw not in property_attributes:
                             sys.exit("Keyword `" + nkw + "` in property `" + property + "` is not an allowed property.")
-
 
     def get_json_from_file(self, filename, warn = False):
         """Loads json from a file.
