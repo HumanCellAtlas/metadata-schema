@@ -186,6 +186,7 @@ class SchemaLinter:
                 if property == 'ontology' and kw == 'graph_restriction':
                     nested_keywords = properties[property][kw]
 
+                    # graph_restriction property must contain all required attributes
                     for gra in graph_restriction_attributes:
                         if gra not in nested_keywords:
                             sys.exit(schema_filename + ".json: `graph_restriction` missing a required attribute `" + gra + "`.")
@@ -195,6 +196,10 @@ class SchemaLinter:
                         # Attributes for graph_restriction must be one of acceptable values
                         if nkw not in ontology_attributes:
                             sys.exit(schema_filename + ".json: Keyword `" + nkw + "` is not an acceptable graph_restriction keyword property.")
+
+                    # graph_restriction 'direct' attribute must be 'false'
+                    if properties['ontology']['graph_restriction']['direct'] is not False:
+                        sys.exit(schema_filename + ".json: Keyword 'direct' must be set to 'false', not " + str(properties['ontology']['graph_restriction']['direct']) + ".")
 
                 # All property attributes must be in the allowed list of property attributes
                 elif kw not in property_attributes:
