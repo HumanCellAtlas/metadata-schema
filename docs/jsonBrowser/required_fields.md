@@ -19,6 +19,7 @@ project_description | A longer description of the project which includes researc
 ### Biomaterial core<a name='Biomaterial core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
+biomaterial_id | A unique ID for the biomaterial. | string |  | Biomaterial ID |  | 
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array |  | NCBI taxon ID |  | 9606
 ### Process core<a name='Process core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
