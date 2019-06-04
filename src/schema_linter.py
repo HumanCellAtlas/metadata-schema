@@ -155,6 +155,16 @@ class SchemaLinter:
             if 'guidelines' in properties[property].keys() and not re.match('^[A-Z][^?!]*[.]$', properties[property]['guidelines']):
                 print(schema_filename + ".json: The `guidelines` for property `" + property + "` is not a sentence (" + properties[property]['guidelines'] + ").")
 
+            # pattern must be a valid regex
+            if 'pattern' in properties[property].keys():
+                try:
+                    re.compile(properties[property]['pattern'])
+                    is_valid_regex = True
+                except re.error:
+                    is_valid_regex = False
+                if not is_valid_regex:
+                    sys.exit(schema_filename + ".json: The `pattern` for property `" + property + "` (" + properties[property]['pattern'] + ") is not a valid regex pattern.")
+
             # Property should contain example attribute
             # Except for system-supplied fields, id/name/description fields, and when importing module ($ref)
             if 'example' not in properties[property].keys() and property not in system_supplied_properties and property not in example_exempt_properties and schema_filename not in ['links', 'provenance']:
