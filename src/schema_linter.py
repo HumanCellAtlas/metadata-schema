@@ -165,6 +165,14 @@ class SchemaLinter:
                 if not is_valid_regex:
                     sys.exit(schema_filename + ".json: The `pattern` for property `" + property + "` (" + properties[property]['pattern'] + ") is not a valid regex pattern.")
 
+            # example values must match regex pattern
+            if 'pattern' in properties[property].keys() and 'example' in properties[property].keys():
+                examples = properties[property]['example'].split(";")
+                for ex in examples:
+                    if not re.match(properties[property]['pattern'], ex.strip()):
+                        sys.exit(schema_filename + ".json: Example " + ex.strip() + " for property `" + property + "` (" +
+                                 properties[property]['pattern'] + ") does not match regex pattern " + properties[property]['pattern'] + ".")
+
             # Property should contain example attribute
             # Except for system-supplied fields, id/name/description fields, and when importing module ($ref)
             if 'example' not in properties[property].keys() and property not in system_supplied_properties and property not in example_exempt_properties and schema_filename not in ['links', 'provenance']:
