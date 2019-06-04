@@ -105,7 +105,7 @@ class SchemaLinter:
 
             # Property name must contain only lowercase letters, numbers, and underscores
             # TODO: Should be sys.exit() but currently HDBR_accession field fails this
-            # TODO: Need to fix HDBR_accession field prior to implementing sys.exit()
+            # TODO: Fix HDBR_accession field prior to implementing sys.exit()
             if not re.match("^[a-z0-9_]+$", property) and property not in ['describedBy']:
                 print(schema_filename + ".json: Property `" + property + "` contains non-lowercase/underscore characters.")
 
@@ -173,6 +173,11 @@ class SchemaLinter:
                         sys.exit(schema_filename + ".json: Example " + ex.strip() + " for property `" + property + "` (" +
                                  properties[property]['pattern'] + ") does not match regex pattern " + properties[property]['pattern'] + ".")
 
+            # All $ref referenced schemas must exist
+            if '$ref' in properties[property].keys():
+                if ("../json_schema/" + properties[property]['$ref']) not in jsons:
+                    sys.exit(schema_filename + ".json: $ref schema (" + properties[property]['$ref'] + ") in property " + property + " does not exist.")
+
             # Property should contain example attribute
             # Except for system-supplied fields, id/name/description fields, and when importing module ($ref)
             if 'example' not in properties[property].keys() and property not in system_supplied_properties and property not in example_exempt_properties and schema_filename not in ['links', 'provenance']:
@@ -192,7 +197,7 @@ class SchemaLinter:
             # _unit properties should have matching property w/o _unit
             if re.match("^[a-z_]+_unit$", property):
                 if property.split("_unit")[0] not in properties:
-                    sys.exit(schema_filename + ".json: Has unit property `" + property + "` but no corresponding `" + property.split("_unit")[0] + "` property")
+                    print(schema_filename + ".json: Has unit property `" + property + "` but no corresponding `" + property.split("_unit")[0] + "` property")
 
             # ADDITIONAL PROPERTY CHECKS & SPECIFIC ONTOLOGY CHECKS
 
