@@ -45,12 +45,12 @@ groups:
       required: 2
       request_order: shuffle  # reviewers will be chosen in a random order
 
-  metadata-updates-patch:  # group name
-    conditions:  # the group is activated when all of these statements are true
+  metadata-updates-patch:
+    conditions:
     - "'*travis*' in statuses.succeeded"
     - "base.ref == 'develop'"
     - "'patch' in body" # 'patch' change is indicated in body of PR
-    reviewers:  # people who can approve for this group
+    reviewers:
       users:
       - malloryfreeberg
       - daniwelter
@@ -58,7 +58,7 @@ groups:
       - ESapenaVentura
       - willrockout
       - cjvillar
-    reviews:  # settings for approval and reviewer selection
+    reviews:
       required: 1
-      request_order: shuffle  # reviewers will be chosen in a random order
+      request_order: shuffle
 
