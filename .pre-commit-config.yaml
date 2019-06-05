@@ -6,3 +6,12 @@ repos:
       language: python
       language_version: python3
       entry: python src/schema_linter.py
+    - id: human_readable_json
+      name: Writing human-readable JSON documents
+      language: python
+      language_version: python3
+      entry: python3 src/human_readable_json.py
+    - id: add_docs
+      name: Add generated md to git commit
+      language: system
+      entry: sh src/add_docs.sh
