@@ -4,6 +4,11 @@ import os
 import re
 import json
 import sys
+import os
+
+# Current working directory
+
+cwd = os.getcwd().split("/")[-1]
 
 # Schema fields
 
@@ -180,7 +185,7 @@ class SchemaLinter:
 
             # All $ref referenced schemas must exist
             if '$ref' in properties[property].keys():
-                if ("../json_schema/" + properties[property]['$ref']) not in jsons:
+                if (schema_path + "/" + properties[property]['$ref']) not in jsons:
                     errors.append(schema_filename + ".json: $ref schema (" + properties[property]['$ref'] + ") in property " + property + " does not exist.")
 
             # Property should contain example attribute
@@ -260,8 +265,8 @@ class SchemaLinter:
         f = open(filename, 'r')
         return json.loads(f.read())
 
-def main():
-    schema_path = '../json_schema'
+if __name__ == "__main__":
+    schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
 
     linter = SchemaLinter()
 
@@ -296,7 +301,3 @@ def main():
             print(warning_msg)
     else:
         print("\nLinter finished with no errors and no warnings.")
-
-
-if __name__ == '__main__':
-    main()
