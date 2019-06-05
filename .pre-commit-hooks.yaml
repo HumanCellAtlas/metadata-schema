@@ -3,3 +3,4 @@
   language: python
   language_version: python3
   entry: python3 src/schema_linter.py
+

@@ -10,7 +10,7 @@ schema_version | The version number of the schema in major.minor.patch format. |
 ## File core<a name='File core'></a>
 _Information about a file produced from any process._
 
-Location: core/file/file_core.json
+Location: /core/file/file_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -21,7 +21,7 @@ checksum | MD5 checksum of the file. | string | no |  | Checksum |  | e09a986c2e
 ## Protocol core<a name='Protocol core'></a>
 _Information about an intended protocol that was followed in the project._
 
-Location: core/protocol/protocol_core.json
+Location: /core/protocol/protocol_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -35,7 +35,7 @@ document | A filename of a PDF document containing the details of the protocol. 
 ## Project core<a name='Project core'></a>
 _Information about the project._
 
-Location: core/project/project_core.json
+Location: /core/project/project_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -46,7 +46,7 @@ project_description | A longer description of the project which includes researc
 ## Biomaterial core<a name='Biomaterial core'></a>
 _Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components._
 
-Location: core/biomaterial/biomaterial_core.json
+Location: /core/biomaterial/biomaterial_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -63,7 +63,7 @@ HDBR_accession | A Human Developmental Biology Resource (HDBR) sample accession.
 ## Process core<a name='Process core'></a>
 _Information relevant to how a biomaterial or file was converted into another biomaterial or file._
 
-Location: core/process/process_core.json
+Location: /core/process/process_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 

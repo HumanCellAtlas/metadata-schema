@@ -5,7 +5,7 @@ import json
 
 
 boiler_plate = ["describedBy", "schema_version"]
-
+cwd = os.getcwd().split("/")[-1]
 
 
 class MarkdownGenerator:
@@ -13,7 +13,7 @@ class MarkdownGenerator:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
 
-        self.required_file = open("../docs/jsonBrowser/required_fields.md", "w")
+        self.required_file = open(base_json_browser_path + "required_fields.md", "w")
         self.required_file.write("# Required fields\n")
         self.required_file.write("_This document contains a list of all required fields in the HCA metadata schema. For a full"
                                  "description of each schema, please refer to the relevant entity specification document._\n")
@@ -35,7 +35,7 @@ class MarkdownGenerator:
         return json.loads(f.read())
 
     def generateMarkdown(self, schemas, entity_type):
-        file = open("../docs/jsonBrowser/" + entity_type + ".md", "w")
+        file = open(base_json_browser_path + entity_type + ".md", "w")
         file.write("# " + entity_type.capitalize() + "\n")
 
         self.required_file.write("## " + entity_type.capitalize() + "\n")
@@ -55,7 +55,7 @@ class MarkdownGenerator:
                 self.required_file.write("### " + schema["title"] + "\n")
             file.write("_" + schema["description"] + "_\n")
             file.write("\n")
-            file.write("Location: " +  path.replace("../json_schema/", "") + "\n")
+            file.write("Location: " + path.replace(base_schema_path, "") + "\n")
             file.write("\n")
 
             file.write("Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example \n")
@@ -150,10 +150,10 @@ class MarkdownGenerator:
 
 if __name__ == '__main__':
 
+    base_schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
+    base_json_browser_path = '../docs/jsonBrowser/' if cwd == 'src' else 'docs/jsonBrowser/'
 
     generator = MarkdownGenerator()
-
-    base_schema_path = '../json_schema'
 
     core_schema_path = base_schema_path + '/core'
     type_schema_path = base_schema_path + '/type'
