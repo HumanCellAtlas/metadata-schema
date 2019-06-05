@@ -55,7 +55,7 @@ class MarkdownGenerator:
                 self.required_file.write("### " + schema["title"] + "\n")
             file.write("_" + schema["description"] + "_\n")
             file.write("\n")
-            file.write("Location: " + path.replace("/" + base_schema_path, "") + "\n")
+            file.write("Location: " + path.replace(base_schema_path + "/", "") + "\n")
             file.write("\n")
 
             file.write("Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example \n")

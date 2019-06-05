@@ -1,4 +1,4 @@
 #!/bin/sh
 #
-
-git add -u docs/jsonBrowser/*.md
+git status
+git add docs/jsonBrowser/*.md
