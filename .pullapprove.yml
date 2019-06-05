@@ -1,5 +1,6 @@
 version: 3
 
+# The following line breaks the yml - 404 page not found error
 # extends: https://api.github.com/repos/example/pullapprove-config/contents/.pullapprove.yml
 
 pullapprove_conditions:
