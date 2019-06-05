@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [system/provenance.json - v1.0.4] - 2019-06-04
 ### Added
 Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
@@ -150,8 +152,6 @@ Changed embedded_in_matrigel property friendly name. Fixes #963
 ### [type/project/project.json - v14.0.1] - 2019-05-30
 ### Changed
 Changed corresponding_contributor property friendly name. Fixes #963
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/imaging/imaging_protocol.json - v11.1.1] - 2019-05-15
 ### Fixed
