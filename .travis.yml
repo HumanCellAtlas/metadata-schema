@@ -11,10 +11,12 @@ node_js:
 jobs:
   include:
   - stage: Schema linter
+    python: 3.6
     script:
        - cd src
        - python schema_linter.py
   - stage: Schema tests
+    node_js: 8
     install:
        - cd tests
        - npm install
