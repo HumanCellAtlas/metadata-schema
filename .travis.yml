@@ -2,12 +2,6 @@ language:
 - python
 - node_js
 
-python:
-- '3.6'
-
-node_js:
-- '8'
-
 jobs:
   include:
   - stage: Schema linter
