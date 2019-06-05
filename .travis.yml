@@ -5,20 +5,18 @@ node_js:
 - '8'
 python:
 - '3.6'
-install:
-# - pip install -r requirements.txt
-- cd tests
-- npm install
 jobs:
   include:
   - stage: Schema linter
     script:
-    - cd ../src
-    - python schema_linter.py
+       - cd ../src
+       - python schema_linter.py
   - stage: Schema tests
+    install:
+       - cd ../tests
+       - npm install
     script:
-    - cd ../tests
-    - npm test
+       - npm test
 notifications:
   slack:
      on_success: change
