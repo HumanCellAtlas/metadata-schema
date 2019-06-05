@@ -13,6 +13,8 @@ pullapprove_conditions:
 - condition: "'*travis*' in statuses.successful"
   unmet_status: "failure"
   explanation: "Travis CI tests must pass before review starts"
+# TODO: Add condition for integration tests to be passing
+# - condition:
 
 notifications:
 - when: pull_request.opened
@@ -67,4 +69,7 @@ groups:
     reviews:
       required: 1
       request_order: shuffle
+
+# TODO: Add a code review group
+#  code-review:
 
