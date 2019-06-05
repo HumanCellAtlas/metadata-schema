@@ -260,8 +260,7 @@ class SchemaLinter:
         f = open(filename, 'r')
         return json.loads(f.read())
 
-
-if __name__ == '__main__':
+def main():
     schema_path = '../json_schema'
 
     linter = SchemaLinter()
@@ -297,3 +296,7 @@ if __name__ == '__main__':
             print(warning_msg)
     else:
         print("\nLinter finished with no errors and no warnings.")
+
+
+if __name__ == '__main__':
+    main()

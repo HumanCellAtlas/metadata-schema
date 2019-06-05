@@ -1,0 +1,5 @@
+- id: schema_linter
+  name: Schema linter
+  language: python
+  language_version: python3
+  entry: python src/schema_linter.py
