@@ -1,15 +1,13 @@
-language:
-- python
-- node_js
-
 jobs:
   include:
   - stage: Schema linter
+    language: python
     python: 3.6
     script:
        - cd src
        - python schema_linter.py
   - stage: Schema tests
+    language: node_js
     node_js: 8
     install:
        - cd tests
