@@ -10,7 +10,7 @@ schema_version | The version number of the schema in major.minor.patch format. |
 ## Channel<a name='Channel'></a>
 _Information about a single microscope channel._
 
-Location: /module/protocol/channel.json
+Location: json_schema/module/protocol/channel.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -24,7 +24,7 @@ exposure_time | Acquisition time for a single image per channel, in milliseconds
 ## Probe<a name='Probe'></a>
 _Information about probes used to detect targets._
 
-Location: /module/protocol/probe.json
+Location: json_schema/module/protocol/probe.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -42,7 +42,7 @@ channel_label | Channel label used to assay signal. | array | no |  | Channel | 
 ## Length unit ontology<a name='Length unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
-Location: /module/ontology/length_unit_ontology.json
+Location: json_schema/module/ontology/length_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -53,7 +53,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Cell cycle ontology<a name='Cell cycle ontology'></a>
 _A term that may be associated with a cell cycle-related ontology term_
 
-Location: /module/ontology/cell_cycle_ontology.json
+Location: json_schema/module/ontology/cell_cycle_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -64,7 +64,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Library amplification ontology<a name='Library amplification ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
-Location: /module/ontology/library_amplification_ontology.json
+Location: json_schema/module/ontology/library_amplification_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -75,7 +75,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Contributor role ontology<a name='Contributor role ontology'></a>
 _A term that describes the role of a contributor in the project._
 
-Location: /module/ontology/contributor_role_ontology.json
+Location: json_schema/module/ontology/contributor_role_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -86,7 +86,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Ethnicity ontology<a name='Ethnicity ontology'></a>
 _A term that may be associated with a ethnicity-related ontology term_
 
-Location: /module/ontology/ethnicity_ontology.json
+Location: json_schema/module/ontology/ethnicity_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -97,7 +97,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Cellular component ontology<a name='Cellular component ontology'></a>
 _A term that may be associated with an intra-cellular structure ontology term_
 
-Location: /module/ontology/cellular_component_ontology.json
+Location: json_schema/module/ontology/cellular_component_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -108,7 +108,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Library construction ontology<a name='Library construction ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
-Location: /module/ontology/library_construction_ontology.json
+Location: json_schema/module/ontology/library_construction_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -119,7 +119,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Process type ontology<a name='Process type ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
-Location: /module/ontology/process_type_ontology.json
+Location: json_schema/module/ontology/process_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -130,7 +130,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Sequencing ontology<a name='Sequencing ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
-Location: /module/ontology/sequencing_ontology.json
+Location: json_schema/module/ontology/sequencing_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -141,7 +141,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Species ontology<a name='Species ontology'></a>
 _A term that may be associated with a species-related ontology term_
 
-Location: /module/ontology/species_ontology.json
+Location: json_schema/module/ontology/species_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -152,7 +152,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Disease ontology<a name='Disease ontology'></a>
 _A term that may be associated with a disease-related ontology term_
 
-Location: /module/ontology/disease_ontology.json
+Location: json_schema/module/ontology/disease_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -163,7 +163,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Strain ontology<a name='Strain ontology'></a>
 _A term that may be associated with a strain-related ontology term_
 
-Location: /module/ontology/strain_ontology.json
+Location: json_schema/module/ontology/strain_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -174,7 +174,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Enrichment ontology<a name='Enrichment ontology'></a>
 _A term that may be associated with a process-related ontology term_
 
-Location: /module/ontology/enrichment_ontology.json
+Location: json_schema/module/ontology/enrichment_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -185,7 +185,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Organ part ontology<a name='Organ part ontology'></a>
 _A term that may be associated with an anatomy-related ontology term_
 
-Location: /module/ontology/organ_part_ontology.json
+Location: json_schema/module/ontology/organ_part_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -196,7 +196,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Microscopy ontology<a name='Microscopy ontology'></a>
 _A term that may be associated with a microscopy-related ontology term_
 
-Location: /module/ontology/microscopy_ontology.json
+Location: json_schema/module/ontology/microscopy_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -207,7 +207,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Time unit ontology<a name='Time unit ontology'></a>
 _A term that may be associated with a time unit-related ontology term_
 
-Location: /module/ontology/time_unit_ontology.json
+Location: json_schema/module/ontology/time_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -218,7 +218,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Protocol type ontology<a name='Protocol type ontology'></a>
 _A term that may be associated with a protocol-related ontology term_
 
-Location: /module/ontology/protocol_type_ontology.json
+Location: json_schema/module/ontology/protocol_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -229,7 +229,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Development stage ontology<a name='Development stage ontology'></a>
 _A term that may be associated with a development stage-related ontology term_
 
-Location: /module/ontology/development_stage_ontology.json
+Location: json_schema/module/ontology/development_stage_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -240,7 +240,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Instrument ontology<a name='Instrument ontology'></a>
 _A term that may be associated with a instrument-related ontology term_
 
-Location: /module/ontology/instrument_ontology.json
+Location: json_schema/module/ontology/instrument_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -251,7 +251,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Mass unit ontology<a name='Mass unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
-Location: /module/ontology/mass_unit_ontology.json
+Location: json_schema/module/ontology/mass_unit_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -262,7 +262,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 _A term that may be associated with a biological macromolecule-related ontology term_
 
-Location: /module/ontology/biological_macromolecule_ontology.json
+Location: json_schema/module/ontology/biological_macromolecule_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -273,7 +273,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Cell type ontology<a name='Cell type ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
-Location: /module/ontology/cell_type_ontology.json
+Location: json_schema/module/ontology/cell_type_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -284,7 +284,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Organ ontology<a name='Organ ontology'></a>
 _A term that may be associated with an anatomy-related ontology term._
 
-Location: /module/ontology/organ_ontology.json
+Location: json_schema/module/ontology/organ_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -295,7 +295,7 @@ ontology_label | The preferred label for the ontology term referred to in the on
 ## Funder<a name='Funder'></a>
 _Information about the project funding source._
 
-Location: /module/project/funder.json
+Location: json_schema/module/project/funder.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -306,7 +306,7 @@ organization | The name of the funding organization. | string | yes |  | Funding
 ## Contact<a name='Contact'></a>
 _Information about an individual who submitted or contributed to a project._
 
-Location: /module/project/contact.json
+Location: json_schema/module/project/contact.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -324,7 +324,7 @@ orcid_id | The individual's ORCID ID linked to previous work. | string | no |  |
 ## Publication<a name='Publication'></a>
 _Information about a journal article, book, web page, or other external available documentation for a project._
 
-Location: /module/project/publication.json
+Location: json_schema/module/project/publication.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -337,7 +337,7 @@ url | A URL for the publication. | string | no |  | Publication URL |  | https:/
 ## Human-specific<a name='Human-specific'></a>
 _Information specific to a donor that is a human (Homo sapiens)._
 
-Location: /module/biomaterial/human_specific.json
+Location: json_schema/module/biomaterial/human_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -347,7 +347,7 @@ ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontolo
 ## Growth conditions<a name='Growth conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
 
-Location: /module/biomaterial/growth_conditions.json
+Location: json_schema/module/biomaterial/growth_conditions.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -362,7 +362,7 @@ feeder_layer_type | Type of feeder layer cells on which biomaterial was grown. |
 ## Preservation and storage<a name='Preservation and storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
 
-Location: /module/biomaterial/preservation_storage.json
+Location: json_schema/module/biomaterial/preservation_storage.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -374,7 +374,7 @@ preservation_method | The method by which a biomaterial was preserved through th
 ## Death<a name='Death'></a>
 _Information relating to the death of an organism._
 
-Location: /module/biomaterial/death.json
+Location: json_schema/module/biomaterial/death.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -389,7 +389,7 @@ normothermic_regional_perfusion | Whether entire body was perfused with warm oxy
 ## Familial relationship<a name='Familial relationship'></a>
 _Information about other organisms that this organism is related to._
 
-Location: /module/biomaterial/familial_relationship.json
+Location: json_schema/module/biomaterial/familial_relationship.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -400,7 +400,7 @@ sibling | The individual's sibling. | string | no |  | Sibling |  |
 ## Medical history<a name='Medical history'></a>
 _Information about the medical history of a donor._
 
-Location: /module/biomaterial/medical_history.json
+Location: json_schema/module/biomaterial/medical_history.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -414,7 +414,7 @@ treatment | Treatments the individual has undergone prior to biomaterial collect
 ## Cell morphology<a name='Cell morphology'></a>
 _Information relating to pathological and morphological features of cells._
 
-Location: /module/biomaterial/cell_morphology.json
+Location: json_schema/module/biomaterial/cell_morphology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -429,7 +429,7 @@ percent_necrosis | Percent of cells identified to be necrotic. | number | no |  
 ## State of specimen<a name='State of specimen'></a>
 _State of specimen at time of collection._
 
-Location: /module/biomaterial/state_of_specimen.json
+Location: json_schema/module/biomaterial/state_of_specimen.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -445,7 +445,7 @@ postmortem_interval | Duration of time between when death was declared and when 
 ## Timecourse<a name='Timecourse'></a>
 _Information relating to a timecourse._
 
-Location: /module/biomaterial/timecourse.json
+Location: json_schema/module/biomaterial/timecourse.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -456,7 +456,7 @@ relevance | Relevance of the Timecourse value/unit to the experiment. | string |
 ## Mouse-specific<a name='Mouse-specific'></a>
 _Information specific to an organism that is a mouse (Mus musculus)._
 
-Location: /module/biomaterial/mouse_specific.json
+Location: json_schema/module/biomaterial/mouse_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -465,7 +465,7 @@ strain | The name of the mouse strain. | array | no | [See module  strain_ontolo
 ## Purchased reagents<a name='Purchased reagents'></a>
 _Information describing purchased kits or reagents used in a protocol._
 
-Location: /module/process/purchased_reagents.json
+Location: json_schema/module/process/purchased_reagents.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -479,7 +479,7 @@ kit_titer | Appropriate titer and volume recommendations found in kit/reagent Ce
 ## INSDC experiment<a name='INSDC experiment'></a>
 _Information relating to an INSDC experiment._
 
-Location: /module/process/sequencing/insdc_experiment.json
+Location: json_schema/module/process/sequencing/insdc_experiment.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -488,7 +488,7 @@ insdc_experiment_accession | An International Nucleotide Sequence Database Colla
 ## Barcode<a name='Barcode'></a>
 _Information about barcodes used in a protocol._
 
-Location: /module/process/sequencing/barcode.json
+Location: json_schema/module/process/sequencing/barcode.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -500,7 +500,7 @@ white_list_file | Name of file containing legitimate barcode sequences. | string
 ## 10x-specific<a name='10x-specific'></a>
 _Information specific to 10x experiments._
 
-Location: /module/process/sequencing/10x.json
+Location: json_schema/module/process/sequencing/10x.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
@@ -512,7 +512,7 @@ drop_uniformity | Whether drop uniformity was achieved as a result of visual ins
 ## Plate-based sequencing<a name='Plate-based sequencing'></a>
 _Information specific to plate-based sequencing experiments._
 
-Location: /module/process/sequencing/plate_based_sequencing.json
+Location: json_schema/module/process/sequencing/plate_based_sequencing.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 

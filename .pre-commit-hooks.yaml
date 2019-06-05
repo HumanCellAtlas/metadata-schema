@@ -14,3 +14,4 @@
   name: Add generated md to git commit
   language: system
   entry: sh src/add_docs.sh
+  pass_filenames: false
