@@ -1,10 +1,12 @@
+fail_fast: true
+
 repos:
 - repo: local
   hooks:
     - id: schema_linter
-      name: Schema linter
-      language: python
-      language_version: python3
+      name: Linting the schemas
+      language: system
+      types: [python]
       entry: python src/schema_linter.py
 
     - id: human_readable_json
