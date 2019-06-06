@@ -1,5 +1,4 @@
 fail_fast: true
-log_file: commit_log.txt
 
 repos:
 - repo: local
