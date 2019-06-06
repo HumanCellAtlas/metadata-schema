@@ -17,8 +17,8 @@ echo "--> Files added to commit"
 
 echo "2. Linting schema files"
 
-cd src
+# cd src
 
-python3 schema_linter.py
+# python3 schema_linter.py
 
-echo "Schema files are linted"
+# echo "Schema files are linted"
