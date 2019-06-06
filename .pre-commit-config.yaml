@@ -5,9 +5,9 @@ repos:
   hooks:
     - id: schema_linter
       name: Linting the schemas
-      language: system
-      types: [python3]
-      entry: python3 src/schema_linter.py
+      language: python
+      language_version: python3
+      entry: python src/schema_linter.py
 
     - id: human_readable_json
       name: Writing human-readable JSON documents
