@@ -12,14 +12,14 @@ repos:
       require_serial: true
 
     - id: human_readable_json
-      name: Writing human-readable JSON documents
+      name: Building human-readable JSON documents
       language: python
       language_version: python3
       entry: python src/human_readable_json.py
       require_serial: true
 
     - id: add_docs
-      name: Add generated md to git commit
+      name: Adding generated markdown docs commit
       language: system
       entry: sh src/add_docs.sh
       pass_filenames: false
