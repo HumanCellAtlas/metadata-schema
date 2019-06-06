@@ -7,7 +7,7 @@ repos:
       name: Linting the schemas
       language: system
       types: [python]
-      entry: python src/schema_linter.py
+      entry: python -m src/schema_linter.py
 
     - id: human_readable_json
       name: Writing human-readable JSON documents
