@@ -9,6 +9,7 @@
   name: Writing human-readable JSON documents
   language: python
   language_version: python3
+  files: 'json_schema/*.json'
   entry: python3 src/human_readable_json.py
   require_serial: true
 
