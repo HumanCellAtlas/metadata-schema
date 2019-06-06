@@ -265,12 +265,13 @@ class SchemaLinter:
         f = open(filename, 'r')
         return json.loads(f.read())
 
-schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
-jsons = [os.path.join(dirpath, f)
-               for dirpath, dirnames, files in os.walk(schema_path)
-               for f in files if f.endswith('.json')]
 
-def main():
+if __name__ == "__main__":
+
+    schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
+    jsons = [os.path.join(dirpath, f)
+                   for dirpath, dirnames, files in os.walk(schema_path)
+                   for f in files if f.endswith('.json')]
 
     linter = SchemaLinter()
 
@@ -301,6 +302,3 @@ def main():
             print(warning_msg)
     else:
         print("\nLinter finished with no errors and no warnings.")
-
-if __name__ == "__main__":
-    main()
