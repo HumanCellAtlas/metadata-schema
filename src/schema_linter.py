@@ -4,6 +4,8 @@ import os
 import re
 import json
 import sys
+from urllib.request import urlopen
+from urllib.error import HTTPError
 
 # Schema fields
 
@@ -30,6 +32,8 @@ property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$re
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
 graph_restriction_attributes = ['ontologies', 'classes', 'relations', 'direct', 'include_self']
+
+OLS_API_DEFAULT = 'https://ontology.dev.data.humancellatlas.org/api'
 
 
 class SchemaLinter:
@@ -238,9 +242,44 @@ class SchemaLinter:
                     if not isinstance(properties['ontology']['graph_restriction']['relations'], list):
                         errors.append(schema_filename + ".json: Keyword 'relations' must be a list.")
 
+                    # graph_restriction 'classes' attribute must be a list
+                    if not isinstance(properties['ontology']['graph_restriction']['classes'], list):
+                        errors.append(schema_filename + ".json: Keyword 'classes' must be a list.")
+
+                    # graph_restriction 'ontologies' attribute must be a list
+                    if not isinstance(properties['ontology']['graph_restriction']['ontologies'], list):
+                        errors.append(schema_filename + ".json: Keyword 'ontologies' must be a list.")
+
                     # graph_restriction 'relations' must at least contain item "rdfs:subClassOf"
                     if 'rdfs:subClassOf' not in properties['ontology']['graph_restriction']['relations']:
                         errors.append(schema_filename + ".json: Keyword 'relations' must contain item 'rdfs:subClassOf'")
+
+                    # graph_restriction 'ontologies' must contain ontologies that are valid within the HCA ontology space
+                    # TODO: consider removing ontologies that are not within the HCA namespace and making this an error
+                    checked_ontologies = {}
+                    for ontology in properties['ontology']['graph_restriction']['ontologies']:
+                        if ontology not in checked_ontologies:
+                            ols_ontologies_url = OLS_API_DEFAULT + '/ontologies/' + ontology.replace('obo:','')
+
+                            try:
+                                urlopen(ols_ontologies_url)
+                                checked_ontologies[ontology] = "pass"
+                            except HTTPError as e:
+                                warnings.append(schema_filename  + ".json: Ontology " + ontology + " is not a valid ontology in the HCA ontology space")
+                                checked_ontologies[ontology] = "fail"
+                        else:
+                            if checked_ontologies[ontology] == "fail":
+                                warnings.append(schema_filename  + ".json: Ontology " + ontology + " is not a valid ontology in the HCA ontology space")
+
+                    #  graph_restrictions 'classes' must contain only ontology classes that are valid in the HCA ontology space
+                    for parent_class in properties['ontology']['graph_restriction']['classes']:
+                        ols_search_url = OLS_API_DEFAULT + '/search?q=' + parent_class.replace('obo:', '') + "&exact=true&groupField=true&queryFields=obo_id"
+
+                        json_url = urlopen(ols_search_url)
+                        result = json.loads(json_url.read())
+
+                        if "response" in result and "numFound" in result["response"] and result["response"]["numFound"] == 0:
+                            errors.append(schema_filename + ".json: Class " + parent_class + " is not a valid ontology term in the HCA ontology space")
 
                 # All property attributes must be in the allowed list of property attributes
                 elif kw not in property_attributes:
