@@ -12,7 +12,7 @@ repos:
       require_serial: true
 
     - id: add_docs
-      name: Adding generated markdown docs commit
+      name: Adding generated markdown docs to commit
       language: system
       entry: sh src/add_docs.sh
       pass_filenames: false
