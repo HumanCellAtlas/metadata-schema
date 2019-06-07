@@ -1,0 +1,19 @@
+fail_fast: true
+
+repos:
+- repo: local
+  hooks:
+
+    - id: human_readable_json
+      name: Building human-readable JSON documents
+      language: python
+      language_version: python3
+      entry: python src/human_readable_json.py
+      require_serial: true
+
+    - id: add_docs
+      name: Adding generated markdown docs to commit
+      language: system
+      entry: sh src/add_docs.sh
+      pass_filenames: false
+      require_serial: true
