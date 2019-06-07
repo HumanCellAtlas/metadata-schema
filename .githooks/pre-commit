@@ -15,7 +15,7 @@ git add docs/jsonBrowser/*.md
 
 echo "--> Files added to commit"
 
-echo "2. Linting schema files"
+# echo "2. Linting schema files"
 
 # cd src
 
