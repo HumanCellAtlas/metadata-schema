@@ -74,7 +74,7 @@ class SchemaLinter:
             errors.append(schema_filename + ".json: Must have $schema set to http://json-schema.org/draft-07/schema#.")
 
         # Schema filename must match name of the schema in the describedBy URL
-        if properties['describedBy']['pattern'].split("/")[-1] != schema_filename:
+        if "describedBy" in schema and properties['describedBy']['pattern'].split("/")[-1] != schema_filename:
             errors.append(schema_filename + ".json: End of `describedBy` URL (" + properties['describedBy'][
             'pattern'].split("/")[-1] + ") must match schema filename (" + schema_filename + ").")
 
