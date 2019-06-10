@@ -39,6 +39,17 @@ assay_type | Type of assay used to detect target. | object | yes | [See module  
 fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
 channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
 
+## File content ontology<a name='File content ontology'></a>
+_A term that describes the contents of a file._
+
+Location: module/ontology/file_content_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | General description of the contents of the file. | string | yes |  | Content description |  | DNA sequence (raw); Sequence alignment
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | DATA:3497; DATA:0863
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Content description ontology label |  | DNA sequence (raw); Sequence alignment
+
 ## Length unit ontology<a name='Length unit ontology'></a>
 _A term that may be associated with a cell type-related ontology term_
 
