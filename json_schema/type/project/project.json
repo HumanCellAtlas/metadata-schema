@@ -9,7 +9,7 @@
         "funders"
     ],
     "title": "Project",
-    "name": "project_False",
+    "name": "project",
     "type": "object",
     "properties": {
         "describedBy":  {
@@ -17,7 +17,7 @@
             "type": "string",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/project"
         },
-        "schema_version_Fails": {
+        "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",

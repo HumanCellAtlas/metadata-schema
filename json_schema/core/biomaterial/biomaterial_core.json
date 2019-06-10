@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components.",
     "additionalProperties": false,
     "required": [
@@ -21,7 +21,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "biomaterial_id_fails":{
+        "biomaterial_id":{
             "description": "A unique ID for the biomaterial.",
             "type": "string",
             "user_friendly": "Biomaterial ID"
