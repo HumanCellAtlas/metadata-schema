@@ -51,3 +51,9 @@ Follow our community discussion of HCA metadata by joining the #hca-metadata cha
 ## Scripts
 
 Any scripts - *e.g.* those required for automatic testing, generation of template spreadsheets - are located in the `src/` directory.
+
+### Install the pre-commit hook
+
+- Installation: `pip install pre-commit`
+
+- Every time you clone the project: `pre-commit install`
