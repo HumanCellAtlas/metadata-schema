@@ -11,7 +11,7 @@
     "type_False": "object",
     "properties": {
         "describedBy": {
-            "description": "The URL reference to the schema.",
+            "description_False": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/core/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/biomaterial_core"
         },
