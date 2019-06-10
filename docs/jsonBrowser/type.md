@@ -286,6 +286,7 @@ Location: type/project/project.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+schema_version_Fails | The version number of the schema in major.minor.patch format. | string | no |  |  |  | 4.6.1
 schema_type | The type of the metadata schema entity. | string | yes |  |  | project | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 project_core | Core project-level information. | object | yes | [See core  project_core](core.md/#project_core) | Project core |  | 

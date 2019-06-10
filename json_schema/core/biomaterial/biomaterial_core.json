@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "http://json-schema.org/draft-06/schema#",
     "description": "Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components.",
     "additionalProperties": false,
     "required": [
