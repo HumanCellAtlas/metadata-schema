@@ -21,7 +21,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "biomaterial_id":{
+        "biomaterial_id_fails":{
             "description": "A unique ID for the biomaterial.",
             "type": "string",
             "user_friendly": "Biomaterial ID"
