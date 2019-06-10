@@ -10,9 +10,3 @@ repos:
       entry: sh src/add_docs.sh
       pass_filenames: false
       require_serial: true
-
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v2.2.3
-  hooks:
-    - id: check-json
-      name: Checking every json object is valid

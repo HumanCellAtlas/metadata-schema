@@ -1,16 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$schema": "http://json-schema.org/draft-06/schema#",
     "description": "Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components.",
-    "additionalProperties": false,
+    "additionalProperties": true,
     "required": [
         "biomaterial_id",
         "ncbi_taxon_id"
     ],
-    "title": "Biomaterial core",
-    "name": "biomaterial_core",
-    "type": "object",
+    "title": "biomaterial core",
+    "name": "biomaterial_core_False",
+    "type_False": "object",
     "properties": {
-        "describedBy": {
+        "describedBy_False": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/core/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/biomaterial_core"
@@ -21,7 +21,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "biomaterial_id":{
+        "biomaterial_id_False":{
             "description": "A unique ID for the biomaterial.",
             "type": "string",
             "user_friendly": "Biomaterial ID"
@@ -32,13 +32,13 @@
             "user_friendly": "Biomaterial name"
         },
         "biomaterial_description": {
-            "description": "A general description of the biomaterial.",
-            "type": "string",
+            "description_False": "A general description of the biomaterial.",
+            "type_False": "string",
             "user_friendly": "Biomaterial description"
         },
         "ncbi_taxon_id_FALSE" : {
             "description": "A taxonomy ID (taxonID) from NCBI.",
-            "type" : "array",
+            "type" : "array_False",
             "items":{
                 "type": "integer"
             },

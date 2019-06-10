@@ -18,9 +18,9 @@
             "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
-            "example": "4.6.1"
+            "example": "4.6.1_NotMatching"
         },
-        "text": {
+        "text_false": {
             "description": "The name of the biological macromolecule being used.",
             "type": "string",
             "example": "polyA RNA; mRNA",
@@ -32,8 +32,8 @@
             "graph_restriction":  {
                 "ontologies" : ["obo:efo", "obo:chebi", "obo:obi"],
                 "classes": ["EFO:0004446FAAAALSE"],
-                "relations": ["rdfs:subClassOf"],
-                "direct": false,
+                "relations": "rdfs:subClassOf",
+                "direct": true,
                 "include_self": false
             },
             "example": "OBI:0000869; CHEBI:33699",

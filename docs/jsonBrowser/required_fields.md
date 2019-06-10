@@ -16,10 +16,9 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 project_short_name | A short name for the project. | string |  | Project label |  | CoolOrganProject.
 project_title | An official title for the project. | string |  | Project title |  | Study of single cells in the human body.
 project_description | A longer description of the project which includes research goals and experimental approach. | string |  | Project description |  | 
-### Biomaterial core<a name='Biomaterial core'></a>
+### biomaterial core<a name='biomaterial core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-biomaterial_id | A unique ID for the biomaterial. | string |  | Biomaterial ID |  | 
 ### Process core<a name='Process core'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -299,7 +298,6 @@ text | The name of a mass unit being used. | string |  | Mass unit |  | kilogram
 ### Biological macromolecule ontology<a name='Biological macromolecule ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the biological macromolecule being used. | string |  | Biological macromolecule |  | polyA RNA; mRNA
 ### Cell type ontology<a name='Cell type ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

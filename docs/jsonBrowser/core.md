@@ -43,17 +43,18 @@ project_short_name | A short name for the project. | string | yes |  | Project l
 project_title | An official title for the project. | string | yes |  | Project title |  | Study of single cells in the human body.
 project_description | A longer description of the project which includes research goals and experimental approach. | string | yes |  | Project description |  | 
 
-## Biomaterial core<a name='Biomaterial core'></a>
+## biomaterial core<a name='biomaterial core'></a>
 _Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components._
 
 Location: core/biomaterial/biomaterial_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-biomaterial_id | A unique ID for the biomaterial. | string | yes |  | Biomaterial ID |  | 
+describedBy_False | The URL reference to the schema. | string | no |  |  |  | 
+biomaterial_id_False | A unique ID for the biomaterial. | string | no |  | Biomaterial ID |  | 
 biomaterial_name | A short, descriptive name for the biomaterial that need not be unique. | string | no |  | Biomaterial name |  | 
-biomaterial_description | A general description of the biomaterial. | string | no |  | Biomaterial description |  | 
-ncbi_taxon_id_FALSE | A taxonomy ID (taxonID) from NCBI. | array | no |  | NCBI taxon ID |  | 9606
+biomaterial_description |  |  | no |  | Biomaterial description |  | 
+ncbi_taxon_id_FALSE | A taxonomy ID (taxonID) from NCBI. | array_False | no |  | NCBI taxon ID |  | 9606
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele; HLA-B*3901 allele
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | sample_site_image.jpg
 biosamples_accession | A BioSamples accession. | string | no |  | BioSamples accession |  | SAMN00000000
