@@ -18,7 +18,7 @@
             "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
-            "example": "4.6.1ABC"
+            "example": "4.6.1"
         },
         "protocol_id":{
             "description": "A unique ID for the protocol.",
