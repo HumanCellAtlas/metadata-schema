@@ -50,7 +50,6 @@ Location: core/biomaterial/biomaterial_core.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-describedBy_False | The URL reference to the schema. | string | no |  |  |  | 
 biomaterial_id_False | A unique ID for the biomaterial. | string | no |  | Biomaterial ID |  | 
 biomaterial_name | A short, descriptive name for the biomaterial that need not be unique. | string | no |  | Biomaterial name |  | 
 biomaterial_description |  |  | no |  | Biomaterial description |  | 
