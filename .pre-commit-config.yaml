@@ -4,16 +4,9 @@ repos:
 - repo: local
   hooks:
 
-    - id: human_readable_json
-      name: Building human-readable JSON documents
-      language: python
-      language_version: python3
-      entry: python src/human_readable_json.py
-      require_serial: false
-
     - id: add_docs
-      name: Adding generated markdown docs to commit
+      name: Building human-readable JSON documents
       language: system
       entry: sh src/add_docs.sh
       pass_filenames: false
-      require_serial: false
+      require_serial: true

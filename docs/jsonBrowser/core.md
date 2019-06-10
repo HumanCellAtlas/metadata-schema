@@ -53,7 +53,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 biomaterial_id | A unique ID for the biomaterial. | string | yes |  | Biomaterial ID |  | 
 biomaterial_name | A short, descriptive name for the biomaterial that need not be unique. | string | no |  | Biomaterial name |  | 
 biomaterial_description | A general description of the biomaterial. | string | no |  | Biomaterial description |  | 
-ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | array | yes |  | NCBI taxon ID |  | 9606
+ncbi_taxon_id_FALSE | A taxonomy ID (taxonID) from NCBI. | array | no |  | NCBI taxon ID |  | 9606
 genotype | Genotype of the biomaterial. | string | no |  | Genotype |  | DRB1 0401 protective allele; HLA-B*3901 allele
 supplementary_files | A list of filenames of biomaterial-level supplementary files. | array | no |  | Supplementary files |  | sample_site_image.jpg
 biosamples_accession | A BioSamples accession. | string | no |  | BioSamples accession |  | SAMN00000000

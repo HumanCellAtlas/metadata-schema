@@ -36,7 +36,7 @@
             "type": "string",
             "user_friendly": "Biomaterial description"
         },
-        "ncbi_taxon_id" : {
+        "ncbi_taxon_id_FALSE" : {
             "description": "A taxonomy ID (taxonID) from NCBI.",
             "type" : "array",
             "items":{
