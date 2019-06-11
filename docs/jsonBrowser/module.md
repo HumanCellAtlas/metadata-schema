@@ -182,6 +182,17 @@ text | The name of the strain to which the organism belongs. | string | yes |  |
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Strain ontology ID |  | EFO:0004472; EFO:0000602
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Strain ontology label |  | C57BL/6; BALB/c
 
+## File format ontology<a name='File format ontology'></a>
+_A term that may be associated with a file format-related ontology term_
+
+Location: module/ontology/file_format_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the file format. | string | yes |  | File format |  | fastq; JSON
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | format:3464; format:1930
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | File format ontology label |  | polyA RNA; messenger RNA
+
 ## Enrichment ontology<a name='Enrichment ontology'></a>
 _A term that may be associated with a process-related ontology term_
 

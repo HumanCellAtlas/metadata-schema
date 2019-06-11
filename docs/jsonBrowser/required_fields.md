@@ -269,6 +269,10 @@ text | The text for the term as the user provides it. | string |  | Disease |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the strain to which the organism belongs. | string |  | Strain |  | C57BL/6; BALB/c
+### File format ontology<a name='File format ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of the file format. | string |  | File format |  | fastq; JSON
 ### Enrichment ontology<a name='Enrichment ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
