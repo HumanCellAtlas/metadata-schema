@@ -30,7 +30,7 @@
         "cold_perfused": {
             "description": "Whether perfusion with cold fluid was used to help preserve tissues before heart stopped.",
             "type": "boolean",
-            "user_friendly": "Cold perfused?",
+            "user_friendly": "Cold perfused",
             "example": "Should be one of: yes, no.",
             "guidelines": "Enter yes if cold perfused. Otherwise, enter no."
         },  
@@ -85,7 +85,7 @@
                 "no",
                 "unknown"
             ],
-            "user_friendly": "Normothermic regional perfusion?",
+            "user_friendly": "Normothermic regional perfusion",
             "example": "Should be one of: yes, no, or unknown.",
             "guidelines": "Enter yes if entire body (but not limbs) was perfused with warm oxygenated blood. Otherwise, enter no."
         }

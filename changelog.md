@@ -9,6 +9,150 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [system/provenance.json - v1.0.4] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v3.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/file/reference_file.json - v3.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/file/sequence_file.json - v9.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/process/analysis/analysis_process.json - v11.0.2] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/biomaterial/organoid.json - v11.1.2] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/file/image_file.json - v2.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/biomaterial/cell_line.json - v14.3.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.1.2] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/file/supplementary_file.json - v2.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/biomaterial/donor_organism.json - v15.3.2] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/biomaterial/cell_suspension.json - v13.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/analysis/analysis_protocol.json - v9.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/biomaterial/specimen_from_organism.json - v10.2.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/process/process.json - v9.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/project/project.json - v14.0.2] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v2.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.3] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.2] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/protocol.json - v7.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/biomaterial/imaged_specimen.json - v3.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/file/analysis_file.json - v6.0.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v2.1.1] - 2019-06-04
+### Added
+Added user friendly names to fields submission_date, update_date, accession, submitter_id, document_id, updater_id. Fixes #989
+
+### [module/protocol/channel.json - v2.0.4] - 2019-05-30
+### Changed
+Changed multiplexed property friendly name. Fixes #963
+
+### [module/project/contact.json - v8.0.1] - 2019-05-30
+### Changed
+Changed corresponding_contributor property friendly name. Fixes #963
+
+### [module/biomaterial/death.json - v5.5.1] - 2019-05-30
+### Changed
+Changed normothermic_regional_perfusion and cold_perfused friendly names. Fixes #963
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.1] - 2019-05-30
+### Changed
+Changed paired_end property friendly name. Fixes #963
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.1.1] - 2019-05-30
+### Changed
+Changed pluripotency_vector_removed property friendly name. Fixes #963
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.2] - 2019-05-30
+### Changed
+Changed overlapping_tiles property friendly name. Fixes #963
+
+### [type/biomaterial/donor_organism.json - v15.3.1] - 2019-05-30
+### Changed
+Changed is_living property friendly name. Fixes #963
+
+### [type/biomaterial/organoid.json - v11.1.1] - 2019-05-30
+### Changed
+Changed embedded_in_matrigel property friendly name. Fixes #963
+
+### [type/project/project.json - v14.0.1] - 2019-05-30
+### Changed
+Changed corresponding_contributor property friendly name. Fixes #963
+
 ### [type/protocol/imaging/imaging_protocol.json - v11.1.1] - 2019-05-15
 ### Fixed
 Fixed probe field where relevant in the imaging_protocol. Fixes #980.
