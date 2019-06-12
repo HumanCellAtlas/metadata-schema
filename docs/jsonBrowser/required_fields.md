@@ -244,6 +244,7 @@ text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; 
 ### Cellular component ontology<a name='Cellular component ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
+text | The name of a subcellular structure. | string |  | Subcellular structure |  | cytoplasm; nucleus
 ### Library construction ontology<a name='Library construction ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

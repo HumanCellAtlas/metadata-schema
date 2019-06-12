@@ -112,7 +112,7 @@ Location: module/ontology/cellular_component_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-textorine | The name of a subcellular structure. | string | no |  | Subcellular structure |  | cytoplasm; nucleus
+text | The name of a subcellular structure. | string | yes |  | Subcellular structure |  | cytoplasm; nucleus
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Subcellular structure ontology ID |  | GO:0005737; GO:0005634
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Subcellular structure ontology label |  | cytoplasm; nucleus
 
