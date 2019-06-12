@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A term that may be associated with a file format-related ontology term",
+    "description": "A term that may be associated with a file format-related ontology term.",
     "additionalProperties": false,
     "required": [
         "text"
@@ -23,7 +23,7 @@
         "text": {
             "description": "The name of the file format.",
             "type": "string",
-            "example": "fastq; JSON",
+            "example": "FASTQ; JSON",
             "user_friendly": "File format"
         },
         "ontology": {
@@ -36,13 +36,13 @@
                 "direct": false,
                 "include_self": false
             },
-            "example": "format:3464; format:1930",
+            "example": "format:1930; format:3464",
             "user_friendly": "File format ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
-            "example": "fastq; JSON",
+            "example": "FASTQ; JSON",
             "user_friendly": "File format ontology label"
         }
     }

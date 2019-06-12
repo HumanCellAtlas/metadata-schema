@@ -272,7 +272,7 @@ text | The name of the strain to which the organism belongs. | string |  | Strai
 ### File format ontology<a name='File format ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The name of the file format. | string |  | File format |  | fastq; JSON
+text | The name of the file format. | string |  | File format |  | FASTQ; JSON
 ### Enrichment ontology<a name='Enrichment ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
