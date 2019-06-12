@@ -87,7 +87,7 @@
             "user_friendly": "Cell line type"
         },
         "model_organ": {
-            "description": "Organ for which this cell line is a model000000000.",
+            "description": "Organ for which this cell line is a model00000000.",
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
             "user_friendly": "Organ model"
