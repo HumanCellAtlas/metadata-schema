@@ -20,7 +20,7 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "text": {
+        "textorine": {
             "description": "The name of a subcellular structure.",
             "type": "string",
             "user_friendly": "Subcellular structure",
