@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/ontology/file_content_ontology,patch,"Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037",,
