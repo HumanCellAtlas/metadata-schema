@@ -191,7 +191,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of the file format. | string | yes |  | File format |  | fastq; JSON
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | format:3464; format:1930
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | File format ontology label |  | polyA RNA; messenger RNA
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | File format ontology label |  | fastq; JSON
 
 ## Enrichment ontology<a name='Enrichment ontology'></a>
 _A term that may be associated with a process-related ontology term_
