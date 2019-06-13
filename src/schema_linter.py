@@ -65,6 +65,8 @@ class SchemaLinter:
             if prop not in schema.keys():
                 errors.append(schema_filename + ".json: Missing required schema field `" + prop + "`.")
 
+
+
         # additionalProperties must be set to false
         if "additionalProperties" in schema and schema['additionalProperties'] == True:
             errors.append("Schema " + schema_filename + ".json should not allow additional properties.")
@@ -72,6 +74,11 @@ class SchemaLinter:
         # $schema must be set to draft-07
         if "$schema" in schema and schema['$schema'] != "http://json-schema.org/draft-07/schema#":
             errors.append(schema_filename + ".json: Must have $schema set to http://json-schema.org/draft-07/schema#.")
+
+        # description should be a sentence - start with capital letter and end with full stop
+        if 'description' in schema and not re.match('^[A-Z][^?!]*[.]$',schema['description']):
+            warnings.append(schema_filename + ".json: The `description` of the schema is not a sentence (" +
+                            schema['description'] + ").")
 
         # Schema filename must match name of the schema in the describedBy URL
         if "describedBy" in schema and properties['describedBy']['pattern'].split("/")[-1] != schema_filename:
