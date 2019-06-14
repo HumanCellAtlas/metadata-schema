@@ -268,6 +268,10 @@ text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | General description of the contents of the file. | string |  | Content description |  | DNA sequence (raw); Sequence alignment
+### File format ontology<a name='File format ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of the file format. | string |  | File format |  | FASTQ; JSON
 ### Instrument ontology<a name='Instrument ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

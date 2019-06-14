@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2019-06-10T13:35:07Z",
+    "last_update_date": "2019-06-13T11:58:58Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -42,6 +42,7 @@
                 "enrichment_ontology": "1.2.5",
                 "ethnicity_ontology": "5.3.8",
                 "file_content_ontology": "1.0.0",
+                "file_format_ontology": "1.0.0",
                 "instrument_ontology": "5.3.5",
                 "length_unit_ontology": "5.3.4",
                 "library_amplification_ontology": "1.2.4",

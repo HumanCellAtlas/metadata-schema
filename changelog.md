@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/file_format_ontology.json - v1.0.0] - 2019-06-13
+### Added
+Added new ontology module. Partially fixes #812
+
 ### [core/file/file_core.json - v6.1.0] - 2019-06-10
 ### Added
 Added content_description field. Fixes #542.
