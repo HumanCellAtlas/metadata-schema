@@ -54,4 +54,6 @@ Any scripts - *e.g.* those required for automatic testing, generation of templat
 
 ### Install the pre-commit hook
 
-From within the root directory of this repo, run `ln -s .githooks/pre-commit .git/hooks/pre-commit`.
+- Installation: `pip install pre-commit`
+
+- Every time you clone the project: `pre-commit install`
