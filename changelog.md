@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/ontology/file_format_ontology.json - v1.0.0] - 2019-06-13
 ### Added
 Added new ontology module. Partially fixes #812
@@ -38,8 +40,6 @@ Added content_description field. Fixes #542.
 ### [type/file/sequence_file.json - v9.1.0] - 2019-06-10
 ### Added
 Added content_description field. Fixes #542.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [system/provenance.json - v1.0.4] - 2019-06-04
 ### Added
