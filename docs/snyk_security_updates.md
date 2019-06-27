@@ -14,6 +14,7 @@ The people currently allowed to review and merge this PRs are:
 - @malloryfreeberg
 - @ESapenaVentura
 - @daniwelter
+- @simonjupp
 
 <!Anyone else?>
 
