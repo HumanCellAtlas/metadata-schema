@@ -7,6 +7,34 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/file_content_ontology.json - v1.0.1] - 2019-06-28
+### Fixed
+Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037
+
+### [type/file/analysis_file.json - v6.1.1] - 2019-06-28
+### Fixed
+Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037
+
+### [type/file/image_file.json - v2.1.1] - 2019-06-28
+### Fixed
+Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037
+
+### [core/file/file_core.json - v6.1.1] - 2019-06-28
+### Fixed
+Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037
+
+### [type/file/supplementary_file.json - v2.1.1] - 2019-06-28
+### Fixed
+Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037
+
+### [type/file/reference_file.json - v3.1.1] - 2019-06-28
+### Fixed
+Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037
+
+### [type/file/sequence_file.json - v9.1.1] - 2019-06-28
+### Fixed
+Fixed identifiers to be lower-cased in ontology classes and example. Fixes #1037
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/file_format_ontology.json - v1.0.0] - 2019-06-13
