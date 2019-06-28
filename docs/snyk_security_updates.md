@@ -37,26 +37,34 @@ The people currently allowed to review and merge this PRs are:
    
 1. Merge Pull Request to master
    
-   - Check that there are no conflicts, fix them if there are, and merge.
+   - Check that there are no conflicts, fix them if there are, and merge (Hint: there shouldn't be any, so check thoroughly)
    - **DO NOT DELETE BRANCH**
    
 1. Merge Pull Request to the other environments
    
+   <!-- IMPORTANT: SHOULD WE RUN THE TESTS FOR EACH ENVIRONMENT? -->
+   
    - Create a pull request, using the security branch as remote, to the following enviroments:
      
-     - `develop`
-     - `integration`
      - `staging`
+     - `integration`
+     - `develop`
    
-   - In order to do it, follow the next steps:
-     - If not in the branch, `git checkout <nameofsnykbranch>`
-     - `git push origin <environment>`
-     - Go to GitHub and press on `Compare and pull`
-     - Input the necessary information and label it with the `Security` label
-   
-   - Merge pull requests as indicated on the point 4.
-   
-1. Delete branch 
+   - In order to do it, repeat the next steps for each environment:
+     - Check out to snyk branch, make sure it's up to date in your computer and pull the environment branch into it:
+        - `git checkout <snyk-branch>`
+        - `git pull`
+        - `git pull origin <env>`
+     - If everything went correctly, you will be prompted to write a commit message. Leave it as it is and save-quit.
+     - Go to GitHub and compare the <env> branch with the <snyk> branch.
+        - Compare files in order to make sure only the security updates have been pushed.
+        - Write the same title/body of the pull request that snyk made to master. Label it with the `Security` label.
+        - Wait for the travis test to pass.
+        
+   - Merge pull requests as indicated in point 4.
+   - Repeat the procedure for each environment.
+  
+1. Delete branch.
       
 # Ticket structure
 
@@ -65,7 +73,7 @@ The people currently allowed to review and merge this PRs are:
 <!-- Please follow the next pattern for the title of the ticket: 
 [URGENT] High severity security issue - PR #<Number of PR>-->
 
-As per date \<Date\>, a high priority vulnerability has been detected in the dependencies of this repository. Updated to the recommended dependencies breaks the following tests:
+As per date \<Date\>, a high priority vulnerability has been detected in the dependencies of this repository. Update to the recommended dependencies breaks the following tests:
 
 - `test`
 
@@ -75,7 +83,7 @@ A fix is urgently needed.
 <!-- Please follow the next pattern for the title of the ticket: 
 low/medium severity security issue - PR #<Number of PR>-->
 
-As per date \<Date\>, a low priority vulnerability has been detected in the dependencies of this repository. Updated to the recommended dependencies breaks the following tests:
+As per date \<Date\>, a low priority vulnerability has been detected in the dependencies of this repository. Update to the recommended dependencies breaks the following tests:
 
 - `test`
 
