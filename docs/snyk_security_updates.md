@@ -6,15 +6,15 @@ Showcase the steps to merge a pull request made by the security bot (snyk) on vu
 
 First person to acknowledge the pull request made by the security bot should do either one of these two actions:
 
-- Take the PR if you are an allowed reviewer.
-- Ask someone from the list of allowed security commiters by posting a comment pinging that person.
+- If you are an allowed reviewer, assign yourself to the PR.
+- If you are not an allowed reviewer, ask someone from the list of allowed security committers to assign themselves to the PR by posting a comment pinging that person.
 
 The people currently allowed to review and merge this PRs are:
 
-- @malloryfreeberg
 - @ESapenaVentura
-- @daniwelter
 - @simonjupp
+- @diekhans
+- @willrockout
 
 <!Anyone else?>
 
@@ -22,7 +22,7 @@ The people currently allowed to review and merge this PRs are:
 
 1. Look at the security report.
    
-   - You should be able to find it somewhere?
+   - Available as a link under the snyk-bot PR, under the section `Vulnerabilities that will be fixed`.
    - In the report, you should be able to find the severity of the vulnerability. The higher the severity, the faster something should be done about it.
 
 1. Access the pull request opened by snyk.
@@ -44,7 +44,7 @@ The people currently allowed to review and merge this PRs are:
    
    <!-- IMPORTANT: SHOULD WE RUN THE TESTS FOR EACH ENVIRONMENT? -->
    
-   - Create a pull request, using the security branch as remote, to the following enviroments:
+   - Create a pull request, using the security branch as remote, to the following environments:
      
      - `staging`
      - `integration`
