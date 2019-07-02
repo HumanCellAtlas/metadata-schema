@@ -115,7 +115,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ### Primary release
 
-Anyone on the metadata team can trigger a primary release from develop to integration. Please note that the DCP-wide release from integration to staging happens each Wednesday. It is preferable to do a primary release no later than Monday so that any issues that might arise can be addressed without disrupting the DCP-wide release process.
+Anyone on the metadata team can trigger a primary release from develop to integration. Please note that the DCP-wide release from integration to staging happens each Wednesday (and a DCP-wide release from staging to production on Tuesday). It is preferable to do a **primary release from develop to integration on Thursday** (but no later than Friday) so that any issues that might arise with the integration tests can be addressed without disrupting the DCP-wide release process.
 
 1. **Check out** the integration branch and pull any changes to make sure it is up-to-date
 
