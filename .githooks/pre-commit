@@ -1,17 +1,24 @@
 #!/bin/sh
 #
 
-echo "Building docs"
+echo "1. Building docs"
 
 cd src
 
 python3 human_readable_json.py
 
-echo "Files built"
+echo "--> Files built"
 
 cd ..
 
 git add docs/jsonBrowser/*.md
 
-echo "Files added to commit"
+echo "--> Files added to commit"
 
+# echo "2. Linting schema files"
+
+# cd src
+
+# python3 schema_linter.py
+
+# echo "Schema files are linted"

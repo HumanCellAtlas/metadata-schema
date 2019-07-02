@@ -1,0 +1,12 @@
+fail_fast: true
+
+repos:
+- repo: local
+  hooks:
+
+    - id: generate_md_docs
+      name: Generating markdown documents
+      language: system
+      entry: sh .githooks/generate_md_docs.sh
+      pass_filenames: false
+      require_serial: true
