@@ -40,7 +40,9 @@ The people currently allowed to review and merge this PRs are:
 1. Merge Pull Request
    
    - Check that there are no conflicts, fix them if there are, and merge.
-   - If this is a high security issue, proceed to step 5. Else, go to step 6.
+   - Depending on the severity of the vulnerability, the next steps are:
+      - **High security vulnerability**: This patch needs to be applied to all environments as soon as possible. Proceed to step 5.
+      - **Low/Medium security vulnerability**: This patch is not urgent, so will get propagated from develop to `integration`, `staging` and `production` on their respective releases. Proceed to step 6.
    
 1. Merge Pull Request to the other environments
    
