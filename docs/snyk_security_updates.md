@@ -15,6 +15,7 @@ The people currently allowed to review and merge this PRs are:
 - @simonjupp
 - @diekhans
 - @willrockout
+- @rolando-ebi
 
 <!Anyone else?>
 
@@ -30,15 +31,16 @@ The people currently allowed to review and merge this PRs are:
    - Assign `Security` label to the PR
    - Check what tests use the dependencies changed by the bot.
    - `git checkout` to that branch to get the changes locally.
+   - Change the base branch to "develop"
 
 1. Check tests locally
    
    - Run the affected tests manually to check that they run fine. If any test has broken, avoid next steps and issue a ticket with the structure outlined at the end of this document.
    
-1. Merge Pull Request to master
+1. Merge Pull Request
    
-   - Check that there are no conflicts, fix them if there are, and merge (Hint: there shouldn't be any, so check thoroughly)
-   - **DO NOT DELETE BRANCH**
+   - Check that there are no conflicts, fix them if there are, and merge.
+   - If this is a high security issue, proceed to step 5. Else, go to step 6.
    
 1. Merge Pull Request to the other environments
    
@@ -46,9 +48,9 @@ The people currently allowed to review and merge this PRs are:
    
    - Create a pull request, using the security branch as remote, to the following environments:
      
-     - `staging`
      - `integration`
-     - `develop`
+     - `staging`
+     - `master`
    
    - In order to do it, repeat the next steps for each environment:
      - Check out to snyk branch, make sure it's up to date in your computer and pull the environment branch into it:
