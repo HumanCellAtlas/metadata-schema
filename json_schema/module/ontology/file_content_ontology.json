@@ -31,12 +31,12 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:edam"],
-                "classes": ["DATA:0006"],
+                "classes": ["data:0006"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
             },
-            "example": "DATA:3497; DATA:0863",
+            "example": "data:3497; data:0863",
             "user_friendly": "Content description ontology ID"
         },
         "ontology_label": {
