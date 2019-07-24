@@ -23,6 +23,20 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
+        "schema_major_version": {
+            "description": "The major version number of the schema.",
+            "type": "integer",
+            "pattern": "^[1-9]\\d*$",
+            "user_friendly": "Schema major version",
+            "example": "4"
+        },
+        "schema_minor_version": {
+            "description": "The minor version number of the schema.",
+            "type": "integer",
+            "pattern": "^\\d+$",
+            "user_friendly": "Schema minor version",
+            "example": "6"
+        },
         "schema_type": {
             "description": "The type of the metadata schema entity.",
             "type": "string",
