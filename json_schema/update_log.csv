@@ -1,5 +1,5 @@
 Schema,Change type,Change message,Version,Date
-module/ontology/contributor_role_ontology,patch,"Fixed description of schema. Fixes #1035.",,
+module/ontology/biological_macromolecule_ontology,patch,"Fixed description of schema. Fixes #1035.",,
 module/ontology/cell_cycle_ontology,patch,"Fixed description of schema. Fixes #1035.",,
 module/ontology/cell_type_ontology,patch,"Fixed description of schema. Fixes #1035.",,
 module/ontology/cellular_component_ontology,patch,"Fixed description of schema. Fixes #1035.",,
