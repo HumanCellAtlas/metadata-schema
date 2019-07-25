@@ -7,6 +7,186 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/biological_macromolecule_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/cell_cycle_ontology.json - v5.3.6] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/cell_type_ontology.json - v5.3.6] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/cellular_component_ontology.json - v1.0.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/development_stage_ontology.json - v5.3.6] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/disease_ontology.json - v5.3.8] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/enrichment_ontology.json - v1.2.6] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/ethnicity_ontology.json - v5.3.9] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/instrument_ontology.json - v5.3.6] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/length_unit_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/library_amplification_ontology.json - v1.2.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/library_construction_ontology.json - v1.2.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/mass_unit_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/microscopy_ontology.json - v1.0.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/organ_part_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/process_type_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/protocol_type_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/sequencing_ontology.json - v1.1.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/species_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/strain_ontology.json - v5.3.6] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/ontology/time_unit_ontology.json - v5.3.5] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/process/analysis/analysis_process.json - v11.0.3] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.1.4] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/biomaterial/cell_line.json - v14.3.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/biomaterial/cell_suspension.json - v13.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/protocol/probe.json - v1.1.1] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/biomaterial/donor_organism.json - v15.3.3] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/biomaterial/specimen_from_organism.json - v10.2.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/biomaterial/human_specific.json - v1.0.11] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.0.3] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/biomaterial/organoid.json - v11.1.3] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/biomaterial/cell_morphology.json - v6.1.7] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/biomaterial/imaged_specimen.json - v3.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/process/process.json - v9.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/analysis/analysis_protocol.json - v9.0.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/protocol.json - v7.0.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v3.0.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [type/file/reference_file.json - v3.1.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/biomaterial/mouse_specific.json - v1.0.8] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/biomaterial/timecourse.json - v2.0.2] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
+### [module/biomaterial/preservation_storage.json - v6.1.1] - 2019-07-25
+### Fixed
+Fixed description of schema. Fixes #1035.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/file_content_ontology.json - v1.0.1] - 2019-06-28
