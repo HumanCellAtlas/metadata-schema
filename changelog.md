@@ -7,6 +7,114 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [system/provenance.json - v1.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/protocol.json - v7.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/biomaterial_collection/differentiation_protocol.json - v2.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/biomaterial/cell_suspension.json - v13.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/file/reference_file.json - v3.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/biomaterial/organoid.json - v11.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/process/process.json - v9.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/file/analysis_file.json - v6.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/biomaterial_collection/ipsc_induction_protocol.json - v3.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/analysis/analysis_protocol.json - v9.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/file/sequence_file.json - v9.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/biomaterial_collection/aggregate_generation_protocol.json - v2.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/biomaterial_collection/enrichment_protocol.json - v3.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/sequencing/sequencing_protocol.json - v10.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/file/supplementary_file.json - v2.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/biomaterial/imaged_specimen.json - v3.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/biomaterial/donor_organism.json - v15.4.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/file/image_file.json - v2.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/project/project.json - v14.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/process/analysis/analysis_process.json - v11.1.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/biomaterial/cell_line.json - v14.4.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/protocol/imaging/imaging_protocol.json - v11.2.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
+### [type/biomaterial/specimen_from_organism.json - v10.3.0] - 2019-07-25
+### Added
+Added two optional fields to represent schema major and minor versions. Fixes #1076.
+
 ### [module/ontology/biological_macromolecule_ontology.json - v5.3.5] - 2019-07-25
 ### Fixed
 Fixed description of schema. Fixes #1035.

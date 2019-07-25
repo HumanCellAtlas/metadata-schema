@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-system/provenance,minor,"Added two optional fields to represent schema major and minor versions. Fixes #1076.",,
