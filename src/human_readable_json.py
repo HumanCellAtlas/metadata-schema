@@ -19,6 +19,7 @@ class MarkdownGenerator:
                                  "description of each schema, please refer to the relevant entity specification document._\n")
 
 
+    # Add the standard header stuff to the supplied file
     def _addBoilerPlate(self, file):
         file.write("## Common fields\n")
         file.write("_Fields common to all schemas in this document_\n")
@@ -34,6 +35,7 @@ class MarkdownGenerator:
         f = open(filename, 'r')
         return json.loads(f.read())
 
+    # run through all schemas for a given entity type (core, type or module) and convert properties to markdown tables
     def generateMarkdown(self, schemas, entity_type):
         file = open(base_json_browser_path + entity_type + ".md", "w")
         file.write("# " + entity_type.capitalize() + "\n")
@@ -46,6 +48,7 @@ class MarkdownGenerator:
 
             schema = self.get_json_from_file(path)
 
+            # module and core entities need an anchor tag in their title so they can't be linked to from the type entities
             if (entity_type == "module" or entity_type == "core"):
                 file.write("## " + schema["title"] + "<a name='" + schema["title"] + "'></a>\n")
                 self.required_file.write("### " + schema["title"] + "<a name='" + schema["title"] + "'></a>\n")
