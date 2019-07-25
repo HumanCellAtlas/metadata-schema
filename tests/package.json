@@ -4,7 +4,9 @@
   "description": "a series of tests for the HCA metadata",
   "main": "index.js",
   "scripts": {
-    "test": "mocha schema.test.js"
+    "test": "mocha schema.test.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -15,10 +17,12 @@
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "ramda": "^0.26.0",
-    "readdirp": "^3.0.0"
+    "readdirp": "^3.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
     "chai": "^4.2.0"
-  }
+  },
+  "snyk": true
 }
