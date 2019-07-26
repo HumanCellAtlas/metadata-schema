@@ -135,7 +135,7 @@ class VersionUpdater:
 
         return new_version
 
-
+    # find all schemas that reference "ref" as they will also need a version increment
     def _findDependentSchemas(self, ref):
         schemas = [os.path.join(dirpath, f)
                    for dirpath, dirnames, files in os.walk(self.path)
@@ -155,6 +155,7 @@ class VersionUpdater:
                         dependencies.append(d)
         return dependencies
 
+    # update any empty version numbers in the property_migrations.json file
     def updateMigrations(self, updatedVersions):
         migrationJson =  self._getJson(self.path + "/property_migrations.json")
 
