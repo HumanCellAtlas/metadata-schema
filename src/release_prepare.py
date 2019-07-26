@@ -73,8 +73,8 @@ class ReleasePrepare:
 
         return log_content
 
+    # build the change log content from the structured update log file
     def buildChangeLog(self, log_content):
-
         now = datetime.datetime.now()
         update_date = now.strftime("%Y-%m-%d")
 
@@ -96,7 +96,7 @@ class ReleasePrepare:
         self._saveUpdateLog(log_content)
 
 
-
+    # build the actual changelog.md file by putting the change log statements in log_insert below the [Unreleased]... line
     def _buildLogOutput(self, log_insert):
         change_log_file = self.schemafolder.replace("json_schema", "") + "/changelog.md"
         output = ""

@@ -5,8 +5,8 @@ ignore: {}
 patch:
   SNYK-JS-LODASH-450202:
     - elixir-jsonschema-validator > express-validator > lodash:
-        patched: '2019-07-04T00:52:42.104Z'
+        patched: '2019-07-04T04:37:29.606Z'
     - elixir-jsonschema-validator > request-promise > request-promise-core > lodash:
-        patched: '2019-07-04T00:52:42.104Z'
+        patched: '2019-07-04T04:37:29.606Z'
     - elixir-jsonschema-validator > winston > async > lodash:
-        patched: '2019-07-04T00:52:42.104Z'
+        patched: '2019-07-04T04:37:29.606Z'
