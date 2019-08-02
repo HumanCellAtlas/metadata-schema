@@ -71,7 +71,7 @@
         "insdc_sample_accession": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) sample accession.",
             "type": "string",
-            "pattern": "^[D|E|S]RS[0-9]+$",
+            "pattern": "^[DES]RS[0-9]+$",
             "user_friendly": "INSDC sample accession",
             "example": "SRS0000000",
             "guidelines": "Enter accession if sample has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRS, SRS, or ERS, respecitvely."
