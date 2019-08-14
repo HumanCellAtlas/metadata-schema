@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [system/provenance.json - v1.1.0] - 2019-07-25
 ### Added
 Added two optional fields to represent schema major and minor versions. Fixes #1076.
@@ -294,8 +296,6 @@ Fixed description of schema. Fixes #1035.
 ### [module/biomaterial/preservation_storage.json - v6.1.1] - 2019-07-25
 ### Fixed
 Fixed description of schema. Fixes #1035.
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/file_content_ontology.json - v1.0.1] - 2019-06-28
 ### Fixed
