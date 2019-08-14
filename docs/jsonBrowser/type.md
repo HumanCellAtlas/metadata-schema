@@ -233,7 +233,7 @@ validation_method | Method used to validate origin cell successfully differentia
 validation_result | Result confirming successful differentiation to target cell type. | string | no |  | Validation result |  | CD103 Positive; Nestin Positive; HCN4 Positive; CD11C Negative
 
 ## Imaging preparation protocol
-_Information about the preparation protocol of the imaged specimen used in an imaging experiment_
+_Information about the preparation protocol of the imaged specimen used in an imaging experiment._
 
 Location: type/protocol/imaging/imaging_preparation_protocol.json
 
@@ -254,7 +254,7 @@ fiducial_marker | Fiducial markers for the alignment of images taken across mult
 expansion_factor | Factor by which the imaged tissue was expanded in one dimension. | number | no |  | Expansion factor |  | 3
 
 ## Imaging Protocol
-_Information about the imaging protocol_
+_Information about the imaging protocol._
 
 Location: type/protocol/imaging/imaging_protocol.json
 
@@ -451,7 +451,7 @@ deviation_from_protocol | A deviation from the protocol provided. | string | no 
 insdc_experiment | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | object | no | [See module  insdc_experiment](module.md/#insdc_experiment) | INSDC experiment accession |  | 
 
 ## Analysis process
-_Information about the analysis process_
+_Information about the analysis process._
 
 Location: type/process/analysis/analysis_process.json
 
