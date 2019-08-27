@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-biomaterial_core,minor,"Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090",,
+core/biomaterial_core,minor,"Changed patgtern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090",,
