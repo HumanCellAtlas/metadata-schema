@@ -28,3 +28,5 @@ patch:
         patched: '2019-07-25T15:18:16.491Z'
     - snyk > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-07-25T15:18:16.491Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2019-08-28T14:19:19.718Z'
