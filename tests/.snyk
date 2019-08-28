@@ -10,3 +10,21 @@ patch:
         patched: '2019-07-04T04:37:29.606Z'
     - elixir-jsonschema-validator > winston > async > lodash:
         patched: '2019-07-04T04:37:29.606Z'
+    - snyk > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-25T15:18:16.491Z'
