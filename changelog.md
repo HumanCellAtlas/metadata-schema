@@ -7,6 +7,34 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [core/biomaterial/biomaterial_core.json - v8.2.0] - 2019-08-29
+### Changed
+Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
+
+### [type/biomaterial/specimen_from_organism.json - v10.4.0] - 2019-08-29
+### Changed
+Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
+
+### [type/biomaterial/cell_suspension.json - v13.3.0] - 2019-08-29
+### Changed
+Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
+
+### [type/biomaterial/imaged_specimen.json - v3.3.0] - 2019-08-29
+### Changed
+Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
+
+### [type/biomaterial/cell_line.json - v14.5.0] - 2019-08-29
+### Changed
+Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
+
+### [type/biomaterial/donor_organism.json - v15.5.0] - 2019-08-29
+### Changed
+Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
+
+### [type/biomaterial/organoid.json - v11.3.0] - 2019-08-29
+### Changed
+Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [system/provenance.json - v1.1.0] - 2019-07-25
