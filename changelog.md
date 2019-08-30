@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [core/biomaterial/biomaterial_core.json - v8.2.0] - 2019-08-29
 ### Changed
 Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
@@ -34,8 +36,6 @@ Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. F
 ### [type/biomaterial/organoid.json - v11.3.0] - 2019-08-29
 ### Changed
 Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [system/provenance.json - v1.1.0] - 2019-07-25
 ### Added
