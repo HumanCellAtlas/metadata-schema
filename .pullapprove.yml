@@ -5,9 +5,12 @@ version: 3
 
 # If this conditions are not met, it will throw the 'unmet_status'.
 pullapprove_conditions:
-- condition: "base.ref in ['integration', 'staging', 'master'] and labels in ['Security', 'release', 'hotfix']"
+- condition: "not any(['releases' in labels, 'hotfix' in labels])"
+  unmet_status: success
+  explanation: "Releases, security updates and hotfixes are allowed to merge in integration, staging and/or master"
+- condition: "base.ref == 'develop' or '[Snyk]' in title"
   unmet_status: failure
-  explanation: "Only releases, hotfixes and security updates are allowed to merge to environments higher than develop"
+  explanation: "No PRs from unknown branches can be merged into integration, staging or master"
 - condition: "'on hold' not in labels"
   unmet_status: pending
   explanation: "PR review is on hold"
@@ -25,13 +28,10 @@ notifications:
   if: "author_association == 'CONTRIBUTOR'" # Only contributing authors get this message
   comment: "The review is completed. Thanks @{{ author }}!"
 - when: pull_request.opened
-  if: "'[Snyk]' in title"   # Notify Enrique to assign security label
-  comment: "@ESapenaVentura please put the 'Security' label"
-- when: pull_request.opened
   if: "'content' in labels and 'major' in body" # Notify the DCP for a major update
   comment: |
     Major metadata schema update, pinging @maniarathi @aaclan-ebi @MDunitz @NoopDog @brianraymor
-    @jahilton @jychien @jlzamanian @samanehsan @hannes-ucsc @kislyuk . If No one objects, this will be merged on the
+    @jahilton @jychien @jlzamanian @samanehsan @hannes-ucsc @kislyuk . If no one objects, this will be merged on the
     following 5 working days.
 
 groups:
