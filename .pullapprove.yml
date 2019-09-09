@@ -5,7 +5,7 @@ version: 3
 
 # If this conditions are not met, it will throw the 'unmet_status'.
 pullapprove_conditions:
-- condition: "not any(['releases' in labels, 'hotfix' in labels])"
+- condition: "not any(['release' in labels, 'hotfix' in labels])"
   unmet_status: success
   explanation: "Releases, security updates and hotfixes are allowed to merge in integration, staging and/or master"
 - condition: "base.ref == 'develop' or '[Snyk]' in title"
