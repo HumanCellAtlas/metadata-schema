@@ -30,3 +30,8 @@ patch:
         patched: '2019-07-25T15:18:16.491Z'
     - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
         patched: '2019-08-29T00:57:31.483Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T04:37:30.202Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T04:37:30.202Z'
