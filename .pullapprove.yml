@@ -3,18 +3,20 @@ version: 3
 # The following line breaks the yml - 404 page not found error
 # extends: https://api.github.com/repos/example/pullapprove-config/contents/.pullapprove.yml
 
+# If this conditions are not met, it will throw the 'unmet_status'.
 pullapprove_conditions:
-- condition: "base.ref == 'develop'"
-  unmet_status: "failure"
-  explanation: "Review not required unless merging to develop"
+- condition: "not any(['release' in labels, 'hotfix' in labels])"
+  unmet_status: success
+  explanation: "Releases, security updates and hotfixes are allowed to merge in integration, staging and/or master"
+- condition: "base.ref == 'develop' or '[Snyk]' in title"
+  unmet_status: failure
+  explanation: "No PRs from unknown branches can be merged into integration, staging or master"
 - condition: "'on hold' not in labels"
-  unmet_status: "pending"
+  unmet_status: pending
   explanation: "PR review is on hold"
 - condition: "'*travis*' in statuses.successful"
-  unmet_status: "failure"
+  unmet_status: failure
   explanation: "Travis CI tests must pass before review starts"
-# TODO: Add condition for integration tests to be passing
-# - condition:
 
 notifications:
 - when: pull_request.opened
@@ -25,8 +27,30 @@ notifications:
 - when: pullapprove.approved
   if: "author_association == 'CONTRIBUTOR'" # Only contributing authors get this message
   comment: "The review is completed. Thanks @{{ author }}!"
+- when: pull_request.opened
+  if: "'content' in labels and 'major' in body" # Notify the DCP for a major update
+  comment: |
+    Major metadata schema update, pinging @maniarathi @aaclan-ebi @MDunitz @NoopDog @brianraymor
+    @jahilton @jychien @jlzamanian @samanehsan @hannes-ucsc @kislyuk . If no one objects, this will be merged on the
+    following 5 working days.
 
 groups:
+
+  snyk-security-patches:
+    conditions:
+    - "'[Snyk]' in title"
+    - "'Security' not in labels"
+    reviewers:
+      users:
+      - ESapenaVentura
+      - simonjupp
+      - diekhans
+      - willrockout
+      - rolando-ebi
+    reviews:
+      required: 1
+      request_order: shuffle
+
   metadata-updates-major-minor:  # group name
     conditions:  # the group is activated when all of these statements are true
     - "'*travis*' in statuses.succeeded"
@@ -35,13 +59,11 @@ groups:
     - "'content' in labels"
     reviewers:  # people who can approve for this group
       users:
-      - malloryfreeberg
-      - malloryfreeberg
-      - daniwelter
-      - daniwelter
       - zperova
-      - zperova
+      - mshadbolt
       - ESapenaVentura
+      - zperova
+      - mshadbolt
       - ESapenaVentura
       - willrockout
       - cjvillar
@@ -54,15 +76,14 @@ groups:
     - "'*travis*' in statuses.succeeded"
     - "base.ref == 'develop'"
     - "'patch' in body" # patch change is indicated in body of PR
+    - "'content' in labels"
     reviewers:
       users:
-      - malloryfreeberg
-      - malloryfreeberg
-      - daniwelter
-      - daniwelter
       - zperova
-      - zperova
+      - mshadbolt
       - ESapenaVentura
+      - zperova
+      - mshadbolt
       - ESapenaVentura
       - willrockout
       - cjvillar
@@ -70,6 +91,17 @@ groups:
       required: 1
       request_order: shuffle
 
-# TODO: Add a code review group
-#  code-review:
-
+  code-review:
+    conditions:
+    - "'*travis*' in statuses.succeeded"
+    - "base.ref == 'develop'"
+    - "'*.py' in files or '*.js' in files or '*.yml' in files"
+    reviewers:
+      users:
+      - mshadbolt
+      - ESapenaVentura
+      - willrockout
+      - cjvillar
+    reviews:
+      required: 1
+      request_order: shuffle
