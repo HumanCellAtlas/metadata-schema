@@ -9,7 +9,7 @@ jobs:
     python: 3.6
     script:
       - cd src
-      - python schema_linter.py --environment branch
+      - python schema_linter.py --environment "${ENVIRONMENT}"
 
   - stage: Schema tests
     language: node_js
