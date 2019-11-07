@@ -1,11 +1,16 @@
+env:
+  global:
+    - ENVIRONMENT=branch
+
 jobs:
   include:
   - stage: Schema linter
     language: python
     python: 3.6
     script:
-       - cd src
-       - python schema_linter.py
+      - cd src
+      - python schema_linter.py --environment TRAVIS_BRANCH
+
   - stage: Schema tests
     language: node_js
     node_js: 8
