@@ -18,7 +18,7 @@ labels: content
 * Updating field or schema descriptions
 * Updating field examples, guideliens, or user-friendly names
 * Adding new fields 
-* Type of change (Major/minor/patch-->
+* Type of change (Major/minor/patch) -->
 
 *e.g.*: I would like to add a new field - `random_integer` - to this schema to allow data contributors to assign a random integer to the cell line.
 
