@@ -1,7 +1,3 @@
-env:
-  global:
-    - ENVIRONMENT=branch
-
 jobs:
   include:
   - stage: Schema linter
