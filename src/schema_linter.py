@@ -38,8 +38,16 @@ ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations'
 
 graph_restriction_attributes = ['ontologies', 'classes', 'relations', 'direct', 'include_self']
 
-OLS_VALID_ENVIRONMENTS = ['dev', 'integration', 'staging']
+# Accepted environments and conversion for OLS API url
+
 ENVIRONMENTS = ['develop', 'integration', 'staging', 'master']
+
+OLS_ENVIRONMENT = {
+    "develop": "dev",
+    "integration": "integration",
+    "staging": "staging",
+    "master": "staging"
+}
 
 def argument_parser():
     # Create the parser, define arguments and return it
@@ -324,10 +332,7 @@ if __name__ == "__main__":
     # Define the environment, transforming 'develop' and 'master' to their respective OLS valid environment to
     # define the proper OLS API URL.
     arguments = argument_parser().parse_args(sys.argv[1:])
-    try:
-        environment = OLS_VALID_ENVIRONMENTS[ENVIRONMENTS.index(arguments.environment)]
-    except IndexError:
-        environment = OLS_VALID_ENVIRONMENTS[-1]
+    environment = OLS_ENVIRONMENT[arguments.environment]
     ols_api = 'https://ontology.{}.data.humancellatlas.org/api'.format(environment)
 
     schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
