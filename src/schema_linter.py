@@ -4,9 +4,9 @@ import os
 import re
 import json
 import sys
+import argparse
 from urllib.request import urlopen
 from urllib.error import HTTPError
-import os
 
 # Current working directory
 
@@ -38,14 +38,30 @@ ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations'
 
 graph_restriction_attributes = ['ontologies', 'classes', 'relations', 'direct', 'include_self']
 
-OLS_API_DEFAULT = 'https://ontology.dev.data.humancellatlas.org/api'
+# Accepted environments and conversion for OLS API url
+
+ENVIRONMENTS = ['develop', 'integration', 'staging', 'master']
+
+OLS_ENVIRONMENT = {
+    "develop": "dev",
+    "integration": "integration",
+    "staging": "staging",
+    "master": "staging"
+}
+
+def argument_parser():
+    # Create the parser, define arguments and return it
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--environment', '-e', type=str, dest='environment', help='environment the OLS API feeds on',
+                        default='staging', action='store', choices=ENVIRONMENTS)
+    return parser
 
 
 class SchemaLinter:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
 
-    def lintSchema(self, path):
+    def lintSchema(self, path, ols_api):
         schema = self.get_json_from_file(path)
         properties = schema['properties']
         schema_filename = path.split("/")[-1].split(".")[0]
@@ -271,7 +287,7 @@ class SchemaLinter:
                     checked_ontologies = {}
                     for ontology in properties['ontology']['graph_restriction']['ontologies']:
                         if ontology not in checked_ontologies:
-                            ols_ontologies_url = OLS_API_DEFAULT + '/ontologies/' + ontology.replace('obo:','')
+                            ols_ontologies_url = ols_api + '/ontologies/' + ontology.replace('obo:','')
 
                             try:
                                 urlopen(ols_ontologies_url)
@@ -285,7 +301,7 @@ class SchemaLinter:
 
                     #  graph_restrictions 'classes' must contain only ontology classes that are valid in the HCA ontology space
                     for parent_class in properties['ontology']['graph_restriction']['classes']:
-                        ols_search_url = OLS_API_DEFAULT + '/search?q=' + parent_class.replace('obo:', '') + "&exact=true&groupField=true&queryFields=obo_id"
+                        ols_search_url = ols_api + '/search?q=' + parent_class.replace('obo:', '') + "&exact=true&groupField=true&queryFields=obo_id"
 
                         json_url = urlopen(ols_search_url)
                         result = json.loads(json_url.read())
@@ -313,6 +329,11 @@ class SchemaLinter:
 
 
 if __name__ == "__main__":
+    # Define the environment, transforming 'develop' and 'master' to their respective OLS valid environment to
+    # define the proper OLS API URL.
+    arguments = argument_parser().parse_args(sys.argv[1:])
+    environment = OLS_ENVIRONMENT[arguments.environment]
+    ols_api = 'https://ontology.{}.data.humancellatlas.org/api'.format(environment)
 
     schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
     jsons = [os.path.join(dirpath, f)
@@ -331,7 +352,7 @@ if __name__ == "__main__":
     errors = []
     for s in schemas:
         if 'versions.json' not in s:
-            return_msg = linter.lintSchema(s)
+            return_msg = linter.lintSchema(s, ols_api)
             warnings.extend(return_msg[0])
             errors.extend(return_msg[1])
 
