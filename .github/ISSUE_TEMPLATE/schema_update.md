@@ -17,9 +17,12 @@ labels: content
 * Updating field names
 * Updating field or schema descriptions
 * Updating field examples, guideliens, or user-friendly names
-* Adding new fields -->
+* Adding new fields 
+* Type of change (Major/minor/patch) -->
 
 *e.g.*: I would like to add a new field - `random_integer` - to this schema to allow data contributors to assign a random integer to the cell line.
+
+This update constitutes a \<major/minor/patch> change to the schema(s) it affects.
 
 **What new field(s) need to be changed/added?**
 
