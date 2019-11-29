@@ -86,7 +86,7 @@
             },
             "example": "GSE00000",
             "user_friendly": "GEO series accession",
-            "guidelines": "Enter accession if project has been archived. Accession must start with GSE."
+            "guidelines": "Enter accession if project has been archived in GEO. Accession must start with GSE."
         },
         "array_express_accessions": {
             "description": "An ArrayExpress accession.",
@@ -97,7 +97,7 @@
             },
             "example": "E-AAAA-00",
             "user_friendly": "ArrayExpress accession",
-            "guidelines": "Enter accession if project has been archived. Accession must start with E-."
+            "guidelines": "Enter accession if project has been archived in ArrayExpress. Accession must start with E-."
         },
         "insdc_study_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) study accession.",
@@ -119,7 +119,7 @@
             },
             "example": "S-EXMP1; S-HCAS33",
             "user_friendly": "BioStudies accession",
-            "guidelines": "Enter accession if study has been archived."
+            "guidelines": "Enter accession if study has been archived in BioStudies."
         },
         "funders": {
             "description": "Funding source(s) supporting the project.",
