@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/project/project.json,major,Fixed INSDC accession swap and updated regex. Fixes #1167,,
+type/project/project,major,Fixed INSDC accession swap and updated regex. Fixes #1167,,
