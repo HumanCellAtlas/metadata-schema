@@ -71,7 +71,7 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "^PRJ[E|N|D][A-Z]\\d+$"
+                "pattern": "^PRJ[END][A-Z]\\d+$"
             },
             "example": "PRJNS000000",
             "user_friendly": "INSDC project accession",
