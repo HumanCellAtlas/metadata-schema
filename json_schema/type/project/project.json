@@ -104,7 +104,7 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "^[D|E|S]RP\\d+$"
+                "pattern": "^[DES]RP\\d+$"
             },
             "example": "SRP000000",
             "user_friendly": "INSDC study accession",
