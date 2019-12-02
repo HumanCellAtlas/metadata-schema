@@ -6,4 +6,4 @@ This directory contains examples of metadata spreadsheets that we currently use 
 
 *Disclaimer*: These are just examples, the HCA is capable of representing a wider set of experiments and collect more metadata from experiments.
 
-For any question, please contact the [wrangler team](mailto:wrangler-team@humancellatlas.org).
+For any question, please contact the [wrangler team](mailto:wrangler-team@data.humancellatlas.org).
