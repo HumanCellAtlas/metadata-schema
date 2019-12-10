@@ -569,8 +569,8 @@ Currently testing:
 **Property check**|Properties `describedBy` and `schema_version` must be present in each schema|description should be a sentence
  ||Properties `text`,  `ontology` and `ontology_label` must be present in each ontology schema|guidelines should be a sentence
  ||All type schemas must have corresponding `_core` property|Property should contain example attribute| 
- ||Property name must contain only lowercase letters, numbers and underscores|
- ||Property must contain description attribute|`_unit` properties should have matching property without `_unit`
+ ||Property name must contain only lowercase letters, numbers and underscores|`_unit` properties should have matching property without `_unit`
+ ||Property must contain description attribute|
  ||Property must contain user-friendly attribute (Only user-supplied fields)| 
  ||Property must contain type attribute| 
  ||type attribute must be set to one of the valid JSON types| 
