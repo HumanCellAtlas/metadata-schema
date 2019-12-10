@@ -550,44 +550,48 @@ Finally, if the list of valid values for a field is very long - for example more
 
 
 ## The schema linter
-Living in the repository there is a script to test the schema against these rules, to make sure they are followed thoroughly. Currently testing:
+Living in the repository there is a [script](https://github.com/HumanCellAtlas/metadata-schema/blob/master/src/schema_linter.py) to test the schema against these rules, to make sure they are followed thoroughly. These constraints are labeled as `must` (Will produce an error if not followed) or `should` (Will throw a warning if not followed). 
+
+Currently testing:
 
 
- |**Must**|**Should**| 
-:-----:|:-----:|:-----:|:-----:
-Schema check|All schema fields must be part of a list of allowed schema fields.|Description of schema should be a sentence| 
- |All required schema fields must be present in the schema.|Schema titles should be sentence-case| 
- |No additional properties| | 
- |Schema must be set to draft 07| | 
- |Schema filename must match the name of the schema provided in the URL| | 
- |Schema filename must match schema name field| | 
- |Schema type must be set to object| | 
- |All required fields must actually be in the schema| | 
-Property check|Properties `describedBy` and `schema\_version` must be present in each schema|description should be a sentence| 
- |"Properties `text`| `ontology` and `ontology\_label` must be present in each ontology schema"|guidelines should be a sentence
- |All type schemas must have corresponding \_core property|Property should contain example attribute| 
- |"Property name must contain only lowercase letters| numbers| and underscores"
- |Property must contain description attribute|\_unit properties should have matching property without \_unit| 
- |Property must contain user-friendly attribute (Only user-supplied fields)| | 
- |Property must contain type attribute| | 
- |type attribute must be set to one of the valid JSON types| | 
- |Property of type array must contain the attribute items| | 
- |Property of type array must contains the attribute items| | 
- |items must have either type or $ref attribute| | 
- |Property of type object must contains the attribute $ref| | 
- |format must be a valid JSON format| | 
- |pattern must be a valid regex| | 
- |example values must match regex pattern| | 
- |All $ref referenced schemas must exist| | 
-Ontology checks|Ontology field must have graph\_restriction property that is an object| | 
- |graph\_restriction property must contain all required attributes| | 
- |Attributes for graph\_restriction must be one of acceptable values| | 
- |graph\_restriction 'direct' attribute must be 'false'| | 
- |graph\_restriction 'include\_self' attribute must be 'false' or 'true'| | 
- |graph\_restriction 'relations' attribute must be a list| | 
- |graph\_restriction 'classes' attribute must be a list| | 
- |graph\_restriction 'ontologies' attribute must be a list| | 
- |"graph\_restriction 'relations' must at least contain item ""rdfs:subClassOf"""| | 
- |graph\_restriction 'ontologies' must contain ontologies that are valid within the HCA ontology space| | 
- |graph\_restrictions 'classes' must contain only ontology classes that are valid in the HCA ontology space| | 
- |All property attributes must be in the allowed list of property attributes| | 
+||**Must**|**Should**|
+:-----:|:-----:|:-----:|
+**Schema check**|All schema fields must be part of a list of allowed schema fields|Description of schema should be a sentence
+ ||All required schema fields must be present in the schema|Schema titles should be sentence-case
+ ||Schema must not have additional properties| 
+ ||Schema must be set to draft 07| 
+ ||Schema filename must match the name of the schema provided in the URL| 
+ ||Schema filename must match schema name field| 
+ ||Schema type must be set to object| | 
+ ||All required fields must actually be in the schema| | 
+ ||||
+**Property check**|Properties `describedBy` and `schema_version` must be present in each schema|description should be a sentence
+ ||Properties `text`,  `ontology` and `ontology_label` must be present in each ontology schema|guidelines should be a sentence
+ ||All type schemas must have corresponding `_core` property|Property should contain example attribute| 
+ ||Property name must contain only lowercase letters, numbers and underscores|
+ ||Property must contain description attribute|`_unit` properties should have matching property without `_unit`
+ ||Property must contain user-friendly attribute (Only user-supplied fields)| 
+ ||Property must contain type attribute| 
+ ||type attribute must be set to one of the valid JSON types| 
+ ||Property of type array must contain the attribute items| 
+ ||Property of type array must contains the attribute items| 
+ ||items must have either type or `$ref` attribute| 
+ ||Property of type object must contains the attribute $ref| 
+ ||format must be a valid JSON format| 
+ ||pattern must be a valid regex| 
+ ||example values must match regex pattern| 
+ ||All `$ref` referenced schemas must exist| 
+ ||||
+**Ontology check**|Ontology field must have graph\_restriction property that is an object| 
+ ||`graph_restriction` property must contain all required attributes| 
+ ||Attributes for `graph_restriction` must be one of acceptable values| 
+ ||`graph_restriction` 'direct' attribute must be `False`| 
+ ||`graph_restriction` 'include\_self' attribute must be `False` or `True`| 
+ ||`graph_restriction` 'relations' attribute must be a list| 
+ ||`graph_restriction` 'classes' attribute must be a list| 
+ ||`graph_restriction` 'ontologies' attribute must be a list| 
+ ||`graph_restriction` 'relations' must at least contain item `rdfs:subClassOf`| 
+ ||`graph_restriction` 'ontologies' must contain ontologies that are valid within the HCA ontology space| 
+ ||`graph_restriction` 'classes' must contain only ontology classes that are valid in the HCA ontology space| 
+ ||All property attributes must be in the allowed list of property attributes| 
