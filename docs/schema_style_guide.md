@@ -551,10 +551,9 @@ Finally, if the list of valid values for a field is very long - for example more
 
 
 ## Schema linter
-Living in the repository there is a [script](https://github.com/HumanCellAtlas/metadata-schema/blob/master/src/schema_linter.py) to test the schema against these rules, to make sure they are followed thoroughly. These constraints are labeled as `must` (Will produce an error if not followed) or `should` (Will throw a warning if not followed). 
+The schema linter uses a python script to ensure the rules of the schema style guide are followed. These rules are labeled as `must` (Will produce an error if not followed) or `should` (Will throw a warning if not followed). The script, [`schema_linter.py`](https://github.com/HumanCellAtlas/metadata-schema/blob/master/src/schema_linter.py), that performs these checks is in the [src folder](https://github.com/HumanCellAtlas/metadata-schema/blob/master/src/).
 
-Currently testing:
-
+Below is a list of rules that are currently tested:
 
 ||**Must**|**Should**|
 :------|:------|:------|
