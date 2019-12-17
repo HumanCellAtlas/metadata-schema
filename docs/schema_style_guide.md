@@ -6,6 +6,7 @@
 - [Schema style and formatting](#schema-style-and-formatting)
 - [Field style and formatting](#field-style-and-formatting)
 - [General rules](#general-rules)
+- [The schema linter](#schema-linter)
 
 ## Introduction
 
@@ -549,7 +550,7 @@ Instances when an *enum* is preferred over an ontology include:
 Finally, if the list of valid values for a field is very long - for example more than ten valid values - and does not have an appropriate ontology, a free text field is preferred as it means data submitters will not need to constantly validate against the enum (which can be frustrating).
 
 
-## The schema linter
+## Schema linter
 Living in the repository there is a [script](https://github.com/HumanCellAtlas/metadata-schema/blob/master/src/schema_linter.py) to test the schema against these rules, to make sure they are followed thoroughly. These constraints are labeled as `must` (Will produce an error if not followed) or `should` (Will throw a warning if not followed). 
 
 Currently testing:
