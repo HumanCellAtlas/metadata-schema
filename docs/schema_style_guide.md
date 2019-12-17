@@ -556,7 +556,7 @@ Currently testing:
 
 
 ||**Must**|**Should**|
-:-----:|:-----:|:-----:|
+:------|:------|:------|
 **Schema check**|All schema fields must be part of a list of allowed schema fields|Description of schema should be a sentence
  ||All required schema fields must be present in the schema|Schema titles should be sentence-case
  ||Schema must not have additional properties| 
