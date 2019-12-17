@@ -241,7 +241,7 @@ class SchemaLinter:
             for kw in properties[property].keys():
                 # Ontology field must have graph_restriction property that is an object
                 if property == 'ontology' and 'graph_restriction' not in properties[property].keys():
-                    rrors.append(schema_filename + ".json: Keyword `graph_restriction` missing from property `" + property + "`.")
+                    errors.append(schema_filename + ".json: Keyword `graph_restriction` missing from property `" + property + "`.")
 
                 if property == 'ontology' and kw == 'graph_restriction':
                     nested_keywords = properties[property][kw]
