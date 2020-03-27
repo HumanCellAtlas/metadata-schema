@@ -575,7 +575,6 @@ Below is a list of rules that are currently tested:
  ||Property must contain type attribute| 
  ||type attribute must be set to one of the valid JSON types| 
  ||Property of type array must contain the attribute items| 
- ||Property of type array must contains the attribute items| 
  ||items must have either type or `$ref` attribute| 
  ||Property of type object must contains the attribute $ref| 
  ||format must be a valid JSON format| 
