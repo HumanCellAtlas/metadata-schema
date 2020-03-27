@@ -71,55 +71,55 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "^[D|E|S]RP[0-9]+$"
+                "pattern": "^PRJ[END][A-Z]\\d+$"
             },
-            "example": "SRP000000",
+            "example": "PRJNS000000",
             "user_friendly": "INSDC project accession",
-            "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
+            "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with PRJD, PRJN, or PRJE, respectively."
         },
         "geo_series_accessions": {
             "description": "A Gene Expression Omnibus (GEO) series accession.",
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "^GSE.*$"
+                "pattern": "^GSE\\d+$"
             },
             "example": "GSE00000",
             "user_friendly": "GEO series accession",
-            "guidelines": "Enter accession if project has been archived. Accession must start with GSE."
+            "guidelines": "Enter accession if project has been archived in GEO. Accession must start with GSE."
         },
         "array_express_accessions": {
             "description": "An ArrayExpress accession.",
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "^E-....-.*$"
+                "pattern": "^E-[A-Z]{4}-\\d+$"
             },
             "example": "E-AAAA-00",
             "user_friendly": "ArrayExpress accession",
-            "guidelines": "Enter accession if project has been archived. Accession must start with E-."
+            "guidelines": "Enter accession if project has been archived in ArrayExpress. Accession must start with E-."
         },
         "insdc_study_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) study accession.",
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "^PRJ[E|N|D][a-zA-Z][0-9]+$"
+                "pattern": "^[DES]RP\\d+$"
             },
-            "example": "PRJNA000000",
+            "example": "SRP000000",
             "user_friendly": "INSDC study accession",
-            "guidelines": "Enter accession if study has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with PRJD, PRJN, or PRJE, respectively."
+            "guidelines": "Enter accession if study has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
         "biostudies_accessions": {
             "description": "A BioStudies study accession.",
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "^S-[A-Z]{4}[0-9]+$"
+                "pattern": "^S-[A-Z]{4}\\d+$"
             },
             "example": "S-EXMP1; S-HCAS33",
             "user_friendly": "BioStudies accession",
-            "guidelines": "Enter accession if study has been archived."
+            "guidelines": "Enter accession if study has been archived in BioStudies."
         },
         "funders": {
             "description": "Funding source(s) supporting the project.",
