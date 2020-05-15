@@ -19,11 +19,15 @@
       ],
       "properties": {
         "input_type": {
-          "description": "The type of the input entity, e.g 'cell_suspension'",
+          "description": "The type of the input entity",
+          "example": "cell_suspension",
+          "user_friendly": "Input type",
           "type": "string"
         },
         "input_id": {
           "description": "UUID of the input entity",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Input entity UUID",
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         }
@@ -37,11 +41,15 @@
       ],
       "properties": {
         "output_type": {
-          "description": "The type of the output entity, e.g 'sequence_file'",
+          "description": "The type of the output entity.",
+          "example": "sequence_file",
+          "user_friendly": "Output type",
           "type": "string"
         },
         "output_id": {
           "description": "UUID of the output entity",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Output entity UUID",
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         }
@@ -55,11 +63,15 @@
       ],
       "properties": {
         "protocol_type": {
-          "description": "The type of this protocol entity, e.g 'enrichment_protocol'",
+          "description": "The type of protocol entity.",
+          "example": "enrichment_protocol",
+          "user_friendly": "Protocol type",
           "type": "string"
         },
         "protocol_id": {
-          "description": "UUID of this protocol entity",
+          "description": "UUID of the protocol entity",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Protocol entity UUID",
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         }
@@ -77,10 +89,14 @@
       "properties": {
         "process_type": {
           "description": "The type of the process described by this link",
+          "example": "analysis",
+          "user_friendly": "Process type",
           "type": "string"
         },
         "process_id": {
           "description": "UUID of the process described by this link",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Process entity UUID",
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
