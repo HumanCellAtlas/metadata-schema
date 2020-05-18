@@ -13,6 +13,7 @@
   "definitions": {
     "input": {
       "type": "object",
+      "description": "An input to a process",
       "required": [
         "input_type",
         "input_id"
@@ -35,6 +36,7 @@
     },
     "output": {
       "type": "object",
+      "description": "An output from a process",
       "required": [
         "output_type",
         "output_id"
@@ -57,6 +59,7 @@
     },
     "protocol": {
       "type": "object",
+      "description": "A protocol used in a process",
       "required": [
         "protocol_type",
         "protocol_id"
