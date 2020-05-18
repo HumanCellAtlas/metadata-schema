@@ -20,7 +20,7 @@
       ],
       "properties": {
         "input_type": {
-          "description": "The type of the input entity.",
+          "description": "The concrete type of the input entity.",
           "example": "cell_suspension",
           "user_friendly": "Input type",
           "type": "string"
@@ -43,7 +43,7 @@
       ],
       "properties": {
         "output_type": {
-          "description": "The type of the output entity.",
+          "description": "The concrete type of the output entity.",
           "example": "sequence_file",
           "user_friendly": "Output type",
           "type": "string"
@@ -66,7 +66,7 @@
       ],
       "properties": {
         "protocol_type": {
-          "description": "The type of protocol entity.",
+          "description": "The concrete type of protocol entity.",
           "example": "enrichment_protocol",
           "user_friendly": "Protocol type",
           "type": "string"
@@ -91,7 +91,7 @@
       ],
       "properties": {
         "process_type": {
-          "description": "The type of the process described by this link.",
+          "description": "The concrete type of the process described by this link.",
           "example": "analysis",
           "user_friendly": "Process type",
           "type": "string"

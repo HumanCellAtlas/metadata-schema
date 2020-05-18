@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-system/links.json,major,"Changed properties for links to capture entire processes. Fixes #1278",,
+system/links,major,"Changed properties for links to capture entire processes. Fixes #1278",,
