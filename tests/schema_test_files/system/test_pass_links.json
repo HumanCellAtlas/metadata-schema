@@ -1,6 +1,6 @@
 {
   "describedBy": "https://schema.dev.data.humancellatlas.org/system/9.9.9/links.json",
-  "schema_type": "link_bundle",
+  "schema_type": "links",
   "links": [
     {
       "process_id": "b7a172d6-dbb1-41f3-8ae4-7807e1eca803",

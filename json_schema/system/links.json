@@ -145,7 +145,7 @@
       "description": "The type of the metadata schema entity.",
       "type": "string",
       "enum": [
-        "link_bundle"
+        "links"
       ]
     },
     "links": {
