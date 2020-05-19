@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [system/links.json - v2.0.0] - 2020-05-19
+### Changed
+Changed properties for links to capture entire processes. Fixes #1278
+
 ### [type/project/project.json - v15.0.0] - 2019-12-03
 ### Fixed
 Fixed INSDC accession swap and updated regex. Fixes #1167
