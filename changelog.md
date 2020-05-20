@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [system/links.json - v2.0.0] - 2020-05-20
+### Changed
+Changed properties for links to capture entire processes. Fixes #1278
+
 ### [core/biomaterial/biomaterial_core.json - v8.2.0] - 2019-08-29
 ### Changed
 Changed pattern match in fields 'insdc_sample_accession' and 'schema_version'. Fixes #1090
