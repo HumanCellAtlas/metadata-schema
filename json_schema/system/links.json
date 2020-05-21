@@ -1,82 +1,134 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "A schema for a links bundle.",
+  "description": "A schema for describing the links between entities in an experiment graph.",
   "additionalProperties": false,
   "required": [
     "describedBy",
-    "schema_type"
+    "schema_type",
+    "links"
   ],
   "title": "Links",
   "name": "links",
   "type": "object",
   "definitions": {
-    "protocol_links": {
+    "input": {
       "type": "object",
+      "description": "An input to a process",
+      "required": [
+        "input_type",
+        "input_id"
+      ],
       "properties": {
-        "protocol_type": {
-          "description": "Type of protocol entity.",
+        "input_type": {
+          "description": "The concrete type of the input entity.",
+          "example": "cell_suspension",
+          "user_friendly": "Input type",
           "type": "string"
         },
-        "protocol_id": {
-          "description": "UUID of the protocol entity.",
+        "input_id": {
+          "description": "UUID of the input entity.",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Input entity UUID",
           "type": "string",
           "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         }
       }
     },
-    "bundle_links": {
-         "type": "object",
-         "properties": {
-           "process" : {
-             "description": "UUID of the process entity.",
-             "type": "string",
-             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-           },
-           "inputs": {
-             "description": "Array of UUIDs for the input entities.",
-             "type": "array",
-             "items": {
-               "description": "UUID of the input entity.",
-               "type": "string",
-               "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-             }
-           },
-           "input_type": {
-             "description": "The type of the input entity.",
-             "type": "string",
-             "enum": [
-               "biomaterial",
-               "file"
-             ]
-           },
-           "outputs": {
-             "description": "Array of UUIDs for the output entities.",
-             "type": "array",
-             "items": {
-               "description": "UUID of the output entity.",
-               "type": "string",
-               "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-             }
-           },
-           "output_type": {
-             "description": "The type of the output entity.",
-             "type": "string",
-             "enum": [
-               "biomaterial",
-               "file"
-             ]
-           },
-           "protocols": {
-             "description": "Array of protocol entities.",
-             "type": "array",
-             "items": {
-               "description": "Type and UUID of a protocol entity.",
-               "type": "object",
-               "$ref": "system/links.json#/definitions/protocol_links"
-             }
-           }
-         }
+    "output": {
+      "type": "object",
+      "description": "An output from a process",
+      "required": [
+        "output_type",
+        "output_id"
+      ],
+      "properties": {
+        "output_type": {
+          "description": "The concrete type of the output entity.",
+          "example": "sequence_file",
+          "user_friendly": "Output type",
+          "type": "string"
+        },
+        "output_id": {
+          "description": "UUID of the output entity.",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Output entity UUID",
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        }
       }
+    },
+    "protocol": {
+      "type": "object",
+      "description": "A protocol used in a process",
+      "required": [
+        "protocol_type",
+        "protocol_id"
+      ],
+      "properties": {
+        "protocol_type": {
+          "description": "The concrete type of protocol entity.",
+          "example": "enrichment_protocol",
+          "user_friendly": "Protocol type",
+          "type": "string"
+        },
+        "protocol_id": {
+          "description": "UUID of the protocol entity.",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Protocol entity UUID",
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": [
+        "process_type",
+        "process_id",
+        "inputs",
+        "outputs",
+        "protocols"
+      ],
+      "properties": {
+        "process_type": {
+          "description": "The concrete type of the process described by this link.",
+          "example": "analysis",
+          "user_friendly": "Process type",
+          "type": "string"
+        },
+        "process_id": {
+          "description": "UUID of the process described by this link.",
+          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+          "user_friendly": "Process entity UUID",
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "inputs": {
+          "description": "An array of inputs for this link",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/input"
+          }
+        },
+        "outputs": {
+          "description": "An array of outputs for this link.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/output"
+          }
+        },
+        "protocols": {
+          "description": "An array of protocols for this link.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/protocol"
+          }
+        }
+      }
+    }
   },
   "properties": {
     "describedBy": {
@@ -93,7 +145,7 @@
       "description": "The type of the metadata schema entity.",
       "type": "string",
       "enum": [
-        "link_bundle"
+        "links"
       ]
     },
     "links": {
@@ -101,7 +153,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "system/links.json#/definitions/bundle_links"
+        "$ref": "#/definitions/link"
       }
     }
   }
