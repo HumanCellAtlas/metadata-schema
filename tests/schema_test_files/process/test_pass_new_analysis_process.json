@@ -10,7 +10,7 @@
   },
   "timestamp_start_utc": "2018-08-14T14:07:33.381Z",
   "timestamp_stop_utc": "2018-08-14T14:08:33.381Z",
-  "input_bundles": [
+  "input_files": [
     "f3942c14-2024-4756-9360-92d89d515c9b"
   ],
   "reference_bundle": "a57feb96-22d7-45ea-8376-91ace2ee9e81",
