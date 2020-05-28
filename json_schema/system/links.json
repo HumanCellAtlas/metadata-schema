@@ -80,7 +80,7 @@
         }
       }
     },
-    "link": {
+    "experiment_link": {
       "type": "object",
       "required": [
         "process_type",
@@ -128,32 +128,60 @@
           }
         }
       }
-    }
-  },
-  "properties": {
-    "describedBy": {
-      "description": "The URL reference to the schema.",
-      "type": "string",
-      "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/links"
     },
-    "schema_version": {
-      "description": "The version number of the schema in major.minor.patch format.",
-      "type": "string",
-      "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
-    },
-    "schema_type": {
-      "description": "The type of the metadata schema entity.",
-      "type": "string",
-      "enum": [
-        "links"
-      ]
-    },
-    "links": {
-      "description": "An array of linking objects.",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "#/definitions/link"
+    "supplementary_file_link": {
+      "type": "object",
+      "required": [
+        "inputs",
+        "file_entity_id"
+      ],
+      "properties": {
+        "inputs": {
+          "description": "An array of inputs for this link",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/input"
+          },
+          "supplementary_file_id": {
+            "description": "A link to a supplementary file uuid",
+            "type": "string"
+          }
+        },
+        "properties": {
+          "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/links"
+          },
+          "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
+          },
+          "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+              "links"
+            ]
+          },
+          "links": {
+            "description": "An array of linking objects.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/experiment_link"
+                },
+                {
+                  "$ref": "#/definitions/supplementary_file_link"
+                }
+              ]
+            }
+          }
+        }
       }
     }
   }

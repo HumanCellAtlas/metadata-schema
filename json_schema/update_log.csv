@@ -1,2 +1,3 @@
 Schema,Change type,Change message,Version,Date
-type/process/analysis/analysis_process,major,"Changed input_bundles field to input_files. Fixes #1275",,
+type/process/analysis/analysis_process,major,"Changed input_bundles field to input_files. Fixes #1275.",,
+system/links,minor,"Added supplementary_links. Fixes #1285.",,
