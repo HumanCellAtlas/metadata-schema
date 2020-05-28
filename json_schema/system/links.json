@@ -129,25 +129,70 @@
         }
       }
     },
+    "supplementary_file": {
+    "type": "object",
+      "required": [
+        "file_id",
+        "file_type"
+      ],
+      "properties": {
+         "file_id": {
+            "description": "ID for this supplementary file entity",
+            "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
+         "file_type": {
+           "description" : "concrete type of this supplementary file entity",
+           "type": "string",
+           "enum": [
+             "supplementary_file"
+           ]
+         }
+      }
+    },
+    "entity": {
+      "type": "object",
+      "required": [
+        "entity_id",
+        "entity_type"
+      ],
+      "properties": {
+         "entity_id": {
+            "description": "ID of this entity",
+            "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+             "type": "string",
+             "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+         },
+        "entity_type": {
+          "description": "The concrete type of this entity",
+          "type": "string"
+        }
+      }
+    },
     "supplementary_file_link": {
       "type": "object",
       "required": [
-        "inputs",
-        "file_entity_id"
+        "entity",
+        "supplementary_files"
       ],
       "properties": {
-        "inputs": {
-          "description": "An array of inputs for this link",
+        "entity": {
+          "description": "An entity that refers to this supplementary file",
+          "type": "object",
+          "$ref": "#/definitions/entity"
+        },
+        "supplementary_files": {
+          "description": "An array of supplementary files",
           "type": "array",
           "items": {
             "type": "object",
-            "$ref": "#/definitions/input"
-          },
-          "supplementary_file_id": {
-            "description": "A link to a supplementary file uuid",
-            "type": "string"
+            "$ref": "#/definitions/supplementary_file"
           }
-        },
+        }
+      }
+    }
+  },
         "properties": {
           "describedBy": {
             "description": "The URL reference to the schema.",
@@ -183,6 +228,3 @@
           }
         }
       }
-    }
-  }
-}
