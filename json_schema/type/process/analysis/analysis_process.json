@@ -188,7 +188,8 @@
                 "type": "string"
             },
             "user_friendly": "Input files",
-            "example": "b816d2d6-5f10-4447-4194-3d0a804454d6"
+            "example": "b816d2d6-5f10-4447-4194-3d0a804454d6",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
         },
         "timestamp_start_utc": {
             "description": "Initial start time of the full pipeline in UTC.",
