@@ -80,14 +80,15 @@
                 }
             }
         },
-        "experiment_link": {
+        "process_link": {
             "type": "object",
             "required": [
                 "process_type",
                 "process_id",
                 "inputs",
                 "outputs",
-                "protocols"
+                "protocols",
+                "link_type"
             ],
             "properties": {
                 "process_type": {
@@ -126,6 +127,13 @@
                         "type": "object",
                         "$ref": "#/definitions/protocol"
                     }
+                },
+                "link_type": {
+                    "description": "The type of this link.",
+                    "type": "string",
+                    "enum": [
+                        "process_link"
+                    ]
                 }
             }
         },
@@ -174,7 +182,8 @@
             "type": "object",
             "required": [
                 "entity",
-                "supplementary_files"
+                "supplementary_files",
+                "link_type"
             ],
             "properties": {
                 "entity": {
@@ -189,6 +198,13 @@
                         "type": "object",
                         "$ref": "#/definitions/supplementary_file"
                     }
+                },
+                "link_type": {
+                    "description": "The type of this link.",
+                    "type": "string",
+                    "enum": [
+                        "supplementary_file_link"
+                    ]
                 }
             }
         }
