@@ -1,15 +1,6 @@
 {
     "migrations": [
         {
-            "source_schema": "analysis_process",
-            "property": "input_bundles",
-            "target_schema": "analysis_process",
-            "replaced_by": "input_files",
-            "effective_from": "12.0.0",
-            "reason": "Field clarification",
-            "type": "renamed property"
-        },
-        {
             "source_schema": "cell_suspension",
             "property": "total_estimated_cells",
             "target_schema": "cell_suspension",
