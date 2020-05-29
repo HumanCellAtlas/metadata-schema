@@ -31,7 +31,16 @@
         "entity_type": "project",
         "entity_id": "589b7580-ce81-4a81-9c2c-872fcb23b7cd"
       },
-      "supplementary_files": []
+      "supplementary_files": [
+        {
+          "file_type": "supplementary_file",
+          "file_id": "8abc7580-ce81-4a81-9c2c-872fcb23b7cd"
+        },
+        {
+          "file_type": "supplementary_file",
+          "file_id": "cb377580-ce81-4a81-9c2c-872fcb23b7cd"
+        }
+      ]
     }
   ]
 
