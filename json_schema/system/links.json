@@ -234,7 +234,7 @@
                 "type": "object",
                 "oneOf": [
                     {
-                        "$ref": "#/definitions/experiment_link"
+                        "$ref": "#/definitions/process_link"
                     },
                     {
                         "$ref": "#/definitions/supplementary_file_link"
