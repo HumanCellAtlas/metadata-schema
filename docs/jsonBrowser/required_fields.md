@@ -197,11 +197,10 @@ process_core | Core process-level information. | object | [See core  process_cor
 type | The type of process. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run. | array |  | Input parameters |  | 
 tasks | Information about steps in the workflow. | array |  | Workflow tasks |  | 
-input_bundles | UUID(s) of the input bundle(s) used in running the pipeline. | array |  | Input bundles |  | b816d2d6-5f10-4447-4194-3d0a804454d6
+input_files | A list of references to the metadata entities that describe the individual input data files. | array |  | Input files |  | b816d2d6-5f10-4447-4194-3d0a804454d6
 timestamp_start_utc | Initial start time of the full pipeline in UTC. | string |  | Start timestamp (UTC) |  | 2018-01-21T09:34:27Z
 timestamp_stop_utc | Terminal stop time of the full pipeline in UTC. | string |  | Stop timestamp (UTC) |  | 2018-01-21T11:35:01Z
 analysis_run_type | Whether the analysis was run or was copied forward as an optimization. | string |  | Analysis run type | run, copy-forward | Should be one of: run, or copy-forward.
-reference_bundle | UUID of the bundle containing the reference used in running the pipeline. | string |  | Reference bundle |  | b816d2d6-5f10-4447-4194-3d0a804454d6
 ## Module
 ### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
