@@ -174,7 +174,10 @@
                 },
                 "entity_type": {
                     "description": "The concrete type of this entity",
-                    "type": "string"
+                    "type": "string",
+                    "enum": [
+                        "project"
+                    ]
                 }
             }
         },
