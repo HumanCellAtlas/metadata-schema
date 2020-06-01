@@ -10,7 +10,7 @@
         "timestamp_start_utc",
         "timestamp_stop_utc",
         "input_files",
-        "reference_bundle",
+        "reference_file",
         "tasks",
         "inputs",
         "analysis_run_type"
