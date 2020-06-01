@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/process/analysis/anlysis_process,major,"Changed bundle properties to files. Fixes #1275",,
