@@ -463,9 +463,8 @@ process_core | Core process-level information. | object | yes | [See core  proce
 type | The type of process. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run. | array | yes |  | Input parameters |  | 
 tasks | Information about steps in the workflow. | array | yes |  | Workflow tasks |  | 
-input_files | A list of references to the metadata entities that describe the individual input data files. | array | yes |  | Input files |  | b816d2d6-5f10-4447-4194-3d0a804454d6
 timestamp_start_utc | Initial start time of the full pipeline in UTC. | string | yes |  | Start timestamp (UTC) |  | 2018-01-21T09:34:27Z
 timestamp_stop_utc | Terminal stop time of the full pipeline in UTC. | string | yes |  | Stop timestamp (UTC) |  | 2018-01-21T11:35:01Z
 analysis_run_type | Whether the analysis was run or was copied forward as an optimization. | string | yes |  | Analysis run type | run, copy-forward | Should be one of: run, or copy-forward.
-reference_file | UUID of the file containing the reference used in running the pipeline. | string | yes |  | Reference file |  | b816d2d6-5f10-4447-4194-3d0a804454d6
+reference_files | UUID of the file containing the reference used in running the pipeline. | array | yes |  | Reference files |  | 
 
