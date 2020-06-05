@@ -9,12 +9,17 @@
         },
         {
             "source_schema": "analysis_process",
-            "property": "reference_bundle",
-            "target_schema": "analysis_process",
-            "replaced_by": "reference_files",
+            "property": "reference_files",
             "effective_from": "12.0.0",
-            "reason": "Field re-purposed for DCP2",
-            "type": "renamed property"
+            "reason": "Linking reference files to analysis process",
+            "type": "new required property"
+        },
+        {
+            "source_schema": "analysis_process",
+            "property": "reference_bundle",
+            "effective_from": "12.0.0",
+            "reason": "Field not used in DCP2",
+            "type": "deprecated property"
         },
         {
             "source_schema": "cell_suspension",
