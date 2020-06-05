@@ -14,6 +14,7 @@
         "input": {
             "type": "object",
             "description": "An input to a process",
+            "additionalProperties": false,
             "required": [
                 "input_type",
                 "input_id"
@@ -37,6 +38,7 @@
         "output": {
             "type": "object",
             "description": "An output from a process",
+            "additionalProperties": false,
             "required": [
                 "output_type",
                 "output_id"
@@ -60,6 +62,7 @@
         "protocol": {
             "type": "object",
             "description": "A protocol used in a process",
+            "additionalProperties": false,
             "required": [
                 "protocol_type",
                 "protocol_id"
@@ -82,6 +85,7 @@
         },
         "process_link": {
             "type": "object",
+            "additionalProperties": false,
             "required": [
                 "process_type",
                 "process_id",
@@ -143,6 +147,7 @@
                 "file_id",
                 "file_type"
             ],
+            "additionalProperties": false,
             "properties": {
                 "file_id": {
                     "description": "ID for this supplementary file entity",
@@ -165,6 +170,7 @@
                 "entity_id",
                 "entity_type"
             ],
+            "additionalProperties": false,
             "properties": {
                 "entity_id": {
                     "description": "ID of this entity",
@@ -185,9 +191,10 @@
             "type": "object",
             "required": [
                 "entity",
-                "supplementary_files",
+                "files",
                 "link_type"
             ],
+            "additionalProperties": false,
             "properties": {
                 "entity": {
                     "description": "An entity that refers to this supplementary file",
