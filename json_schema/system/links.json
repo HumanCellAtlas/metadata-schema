@@ -194,7 +194,7 @@
                     "type": "object",
                     "$ref": "#/definitions/entity"
                 },
-                "supplementary_files": {
+                "files": {
                     "description": "An array of supplementary files",
                     "type": "array",
                     "items": {
