@@ -207,7 +207,7 @@
             "example": "Should be one of: run, or copy-forward."
         },
         "reference_files": {
-            "description": "UUID of the file containing the reference used in running the pipeline.",
+            "description": "UUID of the file entities that contain the reference genome used in running the pipeline.",
             "type": "array",
             "items": {
                 "type": "string",
