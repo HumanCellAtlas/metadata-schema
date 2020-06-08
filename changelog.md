@@ -17,6 +17,10 @@ Fixed INSDC accession swap and updated regex. Fixes #1167
 ### Changed
 Changed reference_bundle properties to reference_files and removed input_bundles. Fixes #1275
 
+### [system/links.json - v2.1.0] - 2020-06-08
+### Added
+Added supplementary_links. Fixes #1285.
+
 ### [system/links.json - v2.0.0] - 2020-05-20
 ### Changed
 Changed properties for links to capture entire processes. Fixes #1278
