@@ -200,7 +200,7 @@ tasks | Information about steps in the workflow. | array |  | Workflow tasks |  
 timestamp_start_utc | Initial start time of the full pipeline in UTC. | string |  | Start timestamp (UTC) |  | 2018-01-21T09:34:27Z
 timestamp_stop_utc | Terminal stop time of the full pipeline in UTC. | string |  | Stop timestamp (UTC) |  | 2018-01-21T11:35:01Z
 analysis_run_type | Whether the analysis was run or was copied forward as an optimization. | string |  | Analysis run type | run, copy-forward | Should be one of: run, or copy-forward.
-reference_files | UUID of the file containing the reference used in running the pipeline. | array |  | Reference files |  | 
+reference_files | UUID of the file entities that contain the reference genome used in running the pipeline. | array |  | Reference files |  | 
 ## Module
 ### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
