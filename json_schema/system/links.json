@@ -1,160 +1,256 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "A schema for describing the links between entities in an experiment graph.",
-  "additionalProperties": false,
-  "required": [
-    "describedBy",
-    "schema_type",
-    "links"
-  ],
-  "title": "Links",
-  "name": "links",
-  "type": "object",
-  "definitions": {
-    "input": {
-      "type": "object",
-      "description": "An input to a process",
-      "required": [
-        "input_type",
-        "input_id"
-      ],
-      "properties": {
-        "input_type": {
-          "description": "The concrete type of the input entity.",
-          "example": "cell_suspension",
-          "user_friendly": "Input type",
-          "type": "string"
-        },
-        "input_id": {
-          "description": "UUID of the input entity.",
-          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
-          "user_friendly": "Input entity UUID",
-          "type": "string",
-          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-        }
-      }
-    },
-    "output": {
-      "type": "object",
-      "description": "An output from a process",
-      "required": [
-        "output_type",
-        "output_id"
-      ],
-      "properties": {
-        "output_type": {
-          "description": "The concrete type of the output entity.",
-          "example": "sequence_file",
-          "user_friendly": "Output type",
-          "type": "string"
-        },
-        "output_id": {
-          "description": "UUID of the output entity.",
-          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
-          "user_friendly": "Output entity UUID",
-          "type": "string",
-          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-        }
-      }
-    },
-    "protocol": {
-      "type": "object",
-      "description": "A protocol used in a process",
-      "required": [
-        "protocol_type",
-        "protocol_id"
-      ],
-      "properties": {
-        "protocol_type": {
-          "description": "The concrete type of protocol entity.",
-          "example": "enrichment_protocol",
-          "user_friendly": "Protocol type",
-          "type": "string"
-        },
-        "protocol_id": {
-          "description": "UUID of the protocol entity.",
-          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
-          "user_friendly": "Protocol entity UUID",
-          "type": "string",
-          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-        }
-      }
-    },
-    "link": {
-      "type": "object",
-      "required": [
-        "process_type",
-        "process_id",
-        "inputs",
-        "outputs",
-        "protocols"
-      ],
-      "properties": {
-        "process_type": {
-          "description": "The concrete type of the process described by this link.",
-          "example": "analysis",
-          "user_friendly": "Process type",
-          "type": "string"
-        },
-        "process_id": {
-          "description": "UUID of the process described by this link.",
-          "example": "111f222a-333b-444c-555d-eee63ddfccc7",
-          "user_friendly": "Process entity UUID",
-          "type": "string",
-          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-        },
-        "inputs": {
-          "description": "An array of inputs for this link",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "#/definitions/input"
-          }
-        },
-        "outputs": {
-          "description": "An array of outputs for this link.",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "#/definitions/output"
-          }
-        },
-        "protocols": {
-          "description": "An array of protocols for this link.",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "#/definitions/protocol"
-          }
-        }
-      }
-    }
-  },
-  "properties": {
-    "describedBy": {
-      "description": "The URL reference to the schema.",
-      "type": "string",
-      "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/links"
-    },
-    "schema_version": {
-      "description": "The version number of the schema in major.minor.patch format.",
-      "type": "string",
-      "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
-    },
-    "schema_type": {
-      "description": "The type of the metadata schema entity.",
-      "type": "string",
-      "enum": [
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A schema for describing the links between entities in an experiment graph.",
+    "additionalProperties": false,
+    "required": [
+        "describedBy",
+        "schema_type",
         "links"
-      ]
+    ],
+    "title": "Links",
+    "name": "links",
+    "type": "object",
+    "definitions": {
+        "input": {
+            "type": "object",
+            "description": "An input to a process",
+            "additionalProperties": false,
+            "required": [
+                "input_type",
+                "input_id"
+            ],
+            "properties": {
+                "input_type": {
+                    "description": "The concrete type of the input entity.",
+                    "example": "cell_suspension",
+                    "user_friendly": "Input type",
+                    "type": "string"
+                },
+                "input_id": {
+                    "description": "UUID of the input entity.",
+                    "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+                    "user_friendly": "Input entity UUID",
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                }
+            }
+        },
+        "output": {
+            "type": "object",
+            "description": "An output from a process",
+            "additionalProperties": false,
+            "required": [
+                "output_type",
+                "output_id"
+            ],
+            "properties": {
+                "output_type": {
+                    "description": "The concrete type of the output entity.",
+                    "example": "sequence_file",
+                    "user_friendly": "Output type",
+                    "type": "string"
+                },
+                "output_id": {
+                    "description": "UUID of the output entity.",
+                    "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+                    "user_friendly": "Output entity UUID",
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                }
+            }
+        },
+        "protocol": {
+            "type": "object",
+            "description": "A protocol used in a process",
+            "additionalProperties": false,
+            "required": [
+                "protocol_type",
+                "protocol_id"
+            ],
+            "properties": {
+                "protocol_type": {
+                    "description": "The concrete type of protocol entity.",
+                    "example": "enrichment_protocol",
+                    "user_friendly": "Protocol type",
+                    "type": "string"
+                },
+                "protocol_id": {
+                    "description": "UUID of the protocol entity.",
+                    "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+                    "user_friendly": "Protocol entity UUID",
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                }
+            }
+        },
+        "process_link": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "process_type",
+                "process_id",
+                "inputs",
+                "outputs",
+                "protocols",
+                "link_type"
+            ],
+            "properties": {
+                "process_type": {
+                    "description": "The concrete type of the process described by this link.",
+                    "example": "analysis",
+                    "user_friendly": "Process type",
+                    "type": "string"
+                },
+                "process_id": {
+                    "description": "UUID of the process described by this link.",
+                    "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+                    "user_friendly": "Process entity UUID",
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                },
+                "inputs": {
+                    "description": "An array of inputs for this link",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "$ref": "#/definitions/input"
+                    }
+                },
+                "outputs": {
+                    "description": "An array of outputs for this link.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "$ref": "#/definitions/output"
+                    }
+                },
+                "protocols": {
+                    "description": "An array of protocols for this link.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "$ref": "#/definitions/protocol"
+                    }
+                },
+                "link_type": {
+                    "description": "The type of this link.",
+                    "type": "string",
+                    "enum": [
+                        "process_link"
+                    ]
+                }
+            }
+        },
+        "supplementary_file": {
+            "type": "object",
+            "required": [
+                "file_id",
+                "file_type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "file_id": {
+                    "description": "ID for this supplementary file entity",
+                    "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                },
+                "file_type": {
+                    "description": "concrete type of this supplementary file entity",
+                    "type": "string",
+                    "enum": [
+                        "supplementary_file"
+                    ]
+                }
+            }
+        },
+        "entity": {
+            "type": "object",
+            "required": [
+                "entity_id",
+                "entity_type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "entity_id": {
+                    "description": "ID of this entity",
+                    "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                },
+                "entity_type": {
+                    "description": "The concrete type of this entity",
+                    "type": "string",
+                    "enum": [
+                        "project"
+                    ]
+                }
+            }
+        },
+        "supplementary_file_link": {
+            "type": "object",
+            "required": [
+                "entity",
+                "files",
+                "link_type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "entity": {
+                    "description": "An entity that refers to this supplementary file",
+                    "type": "object",
+                    "$ref": "#/definitions/entity"
+                },
+                "files": {
+                    "description": "An array of supplementary files",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "$ref": "#/definitions/supplementary_file"
+                    }
+                },
+                "link_type": {
+                    "description": "The type of this link.",
+                    "type": "string",
+                    "enum": [
+                        "supplementary_file_link"
+                    ]
+                }
+            }
+        }
     },
-    "links": {
-      "description": "An array of linking objects.",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "$ref": "#/definitions/link"
-      }
+    "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/links"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "links"
+            ]
+        },
+        "links": {
+            "description": "An array of linking objects.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "oneOf": [
+                    {
+                        "$ref": "#/definitions/process_link"
+                    },
+                    {
+                        "$ref": "#/definitions/supplementary_file_link"
+                    }
+                ]
+            }
+        }
     }
-  }
 }
