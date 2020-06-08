@@ -7,11 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/process/analysis/analysis_process.json - v12.0.0] - 2020-06-05
 ### Changed
 Changed reference_bundle properties to reference_files and removed input_bundles. Fixes #1275
 
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+### [system/links.json - v2.1.0] - 2020-06-08
+### Added
+Added supplementary_links. Fixes #1285.
 
 ### [system/links.json - v2.0.0] - 2020-05-20
 ### Changed
