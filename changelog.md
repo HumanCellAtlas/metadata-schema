@@ -7,15 +7,19 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [system/links.json - v2.0.0] - 2020-05-19
-### Changed
-Changed properties for links to capture entire processes. Fixes #1278
-
 ### [type/project/project.json - v15.0.0] - 2019-12-03
 ### Fixed
 Fixed INSDC accession swap and updated regex. Fixes #1167
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [type/process/analysis/analysis_process.json - v12.0.0] - 2020-06-05
+### Changed
+Changed reference_bundle properties to reference_files and removed input_bundles. Fixes #1275
+
+### [system/links.json - v2.0.0] - 2020-05-20
+### Changed
+Changed properties for links to capture entire processes. Fixes #1278
 
 ### [core/biomaterial/biomaterial_core.json - v8.2.0] - 2019-08-29
 ### Changed

@@ -1,9 +1,6 @@
 {
   "analysis_run_type": "run",
   "describedBy": "https://schema.dev.data.humancellatlas.org/type/process/analysis/5.0.0/analysis_process",
-  "input_bundles": [
-    "f3942c14-2024-4756-9360-92d89d515c9b"
-  ],
   "inputs": [
     {
       "checksum": "d0f7d08f1980f7980f",
@@ -76,7 +73,7 @@
   "type": {
     "text": "analysis"
   },
-  "reference_bundle": "bf51d668-3e14-4843-9bc7-5d676fdf0e01",
+  "reference_files": ["bf51d668-3e14-4843-9bc7-5d676fdf0e01"],
   "schema_type": "process",
   "tasks": [
     {
