@@ -107,6 +107,31 @@ describe ('Testing example data validates against schemas', function () {
 
 });
 
+describe('Testing allowable entity types in links.json supplementary links', function () {
+
+    // Un-skip this test when we want to allow all concrete entity types in supplementary file links
+    xit("should allow all concrete entity types only", function () {
+        const linksJsonSchemaPath = baseSchemaPath + "/system/links.json";
+        const linksJsonSchema = JSON.parse(fs.readFileSync(linksJsonSchemaPath));
+        const allowableEntityTypes = linksJsonSchema["definitions"]["entity"]["properties"]["entity_type"]["enum"];
+
+
+        const concreteSchemasPath = baseSchemaPath + "/type";
+        const concreteSchemas = getFilesSync(concreteSchemasPath, '.json');
+        const concreteSchemaTypes = concreteSchemas.map(schema => schema["schema"]["name"]);
+
+        concreteSchemaTypes.forEach(concreteSchema => expect(allowableEntityTypes).to.contain(concreteSchema))
+    });
+
+    it("should allow only the 'project' entity type", function () {
+        const linksJsonSchemaPath = baseSchemaPath + "/system/links.json";
+        const linksJsonSchema = JSON.parse(fs.readFileSync(linksJsonSchemaPath));
+        const allowableEntityTypes = linksJsonSchema["definitions"]["entity"]["properties"]["entity_type"]["enum"];
+
+        expect(allowableEntityTypes).to.deep.equal(['project'])
+    });
+});
+
 /**
  *
  * recursively read all the JSON schema file under the baseSchemaPath
@@ -141,7 +166,7 @@ function getFiles(basePath, filter) {
  */
 function getFilesSync(basePath, filter, relPath) {
     // remove versions.json
-    const versionsJsonFilter = (dirEntry) => dirEntry !== "versions.json";
+    const versionsJsonFilter = (dirEntry) => dirEntry !== "versions.json" && dirEntry !== "property_migrations.json";
     const dirEntries =
         R.map(
             dirEntryName => basePath + "/" + dirEntryName,

@@ -3,6 +3,7 @@
   "schema_type": "links",
   "links": [
     {
+      "link_type": "process_link",
       "process_id": "b7a172d6-dbb1-41f3-8ae4-7807e1eca803",
       "process_type": "analysis_process",
       "inputs": [
@@ -21,6 +22,23 @@
         {
           "protocol_type": "analysis_protocol",
           "protocol_id": "4d6f7580-ce81-4a81-9c2c-872fcb23b7cd"
+        }
+      ]
+    },
+    {
+      "link_type": "supplementary_file_link",
+      "entity": {
+        "entity_type": "project",
+        "entity_id": "589b7580-ce81-4a81-9c2c-872fcb23b7cd"
+      },
+      "files": [
+        {
+          "file_type": "supplementary_file",
+          "file_id": "8abc7580-ce81-4a81-9c2c-872fcb23b7cd"
+        },
+        {
+          "file_type": "supplementary_file",
+          "file_id": "cb377580-ce81-4a81-9c2c-872fcb23b7cd"
         }
       ]
     }
