@@ -7,10 +7,9 @@
         "schema_type",
         "process_core",
         "type",
+        "reference_files",
         "timestamp_start_utc",
         "timestamp_stop_utc",
-        "input_bundles",
-        "reference_bundle",
         "tasks",
         "inputs",
         "analysis_run_type"
@@ -181,15 +180,6 @@
             },
             "user_friendly": "Workflow tasks"
         },
-        "input_bundles": {
-            "description": "UUID(s) of the input bundle(s) used in running the pipeline.",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "user_friendly": "Input bundles",
-            "example": "b816d2d6-5f10-4447-4194-3d0a804454d6"
-        },
         "timestamp_start_utc": {
             "description": "Initial start time of the full pipeline in UTC.",
             "type": "string",
@@ -216,11 +206,15 @@
             "user_friendly": "Analysis run type",
             "example": "Should be one of: run, or copy-forward."
         },
-        "reference_bundle": {
-            "description": "UUID of the bundle containing the reference used in running the pipeline.",
-            "type": "string",
-            "user_friendly": "Reference bundle",
-            "example": "b816d2d6-5f10-4447-4194-3d0a804454d6"
+        "reference_files": {
+            "description": "UUID of the file entities that contain the reference genome used in running the pipeline.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+                "example": "b816d2d6-5f10-4447-4194-3d0a804454d6"
+            },
+            "user_friendly": "Reference files"
         }
     }
 }
