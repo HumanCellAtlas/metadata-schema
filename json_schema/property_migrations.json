@@ -1,6 +1,27 @@
 {
     "migrations": [
         {
+            "source_schema": "analysis_process",
+            "property": "input_bundles",
+            "effective_from": "12.0.0",
+            "reason": "Field not used in DCP2",
+            "type": "deprecated property"
+        },
+        {
+            "source_schema": "analysis_process",
+            "property": "reference_files",
+            "effective_from": "12.0.0",
+            "reason": "Linking reference files to analysis process",
+            "type": "new required property"
+        },
+        {
+            "source_schema": "analysis_process",
+            "property": "reference_bundle",
+            "effective_from": "12.0.0",
+            "reason": "Field not used in DCP2",
+            "type": "deprecated property"
+        },
+        {
             "source_schema": "cell_suspension",
             "property": "total_estimated_cells",
             "target_schema": "cell_suspension",
