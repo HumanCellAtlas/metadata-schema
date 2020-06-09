@@ -179,3 +179,50 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 
 1. **Trigger** a DCP-wide integration test *only* if releasing to the integration environment to confirm that the changes do not break the integration test. Go to the [integration testing schedule page](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/pipeline_schedules) and click the run button (black triangle) next to the "DCP wide test in integration environment" pipeline in the "integration" environment (if not currently running). If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken. For releasing to staging or production, the DCP-wide Release Manager for the week will trigger the integration test after all components have deployed.
 
+## Steps of hotfix process
+***Condition for hotfix***: A pull request is ready to be merged into master when it has been approved by the metadata community. Specifics for acceptance may vary between each PR depending on the request. Hotfixes are a special case of PR and do not follow the normal release process.
+
+1. Run `release_prepare.py` as indicated in step 5 the pre-release process
+   ```
+   cd src/
+   python release_prepare.py
+   ```
+   
+1. Review the changes as specified in step 6 of pre-release process.
+   
+1. **Move** the line in the `changelog.md` as specified in step 4 of the release process
+
+1. **Commit and push** your changes
+   ```
+   git commit -a -m "Ran release_prepare.py script."
+   git push origin <PR_branch>
+   ```
+
+1. **Merge** the branch to master by clicking on the "merge" button at the end of the PR. **DO NOT DELETE THE BRANCH**. 
+
+1. **Check out** to the previous branch in the release process (e.g. master -> staging) and pull to make sure you have the latest changes locally
+   ```
+   git checkout <release_branch>
+   git pull
+   ```
+
+1. **Check out** to the branch again, pull the release branch and resolve merge conflicts
+   ```
+   git checkout <PR_branch>
+   git pull origin <release_branch>
+   ```
+   Please do not overwrite changes inside the release branch. There might be changes to:
+      - **Metadata Schemas**: Keep all the changes that do not affect the hotfix.
+      - **Changelog.md**: Keep specific changes (if any) of the environment.
+      - **Versions.json**: Make sure new versions do not conflict.
+      
+1. **Create** a PR against the release branch. Tag it with the labels `content` (If schema changes) and `hotfix`.
+
+1. **Review all files** to ensure environment-specific updates are not being overwritten.
+
+1. Wait for travis tests to pass and **merge the PR**.
+
+1. **Repeat** from step 6 until the branch is hotfixed to `master`, `staging`, `integration` and `develop` environments.
+
+1. **Delete branch**
+
