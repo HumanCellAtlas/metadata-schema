@@ -48,7 +48,47 @@
             "description": "MD5 checksum of the file.",
             "type": "string",
             "user_friendly": "Checksum",
-            "example": "e09a986c2e630130b1849d4bf9a94c06"
-	    }
+            "example": "e09a986c2e630130b1849d4bf9a94c06",
+            "pattern": "^[a-f0-9]{32}$"
+	    },
+        "content_type": {
+            "description": "An appropriate MIME type for this file.",
+            "type": "string",
+            "user_friendly": "Content type",
+            "example": "application/gzip"
+        },
+        "size": {
+            "description": "The size of the file in bytes.",
+            "type": "number",
+            "minimum": 0,
+            "user_friendly": "Size",
+            "example": 2147483648
+        },
+        "sha256": {
+            "description": "The sha256 hash of the file.",
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{64}",
+            "user_friendly": "Sha256",
+            "example": "12998c017066eb0d2a70b94e6ed3192985855ce390f321bbdb832022888bd251"
+        },
+        "crc32c": {
+            "description": "The CRC-32C code generated for this file.",
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{8}",
+            "user_friendly": "Crc32c",
+            "example": "3FBA199E"
+        },
+        "sha1": {
+            "description": "The sha1 hash of the file.",
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{40}",
+            "user_friendly": "Sha1",
+            "example": "6e71b3cac15d32fe2d36c270887df9479c25c640"
+        },
+        "s3_etag" : {
+            "description": "The AWS S3 ETag for this file",
+            "user_friendly": "s3 ETag",
+            "type": "string"
+        }
     }
 }

@@ -18,6 +18,12 @@ file_name | The name of the file. | string | yes |  | File name |  | R1.fastq.gz
 format | The format of the file. | string | yes |  | File format |  | fastq.gz; tif
 content_description | General description of the contents of the file. | array | no | [See module  file_content_ontology](module.md/#file_content_ontology) | Content description |  | 
 checksum | MD5 checksum of the file. | string | no |  | Checksum |  | e09a986c2e630130b1849d4bf9a94c06
+content_type | An appropriate MIME type for this file. | string | no |  | Content type |  | application/gzip
+size | The size of the file in bytes. | number | no |  | Size |  | 2147483648
+sha256 | The sha256 hash of the file. | string | no |  | Sha256 |  | 12998c017066eb0d2a70b94e6ed3192985855ce390f321bbdb832022888bd251
+crc32c | The CRC-32C code generated for this file. | string | no |  | Crc32c |  | 3FBA199E
+sha1 | The sha1 hash of the file. | string | no |  | Sha1 |  | 6e71b3cac15d32fe2d36c270887df9479c25c640
+s3_etag | The AWS S3 ETag for this file | string | no |  | s3 ETag |  | 
 
 ## Protocol core<a name='Protocol core'></a>
 _Information about an intended protocol that was followed in the project._

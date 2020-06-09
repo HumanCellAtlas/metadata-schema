@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-
+core/file/file_core,minor,"Added new optional properties for file integrity check. Fixes #1289.",,
