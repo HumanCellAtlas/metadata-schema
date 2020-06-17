@@ -222,21 +222,27 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 
 1. **Merge** the branch to master by clicking on the "merge" button at the end of the PR. **DO NOT DELETE THE BRANCH**. 
 
-1. **Check out** to the previous branch in the release process (e.g. master -> staging) and pull to make sure you have the latest changes locally
+After merging to master, carry out the next 5 steps for each of the release branches in reverse order i.e.
+a. staging
+b. integration
+c. develop
+
+1. **Check out** the `<release_branch>` you are hotfixing and pull to make sure you have the latest changes locally
    ```
    git checkout <release_branch>
    git pull
    ```
 
-1. **Check out** to the branch again, pull the release branch and resolve merge conflicts
+1. **Check out** the `hotfix_branch` again, pull the `<release_branch>` and resolve merge conflicts
    ```
-   git checkout <PR_branch>
+   git checkout <hotfix_branch>
    git pull origin <release_branch>
    ```
    Please do not overwrite changes inside the release branch. There might be changes to:
       - **Metadata Schemas**: Keep all the changes that do not affect the hotfix.
       - **Changelog.md**: Keep specific changes (if any) of the environment.
       - **Versions.json**: Make sure new versions do not conflict.
+   > PyCharm provides a handy user interface that makes resolving merge conflicts easier than github.
       
 1. **Create** a PR against the release branch. Tag it with the labels `content` (If schema changes) and `hotfix`.
 
@@ -244,7 +250,7 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 
 1. Wait for travis tests to pass and **merge the PR**.
 
-1. **Repeat** from step 6 until the branch is hotfixed to `master`, `staging`, `integration` and `develop` environments.
+1. **Repeat** for the next branch until it is hotfixed to `master`, `staging`, `integration` and `develop` environments.
 
-1. **Delete branch**
+After merging the hotfix to all release branches, **Delete the branch**.
 
