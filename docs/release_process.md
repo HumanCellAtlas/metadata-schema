@@ -6,6 +6,7 @@
 - [Steps of the pre-release process](#steps-of-the-pre-release-process)
 - [Steps of the release process](#steps-of-the-release-process)
 - [Check deployment status](#check-deployment-status)
+- [Steps of the hotfix process](#steps-of-hotfix-process)
 
 ## Introduction
 
@@ -187,10 +188,31 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
    cd src/
    python release_prepare.py
    ```
+ 
+ 1. **Check** that both `json_schema/versions.json` and `changelog.md` were updated. (Same as step 6 of pre-release process)
+
+        git status
+
+    You can review the changes to all files using
+
+        git diff
+    
+    Or for a specific file
+    
+        git diff ../json_schema/versions.json
+        git diff ../changelog.md
+        
+     > If `json_schema/versions.json` and `changelog.md` do not appear to have been updated correctly, you can try running release_prepare.py again after discarding all the current changes (`git checkout -- <file>`).
    
-1. Review the changes as specified in step 6 of pre-release process.
-   
-1. **Move** the line in the `changelog.md` as specified in step 4 of the release process
+1. **Open** `changelog.md` and move the line 
+
+    `## [Released](https://github.com/HumanCellAtlas/metadata-schema/)`
+
+    right below the line
+
+    `## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)`
+    
+    (step 4 of the release process)
 
 1. **Commit and push** your changes
    ```
