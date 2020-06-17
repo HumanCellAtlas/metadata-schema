@@ -223,8 +223,11 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 1. **Merge** the branch to master by clicking on the "merge" button at the end of the PR. **DO NOT DELETE THE BRANCH**. 
 
 After merging to master, carry out the next 5 steps for each of the release branches in reverse order i.e.
+
 a. staging
+
 b. integration
+
 c. develop
 
 1. **Check out** the `<release_branch>` you are hotfixing and pull to make sure you have the latest changes locally
