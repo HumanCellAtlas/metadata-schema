@@ -113,7 +113,7 @@
                     "type": "array",
                     "items": {
                         "type": "object",
-                        "$ref": "system/links/#/definitions/input"
+                        "$ref": "system/links.json#/definitions/input"
                     }
                 },
                 "outputs": {
@@ -121,7 +121,7 @@
                     "type": "array",
                     "items": {
                         "type": "object",
-                        "$ref": "system/links/#/definitions/output"
+                        "$ref": "system/links.json#/definitions/output"
                     }
                 },
                 "protocols": {
@@ -129,7 +129,7 @@
                     "type": "array",
                     "items": {
                         "type": "object",
-                        "$ref": "system/links/#/definitions/protocol"
+                        "$ref": "system/links.json#/definitions/protocol"
                     }
                 },
                 "link_type": {
@@ -199,14 +199,14 @@
                 "entity": {
                     "description": "An entity that refers to this supplementary file",
                     "type": "object",
-                    "$ref": "system/links/#/definitions/entity"
+                    "$ref": "system/links.json#/definitions/entity"
                 },
                 "files": {
                     "description": "An array of supplementary files",
                     "type": "array",
                     "items": {
                         "type": "object",
-                        "$ref": "system/links/#/definitions/supplementary_file"
+                        "$ref": "system/links.json#/definitions/supplementary_file"
                     }
                 },
                 "link_type": {
@@ -244,10 +244,10 @@
                 "type": "object",
                 "oneOf": [
                     {
-                        "$ref": "system/links/#/definitions/process_link"
+                        "$ref": "system/links.json#/definitions/process_link"
                     },
                     {
-                        "$ref": "system/links/#/definitions/supplementary_file_link"
+                        "$ref": "system/links.json#/definitions/supplementary_file_link"
                     }
                 ]
             }
