@@ -6,7 +6,7 @@
     "content_type",
     "size",
     "sha256",
-    "crc32"
+    "crc32c"
   ],
   "title": "File integrity",
   "name": "file_integrity",
