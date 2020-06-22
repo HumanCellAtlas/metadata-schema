@@ -27,7 +27,7 @@
       "example": "4.6.1"
     },
     "file_name": {
-      "description": "The object name of the data file relative to the staging area",
+      "description": "The object name of the data file relative to the staging area's `data/` directory",
       "type": "string",
       "user_friendly": "Staging file name",
       "example": "1b6d8348-d6e9-406a-aa6a-7ee886e52bf9/IDC9_L004_R2.fastq.gz"
