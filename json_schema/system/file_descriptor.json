@@ -44,7 +44,7 @@
       "type": "string",
       "user_friendly": "File version",
       "example": "2019-09-24T093509.407370Z",
-      "format": "date-time"
+      "pattern": "\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{6}Z"
     },
     "content_type": {
       "description": "An appropriate MIME type for this file.",
