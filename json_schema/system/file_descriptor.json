@@ -18,13 +18,27 @@
     "describedBy": {
       "description": "The URL reference to the schema.",
       "type": "string",
-      "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/file_descriptor"
+      "pattern" : "^(http|https)://schema\\.(.*?)humancellatlas\\.org/system/(([0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,})|([a-zA-Z]*?))/file_descriptor"
     },
     "schema_version": {
       "description": "The version number of the schema in major.minor.patch format.",
       "type": "string",
-      "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+      "pattern": "^[0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,}$",
       "example": "4.6.1"
+    },
+    "schema_major_version": {
+      "description": "The major version number of the schema.",
+      "type": "integer",
+      "pattern": "^[0-9]{1,}$",
+      "user_friendly": "Schema major version",
+      "example": "4; 10"
+    },
+    "schema_minor_version": {
+      "description": "The minor version number of the schema.",
+      "type": "integer",
+      "pattern": "^[0-9]{1,}$",
+      "user_friendly": "Schema minor version",
+      "example": "6; 15"
     },
     "file_name": {
       "description": "The object name of the data file relative to the staging area's `data/` directory",
@@ -44,7 +58,7 @@
       "type": "string",
       "user_friendly": "File version",
       "example": "2020-05-01T04:26:07.021870Z",
-      "pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{6}Z"
+      "pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{6}Z"
     },
     "content_type": {
       "description": "An appropriate MIME type for this file.",
