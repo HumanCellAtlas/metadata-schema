@@ -3,6 +3,8 @@
   "description": "Checksums and other information for asserting the integrity of a data file.",
   "additionalProperties": false,
   "required": [
+    "describedBy",
+    "schema_type",
     "content_type",
     "size",
     "sha256",
@@ -25,6 +27,13 @@
       "type": "string",
       "pattern": "^[0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,}$",
       "example": "4.6.1"
+    },
+    "schema_type": {
+      "description": "The type of the metadata schema entity.",
+      "type": "string",
+      "enum": [
+        "file_descriptor"
+      ]
     },
     "schema_major_version": {
       "description": "The major version number of the schema.",
