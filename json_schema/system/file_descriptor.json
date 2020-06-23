@@ -43,7 +43,7 @@
       "description": "The version of the file given in date time format",
       "type": "string",
       "user_friendly": "File version",
-      "example": "2019-09-24T093509.407370Z",
+      "example": "2020-05-01T04:26:07.021870Z",
       "pattern": "\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{6}Z"
     },
     "content_type": {
