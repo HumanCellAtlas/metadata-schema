@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [system/links.json - v2.1.1] - 2020-06-25
+### Fixed
+Fixed incomplete refs urls Fixes#1303
+
 ### [type/process/analysis/analysis_process.json - v12.0.0] - 2020-06-05
 ### Changed
 Changed reference_bundle properties to reference_files and removed input_bundles. Fixes #1275
