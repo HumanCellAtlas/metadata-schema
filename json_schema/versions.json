@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2020-06-25T09:21:40Z",
+    "last_update_date": "2020-06-25T12:12:11Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -78,7 +78,7 @@
             }
         },
         "system": {
-            "file_descriptor": "0.0.0",
+            "file_descriptor": "1.0.0",
             "license": "1.0.0",
             "links": "2.1.1",
             "provenance": "1.1.0"
