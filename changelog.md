@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [system/file_descriptor.json - v1.0.0] - 2020-06-25
+### Added
+Added file_descriptor schema
+
 ### [system/links.json - v2.1.1] - 2020-06-19
 ### Fixed
 Fixed incomplete refs urls Fixes#1303
