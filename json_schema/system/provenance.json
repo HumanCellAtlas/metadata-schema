@@ -21,20 +21,6 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "schema_major_version": {
-            "description": "The major version number of the schema.",
-            "type": "integer",
-            "pattern": "^[0-9]{1,}$",
-            "user_friendly": "Schema major version",
-            "example": "4; 10"
-        },
-        "schema_minor_version": {
-            "description": "The minor version number of the schema.",
-            "type": "integer",
-            "pattern": "^[0-9]{1,}$",
-            "user_friendly": "Schema minor version",
-            "example": "6; 15"
-        },
         "submission_date": {
             "description": "When project was first submitted to database.",
             "type": "string",
