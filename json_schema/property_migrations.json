@@ -1,6 +1,20 @@
 {
     "migrations": [
         {
+            "source_schema": "provenance",
+            "property": "schema_major_version",
+            "effective_from": "",
+            "reason": "Field won't be used",
+            "type": "deprecated property"
+        },
+        {
+            "source_schema": "provenance",
+            "property": "schema_minor_version",
+            "effective_from": "",
+            "reason": "Field won't be used",
+            "type": "deprecated property"
+        },
+        {
             "source_schema": "file_descriptor",
             "property": "schema_major_version",
             "effective_from": "",
