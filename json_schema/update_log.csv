@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+system/file_descriptor,major,"Removed schema major minor versions.",,
