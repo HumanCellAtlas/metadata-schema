@@ -28,8 +28,15 @@ This script inspects every schema in the metadata repo and checks all schemas an
 
 This script can be run as a standalone (and it should be considered good practice to do so!) but it is also integrated into the automatic Travis build.
 
+Instructions to run it:
+```buildoutcfg
+pip install -r requirements.txt
+cd src/
+python schema_linter.py --environment <ENV>
+```
+Where environment represents the release stage you want to test the schemas against ({develop, integration, staging or master}). If not specified it tests against staging.
 
-
+Human-friendly information about what the rules the linter tests against can be found in the `schema_style_guide.md` document inside the `docs` folder.
 ### version_update.py
 
 This script increments the version numbers of any schemas listed in the update_log.csv file by the increment type supplied with the schema. It also finds any schemas that reference the updated schemas and increments their version numbers appropriately.
