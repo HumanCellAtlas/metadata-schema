@@ -35,6 +35,20 @@
         "file_descriptor"
       ]
     },
+    "schema_major_version": {
+      "description": "The major version number of the schema.",
+      "type": "integer",
+      "pattern": "^[0-9]{1,}$",
+      "user_friendly": "Schema major version",
+      "example": "4; 10"
+    },
+    "schema_minor_version": {
+      "description": "The minor version number of the schema.",
+      "type": "integer",
+      "pattern": "^[0-9]{1,}$",
+      "user_friendly": "Schema minor version",
+      "example": "6; 15"
+    },
     "file_name": {
       "description": "The object name of the data file relative to the staging area's `data/` directory",
       "type": "string",

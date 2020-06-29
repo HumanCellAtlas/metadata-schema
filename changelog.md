@@ -13,10 +13,6 @@ Fixed INSDC accession swap and updated regex. Fixes #1167
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
-### [system/file_descriptor.json - v2.0.0] - 2020-06-29
-### Removed
-Removed schema major minor versions.
-
 ### [system/file_descriptor.json - v1.0.0] - 2020-06-25
 ### Added
 Added file_descriptor schema
