@@ -3,14 +3,14 @@
         {
             "source_schema": "file_descriptor",
             "property": "schema_major_version",
-            "effective_from": "",
+            "effective_from": "2.0.0",
             "reason": "Field won't be used",
             "type": "deprecated property"
         },
         {
             "source_schema": "file_descriptor",
             "property": "schema_minor_version",
-            "effective_from": "",
+            "effective_from": "2.0.0",
             "reason": "Field won't be used",
             "type": "deprecated property"
         },

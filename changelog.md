@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [system/file_descriptor.json - v2.0.0] - 2020-06-29
+### Removed
+Removed schema major minor versions.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [system/file_descriptor.json - v1.0.0] - 2020-06-25
