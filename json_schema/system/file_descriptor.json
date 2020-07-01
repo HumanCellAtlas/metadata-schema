@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Checksums and other information for asserting the integrity of a data file.",
+  "additionalProperties": false,
+  "required": [
+    "describedBy",
+    "schema_type",
+    "content_type",
+    "size",
+    "sha256",
+    "crc32c",
+    "file_id",
+    "file_version",
+    "file_name"
+  ],
+  "title": "File descriptor",
+  "name": "file_descriptor",
+  "type": "object",
+  "properties": {
+    "describedBy": {
+      "description": "The URL reference to the schema.",
+      "type": "string",
+      "pattern" : "^https?://schema(\\.[a-z]+)?\\.humancellatlas\\.org/system/(([0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,})|([a-zA-Z]*?))/file_descriptor$"
+    },
+    "schema_version": {
+      "description": "The version number of the schema in major.minor.patch format.",
+      "type": "string",
+      "pattern": "^[0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,}$",
+      "example": "4.6.1"
+    },
+    "schema_type": {
+      "description": "The type of the metadata schema entity.",
+      "type": "string",
+      "enum": [
+        "file_descriptor"
+      ]
+    },
+    "file_name": {
+      "description": "The object name of the data file relative to the staging area's `data/` directory",
+      "type": "string",
+      "user_friendly": "Staging file name",
+      "example": "1b6d8348-d6e9-406a-aa6a-7ee886e52bf9/IDC9_L004_R2.fastq.gz"
+    },
+    "file_id": {
+      "description": "UUID that uniquely identifies each data file in its source",
+      "type": "string",
+      "user_friendly": "File UUID",
+      "example": "111f222a-333b-444c-555d-eee63ddfccc7",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "file_version": {
+      "description": "The version of the file given in date time format",
+      "type": "string",
+      "user_friendly": "File version",
+      "example": "2020-05-01T04:26:07.021870Z",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{6}Z$"
+    },
+    "content_type": {
+      "description": "An appropriate MIME type for this file.",
+      "type": "string",
+      "user_friendly": "Content type",
+      "example": "application/gzip"
+    },
+    "size": {
+      "description": "The size of the file in bytes.",
+      "type": "integer",
+      "minimum": 0,
+      "user_friendly": "Size",
+      "example": 2147483648
+    },
+    "sha256": {
+      "description": "The SHA-256 hash of the file.",
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "user_friendly": "SHA-256",
+      "example": "12998c017066eb0d2a70b94e6ed3192985855ce390f321bbdb832022888bd251"
+    },
+    "crc32c": {
+      "description": "The CRC-32C code generated for this file.",
+      "type": "string",
+      "pattern": "^[a-f0-9]{8}$",
+      "user_friendly": "CRC32C",
+      "example": "0b83b575"
+    },
+    "sha1": {
+      "description": "The SHA-1 hash of the file.",
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$",
+      "user_friendly": "SHA-1",
+      "example": "6e71b3cac15d32fe2d36c270887df9479c25c640"
+    },
+    "s3_etag" : {
+      "description": "An AWS S3 ETag of this file",
+      "user_friendly": "S3 ETag",
+      "type": "string",
+      "example": "c92e5374ac0a53b228d4c1511c2d2842-63"
+    }
+  }
+}

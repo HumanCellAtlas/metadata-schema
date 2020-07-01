@@ -7,11 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/project/project.json - v15.0.0] - 2019-12-03
-### Fixed
-Fixed INSDC accession swap and updated regex. Fixes #1167
-
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [system/file_descriptor.json - v2.0.0] - 2020-06-29
+### Removed
+Removed schema major minor versions.
+
+### [system/file_descriptor.json - v1.0.0] - 2020-06-25
+### Added
+Added file_descriptor schema
 
 ### [system/links.json - v2.1.1] - 2020-06-19
 ### Fixed
@@ -4386,4 +4390,3 @@ Reference to patch version update of `type/biomaterial/cell_line.json` was updat
 ### Fixed
 ### Deprecated
 ### Security
-
