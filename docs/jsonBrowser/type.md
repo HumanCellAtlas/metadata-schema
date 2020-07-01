@@ -292,10 +292,10 @@ project_core | Core project-level information. | object | yes | [See core  proje
 contributors | People contributing to any aspect of the project. | array | no | [See module  contact](module.md/#contact) | Contributors |  | 
 supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
 publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
-insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | PRJNS000000
+insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
 geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
 array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
-insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | SRP000000
+insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
 biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
 
@@ -467,4 +467,3 @@ timestamp_start_utc | Initial start time of the full pipeline in UTC. | string |
 timestamp_stop_utc | Terminal stop time of the full pipeline in UTC. | string | yes |  | Stop timestamp (UTC) |  | 2018-01-21T11:35:01Z
 analysis_run_type | Whether the analysis was run or was copied forward as an optimization. | string | yes |  | Analysis run type | run, copy-forward | Should be one of: run, or copy-forward.
 reference_files | UUID of the file entities that contain the reference genome used in running the pipeline. | array | yes |  | Reference files |  | 
-
