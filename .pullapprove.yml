@@ -30,8 +30,8 @@ notifications:
 - when: pull_request.opened
   if: "'content' in labels and 'major' in body" # Notify the DCP for a major update
   comment: |
-    Major metadata schema update, pinging @maniarathi @aaclan-ebi @MDunitz @NoopDog @brianraymor
-    @jahilton @jychien @jlzamanian @samanehsan @hannes-ucsc @kislyuk . If no one objects, this will be merged on the
+    Major metadata schema update, pinging @aaclan-ebi @NoopDog
+    @hannes-ucsc @danxmoran . If no one objects, this will be merged on the
     following 5 working days.
 
 groups:
@@ -43,9 +43,6 @@ groups:
     reviewers:
       users:
       - ESapenaVentura
-      - simonjupp
-      - diekhans
-      - willrockout
       - rolando-ebi
     reviews:
       required: 1
@@ -59,14 +56,17 @@ groups:
     - "'content' in labels"
     reviewers:  # people who can approve for this group
       users:
-      - zperova
       - mshadbolt
       - ESapenaVentura
-      - zperova
+      - rays22
+      - rays22
+      - ami-day
+      - ami-day
       - mshadbolt
-      - ESapenaVentura
       - willrockout
-      - cjvillar
+      - pnejad
+      - ESapenaVentura
+      - claymfischer
     reviews:  # settings for approval and reviewer selection
       required: 2
       request_order: shuffle  # reviewers will be chosen in a random order
@@ -79,14 +79,17 @@ groups:
     - "'content' in labels"
     reviewers:
       users:
-      - zperova
-      - mshadbolt
-      - ESapenaVentura
-      - zperova
-      - mshadbolt
-      - ESapenaVentura
-      - willrockout
-      - cjvillar
+        - mshadbolt
+        - ESapenaVentura
+        - rays22
+        - rays22
+        - ami-day
+        - ami-day
+        - mshadbolt
+        - willrockout
+        - pnejad
+        - ESapenaVentura
+        - claymfischer
     reviews:
       required: 1
       request_order: shuffle
@@ -100,8 +103,8 @@ groups:
       users:
       - mshadbolt
       - ESapenaVentura
-      - willrockout
-      - cjvillar
+      - rays22
+      - ami-day
     reviews:
       required: 1
       request_order: shuffle
