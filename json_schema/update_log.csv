@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+system/links,major,"Changed protocol_type from string to enum of strings. Fixes #1333",,
