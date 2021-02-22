@@ -72,7 +72,20 @@
                     "description": "The concrete type of protocol entity.",
                     "example": "enrichment_protocol",
                     "user_friendly": "Protocol type",
-                    "type": "string"
+                    "type": "string",
+                    "enum": [
+                        "analysis_protocol",
+                        "aggregate_generation_protocol",
+                        "collection_protocol",
+                        "differentiation_protocol",
+                        "dissociation_protocol",
+                        "enrichment_protocol",
+                        "ipsc_induction_protocol",
+                        "imaging_preparation_protocol",
+                        "imaging_protocol",
+                        "library_preparation_protocol",
+                        "sequencing_protocol"
+                    ]
                 },
                 "protocol_id": {
                     "description": "UUID of the protocol entity.",
