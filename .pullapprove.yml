@@ -50,7 +50,7 @@ groups:
 
   metadata-updates-major-minor:  # group name
     conditions:  # the group is activated when all of these statements are true
-    - "'*travis*' in statuses.succeeded"
+    - "'*[Tt]ravis*' in check_runs.succeeded"
     - "base.ref == 'develop'"
     - "'major' in body or 'minor' in body" # major or minor change is indicated in body of PR
     - "'content' in labels"
@@ -73,7 +73,7 @@ groups:
 
   metadata-updates-patch:
     conditions:
-    - "'*travis*' in statuses.succeeded"
+    - "'*[Tt]ravis*' in check_runs.succeeded"
     - "base.ref == 'develop'"
     - "'patch' in body" # patch change is indicated in body of PR
     - "'content' in labels"
@@ -96,7 +96,7 @@ groups:
 
   code-review:
     conditions:
-    - "'*travis*' in statuses.succeeded"
+    - "'*[Tt]ravis*' in check_runs.succeeded"
     - "base.ref == 'develop'"
     - "'*.py' in files or '*.js' in files or '*.yml' in files"
     reviewers:
