@@ -14,6 +14,9 @@ pullapprove_conditions:
 - condition: "'on hold' not in labels"
   unmet_status: pending
   explanation: "PR review is on hold"
+- condition: "'*[tT]ravis*' not in check_runs.pending"
+  unmet_status: pending
+  explanation: "Travis CI tests must complete before review starts"
 - condition: "'*[tT]ravis*' in check_runs.successful"
   unmet_status: failure
   explanation: "Travis CI tests must pass before review starts"
