@@ -6,6 +6,7 @@
 - [Schema style and formatting](#schema-style-and-formatting)
 - [Field style and formatting](#field-style-and-formatting)
 - [General rules](#general-rules)
+- [The schema linter](#schema-linter)
 
 ## Introduction
 
@@ -547,3 +548,49 @@ Instances when an *enum* is preferred over an ontology include:
 1. The list of valid values is short but too diverse to be organized into a meaningful ontology, or while awaiting the development of an appropriate ontology or ontology branch. If in doubt, check with an HCA ontologist.
 
 Finally, if the list of valid values for a field is very long - for example more than ten valid values - and does not have an appropriate ontology, a free text field is preferred as it means data submitters will not need to constantly validate against the enum (which can be frustrating).
+
+
+## Schema linter
+The schema linter uses a python script to ensure the rules of the schema style guide are followed. These rules are labeled as `must` (Will produce an error if not followed) or `should` (Will throw a warning if not followed). The script, [`schema_linter.py`](https://github.com/HumanCellAtlas/metadata-schema/blob/master/src/schema_linter.py), that performs these checks is in the [src folder](https://github.com/HumanCellAtlas/metadata-schema/blob/master/src/).
+
+Below is a list of rules that are currently tested:
+
+||**Must**|**Should**|
+:------|:------|:------|
+**Schema check**|All schema fields must be part of a list of allowed schema fields|Description of schema should be a sentence
+ ||All required schema fields must be present in the schema|Schema titles should be sentence-case
+ ||Schema must not have additional properties| 
+ ||Schema must be set to draft 07| 
+ ||Schema filename must match the name of the schema provided in the URL| 
+ ||Schema filename must match schema name field| 
+ ||Schema type must be set to object| | 
+ ||All required fields must actually be in the schema| | 
+ ||||
+**Property check**|Properties `describedBy` and `schema_version` must be present in each schema|description should be a sentence
+ ||Properties `text`,  `ontology` and `ontology_label` must be present in each ontology schema|guidelines should be a sentence
+ ||All type schemas must have corresponding `_core` property|Property should contain example attribute| 
+ ||Property name must contain only lowercase letters, numbers and underscores|`_unit` properties should have matching property without `_unit`
+ ||Property must contain description attribute|
+ ||Property must contain user-friendly attribute (Only user-supplied fields)| 
+ ||Property must contain type attribute| 
+ ||type attribute must be set to one of the valid JSON types| 
+ ||Property of type array must contain the attribute items| 
+ ||items must have either type or `$ref` attribute| 
+ ||Property of type object must contains the attribute $ref| 
+ ||format must be a valid JSON format| 
+ ||pattern must be a valid regex| 
+ ||example values must match regex pattern| 
+ ||All `$ref` referenced schemas must exist| 
+ ||||
+**Ontology check**|Ontology field must have graph\_restriction property that is an object| 
+ ||`graph_restriction` property must contain all required attributes| 
+ ||Attributes for `graph_restriction` must be one of acceptable values| 
+ ||`graph_restriction` 'direct' attribute must be `False`| 
+ ||`graph_restriction` 'include\_self' attribute must be `False` or `True`| 
+ ||`graph_restriction` 'relations' attribute must be a list| 
+ ||`graph_restriction` 'classes' attribute must be a list| 
+ ||`graph_restriction` 'ontologies' attribute must be a list| 
+ ||`graph_restriction` 'relations' must at least contain item `rdfs:subClassOf`| 
+ ||`graph_restriction` 'ontologies' must contain ontologies that are valid within the HCA ontology space| 
+ ||`graph_restriction` 'classes' must contain only ontology classes that are valid in the HCA ontology space| 
+ ||All property attributes must be in the allowed list of property attributes| 
