@@ -101,7 +101,7 @@ describe ('Testing example data validates against schemas', function () {
                     }
                 });
 
-            })
+            }).timeout(10000)
 
     });
 
