@@ -4390,4 +4390,3 @@ Reference to patch version update of `type/biomaterial/cell_line.json` was updat
 ### Fixed
 ### Deprecated
 ### Security
-
