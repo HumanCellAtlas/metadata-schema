@@ -333,7 +333,7 @@ if __name__ == "__main__":
     # define the proper OLS API URL.
     arguments = argument_parser().parse_args(sys.argv[1:])
     environment = OLS_ENVIRONMENT[arguments.environment]
-    ols_api = 'https://ontology.{}.data.humancellatlas.org/api'.format(environment)
+    ols_api = 'https://ontology.{}.archive.data.humancellatlas.org/api'.format(environment)
 
     schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
     jsons = [os.path.join(dirpath, f)
