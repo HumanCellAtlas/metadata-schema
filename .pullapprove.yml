@@ -70,6 +70,7 @@ groups:
       - willrockout
       - pnejad
       - ESapenaVentura
+      - rachadele
     reviews:  # settings for approval and reviewer selection
       required: 2
       request_order: shuffle  # reviewers will be chosen in a random order
@@ -94,6 +95,7 @@ groups:
         - willrockout
         - pnejad
         - ESapenaVentura
+        - rachadele
     reviews:
       required: 1
       request_order: shuffle
