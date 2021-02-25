@@ -18,7 +18,7 @@ let baseSchemaPath = path.join(__dirname, '..', schemaDirs);
 // set the example data path
 let baseDataPath = path.join(__dirname, '..', exampleDataDirs);
 
-let ajvOptions = {baseSchemaPath: baseSchemaPath, extendRefs: true, olsApiBaseUrl: 'http://ontology.dev.data.humancellatlas.org/api'};
+let ajvOptions = {baseSchemaPath: baseSchemaPath, extendRefs: true, olsApiBaseUrl: 'http://ontology.archive.data.humancellatlas.org/api'};
 
 let validator = new ElixirValidator([GraphRestriction], ajvOptions);
 var ajv = new Ajv(ajvOptions);
@@ -101,7 +101,7 @@ describe ('Testing example data validates against schemas', function () {
                     }
                 });
 
-            })
+            }).timeout(10000)
 
     });
 
