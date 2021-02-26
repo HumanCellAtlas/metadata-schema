@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Description of a url related to a project.",
+    "additionalProperties": false,
+    "required": [
+        "url",
+        "url_type"
+    ],
+    "title": "URL",
+    "name": "url",
+    "type": "object",
+    "properties": {
+      "describedBy": {
+        "description": "The URL reference to the schema.",
+        "type": "string",
+        "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/core/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/project_core"
+      },
+      "schema_version": {
+        "description": "The version number of the schema in major.minor.patch format.",
+        "type": "string",
+        "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+        "example": "4.6.1"
+      },
+      "url": {
+        "description": "The full url of the website that relates to the project.",
+        "type": "string",
+        "example": "https://www.heartcellatlas.org/",
+        "pattern": "^https?://.+",
+        "user_friendly": "Url",
+        "guidelines": "Enter the full url including http|s. Should not be an accession based link."
+      },
+      "url_type": {
+        "description": "The type of url specified.",
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "analysis portal",
+            "code repository",
+            "data repository",
+            "other"
+          ]
+        },
+        "user_friendly": "URL type",
+        "guidelines": "Specify as many types as applicable, if no appropriate type specified, choose 'other'."
+      },
+      "other_explanation": {
+        "description": "An explanation of the source of the 'other' url type.",
+        "type": "string",
+        "example": "Link to protocol information.",
+        "user_friendly": "Other explanation",
+        "guidelines": "If you selected 'other', describe the source of the identifier."
+      }
+    }
+}
