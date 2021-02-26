@@ -7,6 +7,17 @@ Property name | Description | Type | Required? | Example
  describedBy | The URL reference to the schema. | string | no |  |  |  | 
 schema_version | The version number of the schema in major.minor.patch format. | string | no | 4.6.1
 
+## External Identifier<a name='External Identifier'></a>
+_Information about an external identifier._
+
+Location: module/external_identifier.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+external_identifier | Any unique identifier that identifies the project, dataset, experiment, biomaterial or protocol. | string | yes |  | External Identifier |  | SCP464; E-MTAB-8901
+identifier_source | The source of the unique identifier. | string | yes |  | Identifer Source | insdc_study, insdc_project, insdc_sample, insdc_experiment, biosamples, indsc_run, ega_study, ega_dataset, ega_sample, arrayexpress, scea, scp, geo_series, dbgap, cbtm, hdbr, biostudies, other | 
+other_explanation | An explanation of the source of the identifier. | string | no |  | Other explanation |  | Identifier used for internal tracking.
+
 ## Channel<a name='Channel'></a>
 _Information about a single microscope channel._
 
@@ -324,6 +335,17 @@ Property name | Description | Type | Required? | Object reference? | User friend
 grant_title | The name of the grant funding the project. | string | no |  | Grant title |  | Study of single cells in the human body.
 grant_id | The unique grant identifier or reference. | string | yes |  | Grant ID |  | BB/P0000001/1
 organization | The name of the funding organization. | string | yes |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+
+## URL<a name='URL'></a>
+_Description of a url related to a project._
+
+Location: module/project/url.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+url | The full url of the website that relates to the project. | string | yes |  | Url |  | https://www.heartcellatlas.org/
+url_type | The type of url specified. | array | yes |  | URL type |  | 
+other_explanation | An explanation of the source of the 'other' url type. | string | no |  | Other explanation |  | Link to protocol information.
 
 ## Contact<a name='Contact'></a>
 _Information about an individual who submitted or contributed to a project._

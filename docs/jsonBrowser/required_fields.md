@@ -202,6 +202,11 @@ timestamp_stop_utc | Terminal stop time of the full pipeline in UTC. | string | 
 analysis_run_type | Whether the analysis was run or was copied forward as an optimization. | string |  | Analysis run type | run, copy-forward | Should be one of: run, or copy-forward.
 reference_files | UUID of the file entities that contain the reference genome used in running the pipeline. | array |  | Reference files |  | 
 ## Module
+### External Identifier<a name='External Identifier'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+external_identifier | Any unique identifier that identifies the project, dataset, experiment, biomaterial or protocol. | string |  | External Identifier |  | SCP464; E-MTAB-8901
+identifier_source | The source of the unique identifier. | string |  | Identifer Source | insdc_study, insdc_project, insdc_sample, insdc_experiment, biosamples, indsc_run, ega_study, ega_dataset, ega_sample, arrayexpress, scea, scp, geo_series, dbgap, cbtm, hdbr, biostudies, other | 
 ### Channel<a name='Channel'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -321,6 +326,11 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 grant_id | The unique grant identifier or reference. | string |  | Grant ID |  | BB/P0000001/1
 organization | The name of the funding organization. | string |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+### URL<a name='URL'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+url | The full url of the website that relates to the project. | string |  | Url |  | https://www.heartcellatlas.org/
+url_type | The type of url specified. | array |  | URL type |  | 
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
