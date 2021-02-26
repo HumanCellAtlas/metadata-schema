@@ -49,6 +49,22 @@
             },
             "user_friendly": "Contributors"
         },
+        "project_accessions": {
+            "description": "Accessions relating to the project.",
+            "type": "array",
+            "items": {
+                "$ref": "module/external_identifier.json"
+            },
+            "user_friendly": "Project accessions"
+        },
+        "project_urls": {
+            "description": "A website that relates to the project",
+            "type": "array",
+            "items": {
+                "$ref": "module/project/url.json"
+            },
+            "user_friendly": "Project url"
+        },
         "supplementary_links": {
             "description": "External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded.",
             "type": "array",
