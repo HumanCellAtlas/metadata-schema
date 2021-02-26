@@ -61,7 +61,7 @@
               "if": {
                 "properties": { "identifier_source": { "const": "insdc_project" }}},
               "then": {
-                "properties": { "external_identifier": { "pattern": "^PRJ(E|D|N)[A-Z\\d+$" }}}},
+                "properties": { "external_identifier": { "pattern": "^PRJ(E|D|N)[A-Z]\\d+$" }}}},
             {
               "if": {
                 "properties": { "identifier_source": { "const": "insdc_sample" } }
@@ -163,7 +163,7 @@
                 "properties": { "identifier_source": { "const": "cbtm" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^\\d{3}\w+$" } }
+                "properties": { "external_identifier": { "pattern": "^\\d{3}\\w+$" } }
               }
             },
             {
