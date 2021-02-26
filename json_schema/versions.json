@@ -70,12 +70,14 @@
             "project": {
                 "contact": "8.0.1",
                 "funder": "2.0.0",
-                "publication": "6.0.0"
+                "publication": "6.0.0",
+                "url": "0.0.0"
             },
             "protocol": {
                 "channel": "2.0.4",
                 "probe": "1.1.1"
-            }
+            },
+            "external_identifier": "0.0.0"
         },
         "system": {
             "file_descriptor": "2.0.0",
