@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+module/external_identifier,major,"Added the schema",,
+module/project/url,major,"Added the schema",,
