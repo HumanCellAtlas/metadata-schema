@@ -191,15 +191,15 @@
               }
             }
           ],
-          "other_explanation": {
+          "user_friendly": "Identifer Source",
+          "guidelines": "Choose the source of the identifier, if source isn't listed select 'other'"
+        },
+        "other_explanation": {
             "description": "An explanation of the source of the identifier.",
             "type": "string",
             "example": "Identifier used for internal tracking.",
             "user_friendly": "Other explanation",
             "guidelines": "If you selected 'other' explain the source of the identifier."
-          },
-          "user_friendly": "Identifer Source",
-          "guidelines": "Choose the source of the identifier, if source isn't listed select 'other'"
         }
     }
 }
