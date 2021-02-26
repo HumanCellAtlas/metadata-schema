@@ -123,7 +123,7 @@
                 "properties": { "identifier_source": { "const": "arrayexpress" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-\d+$" } }
+                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-[0-9]+$" } }
               }
             },
             {
@@ -131,7 +131,7 @@
                 "properties": { "identifier_source": { "const": "scea" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-\d+$" } }
+                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-[0-9]+$" } }
               }
             },
             {
@@ -139,7 +139,7 @@
                 "properties": { "identifier_source": { "const": "scp" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^SCP\d+$" } }
+                "properties": { "external_identifier": { "pattern": "^SCP[0-9]+$" } }
               }
             },
             {
@@ -147,7 +147,7 @@
                 "properties": { "identifier_source": { "const": "geo_series" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^GSE\d+$" } }
+                "properties": { "external_identifier": { "pattern": "^GSE[0-9]+$" } }
               }
             },
             {
@@ -163,7 +163,7 @@
                 "properties": { "identifier_source": { "const": "cbtm" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^\d{3}\w+$" } }
+                "properties": { "external_identifier": { "pattern": "^[0-9]{3}\w+$" } }
               }
             },
             {
@@ -171,7 +171,7 @@
                 "properties": { "identifier_source": { "const": "hdbr" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^\d+$" } }
+                "properties": { "external_identifier": { "pattern": "^[0-9]+$" } }
               }
             },
             {
@@ -179,7 +179,7 @@
                 "properties": { "identifier_source": { "const": "biostudies" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^S-[A-Z]{4}\d+$" } }
+                "properties": { "external_identifier": { "pattern": "^S-[A-Z]{4}[0-9]+$" } }
               }
             },
             {
