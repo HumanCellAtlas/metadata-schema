@@ -13,12 +13,12 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/funder"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/((\\d{1,}.\\d{1,}.\\d{1,})|([a-zA-Z]*?))/funder"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
-            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "pattern": "^\\d{1,}.\\d{1,}.\\d{1,}$",
             "example": "4.6.1"
         },
         "external_identifier": {
@@ -56,18 +56,18 @@
               "if": {
                 "properties": {"identifier_source": {"const": "insdc_study"}}},
               "then": {
-                "properties": {"external_identifier": {"pattern": "^(E|D|S)RP[0-9]{6,}$"}}}},
+                "properties": {"external_identifier": {"pattern": "^(E|D|S)RP\\d{6,}$"}}}},
             {
               "if": {
                 "properties": { "identifier_source": { "const": "insdc_project" }}},
               "then": {
-                "properties": { "external_identifier": { "pattern": "^PRJ(E|D|N)[A-Z][0-9]+$" }}}},
+                "properties": { "external_identifier": { "pattern": "^PRJ(E|D|N)[A-Z\\d+$" }}}},
             {
               "if": {
                 "properties": { "identifier_source": { "const": "insdc_sample" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^(E|D|S)RS[0-9]{6,}$" } }
+                "properties": { "external_identifier": { "pattern": "^(E|D|S)RS\\d{6,}$" } }
               }
             },
             {
@@ -75,7 +75,7 @@
                 "properties": { "identifier_source": { "const": "insdc_experiment" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^(E|D|S)RX[0-9]{6,}$" } }
+                "properties": { "external_identifier": { "pattern": "^(E|D|S)RX\\d{6,}$" } }
               }
             },
             {
@@ -83,7 +83,7 @@
                 "properties": { "identifier_source": { "const": "insdc_run" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^(E|D|S)RR[0-9]{6,}$" } }
+                "properties": { "external_identifier": { "pattern": "^(E|D|S)RR\\d{6,}$" } }
               }
             },
             {
@@ -91,7 +91,7 @@
                 "properties": { "identifier_source": { "const": "biosamples" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^SAM(E|D|N)[A-Z]?[0-9]+$" } }
+                "properties": { "external_identifier": { "pattern": "^SAM(E|D|N)[A-Z]?\\d+$" } }
               }
             },
             {
@@ -99,7 +99,7 @@
                 "properties": { "identifier_source": { "const": "ega_study" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^EGAS\d{11}$" } }
+                "properties": { "external_identifier": { "pattern": "^EGAS\\d{11}$" } }
               }
             },
             {
@@ -107,7 +107,7 @@
                 "properties": { "identifier_source": { "const": "ega_dataset" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^EGAD\d{11}$" } }
+                "properties": { "external_identifier": { "pattern": "^EGAD\\d{11}$" } }
               }
             },
             {
@@ -115,7 +115,7 @@
                 "properties": { "identifier_source": { "const": "ega_sample" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^EGAN\d{11}$" } }
+                "properties": { "external_identifier": { "pattern": "^EGAN\\d{11}$" } }
               }
             },
             {
@@ -123,7 +123,7 @@
                 "properties": { "identifier_source": { "const": "arrayexpress" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-[0-9]+$" } }
+                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-\\d+$" } }
               }
             },
             {
@@ -131,7 +131,7 @@
                 "properties": { "identifier_source": { "const": "scea" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-[0-9]+$" } }
+                "properties": { "external_identifier": { "pattern": "^E-[A-Z]{4}-\\d+$" } }
               }
             },
             {
@@ -139,7 +139,7 @@
                 "properties": { "identifier_source": { "const": "scp" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^SCP[0-9]+$" } }
+                "properties": { "external_identifier": { "pattern": "^SCP\\d+$" } }
               }
             },
             {
@@ -147,7 +147,7 @@
                 "properties": { "identifier_source": { "const": "geo_series" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^GSE[0-9]+$" } }
+                "properties": { "external_identifier": { "pattern": "^GSE\\d+$" } }
               }
             },
             {
@@ -155,7 +155,7 @@
                 "properties": { "identifier_source": { "const": "dbgap" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^phs[0-9]{6}(\\.v[0-9]{1})?(\\.p[0-9])?$" } }
+                "properties": { "external_identifier": { "pattern": "^phs\\d{6}(\\.v\\d{1})?(\\.p\\d)?$" } }
               }
             },
             {
@@ -163,7 +163,7 @@
                 "properties": { "identifier_source": { "const": "cbtm" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^[0-9]{3}\w+$" } }
+                "properties": { "external_identifier": { "pattern": "^\\d{3}\w+$" } }
               }
             },
             {
@@ -171,7 +171,7 @@
                 "properties": { "identifier_source": { "const": "hdbr" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^[0-9]+$" } }
+                "properties": { "external_identifier": { "pattern": "^\\d+$" } }
               }
             },
             {
@@ -179,7 +179,7 @@
                 "properties": { "identifier_source": { "const": "biostudies" } }
               },
               "then": {
-                "properties": { "external_identifier": { "pattern": "^S-[A-Z]{4}[0-9]+$" } }
+                "properties": { "external_identifier": { "pattern": "^S-[A-Z]{4}\\d+$" } }
               }
             },
             {
