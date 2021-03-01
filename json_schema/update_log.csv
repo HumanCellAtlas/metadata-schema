@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/publication,minor,"Added optional hca_publication_status field",,
+module/publication,minor,"Added optional hca_publication_status field. Fixes #1345",,
