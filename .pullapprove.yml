@@ -31,7 +31,7 @@ notifications:
   if: "'content' in labels and 'major' in body" # Notify the DCP for a major update
   comment: |
     Major metadata schema update, pinging @aaclan-ebi @NoopDog
-    @hannes-ucsc @danxmoran . If no one objects, this will be merged on the
+    @hannes-ucsc @aherbst-broad . If no one objects, this will be merged on the
     following 5 working days.
 
 groups:
