@@ -41,6 +41,13 @@
             "$ref": "core/project/project_core.json",
             "user_friendly": "Project core"
         },
+        "estimated_cell_count": {
+            "description": "An estimate of the total cells that were studied in this project.",
+            "type": "integer",
+            "user_friendly": "Estimated project cell count",
+            "examples": [2564, 10000],
+            "guidelines": "Enter an integer that represents the estimated total cells for this project."
+        },
         "contributors": {
             "description": "People contributing to any aspect of the project.",
             "type": "array",
