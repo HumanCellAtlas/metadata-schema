@@ -45,7 +45,7 @@
             "description": "An estimate of the total cells that were studied in this project.",
             "type": "integer",
             "user_friendly": "Estimated project cell count",
-            "examples": [2564, 10000],
+            "example": "2564; 10000",
             "guidelines": "Enter an whole integer, do not include spaces or commas."
         },
         "contributors": {
