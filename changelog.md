@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [system/links.json - v3.0.0] - 2021-03-04
+### Changed
+Changed protocol_type from string to enum of strings. Fixes #1333
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [system/file_descriptor.json - v2.0.0] - 2020-06-29
