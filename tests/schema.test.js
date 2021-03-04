@@ -36,7 +36,8 @@ var tests = [
     {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_fail_specimen_0.json'], expectedErrors: 1},
     {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_analysis_process.json'], expectedErrors: 0},
     {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expectedErrors: 0},
-    {args: ['system/links.json', 'system/test_pass_links.json'], expectedErrors: 0}
+    {args: ['system/links.json', 'system/test_pass_links.json'], expectedErrors: 0},
+    {args: ['system/links.json', 'system/test_fail_links.json'], expectedErrors: 10}
 
 ];
 
