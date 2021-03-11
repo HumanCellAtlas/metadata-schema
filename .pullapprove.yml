@@ -68,7 +68,6 @@ groups:
       - Wkt8
       - mshadbolt
       - willrockout
-      - pnejad
       - ESapenaVentura
       - rachadele
     reviews:  # settings for approval and reviewer selection
@@ -93,7 +92,6 @@ groups:
         - Wkt8
         - mshadbolt
         - willrockout
-        - pnejad
         - ESapenaVentura
         - rachadele
     reviews:
