@@ -31,7 +31,7 @@ notifications:
   if: "'content' in labels and 'major' in body" # Notify the DCP for a major update
   comment: |
     Major metadata schema update, pinging @aaclan-ebi @NoopDog
-    @hannes-ucsc @aherbst . If no one objects, this will be merged on the
+    @hannes-ucsc @aherbst-broad . If no one objects, this will be merged on the
     following 5 working days.
 
 groups:
@@ -49,6 +49,55 @@ groups:
     reviews:
       required: 1
       request_order: shuffle
+      
+  azul-browser:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'develop'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - hannes-ucsc
+      - NoopDog
+    reviews:
+      required: 1
+      request: 1
+  
+  pipelines:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'develop'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      -<insert lantern usernames>
+    reviews:
+      required: 1
+      request: 1
+  
+  data_import:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'develop'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - aherbst-broad
+    reviews:
+      required: 1
+      request: 1
+    
+  tdr:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'develop'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      -<insert tdr usernames>
+    reviews:
+      required: 1
+      request: 1
 
   metadata-updates-major-minor:  # group name
     conditions:  # the group is activated when all of these statements are true
