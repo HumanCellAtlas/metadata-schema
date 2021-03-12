@@ -33,7 +33,6 @@ notifications:
     Major metadata schema update, pinging @aaclan-ebi @NoopDog
     @hannes-ucsc @aherbst-broad . If no one objects, this will be merged on the
     following 5 working days.
-
 groups:
 
   snyk-security-patches:
@@ -62,6 +61,7 @@ groups:
     reviews:
       required: 1
       request: 1
+      request_order: shuffle
   
   pipelines:
     conditions:
@@ -70,10 +70,11 @@ groups:
     - "'content' in labels"
     reviewers:
       users:
-      -<insert lantern usernames>
+      - kbergin
     reviews:
       required: 1
       request: 1
+      request_order: shuffle
   
   data_import:
     conditions:
@@ -86,6 +87,7 @@ groups:
     reviews:
       required: 1
       request: 1
+      request_order: shuffle
     
   tdr:
     conditions:
@@ -94,10 +96,26 @@ groups:
     - "'content' in labels"
     reviewers:
       users:
-      -<insert tdr usernames>
+      - <fill in gh usernames>
     reviews:
       required: 1
       request: 1
+      request_order: shuffle
+      
+  ingest-devs:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'develop'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - aaclan-ebi
+      - jacobwindsor
+      - yusra-haider
+    reviews:
+      required: 1
+      request: 1
+      request_order: shuffle
 
   metadata-updates-major-minor:  # group name
     conditions:  # the group is activated when all of these statements are true
