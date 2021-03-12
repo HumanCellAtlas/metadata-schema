@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/project,minor,"Added estimated cell count to project. Fixes #1343,,

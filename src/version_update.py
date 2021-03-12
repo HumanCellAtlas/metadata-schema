@@ -84,6 +84,8 @@ class VersionUpdater:
 
         if not isinstance(latest, dict):
             return latest
+        else:
+            return latest[hierarchy[-1]]
 
 
     def _getJson(self, path):
