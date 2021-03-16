@@ -14,6 +14,10 @@ Added estimated cell count to project. Fixes #1343
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/project/project.json - v14.2.0] - 2021-03-16
+### Added
+Added ega_accessions and dbgap_accessions. Fixes #1336.
+
 ### [system/links.json - v3.0.0] - 2021-03-04
 ### Changed
 Changed protocol_type from string to enum of strings. Fixes #1333

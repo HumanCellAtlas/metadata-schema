@@ -84,6 +84,28 @@
             "user_friendly": "INSDC project accession",
             "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
+        "ega_accessions": {
+            "description": "A list of European Genome phenome Archive dataset or study accessions.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "EGA[DS][0-9]{11}"
+            },
+            "example": "EGAS00000000001; EGAD00000000002",
+            "guidelines": "Enter any EGA study or dataset accessions that relate to the project. Should start with EGAD or EGAS, study accession preferred.",
+            "user_friendly": "EGA Study/Dataset Accession(s)"
+        },
+        "dbgap_accessions": {
+            "description": "A list of database of Genotypes and Phenotypes (dbGaP) study accessions.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "phs[0-9]{6}(\\.v[0-9])?(\\.p[0-9])?"
+            },
+            "example": "phs001997.v1.p1; phs001836",
+            "guidelines": "Enter any dbGaP study accessions that relate to this project. Should start with phs, can contain the specific version information.",
+            "user_friendly": "dbGaP Study Accession(s)"
+        },
         "geo_series_accessions": {
             "description": "A Gene Expression Omnibus (GEO) series accession.",
             "type": "array",
