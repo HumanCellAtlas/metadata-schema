@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/project,minor,"Added ega_accessions and dbgap_accessions. Fixes #1336.",,
