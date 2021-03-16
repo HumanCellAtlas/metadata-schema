@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/project/project.json - v14.2.0] - 2021-03-16
+### Added
+Added ega_accessions and dbgap_accessions. Fixes #1336.
+
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
