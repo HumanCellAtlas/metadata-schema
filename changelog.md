@@ -7,7 +7,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/project.json - v14.2.0] - 2021-03-12
+### [type/project/project.json - v14.2.0] - 2021-03-16
 ### Added
 Added estimated cell count to project. Fixes #1343
 
