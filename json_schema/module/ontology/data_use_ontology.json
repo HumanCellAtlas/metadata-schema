@@ -37,13 +37,13 @@
                 "include_self": false
             },
             "example": "DUO:0000042; DUO:0000026",
-            "user_friendly": "Data use ontology ID"
+            "user_friendly": "Data use restriction ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "example": "general research use; user specific restriction",
-            "user_friendly": "Date use ontology label"
+            "user_friendly": "Date use restriction ontology label"
         }
     }
 }
