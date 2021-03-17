@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A term that may be associated with the way the data may be used.",
+    "additionalProperties": false,
+    "required": [
+        "text"
+    ],
+    "title": "Data use ontology",
+    "name": "data_use_ontology",
+    "type": "object",
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema\\.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,})|([a-zA-Z]*?))/biological_macromolecule_ontology"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}\\.[0-9]{1,}\\.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "text": {
+            "description": "A short description of the data use restrictions associated with this entity.",
+            "type": "string",
+            "example": "no restriction; general research use",
+            "user_friendly": "Data use restriction"
+        },
+        "ontology": {
+            "description": "An ontology term identifier in the form prefix:accession.",
+            "type": "string",
+            "graph_restriction":  {
+                "ontologies" : ["obo:hcao"],
+                "classes": ["DUO:0000017", "DUO:0000001", "OBI:0000066"],
+                "relations": ["rdfs:subClassOf"],
+                "direct": false,
+                "include_self": false
+            },
+            "example": "DUO:0000042; DUO:0000026",
+            "user_friendly": "Data use ontology ID"
+        },
+        "ontology_label": {
+            "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
+            "type": "string",
+            "example": "general research use; user specific restriction",
+            "user_friendly": "Date use ontology label"
+        }
+    }
+}
