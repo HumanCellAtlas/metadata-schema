@@ -53,7 +53,7 @@ class ReleasePrepare:
             if not log_content[val][self.version_column]:
                 schema = log_content[val][self.schema_column]
                 change_type = log_content[val][self.type_column]
-                version_options = options(self.schemafolder, schema,change_type,independent_schemas)
+                version_options = options(self.schemafolder, schema, change_type, independent_schemas)
                 versionUpdater = VersionUpdater(version_options)
                 versionUpdates = versionUpdater.updateVersions(True)
 
