@@ -18,7 +18,7 @@ let baseSchemaPath = path.join(__dirname, '..', schemaDirs);
 // set the example data path
 let baseDataPath = path.join(__dirname, '..', exampleDataDirs);
 
-let ajvOptions = {baseSchemaPath: baseSchemaPath, extendRefs: true, olsApiBaseUrl: 'http://ontology.dev.data.humancellatlas.org/api'};
+let ajvOptions = {baseSchemaPath: baseSchemaPath, extendRefs: true, olsApiBaseUrl: 'http://ontology.archive.data.humancellatlas.org/api'};
 
 let validator = new ElixirValidator([GraphRestriction], ajvOptions);
 var ajv = new Ajv(ajvOptions);
@@ -36,7 +36,8 @@ var tests = [
     {args: ['type/biomaterial/specimen_from_organism.json', 'biomaterial/test_fail_specimen_0.json'], expectedErrors: 1},
     {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_analysis_process.json'], expectedErrors: 0},
     {args: ['type/process/analysis/analysis_process.json', 'process/test_pass_new_analysis_process.json'], expectedErrors: 0},
-    {args: ['system/links.json', 'system/test_pass_links.json'], expectedErrors: 0}
+    {args: ['system/links.json', 'system/test_pass_links.json'], expectedErrors: 0},
+    {args: ['system/links.json', 'system/test_fail_links.json'], expectedErrors: 10}
 
 ];
 
@@ -101,7 +102,7 @@ describe ('Testing example data validates against schemas', function () {
                     }
                 });
 
-            })
+            }).timeout(10000)
 
     });
 

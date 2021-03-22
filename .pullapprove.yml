@@ -14,7 +14,7 @@ pullapprove_conditions:
 - condition: "'on hold' not in labels"
   unmet_status: pending
   explanation: "PR review is on hold"
-- condition: "'*[tT]ravis*' in check_runs.successful"
+- condition: "'*[tT]ravis*' in check_runs.success"
   unmet_status: failure
   explanation: "Travis CI tests must pass before review starts"
 
@@ -31,7 +31,7 @@ notifications:
   if: "'content' in labels and 'major' in body" # Notify the DCP for a major update
   comment: |
     Major metadata schema update, pinging @aaclan-ebi @NoopDog
-    @hannes-ucsc @danxmoran . If no one objects, this will be merged on the
+    @hannes-ucsc @aherbst . If no one objects, this will be merged on the
     following 5 working days.
 
 groups:
@@ -43,7 +43,9 @@ groups:
     reviewers:
       users:
       - ESapenaVentura
-      - rolando-ebi
+      - aaclan-ebi
+      - jacobwindsor
+      - yusra-haider
     reviews:
       required: 1
       request_order: shuffle
@@ -62,11 +64,13 @@ groups:
       - rays22
       - ami-day
       - ami-day
+      - Wkt8
+      - Wkt8
       - mshadbolt
       - willrockout
       - pnejad
       - ESapenaVentura
-      - claymfischer
+      - rachadele
     reviews:  # settings for approval and reviewer selection
       required: 2
       request_order: shuffle  # reviewers will be chosen in a random order
@@ -85,11 +89,13 @@ groups:
         - rays22
         - ami-day
         - ami-day
+        - Wkt8
+        - Wkt8
         - mshadbolt
         - willrockout
         - pnejad
         - ESapenaVentura
-        - claymfischer
+        - rachadele
     reviews:
       required: 1
       request_order: shuffle
@@ -105,6 +111,7 @@ groups:
       - ESapenaVentura
       - rays22
       - ami-day
+      - Wkt8
     reviews:
       required: 1
       request_order: shuffle
