@@ -7,6 +7,20 @@
     "project_title": "Project 1",
     "project_description": "This is a project."
   },
+  "data_use_restrictions": [
+    {
+      "text": "general research use",
+      "ontology": "DUO:0000042",
+      "ontology label": "general research use"
+
+    },
+    {
+      "text": "ethics approval required",
+      "ontology_label": "ethics approval required",
+      "ontology": "DUO:0000021"
+    }
+
+  ],
   "contributors": [
     {
       "name": "Dummy Person",
