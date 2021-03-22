@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/data_use_ontology.json - v1.0.0] - 2021-03-22
+### Added
+Added data_use_ontology module. Fixes #1342
+
+### [type/project/project.json - v14.3.0] - 2021-03-22
+### Added
+Added optional data_restrictions field. Fixes #1342
+
 ### [type/project/project.json - v14.2.0] - 2021-03-16
 ### Added
 Added estimated cell count to project. Fixes #1343
