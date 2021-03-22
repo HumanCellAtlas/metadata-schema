@@ -235,7 +235,7 @@ text | The name of a library amplification approach being used. | string |  | Li
 ### Data use ontology<a name='Data use ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | A short description of the data use restrictions associated with this entity. | string |  | Data use restriction |  | no restriction; general research use
+text | A short description of the data use restrictions associated with this entity. | string |  | Data use |  | no restriction; general research use
 ### Contributor role ontology<a name='Contributor role ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

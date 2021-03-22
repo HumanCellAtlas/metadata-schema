@@ -24,7 +24,7 @@
             "description": "A short description of the data use restrictions associated with this entity.",
             "type": "string",
             "example": "no restriction; general research use",
-            "user_friendly": "Data use restriction"
+            "user_friendly": "Data use"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession.",
@@ -43,7 +43,7 @@
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
             "example": "general research use; user specific restriction",
-            "user_friendly": "Date use restriction ontology label"
+            "user_friendly": "Data use ontology label"
         }
     }
 }

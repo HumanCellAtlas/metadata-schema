@@ -90,9 +90,9 @@ Location: module/ontology/data_use_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | A short description of the data use restrictions associated with this entity. | string | yes |  | Data use restriction |  | no restriction; general research use
+text | A short description of the data use restrictions associated with this entity. | string | yes |  | Data use |  | no restriction; general research use
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Data use restriction ontology ID |  | DUO:0000042; DUO:0000026
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Date use restriction ontology label |  | general research use; user specific restriction
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Data use ontology label |  | general research use; user specific restriction
 
 ## Contributor role ontology<a name='Contributor role ontology'></a>
 _A term that describes the role of a contributor in the project._

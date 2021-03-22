@@ -1,6 +1,6 @@
 {
-  "describedBy": "https://schema.dev.data.humancellatlas.org/type/project/5.1.0/project",
-  "schema_version": "5.1.0",
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/project/14.1.0/project",
+  "schema_version": "14.1.0",
   "schema_type": "project",
   "project_core": {
     "project_short_name": "P1",
@@ -12,14 +12,12 @@
       "text": "general research use",
       "ontology": "DUO:0000042",
       "ontology label": "general research use"
-
     },
     {
       "text": "ethics approval required",
       "ontology_label": "ethics approval required",
       "ontology": "DUO:0000021"
     }
-
   ],
   "contributors": [
     {
