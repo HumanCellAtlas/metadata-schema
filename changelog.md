@@ -15,10 +15,6 @@ Added data_use_ontology module. Fixes #1342
 ### Added
 Added optional data_restrictions field. Fixes #1342
 
-### [type/project/project.json - v14.2.0] - 2021-03-16
-### Added
-Added estimated cell count to project. Fixes #1343
-
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
