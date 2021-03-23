@@ -9,7 +9,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/matrix"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/protocol/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/matrix"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -33,7 +33,28 @@
                 "Downsampling",
                 "Unknown"
             ],
-            "example": "adherent cells; form single layer colonies"
+            "guidelines": "Should be one of: CPM (counts per million), TPM (transcripts per kilobase million), RPKM(reads per kilobase of exon per million reads mapped), FPKM (fragments per kilobase of exon per million fragments mapped), DESeq2’s median of ratios, TMM (EdgeR’s trimmed mean of M values), SF (size factor), UQ (Upper quartile), Downsampling, Unknown"
+        },
+        "derivation_process": {
+            "description": "How is the data derived?",
+            "type": "enum",
+            "user_friendly": "Derivation process",
+            "guidelines": "Should be one of: alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization",
+            "enum": [
+                "alignment",
+                "quantification",
+                "peak calling",
+                "peak annotation",
+                "gene filtering",
+                "cell filtering",
+                "merging",
+                "cell calling",
+                "ambient RNA correction",
+                "doublet removal",
+                "batch correction",
+                "depth normalization",
+                "other"
+            ]
         }
     }
 }
