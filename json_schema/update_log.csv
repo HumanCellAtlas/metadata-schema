@@ -1,1 +1,5 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/analysis/analysis_protocol,minor,"Changed 'computational_method' field to optional",,
+type/file/analysis_file,minor,"Added optional 'matrix_cell_count' field."
+module/protocol/matrix,major,"Added matrix module",,
+core/file/file_core,minor,"Added optional file_source field.",,
