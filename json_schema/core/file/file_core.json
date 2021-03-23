@@ -49,6 +49,16 @@
             "type": "string",
             "user_friendly": "Checksum",
             "example": "e09a986c2e630130b1849d4bf9a94c06"
-	    }
+	    },
+        "file_source": {
+            "description": "Has the file come from a contributor or the DCP?",
+            "type": "string",
+            "enum":[
+                "DCP",
+                "Contributor"
+            ],
+            "user_friendly": "File source",
+            "example": "DCP; Contributor"
+            }
     }
 }

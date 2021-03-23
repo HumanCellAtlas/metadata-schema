@@ -39,6 +39,13 @@
             "type": "object",
             "$ref": "core/file/file_core.json",
             "user_friendly": "File core"
+        },
+        "matrix_cell_count": {
+            "description": "Number of cells analyzed in the matrix."
+            "type": "integer",
+            "maximum": 1000000000,
+            "minimum": 0,
+            "example": "1; 2100"
         }
     }
 }
