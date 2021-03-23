@@ -46,8 +46,8 @@ Location: module/protocol/matrix.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-data_normalization_methods | Method(s) used to normalize data in the matrix | array | no |  | Data normalization method(s) | CPM (counts per million), TPM (transcripts per kilobase million), RPKM(reads per kilobase of exon per million reads mapped), FPKM (fragments per kilobase of exon per million fragments mapped), DESeq2’s median of ratios, TMM (EdgeR’s trimmed mean of M values), SF (size factor), UQ (Upper quartile), Downsampling, other, Unknown | 
-derivation_process | How is the data derived? | enum | no |  | Derivation process | alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization, other | 
+data_normalization_methods | Method(s) used to normalize data in the matrix | array | no |  | Data normalization method(s) | CPM (counts per million), TPM (transcripts per kilobase million), RPKM (reads per kilobase of exon per million reads mapped), FPKM (fragments per kilobase of exon per million fragments mapped), DESeq2’s median of ratios, TMM (EdgeR’s trimmed mean of M values), SF (size factor), UQ (Upper quartile), Downsampling, other, unknown | 
+derivation_process | How is the data derived? | array | no |  | Derivation process | alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization, other | 
 
 ## File content ontology<a name='File content ontology'></a>
 _A term that describes the contents of a file._
