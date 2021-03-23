@@ -47,7 +47,7 @@ Location: module/protocol/matrix.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 data_normalization_methods | Method(s) used to normalize data in the matrix | array | no |  | Data normalization method(s) |  | 
-derivation_process | How is the data derived? | enum | no |  | Derivation process | alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization, other | 
+derivation_process | How is the data derived? | string | no |  | Derivation process | alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization, other | 
 
 ## File content ontology<a name='File content ontology'></a>
 _A term that describes the contents of a file._

@@ -41,7 +41,7 @@
         },
         "derivation_process": {
             "description": "How is the data derived?",
-            "type": "enum",
+            "type": "string",
             "user_friendly": "Derivation process",
             "guidelines": "Should be one of: alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization",
             "enum": [
