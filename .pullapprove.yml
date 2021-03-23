@@ -76,7 +76,7 @@ groups:
     - "'content' in labels"
     reviewers:
       users:
-      - <TBA>
+      - kbergin
     reviews:
       required: 1
       request: 1
@@ -90,8 +90,8 @@ groups:
     reviewers:
       users:
       - aherbst-broad
-      - <jeff>
-      - <dani>
+      - JeffKorte
+      - danicham
     reviews:
       required: 1
       request: 1
@@ -104,7 +104,7 @@ groups:
     - "'content' in labels"
     reviewers:
       users:
-      - <ruchi>
+      - ruchim
     reviews:
       required: 1
       request: 1
