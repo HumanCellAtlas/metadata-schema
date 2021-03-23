@@ -58,6 +58,7 @@
                 "Contributor"
             ],
             "user_friendly": "File source",
+            "guidelines": "Should be one of: DCP, Contributor",
             "example": "DCP; Contributor"
             }
     }
