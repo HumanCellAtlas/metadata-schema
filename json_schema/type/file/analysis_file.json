@@ -45,7 +45,9 @@
             "type": "integer",
             "maximum": 1000000000,
             "minimum": 0,
-            "example": "1; 2100"
+            "example": "1; 2100",
+            "user_friendly": "Matrix cell count",
+            "guidelines": "Enter the exact number of cells in the matrix."
         }
     }
 }
