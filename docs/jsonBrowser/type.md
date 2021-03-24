@@ -56,6 +56,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+matrix_cell_count | Number of cells analyzed in the matrix. | integer | no |  | Matrix cell count |  | 1; 2100
 
 ## Reference file
 _A reference file used by a secondary reference pipeline._
@@ -139,7 +140,8 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  | Computational method |  | SmartSeq2SingleCell; 10x
+computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | no |  | Computational method |  | SmartSeq2SingleCell; 10x
+matrix | Information related to protocols that output a matrix. | object | no | [See module  matrix](module.md/#matrix) | Matrix |  | 
 
 ## Aggregate generation protocol
 _Information about how cultured cells are developed into cell aggregates._

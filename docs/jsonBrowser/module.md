@@ -39,6 +39,16 @@ assay_type | Type of assay used to detect target. | object | yes | [See module  
 fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
 channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
 
+## Matrix<a name='Matrix'></a>
+_Information relating to generation of count matrices_
+
+Location: module/protocol/matrix.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+data_normalization_methods | Method(s) used to normalize data in the matrix | array | no |  | Data normalization method(s) |  | 
+derivation_process | How is the data derived? | array | no |  | Derivation process |  | 
+
 ## File content ontology<a name='File content ontology'></a>
 _A term that describes the contents of a file._
 

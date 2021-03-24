@@ -86,7 +86,6 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 type | The type of protocol. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string |  | Computational method |  | SmartSeq2SingleCell; 10x
 ### Aggregate generation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -216,6 +215,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 probe_label | The label of a probe used to detect target in this experiment. | string |  | Probe label |  | ACTA1; cFos
 target_label | An identifier for the target molecule. | string |  | Target label |  | CHEBI:85345; ENSG00000170345
 assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+### Matrix<a name='Matrix'></a>
+_There are no required properties in schema Matrix_
 ### File content ontology<a name='File content ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
