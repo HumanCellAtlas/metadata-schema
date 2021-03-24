@@ -7,8 +7,20 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/ontology/data_use_ontology.json - v1.0.0] - 2021-03-22
+### Added
+Added data_use_ontology module. Fixes #1342
+
+### [type/project/project.json - v14.3.0] - 2021-03-22
+### Added
+Added optional data_restrictions field. Fixes #1342
+
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [type/project/project.json - v14.2.0] - 2021-03-16
+### Added
+Added ega_accessions and dbgap_accessions. Fixes #1336.
 
 ### [system/links.json - v3.0.0] - 2021-03-04
 ### Changed
