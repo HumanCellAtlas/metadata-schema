@@ -7,6 +7,38 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [module/protocol/matrix.json - v1.0.0] - 2021-03-24
+### Added
+Added matrix module
+
+### [type/protocol/analysis/analysis_protocol.json - v9.2.0] - 2021-03-24
+### Changed
+Changed 'computational_method' field to optional, added matrix module field
+
+### [type/file/analysis_file.json - v6.3.0] - 2021-03-24
+### Added
+Added optional 'matrix_cell_count' field.
+
+### [core/file/file_core.json - v6.2.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/sequence_file.json - v9.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/supplementary_file.json - v2.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/reference_file.json - v3.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/image_file.json - v2.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 

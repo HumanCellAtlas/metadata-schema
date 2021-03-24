@@ -1,5 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/protocol/matrix,major,"Added matrix module",,
-type/protocol/analysis/analysis_protocol,minor,"Changed 'computational_method' field to optional, added matrix module field",,
-type/file/analysis_file,minor,"Added optional 'matrix_cell_count' field.",,
-core/file/file_core,minor,"Added optional file_source field.",,

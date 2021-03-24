@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2021-03-16T13:59:27Z",
+    "last_update_date": "2021-03-24T13:25:08Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
                 "biomaterial_core": "8.2.0"
             },
             "file": {
-                "file_core": "6.1.1"
+                "file_core": "6.2.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -74,7 +74,7 @@
             },
             "protocol": {
                 "channel": "2.0.4",
-                "matrix": "0.0.0",
+                "matrix": "1.0.0",
                 "probe": "1.1.1"
             }
         },
@@ -94,11 +94,11 @@
                 "specimen_from_organism": "10.4.0"
             },
             "file": {
-                "analysis_file": "6.2.0",
-                "image_file": "2.2.0",
-                "reference_file": "3.2.0",
-                "sequence_file": "9.2.0",
-                "supplementary_file": "2.2.0"
+                "analysis_file": "6.3.0",
+                "image_file": "2.3.0",
+                "reference_file": "3.3.0",
+                "sequence_file": "9.3.0",
+                "supplementary_file": "2.3.0"
             },
             "process": {
                 "analysis": {
@@ -111,7 +111,7 @@
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "9.1.0"
+                    "analysis_protocol": "9.2.0"
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "2.1.0",
