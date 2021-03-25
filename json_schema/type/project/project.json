@@ -41,14 +41,6 @@
             "$ref": "core/project/project_core.json",
             "user_friendly": "Project core"
         },
-        "data_use_restrictions": {
-            "description": "Information about how data from this project may be used.",
-            "type": "array",
-            "items": {
-                "$ref":"module/ontology/data_use_ontology.json"
-            },
-            "user_friendly": "Data use restrictions"
-        },
         "contributors": {
             "description": "People contributing to any aspect of the project.",
             "type": "array",
