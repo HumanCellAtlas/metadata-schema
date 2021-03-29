@@ -117,13 +117,20 @@ class MarkdownGenerator:
                     # if link is not "":
                     #     print(schema["title"] + "\t "+ property + "\t"+ link)
 
+                    if "enum" in schema["properties"][property]:
+                        enum_values = ", ".join(schema["properties"][property]["enum"])
+                    elif "enum" in schema["properties"][property].get("items", ""):
+                        enum_values = ", ".join(schema["properties"][property]["items"]["enum"])
+                    else:
+                        enum_values = ""
+
                     file.write(property + " | "+
                                (schema["properties"][property]["description"] if "description" in schema["properties"][property] else "") + " | " +
                                (schema["properties"][property]["type"] if "type" in schema["properties"][property] else "")  + " | " +
                                ("yes" if property in required else "no")  + " | " +
                                link + " | " +
                                (schema["properties"][property]["user_friendly"] if "user_friendly" in schema["properties"][property] else "") + " | " +
-                               (", ".join(schema["properties"][property]["enum"]) if "enum" in schema["properties"][property] else "") + " | " +
+                               enum_values + " | " +
                                (str(schema["properties"][property]["example"]) if "example" in schema["properties"][property] else "") + "\n")
 
                     if property in required:
