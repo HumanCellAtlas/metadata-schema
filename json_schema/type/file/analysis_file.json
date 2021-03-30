@@ -41,7 +41,7 @@
             "user_friendly": "File core"
         },
         "matrix_cell_count": {
-            "description": "Number of cells analyzed in the matrix.",
+            "description": "Number of cells analyzed in a matrix file.",
             "type": "integer",
             "maximum": 1000000000,
             "minimum": 0,

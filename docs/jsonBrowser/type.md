@@ -56,7 +56,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-matrix_cell_count | Number of cells analyzed in the matrix. | integer | no |  | Matrix cell count |  | 1; 2100
+matrix_cell_count | Number of cells analyzed in a matrix file. | integer | no |  | Matrix cell count |  | 1; 2100
 
 ## Reference file
 _A reference file used by a secondary reference pipeline._
