@@ -47,7 +47,7 @@
             "minimum": 0,
             "example": "1; 2100",
             "user_friendly": "Matrix cell count",
-            "guidelines": "Enter the exact number of cells in the matrix."
+            "guidelines": "If the analysis file is a matrix containing cells, enter the exact number of cells in the matrix."
         }
     }
 }

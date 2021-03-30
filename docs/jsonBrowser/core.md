@@ -18,7 +18,7 @@ file_name | The name of the file. | string | yes |  | File name |  | R1.fastq.gz
 format | The format of the file. | string | yes |  | File format |  | fastq.gz; tif
 content_description | General description of the contents of the file. | array | no | [See module  file_content_ontology](module.md/#file_content_ontology) | Content description |  | 
 checksum | MD5 checksum of the file. | string | no |  | Checksum |  | e09a986c2e630130b1849d4bf9a94c06
-file_source | Has the file come from a contributor or the DCP? | string | no |  | File source | DCP, Contributor | DCP; Contributor
+file_source | The source of the file. This is typically an organisation, person or dedicated process. | string | no |  | File source | DCP, Contributor | DCP; Contributor
 
 ## Protocol core<a name='Protocol core'></a>
 _Information about an intended protocol that was followed in the project._
