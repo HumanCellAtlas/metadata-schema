@@ -51,7 +51,7 @@
             "example": "e09a986c2e630130b1849d4bf9a94c06"
 	    },
         "file_source": {
-            "description": "Has the file come from a contributor or the DCP?",
+            "description": "The source of the file. This is typically an organisation, person or dedicated process.",
             "type": "string",
             "enum":[
                 "DCP",
