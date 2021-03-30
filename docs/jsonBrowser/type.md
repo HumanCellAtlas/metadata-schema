@@ -295,7 +295,7 @@ contributors | People contributing to any aspect of the project. | array | no | 
 supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
 publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
 insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
-ega_accessions | A list of European Genome phenome Archive dataset or study accessions. | array | no |  | EGA Study/Dataset Accession(s) |  | EGAS00000000001; EGAD00000000002
+ega_accessions | A list of accessions referring to EGA (European Genome-Phenome Archive) datasets or studies. | array | no |  | EGA Study/Dataset Accession(s) |  | EGAS00000000001; EGAD00000000002
 dbgap_accessions | A list of database of Genotypes and Phenotypes (dbGaP) study accessions. | array | no |  | dbGaP Study Accession(s) |  | phs001997.v1.p1; phs001836
 geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
 array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
