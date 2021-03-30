@@ -78,7 +78,7 @@
             "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
         "ega_accessions": {
-            "description": "A list of European Genome phenome Archive dataset or study accessions.",
+            "description": "A list of accessions referring to EGA (European Genome-Phenome Archive) datasets or studies.",
             "type": "array",
             "items": {
                 "type": "string",
