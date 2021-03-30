@@ -7,10 +7,6 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [type/project/project.json - v15.0.0] - 2021-03-25
-### Removed
-Removed duo_code module reference
-
 ### [module/protocol/matrix.json - v1.0.0] - 2021-03-24
 ### Added
 Added matrix module
@@ -42,14 +38,6 @@ Added optional file_source field.
 ### [type/file/image_file.json - v2.3.0] - 2021-03-24
 ### Added
 Added optional file_source field.
-
-### [module/ontology/data_use_ontology.json - v1.0.0] - 2021-03-22
-### Added
-Added data_use_ontology module. Fixes #1342
-
-### [type/project/project.json - v14.3.0] - 2021-03-22
-### Added
-Added optional data_restrictions field. Fixes #1342
 
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)

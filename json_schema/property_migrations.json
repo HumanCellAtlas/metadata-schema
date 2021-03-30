@@ -1,13 +1,6 @@
 {
     "migrations": [
         {
-            "source_schema": "project",
-            "property": "data_use_restrictions",
-            "effective_from": "15.0.0",
-            "reason": "Field rollback",
-            "type": "deprecated property"
-        },
-        {
             "source_schema": "file_descriptor",
             "property": "schema_major_version",
             "effective_from": "2.0.0",
