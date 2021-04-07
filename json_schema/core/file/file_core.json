@@ -51,7 +51,7 @@
             "example": "e09a986c2e630130b1849d4bf9a94c06"
 	    },
         "file_source": {
-            "description": "The source of the file. This is typically an organisation, person or dedicated process.",
+            "description": "The source of the file. This is typically an organisation, repository, person or dedicated process.",
             "type": "string",
             "enum":[
                 "DCP/2 Analysis",
@@ -67,8 +67,8 @@
                 "Publication"
             ],
             "user_friendly": "File source",
-            "guidelines": "Should be one of: DCP, Contributor",
-            "example": "DCP; Contributor"
+            "guidelines": "Should be one of: DCP/2 Analysis, Contributor, ArrayExpress, HCA Release, GEO, SCEA, SCP, DCP/1 Matrix Service, LungMAP, Zenodo, Publication",
+            "example": "GEO; Contributor"
             }
     }
 }
