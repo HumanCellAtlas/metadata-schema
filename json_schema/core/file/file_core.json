@@ -54,8 +54,17 @@
             "description": "The source of the file. This is typically an organisation, person or dedicated process.",
             "type": "string",
             "enum":[
-                "DCP",
-                "Contributor"
+                "DCP/2 Analysis",
+                "Contributor",
+                "Array Express",
+                "HCA Release",
+                "GEO",
+                "SCEA",
+                "SCP",
+                "DCP/1 Matrix Service",
+                "LungMAP",
+                "Zenodo",
+                "Publication"
             ],
             "user_friendly": "File source",
             "guidelines": "Should be one of: DCP, Contributor",
