@@ -41,13 +41,13 @@
             "user_friendly": "File core"
         },
         "matrix_cell_count": {
-            "description": "Number of cells analyzed in the matrix.",
+            "description": "Number of cells analyzed in a matrix file.",
             "type": "integer",
             "maximum": 1000000000,
             "minimum": 0,
             "example": "1; 2100",
             "user_friendly": "Matrix cell count",
-            "guidelines": "Enter the exact number of cells in the matrix."
+            "guidelines": "If the analysis file is a matrix containing cells, enter the exact number of cells in the matrix."
         }
     }
 }

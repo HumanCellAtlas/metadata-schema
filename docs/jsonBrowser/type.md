@@ -56,7 +56,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
-matrix_cell_count | Number of cells analyzed in the matrix. | integer | no |  | Matrix cell count |  | 1; 2100
+matrix_cell_count | Number of cells analyzed in a matrix file. | integer | no |  | Matrix cell count |  | 1; 2100
 
 ## Reference file
 _A reference file used by a secondary reference pipeline._
@@ -295,7 +295,7 @@ contributors | People contributing to any aspect of the project. | array | no | 
 supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
 publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
 insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
-ega_accessions | A list of European Genome phenome Archive dataset or study accessions. | array | no |  | EGA Study/Dataset Accession(s) |  | EGAS00000000001; EGAD00000000002
+ega_accessions | A list of accessions referring to EGA (European Genome-Phenome Archive) datasets or studies. | array | no |  | EGA Study/Dataset Accession(s) |  | EGAS00000000001; EGAD00000000002
 dbgap_accessions | A list of database of Genotypes and Phenotypes (dbGaP) study accessions. | array | no |  | dbGaP Study Accession(s) |  | phs001997.v1.p1; phs001836
 geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
 array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
