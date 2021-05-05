@@ -35,7 +35,7 @@
                 "Downsampling",
                 "other",
                 "unknown"
-            ]
+                ]
             },
             "guidelines": "Should be one of: CPM (counts per million), TPM (transcripts per kilobase million), RPKM(reads per kilobase of exon per million reads mapped), FPKM (fragments per kilobase of exon per million fragments mapped), DESeq2’s median of ratios, TMM (EdgeR’s trimmed mean of M values), SF (size factor), UQ (Upper quartile), Downsampling, unknown, other."
         },
