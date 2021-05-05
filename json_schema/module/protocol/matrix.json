@@ -21,7 +21,7 @@
             "description": "Method(s) used to normalize data in the matrix",
             "type": "array",
             "user_friendly": "Data normalization method(s)",
-            "items":{
+            "items": {
                 "type": "string",
                 "enum": [
                 "CPM (counts per million)",
