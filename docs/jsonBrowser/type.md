@@ -56,6 +56,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 schema_type | The type of the metadata schema entity. | string | yes |  |  | file | 
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md/#file_core) | File core |  | 
+matrix_cell_count | Number of cells analyzed in a matrix file. | integer | no |  | Matrix cell count |  | 1; 2100
 
 ## Reference file
 _A reference file used by a secondary reference pipeline._
@@ -139,7 +140,8 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | yes |  | Computational method |  | SmartSeq2SingleCell; 10x
+computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | no |  | Computational method |  | SmartSeq2SingleCell; 10x
+matrix | Information related to protocols that output a matrix. | object | no | [See module  matrix](module.md/#matrix) | Matrix |  | 
 
 ## Aggregate generation protocol
 _Information about how cultured cells are developed into cell aggregates._
@@ -293,6 +295,8 @@ contributors | People contributing to any aspect of the project. | array | no | 
 supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
 publications | Publications resulting from this project. | array | no | [See module  publication](module.md/#publication) | Publications |  | 
 insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
+ega_accessions | A list of accessions referring to EGA (European Genome-Phenome Archive) datasets or studies. | array | no |  | EGA Study/Dataset Accession(s) |  | EGAS00000000001; EGAD00000000002
+dbgap_accessions | A list of database of Genotypes and Phenotypes (dbGaP) study accessions. | array | no |  | dbGaP Study Accession(s) |  | phs001997.v1.p1; phs001836
 geo_series_accessions | A Gene Expression Omnibus (GEO) series accession. | array | no |  | GEO series accession |  | GSE00000
 array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExpress accession |  | E-AAAA-00
 insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000

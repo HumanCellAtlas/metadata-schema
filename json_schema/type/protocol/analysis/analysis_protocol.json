@@ -6,7 +6,6 @@
         "describedBy",
         "schema_type",
         "protocol_core",
-        "computational_method",
         "type"
     ],
     "title": "Analysis protocol",
@@ -53,6 +52,12 @@
             "type": "string",
             "user_friendly": "Computational method",
             "example": "SmartSeq2SingleCell; 10x"
+        },
+        "matrix": {
+            "description": "Information related to protocols that output a matrix.",
+            "type": "object",
+            "$ref": "module/protocol/matrix.json",
+            "user_friendly": "Matrix"
         }
     }
 }

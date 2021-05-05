@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information relating to generation of matrices",
+    "additionalProperties": false,
+    "title": "Matrix",
+    "name": "matrix",
+    "type": "object",
+    "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/protocol/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/matrix"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "data_normalization_methods": {
+            "description": "Method(s) used to normalize data in the matrix",
+            "type": "array",
+            "user_friendly": "Data normalization method(s)",
+            "items": {
+                "type": "string",
+                "enum": [
+                  "CPM (counts per million)",
+                  "TPM (transcripts per kilobase million)",
+                  "RPKM (reads per kilobase of exon per million reads mapped)",
+                  "FPKM (fragments per kilobase of exon per million fragments mapped)",
+                  "DESeq2’s median of ratios",
+                  "TMM (EdgeR’s trimmed mean of M values)",
+                  "SF (size factor)",
+                  "UQ (Upper quartile)",
+                  "Downsampling",
+                  "other",
+                  "unknown"
+                ]
+            },
+            "guidelines": "Should be one of: CPM (counts per million), TPM (transcripts per kilobase million), RPKM(reads per kilobase of exon per million reads mapped), FPKM (fragments per kilobase of exon per million fragments mapped), DESeq2’s median of ratios, TMM (EdgeR’s trimmed mean of M values), SF (size factor), UQ (Upper quartile), Downsampling, unknown, other."
+        },
+        "derivation_process": {
+            "description": "Type of computational tool used in generating the matrix object.",
+            "type": "array",
+            "user_friendly": "Derivation process",
+            "guidelines": "Should be one of: alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization, other.",
+            "items": {
+                "type": "string",
+                "enum": [
+                  "alignment",
+                  "quantification",
+                  "peak calling",
+                  "peak annotation",
+                  "gene filtering",
+                  "cell filtering",
+                  "merging",
+                  "cell calling",
+                  "ambient RNA correction",
+                  "doublet removal",
+                  "batch correction",
+                  "depth normalization",
+                  "other"
+                ]
+            }
+        }
+    }
+}

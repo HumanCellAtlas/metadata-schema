@@ -1,6 +1,6 @@
 {
-  "describedBy": "https://schema.dev.data.humancellatlas.org/type/project/5.1.0/project",
-  "schema_version": "5.1.0",
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/project/14.1.0/project",
+  "schema_version": "14.1.0",
   "schema_type": "project",
   "project_core": {
     "project_short_name": "P1",
