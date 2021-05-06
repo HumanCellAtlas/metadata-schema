@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/project/project, minor, "Added project-level assay metadata fields: organs, organ_parts, assays, estimated_cell_count. Fixes #1337.",,

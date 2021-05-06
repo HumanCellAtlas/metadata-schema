@@ -302,6 +302,10 @@ array_express_accessions | An ArrayExpress accession. | array | no |  | ArrayExp
 insdc_study_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) study accession. | array | no |  | INSDC study accession |  | PRJNA000000
 biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md/#funder) | Funding source(s) |  | 
+organs | A list of organs that were studied in this project. | array | no | [See module  organ_ontology](module.md/#organ_ontology) | Organ(s) |  | 
+organ_parts | A list of organ parts that were studied in this project. | array | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part(s) |  | 
+assays | A list of library preparation assays that were used in this project. | array | no | [See module  process_type_ontology](module.md/#process_type_ontology) | Library preparation assay(s) |  | 
+estimated_cell_count | An estimated number of cells in this project | integer | no |  | Estimated cell count |  | 10000; 2100000
 
 ## Specimen from organism
 _Information about the specimen that was collected from the donor organism._
