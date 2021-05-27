@@ -54,6 +54,13 @@
             "type": "string",
             "user_friendly": "Publication URL",
             "example": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/"
+        },
+        "hca_publication_status": {
+            "description": "Has the publication been accepted as an official HCA publication according to the process at https://www.humancellatlas.org/publications/",
+            "type": "boolean",
+            "user_friendly": "HCA Publication?",
+            "guidelines": "Should be one of yes or no",
+            "example": "yes; no"
         }
     }
 }
