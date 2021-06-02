@@ -59,7 +59,7 @@
             "description": "Has the publication been accepted as an official HCA publication according to the process at https://www.humancellatlas.org/publications/",
             "type": "boolean",
             "user_friendly": "HCA Publication?",
-            "guidelines": "Should be one of yes or no",
+            "guidelines": "Should be one of: yes or no",
             "example": "yes; no"
         }
     }
