@@ -151,30 +151,6 @@
             },
             "user_friendly": "Funding source(s)"
         },
-        "organs": {
-            "description": "A list of organs that were studied in this project.",
-            "type": "array",
-            "items": {
-                "$ref": "module/ontology/organ_ontology.json"
-            },
-            "user_friendly": "Organ(s)"
-        },
-        "organ_parts": {
-            "description": "A list of organ parts that were studied in this project.",
-            "type": "array",
-            "items": {
-                "$ref": "module/ontology/organ_part_ontology.json"
-            },
-            "user_friendly": "Organ part(s)"
-        },
-        "assays": {
-            "description": "A list of library preparation assays that were used in this project.",
-            "type": "array",
-            "items": {
-                "$ref": "module/ontology/process_type_ontology.json"
-            },
-            "user_friendly": "Library preparation assay(s)"
-        },
         "estimated_cell_count": {
             "description": "An estimated number of cells in this project",
             "type": "integer",
