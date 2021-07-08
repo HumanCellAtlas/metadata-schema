@@ -4,7 +4,8 @@
     "additionalProperties": false,
     "required": [
         "authors",
-        "title"
+        "title",
+        "is_hca_publication"
     ],
     "title": "Publication",
     "name": "publication",

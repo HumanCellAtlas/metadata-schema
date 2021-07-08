@@ -332,6 +332,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication. | array |  | Authors |  | Doe JD
 title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
+is_hca_publication | Has the publication been accepted as an official HCA publication, according to the process described in https://www.humancellatlas.org/publications/ ? | boolean |  | HCA Publication? |  | yes; no
 ### Human-specific<a name='Human-specific'></a>
 _There are no required properties in schema Human-specific_
 ### Growth conditions<a name='Growth conditions'></a>
