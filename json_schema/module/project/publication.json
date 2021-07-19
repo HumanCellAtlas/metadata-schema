@@ -5,7 +5,7 @@
     "required": [
         "authors",
         "title",
-        "is_hca_publication"
+        "official_hca_publication"
     ],
     "title": "Publication",
     "name": "publication",
