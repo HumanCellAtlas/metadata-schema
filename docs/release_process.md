@@ -10,12 +10,11 @@
 
 ## Introduction
 
-This document is an SOP for super users who are responsible for merging PRs into develop ("pre-release") and propagate metadata schemas from develop to integration, to staging, to production ("release").
+This document is an SOP for super users who are responsible for merging PRs into staging ("pre-release") and propagate metadata schemas from staging to production (`master`).
 
 **What is in this document**
-- Steps for merging pull requests (PRs) into the develop branch aka "pre-release"
-- Steps for merging the develop branch into the integration branch aka "release"
-- Steps for propagating from integration to staging and production
+- Steps for merging pull requests (PRs) into the staging branch aka "pre-release"
+- Steps for merging the staging branch into the master branch aka "release"
 
  **Who should be reading this document?**
  - HCA DCP internal developers with authorisation to do metadata pre-releases and releases.
@@ -41,11 +40,11 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ## Steps of the pre-release process
 
-***Condition for pre-release:*** A pull request is ready to be merged into develop when it has been approved by the metadata community in line with the [acceptance process](committers.md#schema-update-acceptance-process). It is the responsibility of the last Reviewer of the PR to merge it into develop.
+***Condition for pre-release:*** A pull request is ready to be merged into staging when it has been approved by the DCP2 components in line with the [acceptance process](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id1). It is the responsibility of the PR author to merge the PR into staging.
 
 1. **Check out** the develop branch and pull any changes to make sure it is up-to-date
 
-        git checkout develop
+        git checkout staging
         git pull
 
 1. **Check out** the pull request branch and make sure your local copy is up-to-date
@@ -53,13 +52,13 @@ From now on, every time you commit anything in the metadata schema repo using th
         git checkout <name_of_pull_request_branch>
         git pull
 
-1. **Verify** whether there are any merge conflicts between the PR branch and develop. You can do this in GitHub or on your computer.
+1. **Verify** whether there are any merge conflicts between the PR branch and staging. You can do this in GitHub or on your computer.
 
     1. **Pull** develop into the pull request branch locally (on your computer)
 
-            git pull origin develop
+            git pull origin staging
 
-        This is equivalent to merging develop into the PR branch and reveals all the conflicts.
+        This is equivalent to merging staging into the PR branch and reveals all the conflicts.
 
     1. **Fix** any merge conflicts
 
@@ -110,29 +109,29 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Mark** any linked GitHub issues with the "done" label, and then **close** the issue.
 
-1. **Check** deployment status (see [below](#check-deployment-status) for details).
+1. **Check** the changes in versions have been picked up by checking the #hca-schema-pub-announce slack channel
 
 ## Steps of the release process
 
 ### Primary release
 
-Anyone on the metadata team can trigger a primary release from develop to integration. Please note that the DCP-wide release from integration to staging happens each Wednesday (and a DCP-wide release from staging to production on Tuesday). It is preferable to do a **primary release from develop to integration on Thursday** (but no later than Friday) so that any issues that might arise with the integration tests can be addressed without disrupting the DCP-wide release process.
+Anyone on the metadata team can trigger a primary release from staging to master.
 
-1. **Check out** the integration branch and pull any changes to make sure it is up-to-date
+1. **Check out** the master branch and pull any changes to make sure it is up-to-date
 
-        git checkout integration
+        git checkout master
         git pull
 
-1. **Check out** the develop branch to your local machine
+1. **Check out** the staging branch to your local machine
 
-        git checkout develop
+        git checkout staging
         git pull
 
-1. **Verify** that there are no merge conflicts between develop and integration by running
+1. **Verify** that there are no merge conflicts between staging and master by running
 
-        git pull origin integration
+        git pull origin master
 
-    1. **Fix** any merge conflicts that might arise, giving priority to changes in the develop branch *except* if a hotfix was propagated ahead of develop.
+    1. **Fix** any merge conflicts that might arise, giving priority to changes in the staging branch *except* if a hotfix was propagated ahead of staging.
 
 1. **Open** `changelog.md` and move the line
 
@@ -144,44 +143,27 @@ Anyone on the metadata team can trigger a primary release from develop to integr
 
 1. **Commit** your changes
 
-        git commit -a -m "Release from develop to integration YYYY-MM-DD."
+        git commit -a -m "Release from staging to master YYYY-MM-DD."
         git push origin develop
 
-1. **Create a pull request** from *develop* to *integration* for easy traceability. The PR should be tagged with the "release" label and should contain **Release notes** split into two sections:
+1. **Create a pull request** from *staging* to *master* for easy traceability. The PR should be tagged with the "release" label and should contain **Release notes** split into two sections:
    1. *Versions*: Enter schema names and version numbers for any updated schemas. Enter the current version as shown in versions.json, skipping over intermediate versions.
    1. *Functionality changes*: Describe any changes in how the schema will function in the context of other DCP components. Include all the major and minor schema changes and any code changes, e.g. changes to the schema validation code.
     
-   See example of *develop* to *integration* release PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/665) 
+   [**WARNING**:Environments outdated] See example of *develop* to *integration* release PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/665) 
 
-1. **Wait** for the Travis build to pass, then **merge** this PR into develop immediately.
+1. **Wait** for the Travis build to pass, then **merge** this PR into master immediately.
  
    ***Merge your own pull request in this particular scenario!***
    
    No additional Reviewers are required for this step, but if you are unsure about anything, do not hesitate to ask for a review from someone.
 
-1. **Check** deployment status (see [below](#check-deployment-status) for details).
+1. **Check** the changes in versions have been picked up by checking the #hca-schema-pub-announce slack channel
 
-### Release propagation
-
-Promotion of changes from integration to staging and staging to production should be done in line with the general [DCP release schedule](https://docs.google.com/spreadsheets/d/1Tqhs20tj_3FqdO_1Cam1iLSaqE-y9Piu8lDJ6KEdP80/edit#gid=1508723546). These release propagations should be straight forward merge operations through the environments, with no manual changes being required.
-The designated **release manager** for the week is in charge of the relevant propagation steps. DCP-wide SOP for release operation can be found [here](https://allspark.dev.data.humancellatlas.org/dcp-ops/docs/wikis/SOP:%20Releasing%20new%20Versions%20of%20DCP%20Software). Metadata-specific SOP can be found [here](https://docs.google.com/document/d/1gNq5I42xY5ie8jqENSVEswn3NXHKUYgrfFgwMK_Vh8A/edit). 
-
-## Check deployment status
-
-Whether doing a pre-release or a release, the person merging the pre-/release PR is responsible for determining whether the deployment was successful. A successful deployment results in the just-released schemas being available for use by the Ingestion Service, other DCP components, and third party software at schema.humancellatlas.org. The following steps should be followed to confirm deployment:
-
-1. **Check** that the schema changes were detected in the #schema-pub-events Slack channel in the correct environment. The phrase "New schema changes published:" should appear with the list of the newly released schemas and their versions. This check confirms that schema updates were detected by the publisher.
-
-1. **Check** that the newly released schemas are available by checking
-
-    `https://api.ingest.<env>.data.humancellatlas.org/schemas/search/latestSchemas?size=1000`
-    
-    Replacing `<env>` with the name of the environment that the schema updates were just deployed to (dev, integration, staging). For production (master), remove `<env>.` from the command. Spot check at least 1 schema name and confirm the displayed version is the newly released version. This check confirms that the schema updates will be retrieved using the /latestSchemas endpoint. If the newest version *is not* displayed, contact an ingest developer.
-
-1. **Trigger** a DCP-wide integration test *only* if releasing to the integration environment to confirm that the changes do not break the integration test. Go to the [integration testing schedule page](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/pipeline_schedules) and click the run button (black triangle) next to the "DCP wide test in integration environment" pipeline in the "integration" environment (if not currently running). If the test passes, nothing further needs to be done. If the test fails, an investigation is needed to determine what steps need to be taken. For releasing to staging or production, the DCP-wide Release Manager for the week will trigger the integration test after all components have deployed.
-
-## Steps of hotfix process
+## Steps of hotfix process/documentation updates
 ***Condition for hotfix***: A pull request is ready to be merged into master when it has been approved by the metadata community. Specifics for acceptance may vary between each PR depending on the request. Hotfixes are a special case of PR and do not follow the normal release process.
+***Condition for documentation update***: A pull request that only contains documentation (markdown files) updates is ready to be merged.
+
 
 1. Run `release_prepare.py` as indicated in step 5 the pre-release process
    ```
@@ -222,13 +204,7 @@ Whether doing a pre-release or a release, the person merging the pre-/release PR
 
 1. **Merge** the branch to master by clicking on the "merge" button at the end of the PR. **DO NOT DELETE THE BRANCH**. 
 
-After merging to master, carry out the next 5 steps for each of the release branches in reverse order i.e.
-
-a. staging
-
-b. integration
-
-c. develop
+After merging to master, carry out the next 5 steps for staging
 
 1. **Check out** the `<release_branch>` you are hotfixing and pull to make sure you have the latest changes locally
    ```
@@ -253,7 +229,7 @@ c. develop
 
 1. Wait for travis tests to pass and **merge the PR**.
 
-1. **Repeat** for the next branch until it is hotfixed to `master`, `staging`, `integration` and `develop` environments.
+1. **Repeat** for the next branch until it is hotfixed to `master` and `staging` environments.
 
 After merging the hotfix to all release branches, **Delete the branch**.
 

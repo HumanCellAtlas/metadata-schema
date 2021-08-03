@@ -60,17 +60,15 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 1. **Assign Committer to review the suggestion.** A person (the "Committer") with commit rights on the metadata-schema repo will be assigned to each suggestion (issue/email/PR). The Committer will be responsible for reviewing the suggestion, noting any consequences of the suggestion, contacting appropriate HCA teams for feedback, and making announcements to ensure the whole community has an opportunity to provide input. 
 
-1. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Committer needs to make the suggested update and a pull request against develop. If the Contributor has a GitHub account, they should be encouraged to make the suggested update and a pull request. When a pull request is made, a test suite of tools will automatically run that validates the updates. 
+1. **Make pull request if one does not exist.** If the suggestion came in the form of a GitHub issue or email, then the Committer needs to make the suggested update and a pull request against staging. If the Contributor has a GitHub account, they should be encouraged to make the suggested update and a pull request. When a pull request is made, a test suite of tools will automatically run that validates the updates. 
 
     **NB** Currently this test suite of tools is not complete, and the tools that do exist must be run manually by the Reviewer.
 
-1. **Annotate the pull request (version, stability) and run unit tests.** The Committer should classify the suggested update by the type of version change (major, minor, patch) and the stability category (high, medium, or low). These classifications can be indicated in the pull request description. Specifically, the version change classification will be indicated in the `update_log.csv` file. The Committer should also ensure the metadata-schema repo unit tests have been run and pass. Example spreadsheets and JSON documents will potentially need to be updated.
+1. **Annotate the pull request (version) and run unit tests.** The Committer should classify the suggested update by the type of version change (major, minor, patch) in the pull request. The version change classification will be indicated in the `update_log.csv` file. The Committer should also ensure the metadata-schema repo unit tests have been run and pass. Example spreadsheets and JSON documents will potentially need to be updated.
 
-1. **Notify community about the update request.** The Committer should announce the suggested update/PR on the #hca-metadata and #dcp Slack channels so everyone can have an opportunity to comment over the time frame specified by the combination of stability level and version change. The Committer should also tag specific developers who could be impacted by the change. 
+1. **Notify downstream components about the update request.** The Committer should announce the suggested update/PR on the #dcp-2 channel so all the DCP2 components can review and comment on the PR, making sure the list of reviewers specified in the [DCP2 specs document](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id9) is 
 
-1. **Start the community review period.** The Committer starts the clock on the review period as indicated by the [update acceptance process](#schema-update-acceptance-process). The Committer and any other assigned internal reviewers ("Reviewers") should actively respond to feedback on the proposed update, making any indicated changes in the pull request.
-
-1. **Pre-release the update.** Once the review period is over, if the update is accepted then the Committer merges the pull request into develop following the [release process](release_process.md). The update is now considered "pre-released".
+1. **Pre-release the update.** Once the review period is over, if the update is accepted then the Committer merges the pull request into staging following the [release process](release_process.md). The update is now considered "pre-released".
 
 ## Before making changes
 
@@ -94,7 +92,7 @@ This section outlines steps for Committers to make suggested changes to the meta
 
         git checkout staging
 
-1. **Make** and **switch** to a new working branch from develop. Name the branch following the convention: `initials-brief-desc-of-branch-scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) or JIRA ticket (e.g. `HCA-123`) in the branch name.
+1. **Make** and **switch** to a new working branch from staging. Name the branch following the convention: `initials-brief-desc-of-branch-scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) in the branch name.
 
         git checkout -b mf-new-mouse-module-Issue222
 
@@ -147,13 +145,15 @@ This section outlines steps for Committers to make suggested changes to the meta
 
 1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, fill out "Release notes" and "Reviews requested" sections as directed by the PR template. 
 
-1. **Request** additional Reviewer(s), if required, in GitHub to signal that a PR needs to be reviewed. If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, the last Reviewer should run the pre-release process and merge the PR. **The Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
+1. **Request** additional Reviewer(s) in GitHub to signal that a PR needs to be reviewed. The list of reviewers can be found in the [DCP2 specs document](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id9). If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, the PR owner should run the pre-release process and merge the PR. **If not part of the Metadata Schema Team, the Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
 
 ## Schema update review process
 
-All the people needed for review is automatically assigned through pullapprove. The guidelines for wranglers are as follows:
+All the people needed for review should be automatically assigned with pullapprove. The guidelines for wranglers are as follows:
 
 A pull request should be reviewed within a specified **review timeframe**. The review timeframe starts when the Committer who opens the PR tags the appropriate number of Reviewers to review. All changes have a 2 week timeframe. Exceptions can be made if a PR is particularly complex. Weekend days and US/UK holidays do not count towards the review timeframe. 
+
+The review timeframe resets every time a change is made due to a request, and a review should be requested by all reviewers again.
 
 The **reviewer number** is the number of Wranglers who need to have reviewed the pull request before it is merged. Patch schema updates should be assigned 1 wrangler, while major and minor schema updates should be assigned 2 wranglers. Exceptions can be made if a PR is particularly complex or specific persons are required for a review.
 
@@ -173,8 +173,6 @@ In cases of 1 requested Reviewer, the Reviewer fulfills the roles of both first 
 
 ## Committer guidelines
 
-1. *Do not merge your own PR.* This ensures that at least one other person has reviewed the suggested changes and has approved them. 
-    1. Exception 1: For PRs that affect documentation only, the same person can make/merge the PR if another person with commit privileges specifically approves it using the GitHub approval mechanism.
 1. *Be clear and descriptive in PR comments/commits.* 
     1. Refer to GitHub issues that the PR addresses by adding `Fixes #000` to at least 1 commit statement in the PR (where 000 is replaced by the actual GitHub issue number). 
     1. Tag a specific person if the PR addresses their issue or if the change affects their work.
