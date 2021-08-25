@@ -9,6 +9,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/project/publication.json - v7.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/biomaterial/cell_line.json - v15.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/project/project.json - v15.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
 ### [type/project/project.json - v14.3.0] - 2021-07-26
 ### Added
 Added project-level cell count. Fixes #1337.
