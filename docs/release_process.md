@@ -160,6 +160,12 @@ Anyone on the metadata team can trigger a primary release from staging to master
 
 1. **Check** the changes in versions have been picked up by checking the #hca-schema-pub-announce slack channel
 
+1. In the [geo_to_hca ](https://github.com/ebi-ait/geo_to_hca/tree/master/docs) repository, download the latest version of the hca_template, and edit to add the new metadata schema changes. 
+
+1. Move the now outdated template to the [outdated templates](https://github.com/ebi-ait/geo_to_hca/tree/master/docs/Outdated%20Templates) folder, and upload the new up-to-date template following DDMMYYhca_template.xlsx to the repo. 
+
+1. Notify the other wranglers to download the new version of the spreadsheet template.
+
 ## Steps of hotfix process/documentation updates
 ***Condition for hotfix***: A pull request is ready to be merged into master when it has been approved by the metadata community. Specifics for acceptance may vary between each PR depending on the request. Hotfixes are a special case of PR and do not follow the normal release process.
 ***Condition for documentation update***: A pull request that only contains documentation (markdown files) updates is ready to be merged.
@@ -231,5 +237,5 @@ After merging to master, carry out the next 5 steps for staging
 
 1. **Repeat** for the next branch until it is hotfixed to `master` and `staging` environments.
 
-After merging the hotfix to all release branches, **Delete the branch**.
+1. After merging the hotfix to all release branches, **Delete the branch**.
 
