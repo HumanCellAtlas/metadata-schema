@@ -144,7 +144,7 @@ Anyone on the metadata team can trigger a primary release from staging to master
 1. **Commit** your changes
 
         git commit -a -m "Release from staging to master YYYY-MM-DD."
-        git push origin develop
+        git push origin staging
 
 1. **Create a pull request** from *staging* to *master* for easy traceability. The PR should be tagged with the "release" label and should contain **Release notes** split into two sections:
    1. *Versions*: Enter schema names and version numbers for any updated schemas. Enter the current version as shown in versions.json, skipping over intermediate versions.
