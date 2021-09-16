@@ -6,7 +6,7 @@
 - [Steps of the pre-release process](#steps-of-the-pre-release-process)
 - [Steps of the release process](#steps-of-the-release-process)
 - [Check deployment status](#check-deployment-status)
-- [Steps of the hotfix process](#steps-of-hotfix-process)
+- [Steps of the hotfix process](#steps-of-hotfix-processdocumentation-updates)
 
 ## Introduction
 
