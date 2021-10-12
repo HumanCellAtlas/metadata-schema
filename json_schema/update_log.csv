@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/sequencing/library_preparation_protocol,minor,Added spatial barcode field loading barcodes module,,

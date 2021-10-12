@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.3.0] - 2021-10-12
+### Added
+Added spatial barcode field loading barcodes module
+
 ### [module/protocol/matrix.json - v1.0.0] - 2021-03-24
 ### Added
 Added matrix module
