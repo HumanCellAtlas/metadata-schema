@@ -11,6 +11,24 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ### Added
 Added spatial barcode field loading barcodes module
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/project/publication.json - v7.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/biomaterial/cell_line.json - v15.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/project/project.json - v15.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/project/project.json - v14.3.0] - 2021-07-26
+### Added
+Added project-level cell count. Fixes #1337.
+
 ### [module/protocol/matrix.json - v1.0.0] - 2021-03-24
 ### Added
 Added matrix module
@@ -42,17 +60,6 @@ Added optional file_source field.
 ### [type/file/image_file.json - v2.3.0] - 2021-03-24
 ### Added
 Added optional file_source field.
-
-### [module/ontology/data_use_ontology.json - v1.0.0] - 2021-03-22
-### Added
-Added data_use_ontology module. Fixes #1342
-
-### [type/project/project.json - v14.3.0] - 2021-03-22
-### Added
-Added optional data_restrictions field. Fixes #1342
-
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/project/project.json - v14.2.0] - 2021-03-16
 ### Added

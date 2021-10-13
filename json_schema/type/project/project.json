@@ -12,10 +12,10 @@
     "name": "project",
     "type": "object",
     "properties": {
-        "describedBy":  {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/project"
+            "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/project"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -30,24 +30,16 @@
                 "project"
             ]
         },
-        "provenance" : {
+        "provenance": {
             "description": "Provenance information provided by the system.",
             "type": "object",
             "$ref": "system/provenance.json"
         },
-        "project_core" : {
+        "project_core": {
             "description": "Core project-level information.",
             "type": "object",
             "$ref": "core/project/project_core.json",
             "user_friendly": "Project core"
-        },
-        "data_use_restrictions": {
-            "description": "Information about how data from this project may be used.",
-            "type": "array",
-            "items": {
-                "$ref":"module/ontology/data_use_ontology.json"
-            },
-            "user_friendly": "Data use restrictions"
         },
         "contributors": {
             "description": "People contributing to any aspect of the project.",
@@ -86,7 +78,7 @@
             "guidelines": "Enter accession if project has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRP, SRP, or ERP, respectively."
         },
         "ega_accessions": {
-            "description": "A list of European Genome phenome Archive dataset or study accessions.",
+            "description": "A list of accessions referring to EGA (European Genome-Phenome Archive) datasets or studies.",
             "type": "array",
             "items": {
                 "type": "string",
@@ -158,6 +150,12 @@
                 "$ref": "module/project/funder.json"
             },
             "user_friendly": "Funding source(s)"
+        },
+        "estimated_cell_count": {
+            "description": "An estimated number of cells in this project",
+            "type": "integer",
+            "example": "10000; 2100000",
+            "user_friendly": "Estimated cell count"
         }
     }
 }
