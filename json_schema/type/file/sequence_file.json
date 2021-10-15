@@ -48,6 +48,8 @@
             "enum": [
                 "read1",
                 "read2",
+                "read3",
+                "read4",
                 "index1",
                 "index2",
                 "single-end, non-indexed"

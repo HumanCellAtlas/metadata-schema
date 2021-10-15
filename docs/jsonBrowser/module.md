@@ -525,7 +525,7 @@ Location: module/process/sequencing/barcode.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, Read 3, Read 4, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
 barcode_offset | The 0-based offset of start of barcode in read. | integer | yes |  | Barcode offset |  | 0
 barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
 white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
