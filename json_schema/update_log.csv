@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/file/sequence_file,patch,"Added read3, read4 to read index enum. Fixes #1401",,
-module/process/sequencing/barcode,patch,"Added Read 3, Read 4 to barcode read enum. Fixes #1401",,

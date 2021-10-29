@@ -51,6 +51,12 @@
             "$ref": "module/process/sequencing/barcode.json",
             "user_friendly": "Cell barcode"
         },
+        "spatial_barcode": {
+            "description": "Information about spatial barcodes.",
+            "type": "object",
+            "$ref": "module/process/sequencing/barcode.json",
+            "user_friendly": "Spatial barcode"
+        },
         "input_nucleic_acid_molecule": {
             "description": "Starting nucleic acid molecule isolated for sequencing.",
             "type": "object",
