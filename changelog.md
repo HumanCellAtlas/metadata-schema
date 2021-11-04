@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/file/sequence_file.json - v9.3.1] - 2021-10-29
+### Added
+Added read3, read4 to read index enum. Fixes #1401
+
+### [module/process/sequencing/barcode.json - v5.2.7] - 2021-10-29
+### Added
+Added Read 3, Read 4 to barcode read enum. Fixes #1401
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.3.1] - 2021-10-29
+### Added
+Added Read 3, Read 4 to barcode read enum. Fixes #1401
+
 ### [type/protocol/sequencing/library_preparation_protocol.json - v6.3.0] - 2021-10-12
 ### Added
 Added spatial barcode field loading barcodes module
