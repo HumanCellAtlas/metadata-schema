@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2021-08-13T14:44:48Z",
+    "last_update_date": "2021-10-29T16:25:57Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -62,7 +62,7 @@
                 "purchased_reagents": "6.1.0",
                 "sequencing": {
                     "10x": "1.0.5",
-                    "barcode": "5.2.6",
+                    "barcode": "5.2.7",
                     "insdc_experiment": "2.0.0",
                     "plate_based_sequencing": "3.0.0"
                 }
@@ -97,7 +97,7 @@
                 "analysis_file": "6.3.0",
                 "image_file": "2.3.0",
                 "reference_file": "3.3.0",
-                "sequence_file": "9.3.0",
+                "sequence_file": "9.3.1",
                 "supplementary_file": "2.3.0"
             },
             "process": {
@@ -127,7 +127,7 @@
                 },
                 "protocol": "7.1.0",
                 "sequencing": {
-                    "library_preparation_protocol": "6.2.0",
+                    "library_preparation_protocol": "6.3.1",
                     "sequencing_protocol": "10.1.0"
                 }
             }

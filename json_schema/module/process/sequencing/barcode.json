@@ -28,6 +28,8 @@
             "enum": [
                 "Read 1",
                 "Read 2",
+                "Read 3",
+                "Read 4",
                 "i7 Index",
                 "i5 Index"
             ],
