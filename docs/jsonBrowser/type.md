@@ -279,8 +279,8 @@ tile_size_x | X size of the tile in micrometers. | number | no |  | Tile size X 
 z_stack_step_size | Z-stack step size in nanometers. | number | no |  | Z stack step size |  | 200
 number_of_z_steps | Number of steps in a Z stack. | integer | no |  | Number of Z steps |  | 40
 overlapping_tiles | Whether tiles were collected with overlap. | string | yes |  | Overlapping tiles | yes, no | Should be one of: yes, or no.
-channel | Information about each channel used in the imaging protocol. | array | yes | [See module  channel](module.md/#channel) | Channel |  | 
-probe | Information about each probe in the imaging experiment. | array | yes | [See module  probe](module.md/#probe) | Probe |  | 
+channel | Information about each channel used in the imaging protocol. | array | no | [See module  channel](module.md/#channel) | Channel |  | 
+probe | Information about each probe in the imaging experiment. | array | no | [See module  probe](module.md/#probe) | Probe |  | 
 
 ## Project
 _A project entity contains information about the overall project._
