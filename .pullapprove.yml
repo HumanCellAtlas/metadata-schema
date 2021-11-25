@@ -8,9 +8,9 @@ pullapprove_conditions:
 - condition: "not any(['release' in labels, 'hotfix' in labels])"
   unmet_status: success
   explanation: "Releases, security updates and hotfixes are allowed to merge in integration, staging and/or master"
-- condition: "base.ref == 'develop' or '[Snyk]' in title"
+- condition: "base.ref == 'staging' or '[Snyk]' in title"
   unmet_status: failure
-  explanation: "No PRs from unknown branches can be merged into integration, staging or master"
+  explanation: "No PRs from unknown branches can be merged into master"
 - condition: "'on hold' not in labels"
   unmet_status: pending
   explanation: "PR review is on hold"
@@ -27,15 +27,8 @@ notifications:
 - when: pullapprove.approved
   if: "author_association == 'CONTRIBUTOR'" # Only contributing authors get this message
   comment: "The review is completed. Thanks @{{ author }}!"
-- when: pull_request.opened
-  if: "'content' in labels and 'major' in body" # Notify the DCP for a major update
-  comment: |
-    Major metadata schema update, pinging @aaclan-ebi @NoopDog
-    @hannes-ucsc @aherbst . If no one objects, this will be merged on the
-    following 5 working days.
 
 groups:
-
   snyk-security-patches:
     conditions:
     - "'[Snyk]' in title"
@@ -49,11 +42,93 @@ groups:
     reviews:
       required: 1
       request_order: shuffle
+      
+  azul:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'master'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - hannes-ucsc
+    reviews:
+      required: 1
+      request: 1
+      request_order: shuffle
+
+  browser:
+    conditions:
+      - "'*[Tt]ravis*' in check_runs.successful"
+      - "base.ref == 'master'"
+      - "'content' in labels"
+    reviewers:
+      users:
+        - NoopDog
+    reviews:
+      required: 1
+      request: 1
+      request_order: shuffle
+  
+  pipelines:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'master'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - kbergin
+    reviews:
+      required: 1
+      request: 1
+      request_order: shuffle
+  
+  data_import:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'master'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - aherbst-broad
+      - JeffKorte
+      - danicham
+    reviews:
+      required: 1
+      request: 1
+      request_order: shuffle
+    
+  tdr:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'master'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - ruchim
+    reviews:
+      required: 1
+      request: 1
+      request_order: shuffle
+      
+  ingest-devs:
+    conditions:
+    - "'*[Tt]ravis*' in check_runs.successful"
+    - "base.ref == 'master'"
+    - "'content' in labels"
+    reviewers:
+      users:
+      - aaclan-ebi
+      - jacobwindsor
+      - yusra-haider
+    reviews:
+      required: 1
+      request: 1
+      request_order: shuffle
 
   metadata-updates-major-minor:  # group name
     conditions:  # the group is activated when all of these statements are true
     - "'*[Tt]ravis*' in check_runs.successful"
-    - "base.ref == 'develop'"
+    - "base.ref == 'staging'"
     - "'major' in body or 'minor' in body" # major or minor change is indicated in body of PR
     - "'content' in labels"
     reviewers:  # people who can approve for this group
@@ -68,7 +143,6 @@ groups:
       - Wkt8
       - mshadbolt
       - willrockout
-      - pnejad
       - ESapenaVentura
       - rachadele
     reviews:  # settings for approval and reviewer selection
@@ -93,7 +167,6 @@ groups:
         - Wkt8
         - mshadbolt
         - willrockout
-        - pnejad
         - ESapenaVentura
         - rachadele
     reviews:

@@ -39,6 +39,16 @@ assay_type | Type of assay used to detect target. | object | yes | [See module  
 fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
 channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
 
+## Matrix<a name='Matrix'></a>
+_Information relating to generation of matrices_
+
+Location: module/protocol/matrix.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+data_normalization_methods | Method(s) used to normalize data in the matrix | array | no |  | Data normalization method(s) | CPM (counts per million), TPM (transcripts per kilobase million), RPKM (reads per kilobase of exon per million reads mapped), FPKM (fragments per kilobase of exon per million fragments mapped), DESeq2’s median of ratios, TMM (EdgeR’s trimmed mean of M values), SF (size factor), UQ (Upper quartile), Downsampling, other, unknown | 
+derivation_process | Type of computational tool used in generating the matrix object. | array | no |  | Derivation process | alignment, quantification, peak calling, peak annotation, gene filtering, cell filtering, merging, cell calling, ambient RNA correction, doublet removal, batch correction, depth normalization, other | 
+
 ## File content ontology<a name='File content ontology'></a>
 _A term that describes the contents of a file._
 
@@ -82,17 +92,6 @@ Property name | Description | Type | Required? | Object reference? | User friend
 text | The name of a library amplification approach being used. | string | yes |  | Library amplification |  | PCR; in vitro transcription
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Library amplification ontology ID |  | OBI:0000415; EFO:0009013
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Library amplification ontology label |  | PCR; in vitro transcription
-
-## Data use ontology<a name='Data use ontology'></a>
-_A term that may be associated with the way the data may be used._
-
-Location: module/ontology/data_use_ontology.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-text | A short description of the data use restrictions associated with this entity. | string | yes |  | Data use |  | no restriction; general research use
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Data use restriction ontology ID |  | DUO:0000042; DUO:0000026
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Data use ontology label |  | general research use; user specific restriction
 
 ## Contributor role ontology<a name='Contributor role ontology'></a>
 _A term that describes the role of a contributor in the project._
@@ -366,6 +365,7 @@ title | The title of the publication. | string | yes |  | Publication title |  |
 doi | The publication digital object identifier (doi) of the publication. | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
 pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
 url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
+official_hca_publication | Has the publication been accepted as an official HCA publication, according to the process described in https://www.humancellatlas.org/publications/ ? | boolean | yes |  | Official HCA Publication |  | yes; no
 
 ## Human-specific<a name='Human-specific'></a>
 _Information specific to a donor that is a human (Homo sapiens)._
@@ -525,7 +525,7 @@ Location: module/process/sequencing/barcode.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, Read 3, Read 4, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
 barcode_offset | The 0-based offset of start of barcode in read. | integer | yes |  | Barcode offset |  | 0
 barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
 white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt

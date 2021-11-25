@@ -31,7 +31,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
 file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
-read_index | The sequencing read this file represents. | string |  | Read index | read1, read2, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
+read_index | The sequencing read this file represents. | string |  | Read index | read1, read2, read3, read4, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
 ### Image file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -86,7 +86,6 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 type | The type of protocol. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
-computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string |  | Computational method |  | SmartSeq2SingleCell; 10x
 ### Aggregate generation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -216,6 +215,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 probe_label | The label of a probe used to detect target in this experiment. | string |  | Probe label |  | ACTA1; cFos
 target_label | An identifier for the target molecule. | string |  | Target label |  | CHEBI:85345; ENSG00000170345
 assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+### Matrix<a name='Matrix'></a>
+_There are no required properties in schema Matrix_
 ### File content ontology<a name='File content ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -232,10 +233,6 @@ text | The name of a cell cycle of the cells in the specimen. | string |  | Cell
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a library amplification approach being used. | string |  | Library amplification |  | PCR; in vitro transcription
-### Data use ontology<a name='Data use ontology'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-text | A short description of the data use restrictions associated with this entity. | string |  | Data use |  | no restriction; general research use
 ### Contributor role ontology<a name='Contributor role ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -335,6 +332,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 authors | A list of authors associated with the publication. | array |  | Authors |  | Doe JD
 title | The title of the publication. | string |  | Publication title |  | Study of single cells in the human body.
+official_hca_publication | Has the publication been accepted as an official HCA publication, according to the process described in https://www.humancellatlas.org/publications/ ? | boolean |  | Official HCA Publication |  | yes; no
 ### Human-specific<a name='Human-specific'></a>
 _There are no required properties in schema Human-specific_
 ### Growth conditions<a name='Growth conditions'></a>
@@ -369,7 +367,7 @@ insdc_experiment_accession | An International Nucleotide Sequence Database Colla
 ### Barcode<a name='Barcode'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-barcode_read | The read in which the barcode is found. | string |  | Barcode-containing read | Read 1, Read 2, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_read | The read in which the barcode is found. | string |  | Barcode-containing read | Read 1, Read 2, Read 3, Read 4, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
 barcode_offset | The 0-based offset of start of barcode in read. | integer |  | Barcode offset |  | 0
 barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 28
 ### 10x-specific<a name='10x-specific'></a>

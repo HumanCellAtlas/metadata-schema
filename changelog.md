@@ -7,20 +7,71 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
-### [module/ontology/data_use_ontology.json - v1.0.0] - 2021-03-22
+### [type/file/sequence_file.json - v9.3.1] - 2021-10-29
 ### Added
-Added data_use_ontology module. Fixes #1342
+Added read3, read4 to read index enum. Fixes #1401
 
-### [type/project/project.json - v14.3.0] - 2021-03-22
+### [module/process/sequencing/barcode.json - v5.2.7] - 2021-10-29
 ### Added
-Added optional data_restrictions field. Fixes #1342
+Added Read 3, Read 4 to barcode read enum. Fixes #1401
 
-### [type/project/project.json - v14.2.0] - 2021-03-16
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.3.1] - 2021-10-29
 ### Added
-Added estimated cell count to project. Fixes #1343
+Added Read 3, Read 4 to barcode read enum. Fixes #1401
 
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.3.0] - 2021-10-12
+### Added
+Added spatial barcode field loading barcodes module
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/project/publication.json - v7.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/biomaterial/cell_line.json - v15.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/project/project.json - v15.0.0] - 2021-08-13
+### Added
+Added required official_hca_publication field. Fixes #1345
+
+### [type/project/project.json - v14.3.0] - 2021-07-26
+### Added
+Added project-level cell count. Fixes #1337.
+
+### [module/protocol/matrix.json - v1.0.0] - 2021-03-24
+### Added
+Added matrix module
+
+### [type/protocol/analysis/analysis_protocol.json - v9.2.0] - 2021-03-24
+### Changed
+Changed 'computational_method' field to optional, added matrix module field
+
+### [type/file/analysis_file.json - v6.3.0] - 2021-03-24
+### Added
+Added optional 'matrix_cell_count' field.
+
+### [core/file/file_core.json - v6.2.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/sequence_file.json - v9.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/supplementary_file.json - v2.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/reference_file.json - v3.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
+
+### [type/file/image_file.json - v2.3.0] - 2021-03-24
+### Added
+Added optional file_source field.
 
 ### [type/project/project.json - v14.2.0] - 2021-03-16
 ### Added
