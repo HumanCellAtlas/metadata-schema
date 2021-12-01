@@ -94,6 +94,13 @@
       "user_friendly": "S3 ETag",
       "type": "string",
       "example": "c92e5374ac0a53b228d4c1511c2d2842-63"
+    },
+    "drs_uri": {
+      "description": "Data Repository Service URI",
+      "user_friendly": "DRS URI",
+      "type": "string",
+      "format": "uri",
+      "example": "drs://drs.example.org/314159"
     }
   }
 }
