@@ -5,13 +5,13 @@
   "required": [
     "describedBy",
     "schema_type",
-    "file_id",
-    "file_version",
-    "file_name",
     "content_type",
     "size",
     "sha256",
-    "crc32c"
+    "crc32c",
+    "file_id",
+    "file_version",
+    "file_name"
   ],
   "title": "File descriptor",
   "name": "file_descriptor",
