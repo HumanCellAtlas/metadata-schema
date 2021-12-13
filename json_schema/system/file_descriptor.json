@@ -7,7 +7,11 @@
     "schema_type",
     "file_id",
     "file_version",
-    "file_name"
+    "file_name",
+    "content_type",
+    "size",
+    "sha256",
+    "crc32c"
   ],
   "title": "File descriptor",
   "name": "file_descriptor",
@@ -98,9 +102,5 @@
       "format": "uri",
       "example": "drs://drs.example.org/314159"
     }
-  },
-  "anyOf": [
-    {"required": ["drs_uri"]},
-    {"required": ["content_type", "size",  "sha256", "crc32c"]}
-  ]
+  }
 }
