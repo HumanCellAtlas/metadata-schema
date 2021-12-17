@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/imaging/imaging_protocol.json,minor,"Removed channel and probe from required fields. #Fixes 1420",,
