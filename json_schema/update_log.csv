@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/project/project,major,"Added anchors to ega_accessions and dbgap_accessions. Fixes #1425",,

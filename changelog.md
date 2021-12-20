@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 
+### [type/project/project.json - v16.0.0] - 2021-12-20
+### Added
+Added anchors to ega_accessions and dbgap_accessions. Fixes #1425
+
 ### [type/file/sequence_file.json - v9.3.1] - 2021-10-29
 ### Added
 Added read3, read4 to read index enum. Fixes #1401
