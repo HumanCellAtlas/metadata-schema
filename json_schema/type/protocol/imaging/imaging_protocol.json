@@ -10,8 +10,6 @@
         "magnification",
         "numerical_aperture",
         "overlapping_tiles",
-        "channel",
-        "probe",
         "pixel_size"
     ],
     "title": "Imaging Protocol",
