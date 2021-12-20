@@ -82,7 +82,7 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "EGA[DS][0-9]{11}"
+                "pattern": "^EGA[DS][0-9]{11}$"
             },
             "example": "EGAS00000000001; EGAD00000000002",
             "guidelines": "Enter any EGA study or dataset accessions that relate to the project. Should start with EGAD or EGAS, study accession preferred.",
@@ -93,7 +93,7 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "pattern": "phs[0-9]{6}(\\.v[0-9])?(\\.p[0-9])?"
+                "pattern": "^phs[0-9]{6}(\\.v[0-9])?(\\.p[0-9])?$"
             },
             "example": "phs001997.v1.p1; phs001836",
             "guidelines": "Enter any dbGaP study accessions that relate to this project. Should start with phs, can contain the specific version information.",
