@@ -137,8 +137,6 @@ magnification | Magnification of the objective used for imaging. | string |  | M
 numerical_aperture | Numerical aperture of the objective. | number |  | Numerical aperture |  | 1.3; 0.75
 pixel_size | Pixel size in nanometers. | number |  | Pixel size |  | 109
 overlapping_tiles | Whether tiles were collected with overlap. | string |  | Overlapping tiles | yes, no | Should be one of: yes, or no.
-channel | Information about each channel used in the imaging protocol. | array | [See module  channel](module.md/#channel) | Channel |  | 
-probe | Information about each probe in the imaging experiment. | array | [See module  probe](module.md/#probe) | Probe |  | 
 ### Project
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
