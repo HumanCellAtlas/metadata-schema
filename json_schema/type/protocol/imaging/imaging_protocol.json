@@ -7,10 +7,7 @@
         "schema_type",
         "protocol_core",
         "microscopy_technique",
-        "magnification",
-        "numerical_aperture",
-        "overlapping_tiles",
-        "pixel_size"
+        "magnification"
     ],
     "title": "Imaging Protocol",
     "name": "imaging_protocol",
