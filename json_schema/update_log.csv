@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/biomaterial_collection/treatment_protocol,major,Added a Treatment protocol,,

@@ -119,7 +119,8 @@
                     "differentiation_protocol": "2.2.0",
                     "dissociation_protocol": "6.2.0",
                     "enrichment_protocol": "3.1.0",
-                    "ipsc_induction_protocol": "3.2.0"
+                    "ipsc_induction_protocol": "3.2.0",
+                    "treatment_protocol": "1.0.0"
                 },
                 "imaging": {
                     "imaging_preparation_protocol": "2.2.0",
