@@ -8,10 +8,6 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
-### [type/protocol/biomaterial_collection/treatment_protocol.json - v1.0.0] - 2022-02-10
-### Added
-Added Treatment protocol
-
 ### [type/protocol/imaging/imaging_protocol.json - v11.3.0] - 2021-12-20
 ### Removed
 Removed channel and probe from required fields. #Fixes 1420
