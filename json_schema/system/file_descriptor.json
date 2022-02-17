@@ -98,7 +98,7 @@
     "drs_uri": {
       "description": "Data Repository Service URI",
       "user_friendly": "DRS URI",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "uri",
       "example": "drs://drs.example.org/314159"
     }
