@@ -19,8 +19,7 @@
   "properties": {
     "describedBy": {
       "description": "The URL reference to the schema.",
-      "type": "string",
-      "pattern" : "^https?://schema.(.*)?humancellatlas.org/system/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/file_descriptor$"
+      "type": "string"
     },
     "schema_version": {
       "description": "The version number of the schema in major.minor.patch format.",
