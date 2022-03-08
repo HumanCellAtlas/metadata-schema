@@ -7,11 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/protocol/imaging/imaging_protocol.json - v11.4.0] - 2022-03-08
 ### Changed
 Changed overlapping_tiles, numerical_aperture and pixel_size non-required. Fixes #1441
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/imaging/imaging_protocol.json - v11.3.0] - 2021-12-20
 ### Removed
