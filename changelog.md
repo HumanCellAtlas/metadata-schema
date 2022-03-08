@@ -6,7 +6,11 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [type/protocol/imaging/imaging_protocol.json - v11.4.0] - 2022-03-08
+### Changed
+Changed overlapping_tiles, numerical_aperture and pixel_size non-required. Fixes #1441
+
 
 ### [type/protocol/imaging/imaging_protocol.json - v11.3.0] - 2021-12-20
 ### Removed

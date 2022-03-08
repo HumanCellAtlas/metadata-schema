@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/imaging/imaging_protocol,minor,"Changed overlapping_tiles, numerical_aperture and pixel_size non-required. Fixes #1441",,
