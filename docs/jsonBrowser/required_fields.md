@@ -134,9 +134,6 @@ schema_type | The type of the metadata schema entity. | string |  |  | protocol 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 microscopy_technique | The type of microscopy. | object | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
 magnification | Magnification of the objective used for imaging. | string |  | Magnification |  | 60x; 100x
-numerical_aperture | Numerical aperture of the objective. | number |  | Numerical aperture |  | 1.3; 0.75
-pixel_size | Pixel size in nanometers. | number |  | Pixel size |  | 109
-overlapping_tiles | Whether tiles were collected with overlap. | string |  | Overlapping tiles | yes, no | Should be one of: yes, or no.
 ### Project
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

@@ -269,16 +269,16 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 microscope_setup_description | Description of the microscope setup. | string | no |  | Microscope setup description |  | Motorized stage (SCAN IM 112 x 74, Marzhauser), sCMOS camera (Zyla 4.2; Andor), 60x, Plan-Apo, 1.3 NA, silicone oil objective (UPLSAPO60XS2; Olympus).
 microscopy_technique | The type of microscopy. | object | yes | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
 magnification | Magnification of the objective used for imaging. | string | yes |  | Magnification |  | 60x; 100x
-numerical_aperture | Numerical aperture of the objective. | number | yes |  | Numerical aperture |  | 1.3; 0.75
+numerical_aperture | Numerical aperture of the objective. | number | no |  | Numerical aperture |  | 1.3; 0.75
 immersion_medium_type | Immersion medium used for imaging. | string | no |  | Immersion medium |  | oil; air
 immersion_medium_refractive_index | Refractive index of the immersion medium used for imaging. | number | no |  | Refractive index of the immersion medium |  | 1.5; 1
-pixel_size | Pixel size in nanometers. | number | yes |  | Pixel size |  | 109
+pixel_size | Pixel size in nanometers. | number | no |  | Pixel size |  | 109
 number_of_tiles | Number of XY tiles in the experiment. | integer | no |  | Number of tiles |  | 2000
 tile_size_y | Y size of the tile in micrometers. | number | no |  | Tile size Y |  | 100
 tile_size_x | X size of the tile in micrometers. | number | no |  | Tile size X |  | 100
 z_stack_step_size | Z-stack step size in nanometers. | number | no |  | Z stack step size |  | 200
 number_of_z_steps | Number of steps in a Z stack. | integer | no |  | Number of Z steps |  | 40
-overlapping_tiles | Whether tiles were collected with overlap. | string | yes |  | Overlapping tiles | yes, no | Should be one of: yes, or no.
+overlapping_tiles | Whether tiles were collected with overlap. | string | no |  | Overlapping tiles | yes, no | Should be one of: yes, or no.
 channel | Information about each channel used in the imaging protocol. | array | no | [See module  channel](module.md/#channel) | Channel |  | 
 probe | Information about each probe in the imaging experiment. | array | no | [See module  probe](module.md/#probe) | Probe |  | 
 
