@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/ontology/file_content_ontology,minor,"Added information branch to graphRestrictions. Fixes #1450",,
+module/ontology/file_content_ontology,minor,"Added information entity branch to graphRestrictions. Fixes #1450",,
