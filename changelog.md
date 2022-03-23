@@ -39,10 +39,6 @@ Added spatial barcode field loading barcodes module
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
-### [system/file_descriptor.json - v2.1.0] - 2021-03-21
-### Added
-Added optional drs_uri file to file_descriptor
-
 ### [module/project/publication.json - v7.0.0] - 2021-08-13
 ### Added
 Added required official_hca_publication field. Fixes #1345
