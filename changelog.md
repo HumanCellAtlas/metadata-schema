@@ -7,7 +7,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
-### [module/ontology/file_content_ontology.json - v11.4.0] - 2022-03-08
+### [module/ontology/file_content_ontology.json - v1.1.0] - 2022-03-24
 ### Changed
 Added information entity branch to graphRestrictions. Fixes #1450
 
