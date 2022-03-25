@@ -97,7 +97,7 @@
     },
     "drs_uri": {
       "description": "Data Repository Service URI pointing at this file. If this property is absent, a data file exists in the repository containing this descriptor. If this property is present and not `null`, a data file exists in another repository at the specified URI. If this property is present but `null`, the data file is not available, but will likely become available in the future, along with an updated descriptor referencing it.",
-      "user_friendly": "DRS URI",
+      "user_friendly": "Data Repository Service URI",
       "type": ["string", "null"],
       "format": "uri",
       "example": "drs://drs.example.org/314159"
