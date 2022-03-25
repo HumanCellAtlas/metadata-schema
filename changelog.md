@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/ontology/file_content_ontology.json - v1.1.0] - 2022-03-24
+### Added
+Added information entity branch to graphRestrictions. Fixes #1450
+
 ### [type/protocol/imaging/imaging_protocol.json - v11.4.0] - 2022-03-08
 ### Changed
 Changed overlapping_tiles, numerical_aperture and pixel_size non-required. Fixes #1441
