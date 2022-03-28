@@ -43,22 +43,9 @@
         },
         "method": {
             "description": "Method applied to cell culture to induce a specific treatment response.",
-            "type": "string",
+            "type": "object",
+            "$ref": "module/ontology/treatment_method_ontology.json",
             "user_friendly": "Treatment method",
-            "comment": "Consider making this an ontology in the future.",
-            "example": "Embryoid Body; Monolayer; Inductive Co-Culture"
-        },
-        "treatment": {
-            "description": "A list of treatment types used to treat a biomaterial.",
-            "type": "string",
-            "user_friendly": "Treatment",
-            "example": "Human CD3/CD28 T Cell Activator; TNF; proGLC"
-        },
-        "treatment_effect": {
-            "description": "A biological process that a treatment is intended to activate or modify.",
-            "type": "string",
-            "user_friendly": "Treatment effect",
-            "example": "TCR stimulation; immune cell activation; signalling pathway inhibition"
         },
         "media":{
             "description": "Culture media used to induce a specific treatment response.",
