@@ -37,7 +37,7 @@
                 "include_self": true
             },
             "user_friendly": "Disease ontology ID",
-            "example": "MONDO:0005148; PATO:0000461"
+            "example": "MONDO:0005148; PATO:0000461; HP:0001397"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
