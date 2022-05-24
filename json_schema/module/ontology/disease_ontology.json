@@ -30,14 +30,14 @@
             "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:mondo", "obo:efo"],
-                "classes": ["MONDO:0000001", "PATO:0000461"],
+                "ontologies" : ["obo:mondo", "obo:efo", "obo:hp"],
+                "classes": ["MONDO:0000001", "PATO:0000461", "HP:0000118"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": true
             },
             "user_friendly": "Disease ontology ID",
-            "example": "MONDO:0005148; PATO:0000461"
+            "example": "MONDO:0005148; PATO:0000461; HP:0001397"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
