@@ -7,6 +7,22 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [module/ontology/disease_ontology.json - v5.4.0] - 2022-05-24
+### Added
+Added the phenotype branch to graphRestrictions. Fixes #1460
+
+### [type/biomaterial/cell_line.json - v15.1.0] - 2022-05-24
+### Added
+Added the phenotype branch to graphRestrictions. Fixes #1460
+
+### [type/biomaterial/donor_organism.json - v15.6.0] - 2022-05-24
+### Added
+Added the phenotype branch to graphRestrictions. Fixes #1460
+
+### [type/biomaterial/specimen_from_organism.json - v10.5.0] - 2022-05-24
+### Added
+Added the phenotype branch to graphRestrictions. Fixes #1460
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/file_content_ontology.json - v1.1.0] - 2022-03-24
