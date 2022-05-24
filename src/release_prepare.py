@@ -104,7 +104,7 @@ class ReleasePrepare:
             log = readChangeLog.readlines()
             ignoreNextLine = False
             for line in log:
-                if "## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)" in line:
+                if "## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)" in line:
                     output = output + line + "\n"
                     output = output + log_insert
                     ignoreNextLine = True
