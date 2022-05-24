@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2022-03-24T08:15:15Z",
+    "last_update_date": "2022-05-24T17:06:41Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -38,7 +38,7 @@
                 "cellular_component_ontology": "1.0.5",
                 "contributor_role_ontology": "1.0.0",
                 "development_stage_ontology": "5.3.6",
-                "disease_ontology": "5.3.8",
+                "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
                 "ethnicity_ontology": "5.3.9",
                 "file_content_ontology": "1.1.0",
@@ -86,12 +86,12 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "15.0.0",
+                "cell_line": "15.1.0",
                 "cell_suspension": "13.3.0",
-                "donor_organism": "15.5.0",
+                "donor_organism": "15.6.0",
                 "imaged_specimen": "3.3.0",
                 "organoid": "11.3.0",
-                "specimen_from_organism": "10.4.0"
+                "specimen_from_organism": "10.5.0"
             },
             "file": {
                 "analysis_file": "6.4.0",
