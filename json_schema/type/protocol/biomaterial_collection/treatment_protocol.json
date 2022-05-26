@@ -43,8 +43,10 @@
         },
         "method": {
             "description": "Method applied to cell culture to induce a specific treatment response.",
-            "type": "object",
-            "$ref": "module/ontology/treatment_method_ontology.json",
+            "type": "array",
+            "items":{
+                "$ref": "module/ontology/treatment_method_ontology.json"
+            },
             "user_friendly": "Treatment method",
         },
         "media":{
