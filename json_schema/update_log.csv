@@ -1,2 +1,4 @@
 Schema,Change type,Change message,Version,Date
 type/protocol/biomaterial_collection/treatment_protocol,major,"Added Treatment protocol entity. Fixes #1428",,
+module/ontology/treatment_method_ontology,major,"Added Treatment protocol method ontology. Fixes #1428",,
+module/ontology/target_pathway_ontology,major,"Added Treatment protocol target pathway ontology. Fixes #1428",,
