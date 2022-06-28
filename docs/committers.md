@@ -19,17 +19,20 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 **Who should be reading this document?**
  - HCA DCP internal developers
+ - HCA DCP wranglers
 
 **What *isn't* in this document?**
 - Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
 - Directions for [reporting bugs](contributing.md#reporting-bugs) in the metadata schema
+- Directions for the [review process](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_operating_procedures.rst#15review-process-overview) of the metadata schema changes
+- Directions for the [release process](https://github.com/HumanCellAtlas/metadata-schema/blob/master/docs/release_process.md) of metadata schema PRs
 
 ## General steps of the update process
 
 1. **Receive request for update to the metadata standard.** A person (the "Contributor") can suggest changes to the metadata standards via three main routes:
     1. Create a GitHub issue on the metadata-schema repo for either [updates](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=schema_update.md) or [new schemas](https://github.com/HumanCellAtlas/metadata-schema/issues/new?template=new_schema.md)
     1. Email the HCA DCP helpdesk at [data-help@humancellaltas.org](mailto:data-help@humancellaltas.org)
-    1. Make a pull request against the develop branch of the metadata-schema GitHub repo
+    1. Make a pull request against the staging branch of the metadata-schema GitHub repo
 
     There are two main types of suggestions: (1) **updates** to existing schemas and (2) addition of **new** schema(s).
 
@@ -78,7 +81,7 @@ This document serves as an SOP for committers who are ultimately responsible for
 
 1. **Install** the following requirements:
    1. [Python 3](https://www.python.org/downloads/)
-   1. [pre-commit](https://pre-commit.com/#quick-start)
+   2. [pre-commit](https://pre-commit.com/#quick-start): install then run `pre-commit install` to set up the git hook scripts present in the metadata repo
 
 ## Specific how-to for making changes
 
@@ -88,17 +91,18 @@ This section outlines steps for Committers to make suggested changes to the meta
 
         cd metadata-schema
     
-1. **Switch** to the staging branch. All suggested changes should be based on the current staging branch.
+2. **Switch** to the staging branch. All suggested changes should be based on the current staging branch.
 
         git checkout staging
 
-1. **Make** and **switch** to a new working branch from staging. Name the branch following the convention: `initials-brief-desc-of-branch-scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) in the branch name.
+3. **Make** and **switch** to a new working branch from staging. Name the branch following the convention: `initials-brief-desc-of-branch-scope`. Optionally, you can tag a GitHub issue (e.g. `Issue222`) in the branch name.
 
         git checkout -b mf-new-mouse-module-Issue222
 
-1. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` script locally (which are also run by Travis CI after each push). The script checks whether each .json file in the `json_schema/` folder is valid JSON format. Ensure the script exits with status 0 (you should see `Process finished with exit code 0` printed to the terminal) before committing changes. If the test fails, you will have to debug and fix the errors in the changes you made.
+4. **Make** changes locally to the new working branch. After making changes, it is important to run the `src/schemas_are_valid_json.py` script locally. The script checks whether each .json file in the `json_schema/` folder is valid JSON format. 
+If a file is not valid the script will output an error message to aid the debugging. Address the errors and only commit changes when the script runs without raising errors.
 
-1. **Document** the changes in the `update_log.csv` file. This file is used by the automated release scripts to build the release changelog and increment the version number for the correct metadata schema. Unlike the changelog file, which is a running log of all metadata schema changes, the update_log file should only contain the documented changes for this branch, so the file should be empty apart from the header row when you first check out a new branch. An entry into `update_log.csv` should contain the path to the schema that was changed, the type of change (major, minor, or patch) and the description of the change that should go into the changelog, for example:
+5. **Document** the changes in the `json_schema/update_log.csv` file. This file is used by the automated release scripts to build the release changelog and increment the version number for the correct metadata schema. Unlike the changelog file, which is a running log of all metadata schema changes, the update_log file should only contain the documented changes for this branch, so the file should be empty apart from the header row when you first check out a new branch. An entry into `update_log.csv` should contain the path to the schema that was changed, the type of change (major, minor, or patch) and the description of the change that should go into the changelog, for example:
 
     `module/ontology/disease_ontology,patch,Fixed a typo in description of text field in disease_ontology. Fixes #000,,`
 
@@ -132,44 +136,24 @@ This section outlines steps for Committers to make suggested changes to the meta
 
     ***Note:*** *We currently don't have a process for capturing breaking changes not included in the above categories, such as changing the type of a field from a string to a number or from free text to ontology. Therefore such changes don't need to be captured in `property_migrations.json` for now.*
 
-1. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes and to increase granularity for rollbacks (if needed). Use helpful/short messages in commit statements. If the commit specifically fixes/addresses a current GitHub issue, add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issue. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
+6. **Stage** and **commit** your changes to the working branch often. We recommend committing after making a few logically grouped changes to help track changes and to increase granularity for rollbacks (if needed). Use helpful/short messages in commit statements. If the commit specifically fixes/addresses a current GitHub issue, add the phrase "Fixes #000" to the commit statement, replacing "000" with the number of the issue. This phrase is handy because when the changes are merged into the master branch, it automatically closes the issue indicated.
 
         git add <changed files>
         git commit -m "Helpful commit message here. Fixes #000."
     
     Example commit message: "Created new mouse module with mouse-specific fields. Fixes #142."
 
-1. **Push** the committed changes to the working branch.
+7. **Push** the committed changes to the working branch.
 
         git push origin mf-new-mouse-module-Issue222
 
-1. **Continue** to make, stage, and commit changes to the working branch - ensuring that the two Travis CI scripts pass - until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the develop branch. In the comment section of the PR, fill out "Release notes" and "Reviews requested" sections as directed by the PR template. 
+8. **Continue** to make, stage, and commit changes to the working branch until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the staging branch. In the comment section of the PR, fill out "Release notes" and "Reviews requested" sections as directed by the PR template. 
 
-1. **Request** additional Reviewer(s) in GitHub to signal that a PR needs to be reviewed. The list of reviewers can be found in the [DCP2 specs document](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id9). If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, the PR owner should run the pre-release process and merge the PR. **If not part of the Metadata Schema Team, the Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
+9. **Request** additional Reviewer(s) in GitHub to signal that a PR needs to be reviewed. The list of reviewers can be found in the [DCP2 specs document](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id9). If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, the PR owner should run the pre-release process and merge the PR. **If not part of the Metadata Schema Team, the Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
 
 ## Schema update review process
 
-All the people needed for review should be automatically assigned with pullapprove. The guidelines for wranglers are as follows:
-
-A pull request should be reviewed within a specified **review timeframe**. The review timeframe starts when the Committer who opens the PR tags the appropriate number of Reviewers to review. All changes have a 2 week timeframe. Exceptions can be made if a PR is particularly complex. Weekend days and US/UK holidays do not count towards the review timeframe. 
-
-The review timeframe resets every time a change is made due to a request, and a review should be requested by all reviewers again.
-
-The **reviewer number** is the number of Wranglers who need to have reviewed the pull request before it is merged. Patch schema updates should be assigned 1 wrangler, while major and minor schema updates should be assigned 2 wranglers. Exceptions can be made if a PR is particularly complex or specific persons are required for a review.
-
-In cases of more than 1 requested wranglers:
-- The first reviewer should review the pull request and approve or reject the changes. If changes are approved, the first reviewer should tag the remaining Reviewer in a comment. If changes are rejected, the Reviewer should request further changes and then follow up with a review of the new changes from the Committer.
-- The second reviewer should review the pull request and approve or reject the changes. If changes are approved, the second reviewer should merge the pull request. If changes are rejected, the Reviewer should request further changes and then follow up with a review of the new changes from the Committer. If the changes are then approved, the second reviewer should merge the pull request.
-- If a Reviewer can not do the review in the assigned timeframe, the Reviewer is responsible for unassigning himself or herself as a Reviewer, assigning a replacement Reviewer, and notifying the new Reviewer in a tagged comment in the pull request.
-
-In cases of 1 requested Reviewer, the Reviewer fulfills the roles of both first and second Reviewer.
-
-| | Major update | Minor update  | Patch update |
-|:-|:-|:-|:-|
-| Review timeframe | 5 working days | 5 working days | 3 working days |
-| Reviewer number | 2 | 2 | 1 |
-
-> Table 1: Review timeframe and reviewer numbers for types of schema updates
+The up-to-date guidelines on the review process are found in the [DCP2 operating procedures](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_operating_procedures.rst#15review-process-overview)
 
 ## Committer guidelines
 
