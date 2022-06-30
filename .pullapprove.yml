@@ -34,9 +34,8 @@ groups:
     reviewers:
       users:
       - ESapenaVentura
-      - aaclan-ebi
-      - jacobwindsor
-      - yusra-haider
+      - amnonkhen
+      - MightyAx
     reviews:
       required: 1
       request_order: shuffle
@@ -62,19 +61,6 @@ groups:
     reviewers:
       users:
         - NoopDog
-    reviews:
-      required: 1
-      request: 1
-      request_order: shuffle
-  
-  pipelines:
-    conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
-    - "base.ref == 'master'"
-    - "'content' in labels"
-    reviewers:
-      users:
-      - kbergin
     reviews:
       required: 1
       request: 1
@@ -115,9 +101,8 @@ groups:
     - "'content' in labels"
     reviewers:
       users:
-      - aaclan-ebi
-      - jacobwindsor
-      - yusra-haider
+      - amnonkhen
+      - MightyAx
     reviews:
       required: 1
       request: 1
@@ -149,11 +134,10 @@ groups:
     - "'*.py' in files or '*.js' in files or '*.yml' in files"
     reviewers:
       users:
-      - mshadbolt
       - ESapenaVentura
-      - rays22
       - ami-day
       - Wkt8
+      - idazucchi
     reviews:
       required: 1
       request_order: shuffle
