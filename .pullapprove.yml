@@ -123,53 +123,24 @@ groups:
       request: 1
       request_order: shuffle
 
-  metadata-updates-major-minor:  # group name
+  metadata-updates:  # group name
     conditions:  # the group is activated when all of these statements are true
-    - "'*[Tt]ravis*' in check_runs.successful"
     - "base.ref == 'staging'"
-    - "'major' in body or 'minor' in body" # major or minor change is indicated in body of PR
+    - "any(['major' in body, 'minor' in body, 'patch' in body])" # major, minor or patch change is indicated in body of PR
     - "'content' in labels"
+    # Will add a new condition for GitLab once that's set up
     reviewers:  # people who can approve for this group
       users:
-      - mshadbolt
       - ESapenaVentura
-      - rays22
-      - rays22
-      - ami-day
-      - ami-day
-      - Wkt8
-      - Wkt8
-      - mshadbolt
-      - willrockout
-      - ESapenaVentura
-      - rachadele
+      - amnonkhen
+      - ruchim
+      - aherbst-broad
+      - hannes-ucsc
+      - NoopDog
     reviews:  # settings for approval and reviewer selection
-      required: 2
+      request: -1 # review requests will be sent every reviewer in the group
+      required: -1 # all users in the group will be required to approve the PR
       request_order: shuffle  # reviewers will be chosen in a random order
-
-  metadata-updates-patch:
-    conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
-    - "base.ref == 'develop'"
-    - "'patch' in body" # patch change is indicated in body of PR
-    - "'content' in labels"
-    reviewers:
-      users:
-        - mshadbolt
-        - ESapenaVentura
-        - rays22
-        - rays22
-        - ami-day
-        - ami-day
-        - Wkt8
-        - Wkt8
-        - mshadbolt
-        - willrockout
-        - ESapenaVentura
-        - rachadele
-    reviews:
-      required: 1
-      request_order: shuffle
 
   code-review:
     conditions:

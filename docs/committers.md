@@ -147,7 +147,7 @@ If a file is not valid the script will output an error message to aid the debugg
 
         git push origin mf-new-mouse-module-Issue222
 
-8. **Continue** to make, stage, and commit changes to the working branch until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the staging branch. In the comment section of the PR, fill out "Release notes" and "Reviews requested" sections as directed by the PR template. 
+8. **Continue** to make, stage, and commit changes to the working branch until you have completed and pushed all the changes within the scope of your new branch. In GitHub, **create** a pull request against the staging branch and add the `content` label. In the comment section of the PR, fill out "Release notes" and "Reviews requested" sections as directed by the PR template. 
 
 9. **Request** additional Reviewer(s) in GitHub to signal that a PR needs to be reviewed. The list of reviewers can be found in the [DCP2 specs document](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id9). If the changes are ultimately approved by all indicated Reviewer(s) and no objections are raised, the PR owner should run the pre-release process and merge the PR. **If not part of the Metadata Schema Team, the Committer should not merge their own PR.** The Reviewer who merges the PR should then delete the branch unless otherwise specified by the Committer.
 
