@@ -3,20 +3,18 @@ version: 3
 # The following line breaks the yml - 404 page not found error
 # extends: https://api.github.com/repos/example/pullapprove-config/contents/.pullapprove.yml
 
-# If this conditions are not met, it will throw the 'unmet_status'.
-pullapprove_conditions:
-- condition: "not any(['release' in labels, 'hotfix' in labels])"
-  unmet_status: success
+# These conditions are processed in order and the first match (if any) will determine the status on the pull request.
+overrides:
+- if: "any(['release' in labels, 'hotfix' in labels])"
+  status: success
   explanation: "Releases, security updates and hotfixes are allowed to merge in integration, staging and/or master"
-- condition: "base.ref == 'staging' or '[Snyk]' in title"
-  unmet_status: failure
+- if: "not any([base.ref == 'staging', '[Snyk]' in title])"
+  status: failure
   explanation: "No PRs from unknown branches can be merged into master"
-- condition: "'on hold' not in labels"
-  unmet_status: pending
+- if: "'on hold' in labels"
+  status: pending
   explanation: "PR review is on hold"
-- condition: "'*[tT]ravis*' in check_runs.success"
-  unmet_status: failure
-  explanation: "Travis CI tests must pass before review starts"
+  # Will add a new test for GitLab once that's set up
 
 notifications:
 - when: pull_request.opened
