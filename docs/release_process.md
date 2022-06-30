@@ -41,7 +41,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ## Steps of the pre-release process
 
-***Condition for pre-release:*** A pull request is ready to be merged into staging when it has been approved by the DCP2 components in line with the [acceptance process](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id1). It is the responsibility of the PR author to merge the PR into staging.
+***Condition for pre-release:*** A pull request is ready to be merged into staging when it has been approved by the DCP2 components in line with the [acceptance process](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_operating_procedures.rst#review-process-overview). It is the responsibility of the PR author to merge the PR into staging.
 
 1. **Check out** the `staging` branch and pull any changes to make sure it is up-to-date
 
