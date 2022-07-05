@@ -1,22 +1,23 @@
 version: 3
 
-# The following line breaks the yml - 404 page not found error
-# extends: https://api.github.com/repos/example/pullapprove-config/contents/.pullapprove.yml
-
-# If this conditions are not met, it will throw the 'unmet_status'.
-pullapprove_conditions:
-- condition: "not any(['release' in labels, 'hotfix' in labels])"
-  unmet_status: success
-  explanation: "Releases, security updates and hotfixes are allowed to merge in integration, staging and/or master"
-- condition: "base.ref == 'staging' or '[Snyk]' in title"
-  unmet_status: failure
-  explanation: "No PRs from unknown branches can be merged into master"
-- condition: "'on hold' not in labels"
-  unmet_status: pending
+# These conditions are processed in order and the first match (if any) will determine the status on the pull request.
+# Changes that don't match these overrides will be processed by the group conditions below.
+overrides:
+- if: "any(['release' in labels, 'hotfix' in labels])"
+  status: success
+  explanation: "Releases and hotfixes do not require review."
+- if: "not any([base.ref == 'staging', '[Snyk]' in title])"
+  status: failure
+  explanation: "PRs for review must target 'staging'. Unless they are from Snyk or are labeled with 'release' or 'hotfix'."
+- if: "'on hold' in labels"
+  status: pending
   explanation: "PR review is on hold"
-- condition: "'*[tT]ravis*' in check_runs.success"
-  unmet_status: failure
-  explanation: "Travis CI tests must pass before review starts"
+- if: "'linting' not in check_runs.success"
+  status: failure
+  explanation: "Schema must be Linted before review starts"
+- if:  "'tests' not in check_runs.success"
+  status: failure
+  explanation: "Schema must pass Tests before review starts"
 
 notifications:
 - when: pull_request.opened
@@ -36,16 +37,14 @@ groups:
     reviewers:
       users:
       - ESapenaVentura
-      - aaclan-ebi
-      - jacobwindsor
-      - yusra-haider
+      - amnonkhen
+      - MightyAx
     reviews:
       required: 1
       request_order: shuffle
       
   azul:
     conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
     - "base.ref == 'master'"
     - "'content' in labels"
     reviewers:
@@ -58,7 +57,6 @@ groups:
 
   browser:
     conditions:
-      - "'*[Tt]ravis*' in check_runs.successful"
       - "base.ref == 'master'"
       - "'content' in labels"
     reviewers:
@@ -69,22 +67,8 @@ groups:
       request: 1
       request_order: shuffle
   
-  pipelines:
-    conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
-    - "base.ref == 'master'"
-    - "'content' in labels"
-    reviewers:
-      users:
-      - kbergin
-    reviews:
-      required: 1
-      request: 1
-      request_order: shuffle
-  
   data_import:
     conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
     - "base.ref == 'master'"
     - "'content' in labels"
     reviewers:
@@ -99,7 +83,6 @@ groups:
     
   tdr:
     conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
     - "base.ref == 'master'"
     - "'content' in labels"
     reviewers:
@@ -112,79 +95,45 @@ groups:
       
   ingest-devs:
     conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
     - "base.ref == 'master'"
     - "'content' in labels"
     reviewers:
       users:
-      - aaclan-ebi
-      - jacobwindsor
-      - yusra-haider
+      - amnonkhen
+      - MightyAx
     reviews:
       required: 1
       request: 1
       request_order: shuffle
 
-  metadata-updates-major-minor:  # group name
+  metadata-updates:  # group name
     conditions:  # the group is activated when all of these statements are true
-    - "'*[Tt]ravis*' in check_runs.successful"
     - "base.ref == 'staging'"
-    - "'major' in body or 'minor' in body" # major or minor change is indicated in body of PR
+    - "any(['major' in body, 'minor' in body, 'patch' in body])" # major, minor or patch change is indicated in body of PR
     - "'content' in labels"
     reviewers:  # people who can approve for this group
       users:
-      - mshadbolt
       - ESapenaVentura
-      - rays22
-      - rays22
-      - ami-day
-      - ami-day
-      - Wkt8
-      - Wkt8
-      - mshadbolt
-      - willrockout
-      - ESapenaVentura
-      - rachadele
+      - amnonkhen
+      - ruchim
+      - aherbst-broad
+      - hannes-ucsc
+      - NoopDog
     reviews:  # settings for approval and reviewer selection
-      required: 2
+      request: -1 # review requests will be sent every reviewer in the group
+      required: -1 # all users in the group will be required to approve the PR
       request_order: shuffle  # reviewers will be chosen in a random order
-
-  metadata-updates-patch:
-    conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
-    - "base.ref == 'develop'"
-    - "'patch' in body" # patch change is indicated in body of PR
-    - "'content' in labels"
-    reviewers:
-      users:
-        - mshadbolt
-        - ESapenaVentura
-        - rays22
-        - rays22
-        - ami-day
-        - ami-day
-        - Wkt8
-        - Wkt8
-        - mshadbolt
-        - willrockout
-        - ESapenaVentura
-        - rachadele
-    reviews:
-      required: 1
-      request_order: shuffle
 
   code-review:
     conditions:
-    - "'*[Tt]ravis*' in check_runs.successful"
     - "base.ref == 'develop'"
     - "'*.py' in files or '*.js' in files or '*.yml' in files"
     reviewers:
       users:
-      - mshadbolt
       - ESapenaVentura
-      - rays22
       - ami-day
       - Wkt8
+      - idazucchi
     reviews:
       required: 1
       request_order: shuffle

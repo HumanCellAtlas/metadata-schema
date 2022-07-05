@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This document is an SOP for super users who are responsible for merging PRs into staging ("pre-release") and propagate metadata schemas from staging to production (`master`).
+This document is an SOP for super users who are responsible for merging PRs into `staging` ("pre-release") and propagate metadata schemas from staging to production (`master`).
 
 **What is in this document**
 - Steps for merging pull requests (PRs) into the staging branch aka "pre-release"
@@ -18,6 +18,7 @@ This document is an SOP for super users who are responsible for merging PRs into
 
  **Who should be reading this document?**
  - HCA DCP internal developers with authorisation to do metadata pre-releases and releases.
+ - HCA DCP wranglers responsible for metadata schema updates
 
  **What *isn't* in this document?**
 - Description of what defines [major, minor, and patch changes](evolution.md#schema-versioning) to the metadata schema
@@ -40,9 +41,9 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 ## Steps of the pre-release process
 
-***Condition for pre-release:*** A pull request is ready to be merged into staging when it has been approved by the DCP2 components in line with the [acceptance process](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_system_design.rst#id1). It is the responsibility of the PR author to merge the PR into staging.
+***Condition for pre-release:*** A pull request is ready to be merged into staging when it has been approved by the DCP2 components in line with the [acceptance process](https://github.com/HumanCellAtlas/dcp2/blob/main/docs/dcp2_operating_procedures.rst#review-process-overview). It is the responsibility of the PR author to merge the PR into staging.
 
-1. **Check out** the develop branch and pull any changes to make sure it is up-to-date
+1. **Check out** the `staging` branch and pull any changes to make sure it is up-to-date
 
         git checkout staging
         git pull
@@ -54,7 +55,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Verify** whether there are any merge conflicts between the PR branch and staging. You can do this in GitHub or on your computer.
 
-    1. **Pull** develop into the pull request branch locally (on your computer)
+    1. **Pull** `staging` into the pull request branch locally (on your computer)
 
             git pull origin staging
 
@@ -103,11 +104,9 @@ From now on, every time you commit anything in the metadata schema repo using th
         git commit -a -m "Ran release_prepare.py script."
         git push origin <name_of_pull_request_branch>
 
-1. **Wait** for the Travis build to pass, then **merge** the PR into develop immediately.
+1. **Merge** the PR into `staging` immediately.
 
-1. **Delete** the PR branch, unless otherwise noted by the person who opened the PR.
-
-1. **Mark** any linked GitHub issues with the "done" label, and then **close** the issue.
+1. **Delete** the PR branch, unless otherwise noted by the person who opened the PR. In case of problems the branch can easily be restored.
 
 1. **Check** the changes in versions have been picked up by checking the #hca-schema-pub-announce slack channel
 
@@ -139,7 +138,7 @@ Anyone on the metadata team can trigger a primary release from staging to master
 
     right below the line
 
-    `## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)`
+    `## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)`
 
 1. **Commit** your changes
 
@@ -150,9 +149,9 @@ Anyone on the metadata team can trigger a primary release from staging to master
    1. *Versions*: Enter schema names and version numbers for any updated schemas. Enter the current version as shown in versions.json, skipping over intermediate versions.
    1. *Functionality changes*: Describe any changes in how the schema will function in the context of other DCP components. Include all the major and minor schema changes and any code changes, e.g. changes to the schema validation code.
     
-   [**WARNING**:Environments outdated] See example of *develop* to *integration* release PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/665) 
+   See example of *staging* to *master* release PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/1456) 
 
-1. **Wait** for the Travis build to pass, then **merge** this PR into master immediately.
+1. **Merge** this PR into master immediately.
  
    ***Merge your own pull request in this particular scenario!***
    
@@ -198,7 +197,7 @@ Anyone on the metadata team can trigger a primary release from staging to master
 
     right below the line
 
-    `## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/develop)`
+    `## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)`
     
     (step 4 of the release process)
 
