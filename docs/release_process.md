@@ -106,9 +106,7 @@ From now on, every time you commit anything in the metadata schema repo using th
 
 1. **Merge** the PR into `staging` immediately.
 
-1. **Delete** the PR branch, unless otherwise noted by the person who opened the PR.
-
-1. **Mark** any linked GitHub issues with the "done" label, and then **close** the issue.
+1. **Delete** the PR branch, unless otherwise noted by the person who opened the PR. In case of problems the branch can easily be restored.
 
 1. **Check** the changes in versions have been picked up by checking the #hca-schema-pub-announce slack channel
 
