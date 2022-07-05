@@ -2,9 +2,9 @@ name: Schema Linting and Tests
 
 on:
   push:
-    branches: [ "master", "staging"]
+    branches: [ "master", "staging", "as_replace_travis_with_github_actions"]
   pull_request:
-    branches: [ "master", "staging" ]
+    branches: [ "master", "staging",  "as_replace_travis_with_github_actions"]
 
 permissions:
   contents: read
