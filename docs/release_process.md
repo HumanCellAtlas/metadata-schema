@@ -149,7 +149,7 @@ Anyone on the metadata team can trigger a primary release from staging to master
    1. *Versions*: Enter schema names and version numbers for any updated schemas. Enter the current version as shown in versions.json, skipping over intermediate versions.
    1. *Functionality changes*: Describe any changes in how the schema will function in the context of other DCP components. Include all the major and minor schema changes and any code changes, e.g. changes to the schema validation code.
     
-   [**WARNING**:Environments outdated] See example of *develop* to *integration* release PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/665) 
+   See example of *staging* to *master* release PR [here](https://github.com/HumanCellAtlas/metadata-schema/pull/1456) 
 
 1. **Merge** this PR into master immediately.
  
