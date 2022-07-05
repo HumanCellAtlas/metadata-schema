@@ -73,7 +73,7 @@ groups:
     - "'content' in labels"
     reviewers:
       users:
-      - aherbst-broad
+      - ncalvanese1
       - JeffKorte
       - danicham
     reviews:
@@ -116,7 +116,7 @@ groups:
       - ESapenaVentura
       - amnonkhen
       - ruchim
-      - aherbst-broad
+      - ncalvanese1
       - hannes-ucsc
       - NoopDog
     reviews:  # settings for approval and reviewer selection
