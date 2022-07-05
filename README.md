@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/HumanCellAtlas/metadata-schema.svg)](https://travis-ci.org/HumanCellAtlas/metadata-schema)
+[![Schema Linting and Tests](https://github.com/HumanCellAtlas/metadata-schema/actions/workflows/schema-tests.yml/badge.svg)](https://github.com/HumanCellAtlas/metadata-schema/actions/workflows/schema-tests.yml)
 
 # The Human Cell Atlas: Metadata Standards
 
