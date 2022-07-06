@@ -8,7 +8,8 @@
         "protocol_core"
     ],
     "dependentRequired": {
-        "permeabilisation_time": ["permeabilisation_time_unit"]
+        "permeabilisation_time": ["permeabilisation_time_unit"],
+        "permeabilisation_time_unit": ["permeabilisation_time"]
     },
     "title": "Imaging preparation protocol",
     "name": "imaging_preparation_protocol",
