@@ -148,7 +148,7 @@ text | The name of a process type being used. | string | yes |  | Process type |
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Process type ontology ID |  | EFO:0009128; EFO:0009121
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Process type ontology label |  | enzymatic dissociation; blood draw
 
-## Ethnicity ontology<a name='Ethnicity ontology'></a>
+## Gender identity ontology<a name='Gender identity ontology'></a>
 _A term that may be associated with a gender-related ontology term._
 
 Location: module/ontology/gender_identity_ontology.json

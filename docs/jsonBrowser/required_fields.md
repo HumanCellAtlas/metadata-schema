@@ -248,7 +248,7 @@ text | The name of a library construction approach being used. | string |  | Lib
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a process type being used. | string |  | Process type |  | enzymatic dissociation; blood draw
-### Ethnicity ontology<a name='Ethnicity ontology'></a>
+### Gender identity ontology<a name='Gender identity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The gender identity of the human donor at the time of the experiment. | string |  | Gender identity |  | Female-to-Male Transsexual; Agender

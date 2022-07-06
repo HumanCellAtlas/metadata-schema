@@ -188,7 +188,7 @@
         "gender_identity": {
             "description": "The donor's personal sense of their own gender at the time of the experiment.",
             "type": "object",
-            "$ref": "module/biomaterial/gender_identity_ontology.json",
+            "$ref": "module/ontology/gender_identity_ontology.json",
             "user_friendly": "Gender identity"
         }
     }

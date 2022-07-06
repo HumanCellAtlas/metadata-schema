@@ -5,8 +5,8 @@
   "required": [
     "text"
   ],
-  "title": "Ethnicity ontology",
-  "name": "ethnicity_ontology",
+  "title": "Gender identity ontology",
+  "name": "gender_identity_ontology",
   "type": "object",
   "properties": {
     "describedBy" : {
