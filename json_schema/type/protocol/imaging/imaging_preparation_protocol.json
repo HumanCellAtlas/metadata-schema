@@ -7,6 +7,9 @@
         "schema_type",
         "protocol_core"
     ],
+    "dependentRequired": {
+        "permeabilisation_time": ["permeabilisation_time_unit"]
+    },
     "title": "Imaging preparation protocol",
     "name": "imaging_preparation_protocol",
     "type": "object",
@@ -102,6 +105,18 @@
             "type" : "number",
             "example": "3",
             "user_friendly": "Expansion factor"
+        },
+        "permeabilisation_time": {
+            "description": "The permeabilisation time in time units that the tissue was exposed to.",
+            "type": "number",
+            "example": "12",
+            "user_friendly": "Permeabilisation time"
+        },
+        "permeabilisation_time_unit": {
+            "description": "The unit in which Permeabilisation time is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
+            "user_friendly": "Permeabilisation time unit"
         }
     }
 }

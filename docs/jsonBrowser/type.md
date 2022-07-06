@@ -255,6 +255,8 @@ post_final_slicing_interval | Length of time between secondary slicing and hybri
 post_final_slicing_interval_unit | The unit of time in which the post final slicing interval is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Post final slicing interval time unit |  | day
 fiducial_marker | Fiducial markers for the alignment of images taken across multiple rounds of imaging. | string | no |  | Fiducial marker |  | beads
 expansion_factor | Factor by which the imaged tissue was expanded in one dimension. | number | no |  | Expansion factor |  | 3
+permeabilisation_time | The permeabilisation time in time units that the tissue was exposed to. | number | no |  | Permeabilisation time |  | 12
+permeabilisation_time_unit | The unit in which Permeabilisation time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Permeabilisation time unit |  | 
 
 ## Imaging Protocol
 _Information about the imaging protocol._
