@@ -12,9 +12,6 @@ overrides:
 - if: "'on hold' in labels"
   status: pending
   explanation: "PR review is on hold"
-- if: "'linting' not in check_runs.success"
-  status: failure
-  explanation: "Schema must be Linted before review starts"
 - if:  "'tests' not in check_runs.success"
   status: failure
   explanation: "Schema must pass Tests before review starts"
