@@ -56,7 +56,8 @@
                 "sequencing_ontology": "1.1.5",
                 "species_ontology": "5.3.5",
                 "strain_ontology": "5.3.6",
-                "time_unit_ontology": "5.3.5"
+                "time_unit_ontology": "5.3.5",
+                "gender_identity_ontology": "0.0.0"
             },
             "process": {
                 "purchased_reagents": "6.1.0",

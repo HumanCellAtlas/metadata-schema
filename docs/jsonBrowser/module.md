@@ -148,6 +148,17 @@ text | The name of a process type being used. | string | yes |  | Process type |
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Process type ontology ID |  | EFO:0009128; EFO:0009121
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Process type ontology label |  | enzymatic dissociation; blood draw
 
+## Ethnicity ontology<a name='Ethnicity ontology'></a>
+_A term that may be associated with a gender-related ontology term._
+
+Location: module/ontology/gender_identity_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The gender identity of the human donor at the time of the experiment. | string | yes |  | Gender identity |  | Female-to-Male Transsexual; Agender
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Gender identity ontology ID |  | NCIT:C46121; NCIT:C180329
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Gender identity ontology label |  | Female-to-Male Transsexual; Agender
+
 ## Sequencing ontology<a name='Sequencing ontology'></a>
 _A term that may be associated with a process-related ontology term._
 

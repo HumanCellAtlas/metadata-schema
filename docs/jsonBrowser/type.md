@@ -414,6 +414,7 @@ height_unit | The unit in which Height is expressed. | object | no | [See module
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60; 40-60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md/#mass_unit_ontology) | Weight unit |  | 
 timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md/#timecourse) | Timecourse |  | 
+gender_identity | The donor's personal sense of their own gender at the time of the experiment. | object | no | [See module  gender_identity_ontology](module.md/#gender_identity_ontology) | Gender identity |  | 
 
 ## Organoid
 _Information about an organoid biomaterial._
