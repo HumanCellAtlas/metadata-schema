@@ -33,9 +33,9 @@ probe_sequence | Sequence of a probe used to detect target. | string | no |  | P
 target_name | The name of the target molecule. | string | no |  | Target name |  | ACTA1_exon1; nuclear cFos
 target_codebook_label | A label used in the codebook for the target. | string | no |  | Target label in codebook |  | AKT1; CFOS
 target_label | An identifier for the target molecule. | string | yes |  | Target label |  | CHEBI:85345; ENSG00000170345
-subcellular_structure | Target subcellular structure. | object | no | [See module  cellular_component_ontology](module.md/#cellular_component_ontology) | Target subcellular structure |  | 
-probe_reagents | Name of reagents used to construct the probe. | object | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Probe construction reagents |  | 
-assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+subcellular_structure | Target subcellular structure. | object | no | [See module  cellular_component_ontology](module.md#cellular-component-ontology) | Target subcellular structure |  | 
+probe_reagents | Name of reagents used to construct the probe. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Probe construction reagents |  | 
+assay_type | Type of assay used to detect target. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Assay type |  | MERFISH; in situ sequencing
 fluorophore | Fluorophore used to detect target. | array | no |  | Fluorophore |  | Cy5; Alexa 488
 channel_label | Channel label used to assay signal. | array | no |  | Channel |  | 1; A
 
@@ -350,7 +350,7 @@ laboratory | Name of lab or department within the institute where the individual
 address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
 country | Country where the individual works. | string | no |  | Country |  | USA
 corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor |  | Should be one of: yes, or no.
-project_role | Primary role of the individual in the project. | object | no | [See module  contributor_role_ontology](module.md/#contributor_role_ontology) | Project role |  | principal investigator; computational scientist
+project_role | Primary role of the individual in the project. | object | no | [See module  contributor_role_ontology](module.md#contributor-role-ontology) | Project role |  | principal investigator; computational scientist
 orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
 
 ## Publication<a name='Publication'></a>
@@ -375,7 +375,7 @@ Location: module/biomaterial/human_specific.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
-ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md/#ethnicity_ontology) | Ethnicity |  | 
+ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Ethnicity |  | 
 
 ## Growth conditions<a name='Growth conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
@@ -401,7 +401,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 storage_method | The method by which a biomaterial was stored after preservation or before another protocol was used. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen at -70C, frozen at -80C, frozen at -150C, frozen in liquid nitrogen, frozen in vapor phase, paraffin block, RNAlater at 4C, RNAlater at 25C, RNAlater at -20C | frozen in liquid nitrogen; fresh
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
-storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Storage time unit |  | 
+storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Storage time unit |  | 
 preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
 
 ## Death<a name='Death'></a>
@@ -453,7 +453,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells; form single layer colonies
 cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 15; 20-30
-cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md/#length_unit_ontology) | Cell size unit |  | 
+cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Cell size unit |  | 
 percent_cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 98.7
 cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis; ATP test
 cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability result | pass, fail | Should be one of: pass, fail
@@ -483,7 +483,7 @@ Location: module/biomaterial/timecourse.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  | Timecourse value |  | 2; 5.5-10.5
-unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Timecourse unit |  | 
+unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
 relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  | Timecourse relevance |  | Collection after tumor cells injected into the mammary gland; Time tissue underwent liberase digestion
 
 ## Mouse-specific<a name='Mouse-specific'></a>
@@ -493,7 +493,7 @@ Location: module/biomaterial/mouse_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-strain | The name of the mouse strain. | array | no | [See module  strain_ontology](module.md/#strain_ontology) | Mouse strain |  | 
+strain | The name of the mouse strain. | array | no | [See module  strain_ontology](module.md#strain-ontology) | Mouse strain |  | 
 
 ## Purchased reagents<a name='Purchased reagents'></a>
 _Information describing purchased kits or reagents used in a protocol._
