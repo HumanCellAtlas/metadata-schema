@@ -92,8 +92,7 @@ class MarkdownGenerator:
                                 dir = ""
                             mod = ref.split("/")[-1]
                             mod = mod.replace(".json", "")
-                            link = "[See " + dir + "  " + mod + "](" + dir + ".md#" + mod.replace("_", "-") + ")"
-
+                            link = self.build_link(dir, mod)
                         else:
                             link = ""
 
@@ -109,7 +108,7 @@ class MarkdownGenerator:
                                 dir = ""
                             mod = ref.split("/")[-1]
                             mod = mod.replace(".json", "")
-                            link = "[See " + dir + "  " + mod + "](" + dir + ".md#" + mod.replace("_", "-") + ")"
+                            link = self.build_link(dir, mod)
                         else:
                             link = ""
                     else:
@@ -154,8 +153,9 @@ class MarkdownGenerator:
 
         file.close()
 
-
-
+    @staticmethod
+    def build_link(dir, mod):
+        return f"[See {dir}  {mod}]({dir}.md#{mod.replace('_', '-')})"
 
 
 if __name__ == '__main__':
