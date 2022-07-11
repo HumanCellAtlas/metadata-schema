@@ -2,10 +2,10 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Develop tests](#develop_tests)
-- [Integration tests](#integration_tests)
-- [Stress tests](#stress_tests)
-- [Ideas for improvement](#ideas_for_improvement)
+- [Develop tests](#develop-tests)
+- [Integration tests](#integration-tests)
+- [Stress tests](#stress-tests)
+- [Ideas for improvement](#ideas-for-improvement)
 
 ## Introduction
 
@@ -49,7 +49,7 @@ The following are the set of tests to run on the schema.  Some of these may be c
 
 ## Integration tests
 
-A pull request to integration runs the [Develop tests](#develop_tests) and additional runs the following test:
+A pull request to integration runs the [Develop tests](#develop-tests) and additional runs the following test:
 
 1. Validation of a subset of real data.  This validates a specified set of production metadata against both the specified version and the latest compatible version (same major number) of the referenced schema. The subset is select based on a breadth of data types and previously failed examples.
 
