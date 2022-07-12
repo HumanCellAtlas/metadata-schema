@@ -7,10 +7,6 @@
         "schema_type",
         "protocol_core"
     ],
-    "dependentRequired": {
-        "permeabilisation_time": ["permeabilisation_time_unit"],
-        "permeabilisation_time_unit": ["permeabilisation_time"]
-    },
     "title": "Imaging preparation protocol",
     "name": "imaging_preparation_protocol",
     "type": "object",
@@ -114,7 +110,7 @@
             "user_friendly": "Permeabilisation time"
         },
         "permeabilisation_time_unit": {
-            "description": "The unit in which Permeabilisation time is expressed.",
+            "description": "The unit in which permeabilisation time is expressed.",
             "type": "object",
             "$ref": "module/ontology/time_unit_ontology.json",
             "user_friendly": "Permeabilisation time unit"
