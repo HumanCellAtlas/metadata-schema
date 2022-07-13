@@ -17,3 +17,4 @@ $(TESTS)/node_modules/: $(TESTS)/package.json
 .PHONE: test-node
 test-node: $(TESTS)/schema.test.js $(TESTS)/node_modules
 	cd $(TESTS) ; npm test
+	
