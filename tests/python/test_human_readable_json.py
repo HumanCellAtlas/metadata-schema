@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from human_readable_json import MarkdownGenerator
+from src.human_readable_json import MarkdownGenerator
 
 
 class TestMarkdownGenerator(TestCase):
