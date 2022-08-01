@@ -115,6 +115,28 @@ text | The ethnicity of the human donor. | string | yes |  | Ethnicity |  | Euro
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Ethnicity ontology ID |  | HANCESTRO:0005; HANCESTRO:0014
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Ethnicity ontology label |  | European; Hispanic or Latin American
 
+## Target pathway ontology<a name='Target pathway ontology'></a>
+_A term that may be associated with a process-related ontology term._
+
+Location: module/ontology/target_pathway_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of the treatment target pathway. | string | yes |  | Target pathway |  | positive regulation of memory T cell differentiation
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Target pathway ontology ID |  | GO:0043382
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Target pathway ontology label |  | positive regulation of memory T cell differentiation
+
+## Treatment ontology<a name='Treatment ontology'></a>
+_A term that may be associated with a process-related ontology term._
+
+Location: module/ontology/treatment_method_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | The name of a treatment method or approach being used. | string | yes |  | Treatment method |  | T cell activation assay
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Treatment ontology ID |  | EFO:0030037
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Treatment ontology label |  | T cell activation assay
+
 ## Cellular component ontology<a name='Cellular component ontology'></a>
 _A term that may be associated with an intra-cellular structure ontology term._
 
