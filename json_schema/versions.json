@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2021-12-20T16:43:55Z",
+    "last_update_date": "2022-05-24T17:06:41Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
                 "biomaterial_core": "8.2.0"
             },
             "file": {
-                "file_core": "6.2.0"
+                "file_core": "6.3.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -38,10 +38,10 @@
                 "cellular_component_ontology": "1.0.5",
                 "contributor_role_ontology": "1.0.0",
                 "development_stage_ontology": "5.3.6",
-                "disease_ontology": "5.3.8",
+                "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
                 "ethnicity_ontology": "5.3.9",
-                "file_content_ontology": "1.0.1",
+                "file_content_ontology": "1.1.0",
                 "file_format_ontology": "1.0.0",
                 "instrument_ontology": "5.3.6",
                 "length_unit_ontology": "5.3.5",
@@ -56,7 +56,9 @@
                 "sequencing_ontology": "1.1.5",
                 "species_ontology": "5.3.5",
                 "strain_ontology": "5.3.6",
-                "time_unit_ontology": "5.3.5"
+                "time_unit_ontology": "5.3.5",
+                "treatment_method_ontology": "0.0.0",
+                "target_pathway_ontology": "0.0.0"
             },
             "process": {
                 "purchased_reagents": "6.1.0",
@@ -86,19 +88,19 @@
         },
         "type": {
             "biomaterial": {
-                "cell_line": "15.0.0",
+                "cell_line": "15.1.0",
                 "cell_suspension": "13.3.0",
-                "donor_organism": "15.5.0",
+                "donor_organism": "15.6.0",
                 "imaged_specimen": "3.3.0",
                 "organoid": "11.3.0",
-                "specimen_from_organism": "10.4.0"
+                "specimen_from_organism": "10.5.0"
             },
             "file": {
-                "analysis_file": "6.3.0",
-                "image_file": "2.3.0",
-                "reference_file": "3.3.0",
-                "sequence_file": "9.3.1",
-                "supplementary_file": "2.3.0"
+                "analysis_file": "6.4.0",
+                "image_file": "2.4.0",
+                "reference_file": "3.4.0",
+                "sequence_file": "9.4.0",
+                "supplementary_file": "2.4.0"
             },
             "process": {
                 "analysis": {
@@ -124,7 +126,7 @@
                 },
                 "imaging": {
                     "imaging_preparation_protocol": "2.2.0",
-                    "imaging_protocol": "11.3.0"
+                    "imaging_protocol": "11.4.0"
                 },
                 "protocol": "7.1.0",
                 "sequencing": {

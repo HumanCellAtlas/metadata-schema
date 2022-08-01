@@ -43,8 +43,10 @@
         },
         "method": {
             "description": "Method applied to cell culture to induce a specific treatment response.",
-            "type": "object",
-	    "$ref": "module/ontology/treatment_method_ontology.json",
+            "type": "array",
+            "items":{
+                "$ref": "module/ontology/treatment_method_ontology.json"
+            },
             "user_friendly": "Treatment method",
         },
         "media":{
@@ -64,7 +66,10 @@
         },
         "target_pathway": {
             "description": "Targeted pathway for specific treatment response.",
-            "type": "string",
+            "type": "array",
+            "items":{
+                "$ref": "module/ontology/target_pathway_ontology.json"
+            },
             "user_friendly": "Target pathway",
             "example": "insulin signalling pathway; immune cell activation; chemokine signalling pathway."
         }

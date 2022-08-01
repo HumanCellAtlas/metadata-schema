@@ -1,49 +1,49 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A term that may be associated with a disease-related ontology term.",
+    "description": "A term that may be associated with a process-related ontology term.",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "Disease ontology",
-    "name": "disease_ontology",
+    "title": "Target pathway ontology",
+    "name": "target_pathway_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/disease_ontology",
-            "type": "string"
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/target_pathway_ontology"
         },
         "schema_version": {
-            "description": "Version number in major.minor.patch format.",
+            "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
         "text": {
-            "description": "The text for the term as the user provides it.",
+            "description": "The name of the treatment target pathway.",
             "type": "string",
-            "user_friendly": "Disease",
-            "example": "type 2 diabetes mellitus; normal"
+            "user_friendly": "Target pathway",
+            "example": "positive regulation of memory T cell differentiation"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:mondo", "obo:efo", "obo:hp"],
-                "classes": ["MONDO:0000001", "PATO:0000461", "HP:0000118"],
+                "ontologies" : ["obo:go"],
+                "classes": ["GO:0050789"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
-                "include_self": true
+                "include_self": false
             },
-            "user_friendly": "Disease ontology ID",
-            "example": "MONDO:0005148; PATO:0000461; HP:0001397"
+            "user_friendly": "Target pathway ontology ID",
+            "example": "GO:0043382"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
-            "user_friendly": "Disease ontology label",
-            "example": "type 2 diabetes mellitus; normal"
+            "user_friendly": "Target pathway ontology label",
+            "example": "positive regulation of memory T cell differentiation"
         }
     }
 }

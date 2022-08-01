@@ -102,7 +102,7 @@ describe ('Testing example data validates against schemas', function () {
                     }
                 });
 
-            }).timeout(10000)
+            }).timeout(60000)
 
     });
 
