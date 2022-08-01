@@ -56,7 +56,9 @@
                 "sequencing_ontology": "1.1.5",
                 "species_ontology": "5.3.5",
                 "strain_ontology": "5.3.6",
-                "time_unit_ontology": "5.3.5"
+                "time_unit_ontology": "5.3.5",
+                "treatment_method_ontology": "0.0.0",
+                "target_pathway_ontology": "0.0.0"
             },
             "process": {
                 "purchased_reagents": "6.1.0",
@@ -119,7 +121,8 @@
                     "differentiation_protocol": "2.2.0",
                     "dissociation_protocol": "6.2.0",
                     "enrichment_protocol": "3.1.0",
-                    "ipsc_induction_protocol": "3.2.0"
+                    "ipsc_induction_protocol": "3.2.0",
+                    "treatment_protocol": "0.0.0"
                 },
                 "imaging": {
                     "imaging_preparation_protocol": "2.2.0",
