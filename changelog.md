@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [type/protocol/biomaterial_collection/treatment_protocol.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol entity. Fixes #1428
+
+### [module/ontology/treatment_method_ontology.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol method ontology to be used to annotate the Treatment protocol method. Fixes #1428
+
+### [module/ontology/target_pathway_ontology.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol target pathway ontology which will be used to describe the target pathway that is targeted by a treatment method. Fixes #1428
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/disease_ontology.json - v5.4.0] - 2022-05-24

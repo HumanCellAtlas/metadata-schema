@@ -122,6 +122,12 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
 method | Method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+### Treatment protocol
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+method | Method applied to cell culture to induce a specific treatment response. | array | [See module  treatment_method_ontology](module.md/#treatment_method_ontology) | Treatment method |  | 
 ### Imaging preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -236,6 +242,14 @@ text | The primary role of the contributor in the project. | string |  | Contrib
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; Hispanic or Latin American
+### Target pathway ontology<a name='Target pathway ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of the treatment target pathway. | string |  | Target pathway |  | positive regulation of memory T cell differentiation
+### Treatment ontology<a name='Treatment ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of a treatment method or approach being used. | string |  | Treatment method |  | T cell activation assay
 ### Cellular component ontology<a name='Cellular component ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

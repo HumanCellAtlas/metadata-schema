@@ -47,7 +47,7 @@
             "items":{
                 "$ref": "module/ontology/treatment_method_ontology.json"
             },
-            "user_friendly": "Treatment method",
+            "user_friendly": "Treatment method"
         },
         "media":{
             "description": "Culture media used to induce a specific treatment response.",
