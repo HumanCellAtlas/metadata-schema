@@ -7,6 +7,10 @@
         "schema_type",
         "protocol_core"
     ],
+    "dependencies": {
+        "permeabilisation_time": ["permeabilisation_time_unit"],
+        "permeabilisation_time_unit": ["permeabilisation_time"]
+    },
     "title": "Imaging preparation protocol",
     "name": "imaging_preparation_protocol",
     "type": "object",
