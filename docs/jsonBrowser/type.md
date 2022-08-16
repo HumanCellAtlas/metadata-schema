@@ -243,12 +243,12 @@ Location: type/protocol/biomaterial_collection/treatment_protocol.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string | yes |  |  | protocol | 
-provenance | Provenance information provided by the system. | object | no | [See   provenance](.md/#provenance) |  |  | 
-protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | Method applied to cell culture to induce a specific treatment response. | array | yes | [See module  treatment_method_ontology](module.md/#treatment_method_ontology) | Treatment method |  | 
+provenance | Provenance information provided by the system. | object | no | [See   provenance](.md#provenance) |  |  | 
+protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+method | Method applied to cell culture to induce a specific treatment response. | array | yes | [See module  treatment_method_ontology](module.md#treatment-method-ontology) | Treatment method |  | 
 media | Culture media used to induce a specific treatment response. | string | no |  | Treatment media |  | RPMI 1640; Complete Medium
-reagents | A list of purchased reagents used in the treatment protocol. | array | no | [See module  purchased_reagents](module.md/#purchased_reagents) | Treatment reagents |  | 
-target_pathway | Targeted pathway for specific treatment response. | array | no | [See module  target_pathway_ontology](module.md/#target_pathway_ontology) | Target pathway |  | insulin signalling pathway; immune cell activation; chemokine signalling pathway.
+reagents | A list of purchased reagents used in the treatment protocol. | array | no | [See module  purchased_reagents](module.md#purchased-reagents) | Treatment reagents |  | 
+target_pathway | Targeted pathway for specific treatment response. | array | no | [See module  target_pathway_ontology](module.md#target-pathway-ontology) | Target pathway |  | insulin signalling pathway; immune cell activation; chemokine signalling pathway.
 
 ## Imaging preparation protocol
 _Information about the preparation protocol of the imaged specimen used in an imaging experiment._

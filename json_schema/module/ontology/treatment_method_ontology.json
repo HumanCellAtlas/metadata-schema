@@ -5,8 +5,8 @@
     "required": [
         "text"
     ],
-    "title": "Treatment ontology",
-    "name": "treatment_ontology",
+    "title": "Treatment method ontology",
+    "name": "treatment_method_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {
