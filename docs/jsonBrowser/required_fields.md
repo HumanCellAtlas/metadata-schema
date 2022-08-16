@@ -126,8 +126,8 @@ method | Method applied to cell culture to induce a specific differentiation res
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | Method applied to cell culture to induce a specific treatment response. | array | [See module  treatment_method_ontology](module.md/#treatment_method_ontology) | Treatment method |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+method | Method applied to cell culture to induce a specific treatment response. | array | [See module  treatment_method_ontology](module.md#treatment-method-ontology) | Treatment method |  | 
 ### Imaging preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
