@@ -13,6 +13,18 @@ Added permeabilisation time field with time units. Fixes #1471
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/protocol/biomaterial_collection/treatment_protocol.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol entity. Fixes #1428
+
+### [module/ontology/treatment_method_ontology.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol method ontology to be used to annotate the Treatment protocol method. Fixes #1428
+
+### [module/ontology/target_pathway_ontology.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol target pathway ontology which will be used to describe the target pathway that is targeted by a treatment method. Fixes #1428
+
 ### [module/ontology/disease_ontology.json - v5.4.0] - 2022-05-24
 ### Added
 Added the phenotype branch to graphRestrictions. Fixes #1460
