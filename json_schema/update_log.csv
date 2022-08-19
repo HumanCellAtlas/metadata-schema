@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/imaging/imaging_preparation_protocol,minor,"Added permeabilisation time field with time units. Fixes #1471",,
