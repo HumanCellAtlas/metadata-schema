@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2022-08-01T16:19:28Z",
+    "last_update_date": "2022-08-19T14:15:58Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -125,7 +125,7 @@
                     "treatment_protocol": "1.0.0"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "2.2.0",
+                    "imaging_preparation_protocol": "2.3.0",
                     "imaging_protocol": "11.4.0"
                 },
                 "protocol": "7.1.0",
