@@ -9,6 +9,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/ontology/contributor_role_ontology.json - v2.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+### [module/project/contact.json - v9.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+### [type/project/project.json - v17.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
 ### [module/ontology/disease_ontology.json - v5.4.0] - 2022-05-24
 ### Added
 Added the phenotype branch to graphRestrictions. Fixes #1460
