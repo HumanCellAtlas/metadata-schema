@@ -31,7 +31,7 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:efo"],
-                "classes": ["EFO:0002012"],
+                "classes": ["BFO:0000023"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
