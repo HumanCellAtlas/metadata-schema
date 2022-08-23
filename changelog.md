@@ -5,8 +5,21 @@ All notable changes to the HCA metadata schema will be documented in this file. 
 Starting after v5.0.0 release, updates will be declared for schemas independently in the form `[<schema_name>.json vX.Y.Z] - Release-date`. Changes will be organized across six categories: Added, Changed, Removed, Fixed, Deprecated, and Security. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
-## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/ontology/contributor_role_ontology.json - v2.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+### [module/project/contact.json - v9.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+### [type/project/project.json - v17.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
 ### [type/protocol/biomaterial_collection/treatment_protocol.json - v1.0.0] - 2022-08-01
 ### Added

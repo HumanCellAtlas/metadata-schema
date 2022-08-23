@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2022-08-01T16:19:28Z",
+    "last_update_date": "2022-08-23T12:02:44Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -36,7 +36,7 @@
                 "cell_cycle_ontology": "5.3.6",
                 "cell_type_ontology": "5.3.6",
                 "cellular_component_ontology": "1.0.5",
-                "contributor_role_ontology": "1.0.0",
+                "contributor_role_ontology": "2.0.0",
                 "development_stage_ontology": "5.3.6",
                 "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
@@ -70,7 +70,7 @@
                 }
             },
             "project": {
-                "contact": "8.0.1",
+                "contact": "9.0.0",
                 "funder": "2.0.0",
                 "publication": "7.0.0"
             },
@@ -109,7 +109,7 @@
                 "process": "9.2.0"
             },
             "project": {
-                "project": "16.0.0"
+                "project": "17.0.0"
             },
             "protocol": {
                 "analysis": {
