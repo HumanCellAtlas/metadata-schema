@@ -246,7 +246,7 @@ text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the treatment target pathway. | string |  | Target pathway |  | positive regulation of memory T cell differentiation
-### Treatment ontology<a name='Treatment ontology'></a>
+### Treatment method ontology<a name='Treatment method ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of a treatment method or approach being used. | string |  | Treatment method |  | T cell activation assay

@@ -6,6 +6,11 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.3.0] - 2022-08-19
+### Added
+Added permeabilisation time field with time units. Fixes #1471
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/biomaterial_collection/treatment_protocol.json - v1.0.0] - 2022-08-01

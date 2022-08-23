@@ -126,7 +126,7 @@ text | The name of the treatment target pathway. | string | yes |  | Target path
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Target pathway ontology ID |  | GO:0043382
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Target pathway ontology label |  | positive regulation of memory T cell differentiation
 
-## Treatment ontology<a name='Treatment ontology'></a>
+## Treatment method ontology<a name='Treatment method ontology'></a>
 _A term that may be associated with a process-related ontology term._
 
 Location: module/ontology/treatment_method_ontology.json
