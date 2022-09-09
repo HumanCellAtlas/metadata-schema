@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+core/file/file_core,minor,"Added value to enum for file source. Fixes #1487.",,
