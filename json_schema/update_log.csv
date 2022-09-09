@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+system/links,minor,"Added treatment protocol to protocol_type. Fixes #1488.",,

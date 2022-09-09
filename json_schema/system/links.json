@@ -84,7 +84,8 @@
                         "imaging_preparation_protocol",
                         "imaging_protocol",
                         "library_preparation_protocol",
-                        "sequencing_protocol"
+                        "sequencing_protocol",
+                        "treatment_protocol"
                     ]
                 },
                 "protocol_id": {
