@@ -65,7 +65,7 @@
                 "LungMAP",
                 "Zenodo",
                 "Publication",
-                "HCA Ingest"
+                "DCP/2 Ingest"
             ],
             "user_friendly": "File source",
             "guidelines": "Should be one of: DCP/2 Analysis, Contributor, ArrayExpress, HCA Release, GEO, SCEA, SCP, DCP/1 Matrix Service, LungMAP, Zenodo, Publication",
