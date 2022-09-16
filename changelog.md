@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [system/links.json - v3.1.0] - 2022-09-16
+### Added
+Added treatment protocol to protocol_type. Fixes #1488.
+
 ### [module/ontology/contributor_role_ontology.json - v2.0.0] - 2022-08-23
 ### Changed
 Changed class to BFO:0000023 to match ontology changes.
