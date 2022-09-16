@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2022-09-16T09:17:43Z",
+    "last_update_date": "2022-09-16T11:56:05Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
                 "biomaterial_core": "8.2.0"
             },
             "file": {
-                "file_core": "6.3.0"
+                "file_core": "6.4.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -96,11 +96,11 @@
                 "specimen_from_organism": "10.5.0"
             },
             "file": {
-                "analysis_file": "6.4.0",
-                "image_file": "2.4.0",
-                "reference_file": "3.4.0",
-                "sequence_file": "9.4.0",
-                "supplementary_file": "2.4.0"
+                "analysis_file": "6.5.0",
+                "image_file": "2.5.0",
+                "reference_file": "3.5.0",
+                "sequence_file": "9.5.0",
+                "supplementary_file": "2.5.0"
             },
             "process": {
                 "analysis": {
