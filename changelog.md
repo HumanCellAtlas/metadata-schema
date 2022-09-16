@@ -7,6 +7,30 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [core/file/file_core.json - v6.4.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/supplementary_file.json - v2.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/image_file.json - v2.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/sequence_file.json - v9.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/analysis_file.json - v6.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/reference_file.json - v3.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
 ### [system/links.json - v3.1.0] - 2022-09-16
 ### Added
 Added treatment protocol to protocol_type. Fixes #1488.
