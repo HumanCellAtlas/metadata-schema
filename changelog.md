@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [core/file/file_core.json - v6.4.0] - 2022-09-16
 ### Added
 Added value to enum for file source. Fixes #1487.
@@ -50,8 +52,6 @@ Changed class to BFO:0000023 to match ontology changes.
 ### [type/protocol/imaging/imaging_preparation_protocol.json - v2.3.0] - 2022-08-19
 ### Added
 Added permeabilisation time field with time units. Fixes #1471
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/contributor_role_ontology.json - v2.0.0] - 2022-08-23
 ### Changed
