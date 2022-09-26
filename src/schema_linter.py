@@ -16,7 +16,7 @@ cwd = os.getcwd().split("/")[-1]
 
 required_schema_fields = ['$schema', 'description', 'additionalProperties', 'title', 'name', 'type', 'properties']
 
-allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependentRequired']
+allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependencies']
 
 # Properties
 

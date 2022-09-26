@@ -6,7 +6,7 @@
                 "biomaterial_core": "8.2.0"
             },
             "file": {
-                "file_core": "6.3.0"
+                "file_core": "6.4.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -56,7 +56,9 @@
                 "sequencing_ontology": "1.1.5",
                 "species_ontology": "5.3.5",
                 "strain_ontology": "5.3.6",
-                "time_unit_ontology": "5.3.5"
+                "target_pathway_ontology": "1.0.0",
+                "time_unit_ontology": "5.3.5",
+                "treatment_method_ontology": "1.0.0"
             },
             "process": {
                 "purchased_reagents": "6.1.0",
@@ -81,7 +83,7 @@
         "system": {
             "file_descriptor": "2.0.0",
             "license": "1.0.0",
-            "links": "3.0.0",
+            "links": "3.1.0",
             "provenance": "1.1.0"
         },
         "type": {
@@ -94,11 +96,11 @@
                 "specimen_from_organism": "10.5.0"
             },
             "file": {
-                "analysis_file": "6.4.0",
-                "image_file": "2.4.0",
-                "reference_file": "3.4.0",
-                "sequence_file": "9.4.0",
-                "supplementary_file": "2.4.0"
+                "analysis_file": "6.5.0",
+                "image_file": "2.5.0",
+                "reference_file": "3.5.0",
+                "sequence_file": "9.5.0",
+                "supplementary_file": "2.5.0"
             },
             "process": {
                 "analysis": {
@@ -119,10 +121,11 @@
                     "differentiation_protocol": "2.2.0",
                     "dissociation_protocol": "6.2.0",
                     "enrichment_protocol": "3.1.0",
-                    "ipsc_induction_protocol": "3.2.0"
+                    "ipsc_induction_protocol": "3.2.0",
+                    "treatment_protocol": "1.0.0"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "2.2.0",
+                    "imaging_preparation_protocol": "2.3.0",
                     "imaging_protocol": "11.4.0"
                 },
                 "protocol": "7.1.0",

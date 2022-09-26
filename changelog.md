@@ -9,6 +9,34 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [core/file/file_core.json - v6.4.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/supplementary_file.json - v2.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/image_file.json - v2.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/sequence_file.json - v9.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/analysis_file.json - v6.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [type/file/reference_file.json - v3.5.0] - 2022-09-16
+### Added
+Added value to enum for file source. Fixes #1487.
+
+### [system/links.json - v3.1.0] - 2022-09-16
+### Added
+Added treatment protocol to protocol_type. Fixes #1488.
+
 ### [module/ontology/contributor_role_ontology.json - v2.0.0] - 2022-08-23
 ### Changed
 Changed class to BFO:0000023 to match ontology changes.
@@ -20,6 +48,34 @@ Changed class to BFO:0000023 to match ontology changes.
 ### [type/project/project.json - v17.0.0] - 2022-08-23
 ### Changed
 Changed class to BFO:0000023 to match ontology changes.
+
+### [type/protocol/imaging/imaging_preparation_protocol.json - v2.3.0] - 2022-08-19
+### Added
+Added permeabilisation time field with time units. Fixes #1471
+
+### [module/ontology/contributor_role_ontology.json - v2.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+### [module/project/contact.json - v9.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+### [type/project/project.json - v17.0.0] - 2022-08-23
+### Changed
+Changed class to BFO:0000023 to match ontology changes.
+
+### [type/protocol/biomaterial_collection/treatment_protocol.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol entity. Fixes #1428
+
+### [module/ontology/treatment_method_ontology.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol method ontology to be used to annotate the Treatment protocol method. Fixes #1428
+
+### [module/ontology/target_pathway_ontology.json - v1.0.0] - 2022-08-01
+### Added
+Added Treatment protocol target pathway ontology which will be used to describe the target pathway that is targeted by a treatment method. Fixes #1428
 
 ### [module/ontology/disease_ontology.json - v5.4.0] - 2022-05-24
 ### Added
