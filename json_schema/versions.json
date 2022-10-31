@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2022-08-23T12:20:53Z",
+    "last_update_date": "2022-10-31T11:11:44Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -76,7 +76,7 @@
             },
             "protocol": {
                 "channel": "2.0.4",
-                "matrix": "1.0.0",
+                "matrix": "2.0.0",
                 "probe": "1.1.1"
             }
         },
@@ -90,7 +90,7 @@
             "biomaterial": {
                 "cell_line": "15.1.0",
                 "cell_suspension": "13.3.0",
-                "donor_organism": "15.6.0",
+                "donor_organism": "15.6.1",
                 "imaged_specimen": "3.3.0",
                 "organoid": "11.3.0",
                 "specimen_from_organism": "10.5.0"
@@ -113,7 +113,7 @@
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "9.2.0"
+                    "analysis_protocol": "10.0.0"
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "2.1.0",
