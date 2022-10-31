@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [type/biomaterial/donor_organism.json - v15.6.1] - 2022-10-31
+### Fixed
+Fixed typo in gestational age description
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [core/file/file_core.json - v6.4.0] - 2022-09-16
