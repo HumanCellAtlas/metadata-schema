@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [module/protocol/matrix.json - v2.0.0] - 2022-10-31
+### Fixed
+Fixed typo in apostrophe. Fixes #1410
+
+### [type/protocol/analysis/analysis_protocol.json - v10.0.0] - 2022-10-31
+### Fixed
+Fixed typo in apostrophe. Fixes #1410
+
 ### [type/biomaterial/donor_organism.json - v15.6.1] - 2022-10-31
 ### Fixed
 Fixed typo in gestational age description
