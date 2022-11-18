@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about how cells are subjected to a treatment or stimulus, such as an immune activator or a drug.",
+    "additionalProperties": false,
+    "required": [
+      "describedBy",
+      "schema_type",
+      "protocol_core",
+      "method"
+    ],
+    "title": "Treatment protocol",
+    "name": "treatment_protocol",
+    "type": "object",
+    "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/type/protocol/biomaterial_collection/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/treatment_protocol"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "schema_type": {
+            "description": "The type of the metadata schema entity.",
+            "type": "string",
+            "enum": [
+                "protocol"
+            ]
+        },
+        "provenance" : {
+            "description": "Provenance information provided by the system.",
+            "type": "object",
+            "$ref": "system/provenance.json"
+        },
+        "protocol_core": {
+            "description": "Core protocol-level information.",
+            "type": "object",
+            "$ref": "core/protocol/protocol_core.json",
+            "user_friendly": "Protocol core"
+        },
+        "method": {
+            "description": "Method applied to cell culture to induce a specific treatment response.",
+            "type": "array",
+            "items":{
+                "$ref": "module/ontology/treatment_method_ontology.json"
+            },
+            "user_friendly": "Treatment method"
+        },
+        "media":{
+            "description": "Culture media used to induce a specific treatment response.",
+            "type": "string",
+            "user_friendly": "Treatment media",
+            "example": "RPMI 1640; Complete Medium"
+        },
+        "reagents": {
+            "description": "A list of purchased reagents used in the treatment protocol.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "module/process/purchased_reagents.json"
+            },
+            "user_friendly": "Treatment reagents"
+        },
+        "target_pathway": {
+            "description": "Targeted pathway for specific treatment response.",
+            "type": "array",
+            "items":{
+                "$ref": "module/ontology/target_pathway_ontology.json"
+            },
+            "user_friendly": "Target pathway",
+            "example": "insulin signalling pathway; immune cell activation; chemokine signalling pathway."
+        }
+    }
+}

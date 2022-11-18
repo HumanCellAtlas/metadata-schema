@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2022-05-24T17:06:41Z",
+    "last_update_date": "2022-10-31T11:11:44Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
                 "biomaterial_core": "8.2.0"
             },
             "file": {
-                "file_core": "6.3.0"
+                "file_core": "6.4.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -36,7 +36,7 @@
                 "cell_cycle_ontology": "5.3.6",
                 "cell_type_ontology": "5.3.6",
                 "cellular_component_ontology": "1.0.5",
-                "contributor_role_ontology": "1.0.0",
+                "contributor_role_ontology": "2.0.0",
                 "development_stage_ontology": "5.3.6",
                 "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
@@ -56,7 +56,9 @@
                 "sequencing_ontology": "1.1.5",
                 "species_ontology": "5.3.5",
                 "strain_ontology": "5.3.6",
+                "target_pathway_ontology": "1.0.0",
                 "time_unit_ontology": "5.3.5",
+                "treatment_method_ontology": "1.0.0",
                 "gender_identity_ontology": "0.0.0"
             },
             "process": {
@@ -69,37 +71,37 @@
                 }
             },
             "project": {
-                "contact": "8.0.1",
+                "contact": "9.0.0",
                 "funder": "2.0.0",
                 "publication": "7.0.0"
             },
             "protocol": {
                 "channel": "2.0.4",
-                "matrix": "1.0.0",
+                "matrix": "2.0.0",
                 "probe": "1.1.1"
             }
         },
         "system": {
             "file_descriptor": "2.0.0",
             "license": "1.0.0",
-            "links": "3.0.0",
+            "links": "3.1.0",
             "provenance": "1.1.0"
         },
         "type": {
             "biomaterial": {
                 "cell_line": "15.1.0",
                 "cell_suspension": "13.3.0",
-                "donor_organism": "15.6.0",
+                "donor_organism": "15.6.1",
                 "imaged_specimen": "3.3.0",
                 "organoid": "11.3.0",
                 "specimen_from_organism": "10.5.0"
             },
             "file": {
-                "analysis_file": "6.4.0",
-                "image_file": "2.4.0",
-                "reference_file": "3.4.0",
-                "sequence_file": "9.4.0",
-                "supplementary_file": "2.4.0"
+                "analysis_file": "6.5.0",
+                "image_file": "2.5.0",
+                "reference_file": "3.5.0",
+                "sequence_file": "9.5.0",
+                "supplementary_file": "2.5.0"
             },
             "process": {
                 "analysis": {
@@ -108,11 +110,11 @@
                 "process": "9.2.0"
             },
             "project": {
-                "project": "16.0.0"
+                "project": "17.0.0"
             },
             "protocol": {
                 "analysis": {
-                    "analysis_protocol": "9.2.0"
+                    "analysis_protocol": "10.0.0"
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "2.1.0",
@@ -120,10 +122,11 @@
                     "differentiation_protocol": "2.2.0",
                     "dissociation_protocol": "6.2.0",
                     "enrichment_protocol": "3.1.0",
-                    "ipsc_induction_protocol": "3.2.0"
+                    "ipsc_induction_protocol": "3.2.0",
+                    "treatment_protocol": "1.0.0"
                 },
                 "imaging": {
-                    "imaging_preparation_protocol": "2.2.0",
+                    "imaging_preparation_protocol": "2.3.0",
                     "imaging_protocol": "11.4.0"
                 },
                 "protocol": "7.1.0",

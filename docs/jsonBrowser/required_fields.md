@@ -30,30 +30,30 @@ process_id | A unique ID for the process. | string |  | Process ID |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
-file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
+file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
 read_index | The sequencing read this file represents. | string |  | Read index | read1, read2, read3, read4, index1, index2, single-end, non-indexed | Should be one of: read1, read2, index1, index2
 ### Image file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
-file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
+file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
 ### Supplementary file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
-file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
+file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
 ### Analysis file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
-file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
+file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
 ### Reference file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
-file_core | Core file-level information. | object | [See core  file_core](core.md/#file_core) | File core |  | 
+file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
 ncbi_taxon_id | A taxonomy ID (taxonID) from NCBI. | integer |  | NCBI taxon ID |  | 9606; 10090
-genus_species | The scientific binomial name for the species of this reference. | object | [See module  species_ontology](module.md/#species_ontology) | Genus species |  | 
+genus_species | The scientific binomial name for the species of this reference. | object | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 reference_type | The type of the reference file. | string |  | Reference type | genome sequence, transcriptome sequence, annotation reference, transcriptome index, genome sequence index | Should be one of: genome sequence, transcriptome sequence, annotation reference, transcriptome index, or genome sequence index.
 assembly_type | The assembly type of the genome reference file. | string |  | Genome assembly type | primary assembly, complete assembly, patch assembly | Should be one of: primary assembly, complete assembly, or patch assembly.
 reference_version | The genome version of the reference file. | string |  | Reference version |  | GencodeV27; Ensembl 87
@@ -61,134 +61,140 @@ reference_version | The genome version of the reference file. | string |  | Refe
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 ### Sequencing protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | [See module  instrument_ontology](module.md/#instrument_ontology) | Instrument manufacturer and model |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+instrument_manufacturer_model | The manufacturer and model of the sequencer. | object | [See module  instrument_ontology](module.md#instrument-ontology) | Instrument manufacturer and model |  | 
 paired_end | Whether the sequenced molecule was sequenced from both ends. | boolean |  | Paired end |  | Should be one of: yes, or no.
-method | The general method for sequencing. | object | [See module  sequencing_ontology](module.md/#sequencing_ontology) | Sequencing method |  | 
+method | The general method for sequencing. | object | [See module  sequencing_ontology](module.md#sequencing-ontology) | Sequencing method |  | 
 ### Library preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. | object | [See module  biological_macromolecule_ontology](module.md/#biological_macromolecule_ontology) | Input nucleic acid molecule |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+input_nucleic_acid_molecule | Starting nucleic acid molecule isolated for sequencing. | object | [See module  biological_macromolecule_ontology](module.md#biological-macromolecule-ontology) | Input nucleic acid molecule |  | 
 nucleic_acid_source | Source cells or organelles from which nucleic acid molecules were collected. | string |  | Nucleic acid source | bulk cell, single cell, single nucleus, bulk nuclei, mitochondria | Should be one of: single cell, bulk cell, single nucleus, bulk nuclei, or mitochondria.
-library_construction_method | The general method for sequencing library construction. | object | [See module  library_construction_ontology](module.md/#library_construction_ontology) | Library construction method |  | 
+library_construction_method | The general method for sequencing library construction. | object | [See module  library_construction_ontology](module.md#library-construction-ontology) | Library construction method |  | 
 end_bias | The type of tag or end bias the library has. | string |  | End bias | 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, full length | Should be one of: 3 prime tag, 3 prime end bias, 5 prime tag, 5 prime end bias, or full length.
 strand | Library strandedness. | string |  | Strand | first, second, unstranded, not provided | Should be one of: first, second, unstranded, or not provided.
 ### Analysis protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-type | The type of protocol. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Protocol type |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+type | The type of protocol. | object | [See module  process_type_ontology](module.md#process-type-ontology) | Protocol type |  | 
 ### Aggregate generation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 formation_method | Method used to form cell aggregates. | string |  | Aggregate formation method |  | rocking; suspension cultures; hanging drops; spinner flasks
 ### Enrichment protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | The method by which enrichment was achieved. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Enrichment method |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+method | The method by which enrichment was achieved. | object | [See module  process_type_ontology](module.md#process-type-ontology) | Enrichment method |  | 
 ### Dissociation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | How cells or organelles were dissociated. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Dissociation method |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+method | How cells or organelles were dissociated. | object | [See module  process_type_ontology](module.md#process-type-ontology) | Dissociation method |  | 
 ### iPSC induction protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 method | Induction method applied to primary cell culture to induce pluripotent stem cell generation. | string |  | Induction method | lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, retroviral | Should be one of: lentivirus, sendai virus, Gun particle, piggyBac transposon, miRNA viral, adenovirus, cre-loxP, plasmid, or retroviral.
 ### Collection protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-method | Method used to collect the biomaterial. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Collection method |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+method | Method used to collect the biomaterial. | object | [See module  process_type_ontology](module.md#process-type-ontology) | Collection method |  | 
 ### Differentiation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 method | Method applied to cell culture to induce a specific differentiation response. | string |  | Differentiation method |  | Embryoid Body; Monolayer; Inductive Co-Culture
+### Treatment protocol
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+method | Method applied to cell culture to induce a specific treatment response. | array | [See module  treatment_method_ontology](module.md#treatment-method-ontology) | Treatment method |  | 
 ### Imaging preparation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 ### Imaging Protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
-protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md/#protocol_core) | Protocol core |  | 
-microscopy_technique | The type of microscopy. | object | [See module  microscopy_ontology](module.md/#microscopy_ontology) | Microscopy technique |  | 
+protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
+microscopy_technique | The type of microscopy. | object | [See module  microscopy_ontology](module.md#microscopy-ontology) | Microscopy technique |  | 
 magnification | Magnification of the objective used for imaging. | string |  | Magnification |  | 60x; 100x
 ### Project
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
-project_core | Core project-level information. | object | [See core  project_core](core.md/#project_core) | Project core |  | 
-funders | Funding source(s) supporting the project. | array | [See module  funder](module.md/#funder) | Funding source(s) |  | 
+project_core | Core project-level information. | object | [See core  project_core](core.md#project-core) | Project core |  | 
+funders | Funding source(s) supporting the project. | array | [See module  funder](module.md#funder) | Funding source(s) |  | 
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
-biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-organ | The organ that the biomaterial came from. | object | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | 
+biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md#biomaterial-core) | Biomaterial core |  | 
+organ | The organ that the biomaterial came from. | object | [See module  organ_ontology](module.md#organ-ontology) | Organ |  | 
 ### Cell suspension
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
-biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md#biomaterial-core) | Biomaterial core |  | 
 ### Cell line
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
-biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md#biomaterial-core) | Biomaterial core |  | 
 type | The type of cell line. | string |  | Cell line type | primary, immortalized, stem cell, stem cell-derived, induced pluripotent, synthetic | Should be one of: primary, immortalized, stem cell, stem cell-derived, induced pluripotent, or synthetic.
-model_organ | Organ for which this cell line is a model. | object | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
+model_organ | Organ for which this cell line is a model. | object | [See module  organ_ontology](module.md#organ-ontology) | Organ model |  | 
 ### Imaged specimen
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
-biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md#biomaterial-core) | Biomaterial core |  | 
 slice_thickness | Thickness of the imaged slice in micrometres. | number |  | Imaged slice thickness |  | 14
 ### Donor organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
-biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
+biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md#biomaterial-core) | Biomaterial core |  | 
 sex | The biological sex of the organism. | string |  | Biological sex | female, male, mixed, unknown | Should be one of: male, female, mixed, or unknown.
 is_living | Whether organism was alive at time of biomaterial collection. | string |  | Alive at collection | yes, no, unknown, not applicable | Should be one of: yes, no, not applicable, or unknown.
-development_stage | A classification of the developmental stage of the organism. | object | [See module  development_stage_ontology](module.md/#development_stage_ontology) | Development stage |  | 
+development_stage | A classification of the developmental stage of the organism. | object | [See module  development_stage_ontology](module.md#development-stage-ontology) | Development stage |  | 
 ### Organoid
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | biomaterial | 
-biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md/#biomaterial_core) | Biomaterial core |  | 
-model_organ | Organ for which this organoid is a model system. | object | [See module  organ_ontology](module.md/#organ_ontology) | Organ model |  | 
+biomaterial_core | Core biomaterial-level information. | object | [See core  biomaterial_core](core.md#biomaterial-core) | Biomaterial core |  | 
+model_organ | Organ for which this organoid is a model system. | object | [See module  organ_ontology](module.md#organ-ontology) | Organ model |  | 
 ### Process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
-process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) | Process core |  | 
+process_core | Core process-level information. | object | [See core  process_core](core.md#process-core) | Process core |  | 
 ### Analysis process
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | process | 
-process_core | Core process-level information. | object | [See core  process_core](core.md/#process_core) | Process core |  | 
-type | The type of process. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Process type |  | 
+process_core | Core process-level information. | object | [See core  process_core](core.md#process-core) | Process core |  | 
+type | The type of process. | object | [See module  process_type_ontology](module.md#process-type-ontology) | Process type |  | 
 inputs | Input parameters used in the pipeline run. | array |  | Input parameters |  | 
 tasks | Information about steps in the workflow. | array |  | Workflow tasks |  | 
 timestamp_start_utc | Initial start time of the full pipeline in UTC. | string |  | Start timestamp (UTC) |  | 2018-01-21T09:34:27Z
@@ -209,7 +215,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 probe_label | The label of a probe used to detect target in this experiment. | string |  | Probe label |  | ACTA1; cFos
 target_label | An identifier for the target molecule. | string |  | Target label |  | CHEBI:85345; ENSG00000170345
-assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md/#process_type_ontology) | Assay type |  | MERFISH; in situ sequencing
+assay_type | Type of assay used to detect target. | object | [See module  process_type_ontology](module.md#process-type-ontology) | Assay type |  | MERFISH; in situ sequencing
 ### Matrix<a name='Matrix'></a>
 _There are no required properties in schema Matrix_
 ### File content ontology<a name='File content ontology'></a>
@@ -236,6 +242,14 @@ text | The primary role of the contributor in the project. | string |  | Contrib
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The ethnicity of the human donor. | string |  | Ethnicity |  | European; Hispanic or Latin American
+### Target pathway ontology<a name='Target pathway ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of the treatment target pathway. | string |  | Target pathway |  | positive regulation of memory T cell differentiation
+### Treatment method ontology<a name='Treatment method ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | The name of a treatment method or approach being used. | string |  | Treatment method |  | T cell activation assay
 ### Cellular component ontology<a name='Cellular component ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -354,7 +368,7 @@ _There are no required properties in schema State of specimen_
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  | Timecourse value |  | 2; 5.5-10.5
-unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md/#time_unit_ontology) | Timecourse unit |  | 
+unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
 ### Mouse-specific<a name='Mouse-specific'></a>
 _There are no required properties in schema Mouse-specific_
 ### Purchased reagents<a name='Purchased reagents'></a>
