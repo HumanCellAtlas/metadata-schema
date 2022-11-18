@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [module/ontology/gender_identity_ontology.json - v1.0.0] - 2022-11-18
+### Added
+Added ontology module for gender identity.
+
+### [type/biomaterial/donor_organism.json - v15.7.0] - 2022-11-18
+### Added
+Added non-required gender identity field.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/matrix.json - v2.0.0] - 2022-10-31

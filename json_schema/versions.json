@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2022-10-31T11:11:44Z",
+    "last_update_date": "2022-11-18T09:20:27Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -43,6 +43,7 @@
                 "ethnicity_ontology": "5.3.9",
                 "file_content_ontology": "1.1.0",
                 "file_format_ontology": "1.0.0",
+                "gender_identity_ontology": "1.0.0",
                 "instrument_ontology": "5.3.6",
                 "length_unit_ontology": "5.3.5",
                 "library_amplification_ontology": "1.2.5",
@@ -58,8 +59,7 @@
                 "strain_ontology": "5.3.6",
                 "target_pathway_ontology": "1.0.0",
                 "time_unit_ontology": "5.3.5",
-                "treatment_method_ontology": "1.0.0",
-                "gender_identity_ontology": "0.0.0"
+                "treatment_method_ontology": "1.0.0"
             },
             "process": {
                 "purchased_reagents": "6.1.0",
@@ -91,7 +91,7 @@
             "biomaterial": {
                 "cell_line": "15.1.0",
                 "cell_suspension": "13.3.0",
-                "donor_organism": "15.6.1",
+                "donor_organism": "15.7.0",
                 "imaged_specimen": "3.3.0",
                 "organoid": "11.3.0",
                 "specimen_from_organism": "10.5.0"
