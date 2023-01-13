@@ -5,7 +5,8 @@
     "required": [
         "describedBy",
         "schema_type",
-        "file_core"
+        "file_core",
+        "genome_version"
     ],
     "title": "Analysis file",
     "name": "analysis_file",
@@ -48,6 +49,27 @@
             "example": "1; 2100",
             "user_friendly": "Matrix cell count",
             "guidelines": "If the analysis file is a matrix containing cells, enter the exact number of cells in the matrix."
+        },
+        "genome_assembly_version": {
+            "description": "Name of the genome assembly used to generate this file.",
+            "type": "string",
+            "user_friendly": "Genome version",
+            "enum": [
+                "GRCh38",
+                "GRCh37",
+                "GRCm39",
+                "GRCm38",
+                "GRCm37",
+                "Not Applicable"
+            ],
+            "guidelines": "Please use the name as defined in the Genome Reference Consortium (https://www.ncbi.nlm.nih.gov/grc)",
+            "example": "Should be one of: GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable"
+        },
+        "genome_patch_version": {
+            "description": "Patch version of the genome assembly used to generate this file.",
+            "type": "string",
+            "user_friendly": "Patch version",
+            "example": "p11; p14"
         }
     }
 }
