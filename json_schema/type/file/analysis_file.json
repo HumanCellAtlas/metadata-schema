@@ -6,7 +6,7 @@
         "describedBy",
         "schema_type",
         "file_core",
-        "genome_version"
+        "genome_assembly_version"
     ],
     "title": "Analysis file",
     "name": "analysis_file",
