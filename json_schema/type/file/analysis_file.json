@@ -8,6 +8,9 @@
         "file_core",
         "genome_assembly_version"
     ],
+    "dependencies": {
+        "genome_patch_version": ["genome_assembly_version"]
+    },
     "title": "Analysis file",
     "name": "analysis_file",
     "type": "object",
