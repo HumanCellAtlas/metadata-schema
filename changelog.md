@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [type/file/analysis_file.json - v7.0.0] - 2023-01-30
+### Added
+Added genome assembly and patch version. Fixes #1508.
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/protocol/matrix.json - v2.0.0] - 2022-10-31

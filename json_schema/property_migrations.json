@@ -1,6 +1,13 @@
 {
     "migrations": [
         {
+            "source_schema": "analysis_file",
+            "property": "genome_assembly_version",
+            "effective_from": "7.0.0",
+            "reason": "Genome assembly is now recorded as a mandatory field",
+            "type": "new required property"
+        },
+        {
             "source_schema": "file_descriptor",
             "property": "schema_major_version",
             "effective_from": "2.0.0",

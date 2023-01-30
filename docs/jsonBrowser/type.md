@@ -57,6 +57,8 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | fil
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md#file-core) | File core |  | 
 matrix_cell_count | Number of cells analyzed in a matrix file. | integer | no |  | Matrix cell count |  | 1; 2100
+genome_assembly_version | Name of the genome assembly used to generate this file. | string | yes |  | Genome version | GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable | Should be one of: GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable
+genome_patch_version | Patch version of the genome assembly used to generate this file. | string | no |  | Patch version |  | p11; p14
 
 ## Reference file
 _A reference file used by a secondary reference pipeline._
