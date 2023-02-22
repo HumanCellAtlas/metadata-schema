@@ -1,1 +1,5 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/specimen_from_organism,minor,Added timecourse module. Fixes #1511,,
+type/biomaterial/imaged_specimen,minor,Added timecourse module. Fixes #1511,,
+type/biomaterial/organoid,minor,Added timecourse module. Fixes #1511,,
+

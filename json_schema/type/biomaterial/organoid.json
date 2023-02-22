@@ -114,6 +114,12 @@
             "type": "number",
             "example": 75,
             "user_friendly": "Stored oxygen level"
-        }
+        },
+	"timecourse": {
+	    "description": "Information relating to a timecourse associated with this biomaterial.",
+	    "type": "object",
+	    "$ref": "module/biomaterial/timecourse.json",
+            "user_friendly": "Timecourse"
+	}
     }
 }
