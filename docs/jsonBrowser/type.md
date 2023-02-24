@@ -319,6 +319,7 @@ genus_species | The scientific binomial name for the species of the specimen. | 
 organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md/#organ_ontology) | Organ |  | 
 organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md/#organ_part_ontology) | Organ part |  | 
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md/#disease_ontology) | Known disease(s) |  | 
+disease_adjacent | Was the tissue specimen collected from a site adjacent to a disease site (e.g. tumor adjacent)? | boolean | no |  | Disease adjacent |  | yes; no
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md/#state_of_specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md/#preservation_storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03

@@ -74,6 +74,13 @@
             "user_friendly": "Known disease(s)",
             "guidelines": "Enter normal if no known diseases."
         },
+       "disease_adjacent": {
+            "description": "Was the tissue specimen collected from a site adjacent to a disease site (e.g. tumor adjacent)?",
+            "type": "boolean",
+            "user_friendly": "Disease adjacent",
+            "guidelines": "Should be one of: yes, or no.",
+            "example": "yes; no"
+        },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
             "type": "object",
