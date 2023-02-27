@@ -64,10 +64,11 @@
                 "DCP/1 Matrix Service",
                 "LungMAP",
                 "Zenodo",
-                "Publication"
+                "Publication",
+                "DCP/2 Ingest"
             ],
             "user_friendly": "File source",
-            "guidelines": "Should be one of: DCP/2 Analysis, Contributor, ArrayExpress, HCA Release, GEO, SCEA, SCP, DCP/1 Matrix Service, LungMAP, Zenodo, Publication",
+            "guidelines": "Should be one of: DCP/2 Analysis, Contributor, ArrayExpress, HCA Release, GEO, SCEA, SCP, DCP/1 Matrix Service, LungMAP, Zenodo, Publication, DCP/2 Ingest",
             "example": "GEO; Contributor"
             }
     }
