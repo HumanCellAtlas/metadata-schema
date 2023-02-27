@@ -8,7 +8,7 @@
         "biomaterial_core",
 	    "organ"
     ],
-    "dependentRequired": {
+    "dependencies": {
         "is_disease_adjacent": ["associated_diseases"],
         "associated_diseases": ["is_disease_adjacent"]
     },    
