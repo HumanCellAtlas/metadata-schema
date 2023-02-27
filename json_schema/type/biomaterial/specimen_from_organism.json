@@ -11,7 +11,8 @@
     "dependentRequired": {
         "is_disease_adjacent": ["associated_diseases"],
         "associated_diseases": ["is_disease_adjacent"]
-    },    "title": "Specimen from organism",
+    },    
+    "title": "Specimen from organism",
     "name": "specimen_from_organism",
     "type": "object",
     "properties": {
