@@ -8,10 +8,6 @@
         "biomaterial_core",
 	    "organ"
     ],
-    "dependencies": {
-        "is_disease_adjacent": ["associated_diseases"],
-        "associated_diseases": ["is_disease_adjacent"]
-    },    
     "title": "Specimen from organism",
     "name": "specimen_from_organism",
     "type": "object",
@@ -78,21 +74,14 @@
             "user_friendly": "Known disease(s)",
             "guidelines": "Enter normal if no known diseases."
         },
-       "is_disease_adjacent": {
-            "description": "Was the tissue specimen collected from a site adjacent to a disease site (e.g. tumor adjacent)?",
-            "type": "boolean",
-            "user_friendly": "Disease adjacent",
-            "guidelines": "Should be one of: yes, or no.",
-            "example": "yes; no"
-        },
-        "associated_diseases": {
-            "description": "Short description of the disease adjacent to the specimen.",
+        "adjacent_diseases": {
+            "description": "Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer).",
             "type": "array",
             "items": {
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
-            "user_friendly": "Associated disease",
-            "guidelines": "Only enter the disease adjacent to the sampled specimen. If no disease is adjacent to the specimen leave blank."
+            "user_friendly": "Adjacent disease(s)",
+            "guidelines": "If a healthy specimen is sampled from a site adjacent to a disease enter the disease here. If no disease tissue is adjacent to the specimen leave blank."
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
