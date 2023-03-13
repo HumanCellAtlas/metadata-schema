@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2023-01-30T10:25:12Z",
+    "last_update_date": "2023-03-13T11:53:28Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -93,7 +93,7 @@
                 "donor_organism": "15.6.1",
                 "imaged_specimen": "3.3.0",
                 "organoid": "11.3.0",
-                "specimen_from_organism": "10.5.0"
+                "specimen_from_organism": "10.6.0"
             },
             "file": {
                 "analysis_file": "7.0.0",

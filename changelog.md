@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/biomaterial/specimen_from_organism.json - v10.6.0] - 2023-03-13
+### Added
+Added new optional field adjacent_diseases. Fixes #1512
+
 ### [type/file/analysis_file.json - v7.0.0] - 2023-01-30
 ### Added
 Added genome assembly and patch version. Fixes #1508.

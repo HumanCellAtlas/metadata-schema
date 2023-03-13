@@ -74,6 +74,15 @@
             "user_friendly": "Known disease(s)",
             "guidelines": "Enter normal if no known diseases."
         },
+        "adjacent_diseases": {
+            "description": "Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer).",
+            "type": "array",
+            "items": {
+                "$ref": "module/ontology/disease_ontology.json"
+	    },
+            "user_friendly": "Adjacent disease(s)",
+            "guidelines": "If a healthy specimen is sampled from a site adjacent to diseased tissue, enter that tissue's disease here. If no diseased tissue is adjacent to the specimen, leave blank."
+        },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
             "type": "object",
