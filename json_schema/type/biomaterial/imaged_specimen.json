@@ -65,12 +65,6 @@
                 "$ref": "module/ontology/organ_part_ontology.json"
             },
             "user_friendly": "Internal tissue structures"
-        },
-	"timecourse": {
-	    "description": "Information relating to a timecourse associated with this biomaterial.",
-            "type": "object",
-	    "$ref": "module/biomaterial/timecourse.json",
-	    "user_friendly": "Timecourse"
-	}
+        }
     }
 }

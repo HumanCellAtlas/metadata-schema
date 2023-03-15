@@ -106,12 +106,6 @@
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Purchased specimen"
-        },
-	"timecourse": {
-	   "description": "Information relating to a timecourse associated with this biomaterial.",
-	    "type": "object",
-	    "$ref": "module/biomaterial/timecourse.json",
-	    "user_friendly": "Timecourse"
-       }
+        }
     }
 }
