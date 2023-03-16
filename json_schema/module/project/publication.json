@@ -62,6 +62,50 @@
             "user_friendly": "Official HCA Publication",
             "guidelines": "Should be one of: yes, or no.",
             "example": "yes; no"
+        },
+        "hca_tissue_atlas": {
+            "description": "A field describing if the project is part of an HCA Tissue Atlas (e.g. Kidney). Enter ‘No’ if the project is not part of an HCA Tissue Atlas.",
+            "type": "string",
+            "enum": [
+                "Adipose",
+                "Breast",
+                "Blood",
+                "Development",
+                "Eye",
+                "Genetic Diversity",
+                "Gut",
+                "Heart",
+                "Immune",
+                "Kidney",
+                "Liver",
+                "Lung",
+                "Musculoskeletal",
+                "Nervous System",
+                "Oral & Craniofacial",
+                "Organoid",
+                "Pancrease",
+                "Reproduction",
+                "Skin",
+                "No"
+            ],
+            "user_friendly": "Official HCA Tissue Atlas",
+            "guidelines": "Should be one of the networks from https://www.humancellatlas.org/biological-networks/ or 'No' if not a network",
+            "example": "Kidney; Lung; No"
+        },
+        "integrated_status": {
+            "description": "A field describing if the HCA Tissue Atlas project integrates data from other projects. ",
+            "type": "string",
+            "enum": ["Atlas Project","No"],
+            "user_friendly": "Project Integrated Status",
+            "guidelines": "Enter ‘Atlas Project’ if this project is one of the HCA Tissue Atlases and it integrates data from all other datasets. Enter ‘No’, if this project's data is being integrated.",
+            "example": "Atlas Project; No"
+        },
+        "hca_tissue_atlas_version": {
+            "description": "A field describing which version of the HCA Tissue Atlas is associated with the publication (e.g. v1.0; v2.0)",
+            "type": "string",
+            "user_friendly": "Official HCA Tissue Atlas Version",
+            "guidelines": "For example: v1.0; v2.0",
+            "example": "v1.0; v2.0"
         }
     }
 }
