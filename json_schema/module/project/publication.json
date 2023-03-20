@@ -64,7 +64,7 @@
             "example": "yes; no"
         },
         "hca_tissue_atlas": {
-            "description": "A field describing if the project is part of an HCA Tissue Atlas (e.g. Kidney). Enter ‘No’ if the project is not part of an HCA Tissue Atlas.",
+            "description": "A field describing if the project is part of an official HCA Tissue Atlas (e.g. Kidney). Enter ‘No’ if the project is not part of an official HCA Tissue Atlas.",
             "type": "string",
             "enum": [
                 "Adipose",
@@ -83,7 +83,7 @@
                 "Nervous System",
                 "Oral & Craniofacial",
                 "Organoid",
-                "Pancrease",
+                "Pancreas",
                 "Reproduction",
                 "Skin",
                 "No"
@@ -93,7 +93,7 @@
             "example": "Kidney; Lung; No"
         },
         "integrated_status": {
-            "description": "A field describing if the HCA Tissue Atlas project integrates data from other projects. ",
+            "description": "A field describing if the HCA Tissue Atlas project is the result of dataset integration. ",
             "type": "string",
             "enum": ["Atlas Project","No"],
             "user_friendly": "Project Integrated Status",
