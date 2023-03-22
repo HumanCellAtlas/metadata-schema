@@ -388,9 +388,10 @@ doi | The publication digital object identifier (doi) of the publication. | stri
 pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
 url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
 official_hca_publication | Has the publication been accepted as an official HCA publication, according to the process described in https://www.humancellatlas.org/publications/ ? | boolean | yes |  | Official HCA Publication |  | yes; no
-hca_tissue_atlas | A field describing if the project is part of an HCA Tissue Atlas (e.g. Kidney). Enter ‘No’ if the project is not part of an HCA Tissue Atlas. | string | no |  | Official HCA Tissue Atlas | Adipose, Breast, Blood, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancrease, Reproduction, Skin, No | Kidney; Lung; No
-integrated_status | A field describing if the HCA Tissue Atlas project integrates data from other projects.  | string | no |  | Project Integrated Status | Atlas Project, No | Atlas Project; No
+hca_tissue_atlas | A field describing if the project is part of an official HCA Tissue Atlas (e.g. Kidney). Enter ‘No’ if the project is not part of an official HCA Tissue Atlas. | string | no |  | Official HCA Tissue Atlas | Adipose, Breast, Blood, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancreas, Reproduction, Skin, No | Kidney; Lung; No
+integrated_status | A field describing if the HCA Tissue Atlas project is the result of dataset integration.  | string | no |  | Project Integrated Status | Atlas Project, No | Atlas Project; No
 hca_tissue_atlas_version | A field describing which version of the HCA Tissue Atlas is associated with the publication (e.g. v1.0; v2.0) | string | no |  | Official HCA Tissue Atlas Version |  | v1.0; v2.0
+hca_project_uuid | A field describing the uuid of the HCA Project that is associated with the publication (e.g. b963bd4b-4bc1-4404-8425-69d74bc636b8) | string | no |  | HCA Project UUID |  | b963bd4b-4bc1-4404-8425-69d74bc636b8
 
 ## Human-specific<a name='Human-specific'></a>
 _Information specific to a donor that is a human (Homo sapiens)._

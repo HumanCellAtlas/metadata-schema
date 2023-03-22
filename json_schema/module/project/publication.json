@@ -107,6 +107,14 @@
             "user_friendly": "Official HCA Tissue Atlas Version",
             "guidelines": "For example: v1.0; v2.0",
             "example": "v1.0; v2.0"
+        },
+        "hca_project_uuid": {
+            "description": "A field describing the uuid of the HCA Project that is associated with the publication (e.g. b963bd4b-4bc1-4404-8425-69d74bc636b8)",
+            "type": "string",
+            "pattern": "([0-9a-z]){8}-([0-9a-z]){4}-([0-9a-z]){4}-([0-9a-z]){4}-([0-9a-z]){12}",
+            "user_friendly": "HCA Project UUID",
+            "guidelines": "For example: b963bd4b-4bc1-4404-8425-69d74bc636b8",
+            "example": "b963bd4b-4bc1-4404-8425-69d74bc636b8"
         }
     }
 }
