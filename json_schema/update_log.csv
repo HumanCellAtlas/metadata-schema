@@ -1,2 +1,5 @@
 Schema,Change type,Change message,Version,Date
 core/biomaterial/biomaterial_core,minor,Added timecourse module. Fixes #1511,,
+type/biomaterial/donor_organism,major,Removed timecourse module.,,
+type/biomaterial/cell_suspension,major,Removed timecourse module.,,
+type/biomaterial/cell_line,major,Removed timecourse module.,,
