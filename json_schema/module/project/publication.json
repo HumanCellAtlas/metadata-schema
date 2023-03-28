@@ -103,7 +103,7 @@
         "hca_tissue_atlas_version": {
             "description": "A field describing which version of the HCA Tissue Atlas is associated with the publication (e.g. v1.0; v2.0)",
             "type": "string",
-            "pattern": "v[0-9].[0-9]",
+            "pattern": "^v[0-9]+\\.[0-9]+$",
             "user_friendly": "Official HCA Tissue Atlas Version",
             "guidelines": "For example: v1.0; v2.0",
             "example": "v1.0; v2.0"
