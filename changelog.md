@@ -7,6 +7,34 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [core/biomaterial/biomaterial_core.json - v8.3.0] - 2023-03-29
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/donor_organism.json - v16.0.0] - 2023-03-29
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_suspension.json - v14.0.0] - 2023-03-29
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_line.json - v16.0.0] - 2023-03-29
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/organoid.json - v11.4.0] - 2023-03-29
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/imaged_specimen.json - v3.4.0] - 2023-03-29
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/specimen_from_organism.json - v10.6.0] - 2023-03-29
+### Added
+Added timecourse module. Fixes #1511
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/file/analysis_file.json - v7.0.0] - 2023-01-30
