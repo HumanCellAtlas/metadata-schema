@@ -357,6 +357,18 @@ grant_title | The name of the grant funding the project. | string | no |  | Gran
 grant_id | The unique grant identifier or reference. | string | yes |  | Grant ID |  | BB/P0000001/1
 organization | The name of the funding organization. | string | yes |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
 
+## HCA Bionetwork<a name='HCA Bionetwork'></a>
+_Information about whether the project is part of a HCA Bionetwork or HCA Atlas._
+
+Location: module/project/hca_bionetwork.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+Names | A field describing which HCA Bionetwork the project is a part of (e.g. Kidney). Enter ‘No’ if the project is not part of an official HCA Bionetwork. | string | no |  | Official HCA Bionetwork(s) | Adipose, Breast, Blood, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancreas, Reproduction, Skin, No | Kidney; Lung; No
+hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas |  | Brain Alzheimer Atlas
+hca_tissue_atlas_version | A field describing which version of the HCA Tissue Atlas is associated with the projet (e.g. v1.0; v2.0) | string | no |  | Official HCA Tissue Atlas Version |  | v1.0; v2.0
+atlas_project | A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets. | string | no |  | Project Tissue Atlas Status | Yes, No | Atlas Project; No
+
 ## Contact<a name='Contact'></a>
 _Information about an individual who submitted or contributed to a project._
 

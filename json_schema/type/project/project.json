@@ -66,6 +66,14 @@
             },
             "user_friendly": "Publications"
         },
+        "hca_bionetwork": {
+            "description": "HCA Bionetworks and Atlases the project is associated with",
+            "type": "array",
+            "items": {
+                "$ref": "module/project/hca_bionetwork.json"
+            },
+            "user_friendly": "Publications"
+        },
         "insdc_project_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
             "type": "array",
