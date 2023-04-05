@@ -72,7 +72,7 @@
             "items": {
                 "$ref": "module/project/hca_bionetwork.json"
             },
-            "user_friendly": "Publications"
+            "user_friendly": "HCA Bionetwork"
         },
         "insdc_project_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
