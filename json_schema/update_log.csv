@@ -1,3 +1,4 @@
 Schema,Change type,Change message,Version,Date
-module/project/hca_bionetwork,minor,"Added the hca_bionetwork module with four fields for recording bionetwork and atlas information",,
+module/project/hca_bionetwork,major,"Added the hca_bionetwork module with four fields for recording bionetwork and atlas information",,
+
 type/project/project,minor,"Added the hca_bionetwork module to be loaded in project",,

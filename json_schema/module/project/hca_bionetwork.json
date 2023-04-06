@@ -16,11 +16,11 @@
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
             "type": "string",
-            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
             "example": "4.6.1"
         },
-        "Names": {
-            "description": "A field describing which HCA Bionetwork the project is a part of (e.g. Kidney). Enter ‘No’ if the project is not part of an official HCA Bionetwork.",
+        "name": {
+            "description": "A field describing which HCA Bionetwork the project is a part of (e.g. Kidney). Enter ‘None’ if the project is not part of an official HCA Bionetwork.",
         	"type": "string",
             "enum": [
                 "Adipose",
@@ -42,9 +42,9 @@
                 "Pancreas",
                 "Reproduction",
                 "Skin",
-                "No"
+                "None"
             ],
-            "user_friendly": "Official HCA Bionetwork(s)",
+            "user_friendly": "Official HCA Bionetwork",
             "guidelines": "Should be one of the networks from https://www.humancellatlas.org/biological-networks/ or 'No' if not a network",
             "example": "Kidney; Lung; No"
         },
@@ -58,15 +58,14 @@
         "hca_tissue_atlas_version": {
             "description": "A field describing which version of the HCA Tissue Atlas is associated with the projet (e.g. v1.0; v2.0)",
             "type": "string",
-            "pattern": "v[0-9].[0-9]",
+            "pattern": "^v(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$",
             "user_friendly": "Official HCA Tissue Atlas Version",
             "guidelines": "For example: v1.0; v2.0",
             "example": "v1.0; v2.0"
         },
         "atlas_project": {
             "description": "A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets.",
-            "type": "string",
-            "enum": ["Yes","No"],
+            "type": "boolean",
             "user_friendly": "Project Tissue Atlas Status",
             "guidelines": "Enter ‘Yes’ if this project is one of the HCA Tissue Atlases and it integrates data from all other datasets. Enter ‘No’, if this project's data is being integrated.",
             "example": "Atlas Project; No"
