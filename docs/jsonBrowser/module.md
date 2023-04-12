@@ -364,10 +364,10 @@ Location: module/project/hca_bionetwork.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-Names | A field describing which HCA Bionetwork the project is a part of (e.g. Kidney). Enter ‘No’ if the project is not part of an official HCA Bionetwork. | string | no |  | Official HCA Bionetwork(s) | Adipose, Breast, Blood, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancreas, Reproduction, Skin, No | Kidney; Lung; No
-hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas |  | Brain Alzheimer Atlas
-hca_tissue_atlas_version | A field describing which version of the HCA Tissue Atlas is associated with the projet (e.g. v1.0; v2.0) | string | no |  | Official HCA Tissue Atlas Version |  | v1.0; v2.0
-atlas_project | A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets. | string | no |  | Project Tissue Atlas Status | Yes, No | Atlas Project; No
+name | A field describing which HCA Bionetwork the project is a part of (e.g. Kidney). Enter ‘None’ if the project is not part of an official HCA Bionetwork. | string | no |  | Official HCA Bionetwork | Adipose, Breast, Blood, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancreas, Reproduction, Skin, None | Kidney; Lung; No
+hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas | Blood, Retina, None | Blood Atlas
+hca_tissue_atlas_version | A field describing which version of the HCA Tissue Atlas is associated with the project (e.g. v1.0; v2.0) | string | no |  | Official HCA Tissue Atlas Version |  | v1.0; v2.0
+atlas_project | A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets. | boolean | no |  | Project Tissue Atlas Status |  | Atlas Project; No
 
 ## Contact<a name='Contact'></a>
 _Information about an individual who submitted or contributed to a project._
