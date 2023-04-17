@@ -2,8 +2,6 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about whether the project is part of a HCA Bionetwork or HCA Atlas.",
     "additionalProperties": false,
-    "required": [
-    ],
     "title": "HCA Bionetwork",
     "name": "hca_bionetwork",
     "type": "object",
@@ -20,7 +18,7 @@
             "example": "4.6.1"
         },
         "name": {
-            "description": "A field describing which HCA Bionetwork the project is a part of (e.g. Kidney). Enter ‘None’ if the project is not part of an official HCA Bionetwork.",
+            "description": "HCA Bionetwork the project is a part of (e.g. Kidney). ",
         	"type": "string",
             "enum": [
                 "Adipose",
@@ -45,8 +43,8 @@
                 "None"
             ],
             "user_friendly": "Official HCA Bionetwork",
-            "guidelines": "Should be one of the networks from https://www.humancellatlas.org/biological-networks/ or 'No' if not a network",
-            "example": "Kidney; Lung; No"
+            "guidelines": "Should be one of the networks from https://www.humancellatlas.org/biological-networks/ or 'None' if not a network",
+            "example": "Kidney; Lung; None"
         },
         "hca_tissue_atlas": {
             "description": "A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas). ",
@@ -54,7 +52,6 @@
             "enum": [
                 "Blood",
                 "Retina",
-                "None"
             ],
             "user_friendly": "HCA Tissue Atlas",
             "guidelines": "For example: Blood Atlas",
@@ -73,7 +70,7 @@
             "type": "boolean",
             "user_friendly": "Project Tissue Atlas Status",
             "guidelines": "Enter ‘Yes’ if this project is one of the HCA Tissue Atlases and it integrates data from all other datasets. Enter ‘No’, if this project's data is being integrated.",
-            "example": "Atlas Project; No"
+            "example": "Yes; No"
         }
     }
 }
