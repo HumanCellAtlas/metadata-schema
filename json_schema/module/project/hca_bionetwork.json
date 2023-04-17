@@ -23,7 +23,6 @@
             "enum": [
                 "Adipose",
                 "Breast",
-                "Blood",
                 "Development",
                 "Eye",
                 "Genetic Diversity",
