@@ -357,3 +357,233 @@ grant_title | The name of the grant funding the project. | string | no |  | Gran
 grant_id | The unique grant identifier or reference. | string | yes |  | Grant ID |  | BB/P0000001/1
 organization | The name of the funding organization. | string | yes |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
 
+## HCA Bionetwork<a name='HCA Bionetwork'></a>
+_Information about whether the project is part of a HCA Bionetwork or HCA Atlas._
+
+Location: module/project/hca_bionetwork.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+name | HCA Bionetwork the project is a part of (e.g. Kidney).  | string | no |  | Official HCA Bionetwork | Adipose, Breast, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancreas, Reproduction, Skin | Kidney; Lung
+hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas | Blood, Retina | Blood Atlas
+hca_tissue_atlas_version | A field describing which version of the HCA Tissue Atlas is associated with the project (e.g. v1.0; v2.0) | string | no |  | Official HCA Tissue Atlas Version |  | v1.0; v2.0
+atlas_project | A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets. | boolean | no |  | Project Tissue Atlas Status |  | Yes; No
+
+## Contact<a name='Contact'></a>
+_Information about an individual who submitted or contributed to a project._
+
+Location: module/project/contact.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+name | Name of individual who has contributed to the project. | string | yes |  | Contact name |  | John,D,Doe; Jane,,Smith
+email | Email address for the individual. | string | no |  | Email address |  | dummy@email.com
+phone | Phone number of the individual or their lab. | string | no |  | Phone number |  | (+1) 234-555-6789
+institution | Name of primary institute where the individual works. | string | yes |  | Institute |  | EMBL-EBI; University of Washington
+laboratory | Name of lab or department within the institute where the individual works. | string | no |  | Laboratory/Department |  | Division of Vaccine Discovery; Department of Biology
+address | Street address where the individual works. | string | no |  | Street address |  | 0000 Main Street, Nowheretown, MA, 12091
+country | Country where the individual works. | string | no |  | Country |  | USA
+corresponding_contributor | Whether the individual is a primary point of contact for the project. | boolean | no |  | Corresponding contributor |  | Should be one of: yes, or no.
+project_role | Primary role of the individual in the project. | object | no | [See module  contributor_role_ontology](module.md#contributor-role-ontology) | Project role |  | principal investigator; computational scientist
+orcid_id | The individual's ORCID ID linked to previous work. | string | no |  | ORCID ID |  | 0000-1111-2222-3333
+
+## Publication<a name='Publication'></a>
+_Information about a journal article, book, web page, or other external available documentation for a project._
+
+Location: module/project/publication.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+authors | A list of authors associated with the publication. | array | yes |  | Authors |  | Doe JD
+title | The title of the publication. | string | yes |  | Publication title |  | Study of single cells in the human body.
+doi | The publication digital object identifier (doi) of the publication. | string | no |  | Publication DOI |  | 10.1016/j.cell.2016.07.054
+pmid | The PubMed ID of the publication. | integer | no |  | Publication PMID |  | 27565351
+url | A URL for the publication. | string | no |  | Publication URL |  | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5667944/
+official_hca_publication | Has the publication been accepted as an official HCA publication, according to the process described in https://www.humancellatlas.org/publications/ ? | boolean | yes |  | Official HCA Publication |  | yes; no
+
+## Human-specific<a name='Human-specific'></a>
+_Information specific to a donor that is a human (Homo sapiens)._
+
+Location: module/biomaterial/human_specific.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
+ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Ethnicity |  | 
+
+## Growth conditions<a name='Growth conditions'></a>
+_Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
+
+Location: module/biomaterial/growth_conditions.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+passage_number | The number of passages that the biomaterial has been through. | integer | no |  | Passage number |  | 22
+growth_medium | The solid, liquid, or semi-solid medium used to support growth. | string | no |  | Growth medium |  | human placental cord serum; RPMI 1640 + 2mM Glutamine + 10-20% FBS
+culture_environment | Cell culture environment in which cells are grown. | string | no |  | Culture environment |  | Adherent cell culture; Suspension cell culture
+mycoplasma_testing_method | The method by which the biomaterial was tested for mycoplasma contamination. | string | no |  | Mycoplasma testing method | Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, Microbiological assay | Should be one of: Direct DNA stain, Indirect DNA stain, Broth and agar culture, PCR, Nested PCR, ELISA, Autoradiography, Immunostaining, Cell-based assay, or Microbiological assay.
+mycoplasma_testing_results | Whether the biomaterial passed or failed the mycoplasma test. | string | no |  | Mycoplasma testing results | pass, fail | Should be one of: pass, or fail.
+drug_treatment | Description of drugs added to the growth medium. | string | no |  | Drug treatment |  | 100 ug/mL ampicillin; 15 ug/mL tetracycline
+feeder_layer_type | Type of feeder layer cells on which biomaterial was grown. | string | no |  | Feeder layer type | feeder-free, feeder-dependent, JK1 feeder cells, feeder-dependent, SNL 76/7 feeder cells, feeder-dependent, human marrow stromal cells, feeder-dependent, bovine embryonic fibroblast cells, feeder-dependent, mouse embryonic fibroblast cells, feeder-dependent, mouse fibroblast STO cells, feeder-dependent, mouse bone marrow stromal cells, feeder-dependent, mouse yolk sac-derived endothelial cells, feeder-dependent, human foreskin fibroblast cells, feeder-dependent, human newborn fibroblast cells, feeder-dependent, human fetal lung fibroblast cells, feeder-dependent, human uterine endometrial cells, feeder-dependent, human breast parenchymal cells, feeder-dependent, human embryonic fibroblast cells, feeder-dependent, human adipose stromal cells, feeder-dependent, human amniotic epithelial cells, feeder-dependent, human placental fibroblast cells, feeder-dependent, human umbilical cord stromal cells, feeder-dependent, human fetal muscle cells, feeder-dependent, human fetal skin cells, feeder-dependent, human fetal liver stromal cells, feeder-dependent, human fallopian tubal epithelial cells, feeder-dependent, human amniotic mesenchymal cells | feeder-free; feeder-dependent, mouse embryonic fibroblast cells
+
+## Preservation and storage<a name='Preservation and storage'></a>
+_Information relating to how a biomaterial was preserved and/or stored over a period of time._
+
+Location: module/biomaterial/preservation_storage.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+storage_method | The method by which a biomaterial was stored after preservation or before another protocol was used. | string | no |  | Storage method | ambient temperature, cut slide, fresh, frozen at -70C, frozen at -80C, frozen at -150C, frozen in liquid nitrogen, frozen in vapor phase, paraffin block, RNAlater at 4C, RNAlater at 25C, RNAlater at -20C | frozen in liquid nitrogen; fresh
+storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
+storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Storage time unit |  | 
+preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
+
+## Death<a name='Death'></a>
+_Information relating to the death of an organism._
+
+Location: module/biomaterial/death.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+cause_of_death | Conditions resulting in death. | string | yes |  | Cause of death |  | Hypoxic brain damage; Sudden cardiac arrest
+cold_perfused | Whether perfusion with cold fluid was used to help preserve tissues before heart stopped. | boolean | no |  | Cold perfused |  | Should be one of: yes, no.
+days_on_ventilator | Number of days on ventilator before death occurred. | number | no |  | Number of days on ventilator |  | 4
+hardy_scale | Value on 4-point Hardy scale cause of death classification. | integer | no |  | Value on Hardy scale |  | 0
+time_of_death | Date and time when death was declared. | string | no |  | Time of death |  | 2016-01-21T00:00:00Z; 2016-03
+organ_donation_death_type | Type of death preceding organ donation. | string | no |  | Organ donation death type | Donation after circulatory death (DCD), Donation after brainstem death (DBD) | Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).
+normothermic_regional_perfusion | Whether entire body was perfused with warm oxygenated blood. | string | no |  | Normothermic regional perfusion | yes, no, unknown | Should be one of: yes, no, or unknown.
+
+## Familial relationship<a name='Familial relationship'></a>
+_Information about other organisms that this organism is related to._
+
+Location: module/biomaterial/familial_relationship.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+parent | The individual's parent. | string | no |  | Parent |  | 
+child | The individual's child. | string | no |  | Child |  | 
+sibling | The individual's sibling. | string | no |  | Sibling |  | 
+
+## Medical history<a name='Medical history'></a>
+_Information about the medical history of a donor._
+
+Location: module/biomaterial/medical_history.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
+medication | Medications the individual was taking at time of biomaterial collection. | string | no |  | Medications |  | Naproxen 500mg/day; Citalopram 20mg/day
+smoking_history | Estimated number of cigarettes smoked per day. | string | no |  | Smoking history |  | 20 cigarettes/day for 25 years, stopped 2000
+nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
+treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+
+## Cell morphology<a name='Cell morphology'></a>
+_Information relating to pathological and morphological features of cells._
+
+Location: module/biomaterial/cell_morphology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells; form single layer colonies
+cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 15; 20-30
+cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Cell size unit |  | 
+percent_cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 98.7
+cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis; ATP test
+cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability result | pass, fail | Should be one of: pass, fail
+percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrotic cells |  | 10
+
+## State of specimen<a name='State of specimen'></a>
+_State of specimen at time of collection._
+
+Location: module/biomaterial/state_of_specimen.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+autolysis_score | State of tissue breakdown due to self-digestion. | string | no |  | Autolysis score | none, mild, moderate | Should be one of: none, mild, or moderate.
+gross_description | Color, size, and other aspects of specimen as visible to naked eye. | string | no |  | Gross description |  | focal wedge shaped region of tan-orange discoloration; cystic
+gross_images | List of filenames of photographs of specimen without magnification. | array | no |  | Gross image |  | my_gross_image_file.jpg
+ischemic_temperature | Whether specimen experienced warm or cold ischemia. | string | no |  | Ischemic temperature | warm, cold | Should be one of: warm, or cold.
+ischemic_time | Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. | integer | no |  | Ischemic time |  | 7200
+microscopic_description | How the specimen looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | Mixture of different cell sizes apparent; Dead cells are quite faint on microscope
+microscopic_images | List of filenames of photographs of specimen under microscope. | array | no |  | Microscopic image |  | my_microscopic_image_file.jpg
+postmortem_interval | Duration of time between when death was declared and when the specimen was preserved or processed. | integer | no |  | Post-mortem interval |  | 2400
+
+## Timecourse<a name='Timecourse'></a>
+_Information relating to a timecourse._
+
+Location: module/biomaterial/timecourse.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  | Timecourse value |  | 2; 5.5-10.5
+unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
+relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  | Timecourse relevance |  | Collection after tumor cells injected into the mammary gland; Time tissue underwent liberase digestion
+
+## Mouse-specific<a name='Mouse-specific'></a>
+_Information specific to an organism that is a mouse (Mus musculus)._
+
+Location: module/biomaterial/mouse_specific.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+strain | The name of the mouse strain. | array | no | [See module  strain_ontology](module.md#strain-ontology) | Mouse strain |  | 
+
+## Purchased reagents<a name='Purchased reagents'></a>
+_Information describing purchased kits or reagents used in a protocol._
+
+Location: module/process/purchased_reagents.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit; CytoTune iPS 2.0 Sendai Reprogramming Kit
+catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
+manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina; ThermoFisher Scientific
+lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
+expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31; 2018-01
+kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Titer |  | 3.0x10^7
+
+## INSDC experiment<a name='INSDC experiment'></a>
+_Information relating to an INSDC experiment._
+
+Location: module/process/sequencing/insdc_experiment.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+insdc_experiment_accession | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | string | yes |  | INSDC experiment accession |  | SRX0000000
+
+## Barcode<a name='Barcode'></a>
+_Information about barcodes used in a protocol._
+
+Location: module/process/sequencing/barcode.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, Read 3, Read 4, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | The 0-based offset of start of barcode in read. | integer | yes |  | Barcode offset |  | 0
+barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
+white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
+
+## 10x-specific<a name='10x-specific'></a>
+_Information specific to 10x experiments._
+
+Location: module/process/sequencing/10x.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+fastq_method | Method used for the generation of fastq files from bcl files. | string | no |  | Fastq creation method |  | Cellranger mkfastq; bcl2fastq2
+fastq_method_version | Version of the program used for fastq generation. | string | no |  | Fastq creation method version |  | Cellranger 2.1.1; v2.20
+pooled_channels | The number of channels pooled within a sequencing lane. | number | no |  | Pooled channels |  | 4
+drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | Should be one of: yes, or no.
+
+## Plate-based sequencing<a name='Plate-based sequencing'></a>
+_Information specific to plate-based sequencing experiments._
+
+Location: module/process/sequencing/plate_based_sequencing.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+plate_label | A label or name for the plate on which the well is located. | string | yes |  | Plate label |  | 2217
+well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
+well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+
