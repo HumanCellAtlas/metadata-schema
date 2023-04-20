@@ -332,6 +332,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 grant_id | The unique grant identifier or reference. | string |  | Grant ID |  | BB/P0000001/1
 organization | The name of the funding organization. | string |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+### HCA Bionetwork<a name='HCA Bionetwork'></a>
+_There are no required properties in schema HCA Bionetwork_
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
