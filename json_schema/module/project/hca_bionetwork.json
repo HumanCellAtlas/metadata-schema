@@ -49,7 +49,12 @@
             "type": "string",
             "enum": [
                 "Blood",
-                "Retina"
+                "Retina",
+                "Lung",
+                "Kidney",
+                "Gut",
+                "Eye",
+                "Brain"
             ],
             "user_friendly": "HCA Tissue Atlas",
             "guidelines": "For example: Blood Atlas",
