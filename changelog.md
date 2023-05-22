@@ -6,7 +6,15 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [module/project/hca_bionetwork.json - v1.0.1] - 2023-05-22
+### Added
+Added new values to hca_atlas field
+
+### [type/project/project.json - v17.1.1] - 2023-05-22
+### Added
+Added new values to hca_atlas field
+
 ### [module/project/hca_bionetwork.json - v1.0.0] - 2023-04-20
 ### Added
 Added the hca_bionetwork module with four fields for recording bionetwork and atlas information

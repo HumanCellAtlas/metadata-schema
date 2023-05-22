@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2023-04-20T12:53:07Z",
+    "last_update_date": "2023-05-22T11:01:09Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -72,7 +72,7 @@
             "project": {
                 "contact": "9.0.0",
                 "funder": "2.0.0",
-                "hca_bionetwork": "1.0.0",
+                "hca_bionetwork": "1.0.1",
                 "publication": "7.0.0"
             },
             "protocol": {
@@ -110,7 +110,7 @@
                 "process": "9.2.0"
             },
             "project": {
-                "project": "17.1.0"
+                "project": "17.1.1"
             },
             "protocol": {
                 "analysis": {
