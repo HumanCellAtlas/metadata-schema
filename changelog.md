@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/project/hca_bionetwork.json - v1.0.1] - 2023-05-22
 ### Added
 Added new values to hca_atlas field
@@ -22,8 +24,6 @@ Added the hca_bionetwork module with four fields for recording bionetwork and at
 ### [type/project/project.json - v17.1.0] - 2023-04-20
 ### Added
 Added the hca_bionetwork module to be loaded in project
-
-
 
 ### [type/biomaterial/specimen_from_organism.json - v10.6.0] - 2023-03-13
 ### Added
