@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about whether the project is part of a HCA Bionetwork or HCA Atlas.",
+    "additionalProperties": false,
+    "title": "HCA Bionetwork",
+    "name": "hca_bionetwork",
+    "type": "object",
+    "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/contact"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "example": "4.6.1"
+        },
+        "name": {
+            "description": "HCA Bionetwork the project is a part of (e.g. Kidney). ",
+        	"type": "string",
+            "enum": [
+                "Adipose",
+                "Breast",
+                "Development",
+                "Eye",
+                "Genetic Diversity",
+                "Gut",
+                "Heart",
+                "Immune",
+                "Kidney",
+                "Liver",
+                "Lung",
+                "Musculoskeletal",
+                "Nervous System",
+                "Oral & Craniofacial",
+                "Organoid",
+                "Pancreas",
+                "Reproduction",
+                "Skin"
+            ],
+            "user_friendly": "Official HCA Bionetwork",
+            "guidelines": "Should be one of the networks from https://www.humancellatlas.org/biological-networks/",
+            "example": "Kidney; Lung"
+        },
+        "hca_tissue_atlas": {
+            "description": "A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas). ",
+            "type": "string",
+            "enum": [
+                "Blood",
+                "Retina",
+                "Lung",
+                "Kidney",
+                "Gut",
+                "Eye",
+                "Brain"
+            ],
+            "user_friendly": "HCA Tissue Atlas",
+            "guidelines": "For example: Blood Atlas",
+            "example": "Blood Atlas"
+	},
+        "hca_tissue_atlas_version": {
+            "description": "A field describing which version of the HCA Tissue Atlas is associated with the project (e.g. v1.0; v2.0)",
+            "type": "string",
+            "pattern": "^v(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$",
+            "user_friendly": "Official HCA Tissue Atlas Version",
+            "guidelines": "For example: v1.0; v2.0",
+            "example": "v1.0; v2.0"
+        },
+        "atlas_project": {
+            "description": "A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets.",
+            "type": "boolean",
+            "user_friendly": "Project Tissue Atlas Status",
+            "guidelines": "Enter ‘Yes’ if this project is one of the HCA Tissue Atlases and it integrates data from all other datasets. Enter ‘No’, if this project's data is being integrated.",
+            "example": "Yes; No"
+        }
+    }
+}
