@@ -89,12 +89,21 @@
         },
         "type": {
             "biomaterial": {
+<<<<<<< HEAD
                 "cell_line": "15.2.0",
                 "cell_suspension": "13.4.0",
                 "donor_organism": "15.7.0",
                 "imaged_specimen": "3.4.0",
                 "organoid": "11.4.0",
                 "specimen_from_organism": "10.7.0"
+=======
+                "cell_line": "16.0.0",
+                "cell_suspension": "14.0.0",
+                "donor_organism": "16.0.0",
+                "imaged_specimen": "3.4.0",
+                "organoid": "11.4.0",
+                "specimen_from_organism": "10.6.0"
+>>>>>>> parent of 27054a53 (Fixed version and change issues.)
             },
             "file": {
                 "analysis_file": "7.0.0",
