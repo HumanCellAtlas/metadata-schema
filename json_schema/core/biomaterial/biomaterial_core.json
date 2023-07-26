@@ -83,6 +83,12 @@
             "user_friendly": "HDBR accession",
             "example": "34526; 14758, 2, liver",
             "guidelines": "Enter accession if sample has been obtained from the Human Developmental Biology Resource (HDBR)."
+        },
+        "timecourse": {
+            "description": "Information relating to a timecourse associated with this cell line.",
+            "type": "object",
+            "$ref": "module/biomaterial/timecourse.json",
+            "user_friendly": "Timecourse"
         }
     }
 }
