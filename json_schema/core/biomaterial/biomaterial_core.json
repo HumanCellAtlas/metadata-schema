@@ -85,7 +85,7 @@
             "guidelines": "Enter accession if sample has been obtained from the Human Developmental Biology Resource (HDBR)."
         },
         "timecourse": {
-            "description": "Information relating to a timecourse associated with this cell line.",
+            "description": "Information relating to a timecourse associated with this biomaterial.",
             "type": "object",
             "$ref": "module/biomaterial/timecourse.json",
             "user_friendly": "Timecourse"
