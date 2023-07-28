@@ -61,7 +61,7 @@ supplementary_files | A list of filenames of biomaterial-level supplementary fil
 biosamples_accession | A BioSamples accession. | string | no |  | BioSamples accession |  | SAMN00000000
 insdc_sample_accession | An International Nucleotide Sequence Database Collaboration (INSDC) sample accession. | string | no |  | INSDC sample accession |  | SRS0000000
 HDBR_accession | A Human Developmental Biology Resource (HDBR) sample accession. | string | no |  | HDBR accession |  | 34526; 14758, 2, liver
-timecourse | Information relating to a timecourse associated with this cell line. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
+timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Process core<a name='Process core'></a>
 _Information relevant to how a biomaterial or file was converted into another biomaterial or file._
