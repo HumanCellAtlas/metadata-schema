@@ -361,7 +361,6 @@ genus_species | The scientific binomial name for the species of the suspension. 
 selected_cell_types | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md#cell-type-ontology) | Selected cell type(s) |  | 
 estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md#plate-based-sequencing) | Plate-based sequencing |  | 
-timecourse | Information relating to a timecourse associated with this cell suspension. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Cell line
 _Information about the cell line or cell culture biomaterial._
@@ -390,7 +389,6 @@ date_established | Date when the cell line was established. | string | no |  | D
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md#disease-ontology) | Disease |  | 
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md#publication) | Publication |  | 
-timecourse | Information relating to a timecourse associated with this cell line. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Imaged specimen
 _Information about a tissue specimen after it has been sectioned and prepared for imaging._
@@ -434,7 +432,6 @@ height | Height of organism in Height unit. | string | no |  | Height |  | 160; 
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Height unit |  | 
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60; 40-60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md#mass-unit-ontology) | Weight unit |  | 
-timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Organoid
 _Information about an organoid biomaterial._
