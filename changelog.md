@@ -6,8 +6,35 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
-
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [core/biomaterial/biomaterial_core.json - v8.4.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/donor_organism.json - v16.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_suspension.json - v14.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_line.json - v16.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/imaged_specimen.json - v3.5.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/specimen_from_organism.json - v10.8.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/organoid.json - v11.5.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
 
 ### [module/project/hca_bionetwork.json - v1.0.1] - 2023-05-22
 ### Added
