@@ -340,6 +340,7 @@ organ | The organ that the biomaterial came from. | object | yes | [See module  
 organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md#organ-part-ontology) | Organ part |  | 
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
 adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 
+transplant | Description of tissue sampled from a transplanted organ. | string | no |  | Transplanted tissue | tissue from transplanted organ, xenograft tissue | tissue from transplanted organ; xenograft tissue
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md#state-of-specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03

@@ -83,6 +83,17 @@
             "user_friendly": "Adjacent disease(s)",
             "guidelines": "If a healthy specimen is sampled from a site adjacent to diseased tissue, enter that tissue's disease here. If no diseased tissue is adjacent to the specimen, leave blank."
         },
+        "transplant": {
+            "description": "Description of tissue sampled from a transplanted organ.",
+            "type": "string",
+            "enum": [
+                "tissue from transplanted organ",
+                "xenograft tissue"
+            ],
+            "user_friendly": "Transplanted tissue",
+            "example": "tissue from transplanted organ; xenograft tissue",
+            "guidelines": "Should be one of: tissue from transplanted organ, xenograft tissue"
+        },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
             "type": "object",
