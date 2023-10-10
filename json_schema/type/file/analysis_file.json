@@ -6,7 +6,8 @@
         "describedBy",
         "schema_type",
         "file_core",
-        "genome_assembly_version"
+        "genome_assembly_version",
+        "alignment_software"
     ],
     "title": "Analysis file",
     "name": "analysis_file",
@@ -70,6 +71,19 @@
             "type": "string",
             "user_friendly": "Patch version",
             "example": "p11; p14"
+        },
+        "alignment_software": {
+            "description": "Name of alignment software used to map FASTQ files to reference genome",
+            "type": "string",
+            "user_friendly": "Alignment software",
+            "example": "Cellranger; kallisto bustools; GSNAP; STAR"
+        }, 
+        "alignment_software_version": {
+            "description": "Version of alignment software used to map FASTQ files to reference genome",
+            "type": "string",
+            "user_friendly": "Alignment software",
+			"pattern": "^v{0,}[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "v2.0.1; 2.4.2a; v0.45.2"
         }
     }
 }

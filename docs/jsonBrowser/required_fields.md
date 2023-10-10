@@ -48,6 +48,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
 file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
 genome_assembly_version | Name of the genome assembly used to generate this file. | string |  | Genome version | GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable | Should be one of: GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable
+alignment_software | Name of alignment software used to map FASTQ files to reference genome | string | Alignment software | Cellranger; kallisto bustools; GSNAP; STAR 
 ### Reference file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

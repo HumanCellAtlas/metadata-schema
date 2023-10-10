@@ -6,6 +6,8 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
+Added alignment_software & alignment_software_version field in analysis_file Fixes #1533
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [core/biomaterial/biomaterial_core.json - v8.4.0] - 2023-08-22
