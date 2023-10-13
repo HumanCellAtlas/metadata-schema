@@ -76,13 +76,14 @@
             "description": "Name of alignment software used to map FASTQ files to reference genome",
             "type": "string",
             "user_friendly": "Alignment software",
+            "guidelines": "Please use name of alignment software or \\'Not Applicable\\' if no alignment software was used for this file",
             "example": "Cellranger; kallisto bustools; GSNAP; STAR"
         }, 
         "alignment_software_version": {
             "description": "Version of alignment software used to map FASTQ files to reference genome",
             "type": "string",
             "user_friendly": "Alignment software",
-			"pattern": "^v{0,}[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "guidelines": "Please use version of alignment software or \\'Not Applicable\\' if no alignment software was used or version was not provided for this file",
             "example": "v2.0.1; 2.4.2a; v0.45.2"
         }
     }
