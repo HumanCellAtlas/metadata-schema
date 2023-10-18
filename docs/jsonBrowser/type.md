@@ -59,8 +59,8 @@ file_core | Core file-level information. | object | yes | [See core  file_core](
 matrix_cell_count | Number of cells analyzed in a matrix file. | integer | no |  | Matrix cell count |  | 1; 2100
 genome_assembly_version | Name of the genome assembly used to generate this file. | string | yes |  | Genome version | GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable | Should be one of: GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable
 genome_patch_version | Patch version of the genome assembly used to generate this file. | string | no |  | Patch version |  | p11; p14
-alignment_software | Name of alignment software used to map FASTQ files to reference genome | string | yes |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
-alignment_software_version | Version of alignment software used to map FASTQ files to reference genome | string | no |  | Alignment software |  | v2.0.1; 2.4.2a; v0.45.2
+alignment_software | Name of alignment software used to map FASTQ files to reference genome. | string | yes |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
+alignment_software_version | Version of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software |  | v2.0.1; 2.4.2a; v0.45.2
 
 ## Reference file
 _A reference file used by a secondary reference pipeline._

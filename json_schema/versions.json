@@ -97,7 +97,7 @@
                 "specimen_from_organism": "10.8.0"
             },
             "file": {
-                "analysis_file": "8.0.0",
+                "analysis_file": "7.0.0",
                 "image_file": "2.5.0",
                 "reference_file": "3.5.0",
                 "sequence_file": "9.5.0",
