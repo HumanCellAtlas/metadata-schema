@@ -8,6 +8,13 @@
             "type": "new required property"
         },
         {
+            "source_schema": "analysis_file",
+            "property": "alignment_software_version",
+            "effective_from": "8.0.0",
+            "reason": "Alignment software version is now recorded as a mandatory field",
+            "type": "new required property"
+        },
+        {
             "source_schema": "cell_line",
             "property": "timecourse",
             "target_schema": "cell_line",
