@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/file/analysis_file.json,Major,Added alignment_software & alignment_software_version field in analysis_file Fixes#1533,,
+type/protocol/analysis/analysis_protocol.json,Major,Added alignment_software & alignment_software_version field in analysis_protocol Fixes#1533,,

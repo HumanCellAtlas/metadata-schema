@@ -48,8 +48,6 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
 file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
 genome_assembly_version | Name of the genome assembly used to generate this file. | string |  | Genome version | GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable | Should be one of: GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable
-alignment_software | Name of alignment software used to map FASTQ files to reference genome. | string |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
-alignment_software_version | Version of alignment software used to map FASTQ files to reference genome. | string |  | Alignment software |  | v2.0.1; 2.4.2a; v0.45.2
 ### Reference file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -89,6 +87,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | protocol | 
 protocol_core | Core protocol-level information. | object | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 type | The type of protocol. | object | [See module  process_type_ontology](module.md#process-type-ontology) | Protocol type |  | 
+alignment_software | Name of alignment software used to map FASTQ files to reference genome. | string |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
+alignment_software_version | Version of alignment software used to map FASTQ files to reference genome. | string |  | Alignment software |  | v2.0.1; 2.4.2a; v0.45.2
 ### Aggregate generation protocol
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
