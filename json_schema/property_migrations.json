@@ -1,20 +1,6 @@
 {
     "migrations": [
         {
-            "source_schema": "analysis_protocol",
-            "property": "alignment_software",
-            "effective_from": "11.0.0",
-            "reason": "Alignment software is now recorded as a mandatory field",
-            "type": "new required property"
-        },
-        {
-            "source_schema": "analysis_protocol",
-            "property": "alignment_software_version",
-            "effective_from": "11.0.0",
-            "reason": "Alignment software version is now recorded as a mandatory field",
-            "type": "new required property"
-        },
-        {
             "source_schema": "cell_line",
             "property": "timecourse",
             "target_schema": "cell_line",
