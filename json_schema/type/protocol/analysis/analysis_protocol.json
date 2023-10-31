@@ -8,7 +8,7 @@
         "protocol_core",
         "type"
     ],
-    "dependentRequired": {
+    "dependencies": {
         "alignment_software_version": ["alignment_software"]
     },
     "title": "Analysis protocol",
