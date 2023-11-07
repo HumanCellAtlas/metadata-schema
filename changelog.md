@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/protocol/analysis/analysis_protocol.json - v10.1.0] - 2023-11-07
 ### Added
 Added alignment_software & alignment_software_version field in analysis_protocol Fixes#1533
