@@ -71,7 +71,7 @@
         "alignment_software_version": {
             "description": "Version of alignment software used to map FASTQ files to reference genome.",
             "type": "string",
-            "user_friendly": "Alignment software",
+            "user_friendly": "Alignment software version",
             "example": "v2.0.1; 2.4.2a; v0.45.2"
         }
     }
