@@ -8,6 +8,9 @@
         "protocol_core",
         "type"
     ],
+    "dependencies": {
+        "alignment_software_version": ["alignment_software"]
+    },
     "title": "Analysis protocol",
     "name": "analysis_protocol",
     "type": "object",
@@ -58,6 +61,18 @@
             "type": "object",
             "$ref": "module/protocol/matrix.json",
             "user_friendly": "Matrix"
+        },
+        "alignment_software": {
+            "description": "Name of alignment software used to map FASTQ files to reference genome.",
+            "type": "string",
+            "user_friendly": "Alignment software",
+            "example": "Cellranger; kallisto bustools; GSNAP; STAR"
+        }, 
+        "alignment_software_version": {
+            "description": "Version of alignment software used to map FASTQ files to reference genome.",
+            "type": "string",
+            "user_friendly": "Alignment software version",
+            "example": "v2.0.1; 2.4.2a; v0.45.2"
         }
     }
 }
