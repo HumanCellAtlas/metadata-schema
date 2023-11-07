@@ -145,6 +145,8 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Protocol type |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | no |  | Computational method |  | SmartSeq2SingleCell; 10x
 matrix | Information related to protocols that output a matrix. | object | no | [See module  matrix](module.md#matrix) | Matrix |  | 
+alignment_software | Name of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
+alignment_software_version | Version of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software version |  | v2.0.1; 2.4.2a; v0.45.2
 
 ## Aggregate generation protocol
 _Information about how cultured cells are developed into cell aggregates._
