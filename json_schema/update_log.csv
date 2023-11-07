@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/analysis/analysis_protocol,minor,"Added alignment_software & alignment_software_version field in analysis_protocol Fixes#1533",,
