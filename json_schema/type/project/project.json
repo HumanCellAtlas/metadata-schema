@@ -6,7 +6,8 @@
         "describedBy",
         "schema_type",
         "project_core",
-        "funders"
+        "funders",
+        "data_access"
     ],
     "title": "Project",
     "name": "project",
@@ -164,6 +165,12 @@
             "type": "integer",
             "example": "10000; 2100000",
             "user_friendly": "Estimated cell count"
+        },
+        "data_access": {
+            "description": "Information about the data access type for the project.",
+            "type": "object",
+            "$ref": "module/project/data_access.json",
+            "user_friendly": "Data access"
         }
     }
 }

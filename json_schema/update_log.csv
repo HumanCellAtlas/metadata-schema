@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+type/project/project,major,"Added data_access field",,
+module/project/data_access,major,"Added data_access module",,
