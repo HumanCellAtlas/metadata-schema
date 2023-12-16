@@ -75,6 +75,16 @@
             "user_friendly": "Biological sex",
             "example": "Should be one of: male, female, mixed, or unknown."
         },
+
+
+	"gender_identity": {
+            "description": "The donor's personal sense of their own gender at the time of the experiment.",
+            "type": "object",
+            "$ref": "module/ontology/gender_identity.json",
+            "user_friendly": "Gender Identity",
+            "required": false
+        },
+    
         "is_living": {
             "description": "Whether organism was alive at time of biomaterial collection.",
             "type": "string",
