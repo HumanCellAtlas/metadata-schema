@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+type/protocol/analysis/analysis_protocol,minor,"Added gene_annotation_version field in analysis_protocol Fixes#1543",,
