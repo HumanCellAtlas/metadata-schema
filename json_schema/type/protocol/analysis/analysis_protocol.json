@@ -77,7 +77,7 @@
         "gene_annotation_version": {
             "description": "The Ensembl release version accession number or NCBI RefSeq assembly version used for gene annotation.",
             "type": "string",
-            "pattern": "^v[0-9]{2,}$|^GCF_[0-9]{9}\\.[0-9]{1,}$",
+            "pattern": "^v\\d{2,}$|^GCF_\\d{9}\\.\\d+$",
             "user_friendly": "Gene annotation version",
             "example": "v110; GCF_000001405.40; GCF_000001635.27"
         }
