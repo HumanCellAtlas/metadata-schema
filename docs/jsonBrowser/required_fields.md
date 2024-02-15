@@ -332,10 +332,6 @@ text | The name of a cell type supplied by a user. | string |  | Cell type |  | 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  | Organ |  | heart; immune system
-### Data access<a name='Data access'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-type | Type of data access permissions associated with this project. | string |  | Data access type | All fully open, All managed access, A mixture of open and managed, Complicated/see notes | 
 ### Funder<a name='Funder'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

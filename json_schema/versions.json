@@ -37,6 +37,7 @@
                 "cell_type_ontology": "5.3.6",
                 "cellular_component_ontology": "1.0.5",
                 "contributor_role_ontology": "2.0.0",
+                "data_access_ontology": "0.0.0",
                 "development_stage_ontology": "5.3.6",
                 "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
@@ -74,7 +75,6 @@
                 "funder": "2.0.0",
                 "hca_bionetwork": "1.0.1",
                 "publication": "7.0.0",
-                "data_access": "0.0.0"
             },
             "protocol": {
                 "channel": "2.0.4",

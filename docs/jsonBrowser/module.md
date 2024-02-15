@@ -357,16 +357,6 @@ text | The text for the term as the user provides it. | string | yes |  | Organ 
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Organ ontology ID |  | UBERON:0000948; UBERON:0002405
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Organ ontology label |  | heart; immune system
 
-## Data access<a name='Data access'></a>
-_Information about the data access type for the project._
-
-Location: module/project/data_access.json
-
-Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- | --- 
-type | Type of data access permissions associated with this project. | string | yes |  | Data access type | All fully open, All managed access, A mixture of open and managed, Complicated/see notes | 
-notes | Notes regarding data access type | string | no |  | Data access notes |  | This dataset can only be accessed through contact with the authors
-
 ## Funder<a name='Funder'></a>
 _Information about the project funding source._
 
