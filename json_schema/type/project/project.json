@@ -169,7 +169,7 @@
         "data_access": {
             "description": "Information about the data access type for the project.",
             "type": "object",
-            "$ref": "module/project/data_access.json",
+            "$ref": "module/ontology/data_access_ontology.json",
             "user_friendly": "Data access"
         }
     }

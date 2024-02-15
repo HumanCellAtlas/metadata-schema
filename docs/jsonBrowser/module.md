@@ -104,6 +104,17 @@ text | The primary role of the contributor in the project. | string | yes |  | C
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Contributor role ontology ID |  | EFO:0009736; EFO:0009741
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Contributor role ontology label |  | principal investigator; experimental scientist
 
+## Data access<a name='Data access'></a>
+_A term that may be associated with a data use restriction ontology term._
+
+Location: module/ontology/data_access_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | Type of data access permissions associated with the project. | string | yes |  | Data access type |  | No restriction 
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Data access ontology ID | DUO:0000004, DUO:0000046, DUO:0000042 | DUO:0000004
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Data access ontology label |  | no restriction
+
 ## Ethnicity ontology<a name='Ethnicity ontology'></a>
 _A term that may be associated with a ethnicity-related ontology term._
 
