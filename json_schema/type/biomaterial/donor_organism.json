@@ -178,6 +178,13 @@
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
+        },
+        "organ_donor": {
+            "description": "Whether organism has donated their organs.",
+            "type": "boolean",
+            "user_friendly": "Organ donor",
+            "guidelines": "Should be one of: yes, or no.",
+            "example": "yes; no"
         }
     }
 }
