@@ -294,7 +294,7 @@ text | The text for the term as the user provides it. | string |  | Organ part |
 ### Data use restriction<a name='Data use restriction'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | Type of data use restrictions associated with the project. | string |  | Data use restrictions |  | No restriction 
+ontology | An ontology term identifier in the form prefix:accession. | string |  | Data use conditions ontology ID | DUO:0000004, DUO:0000046, DUO:0000042 | DUO:0000004
 ### Microscopy ontology<a name='Microscopy ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

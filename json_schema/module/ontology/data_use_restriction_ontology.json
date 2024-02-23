@@ -3,7 +3,7 @@
     "description": "A term that may be associated with a data use restriction ontology term.",
     "additionalProperties": false,
     "required": [
-        "text"
+        "ontology"
     ],
     "title": "Data use restriction",
     "name": "data_use_restriction_ontology",
@@ -29,11 +29,11 @@
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
-                 "enum": [
-                     "DUO:0000004",
-                     "DUO:0000046",
-                     "DUO:0000042"
-                 ],
+            "enum": [
+                "DUO:0000004",
+                "DUO:0000046",
+                "DUO:0000042"
+            ],
             "user_friendly": "Data use conditions ontology ID",
             "guidelines": "Must be one of: DUO:0000004, DUO:0000046, DUO:0000042",
             "example": "DUO:0000004"
