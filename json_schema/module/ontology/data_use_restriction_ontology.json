@@ -5,14 +5,14 @@
     "required": [
         "text"
     ],
-    "title": "Data access",
-    "name": "data_access_ontology",
+    "title": "Data use restriction",
+    "name": "data_use_restriction_ontology",
     "type": "object",
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/data_access_ontology"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/data_use_restriction_ontology"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -21,9 +21,9 @@
             "example": "4.6.1"
         },
         "text": {
-            "description": "Type of data access permissions associated with the project.",
+            "description": "Type of data use restrictions associated with the project.",
             "type": "string",
-            "user_friendly": "Data access type",
+            "user_friendly": "Data use restrictions",
             "example": "No restriction "
         },
         "ontology": {
@@ -34,14 +34,14 @@
                      "DUO:0000046",
                      "DUO:0000042"
                  ],
-            "user_friendly": "Data access ontology ID",
+            "user_friendly": "Data use conditions ontology ID",
             "guidelines": "Must be one of: DUO:0000004, DUO:0000046, DUO:0000042",
             "example": "DUO:0000004"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
-            "user_friendly": "Data access ontology label",
+            "user_friendly": "Data use conditions ontology label",
             "example": "no restriction"
         }
     }

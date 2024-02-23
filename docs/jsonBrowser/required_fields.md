@@ -147,7 +147,6 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
 project_core | Core project-level information. | object | [See core  project_core](core.md#project-core) | Project core |  | 
 funders | Funding source(s) supporting the project. | array | [See module  funder](module.md#funder) | Funding source(s) |  | 
-data_access | Information about the data access type for the project. | object | [See module  data_access_ontology](module.md#data-access-ontology) | Data access |  | 
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -240,10 +239,6 @@ text | The name of a library amplification approach being used. | string |  | Li
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The primary role of the contributor in the project. | string |  | Contributor role |  | principal investigator; experimental scientist
-### Data access<a name='Data access'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-text | Type of data access permissions associated with the project. | string |  | Data access type |  | No restriction 
 ### Ethnicity ontology<a name='Ethnicity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -296,6 +291,10 @@ text | The name of an enrichment approach being used. | string |  | Enrichment |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  | Organ part |  | bone marrow; islet of Langerhans
+### Data use restriction<a name='Data use restriction'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | Type of data use restrictions associated with the project. | string |  | Data use restrictions |  | No restriction 
 ### Microscopy ontology<a name='Microscopy ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

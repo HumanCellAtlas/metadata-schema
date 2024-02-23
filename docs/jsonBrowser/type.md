@@ -326,7 +326,7 @@ insdc_study_accessions | An International Nucleotide Sequence Database Collabora
 biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md#funder) | Funding source(s) |  | 
 estimated_cell_count | An estimated number of cells in this project | integer | no |  | Estimated cell count |  | 10000; 2100000
-data_access | Information about the data access type for the project. | object | yes | [See module  data_access_ontology](module.md#data-access-ontology) | Data access |  | 
+data_use_restriction | Information about the data use restrictions for the project. | object | no | [See module  data_use_restriction_ontology](module.md#data-use-restriction-ontology) | Data access |  | 
 
 ## Specimen from organism
 _Information about the specimen that was collected from the donor organism._
