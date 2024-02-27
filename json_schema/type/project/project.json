@@ -7,7 +7,7 @@
         "schema_type",
         "project_core",
         "funders",
-        "data_access"
+        "data_use_restriction"
     ],
     "title": "Project",
     "name": "project",

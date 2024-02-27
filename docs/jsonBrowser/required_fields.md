@@ -147,6 +147,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
 project_core | Core project-level information. | object | [See core  project_core](core.md#project-core) | Project core |  | 
 funders | Funding source(s) supporting the project. | array | [See module  funder](module.md#funder) | Funding source(s) |  | 
+data_use_restriction | Information about the data use restrictions for the project. | object | [See module  data_use_restriction_ontology](module.md#data-use-restriction-ontology) | Data access |  | 
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
