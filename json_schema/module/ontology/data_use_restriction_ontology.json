@@ -3,7 +3,8 @@
     "description": "A term that may be associated with a data use restriction ontology term.",
     "additionalProperties": false,
     "required": [
-        "ontology"
+        "ontology",
+        "ontology_label"
     ],
     "title": "Data use restriction",
     "name": "data_use_restriction_ontology",

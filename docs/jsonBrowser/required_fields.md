@@ -295,6 +295,7 @@ text | The text for the term as the user provides it. | string |  | Organ part |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 ontology | An ontology term identifier in the form prefix:accession. | string |  | Data use conditions ontology ID | DUO:0000004, DUO:0000046, DUO:0000042 | DUO:0000004
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string |  | Data use conditions ontology label | no restriction, non-commercial use only, general research use | no restriction
 ### Microscopy ontology<a name='Microscopy ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

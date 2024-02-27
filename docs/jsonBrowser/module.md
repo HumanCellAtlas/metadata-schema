@@ -256,7 +256,7 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | Type of data use restrictions associated with the project. | string | no |  | Data use restrictions |  | No restriction 
 ontology | An ontology term identifier in the form prefix:accession. | string | yes |  | Data use conditions ontology ID | DUO:0000004, DUO:0000046, DUO:0000042 | DUO:0000004
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Data use conditions ontology label | no restriction, non-commercial use only, general research use | no restriction
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | yes |  | Data use conditions ontology label | no restriction, non-commercial use only, general research use | no restriction
 
 ## Microscopy ontology<a name='Microscopy ontology'></a>
 _A term that may be associated with a microscopy-related ontology term._
