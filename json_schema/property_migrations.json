@@ -6,7 +6,6 @@
             "effective_from": "18.0.0",
             "reason": "Data access is now recorded as a mandatory field",
             "type": "new required property"
-
         },
         {
             "source_schema": "cell_line",
