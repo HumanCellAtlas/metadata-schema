@@ -42,8 +42,53 @@
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
+            "enum": [
+                "no restriction",
+                "non-commercial use only",
+                "general research use"
+            ],
             "user_friendly": "Data use conditions ontology label",
             "example": "no restriction"
         }
-    }
+    },
+
+    "allOf": [
+        {
+            "if": {
+                "properties": {
+                    "ontology": { "const": "DUO:0000004" }
+                }
+            },
+            "then": {
+                "properties": {
+                    "ontology_label": { "const": "no restriction" }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "ontology": { "const": "DUO:0000046" }
+                }
+            },
+            "then": {
+                "properties": {
+                    "ontology_label": { "const": "non-commercial use only" }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "ontology": { "const": "DUO:0000042" }
+                }
+            },
+            "then": {
+                "properties": {
+                    "ontology_label": { "const": "general research use" }
+                }
+            }
+        }
+    ]
+
 }
