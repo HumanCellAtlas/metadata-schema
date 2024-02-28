@@ -1,3 +1,3 @@
 Schema,Change type,Change message,Version,Date
-type/project/project,major,"Added data_access field",,
-module/ontology/data_access_ontology,major,"Added data access type ontology module",,
+type/project/project,major,"Added data_use_restriction field",,
+module/project/data_use_restriction,major,"Added data restriction type as project module",,
