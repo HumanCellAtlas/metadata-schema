@@ -169,7 +169,7 @@
         "data_use_restriction": {
             "description": "Information about the data use restrictions for the project.",
             "type": "object",
-            "$ref": "module/ontology/data_use_restriction_ontology.json",
+            "$ref": "module/project/data_use_restriction.json",
             "user_friendly": "Data access"
         }
     }

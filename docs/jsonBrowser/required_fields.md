@@ -147,7 +147,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
 project_core | Core project-level information. | object | [See core  project_core](core.md#project-core) | Project core |  | 
 funders | Funding source(s) supporting the project. | array | [See module  funder](module.md#funder) | Funding source(s) |  | 
-data_use_restriction | Information about the data use restrictions for the project. | object | [See module  data_use_restriction_ontology](module.md#data-use-restriction-ontology) | Data access |  | 
+data_use_restriction | Information about the data use restrictions for the project. | object | [See module  data_use_restriction](module.md#data-use-restriction) | Data access |  | 
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -292,11 +292,6 @@ text | The name of an enrichment approach being used. | string |  | Enrichment |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  | Organ part |  | bone marrow; islet of Langerhans
-### Data use restriction<a name='Data use restriction'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-ontology | An ontology term identifier in the form prefix:accession. | string |  | Data use conditions ontology ID | DUO:0000004, DUO:0000046, DUO:0000042 | DUO:0000004
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string |  | Data use conditions ontology label | no restriction, non-commercial use only, general research use | no restriction
 ### Microscopy ontology<a name='Microscopy ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -333,6 +328,9 @@ text | The name of a cell type supplied by a user. | string |  | Cell type |  | 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  | Organ |  | heart; immune system
+### Data use restriction<a name='Data use restriction'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
 ### Funder<a name='Funder'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
