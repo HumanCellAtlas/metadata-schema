@@ -347,14 +347,14 @@ ontology | An ontology term identifier in the form prefix:accession. | string | 
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Organ ontology label |  | heart; immune system
 
 ## Data use restriction<a name='Data use restriction'></a>
-_A term that may be associated with a data use restriction ontology term._
+_Data use restriction for the project._
 
 Location: module/project/data_use_restriction.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-DUO_id | Type of data use restrictions associated with the project. | string | no |  | Data use conditions ontology ID | DUO:0000004, DUO:0000042, DUO:0000042;DUO:0000046 | DUO:0000004
-DUO_label | Label corresponding to the data use restrictions ID associated with the project | string | no |  | Data use conditions ontology label | no restriction, general research use, general research use;non-commercial use only | no restriction
+DUO_id | Type of data use restrictions associated with the project. | string | yes |  | Data use conditions ontology ID | DUO:0000004, DUO:0000042, DUO:0000042;DUO:0000046 | DUO:0000004
+DUO_label | Label corresponding to the data use restrictions ID associated with the project | string | yes |  | Data use conditions ontology label | no restriction, general research use, general research use;non-commercial use only | no restriction
 
 ## Funder<a name='Funder'></a>
 _Information about the project funding source._

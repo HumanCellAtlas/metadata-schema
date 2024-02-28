@@ -331,6 +331,8 @@ text | The text for the term as the user provides it. | string |  | Organ |  | h
 ### Data use restriction<a name='Data use restriction'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
+DUO_id | Type of data use restrictions associated with the project. | string |  | Data use conditions ontology ID | DUO:0000004, DUO:0000042, DUO:0000042;DUO:0000046 | DUO:0000004
+DUO_label | Label corresponding to the data use restrictions ID associated with the project | string |  | Data use conditions ontology label | no restriction, general research use, general research use;non-commercial use only | no restriction
 ### Funder<a name='Funder'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

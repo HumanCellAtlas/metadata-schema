@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A term that may be associated with a data use restriction ontology term.",
+    "description": "Data use restriction for the project.",
     "additionalProperties": false,
     "required": [
-        "ontology",
-        "ontology_label"
+        "DUO_id",
+        "DUO_label"
     ],
     "title": "Data use restriction",
     "name": "data_use_restriction",
@@ -51,36 +51,36 @@
         {
             "if": {
                 "properties": {
-                    "ontology": { "const": "DUO:0000004" }
+                    "DUO_id": { "const": "DUO:0000004" }
                 }
             },
             "then": {
                 "properties": {
-                    "ontology_label": { "const": "no restriction" }
+                    "DUO_label": { "const": "no restriction" }
                 }
             }
         },
         {
             "if": {
                 "properties": {
-                    "ontology": { "const": "DUO:0000042" }
+                    "DUO_id": { "const": "DUO:0000042" }
                 }
             },
             "then": {
                 "properties": {
-                    "ontology_label": { "const": "general research use" }
+                    "DUO_label": { "const": "general research use" }
                 }
             }
         },
         {
             "if": {
                 "properties": {
-                    "ontology": { "const": "DUO:0000042;DUO:0000046" }
+                    "DUO_id": { "const": "DUO:0000042;DUO:0000046" }
                 }
             },
             "then": {
                 "properties": {
-                    "ontology_label": { "const": "general research use;non-commercial use only" }
+                    "DUO_label": { "const": "general research use;non-commercial use only" }
                 }
             }
         }
