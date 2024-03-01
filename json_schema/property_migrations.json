@@ -2,7 +2,7 @@
     "migrations": [
         {
             "source_schema": "project",
-            "property": "data_access",
+            "property": "data_use_restriction",
             "effective_from": "18.0.0",
             "reason": "Data access is now recorded as a mandatory field",
             "type": "new required property"

@@ -147,7 +147,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
 project_core | Core project-level information. | object | [See core  project_core](core.md#project-core) | Project core |  | 
 funders | Funding source(s) supporting the project. | array | [See module  funder](module.md#funder) | Funding source(s) |  | 
-data_use_restriction | Information about the data use restrictions for the project. | object | [See module  data_use_restriction](module.md#data-use-restriction) | Data access |  | 
+data_use_restriction | Data use restrictions that apply to the project. | string |  | Data use restriction | NRES, GRU, GRU-NCU | GRU
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -328,11 +328,6 @@ text | The name of a cell type supplied by a user. | string |  | Cell type |  | 
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The text for the term as the user provides it. | string |  | Organ |  | heart; immune system
-### Data use restriction<a name='Data use restriction'></a>
-Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
---- | --- | --- | --- | --- | --- | --- 
-DUO_id | Type of data use restrictions associated with the project. | string |  | Data use conditions ontology ID | DUO:0000004, DUO:0000042, DUO:0000042;DUO:0000046 | DUO:0000004
-DUO_label | Label corresponding to the data use restrictions ID associated with the project | string |  | Data use conditions ontology label | no restriction, general research use, general research use;non-commercial use only | no restriction
 ### Funder<a name='Funder'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 

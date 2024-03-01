@@ -73,8 +73,7 @@
                 "contact": "9.0.0",
                 "funder": "2.0.0",
                 "hca_bionetwork": "1.0.1",
-                "publication": "7.0.0",
-                "data_use_restriction": "0.0.0"
+                "publication": "7.0.0"
             },
             "protocol": {
                 "channel": "2.0.4",

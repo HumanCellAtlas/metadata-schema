@@ -167,10 +167,16 @@
             "user_friendly": "Estimated cell count"
         },
         "data_use_restriction": {
-            "description": "Information about the data use restrictions for the project.",
-            "type": "object",
-            "$ref": "module/project/data_use_restriction.json",
-            "user_friendly": "Data access"
+            "description": "Data use restrictions that apply to the project.",
+            "type": "string",
+            "enum": [
+                "NRES",
+                "GRU",
+                "GRU-NCU"
+            ],
+            "user_friendly": "Data use restriction",
+            "guidelines": "Must be one of: NRES, GRU, GRU-NCU. The use restriction codes are based on the DUO ontology where NRES corresponds to DUO:0000004, GRU corresponds to DUO:0000042, GRU-NCU corresponds to DUO:0000042;DUO:0000046",
+            "example": "GRU"
         }
     }
 }
