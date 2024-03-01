@@ -180,7 +180,7 @@
             "user_friendly": "Weight unit"
         },
         "organ_donor": {
-            "description": "Whether organism has donated their organs.",
+            "description": "Whether biomaterial was collected after extraction for organ transplantation.",
             "type": "boolean",
             "user_friendly": "Organ donor",
             "guidelines": "Should be one of: yes, or no.",

@@ -435,7 +435,7 @@ height | Height of organism in Height unit. | string | no |  | Height |  | 160; 
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Height unit |  | 
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60; 40-60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md#mass-unit-ontology) | Weight unit |  | 
-organ_donor | Whether organism has donated their organs. | boolean | no |  | Organ donor |  | yes; no
+organ_donor | Whether biomaterial was collected after extraction for organ transplantation. | boolean | no |  | Organ donor |  | yes; no
 
 ## Organoid
 _Information about an organoid biomaterial._
