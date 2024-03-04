@@ -73,6 +73,13 @@
             "type": "string",
             "user_friendly": "Alignment software version",
             "example": "v2.0.1; 2.4.2a; v0.45.2"
+        },
+        "gene_annotation_version": {
+            "description": "The Ensembl release version accession number or NCBI RefSeq assembly version used for gene annotation.",
+            "type": "string",
+            "pattern": "^v\\d{2,}$|^GCF_\\d{9}\\.\\d+$",
+            "user_friendly": "Gene annotation version",
+            "example": "v110; GCF_000001405.40; GCF_000001635.27"
         }
     }
 }
