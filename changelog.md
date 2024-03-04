@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [type/project/project.json - v18.0.0] - 2024-03-04
+### Added
+Added data_use_restriction field
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/protocol/analysis/analysis_protocol.json - v10.2.0] - 2024-02-05
