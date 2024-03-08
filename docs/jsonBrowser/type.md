@@ -347,7 +347,7 @@ state_of_specimen | State of the specimen at the time of collection. | object | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased specimen |  | 
-organ_donor | Whether biomaterial was collected after extraction for organ transplantation. | boolean | no |  | Organ donor |  | yes; no
+organ_donor | Was the specimen collected after extraction for organ transplantation? | boolean | no |  | Organ donor |  | yes; no
 
 ## Cell suspension
 _Information about the suspension of cells or nuclei derived from the collected or cultured specimen._
