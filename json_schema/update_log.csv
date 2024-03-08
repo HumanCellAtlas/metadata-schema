@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,minor,Added organ_donor field in donor_organism Fixes#1547",,
+type/biomaterial/specimen_from_organism,minor,Added organ_donor field in specimen_from_organism Fixes#1547",,

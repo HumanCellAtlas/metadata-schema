@@ -115,6 +115,13 @@
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Purchased specimen"
+        },
+        "organ_donor": {
+            "description": "Whether biomaterial was collected after extraction for organ transplantation.",
+            "type": "boolean",
+            "user_friendly": "Organ donor",
+            "guidelines": "Should be one of: yes, or no.",
+            "example": "yes; no"
         }
     }
 }
