@@ -177,6 +177,30 @@
             "user_friendly": "Data use restriction",
             "guidelines": "Must be one of: NRES, GRU, GRU-NCU. The use restriction codes are based on the DUO ontology where NRES corresponds to DUO:0000004, GRU corresponds to DUO:0000042, GRU-NCU corresponds to a combination of DUO:0000042 and DUO:0000046",
             "example": "GRU"
+        },
+        "DUOS_id": {
+            "description": "A DUOS study accession.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^DUOS-\\d{1,6}$"
+            },
+            "example": "DUOS-000108; DUOS-000114",
+            "user_friendly": "DUOS id",
+            "guidelines": "Managed access projects are registered in DUOS to regulate access. If the project is managed access record the corresponding DUOS id here."
         }
+    },
+    "if" : {
+        "properties": {
+            "data_use_restriction": {
+                "enum": [
+                    "GRU",
+                    "GRU-NCU"
+                ]
+            }
+        }
+    },
+    "then" : {
+        "required": ["DUOS_id"]
     }
 }
