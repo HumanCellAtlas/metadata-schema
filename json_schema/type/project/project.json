@@ -180,11 +180,8 @@
         },
         "DUOS_id": {
             "description": "A DUOS study accession.",
-            "type": "array",
-            "items": {
-                "type": "string",
-                "pattern": "^DUOS-\\d{1,6}$"
-            },
+            "type": "string",
+            "pattern": "^DUOS-\\d{1,6}$",
             "example": "DUOS-000108; DUOS-000114",
             "user_friendly": "DUOS id",
             "guidelines": "Managed access projects are registered in DUOS to regulate access. If the project is managed access record the corresponding DUOS id here."
@@ -202,5 +199,15 @@
     },
     "then" : {
         "required": ["DUOS_id"]
+    },
+    "else" : {
+        "properties": {
+            "data_use_restriction" : {
+                "enum": ["NRES"]
+            },
+            "DUOS_id" : {
+                "maxLength": 0
+            }
+        }
     }
 }
