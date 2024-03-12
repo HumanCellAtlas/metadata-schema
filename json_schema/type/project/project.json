@@ -179,7 +179,7 @@
             "example": "GRU"
         },
         "DUOS_id": {
-            "description": "A DUOS study accession.",
+            "description": "A DUOS dataset id.",
             "type": "string",
             "pattern": "^DUOS-\\d{1,6}$",
             "example": "DUOS-000108; DUOS-000114",
