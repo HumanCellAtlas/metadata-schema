@@ -65,6 +65,13 @@
             "guidelines": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
+        "organ_donor": {
+            "description": "Was the specimen collected after extraction for organ transplantation?",
+            "type": "boolean",
+            "user_friendly": "Organ donor",
+            "guidelines": "Should be one of: yes, or no.",
+            "example": "yes; no"
+        },
         "diseases": {
             "description": "Short description of known disease(s) of the specimen.",
             "type": "array",
@@ -115,13 +122,6 @@
             "type": "object",
             "$ref": "module/process/purchased_reagents.json",
             "user_friendly": "Purchased specimen"
-        },
-        "organ_donor": {
-            "description": "Was the specimen collected after extraction for organ transplantation?",
-            "type": "boolean",
-            "user_friendly": "Organ donor",
-            "guidelines": "Should be one of: yes, or no.",
-            "example": "yes; no"
         }
     }
 }
