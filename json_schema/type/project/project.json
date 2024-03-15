@@ -181,10 +181,10 @@
         "duos_id": {
             "description": "A DUOS dataset id.",
             "type": "string",
-            "pattern": "^DUOS-\\d{1,6}$",
+            "pattern": "^DUOS-\\d{6}$",
             "example": "DUOS-000108; DUOS-000114",
-            "user_friendly": "DUOS id",
-            "guidelines": "Managed access projects are registered in DUOS to regulate access. If the project is managed access record the corresponding DUOS id here."
+            "user_friendly": "DUOS ID",
+            "guidelines": "Managed access projects are registered in DUOS to regulate access. If the project is managed access record the corresponding DUOS ID here."
         }
     },
     "if" : {
