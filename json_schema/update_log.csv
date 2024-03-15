@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/project/project.json,major,"Adds DUOS id field. Fixes #1550",,
+type/project/project.json,major,"Added DUOS id field. Fixes #1550",,
