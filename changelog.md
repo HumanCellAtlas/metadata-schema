@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [type/biomaterial/specimen_from_organism.json - v10.9.0] - 2024-03-22
+### Added
+Added transplant_organ field in specimen_from_organism Fixes#1547"
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/project/project.json - v19.0.0] - 2024-03-15

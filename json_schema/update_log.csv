@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/specimen_from_organism,minor,Added transplant_organ field in specimen_from_organism Fixes#1547",,
