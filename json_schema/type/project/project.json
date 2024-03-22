@@ -6,7 +6,8 @@
         "describedBy",
         "schema_type",
         "project_core",
-        "funders"
+        "funders",
+        "data_use_restriction"
     ],
     "title": "Project",
     "name": "project",
