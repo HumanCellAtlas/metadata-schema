@@ -327,6 +327,8 @@ insdc_study_accessions | An International Nucleotide Sequence Database Collabora
 biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md#funder) | Funding source(s) |  | 
 estimated_cell_count | An estimated number of cells in this project | integer | no |  | Estimated cell count |  | 10000; 2100000
+data_use_restriction | Data use restrictions that apply to the project. | string | no |  | Data use restriction | NRES, GRU, GRU-NCU | GRU
+duos_id | A DUOS dataset id. | string | no |  | DUOS ID |  | DUOS-000108; DUOS-000114
 
 ## Specimen from organism
 _Information about the specimen that was collected from the donor organism._
