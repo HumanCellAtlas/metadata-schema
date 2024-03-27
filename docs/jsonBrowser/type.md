@@ -148,6 +148,7 @@ matrix | Information related to protocols that output a matrix. | object | no | 
 alignment_software | Name of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
 alignment_software_version | Version of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software version |  | v2.0.1; 2.4.2a; v0.45.2
 gene_annotation_version | The Ensembl release version accession number or NCBI RefSeq assembly version used for gene annotation. | string | no |  | Gene annotation version |  | v110; GCF_000001405.40; GCF_000001635.27
+intron_inclusion | Whether introns were included in the alignment process during read counting. | boolean | no |  | Intron inclusion |  | Should be one of: yes, or no.
 
 ## Aggregate generation protocol
 _Information about how cultured cells are developed into cell aggregates._
