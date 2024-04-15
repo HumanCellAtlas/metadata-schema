@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/analysis/analysis_protocol,minor,"Added intron_inclusion field in analysis_protocol Fixes#1554",,
