@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/protocol/analysis/analysis_protocol.json - v10.3.0] - 2024-04-15
+### Added
+Added intron_inclusion field in analysis_protocol Fixes#1554
+
 ### [type/biomaterial/specimen_from_organism.json - v10.9.0] - 2024-03-22
 ### Added
 Added transplant_organ field in specimen_from_organism Fixes#1547"
