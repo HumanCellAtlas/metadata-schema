@@ -1,6 +1,40 @@
 {
     "migrations": [
         {
+            "source_schema": "project",
+            "property": "data_use_restriction",
+            "effective_from": "18.0.0",
+            "reason": "Data access is now recorded as a mandatory field",
+            "type": "new required property"
+        },
+        {
+            "source_schema": "cell_line",
+            "property": "timecourse",
+            "target_schema": "cell_line",
+            "replaced_by": "biomaterial_core.timecourse",
+            "effective_from": "16.0.0",
+            "reason": "Timecourse module has been moved to biomaterial core",
+            "type": "moved property"
+        },
+        {
+            "source_schema": "donor_organism",
+            "property": "timecourse",
+            "target_schema": "donor_organism",
+            "replaced_by": "biomaterial_core.timecourse",
+            "effective_from": "16.0.0",
+            "reason": "Timecourse module has been moved to biomaterial core",
+            "type": "moved property"
+        },
+        {
+            "source_schema": "cell_suspension",
+            "property": "timecourse",
+            "target_schema": "cell_suspension",
+            "replaced_by": "biomaterial_core.timecourse",
+            "effective_from": "14.0.0",
+            "reason": "Timecourse module has been moved to biomaterial core",
+            "type": "moved property"
+        },
+        {
             "source_schema": "analysis_file",
             "property": "genome_assembly_version",
             "effective_from": "7.0.0",

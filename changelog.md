@@ -9,6 +9,58 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/protocol/analysis/analysis_protocol.json - v10.3.0] - 2024-04-15
+### Added
+Added intron_inclusion field in analysis_protocol Fixes#1554
+
+### [type/biomaterial/specimen_from_organism.json - v10.9.0] - 2024-03-22
+### Added
+Added transplant_organ field in specimen_from_organism Fixes#1547"
+
+### [type/project/project.json - v19.0.0] - 2024-03-15
+### Added
+Added DUOS id field. Fixes #1550
+
+### [type/project/project.json - v18.0.0] - 2024-03-04
+### Added
+Added data_use_restriction field
+
+### [type/protocol/analysis/analysis_protocol.json - v10.2.0] - 2024-02-05
+### Added
+Added gene_annotation_version field in analysis_protocol Fixes#1543
+
+### [type/protocol/analysis/analysis_protocol.json - v10.1.0] - 2023-11-07
+### Added
+Added alignment_software & alignment_software_version field in analysis_protocol Fixes#1533
+
+### [core/biomaterial/biomaterial_core.json - v8.4.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/donor_organism.json - v16.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_suspension.json - v14.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_line.json - v16.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/imaged_specimen.json - v3.5.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/specimen_from_organism.json - v10.8.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/organoid.json - v11.5.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
 ### [module/project/hca_bionetwork.json - v1.0.1] - 2023-05-22
 ### Added
 Added new values to hca_atlas field

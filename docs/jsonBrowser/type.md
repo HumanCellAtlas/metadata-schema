@@ -145,6 +145,10 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Protocol type |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | no |  | Computational method |  | SmartSeq2SingleCell; 10x
 matrix | Information related to protocols that output a matrix. | object | no | [See module  matrix](module.md#matrix) | Matrix |  | 
+alignment_software | Name of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
+alignment_software_version | Version of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software version |  | v2.0.1; 2.4.2a; v0.45.2
+gene_annotation_version | The Ensembl release version accession number or NCBI RefSeq assembly version used for gene annotation. | string | no |  | Gene annotation version |  | v110; GCF_000001405.40; GCF_000001635.27
+intron_inclusion | Whether introns were included in the alignment process during read counting. | boolean | no |  | Intron inclusion |  | Should be one of: yes, or no.
 
 ## Aggregate generation protocol
 _Information about how cultured cells are developed into cell aggregates._
@@ -324,6 +328,8 @@ insdc_study_accessions | An International Nucleotide Sequence Database Collabora
 biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md#funder) | Funding source(s) |  | 
 estimated_cell_count | An estimated number of cells in this project | integer | no |  | Estimated cell count |  | 10000; 2100000
+data_use_restriction | Data use restrictions that apply to the project. | string | yes |  | Data use restriction | NRES, GRU, GRU-NCU | GRU
+duos_id | A DUOS dataset id. | string | no |  | DUOS ID |  | DUOS-000108; DUOS-000114
 
 ## Specimen from organism
 _Information about the specimen that was collected from the donor organism._
@@ -338,6 +344,7 @@ biomaterial_core | Core biomaterial-level information. | object | yes | [See cor
 genus_species | The scientific binomial name for the species of the specimen. | array | no | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md#organ-ontology) | Organ |  | 
 organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md#organ-part-ontology) | Organ part |  | 
+transplant_organ | Was the specimen collected after extraction for organ transplantation? | boolean | no |  | Transplant organ |  | yes; no
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
 adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md#state-of-specimen) | State of specimen |  | 
@@ -361,7 +368,6 @@ genus_species | The scientific binomial name for the species of the suspension. 
 selected_cell_types | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md#cell-type-ontology) | Selected cell type(s) |  | 
 estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md#plate-based-sequencing) | Plate-based sequencing |  | 
-timecourse | Information relating to a timecourse associated with this cell suspension. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Cell line
 _Information about the cell line or cell culture biomaterial._
@@ -390,7 +396,6 @@ date_established | Date when the cell line was established. | string | no |  | D
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md#disease-ontology) | Disease |  | 
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md#publication) | Publication |  | 
-timecourse | Information relating to a timecourse associated with this cell line. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Imaged specimen
 _Information about a tissue specimen after it has been sectioned and prepared for imaging._
@@ -434,7 +439,6 @@ height | Height of organism in Height unit. | string | no |  | Height |  | 160; 
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Height unit |  | 
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60; 40-60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md#mass-unit-ontology) | Weight unit |  | 
-timecourse | Information relating to a timecourse associated with this biomaterial. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Organoid
 _Information about an organoid biomaterial._
