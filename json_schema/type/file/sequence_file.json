@@ -80,15 +80,14 @@
             "example": "SRR0000000",
             "guidelines": "Enter accession if run has been archived. Accession can be from the DDBJ, NCBI, or EMBL-EBI and must start with DRR, SRR, or ERR, respectively."
         },
-        "sequencing_run_id": {
-            "description": "An identifier that indicates files that were sequenced in the same run.",
+        "sequencing_run_batch": {
+            "description": "An identifier that indicates which runs were sequenced in the same batch.",
             "type": "array",
             "items": {
                 "type": "string"
             },
-            "user_friendly": "Sequencing run ID",
-            "example": "run1; sequencing_run_37; NV0087",
-            "guidelines": "Please use the the separate field insdc_run_accession for INSDC run accession."
+            "user_friendly": "Sequencing run batch",
+            "example": "run1; sequencing_batch_37; NV0087"
         },
         "library_prep_id" : {
             "description": "A unique ID for the library preparation.",

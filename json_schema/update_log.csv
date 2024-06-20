@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-type/file/sequence_file,minor,"Added sequencing_run_ID field in the sequencing_file - Fixes#1557",,
+type/file/sequence_file,minor,"Added sequencing_run_batch field in the sequencing_file - Fixes#1557",,
