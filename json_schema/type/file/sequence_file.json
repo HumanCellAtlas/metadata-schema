@@ -82,10 +82,7 @@
         },
         "sequencing_run_batch": {
             "description": "An identifier that indicates which runs were sequenced in the same batch.",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
+            "type": "string",
             "user_friendly": "Sequencing run batch",
             "example": "run1; sequencing_batch_37; NV0087"
         },

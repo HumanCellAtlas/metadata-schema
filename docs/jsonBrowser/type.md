@@ -21,7 +21,7 @@ read_index | The sequencing read this file represents. | string | yes |  | Read 
 lane_index | The lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
 insdc_run_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) run accession. | array | no |  | INSDC run accession |  | SRR0000000
-sequencing_run_batch | An identifier that indicates which runs were sequenced in the same batch. | array | no |  | Sequencing run batch |  | run1; sequencing_batch_37; NV0087
+sequencing_run_batch | An identifier that indicates which runs were sequenced in the same batch. | string | no |  | Sequencing run batch |  | run1; sequencing_batch_37; NV0087
 library_prep_id | A unique ID for the library preparation. | string | no |  | Library preparation ID |  | tech_rep_group_001
 
 ## Image file
