@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+/type/biomaterial/donor_organism.json,Add medical_tests module in donor_organism. Fixes #1562,,
