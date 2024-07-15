@@ -29,7 +29,7 @@
             "$comments": "pulmonary_function_parameter; lung"
         },
         "PFT_age": {
-            "user_friendly": "Age at PFT",
+            "user_friendly": "Age at Pulmonary Function Test",
             "description": "Indicate the age of the subject at the time point of pulmonary function parameter assessment in years, if known.",
             "type": "string",
             "example": "10; 34; 68",
@@ -37,7 +37,7 @@
             "$comments": "pulmonary_function_parameter; lung"
         },
         "PFT_time_point": {
-            "user_friendly": "Date at PFT",
+            "user_friendly": "Date at Pulmonary Function Test",
             "description": "Indicate at which date the pulmonary function parameters were recorded as DD/MM/YYYY if available. If this information is not shareable, please indicate 'not_shareable'.",
             "type": "string",
             "example": "14/11/2024; 31/01/2019; not_shareable",
@@ -46,7 +46,7 @@
             "guidelines": "If this information is not shareable, please indicate \\'not_shareable\\'."
         },
         "PFT_relative_time_point": {
-            "user_friendly": "Days between collection and PFT",
+            "user_friendly": "Days between collection and Pulmonary Function Test",
             "description": "If timepoint of sample collection (sample_collection_time_point) and/or timepoint of PFT recording (PFT_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available.",
             "type": "string",
             "example": "-5; 2; 0",
