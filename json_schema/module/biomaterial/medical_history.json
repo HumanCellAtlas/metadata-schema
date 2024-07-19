@@ -50,7 +50,7 @@
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
         "test_results": {
-            "description": "Results from medical tests performed on the individual.",
+            "description": "Results from medical tests performed on the individual (free text).",
             "type": "string",
             "user_friendly": "Test results",
             "example": "lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative"
