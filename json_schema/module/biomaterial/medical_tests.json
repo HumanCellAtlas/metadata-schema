@@ -19,7 +19,7 @@
         },
         "PFT_method": {
             "user_friendly": "Pulmonary Function Testing method",
-            "description": "Indicate with which method, spirometry or plethysmography, the pulmonary function was accessed and whether DLCO/KCO testing was performed.",
+            "description": "Indicate which Pulmonary Function Testing (PFT) method was used, spirometry or plethysmography, and whether DLCO/KCO testing was performed.",
             "type": "array",
             "items": {
                 "type": "string",
@@ -30,7 +30,7 @@
         },
         "PFT_age": {
             "user_friendly": "Age at Pulmonary Function Test",
-            "description": "Indicate the age of the subject at the time point of pulmonary function parameter assessment in years, if known.",
+            "description": "Indicate the age of the subject at the time point of Pulmonary Function Testing (PFT) in years, if known.",
             "type": "number",
             "example": "10; 34; 68",
             "maximum": 150,
@@ -39,10 +39,10 @@
         },
         "PFT_time_point": {
             "user_friendly": "Date at Pulmonary Function Test",
-            "description": "Indicate at which date the pulmonary function parameters were recorded as DD/MM/YYYY if available. If this information is not shareable, please indicate 'not_shareable'.",
+            "description": "Indicate at which date the Pulmonary Function Testing (PFT) were recorded as YYYY-MM-DD if available. If this information is not shareable, please indicate 'not_shareable'.",
             "type": "string",
-            "example": "14/11/2024; 31/01/2019; not_shareable",
-            "pattern": "^((0[1-9]|[12][0-9]|3[01])[- \\.\\/](0[1-9]|1[0-2])[- \\.\\/](19|20)\\d\\d|not_applicable)$",
+            "example": "2024-11-14; 2019-01-31; not_shareable",
+            "pattern": "^((19|20)\\d\\d[- \\.\\/](0[1-9]|1[0-2])[- \\.\\/](0[1-9]|[12][0-9]|3[01])|not_shareable)$",
             "$comments": "pulmonary_function_parameter; lung",
             "guidelines": "If this information is not shareable, please indicate \\'not_shareable\\'."
         },
@@ -230,7 +230,7 @@
             "description": "Indicate the percentage of the predicted DLCO, based on patient demographics, if available.",
             "type": "number",
             "example": "88; 95; 82",
-            "maximum": 15000,
+            "maximum": 200,
             "minimum": 0,
             "$comments": "pulmonary_function_parameter; lung"
         },
