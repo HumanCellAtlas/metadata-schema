@@ -19,14 +19,15 @@
         },
         "PFT_method": {
             "user_friendly": "Pulmonary Function Testing method",
-            "description": "Indicate which Pulmonary Function Testing (PFT) method was used, spirometry or plethysmography, and whether DLCO/KCO testing was performed.",
+            "description": "Indicate which Pulmonary Function Testings (PFTs) methods were performed. Please indicate all tests performed.",
             "type": "array",
             "items": {
                 "type": "string",
                 "enum": ["spirometry", "plethysmography", "DLCO_KCO_test"]
             },
             "example": "spirometry; plethysmography; DLCO_KCO_test",
-            "$comments": "pulmonary_function_parameter; lung"
+            "$comments": "pulmonary_function_parameter; lung",
+            "guidelines": "Should be of spirometry, plethysmography and DLCO_KCO_test."
         },
         "PFT_age": {
             "user_friendly": "Age at Pulmonary Function Test",
@@ -42,7 +43,7 @@
             "description": "Indicate at which date the Pulmonary Function Testing (PFT) were recorded as YYYY-MM-DD if available. If this information is not shareable, please indicate 'not_shareable'.",
             "type": "string",
             "example": "2024-11-14; 2019-01-31; not_shareable",
-            "pattern": "^((19|20)\\d\\d[- \\.\\/](0[1-9]|1[0-2])[- \\.\\/](0[1-9]|[12][0-9]|3[01])|not_shareable)$",
+            "pattern": "^(((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}|not_shareable)$",
             "$comments": "pulmonary_function_parameter; lung",
             "guidelines": "If this information is not shareable, please indicate \\'not_shareable\\'."
         },

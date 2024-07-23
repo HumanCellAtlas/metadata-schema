@@ -433,7 +433,7 @@ Location: module/biomaterial/medical_tests.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-PFT_method | Indicate which Pulmonary Function Testing (PFT) method was used, spirometry or plethysmography, and whether DLCO/KCO testing was performed. | array | no |  | Pulmonary Function Testing method | spirometry, plethysmography, DLCO_KCO_test | spirometry; plethysmography; DLCO_KCO_test
+PFT_method | Indicate which Pulmonary Function Testings (PFTs) methods were performed. Please indicate all tests performed. | array | no |  | Pulmonary Function Testing method | spirometry, plethysmography, DLCO_KCO_test | spirometry; plethysmography; DLCO_KCO_test
 PFT_age | Indicate the age of the subject at the time point of Pulmonary Function Testing (PFT) in years, if known. | number | no |  | Age at Pulmonary Function Test |  | 10; 34; 68
 PFT_time_point | Indicate at which date the Pulmonary Function Testing (PFT) were recorded as YYYY-MM-DD if available. If this information is not shareable, please indicate 'not_shareable'. | string | no |  | Date at Pulmonary Function Test |  | 2024-11-14; 2019-01-31; not_shareable
 PFT_relative_time_point | If timepoint of sample collection (sample_collection_time_point) and/or timepoint of PFT recording (PFT_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available. | string | no |  | Days between collection and Pulmonary Function Test |  | -5; 2; 0
