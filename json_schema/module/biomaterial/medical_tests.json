@@ -53,7 +53,9 @@
             "type": "string",
             "example": "-5; 2; 0",
             "pattern": "^[\\+\\-]?[0-9]+$",
-            "$comments": "pulmonary_function_parameter; lung"
+            "$comments": "pulmonary_function_parameter; lung",
+            "guidelines": "If PFT recording was done before sample collection, then enter a negative day value. If PFT recording was done after sample collection, then enter a positive day value."
+
         },
         "FEV1_predicted": {
             "user_friendly": "FEV1 predicted",
