@@ -5,6 +5,7 @@
     "title": "Medical tests",
     "name": "medical_tests",
     "type": "object",
+    "minProperties": 1,
     "properties": {
         "describedBy":  {
             "description": "The URL reference to the schema.",
