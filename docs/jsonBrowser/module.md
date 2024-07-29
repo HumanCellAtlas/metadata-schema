@@ -433,32 +433,32 @@ Location: module/biomaterial/medical_tests.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-PFT_method | Indicate which Pulmonary Function Testings (PFTs) methods were performed. Please indicate all tests performed. | array | no |  | Pulmonary Function Testing method | spirometry, plethysmography, DLCO_KCO_test | spirometry; plethysmography; DLCO_KCO_test
-PFT_age | Indicate the age of the subject at the time point of Pulmonary Function Testing (PFT) in years, if known. | number | no |  | Age at Pulmonary Function Test |  | 10; 34; 68
-PFT_time_point | Indicate at which date the Pulmonary Function Testing (PFT) were recorded as YYYY-MM-DD if available. If this information is not shareable, please indicate 'not_shareable'. | string | no |  | Date at Pulmonary Function Test |  | 2024-11-14; 2019-01-31; not_shareable
-PFT_relative_time_point | If timepoint of sample collection (time of collection) and/or timepoint of PFT recording (PFT_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available. | string | no |  | Days between collection and Pulmonary Function Test |  | -5; 2; 0
-FEV1_predicted | Indicate the predicted Forced Expiratory Volume in 1 second (FEV1) in milliliters, based on patient age, sex, height, and ethnicity, if available. | number | no |  | FEV1 predicted |  | 3500; 4200; 2800
-FEV1_preBD | Indicate the measured FEV1 in milliliters before the administration of a bronchodilator if available. | number | no |  | FEV1 before bronchodilator |  | 3000; 3800; 2600
-FEV1_postBD | Indicate the measured FEV1 in milliliters after the administration of a bronchodilator if available. | number | no |  | FEV1 after bronchodilator |  | 3200; 4000; 2700
-FEV1_preBD_predicted_percent | Indicate the percentage of the predicted FEV1 achieved before bronchodilator administration if available. | number | no |  | FEV1 percent of preBD to predicted |  | 86; 90; 78
-FEV1_postBD_predicted_percent | Indicate the percentage of the predicted FEV1 achieved after bronchodilator administration if available. | number | no |  | FEV1 percent of postBD to predicted |  | 91; 95; 82
-FVC_predicted | Indicate the predicted Forced Vital Capacity (FVC) in milliliters, based on patient age, sex, height, and ethnicity, if available. | number | no |  | FVC predicted |  | 4500; 5000; 3800
-FVC_preBD | Indicate the measured FVC in milliliters before bronchodilator administration if available. | number | no |  | FVC before bronchodilator |  | 4000; 4800; 3600
-FVC_postBD | Indicate the measured FVC in milliliters after bronchodilator administration if available. | number | no |  | FVC after bronchodilator |  | 4200; 5000; 3700
-FVC_preBD_predicted_percent | Indicate the percentage of the predicted FVC achieved before bronchodilator administration if available. | number | no |  | FVC percent of preBD to predicted |  | 89; 96; 95
-FVC_postBD_predicted_percent | Indicate the percentage of the predicted FVC achieved after bronchodilator administration if available. | number | no |  | FVC percent of postBD to predicted |  | 93; 100; 97
-FEV1_FVC_ratio_preBD | Indicate the ratio of FEV1 to FVC before bronchodilator administration if available. | number | no |  | FEV1 to FVC ratio before bronchodilator |  | 0.75; 0.79; 0.72
-FEV1_FVC_ratio_postBD | Indicate the ratio of FEV1 to FVC after bronchodilator administration if available. | number | no |  | FEV1 to FVC ratio after bronchodilator |  | 0.76; 0.80; 0.73
-FRC_abs | Indicate the Functional Residual Capacity (FRC) in absolute milliliters if available. | number | no |  | FRC absolute |  | 3000; 3500; 2700
-FRC_predicted_percent | Indicate the percentage of the predicted FRC, based on patient demographics, if available. | number | no |  | FRC percent of predicted |  | 95; 88; 102
-RV | Indicate the Residual Volume (RV) in milliliters if available. | number | no |  | RV |  | 1500; 1800; 1400
-RV_predicted_percent | Indicate the percentage of the predicted RV, based on patient demographics, if available. | number | no |  | RV percent of predicted |  | 80; 90; 85
-IC | Indicate the Inspiratory Capacity (IC) in milliliters if available. | number | no |  | IC |  | 3500; 4000; 3200
-IC_predicted_percent | Indicate the percentage of the predicted IC, based on patient demographics, if available. | number | no |  | IC percent of predicted |  | 92; 85; 97
-DLCO | Indicate the Diffusing Capacity of the Lung for Carbon Monoxide (DLCO) in milliliters if available. | number | no |  | DLCO |  | 25; 30; 22
-DLCO_predicted_percent | Indicate the percentage of the predicted DLCO, based on patient demographics, if available. | number | no |  | DLCO percent of predicted |  | 88; 95; 82
-KCO | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
-KCO_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
+pft_method | Indicate which Pulmonary Function Testings (PFTs) methods were performed. Please indicate all tests performed. | array | no |  | Pulmonary Function Testing method | spirometry, plethysmography, DLCO_KCO_test | spirometry; plethysmography; DLCO_KCO_test
+pft_age | Indicate the age of the subject at the time point of Pulmonary Function Testing (PFT) in years, if known. | number | no |  | Age at Pulmonary Function Test |  | 10; 34; 68
+pft_time_point | Indicate at which date the Pulmonary Function Testing (PFT) were recorded as YYYY-MM-DD if available. If this information is not shareable, please indicate 'not_shareable'. | string | no |  | Date at Pulmonary Function Test |  | 2024-11-14; 2019-01-31; not_shareable
+pft_relative_time_point | If timepoint of sample collection (time of collection) and/or timepoint of PFT recording (PFT_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available. | string | no |  | Days between collection and Pulmonary Function Test |  | -5; 2; 0
+fev1_predicted | Indicate the predicted Forced Expiratory Volume in 1 second (FEV1) in milliliters, based on patient age, sex, height, and ethnicity, if available. | number | no |  | FEV1 predicted |  | 3500; 4200; 2800
+fev1_prebd | Indicate the measured FEV1 in milliliters before the administration of a bronchodilator if available. | number | no |  | FEV1 before bronchodilator |  | 3000; 3800; 2600
+fev1_postbd | Indicate the measured FEV1 in milliliters after the administration of a bronchodilator if available. | number | no |  | FEV1 after bronchodilator |  | 3200; 4000; 2700
+fev1_prebd_predicted_percent | Indicate the percentage of the predicted FEV1 achieved before bronchodilator administration if available. | number | no |  | FEV1 percent of preBD to predicted |  | 86; 90; 78
+fev1_postbd_predicted_percent | Indicate the percentage of the predicted FEV1 achieved after bronchodilator administration if available. | number | no |  | FEV1 percent of postBD to predicted |  | 91; 95; 82
+fvc_predicted | Indicate the predicted Forced Vital Capacity (FVC) in milliliters, based on patient age, sex, height, and ethnicity, if available. | number | no |  | FVC predicted |  | 4500; 5000; 3800
+fvc_prebd | Indicate the measured FVC in milliliters before bronchodilator administration if available. | number | no |  | FVC before bronchodilator |  | 4000; 4800; 3600
+fvc_postbd | Indicate the measured FVC in milliliters after bronchodilator administration if available. | number | no |  | FVC after bronchodilator |  | 4200; 5000; 3700
+fvc_prebd_predicted_percent | Indicate the percentage of the predicted FVC achieved before bronchodilator administration if available. | number | no |  | FVC percent of preBD to predicted |  | 89; 96; 95
+fvc_postbd_predicted_percent | Indicate the percentage of the predicted FVC achieved after bronchodilator administration if available. | number | no |  | FVC percent of postBD to predicted |  | 93; 100; 97
+fev1_fvc_ratio_prebd | Indicate the ratio of FEV1 to FVC before bronchodilator administration if available. | number | no |  | FEV1 to FVC ratio before bronchodilator |  | 0.75; 0.79; 0.72
+fev1_fvc_ratio_postbd | Indicate the ratio of FEV1 to FVC after bronchodilator administration if available. | number | no |  | FEV1 to FVC ratio after bronchodilator |  | 0.76; 0.80; 0.73
+frc_abs | Indicate the Functional Residual Capacity (FRC) in absolute milliliters if available. | number | no |  | FRC absolute |  | 3000; 3500; 2700
+frc_predicted_percent | Indicate the percentage of the predicted FRC, based on patient demographics, if available. | number | no |  | FRC percent of predicted |  | 95; 88; 102
+rv | Indicate the Residual Volume (RV) in milliliters if available. | number | no |  | RV |  | 1500; 1800; 1400
+rv_predicted_percent | Indicate the percentage of the predicted RV, based on patient demographics, if available. | number | no |  | RV percent of predicted |  | 80; 90; 85
+ic | Indicate the Inspiratory Capacity (IC) in milliliters if available. | number | no |  | IC |  | 3500; 4000; 3200
+ic_predicted_percent | Indicate the percentage of the predicted IC, based on patient demographics, if available. | number | no |  | IC percent of predicted |  | 92; 85; 97
+dlco | Indicate the Diffusing Capacity of the Lung for Carbon Monoxide (DLCO) in milliliters if available. | number | no |  | DLCO |  | 25; 30; 22
+dlco_predicted_percent | Indicate the percentage of the predicted DLCO, based on patient demographics, if available. | number | no |  | DLCO percent of predicted |  | 88; 95; 82
+kco | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
+kco_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
 
 ## Preservation and storage<a name='Preservation and storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
