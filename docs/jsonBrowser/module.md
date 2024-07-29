@@ -440,13 +440,13 @@ pft_relative_time_point | If timepoint of sample collection (time of collection)
 fev1_predicted | Indicate the predicted Forced Expiratory Volume in 1 second (FEV1) in milliliters, based on patient age, sex, height, and ethnicity, if available. | number | no |  | FEV1 predicted |  | 3500; 4200; 2800
 fev1_prebd | Indicate the measured FEV1 in milliliters before the administration of a bronchodilator if available. | number | no |  | FEV1 before bronchodilator |  | 3000; 3800; 2600
 fev1_postbd | Indicate the measured FEV1 in milliliters after the administration of a bronchodilator if available. | number | no |  | FEV1 after bronchodilator |  | 3200; 4000; 2700
-fev1_prebd_predicted_percent | Indicate the percentage of the predicted FEV1 achieved before bronchodilator administration if available. | number | no |  | FEV1 percent of preBD to predicted |  | 86; 90; 78
-fev1_postbd_predicted_percent | Indicate the percentage of the predicted FEV1 achieved after bronchodilator administration if available. | number | no |  | FEV1 percent of postBD to predicted |  | 91; 95; 82
+fev1_prebd_predicted_percent | Indicate the percentage of the predicted FEV1 achieved before bronchodilator administration if available. | number | no |  | FEV1 before bronchodilator percent of predicted |  | 86; 90; 78
+fev1_postbd_predicted_percent | Indicate the percentage of the predicted FEV1 achieved after bronchodilator administration if available. | number | no |  | FEV1 after bronchodilator percent of predicted |  | 91; 95; 82
 fvc_predicted | Indicate the predicted Forced Vital Capacity (FVC) in milliliters, based on patient age, sex, height, and ethnicity, if available. | number | no |  | FVC predicted |  | 4500; 5000; 3800
 fvc_prebd | Indicate the measured FVC in milliliters before bronchodilator administration if available. | number | no |  | FVC before bronchodilator |  | 4000; 4800; 3600
 fvc_postbd | Indicate the measured FVC in milliliters after bronchodilator administration if available. | number | no |  | FVC after bronchodilator |  | 4200; 5000; 3700
-fvc_prebd_predicted_percent | Indicate the percentage of the predicted FVC achieved before bronchodilator administration if available. | number | no |  | FVC percent of preBD to predicted |  | 89; 96; 95
-fvc_postbd_predicted_percent | Indicate the percentage of the predicted FVC achieved after bronchodilator administration if available. | number | no |  | FVC percent of postBD to predicted |  | 93; 100; 97
+fvc_prebd_predicted_percent | Indicate the percentage of the predicted FVC achieved before bronchodilator administration if available. | number | no |  | FVC before bronchodilator percent of predicted |  | 89; 96; 95
+fvc_postbd_predicted_percent | Indicate the percentage of the predicted FVC achieved after bronchodilator administration if available. | number | no |  | FVC after bronchodilator percent of predicted |  | 93; 100; 97
 fev1_fvc_ratio_prebd | Indicate the ratio of FEV1 to FVC before bronchodilator administration if available. | number | no |  | FEV1 to FVC ratio before bronchodilator |  | 0.75; 0.79; 0.72
 fev1_fvc_ratio_postbd | Indicate the ratio of FEV1 to FVC after bronchodilator administration if available. | number | no |  | FEV1 to FVC ratio after bronchodilator |  | 0.76; 0.80; 0.73
 frc_abs | Indicate the Functional Residual Capacity (FRC) in absolute milliliters if available. | number | no |  | FRC absolute |  | 3000; 3500; 2700

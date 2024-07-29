@@ -85,7 +85,7 @@
             "$comment": "pulmonary_function_parameter; lung"
         },
         "fev1_prebd_predicted_percent": {
-            "user_friendly": "FEV1 percent of preBD to predicted",
+            "user_friendly": "FEV1 before bronchodilator percent of predicted",
             "description": "Indicate the percentage of the predicted FEV1 achieved before bronchodilator administration if available.",
             "type": "number",
             "example": "86; 90; 78",
@@ -94,7 +94,7 @@
             "$comment": "pulmonary_function_parameter; lung"
         },
         "fev1_postbd_predicted_percent": {
-            "user_friendly": "FEV1 percent of postBD to predicted",
+            "user_friendly": "FEV1 after bronchodilator percent of predicted",
             "description": "Indicate the percentage of the predicted FEV1 achieved after bronchodilator administration if available.",
             "type": "number",
             "example": "91; 95; 82",
@@ -130,7 +130,7 @@
             "$comment": "pulmonary_function_parameter; lung"
         },
         "fvc_prebd_predicted_percent": {
-            "user_friendly": "FVC percent of preBD to predicted",
+            "user_friendly": "FVC before bronchodilator percent of predicted",
             "description": "Indicate the percentage of the predicted FVC achieved before bronchodilator administration if available.",
             "type": "number",
             "example": "89; 96; 95",
@@ -139,7 +139,7 @@
             "$comment": "pulmonary_function_parameter; lung"
         },
         "fvc_postbd_predicted_percent": {
-            "user_friendly": "FVC percent of postBD to predicted",
+            "user_friendly": "FVC after bronchodilator percent of predicted",
             "description": "Indicate the percentage of the predicted FVC achieved after bronchodilator administration if available.",
             "type": "number",
             "example": "93; 100; 97",
