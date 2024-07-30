@@ -50,12 +50,11 @@
         },
         "pft_relative_time_point": {
             "user_friendly": "Days between collection and Pulmonary Function Test",
-            "description": "If timepoint of sample collection (time of collection) and/or timepoint of PFT recording (PFT_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available.",
-            "type": "string",
+            "description": "If timepoint of sample collection (time of collection) and/or timepoint of PFT recording (pft_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available.",
+            "type": "integer",
             "example": "-5; 2; 0",
-            "pattern": "^[\\+\\-]?[0-9]+$",
             "$comment": "pulmonary_function_parameter; lung",
-            "guidelines": "If PFT recording was done before sample collection, then enter a negative day value. If PFT recording was done after sample collection, then enter a positive day value."
+            "guidelines": "If PFT recording was done before sample collection, then enter a negative day value. If PFT recording was done after sample collection, then enter an unsigned positive day value."
 
         },
         "fev1_predicted": {
