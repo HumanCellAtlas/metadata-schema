@@ -27,7 +27,7 @@
                 "enum": ["spirometry", "plethysmography", "DLCO_KCO_test"]
             },
             "example": "spirometry; plethysmography; DLCO_KCO_test",
-            "bionetwork": "lung",
+            "bionetwork": ["lung"],
             "guidelines": "Should be of spirometry, plethysmography and DLCO_KCO_test."
         },
         "pft_age": {
@@ -37,7 +37,7 @@
             "example": "10; 34; 68",
             "maximum": 150,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "pft_time_point": {
             "user_friendly": "Date at Pulmonary Function Test",
@@ -45,7 +45,7 @@
             "type": "string",
             "example": "2024-11-14; 2019-01-31; not_shareable",
             "pattern": "^(((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}|not_shareable)$",
-            "bionetwork": "lung",
+            "bionetwork": ["lung"],
             "guidelines": "If this information is not shareable, please indicate \\'not_shareable\\'."
         },
         "pft_relative_time_point": {
@@ -53,7 +53,7 @@
             "description": "If timepoint of sample collection (time of collection) and/or timepoint of PFT recording (pft_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available.",
             "type": "integer",
             "example": "-5; 2; 0",
-            "bionetwork": "lung",
+            "bionetwork": ["lung"],
             "guidelines": "If PFT recording was done before sample collection, then enter a negative day value. If PFT recording was done after sample collection, then enter an unsigned positive day value."
 
         },
@@ -64,7 +64,7 @@
             "example": "3500; 4200; 2800",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fev1_prebd": {
             "user_friendly": "FEV1 before bronchodilator",
@@ -73,7 +73,7 @@
             "example": "3000; 3800; 2600",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fev1_postbd": {
             "user_friendly": "FEV1 after bronchodilator",
@@ -82,7 +82,7 @@
             "example": "3200; 4000; 2700",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fev1_prebd_predicted_percent": {
             "user_friendly": "FEV1 before bronchodilator percent of predicted",
@@ -91,7 +91,7 @@
             "example": "86; 90; 78",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fev1_postbd_predicted_percent": {
             "user_friendly": "FEV1 after bronchodilator percent of predicted",
@@ -100,7 +100,7 @@
             "example": "91; 95; 82",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fvc_predicted": {
             "user_friendly": "FVC predicted",
@@ -109,7 +109,7 @@
             "example": "4500; 5000; 3800",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fvc_prebd": {
             "user_friendly": "FVC before bronchodilator",
@@ -118,7 +118,7 @@
             "example": "4000; 4800; 3600",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fvc_postbd": {
             "user_friendly": "FVC after bronchodilator",
@@ -127,7 +127,7 @@
             "example": "4200; 5000; 3700",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fvc_prebd_predicted_percent": {
             "user_friendly": "FVC before bronchodilator percent of predicted",
@@ -136,7 +136,7 @@
             "example": "89; 96; 95",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fvc_postbd_predicted_percent": {
             "user_friendly": "FVC after bronchodilator percent of predicted",
@@ -145,7 +145,7 @@
             "example": "93; 100; 97",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fev1_fvc_ratio_prebd": {
             "user_friendly": "FEV1 to FVC ratio before bronchodilator",
@@ -154,7 +154,7 @@
             "example": "0.75; 0.79; 0.72",
             "maximum": 1,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "fev1_fvc_ratio_postbd": {
             "user_friendly": "FEV1 to FVC ratio after bronchodilator",
@@ -163,7 +163,7 @@
             "example": "0.76; 0.80; 0.73",
             "maximum": 1,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "frc_abs": {
             "user_friendly": "FRC absolute",
@@ -172,7 +172,7 @@
             "example": "3000; 3500; 2700",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "frc_predicted_percent": {
             "user_friendly": "FRC percent of predicted",
@@ -181,7 +181,7 @@
             "example": "95; 88; 102",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "rv": {
             "user_friendly": "RV",
@@ -190,7 +190,7 @@
             "example": "1500; 1800; 1400",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "rv_predicted_percent": {
             "user_friendly": "RV percent of predicted",
@@ -199,7 +199,7 @@
             "example": "80; 90; 85",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "ic": {
             "user_friendly": "IC",
@@ -208,7 +208,7 @@
             "example": "3500; 4000; 3200",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "ic_predicted_percent": {
             "user_friendly": "IC percent of predicted",
@@ -217,7 +217,7 @@
             "example": "92; 85; 97",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "dlco": {
             "user_friendly": "DLCO",
@@ -226,7 +226,7 @@
             "example": "25; 30; 22",
             "maximum": 100,
             "minimum": 5,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "dlco_predicted_percent": {
             "user_friendly": "DLCO percent of predicted",
@@ -235,7 +235,7 @@
             "example": "88; 95; 82",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "kco": {
             "user_friendly": "KCO",
@@ -244,7 +244,7 @@
             "example": "5; 6; 4.5",
             "maximum": 15000,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         },
         "kco_predicted_percent": {
             "user_friendly": "KCO percent of predicted",
@@ -253,7 +253,7 @@
             "example": "90; 98; 85",
             "maximum": 200,
             "minimum": 0,
-            "bionetwork": "lung"
+            "bionetwork": ["lung"]
         }
     }
 }
