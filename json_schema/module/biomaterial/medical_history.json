@@ -31,12 +31,30 @@
             "example": "Naproxen 500mg/day; Citalopram 20mg/day",
             "guidelines": "Enter the medication and dosage. Separate multiple medications with commas."
         },
-        "smoking_history": {
-            "description": "Estimated number of cigarettes smoked per day.",
+        "smoking_status": {
+            "description": "Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe, betel nut chewing etc.",
             "type": "string",
-            "user_friendly": "Smoking history",
-            "example": "20 cigarettes/day for 25 years, stopped 2000",
-            "guidelines": "Enter an estimated number of cigarettes smoked per day and for how many years."
+            "enum": [
+                "active",
+                "former",
+                "never"
+            ],
+            "user_friendly": "Smoking status",
+            "example": "Should be one of: active, former, never."
+        },
+        "smoking_pack_years": {
+            "description": "Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking.",
+            "type": "number",
+            "user_friendly": "Smoking pack years",
+            "minimum": 0,
+            "example": 4.55
+        },
+        "years_since_smoking_cessation": {
+            "description": "If smoking status is 'former', specify the number of years since smoking cessation.",
+            "type": "integer",
+            "user_friendly": "Years since smoking cessation",
+            "minimum": 0,
+            "example": 12
         },
         "nutritional_state": {
             "description": "Nutritional state of individual at time of biomaterial collection.",
