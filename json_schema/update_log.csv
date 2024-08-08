@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/medical_history,minor,"Added smoking related fields in medical_history module. Fix #1565",,
+module/biomaterial/medical_history,major,"Changed smoking_history name in medical_history module. Fix #1565",,
