@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-/type/biomaterial/donor_organism.json,minor,Added optional medical_tests module in donor_organism. Fixes #1562,,
-/type/module/biomaterial/medical_tests.json,major,Added medical_tests module,,
