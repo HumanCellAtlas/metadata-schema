@@ -9,6 +9,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/biomaterial/medical_tests.json - v1.0.0] - 2024-08-13
+### Added
+Added medical_tests module
+
+### [type/biomaterial/donor_organism.json - v16.1.0] - 2024-08-13
+### Added
+Added optional medical_tests module in donor_organism. Fixes #1562
+
 ### [type/file/sequence_file.json - v9.6.0] - 2024-07-15
 ### Added
 Added sequencing_run_batch field in the sequencing_file - Fixes#1557
