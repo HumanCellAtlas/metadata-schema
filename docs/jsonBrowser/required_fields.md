@@ -350,6 +350,8 @@ official_hca_publication | Has the publication been accepted as an official HCA 
 _There are no required properties in schema Human-specific_
 ### Growth conditions<a name='Growth conditions'></a>
 _There are no required properties in schema Growth conditions_
+### Medical tests<a name='Medical tests'></a>
+_There are no required properties in schema Medical tests_
 ### Preservation and storage<a name='Preservation and storage'></a>
 _There are no required properties in schema Preservation and storage_
 ### Death<a name='Death'></a>

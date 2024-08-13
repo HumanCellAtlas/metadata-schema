@@ -131,6 +131,12 @@
                 },
             "user_friendly": "Familial relationship"
         },
+        "medical_tests": {
+            "description": "Information about the medical tests of the organism.",
+            "type": "object",
+            "$ref": "module/biomaterial/medical_tests.json",
+            "user_friendly": "Medical tests"
+        },
         "medical_history": {
             "description": "Information about the medical history of the organism.",
             "type": "object",
