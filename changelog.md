@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/file/sequence_file.json - v9.6.0] - 2024-07-15
+### Added
+Added sequencing_run_batch field in the sequencing_file - Fixes#1557
+
 ### [type/protocol/analysis/analysis_protocol.json - v10.3.0] - 2024-04-15
 ### Added
 Added intron_inclusion field in analysis_protocol Fixes#1554
