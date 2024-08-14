@@ -5,7 +5,7 @@
             "property": "smoking_history",
             "effective_from" : "6.0.0",
             "reason": "Field standardization",
-            "type": "renamed property"
+            "type": "deprecated property"
         },      
         {
             "source_schema": "project",
