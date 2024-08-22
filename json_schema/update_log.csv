@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/ontology/file_content_ontology,major,"Fixed class from data:0006 to EDAM:0006. Fixes #1757",,
+module/ontology/file_content_ontology,major,"Fixed class from data:0006 to EDAM:0006. Fixes #1571",,
