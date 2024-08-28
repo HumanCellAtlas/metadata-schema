@@ -36,13 +36,13 @@
                 "direct": false,
                 "include_self": false
             },
-            "example": "data:3497; data:0863",
+            "example": "EDAM:3494; EDAM:0863",
             "user_friendly": "Content description ontology ID"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
-            "example": "DNA sequence (raw); Sequence alignment",
+            "example": "DNA sequence; Sequence alignment",
             "user_friendly": "Content description ontology label"
         }
     }
