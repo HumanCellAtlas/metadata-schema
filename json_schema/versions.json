@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2024-08-13T12:07:03Z",
+    "last_update_date": "2024-08-28T14:24:32Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
                 "biomaterial_core": "8.4.0"
             },
             "file": {
-                "file_core": "6.4.0"
+                "file_core": "7.0.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -42,7 +42,7 @@
                 "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
                 "ethnicity_ontology": "5.3.9",
-                "file_content_ontology": "1.1.0",
+                "file_content_ontology": "2.0.0",
                 "file_format_ontology": "1.0.0",
                 "instrument_ontology": "5.3.6",
                 "length_unit_ontology": "5.3.5",
@@ -98,11 +98,11 @@
                 "specimen_from_organism": "10.9.0"
             },
             "file": {
-                "analysis_file": "7.0.0",
-                "image_file": "2.5.0",
-                "reference_file": "3.5.0",
-                "sequence_file": "9.6.0",
-                "supplementary_file": "2.5.0"
+                "analysis_file": "8.0.0",
+                "image_file": "3.0.0",
+                "reference_file": "4.0.0",
+                "sequence_file": "10.0.0",
+                "supplementary_file": "3.0.0"
             },
             "process": {
                 "analysis": {
