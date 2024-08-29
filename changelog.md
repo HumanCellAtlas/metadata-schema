@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/ontology/file_content_ontology.json - v2.0.0] - 2024-08-28
 ### Fixed
 Fixed class from data:0006 to EDAM:0006. Fixes #1571
@@ -34,8 +36,6 @@ Fixed class from data:0006 to EDAM:0006. Fixes #1571
 ### [type/file/sequence_file.json - v10.0.0] - 2024-08-28
 ### Fixed
 Fixed class from data:0006 to EDAM:0006. Fixes #1571
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/medical_tests.json - v1.0.0] - 2024-08-13
 ### Added
