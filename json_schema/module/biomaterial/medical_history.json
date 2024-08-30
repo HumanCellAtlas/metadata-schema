@@ -32,7 +32,7 @@
             "guidelines": "Enter the medication and dosage. Separate multiple medications with commas."
         },
         "smoking_status": {
-            "description": "Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe, betel nut chewing etc.",
+            "description": "Whether the individual is actively consuming, was formerly consuming, or never consumed smoking tobacco products like cigarettes, cigars, pipe, betel nut chewing etc.",
             "type": "string",
             "enum": [
                 "active",
