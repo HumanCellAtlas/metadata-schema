@@ -80,37 +80,42 @@
             "example": "Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer"
         }
     },
-    "if": {
-        "properties": { 
-            "smoking_status": {
-                 "const": "active" 
-            } 
-        }
-    },
-    "then": {
-        "properties": {
-            "years_since_smoking_cessation": { 
-                "maximum": 0 
-            }
-        }
-    },
-    "else": {
-        "if": {
-            "properties": { 
-                "smoking_status": { 
-                    "const": "never" 
-                } 
-            }
-        },
-        "then": {
-            "properties": {
-                "years_since_smoking_cessation": { 
-                    "type": "null" 
+    "allOf": 
+        [
+            {
+                "if": {
+                    "properties": { 
+                        "smoking_status": {
+                            "const": "active" 
+                        } 
+                    }
                 },
-                "smoking_pack_years": { 
-                    "maximum": 0 
+                "then": {
+                    "properties": {
+                        "years_since_smoking_cessation": { 
+                            "maximum": 0 
+                        }
+                    }
+                }
+            },
+            {
+                "if": {
+                    "properties": { 
+                        "smoking_status": { 
+                            "const": "never" 
+                        } 
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "years_since_smoking_cessation": { 
+                            "type": "null" 
+                        },
+                        "smoking_pack_years": { 
+                            "maximum": 0 
+                        }
+                    }
                 }
             }
-        }
-    }
+        ]
 }
