@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about specific diseases profile of the individual.",
+    "additionalProperties": false,
+    "title": "Disease profile",
+    "name": "disease_profile",
+    "type": "object",
+    "minProperties": 1,
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/medical_tests"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "0.0.1"
+        },
+        "copd_gold_stage": {
+            "user_friendly": "GOLD stage",
+            "description": "Indicating current GOLD stage (Global Initiative for Chronic Obstructive Lung Disease).",
+            "type": "integer",
+            "enum": [1, 2, 3, 4],
+            "example": "1; 2; 3; 4",
+            "bionetworks": ["lung"],
+            "guidelines": "Should be one of 1, 2, 3, 4"
+        },
+        "copd_mmrc_grade": {
+            "user_friendly": "mMRC grade",
+            "description": "Indicate the Modified British Medical Research Council (mMRC) dyspnea scale grade.",
+            "type": "integer",
+            "enum": [0, 1, 2, 3, 4],
+            "example": "0, 1; 2; 3; 4",
+            "bionetworks": ["lung"],
+            "guidelines": "Should be one of 0, 1, 2, 3, 4"
+        },
+        "copd_cat_score": {
+            "user_friendly": "CAT score",
+            "description": "Indicate the COPD Assessment Test (CAT) score.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 40,
+            "example": "2; 5; 37",
+            "bionetworks": ["lung"],
+            "guidelines": "Should be between 0 and 40."
+        },
+        "copd_gold_abe_assessment": {
+            "user_friendly": "GOLD ABE assessment",
+            "description": "Indicate the Global Initiative for Chronic Obstructive Lung Disease (GOLD) A, B, C, D assessment group if available.",
+            "type": "string",
+            "enum": ["A", "B", "E"],
+            "example": "A; B; E",
+            "bionetworks": ["lung"],
+            "guidelines": "Should be one of A, B, E"
+
+        },
+        "copd_phenotype": {
+            "user_friendly": "COPD phenotype",
+            "description": "Indicate the COPD disease phenotype(s) of donor. Please indicate all applicable phenotypes of donor.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["COPD not otherwise specified", "COPD with emphysema", "COPD with bronchitis", 
+                         "COPD with history of asthma", "COPD with >300 eos in blood", "COPD with allergy", 
+                         "COPD with Chronic Mucus Hypersecretion", "COPD with frequent exacerbations"]
+            },
+            "example": "COPD with bronchitis; COPD with history of asthma; COPD with emphysema",
+            "bionetworks": ["lung"],
+            "guidelines": "Should be of: COPD not otherwise specified, COPD with emphysema, COPD with bronchitis, COPD with history of asthma, COPD with >300 eos in blood, COPD with allergy, COPD with Chronic Mucus Hypersecretion, COPD with frequent exacerbations"
+        },
+        "copd_emphysema_percentage": {
+            "user_friendly": "Percentage of emphysema",
+            "description": "Indicate the percentage of the lung that is affected by emphysema as judged based on non-invasive imaging, such as from a CT scan.",
+            "type": "number",
+            "maximum": 150,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        }
+    }
+}

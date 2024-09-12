@@ -434,6 +434,7 @@ diseases | Short description of known disease(s) of the organism. | array | no |
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md#death) | Death conditions |  | 
 familial_relationships | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md#familial-relationship) | Familial relationship |  | 
 medical_tests | Information about the medical tests of the organism. | object | no | [See module  medical_tests](module.md#medical-tests) | Medical tests |  | 
+disease_profile | Information about specific diseases profile of the individual. | object | no | [See module  disease_profile](module.md#disease-profile) | Disease profile |  | 
 medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md#medical-history) | Medical history |  | 
 gestational_age | Gestational age of pregnancy in Gestational age units measured from the last menstrual period. | string | no |  | Gestational age |  | 22; 8-9
 gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Gestational age unit |  | 
