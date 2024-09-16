@@ -9,6 +9,7 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+
 ### [module/biomaterial/medical_history.json - v5.3.0] - 2024-09-16
 ### Added
 Added optional smoking related fields in medical_history module. Fix #1565
