@@ -3,10 +3,10 @@
         {
             "source_schema": "medical_history",
             "property": "smoking_history",
-            "effective_from" : "6.0.0",
+            "effective_from": "6.0.0",
             "reason": "Field standardization",
             "type": "deprecated property"
-        },      
+        },
         {
             "source_schema": "project",
             "property": "data_use_restriction",
