@@ -124,7 +124,7 @@
                 "$ref": "module/ontology/disease_ontology.json"
 	        },
             "user_friendly": "Comorbidities",
-            "guidelines": "Primary disease should be described in Known diseases field. Leave empty if no known comorbidities."
+            "guidelines": "Primary disease should be described in Known diseases field. Leave empty if no comorbidities are known."
         },
         "death": {
             "description": "Information about conditions of death of the organism.",
