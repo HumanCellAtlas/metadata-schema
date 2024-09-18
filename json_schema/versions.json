@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2024-08-13T12:07:03Z",
+    "last_update_date": "2024-09-16T14:52:03Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
                 "biomaterial_core": "8.4.0"
             },
             "file": {
-                "file_core": "6.4.0"
+                "file_core": "7.0.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -25,7 +25,7 @@
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
                 "human_specific": "1.0.11",
-                "medical_history": "5.2.8",
+                "medical_history": "6.0.0",
                 "medical_tests": "1.0.0",
                 "mouse_specific": "1.0.8",
                 "preservation_storage": "6.1.1",
@@ -42,7 +42,7 @@
                 "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
                 "ethnicity_ontology": "5.3.9",
-                "file_content_ontology": "1.1.0",
+                "file_content_ontology": "2.0.0",
                 "file_format_ontology": "1.0.0",
                 "instrument_ontology": "5.3.6",
                 "length_unit_ontology": "5.3.5",
@@ -92,17 +92,17 @@
             "biomaterial": {
                 "cell_line": "16.0.0",
                 "cell_suspension": "14.0.0",
-                "donor_organism": "16.1.0",
+                "donor_organism": "16.2.0",
                 "imaged_specimen": "3.5.0",
                 "organoid": "11.5.0",
                 "specimen_from_organism": "10.9.0"
             },
             "file": {
-                "analysis_file": "7.0.0",
-                "image_file": "2.5.0",
-                "reference_file": "3.5.0",
-                "sequence_file": "9.6.0",
-                "supplementary_file": "2.5.0"
+                "analysis_file": "8.0.0",
+                "image_file": "3.0.0",
+                "reference_file": "4.0.0",
+                "sequence_file": "10.0.0",
+                "supplementary_file": "3.0.0"
             },
             "process": {
                 "analysis": {
