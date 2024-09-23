@@ -20,7 +20,7 @@
         },
         "copd_gold_stage": {
             "user_friendly": "GOLD stage",
-            "description": "Indicating current GOLD stage (Global Initiative for Chronic Obstructive Lung Disease).",
+            "description": "Indicate the current GOLD stage (Global Initiative for Chronic Obstructive Lung Disease).",
             "type": "integer",
             "enum": [1, 2, 3, 4],
             "example": "1; 2; 3; 4",
