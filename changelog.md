@@ -7,6 +7,24 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [system/file_descriptor.json - v2.1.0] - 2024-09-24
+### Added
+Added 'drs_uri' property to file_descriptor
+
+### [module/biomaterial/medical_history.json - v5.3.0] - 2024-09-16
+### Added
+Added optional smoking related fields in medical_history module. Fix #1565
+
+### [module/biomaterial/medical_history.json - v6.0.0] - 2024-09-16
+### Removed
+Removed smoking_history in medical_history module. Fix #1565
+
+### [type/biomaterial/donor_organism.json - v16.2.0] - 2024-09-16
+### Added
+Added optional smoking related fields in medical_history module. Fix #1565
+
 ### [module/ontology/file_content_ontology.json - v2.0.0] - 2024-08-28
 ### Fixed
 Fixed class from data:0006 to EDAM:0006. Fixes #1571
@@ -34,8 +52,6 @@ Fixed class from data:0006 to EDAM:0006. Fixes #1571
 ### [type/file/sequence_file.json - v10.0.0] - 2024-08-28
 ### Fixed
 Fixed class from data:0006 to EDAM:0006. Fixes #1571
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/medical_tests.json - v1.0.0] - 2024-08-13
 ### Added
