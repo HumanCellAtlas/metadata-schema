@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [system/file_descriptor.json - v2.1.0] - 2024-09-24
+### Added
+Added 'drs_uri' property to file_descriptor
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 
