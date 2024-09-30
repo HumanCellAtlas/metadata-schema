@@ -353,7 +353,7 @@ _There are no required properties in schema Growth conditions_
 ### Medical tests<a name='Medical tests'></a>
 _There are no required properties in schema Medical tests_
 ### Disease profile<a name='Disease profile'></a>
-_There are no required properties in schema Disease profile_
+_There are no required properties in schema disease profile_
 ### Preservation and storage<a name='Preservation and storage'></a>
 _There are no required properties in schema Preservation and storage_
 ### Death<a name='Death'></a>
