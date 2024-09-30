@@ -7,6 +7,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [module/biomaterial/disease_profile.json - v1.0.0] - 2024-09-30
+### Added
+Added new disease profile module with COPD fields. Fixes#1572
+
+### [type/biomaterial/donor_organism.json - v16.3.0] - 2024-09-30
+### Added
+Added an optional disease profile field in the donor_organism. Fixes#1572
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [system/file_descriptor.json - v2.1.0] - 2024-09-24
