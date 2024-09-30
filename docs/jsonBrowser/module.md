@@ -460,6 +460,20 @@ dlco_predicted_percent | Indicate the percentage of the predicted DLCO, based on
 kco | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
 kco_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
 
+## Disease profile<a name='Disease profile'></a>
+_Information about specific diseases profile of the individual._
+
+Location: module/biomaterial/disease_profile.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+copd_gold_stage | Indicating current GOLD stage (Global Initiative for Chronic Obstructive Lung Disease). | integer | no |  | GOLD stage | 1, 2, 3, 4 | 1; 2; 3; 4
+copd_mmrc_grade | Indicate the Modified British Medical Research Council (mMRC) dyspnea scale grade. | integer | no |  | mMRC grade | 0, 1, 2, 3, 4 | 0, 1; 2; 3; 4
+copd_cat_score | Indicate the COPD Assessment Test (CAT) score. | integer | no |  | CAT score |  | 2; 5; 37
+copd_gold_abe_assessment | Indicate the Global Initiative for Chronic Obstructive Lung Disease (GOLD) A, B, C, D assessment group if available. | string | no |  | GOLD ABE assessment | A, B, E | A; B; E
+copd_phenotype | Indicate the COPD disease phenotype(s) of donor. Please indicate all applicable phenotypes of donor. | array | no |  | COPD phenotype | COPD not otherwise specified, COPD with emphysema, COPD with bronchitis, COPD with history of asthma, COPD with >300 eos in blood, COPD with allergy, COPD with Chronic Mucus Hypersecretion, COPD with frequent exacerbations | COPD with bronchitis; COPD with history of asthma; COPD with emphysema
+copd_emphysema_percentage | Indicate the percentage of the lung that is affected by emphysema as judged based on non-invasive imaging, such as from a CT scan. | number | no |  | Percentage of emphysema |  | 30; 76; 92
+
 ## Preservation and storage<a name='Preservation and storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
 
@@ -622,4 +636,3 @@ Property name | Description | Type | Required? | Object reference? | User friend
 plate_label | A label or name for the plate on which the well is located. | string | yes |  | Plate label |  | 2217
 well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
 well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
-

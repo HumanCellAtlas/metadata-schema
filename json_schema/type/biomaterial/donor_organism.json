@@ -146,6 +146,12 @@
             "$ref": "module/biomaterial/medical_tests.json",
             "user_friendly": "Medical tests"
         },
+        "disease_profile": {
+            "description": "Information about specific diseases profile of the individual.",
+            "type": "object",
+            "$ref": "module/biomaterial/disease_profile.json",
+            "user_friendly": "Disease profile"
+        },
         "medical_history": {
             "description": "Information about the medical history of the organism.",
             "type": "object",
