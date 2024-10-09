@@ -72,8 +72,8 @@
                 "Skin"
                 ],
             "user_friendly": "HCA Tissue Atlas",
-            "guidelines": "For example: Blood Atlas",
-            "example": "Blood Atlas"
+            "guidelines": "For example: Retina",
+            "example": "Retina"
 	},
         "hca_tissue_atlas_version": {
             "description": "A field describing which version of the HCA Tissue Atlas is associated with the project (e.g. v1.0; v2.0)",
