@@ -365,7 +365,7 @@ Location: module/project/hca_bionetwork.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 name | HCA Bionetwork the project is a part of (e.g. Kidney).  | string | no |  | Official HCA Bionetwork | Adipose, Breast, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancreas, Reproduction, Skin | Kidney; Lung
-hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas | Adipose, Blood, Brain, Breast, Development, Eye, Eye - Other, GDN, Gut, Heart, Immune, Kidney, Liver, Lung, MSK, ORCF, Organoid-Endoderm, Organoid-Neural, Pancreas Retina, Reproduction, Skin | Retina
+hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas | Adipose, Blood, Brain, Breast, Development, Eye, GDN, Gut, Heart, Immune, Kidney, Liver, Lung, MSK, ORCF, Organoid-Endoderm, Organoid-Neural, Pancreas Retina, Reproduction, Skin | Retina
 hca_tissue_atlas_version | A field describing which version of the HCA Tissue Atlas is associated with the project (e.g. v1.0; v2.0) | string | no |  | Official HCA Tissue Atlas Version |  | v1.0; v2.0
 atlas_project | A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets. | boolean | no |  | Project Tissue Atlas Status |  | Yes; No
 
