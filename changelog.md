@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/project/hca_bionetwork.json - v1.0.2] - 2024-10-14
 ### Added
 Added atlas names in hca_bionetwork
@@ -14,8 +16,6 @@ Added atlas names in hca_bionetwork
 ### [type/project/project.json - v19.0.1] - 2024-10-14
 ### Added
 Added atlas names in hca_bionetwork
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/disease_profile.json - v1.0.0] - 2024-09-30
 ### Added
