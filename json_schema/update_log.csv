@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/donor_organism,minor,Added comorbidities field in the donor_organism Fix#1569,,
