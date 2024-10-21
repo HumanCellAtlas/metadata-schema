@@ -9,6 +9,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/project/hca_bionetwork.json - v1.0.2] - 2024-10-14
+### Added
+Added atlas names in hca_bionetwork
+
+### [type/project/project.json - v19.0.1] - 2024-10-14
+### Added
+Added atlas names in hca_bionetwork
+
 ### [module/biomaterial/disease_profile.json - v1.0.0] - 2024-09-30
 ### Added
 Added new disease profile module with COPD fields. Fixes#1572
