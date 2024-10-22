@@ -7,11 +7,11 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/biomaterial/donor_organism.json - v16.4.0] - 2024-10-21
 ### Added
 Added comorbidities field in the donor_organism Fix#1569
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/project/hca_bionetwork.json - v1.0.2] - 2024-10-14
 ### Added
