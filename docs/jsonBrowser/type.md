@@ -431,6 +431,7 @@ organism_age | Age of organism in Age units measured since birth. | string | no 
 organism_age_unit | The unit in which Age is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Age unit |  | 
 development_stage | A classification of the developmental stage of the organism. | object | yes | [See module  development_stage_ontology](module.md#development-stage-ontology) | Development stage |  | 
 diseases | Short description of known disease(s) of the organism. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
+comorbidities | Short description of comorbidity(-ies) or secondary disease(s) of the organism. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Comorbidities |  | 
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md#death) | Death conditions |  | 
 familial_relationships | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md#familial-relationship) | Familial relationship |  | 
 medical_tests | Information about the medical tests of the organism. | object | no | [See module  medical_tests](module.md#medical-tests) | Medical tests |  | 
