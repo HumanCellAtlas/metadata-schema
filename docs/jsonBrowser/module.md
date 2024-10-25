@@ -214,6 +214,17 @@ text | The name of the strain to which the organism belongs. | string | yes |  |
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Strain ontology ID |  | EFO:0004472; EFO:0000602
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Strain ontology label |  | C57BL/6; BALB/c
 
+## Medication ontology<a name='Medication ontology'></a>
+_A term that may be associated with a medication-related ontology term._
+
+Location: module/ontology/medication_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | Medication(s) the individual was taking at time of biomaterial collection. | string | yes |  | Medication |  | bisoprolol; paracetamol; loratadine
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Medication ontology ID |  | CHEBI:3127; CHEBI:46195; CHEBI:6538
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Medication ontology label |  | bisoprolol; paracetamol; loratadine
+
 ## File format ontology<a name='File format ontology'></a>
 _A term that may be associated with a file format-related ontology term._
 
@@ -520,7 +531,7 @@ Location: module/biomaterial/medical_history.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
-medication | Medications the individual was taking at time of biomaterial collection. | string | no |  | Medications |  | Naproxen 500mg/day; Citalopram 20mg/day
+medication | Medication(s) the individual was taking at time of biomaterial collection. | array | no | [See module  medication_ontology](module.md#medication-ontology) | Medication |  | 
 smoking_status | Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe etc. | string | no |  | Smoking status | active, former, never | Should be one of: active, former, never.
 smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55
 years_since_smoking_cessation | If smoking status is 'former', specify the number of years since smoking cessation. | integer | no |  | Years since smoking cessation |  | 12
@@ -636,3 +647,4 @@ Property name | Description | Type | Required? | Object reference? | User friend
 plate_label | A label or name for the plate on which the well is located. | string | yes |  | Plate label |  | 2217
 well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
 well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+
