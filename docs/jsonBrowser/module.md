@@ -214,6 +214,17 @@ text | The name of the strain to which the organism belongs. | string | yes |  |
 ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Strain ontology ID |  | EFO:0004472; EFO:0000602
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Strain ontology label |  | C57BL/6; BALB/c
 
+## Medication ontology<a name='Medication ontology'></a>
+_A term that may be associated with a medication-related ontology term._
+
+Location: module/ontology/medication_ontology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+text | Medication(s) the individual was taking at time of biomaterial collection. | string | yes |  | Medication |  | bisoprolol; paracetamol; loratadine
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Medication ontology ID |  | CHEBI:3127; CHEBI:46195; CHEBI:6538
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Medication ontology label |  | bisoprolol; paracetamol; loratadine
+
 ## File format ontology<a name='File format ontology'></a>
 _A term that may be associated with a file format-related ontology term._
 
@@ -365,7 +376,7 @@ Location: module/project/hca_bionetwork.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 name | HCA Bionetwork the project is a part of (e.g. Kidney).  | string | no |  | Official HCA Bionetwork | Adipose, Breast, Development, Eye, Genetic Diversity, Gut, Heart, Immune, Kidney, Liver, Lung, Musculoskeletal, Nervous System, Oral & Craniofacial, Organoid, Pancreas, Reproduction, Skin | Kidney; Lung
-hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas | Adipose, Blood, Brain, Breast, Development, Eye, GDN, Gut, Heart, Immune, Kidney, Liver, Lung, MSK, ORCF, Organoid-Endoderm, Organoid-Neural, Pancreas Retina, Reproduction, Skin | Retina
+hca_tissue_atlas | A field describing if the project is part of a HCA Tissue Atlas (e.g. Brain Alzheimer Atlas).  | string | no |  | HCA Tissue Atlas | Adipose, Blood, Brain, Breast, Development, Eye, GDN, Gut, Heart, Immune, Kidney, Liver, Lung, MSK, ORCF, Organoid-Endoderm, Organoid-Neural, Pancreas, Retina, Reproduction, Skin | Retina
 hca_tissue_atlas_version | A field describing which version of the HCA Tissue Atlas is associated with the project (e.g. v1.0; v2.0) | string | no |  | Official HCA Tissue Atlas Version |  | v1.0; v2.0
 atlas_project | A field describing if this project is the HCA Tissue Atlas project which integrates data from other datasets. | boolean | no |  | Project Tissue Atlas Status |  | Yes; No
 
@@ -467,12 +478,12 @@ Location: module/biomaterial/disease_profile.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-copd_gold_stage | Indicating current GOLD stage (Global Initiative for Chronic Obstructive Lung Disease). | integer | no |  | GOLD stage | 1, 2, 3, 4 | 1; 2; 3; 4
+copd_gold_stage | Indicate the current GOLD stage (Global Initiative for Chronic Obstructive Lung Disease). | integer | no |  | GOLD stage | 1, 2, 3, 4 | 1; 2; 3; 4
 copd_mmrc_grade | Indicate the Modified British Medical Research Council (mMRC) dyspnea scale grade. | integer | no |  | mMRC grade | 0, 1, 2, 3, 4 | 0, 1; 2; 3; 4
 copd_cat_score | Indicate the COPD Assessment Test (CAT) score. | integer | no |  | CAT score |  | 2; 5; 37
 copd_gold_abe_assessment | Indicate the Global Initiative for Chronic Obstructive Lung Disease (GOLD) A, B, C, D assessment group if available. | string | no |  | GOLD ABE assessment | A, B, E | A; B; E
 copd_phenotype | Indicate the COPD disease phenotype(s) of donor. Please indicate all applicable phenotypes of donor. | array | no |  | COPD phenotype | COPD not otherwise specified, COPD with emphysema, COPD with bronchitis, COPD with history of asthma, COPD with >300 eos in blood, COPD with allergy, COPD with Chronic Mucus Hypersecretion, COPD with frequent exacerbations | COPD with bronchitis; COPD with history of asthma; COPD with emphysema
-copd_emphysema_percentage | Indicate the percentage of the lung that is affected by emphysema as judged based on non-invasive imaging, such as from a CT scan. | number | no |  | Percentage of emphysema |  | 30; 76; 92
+copd_emphysema_percentage | Indicate the percentage of the lung that is affected by emphysema as judged based on non-invasive imaging, such as from a CT scan. | number | no |  | Percentage of emphysema |  | 
 
 ## Preservation and storage<a name='Preservation and storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
@@ -520,7 +531,7 @@ Location: module/biomaterial/medical_history.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
-medication | Medications the individual was taking at time of biomaterial collection. | string | no |  | Medications |  | Naproxen 500mg/day; Citalopram 20mg/day
+medication | Medication(s) the individual was taking at time of biomaterial collection. | array | no | [See module  medication_ontology](module.md#medication-ontology) | Medication |  | 
 smoking_status | Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe etc. | string | no |  | Smoking status | active, former, never | Should be one of: active, former, never.
 smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55
 years_since_smoking_cessation | If smoking status is 'former', specify the number of years since smoking cessation. | integer | no |  | Years since smoking cessation |  | 12
@@ -636,3 +647,4 @@ Property name | Description | Type | Required? | Object reference? | User friend
 plate_label | A label or name for the plate on which the well is located. | string | yes |  | Plate label |  | 2217
 well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
 well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+
