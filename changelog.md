@@ -7,6 +7,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [module/biomaterial/medical_history.json - v7.0.0] - 2024-11-06
+### Changed
+Changed medication field type Fix#1589
+
+### [module/ontology/medication_ontology.json - v1.0.0] - 2024-11-06
+### Added
+Added medication ontology module Fix#1589
+
+### [type/biomaterial/donor_organism.json - v17.0.0] - 2024-11-06
+### Changed
+Changed medication field type Fix#1589
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/donor_organism.json - v16.4.0] - 2024-10-21

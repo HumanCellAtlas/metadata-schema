@@ -1,3 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/medical_history,major,"Changed medication field type Fix#1589",,
-module/ontology/medication_ontology,major,"Added medication ontology module Fix#1589",,
