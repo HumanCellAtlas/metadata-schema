@@ -280,6 +280,10 @@ text | The text for the term as the user provides it. | string |  | Disease |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the strain to which the organism belongs. | string |  | Strain |  | C57BL/6; BALB/c
+### Medication ontology<a name='Medication ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | Medication(s) the individual was taking at time of biomaterial collection. | string |  | Medication |  | bisoprolol; paracetamol; loratadine
 ### File format ontology<a name='File format ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -353,7 +357,7 @@ _There are no required properties in schema Growth conditions_
 ### Medical tests<a name='Medical tests'></a>
 _There are no required properties in schema Medical tests_
 ### Disease profile<a name='Disease profile'></a>
-_There are no required properties in schema disease profile_
+_There are no required properties in schema Disease profile_
 ### Preservation and storage<a name='Preservation and storage'></a>
 _There are no required properties in schema Preservation and storage_
 ### Death<a name='Death'></a>

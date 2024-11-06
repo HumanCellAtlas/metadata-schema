@@ -25,11 +25,12 @@
             "guidelines": "Enter the amount consumed per day using units such as alcohol units (10mL or 8g of alcohol) or drinks (14g of alcohol)."
         },
         "medication": {
-            "description": "Medications the individual was taking at time of biomaterial collection.",
-            "type": "string",
-            "user_friendly": "Medications",
-            "example": "Naproxen 500mg/day; Citalopram 20mg/day",
-            "guidelines": "Enter the medication and dosage. Separate multiple medications with commas."
+            "description": "Medication(s) the individual was taking at time of biomaterial collection.",
+            "type": "array",
+            "items": {
+                "$ref": "module/ontology/medication_ontology.json"
+            },
+            "user_friendly": "Medication"
         },
         "smoking_status": {
             "description": "Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe etc.",
