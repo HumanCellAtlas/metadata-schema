@@ -54,7 +54,7 @@
                 "type": "object",
                 "$ref": "module/process/purchased_reagents.json"
             },
-            "user_friendly": "Protocol reagents"
+            "user_friendly": "Purchased reagents"
         },
         "digestion_time": {
              "description": "Time of digestion of the specimen.",
@@ -69,10 +69,10 @@
             "user_friendly": "Digestion time unit"
         },
         "digestion_temperature": {
-            "description": "Temperature of digestion in Celsius or in general terms (i.e. cold, warm, room temperature)",
-            "pattern": "\\d+|frozen|cold|room temperature|warm",
+            "description": "Temperature of digestion in Celsius or in general terms (i.e. cold, warm, room temperature).",
+            "pattern": "\\d+(\\.\\d+)|frozen|cold|room temperature|warm",
             "type": "string",
-            "example": "4; 37.5; cold",
+            "example": "4; 37; cold",
             "user_friendly": "Digestion temperature"
         },
         "digestion_solution": {
@@ -99,8 +99,8 @@
                     "Elastase",
                     "Liberase",
                     "Protease",
-                    "Trypsin-like",
-                    "Trypsin"
+                    "Trypsin",
+                    "Trypsin-like"
                         ]
             },
             "user_friendly": "Digestion solution"
