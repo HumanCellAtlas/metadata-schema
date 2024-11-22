@@ -47,6 +47,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 schema_type | The type of the metadata schema entity. | string |  |  | file | 
 file_core | Core file-level information. | object | [See core  file_core](core.md#file-core) | File core |  | 
+genome_assembly_version | Name of the genome assembly used to generate this file. | string |  | Genome version | GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable | Should be one of: GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable
 ### Reference file
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -146,6 +147,7 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 schema_type | The type of the metadata schema entity. | string |  |  | project | 
 project_core | Core project-level information. | object | [See core  project_core](core.md#project-core) | Project core |  | 
 funders | Funding source(s) supporting the project. | array | [See module  funder](module.md#funder) | Funding source(s) |  | 
+data_use_restriction | Data use restrictions that apply to the project. | string |  | Data use restriction | NRES, GRU, GRU-NCU | GRU
 ### Specimen from organism
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -282,6 +284,10 @@ text | The text for the term as the user provides it. | string |  | Disease |  |
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
 text | The name of the strain to which the organism belongs. | string |  | Strain |  | C57BL/6; BALB/c
+### Medication ontology<a name='Medication ontology'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+text | Medication(s) the individual was taking at time of biomaterial collection. | string |  | Medication |  | bisoprolol; paracetamol; loratadine
 ### File format ontology<a name='File format ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -335,6 +341,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 grant_id | The unique grant identifier or reference. | string |  | Grant ID |  | BB/P0000001/1
 organization | The name of the funding organization. | string |  | Funding organization |  | Biotechnology and Biological Sciences Research Council (BBSRC); California Institute of Regenerative Medicine (CIRM)
+### HCA Bionetwork<a name='HCA Bionetwork'></a>
+_There are no required properties in schema HCA Bionetwork_
 ### Contact<a name='Contact'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -350,6 +358,10 @@ official_hca_publication | Has the publication been accepted as an official HCA 
 _There are no required properties in schema Human-specific_
 ### Growth conditions<a name='Growth conditions'></a>
 _There are no required properties in schema Growth conditions_
+### Medical tests<a name='Medical tests'></a>
+_There are no required properties in schema Medical tests_
+### Disease profile<a name='Disease profile'></a>
+_There are no required properties in schema Disease profile_
 ### Preservation and storage<a name='Preservation and storage'></a>
 _There are no required properties in schema Preservation and storage_
 ### Death<a name='Death'></a>

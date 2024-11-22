@@ -21,6 +21,7 @@ read_index | The sequencing read this file represents. | string | yes |  | Read 
 lane_index | The lane that this file was sequenced from. | integer | no |  | Lane index |  | 1
 read_length | The length of a sequenced read in this file, in nucleotides. | integer | no |  | Read length |  | 51
 insdc_run_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) run accession. | array | no |  | INSDC run accession |  | SRR0000000
+sequencing_run_batch | An identifier that indicates which runs were sequenced in the same batch. | string | no |  | Sequencing run batch |  | run1; sequencing_batch_37; NV0087
 library_prep_id | A unique ID for the library preparation. | string | no |  | Library preparation ID |  | tech_rep_group_001
 
 ## Image file
@@ -57,6 +58,8 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | fil
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md#provenance) |  |  | 
 file_core | Core file-level information. | object | yes | [See core  file_core](core.md#file-core) | File core |  | 
 matrix_cell_count | Number of cells analyzed in a matrix file. | integer | no |  | Matrix cell count |  | 1; 2100
+genome_assembly_version | Name of the genome assembly used to generate this file. | string | yes |  | Genome version | GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable | Should be one of: GRCh38, GRCh37, GRCm39, GRCm38, GRCm37, Not Applicable
+genome_patch_version | Patch version of the genome assembly used to generate this file. | string | no |  | Patch version |  | p11; p14
 
 ## Reference file
 _A reference file used by a secondary reference pipeline._
@@ -143,6 +146,10 @@ protocol_core | Core protocol-level information. | object | yes | [See core  pro
 type | The type of protocol. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Protocol type |  | 
 computational_method | A URI to a versioned workflow and versioned execution environment in a GA4GH-compliant repository. | string | no |  | Computational method |  | SmartSeq2SingleCell; 10x
 matrix | Information related to protocols that output a matrix. | object | no | [See module  matrix](module.md#matrix) | Matrix |  | 
+alignment_software | Name of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software |  | Cellranger; kallisto bustools; GSNAP; STAR
+alignment_software_version | Version of alignment software used to map FASTQ files to reference genome. | string | no |  | Alignment software version |  | v2.0.1; 2.4.2a; v0.45.2
+gene_annotation_version | The Ensembl release version accession number or NCBI RefSeq assembly version used for gene annotation. | string | no |  | Gene annotation version |  | v110; GCF_000001405.40; GCF_000001635.27
+intron_inclusion | Whether introns were included in the alignment process during read counting. | boolean | no |  | Intron inclusion |  | Should be one of: yes, or no.
 
 ## Aggregate generation protocol
 _Information about how cultured cells are developed into cell aggregates._
@@ -312,6 +319,7 @@ project_core | Core project-level information. | object | yes | [See core  proje
 contributors | People contributing to any aspect of the project. | array | no | [See module  contact](module.md#contact) | Contributors |  | 
 supplementary_links | External link(s) pointing to code, supplementary data files, or analysis files associated with the project which will not be uploaded. | array | no |  | Supplementary link(s) |  | https://github.com/czbiohub/tabula-muris; http://celltag.org/
 publications | Publications resulting from this project. | array | no | [See module  publication](module.md#publication) | Publications |  | 
+hca_bionetworks | HCA Bionetworks and Atlases the project is associated with | array | no | [See module  hca_bionetwork](module.md#hca-bionetwork) | HCA Bionetwork(s) |  | 
 insdc_project_accessions | An International Nucleotide Sequence Database Collaboration (INSDC) project accession. | array | no |  | INSDC project accession |  | SRP000000
 ega_accessions | A list of accessions referring to EGA (European Genome-Phenome Archive) datasets or studies. | array | no |  | EGA Study/Dataset Accession(s) |  | EGAS00000000001; EGAD00000000002
 dbgap_accessions | A list of database of Genotypes and Phenotypes (dbGaP) study accessions. | array | no |  | dbGaP Study Accession(s) |  | phs001997.v1.p1; phs001836
@@ -321,6 +329,8 @@ insdc_study_accessions | An International Nucleotide Sequence Database Collabora
 biostudies_accessions | A BioStudies study accession. | array | no |  | BioStudies accession |  | S-EXMP1; S-HCAS33
 funders | Funding source(s) supporting the project. | array | yes | [See module  funder](module.md#funder) | Funding source(s) |  | 
 estimated_cell_count | An estimated number of cells in this project | integer | no |  | Estimated cell count |  | 10000; 2100000
+data_use_restriction | Data use restrictions that apply to the project. | string | yes |  | Data use restriction | NRES, GRU, GRU-NCU | GRU
+duos_id | A DUOS dataset id. | string | no |  | DUOS ID |  | DUOS-000108; DUOS-000114
 
 ## Specimen from organism
 _Information about the specimen that was collected from the donor organism._
@@ -335,7 +345,9 @@ biomaterial_core | Core biomaterial-level information. | object | yes | [See cor
 genus_species | The scientific binomial name for the species of the specimen. | array | no | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md#organ-ontology) | Organ |  | 
 organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md#organ-part-ontology) | Organ part |  | 
+transplant_organ | Was the specimen collected after extraction for organ transplantation? | boolean | no |  | Transplant organ |  | yes; no
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
+adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md#state-of-specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
@@ -357,7 +369,6 @@ genus_species | The scientific binomial name for the species of the suspension. 
 selected_cell_types | The cell type(s) selected to be present in the suspension. | array | no | [See module  cell_type_ontology](module.md#cell-type-ontology) | Selected cell type(s) |  | 
 estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md#plate-based-sequencing) | Plate-based sequencing |  | 
-timecourse | Information relating to a timecourse associated with this cell suspension. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Cell line
 _Information about the cell line or cell culture biomaterial._
@@ -386,7 +397,6 @@ date_established | Date when the cell line was established. | string | no |  | D
 disease | Short description of any disease association to the cell type. | object | no | [See module  disease_ontology](module.md#disease-ontology) | Disease |  | 
 genus_species | The scientific binomial name for the species of the cell line. | array | no | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 publication | A publication that cites the cell line creation. | object | no | [See module  publication](module.md#publication) | Publication |  | 
-timecourse | Information relating to a timecourse associated with this cell line. | object | no | [See module  timecourse](module.md#timecourse) | Timecourse |  | 
 
 ## Imaged specimen
 _Information about a tissue specimen after it has been sectioned and prepared for imaging._
@@ -421,8 +431,11 @@ organism_age | Age of organism in Age units measured since birth. | string | no 
 organism_age_unit | The unit in which Age is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Age unit |  | 
 development_stage | A classification of the developmental stage of the organism. | object | yes | [See module  development_stage_ontology](module.md#development-stage-ontology) | Development stage |  | 
 diseases | Short description of known disease(s) of the organism. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
+comorbidities | Short description of comorbidity(-ies) or secondary disease(s) of the organism. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Comorbidities |  | 
 death | Information about conditions of death of the organism. | object | no | [See module  death](module.md#death) | Death conditions |  | 
 familial_relationships | Information about other organisms related to this organism. | array | no | [See module  familial_relationship](module.md#familial-relationship) | Familial relationship |  | 
+medical_tests | Information about the medical tests of the organism. | object | no | [See module  medical_tests](module.md#medical-tests) | Medical tests |  | 
+disease_profile | Information about specific diseases profile of the individual. | object | no | [See module  disease_profile](module.md#disease-profile) | Disease profile |  | 
 medical_history | Information about the medical history of the organism. | object | no | [See module  medical_history](module.md#medical-history) | Medical history |  | 
 gestational_age | Gestational age of pregnancy in Gestational age units measured from the last menstrual period. | string | no |  | Gestational age |  | 22; 8-9
 gestational_age_unit | The unit in which Gestational age is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Gestational age unit |  | 

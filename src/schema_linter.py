@@ -16,7 +16,7 @@ cwd = os.getcwd().split("/")[-1]
 
 required_schema_fields = ['$schema', 'description', 'additionalProperties', 'title', 'name', 'type', 'properties']
 
-allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependencies']
+allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependencies', 'if', 'then', 'else', 'minProperties']
 
 # Properties
 
@@ -32,7 +32,7 @@ example_exempt_properties = ['biomaterial_id', 'biomaterial_name', 'biomaterial_
 
 # Property attributes
 
-property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf']
+property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf', 'bionetworks']
 
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 

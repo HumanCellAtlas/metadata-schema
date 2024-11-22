@@ -8,6 +8,9 @@
         "protocol_core",
         "type"
     ],
+    "dependencies": {
+        "alignment_software_version": ["alignment_software"]
+    },
     "title": "Analysis protocol",
     "name": "analysis_protocol",
     "type": "object",
@@ -58,6 +61,31 @@
             "type": "object",
             "$ref": "module/protocol/matrix.json",
             "user_friendly": "Matrix"
+        },
+        "alignment_software": {
+            "description": "Name of alignment software used to map FASTQ files to reference genome.",
+            "type": "string",
+            "user_friendly": "Alignment software",
+            "example": "Cellranger; kallisto bustools; GSNAP; STAR"
+        }, 
+        "alignment_software_version": {
+            "description": "Version of alignment software used to map FASTQ files to reference genome.",
+            "type": "string",
+            "user_friendly": "Alignment software version",
+            "example": "v2.0.1; 2.4.2a; v0.45.2"
+        },
+        "gene_annotation_version": {
+            "description": "The Ensembl release version accession number or NCBI RefSeq assembly version used for gene annotation.",
+            "type": "string",
+            "pattern": "^v\\d{2,}$|^GCF_\\d{9}\\.\\d+$",
+            "user_friendly": "Gene annotation version",
+            "example": "v110; GCF_000001405.40; GCF_000001635.27"
+        },
+        "intron_inclusion": {
+            "description": "Whether introns were included in the alignment process during read counting.",
+            "type": "boolean",
+            "user_friendly": "Intron inclusion",
+            "example": "Should be one of: yes, or no."
         }
     }
 }

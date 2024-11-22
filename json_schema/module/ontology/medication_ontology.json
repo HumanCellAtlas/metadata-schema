@@ -1,17 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A term that describes the contents of a file.",
+    "description": "A term that may be associated with a medication-related ontology term.",
     "additionalProperties": false,
     "required": [
         "text"
     ],
-    "title": "File content ontology",
-    "name": "file_content_ontology",
+    "title": "Medication ontology",
+    "name": "medication_ontology",
     "type": "object",
     "properties": {
-        "describedBy": {
+        "describedBy" : {
             "description": "The URL reference to the schema.",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/file_content_ontology",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/ontology/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/medication_ontology",
             "type": "string"
         },
         "schema_version": {
@@ -21,29 +21,29 @@
             "example": "4.6.1"
         },
         "text": {
-            "description": "General description of the contents of the file.",
+            "description": "Medication(s) the individual was taking at time of biomaterial collection.",
             "type": "string",
-            "example": "DNA sequence (raw); Sequence alignment",
-            "user_friendly": "Content description"
+            "user_friendly": "Medication",
+            "example": "bisoprolol; paracetamol; loratadine"
         },
         "ontology": {
             "description": "An ontology term identifier in the form prefix:accession.",
             "type": "string",
             "graph_restriction":  {
-                "ontologies" : ["obo:edam", "obo:efo"],
-                "classes": ["EDAM:0006", "IAO:0000030"],
+                "ontologies" : ["obo:dron"],
+                "classes": ["BFO:0000040"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
             },
-            "example": "EDAM:3494; EDAM:0863",
-            "user_friendly": "Content description ontology ID"
+            "user_friendly": "Medication ontology ID",
+            "example": "CHEBI:3127; CHEBI:46195; CHEBI:6538"
         },
         "ontology_label": {
             "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
             "type": "string",
-            "example": "DNA sequence; Sequence alignment",
-            "user_friendly": "Content description ontology label"
+            "user_friendly": "Medication ontology label",
+            "example": "bisoprolol; paracetamol; loratadine"
         }
     }
 }

@@ -17,6 +17,170 @@ Added non-required gender identity field.
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/biomaterial/medical_history.json - v7.0.0] - 2024-11-06
+### Changed
+Changed medication field type Fix#1589
+
+### [module/ontology/medication_ontology.json - v1.0.0] - 2024-11-06
+### Added
+Added medication ontology module Fix#1589
+
+### [type/biomaterial/donor_organism.json - v17.0.0] - 2024-11-06
+### Changed
+Changed medication field type Fix#1589
+
+### [type/biomaterial/donor_organism.json - v16.4.0] - 2024-10-21
+### Added
+Added comorbidities field in the donor_organism Fix#1569
+
+### [module/project/hca_bionetwork.json - v1.0.2] - 2024-10-14
+### Added
+Added atlas names in hca_bionetwork
+
+### [type/project/project.json - v19.0.1] - 2024-10-14
+### Added
+Added atlas names in hca_bionetwork
+
+### [module/biomaterial/disease_profile.json - v1.0.0] - 2024-09-30
+### Added
+Added new disease profile module with COPD fields. Fixes#1572
+
+### [type/biomaterial/donor_organism.json - v16.3.0] - 2024-09-30
+### Added
+Added an optional disease profile field in the donor_organism. Fixes#1572
+
+### [system/file_descriptor.json - v2.1.0] - 2024-09-24
+### Added
+Added 'drs_uri' property to file_descriptor
+
+### [module/biomaterial/medical_history.json - v5.3.0] - 2024-09-16
+### Added
+Added optional smoking related fields in medical_history module. Fix #1565
+
+### [module/biomaterial/medical_history.json - v6.0.0] - 2024-09-16
+### Removed
+Removed smoking_history in medical_history module. Fix #1565
+
+### [type/biomaterial/donor_organism.json - v16.2.0] - 2024-09-16
+### Added
+Added optional smoking related fields in medical_history module. Fix #1565
+
+### [module/ontology/file_content_ontology.json - v2.0.0] - 2024-08-28
+### Fixed
+Fixed class from data:0006 to EDAM:0006. Fixes #1571
+
+### [type/file/analysis_file.json - v8.0.0] - 2024-08-28
+### Fixed
+Fixed class from data:0006 to EDAM:0006. Fixes #1571
+
+### [type/file/supplementary_file.json - v3.0.0] - 2024-08-28
+### Fixed
+Fixed class from data:0006 to EDAM:0006. Fixes #1571
+
+### [core/file/file_core.json - v7.0.0] - 2024-08-28
+### Fixed
+Fixed class from data:0006 to EDAM:0006. Fixes #1571
+
+### [type/file/image_file.json - v3.0.0] - 2024-08-28
+### Fixed
+Fixed class from data:0006 to EDAM:0006. Fixes #1571
+
+### [type/file/reference_file.json - v4.0.0] - 2024-08-28
+### Fixed
+Fixed class from data:0006 to EDAM:0006. Fixes #1571
+
+### [type/file/sequence_file.json - v10.0.0] - 2024-08-28
+### Fixed
+Fixed class from data:0006 to EDAM:0006. Fixes #1571
+
+### [module/biomaterial/medical_tests.json - v1.0.0] - 2024-08-13
+### Added
+Added medical_tests module
+
+### [type/biomaterial/donor_organism.json - v16.1.0] - 2024-08-13
+### Added
+Added optional medical_tests module in donor_organism. Fixes #1562
+
+### [type/file/sequence_file.json - v9.6.0] - 2024-07-15
+### Added
+Added sequencing_run_batch field in the sequencing_file - Fixes#1557
+
+### [type/protocol/analysis/analysis_protocol.json - v10.3.0] - 2024-04-15
+### Added
+Added intron_inclusion field in analysis_protocol Fixes#1554
+
+### [type/biomaterial/specimen_from_organism.json - v10.9.0] - 2024-03-22
+### Added
+Added transplant_organ field in specimen_from_organism Fixes#1547"
+
+### [type/project/project.json - v19.0.0] - 2024-03-15
+### Added
+Added DUOS id field. Fixes #1550
+
+### [type/project/project.json - v18.0.0] - 2024-03-04
+### Added
+Added data_use_restriction field
+
+### [type/protocol/analysis/analysis_protocol.json - v10.2.0] - 2024-02-05
+### Added
+Added gene_annotation_version field in analysis_protocol Fixes#1543
+
+### [type/protocol/analysis/analysis_protocol.json - v10.1.0] - 2023-11-07
+### Added
+Added alignment_software & alignment_software_version field in analysis_protocol Fixes#1533
+
+### [core/biomaterial/biomaterial_core.json - v8.4.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/donor_organism.json - v16.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_suspension.json - v14.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/cell_line.json - v16.0.0] - 2023-08-22
+### Removed
+Removed timecourse module.
+
+### [type/biomaterial/imaged_specimen.json - v3.5.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/specimen_from_organism.json - v10.8.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [type/biomaterial/organoid.json - v11.5.0] - 2023-08-22
+### Added
+Added timecourse module. Fixes #1511
+
+### [module/project/hca_bionetwork.json - v1.0.1] - 2023-05-22
+### Added
+Added new values to hca_atlas field
+
+### [type/project/project.json - v17.1.1] - 2023-05-22
+### Added
+Added new values to hca_atlas field
+
+### [module/project/hca_bionetwork.json - v1.0.0] - 2023-04-20
+### Added
+Added the hca_bionetwork module with four fields for recording bionetwork and atlas information
+
+### [type/project/project.json - v17.1.0] - 2023-04-20
+### Added
+Added the hca_bionetwork module to be loaded in project
+
+### [type/biomaterial/specimen_from_organism.json - v10.6.0] - 2023-03-13
+### Added
+Added new optional field adjacent_diseases. Fixes #1512
+
+### [type/file/analysis_file.json - v7.0.0] - 2023-01-30
+### Added
+Added genome assembly and patch version. Fixes #1508.
+
 ### [module/protocol/matrix.json - v2.0.0] - 2022-10-31
 ### Fixed
 Fixed typo in apostrophe. Fixes #1410

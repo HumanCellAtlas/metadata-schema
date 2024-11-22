@@ -1,0 +1,259 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about the medical tests performed on the individual.",
+    "additionalProperties": false,
+    "title": "Medical tests",
+    "name": "medical_tests",
+    "type": "object",
+    "minProperties": 1,
+    "properties": {
+        "describedBy":  {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/medical_tests"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "0.0.1"
+        },
+        "pft_method": {
+            "user_friendly": "Pulmonary Function Testing method",
+            "description": "Indicate which Pulmonary Function Testings (PFTs) methods were performed. Please indicate all tests performed.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["spirometry", "plethysmography", "DLCO_KCO_test"]
+            },
+            "example": "spirometry; plethysmography; DLCO_KCO_test",
+            "bionetworks": ["lung"],
+            "guidelines": "Should be of spirometry, plethysmography and DLCO_KCO_test."
+        },
+        "pft_age": {
+            "user_friendly": "Age at Pulmonary Function Test",
+            "description": "Indicate the age of the subject at the time point of Pulmonary Function Testing (PFT) in years, if known.",
+            "type": "number",
+            "example": "10; 34; 68",
+            "maximum": 150,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "pft_time_point": {
+            "user_friendly": "Date at Pulmonary Function Test",
+            "description": "Indicate at which date the Pulmonary Function Testing (PFT) were recorded as YYYY-MM-DD if available. If this information is not shareable, please indicate 'not_shareable'.",
+            "type": "string",
+            "example": "2024-11-14; 2019-01-31; not_shareable",
+            "pattern": "^(((19|20)\\d\\d){1}([- \\./][01]\\d){0,1}([- \\./][0-3]\\d){0,1}|not_shareable)$",
+            "bionetworks": ["lung"],
+            "guidelines": "If this information is not shareable, please indicate \\'not_shareable\\'."
+        },
+        "pft_relative_time_point": {
+            "user_friendly": "Days between collection and Pulmonary Function Test",
+            "description": "If timepoint of sample collection (time of collection) and/or timepoint of PFT recording (pft_time_point) is not available, indicate how many days prior or after sample collection the pulmonary function parameters were assessed if available.",
+            "type": "integer",
+            "example": "-5; 2; 0",
+            "bionetworks": ["lung"],
+            "guidelines": "If PFT recording was done before sample collection, then enter a negative day value. If PFT recording was done after sample collection, then enter an unsigned positive day value."
+
+        },
+        "fev1_predicted": {
+            "user_friendly": "FEV1 predicted",
+            "description": "Indicate the predicted Forced Expiratory Volume in 1 second (FEV1) in milliliters, based on patient age, sex, height, and ethnicity, if available.",
+            "type": "number",
+            "example": "3500; 4200; 2800",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fev1_prebd": {
+            "user_friendly": "FEV1 before bronchodilator",
+            "description": "Indicate the measured FEV1 in milliliters before the administration of a bronchodilator if available.",
+            "type": "number",
+            "example": "3000; 3800; 2600",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fev1_postbd": {
+            "user_friendly": "FEV1 after bronchodilator",
+            "description": "Indicate the measured FEV1 in milliliters after the administration of a bronchodilator if available.",
+            "type": "number",
+            "example": "3200; 4000; 2700",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fev1_prebd_predicted_percent": {
+            "user_friendly": "FEV1 before bronchodilator percent of predicted",
+            "description": "Indicate the percentage of the predicted FEV1 achieved before bronchodilator administration if available.",
+            "type": "number",
+            "example": "86; 90; 78",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fev1_postbd_predicted_percent": {
+            "user_friendly": "FEV1 after bronchodilator percent of predicted",
+            "description": "Indicate the percentage of the predicted FEV1 achieved after bronchodilator administration if available.",
+            "type": "number",
+            "example": "91; 95; 82",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fvc_predicted": {
+            "user_friendly": "FVC predicted",
+            "description": "Indicate the predicted Forced Vital Capacity (FVC) in milliliters, based on patient age, sex, height, and ethnicity, if available.",
+            "type": "number",
+            "example": "4500; 5000; 3800",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fvc_prebd": {
+            "user_friendly": "FVC before bronchodilator",
+            "description": "Indicate the measured FVC in milliliters before bronchodilator administration if available.",
+            "type": "number",
+            "example": "4000; 4800; 3600",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fvc_postbd": {
+            "user_friendly": "FVC after bronchodilator",
+            "description": "Indicate the measured FVC in milliliters after bronchodilator administration if available.",
+            "type": "number",
+            "example": "4200; 5000; 3700",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fvc_prebd_predicted_percent": {
+            "user_friendly": "FVC before bronchodilator percent of predicted",
+            "description": "Indicate the percentage of the predicted FVC achieved before bronchodilator administration if available.",
+            "type": "number",
+            "example": "89; 96; 95",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fvc_postbd_predicted_percent": {
+            "user_friendly": "FVC after bronchodilator percent of predicted",
+            "description": "Indicate the percentage of the predicted FVC achieved after bronchodilator administration if available.",
+            "type": "number",
+            "example": "93; 100; 97",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fev1_fvc_ratio_prebd": {
+            "user_friendly": "FEV1 to FVC ratio before bronchodilator",
+            "description": "Indicate the ratio of FEV1 to FVC before bronchodilator administration if available.",
+            "type": "number",
+            "example": "0.75; 0.79; 0.72",
+            "maximum": 1,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "fev1_fvc_ratio_postbd": {
+            "user_friendly": "FEV1 to FVC ratio after bronchodilator",
+            "description": "Indicate the ratio of FEV1 to FVC after bronchodilator administration if available.",
+            "type": "number",
+            "example": "0.76; 0.80; 0.73",
+            "maximum": 1,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "frc_abs": {
+            "user_friendly": "FRC absolute",
+            "description": "Indicate the Functional Residual Capacity (FRC) in absolute milliliters if available.",
+            "type": "number",
+            "example": "3000; 3500; 2700",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "frc_predicted_percent": {
+            "user_friendly": "FRC percent of predicted",
+            "description": "Indicate the percentage of the predicted FRC, based on patient demographics, if available.",
+            "type": "number",
+            "example": "95; 88; 102",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "rv": {
+            "user_friendly": "RV",
+            "description": "Indicate the Residual Volume (RV) in milliliters if available.",
+            "type": "number",
+            "example": "1500; 1800; 1400",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "rv_predicted_percent": {
+            "user_friendly": "RV percent of predicted",
+            "description": "Indicate the percentage of the predicted RV, based on patient demographics, if available.",
+            "type": "number",
+            "example": "80; 90; 85",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "ic": {
+            "user_friendly": "IC",
+            "description": "Indicate the Inspiratory Capacity (IC) in milliliters if available.",
+            "type": "number",
+            "example": "3500; 4000; 3200",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "ic_predicted_percent": {
+            "user_friendly": "IC percent of predicted",
+            "description": "Indicate the percentage of the predicted IC, based on patient demographics, if available.",
+            "type": "number",
+            "example": "92; 85; 97",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "dlco": {
+            "user_friendly": "DLCO",
+            "description": "Indicate the Diffusing Capacity of the Lung for Carbon Monoxide (DLCO) in milliliters if available.",
+            "type": "number",
+            "example": "25; 30; 22",
+            "maximum": 100,
+            "minimum": 5,
+            "bionetworks": ["lung"]
+        },
+        "dlco_predicted_percent": {
+            "user_friendly": "DLCO percent of predicted",
+            "description": "Indicate the percentage of the predicted DLCO, based on patient demographics, if available.",
+            "type": "number",
+            "example": "88; 95; 82",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "kco": {
+            "user_friendly": "KCO",
+            "description": "Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available.",
+            "type": "number",
+            "example": "5; 6; 4.5",
+            "maximum": 15000,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        },
+        "kco_predicted_percent": {
+            "user_friendly": "KCO percent of predicted",
+            "description": "Indicate the percentage of the predicted KCO, based on patient demographics, if available.",
+            "type": "number",
+            "example": "90; 98; 85",
+            "maximum": 200,
+            "minimum": 0,
+            "bionetworks": ["lung"]
+        }
+    }
+}

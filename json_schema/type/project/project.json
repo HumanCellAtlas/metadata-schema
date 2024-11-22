@@ -6,7 +6,8 @@
         "describedBy",
         "schema_type",
         "project_core",
-        "funders"
+        "funders",
+        "data_use_restriction"
     ],
     "title": "Project",
     "name": "project",
@@ -65,6 +66,14 @@
                 "$ref": "module/project/publication.json"
             },
             "user_friendly": "Publications"
+        },
+        "hca_bionetworks": {
+            "description": "HCA Bionetworks and Atlases the project is associated with",
+            "type": "array",
+            "items": {
+                "$ref": "module/project/hca_bionetwork.json"
+            },
+            "user_friendly": "HCA Bionetwork(s)"
         },
         "insdc_project_accessions": {
             "description": "An International Nucleotide Sequence Database Collaboration (INSDC) project accession.",
@@ -156,6 +165,49 @@
             "type": "integer",
             "example": "10000; 2100000",
             "user_friendly": "Estimated cell count"
+        },
+        "data_use_restriction": {
+            "description": "Data use restrictions that apply to the project.",
+            "type": "string",
+            "enum": [
+                "NRES",
+                "GRU",
+                "GRU-NCU"
+            ],
+            "user_friendly": "Data use restriction",
+            "guidelines": "Must be one of: NRES, GRU, GRU-NCU. The use restriction codes are based on the DUO ontology where NRES corresponds to DUO:0000004, GRU corresponds to DUO:0000042, GRU-NCU corresponds to a combination of DUO:0000042 and DUO:0000046",
+            "example": "GRU"
+        },
+        "duos_id": {
+            "description": "A DUOS dataset id.",
+            "type": "string",
+            "pattern": "^DUOS-\\d{6}$",
+            "example": "DUOS-000108; DUOS-000114",
+            "user_friendly": "DUOS ID",
+            "guidelines": "Managed access projects are registered in DUOS to regulate access. If the project is managed access record the corresponding DUOS ID here."
+        }
+    },
+    "if" : {
+        "properties": {
+            "data_use_restriction": {
+                "enum": [
+                    "GRU",
+                    "GRU-NCU"
+                ]
+            }
+        }
+    },
+    "then" : {
+        "required": ["duos_id"]
+    },
+    "else" : {
+        "properties": {
+            "data_use_restriction" : {
+                "enum": ["NRES"]
+            },
+            "duos_id" : {
+                "maxLength": 0
+            }
         }
     }
 }
