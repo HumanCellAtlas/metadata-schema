@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+type/biomaterial/donor_organism,minor,Added non-required gender identity field.,,
+module/ontology/gender_identity_ontology,major,Added ontology module for gender identity.,,
