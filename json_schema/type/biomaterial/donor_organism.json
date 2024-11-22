@@ -200,12 +200,6 @@
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
         },
-        "timecourse": {
-            "description": "Information relating to a timecourse associated with this biomaterial.",
-            "type": "object",
-            "$ref": "module/biomaterial/timecourse.json",
-            "user_friendly": "Timecourse"
-        },
         "gender_identity": {
             "description": "The donor's personal sense of their own gender at the time of the experiment.",
             "type": "object",
