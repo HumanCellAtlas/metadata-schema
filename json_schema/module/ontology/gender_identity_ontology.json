@@ -24,7 +24,7 @@
       "description": "The gender identity of the human donor at the time of the experiment.",
       "type": "string",
       "user_friendly": "Gender identity",
-      "example": "Female-to-Male Transsexual; Agender"
+      "example": "Female Gender; Agender; Non-Binary Gender"
     },
     "ontology": {
       "description": "An ontology term identifier in the form prefix:accession.",
@@ -37,13 +37,13 @@
         "include_self": false
       },
       "user_friendly": "Gender identity ontology ID",
-      "example": "NCIT:C46121; NCIT:C180329"
+      "example": "NCIT:C46110; NCIT:C205469; NCIT:C160941"
     },
     "ontology_label": {
       "description": "The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field.",
       "type": "string",
       "user_friendly": "Gender identity ontology label",
-      "example": "Female-to-Male Transsexual; Agender"
+      "example": "Female Gender; Agender; Non-Binary Gender"
     }
   }
 }

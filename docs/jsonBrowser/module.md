@@ -177,9 +177,9 @@ Location: module/ontology/gender_identity_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | The gender identity of the human donor at the time of the experiment. | string | yes |  | Gender identity |  | Female-to-Male Transsexual; Agender
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Gender identity ontology ID |  | NCIT:C46121; NCIT:C180329
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Gender identity ontology label |  | Female-to-Male Transsexual; Agender
+text | The gender identity of the human donor at the time of the experiment. | string | yes |  | Gender identity |  | Female Gender; Agender; Non-Binary Gender
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Gender identity ontology ID |  | NCIT:C46110; NCIT:C205469; NCIT:C160941
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Gender identity ontology label |  | Female Gender; Agender; Non-Binary Gender
 
 ## Sequencing ontology<a name='Sequencing ontology'></a>
 _A term that may be associated with a process-related ontology term._

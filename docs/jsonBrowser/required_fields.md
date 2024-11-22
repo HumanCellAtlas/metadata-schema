@@ -267,7 +267,7 @@ text | The name of a process type being used. | string |  | Process type |  | en
 ### Gender identity ontology<a name='Gender identity ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | The gender identity of the human donor at the time of the experiment. | string |  | Gender identity |  | Female-to-Male Transsexual; Agender
+text | The gender identity of the human donor at the time of the experiment. | string |  | Gender identity |  | Female Gender; Agender; Non-Binary Gender
 ### Sequencing ontology<a name='Sequencing ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
