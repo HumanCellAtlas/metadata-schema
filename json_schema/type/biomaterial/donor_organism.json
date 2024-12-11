@@ -199,6 +199,12 @@
             "type": "object",
             "$ref": "module/ontology/mass_unit_ontology.json",
             "user_friendly": "Weight unit"
+        },
+        "gender_identity": {
+            "description": "The donor's personal sense of their own gender at the time of the experiment.",
+            "type": "object",
+            "$ref": "module/ontology/gender_identity_ontology.json",
+            "user_friendly": "Gender identity"
         }
     }
 }
