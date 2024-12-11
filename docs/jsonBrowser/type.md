@@ -443,6 +443,7 @@ height | Height of organism in Height unit. | string | no |  | Height |  | 160; 
 height_unit | The unit in which Height is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Height unit |  | 
 weight | Weight of organism in Weight unit. | string | no |  | Weight |  | 60; 40-60
 weight_unit | The unit in which Weight is expressed. | object | no | [See module  mass_unit_ontology](module.md#mass-unit-ontology) | Weight unit |  | 
+gender_identity | The donor's personal sense of their own gender at the time of the experiment. | object | no | [See module  gender_identity_ontology](module.md#gender-identity-ontology) | Gender identity |  | 
 
 ## Organoid
 _Information about an organoid biomaterial._
