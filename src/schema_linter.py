@@ -4,7 +4,6 @@ import os
 import re
 import json
 import sys
-import argparse
 from urllib.request import urlopen
 from urllib.error import HTTPError
 
@@ -37,24 +36,6 @@ property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$re
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
 graph_restriction_attributes = ['ontologies', 'classes', 'relations', 'direct', 'include_self']
-
-# Accepted environments and conversion for OLS API url
-
-ENVIRONMENTS = ['develop', 'integration', 'staging', 'master']
-
-OLS_ENVIRONMENT = {
-    "develop": "dev",
-    "integration": "integration",
-    "staging": "staging",
-    "master": "staging"
-}
-
-def argument_parser():
-    # Create the parser, define arguments and return it
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--environment', '-e', type=str, dest='environment', help='environment the OLS API feeds on',
-                        default='staging', action='store', choices=ENVIRONMENTS)
-    return parser
 
 
 class SchemaLinter:
@@ -333,11 +314,8 @@ class SchemaLinter:
 
 
 if __name__ == "__main__":
-    # Define the environment, transforming 'develop' and 'master' to their respective OLS valid environment to
-    # define the proper OLS API URL.
-    arguments = argument_parser().parse_args(sys.argv[1:])
-    environment = OLS_ENVIRONMENT[arguments.environment]
-    ols_api = 'https://ontology.{}.archive.data.humancellatlas.org/api'.format(environment)
+    # As of November 2024, we are now using the OLS4 for ontology checkup
+    ols_api = 'https://www.ebi.ac.uk/ols/api'
 
     schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
     jsons = [os.path.join(dirpath, f)
