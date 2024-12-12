@@ -163,6 +163,10 @@ class SchemaLinter:
                 errors.append(schema_filename + ".json: Keyword `type` missing from property `" + property + "`.")
 
             else:
+                # remove null type of file_descriptor dri_uri property
+                if isinstance(properties[property]['type'], list) and len(properties[property]['type']) == 2 and properties[property]['type'][1] == 'null':
+                    properties[property]['type'] = properties[property]['type'][0]
+                
                 # type attribute must be set to one of the valid JSON types
                 if properties[property]['type'] not in ["string", "number", "boolean", "array", "object", "integer"]:
                     errors.append(schema_filename + ".json: Type `" + properties[property]['type'] + "` is not a valid JSON type.")
