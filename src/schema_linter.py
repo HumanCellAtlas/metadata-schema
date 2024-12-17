@@ -4,7 +4,6 @@ import os
 import re
 import json
 import sys
-import argparse
 from urllib.request import urlopen
 from urllib.error import HTTPError
 
@@ -16,7 +15,7 @@ cwd = os.getcwd().split("/")[-1]
 
 required_schema_fields = ['$schema', 'description', 'additionalProperties', 'title', 'name', 'type', 'properties']
 
-allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependencies', 'if', 'then', 'else', 'minProperties']
+allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependencies', 'if', 'then', 'else', 'allOf', 'minProperties']
 
 # Properties
 
@@ -37,24 +36,6 @@ property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$re
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
 graph_restriction_attributes = ['ontologies', 'classes', 'relations', 'direct', 'include_self']
-
-# Accepted environments and conversion for OLS API url
-
-ENVIRONMENTS = ['develop', 'integration', 'staging', 'master']
-
-OLS_ENVIRONMENT = {
-    "develop": "dev",
-    "integration": "integration",
-    "staging": "staging",
-    "master": "staging"
-}
-
-def argument_parser():
-    # Create the parser, define arguments and return it
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--environment', '-e', type=str, dest='environment', help='environment the OLS API feeds on',
-                        default='staging', action='store', choices=ENVIRONMENTS)
-    return parser
 
 
 class SchemaLinter:
@@ -163,26 +144,30 @@ class SchemaLinter:
                 errors.append(schema_filename + ".json: Keyword `type` missing from property `" + property + "`.")
 
             else:
-                # type attribute must be set to one of the valid JSON types
-                if properties[property]['type'] not in ["string", "number", "boolean", "array", "object", "integer"]:
-                    errors.append(schema_filename + ".json: Type `" + properties[property]['type'] + "` is not a valid JSON type.")
+                # change property to list to test all values of array
+                properties[property]['type'] = properties[property]['type'] if isinstance(properties[property]['type'], list) else [properties[property]['type']]
+                
+                for property_type in properties[property]['type']:
+                    # type attribute must be set to one of the valid JSON types
+                    if property_type not in ["string", "number", "boolean", "array", "object", "integer", "null"]:
+                        errors.append(schema_filename + ".json: Type `" + property_type + "` is not a valid JSON type.")
 
-                # Property of type array must contain the attribute items
-                if properties[property]['type'] == "array" and 'items' not in properties[property].keys():
-                    errors.append(schema_filename + ".json: Property `" + property + "` is type array but doesn't contain items.")
+                    # Property of type array must contain the attribute items
+                    if property_type == "array" and 'items' not in properties[property].keys():
+                        errors.append(schema_filename + ".json: Property `" + property + "` is type array but doesn't contain items.")
 
-                # Property of type array must contains the attribute items
-                # items must have either type or $ref attribute
-                if properties[property]['type'] == "array" and 'items' in properties[property].keys() and '$ref' not in properties[property]['items'].keys() and 'type' not in properties[property]['items'].keys():
-                    errors.append(schema_filename + ".json: Property `" + property + "` is type array but items attribute doesn't contain type or $ref attribute.")
+                    # Property of type array must contains the attribute items
+                    # items must have either type or $ref attribute
+                    if property_type == "array" and 'items' in properties[property].keys() and '$ref' not in properties[property]['items'].keys() and 'type' not in properties[property]['items'].keys():
+                        errors.append(schema_filename + ".json: Property `" + property + "` is type array but items attribute doesn't contain type or $ref attribute.")
 
-                # Property of type object must contains the attribute $ref
-                if properties[property]['type'] == "object" and '$ref' not in properties[property].keys():
-                    errors.append(schema_filename + ".json: Property `" + property + "` is type object but doesn't contain $ref.")
+                    # Property of type object must contains the attribute $ref
+                    if property_type == "object" and '$ref' not in properties[property].keys():
+                        errors.append(schema_filename + ".json: Property `" + property + "` is type object but doesn't contain $ref.")
 
             # format must be a valid JSON format
-            if 'format' in properties[property].keys() and properties[property]['format'] not in ["date", "date-time", "email"]:
-                errors.append(schema_filename + ".json: Format `" + properties[property]['format'] + "` is not a valid JSON format).")
+            if 'format' in properties[property].keys() and properties[property]['format'] not in ["date", "date-time", "email", "uri"]:
+                errors.append(schema_filename + ".json: Format `" + properties[property]['format'] + "` is not a valid JSON format.")
 
             # description should be a sentence - start with capital letter and end with full stop
             if 'description' in properties[property].keys() and not re.match('^[A-Z][^?!]*[.]$', properties[property]['description']):
@@ -329,11 +314,8 @@ class SchemaLinter:
 
 
 if __name__ == "__main__":
-    # Define the environment, transforming 'develop' and 'master' to their respective OLS valid environment to
-    # define the proper OLS API URL.
-    arguments = argument_parser().parse_args(sys.argv[1:])
-    environment = OLS_ENVIRONMENT[arguments.environment]
-    ols_api = 'https://ontology.{}.archive.data.humancellatlas.org/api'.format(environment)
+    # As of November 2024, we are now using the OLS4 for ontology checkup
+    ols_api = 'https://www.ebi.ac.uk/ols/api'
 
     schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
     jsons = [os.path.join(dirpath, f)
