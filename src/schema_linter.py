@@ -144,30 +144,30 @@ class SchemaLinter:
                 errors.append(schema_filename + ".json: Keyword `type` missing from property `" + property + "`.")
 
             else:
-                # remove null type of file_descriptor dri_uri property
-                if isinstance(properties[property]['type'], list) and len(properties[property]['type']) == 2 and properties[property]['type'][1] == 'null':
-                    properties[property]['type'] = properties[property]['type'][0]
+                # change property to list to test all values of array
+                properties[property]['type'] = properties[property]['type'] if isinstance(properties[property]['type'], list) else [properties[property]['type']]
                 
-                # type attribute must be set to one of the valid JSON types
-                if properties[property]['type'] not in ["string", "number", "boolean", "array", "object", "integer"]:
-                    errors.append(schema_filename + ".json: Type `" + properties[property]['type'] + "` is not a valid JSON type.")
+                for property_type in properties[property]['type']:
+                    # type attribute must be set to one of the valid JSON types
+                    if property_type not in ["string", "number", "boolean", "array", "object", "integer"]:
+                        errors.append(schema_filename + ".json: Type `" + property_type + "` is not a valid JSON type.")
 
-                # Property of type array must contain the attribute items
-                if properties[property]['type'] == "array" and 'items' not in properties[property].keys():
-                    errors.append(schema_filename + ".json: Property `" + property + "` is type array but doesn't contain items.")
+                    # Property of type array must contain the attribute items
+                    if property_type == "array" and 'items' not in properties[property].keys():
+                        errors.append(schema_filename + ".json: Property `" + property + "` is type array but doesn't contain items.")
 
-                # Property of type array must contains the attribute items
-                # items must have either type or $ref attribute
-                if properties[property]['type'] == "array" and 'items' in properties[property].keys() and '$ref' not in properties[property]['items'].keys() and 'type' not in properties[property]['items'].keys():
-                    errors.append(schema_filename + ".json: Property `" + property + "` is type array but items attribute doesn't contain type or $ref attribute.")
+                    # Property of type array must contains the attribute items
+                    # items must have either type or $ref attribute
+                    if property_type == "array" and 'items' in properties[property].keys() and '$ref' not in properties[property]['items'].keys() and 'type' not in properties[property]['items'].keys():
+                        errors.append(schema_filename + ".json: Property `" + property + "` is type array but items attribute doesn't contain type or $ref attribute.")
 
-                # Property of type object must contains the attribute $ref
-                if properties[property]['type'] == "object" and '$ref' not in properties[property].keys():
-                    errors.append(schema_filename + ".json: Property `" + property + "` is type object but doesn't contain $ref.")
+                    # Property of type object must contains the attribute $ref
+                    if property_type == "object" and '$ref' not in properties[property].keys():
+                        errors.append(schema_filename + ".json: Property `" + property + "` is type object but doesn't contain $ref.")
 
             # format must be a valid JSON format
             if 'format' in properties[property].keys() and properties[property]['format'] not in ["date", "date-time", "email"]:
-                errors.append(schema_filename + ".json: Format `" + properties[property]['format'] + "` is not a valid JSON format).")
+                errors.append(schema_filename + ".json: Format `" + properties[property]['format'] + "` is not a valid JSON format.")
 
             # description should be a sentence - start with capital letter and end with full stop
             if 'description' in properties[property].keys() and not re.match('^[A-Z][^?!]*[.]$', properties[property]['description']):
