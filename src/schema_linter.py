@@ -15,7 +15,7 @@ cwd = os.getcwd().split("/")[-1]
 
 required_schema_fields = ['$schema', 'description', 'additionalProperties', 'title', 'name', 'type', 'properties']
 
-allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependencies', 'if', 'then', 'else', 'minProperties']
+allowed_schema_fields = ['$schema', 'description', 'additionalProperties', 'required', 'title', 'name', 'type', 'properties', 'definitions', 'dependencies', 'if', 'then', 'else', 'allOf', 'minProperties']
 
 # Properties
 
@@ -149,7 +149,7 @@ class SchemaLinter:
                 
                 for property_type in properties[property]['type']:
                     # type attribute must be set to one of the valid JSON types
-                    if property_type not in ["string", "number", "boolean", "array", "object", "integer", None]:
+                    if property_type not in ["string", "number", "boolean", "array", "object", "integer", "null"]:
                         errors.append(schema_filename + ".json: Type `" + property_type + "` is not a valid JSON type.")
 
                     # Property of type array must contain the attribute items
