@@ -118,9 +118,9 @@ class MarkdownGenerator:
                     #     print(schema["title"] + "\t "+ property + "\t"+ link)
 
                     if "enum" in schema["properties"][property]:
-                        enum_values = ", ".join(schema["properties"][property]["enum"])
+                        enum_values = ", ".join(str(enum) for enum in schema["properties"][property]["enum"])
                     elif "enum" in schema["properties"][property].get("items", ""):
-                        enum_values = ", ".join(schema["properties"][property]["items"]["enum"])
+                        enum_values = ", ".join(str(enum) for enum in schema["properties"][property]["items"]["enum"])
                     else:
                         enum_values = ""
                     file.write(property + " | "+
