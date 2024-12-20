@@ -190,7 +190,11 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 method | How cells or organelles were dissociated. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Dissociation method |  | 
-reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md#purchased-reagents) | Protocol reagents |  | 
+reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased reagents |  | 
+digestion_time | Time of digestion of the specimen. | integer | no |  | Digestion time |  | 2; 5; 10
+digestion_time_unit | The unit in which the digestion time is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Digestion time unit |  | 
+digestion_temperature | Temperature of digestion in Celsius or in general terms (i.e. cold, warm, room temperature). | string | no |  | Digestion temperature |  | 4; 37; cold
+digestion_solution | Enzyme(s) or reagent(s) of the solution that was used for the digestion of the specimen. | array | no |  | Digestion solution | Citric-acid based, Detergent-based, Lysis buffer, Collagenase, Collagenase A, Collagenase B, Collagenase complex, Collagenase D, Collagenase I, Collagenase II, Collagenase IV, Dispase, Dispase II, DNAse, DNAse I, Elastase, Liberase, Protease, Trypsin, Trypsin-like | 
 
 ## iPSC induction protocol
 _Information about how a biomaterial is treated to become an induced pluripotent stem cell._
