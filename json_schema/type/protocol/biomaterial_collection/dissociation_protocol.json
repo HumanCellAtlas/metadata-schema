@@ -57,7 +57,7 @@
             "user_friendly": "Purchased reagents"
         },
         "digestion_time": {
-             "description": "Time of digestion of the specimen.",
+            "description": "Time of digestion of the specimen.",
             "type": "integer",
             "example": "2; 5; 10",
             "user_friendly": "Digestion time"
@@ -70,7 +70,7 @@
         },
         "digestion_temperature": {
             "description": "Temperature of digestion in Celsius or in general terms (i.e. cold, warm, room temperature).",
-            "pattern": "\\d+(\\.\\d+)|frozen|cold|room temperature|warm",
+            "pattern": "\\d+(\\.\\d+)?|frozen|cold|room temperature|warm",
             "type": "string",
             "example": "4; 37; cold",
             "user_friendly": "Digestion temperature"
