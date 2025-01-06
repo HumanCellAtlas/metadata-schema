@@ -1,5 +1,5 @@
 Schema,Change type,Change message,Version,Date
-type/protocol/biomaterial_collection/dissociation_protocol,minor,Changed of user_friendly name of reagent field,,
+type/protocol/biomaterial_collection/dissociation_protocol,minor,Changed user_friendly name of reagent field,,
 type/protocol/biomaterial_collection/dissociation_protocol,minor,Added optional digestion_time field,,
 type/protocol/biomaterial_collection/dissociation_protocol,minor,Added optional digestion_time_unit field,,
 type/protocol/biomaterial_collection/dissociation_protocol,minor,Added optional digestion_temperature field,,
