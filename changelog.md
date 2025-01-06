@@ -9,6 +9,14 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/biomaterial/donor_organism.json - v17.1.0] - 2024-12-11
+### Added
+Added non-required gender identity field.
+
+### [module/ontology/gender_identity_ontology.json - v1.0.0] - 2024-12-11
+### Added
+Added ontology module for gender identity.
+
 ### [module/biomaterial/medical_history.json - v7.0.0] - 2024-11-06
 ### Changed
 Changed medication field type Fix#1589
