@@ -84,23 +84,23 @@
                     "Citric-acid based",
                     "Detergent-based",
                     "Lysis buffer",
+                    "Accutase",
                     "Collagenase",
                     "Collagenase A",
-                    "Collagenase B",
-                    "Collagenase complex",
                     "Collagenase D",
                     "Collagenase I",
                     "Collagenase II",
                     "Collagenase IV",
                     "Dispase",
                     "Dispase II",
-                    "DNAse",
                     "DNAse I",
                     "Elastase",
+                    "Hyaluronidase",
                     "Liberase",
+                    "Papain",
                     "Protease",
-                    "Trypsin",
-                    "Trypsin-like"
+                    "TrypLE",
+                    "Trypsin"
                         ]
             },
             "user_friendly": "Digestion solution"
