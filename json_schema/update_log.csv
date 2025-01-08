@@ -1,5 +1,5 @@
 Schema,Change type,Change message,Version,Date
-module/project/hca_bionetwork,major,"Remove enum value in hca_bionetwork.name. Fix #1600",,
-module/project/hca_bionetwork,patch,"Add enum value in hca_bionetwork.name. Fix #1600",,
-type/project/project,major,"Remove enum value in hca_bionetwork.name. Fix #1600",,
-type/project/project,patch,"Add enum value in hca_bionetwork.name. Fix #1600",,
+module/project/hca_bionetwork,major,"Removed enum value in hca_bionetwork.name. Fix #1600",,
+module/project/hca_bionetwork,patch,"Added enum value in hca_bionetwork.name. Fix #1600",,
+type/project/project,major,"Removed enum value in hca_bionetwork.name. Fix #1600",,
+type/project/project,patch,"Added enum value in hca_bionetwork.name. Fix #1600",,
