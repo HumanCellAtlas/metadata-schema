@@ -70,8 +70,15 @@
         },
         "digestion_temperature": {
             "description": "Temperature of digestion in Celsius or in general terms (i.e. cold, warm, room temperature).",
-            "pattern": "^(\\d+(\\.\\d+)?|frozen|cold|room temperature|warm)$",
-            "type": "string",
+            "anyOf": [
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "string",
+                    "enum": ["frozen", "cold", "room temperature", "warm"]        
+                }
+            ],
             "example": "4; 37; cold",
             "user_friendly": "Digestion temperature"
         },
@@ -101,7 +108,7 @@
                     "Protease",
                     "TrypLE",
                     "Trypsin"
-                        ]
+                ]
             },
             "user_friendly": "Digestion solution"
         }
