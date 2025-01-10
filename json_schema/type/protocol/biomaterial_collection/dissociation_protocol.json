@@ -70,7 +70,7 @@
         },
         "digestion_temperature": {
             "description": "Temperature of digestion in Celsius or in general terms (i.e. cold, warm, room temperature).",
-            "anyOf": [
+            "oneOf": [
                 {
                     "type": "number"
                 },

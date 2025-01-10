@@ -31,7 +31,7 @@ example_exempt_properties = ['biomaterial_id', 'biomaterial_name', 'biomaterial_
 
 # Property attributes
 
-property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf', 'anyOf', 'bionetworks']
+property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf', 'oneOf', 'bionetworks']
 
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
@@ -140,14 +140,14 @@ class SchemaLinter:
                     errors.append(schema_filename + ".json: Keyword `user_friendly` missing from property `" + property + "`.")
             
             # Property must contain type attribute
-            anyOf_types = [t['type'] for t in properties[property]['anyOf'] if 'type' in t.keys()] if \
-                    'anyOf' in properties[property].keys() else []
-            if 'type' not in properties[property].keys() and not anyOf_types:
+            oneOf_types = [t['type'] for t in properties[property]['oneOf'] if 'type' in t.keys()] if \
+                    'oneOf' in properties[property].keys() else []
+            if 'type' not in properties[property].keys() and not oneOf_types:
                 errors.append(schema_filename + ".json: Keyword `type` missing from property `" + property + "`.")
 
             else:
                 # assign type value to the property key
-                properties[property]['type'] = anyOf_types if 'type' not in properties[property].keys() else properties[property]['type']
+                properties[property]['type'] = oneOf_types if 'type' not in properties[property].keys() else properties[property]['type']
                 # change property to list to test all values of array
                 properties[property]['type'] = properties[property]['type'] if isinstance(properties[property]['type'], list) else [properties[property]['type']]
                 

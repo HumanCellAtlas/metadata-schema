@@ -117,16 +117,16 @@ class MarkdownGenerator:
                     # if link is not "":
                     #     print(schema["title"] + "\t "+ property + "\t"+ link)
                     
-                    # add type values if anyOf values are there
-                    anyOf_types = [t['type'] for t in schema['properties'][property]['anyOf'] if 'type' in t.keys()] if 'anyOf' in schema['properties'][property].keys() else []
-                    schema['properties'][property]['type'] = ' or '.join(anyOf_types) if 'type' not in schema['properties'][property].keys() else schema['properties'][property]['type']
-                    anyOf_enum = []
-                    if 'anyOf' in schema['properties'][property].keys():
-                        for t in schema['properties'][property]['anyOf']:
+                    # add type values if oneOf values are there
+                    oneOf_types = [t['type'] for t in schema['properties'][property]['oneOf'] if 'type' in t.keys()] if 'oneOf' in schema['properties'][property].keys() else []
+                    schema['properties'][property]['type'] = ' or '.join(oneOf_types) if 'type' not in schema['properties'][property].keys() else schema['properties'][property]['type']
+                    oneOf_enum = []
+                    if 'oneOf' in schema['properties'][property].keys():
+                        for t in schema['properties'][property]['oneOf']:
                             if 'enum' in t.keys():
-                                anyOf_enum.extend(t['enum'])
-                    if anyOf_enum:
-                        schema['properties'][property]['enum'] = anyOf_enum if 'enum' not in schema['properties'][property].keys() else schema['properties'][property]['enum']
+                                oneOf_enum.extend(t['enum'])
+                    if oneOf_enum:
+                        schema['properties'][property]['enum'] = oneOf_enum if 'enum' not in schema['properties'][property].keys() else schema['properties'][property]['enum']
 
                     if "enum" in schema["properties"][property]:
                         enum_values = ", ".join(str(enum) for enum in schema["properties"][property]["enum"])
