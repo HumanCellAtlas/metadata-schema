@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-module/project/hca_bionetwork,major,"Changed enum value in hca_bionetwork.name. Fix #1600",,
