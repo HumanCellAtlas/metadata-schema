@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/project/hca_bionetwork.json - v2.0.0] - 2025-01-20
 ### Changed
 Changed enum value in hca_bionetwork.name. Fix #1600
@@ -14,8 +16,6 @@ Changed enum value in hca_bionetwork.name. Fix #1600
 ### [type/project/project.json - v20.0.0] - 2025-01-20
 ### Changed
 Changed enum value in hca_bionetwork.name. Fix #1600
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/donor_organism.json - v17.1.0] - 2024-12-11
 ### Added
