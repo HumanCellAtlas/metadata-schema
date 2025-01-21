@@ -31,7 +31,7 @@ example_exempt_properties = ['biomaterial_id', 'biomaterial_name', 'biomaterial_
 
 # Property attributes
 
-property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf', 'bionetworks']
+property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf', 'oneOf', 'bionetworks']
 
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
@@ -138,12 +138,16 @@ class SchemaLinter:
             if 'user_friendly' not in properties[property].keys() and property not in ['schema_version', 'schema_type', 'describedBy', 'provenance']:
                 if schema_filename not in ['links']:
                     errors.append(schema_filename + ".json: Keyword `user_friendly` missing from property `" + property + "`.")
-
+            
             # Property must contain type attribute
-            if 'type' not in properties[property].keys():
+            oneOf_types = [t['type'] for t in properties[property]['oneOf'] if 'type' in t.keys()] if \
+                    'oneOf' in properties[property].keys() else []
+            if 'type' not in properties[property].keys() and not oneOf_types:
                 errors.append(schema_filename + ".json: Keyword `type` missing from property `" + property + "`.")
 
             else:
+                # assign type value to the property key
+                properties[property]['type'] = oneOf_types if 'type' not in properties[property].keys() else properties[property]['type']
                 # change property to list to test all values of array
                 properties[property]['type'] = properties[property]['type'] if isinstance(properties[property]['type'], list) else [properties[property]['type']]
                 
@@ -151,7 +155,7 @@ class SchemaLinter:
                     # type attribute must be set to one of the valid JSON types
                     if property_type not in ["string", "number", "boolean", "array", "object", "integer", "null"]:
                         errors.append(schema_filename + ".json: Type `" + property_type + "` is not a valid JSON type.")
-
+                    
                     # Property of type array must contain the attribute items
                     if property_type == "array" and 'items' not in properties[property].keys():
                         errors.append(schema_filename + ".json: Property `" + property + "` is type array but doesn't contain items.")
