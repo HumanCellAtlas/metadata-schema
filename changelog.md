@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.3.0] - 2025-01-21
 ### Changed
 Changed user_friendly name of reagent field
@@ -26,8 +28,6 @@ Added optional digestion_temperature field
 ### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.7.0] - 2025-01-21
 ### Added
 Added optional digestion_solution field
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/project/hca_bionetwork.json - v2.0.0] - 2025-01-20
 ### Changed
