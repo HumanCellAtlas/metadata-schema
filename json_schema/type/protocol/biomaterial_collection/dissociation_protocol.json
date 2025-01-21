@@ -54,7 +54,63 @@
                 "type": "object",
                 "$ref": "module/process/purchased_reagents.json"
             },
-            "user_friendly": "Protocol reagents"
+            "user_friendly": "Purchased reagents"
+        },
+        "digestion_time": {
+            "description": "Time of digestion of the specimen.",
+            "type": "integer",
+            "example": "2; 5; 10",
+            "user_friendly": "Digestion time"
+        },
+        "digestion_time_unit": {
+            "description": "The unit in which the digestion time is expressed.",
+            "type": "object",
+            "$ref": "module/ontology/time_unit_ontology.json",
+            "user_friendly": "Digestion time unit"
+        },
+        "digestion_temperature": {
+            "description": "Temperature of digestion in Celsius or in general terms (i.e. cold, warm, room temperature).",
+            "oneOf": [
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "string",
+                    "enum": ["frozen", "cold", "room temperature", "warm"]        
+                }
+            ],
+            "example": "4; 37; cold",
+            "user_friendly": "Digestion temperature"
+        },
+        "digestion_solution": {
+            "description": "Enzyme(s) or reagent(s) of the solution that was used for the digestion of the specimen.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Citric-acid based",
+                    "Detergent-based",
+                    "Lysis buffer",
+                    "Accutase",
+                    "Collagenase",
+                    "Collagenase A",
+                    "Collagenase D",
+                    "Collagenase I",
+                    "Collagenase II",
+                    "Collagenase IV",
+                    "Dispase",
+                    "Dispase II",
+                    "DNAse I",
+                    "Elastase",
+                    "Hyaluronidase",
+                    "Liberase",
+                    "Papain",
+                    "Protease",
+                    "TrypLE",
+                    "Trypsin"
+                ]
+            },
+            "user_friendly": "Digestion solution"
         }
     }
 }

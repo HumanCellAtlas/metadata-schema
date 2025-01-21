@@ -9,6 +9,26 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.3.0] - 2025-01-21
+### Changed
+Changed user_friendly name of reagent field
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.4.0] - 2025-01-21
+### Added
+Added optional digestion_time field
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.5.0] - 2025-01-21
+### Added
+Added optional digestion_time_unit field
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.6.0] - 2025-01-21
+### Added
+Added optional digestion_temperature field
+
+### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.7.0] - 2025-01-21
+### Added
+Added optional digestion_solution field
+
 ### [module/project/hca_bionetwork.json - v2.0.0] - 2025-01-20
 ### Changed
 Changed enum value in hca_bionetwork.name. Fix #1600
