@@ -287,7 +287,7 @@ text | The name of the strain to which the organism belongs. | string |  | Strai
 ### Medication ontology<a name='Medication ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | Medication(s) the individual was taking at time of biomaterial collection. | string |  | Medication |  | bisoprolol; paracetamol; loratadine
+text | Medication(s) the individual was taking at time of biomaterial collection. | string |  | Medication |  | Ibuprofen Lysine; Bisoprolol; salbutamol suspension
 ### File format ontology<a name='File format ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
