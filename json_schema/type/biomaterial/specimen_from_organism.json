@@ -122,7 +122,7 @@
             "type": "string", 
             "user_friendly": "Collection site", 
             "example": "52.175013, 0.141645; site_1; Addenbrooke's Hospital",
-            "guidelines": "Enter collection site latitude longitude in deciman degrees. If decimal degrees not available use site name or pseudonymised site name."
+            "guidelines": "Enter collection site latitude longitude in decimal degrees. If decimal degrees not available use site name or pseudonymised site name."
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",
