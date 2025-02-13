@@ -31,7 +31,7 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:ncit"],
-                "classes": ["ncit:C1505", "ncit:C54060", "ncit:C1909", "ncit:C129986", "ncit:C1899", "ncit:C913"],
+                "classes": ["ncit:C1505", "ncit:C54060", "ncit:C1909", "ncit:C129986", "ncit:C1899", "ncit:C1913"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
