@@ -50,6 +50,26 @@
             "user_friendly": "Parents ethnicity",
             "guidelines": "Enter one or more ethnicities, separated by a comma.",
             "bionetworks": ["genetic diversity"]
+        },
+        "primary_language": {
+            "description": "Primary language(s), spoken by donor. Can include dialects (for example, Hokkien).",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "user_friendly": "Donor primary language",
+            "example": "Mandarin Chinese; Hokkien; Bahasa Melayu",
+            "bionetworks": ["genetic diversity"]
+        },
+        "mother_father_language": {
+            "description": "Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents. Can include dialects (for example, Hokkien).",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "user_friendly": "Mother/ Father Tongue",
+            "example": "Mandarin Chinese; Hokkien; Bahasa Melayu",
+            "bionetworks": ["genetic diversity"]
         }
     }
 }
