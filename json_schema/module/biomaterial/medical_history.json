@@ -68,6 +68,25 @@
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
+        "dietary_state": {
+            "description": "Dietary state of donor at the time of collection.",
+            "type": "string",
+            "enum": [
+                "gluten_free",
+                "fodmap", 
+                "baby_formula",
+                "breastfeeding",
+                "elimination",
+                "keto",
+                "paleo",
+                "vegan",
+                "vegetarian",
+                "omnivore"
+            ],
+            "user_friendly": "Dietary state",
+            "example": "Should be one of: gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo, vegan, vegetarian, omnivore.",
+            "bionetworks": ["genetic diversity"]
+        },
         "test_results": {
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
