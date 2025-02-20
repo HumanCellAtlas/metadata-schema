@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+/module/biomaterial/human_specific,minor,Added optional ethnicity_question,, 
+/module/biomaterial/human_specific,minor,Added optional ethnicity_parents,, 
