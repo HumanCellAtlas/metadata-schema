@@ -87,6 +87,41 @@
             "example": "Should be one of: gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo, vegan, vegetarian, omnivore.",
             "bionetworks": ["genetic diversity"]
         },
+        "menarche_age": {
+            "description": "Age at menarche, rounded to nearest whole number.",
+            "type": "integer",
+            "user_friendly": "Menarche age",
+            "example": "10; 11;, 15",
+            "bionetworks": ["genetic diversity"]
+        },
+        "menopause_status": {
+            "description": "Menopausal status of donor at time of sample collection.",
+            "type": "string",
+            "enum": [
+                "pre-menopausal",
+                "peri-menopausal",
+                "post-menopausal", 
+                "post-menopausal (induced)"
+            ],
+            "user_friendly": "Menopause status",
+            "example": "pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
+            "guidelines": "Should be one of: pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
+            "bionetworks": ["genetic diversity"]
+        },
+        "parity": {
+            "description": "Number of children (full-term pregnancies) the donor has given birth to at time of sample collection.",
+            "type": "integer",
+            "user_friendly": "Pregnancy - parity",
+            "example": "0; 3, 7",
+            "bionetworks": ["genetic diversity"]
+        },
+        "gravidity": {
+            "description": "Number of pregnancies the donor has had at time of sample collection.",
+            "type": "integer",
+            "user_friendly": "Pregnancy - gravidity",
+            "example": "0; 3, 7",
+            "bionetworks": ["genetic diversity"]
+        },
         "test_results": {
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
