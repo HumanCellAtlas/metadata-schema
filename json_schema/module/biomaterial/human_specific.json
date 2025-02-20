@@ -70,6 +70,80 @@
             "user_friendly": "Mother/ Father Tongue",
             "example": "Mandarin Chinese; Hokkien; Bahasa Melayu",
             "bionetworks": ["genetic diversity"]
+        },
+        "current_residence_location_country": {
+            "description": "Country and state of donor's current residence at time of sample collection.",
+            "type": "string",
+            "user_friendly": "Country of current residence",
+            "example": "Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Nassau Bahamas",
+            "guidelines": "Enter the country and state if available.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "current_residence_location_granular": {
+            "description": "Nearest city, town, or village to location of donor's current residence at time of sample collection.",
+            "type": "string",
+            "user_friendly": "Location of current residence",
+            "example": "Singapore; Cambridge; Boston; Kingston",
+            "bionetworks": ["genetic diversity"]
+        },
+        "current_residence_duration": {
+            "description": "Duration of residence, in years, rounded up to the nearest whole number, at time of sample collection.",
+            "type": "string",
+            "pattern": "^[0-9]+-?[0-9]*$",
+            "user_friendly": "Duration of current residence",
+            "example": "20; 45-65",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "current_residence_urbanrural": {
+            "description": "Urban, suburban, or rural descriptor of current residence.",
+            "type": "string",
+            "enum": [
+                "urban",
+                "suburban",
+                "rural"
+            ],
+            "user_friendly": "Area type of current residence",
+            "example": "urban; suburban; rural",
+            "guidelines": "Should be one of: urban; suburban; rural",
+            "bionetworks": ["genetic diversity"]
+        },
+        "place_of_birth_location_country": {
+            "description": "Country and state of place of birth.",
+            "type": "string",
+            "user_friendly": "Country of birth",
+            "example": "Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Nassau Bahamas",
+            "guidelines": "Enter the country and state if available.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "place_of_birth_location_granular": {
+            "description": "Nearest city, town, or village to location of place of birth.",
+            "type": "string",
+            "user_friendly": "Location of birth",
+            "example": "Singapore; Cambridge; Boston; Kingston",
+            "bionetworks": ["genetic diversity"]
+        },
+        "place_of_birth_duration": {
+            "description": "Duration of residence, in years, rounded up to the nearest whole number.",
+            "type": "string",
+            "pattern": "^[0-9]+-?[0-9]*$",
+            "user_friendly": "Duration in place of birth",
+            "example": "20; 45-65",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "place_of_birth_urbanrural": {
+            "description": "Urban, suburban, or rural descriptor of place of birth.",
+            "type": "string",
+            "enum": [
+                "urban",
+                "suburban",
+                "rural"
+            ],
+            "user_friendly": "Area type of place of birth",
+            "example": "urban; suburban; rural",
+            "guidelines": "Should be one of: urban; suburban; rural",
+            "bionetworks": ["genetic diversity"]
         }
     }
 }
