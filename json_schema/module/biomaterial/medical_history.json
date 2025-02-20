@@ -73,7 +73,7 @@
             "type": "string",
             "enum": [
                 "gluten_free",
-                "fodmap", 
+                "fodmap",
                 "baby_formula",
                 "breastfeeding",
                 "elimination",
@@ -100,7 +100,7 @@
             "enum": [
                 "pre-menopausal",
                 "peri-menopausal",
-                "post-menopausal", 
+                "post-menopausal",
                 "post-menopausal (induced)"
             ],
             "user_friendly": "Menopause status",
@@ -135,39 +135,39 @@
             "example": "Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer"
         }
     },
-    "allOf": 
+    "allOf":
         [
             {
                 "if": {
-                    "properties": { 
+                    "properties": {
                         "smoking_status": {
-                            "const": "active" 
-                        } 
+                            "const": "active"
+                        }
                     }
                 },
                 "then": {
                     "properties": {
-                        "years_since_smoking_cessation": { 
-                            "maximum": 0 
+                        "years_since_smoking_cessation": {
+                            "maximum": 0
                         }
                     }
                 }
             },
             {
                 "if": {
-                    "properties": { 
-                        "smoking_status": { 
-                            "const": "never" 
-                        } 
+                    "properties": {
+                        "smoking_status": {
+                            "const": "never"
+                        }
                     }
                 },
                 "then": {
                     "properties": {
-                        "years_since_smoking_cessation": { 
-                            "type": "null" 
+                        "years_since_smoking_cessation": {
+                            "type": "null"
                         },
-                        "smoking_pack_years": { 
-                            "maximum": 0 
+                        "smoking_pack_years": {
+                            "maximum": 0
                         }
                     }
                 }
