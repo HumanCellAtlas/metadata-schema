@@ -68,23 +68,11 @@
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
-        "dietary_state": {
-            "description": "Dietary state of donor at the time of collection.",
-            "type": "string",
-            "enum": [
-                "gluten_free",
-                "fodmap",
-                "baby_formula",
-                "breastfeeding",
-                "elimination",
-                "keto",
-                "paleo",
-                "vegan",
-                "vegetarian",
-                "omnivore"
-            ],
-            "user_friendly": "Dietary state",
-            "example": "Should be one of: gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo, vegan, vegetarian, omnivore.",
+        "diet_meat": {
+            "description": "Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection.",
+            "type": "boolean",
+            "user_friendly": "Meat consumption",
+            "example": "Should be one of: yes; no. yes stands for donor consumes meat, no stands for donor does not consume meat",
             "bionetworks": ["genetic diversity"]
         },
         "menarche_age": {
