@@ -68,6 +68,48 @@
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
+        "diet_meat": {
+            "description": "Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection.",
+            "type": "boolean",
+            "user_friendly": "Meat consumption",
+            "example": "Should be one of: yes; no. yes stands for donor consumes meat, no stands for donor does not consume meat",
+            "bionetworks": ["genetic diversity"]
+        },
+        "menarche_age": {
+            "description": "Age at menarche, rounded to nearest whole number.",
+            "type": "integer",
+            "user_friendly": "Menarche age",
+            "example": "10; 11;, 15",
+            "bionetworks": ["genetic diversity"]
+        },
+        "menopause_status": {
+            "description": "Menopausal status of donor at time of sample collection.",
+            "type": "string",
+            "enum": [
+                "pre-menopausal",
+                "peri-menopausal",
+                "post-menopausal",
+                "post-menopausal (induced)"
+            ],
+            "user_friendly": "Menopause status",
+            "example": "pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
+            "guidelines": "Should be one of: pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
+            "bionetworks": ["genetic diversity"]
+        },
+        "parity": {
+            "description": "Number of children (full-term pregnancies) the donor has given birth to at time of sample collection.",
+            "type": "integer",
+            "user_friendly": "Pregnancy - parity",
+            "example": "0; 3, 7",
+            "bionetworks": ["genetic diversity"]
+        },
+        "gravidity": {
+            "description": "Number of pregnancies the donor has had at time of sample collection.",
+            "type": "integer",
+            "user_friendly": "Pregnancy - gravidity",
+            "example": "0; 3, 7",
+            "bionetworks": ["genetic diversity"]
+        },
         "test_results": {
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
@@ -81,39 +123,39 @@
             "example": "Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer"
         }
     },
-    "allOf": 
+    "allOf":
         [
             {
                 "if": {
-                    "properties": { 
+                    "properties": {
                         "smoking_status": {
-                            "const": "active" 
-                        } 
+                            "const": "active"
+                        }
                     }
                 },
                 "then": {
                     "properties": {
-                        "years_since_smoking_cessation": { 
-                            "maximum": 0 
+                        "years_since_smoking_cessation": {
+                            "maximum": 0
                         }
                     }
                 }
             },
             {
                 "if": {
-                    "properties": { 
-                        "smoking_status": { 
-                            "const": "never" 
-                        } 
+                    "properties": {
+                        "smoking_status": {
+                            "const": "never"
+                        }
                     }
                 },
                 "then": {
                     "properties": {
-                        "years_since_smoking_cessation": { 
-                            "type": "null" 
+                        "years_since_smoking_cessation": {
+                            "type": "null"
                         },
-                        "smoking_pack_years": { 
-                            "maximum": 0 
+                        "smoking_pack_years": {
+                            "maximum": 0
                         }
                     }
                 }
