@@ -9,6 +9,18 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/ontology/medication_ontology.json - v2.0.0] - 2025-02-28
+### Changed
+Changed ontology source for the medication_ontology
+
+### [module/biomaterial/medical_history.json - v8.0.0] - 2025-02-28
+### Changed
+Changed ontology source for the medication_ontology
+
+### [type/biomaterial/donor_organism.json - v18.0.0] - 2025-02-28
+### Changed
+Changed ontology source for the medication_ontology
+
 ### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.3.0] - 2025-01-21
 ### Changed
 Changed user_friendly name of reagent field
