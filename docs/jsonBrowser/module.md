@@ -232,9 +232,9 @@ Location: module/ontology/medication_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | Medication(s) the individual was taking at time of biomaterial collection. | string | yes |  | Medication |  | bisoprolol; paracetamol; loratadine
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Medication ontology ID |  | CHEBI:3127; CHEBI:46195; CHEBI:6538
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Medication ontology label |  | bisoprolol; paracetamol; loratadine
+text | Medication(s) the individual was taking at time of biomaterial collection. | string | yes |  | Medication |  | Ibuprofen Lysine; Bisoprolol; Ambroxol Hydrochloride
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Medication ontology ID |  | NCIT:C72809; NCIT:C61653; NCIT:C78113
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Medication ontology label |  | Ibuprofen Lysine; Bisoprolol; Ambroxol Hydrochloride
 
 ## File format ontology<a name='File format ontology'></a>
 _A term that may be associated with a file format-related ontology term._
