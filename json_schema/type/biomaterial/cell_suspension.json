@@ -83,6 +83,12 @@
             "type": "object",
             "$ref": "module/process/sequencing/plate_based_sequencing.json",
             "user_friendly": "Plate-based sequencing"
+        },
+        "institute": {
+            "description": "Institute where the biomaterial was processed.",
+            "type": "string",
+            "user_friendly": "Institute",
+            "example": "Wellcome Sanger Institute; University of Zurich; University of Pennsylvania"
         }
      }
 }
