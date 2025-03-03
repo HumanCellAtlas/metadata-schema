@@ -355,7 +355,7 @@ adjacent_diseases | Short description of the disease(s) adjacent to the specimen
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md#state-of-specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
-collection_site | Institute where the biomaterial was collected on. | string | no |  | Collection site |  | 52.175013, 0.141645; site_1; Addenbrooke's Hospital
+collection_institute | Institute where the biomaterial was collected on. | string | no |  | Collection institute |  | 52.175013, 0.141645; site_1; Addenbrooke's Hospital
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased specimen |  | 
 
 ## Cell suspension
