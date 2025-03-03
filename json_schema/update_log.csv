@@ -1,2 +1,3 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/specimen_from_organism,minor,"Added collection site in specimen_from_organism.Issue1606",,
+module/biomaterial/collection_institute,major,"Added collection_institute module.Issue1606",,
+type/biomaterial/specimen_from_organism,minor,"Added optional collection_institute in specimen_from_organism.Issue1606",,
