@@ -119,10 +119,9 @@
         },
         "collection_institute": {
             "description": "Institute where the biomaterial was collected on.",
-            "type": "string", 
-            "user_friendly": "Collection institute", 
-            "example": "52.175013, 0.141645; site_1; Addenbrooke's Hospital",
-            "guidelines": "Enter collection institute latitude longitude in decimal degrees. If decimal degrees not available use institute name or pseudonymized institute name."
+            "type": "object", 
+            "$ref": "module/ontology/organ_ontology.json",
+            "user_friendly": "Collection institute"
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",

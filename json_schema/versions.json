@@ -21,6 +21,7 @@
         "module": {
             "biomaterial": {
                 "cell_morphology": "6.1.7",
+                "collection_institute": "0.0.0",
                 "death": "5.5.1",
                 "disease_profile": "1.0.0",
                 "familial_relationship": "6.0.3",

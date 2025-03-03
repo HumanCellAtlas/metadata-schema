@@ -482,6 +482,17 @@ dlco_predicted_percent | Indicate the percentage of the predicted DLCO, based on
 kco | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
 kco_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
 
+## Collection institute<a name='Collection institute'></a>
+_Information about collection institute location._
+
+Location: module/biomaterial/collection_institute.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+latitude | The latitute of the collection institute, in decimal degrees. | string | no |  | Collection institute latitude |  | 52.1; -0.127541; 38.045956
+longitude | The longitude of the collection institute, in decimal degrees. | string | no |  | Collection institute longitude |  | 0.1; -84.512016; 23.792138
+name | The name of the collection institute. | string | no |  | Collection institute name |  | University of California, San Francisco
+
 ## Disease profile<a name='Disease profile'></a>
 _Information about specific diseases profile of the individual._
 
