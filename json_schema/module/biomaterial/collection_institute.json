@@ -31,7 +31,7 @@
           "pattern": "^-?([0-8]?\\d|90)(\\.\\d{1,6})?$",
           "example": "52.1; -0.127541; 38.045956",
           "user_friendly": "Collection institute latitude",
-          "guidelines": "Use one decimal place to keep the exact location private."
+          "guidelines": "If the exact location is considered sensitive information, use one decimal place."
         },
         "longitude": {
           "description": "The longitude of the collection institute, in decimal degrees.",
@@ -39,7 +39,7 @@
           "pattern": "^-?((1?[0-7]?\\d)|180)(\\.\\d{1,6})?$",
           "example": "0.1; -84.512016; 23.792138",
           "user_friendly": "Collection institute longitude",
-          "guidelines": "Use one decimal place to keep the exact location private."
+          "guidelines": "If the exact location is considered sensitive information, use one decimal place."
         },
         "name": {
           "description": "The name of the collection institute.",
