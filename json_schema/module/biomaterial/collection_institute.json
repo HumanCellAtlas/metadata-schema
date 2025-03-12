@@ -2,6 +2,14 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about collection institute location.",
     "additionalProperties": false,
+    "dependencies": {
+      "latitude": [
+        "longitude"
+        ],
+      "longitude": [
+        "latitude"
+        ]          
+      },
     "title": "Collection institute",
     "name": "collection_institute",
     "type": "object",
