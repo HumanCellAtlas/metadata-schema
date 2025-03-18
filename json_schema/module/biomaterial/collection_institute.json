@@ -46,7 +46,7 @@
         "longitude": {
           "description": "Longitude of the collection institute, in decimal degrees.",
           "type": "string",
-          "pattern": "^-?((1?[0-7]?\\d)|180)(\\.\\d{1,6})?$",
+          "pattern": "^-?((1?[0-7]?\\d)|180)\\.(\\d{0,5}[1-9]|0)$",
           "example": "0.1; -84.512016; 23.792138",
           "user_friendly": "Collection institute longitude",
           "guidelines": "Use one decimal place if the exact location is considered sensitive information."
