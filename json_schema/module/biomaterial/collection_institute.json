@@ -29,27 +29,27 @@
           "example": "4.6.1"
         },
         "name": {
-          "description": "The name of the collection institute.",
+          "description": "Name of the collection institute.",
           "type": "string",
           "example": "institute_1; Addenbrooke's Hospital; University of California, San Francisco",
           "user_friendly": "Collection institute name",
           "guidelines": "Use pseudonymized name if the institute name is unknown or is considered sensitive information."
         },
         "latitude": {
-          "description": "The latitute of the collection institute, in decimal degrees.",
+          "description": "Latitute of the collection institute, in decimal degrees.",
           "type": "string",
           "pattern": "^-?([0-8]?\\d|90)(\\.\\d{1,6})?$",
           "example": "52.1; -0.127541; 38.045956",
           "user_friendly": "Collection institute latitude",
-          "guidelines": "If the exact location is considered sensitive information, use one decimal place."
+          "guidelines": "Use one decimal place if the exact location is considered sensitive information."
         },
         "longitude": {
-          "description": "The longitude of the collection institute, in decimal degrees.",
+          "description": "Longitude of the collection institute, in decimal degrees.",
           "type": "string",
           "pattern": "^-?((1?[0-7]?\\d)|180)(\\.\\d{1,6})?$",
           "example": "0.1; -84.512016; 23.792138",
           "user_friendly": "Collection institute longitude",
-          "guidelines": "If the exact location is considered sensitive information, use one decimal place."
+          "guidelines": "Use one decimal place if the exact location is considered sensitive information."
         }
     }
 }
