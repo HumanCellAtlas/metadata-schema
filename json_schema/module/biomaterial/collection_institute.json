@@ -2,7 +2,9 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information about collection institute location.",
     "additionalProperties": false,
-    "minProperties": 1,
+    "required": [
+      "name"
+      ],
     "dependencies": {
       "latitude": [
         "longitude"
@@ -26,6 +28,13 @@
           "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
           "example": "4.6.1"
         },
+        "name": {
+          "description": "The name of the collection institute.",
+          "type": "string",
+          "example": "institute_1; Addenbrooke's Hospital; University of California, San Francisco",
+          "user_friendly": "Collection institute name",
+          "guidelines": "Use pseudonymized name if the institute name is unknown or is considered sensitive information."
+        },
         "latitude": {
           "description": "The latitute of the collection institute, in decimal degrees.",
           "type": "string",
@@ -41,13 +50,6 @@
           "example": "0.1; -84.512016; 23.792138",
           "user_friendly": "Collection institute longitude",
           "guidelines": "If the exact location is considered sensitive information, use one decimal place."
-        },
-        "name": {
-          "description": "The name of the collection institute.",
-          "type": "string",
-          "example": "University of California, San Francisco",
-          "user_friendly": "Collection institute name",
-          "guidelines": "Use pseudonymized name of the institute to keep the location private."
         }
     }
 }

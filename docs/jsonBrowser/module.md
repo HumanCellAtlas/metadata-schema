@@ -489,9 +489,9 @@ Location: module/biomaterial/collection_institute.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+name | The name of the collection institute. | string | yes |  | Collection institute name |  | institute_1; Addenbrooke's Hospital; University of California, San Francisco
 latitude | The latitute of the collection institute, in decimal degrees. | string | no |  | Collection institute latitude |  | 52.1; -0.127541; 38.045956
 longitude | The longitude of the collection institute, in decimal degrees. | string | no |  | Collection institute longitude |  | 0.1; -84.512016; 23.792138
-name | The name of the collection institute. | string | no |  | Collection institute name |  | University of California, San Francisco
 
 ## Disease profile<a name='Disease profile'></a>
 _Information about specific diseases profile of the individual._

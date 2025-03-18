@@ -361,7 +361,9 @@ _There are no required properties in schema Growth conditions_
 ### Medical tests<a name='Medical tests'></a>
 _There are no required properties in schema Medical tests_
 ### Collection institute<a name='Collection institute'></a>
-_There are no required properties in schema Collection institute_
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+name | The name of the collection institute. | string |  | Collection institute name |  | institute_1; Addenbrooke's Hospital; University of California, San Francisco
 ### Disease profile<a name='Disease profile'></a>
 _There are no required properties in schema Disease profile_
 ### Preservation and storage<a name='Preservation and storage'></a>
