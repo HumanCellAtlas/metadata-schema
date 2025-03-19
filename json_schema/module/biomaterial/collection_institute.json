@@ -39,7 +39,7 @@
         "latitude": {
           "description": "Latitute of the collection institute, in decimal degrees.",
           "type": "string",
-          "pattern": "^-?([0-8]?\\d|90)\\.(\\d{0,5}[1-9]|0)$",
+          "pattern": "^-?(90\\.0|([1-8]\\d|\\d)\\.(\\d{0,5}[1-9]|0))$",
           "example": "52.1; -0.127541; 38.045956",
           "user_friendly": "Collection institute latitude",
           "guidelines": "Use one decimal place if the exact location is considered sensitive information."
