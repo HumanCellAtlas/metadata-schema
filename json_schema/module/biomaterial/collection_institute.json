@@ -29,7 +29,7 @@
           "example": "4.6.1"
         },
         "name": {
-          "description": "Name of the collection institute.",
+          "description": "Name of the institute where the biomaterial was collected on.",
           "type": "string",
           "minLength": 1,          
           "example": "institute_1; Addenbrooke's Hospital; University of California, San Francisco",
@@ -37,7 +37,7 @@
           "guidelines": "Use pseudonymized name if the institute name is unknown or is considered sensitive information."
         },
         "latitude": {
-          "description": "Latitute of the collection institute, in decimal degrees.",
+          "description": "Latitute of the institute where the biomaterial was collected on, in decimal degrees.",
           "type": "string",
           "pattern": "^-?([0-8]?\\d|90)\\.(\\d{0,5}[1-9]|0)$",
           "example": "52.1; -0.127541; 38.045956",
@@ -45,7 +45,7 @@
           "guidelines": "Use one decimal place if the exact location is considered sensitive information."
         },
         "longitude": {
-          "description": "Longitude of the collection institute, in decimal degrees.",
+          "description": "Longitude of the institute where the biomaterial was collected on, in decimal degrees.",
           "type": "string",
           "pattern": "^-?((1?[0-7]?\\d)|180)\\.(\\d{0,5}[1-9]|0)$",
           "example": "0.1; -84.512016; 23.792138",
