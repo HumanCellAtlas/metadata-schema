@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2025-02-28T10:45:54Z",
+    "last_update_date": "2025-03-24T17:43:39Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -21,6 +21,7 @@
         "module": {
             "biomaterial": {
                 "cell_morphology": "6.1.7",
+                "collection_institute": "1.0.0",
                 "death": "5.5.1",
                 "disease_profile": "1.0.0",
                 "familial_relationship": "6.0.3",
@@ -98,7 +99,7 @@
                 "donor_organism": "18.0.0",
                 "imaged_specimen": "3.5.0",
                 "organoid": "11.5.0",
-                "specimen_from_organism": "10.9.0"
+                "specimen_from_organism": "10.10.0"
             },
             "file": {
                 "analysis_file": "8.0.0",
