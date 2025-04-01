@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/biomaterial/collection_institute.json - v1.0.0] - 2025-03-24
 ### Added
 Added collection_institute module.Issue1606
@@ -14,8 +16,6 @@ Added collection_institute module.Issue1606
 ### [type/biomaterial/specimen_from_organism.json - v10.10.0] - 2025-03-24
 ### Added
 Added optional collection_institute module in specimen_from_organism.Issue1606
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/ontology/medication_ontology.json - v2.0.0] - 2025-02-28
 ### Changed
