@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about collection institute location.",
+    "additionalProperties": false,
+    "required": [
+      "name"
+      ],
+    "dependencies": {
+      "latitude": [
+        "longitude"
+        ],
+      "longitude": [
+        "latitude"
+        ]          
+      },
+    "title": "Collection institute",
+    "name": "collection_institute",
+    "type": "object",
+    "properties": {
+        "describedBy": {
+          "description": "The URL reference to the schema.",
+          "type": "string",
+          "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/familial_relationship"
+        },
+        "schema_version": {
+          "description": "The version number of the schema in major.minor.patch format.",
+          "type": "string",
+          "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+          "example": "4.6.1"
+        },
+        "name": {
+          "description": "Name of the institute where the biomaterial was collected on.",
+          "type": "string",
+          "minLength": 1,          
+          "example": "institute_1; Addenbrooke's Hospital; University of California, San Francisco",
+          "user_friendly": "Collection institute name",
+          "guidelines": "Use pseudonymized name if the institute name is unknown or is considered sensitive information."
+        },
+        "latitude": {
+          "description": "Latitute of the institute where the biomaterial was collected on, in decimal degrees.",
+          "type": "string",
+          "pattern": "^-?(90\\.0|([1-8]\\d|\\d)\\.(\\d{0,5}[1-9]|0))$",
+          "example": "52.1; -0.127541; 38.045956",
+          "user_friendly": "Collection institute latitude",
+          "guidelines": "Use one decimal place if the exact location is considered sensitive information."
+        },
+        "longitude": {
+          "description": "Longitude of the institute where the biomaterial was collected on, in decimal degrees.",
+          "type": "string",
+          "pattern": "^-?(180\\.0|(1[0-7]\\d|[1-9]\\d|\\d)\\.(\\d{0,5}[1-9]|0))$",
+          "example": "0.1; -84.512016; 23.792138",
+          "user_friendly": "Collection institute longitude",
+          "guidelines": "Use one decimal place if the exact location is considered sensitive information."
+        }
+    }
+}

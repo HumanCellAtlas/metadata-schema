@@ -117,6 +117,12 @@
                  }
               ]
         },
+        "collection_institute": {
+            "description": "Institute where the biomaterial was collected on.",
+            "type": "object", 
+            "$ref": "module/ontology/organ_ontology.json",
+            "user_friendly": "Collection institute"
+        },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",
             "type": "object",
