@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/biomaterial/cell_suspension.json - v14.1.0] - 2025-04-08
+### Added
+Added processing institute in cell_suspension.Issue1608
+
 ### [module/biomaterial/collection_institute.json - v1.0.0] - 2025-03-24
 ### Added
 Added collection_institute module.Issue1606
