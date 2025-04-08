@@ -9,6 +9,30 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/biomaterial/cell_suspension.json - v14.1.0] - 2025-04-08
+### Added
+Added processing institute in cell_suspension.Issue1608
+
+### [module/biomaterial/collection_institute.json - v1.0.0] - 2025-03-24
+### Added
+Added collection_institute module.Issue1606
+
+### [type/biomaterial/specimen_from_organism.json - v10.10.0] - 2025-03-24
+### Added
+Added optional collection_institute module in specimen_from_organism.Issue1606
+
+### [module/ontology/medication_ontology.json - v2.0.0] - 2025-02-28
+### Changed
+Changed ontology source for the medication_ontology
+
+### [module/biomaterial/medical_history.json - v8.0.0] - 2025-02-28
+### Changed
+Changed ontology source for the medication_ontology
+
+### [type/biomaterial/donor_organism.json - v18.0.0] - 2025-02-28
+### Changed
+Changed ontology source for the medication_ontology
+
 ### [type/protocol/biomaterial_collection/dissociation_protocol.json - v6.3.0] - 2025-01-21
 ### Changed
 Changed user_friendly name of reagent field

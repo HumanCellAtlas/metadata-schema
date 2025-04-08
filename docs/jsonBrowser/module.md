@@ -232,9 +232,9 @@ Location: module/ontology/medication_ontology.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-text | Medication(s) the individual was taking at time of biomaterial collection. | string | yes |  | Medication |  | bisoprolol; paracetamol; loratadine
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Medication ontology ID |  | CHEBI:3127; CHEBI:46195; CHEBI:6538
-ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Medication ontology label |  | bisoprolol; paracetamol; loratadine
+text | Medication(s) the individual was taking at time of biomaterial collection. | string | yes |  | Medication |  | Ibuprofen Lysine; Bisoprolol; Ambroxol Hydrochloride
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Medication ontology ID |  | NCIT:C72809; NCIT:C61653; NCIT:C78113
+ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Medication ontology label |  | Ibuprofen Lysine; Bisoprolol; Ambroxol Hydrochloride
 
 ## File format ontology<a name='File format ontology'></a>
 _A term that may be associated with a file format-related ontology term._
@@ -493,6 +493,17 @@ dlco | Indicate the Diffusing Capacity of the Lung for Carbon Monoxide (DLCO) in
 dlco_predicted_percent | Indicate the percentage of the predicted DLCO, based on patient demographics, if available. | number | no |  | DLCO percent of predicted |  | 88; 95; 82
 kco | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
 kco_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
+
+## Collection institute<a name='Collection institute'></a>
+_Information about collection institute location._
+
+Location: module/biomaterial/collection_institute.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+name | Name of the institute where the biomaterial was collected on. | string | yes |  | Collection institute name |  | institute_1; Addenbrooke's Hospital; University of California, San Francisco
+latitude | Latitute of the institute where the biomaterial was collected on, in decimal degrees. | string | no |  | Collection institute latitude |  | 52.1; -0.127541; 38.045956
+longitude | Longitude of the institute where the biomaterial was collected on, in decimal degrees. | string | no |  | Collection institute longitude |  | 0.1; -84.512016; 23.792138
 
 ## Disease profile<a name='Disease profile'></a>
 _Information about specific diseases profile of the individual._

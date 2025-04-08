@@ -287,7 +287,7 @@ text | The name of the strain to which the organism belongs. | string |  | Strai
 ### Medication ontology<a name='Medication ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
-text | Medication(s) the individual was taking at time of biomaterial collection. | string |  | Medication |  | bisoprolol; paracetamol; loratadine
+text | Medication(s) the individual was taking at time of biomaterial collection. | string |  | Medication |  | Ibuprofen Lysine; Bisoprolol; Ambroxol Hydrochloride
 ### File format ontology<a name='File format ontology'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -360,6 +360,10 @@ _There are no required properties in schema Human-specific_
 _There are no required properties in schema Growth conditions_
 ### Medical tests<a name='Medical tests'></a>
 _There are no required properties in schema Medical tests_
+### Collection institute<a name='Collection institute'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+name | Name of the institute where the biomaterial was collected on. | string |  | Collection institute name |  | institute_1; Addenbrooke's Hospital; University of California, San Francisco
 ### Disease profile<a name='Disease profile'></a>
 _There are no required properties in schema Disease profile_
 ### Preservation and storage<a name='Preservation and storage'></a>
