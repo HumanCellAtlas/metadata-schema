@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/cell_suspension,minor,"Added processing institute in cell_suspension.Issue1608",,
