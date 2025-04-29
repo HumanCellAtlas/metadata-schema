@@ -7,6 +7,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [type/biomaterial/specimen_from_organism.json - v11.0.0] - 2025-04-29
+### Fixed
+Fixed typo in specimen_from_organism collection_institute field
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/cell_suspension.json - v14.1.0] - 2025-04-08
