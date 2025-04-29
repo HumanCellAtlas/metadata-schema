@@ -7,11 +7,15 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
+### [type/biomaterial/specimen_from_organism.json - v11.0.0] - 2025-04-29
+### Fixed
+Fixed typo in specimen_from_organism collection_institute field
+
 ### [type/biomaterial/cell_suspension.json - v14.1.0] - 2025-04-08
 ### Added
 Added processing institute in cell_suspension.Issue1608
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/collection_institute.json - v1.0.0] - 2025-03-24
 ### Added
