@@ -5,6 +5,12 @@
     "dependencies": {
       "ethnicity_question": [
         "ethnicity"
+        ],
+      "ancestry_genetic_datatype": [
+        "ancestry_genetic"
+        ],
+      "ancestry_genetic_pipeline": [
+        "ancestry_genetic"
         ]
       },
     "title": "Human-specific",
@@ -54,6 +60,31 @@
             },
             "user_friendly": "Parents ethnicity",
             "guidelines": "Enter one or more ethnicities, separated by a comma.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "ancestry_genetic": {
+            "description": "A quantitative measure of genetic ancestry. For instance Establish common coordinates across all studies, based on a reference comprising the 1000 Genomes Project and Human Genome Diversity Project datasets. Project donor data (genotype data, single-cell genomics data) against reference datasets. Report coordinates in principal component analysis (PCA) space relative to reference datasets.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "user_friendly": "Genetic ancestry",
+            "example": "PCA1: 0.1234; PCA2: -0.5678 or CENTRAL_SOUTH_ASIA: 0.0505; AMERICA: -0.1234",
+            "guidelines": "Separate components with double pipe character \\|\\|.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "ancestry_genetic_datatype": {
+            "description": "Data type (genotyping array, whole-genome sequence, single-cell genomics data) used for inference of genetic ancestry.",
+            "type": "string",
+            "user_friendly": "Genetic ancestry datatype",
+            "example": "singlecellFASTQ; IlluminaGSAv3; WGS",
+            "bionetworks": ["genetic diversity"]
+        },
+        "ancestry_genetic_pipeline": {
+            "description": "Pipeline name used for inference of genetic ancestry.",
+            "type": "string",
+            "user_friendly": "Genetic ancestry pipeline",
+            "example": "scadmix; HCA; local",
             "bionetworks": ["genetic diversity"]
         },
         "primary_language": {
