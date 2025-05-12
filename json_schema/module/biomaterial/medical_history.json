@@ -68,11 +68,11 @@
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
-        "diet_meat": {
-            "description": "Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection.",
+        "diet_meat_consumption": {
+            "description": "Dietary patterns of donor – meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet – at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat.",
             "type": "boolean",
             "user_friendly": "Meat consumption",
-            "example": "Should be one of: yes; no. yes stands for donor consumes meat, no stands for donor does not consume meat",
+            "example": "Should be one of: yes; no.",
             "bionetworks": ["genetic diversity"]
         },
         "menarche_age": {
