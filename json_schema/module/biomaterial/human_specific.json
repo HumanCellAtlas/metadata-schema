@@ -80,7 +80,7 @@
             "description": "Country and state of donor's current residence at time of sample collection.",
             "type": "string",
             "user_friendly": "Country of current residence",
-            "example": "Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Nassau Bahamas",
+            "example": "Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Bauchi State; Nigeria",
             "guidelines": "Enter the country and state if available.",
             "bionetworks": ["genetic diversity"]
         },
@@ -96,7 +96,7 @@
             "type": "string",
             "pattern": "^[0-9]+-?[0-9]*$",
             "user_friendly": "Duration of current residence",
-            "example": "20; 45-65",
+            "example": "20; 37; 45-65",
             "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen.",
             "bionetworks": ["genetic diversity"]
         },
@@ -117,7 +117,7 @@
             "description": "Country and state of place of birth.",
             "type": "string",
             "user_friendly": "Country of birth",
-            "example": "Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Nassau Bahamas",
+            "example": "Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Bauchi State; Nigeria",
             "guidelines": "Enter the country and state if available.",
             "bionetworks": ["genetic diversity"]
         },
@@ -133,7 +133,7 @@
             "type": "string",
             "pattern": "^[0-9]+-?[0-9]*$",
             "user_friendly": "Duration in place of birth",
-            "example": "20; 45-65",
+            "example": "20; 37; 45-65",
             "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen.",
             "bionetworks": ["genetic diversity"]
         },

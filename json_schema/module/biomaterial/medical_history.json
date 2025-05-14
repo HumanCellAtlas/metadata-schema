@@ -79,7 +79,7 @@
             "description": "Age at menarche, rounded to nearest whole number.",
             "type": "integer",
             "user_friendly": "Menarche age",
-            "example": "10; 11;, 15",
+            "example": "13; 12; 16",
             "bionetworks": ["genetic diversity"]
         },
         "menopause_status": {
@@ -100,14 +100,14 @@
             "description": "Number of children (full-term pregnancies) the donor has given birth to at time of sample collection.",
             "type": "integer",
             "user_friendly": "Pregnancy - parity",
-            "example": "0; 3, 7",
+            "example": "0; 2; 3",
             "bionetworks": ["genetic diversity"]
         },
         "gravidity": {
             "description": "Number of pregnancies the donor has had at time of sample collection.",
             "type": "integer",
             "user_friendly": "Pregnancy - gravidity",
-            "example": "0; 3, 7",
+            "example": "2; 3; 5",
             "bionetworks": ["genetic diversity"]
         },
         "test_results": {
