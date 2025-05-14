@@ -5,12 +5,6 @@
     "dependencies": {
       "ethnicity_question": [
         "ethnicity"
-        ],
-      "ancestry_genetic_datatype": [
-        "ancestry_genetic"
-        ],
-      "ancestry_genetic_pipeline": [
-        "ancestry_genetic"
         ]
       },
     "title": "Human-specific",
