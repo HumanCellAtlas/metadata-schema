@@ -135,7 +135,7 @@
             "bionetworks": ["genetic diversity"]
         },
         "place_of_birth_duration": {
-            "description": "Duration of residence, in years, rounded up to the nearest whole number.",
+            "description": "Duration of residence in the place of birth, in years, rounded up to the nearest whole number.",
             "type": "string",
             "pattern": "^[0-9]+-?[0-9]*$",
             "user_friendly": "Duration in place of birth",

@@ -442,7 +442,7 @@ current_residence_duration | Duration of residence, in years, rounded up to the 
 current_residence_urbanrural | Urban, suburban, or rural descriptor of current residence. | string | no |  | Area type of current residence | urban, suburban, rural | urban; suburban; rural
 place_of_birth_location_country | Country and state of place of birth. | string | no |  | Country of birth |  | Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Nassau Bahamas
 place_of_birth_location_granular | Nearest city, town, or village to location of place of birth. | string | no |  | Location of birth |  | Singapore; Cambridge; Boston; Kingston
-place_of_birth_duration | Duration of residence, in years, rounded up to the nearest whole number. | string | no |  | Duration in place of birth |  | 20; 45-65
+place_of_birth_duration | Duration of residence in the place of birth, in years, rounded up to the nearest whole number. | string | no |  | Duration in place of birth |  | 20; 45-65
 place_of_birth_urbanrural | Urban, suburban, or rural descriptor of place of birth. | string | no |  | Area type of place of birth | urban, suburban, rural | urban; suburban; rural
 
 ## Growth conditions<a name='Growth conditions'></a>
