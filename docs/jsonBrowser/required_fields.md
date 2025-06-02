@@ -376,6 +376,8 @@ cause_of_death | Conditions resulting in death. | string |  | Cause of death |  
 _There are no required properties in schema Familial relationship_
 ### Medical history<a name='Medical history'></a>
 _There are no required properties in schema Medical history_
+### Residence<a name='Residence'></a>
+_There are no required properties in schema Residence_
 ### Cell morphology<a name='Cell morphology'></a>
 _There are no required properties in schema Cell morphology_
 ### State of specimen<a name='State of specimen'></a>

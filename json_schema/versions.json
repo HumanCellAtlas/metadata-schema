@@ -31,6 +31,7 @@
                 "medical_tests": "1.0.0",
                 "mouse_specific": "1.0.8",
                 "preservation_storage": "6.1.1",
+                "residence": "0.0.0",
                 "state_of_specimen": "6.0.0",
                 "timecourse": "2.0.2"
             },
