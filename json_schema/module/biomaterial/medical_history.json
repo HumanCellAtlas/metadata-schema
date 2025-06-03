@@ -75,39 +75,10 @@
             "example": "Should be one of: yes; no.",
             "bionetworks": ["genetic diversity"]
         },
-        "menarche_age": {
-            "description": "Age at menarche, rounded to nearest whole number.",
-            "type": "integer",
-            "user_friendly": "Menarche age",
-            "example": "13; 12; 16",
-            "bionetworks": ["genetic diversity"]
-        },
-        "menopause_status": {
-            "description": "Menopausal status of donor at time of sample collection.",
-            "type": "string",
-            "enum": [
-                "pre-menopausal",
-                "peri-menopausal",
-                "post-menopausal",
-                "post-menopausal (induced)"
-            ],
-            "user_friendly": "Menopause status",
-            "example": "pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
-            "guidelines": "Should be one of: pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
-            "bionetworks": ["genetic diversity"]
-        },
-        "parity": {
-            "description": "Number of children (full-term pregnancies) the donor has given birth to at time of sample collection.",
-            "type": "integer",
-            "user_friendly": "Pregnancy - parity",
-            "example": "0; 2; 3",
-            "bionetworks": ["genetic diversity"]
-        },
-        "gravidity": {
-            "description": "Number of pregnancies the donor has had at time of sample collection.",
-            "type": "integer",
-            "user_friendly": "Pregnancy - gravidity",
-            "example": "2; 3; 5",
+        "reproduction_history": {
+            "description": "Reproduction history of the donor at the time of collection.",
+            "type": "object",
+            "$ref": "module/biomaterial/reproduction_history.json",
             "bionetworks": ["genetic diversity"]
         },
         "test_results": {
