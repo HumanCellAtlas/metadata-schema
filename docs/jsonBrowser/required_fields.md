@@ -376,6 +376,8 @@ cause_of_death | Conditions resulting in death. | string |  | Cause of death |  
 _There are no required properties in schema Familial relationship_
 ### Medical history<a name='Medical history'></a>
 _There are no required properties in schema Medical history_
+### Residence<a name='Residence'></a>
+_There are no required properties in schema Residence_
 ### Cell morphology<a name='Cell morphology'></a>
 _There are no required properties in schema Cell morphology_
 ### State of specimen<a name='State of specimen'></a>
@@ -385,6 +387,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  | Timecourse value |  | 2; 5.5-10.5
 unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
+### Reproduction history<a name='Reproduction history'></a>
+_There are no required properties in schema Reproduction history_
 ### Mouse-specific<a name='Mouse-specific'></a>
 _There are no required properties in schema Mouse-specific_
 ### Purchased reagents<a name='Purchased reagents'></a>

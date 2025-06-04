@@ -432,6 +432,12 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
 ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Ethnicity |  | 
+ethnicity_question | Question and response options posed to donors for collecting metadata on donor self-reported ethnicity and / or tribe and / or dialect group and / or race etc. | string | no |  | Ethnicity question |  | What is your ethnicity?; Are you Hispanic/Latino?; Which categories describe you? Select all that apply. Note You may select more than one group. 1. American Indian or Alaska Native (for example, Aztec, Blackfeet Tribe, Mayan, Navajo Nation, Native Village of Barrow (Utqiagvik) Inupiat Traditional Government, Nome Eskimo Community, etc.), 2 - Asian (for example, Asian Indian, Chinese, Filipino, Japanese, Korean, Vietnamese, etc.), 3 - Black, African American, or African (for example, African American, Ethiopian, Haitian, Jamaican, Nigerian, Somali, etc.), 4 - Hispanic, Latino, or Spanish (for example, Columbian, Cuban, Dominican, Mexican or Mexican American, Puerto Rican, Salvadoran, etc.), 5 - Middle Eastern or North African (for example, Algerian, Egyptian, Iranian, Lebanese, Moroccan, Syrian, etc.), 6 - Native Hawaiian or other Pacific Islander (for example, Chamorro, Fijian, Marshallese, Native Hawaiian, Tongan, etc.), 7 - White (for example, English, European, French, German, Irish, Italian, Polish, etc.), 8 - None of these fully describe me (optional free text answer), 9 - Prefer not to answer
+ethnicity_parents | Ethnicity(-ies) of the donor's parents. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Parents ethnicity |  | 
+primary_language | Primary language(s), spoken by donor. Can include dialects (for example, Hokkien). | array | no |  | Donor primary language |  | Mandarin Chinese; Hokkien; Bahasa Melayu
+mother_father_language | Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents. Can include dialects (for example, Hokkien). | array | no |  | Mother/ Father Tongue |  | Mandarin Chinese; Hokkien; Bahasa Melayu
+current_residence | Donor's current residence at time of sample collection. | object | no | [See module  residence](module.md#residence) | Current residence |  | 
+place_of_birth | Donor's place of birth residence. | object | no | [See module  residence](module.md#residence) | Place of birth |  | 
 
 ## Growth conditions<a name='Growth conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
@@ -558,8 +564,22 @@ smoking_status | Whether the individual is actively, was formerly or never consu
 smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55
 years_since_smoking_cessation | If smoking status is 'former', specify the number of years since smoking cessation. | integer | no |  | Years since smoking cessation |  | 12
 nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat. | boolean | no |  | Meat consumption |  | Should be one of: yes; no.
+reproduction_history | Reproduction history of the donor at the time of collection. | object | no | [See module  reproduction_history](module.md#reproduction-history) |  |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+
+## Residence<a name='Residence'></a>
+_Donor's residence location information._
+
+Location: module/biomaterial/residence.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+country | Country and state of donor's residence. | string | no |  | Country |  | Singapore; United Kingdom; Massachusetts USA; New South Wales Australia; Bauchi State; Nigeria
+granular_location | Nearest city, town, or village to location of donor's residence. | string | no |  | Location |  | Singapore; Cambridge; Boston; Kingston
+duration | Duration of residence, in years, rounded up to the nearest whole number. | string | no |  | Duration of residence |  | 20; 37; 45-65
+area_type | Urban, suburban, or rural descriptor of residence. | string | no |  | Area type of residence | urban, suburban, rural | urban; suburban; rural
 
 ## Cell morphology<a name='Cell morphology'></a>
 _Information relating to pathological and morphological features of cells._
@@ -602,6 +622,18 @@ Property name | Description | Type | Required? | Object reference? | User friend
 value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  | Timecourse value |  | 2; 5.5-10.5
 unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
 relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  | Timecourse relevance |  | Collection after tumor cells injected into the mammary gland; Time tissue underwent liberase digestion
+
+## Reproduction history<a name='Reproduction history'></a>
+_Reproduction history of the donor._
+
+Location: module/biomaterial/reproduction_history.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+menarche_age | Age at menarche, rounded to nearest whole number. | integer | no |  | Menarche age |  | 13; 12; 16
+menopause_status | Menopausal status of donor at time of sample collection. | string | no |  | Menopause status | pre-menopausal, peri-menopausal, post-menopausal, post-menopausal (induced) | pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)
+parity | Number of children (full-term pregnancies) the donor has given birth to at time of sample collection. | integer | no |  | Full term pregnancy - parity |  | 0; 2; 3
+gravidity | Number of pregnancies the donor has had at time of sample collection. | integer | no |  | Pregnancy - gravidity |  | 2; 3; 5
 
 ## Mouse-specific<a name='Mouse-specific'></a>
 _Information specific to an organism that is a mouse (Mus musculus)._
