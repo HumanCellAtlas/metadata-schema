@@ -9,7 +9,7 @@
         ]
     },
     "title": "Residence",
-    "name": "residence.json",
+    "name": "residence",
     "type": "object",
     "properties": {
         "describedBy": {

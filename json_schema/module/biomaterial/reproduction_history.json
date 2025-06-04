@@ -4,7 +4,7 @@
     "additionalProperties": false,
     "minProperties": 1,
     "title": "Reproduction history",
-    "name": "reproduction_history.json",
+    "name": "reproduction_history",
     "type": "object",
     "properties": {
         "describedBy": {
