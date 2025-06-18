@@ -78,6 +78,7 @@
         "reproduction_history": {
             "description": "Reproduction history of the donor at the time of collection.",
             "type": "object",
+            "user_friendly": "Reproduction history",
             "$ref": "module/biomaterial/reproduction_history.json",
             "bionetworks": ["genetic diversity"]
         },

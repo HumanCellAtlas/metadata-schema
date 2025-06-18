@@ -565,7 +565,7 @@ smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day mu
 years_since_smoking_cessation | If smoking status is 'former', specify the number of years since smoking cessation. | integer | no |  | Years since smoking cessation |  | 12
 nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
 diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat. | boolean | no |  | Meat consumption |  | Should be one of: yes; no.
-reproduction_history | Reproduction history of the donor at the time of collection. | object | no | [See module  reproduction_history](module.md#reproduction-history) |  |  | 
+reproduction_history | Reproduction history of the donor at the time of collection. | object | no | [See module  reproduction_history](module.md#reproduction-history) | Reproduction history |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
 
