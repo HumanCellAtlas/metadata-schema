@@ -75,11 +75,11 @@
             "example": "Should be one of: yes; no.",
             "bionetworks": ["genetic diversity"]
         },
-        "reproduction_history": {
-            "description": "Reproduction history of the donor at the time of collection.",
+        "reproductive_history": {
+            "description": "Reproductive history of the donor at the time of collection.",
             "type": "object",
-            "user_friendly": "Reproduction history",
-            "$ref": "module/biomaterial/reproduction_history.json",
+            "user_friendly": "Reproductive history",
+            "$ref": "module/biomaterial/reproductive_history.json",
             "bionetworks": ["genetic diversity"]
         },
         "test_results": {

@@ -366,6 +366,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 name | Name of the institute where the biomaterial was collected on. | string |  | Collection institute name |  | institute_1; Addenbrooke's Hospital; University of California, San Francisco
 ### Disease profile<a name='Disease profile'></a>
 _There are no required properties in schema Disease profile_
+### Reproductive history<a name='Reproductive history'></a>
+_There are no required properties in schema Reproductive history_
 ### Preservation and storage<a name='Preservation and storage'></a>
 _There are no required properties in schema Preservation and storage_
 ### Death<a name='Death'></a>
@@ -387,8 +389,6 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 --- | --- | --- | --- | --- | --- | --- 
 value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  | Timecourse value |  | 2; 5.5-10.5
 unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
-### Reproduction history<a name='Reproduction history'></a>
-_There are no required properties in schema Reproduction history_
 ### Mouse-specific<a name='Mouse-specific'></a>
 _There are no required properties in schema Mouse-specific_
 ### Purchased reagents<a name='Purchased reagents'></a>
