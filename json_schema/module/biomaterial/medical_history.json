@@ -26,7 +26,8 @@
                 "never"
             ],
             "user_friendly": "Alcohol status",
-            "example": "Should be one of: active, former, never."
+            "example": "Should be one of: active, former, never.",
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver"]
         },
         "alcohol_type": {
             "description": "Types of alcoholic beverages the donor consumed.",
@@ -35,21 +36,24 @@
                 "type": "string"
             },
             "user_friendly": "Alcohol type",
-            "example": "beer; liquor; wine"
+            "example": "beer; liquor; wine",
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver"]
         },
         "alcohol_units": {
             "description": "Alcohol consumption of donor in alcohol units per week (strength (ABV) x volume (ml) ÷ 1,000).",
             "type": "number",
             "user_friendly": "Alcohol units",
             "minimum": 0,
-            "example": "2.5; 15.2; 23"
+            "example": "2.5; 15.2; 23",
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver", "heart"]
         },
         "alcohol_usage_duration": {
             "description": "Number of years the donor has used any alcohol.",
             "type": "integer",
             "user_friendly": "Alcohol usage duration",
             "minimum": 0,
-            "example": 5
+            "example": 5,
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver"]
         },
         "medication": {
             "description": "Medication(s) the individual was taking at time of biomaterial collection.",
