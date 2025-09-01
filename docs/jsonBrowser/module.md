@@ -430,7 +430,7 @@ Location: module/biomaterial/human_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
+body_mass_index | The body mass index of the donor. | string | no |  | Body mass index |  | 20.21; 27.5-32.5
 ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Ethnicity |  | 
 
 ## Growth conditions<a name='Growth conditions'></a>
