@@ -45,7 +45,7 @@
             "example": "2.5; 15.2; 23"
         },
         "alcohol_usage_duration": {
-            "description": "Number of years the donor has used any alcohol.",
+            "description": "Number of years in which the donor consumed alcohol.",
             "type": "integer",
             "user_friendly": "Alcohol usage duration",
             "minimum": 0,
