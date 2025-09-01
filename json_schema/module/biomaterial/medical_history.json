@@ -18,7 +18,7 @@
             "example": "4.6.1"
         },
         "alcohol_status": {
-            "description": "Does the donor have drink/ drank/ never drank alcohol?",
+            "description": "Whether the individual is actively consuming, was formerly consuming or never consumed alcohol beverages",
             "type": "string",
             "enum": [
                 "active",
@@ -48,7 +48,7 @@
             "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver", "heart"]
         },
         "alcohol_usage_duration": {
-            "description": "Number of years the donor has used any alcohol.",
+            "description": "Number of years in which the donor consumed alcohol.",
             "type": "integer",
             "user_friendly": "Alcohol usage duration",
             "minimum": 0,
