@@ -46,7 +46,7 @@
             "example": "What is your ethnicity?; Are you Hispanic/Latino?; Which categories describe you? Select all that apply. Note You may select more than one group. 1. American Indian or Alaska Native (for example, Aztec, Blackfeet Tribe, Mayan, Navajo Nation, Native Village of Barrow (Utqiagvik) Inupiat Traditional Government, Nome Eskimo Community, etc.), 2 - Asian (for example, Asian Indian, Chinese, Filipino, Japanese, Korean, Vietnamese, etc.), 3 - Black, African American, or African (for example, African American, Ethiopian, Haitian, Jamaican, Nigerian, Somali, etc.), 4 - Hispanic, Latino, or Spanish (for example, Columbian, Cuban, Dominican, Mexican or Mexican American, Puerto Rican, Salvadoran, etc.), 5 - Middle Eastern or North African (for example, Algerian, Egyptian, Iranian, Lebanese, Moroccan, Syrian, etc.), 6 - Native Hawaiian or other Pacific Islander (for example, Chamorro, Fijian, Marshallese, Native Hawaiian, Tongan, etc.), 7 - White (for example, English, European, French, German, Irish, Italian, Polish, etc.), 8 - None of these fully describe me (optional free text answer), 9 - Prefer not to answer",
             "bionetworks": ["genetic diversity"]
         },
-        "ethnicity_parents": {
+        "ethnicity_of_parents": {
             "description": "Ethnicity(-ies) of the donor's parents.",
             "type": "array",
             "items": {
@@ -66,13 +66,13 @@
             "example": "Mandarin Chinese; Hokkien; Bahasa Melayu",
             "bionetworks": ["genetic diversity"]
         },
-        "mother_father_language": {
-            "description": "Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents. Can include dialects (for example, Hokkien).",
+        "language_of_family": {
+            "description": "Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents or any other person in the donor family. Can include dialects (for example, Hokkien).",
             "type": "array",
             "items": {
                 "type": "string"
             },
-            "user_friendly": "Mother/ Father Tongue",
+            "user_friendly": "Language of family",
             "example": "Mandarin Chinese; Hokkien; Bahasa Melayu",
             "bionetworks": ["genetic diversity"]
         },
