@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/medical_history.json,minor,Added surgery and diet related fields,,
+type/biomaterial/specimen_from_organism.json,minor,Added surgery-disease location and radial_tissue_term,,

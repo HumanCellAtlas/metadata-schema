@@ -8,6 +8,9 @@
         "biomaterial_core",
 	    "organ"
     ],
+    "dependencies": {
+        "adjacent_disease_location": ["adjacent_diseases"]
+    },
     "title": "Specimen from organism",
     "name": "specimen_from_organism",
     "type": "object",
@@ -65,6 +68,24 @@
             "guidelines": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
+        "radial_tissue_term": {
+            "description": "Layer(s) of the gut that was sampled.",
+            "example": "EPI; LP; MUSC; SUB; MLN",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "EPI",
+                    "LP",
+                    "MUSC",
+                    "SUB",
+                    "MLN"
+                ]
+            },
+            "guidelines": "Should be one of: EPI (epithelium), LP (lamina propria), MUSC (muscularis), SUB (submucosa), MLN (mesenteric lymph node).",
+            "user_friendly": "Radial tissue term",
+            "bionetworks": ["gut"]
+        },
         "transplant_organ": {
             "description": "Was the specimen collected after extraction for organ transplantation?",
             "type": "boolean",
@@ -89,6 +110,14 @@
 	    },
             "user_friendly": "Adjacent disease(s)",
             "guidelines": "If a healthy specimen is sampled from a site adjacent to diseased tissue, enter that tissue's disease here. If no diseased tissue is adjacent to the specimen, leave blank."
+        },
+        "adjacent_disease_location": {
+            "description": "A term for the specific location of the adjacent disease.",
+            "type": "object",
+            "$ref": "module/ontology/organ_ontology.json",
+            "user_friendly": "Adjacent disease location",
+            "guidelines": "If a healthy specimen is sampled from a site adjacent to diseased tissue, enter that diseased location here.",
+            "bionetworks": ["gut"]
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
@@ -122,6 +151,20 @@
             "type": "object", 
             "$ref": "module/biomaterial/collection_institute.json",
             "user_friendly": "Collection institute"
+        },
+        "procedure": {
+            "description": "Procedure used to collect the specimen from the organism.",
+            "type": "string",
+            "user_friendly": "Procedure",
+            "example": "colonoscopy; venipuncture; laparoscopic surgery",
+            "bionetworks": ["gut"]
+        },
+        "indication_for_sampling": {
+            "description": "The medical reason for why the donor was sampled",
+            "user_friendly": "Indication For Sampling",
+            "type": "string",
+            "example": "Suspected cancer; Rejected transplant because of metastasized colon cancer",
+            "bionetworks": ["gut"]
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",

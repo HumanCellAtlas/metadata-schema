@@ -349,13 +349,17 @@ biomaterial_core | Core biomaterial-level information. | object | yes | [See cor
 genus_species | The scientific binomial name for the species of the specimen. | array | no | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md#organ-ontology) | Organ |  | 
 organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md#organ-part-ontology) | Organ part |  | 
+radial_tissue_term | Layer(s) of the gut that was sampled. | array | no |  | Radial tissue term | EPI, LP, MUSC, SUB, MLN | EPI; LP; MUSC; SUB; MLN
 transplant_organ | Was the specimen collected after extraction for organ transplantation? | boolean | no |  | Transplant organ |  | yes; no
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
 adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 
+adjacent_disease_location | A term for the specific location of the adjacent disease. | object | no | [See module  organ_ontology](module.md#organ-ontology) | Adjacent disease location |  | 
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md#state-of-specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
 collection_institute | Institute where the biomaterial was collected on. | object | no | [See module  collection_institute](module.md#collection-institute) | Collection institute |  | 
+procedure | Procedure used to collect the specimen from the organism. | string | no |  | Procedure |  | colonoscopy; venipuncture; laparoscopic surgery
+indication_for_sampling | The medical reason for why the donor was sampled | string | no |  | Indication For Sampling |  | Suspected cancer; Rejected transplant because of metastasized colon cancer
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased specimen |  | 
 
 ## Cell suspension

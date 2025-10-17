@@ -79,6 +79,39 @@
             "type": "string",
             "user_friendly": "Treatments",
             "example": "Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer"
+        },
+        "previous_surgeries": {
+            "description": "Previous surgeries the individual has undergone prior to biomaterial collection.",
+            "type": "string",
+            "user_friendly": "Previous surgeries",
+            "example": "Appendectomy; Coleostomy; Vaginoplasty",
+            "bionetworks": ["gut"]
+        },
+        "defined_diet": {
+            "description": "Whether the individual was following a defined diet at the time of biomaterial collection.",
+            "type": "boolean",
+            "user_friendly": "Defined diet",
+            "guidelines": "Should be one of: yes, or no.",
+            "example": "yes; no",
+            "bionetworks": ["gut"]
+        },
+        "diet_specific": {
+            "description": "Defined diet the donor was on at the time of biomaterial collection.",
+            "user_friendly": "Diet Specific",
+            "example": "gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo",
+            "enum": [
+                "vegan",
+                "vegetarian",
+                "omnivore", 
+                "gluten_free",
+                "fodmap",
+                "baby_formula",
+                "breastfeeding",
+                "elimination",
+                "keto",
+                "paleo"
+            ],
+            "bionetworks": ["gut"]
         }
     },
     "allOf": 
