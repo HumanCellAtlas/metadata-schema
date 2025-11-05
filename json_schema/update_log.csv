@@ -1,2 +1,1 @@
 Schema,Change type,Change message,Version,Date
-system/file_descriptor,minor,"Added support for compact identifier-based DRS URIs in file descriptors",,
