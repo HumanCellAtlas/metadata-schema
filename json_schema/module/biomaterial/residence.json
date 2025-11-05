@@ -23,8 +23,8 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "country": {
-            "description": "Country of donor's residence.",
+        "country_territory": {
+            "description": "Country or territory of donor's residence.",
             "enum": [
                 "Afghanistan",
                 "Albania",
@@ -309,10 +309,10 @@
             "guidelines": "State, province, county, or other first-level administrative division within the country.",
             "bionetworks": ["genetic diversity"]
         },
-        "granular_location": {
+        "locality": {
             "description": "Nearest city, town, or village to location of donor's residence.",
             "type": "string",
-            "user_friendly": "Granular Location",
+            "user_friendly": "Locality",
             "example": "Singapore; Cambridge; Boston; Kingston",
             "bionetworks": ["genetic diversity"]
         },
