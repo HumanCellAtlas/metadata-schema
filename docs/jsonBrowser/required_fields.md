@@ -366,6 +366,8 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 name | Name of the institute where the biomaterial was collected on. | string |  | Collection institute name |  | institute_1; Addenbrooke's Hospital; University of California, San Francisco
 ### Disease profile<a name='Disease profile'></a>
 _There are no required properties in schema Disease profile_
+### Reproductive history<a name='Reproductive history'></a>
+_There are no required properties in schema Reproductive history_
 ### Preservation and storage<a name='Preservation and storage'></a>
 _There are no required properties in schema Preservation and storage_
 ### Death<a name='Death'></a>
@@ -376,6 +378,8 @@ cause_of_death | Conditions resulting in death. | string |  | Cause of death |  
 _There are no required properties in schema Familial relationship_
 ### Medical history<a name='Medical history'></a>
 _There are no required properties in schema Medical history_
+### Residence<a name='Residence'></a>
+_There are no required properties in schema Residence_
 ### Cell morphology<a name='Cell morphology'></a>
 _There are no required properties in schema Cell morphology_
 ### State of specimen<a name='State of specimen'></a>
