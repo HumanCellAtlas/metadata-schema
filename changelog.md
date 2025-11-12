@@ -7,6 +7,50 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+### [module/biomaterial/human_specific.json - v1.1.0] - 2025-11-12
+### Added
+Added optional ethnicity_question
+
+### [module/biomaterial/human_specific.json - v1.2.0] - 2025-11-12
+### Added
+Added optional ethnicity_parents
+
+### [module/biomaterial/human_specific.json - v1.3.0] - 2025-11-12
+### Added
+Added optional primary_language
+
+### [module/biomaterial/human_specific.json - v1.4.0] - 2025-11-12
+### Added
+Added optional mother_father_language
+
+### [module/biomaterial/residence.json - v1.0.0] - 2025-11-12
+### Added
+Added new module for residence information
+
+### [module/biomaterial/human_specific.json - v1.5.0] - 2025-11-12
+### Added
+Added optional current_residence
+
+### [module/biomaterial/human_specific.json - v1.6.0] - 2025-11-12
+### Added
+Added optional place_of_birth
+
+### [module/biomaterial/medical_history.json - v8.1.0] - 2025-11-12
+### Added
+Added optional diet_meat_consumption
+
+### [module/biomaterial/reproductive_history.json - v1.0.0] - 2025-11-12
+### Added
+Added new reproductive_history module
+
+### [module/biomaterial/medical_history.json - v8.2.0] - 2025-11-12
+### Added
+Added optional reproductive_history
+
+### [type/biomaterial/donor_organism.json - v18.1.0] - 2025-11-12
+### Added
+Added optional ethnicity_question
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/specimen_from_organism.json - v11.0.0] - 2025-04-29
