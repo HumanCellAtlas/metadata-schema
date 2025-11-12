@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Reproductive history of the donor.",
+    "additionalProperties": false,
+    "minProperties": 1,
+    "title": "Reproductive history",
+    "name": "reproductive_history",
+    "type": "object",
+    "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/human_specific"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "menarche_age": {
+            "description": "Age at menarche, rounded to nearest whole number.",
+            "type": "integer",
+            "user_friendly": "Menarche age",
+            "example": "13; 12; 16",
+            "bionetworks": ["genetic diversity"]
+        },
+        "menopause_status": {
+            "description": "Menopausal status of donor at time of sample collection.",
+            "type": "string",
+            "enum": [
+                "pre-menopausal",
+                "peri-menopausal",
+                "post-menopausal",
+                "post-menopausal (induced)"
+            ],
+            "user_friendly": "Menopause status",
+            "example": "pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
+            "guidelines": "Should be one of: pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)",
+            "bionetworks": ["genetic diversity"]
+        },
+        "parity": {
+            "description": "Number of children (full-term pregnancies) the donor has given birth to at time of sample collection.",
+            "type": "integer",
+            "user_friendly": "Full term pregnancy - parity",
+            "example": "0; 2; 3",
+            "bionetworks": ["genetic diversity"]
+        },
+        "gravidity": {
+            "description": "Number of pregnancies the donor has had at time of sample collection.",
+            "type": "integer",
+            "user_friendly": "Pregnancy - gravidity",
+            "example": "2; 3; 5",
+            "bionetworks": ["genetic diversity"]
+        }
+    }
+}

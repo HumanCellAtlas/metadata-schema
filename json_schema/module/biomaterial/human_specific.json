@@ -2,11 +2,16 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Information specific to a donor that is a human (Homo sapiens).",
     "additionalProperties": false,
+    "dependencies": {
+      "ethnicity_question": [
+        "ethnicity"
+        ]
+      },
     "title": "Human-specific",
     "name": "human_specific",
     "type": "object",
     "properties": {
-        "describedBy":  {
+        "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
             "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/human_specific"
@@ -33,6 +38,57 @@
             },
             "user_friendly": "Ethnicity",
             "guidelines": "Enter one or more ethnicities, separated by a comma."
+        },
+        "ethnicity_question": {
+            "description": "Question and response options posed to donors for collecting metadata on donor self-reported ethnicity and / or tribe and / or dialect group and / or race etc.",
+            "type": "string",
+            "user_friendly": "Ethnicity question",
+            "example": "What is your ethnicity?; Are you Hispanic/Latino?; Which categories describe you? Select all that apply. Note You may select more than one group. 1. American Indian or Alaska Native (for example, Aztec, Blackfeet Tribe, Mayan, Navajo Nation, Native Village of Barrow (Utqiagvik) Inupiat Traditional Government, Nome Eskimo Community, etc.), 2 - Asian (for example, Asian Indian, Chinese, Filipino, Japanese, Korean, Vietnamese, etc.), 3 - Black, African American, or African (for example, African American, Ethiopian, Haitian, Jamaican, Nigerian, Somali, etc.), 4 - Hispanic, Latino, or Spanish (for example, Columbian, Cuban, Dominican, Mexican or Mexican American, Puerto Rican, Salvadoran, etc.), 5 - Middle Eastern or North African (for example, Algerian, Egyptian, Iranian, Lebanese, Moroccan, Syrian, etc.), 6 - Native Hawaiian or other Pacific Islander (for example, Chamorro, Fijian, Marshallese, Native Hawaiian, Tongan, etc.), 7 - White (for example, English, European, French, German, Irish, Italian, Polish, etc.), 8 - None of these fully describe me (optional free text answer), 9 - Prefer not to answer",
+            "bionetworks": ["genetic diversity"]
+        },
+        "ethnicity_of_parents": {
+            "description": "Ethnicity(-ies) of the donor's parents.",
+            "type": "array",
+            "items": {
+                "$ref": "module/ontology/ethnicity_ontology.json"
+            },
+            "user_friendly": "Parents ethnicity",
+            "guidelines": "Enter one or more ethnicities, separated by a comma.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "primary_language": {
+            "description": "Primary language(s), spoken by donor. Can include dialects (for example, Hokkien).",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "user_friendly": "Donor primary language",
+            "example": "Mandarin Chinese; Hokkien; Bahasa Melayu",
+            "bionetworks": ["genetic diversity"]
+        },
+        "language_of_family": {
+            "description": "Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents or any other person in the donor family. Can include dialects (for example, Hokkien).",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "user_friendly": "Language of family",
+            "example": "Mandarin Chinese; Hokkien; Bahasa Melayu",
+            "bionetworks": ["genetic diversity"]
+        },
+        "current_residence": {
+            "description": "Donor's current residence at time of sample collection.",
+            "type": "object",
+            "$ref": "module/biomaterial/residence.json",
+            "user_friendly": "Current residence",
+            "bionetworks": ["genetic diversity"]
+        },
+        "place_of_birth": {
+            "description": "Donor's place of birth residence.",
+            "type": "object",
+            "$ref": "module/biomaterial/residence.json",
+            "user_friendly": "Place of birth",
+            "bionetworks": ["genetic diversity"]
         }
     }
 }
