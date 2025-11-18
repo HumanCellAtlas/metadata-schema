@@ -160,11 +160,11 @@
             "bionetworks": ["gut"]
         },
         "indication_for_sampling": {
-            "description": "The medical reason for why the donor was sampled",
+            "description": "The medical reason why a specimen was taken from the donor",
             "user_friendly": "Indication For Sampling",
             "type": "string",
             "example": "Suspected cancer; Rejected transplant because of metastasized colon cancer",
-            "bionetworks": ["gut"]
+            "bionetworks": ["gut", "heart"]
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",
