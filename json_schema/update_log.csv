@@ -1,4 +1,4 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/medical_history.json,minor,"Added surgery and diet related fieldsA and alcohol consumption details",,
+module/biomaterial/medical_history.json,minor,"Added surgery, diet related fields and alcohol consumption fields",,
 type/biomaterial/specimen_from_organism.json,minor,"Added surgery-disease location, indication_for_sampling and radial_tissue_term",,
 module/biomaterial/medical_history,major,Deprecate alcohol_history,,

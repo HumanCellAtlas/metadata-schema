@@ -563,9 +563,9 @@ years_since_smoking_cessation | If smoking status is 'former', specify the numbe
 nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
-previous_surgeries | Previous surgeries the individual has undergone prior to biomaterial collection. | string | no |  | Previous surgeries |  | Appendectomy; Coleostomy; Vaginoplasty
+previous_surgeries | Previous surgeries the individual has undergone prior to biomaterial collection. | string | no |  | Previous surgeries |  | Appendectomy; Coleostomy; Vaginoplasty; LASIK; Abdominal surgery
 defined_diet | Whether the individual was following a defined diet at the time of biomaterial collection. | boolean | no |  | Defined diet |  | yes; no
-diet_specific | Defined diet the donor was on at the time of biomaterial collection. |  | no |  | Diet Specific | vegan, vegetarian, omnivore, gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo | gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo
+diet_specific | Defined diet the donor was on at the time of biomaterial collection. | array | no |  | Diet Specific | vegan, vegetarian, omnivore, gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo | gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo
 
 ## Cell morphology<a name='Cell morphology'></a>
 _Information relating to pathological and morphological features of cells._
