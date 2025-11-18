@@ -359,7 +359,7 @@ preservation_storage | Information about how a specimen was preserved and/or sto
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
 collection_institute | Institute where the biomaterial was collected on. | object | no | [See module  collection_institute](module.md#collection-institute) | Collection institute |  | 
 procedure | Procedure used to collect the specimen from the organism. | string | no |  | Procedure |  | colonoscopy; venipuncture; laparoscopic surgery
-indication_for_sampling | The medical reason for why the donor was sampled | string | no |  | Indication For Sampling |  | Suspected cancer; Rejected transplant because of metastasized colon cancer
+indication_for_sampling | The medical reason why the donor was sampled | string | no |  | Indication For Sampling |  | Suspected cancer; Rejected transplant because of metastasized colon cancer
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased specimen |  | 
 
 ## Cell suspension
