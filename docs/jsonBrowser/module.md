@@ -506,6 +506,9 @@ copd_cat_score | Indicate the COPD Assessment Test (CAT) score. | integer | no |
 copd_gold_abe_assessment | Indicate the Global Initiative for Chronic Obstructive Lung Disease (GOLD) A, B, C, D assessment group if available. | string | no |  | GOLD ABE assessment | A, B, E | A; B; E
 copd_phenotype | Indicate the COPD disease phenotype(s) of donor. Please indicate all applicable phenotypes of donor. | array | no |  | COPD phenotype | COPD not otherwise specified, COPD with emphysema, COPD with bronchitis, COPD with history of asthma, COPD with >300 eos in blood, COPD with allergy, COPD with Chronic Mucus Hypersecretion, COPD with frequent exacerbations | COPD with bronchitis; COPD with history of asthma; COPD with emphysema
 copd_emphysema_percentage | Indicate the percentage of the lung that is affected by emphysema as judged based on non-invasive imaging, such as from a CT scan. | number | no |  | Percentage of emphysema |  | 
+PUCAI_score | Indicate the Pediatric Ulcerative Colitis Activity Index (PUCAI) score if available. | number | no |  | PUCAI score |  | 
+PCDAI_score | Indicate the Pediatric Crohn’s Disease Activity Index (PCDAI) score if available. | number | no |  | PCDAI score |  | 
+wPCDAI_score | Indicate the weighted Pediatric Crohn’s Disease Activity Index (wPCDAI) score if available. | number | no |  | wPCDAI score |  | 
 
 ## Preservation and storage<a name='Preservation and storage'></a>
 _Information relating to how a biomaterial was preserved and/or stored over a period of time._
