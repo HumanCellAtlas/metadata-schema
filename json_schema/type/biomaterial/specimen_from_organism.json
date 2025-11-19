@@ -8,9 +8,6 @@
         "biomaterial_core",
 	    "organ"
     ],
-    "dependencies": {
-        "adjacent_disease_location": ["adjacent_diseases"]
-    },
     "title": "Specimen from organism",
     "name": "specimen_from_organism",
     "type": "object",
@@ -116,7 +113,7 @@
             "type": "object",
             "$ref": "module/ontology/organ_ontology.json",
             "user_friendly": "Adjacent disease location",
-            "guidelines": "If a healthy specimen is sampled from a site adjacent to diseased tissue, enter that diseased location here.",
+            "guidelines": "If a specimen is sampled from a site adjacent to diseased tissue, enter the anatomical part affected by the disease.",
             "bionetworks": ["gut"]
         },
         "state_of_specimen": {
