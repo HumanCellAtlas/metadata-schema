@@ -31,7 +31,7 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:hcao", "obo:cl"],
-                "classes": ["CL:0000003"],
+                "classes": ["CL:0000003", "CL:0000000"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
