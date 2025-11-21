@@ -9,6 +9,10 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [system/file_descriptor.json - v2.2.0] - 2025-11-04
+### Added
+Added support for compact identifier-based DRS URIs in file descriptors
+
 ### [module/biomaterial/human_specific.json - v1.1.0] - 2025-11-12
 ### Added
 Added optional ethnicity_question
