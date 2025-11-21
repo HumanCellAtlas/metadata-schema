@@ -512,6 +512,9 @@ copd_cat_score | Indicate the COPD Assessment Test (CAT) score. | integer | no |
 copd_gold_abe_assessment | Indicate the Global Initiative for Chronic Obstructive Lung Disease (GOLD) A, B, C, D assessment group if available. | string | no |  | GOLD ABE assessment | A, B, E | A; B; E
 copd_phenotype | Indicate the COPD disease phenotype(s) of donor. Please indicate all applicable phenotypes of donor. | array | no |  | COPD phenotype | COPD not otherwise specified, COPD with emphysema, COPD with bronchitis, COPD with history of asthma, COPD with >300 eos in blood, COPD with allergy, COPD with Chronic Mucus Hypersecretion, COPD with frequent exacerbations | COPD with bronchitis; COPD with history of asthma; COPD with emphysema
 copd_emphysema_percentage | Indicate the percentage of the lung that is affected by emphysema as judged based on non-invasive imaging, such as from a CT scan. | number | no |  | Percentage of emphysema |  | 
+PUCAI_score | Indicate the Pediatric Ulcerative Colitis Activity Index (PUCAI) score if available. | number | no |  | PUCAI score |  | 
+PCDAI_score | Indicate the Pediatric Crohn’s Disease Activity Index (PCDAI) score if available. | number | no |  | PCDAI score |  | 
+wPCDAI_score | Indicate the weighted Pediatric Crohn’s Disease Activity Index (wPCDAI) score if available. | number | no |  | wPCDAI score |  | 
 
 ## Reproductive history<a name='Reproductive history'></a>
 _Reproductive history of the donor._
@@ -570,7 +573,10 @@ Location: module/biomaterial/medical_history.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
+alcohol_status | Whether the individual is actively consuming, was formerly consuming or never consumed alcohol beverages | string | no |  | Alcohol status | active, former, never | Should be one of: active, former, never.
+alcohol_type | Types of alcoholic beverages the donor consumed. | array | no |  | Alcohol type |  | beer; liquor; wine
+alcohol_units | Alcohol consumption of donor in alcohol units per week (strength (ABV) x volume (ml) ÷ 1,000). | number | no |  | Alcohol units |  | 2.5; 15.2; 23
+alcohol_usage_duration | Number of years in which the donor consumed alcohol. | integer | no |  | Alcohol usage duration |  | 5
 medication | Medication(s) the individual was taking at time of biomaterial collection. | array | no | [See module  medication_ontology](module.md#medication-ontology) | Medication |  | 
 smoking_status | Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe etc. | string | no |  | Smoking status | active, former, never | Should be one of: active, former, never.
 smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55
@@ -580,6 +586,9 @@ diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish
 reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+previous_surgeries | Previous surgeries the individual has undergone prior to biomaterial collection. | string | no |  | Previous surgeries |  | Appendectomy; Coleostomy; Vaginoplasty; LASIK; Abdominal surgery
+defined_diet | Whether the individual was following a defined diet at the time of biomaterial collection. | boolean | no |  | Defined diet |  | yes; no
+diet_specific | Defined diet the donor was on at the time of biomaterial collection. | array | no |  | Diet Specific | vegan, vegetarian, omnivore, gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo | gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
