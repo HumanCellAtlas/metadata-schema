@@ -2,6 +2,13 @@
     "migrations": [
         {
             "source_schema": "medical_history",
+            "property": "alcohol_history",
+            "effective_from": "9.0.0",
+            "reason": "Field standardization",
+            "type": "deprecated property"
+        },
+        {
+            "source_schema": "medical_history",
             "property": "smoking_history",
             "effective_from": "6.0.0",
             "reason": "Field standardization",

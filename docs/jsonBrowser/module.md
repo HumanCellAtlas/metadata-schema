@@ -570,7 +570,10 @@ Location: module/biomaterial/medical_history.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
+alcohol_status | Whether the individual is actively consuming, was formerly consuming or never consumed alcohol beverages | string | no |  | Alcohol status | active, former, never | Should be one of: active, former, never.
+alcohol_type | Types of alcoholic beverages the donor consumed. | array | no |  | Alcohol type |  | beer; liquor; wine
+alcohol_units | Alcohol consumption of donor in alcohol units per week (strength (ABV) x volume (ml) ÷ 1,000). | number | no |  | Alcohol units |  | 2.5; 15.2; 23
+alcohol_usage_duration | Number of years in which the donor consumed alcohol. | integer | no |  | Alcohol usage duration |  | 5
 medication | Medication(s) the individual was taking at time of biomaterial collection. | array | no | [See module  medication_ontology](module.md#medication-ontology) | Medication |  | 
 smoking_status | Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe etc. | string | no |  | Smoking status | active, former, never | Should be one of: active, former, never.
 smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55

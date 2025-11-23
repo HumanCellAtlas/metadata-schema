@@ -1,1 +1,3 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/medical_history,minor,Added alcohol consumption details,,
+module/biomaterial/medical_history,major,Deprecate alcohol_history,,
