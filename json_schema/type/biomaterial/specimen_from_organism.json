@@ -149,13 +149,6 @@
             "$ref": "module/biomaterial/collection_institute.json",
             "user_friendly": "Collection institute"
         },
-        "procedure": {
-            "description": "Procedure used to collect the specimen from the organism.",
-            "type": "string",
-            "user_friendly": "Procedure",
-            "example": "colonoscopy; venipuncture; laparoscopic surgery",
-            "bionetworks": ["gut"]
-        },
         "indication_for_sampling": {
             "description": "The medical reason why a specimen was taken from the donor",
             "user_friendly": "Indication For Sampling",
