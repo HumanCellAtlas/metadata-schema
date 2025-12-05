@@ -74,9 +74,9 @@
                 "enum": [
                     "EPI",
                     "LP",
+                    "MLN",
                     "MUSC",
                     "SUB",
-                    "MLN"
                 ]
             },
             "guidelines": "Should be one of: EPI (epithelium), LP (lamina propria), MUSC (muscularis), SUB (submucosa), MLN (mesenteric lymph node).",
