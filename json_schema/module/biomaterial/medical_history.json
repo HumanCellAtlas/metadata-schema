@@ -18,7 +18,7 @@
             "example": "4.6.1"
         },
         "alcohol_status": {
-            "description": "Whether the individual is actively consuming, was formerly consuming or never consumed alcohol beverages",
+            "description": "Whether the individual is actively consuming, has formerly consumed or has never consumed alcohol beverages",
             "type": "string",
             "enum": [
                 "active",
