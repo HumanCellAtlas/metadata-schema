@@ -24,11 +24,11 @@
         },
         "body_mass_index": {
             "description": "The body mass index of the donor.",
-            "type": "number",
-            "maximum": 100,
-            "minimum": 5,
-            "example": 36.4,
-            "user_friendly": "Body mass index"
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "example": "36.4; 29-32 ",
+            "user_friendly": "Body mass index",
+            "bionetworks": ["genetic diversity"]
         },
         "ethnicity": {
             "description": "Ethnicity of the donor.",
