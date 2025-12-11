@@ -250,6 +250,24 @@
             "example": "10^9/L; cells/μL",
             "guidelines": "Should be one of: 10^9/L; cells/μL",
             "bionetworks": ["adipose"]
+        },
+        "shbg": {
+            "description": "Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "SHBG",
+            "example": "10; 140; 72",
+            "bionetworks": ["adipose"]
+        },
+        "shbg_unit": {
+            "description": "SHBG unit.",
+            "type": "string",
+            "enum": [
+                "nmol/L"
+            ],
+            "user_friendly": "SHBG unit",
+            "example": "nmol/L",
+            "guidelines": "Should be one of: nmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }

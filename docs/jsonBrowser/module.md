@@ -615,6 +615,8 @@ ldl | Low-density lipoprotein cholesterol (LDL) in the last blood test of the do
 ldl_unit | LDL unit. | string | no |  | LDL unit | mg/dL, mmol/L | mg/dL; mmol/L
 platelet_count | Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection | number | no |  | Platelet count |  | 240; 124; 110
 platelet_count_unit | Platelet count unit. | string | no |  | Platelet count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
+shbg | Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection. | number | no |  | SHBG |  | 10; 140; 72
+shbg_unit | SHBG unit. | string | no |  | SHBG unit | nmol/L | nmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
