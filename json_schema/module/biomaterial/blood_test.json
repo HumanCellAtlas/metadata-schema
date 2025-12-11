@@ -212,6 +212,25 @@
             "user_friendly": "HOMA-IR",
             "example": "0.4; 1.2; 0.94",
             "bionetworks": ["adipose"]
+        },
+        "ldl": {
+            "description": "Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "LDL",
+            "example": "160; 133",
+            "bionetworks": ["adipose"]
+        },
+        "ldl_unit": {
+            "description": "LDL unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "LDL unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }

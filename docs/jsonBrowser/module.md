@@ -611,6 +611,8 @@ hba1c_unit | HbA1c unit. | string | no |  | HbA1c unit | mmol/mol, % | mmol/mol;
 hdl | High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection. | number | no |  | HDL |  | 40; 60; 92
 hdl_unit | HDL unit. | string | no |  | HDL unit | mg/dL, mmol/L | mg/dL; mmol/L
 homa_ir | Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection. | number | no |  | HOMA-IR |  | 0.4; 1.2; 0.94
+ldl | Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection. | number | no |  | LDL |  | 160; 133
+ldl_unit | LDL unit. | string | no |  | LDL unit | mg/dL, mmol/L | mg/dL; mmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
