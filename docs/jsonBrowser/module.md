@@ -590,6 +590,8 @@ Location: module/biomaterial/blood_test.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
+androstenedione | Androstenedione in the last blood test of the donor before collection. | number | no |  | Androstenedione |  | 0.7; 3.4; 2.41
+androstenedione_unit | Androstenedione unit. | string | no |  | Androstenedione unit | ng/dL, nmol/L | ng/dL; nmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._

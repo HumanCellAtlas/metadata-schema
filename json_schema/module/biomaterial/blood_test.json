@@ -17,6 +17,25 @@
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
+        },
+        "androstenedione": {
+            "description": "Androstenedione in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Androstenedione",
+            "example": "0.7; 3.4; 2.41",
+            "bionetworks": ["adipose"]
+        },
+        "androstenedione_unit": {
+            "description": "Androstenedione unit.",
+            "type": "string",
+            "enum": [
+                "ng/dL",
+                "nmol/L"
+            ],
+            "user_friendly": "Androstenedione unit",
+            "example": "ng/dL; nmol/L",
+            "guidelines": "Should be one of: ng/dL; nmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }
