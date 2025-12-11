@@ -613,6 +613,8 @@ hdl_unit | HDL unit. | string | no |  | HDL unit | mg/dL, mmol/L | mg/dL; mmol/L
 homa_ir | Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection. | number | no |  | HOMA-IR |  | 0.4; 1.2; 0.94
 ldl | Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection. | number | no |  | LDL |  | 160; 133
 ldl_unit | LDL unit. | string | no |  | LDL unit | mg/dL, mmol/L | mg/dL; mmol/L
+platelet_count | Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection | number | no |  | Platelet count |  | 240; 124; 110
+platelet_count_unit | Platelet count unit. | string | no |  | Platelet count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._

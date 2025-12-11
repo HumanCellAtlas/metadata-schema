@@ -231,6 +231,25 @@
             "example": "mg/dL; mmol/L",
             "guidelines": "Should be one of: mg/dL; mmol/L",
             "bionetworks": ["adipose"]
+        },
+        "platelet_count": {
+            "description": "Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection",
+            "type": "number",
+            "user_friendly": "Platelet count",
+            "example": "240; 124; 110",
+            "bionetworks": ["adipose"]
+        },
+        "platelet_count_unit": {
+            "description": "Platelet count unit.",
+            "type": "string",
+            "enum": [
+                "10^9/L",
+                "cells/μL"
+            ],
+            "user_friendly": "Platelet count unit",
+            "example": "10^9/L; cells/μL",
+            "guidelines": "Should be one of: 10^9/L; cells/μL",
+            "bionetworks": ["adipose"]
         }
     }
 }
