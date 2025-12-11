@@ -306,6 +306,25 @@
             "example": "mg/dL; mmol/L",
             "guidelines": "Should be one of: mg/dL; mmol/L",
             "bionetworks": ["adipose"]
+        },
+        "white_blood_cell_count": {
+            "description": "Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "White cell count",
+            "example": "4.5; 11; 9.24",
+            "bionetworks": ["adipose"]
+        },
+        "white_blood_cell_count_unit": {
+            "description": "White cell count unit.",
+            "type": "string",
+            "enum": [
+                "10^9/L",
+                "cells/μL"
+            ],
+            "user_friendly": "White cell count unit",
+            "example": "10^9/L; cells/μL",
+            "guidelines": "Should be one of: 10^9/L; cells/μL",
+            "bionetworks": ["adipose"]
         }
     }
 }
