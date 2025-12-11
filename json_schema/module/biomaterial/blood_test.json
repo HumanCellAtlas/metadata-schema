@@ -186,6 +186,25 @@
             "example": "mmol/mol; %",
             "guidelines": "Should be one of: mmol/mol; %",
             "bionetworks": ["adipose"]
+        },
+        "hdl": {
+            "description": "High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "HDL",
+            "example": "40; 60; 92",
+            "bionetworks": ["adipose"]
+        },
+        "hdl_unit": {
+            "description": "HDL unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "HDL unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }

@@ -608,6 +608,8 @@ haemoglobin | Concentration of haemoglobin in whole blood from the donor's last 
 haemoglobin_unit | Haemoglobin unit. | string | no |  | Haemoglobin unit | g/dL, mmol/L | g/dL; mmol/L
 hba1c | Concentration of glycated hemoglobin (HbA1c) from the donor's last blood test prior to biopsy collection. | number | no |  | HbA1c |  | 42; 58; 53.3
 hba1c_unit | HbA1c unit. | string | no |  | HbA1c unit | mmol/mol, % | mmol/mol; %
+hdl | High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection. | number | no |  | HDL |  | 40; 60; 92
+hdl_unit | HDL unit. | string | no |  | HDL unit | mg/dL, mmol/L | mg/dL; mmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
