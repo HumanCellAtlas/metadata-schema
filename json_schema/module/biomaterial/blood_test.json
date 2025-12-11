@@ -130,6 +130,24 @@
             "example": "mmol/L",
             "guidelines": "Should be one of: mmol/L",
             "bionetworks": ["adipose"]
+        },
+        "haematocrit": {
+            "description": "Percentage of red blood cells in whole blood from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "Haematocrit",
+            "example": "36; 54; 45",
+            "bionetworks": ["adipose"]
+        },
+        "haematocrit_unit": {
+            "description": "Haematocrit unit.",
+            "type": "string",
+            "enum": [
+                "percentage (%)"
+            ],
+            "user_friendly": "Haematocrit unit",
+            "example": "percentage (%)",
+            "guidelines": "Should be one of: percentage (%)",
+            "bionetworks": ["adipose"]
         }
     }
 }
