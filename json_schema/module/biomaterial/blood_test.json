@@ -74,6 +74,25 @@
             "example": "pg/mL; pmol/L",
             "guidelines": "Should be one of: pg/mL; pmol/L",
             "bionetworks": ["adipose"]
+        },
+        "fasting_glucose": {
+            "description": "Fasting glucose levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection.",
+            "type": "number",
+            "user_friendly": "Fasting glucose",
+            "example": "70; 125; 90.2",
+            "bionetworks": ["adipose"]
+        },
+        "fasting_glucose_unit": {
+            "description": "Fasting glucose unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "Fasting glucose unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }

@@ -596,6 +596,8 @@ dhea | Dehydroepiandrosterone (DHEA) in the last blood test of the donor before 
 dhea_unit | DHEA unit. | string | no |  | DHEA unit | ng/dL, nmol/L | ng/dL; nmol/L
 estrogen | Estrogen in the last blood test of the donor before collection. | number | no |  | Estrogen |  | 10; 150; 120
 estrogen_unit | Estrogen unit. | string | no |  | Estrogen unit | pg/mL, pmol/L | pg/mL; pmol/L
+fasting_glucose | Fasting glucose levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting glucose |  | 70; 125; 90.2
+fasting_glucose_unit | Fasting glucose unit. | string | no |  | Fasting glucose unit | mg/dL, mmol/L | mg/dL; mmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
