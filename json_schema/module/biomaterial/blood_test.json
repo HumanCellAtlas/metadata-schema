@@ -325,6 +325,13 @@
             "example": "10^9/L; cells/μL",
             "guidelines": "Should be one of: 10^9/L; cells/μL",
             "bionetworks": ["adipose"]
+        },
+        "bloodtest_time_offset": {
+            "description": "Time between the test and the collection of the sample, in days.",
+            "type": "number",
+            "user_friendly": "Blood test time offset",
+            "example": "12; 42; 98",
+            "bionetworks": ["adipose"]
         }
     }
 }
