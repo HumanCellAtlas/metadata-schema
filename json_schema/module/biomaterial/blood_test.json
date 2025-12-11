@@ -205,6 +205,13 @@
             "example": "mg/dL; mmol/L",
             "guidelines": "Should be one of: mg/dL; mmol/L",
             "bionetworks": ["adipose"]
+        },
+        "homa_ir": {
+            "description": "Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "HOMA-IR",
+            "example": "0.4; 1.2; 0.94",
+            "bionetworks": ["adipose"]
         }
     }
 }
