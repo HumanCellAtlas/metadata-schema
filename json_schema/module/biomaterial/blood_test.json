@@ -55,6 +55,25 @@
             "example": "ng/dL; nmol/L",
             "guidelines": "Should be one of: ng/dL; nmol/L",
             "bionetworks": ["adipose"]
+        },
+        "estrogen": {
+            "description": "Estrogen in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Estrogen",
+            "example": "10; 150; 120",
+            "bionetworks": ["adipose"]
+        },
+        "estrogen_unit": {
+            "description": "Estrogen unit.",
+            "type": "string",
+            "enum": [
+                "pg/mL",
+                "pmol/L"
+            ],
+            "user_friendly": "Estrogen unit",
+            "example": "pg/mL; pmol/L",
+            "guidelines": "Should be one of: pg/mL; pmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }
