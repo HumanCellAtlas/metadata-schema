@@ -604,6 +604,8 @@ free_fatty_acid | Free Fatty Acid (FFA) in the last blood test of the donor befo
 free_fatty_acid_unit | Free Fatty Acid (FFA) unit. | string | no |  | FFA unit | mmol/L | mmol/L
 haematocrit | Percentage of red blood cells in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haematocrit |  | 36; 54; 45
 haematocrit_unit | Haematocrit unit. | string | no |  | Haematocrit unit | percentage (%) | percentage (%)
+haemoglobin | Concentration of haemoglobin in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haemoglobin |  | 12; 17.5; 14.2
+haemoglobin_unit | Haemoglobin unit. | string | no |  | Haemoglobin unit | g/dL, mmol/L | g/dL; mmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._

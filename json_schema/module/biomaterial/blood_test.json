@@ -148,6 +148,25 @@
             "example": "percentage (%)",
             "guidelines": "Should be one of: percentage (%)",
             "bionetworks": ["adipose"]
+        },
+        "haemoglobin": {
+            "description": "Concentration of haemoglobin in whole blood from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "Haemoglobin",
+            "example": "12; 17.5; 14.2",
+            "bionetworks": ["adipose"]
+        },
+        "haemoglobin_unit": {
+            "description": "Haemoglobin unit.",
+            "type": "string",
+            "enum": [
+                "g/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "Haemoglobin unit",
+            "example": "g/dL; mmol/L",
+            "guidelines": "Should be one of: g/dL; mmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }
