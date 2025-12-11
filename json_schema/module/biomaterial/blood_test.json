@@ -287,6 +287,25 @@
             "example": "nmol/L; ng/dL",
             "guidelines": "Should be one of: nmol/L; ng/dL",
             "bionetworks": ["adipose"]
+        },
+        "triglycerides": {
+            "description": "Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection.",
+            "type": "number",
+            "user_friendly": "Triglycerides",
+            "example": "160; 133; 140",
+            "bionetworks": ["adipose"]
+        },
+        "triglycerides_unit": {
+            "description": "Triglycerides unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "Triglycerides unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }

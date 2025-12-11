@@ -619,6 +619,8 @@ shbg | Sex hormone binding globulin (SHBG) in the last blood test of the donor b
 shbg_unit | SHBG unit. | string | no |  | SHBG unit | nmol/L | nmol/L
 testosterone | Testosterone in the last blood test of the donor before collection. | number | no |  | Testosterone |  | 15; 1000; 420
 testosterone_unit | Testosterone unit. | string | no |  | Testosterone unit | nmol/L, ng/dL | nmol/L; ng/dL
+triglycerides | Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection. | number | no |  | Triglycerides |  | 160; 133; 140
+triglycerides_unit | Triglycerides unit. | string | no |  | Triglycerides unit | mg/dL, mmol/L | mg/dL; mmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
