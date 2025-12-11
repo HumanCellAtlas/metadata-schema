@@ -600,6 +600,8 @@ fasting_glucose | Fasting glucose levels from the donor's last blood test after 
 fasting_glucose_unit | Fasting glucose unit. | string | no |  | Fasting glucose unit | mg/dL, mmol/L | mg/dL; mmol/L
 fasting_insulin | Fasting insulin levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting insulin |  | 2; 20; 14
 fasting_insulin_unit | Fasting insulin unit. | string | no |  | Fasting insulin unit | μU/mL, pmol/L | μU/mL; pmol/L
+free_fatty_acid | Free Fatty Acid (FFA) in the last blood test of the donor before collection. | number | no |  | FFA |  | 0.1; 0.6; 0.24
+free_fatty_acid_unit | Free Fatty Acid (FFA) unit. | string | no |  | FFA unit | mmol/L | mmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._

@@ -112,6 +112,24 @@
             "example": "μU/mL; pmol/L",
             "guidelines": "Should be one of: μU/mL; pmol/L",
             "bionetworks": ["adipose"]
+        },
+        "free_fatty_acid": {
+            "description": "Free Fatty Acid (FFA) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "FFA",
+            "example": "0.1; 0.6; 0.24",
+            "bionetworks": ["adipose"]
+        },
+        "free_fatty_acid_unit": {
+            "description": "Free Fatty Acid (FFA) unit.",
+            "type": "string",
+            "enum": [
+                "mmol/L"
+            ],
+            "user_friendly": "FFA unit",
+            "example": "mmol/L",
+            "guidelines": "Should be one of: mmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }
