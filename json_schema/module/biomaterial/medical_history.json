@@ -81,6 +81,12 @@
             "user_friendly": "Reproductive history",
             "$ref": "module/biomaterial/reproductive_history.json"
         },
+        "blood_test": {
+            "description": "Results from blood tests performed on the individual.",
+            "type": "object",
+            "user_friendly": "Blood tests",
+            "$ref": "module/biomaterial/blood_test.json"
+        },
         "test_results": {
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
