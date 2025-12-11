@@ -225,6 +225,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 method | Method used to collect the biomaterial. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Collection method |  | 
+biopsy_procedure | Type of biopsy procedure used in the sample collection. | string | no |  | Type of biopsy procedure | Bergstrom needle, Punch biopsy, Mercedes needle, dry aspiration, Mercedes needle, tumescent lidocaine “wet” aspiration | Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration
 reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md#purchased-reagents) | Protocol reagents |  | 
 
 ## Differentiation protocol
