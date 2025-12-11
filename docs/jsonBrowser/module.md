@@ -589,11 +589,6 @@ Location: module/biomaterial/blood_test.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-menarche_age | Age at menarche, rounded to nearest whole number. | integer | no |  | Menarche age |  | 13; 12; 16
-menstrual_cycle_stage | Menstrual cycle stage of donor at the time of collection. | string | no |  | Menstrual cycle stage | follicular phase, ovulation, luteal phase, menstruation | follicular phase; ovulation; luteal phase; menstruation
-menopause_status | Menopausal status of donor at time of sample collection. | string | no |  | Menopause status | pre-menopausal, peri-menopausal, post-menopausal, post-menopausal (induced) | pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)
-parity | Number of children (full-term pregnancies) the donor has given birth to at time of sample collection. | integer | no |  | Full term pregnancy - parity |  | 0; 2; 3
-gravidity | Number of pregnancies the donor has had at time of sample collection. | integer | no |  | Pregnancy - gravidity |  | 2; 3; 5
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
