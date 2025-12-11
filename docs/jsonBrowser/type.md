@@ -376,6 +376,7 @@ selected_cell_types | The cell type(s) selected to be present in the suspension.
 estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md#plate-based-sequencing) | Plate-based sequencing |  | 
 processing_institute | Institute where the biomaterial was processed. | string | no |  | Institute |  | Wellcome Sanger Institute; University of Zurich; University of Pennsylvania
+nuclei_yield | Number of nuclei sequenced per mg of tissue. | integer | no |  | Nuclei yield |  | 20; 32; 56
 
 ## Cell line
 _Information about the cell line or cell culture biomaterial._
