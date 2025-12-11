@@ -68,6 +68,13 @@
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
+        "fasting_time": {
+            "description": "Duration of the donor's fasting period (in hours) prior to sample collection.",
+            "type": "integer",
+            "user_friendly": "Fasting time",
+            "example": "2; 5; 8",
+            "bionetworks": ["adipose"]
+        },
         "diet_meat_consumption": {
             "description": "Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat.",
             "type": "boolean",
@@ -92,6 +99,13 @@
             "type": "string",
             "user_friendly": "Test results",
             "example": "lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative"
+        },
+        "previous_surgery": {
+          "description": "Specify the type of previous surgery the individual has undergone prior to biomaterial collection.",
+          "type": "string",
+          "user_friendly": "Previous_surgery",
+          "example": "Abdominal surgery; bariatric; upper GI surgery",
+          "bionetworks": ["adipose"]
         },
         "treatment": {
             "description": "Treatments the individual has undergone prior to biomaterial collection.",

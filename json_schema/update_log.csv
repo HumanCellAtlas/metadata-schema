@@ -1,4 +1,5 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/medical_history,minor,"Added fasting_time, previous_surgery",,
 module/biomaterial/reproductive_history,minor,"Added menstrual_cycle_stage",,
 module/biomaterial/blood_test,minor,"Added androstenedione, androstenedione_unit, dhea, dhea_unit, estrogen, estrogen_unit, fasting_glucose, fasting_glucose_unit, fasting_insulin, fasting_insulin_unit, free_fatty_acid, free_fatty_acid_unit, haematocrit, haematocrit_unit, haemoglobin, haemoglobin_unit, hba1c, hba1c_unit, hdl, hdl_unit, homa_ir, ldl, ldl_unit, platelet_count, platelet_count_unit, shbg, shbg_unit, testosterone, testosterone_unit, triglycerides, triglycerides_unit, white_blood_cell_count, white_blood_cell_count_unit, bloodtest_time_offset",,
 type/protocol/biomaterial_collection/collection_protocol.json,minor,"Added biopsy_procedure",,
