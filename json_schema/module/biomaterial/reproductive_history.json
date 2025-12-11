@@ -25,6 +25,20 @@
             "example": "13; 12; 16",
             "bionetworks": ["genetic diversity"]
         },
+        "menstrual_cycle_stage": {
+            "description": "Menstrual cycle stage of donor at the time of collection.",
+            "type": "string",
+            "enum": [
+                "follicular phase",
+                "ovulation",
+                "luteal phase",
+                "menstruation"
+            ],
+            "user_friendly": "Menstrual cycle stage",
+            "example": "follicular phase; ovulation; luteal phase; menstruation",
+            "guidelines": "Should be one of: follicular phase; ovulation; luteal phase; menstruation",
+            "bionetworks": ["adipose"]
+        },
         "menopause_status": {
             "description": "Menopausal status of donor at time of sample collection.",
             "type": "string",

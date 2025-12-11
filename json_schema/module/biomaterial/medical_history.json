@@ -79,8 +79,7 @@
             "description": "Reproductive history of the donor at the time of collection.",
             "type": "object",
             "user_friendly": "Reproductive history",
-            "$ref": "module/biomaterial/reproductive_history.json",
-            "bionetworks": ["genetic diversity"]
+            "$ref": "module/biomaterial/reproductive_history.json"
         },
         "test_results": {
             "description": "Results from medical tests performed on the individual.",

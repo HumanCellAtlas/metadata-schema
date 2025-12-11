@@ -1,2 +1,3 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/human_specific,major,"Changed body_mass_index to string, added",,
+module/biomaterial/reproductive_history,minor,"Added menstrual_cycle_stage",,
+module/biomaterial/human_specific,major,"Changed body_mass_index to string",,
