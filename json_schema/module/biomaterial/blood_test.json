@@ -145,8 +145,8 @@
                 "percentage (%)"
             ],
             "user_friendly": "Haematocrit unit",
-            "example": "percentage (%)",
-            "guidelines": "Should be one of: percentage (%)",
+            "example": "%",
+            "guidelines": "Should be one of: %",
             "bionetworks": ["adipose"]
         },
         "haemoglobin": {
@@ -166,6 +166,25 @@
             "user_friendly": "Haemoglobin unit",
             "example": "g/dL; mmol/L",
             "guidelines": "Should be one of: g/dL; mmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "hba1c": {
+            "description": "Concentration of glycated hemoglobin (HbA1c) from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "HbA1c",
+            "example": "42; 58; 53.3",
+            "bionetworks": ["adipose"]
+        },
+        "hba1c_unit": {
+            "description": "HbA1c unit.",
+            "type": "string",
+            "enum": [
+                "mmol/mol",
+                "%"
+            ],
+            "user_friendly": "HbA1c unit",
+            "example": "mmol/mol; %",
+            "guidelines": "Should be one of: mmol/mol; %",
             "bionetworks": ["adipose"]
         }
     }

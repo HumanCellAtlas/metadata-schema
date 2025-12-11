@@ -1,4 +1,4 @@
 Schema,Change type,Change message,Version,Date
 module/biomaterial/reproductive_history,minor,"Added menstrual_cycle_stage",,
 module/biomaterial/human_specific,major,"Changed body_mass_index to string",,
-module/biomaterial/blood_test,major,"Added new blood_test module with fields androstenedione, androstenedione_unit, dhea, dhea_unit, estrogen, estrogen_unit, fasting_glucose, fasting_glucose_unit, fasting_insulin, fasting_insulin_unit, free_fatty_acid, free_fatty_acid_unit, haematocrit, haematocrit_unit, haemoglobin, haemoglobin_unit",,
+module/biomaterial/blood_test,major,"Added new blood_test module with fields androstenedione, androstenedione_unit, dhea, dhea_unit, estrogen, estrogen_unit, fasting_glucose, fasting_glucose_unit, fasting_insulin, fasting_insulin_unit, free_fatty_acid, free_fatty_acid_unit, haematocrit, haematocrit_unit, haemoglobin, haemoglobin_unit, hba1c, hba1c_unit",,
