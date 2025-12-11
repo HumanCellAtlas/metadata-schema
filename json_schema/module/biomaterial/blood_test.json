@@ -36,6 +36,25 @@
             "example": "ng/dL; nmol/L",
             "guidelines": "Should be one of: ng/dL; nmol/L",
             "bionetworks": ["adipose"]
+        },
+        "dhea": {
+            "description": "Dehydroepiandrosterone (DHEA) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "DHEA",
+            "example": "240; 3500; 1500",
+            "bionetworks": ["adipose"]
+        },
+        "dhea_unit": {
+            "description": "DHEA unit.",
+            "type": "string",
+            "enum": [
+                "ng/dL",
+                "nmol/L"
+            ],
+            "user_friendly": "DHEA unit",
+            "example": "ng/dL; nmol/L",
+            "guidelines": "Should be one of: ng/dL; nmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }

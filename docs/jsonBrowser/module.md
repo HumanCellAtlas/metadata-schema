@@ -592,6 +592,8 @@ Property name | Description | Type | Required? | Object reference? | User friend
 --- | --- | --- | --- | --- | --- | --- | --- 
 androstenedione | Androstenedione in the last blood test of the donor before collection. | number | no |  | Androstenedione |  | 0.7; 3.4; 2.41
 androstenedione_unit | Androstenedione unit. | string | no |  | Androstenedione unit | ng/dL, nmol/L | ng/dL; nmol/L
+dhea | Dehydroepiandrosterone (DHEA) in the last blood test of the donor before collection. | number | no |  | DHEA |  | 240; 3500; 1500
+dhea_unit | DHEA unit. | string | no |  | DHEA unit | ng/dL, nmol/L | ng/dL; nmol/L
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
