@@ -617,6 +617,8 @@ platelet_count | Measurement of platelets per unit volume of blood from the dono
 platelet_count_unit | Platelet count unit. | string | no |  | Platelet count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
 shbg | Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection. | number | no |  | SHBG |  | 10; 140; 72
 shbg_unit | SHBG unit. | string | no |  | SHBG unit | nmol/L | nmol/L
+testosterone | Testosterone in the last blood test of the donor before collection. | number | no |  | Testosterone |  | 15; 1000; 420
+testosterone_unit | Testosterone unit. | string | no |  | Testosterone unit | nmol/L, ng/dL | nmol/L; ng/dL
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
