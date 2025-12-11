@@ -93,6 +93,25 @@
             "example": "mg/dL; mmol/L",
             "guidelines": "Should be one of: mg/dL; mmol/L",
             "bionetworks": ["adipose"]
+        },
+        "fasting_insulin": {
+            "description": "Fasting insulin levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection.",
+            "type": "number",
+            "user_friendly": "Fasting insulin",
+            "example": "2; 20; 14",
+            "bionetworks": ["adipose"]
+        },
+        "fasting_insulin_unit": {
+            "description": "Fasting insulin unit.",
+            "type": "string",
+            "enum": [
+                "μU/mL",
+                "pmol/L"
+            ],
+            "user_friendly": "Fasting insulin unit",
+            "example": "μU/mL; pmol/L",
+            "guidelines": "Should be one of: μU/mL; pmol/L",
+            "bionetworks": ["adipose"]
         }
     }
 }
