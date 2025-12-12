@@ -90,6 +90,12 @@
             "user_friendly": "Adjacent disease(s)",
             "guidelines": "If a healthy specimen is sampled from a site adjacent to diseased tissue, enter that tissue's disease here. If no diseased tissue is adjacent to the specimen, leave blank."
         },
+        "experimental_condition": {
+            "description": "Case of the sample used in the experiment context, it should include a description of the experimental conditions of the study. If disease case, specify the disease that was studied.",
+            "type": "string",
+            "user_friendly": "Case Control definition",
+            "example": "healthy control; disease control; MAFLD disease case; gestational diabetes case"
+        },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
             "type": "object",
@@ -122,6 +128,14 @@
             "type": "object", 
             "$ref": "module/biomaterial/collection_institute.json",
             "user_friendly": "Collection institute"
+        },
+        "time_to_laboratory": {
+            "description": "Transit time in hours between tissue collection and tissue processing, meaning either storage in the laboratory or processing for sequencing.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "example": "2; 5; 8",
+            "user_friendly": "Time to laboratory",
+            "bionetworks": ["adipose","musculoskeletal"]
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",

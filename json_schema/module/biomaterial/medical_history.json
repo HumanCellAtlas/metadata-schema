@@ -68,6 +68,13 @@
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
+        "fasting_time": {
+            "description": "Duration of the donor's fasting period (in hours) prior to sample collection.",
+            "type": "integer",
+            "user_friendly": "Fasting time",
+            "example": "2; 5; 8",
+            "bionetworks": ["adipose"]
+        },
         "diet_meat_consumption": {
             "description": "Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat.",
             "type": "boolean",
@@ -79,8 +86,13 @@
             "description": "Reproductive history of the donor at the time of collection.",
             "type": "object",
             "user_friendly": "Reproductive history",
-            "$ref": "module/biomaterial/reproductive_history.json",
-            "bionetworks": ["genetic diversity"]
+            "$ref": "module/biomaterial/reproductive_history.json"
+        },
+        "blood_test": {
+            "description": "Results from blood tests performed on the individual.",
+            "type": "object",
+            "user_friendly": "Blood tests",
+            "$ref": "module/biomaterial/blood_test.json"
         },
         "test_results": {
             "description": "Results from medical tests performed on the individual.",

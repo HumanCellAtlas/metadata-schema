@@ -430,7 +430,9 @@ Location: module/biomaterial/human_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
+body_mass_index | The body mass index of the donor. | string | no |  | Body mass index |  | 36.4; 29-32 
+waist_circumference | Waist circumference of the donor at the time of collection measured in cm. | string | no |  | Waist circumference |  | 60; 95; 153
+waist_hip_ratio | Waist-hip ratio of the donor at the time of collection. | string | no |  | Waist-hip ratio |  | 0.85; 0.91; 0.88
 ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Ethnicity |  | 
 ethnicity_question | Question and response options posed to donors for collecting metadata on donor self-reported ethnicity and / or tribe and / or dialect group and / or race etc. | string | no |  | Ethnicity question |  | What is your ethnicity?; Are you Hispanic/Latino?; Which categories describe you? Select all that apply. Note You may select more than one group. 1. American Indian or Alaska Native (for example, Aztec, Blackfeet Tribe, Mayan, Navajo Nation, Native Village of Barrow (Utqiagvik) Inupiat Traditional Government, Nome Eskimo Community, etc.), 2 - Asian (for example, Asian Indian, Chinese, Filipino, Japanese, Korean, Vietnamese, etc.), 3 - Black, African American, or African (for example, African American, Ethiopian, Haitian, Jamaican, Nigerian, Somali, etc.), 4 - Hispanic, Latino, or Spanish (for example, Columbian, Cuban, Dominican, Mexican or Mexican American, Puerto Rican, Salvadoran, etc.), 5 - Middle Eastern or North African (for example, Algerian, Egyptian, Iranian, Lebanese, Moroccan, Syrian, etc.), 6 - Native Hawaiian or other Pacific Islander (for example, Chamorro, Fijian, Marshallese, Native Hawaiian, Tongan, etc.), 7 - White (for example, English, European, French, German, Irish, Italian, Polish, etc.), 8 - None of these fully describe me (optional free text answer), 9 - Prefer not to answer
 ethnicity_of_parents | Ethnicity(-ies) of the donor's parents. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Parents ethnicity |  | 
@@ -438,6 +440,7 @@ primary_language | Primary language(s), spoken by donor. Can include dialects (f
 language_of_family | Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents or any other person in the donor family. Can include dialects (for example, Hokkien). | array | no |  | Language of family |  | Mandarin Chinese; Hokkien; Bahasa Melayu
 current_residence | Donor's current residence at time of sample collection. | object | no | [See module  residence](module.md#residence) | Current residence |  | 
 place_of_birth | Donor's place of birth residence. | object | no | [See module  residence](module.md#residence) | Place of birth |  | 
+lifestyle | Lifestyle and habits of the donor. | object | no | [See module  lifestyle](module.md#lifestyle) | Lifestyle |  | 
 
 ## Growth conditions<a name='Growth conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
@@ -521,6 +524,7 @@ Location: module/biomaterial/reproductive_history.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 menarche_age | Age at menarche, rounded to nearest whole number. | integer | no |  | Menarche age |  | 13; 12; 16
+menstrual_cycle_stage | Menstrual cycle stage of donor at the time of collection. | string | no |  | Menstrual cycle stage | follicular phase, ovulation, luteal phase, menstruation | follicular phase; ovulation; luteal phase; menstruation
 menopause_status | Menopausal status of donor at time of sample collection. | string | no |  | Menopause status | pre-menopausal, peri-menopausal, post-menopausal, post-menopausal (induced) | pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)
 parity | Number of children (full-term pregnancies) the donor has given birth to at time of sample collection. | integer | no |  | Full term pregnancy - parity |  | 0; 2; 3
 gravidity | Number of pregnancies the donor has had at time of sample collection. | integer | no |  | Pregnancy - gravidity |  | 2; 3; 5
@@ -536,6 +540,15 @@ storage_method | The method by which a biomaterial was stored after preservation
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Storage time unit |  | 
 preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
+
+## Lifestyle<a name='Lifestyle'></a>
+_Lifestyle and habits of the donor._
+
+Location: module/biomaterial/lifestyle.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+physical_activity | The habitual level of physical activity and regular physical activities. | string | no |  | Physical activity |  | active -  football, tennis; sedentary
 
 ## Death<a name='Death'></a>
 _Information relating to the death of an organism._
@@ -576,10 +589,54 @@ smoking_status | Whether the individual is actively, was formerly or never consu
 smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55
 years_since_smoking_cessation | If smoking status is 'former', specify the number of years since smoking cessation. | integer | no |  | Years since smoking cessation |  | 12
 nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+fasting_time | Duration of the donor's fasting period (in hours) prior to sample collection. | integer | no |  | Fasting time |  | 2; 5; 8
 diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat. | boolean | no |  | Meat consumption |  | Should be one of: yes; no.
 reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
+blood_test | Results from blood tests performed on the individual. | object | no | [See module  blood_test](module.md#blood-test) | Blood tests |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+
+## Blood test<a name='Blood test'></a>
+_Blood test results of the donor._
+
+Location: module/biomaterial/blood_test.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+androstenedione | Androstenedione in the last blood test of the donor before collection. | number | no |  | Androstenedione |  | 0.7; 3.4; 2.41
+androstenedione_unit | Androstenedione unit. | string | no |  | Androstenedione unit | ng/dL, nmol/L | ng/dL; nmol/L
+dhea | Dehydroepiandrosterone (DHEA) in the last blood test of the donor before collection. | number | no |  | DHEA |  | 240; 3500; 1500
+dhea_unit | DHEA unit. | string | no |  | DHEA unit | ng/dL, nmol/L | ng/dL; nmol/L
+estrogen | Estrogen in the last blood test of the donor before collection. | number | no |  | Estrogen |  | 10; 150; 120
+estrogen_unit | Estrogen unit. | string | no |  | Estrogen unit | pg/mL, pmol/L | pg/mL; pmol/L
+fasting_glucose | Fasting glucose levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting glucose |  | 70; 125; 90.2
+fasting_glucose_unit | Fasting glucose unit. | string | no |  | Fasting glucose unit | mg/dL, mmol/L | mg/dL; mmol/L
+fasting_insulin | Fasting insulin levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting insulin |  | 2; 20; 14
+fasting_insulin_unit | Fasting insulin unit. | string | no |  | Fasting insulin unit | μU/mL, pmol/L | μU/mL; pmol/L
+free_fatty_acid | Free Fatty Acid (FFA) in the last blood test of the donor before collection. | number | no |  | FFA |  | 0.1; 0.6; 0.24
+free_fatty_acid_unit | Free Fatty Acid (FFA) unit. | string | no |  | FFA unit | mmol/L | mmol/L
+haematocrit | Percentage of red blood cells in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haematocrit |  | 36; 54; 45
+haematocrit_unit | Haematocrit unit. | string | no |  | Haematocrit unit | percentage (%) | %
+haemoglobin | Concentration of haemoglobin in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haemoglobin |  | 12; 17.5; 14.2
+haemoglobin_unit | Haemoglobin unit. | string | no |  | Haemoglobin unit | g/dL, mmol/L | g/dL; mmol/L
+hba1c | Concentration of glycated hemoglobin (HbA1c) from the donor's last blood test prior to biopsy collection. | number | no |  | HbA1c |  | 42; 58; 53.3
+hba1c_unit | HbA1c unit. | string | no |  | HbA1c unit | mmol/mol, % | mmol/mol; %
+hdl | High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection. | number | no |  | HDL |  | 40; 60; 92
+hdl_unit | HDL unit. | string | no |  | HDL unit | mg/dL, mmol/L | mg/dL; mmol/L
+homa_ir | Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection. | number | no |  | HOMA-IR |  | 0.4; 1.2; 0.94
+ldl | Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection. | number | no |  | LDL |  | 160; 133
+ldl_unit | LDL unit. | string | no |  | LDL unit | mg/dL, mmol/L | mg/dL; mmol/L
+platelet_count | Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection | number | no |  | Platelet count |  | 240; 124; 110
+platelet_count_unit | Platelet count unit. | string | no |  | Platelet count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
+shbg | Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection. | number | no |  | SHBG |  | 10; 140; 72
+shbg_unit | SHBG unit. | string | no |  | SHBG unit | nmol/L | nmol/L
+testosterone | Testosterone in the last blood test of the donor before collection. | number | no |  | Testosterone |  | 15; 1000; 420
+testosterone_unit | Testosterone unit. | string | no |  | Testosterone unit | nmol/L, ng/dL | nmol/L; ng/dL
+triglycerides | Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection. | number | no |  | Triglycerides |  | 160; 133; 140
+triglycerides_unit | Triglycerides unit. | string | no |  | Triglycerides unit | mg/dL, mmol/L | mg/dL; mmol/L
+white_blood_cell_count | Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection. | number | no |  | White cell count |  | 4.5; 11; 9.24
+white_blood_cell_count_unit | White cell count unit. | string | no |  | White cell count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
+bloodtest_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
@@ -588,7 +645,7 @@ Location: module/biomaterial/residence.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-country_territory | Country or territory of donor's residence. |  | no |  | Country | Afghanistan, Albania, Algeria, American Samoa, Andorra, Angola, Anguilla, Antarctica, Antigua and Barbuda, Argentina, Armenia, Aruba, Ashmore and Cartier Islands, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Baltic Sea, Baker Island, Bangladesh, Barbados, Bassas da India, Belarus, Belgium, Belize, Benin, Bermuda, Bhutan, Bolivia, Borneo, Bosnia and Herzegovina, Botswana, Bouvet Island, Brazil, British Virgin Islands, Brunei, Bulgaria, Burkina Faso, Burundi, Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, China, Christmas Island, Clipperton Island, Cocos Islands, Colombia, Comoros, Cook Islands, Coral Sea Islands, Costa Rica, Cote d'Ivoire, Croatia, Cuba, Curacao, Cyprus, Czechia, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Europa Island, Falkland Islands (Islas Malvinas), Faroe Islands, Fiji, Finland, France, French Guiana, French Polynesia, French Southern and Antarctic Lands, Gabon, Gambia, Gaza Strip, Georgia, Germany, Ghana, Gibraltar, Glorioso Islands, Greece, Greenland, Grenada, Guadeloupe, Guam, Guatemala, Guernsey, Guinea, Guinea-Bissau, Guyana, Haiti, Heard Island and McDonald Islands, Honduras, Hong Kong, Howland Island, Hungary, Iceland, India, Indonesia, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jamaica, Jan Mayen, Japan, Jarvis Island, Jersey, Johnston Atoll, Jordan, Juan de Nova Island, Kazakhstan, Kenya, Kerguelen Archipelago, Kingman Reef, Kiribati, Kosovo, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Line Islands, Lithuania, Luxembourg, Macau, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Martinique, Mauritania, Mauritius, Mayotte, Mexico, Micronesia, Federated States of, Midway Islands, Moldova, Monaco, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Myanmar, Namibia, Nauru, Navassa Island, Nepal, Netherlands, New Caledonia, New Zealand, Nicaragua, Niger, Nigeria, Niue, Norfolk Island, North Korea, North Macedonia, Northern Mariana Islands, Norway, Oman, Pakistan, Palau, Palmyra Atoll, Panama, Papua New Guinea, Paracel Islands, Paraguay, Peru, Philippines, Pitcairn Islands, Poland, Portugal, Puerto Rico, Qatar, Republic of the Congo, Reunion, Romania, Russia, Rwanda, Saint Barthelemy, Saint Helena, Saint Kitts and Nevis, Saint Lucia, Saint Martin, Saint Pierre and Miquelon, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Sint Maarten, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Georgia and the South Sandwich Islands, South Korea, South Sudan, Spain, Spratly Islands, Sri Lanka, State of Palestine, Sudan, Suriname, Svalbard, Sweden, Switzerland, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Tokelau, Tonga, Trinidad and Tobago, Tromelin Island, Tunisia, Turkey, Turkmenistan, Turks and Caicos Islands, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom, Uruguay, USA, Uzbekistan, Vanuatu, Venezuela, Viet Nam, Virgin Islands, Wake Island, Wallis and Futuna, West Bank, Western Sahara, Yemen, Zambia, Zimbabwe | Singapore; United Kingdom; Brazil; Australia; Nigeria
+country_territory | Country or territory of donor's residence. |  | no |  | Country | Afghanistan, Albania, Algeria, American Samoa, Andorra, Angola, Anguilla, Antarctica, Antigua and Barbuda, Argentina, Armenia, Aruba, Ashmore and Cartier Islands, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Baker Island, Bangladesh, Barbados, Bassas da India, Belarus, Belgium, Belize, Benin, Bermuda, Bhutan, Bolivia, Borneo, Bosnia and Herzegovina, Botswana, Bouvet Island, Brazil, British Virgin Islands, Brunei, Bulgaria, Burkina Faso, Burundi, Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, China, Christmas Island, Clipperton Island, Cocos Islands, Colombia, Comoros, Cook Islands, Coral Sea Islands, Costa Rica, Cote d'Ivoire, Croatia, Cuba, Curacao, Cyprus, Czechia, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Europa Island, Falkland Islands (Islas Malvinas), Faroe Islands, Fiji, Finland, France, French Guiana, French Polynesia, French Southern and Antarctic Lands, Gabon, Gambia, Gaza Strip, Georgia, Germany, Ghana, Gibraltar, Glorioso Islands, Greece, Greenland, Grenada, Guadeloupe, Guam, Guatemala, Guernsey, Guinea, Guinea-Bissau, Guyana, Haiti, Heard Island and McDonald Islands, Honduras, Hong Kong, Howland Island, Hungary, Iceland, India, Indonesia, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jamaica, Jan Mayen, Japan, Jarvis Island, Jersey, Johnston Atoll, Jordan, Juan de Nova Island, Kazakhstan, Kenya, Kerguelen Archipelago, Kingman Reef, Kiribati, Kosovo, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Line Islands, Lithuania, Luxembourg, Macau, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Martinique, Mauritania, Mauritius, Mayotte, Mexico, Micronesia, Federated States of, Midway Islands, Moldova, Monaco, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Myanmar, Namibia, Nauru, Navassa Island, Nepal, Netherlands, New Caledonia, New Zealand, Nicaragua, Niger, Nigeria, Niue, Norfolk Island, North Korea, North Macedonia, Northern Mariana Islands, Norway, Oman, Pakistan, Palau, Palmyra Atoll, Panama, Papua New Guinea, Paracel Islands, Paraguay, Peru, Philippines, Pitcairn Islands, Poland, Portugal, Puerto Rico, Qatar, Republic of the Congo, Reunion, Romania, Russia, Rwanda, Saint Barthelemy, Saint Helena, Saint Kitts and Nevis, Saint Lucia, Saint Martin, Saint Pierre and Miquelon, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Sint Maarten, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Georgia and the South Sandwich Islands, South Korea, South Sudan, Spain, Spratly Islands, Sri Lanka, State of Palestine, Sudan, Suriname, Svalbard, Sweden, Switzerland, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Tokelau, Tonga, Trinidad and Tobago, Tromelin Island, Tunisia, Turkey, Turkmenistan, Turks and Caicos Islands, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom, Uruguay, USA, Uzbekistan, Vanuatu, Venezuela, Viet Nam, Virgin Islands, Wake Island, Wallis and Futuna, West Bank, Western Sahara, Yemen, Zambia, Zimbabwe | Singapore; United Kingdom; Brazil; Australia; Nigeria
 region | Region of donor's residence. | string | no |  | Region |  | Massachusetts; Catalonia; Ondo; Ontario
 locality | Nearest city, town, or village to location of donor's residence. | string | no |  | Locality |  | Singapore; Cambridge; Boston; Kingston
 duration | Duration of residence, in years, rounded up to the nearest whole number. | string | no |  | Duration of residence |  | 20; 37; 45-65

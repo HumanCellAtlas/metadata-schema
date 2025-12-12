@@ -47,6 +47,20 @@
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Collection method"
         },
+        "biopsy_procedure": {
+            "description": "Type of biopsy procedure used in the sample collection.",
+            "type": "string",
+            "enum": [
+                "Bergstrom needle",
+                "Punch biopsy",
+                "Mercedes needle, dry aspiration",
+                "Mercedes needle, tumescent lidocaine “wet” aspiration"
+            ],
+            "user_friendly": "Type of biopsy procedure",
+            "example": "Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration",
+            "guidelines": "Should be one of: Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration",
+            "bionetworks": ["adipose"]
+        },
         "reagents": {
             "description": "A list of purchased reagents used in this protocol.",
             "type": "array",

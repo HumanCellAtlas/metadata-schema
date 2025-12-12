@@ -10,7 +10,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/human_specific"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/reproductive_history"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
@@ -24,6 +24,20 @@
             "user_friendly": "Menarche age",
             "example": "13; 12; 16",
             "bionetworks": ["genetic diversity"]
+        },
+        "menstrual_cycle_stage": {
+            "description": "Menstrual cycle stage of donor at the time of collection.",
+            "type": "string",
+            "enum": [
+                "follicular phase",
+                "ovulation",
+                "luteal phase",
+                "menstruation"
+            ],
+            "user_friendly": "Menstrual cycle stage",
+            "example": "follicular phase; ovulation; luteal phase; menstruation",
+            "guidelines": "Should be one of: follicular phase; ovulation; luteal phase; menstruation",
+            "bionetworks": ["adipose"]
         },
         "menopause_status": {
             "description": "Menopausal status of donor at time of sample collection.",

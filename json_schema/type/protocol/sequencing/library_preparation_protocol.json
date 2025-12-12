@@ -163,6 +163,14 @@
             "$ref": "module/ontology/library_amplification_ontology.json",
             "user_friendly": "cDNA library amplification method"
         },
+        "processing_time": {
+          "description": "Library preparation time in minutes.",
+          "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+          "type": "string",
+          "example": "20; 35; 60",
+          "user_friendly": "Processing time",
+          "bionetworks": ["adipose"]
+        },
         "nominal_length": {
             "description": "Average (insert) size of the fragments being sequenced.",
             "type": "integer",

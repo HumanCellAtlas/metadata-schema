@@ -1,1 +1,13 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/medical_history,minor,"Added fasting_time, blood_test",,
+module/biomaterial/reproductive_history,minor,"Added menstrual_cycle_stage",,
+module/biomaterial/lifestyle,minor,"Added physical_activity",,
+module/biomaterial/human_specific,minor,"Added waist_circumference, waist_hip_ratio, lifestyle",,
+module/biomaterial/blood_test,minor,"Added androstenedione, androstenedione_unit, dhea, dhea_unit, estrogen, estrogen_unit, fasting_glucose, fasting_glucose_unit, fasting_insulin, fasting_insulin_unit, free_fatty_acid, free_fatty_acid_unit, haematocrit, haematocrit_unit, haemoglobin, haemoglobin_unit, hba1c, hba1c_unit, hdl, hdl_unit, homa_ir, ldl, ldl_unit, platelet_count, platelet_count_unit, shbg, shbg_unit, testosterone, testosterone_unit, triglycerides, triglycerides_unit, white_blood_cell_count, white_blood_cell_count_unit, bloodtest_time_offset",,
+type/protocol/biomaterial_collection/collection_protocol,minor,"Added biopsy_procedure",,
+type/protocol/sequencing/library_preparation_protocol,minor,"Added processing_time",,
+type/biomaterial/cell_suspension,minor,"Added nuclei_yield",,
+type/biomaterial/specimen_from_organism,minor,"Added time_to_laboratory, experimental_condition",,
+module/biomaterial/human_specific,major,"Changed body_mass_index to string",,
+module/biomaterial/blood_test,major,"Added new blood_test module",,
+module/biomaterial/lifestyle,major,"Added new lifestyle module",,
