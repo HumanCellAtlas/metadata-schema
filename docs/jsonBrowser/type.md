@@ -130,6 +130,7 @@ spike_in_dilution | Dilution of spike-in. | integer | no |  | Spike-in dilution 
 umi_barcode | Information about unique molecular identifier (UMI) barcodes. | object | no | [See module  barcode](module.md#barcode) | UMI barcode |  | 
 library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. | object | no | [See module  library_amplification_ontology](module.md#library-amplification-ontology) | Library pre-amplification method |  | 
 cdna_library_amplification_method | The method used to amplify cDNA library prior to sequencing. | object | no | [See module  library_amplification_ontology](module.md#library-amplification-ontology) | cDNA library amplification method |  | 
+processing_time | Library preparation time in minutes. | string | no |  | Processing time |  | 20; 35; 60
 nominal_length | Average (insert) size of the fragments being sequenced. | integer | no |  | Nominal length |  | 250
 nominal_sdev | Standard deviation of the (insert) size of the fragments being sequenced. | integer | no |  | Nominal standard deviation |  | 30
 
