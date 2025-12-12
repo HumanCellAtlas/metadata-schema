@@ -100,13 +100,6 @@
             "user_friendly": "Test results",
             "example": "lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative"
         },
-        "previous_surgery": {
-          "description": "Specify the type of previous surgery the individual has undergone prior to biomaterial collection.",
-          "type": "string",
-          "user_friendly": "Previous_surgery",
-          "example": "Abdominal surgery; bariatric; upper GI surgery",
-          "bionetworks": ["adipose"]
-        },
         "treatment": {
             "description": "Treatments the individual has undergone prior to biomaterial collection.",
             "type": "string",

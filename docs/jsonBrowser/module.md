@@ -591,7 +591,6 @@ diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish
 reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
 blood_test | Results from blood tests performed on the individual. | object | no | [See module  blood_test](module.md#blood-test) | Blood tests |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
-previous_surgery | Specify the type of previous surgery the individual has undergone prior to biomaterial collection. | string | no |  | Previous_surgery |  | Abdominal surgery; bariatric; upper GI surgery
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
 
 ## Blood test<a name='Blood test'></a>
