@@ -17,6 +17,12 @@
             "type": "string",
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
-        }
+        },
+        "physical_activity": {
+          "description": "The habitual level of physical activity and regular physical activities.",
+          "type": "string",
+          "user_friendly": "Physical activity",
+          "example": "active -  football, tennis; sedentary",
+          "bionetworks": ["adipose","heart","musculoskeletal"]
     }
 }
