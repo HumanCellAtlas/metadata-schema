@@ -24,5 +24,6 @@
           "user_friendly": "Physical activity",
           "example": "active -  football, tennis; sedentary",
           "bionetworks": ["adipose","heart","musculoskeletal"]
+        }
     }
 }

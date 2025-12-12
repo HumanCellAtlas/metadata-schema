@@ -541,3 +541,222 @@ storage_time | Length of time the biomaterial was stored for in Storage time uni
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Storage time unit |  | 
 preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
 
+## Lifestyle<a name='Lifestyle'></a>
+_Lifestyle and habits of the donor._
+
+Location: module/biomaterial/lifestyle.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+physical_activity | The habitual level of physical activity and regular physical activities. | string | no |  | Physical activity |  | active -  football, tennis; sedentary
+
+## Death<a name='Death'></a>
+_Information relating to the death of an organism._
+
+Location: module/biomaterial/death.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+cause_of_death | Conditions resulting in death. | string | yes |  | Cause of death |  | Hypoxic brain damage; Sudden cardiac arrest
+cold_perfused | Whether perfusion with cold fluid was used to help preserve tissues before heart stopped. | boolean | no |  | Cold perfused |  | Should be one of: yes, no.
+days_on_ventilator | Number of days on ventilator before death occurred. | number | no |  | Number of days on ventilator |  | 4
+hardy_scale | Value on 4-point Hardy scale cause of death classification. | integer | no |  | Value on Hardy scale |  | 0
+time_of_death | Date and time when death was declared. | string | no |  | Time of death |  | 2016-01-21T00:00:00Z; 2016-03
+organ_donation_death_type | Type of death preceding organ donation. | string | no |  | Organ donation death type | Donation after circulatory death (DCD), Donation after brainstem death (DBD) | Should be one of: Donation after circulatory death (DCD), or Donation after brainstem death (DBD).
+normothermic_regional_perfusion | Whether entire body was perfused with warm oxygenated blood. | string | no |  | Normothermic regional perfusion | yes, no, unknown | Should be one of: yes, no, or unknown.
+
+## Familial relationship<a name='Familial relationship'></a>
+_Information about other organisms that this organism is related to._
+
+Location: module/biomaterial/familial_relationship.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+parent | The individual's parent. | string | no |  | Parent |  | 
+child | The individual's child. | string | no |  | Child |  | 
+sibling | The individual's sibling. | string | no |  | Sibling |  | 
+
+## Medical history<a name='Medical history'></a>
+_Information about the medical history of a donor._
+
+Location: module/biomaterial/medical_history.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+alcohol_history | Estimated amount of alcohol consumed per day. | string | no |  | Alcohol history |  | 3-6 alcohol units/day; 1 drink per day
+medication | Medication(s) the individual was taking at time of biomaterial collection. | array | no | [See module  medication_ontology](module.md#medication-ontology) | Medication |  | 
+smoking_status | Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe etc. | string | no |  | Smoking status | active, former, never | Should be one of: active, former, never.
+smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55
+years_since_smoking_cessation | If smoking status is 'former', specify the number of years since smoking cessation. | integer | no |  | Years since smoking cessation |  | 12
+nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+fasting_time | Duration of the donor's fasting period (in hours) prior to sample collection. | integer | no |  | Fasting time |  | 2; 5; 8
+diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat. | boolean | no |  | Meat consumption |  | Should be one of: yes; no.
+reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
+blood_test | Results from blood tests performed on the individual. | object | no | [See module  blood_test](module.md#blood-test) | Blood tests |  | 
+test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
+treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+
+## Blood test<a name='Blood test'></a>
+_Blood test results of the donor._
+
+Location: module/biomaterial/blood_test.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+androstenedione | Androstenedione in the last blood test of the donor before collection. | number | no |  | Androstenedione |  | 0.7; 3.4; 2.41
+androstenedione_unit | Androstenedione unit. | string | no |  | Androstenedione unit | ng/dL, nmol/L | ng/dL; nmol/L
+dhea | Dehydroepiandrosterone (DHEA) in the last blood test of the donor before collection. | number | no |  | DHEA |  | 240; 3500; 1500
+dhea_unit | DHEA unit. | string | no |  | DHEA unit | ng/dL, nmol/L | ng/dL; nmol/L
+estrogen | Estrogen in the last blood test of the donor before collection. | number | no |  | Estrogen |  | 10; 150; 120
+estrogen_unit | Estrogen unit. | string | no |  | Estrogen unit | pg/mL, pmol/L | pg/mL; pmol/L
+fasting_glucose | Fasting glucose levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting glucose |  | 70; 125; 90.2
+fasting_glucose_unit | Fasting glucose unit. | string | no |  | Fasting glucose unit | mg/dL, mmol/L | mg/dL; mmol/L
+fasting_insulin | Fasting insulin levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting insulin |  | 2; 20; 14
+fasting_insulin_unit | Fasting insulin unit. | string | no |  | Fasting insulin unit | μU/mL, pmol/L | μU/mL; pmol/L
+free_fatty_acid | Free Fatty Acid (FFA) in the last blood test of the donor before collection. | number | no |  | FFA |  | 0.1; 0.6; 0.24
+free_fatty_acid_unit | Free Fatty Acid (FFA) unit. | string | no |  | FFA unit | mmol/L | mmol/L
+haematocrit | Percentage of red blood cells in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haematocrit |  | 36; 54; 45
+haematocrit_unit | Haematocrit unit. | string | no |  | Haematocrit unit | percentage (%) | %
+haemoglobin | Concentration of haemoglobin in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haemoglobin |  | 12; 17.5; 14.2
+haemoglobin_unit | Haemoglobin unit. | string | no |  | Haemoglobin unit | g/dL, mmol/L | g/dL; mmol/L
+hba1c | Concentration of glycated hemoglobin (HbA1c) from the donor's last blood test prior to biopsy collection. | number | no |  | HbA1c |  | 42; 58; 53.3
+hba1c_unit | HbA1c unit. | string | no |  | HbA1c unit | mmol/mol, % | mmol/mol; %
+hdl | High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection. | number | no |  | HDL |  | 40; 60; 92
+hdl_unit | HDL unit. | string | no |  | HDL unit | mg/dL, mmol/L | mg/dL; mmol/L
+homa_ir | Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection. | number | no |  | HOMA-IR |  | 0.4; 1.2; 0.94
+ldl | Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection. | number | no |  | LDL |  | 160; 133
+ldl_unit | LDL unit. | string | no |  | LDL unit | mg/dL, mmol/L | mg/dL; mmol/L
+platelet_count | Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection | number | no |  | Platelet count |  | 240; 124; 110
+platelet_count_unit | Platelet count unit. | string | no |  | Platelet count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
+shbg | Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection. | number | no |  | SHBG |  | 10; 140; 72
+shbg_unit | SHBG unit. | string | no |  | SHBG unit | nmol/L | nmol/L
+testosterone | Testosterone in the last blood test of the donor before collection. | number | no |  | Testosterone |  | 15; 1000; 420
+testosterone_unit | Testosterone unit. | string | no |  | Testosterone unit | nmol/L, ng/dL | nmol/L; ng/dL
+triglycerides | Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection. | number | no |  | Triglycerides |  | 160; 133; 140
+triglycerides_unit | Triglycerides unit. | string | no |  | Triglycerides unit | mg/dL, mmol/L | mg/dL; mmol/L
+white_blood_cell_count | Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection. | number | no |  | White cell count |  | 4.5; 11; 9.24
+white_blood_cell_count_unit | White cell count unit. | string | no |  | White cell count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
+bloodtest_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
+
+## Residence<a name='Residence'></a>
+_Donor's residence location information._
+
+Location: module/biomaterial/residence.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+country_territory | Country or territory of donor's residence. |  | no |  | Country | Afghanistan, Albania, Algeria, American Samoa, Andorra, Angola, Anguilla, Antarctica, Antigua and Barbuda, Argentina, Armenia, Aruba, Ashmore and Cartier Islands, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Baker Island, Bangladesh, Barbados, Bassas da India, Belarus, Belgium, Belize, Benin, Bermuda, Bhutan, Bolivia, Borneo, Bosnia and Herzegovina, Botswana, Bouvet Island, Brazil, British Virgin Islands, Brunei, Bulgaria, Burkina Faso, Burundi, Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, China, Christmas Island, Clipperton Island, Cocos Islands, Colombia, Comoros, Cook Islands, Coral Sea Islands, Costa Rica, Cote d'Ivoire, Croatia, Cuba, Curacao, Cyprus, Czechia, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Europa Island, Falkland Islands (Islas Malvinas), Faroe Islands, Fiji, Finland, France, French Guiana, French Polynesia, French Southern and Antarctic Lands, Gabon, Gambia, Gaza Strip, Georgia, Germany, Ghana, Gibraltar, Glorioso Islands, Greece, Greenland, Grenada, Guadeloupe, Guam, Guatemala, Guernsey, Guinea, Guinea-Bissau, Guyana, Haiti, Heard Island and McDonald Islands, Honduras, Hong Kong, Howland Island, Hungary, Iceland, India, Indonesia, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jamaica, Jan Mayen, Japan, Jarvis Island, Jersey, Johnston Atoll, Jordan, Juan de Nova Island, Kazakhstan, Kenya, Kerguelen Archipelago, Kingman Reef, Kiribati, Kosovo, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Line Islands, Lithuania, Luxembourg, Macau, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Martinique, Mauritania, Mauritius, Mayotte, Mexico, Micronesia, Federated States of, Midway Islands, Moldova, Monaco, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Myanmar, Namibia, Nauru, Navassa Island, Nepal, Netherlands, New Caledonia, New Zealand, Nicaragua, Niger, Nigeria, Niue, Norfolk Island, North Korea, North Macedonia, Northern Mariana Islands, Norway, Oman, Pakistan, Palau, Palmyra Atoll, Panama, Papua New Guinea, Paracel Islands, Paraguay, Peru, Philippines, Pitcairn Islands, Poland, Portugal, Puerto Rico, Qatar, Republic of the Congo, Reunion, Romania, Russia, Rwanda, Saint Barthelemy, Saint Helena, Saint Kitts and Nevis, Saint Lucia, Saint Martin, Saint Pierre and Miquelon, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Sint Maarten, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Georgia and the South Sandwich Islands, South Korea, South Sudan, Spain, Spratly Islands, Sri Lanka, State of Palestine, Sudan, Suriname, Svalbard, Sweden, Switzerland, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Tokelau, Tonga, Trinidad and Tobago, Tromelin Island, Tunisia, Turkey, Turkmenistan, Turks and Caicos Islands, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom, Uruguay, USA, Uzbekistan, Vanuatu, Venezuela, Viet Nam, Virgin Islands, Wake Island, Wallis and Futuna, West Bank, Western Sahara, Yemen, Zambia, Zimbabwe | Singapore; United Kingdom; Brazil; Australia; Nigeria
+region | Region of donor's residence. | string | no |  | Region |  | Massachusetts; Catalonia; Ondo; Ontario
+locality | Nearest city, town, or village to location of donor's residence. | string | no |  | Locality |  | Singapore; Cambridge; Boston; Kingston
+duration | Duration of residence, in years, rounded up to the nearest whole number. | string | no |  | Duration of residence |  | 20; 37; 45-65
+area_type | Urban, suburban, or rural descriptor of residence. | string | no |  | Area type of residence | urban, suburban, rural | urban; suburban; rural
+
+## Cell morphology<a name='Cell morphology'></a>
+_Information relating to pathological and morphological features of cells._
+
+Location: module/biomaterial/cell_morphology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells; form single layer colonies
+cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 15; 20-30
+cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Cell size unit |  | 
+percent_cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 98.7
+cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis; ATP test
+cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability result | pass, fail | Should be one of: pass, fail
+percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrotic cells |  | 10
+
+## State of specimen<a name='State of specimen'></a>
+_State of specimen at time of collection._
+
+Location: module/biomaterial/state_of_specimen.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+autolysis_score | State of tissue breakdown due to self-digestion. | string | no |  | Autolysis score | none, mild, moderate | Should be one of: none, mild, or moderate.
+gross_description | Color, size, and other aspects of specimen as visible to naked eye. | string | no |  | Gross description |  | focal wedge shaped region of tan-orange discoloration; cystic
+gross_images | List of filenames of photographs of specimen without magnification. | array | no |  | Gross image |  | my_gross_image_file.jpg
+ischemic_temperature | Whether specimen experienced warm or cold ischemia. | string | no |  | Ischemic temperature | warm, cold | Should be one of: warm, or cold.
+ischemic_time | Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. | integer | no |  | Ischemic time |  | 7200
+microscopic_description | How the specimen looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | Mixture of different cell sizes apparent; Dead cells are quite faint on microscope
+microscopic_images | List of filenames of photographs of specimen under microscope. | array | no |  | Microscopic image |  | my_microscopic_image_file.jpg
+postmortem_interval | Duration of time between when death was declared and when the specimen was preserved or processed. | integer | no |  | Post-mortem interval |  | 2400
+
+## Timecourse<a name='Timecourse'></a>
+_Information relating to a timecourse._
+
+Location: module/biomaterial/timecourse.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  | Timecourse value |  | 2; 5.5-10.5
+unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
+relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  | Timecourse relevance |  | Collection after tumor cells injected into the mammary gland; Time tissue underwent liberase digestion
+
+## Mouse-specific<a name='Mouse-specific'></a>
+_Information specific to an organism that is a mouse (Mus musculus)._
+
+Location: module/biomaterial/mouse_specific.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+strain | The name of the mouse strain. | array | no | [See module  strain_ontology](module.md#strain-ontology) | Mouse strain |  | 
+
+## Purchased reagents<a name='Purchased reagents'></a>
+_Information describing purchased kits or reagents used in a protocol._
+
+Location: module/process/purchased_reagents.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit; CytoTune iPS 2.0 Sendai Reprogramming Kit
+catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
+manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina; ThermoFisher Scientific
+lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
+expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31; 2018-01
+kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Titer |  | 3.0x10^7
+
+## INSDC experiment<a name='INSDC experiment'></a>
+_Information relating to an INSDC experiment._
+
+Location: module/process/sequencing/insdc_experiment.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+insdc_experiment_accession | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | string | yes |  | INSDC experiment accession |  | SRX0000000
+
+## Barcode<a name='Barcode'></a>
+_Information about barcodes used in a protocol._
+
+Location: module/process/sequencing/barcode.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, Read 3, Read 4, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | The 0-based offset of start of barcode in read. | integer | yes |  | Barcode offset |  | 0
+barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
+white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
+
+## 10x-specific<a name='10x-specific'></a>
+_Information specific to 10x experiments._
+
+Location: module/process/sequencing/10x.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+fastq_method | Method used for the generation of fastq files from bcl files. | string | no |  | Fastq creation method |  | Cellranger mkfastq; bcl2fastq2
+fastq_method_version | Version of the program used for fastq generation. | string | no |  | Fastq creation method version |  | Cellranger 2.1.1; v2.20
+pooled_channels | The number of channels pooled within a sequencing lane. | number | no |  | Pooled channels |  | 4
+drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | Should be one of: yes, or no.
+
+## Plate-based sequencing<a name='Plate-based sequencing'></a>
+_Information specific to plate-based sequencing experiments._
+
+Location: module/process/sequencing/plate_based_sequencing.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+plate_label | A label or name for the plate on which the well is located. | string | yes |  | Plate label |  | 2217
+well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
+well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+
