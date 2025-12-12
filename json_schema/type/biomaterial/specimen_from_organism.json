@@ -90,6 +90,12 @@
             "user_friendly": "Adjacent disease(s)",
             "guidelines": "If a healthy specimen is sampled from a site adjacent to diseased tissue, enter that tissue's disease here. If no diseased tissue is adjacent to the specimen, leave blank."
         },
+        "experimental_condition": {
+            "description": "Case of the sample used in the experiment context, it should include a description of the experimental conditions of the study. If disease case, specify the disease that was studied.",
+            "type": "string",
+            "user_friendly": "Case Control definition",
+            "example": "healthy control; disease control; MAFLD disease case; gestational diabetes case"
+        },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
             "type": "object",
