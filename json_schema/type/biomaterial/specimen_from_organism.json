@@ -123,6 +123,14 @@
             "$ref": "module/biomaterial/collection_institute.json",
             "user_friendly": "Collection institute"
         },
+        "time_to_laboratory": {
+            "description": "Transit time in hours between tissue collection and tissue processing, meaning either storage in the laboratory or processing for sequencing.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "example": "2; 5; 8",
+            "user_friendly": "Time to laboratory",
+            "bionetworks": ["adipose","musculoskeletal"]
+        },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",
             "type": "object",

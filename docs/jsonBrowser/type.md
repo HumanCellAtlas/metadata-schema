@@ -357,6 +357,7 @@ state_of_specimen | State of the specimen at the time of collection. | object | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
 collection_institute | Institute where the biomaterial was collected on. | object | no | [See module  collection_institute](module.md#collection-institute) | Collection institute |  | 
+time_to_laboratory | Transit time in hours between tissue collection and tissue processing, meaning either storage in the laboratory or processing for sequencing. | string | no |  | Time to laboratory |  | 2; 5; 8
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased specimen |  | 
 
 ## Cell suspension
