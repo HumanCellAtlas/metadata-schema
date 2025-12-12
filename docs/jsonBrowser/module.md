@@ -438,6 +438,7 @@ primary_language | Primary language(s), spoken by donor. Can include dialects (f
 language_of_family | Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents or any other person in the donor family. Can include dialects (for example, Hokkien). | array | no |  | Language of family |  | Mandarin Chinese; Hokkien; Bahasa Melayu
 current_residence | Donor's current residence at time of sample collection. | object | no | [See module  residence](module.md#residence) | Current residence |  | 
 place_of_birth | Donor's place of birth residence. | object | no | [See module  residence](module.md#residence) | Place of birth |  | 
+lifestyle | Lifestyle and habits of the donor. | object | no | [See module  lifestyle](module.md#lifestyle) | Lifestyle |  | 
 
 ## Growth conditions<a name='Growth conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
@@ -537,6 +538,14 @@ storage_method | The method by which a biomaterial was stored after preservation
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Storage time unit |  | 
 preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
+
+## Lifestyle<a name='Lifestyle'></a>
+_Lifestyle and habits of the donor._
+
+Location: module/biomaterial/lifestyle.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
 
 ## Death<a name='Death'></a>
 _Information relating to the death of an organism._

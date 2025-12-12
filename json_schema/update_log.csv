@@ -6,3 +6,4 @@ type/protocol/biomaterial_collection/collection_protocol.json,minor,"Added biops
 type/biomaterial/cell_suspension.json,minor,"Added nuclei_yield",,
 module/biomaterial/human_specific,major,"Changed body_mass_index to string",,
 module/biomaterial/blood_test,major,"Added new blood_test module",,
+module/biomaterial/lifestyle,major,"Added new lifestyle module",,

@@ -89,6 +89,12 @@
             "$ref": "module/biomaterial/residence.json",
             "user_friendly": "Place of birth",
             "bionetworks": ["genetic diversity"]
+        },
+        "lifestyle": {
+            "description": "Lifestyle and habits of the donor.",
+            "type": "object",
+            "$ref": "module/biomaterial/lifestyle.json",
+            "user_friendly": "Lifestyle"
         }
     }
 }

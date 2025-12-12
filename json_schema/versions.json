@@ -29,6 +29,7 @@
                 "growth_conditions": "6.4.2",
                 "human_specific": "1.6.0",
                 "medical_history": "8.2.0",
+                "lifestyle": "0.0.0",
                 "medical_tests": "1.0.0",
                 "mouse_specific": "1.0.8",
                 "preservation_storage": "6.1.1",
