@@ -98,8 +98,22 @@
     "drs_uri": {
       "description": "Data Repository Service URI pointing at this file. If this property is absent, a data file exists in the repository containing this descriptor. If this property is present and not `null`, a data file exists in another repository at the specified URI. If this property is present but `null`, the data file is not available, but will likely become available in the future, along with an updated descriptor referencing it.",
       "user_friendly": "Data Repository Service URI",
-      "type": ["string", "null"],
-      "format": "uri",
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$comment": "Host-based DRS URI. We use the `uri` format so as to not reinvent the wheel but we need to disallow colons in the authority (what the DRS spec calls hostname) and in the path (what the DRS spec calls ID). The DRS spec explicitly states that the hostname can't have a colon. And if we allowed colons in the ID, `drs://a/b:c` would be ambiguous: it could be a host-based DRS URI with hostname `a` and ID `b:c` or a compact identifier-based DRS URI with prefix `a/b` and accession `c`.",
+          "type": "string",
+          "format": "uri",
+          "pattern": "^drs://[^/:]+/[^:]+$"
+        },
+        {
+          "$comment": "Compact identifier-based DRS URI. We can't use the `uri` format because a colon in the URI authority must be followed by a numeric port number, whereas the DRS spec simply says to use the compact identifier verbatim, without escaping the colon that separates prefix and accession. Accessions arent't necessarily numeric. We can be pretty restrictive about the prefix (optional provider code, followed by slash and namespace) because the spec explicitly lists the allowed characters, but like the ID in host-based DRS URIs, there are no such restrictions for accession.",
+          "type": "string",
+          "pattern": "^drs://([A-Za-z0-9._]+/)?[A-Za-z0-9._]+:.+$"
+        }
+      ],
       "example": "drs://drs.example.org/314159"
     }
   }

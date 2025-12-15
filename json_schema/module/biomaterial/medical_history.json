@@ -99,6 +99,20 @@
             "user_friendly": "Nutritional state",
             "example": "Should be one of: normal, fasting, or feeding tube removed."
         },
+        "diet_meat_consumption": {
+            "description": "Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat.",
+            "type": "boolean",
+            "user_friendly": "Meat consumption",
+            "example": "Should be one of: yes; no.",
+            "bionetworks": ["genetic diversity"]
+        },
+        "reproductive_history": {
+            "description": "Reproductive history of the donor at the time of collection.",
+            "type": "object",
+            "user_friendly": "Reproductive history",
+            "$ref": "module/biomaterial/reproductive_history.json",
+            "bionetworks": ["genetic diversity"]
+        },
         "test_results": {
             "description": "Results from medical tests performed on the individual.",
             "type": "string",
@@ -146,39 +160,39 @@
             "bionetworks": ["gut"]
         }
     },
-    "allOf": 
+    "allOf":
         [
             {
                 "if": {
-                    "properties": { 
+                    "properties": {
                         "smoking_status": {
-                            "const": "active" 
-                        } 
+                            "const": "active"
+                        }
                     }
                 },
                 "then": {
                     "properties": {
-                        "years_since_smoking_cessation": { 
-                            "maximum": 0 
+                        "years_since_smoking_cessation": {
+                            "maximum": 0
                         }
                     }
                 }
             },
             {
                 "if": {
-                    "properties": { 
-                        "smoking_status": { 
-                            "const": "never" 
-                        } 
+                    "properties": {
+                        "smoking_status": {
+                            "const": "never"
+                        }
                     }
                 },
                 "then": {
                     "properties": {
-                        "years_since_smoking_cessation": { 
-                            "type": "null" 
+                        "years_since_smoking_cessation": {
+                            "type": "null"
                         },
-                        "smoking_pack_years": { 
-                            "maximum": 0 
+                        "smoking_pack_years": {
+                            "maximum": 0
                         }
                     }
                 }

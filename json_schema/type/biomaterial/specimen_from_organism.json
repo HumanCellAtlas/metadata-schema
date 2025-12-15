@@ -76,7 +76,7 @@
                     "LP",
                     "MLN",
                     "MUSC",
-                    "SUB",
+                    "SUB"
                 ]
             },
             "guidelines": "Should be one of: EPI (epithelium), LP (lamina propria), MUSC (muscularis), SUB (submucosa), MLN (mesenteric lymph node).",
