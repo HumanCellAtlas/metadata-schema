@@ -17,12 +17,43 @@
             "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
             "example": "4.6.1"
         },
-        "alcohol_history": {
-            "description": "Estimated amount of alcohol consumed per day.",
+        "alcohol_status": {
+            "description": "Whether the individual is actively consuming, has formerly consumed or has never consumed alcohol beverages",
             "type": "string",
-            "user_friendly": "Alcohol history",
-            "example": "3-6 alcohol units/day; 1 drink per day",
-            "guidelines": "Enter the amount consumed per day using units such as alcohol units (10mL or 8g of alcohol) or drinks (14g of alcohol)."
+            "enum": [
+                "active",
+                "former",
+                "never"
+            ],
+            "user_friendly": "Alcohol status",
+            "example": "Should be one of: active, former, never.",
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver"]
+        },
+        "alcohol_type": {
+            "description": "Types of alcoholic beverages the donor consumed.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "user_friendly": "Alcohol type",
+            "example": "beer; liquor; wine",
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver"]
+        },
+        "alcohol_units": {
+            "description": "Alcohol consumption of donor in alcohol units per week (strength (ABV) x volume (ml) ÷ 1,000).",
+            "type": "number",
+            "user_friendly": "Alcohol units",
+            "minimum": 0,
+            "example": "2.5; 15.2; 23",
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver", "heart"]
+        },
+        "alcohol_usage_duration": {
+            "description": "Number of years in which the donor consumed alcohol.",
+            "type": "integer",
+            "user_friendly": "Alcohol usage duration",
+            "minimum": 0,
+            "example": 5,
+            "bionetworks": ["gut", "oral and craniofacial", "musculoskeletal", "liver"]
         },
         "medication": {
             "description": "Medication(s) the individual was taking at time of biomaterial collection.",
@@ -93,6 +124,40 @@
             "type": "string",
             "user_friendly": "Treatments",
             "example": "Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer"
+        },
+        "previous_surgeries": {
+            "description": "Previous surgeries the individual has undergone prior to biomaterial collection.",
+            "type": "string",
+            "user_friendly": "Previous surgeries",
+            "example": "Appendectomy; Coleostomy; Vaginoplasty; LASIK; Abdominal surgery",
+            "bionetworks": ["gut", "adipose", "eye", "musculoskeletal", "reproduction"]
+        },
+        "defined_diet": {
+            "description": "Whether the individual was following a defined diet at the time of biomaterial collection.",
+            "type": "boolean",
+            "user_friendly": "Defined diet",
+            "guidelines": "Should be one of: yes, or no.",
+            "example": "yes; no",
+            "bionetworks": ["gut"]
+        },
+        "diet_specific": {
+            "description": "Defined diet the donor was on at the time of biomaterial collection.",
+            "type": "array",
+            "user_friendly": "Diet Specific",
+            "example": "gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo",
+            "enum": [
+                "vegan",
+                "vegetarian",
+                "omnivore", 
+                "gluten_free",
+                "fodmap",
+                "baby_formula",
+                "breastfeeding",
+                "elimination",
+                "keto",
+                "paleo"
+            ],
+            "bionetworks": ["gut"]
         }
     },
     "allOf":

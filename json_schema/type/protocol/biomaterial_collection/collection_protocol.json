@@ -47,6 +47,13 @@
             "$ref": "module/ontology/process_type_ontology.json",
             "user_friendly": "Collection method"
         },
+        "procedure": {
+            "description": "Procedure used to collect the specimen from the organism.",
+            "type": "string",
+            "user_friendly": "Procedure",
+            "example": "colonoscopy; venipuncture; laparoscopic surgery",
+            "bionetworks": ["gut"]
+        },
         "reagents": {
             "description": "A list of purchased reagents used in this protocol.",
             "type": "array",

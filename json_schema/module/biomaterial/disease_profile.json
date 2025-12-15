@@ -77,6 +77,27 @@
             "maximum": 150,
             "minimum": 0,
             "bionetworks": ["lung"]
+        },
+        "PUCAI_score": {
+            "user_friendly": "PUCAI score",
+            "description": "Indicate the Pediatric Ulcerative Colitis Activity Index (PUCAI) score if available.",
+            "type": "number",
+            "minimum": 0,
+            "bionetworks": ["gut"]
+        },
+        "PCDAI_score": {
+            "user_friendly": "PCDAI score",
+            "description": "Indicate the Pediatric Crohn’s Disease Activity Index (PCDAI) score if available.",
+            "type": "number",
+            "minimum": 0,
+            "bionetworks": ["gut"]
+        },
+        "wPCDAI_score": {
+            "user_friendly": "wPCDAI score",
+            "description": "Indicate the weighted Pediatric Crohn’s Disease Activity Index (wPCDAI) score if available.",
+            "type": "number",
+            "minimum": 0,
+            "bionetworks": ["gut"]
         }
     }
 }
