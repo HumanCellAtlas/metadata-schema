@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2025-11-12T19:07:05Z",
+    "last_update_date": "2025-12-15T16:54:37Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -23,11 +23,11 @@
                 "cell_morphology": "6.1.7",
                 "collection_institute": "1.0.0",
                 "death": "5.5.1",
-                "disease_profile": "1.0.0",
+                "disease_profile": "1.1.0",
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
                 "human_specific": "1.6.0",
-                "medical_history": "8.2.0",
+                "medical_history": "9.0.0",
                 "medical_tests": "1.0.0",
                 "mouse_specific": "1.0.8",
                 "preservation_storage": "6.1.1",
@@ -98,10 +98,10 @@
             "biomaterial": {
                 "cell_line": "16.0.0",
                 "cell_suspension": "14.1.0",
-                "donor_organism": "18.1.0",
+                "donor_organism": "18.2.0",
                 "imaged_specimen": "3.5.0",
                 "organoid": "11.5.0",
-                "specimen_from_organism": "11.0.0"
+                "specimen_from_organism": "11.1.0"
             },
             "file": {
                 "analysis_file": "8.0.0",
@@ -125,7 +125,7 @@
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "2.1.0",
-                    "collection_protocol": "9.2.0",
+                    "collection_protocol": "9.3.0",
                     "differentiation_protocol": "2.2.0",
                     "dissociation_protocol": "6.7.0",
                     "enrichment_protocol": "3.1.0",
