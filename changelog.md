@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [type/biomaterial/specimen_from_organism.json - v11.1.0] - 2025-12-15
 ### Added
 Added adjacent_disease_location, indication_for_sampling and radial_tissue_term
@@ -30,8 +32,6 @@ Deprecated alcohol_history
 ### [type/biomaterial/donor_organism.json - v18.2.0] - 2025-12-15
 ### Added
 Added PUCAI_score, PCDAI_score and wPCDAI_score
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [system/file_descriptor.json - v2.2.0] - 2025-11-04
 ### Added
