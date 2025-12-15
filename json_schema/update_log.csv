@@ -1,6 +1,1 @@
 Schema,Change type,Change message,Version,Date
-type/biomaterial/specimen_from_organism.json,minor,"Added adjacent_disease_location, indication_for_sampling and radial_tissue_term",,
-module/biomaterial/disease_profile,minor,"Added PUCAI_score, PCDAI_score and wPCDAI_score",,
-module/biomaterial/medical_history.json,minor,"Added alcohol_type, alcohol_usage_duration, alcohol_units, defined_diet, diet_specific and previous_surgeries",,
-type/protocol/biomaterial_collection/collection_protocol.json,minor,"Added procedure",,
-module/biomaterial/medical_history,major,"Deprecate alcohol_history",,
