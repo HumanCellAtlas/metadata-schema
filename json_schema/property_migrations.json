@@ -3,7 +3,7 @@
         {
             "source_schema": "medical_history",
             "property": "alcohol_history",
-            "effective_from": "9.0.0",
+            "effective_from": "",
             "reason": "Field standardization",
             "type": "deprecated property"
         },
