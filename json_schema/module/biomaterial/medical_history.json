@@ -107,6 +107,18 @@
             "example": "Should be one of: active, former, never.",
             "bionetworks": ["lung", "oral and craniofacial"]
         },
+        "marijuana_inhaled_status": {
+            "description": "Whether the individual is actively, was formerly or never inhaled/smoked marijuana.",
+            "type": "string",
+            "enum": [
+                "active",
+                "former",
+                "never"
+            ],
+            "user_friendly": "Inhaled marijuana status",
+            "example": "Should be one of: active, former, never.",
+            "bionetworks": ["lung", "oral and craniofacial"]
+        },
         "nutritional_state": {
             "description": "Nutritional state of individual at time of biomaterial collection.",
             "type": "string",
