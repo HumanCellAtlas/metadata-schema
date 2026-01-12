@@ -95,6 +95,18 @@
             "example": "Should be one of: yes; no.",
             "bionetworks": ["lung", "oral and craniofacial"]
         },
+        "vaping_status": {
+            "description": "Whether the individual is actively, was formerly or never vaped.",
+            "type": "string",
+            "enum": [
+                "active",
+                "former",
+                "never"
+            ],
+            "user_friendly": "Vaping status",
+            "example": "Should be one of: active, former, never.",
+            "bionetworks": ["lung", "oral and craniofacial"]
+        },
         "nutritional_state": {
             "description": "Nutritional state of individual at time of biomaterial collection.",
             "type": "string",

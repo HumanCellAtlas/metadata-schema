@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/medical_history,minor,"Added household_smoking_exposure",,
+module/biomaterial/medical_history,minor,"Added household_smoking_exposure, vaping_status",,
