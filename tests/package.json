@@ -18,7 +18,7 @@
     "path": "^0.12.7",
     "ramda": "^0.26.0",
     "readdirp": "^3.0.0",
-    "snyk": "^1.321.0"
+    "snyk": "^1.1012.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
