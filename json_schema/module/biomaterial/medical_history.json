@@ -88,6 +88,37 @@
             "minimum": 0,
             "example": 12
         },
+        "household_smoking_exposure": {
+            "description": "If the donor is exposed to passive smoking in their household or not (excluding if they are the ones smoking).",
+            "type": "boolean",
+            "user_friendly": "Household smoking exposure",
+            "example": "Should be one of: yes; no.",
+            "bionetworks": ["lung", "oral and craniofacial"]
+        },
+        "vaping_status": {
+            "description": "Whether the individual is actively, was formerly or never vaped.",
+            "type": "string",
+            "enum": [
+                "active",
+                "former",
+                "never"
+            ],
+            "user_friendly": "Vaping status",
+            "example": "Should be one of: active, former, never.",
+            "bionetworks": ["lung", "oral and craniofacial"]
+        },
+        "marijuana_inhaled_status": {
+            "description": "Whether the individual is actively, was formerly or never inhaled/smoked marijuana.",
+            "type": "string",
+            "enum": [
+                "active",
+                "former",
+                "never"
+            ],
+            "user_friendly": "Inhaled marijuana status",
+            "example": "Should be one of: active, former, never.",
+            "bionetworks": ["lung", "oral and craniofacial"]
+        },
         "nutritional_state": {
             "description": "Nutritional state of individual at time of biomaterial collection.",
             "type": "string",
