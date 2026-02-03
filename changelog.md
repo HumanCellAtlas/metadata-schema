@@ -6,6 +6,7 @@ Starting after v5.0.0 release, updates will be declared for schemas independentl
 and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Unreleased changes may be indicated under the `Unreleased` heading.
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/medical_history.json - v9.1.0] - 2026-02-03
 ### Added
@@ -14,8 +15,6 @@ Added household_smoking_exposure, vaping_status and marijuana_inhaled_status
 ### [type/biomaterial/donor_organism.json - v18.3.0] - 2026-02-03
 ### Added
 Added household_smoking_exposure, vaping_status and marijuana_inhaled_status
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [module/biomaterial/medical_history.json - v9.0.0] - 2025-12-15
 ### Deprecated
