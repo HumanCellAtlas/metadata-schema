@@ -9,7 +9,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/contact"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/project/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/hca_bionetwork"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
