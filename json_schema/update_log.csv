@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/residence,patch,"Fixed describedBy pattern",,

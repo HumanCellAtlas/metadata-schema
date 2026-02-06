@@ -15,7 +15,7 @@
         "describedBy": {
             "description": "The URL reference to the schema.",
             "type": "string",
-            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/human_specific"
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/residence"
         },
         "schema_version": {
             "description": "The version number of the schema in major.minor.patch format.",
