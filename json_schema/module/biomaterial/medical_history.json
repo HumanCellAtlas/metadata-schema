@@ -150,6 +150,15 @@
             "user_friendly": "Test results",
             "example": "lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative"
         },
+        "diseases_history": {
+            "description": "Short description of known disease(s) that have previously affected the donor, but are not considered active now.",
+            "type": "array",
+            "items": {
+                "$ref": "module/ontology/disease_ontology.json"
+	        },
+            "user_friendly": "Diseases History",
+            "bionetworks": ["heart", "oral and craniofacial"]
+        },
         "treatment": {
             "description": "Treatments the individual has undergone prior to biomaterial collection.",
             "type": "string",

@@ -1,1 +1,2 @@
 Schema,Change type,Change message,Version,Date
+module/biomaterial/medical_history,minor,"Added diseases_history"
