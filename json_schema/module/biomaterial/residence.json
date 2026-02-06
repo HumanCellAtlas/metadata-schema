@@ -25,6 +25,7 @@
         },
         "country_territory": {
             "description": "Country or territory of donor's residence.",
+            "type": "string",
             "enum": [
                 "Afghanistan",
                 "Albania",

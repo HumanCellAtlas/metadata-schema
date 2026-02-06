@@ -1,2 +1,2 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/residence,patch,"Fixed describedBy pattern",,
+module/biomaterial/residence,patch,"Fixed describedBy pattern and type keyword for country_territory",,
