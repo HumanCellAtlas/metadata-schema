@@ -182,6 +182,10 @@
             "example": "Should be one of: ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT",
             "bionetworks": ["heart"]
         },
+            "user_friendly": "Device Treatment",
+            "example": "Should be one of: ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT",
+            "bionetworks": ["heart"]
+        },
         "previous_surgeries": {
             "description": "Previous surgeries the individual has undergone prior to biomaterial collection.",
             "type": "string",
