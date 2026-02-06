@@ -165,6 +165,23 @@
             "user_friendly": "Treatments",
             "example": "Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer"
         },
+        "device_treatment": {
+            "description": "Device/interventional therapy 1 year before and/or at time of sample collection.",
+            "type": "string",
+            "enum": [
+                "ECMO",
+                "IABP",
+                "Impella",
+                "LVAD",
+                "RVAD",
+                "PPM",
+                "ICD",
+                "CRT"
+            ],
+            "user_friendly": "Device Treatment",
+            "example": "Should be one of: ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT",
+            "bionetworks": ["heart"]
+        },
         "previous_surgeries": {
             "description": "Previous surgeries the individual has undergone prior to biomaterial collection.",
             "type": "string",
