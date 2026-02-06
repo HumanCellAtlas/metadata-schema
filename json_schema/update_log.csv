@@ -1,2 +1,3 @@
 Schema,Change type,Change message,Version,Date
-module/biomaterial/residence,patch,"Fixed describedBy pattern and type keyword for country_territory",,
+module/biomaterial/residence,patch,"Fixed describedBy pattern and type keyword to country_territory",,
+module/biomaterial/medical_history,patch,"Added items keyword to diet_specific",,
