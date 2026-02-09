@@ -1,5 +1,5 @@
 {
-    "last_update_date": "2026-02-03T18:05:22Z",
+    "last_update_date": "2026-02-09T12:55:32Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
@@ -26,13 +26,13 @@
                 "disease_profile": "1.1.0",
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
-                "human_specific": "1.6.0",
-                "medical_history": "9.1.0",
+                "human_specific": "1.6.4",
+                "medical_history": "9.1.4",
                 "medical_tests": "1.0.0",
                 "mouse_specific": "1.0.8",
                 "preservation_storage": "6.1.1",
                 "reproductive_history": "1.0.0",
-                "residence": "1.0.0",
+                "residence": "1.0.4",
                 "state_of_specimen": "6.0.0",
                 "timecourse": "2.0.2"
             },
@@ -47,7 +47,7 @@
                 "enrichment_ontology": "1.2.6",
                 "ethnicity_ontology": "5.3.9",
                 "file_content_ontology": "2.0.0",
-                "file_format_ontology": "1.0.0",
+                "file_format_ontology": "2.0.0",
                 "gender_identity_ontology": "1.0.0",
                 "instrument_ontology": "5.3.6",
                 "length_unit_ontology": "5.3.5",
@@ -98,7 +98,7 @@
             "biomaterial": {
                 "cell_line": "16.0.0",
                 "cell_suspension": "14.1.0",
-                "donor_organism": "18.3.0",
+                "donor_organism": "18.3.4",
                 "imaged_specimen": "3.5.0",
                 "organoid": "11.5.0",
                 "specimen_from_organism": "11.1.0"
