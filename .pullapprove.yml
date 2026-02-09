@@ -33,9 +33,7 @@ groups:
     - "'Security' not in labels"
     reviewers:
       users:
-      - ESapenaVentura
       - amnonkhen
-      - MightyAx
     reviews:
       required: 1
       request_order: shuffle
@@ -97,7 +95,6 @@ groups:
     reviewers:
       users:
       - amnonkhen
-      - MightyAx
     reviews:
       required: 1
       request: 1
@@ -110,7 +107,6 @@ groups:
     - "'content' in labels"
     reviewers:  # people who can approve for this group
       users:
-      - ESapenaVentura
       - amnonkhen
       - ncalvanese1
       - hannes-ucsc
@@ -126,9 +122,7 @@ groups:
     - "'*.py' in files or '*.js' in files or '*.yml' in files"
     reviewers:
       users:
-      - ESapenaVentura
-      - ami-day
-      - Wkt8
+      - amnonkhen
       - idazucchi
     reviews:
       required: 1
