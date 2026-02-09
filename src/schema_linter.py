@@ -321,7 +321,7 @@ class SchemaLinter:
 
 if __name__ == "__main__":
     # As of November 2024, we are now using the OLS4 for ontology checkup
-    ols_api = 'http://www.ebi.ac.uk/ols/api'
+    ols_api = 'https://www.ebi.ac.uk/ols/api'
 
     schema_path = '../json_schema' if cwd == 'src' else 'json_schema'
     jsons = [os.path.join(dirpath, f)
