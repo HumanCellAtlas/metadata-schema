@@ -350,7 +350,7 @@ biomaterial_core | Core biomaterial-level information. | object | yes | [See cor
 genus_species | The scientific binomial name for the species of the specimen. | array | no | [See module  species_ontology](module.md#species-ontology) | Genus species |  | 
 organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md#organ-ontology) | Organ |  | 
 organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md#organ-part-ontology) | Organ part |  | 
-radial_tissue_term | Layer(s) of the gut that was/were sampled. | array | no |  | Radial tissue term | EPI, LP, MLN, MUSC, SUB | EPI; LP; MUSC; SUB; MLN
+radial_tissue_term | Layer(s) of the gut that was/were sampled. | array | no |  | Radial tissue term | EPI, LP, MLN, MUILF, MUSC, PP, SMILF, SUB | EPI; LP; MLN; MUILF; MUSC; PP; SMILF; SUB
 transplant_organ | Was the specimen collected after extraction for organ transplantation? | boolean | no |  | Transplant organ |  | yes; no
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
 adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 

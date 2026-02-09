@@ -67,7 +67,7 @@
         },
         "radial_tissue_term": {
             "description": "Layer(s) of the gut that was/were sampled.",
-            "example": "EPI; LP; MUSC; SUB; MLN",
+            "example": "EPI; LP; MLN; MUILF; MUSC; PP; SMILF; SUB",
             "type": "array",
             "items": {
                 "type": "string",
@@ -75,11 +75,14 @@
                     "EPI",
                     "LP",
                     "MLN",
+                    "MUILF",
                     "MUSC",
+                    "PP",
+                    "SMILF",
                     "SUB"
                 ]
             },
-            "guidelines": "Should be one of: EPI (epithelium), LP (lamina propria), MUSC (muscularis), SUB (submucosa), MLN (mesenteric lymph node).",
+            "guidelines": "Should be one of: EPI (epithelium), LP (lamina propria), MUSC (muscularis), SUB (submucosa), MLN (mesenteric lymph node), Peyer's patch (PP), Mucosal lymphoid follicle (MUILF), Submucosal lymphoid follicle (SMILF).",
             "user_friendly": "Radial tissue term",
             "bionetworks": ["gut"]
         },
