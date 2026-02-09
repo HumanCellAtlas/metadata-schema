@@ -1,0 +1,4 @@
+{
+  "mochaExplorer.files": "tests/**/*.test.js",
+  "mochaExplorer.ignore": "**/node_modules/**"
+}
