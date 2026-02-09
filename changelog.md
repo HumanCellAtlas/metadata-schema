@@ -7,12 +7,12 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/specimen_from_organism.json - v11.1.1] - 2026-02-09
 ### Added
 Added values to radial_tissue_term enum
-
 
 ### [module/biomaterial/residence.json - v1.0.4] - 2026-02-09
 ### Fixed
