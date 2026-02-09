@@ -176,18 +176,21 @@
             "type": "array",
             "user_friendly": "Diet Specific",
             "example": "gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo",
-            "enum": [
-                "vegan",
-                "vegetarian",
-                "omnivore", 
-                "gluten_free",
-                "fodmap",
-                "baby_formula",
-                "breastfeeding",
-                "elimination",
-                "keto",
-                "paleo"
-            ],
+            "items": {
+                "type": "string",
+                "enum": [
+                    "vegan",
+                    "vegetarian",
+                    "omnivore",
+                    "gluten_free",
+                    "fodmap",
+                    "baby_formula",
+                    "breastfeeding",
+                    "elimination",
+                    "keto",
+                    "paleo"
+                ]
+            },
             "bionetworks": ["gut"]
         }
     },

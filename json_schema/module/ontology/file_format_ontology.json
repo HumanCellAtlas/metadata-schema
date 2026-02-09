@@ -31,12 +31,12 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:edam"],
-                "classes": ["format:1915"],
+                "classes": ["EDAM:1915"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
             },
-            "example": "format:1930; format:3464",
+            "example": "EDAM:1930; EDAM:3464",
             "user_friendly": "File format ontology ID"
         },
         "ontology_label": {
