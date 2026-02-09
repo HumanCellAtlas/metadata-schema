@@ -2,11 +2,11 @@
 
 You will need node.js to run the tests
 
-- Get Node.js: https://nodejs.org/en/ (v8.11.1 LTS)
+- Get Node.js: https://nodejs.org/en/ (v18 LTS)
 
 - If you use [Homebrew](https://brew.sh/) you can install node by doing:
 ```
-brew install node
+brew install node@18
 ```
 
 After installation check that everything is correctly installed and which versions you are running:
