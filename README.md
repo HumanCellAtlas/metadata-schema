@@ -4,7 +4,6 @@
 
 The Human Cell Atlas metadata-schema repo contains the schema specifications and supporting documentation for the HCA metadata standards.
 
-...
 ## Table of Contents
 - [Documentation](#documentation)
 - [Metadata schemas and examples](#metadata-schemas-and-examples)
