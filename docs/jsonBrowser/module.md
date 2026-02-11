@@ -492,6 +492,7 @@ ecg_heart_rhythm | Heart rhythm as measured by electrocardiogram. | string | no 
 ecg_pr_interval_duration | PR interval duration in ms as measured by electrocardiogram. It can be described as PQ interval duration in ECG description according to region. | number | no |  | Ecg - Pr Interval Duration |  | 160; 140; 180
 ecg_qrs_complex_duration | QRS complex duration in ms as measured by electrocardiogram. | number | no |  | Ecg - QRS Complex Duration |  | 90; 100; 110
 ecg_lbbb_rbbb_ivcd | Bundle branch block and/or delayed atrioventricular conduction as measured by electrocardiogram. LBBB - Left bundle branch block/ RBBB - right bundle branch block/ IVCD - intraventricular-conduction delay (QRSd >120ms not fulfilling LBBB or RBBB criteria). | string | no |  | Ecg - LBBB RBBB IVCD | LBBB, RBBB, IVCD | Should be one of: LBBB, RBBB, IVCD.
+ecg_qt_interval_corrected | Corrected QT interval in ms as measured by electrocardiogram. | number | no |  | Ecg - QT Interval Corrected |  | 420; 410; 430
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10

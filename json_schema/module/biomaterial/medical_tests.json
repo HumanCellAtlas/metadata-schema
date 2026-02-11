@@ -295,6 +295,13 @@
             "example": "Should be one of: LBBB, RBBB, IVCD.",
             "bionetworks": ["heart"]
         },
+        "ecg_qt_interval_corrected": {
+            "description": "Corrected QT interval in ms as measured by electrocardiogram.",
+            "type": "number",
+            "user_friendly": "Ecg - QT Interval Corrected",
+            "example": "420; 410; 430",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",

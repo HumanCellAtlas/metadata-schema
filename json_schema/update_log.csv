@@ -1,3 +1,3 @@
 Schema,Change type,Change message,Version,Date
 module/biomaterial/medical_history,minor,"Added diseases_history, device_treatment, cardioplegia"
-module/biomaterial/medical_tests,minor,"Added mps_lvef, mps_inducible_ischaemic, mps_scar, mps_time_offset, ecg_heart_rate, ecg_heart_rhythm, ecg_pr_interval_duration, ecg_qrs_complex_duration, ecg_lbbb_rbbb_ivcd"
+module/biomaterial/medical_tests,minor,"Added mps_lvef, mps_inducible_ischaemic, mps_scar, mps_time_offset, ecg_heart_rate, ecg_heart_rhythm, ecg_pr_interval_duration, ecg_qrs_complex_duration, ecg_lbbb_rbbb_ivcd, ecg_qt_interval_corrected"
