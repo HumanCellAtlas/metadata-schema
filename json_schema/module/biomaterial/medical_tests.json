@@ -255,6 +255,13 @@
             "minimum": 0,
             "bionetworks": ["lung"]
         },
+        "ecg_heart_rate": {
+            "description": "Heart rate as measured by electrocardiogram in beats per minute.",
+            "type": "number",
+            "user_friendly": "Ecg - Heart Rate",
+            "example": "72; 65; 80",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
