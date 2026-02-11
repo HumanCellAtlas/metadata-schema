@@ -25,12 +25,14 @@ jobs:
     - name: Run schema linter
       run: python ./src/schema_linter.py
     - name: Other Tests
-      run: python -m unittest discover --start-directory tests/python
+      run: python -m pytest tests/python
   tests:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: tests
+    env:
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
