@@ -268,6 +268,13 @@
             "type": "number",
             "example": "0; 5; 12",
             "bionetworks": ["heart"]
+        },
+        "mps_scar": {
+            "user_friendly": "Mps - Scar",
+            "description": "Left ventricular scar percentage as measured by myocardial perfusion scintigraphy.",
+            "type": "number",
+            "example": "0; 3; 10",
+            "bionetworks": ["heart"]
         }
     }
 }
