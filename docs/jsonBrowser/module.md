@@ -566,3 +566,154 @@ parent | The individual's parent. | string | no |  | Parent |  |
 child | The individual's child. | string | no |  | Child |  | 
 sibling | The individual's sibling. | string | no |  | Sibling |  | 
 
+## Medical history<a name='Medical history'></a>
+_Information about the medical history of a donor._
+
+Location: module/biomaterial/medical_history.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+alcohol_status | Whether the individual is actively consuming, has formerly consumed or has never consumed alcohol beverages | string | no |  | Alcohol status | active, former, never | Should be one of: active, former, never.
+alcohol_type | Types of alcoholic beverages the donor consumed. | array | no |  | Alcohol type |  | beer; liquor; wine
+alcohol_units | Alcohol consumption of donor in alcohol units per week (strength (ABV) x volume (ml) ÷ 1,000). | number | no |  | Alcohol units |  | 2.5; 15.2; 23
+alcohol_usage_duration | Number of years in which the donor consumed alcohol. | integer | no |  | Alcohol usage duration |  | 5
+medication | Medication(s) the individual was taking at time of biomaterial collection. | array | no | [See module  medication_ontology](module.md#medication-ontology) | Medication |  | 
+smoking_status | Whether the individual is actively, was formerly or never consumed smoking tobacco products like cigarettes, cigars, pipe etc. | string | no |  | Smoking status | active, former, never | Should be one of: active, former, never.
+smoking_pack_years | Estimated number of packs (20 cigarettes) smoked per day multiplied by the number of years the individual was smoking. | number | no |  | Smoking pack years |  | 4.55
+years_since_smoking_cessation | If smoking status is 'former', specify the number of years since smoking cessation. | integer | no |  | Years since smoking cessation |  | 12
+household_smoking_exposure | If the donor is exposed to passive smoking in their household or not (excluding if they are the ones smoking). | boolean | no |  | Household smoking exposure |  | Should be one of: yes; no.
+vaping_status | Whether the individual is actively, was formerly or never vaped. | string | no |  | Vaping status | active, former, never | Should be one of: active, former, never.
+marijuana_inhaled_status | Whether the individual is actively, was formerly or never inhaled/smoked marijuana. | string | no |  | Inhaled marijuana status | active, former, never | Should be one of: active, former, never.
+nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat. | boolean | no |  | Meat consumption |  | Should be one of: yes; no.
+reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
+test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
+diseases_history | Short description of known disease(s) that have previously affected the donor, but are not considered active now. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Diseases History |  | 
+treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+device_treatment | Device/interventional therapy 1 year before and/or at time of sample collection. | string | no |  | Device Treatment | ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT | Should be one of: ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT
+previous_surgeries | Previous surgeries the individual has undergone prior to biomaterial collection. | string | no |  | Previous surgeries |  | Appendectomy; Coleostomy; Vaginoplasty; LASIK; Abdominal surgery
+defined_diet | Whether the individual was following a defined diet at the time of biomaterial collection. | boolean | no |  | Defined diet |  | yes; no
+diet_specific | Defined diet the donor was on at the time of biomaterial collection. | array | no |  | Diet Specific | vegan, vegetarian, omnivore, gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo | gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo
+
+## Residence<a name='Residence'></a>
+_Donor's residence location information._
+
+Location: module/biomaterial/residence.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+country_territory | Country or territory of donor's residence. |  | no |  | Country | Afghanistan, Albania, Algeria, American Samoa, Andorra, Angola, Anguilla, Antarctica, Antigua and Barbuda, Argentina, Armenia, Aruba, Ashmore and Cartier Islands, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Baker Island, Bangladesh, Barbados, Bassas da India, Belarus, Belgium, Belize, Benin, Bermuda, Bhutan, Bolivia, Borneo, Bosnia and Herzegovina, Botswana, Bouvet Island, Brazil, British Virgin Islands, Brunei, Bulgaria, Burkina Faso, Burundi, Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, China, Christmas Island, Clipperton Island, Cocos Islands, Colombia, Comoros, Cook Islands, Coral Sea Islands, Costa Rica, Cote d'Ivoire, Croatia, Cuba, Curacao, Cyprus, Czechia, Democratic Republic of the Congo, Denmark, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Europa Island, Falkland Islands (Islas Malvinas), Faroe Islands, Fiji, Finland, France, French Guiana, French Polynesia, French Southern and Antarctic Lands, Gabon, Gambia, Gaza Strip, Georgia, Germany, Ghana, Gibraltar, Glorioso Islands, Greece, Greenland, Grenada, Guadeloupe, Guam, Guatemala, Guernsey, Guinea, Guinea-Bissau, Guyana, Haiti, Heard Island and McDonald Islands, Honduras, Hong Kong, Howland Island, Hungary, Iceland, India, Indonesia, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jamaica, Jan Mayen, Japan, Jarvis Island, Jersey, Johnston Atoll, Jordan, Juan de Nova Island, Kazakhstan, Kenya, Kerguelen Archipelago, Kingman Reef, Kiribati, Kosovo, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Line Islands, Lithuania, Luxembourg, Macau, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Martinique, Mauritania, Mauritius, Mayotte, Mexico, Micronesia, Federated States of, Midway Islands, Moldova, Monaco, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Myanmar, Namibia, Nauru, Navassa Island, Nepal, Netherlands, New Caledonia, New Zealand, Nicaragua, Niger, Nigeria, Niue, Norfolk Island, North Korea, North Macedonia, Northern Mariana Islands, Norway, Oman, Pakistan, Palau, Palmyra Atoll, Panama, Papua New Guinea, Paracel Islands, Paraguay, Peru, Philippines, Pitcairn Islands, Poland, Portugal, Puerto Rico, Qatar, Republic of the Congo, Reunion, Romania, Russia, Rwanda, Saint Barthelemy, Saint Helena, Saint Kitts and Nevis, Saint Lucia, Saint Martin, Saint Pierre and Miquelon, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Sint Maarten, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Georgia and the South Sandwich Islands, South Korea, South Sudan, Spain, Spratly Islands, Sri Lanka, State of Palestine, Sudan, Suriname, Svalbard, Sweden, Switzerland, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Tokelau, Tonga, Trinidad and Tobago, Tromelin Island, Tunisia, Turkey, Turkmenistan, Turks and Caicos Islands, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom, Uruguay, USA, Uzbekistan, Vanuatu, Venezuela, Viet Nam, Virgin Islands, Wake Island, Wallis and Futuna, West Bank, Western Sahara, Yemen, Zambia, Zimbabwe | Singapore; United Kingdom; Brazil; Australia; Nigeria
+region | Region of donor's residence. | string | no |  | Region |  | Massachusetts; Catalonia; Ondo; Ontario
+locality | Nearest city, town, or village to location of donor's residence. | string | no |  | Locality |  | Singapore; Cambridge; Boston; Kingston
+duration | Duration of residence, in years, rounded up to the nearest whole number. | string | no |  | Duration of residence |  | 20; 37; 45-65
+area_type | Urban, suburban, or rural descriptor of residence. | string | no |  | Area type of residence | urban, suburban, rural | urban; suburban; rural
+
+## Cell morphology<a name='Cell morphology'></a>
+_Information relating to pathological and morphological features of cells._
+
+Location: module/biomaterial/cell_morphology.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+cell_morphology | General description of the morphology of cells. | string | no |  | Cell morphology |  | adherent cells; form single layer colonies
+cell_size | Size of cells in Cell size unit. | string | no |  | Cell size |  | 15; 20-30
+cell_size_unit | The unit in which the Cell size is expressed. | object | no | [See module  length_unit_ontology](module.md#length-unit-ontology) | Cell size unit |  | 
+percent_cell_viability | Percent of cells determined to be viable. | number | no |  | Percent cell viability |  | 98.7
+cell_viability_method | The method by which cell viability was determined. | string | no |  | Cell viability method |  | Fluorescein diacetate hydrolysis; ATP test
+cell_viability_result | Result of the cell viability test. | string | no |  | Cell viability result | pass, fail | Should be one of: pass, fail
+percent_necrosis | Percent of cells identified to be necrotic. | number | no |  | Percent necrotic cells |  | 10
+
+## State of specimen<a name='State of specimen'></a>
+_State of specimen at time of collection._
+
+Location: module/biomaterial/state_of_specimen.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+autolysis_score | State of tissue breakdown due to self-digestion. | string | no |  | Autolysis score | none, mild, moderate | Should be one of: none, mild, or moderate.
+gross_description | Color, size, and other aspects of specimen as visible to naked eye. | string | no |  | Gross description |  | focal wedge shaped region of tan-orange discoloration; cystic
+gross_images | List of filenames of photographs of specimen without magnification. | array | no |  | Gross image |  | my_gross_image_file.jpg
+ischemic_temperature | Whether specimen experienced warm or cold ischemia. | string | no |  | Ischemic temperature | warm, cold | Should be one of: warm, or cold.
+ischemic_time | Duration of time, in seconds, between when the specimen stopped receiving oxygen and when it was preserved or processed. | integer | no |  | Ischemic time |  | 7200
+microscopic_description | How the specimen looks under the microscope and how it compares with normal cells. | string | no |  | Microscopic description |  | Mixture of different cell sizes apparent; Dead cells are quite faint on microscope
+microscopic_images | List of filenames of photographs of specimen under microscope. | array | no |  | Microscopic image |  | my_microscopic_image_file.jpg
+postmortem_interval | Duration of time between when death was declared and when the specimen was preserved or processed. | integer | no |  | Post-mortem interval |  | 2400
+
+## Timecourse<a name='Timecourse'></a>
+_Information relating to a timecourse._
+
+Location: module/biomaterial/timecourse.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string | yes |  | Timecourse value |  | 2; 5.5-10.5
+unit | The unit in which the Timecourse value is expressed. | object | yes | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
+relevance | Relevance of the Timecourse value/unit to the experiment. | string | no |  | Timecourse relevance |  | Collection after tumor cells injected into the mammary gland; Time tissue underwent liberase digestion
+
+## Mouse-specific<a name='Mouse-specific'></a>
+_Information specific to an organism that is a mouse (Mus musculus)._
+
+Location: module/biomaterial/mouse_specific.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+strain | The name of the mouse strain. | array | no | [See module  strain_ontology](module.md#strain-ontology) | Mouse strain |  | 
+
+## Purchased reagents<a name='Purchased reagents'></a>
+_Information describing purchased kits or reagents used in a protocol._
+
+Location: module/process/purchased_reagents.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+retail_name | The retail name of the kit/reagent. | string | no |  | Retail name |  | SureCell WTA 3' Library Prep Kit; CytoTune iPS 2.0 Sendai Reprogramming Kit
+catalog_number | The catalog number of the kit/reagent. | string | no |  | Catalog number |  | 20014279
+manufacturer | The manufacturer of the kit/reagent. | string | no |  | Manufacturer |  | Illumina; ThermoFisher Scientific
+lot_number | The batch or lot number of the kit/reagent. | string | no |  | Batch/lot number |  | 10001A
+expiry_date | The date of expiration for the kit/reagent. | string | no |  | Expiry date |  | 2018-01-31; 2018-01
+kit_titer | Appropriate titer and volume recommendations found in kit/reagent Certificate of Analysis. | string | no |  | Titer |  | 3.0x10^7
+
+## INSDC experiment<a name='INSDC experiment'></a>
+_Information relating to an INSDC experiment._
+
+Location: module/process/sequencing/insdc_experiment.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+insdc_experiment_accession | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | string | yes |  | INSDC experiment accession |  | SRX0000000
+
+## Barcode<a name='Barcode'></a>
+_Information about barcodes used in a protocol._
+
+Location: module/process/sequencing/barcode.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+barcode_read | The read in which the barcode is found. | string | yes |  | Barcode-containing read | Read 1, Read 2, Read 3, Read 4, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | The 0-based offset of start of barcode in read. | integer | yes |  | Barcode offset |  | 0
+barcode_length | Length of barcode in nucleotides. | integer | yes |  | Barcode length |  | 28
+white_list_file | Name of file containing legitimate barcode sequences. | string | no |  | White list barcode file |  | barcode_whitelist_file.txt
+
+## 10x-specific<a name='10x-specific'></a>
+_Information specific to 10x experiments._
+
+Location: module/process/sequencing/10x.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+fastq_method | Method used for the generation of fastq files from bcl files. | string | no |  | Fastq creation method |  | Cellranger mkfastq; bcl2fastq2
+fastq_method_version | Version of the program used for fastq generation. | string | no |  | Fastq creation method version |  | Cellranger 2.1.1; v2.20
+pooled_channels | The number of channels pooled within a sequencing lane. | number | no |  | Pooled channels |  | 4
+drop_uniformity | Whether drop uniformity was achieved as a result of visual inspection of emulsion after a 10x run. | boolean | no |  | Drop uniformity |  | Should be one of: yes, or no.
+
+## Plate-based sequencing<a name='Plate-based sequencing'></a>
+_Information specific to plate-based sequencing experiments._
+
+Location: module/process/sequencing/plate_based_sequencing.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+plate_label | A label or name for the plate on which the well is located. | string | yes |  | Plate label |  | 2217
+well_label | A label or name for the well in which the cell is located. | string | no |  | Well label |  | A1
+well_quality | Quality of well if imaged before sequencing. | string | no |  | Well quality | OK, control, 2-cell well, control, empty well, low quality cell | Should be one of: 'OK', 'control, 2-cell well', 'control, empty well', or 'low quality cell'.
+

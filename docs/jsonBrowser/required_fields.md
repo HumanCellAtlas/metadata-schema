@@ -376,3 +376,36 @@ Property name | Description | Type | Object reference? | User friendly name | Al
 cause_of_death | Conditions resulting in death. | string |  | Cause of death |  | Hypoxic brain damage; Sudden cardiac arrest
 ### Familial relationship<a name='Familial relationship'></a>
 _There are no required properties in schema Familial relationship_
+### Medical history<a name='Medical history'></a>
+_There are no required properties in schema Medical history_
+### Residence<a name='Residence'></a>
+_There are no required properties in schema Residence_
+### Cell morphology<a name='Cell morphology'></a>
+_There are no required properties in schema Cell morphology_
+### State of specimen<a name='State of specimen'></a>
+_There are no required properties in schema State of specimen_
+### Timecourse<a name='Timecourse'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+value | The numerical value in Timecourse unit associated with a time interval used in the experiment. | string |  | Timecourse value |  | 2; 5.5-10.5
+unit | The unit in which the Timecourse value is expressed. | object | [See module  time_unit_ontology](module.md#time-unit-ontology) | Timecourse unit |  | 
+### Mouse-specific<a name='Mouse-specific'></a>
+_There are no required properties in schema Mouse-specific_
+### Purchased reagents<a name='Purchased reagents'></a>
+_There are no required properties in schema Purchased reagents_
+### INSDC experiment<a name='INSDC experiment'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+insdc_experiment_accession | An International Nucleotide Sequence Database Collaboration (INSDC) experiment accession. | string |  | INSDC experiment accession |  | SRX0000000
+### Barcode<a name='Barcode'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+barcode_read | The read in which the barcode is found. | string |  | Barcode-containing read | Read 1, Read 2, Read 3, Read 4, i7 Index, i5 Index | Should be one of: Read 1, Read 2, i7 Index, or i5 Index.
+barcode_offset | The 0-based offset of start of barcode in read. | integer |  | Barcode offset |  | 0
+barcode_length | Length of barcode in nucleotides. | integer |  | Barcode length |  | 28
+### 10x-specific<a name='10x-specific'></a>
+_There are no required properties in schema 10x-specific_
+### Plate-based sequencing<a name='Plate-based sequencing'></a>
+Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- 
+plate_label | A label or name for the plate on which the well is located. | string |  | Plate label |  | 2217
