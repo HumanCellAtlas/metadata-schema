@@ -262,6 +262,13 @@
             "example": "72; 65; 80",
             "bionetworks": ["heart"]
         },
+        "ecg_heart_rhythm": {
+            "user_friendly": "Ecg - Heart Rhythm",
+            "description": "Heart rhythm as measured by electrocardiogram.",
+            "type": "string",
+            "example": "sinus rhythm; atrial fibrillation; atrial flutter; atrial tachycardia",
+            "bionetworks": ["heart"]
+         },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
