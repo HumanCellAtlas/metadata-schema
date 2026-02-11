@@ -283,6 +283,18 @@
             "example": "90; 100; 110",
             "bionetworks": ["heart"]
         },
+        "ecg_lbbb_rbbb_ivcd": {
+            "description": "Bundle branch block and/or delayed atrioventricular conduction as measured by electrocardiogram. LBBB - Left bundle branch block/ RBBB - right bundle branch block/ IVCD - intraventricular-conduction delay (QRSd >120ms not fulfilling LBBB or RBBB criteria).",
+            "type": "string",
+            "enum": [
+                "LBBB",
+                "RBBB",
+                "IVCD"
+            ],
+            "user_friendly": "Ecg - LBBB RBBB IVCD",
+            "example": "Should be one of: LBBB, RBBB, IVCD.",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
