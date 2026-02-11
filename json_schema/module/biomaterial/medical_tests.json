@@ -269,6 +269,13 @@
             "example": "sinus rhythm; atrial fibrillation; atrial flutter; atrial tachycardia",
             "bionetworks": ["heart"]
          },
+        "ecg_pr_interval_duration": {
+            "description": "PR interval duration in ms as measured by electrocardiogram. It can be described as PQ interval duration in ECG description according to region.",
+            "type": "number",
+            "user_friendly": "Ecg - Pr Interval Duration",
+            "example": "160; 140; 180",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
