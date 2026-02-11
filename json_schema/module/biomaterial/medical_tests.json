@@ -254,6 +254,13 @@
             "maximum": 200,
             "minimum": 0,
             "bionetworks": ["lung"]
+        },
+        "mps_lvef": {
+            "user_friendly": "Mps - LVEF",
+            "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
+            "type": "number",
+            "example": "58; 60; 62",
+            "bionetworks": ["heart"]
         }
     }
 }

@@ -487,6 +487,7 @@ dlco | Indicate the Diffusing Capacity of the Lung for Carbon Monoxide (DLCO) in
 dlco_predicted_percent | Indicate the percentage of the predicted DLCO, based on patient demographics, if available. | number | no |  | DLCO percent of predicted |  | 88; 95; 82
 kco | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
 kco_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
+mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 
 ## Collection institute<a name='Collection institute'></a>
 _Information about collection institute location._
