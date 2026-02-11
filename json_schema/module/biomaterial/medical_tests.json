@@ -302,6 +302,13 @@
             "example": "420; 410; 430",
             "bionetworks": ["heart"]
         },
+        "ecg_time_offset": {
+            "description": "Time between the test and the collection of the sample, measured in days.",
+            "type": "number",
+            "user_friendly": "Ecg - Time Offset",
+            "example": "4; 20; 58",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
