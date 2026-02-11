@@ -490,6 +490,7 @@ kco_predicted_percent | Indicate the percentage of the predicted KCO, based on p
 ecg_heart_rate | Heart rate as measured by electrocardiogram in beats per minute. | number | no |  | Ecg - Heart Rate |  | 72; 65; 80
 ecg_heart_rhythm | Heart rhythm as measured by electrocardiogram. | string | no |  | Ecg - Heart Rhythm |  | sinus rhythm; atrial fibrillation; atrial flutter; atrial tachycardia
 ecg_pr_interval_duration | PR interval duration in ms as measured by electrocardiogram. It can be described as PQ interval duration in ECG description according to region. | number | no |  | Ecg - Pr Interval Duration |  | 160; 140; 180
+ecg_qrs_complex_duration | QRS complex duration in ms as measured by electrocardiogram. | number | no |  | Ecg - QRS Complex Duration |  | 90; 100; 110
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10

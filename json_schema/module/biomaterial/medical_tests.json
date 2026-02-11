@@ -276,6 +276,13 @@
             "example": "160; 140; 180",
             "bionetworks": ["heart"]
         },
+        "ecg_qrs_complex_duration": {
+            "description": "QRS complex duration in ms as measured by electrocardiogram.",
+            "type": "number",
+            "user_friendly": "Ecg - QRS Complex Duration",
+            "example": "90; 100; 110",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
