@@ -275,6 +275,13 @@
             "type": "number",
             "example": "0; 3; 10",
             "bionetworks": ["heart"]
+        },
+        "mps_time_offset": {
+            "description": "Time between the test and the collection of the sample, in days.",
+            "type": "number",
+            "user_friendly": "Mps - Time Offset",
+            "example": "4; 20; 58",
+            "bionetworks": ["heart"]
         }
     }
 }

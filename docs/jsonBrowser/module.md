@@ -490,6 +490,7 @@ kco_predicted_percent | Indicate the percentage of the predicted KCO, based on p
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
+mps_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Mps - Time Offset |  | 4; 20; 58
 
 ## Collection institute<a name='Collection institute'></a>
 _Information about collection institute location._
