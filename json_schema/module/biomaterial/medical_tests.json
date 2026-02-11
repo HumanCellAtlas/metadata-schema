@@ -261,6 +261,13 @@
             "type": "number",
             "example": "58; 60; 62",
             "bionetworks": ["heart"]
+        },
+        "mps_inducible_ischaemic": {
+            "user_friendly": "Mps - Inducible Ischaemic",
+            "description": "Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy.",
+            "type": "number",
+            "example": "0; 5; 12",
+            "bionetworks": ["heart"]
         }
     }
 }
