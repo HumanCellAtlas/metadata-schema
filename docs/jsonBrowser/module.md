@@ -487,6 +487,17 @@ dlco | Indicate the Diffusing Capacity of the Lung for Carbon Monoxide (DLCO) in
 dlco_predicted_percent | Indicate the percentage of the predicted DLCO, based on patient demographics, if available. | number | no |  | DLCO percent of predicted |  | 88; 95; 82
 kco | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
 kco_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
+ecg_heart_rate | Heart rate as measured by electrocardiogram in beats per minute. | number | no |  | Ecg - Heart Rate |  | 72; 65; 80
+ecg_heart_rhythm | Heart rhythm as measured by electrocardiogram. | string | no |  | Ecg - Heart Rhythm |  | sinus rhythm; atrial fibrillation; atrial flutter; atrial tachycardia
+ecg_pr_interval_duration | PR interval duration in ms as measured by electrocardiogram. It can be described as PQ interval duration in ECG description according to region. | number | no |  | Ecg - Pr Interval Duration |  | 160; 140; 180
+ecg_qrs_complex_duration | QRS complex duration in ms as measured by electrocardiogram. | number | no |  | Ecg - QRS Complex Duration |  | 90; 100; 110
+ecg_lbbb_rbbb_ivcd | Bundle branch block and/or delayed atrioventricular conduction as measured by electrocardiogram. LBBB - Left bundle branch block/ RBBB - right bundle branch block/ IVCD - intraventricular-conduction delay (QRSd >120ms not fulfilling LBBB or RBBB criteria). | string | no |  | Ecg - LBBB RBBB IVCD | LBBB, RBBB, IVCD | Should be one of: LBBB, RBBB, IVCD.
+ecg_qt_interval_corrected | Corrected QT interval in ms as measured by electrocardiogram. | number | no |  | Ecg - QT Interval Corrected |  | 420; 410; 430
+ecg_time_offset | Time between the test and the collection of the sample, measured in days. | number | no |  | Ecg - Time Offset |  | 4; 20; 58
+mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
+mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
+mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
+mps_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Mps - Time Offset |  | 4; 20; 58
 
 ## Collection institute<a name='Collection institute'></a>
 _Information about collection institute location._
@@ -588,7 +599,10 @@ nutritional_state | Nutritional state of individual at time of biomaterial colle
 diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat. | boolean | no |  | Meat consumption |  | Should be one of: yes; no.
 reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
+diseases_history | Short description of known disease(s) that have previously affected the donor, but are not considered active now. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Diseases History |  | 
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+device_treatment | Device/interventional therapy 1 year before and/or at time of sample collection. | string | no |  | Device Treatment | ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT | Should be one of: ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT
+cardioplegia | Cardioplegia applied right before or during time of biomaterial collection. | boolean | no |  | Cardioplegia |  | yes; no
 previous_surgeries | Previous surgeries the individual has undergone prior to biomaterial collection. | string | no |  | Previous surgeries |  | Appendectomy; Coleostomy; Vaginoplasty; LASIK; Abdominal surgery
 defined_diet | Whether the individual was following a defined diet at the time of biomaterial collection. | boolean | no |  | Defined diet |  | yes; no
 diet_specific | Defined diet the donor was on at the time of biomaterial collection. | array | no |  | Diet Specific | vegan, vegetarian, omnivore, gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo | gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo

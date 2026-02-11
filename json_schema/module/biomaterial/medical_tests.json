@@ -254,6 +254,88 @@
             "maximum": 200,
             "minimum": 0,
             "bionetworks": ["lung"]
+        },
+        "ecg_heart_rate": {
+            "description": "Heart rate as measured by electrocardiogram in beats per minute.",
+            "type": "number",
+            "user_friendly": "Ecg - Heart Rate",
+            "example": "72; 65; 80",
+            "bionetworks": ["heart"]
+        },
+        "ecg_heart_rhythm": {
+            "user_friendly": "Ecg - Heart Rhythm",
+            "description": "Heart rhythm as measured by electrocardiogram.",
+            "type": "string",
+            "example": "sinus rhythm; atrial fibrillation; atrial flutter; atrial tachycardia",
+            "bionetworks": ["heart"]
+         },
+        "ecg_pr_interval_duration": {
+            "description": "PR interval duration in ms as measured by electrocardiogram. It can be described as PQ interval duration in ECG description according to region.",
+            "type": "number",
+            "user_friendly": "Ecg - Pr Interval Duration",
+            "example": "160; 140; 180",
+            "bionetworks": ["heart"]
+        },
+        "ecg_qrs_complex_duration": {
+            "description": "QRS complex duration in ms as measured by electrocardiogram.",
+            "type": "number",
+            "user_friendly": "Ecg - QRS Complex Duration",
+            "example": "90; 100; 110",
+            "bionetworks": ["heart"]
+        },
+        "ecg_lbbb_rbbb_ivcd": {
+            "description": "Bundle branch block and/or delayed atrioventricular conduction as measured by electrocardiogram. LBBB - Left bundle branch block/ RBBB - right bundle branch block/ IVCD - intraventricular-conduction delay (QRSd >120ms not fulfilling LBBB or RBBB criteria).",
+            "type": "string",
+            "enum": [
+                "LBBB",
+                "RBBB",
+                "IVCD"
+            ],
+            "user_friendly": "Ecg - LBBB RBBB IVCD",
+            "example": "Should be one of: LBBB, RBBB, IVCD.",
+            "bionetworks": ["heart"]
+        },
+        "ecg_qt_interval_corrected": {
+            "description": "Corrected QT interval in ms as measured by electrocardiogram.",
+            "type": "number",
+            "user_friendly": "Ecg - QT Interval Corrected",
+            "example": "420; 410; 430",
+            "bionetworks": ["heart"]
+        },
+        "ecg_time_offset": {
+            "description": "Time between the test and the collection of the sample, measured in days.",
+            "type": "number",
+            "user_friendly": "Ecg - Time Offset",
+            "example": "4; 20; 58",
+            "bionetworks": ["heart"]
+        },
+        "mps_lvef": {
+            "user_friendly": "Mps - LVEF",
+            "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
+            "type": "number",
+            "example": "58; 60; 62",
+            "bionetworks": ["heart"]
+        },
+        "mps_inducible_ischaemic": {
+            "user_friendly": "Mps - Inducible Ischaemic",
+            "description": "Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy.",
+            "type": "number",
+            "example": "0; 5; 12",
+            "bionetworks": ["heart"]
+        },
+        "mps_scar": {
+            "user_friendly": "Mps - Scar",
+            "description": "Left ventricular scar percentage as measured by myocardial perfusion scintigraphy.",
+            "type": "number",
+            "example": "0; 3; 10",
+            "bionetworks": ["heart"]
+        },
+        "mps_time_offset": {
+            "description": "Time between the test and the collection of the sample, in days.",
+            "type": "number",
+            "user_friendly": "Mps - Time Offset",
+            "example": "4; 20; 58",
+            "bionetworks": ["heart"]
         }
     }
 }
