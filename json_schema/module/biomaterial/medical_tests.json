@@ -458,6 +458,13 @@
             "example": "9; 10; 11",
             "bionetworks": ["heart"]
         },
+        "echo_la_dimension": {
+            "description": "Left atrial diameter in PLAX view in mm as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - LA Dimension",
+            "example": "38; 36; 40",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
