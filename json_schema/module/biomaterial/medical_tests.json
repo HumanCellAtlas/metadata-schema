@@ -409,6 +409,13 @@
             "example": "25; 30; 28",
             "bionetworks": ["heart"]
         },
+        "echo_lvef": {
+            "description": "Left ventricular ejection fraction as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - LVEF",
+            "example": "55; 60; 65",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
