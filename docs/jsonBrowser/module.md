@@ -517,6 +517,7 @@ echo_pw_thickness | Basal posterior LV wall thickness in mm as measured by echoc
 echo_la_dimension | Left atrial diameter in PLAX view in mm as measured by echocardiogram. | number | no |  | Echo - LA Dimension |  | 38; 36; 40
 echo_lav_indexed | Left atrial volume indexed to body surface area in ml/m^2 (left atrial volume indexed to body surface area) as measured by echocardiogram. | number | no |  | Echo - LAV Indexed |  | 28; 30; 32
 echo_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Echo - Time Offset |  | 4; 20; 58
+mri_lvedv | Left ventricular end-diastolic volume in ml as measured by MRI. | number | no |  | Mri - LVEDV |  | 140; 150; 130
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
