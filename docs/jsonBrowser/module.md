@@ -526,6 +526,7 @@ mri_lv_mass | Left ventricular mass in grams as measured by MRI. | number | no |
 mri_lv_mass_indexed | Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by MRI. | number | no |  | Mri - LV Mass Indexed |  | 65; 60; 70
 mri_rv_ejection_fraction | Right ventricular ejection fraction in percentage as measured by MRI. | number | no |  | Mri - RV Ejection Fraction |  | 50; 55; 60
 mri_mid_wall_lge | Late gadolinium enhancement (mid wall) as measured by MRI. | boolean | no |  | Mri - Mid Wall LGE |  | Should be one of: yes; no.
+mri_epicardial_lge | Late gadolinium enhancement (epicardial) as measured by MRI. | boolean | no |  | Mri - Epicardial LGE |  | Should be one of: yes; no.
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
