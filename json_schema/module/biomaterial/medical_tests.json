@@ -444,6 +444,13 @@
             "example": "20; 22; 18",
             "bionetworks": ["heart"]
         },
+        "echo_lv_septum_thickness": {
+            "description": "Left ventricular septum thickness in mm as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - LV Septum Thickness",
+            "example": "9; 10; 11",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
