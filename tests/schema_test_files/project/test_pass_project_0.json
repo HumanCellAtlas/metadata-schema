@@ -1,6 +1,6 @@
 {
-  "describedBy": "https://schema.dev.data.humancellatlas.org/type/project/14.1.0/project",
-  "schema_version": "14.1.0",
+  "describedBy": "https://schema.dev.data.humancellatlas.org/type/project/20.0.0/project",
+  "schema_version": "20.0.0",
   "schema_type": "project",
   "project_core": {
     "project_short_name": "P1",
@@ -20,5 +20,6 @@
       "grant_id": "BB/P0000001/1",
       "organization": "Biotechnology and Biological Sciences Research Council (BBSRC)"
     }
-  ]
+  ],
+  "data_use_restriction" : "NRES"
 }
