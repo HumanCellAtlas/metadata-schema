@@ -524,6 +524,7 @@ mri_lvesv_indexed | Left ventricular end-systolic volume indexed to body surface
 mri_lvef | Left ventricular ejection fraction measured by MRI. | number | no |  | Mri - LVEF |  | 55; 60; 58
 mri_lv_mass | Left ventricular mass in grams as measured by MRI. | number | no |  | Mri - LV Mass |  | 130; 120; 140
 mri_lv_mass_indexed | Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by MRI. | number | no |  | Mri - LV Mass Indexed |  | 65; 60; 70
+mri_rv_ejection_fraction | Right ventricular ejection fraction in percentage as measured by MRI. | number | no |  | Mri - RV Ejection Fraction |  | 50; 55; 60
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10

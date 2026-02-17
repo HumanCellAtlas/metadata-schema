@@ -528,6 +528,13 @@
             "example": "65; 60; 70",
             "bionetworks": ["heart"]
         },
+        "mri_rv_ejection_fraction": {
+            "description": "Right ventricular ejection fraction in percentage as measured by MRI.",
+            "type": "number",
+            "user_friendly": "Mri - RV Ejection Fraction",
+            "example": "50; 55; 60",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
