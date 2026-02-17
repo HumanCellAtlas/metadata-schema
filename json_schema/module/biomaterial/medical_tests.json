@@ -563,6 +563,13 @@
             "example": "Should be one of: yes; no.",
             "bionetworks": ["heart"]
         },
+        "mri_time_offset": {
+            "description": "Time between the test and the collection of the sample, in days.",
+            "type": "number",
+            "user_friendly": "Mri - Time Offset",
+            "example": "4; 20; 58",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",

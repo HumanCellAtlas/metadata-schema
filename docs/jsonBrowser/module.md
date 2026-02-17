@@ -529,6 +529,7 @@ mri_mid_wall_lge | Late gadolinium enhancement (mid wall) as measured by MRI. | 
 mri_epicardial_lge | Late gadolinium enhancement (epicardial) as measured by MRI. | boolean | no |  | Mri - Epicardial LGE |  | Should be one of: yes; no.
 mri_infarct_pattern_lge | Late gadolinium enhancement (infarct pattern) as measured by MRI. | boolean | no |  | Mri - Infarct Pattern LGE |  | Should be one of: yes; no.
 mri_myocardial_oedema | Myocardial oedema as measured by MRI. | boolean | no |  | Mri - Myocardial Oedema |  | Should be one of: yes; no.
+mri_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Mri - Time Offset |  | 4; 20; 58
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
