@@ -535,6 +535,13 @@
             "example": "50; 55; 60",
             "bionetworks": ["heart"]
         },
+        "mri_mid_wall_lge": {
+            "description": "Late gadolinium enhancement (mid wall) as measured by MRI.",
+            "type": "boolean",
+            "user_friendly": "Mri - Mid Wall LGE",
+            "example": "Should be one of: yes; no.",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
