@@ -381,6 +381,13 @@
             "example": "25; 30; 35",
             "bionetworks": ["heart"]
         },
+        "echo_lvedv": {
+            "description": "Left ventricular end-diastolic volume in ml as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - LVEDV",
+            "example": "120; 110; 130",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
