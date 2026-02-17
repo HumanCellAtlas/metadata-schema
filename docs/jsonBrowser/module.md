@@ -499,6 +499,7 @@ ecg_qt_interval_corrected | Corrected QT interval in ms as measured by electroca
 ecg_time_offset | Time between the test and the collection of the sample, measured in days. | number | no |  | Ecg - Time Offset |  | 4; 20; 58
 echo_aortic_stenosis | Aortic stenosis as measured by echocardiogram. | string | no |  | Echo - Aortic Stenosis | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
 echo_aortic_regurgitation | Aortic regurgitation as measured by echocardiogram. | string | no |  | Echo - Aortic Regurgitation | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
+echo_mitral_regurgitation | Mitral regurgitation as measured by echocardiogram. | string | no |  | Echo - Mitral Regurgitation | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10

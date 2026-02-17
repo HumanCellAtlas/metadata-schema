@@ -335,6 +335,19 @@
             "example": "Should be one of: no, mild, mod, severe.",
             "bionetworks": ["heart"]
         },
+        "echo_mitral_regurgitation": {
+            "description": "Mitral regurgitation as measured by echocardiogram.",
+            "type": "string",
+            "enum": [
+                "no",
+                "mild",
+                "mod",
+                "severe"
+            ],
+            "user_friendly": "Echo - Mitral Regurgitation",
+            "example": "Should be one of: no, mild, mod, severe.",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
