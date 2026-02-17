@@ -309,6 +309,19 @@
             "example": "4; 20; 58",
             "bionetworks": ["heart"]
         },
+        "echo_aortic_stenosis": {
+            "description": "Aortic stenosis as measured by echocardiogram.",
+            "type": "string",
+            "enum": [
+                "no",
+                "mild",
+                "mod",
+                "severe"
+            ],
+            "user_friendly": "Echo - Aortic Stenosis",
+            "example": "Should be one of: no, mild, mod, severe.",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",

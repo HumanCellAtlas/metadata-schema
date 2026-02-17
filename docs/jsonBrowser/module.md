@@ -497,6 +497,7 @@ ecg_qrs_complex_duration | QRS complex duration in ms as measured by electrocard
 ecg_lbbb_rbbb_ivcd | Bundle branch block and/or delayed atrioventricular conduction as measured by electrocardiogram. LBBB - Left bundle branch block/ RBBB - right bundle branch block/ IVCD - intraventricular-conduction delay (QRSd >120ms not fulfilling LBBB or RBBB criteria). | string | no |  | Ecg - LBBB RBBB IVCD | LBBB, RBBB, IVCD | Should be one of: LBBB, RBBB, IVCD.
 ecg_qt_interval_corrected | Corrected QT interval in ms as measured by electrocardiogram. | number | no |  | Ecg - QT Interval Corrected |  | 420; 410; 430
 ecg_time_offset | Time between the test and the collection of the sample, measured in days. | number | no |  | Ecg - Time Offset |  | 4; 20; 58
+echo_aortic_stenosis | Aortic stenosis as measured by echocardiogram. | string | no |  | Echo - Aortic Stenosis | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
