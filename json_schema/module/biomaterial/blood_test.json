@@ -325,6 +325,24 @@
             "guidelines": "Should be one of: mmol/L",
             "bionetworks": ["heart"]
         },
+        "potassium": {
+            "description": "Potassium in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Potassium",
+            "example": "4.0, 4.2, 3.8",
+            "bionetworks": ["heart"]
+        },
+        "potassium_unit": {
+            "description": "Potassium unit.",
+            "type": "string",
+            "enum": [
+                "mmol/L"
+            ],
+            "user_friendly": "Potassium unit",
+            "example": "mmol/L",
+            "guidelines": "Should be one of: mmol/L",
+            "bionetworks": ["heart"]
+        },
         "white_blood_cell_count": {
             "description": "Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection.",
             "type": "number",
