@@ -361,6 +361,19 @@
             "example": "Should be one of: no, mild, mod, severe.",
             "bionetworks": ["heart"]
         },
+        "echo_tricuspid_regurgitation": {
+            "description": "Tricuspid regurgitation as measured by echocardiogram.",
+            "type": "string",
+            "enum": [
+                "no",
+                "mild",
+                "mod",
+                "severe"
+            ],
+            "user_friendly": "Echo - Tricuspid Regurgitation",
+            "example": "Should be one of: no, mild, mod, severe.",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
