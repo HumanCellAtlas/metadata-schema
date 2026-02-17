@@ -451,6 +451,13 @@
             "example": "9; 10; 11",
             "bionetworks": ["heart"]
         },
+        "echo_pw_thickness": {
+            "description": "Basal posterior LV wall thickness in mm as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - PW Thickness",
+            "example": "9; 10; 11",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",

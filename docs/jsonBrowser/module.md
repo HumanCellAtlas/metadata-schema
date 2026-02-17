@@ -513,6 +513,7 @@ echo_lv_mass_indexed | Left ventricular mass indexed to body surface area in g/m
 echo_rv_fac | Right Ventricular Fractional Area Change (RV FAC) in percentage as measured by echocardiogram. | number | no |  | Echo - RV FAC |  | 40; 45; 50
 echo_tapse | Tricuspid annular plane systolic excursion (TAPSE) in mm as measured by echocardiogram. | number | no |  | Echo - TAPSE |  | 20; 22; 18
 echo_lv_septum_thickness | Left ventricular septum thickness in mm as measured by echocardiogram. | number | no |  | Echo - LV Septum Thickness |  | 9; 10; 11
+echo_pw_thickness | Basal posterior LV wall thickness in mm as measured by echocardiogram. | number | no |  | Echo - PW Thickness |  | 9; 10; 11
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
