@@ -699,6 +699,8 @@ potassium | Potassium in the last blood test of the donor before collection. | n
 potassium_unit | Potassium unit. | string | no |  | Potassium unit | mmol/L | mmol/L
 urea | Urea in the last blood test of the donor before collection. | number | no |  | Urea |  | 5.0, 5.5, 4.8
 urea_unit | Urea unit. | string | no |  | Urea unit | mmol/L | mmol/L
+creatinine | Creatinine in the last blood test of the donor before collection. | number | no |  | Creatinine |  | 80, 85, 78
+creatinine_unit | Creatinine unit. | string | no |  | Creatinine unit | micromol/L, mg/dL | micromol/L, mg/dL
 white_blood_cell_count | Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection. | number | no |  | White cell count |  | 4.5; 11; 9.24
 white_blood_cell_count_unit | White cell count unit. | string | no |  | White cell count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
 bloodtest_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
