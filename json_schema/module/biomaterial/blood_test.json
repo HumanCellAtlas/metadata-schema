@@ -380,6 +380,24 @@
             "guidelines": "Should be one of: micromol/L, mg/dL",
             "bionetworks": ["heart"]
         },
+        "total_bilirubin": {
+            "description": "Total bilirubin in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Total bilirubin",
+            "example": "12, 10, 14",
+            "bionetworks": ["heart"]
+        },
+        "total_bilirubin_unit": {
+            "description": "Total bilirubin unit.",
+            "type": "string",
+            "enum": [
+                "micromol/L"
+            ],
+            "user_friendly": "Total bilirubin unit",
+            "example": "micromol/L",
+            "guidelines": "Should be one of: micromol/L",
+            "bionetworks": ["heart"]
+        },
         "white_blood_cell_count": {
             "description": "Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection.",
             "type": "number",
