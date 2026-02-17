@@ -402,6 +402,13 @@
             "example": "50; 45; 55",
             "bionetworks": ["heart"]
         },
+        "echo_lvesv_indexed": {
+            "description": "Left ventricular end-systolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - LVESV Indexed",
+            "example": "25; 30; 28",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
