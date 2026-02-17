@@ -389,10 +389,17 @@
             "bionetworks": ["heart"]
         },
         "echo_lvedv_indexed": {
-            "description": "Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram",
+            "description": "Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram.",
             "type": "number",
             "user_friendly": "Echo - LVEDV Indexed",
             "example": "65; 70; 60",
+            "bionetworks": ["heart"]
+        },
+        "echo_lvesv": {
+            "description": "Left ventricular end-systolic volume in ml as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - LVESV",
+            "example": "50; 45; 55",
             "bionetworks": ["heart"]
         },
         "mps_lvef": {

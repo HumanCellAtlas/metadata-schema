@@ -504,7 +504,8 @@ echo_mitral_stenosis | Mitral stenosis as measured by echocardiogram. | string |
 echo_tricuspid_regurgitation | Tricuspid regurgitation as measured by echocardiogram. | string | no |  | Echo - Tricuspid Regurgitation | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
 echo_estimated_rvsp | Estimated right ventricular systolic pressure in mmHg as measured by echocardiogram. | number | no |  | Echo - Estimated RVSP |  | 25; 30; 35
 echo_lvedv | Left ventricular end-diastolic volume in ml as measured by echocardiogram. | number | no |  | Echo - LVEDV |  | 120; 110; 130
-echo_lvedv_indexed | Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram | number | no |  | Echo - LVEDV Indexed |  | 65; 70; 60
+echo_lvedv_indexed | Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram. | number | no |  | Echo - LVEDV Indexed |  | 65; 70; 60
+echo_lvesv | Left ventricular end-systolic volume in ml as measured by echocardiogram. | number | no |  | Echo - LVESV |  | 50; 45; 55
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
