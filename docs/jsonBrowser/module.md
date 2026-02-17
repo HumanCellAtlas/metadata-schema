@@ -520,6 +520,7 @@ echo_time_offset | Time between the test and the collection of the sample, in da
 mri_lvedv | Left ventricular end-diastolic volume in ml as measured by MRI. | number | no |  | Mri - LVEDV |  | 140; 150; 130
 mri_lvedv_indexed | Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by MRI. | number | no |  | Mri - LVEDV Indexed |  | 75; 70; 80
 mri_lvesv | Left ventricular end-systolic volume in ml as measured by MRI. | number | no |  | Mri - LVESV |  | 60; 55; 65
+mri_lvesv_indexed | Left ventricular end-systolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by MRI. | number | no |  | Mri - LVESV Indexed |  | 30; 28; 32
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
