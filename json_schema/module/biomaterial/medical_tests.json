@@ -514,6 +514,13 @@
             "example": "55; 60; 58",
             "bionetworks": ["heart"]
         },
+        "mri_lv_mass": {
+            "description": "Left ventricular mass in grams as measured by MRI.",
+            "type": "number",
+            "user_friendly": "Mri - LV Mass",
+            "example": "130; 120; 140",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
