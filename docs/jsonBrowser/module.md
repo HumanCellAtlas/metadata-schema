@@ -510,6 +510,7 @@ echo_lvesv_indexed | Left ventricular end-systolic volume indexed to body surfac
 echo_lvef | Left ventricular ejection fraction as measured by echocardiogram. | number | no |  | Echo - LVEF |  | 55; 60; 65
 echo_lv_mass | Left ventricular mass in grams as measured by echocardiogram. | number | no |  | Echo - LV Mass |  | 150; 160; 140
 echo_lv_mass_indexed | Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by echocardiogram. | number | no |  | Echo - LV Mass Indexed |  | 75; 80; 70
+echo_rv_fac | Right Ventricular Fractional Area Change (RV FAC) in percentage as measured by echocardiogram. | number | no |  | Echo - RV FAC |  | 40; 45; 50
 mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
 mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
 mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10

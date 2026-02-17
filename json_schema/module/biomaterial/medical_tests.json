@@ -430,6 +430,13 @@
             "example": "75; 80; 70",
             "bionetworks": ["heart"]
         },
+        "echo_rv_fac": {
+            "description": "Right Ventricular Fractional Area Change (RV FAC) in percentage as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - RV FAC",
+            "example": "40; 45; 50",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
