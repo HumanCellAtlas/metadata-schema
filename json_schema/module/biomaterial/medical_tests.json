@@ -423,6 +423,13 @@
             "example": "150; 160; 140",
             "bionetworks": ["heart"]
         },
+        "echo_lv_mass_indexed": {
+            "description": "Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - LV Mass Indexed",
+            "example": "75; 80; 70",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
