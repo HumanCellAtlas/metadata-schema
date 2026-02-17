@@ -307,6 +307,24 @@
             "guidelines": "Should be one of: mg/dL; mmol/L",
             "bionetworks": ["adipose"]
         },
+        "sodium": {
+            "description": "Sodium in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Sodium",
+            "example": "138; 140; 142",
+            "bionetworks": ["heart"]
+        },
+        "sodium_unit": {
+            "description": "Sodium unit.",
+            "type": "string",
+            "enum": [
+                "mmol/L"
+            ],
+            "user_friendly": "Sodium unit",
+            "example": "mmol/L",
+            "guidelines": "Should be one of: mmol/L",
+            "bionetworks": ["heart"]
+        },
         "white_blood_cell_count": {
             "description": "Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection.",
             "type": "number",
