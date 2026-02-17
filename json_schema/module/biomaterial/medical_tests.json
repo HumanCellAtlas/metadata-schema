@@ -437,6 +437,13 @@
             "example": "40; 45; 50",
             "bionetworks": ["heart"]
         },
+        "echo_tapse": {
+            "description": "Tricuspid annular plane systolic excursion (TAPSE) in mm as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - TAPSE",
+            "example": "20; 22; 18",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
