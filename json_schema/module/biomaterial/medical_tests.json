@@ -486,6 +486,13 @@
             "example": "140; 150; 130",
             "bionetworks": ["heart"]
         },
+        "mri_lvedv_indexed": {
+            "description": "Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by MRI.",
+            "type": "number",
+            "user_friendly": "Mri - LVEDV Indexed",
+            "example": "75; 70; 80",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
