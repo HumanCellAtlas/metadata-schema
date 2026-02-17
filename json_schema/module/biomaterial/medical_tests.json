@@ -374,6 +374,13 @@
             "example": "Should be one of: no, mild, mod, severe.",
             "bionetworks": ["heart"]
         },
+        "echo_estimated_rvsp": {
+            "description": "Estimated right ventricular systolic pressure in mmHg as measured by echocardiogram.",
+            "type": "number",
+            "user_friendly": "Echo - Estimated RVSP",
+            "example": "25; 30; 35",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
