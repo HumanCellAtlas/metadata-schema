@@ -556,6 +556,13 @@
             "example": "Should be one of: yes; no.",
             "bionetworks": ["heart"]
         },
+        "mri_myocardial_oedema": {
+            "description": "Myocardial oedema as measured by MRI.",
+            "type": "boolean",
+            "user_friendly": "Mri - Myocardial Oedema",
+            "example": "Should be one of: yes; no.",
+            "bionetworks": ["heart"]
+        },
         "mps_lvef": {
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
