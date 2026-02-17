@@ -24,11 +24,27 @@
         },
         "body_mass_index": {
             "description": "The body mass index of the donor.",
-            "type": "number",
-            "maximum": 100,
-            "minimum": 5,
-            "example": 36.4,
-            "user_friendly": "Body mass index"
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "example": "36.4; 29-32 ",
+            "user_friendly": "Body mass index",
+            "bionetworks": ["genetic diversity"]
+        },
+        "waist_circumference": {
+            "description": "Waist circumference of the donor at the time of collection measured in cm.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "example": "60; 95; 153",
+            "user_friendly": "Waist circumference",
+            "bionetworks": ["adipose","reproduction"]
+        },
+        "waist_hip_ratio": {
+            "description": "Waist-hip ratio of the donor at the time of collection.",
+            "pattern": "^[0-9]+\\.?[0-9]*-?[0-9]*\\.?[0-9]*$",
+            "type": "string",
+            "example": "0.85; 0.91; 0.88",
+            "user_friendly": "Waist-hip ratio",
+            "bionetworks": ["adipose","reproduction"]
         },
         "ethnicity": {
             "description": "Ethnicity of the donor.",
@@ -89,6 +105,12 @@
             "$ref": "module/biomaterial/residence.json",
             "user_friendly": "Place of birth",
             "bionetworks": ["genetic diversity"]
+        },
+        "lifestyle": {
+            "description": "Lifestyle and habits of the donor.",
+            "type": "object",
+            "$ref": "module/biomaterial/lifestyle.json",
+            "user_friendly": "Lifestyle"
         }
     }
 }

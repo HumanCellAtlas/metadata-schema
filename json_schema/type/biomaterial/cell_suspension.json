@@ -89,6 +89,13 @@
             "type": "string",
             "user_friendly": "Institute",
             "example": "Wellcome Sanger Institute; University of Zurich; University of Pennsylvania"
+        },
+        "nuclei_yield": {
+            "description": "Number of nuclei sequenced per mg of tissue.",
+            "type": "integer",
+            "example": "20; 32; 56",
+            "user_friendly": "Nuclei yield",
+            "bionetworks": ["adipose"]
         }
-     }
+    }
 }

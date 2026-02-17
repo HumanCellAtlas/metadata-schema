@@ -1,0 +1,337 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Blood test results of the donor.",
+    "additionalProperties": false,
+    "minProperties": 1,
+    "title": "Blood test",
+    "name": "blood_test",
+    "type": "object",
+    "properties": {
+        "describedBy": {
+            "description": "The URL reference to the schema.",
+            "type": "string",
+            "pattern" : "^(http|https)://schema.(.*?)humancellatlas.org/module/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/blood_test"
+        },
+        "schema_version": {
+            "description": "The version number of the schema in major.minor.patch format.",
+            "type": "string",
+            "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+            "example": "4.6.1"
+        },
+        "androstenedione": {
+            "description": "Androstenedione in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Androstenedione",
+            "example": "0.7; 3.4; 2.41",
+            "bionetworks": ["adipose"]
+        },
+        "androstenedione_unit": {
+            "description": "Androstenedione unit.",
+            "type": "string",
+            "enum": [
+                "ng/dL",
+                "nmol/L"
+            ],
+            "user_friendly": "Androstenedione unit",
+            "example": "ng/dL; nmol/L",
+            "guidelines": "Should be one of: ng/dL; nmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "dhea": {
+            "description": "Dehydroepiandrosterone (DHEA) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "DHEA",
+            "example": "240; 3500; 1500",
+            "bionetworks": ["adipose"]
+        },
+        "dhea_unit": {
+            "description": "DHEA unit.",
+            "type": "string",
+            "enum": [
+                "ng/dL",
+                "nmol/L"
+            ],
+            "user_friendly": "DHEA unit",
+            "example": "ng/dL; nmol/L",
+            "guidelines": "Should be one of: ng/dL; nmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "estrogen": {
+            "description": "Estrogen in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Estrogen",
+            "example": "10; 150; 120",
+            "bionetworks": ["adipose"]
+        },
+        "estrogen_unit": {
+            "description": "Estrogen unit.",
+            "type": "string",
+            "enum": [
+                "pg/mL",
+                "pmol/L"
+            ],
+            "user_friendly": "Estrogen unit",
+            "example": "pg/mL; pmol/L",
+            "guidelines": "Should be one of: pg/mL; pmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "fasting_glucose": {
+            "description": "Fasting glucose levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection.",
+            "type": "number",
+            "user_friendly": "Fasting glucose",
+            "example": "70; 125; 90.2",
+            "bionetworks": ["adipose"]
+        },
+        "fasting_glucose_unit": {
+            "description": "Fasting glucose unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "Fasting glucose unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "fasting_insulin": {
+            "description": "Fasting insulin levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection.",
+            "type": "number",
+            "user_friendly": "Fasting insulin",
+            "example": "2; 20; 14",
+            "bionetworks": ["adipose"]
+        },
+        "fasting_insulin_unit": {
+            "description": "Fasting insulin unit.",
+            "type": "string",
+            "enum": [
+                "μU/mL",
+                "pmol/L"
+            ],
+            "user_friendly": "Fasting insulin unit",
+            "example": "μU/mL; pmol/L",
+            "guidelines": "Should be one of: μU/mL; pmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "free_fatty_acid": {
+            "description": "Free Fatty Acid (FFA) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "FFA",
+            "example": "0.1; 0.6; 0.24",
+            "bionetworks": ["adipose"]
+        },
+        "free_fatty_acid_unit": {
+            "description": "Free Fatty Acid (FFA) unit.",
+            "type": "string",
+            "enum": [
+                "mmol/L"
+            ],
+            "user_friendly": "FFA unit",
+            "example": "mmol/L",
+            "guidelines": "Should be one of: mmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "haematocrit": {
+            "description": "Percentage of red blood cells in whole blood from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "Haematocrit",
+            "example": "36; 54; 45",
+            "bionetworks": ["adipose"]
+        },
+        "haematocrit_unit": {
+            "description": "Haematocrit unit.",
+            "type": "string",
+            "enum": [
+                "percentage (%)"
+            ],
+            "user_friendly": "Haematocrit unit",
+            "example": "%",
+            "guidelines": "Should be one of: %",
+            "bionetworks": ["adipose"]
+        },
+        "haemoglobin": {
+            "description": "Concentration of haemoglobin in whole blood from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "Haemoglobin",
+            "example": "12; 17.5; 14.2",
+            "bionetworks": ["adipose"]
+        },
+        "haemoglobin_unit": {
+            "description": "Haemoglobin unit.",
+            "type": "string",
+            "enum": [
+                "g/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "Haemoglobin unit",
+            "example": "g/dL; mmol/L",
+            "guidelines": "Should be one of: g/dL; mmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "hba1c": {
+            "description": "Concentration of glycated hemoglobin (HbA1c) from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "HbA1c",
+            "example": "42; 58; 53.3",
+            "bionetworks": ["adipose"]
+        },
+        "hba1c_unit": {
+            "description": "HbA1c unit.",
+            "type": "string",
+            "enum": [
+                "mmol/mol",
+                "%"
+            ],
+            "user_friendly": "HbA1c unit",
+            "example": "mmol/mol; %",
+            "guidelines": "Should be one of: mmol/mol; %",
+            "bionetworks": ["adipose"]
+        },
+        "hdl": {
+            "description": "High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "HDL",
+            "example": "40; 60; 92",
+            "bionetworks": ["adipose"]
+        },
+        "hdl_unit": {
+            "description": "HDL unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "HDL unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "homa_ir": {
+            "description": "Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "HOMA-IR",
+            "example": "0.4; 1.2; 0.94",
+            "bionetworks": ["adipose"]
+        },
+        "ldl": {
+            "description": "Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "LDL",
+            "example": "160; 133",
+            "bionetworks": ["adipose"]
+        },
+        "ldl_unit": {
+            "description": "LDL unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "LDL unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "platelet_count": {
+            "description": "Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection",
+            "type": "number",
+            "user_friendly": "Platelet count",
+            "example": "240; 124; 110",
+            "bionetworks": ["adipose"]
+        },
+        "platelet_count_unit": {
+            "description": "Platelet count unit.",
+            "type": "string",
+            "enum": [
+                "10^9/L",
+                "cells/μL"
+            ],
+            "user_friendly": "Platelet count unit",
+            "example": "10^9/L; cells/μL",
+            "guidelines": "Should be one of: 10^9/L; cells/μL",
+            "bionetworks": ["adipose"]
+        },
+        "shbg": {
+            "description": "Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "SHBG",
+            "example": "10; 140; 72",
+            "bionetworks": ["adipose"]
+        },
+        "shbg_unit": {
+            "description": "SHBG unit.",
+            "type": "string",
+            "enum": [
+                "nmol/L"
+            ],
+            "user_friendly": "SHBG unit",
+            "example": "nmol/L",
+            "guidelines": "Should be one of: nmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "testosterone": {
+            "description": "Testosterone in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Testosterone",
+            "example": "15; 1000; 420",
+            "bionetworks": ["adipose"]
+        },
+        "testosterone_unit": {
+            "description": "Testosterone unit.",
+            "type": "string",
+            "enum": [
+                "nmol/L",
+                "ng/dL"
+            ],
+            "user_friendly": "Testosterone unit",
+            "example": "nmol/L; ng/dL",
+            "guidelines": "Should be one of: nmol/L; ng/dL",
+            "bionetworks": ["adipose"]
+        },
+        "triglycerides": {
+            "description": "Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection.",
+            "type": "number",
+            "user_friendly": "Triglycerides",
+            "example": "160; 133; 140",
+            "bionetworks": ["adipose"]
+        },
+        "triglycerides_unit": {
+            "description": "Triglycerides unit.",
+            "type": "string",
+            "enum": [
+                "mg/dL",
+                "mmol/L"
+            ],
+            "user_friendly": "Triglycerides unit",
+            "example": "mg/dL; mmol/L",
+            "guidelines": "Should be one of: mg/dL; mmol/L",
+            "bionetworks": ["adipose"]
+        },
+        "white_blood_cell_count": {
+            "description": "Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection.",
+            "type": "number",
+            "user_friendly": "White cell count",
+            "example": "4.5; 11; 9.24",
+            "bionetworks": ["adipose"]
+        },
+        "white_blood_cell_count_unit": {
+            "description": "White cell count unit.",
+            "type": "string",
+            "enum": [
+                "10^9/L",
+                "cells/μL"
+            ],
+            "user_friendly": "White cell count unit",
+            "example": "10^9/L; cells/μL",
+            "guidelines": "Should be one of: 10^9/L; cells/μL",
+            "bionetworks": ["adipose"]
+        },
+        "bloodtest_time_offset": {
+            "description": "Time between the test and the collection of the sample, in days.",
+            "type": "number",
+            "user_friendly": "Blood test time offset",
+            "example": "12; 42; 98",
+            "bionetworks": ["adipose"]
+        }
+    }
+}
