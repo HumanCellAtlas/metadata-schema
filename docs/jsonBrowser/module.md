@@ -596,6 +596,10 @@ Location: module/biomaterial/lifestyle.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 physical_activity | The habitual level of physical activity and regular physical activities. | string | no |  | Physical activity |  | active -  football, tennis; sedentary
+substance_type | Any drug or substance the donor uses or used. | array | no |  | Substance Type | marijuana, cocaine, heroin, methamphetamine, prescription drugs (non-medical use) | marijuana; cocaine; heroin; methamphetamine; prescription drugs (non-medical use)
+substance_frequency | Number of donor's substance usage per year. | number | no |  | Substance Use Frequency |  | 12; 50; 300
+substance_use_duration | Duration of donor's substance usage in years. | integer | no |  | Duration Of Substance Use |  | 4; 8; 20
+substance_duration_since_last_use | If donor is no longer using, specify the number of years since substance usage cessation, if available. | integer | no |  | Duration Since Last Substance Use |  | 1; 4; 20
 
 ## Death<a name='Death'></a>
 _Information relating to the death of an organism._
