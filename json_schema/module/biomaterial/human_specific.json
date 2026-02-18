@@ -24,11 +24,11 @@
         },
         "body_mass_index": {
             "description": "The body mass index of the donor.",
-            "type": "number",
-            "maximum": 100,
-            "minimum": 5,
-            "example": 36.4,
-            "user_friendly": "Body mass index"
+            "type": "string",
+            "pattern": "^[0-1]?[0-9]{1,2}(\\.[0-9]+)?(-[0-1]?[0-9]{1,2}(\\.[0-9]+)?)?$",
+            "example": "20.21; 27.5-32.5",
+            "user_friendly": "Body mass index",
+            "guidelines": "Enter either a single value or a range of values. Indicate a range using a hyphen."
         },
         "ethnicity": {
             "description": "Ethnicity of the donor.",
