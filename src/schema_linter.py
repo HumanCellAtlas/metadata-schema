@@ -31,7 +31,7 @@ example_exempt_properties = ['biomaterial_id', 'biomaterial_name', 'biomaterial_
 
 # Property attributes
 
-property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf', 'oneOf', 'bionetworks', 'minLength']
+property_attributes = ['description', 'type', 'pattern', 'example', 'enum', '$ref', 'user_friendly', 'items', 'guidelines', 'format', 'comment', 'maximum', 'minimum', 'oneOf', 'oneOf', 'anyOf', 'bionetworks', 'minLength']
 
 ontology_attributes = ['graph_restriction', 'ontologies', 'classes', 'relations', 'direct', 'include_self']
 
@@ -142,7 +142,9 @@ class SchemaLinter:
             # Property must contain type attribute
             oneOf_types = [t['type'] for t in properties[property]['oneOf'] if 'type' in t.keys()] if \
                     'oneOf' in properties[property].keys() else []
-            if 'type' not in properties[property].keys() and not oneOf_types:
+            anyOf_types = [t['type'] for t in properties[property]['anyOf'] if 'type' in t.keys()] if \
+                'anyOf' in properties[property].keys() else []
+            if 'type' not in properties[property].keys() and not oneOf_types and not anyOf_types:
                 errors.append(schema_filename + ".json: Keyword `type` missing from property `" + property + "`.")
 
             else:

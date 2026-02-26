@@ -9,6 +9,64 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [type/biomaterial/specimen_from_organism.json - v11.1.1] - 2026-02-09
+### Added
+Added values to radial_tissue_term enum
+
+
+### [module/biomaterial/residence.json - v1.0.4] - 2026-02-09
+### Fixed
+Fixed describedBy pattern and type keyword to country_territory
+
+### [module/biomaterial/medical_history.json - v9.1.4] - 2026-02-09
+### Added
+Added items keyword to diet_specific
+
+### [module/ontology/file_format_ontology.json - v2.0.0] - 2026-02-09
+### Fixed
+Fixed class from format:1915 to EDAM:1915
+
+### [module/biomaterial/human_specific.json - v1.6.4] - 2026-02-09
+### Fixed
+Fixed describedBy pattern and type keyword to country_territory
+
+### [type/biomaterial/donor_organism.json - v18.3.4] - 2026-02-09
+### Fixed
+Fixed describedBy pattern and type keyword to country_territory
+
+
+### [module/biomaterial/medical_history.json - v9.1.0] - 2026-02-03
+### Added
+Added household_smoking_exposure, vaping_status and marijuana_inhaled_status
+
+### [type/biomaterial/donor_organism.json - v18.3.0] - 2026-02-03
+### Added
+Added household_smoking_exposure, vaping_status and marijuana_inhaled_status
+
+### [module/biomaterial/medical_history.json - v9.0.0] - 2025-12-15
+### Deprecated
+Deprecated alcohol_history
+
+### [type/biomaterial/specimen_from_organism.json - v11.1.0] - 2025-12-15
+### Added
+Added adjacent_disease_location, indication_for_sampling and radial_tissue_term
+
+### [module/biomaterial/disease_profile.json - v1.1.0] - 2025-12-15
+### Added
+Added PUCAI_score, PCDAI_score and wPCDAI_score
+
+### [module/biomaterial/medical_history.json - v8.3.0] - 2025-12-15
+### Added
+Added alcohol_type, alcohol_usage_duration, alcohol_units, defined_diet, diet_specific and previous_surgeries
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.3.0] - 2025-12-15
+### Added
+Added procedure
+
+### [type/biomaterial/donor_organism.json - v18.2.0] - 2025-12-15
+### Added
+Added PUCAI_score, PCDAI_score and wPCDAI_score
+
 ### [system/file_descriptor.json - v2.2.0] - 2025-11-04
 ### Added
 Added support for compact identifier-based DRS URIs in file descriptors

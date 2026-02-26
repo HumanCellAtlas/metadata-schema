@@ -65,6 +65,27 @@
             "guidelines": "The term organ part is very broadly defined here.",
             "user_friendly": "Organ part"
         },
+        "radial_tissue_term": {
+            "description": "Layer(s) of the gut that was/were sampled.",
+            "example": "EPI; LP; MLN; MUILF; MUSC; PP; SMILF; SUB",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "EPI",
+                    "LP",
+                    "MLN",
+                    "MUILF",
+                    "MUSC",
+                    "PP",
+                    "SMILF",
+                    "SUB"
+                ]
+            },
+            "guidelines": "Should be one of: EPI (epithelium), LP (lamina propria), MUSC (muscularis), SUB (submucosa), MLN (mesenteric lymph node), Peyer's patch (PP), Mucosal lymphoid follicle (MUILF), Submucosal lymphoid follicle (SMILF).",
+            "user_friendly": "Radial tissue term",
+            "bionetworks": ["gut"]
+        },
         "transplant_organ": {
             "description": "Was the specimen collected after extraction for organ transplantation?",
             "type": "boolean",
@@ -95,6 +116,13 @@
             "type": "string",
             "user_friendly": "Case Control definition",
             "example": "healthy control; disease control; MAFLD disease case; gestational diabetes case"
+        "adjacent_disease_location": {
+            "description": "A term for the specific location of the adjacent disease.",
+            "type": "object",
+            "$ref": "module/ontology/organ_ontology.json",
+            "user_friendly": "Adjacent disease location",
+            "guidelines": "If a specimen is sampled from a site adjacent to diseased tissue, enter the anatomical part affected by the disease.",
+            "bionetworks": ["gut"]
         },
         "state_of_specimen": {
             "description": "State of the specimen at the time of collection.",
@@ -136,6 +164,12 @@
             "example": "2; 5; 8",
             "user_friendly": "Time to laboratory",
             "bionetworks": ["adipose","musculoskeletal"]
+        "indication_for_sampling": {
+            "description": "The medical reason why a specimen was taken from the donor",
+            "user_friendly": "Indication For Sampling",
+            "type": "string",
+            "example": "Suspected cancer; Rejected transplant because of metastasized colon cancer",
+            "bionetworks": ["gut", "heart"]
         },
         "purchased_specimen": {
             "description": "Information about a purchased specimen.",

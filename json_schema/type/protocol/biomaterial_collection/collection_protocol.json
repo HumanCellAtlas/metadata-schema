@@ -60,6 +60,12 @@
             "example": "Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration",
             "guidelines": "Should be one of: Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration",
             "bionetworks": ["adipose"]
+        "procedure": {
+            "description": "Procedure used to collect the specimen from the organism.",
+            "type": "string",
+            "user_friendly": "Procedure",
+            "example": "colonoscopy; venipuncture; laparoscopic surgery",
+            "bionetworks": ["gut"]
         },
         "reagents": {
             "description": "A list of purchased reagents used in this protocol.",

@@ -31,6 +31,8 @@ jobs:
     defaults:
       run:
         working-directory: tests
+    env:
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
