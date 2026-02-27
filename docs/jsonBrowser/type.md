@@ -357,14 +357,14 @@ transplant_organ | Was the organ transplanted or explanted before biomaterial co
 transplant_rejection_reason | If the organ was evaluated for transplantation but rejected give the reason for rejection. | string | no |  | Transplant Rejection Reason |  | Rejected because underlying malignant disease; not evaluated for transplantation
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
 adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 
-adjacent_disease_location | A term for the specific location of the adjacent disease. | object | no | [See module  organ_ontology](module.md#organ-ontology) | Adjacent disease location |  | 
 experimental_condition | Case of the sample used in the experiment context, it should include a description of the experimental conditions of the study. If disease case, specify the disease that was studied. | string | no |  | Case Control definition |  | healthy control; disease control; MAFLD disease case; gestational diabetes case
+adjacent_disease_location | A term for the specific location of the adjacent disease. | object | no | [See module  organ_ontology](module.md#organ-ontology) | Adjacent disease location |  | 
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md#state-of-specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
 collection_institute | Institute where the biomaterial was collected on. | object | no | [See module  collection_institute](module.md#collection-institute) | Collection institute |  | 
-indication_for_sampling | The medical reason why a specimen was taken from the donor | string | no |  | Indication For Sampling |  | Suspected cancer; Rejected transplant because of metastasized colon cancer
 time_to_laboratory | Transit time in hours between tissue collection and tissue processing, meaning either storage in the laboratory or processing for sequencing. | string | no |  | Time to laboratory |  | 2; 5; 8
+indication_for_sampling | The medical reason why a specimen was taken from the donor | string | no |  | Indication For Sampling |  | Suspected cancer; Rejected transplant because of metastasized colon cancer
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased specimen |  | 
 
 ## Cell suspension
