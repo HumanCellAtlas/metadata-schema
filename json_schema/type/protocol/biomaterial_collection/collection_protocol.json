@@ -65,7 +65,7 @@
             ],
             "user_friendly": "Type of biopsy procedure",
             "example": "Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration",
-            "guidelines": "Should be one of: Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration",
+            "guidelines": "Should be one of: Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration.",
             "bionetworks": ["adipose"]
         },
         "reagents": {

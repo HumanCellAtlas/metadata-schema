@@ -699,17 +699,17 @@ triglycerides | Triglycerides levels from the donor's last blood test after at l
 triglycerides_unit | Triglycerides unit. | string | no |  | Triglycerides unit | mg/dL, mmol/L | mg/dL; mmol/L
 sodium | Sodium in the last blood test of the donor before collection. | number | no |  | Sodium |  | 138; 140; 142
 sodium_unit | Sodium unit. | string | no |  | Sodium unit | mmol/L | mmol/L
-potassium | Potassium in the last blood test of the donor before collection. | number | no |  | Potassium |  | 4.0, 4.2, 3.8
+potassium | Potassium in the last blood test of the donor before collection. | number | no |  | Potassium |  | 4.0; 4.2; 3.8
 potassium_unit | Potassium unit. | string | no |  | Potassium unit | mmol/L | mmol/L
-urea | Urea in the last blood test of the donor before collection. | number | no |  | Urea |  | 5.0, 5.5, 4.8
+urea | Urea in the last blood test of the donor before collection. | number | no |  | Urea |  | 5.0; 5.5; 4.8
 urea_unit | Urea unit. | string | no |  | Urea unit | mmol/L | mmol/L
-creatinine | Creatinine in the last blood test of the donor before collection. | number | no |  | Creatinine |  | 80, 85, 78
-creatinine_unit | Creatinine unit. | string | no |  | Creatinine unit | micromol/L, mg/dL | micromol/L, mg/dL
-total_bilirubin | Total bilirubin in the last blood test of the donor before collection. | number | no |  | Total bilirubin |  | 12, 10, 14
+creatinine | Creatinine in the last blood test of the donor before collection. | number | no |  | Creatinine |  | 80; 85; 78
+creatinine_unit | Creatinine unit. | string | no |  | Creatinine unit | micromol/L, mg/dL | micromol/L; mg/dL
+total_bilirubin | Total bilirubin in the last blood test of the donor before collection. | number | no |  | Total bilirubin |  | 12; 10; 14
 total_bilirubin_unit | Total bilirubin unit. | string | no |  | Total bilirubin unit | micromol/L | micromol/L
 white_blood_cell_count | Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection. | number | no |  | White cell count |  | 4.5; 11; 9.24
 white_blood_cell_count_unit | White cell count unit. | string | no |  | White cell count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
-bloodtest_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
+blood_test_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
