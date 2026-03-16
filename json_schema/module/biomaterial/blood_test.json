@@ -21,6 +21,7 @@
         "androstenedione": {
             "description": "Androstenedione in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Androstenedione",
             "example": "0.7; 3.4; 2.41",
             "bionetworks": ["adipose"]
@@ -40,6 +41,7 @@
         "dhea": {
             "description": "Dehydroepiandrosterone (DHEA) in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "DHEA",
             "example": "240; 3500; 1500",
             "bionetworks": ["adipose"]
@@ -59,6 +61,7 @@
         "estrogen": {
             "description": "Estrogen in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Estrogen",
             "example": "10; 150; 120",
             "bionetworks": ["adipose"]
@@ -78,6 +81,7 @@
         "fasting_glucose": {
             "description": "Fasting glucose levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Fasting glucose",
             "example": "70; 125; 90.2",
             "bionetworks": ["adipose"]
@@ -97,6 +101,7 @@
         "fasting_insulin": {
             "description": "Fasting insulin levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Fasting insulin",
             "example": "2; 20; 14",
             "bionetworks": ["adipose"]
@@ -116,6 +121,7 @@
         "free_fatty_acid": {
             "description": "Free Fatty Acid (FFA) in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "FFA",
             "example": "0.1; 0.6; 0.24",
             "bionetworks": ["adipose"]
@@ -134,6 +140,7 @@
         "haematocrit": {
             "description": "Percentage of red blood cells in whole blood from the donor's last blood test prior to biopsy collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Haematocrit",
             "example": "36; 54; 45",
             "bionetworks": ["adipose"]
@@ -152,6 +159,7 @@
         "haemoglobin": {
             "description": "Concentration of haemoglobin in whole blood from the donor's last blood test prior to biopsy collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Haemoglobin",
             "example": "12; 17.5; 14.2",
             "bionetworks": ["adipose"]
@@ -171,6 +179,7 @@
         "hba1c": {
             "description": "Concentration of glycated hemoglobin (HbA1c) from the donor's last blood test prior to biopsy collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "HbA1c",
             "example": "42; 58; 53.3",
             "bionetworks": ["adipose"]
@@ -190,6 +199,7 @@
         "hdl": {
             "description": "High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "HDL",
             "example": "40; 60; 92",
             "bionetworks": ["adipose"]
@@ -209,6 +219,7 @@
         "homa_ir": {
             "description": "Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "HOMA-IR",
             "example": "0.4; 1.2; 0.94",
             "bionetworks": ["adipose"]
@@ -216,6 +227,7 @@
         "ldl": {
             "description": "Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "LDL",
             "example": "160; 133",
             "bionetworks": ["adipose"]
@@ -235,6 +247,7 @@
         "platelet_count": {
             "description": "Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Platelet count",
             "example": "240; 124; 110",
             "bionetworks": ["adipose"]
@@ -254,6 +267,7 @@
         "shbg": {
             "description": "Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "SHBG",
             "example": "10; 140; 72",
             "bionetworks": ["adipose"]
@@ -272,6 +286,7 @@
         "testosterone": {
             "description": "Testosterone in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Testosterone",
             "example": "15; 1000; 420",
             "bionetworks": ["adipose"]
@@ -291,6 +306,7 @@
         "triglycerides": {
             "description": "Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Triglycerides",
             "example": "160; 133; 140",
             "bionetworks": ["adipose"]
@@ -310,6 +326,7 @@
         "white_blood_cell_count": {
             "description": "Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "White cell count",
             "example": "4.5; 11; 9.24",
             "bionetworks": ["adipose"]
@@ -329,6 +346,7 @@
         "bloodtest_time_offset": {
             "description": "Time between the test and the collection of the sample, in days.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Blood test time offset",
             "example": "12; 42; 98",
             "bionetworks": ["adipose"]
