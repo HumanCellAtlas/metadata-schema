@@ -130,6 +130,7 @@ spike_in_dilution | Dilution of spike-in. | integer | no |  | Spike-in dilution 
 umi_barcode | Information about unique molecular identifier (UMI) barcodes. | object | no | [See module  barcode](module.md#barcode) | UMI barcode |  | 
 library_preamplification_method | The method used to amplify RNA prior to adaptor ligation. | object | no | [See module  library_amplification_ontology](module.md#library-amplification-ontology) | Library pre-amplification method |  | 
 cdna_library_amplification_method | The method used to amplify cDNA library prior to sequencing. | object | no | [See module  library_amplification_ontology](module.md#library-amplification-ontology) | cDNA library amplification method |  | 
+processing_time | Library preparation time in minutes. | string | no |  | Processing time |  | 20; 35-45; 60
 nominal_length | Average (insert) size of the fragments being sequenced. | integer | no |  | Nominal length |  | 250
 nominal_sdev | Standard deviation of the (insert) size of the fragments being sequenced. | integer | no |  | Nominal standard deviation |  | 30
 
@@ -225,6 +226,7 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 method | Method used to collect the biomaterial. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Collection method |  | 
+biopsy_procedure | Type of biopsy procedure used in the sample collection. | string | no |  | Type of biopsy procedure | Bergstrom needle, Punch biopsy, Mercedes needle, dry aspiration, Mercedes needle, tumescent lidocaine “wet” aspiration | Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration
 procedure | Procedure used to collect the specimen from the organism. | string | no |  | Procedure |  | colonoscopy; venipuncture; laparoscopic surgery
 reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md#purchased-reagents) | Protocol reagents |  | 
 
@@ -354,11 +356,13 @@ radial_tissue_term | Layer(s) of the gut that was/were sampled. | array | no |  
 transplant_organ | Was the specimen collected after extraction for organ transplantation? | boolean | no |  | Transplant organ |  | yes; no
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
 adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 
+experimental_condition | Case of the sample used in the experiment context, it should include a description of the experimental conditions of the study. If disease case, specify the disease that was studied. | string | no |  | Case Control definition |  | healthy control; disease control; MAFLD disease case; gestational diabetes case
 adjacent_disease_location | A term for the specific location of the adjacent disease. | object | no | [See module  organ_ontology](module.md#organ-ontology) | Adjacent disease location |  | 
 state_of_specimen | State of the specimen at the time of collection. | object | no | [See module  state_of_specimen](module.md#state-of-specimen) | State of specimen |  | 
 preservation_storage | Information about how a specimen was preserved and/or stored over a period of time. | object | no | [See module  preservation_storage](module.md#preservation-storage) | Preservation/Storage |  | 
 collection_time | When the biomaterial was collected. | string | no |  | Time of collection |  | 2016-01-21T00:00:00Z; 2016-03
 collection_institute | Institute where the biomaterial was collected on. | object | no | [See module  collection_institute](module.md#collection-institute) | Collection institute |  | 
+time_to_laboratory | Transit time in hours between tissue collection and tissue processing, meaning either storage in the laboratory or processing for sequencing. | string | no |  | Time to laboratory |  | 2; 4-5; 8
 indication_for_sampling | The medical reason why a specimen was taken from the donor | string | no |  | Indication For Sampling |  | Suspected cancer; Rejected transplant because of metastasized colon cancer
 purchased_specimen | Information about a purchased specimen. | object | no | [See module  purchased_reagents](module.md#purchased-reagents) | Purchased specimen |  | 
 
@@ -379,6 +383,7 @@ selected_cell_types | The cell type(s) selected to be present in the suspension.
 estimated_cell_count | Estimated number of cells in the suspension. | integer | no |  | Estimated cell count |  | 1; 2100
 plate_based_sequencing | Fields specific for plate-based sequencing experiments. | object | no | [See module  plate_based_sequencing](module.md#plate-based-sequencing) | Plate-based sequencing |  | 
 processing_institute | Institute where the biomaterial was processed. | string | no |  | Institute |  | Wellcome Sanger Institute; University of Zurich; University of Pennsylvania
+nuclei_yield | Number of nuclei sequenced per mg of tissue. | integer | no |  | Nuclei yield |  | 20; 32; 56
 
 ## Cell line
 _Information about the cell line or cell culture biomaterial._

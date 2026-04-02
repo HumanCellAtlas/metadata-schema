@@ -31,12 +31,12 @@
             "type": "string",
             "graph_restriction":  {
                 "ontologies" : ["obo:edam", "obo:efo"],
-                "classes": ["EDAM:0006", "IAO:0000030"],
+                "classes": ["EDAM:data_0006", "IAO:0000030"],
                 "relations": ["rdfs:subClassOf"],
                 "direct": false,
                 "include_self": false
             },
-            "example": "EDAM:3494; EDAM:0863",
+            "example": "EDAM:data_3494; EDAM:data_0863",
             "user_friendly": "Content description ontology ID"
         },
         "ontology_label": {

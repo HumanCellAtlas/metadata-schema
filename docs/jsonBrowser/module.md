@@ -57,7 +57,7 @@ Location: module/ontology/file_content_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | General description of the contents of the file. | string | yes |  | Content description |  | DNA sequence (raw); Sequence alignment
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | EDAM:3494; EDAM:0863
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | EDAM:data_3494; EDAM:data_0863
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Content description ontology label |  | DNA sequence; Sequence alignment
 
 ## Length unit ontology<a name='Length unit ontology'></a>
@@ -244,7 +244,7 @@ Location: module/ontology/file_format_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of the file format. | string | yes |  | File format |  | FASTQ; JSON
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | EDAM:1930; EDAM:3464
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | EDAM:format_1930; EDAM:format_3464
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | File format ontology label |  | FASTQ; JSON
 
 ## Enrichment ontology<a name='Enrichment ontology'></a>
@@ -430,7 +430,9 @@ Location: module/biomaterial/human_specific.json
 
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
-body_mass_index | The body mass index of the donor. | number | no |  | Body mass index |  | 36.4
+body_mass_index | The body mass index of the donor. | string | no |  | Body mass index |  | 36.4; 29-32 
+waist_circumference | Waist circumference of the donor at the time of collection measured in cm. | string | no |  | Waist circumference |  | 60; 85-95; 153
+waist_hip_ratio | Waist-hip ratio of the donor at the time of collection. | string | no |  | Waist-hip ratio |  | 0.85; 0.85-0.91; 0.88
 ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Ethnicity |  | 
 ethnicity_question | Question and response options posed to donors for collecting metadata on donor self-reported ethnicity and / or tribe and / or dialect group and / or race etc. | string | no |  | Ethnicity question |  | What is your ethnicity?; Are you Hispanic/Latino?; Which categories describe you? Select all that apply. Note You may select more than one group. 1. American Indian or Alaska Native (for example, Aztec, Blackfeet Tribe, Mayan, Navajo Nation, Native Village of Barrow (Utqiagvik) Inupiat Traditional Government, Nome Eskimo Community, etc.), 2 - Asian (for example, Asian Indian, Chinese, Filipino, Japanese, Korean, Vietnamese, etc.), 3 - Black, African American, or African (for example, African American, Ethiopian, Haitian, Jamaican, Nigerian, Somali, etc.), 4 - Hispanic, Latino, or Spanish (for example, Columbian, Cuban, Dominican, Mexican or Mexican American, Puerto Rican, Salvadoran, etc.), 5 - Middle Eastern or North African (for example, Algerian, Egyptian, Iranian, Lebanese, Moroccan, Syrian, etc.), 6 - Native Hawaiian or other Pacific Islander (for example, Chamorro, Fijian, Marshallese, Native Hawaiian, Tongan, etc.), 7 - White (for example, English, European, French, German, Irish, Italian, Polish, etc.), 8 - None of these fully describe me (optional free text answer), 9 - Prefer not to answer
 ethnicity_of_parents | Ethnicity(-ies) of the donor's parents. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Parents ethnicity |  | 
@@ -438,6 +440,7 @@ primary_language | Primary language(s), spoken by donor. Can include dialects (f
 language_of_family | Ancestral language(s), spoken by parents (“mother tongue” and / or “father tongue”) and / or grandparents or any other person in the donor family. Can include dialects (for example, Hokkien). | array | no |  | Language of family |  | Mandarin Chinese; Hokkien; Bahasa Melayu
 current_residence | Donor's current residence at time of sample collection. | object | no | [See module  residence](module.md#residence) | Current residence |  | 
 place_of_birth | Donor's place of birth residence. | object | no | [See module  residence](module.md#residence) | Place of birth |  | 
+lifestyle | Lifestyle and habits of the donor. | object | no | [See module  lifestyle](module.md#lifestyle) | Lifestyle |  | 
 
 ## Growth conditions<a name='Growth conditions'></a>
 _Information relating to how a biomaterial was grown and/or maintained in a laboratory setting._
@@ -524,6 +527,7 @@ Location: module/biomaterial/reproductive_history.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 menarche_age | Age at menarche, rounded to nearest whole number. | integer | no |  | Menarche age |  | 13; 12; 16
+menstrual_cycle_stage | Menstrual cycle stage of donor at the time of collection. | string | no |  | Menstrual cycle stage | follicular phase, ovulation, luteal phase, menstruation | follicular phase; ovulation; luteal phase; menstruation
 menopause_status | Menopausal status of donor at time of sample collection. | string | no |  | Menopause status | pre-menopausal, peri-menopausal, post-menopausal, post-menopausal (induced) | pre-menopausal; peri-menopausal; post-menopausal; post-menopausal (induced)
 parity | Number of children (full-term pregnancies) the donor has given birth to at time of sample collection. | integer | no |  | Full term pregnancy - parity |  | 0; 2; 3
 gravidity | Number of pregnancies the donor has had at time of sample collection. | integer | no |  | Pregnancy - gravidity |  | 2; 3; 5
@@ -539,6 +543,15 @@ storage_method | The method by which a biomaterial was stored after preservation
 storage_time | Length of time the biomaterial was stored for in Storage time units. | number | no |  | Storage time |  | 5
 storage_time_unit | The unit in which Storage time is expressed. | object | no | [See module  time_unit_ontology](module.md#time-unit-ontology) | Storage time unit |  | 
 preservation_method | The method by which a biomaterial was preserved through the use of chemicals, cold, or other means to prevent or retard biological or physical deterioration. | string | no |  | Preservation method | cryopreservation in liquid nitrogen (dead tissue), cryopreservation in dry ice (dead tissue), cryopreservation of live cells in liquid nitrogen, cryopreservation, other, formalin fixed, unbuffered, formalin fixed, buffered, formalin fixed and paraffin embedded, hypothermic preservation media at 2-8C, fresh | cryopreservation in liquid nitrogen (dead tissue); fresh
+
+## Lifestyle<a name='Lifestyle'></a>
+_Lifestyle and habits of the donor._
+
+Location: module/biomaterial/lifestyle.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+physical_activity | The habitual level of physical activity and regular physical activities. | string | no |  | Physical activity |  | active -  football, tennis; sedentary
 
 ## Death<a name='Death'></a>
 _Information relating to the death of an organism._
@@ -585,13 +598,57 @@ household_smoking_exposure | If the donor is exposed to passive smoking in their
 vaping_status | Whether the individual is actively, was formerly or never vaped. | string | no |  | Vaping status | active, former, never | Should be one of: active, former, never.
 marijuana_inhaled_status | Whether the individual is actively, was formerly or never inhaled/smoked marijuana. | string | no |  | Inhaled marijuana status | active, former, never | Should be one of: active, former, never.
 nutritional_state | Nutritional state of individual at time of biomaterial collection. | string | no |  | Nutritional state | normal, fasting, feeding tube removed | Should be one of: normal, fasting, or feeding tube removed.
+fasting_time | Duration of the donor's fasting period (in hours) prior to sample collection. | integer | no |  | Fasting time |  | 2; 5; 8
 diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish, pork, lamb, beef, etc.) consumption versus meat-free diet - at time of sample collection. Fill yes if donor consumes meat or no if donor does not consumes meat. | boolean | no |  | Meat consumption |  | Should be one of: yes; no.
 reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
+blood_test | Results from blood tests performed on the individual. | object | no | [See module  blood_test](module.md#blood-test) | Blood tests |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
 previous_surgeries | Previous surgeries the individual has undergone prior to biomaterial collection. | string | no |  | Previous surgeries |  | Appendectomy; Coleostomy; Vaginoplasty; LASIK; Abdominal surgery
 defined_diet | Whether the individual was following a defined diet at the time of biomaterial collection. | boolean | no |  | Defined diet |  | yes; no
 diet_specific | Defined diet the donor was on at the time of biomaterial collection. | array | no |  | Diet Specific | vegan, vegetarian, omnivore, gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo | gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo
+
+## Blood test<a name='Blood test'></a>
+_Blood test results of the donor._
+
+Location: module/biomaterial/blood_test.json
+
+Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
+--- | --- | --- | --- | --- | --- | --- | --- 
+androstenedione | Androstenedione in the last blood test of the donor before collection. | number | no |  | Androstenedione |  | 0.7; 3.4; 2.41
+androstenedione_unit | Androstenedione unit. | string | no |  | Androstenedione unit | ng/dL, nmol/L | ng/dL; nmol/L
+dhea | Dehydroepiandrosterone (DHEA) in the last blood test of the donor before collection. | number | no |  | DHEA |  | 240; 3500; 1500
+dhea_unit | DHEA unit. | string | no |  | DHEA unit | ng/dL, nmol/L | ng/dL; nmol/L
+estrogen | Estrogen in the last blood test of the donor before collection. | number | no |  | Estrogen |  | 10; 150; 120
+estrogen_unit | Estrogen unit. | string | no |  | Estrogen unit | pg/mL, pmol/L | pg/mL; pmol/L
+fasting_glucose | Fasting glucose levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting glucose |  | 70; 125; 90.2
+fasting_glucose_unit | Fasting glucose unit. | string | no |  | Fasting glucose unit | mg/dL, mmol/L | mg/dL; mmol/L
+fasting_insulin | Fasting insulin levels from the donor's last blood test after at least 8 hours of fasting, prior to the biopsy collection. | number | no |  | Fasting insulin |  | 2; 20; 14
+fasting_insulin_unit | Fasting insulin unit. | string | no |  | Fasting insulin unit | μU/mL, pmol/L | μU/mL; pmol/L
+free_fatty_acid | Free Fatty Acid (FFA) in the last blood test of the donor before collection. | number | no |  | FFA |  | 0.1; 0.6; 0.24
+free_fatty_acid_unit | Free Fatty Acid (FFA) unit. | string | no |  | FFA unit | mmol/L | mmol/L
+haematocrit | Percentage of red blood cells in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haematocrit |  | 36; 54; 45
+haematocrit_unit | Haematocrit unit. | string | no |  | Haematocrit unit | percentage (%) | %
+haemoglobin | Concentration of haemoglobin in whole blood from the donor's last blood test prior to biopsy collection. | number | no |  | Haemoglobin |  | 12; 17.5; 14.2
+haemoglobin_unit | Haemoglobin unit. | string | no |  | Haemoglobin unit | g/dL, mmol/L | g/dL; mmol/L
+hba1c | Concentration of glycated hemoglobin (HbA1c) from the donor's last blood test prior to biopsy collection. | number | no |  | HbA1c |  | 42; 58; 53.3
+hba1c_unit | HbA1c unit. | string | no |  | HbA1c unit | mmol/mol, % | mmol/mol; %
+hdl | High-density lipoprotein cholesterol (HDL) in the last blood test of the donor before collection. | number | no |  | HDL |  | 40; 60; 92
+hdl_unit | HDL unit. | string | no |  | HDL unit | mg/dL, mmol/L | mg/dL; mmol/L
+homa_ir | Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) in the last blood test of the donor before collection. | number | no |  | HOMA-IR |  | 0.4; 1.2; 0.94
+ldl | Low-density lipoprotein cholesterol (LDL) in the last blood test of the donor before collection. | number | no |  | LDL |  | 160; 133
+ldl_unit | LDL unit. | string | no |  | LDL unit | mg/dL, mmol/L | mg/dL; mmol/L
+platelet_count | Measurement of platelets per unit volume of blood from the donor's last blood test prior to biopsy collection | number | no |  | Platelet count |  | 240; 124; 110
+platelet_count_unit | Platelet count unit. | string | no |  | Platelet count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
+shbg | Sex hormone binding globulin (SHBG) in the last blood test of the donor before collection. | number | no |  | SHBG |  | 10; 140; 72
+shbg_unit | SHBG unit. | string | no |  | SHBG unit | nmol/L | nmol/L
+testosterone | Testosterone in the last blood test of the donor before collection. | number | no |  | Testosterone |  | 15; 1000; 420
+testosterone_unit | Testosterone unit. | string | no |  | Testosterone unit | nmol/L, ng/dL | nmol/L; ng/dL
+triglycerides | Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection. | number | no |  | Triglycerides |  | 160; 133; 140
+triglycerides_unit | Triglycerides unit. | string | no |  | Triglycerides unit | mg/dL, mmol/L | mg/dL; mmol/L
+white_blood_cell_count | Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection. | number | no |  | White cell count |  | 4.5; 11; 9.24
+white_blood_cell_count_unit | White cell count unit. | string | no |  | White cell count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
+bloodtest_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._
