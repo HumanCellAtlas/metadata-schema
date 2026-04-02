@@ -370,6 +370,8 @@ _There are no required properties in schema Disease profile_
 _There are no required properties in schema Reproductive history_
 ### Preservation and storage<a name='Preservation and storage'></a>
 _There are no required properties in schema Preservation and storage_
+### Lifestyle<a name='Lifestyle'></a>
+_There are no required properties in schema Lifestyle_
 ### Death<a name='Death'></a>
 Property name | Description | Type | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- 
@@ -378,6 +380,8 @@ cause_of_death | Conditions resulting in death. | string |  | Cause of death |  
 _There are no required properties in schema Familial relationship_
 ### Medical history<a name='Medical history'></a>
 _There are no required properties in schema Medical history_
+### Blood test<a name='Blood test'></a>
+_There are no required properties in schema Blood test_
 ### Residence<a name='Residence'></a>
 _There are no required properties in schema Residence_
 ### Cell morphology<a name='Cell morphology'></a>

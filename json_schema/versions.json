@@ -1,12 +1,12 @@
 {
-    "last_update_date": "2026-02-09T15:53:55Z",
+    "last_update_date": "2026-04-02T19:01:56Z",
     "version_numbers": {
         "core": {
             "biomaterial": {
                 "biomaterial_core": "8.4.0"
             },
             "file": {
-                "file_core": "7.0.0"
+                "file_core": "9.0.0"
             },
             "process": {
                 "process_core": "10.0.0"
@@ -20,18 +20,20 @@
         },
         "module": {
             "biomaterial": {
+                "blood_test": "2.0.0",
                 "cell_morphology": "6.1.7",
                 "collection_institute": "1.0.0",
                 "death": "5.5.1",
                 "disease_profile": "1.1.0",
                 "familial_relationship": "6.0.3",
                 "growth_conditions": "6.4.2",
-                "human_specific": "1.6.4",
-                "medical_history": "9.1.4",
+                "human_specific": "3.0.0",
+                "lifestyle": "2.0.0",
+                "medical_history": "9.5.0",
                 "medical_tests": "1.0.0",
                 "mouse_specific": "1.0.8",
                 "preservation_storage": "6.1.1",
-                "reproductive_history": "1.0.0",
+                "reproductive_history": "1.4.0",
                 "residence": "1.0.4",
                 "state_of_specimen": "6.0.0",
                 "timecourse": "2.0.2"
@@ -46,8 +48,8 @@
                 "disease_ontology": "5.4.0",
                 "enrichment_ontology": "1.2.6",
                 "ethnicity_ontology": "5.3.9",
-                "file_content_ontology": "2.0.0",
-                "file_format_ontology": "2.0.0",
+                "file_content_ontology": "4.0.0",
+                "file_format_ontology": "3.0.0",
                 "gender_identity_ontology": "1.0.0",
                 "instrument_ontology": "5.3.6",
                 "length_unit_ontology": "5.3.5",
@@ -97,18 +99,18 @@
         "type": {
             "biomaterial": {
                 "cell_line": "16.0.0",
-                "cell_suspension": "14.1.0",
-                "donor_organism": "18.3.4",
+                "cell_suspension": "14.3.0",
+                "donor_organism": "18.7.0",
                 "imaged_specimen": "3.5.0",
                 "organoid": "11.5.0",
-                "specimen_from_organism": "11.1.1"
+                "specimen_from_organism": "11.3.0"
             },
             "file": {
-                "analysis_file": "8.0.0",
-                "image_file": "3.0.0",
-                "reference_file": "4.0.0",
-                "sequence_file": "10.0.0",
-                "supplementary_file": "3.0.0"
+                "analysis_file": "10.0.0",
+                "image_file": "5.0.0",
+                "reference_file": "6.0.0",
+                "sequence_file": "12.0.0",
+                "supplementary_file": "5.0.0"
             },
             "process": {
                 "analysis": {
@@ -125,7 +127,7 @@
                 },
                 "biomaterial_collection": {
                     "aggregate_generation_protocol": "2.1.0",
-                    "collection_protocol": "9.3.0",
+                    "collection_protocol": "9.5.0",
                     "differentiation_protocol": "2.2.0",
                     "dissociation_protocol": "6.7.0",
                     "enrichment_protocol": "3.1.0",
@@ -138,7 +140,7 @@
                 },
                 "protocol": "7.1.0",
                 "sequencing": {
-                    "library_preparation_protocol": "6.3.1",
+                    "library_preparation_protocol": "6.5.0",
                     "sequencing_protocol": "10.1.0"
                 }
             }
