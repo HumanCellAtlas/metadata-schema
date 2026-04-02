@@ -7,6 +7,8 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Unreleased](https://github.com/HumanCellAtlas/metadata-schema/tree/staging)
 
+## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
+
 ### [module/biomaterial/medical_history.json - v9.5.0] - 2026-04-02
 ### Added
 Added fasting_time, blood_test
@@ -90,8 +92,6 @@ Fixed class and example for EDAM ontology
 ### [type/file/analysis_file.json - v10.0.0] - 2026-04-02
 ### Fixed
 Fixed class and example for EDAM ontology
-
-## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
 ### [type/biomaterial/specimen_from_organism.json - v11.1.1] - 2026-02-09
 ### Added
