@@ -11,3 +11,5 @@ type/biomaterial/specimen_from_organism,minor,"Added time_to_laboratory, experim
 module/biomaterial/human_specific,major,"Changed body_mass_index to string",,
 module/biomaterial/blood_test,major,"Added new blood_test module",,
 module/biomaterial/lifestyle,major,"Added new lifestyle module",,
+module/ontology/file_content_ontology,major,"Updated class and example for EDAM ontology",,
+module/ontology/file_format,major,"Updated class and example for EDAM ontology",,

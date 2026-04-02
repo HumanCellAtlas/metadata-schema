@@ -57,7 +57,7 @@ Location: module/ontology/file_content_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | General description of the contents of the file. | string | yes |  | Content description |  | DNA sequence (raw); Sequence alignment
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | EDAM:3494; EDAM:0863
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | EDAM:data_3494; EDAM:data_0863
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Content description ontology label |  | DNA sequence; Sequence alignment
 
 ## Length unit ontology<a name='Length unit ontology'></a>
@@ -244,7 +244,7 @@ Location: module/ontology/file_format_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of the file format. | string | yes |  | File format |  | FASTQ; JSON
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | EDAM:1930; EDAM:3464
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | EDAM:format_1930; EDAM:format_3464
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | File format ontology label |  | FASTQ; JSON
 
 ## Enrichment ontology<a name='Enrichment ontology'></a>
