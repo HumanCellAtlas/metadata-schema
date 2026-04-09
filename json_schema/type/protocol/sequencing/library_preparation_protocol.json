@@ -167,7 +167,7 @@
           "description": "Library preparation time in minutes.",
           "pattern": "^(0|[1-9][0-9]*)(\\.(0|[0-9]*[1-9]))?(-(0|[1-9][0-9]*)(\\.(0|[0-9]*[1-9]))?)?$",
           "type": "string",
-          "example": "20; 35; 60",
+          "example": "20; 35-45; 60",
           "user_friendly": "Processing time",
           "bionetworks": ["adipose"]
         },

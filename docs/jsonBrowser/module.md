@@ -57,7 +57,7 @@ Location: module/ontology/file_content_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | General description of the contents of the file. | string | yes |  | Content description |  | DNA sequence (raw); Sequence alignment
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | EDAM:3494; EDAM:0863
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | Content description ontology ID |  | EDAM:data_3494; EDAM:data_0863
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | Content description ontology label |  | DNA sequence; Sequence alignment
 
 ## Length unit ontology<a name='Length unit ontology'></a>
@@ -244,7 +244,7 @@ Location: module/ontology/file_format_ontology.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 text | The name of the file format. | string | yes |  | File format |  | FASTQ; JSON
-ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | EDAM:1930; EDAM:3464
+ontology | An ontology term identifier in the form prefix:accession. | string | no |  | File format ontology ID |  | EDAM:format_1930; EDAM:format_3464
 ontology_label | The preferred label for the ontology term referred to in the ontology field. This may differ from the user-supplied value in the text field. | string | no |  | File format ontology label |  | FASTQ; JSON
 
 ## Enrichment ontology<a name='Enrichment ontology'></a>
@@ -431,8 +431,8 @@ Location: module/biomaterial/human_specific.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 body_mass_index | The body mass index of the donor. | string | no |  | Body mass index |  | 36.4; 29-32 
-waist_circumference | Waist circumference of the donor at the time of collection measured in cm. | string | no |  | Waist circumference |  | 60; 95; 153
-waist_hip_ratio | Waist-hip ratio of the donor at the time of collection. | string | no |  | Waist-hip ratio |  | 0.85; 0.91; 0.88
+waist_circumference | Waist circumference of the donor at the time of collection measured in cm. | string | no |  | Waist circumference |  | 60; 85-95; 153
+waist_hip_ratio | Waist-hip ratio of the donor at the time of collection. | string | no |  | Waist-hip ratio |  | 0.85; 0.85-0.91; 0.88
 ethnicity | Ethnicity of the donor. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Ethnicity |  | 
 ethnicity_question | Question and response options posed to donors for collecting metadata on donor self-reported ethnicity and / or tribe and / or dialect group and / or race etc. | string | no |  | Ethnicity question |  | What is your ethnicity?; Are you Hispanic/Latino?; Which categories describe you? Select all that apply. Note You may select more than one group. 1. American Indian or Alaska Native (for example, Aztec, Blackfeet Tribe, Mayan, Navajo Nation, Native Village of Barrow (Utqiagvik) Inupiat Traditional Government, Nome Eskimo Community, etc.), 2 - Asian (for example, Asian Indian, Chinese, Filipino, Japanese, Korean, Vietnamese, etc.), 3 - Black, African American, or African (for example, African American, Ethiopian, Haitian, Jamaican, Nigerian, Somali, etc.), 4 - Hispanic, Latino, or Spanish (for example, Columbian, Cuban, Dominican, Mexican or Mexican American, Puerto Rican, Salvadoran, etc.), 5 - Middle Eastern or North African (for example, Algerian, Egyptian, Iranian, Lebanese, Moroccan, Syrian, etc.), 6 - Native Hawaiian or other Pacific Islander (for example, Chamorro, Fijian, Marshallese, Native Hawaiian, Tongan, etc.), 7 - White (for example, English, European, French, German, Irish, Italian, Polish, etc.), 8 - None of these fully describe me (optional free text answer), 9 - Prefer not to answer
 ethnicity_of_parents | Ethnicity(-ies) of the donor's parents. | array | no | [See module  ethnicity_ontology](module.md#ethnicity-ontology) | Parents ethnicity |  | 

@@ -133,6 +133,7 @@
         "fasting_time": {
             "description": "Duration of the donor's fasting period (in hours) prior to sample collection.",
             "type": "integer",
+            "minimum": 0,
             "user_friendly": "Fasting time",
             "example": "2; 5; 8",
             "bionetworks": ["adipose"]

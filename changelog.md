@@ -9,10 +9,93 @@ and (starting with v4.0.0) this project adheres to [Semantic Versioning](http://
 
 ## [Released](https://github.com/HumanCellAtlas/metadata-schema/)
 
+### [module/biomaterial/medical_history.json - v9.5.0] - 2026-04-02
+### Added
+Added fasting_time, blood_test
+
+### [module/biomaterial/reproductive_history.json - v1.4.0] - 2026-04-02
+### Added
+Added menstrual_cycle_stage
+
+### [module/biomaterial/lifestyle.json - v1.1.0] - 2026-04-02
+### Added
+Added physical_activity
+
+### [module/biomaterial/human_specific.json - v2.1.0] - 2026-04-02
+### Added
+Added waist_circumference, waist_hip_ratio, lifestyle
+
+### [module/biomaterial/blood_test.json - v1.1.0] - 2026-04-02
+### Added
+Added androstenedione, androstenedione_unit, dhea, dhea_unit, estrogen, estrogen_unit, fasting_glucose, fasting_glucose_unit, fasting_insulin, fasting_insulin_unit, free_fatty_acid, free_fatty_acid_unit, haematocrit, haematocrit_unit, haemoglobin, haemoglobin_unit, hba1c, hba1c_unit, hdl, hdl_unit, homa_ir, ldl, ldl_unit, platelet_count, platelet_count_unit, shbg, shbg_unit, testosterone, testosterone_unit, triglycerides, triglycerides_unit, white_blood_cell_count, white_blood_cell_count_unit, bloodtest_time_offset
+
+### [type/protocol/biomaterial_collection/collection_protocol.json - v9.5.0] - 2026-04-02
+### Added
+Added biopsy_procedure
+
+### [type/protocol/sequencing/library_preparation_protocol.json - v6.5.0] - 2026-04-02
+### Added
+Added processing_time
+
+### [type/biomaterial/cell_suspension.json - v14.3.0] - 2026-04-02
+### Added
+Added nuclei_yield
+
+### [type/biomaterial/specimen_from_organism.json - v11.3.0] - 2026-04-02
+### Added
+Added time_to_laboratory, experimental_condition
+
+### [module/biomaterial/human_specific.json - v3.0.0] - 2026-04-02
+### Changed
+Changed body_mass_index to string
+
+### [module/biomaterial/blood_test.json - v2.0.0] - 2026-04-02
+### Added
+Added new blood_test module
+
+### [module/biomaterial/lifestyle.json - v2.0.0] - 2026-04-02
+### Added
+Added new lifestyle module
+
+### [module/ontology/file_content_ontology.json - v4.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
+### [module/ontology/file_format_ontology.json - v3.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
+### [type/biomaterial/donor_organism.json - v18.7.0] - 2026-04-02
+### Added
+Added fasting_time, blood_test
+
+### [core/file/file_core.json - v9.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
+### [type/file/supplementary_file.json - v5.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
+### [type/file/sequence_file.json - v12.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
+### [type/file/reference_file.json - v6.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
+### [type/file/image_file.json - v5.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
+### [type/file/analysis_file.json - v10.0.0] - 2026-04-02
+### Fixed
+Fixed class and example for EDAM ontology
+
 ### [type/biomaterial/specimen_from_organism.json - v11.1.1] - 2026-02-09
 ### Added
 Added values to radial_tissue_term enum
-
 
 ### [module/biomaterial/residence.json - v1.0.4] - 2026-02-09
 ### Fixed
@@ -33,7 +116,6 @@ Fixed describedBy pattern and type keyword to country_territory
 ### [type/biomaterial/donor_organism.json - v18.3.4] - 2026-02-09
 ### Fixed
 Fixed describedBy pattern and type keyword to country_territory
-
 
 ### [module/biomaterial/medical_history.json - v9.1.0] - 2026-02-03
 ### Added
