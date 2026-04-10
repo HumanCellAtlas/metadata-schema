@@ -326,6 +326,7 @@
         "sodium": {
             "description": "Sodium in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Sodium",
             "example": "138; 140; 142",
             "bionetworks": ["heart"]
@@ -345,6 +346,7 @@
             "description": "Potassium in the last blood test of the donor before collection.",
             "type": "number",
             "user_friendly": "Potassium",
+            "minimum": 0,
             "example": "4.0; 4.2; 3.8",
             "bionetworks": ["heart"]
         },
@@ -362,6 +364,7 @@
         "urea": {
             "description": "Urea in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Urea",
             "example": "5.0; 5.5; 4.8",
             "bionetworks": ["heart"]
@@ -380,6 +383,7 @@
         "creatinine": {
             "description": "Creatinine in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Creatinine",
             "example": "80; 85; 78",
             "bionetworks": ["heart"]
@@ -399,6 +403,7 @@
         "total_bilirubin": {
             "description": "Total bilirubin in the last blood test of the donor before collection.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Total bilirubin",
             "example": "12; 10; 14",
             "bionetworks": ["heart"]

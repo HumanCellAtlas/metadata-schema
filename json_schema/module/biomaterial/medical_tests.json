@@ -258,6 +258,7 @@
         "ecg_heart_rate": {
             "description": "Heart rate as measured by electrocardiogram in beats per minute.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Ecg - Heart Rate",
             "example": "72; 65; 80",
             "bionetworks": ["heart"]
@@ -272,6 +273,7 @@
         "ecg_pr_interval_duration": {
             "description": "PR interval duration in ms as measured by electrocardiogram. It can be described as PQ interval duration in ECG description according to region.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Ecg - Pr Interval Duration",
             "example": "160; 140; 180",
             "bionetworks": ["heart"]
@@ -279,6 +281,7 @@
         "ecg_qrs_complex_duration": {
             "description": "QRS complex duration in ms as measured by electrocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Ecg - QRS Complex Duration",
             "example": "90; 100; 110",
             "bionetworks": ["heart"]
@@ -298,6 +301,7 @@
         "ecg_qt_interval_corrected": {
             "description": "Corrected QT interval in ms as measured by electrocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Ecg - QT Interval Corrected",
             "example": "420; 410; 430",
             "bionetworks": ["heart"]
@@ -305,6 +309,7 @@
         "ecg_time_offset": {
             "description": "Time between the test and the collection of the sample, measured in days.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Ecg - Time Offset",
             "example": "4; 20; 58",
             "bionetworks": ["heart"]
@@ -377,6 +382,7 @@
         "echo_estimated_rvsp": {
             "description": "Estimated right ventricular systolic pressure in mmHg as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - Estimated RVSP",
             "example": "25; 30; 35",
             "bionetworks": ["heart"]
@@ -384,6 +390,7 @@
         "echo_lvedv": {
             "description": "Left ventricular end-diastolic volume in ml as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LVEDV",
             "example": "120; 110; 130",
             "bionetworks": ["heart"]
@@ -391,6 +398,7 @@
         "echo_lvedv_indexed": {
             "description": "Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LVEDV Indexed",
             "example": "65; 70; 60",
             "bionetworks": ["heart"]
@@ -398,6 +406,7 @@
         "echo_lvesv": {
             "description": "Left ventricular end-systolic volume in ml as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LVESV",
             "example": "50; 45; 55",
             "bionetworks": ["heart"]
@@ -405,6 +414,7 @@
         "echo_lvesv_indexed": {
             "description": "Left ventricular end-systolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LVESV Indexed",
             "example": "25; 30; 28",
             "bionetworks": ["heart"]
@@ -412,6 +422,7 @@
         "echo_lvef": {
             "description": "Left ventricular ejection fraction as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LVEF",
             "example": "55; 60; 65",
             "bionetworks": ["heart"]
@@ -419,6 +430,7 @@
         "echo_lv_mass": {
             "description": "Left ventricular mass in grams as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LV Mass",
             "example": "150; 160; 140",
             "bionetworks": ["heart"]
@@ -426,6 +438,7 @@
         "echo_lv_mass_indexed": {
             "description": "Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LV Mass Indexed",
             "example": "75; 80; 70",
             "bionetworks": ["heart"]
@@ -433,6 +446,7 @@
         "echo_rv_fac": {
             "description": "Right Ventricular Fractional Area Change (RV FAC) in percentage as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - RV FAC",
             "example": "40; 45; 50",
             "bionetworks": ["heart"]
@@ -440,6 +454,7 @@
         "echo_tapse": {
             "description": "Tricuspid annular plane systolic excursion (TAPSE) in mm as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - TAPSE",
             "example": "20; 22; 18",
             "bionetworks": ["heart"]
@@ -447,6 +462,7 @@
         "echo_lv_septum_thickness": {
             "description": "Left ventricular septum thickness in mm as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LV Septum Thickness",
             "example": "9; 10; 11",
             "bionetworks": ["heart"]
@@ -454,6 +470,7 @@
         "echo_pw_thickness": {
             "description": "Basal posterior LV wall thickness in mm as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - PW Thickness",
             "example": "9; 10; 11",
             "bionetworks": ["heart"]
@@ -461,6 +478,7 @@
         "echo_la_dimension": {
             "description": "Left atrial diameter in PLAX view in mm as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LA Dimension",
             "example": "38; 36; 40",
             "bionetworks": ["heart"]
@@ -468,6 +486,7 @@
         "echo_lav_indexed": {
             "description": "Left atrial volume indexed to body surface area in ml/m^2 (left atrial volume indexed to body surface area) as measured by echocardiogram.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - LAV Indexed",
             "example": "28; 30; 32",
             "bionetworks": ["heart"]
@@ -475,6 +494,7 @@
         "echo_time_offset": {
             "description": "Time between the test and the collection of the sample, in days.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Echo - Time Offset",
             "example": "4; 20; 58",
             "bionetworks": ["heart"]
@@ -482,6 +502,7 @@
         "mri_lvedv": {
             "description": "Left ventricular end-diastolic volume in ml as measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - LVEDV",
             "example": "140; 150; 130",
             "bionetworks": ["heart"]
@@ -489,6 +510,7 @@
         "mri_lvedv_indexed": {
             "description": "Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - LVEDV Indexed",
             "example": "75; 70; 80",
             "bionetworks": ["heart"]
@@ -496,6 +518,7 @@
         "mri_lvesv": {
             "description": "Left ventricular end-systolic volume in ml as measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - LVESV",
             "example": "60; 55; 65",
             "bionetworks": ["heart"]
@@ -503,6 +526,7 @@
         "mri_lvesv_indexed": {
             "description": "Left ventricular end-systolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - LVESV Indexed",
             "example": "30; 28; 32",
             "bionetworks": ["heart"]
@@ -510,6 +534,7 @@
         "mri_lvef": {
             "description": "Left ventricular ejection fraction measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - LVEF",
             "example": "55; 60; 58",
             "bionetworks": ["heart"]
@@ -517,6 +542,7 @@
         "mri_lv_mass": {
             "description": "Left ventricular mass in grams as measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - LV Mass",
             "example": "130; 120; 140",
             "bionetworks": ["heart"]
@@ -524,6 +550,7 @@
         "mri_lv_mass_indexed": {
             "description": "Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - LV Mass Indexed",
             "example": "65; 60; 70",
             "bionetworks": ["heart"]
@@ -531,6 +558,7 @@
         "mri_rv_ejection_fraction": {
             "description": "Right ventricular ejection fraction in percentage as measured by MRI.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - RV Ejection Fraction",
             "example": "50; 55; 60",
             "bionetworks": ["heart"]
@@ -566,6 +594,7 @@
         "mri_time_offset": {
             "description": "Time between the test and the collection of the sample, in days.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mri - Time Offset",
             "example": "4; 20; 58",
             "bionetworks": ["heart"]
@@ -574,6 +603,7 @@
             "user_friendly": "Mps - LVEF",
             "description": "Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy.",
             "type": "number",
+            "minimum": 0,
             "example": "58; 60; 62",
             "bionetworks": ["heart"]
         },
@@ -581,6 +611,7 @@
             "user_friendly": "Mps - Inducible Ischaemic",
             "description": "Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy.",
             "type": "number",
+            "minimum": 0,
             "example": "0; 5; 12",
             "bionetworks": ["heart"]
         },
@@ -588,12 +619,14 @@
             "user_friendly": "Mps - Scar",
             "description": "Left ventricular scar percentage as measured by myocardial perfusion scintigraphy.",
             "type": "number",
+            "minimum": 0,
             "example": "0; 3; 10",
             "bionetworks": ["heart"]
         },
         "mps_time_offset": {
             "description": "Time between the test and the collection of the sample, in days.",
             "type": "number",
+            "minimum": 0,
             "user_friendly": "Mps - Time Offset",
             "example": "4; 20; 58",
             "bionetworks": ["heart"]
