@@ -8,3 +8,4 @@ src/schema_test_suite.pyc
 src/__pycache__/
 tests/node_modules
 *.pyc
+json_schema_site/
