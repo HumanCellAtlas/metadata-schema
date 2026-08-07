@@ -26,4 +26,4 @@ npm test
 
 ### Running in vs code
 
-The tests are visible in the "Testing" sidebar after installing [Mocha Test Explorer](https://marketplace.cursorapi.com/items/?itemName=hbenl.vscode-mocha-test-adapter)
+The tests are visible in the "Testing" sidebar after installing [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter)

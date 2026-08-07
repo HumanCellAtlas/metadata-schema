@@ -87,11 +87,22 @@
             "bionetworks": ["gut"]
         },
         "transplant_organ": {
-            "description": "Was the specimen collected after extraction for organ transplantation?",
-            "type": "boolean",
+            "description": "Was the organ transplanted or explanted before biomaterial collection?",
+            "type": "string",
+            "enum": [
+                "explanted organ", "transplanted organ","no transplant"
+            ],
+            "example": "explanted organ; transplanted organ; no transplant.",
+            "guidelines": "Should be one of: explanted organ; transplanted organ; no transplant.",
             "user_friendly": "Transplant organ",
-            "guidelines": "Should be one of: yes, or no.",
-            "example": "yes; no"
+            "bionetworks": ["heart"]
+        },
+        "transplant_rejection_reason": {
+            "description": "If the organ was evaluated for transplantation but rejected give the reason for rejection.",
+            "type": "string",
+            "user_friendly": "Transplant Rejection Reason",
+            "example": "Rejected because underlying malignant disease; not evaluated for transplantation",
+            "bionetworks": ["heart"]
         },
         "diseases": {
             "description": "Short description of known disease(s) of the specimen.",
@@ -161,7 +172,7 @@
         },
         "time_to_laboratory": {
           "description": "Transit time in hours between tissue collection and tissue processing, meaning either storage in the laboratory or processing for sequencing.",
-          "pattern": "(0|[1-9][0-9]*)(\\.(0|[0-9]*[1-9]))?(-(0|[1-9][0-9]*)(\\.(0|[0-9]*[1-9]))?)?$",
+          "pattern": "^(0|[1-9][0-9]*)(\\.(0|[0-9]*[1-9]))?(-(0|[1-9][0-9]*)(\\.(0|[0-9]*[1-9]))?)?$",
           "type": "string",
           "example": "2; 4-5; 8",
           "user_friendly": "Time to laboratory",

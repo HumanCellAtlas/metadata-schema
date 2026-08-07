@@ -153,7 +153,7 @@
             ],
             "user_friendly": "Haematocrit unit",
             "example": "%",
-            "guidelines": "Should be one of: %",
+            "guidelines": "Should be one of: percentage (%)",
             "bionetworks": ["adipose"]
         },
         "haemoglobin": {
@@ -323,6 +323,102 @@
             "guidelines": "Should be one of: mg/dL; mmol/L",
             "bionetworks": ["adipose"]
         },
+        "sodium": {
+            "description": "Sodium in the last blood test of the donor before collection.",
+            "type": "number",
+            "minimum": 0,
+            "user_friendly": "Sodium",
+            "example": "138; 140; 142",
+            "bionetworks": ["heart"]
+        },
+        "sodium_unit": {
+            "description": "Sodium unit.",
+            "type": "string",
+            "enum": [
+                "mmol/L"
+            ],
+            "user_friendly": "Sodium unit",
+            "example": "mmol/L",
+            "guidelines": "Should be one of: mmol/L",
+            "bionetworks": ["heart"]
+        },
+        "potassium": {
+            "description": "Potassium in the last blood test of the donor before collection.",
+            "type": "number",
+            "user_friendly": "Potassium",
+            "minimum": 0,
+            "example": "4.0; 4.2; 3.8",
+            "bionetworks": ["heart"]
+        },
+        "potassium_unit": {
+            "description": "Potassium unit.",
+            "type": "string",
+            "enum": [
+                "mmol/L"
+            ],
+            "user_friendly": "Potassium unit",
+            "example": "mmol/L",
+            "guidelines": "Should be one of: mmol/L",
+            "bionetworks": ["heart"]
+        },
+        "urea": {
+            "description": "Urea in the last blood test of the donor before collection.",
+            "type": "number",
+            "minimum": 0,
+            "user_friendly": "Urea",
+            "example": "5.0; 5.5; 4.8",
+            "bionetworks": ["heart"]
+        },
+        "urea_unit": {
+            "description": "Urea unit.",
+            "type": "string",
+            "enum": [
+                "mmol/L"
+            ],
+            "user_friendly": "Urea unit",
+            "example": "mmol/L",
+            "guidelines": "Should be one of: mmol/L",
+            "bionetworks": ["heart"]
+        },
+        "creatinine": {
+            "description": "Creatinine in the last blood test of the donor before collection.",
+            "type": "number",
+            "minimum": 0,
+            "user_friendly": "Creatinine",
+            "example": "80; 85; 78",
+            "bionetworks": ["heart"]
+        },
+        "creatinine_unit": {
+            "description": "Creatinine unit.",
+            "type": "string",
+            "enum": [
+                "micromol/L",
+                "mg/dL"
+            ],
+            "user_friendly": "Creatinine unit",
+            "example": "micromol/L; mg/dL",
+            "guidelines": "Should be one of: micromol/L, mg/dL",
+            "bionetworks": ["heart"]
+        },
+        "total_bilirubin": {
+            "description": "Total bilirubin in the last blood test of the donor before collection.",
+            "type": "number",
+            "minimum": 0,
+            "user_friendly": "Total bilirubin",
+            "example": "12; 10; 14",
+            "bionetworks": ["heart"]
+        },
+        "total_bilirubin_unit": {
+            "description": "Total bilirubin unit.",
+            "type": "string",
+            "enum": [
+                "micromol/L"
+            ],
+            "user_friendly": "Total bilirubin unit",
+            "example": "micromol/L",
+            "guidelines": "Should be one of: micromol/L",
+            "bionetworks": ["heart"]
+        },
         "white_blood_cell_count": {
             "description": "Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection.",
             "type": "number",
@@ -343,7 +439,7 @@
             "guidelines": "Should be one of: 10^9/L; cells/μL",
             "bionetworks": ["adipose"]
         },
-        "bloodtest_time_offset": {
+        "blood_test_time_offset": {
             "description": "Time between the test and the collection of the sample, in days.",
             "type": "number",
             "minimum": 0,

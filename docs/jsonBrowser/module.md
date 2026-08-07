@@ -490,6 +490,50 @@ dlco | Indicate the Diffusing Capacity of the Lung for Carbon Monoxide (DLCO) in
 dlco_predicted_percent | Indicate the percentage of the predicted DLCO, based on patient demographics, if available. | number | no |  | DLCO percent of predicted |  | 88; 95; 82
 kco | Indicate the transfer coefficient of the lung for carbon monoxide (KCO) in mmol/min/kPa/L if available. | number | no |  | KCO |  | 5; 6; 4.5
 kco_predicted_percent | Indicate the percentage of the predicted KCO, based on patient demographics, if available. | number | no |  | KCO percent of predicted |  | 90; 98; 85
+ecg_heart_rate | Heart rate as measured by electrocardiogram in beats per minute. | number | no |  | Ecg - Heart Rate |  | 72; 65; 80
+ecg_heart_rhythm | Heart rhythm as measured by electrocardiogram. | string | no |  | Ecg - Heart Rhythm |  | sinus rhythm; atrial fibrillation; atrial flutter; atrial tachycardia
+ecg_pr_interval_duration | PR interval duration in ms as measured by electrocardiogram. It can be described as PQ interval duration in ECG description according to region. | number | no |  | Ecg - Pr Interval Duration |  | 160; 140; 180
+ecg_qrs_complex_duration | QRS complex duration in ms as measured by electrocardiogram. | number | no |  | Ecg - QRS Complex Duration |  | 90; 100; 110
+ecg_lbbb_rbbb_ivcd | Bundle branch block and/or delayed atrioventricular conduction as measured by electrocardiogram. LBBB - Left bundle branch block/ RBBB - right bundle branch block/ IVCD - intraventricular-conduction delay (QRSd >120ms not fulfilling LBBB or RBBB criteria). | string | no |  | Ecg - LBBB RBBB IVCD | LBBB, RBBB, IVCD | Should be one of: LBBB, RBBB, IVCD.
+ecg_qt_interval_corrected | Corrected QT interval in ms as measured by electrocardiogram. | number | no |  | Ecg - QT Interval Corrected |  | 420; 410; 430
+ecg_time_offset | Time between the test and the collection of the sample, measured in days. | number | no |  | Ecg - Time Offset |  | 4; 20; 58
+echo_aortic_stenosis | Aortic stenosis as measured by echocardiogram. | string | no |  | Echo - Aortic Stenosis | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
+echo_aortic_regurgitation | Aortic regurgitation as measured by echocardiogram. | string | no |  | Echo - Aortic Regurgitation | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
+echo_mitral_regurgitation | Mitral regurgitation as measured by echocardiogram. | string | no |  | Echo - Mitral Regurgitation | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
+echo_mitral_stenosis | Mitral stenosis as measured by echocardiogram. | string | no |  | Echo - Mitral Stenosis | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
+echo_tricuspid_regurgitation | Tricuspid regurgitation as measured by echocardiogram. | string | no |  | Echo - Tricuspid Regurgitation | no, mild, mod, severe | Should be one of: no, mild, mod, severe.
+echo_estimated_rvsp | Estimated right ventricular systolic pressure in mmHg as measured by echocardiogram. | number | no |  | Echo - Estimated RVSP |  | 25; 30; 35
+echo_lvedv | Left ventricular end-diastolic volume in ml as measured by echocardiogram. | number | no |  | Echo - LVEDV |  | 120; 110; 130
+echo_lvedv_indexed | Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram. | number | no |  | Echo - LVEDV Indexed |  | 65; 70; 60
+echo_lvesv | Left ventricular end-systolic volume in ml as measured by echocardiogram. | number | no |  | Echo - LVESV |  | 50; 45; 55
+echo_lvesv_indexed | Left ventricular end-systolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by echocardiogram. | number | no |  | Echo - LVESV Indexed |  | 25; 30; 28
+echo_lvef | Left ventricular ejection fraction as measured by echocardiogram. | number | no |  | Echo - LVEF |  | 55; 60; 65
+echo_lv_mass | Left ventricular mass in grams as measured by echocardiogram. | number | no |  | Echo - LV Mass |  | 150; 160; 140
+echo_lv_mass_indexed | Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by echocardiogram. | number | no |  | Echo - LV Mass Indexed |  | 75; 80; 70
+echo_rv_fac | Right Ventricular Fractional Area Change (RV FAC) in percentage as measured by echocardiogram. | number | no |  | Echo - RV FAC |  | 40; 45; 50
+echo_tapse | Tricuspid annular plane systolic excursion (TAPSE) in mm as measured by echocardiogram. | number | no |  | Echo - TAPSE |  | 20; 22; 18
+echo_lv_septum_thickness | Left ventricular septum thickness in mm as measured by echocardiogram. | number | no |  | Echo - LV Septum Thickness |  | 9; 10; 11
+echo_pw_thickness | Basal posterior LV wall thickness in mm as measured by echocardiogram. | number | no |  | Echo - PW Thickness |  | 9; 10; 11
+echo_la_dimension | Left atrial diameter in PLAX view in mm as measured by echocardiogram. | number | no |  | Echo - LA Dimension |  | 38; 36; 40
+echo_lav_indexed | Left atrial volume indexed to body surface area in ml/m^2 (left atrial volume indexed to body surface area) as measured by echocardiogram. | number | no |  | Echo - LAV Indexed |  | 28; 30; 32
+echo_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Echo - Time Offset |  | 4; 20; 58
+mri_lvedv | Left ventricular end-diastolic volume in ml as measured by MRI. | number | no |  | Mri - LVEDV |  | 140; 150; 130
+mri_lvedv_indexed | Left ventricular end-diastolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by MRI. | number | no |  | Mri - LVEDV Indexed |  | 75; 70; 80
+mri_lvesv | Left ventricular end-systolic volume in ml as measured by MRI. | number | no |  | Mri - LVESV |  | 60; 55; 65
+mri_lvesv_indexed | Left ventricular end-systolic volume indexed to body surface area in ml/m^2 (indexed to body surface area) as measured by MRI. | number | no |  | Mri - LVESV Indexed |  | 30; 28; 32
+mri_lvef | Left ventricular ejection fraction measured by MRI. | number | no |  | Mri - LVEF |  | 55; 60; 58
+mri_lv_mass | Left ventricular mass in grams as measured by MRI. | number | no |  | Mri - LV Mass |  | 130; 120; 140
+mri_lv_mass_indexed | Left ventricular mass indexed to body surface area in g/m^2 (indexed to body surface area) as measured by MRI. | number | no |  | Mri - LV Mass Indexed |  | 65; 60; 70
+mri_rv_ejection_fraction | Right ventricular ejection fraction in percentage as measured by MRI. | number | no |  | Mri - RV Ejection Fraction |  | 50; 55; 60
+mri_mid_wall_lge | Late gadolinium enhancement (mid wall) as measured by MRI. | boolean | no |  | Mri - Mid Wall LGE |  | Should be one of: yes; no.
+mri_epicardial_lge | Late gadolinium enhancement (epicardial) as measured by MRI. | boolean | no |  | Mri - Epicardial LGE |  | Should be one of: yes; no.
+mri_infarct_pattern_lge | Late gadolinium enhancement (infarct pattern) as measured by MRI. | boolean | no |  | Mri - Infarct Pattern LGE |  | Should be one of: yes; no.
+mri_myocardial_oedema | Myocardial oedema as measured by MRI. | boolean | no |  | Mri - Myocardial Oedema |  | Should be one of: yes; no.
+mri_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Mri - Time Offset |  | 4; 20; 58
+mps_lvef | Left ventricular ejection fraction in percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - LVEF |  | 58; 60; 62
+mps_inducible_ischaemic | Left ventricular inducible ischemic percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Inducible Ischaemic |  | 0; 5; 12
+mps_scar | Left ventricular scar percentage as measured by myocardial perfusion scintigraphy. | number | no |  | Mps - Scar |  | 0; 3; 10
+mps_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Mps - Time Offset |  | 4; 20; 58
 
 ## Collection institute<a name='Collection institute'></a>
 _Information about collection institute location._
@@ -552,6 +596,10 @@ Location: module/biomaterial/lifestyle.json
 Property name | Description | Type | Required? | Object reference? | User friendly name | Allowed values | Example 
 --- | --- | --- | --- | --- | --- | --- | --- 
 physical_activity | The habitual level of physical activity and regular physical activities. | string | no |  | Physical activity |  | active -  football, tennis; sedentary
+substance_type | Any drug or substance the donor uses or used. | array | no |  | Substance Type | marijuana, cocaine, heroin, methamphetamine, prescription drugs (non-medical use) | marijuana; cocaine; heroin; methamphetamine; prescription drugs (non-medical use)
+substance_frequency | Number of donor's substance usage per year. | number | no |  | Substance Use Frequency |  | 12; 50; 300
+substance_use_duration | Duration of donor's substance usage in years. | integer | no |  | Duration Of Substance Use |  | 4; 8; 20
+substance_duration_since_last_use | If donor is no longer using, specify the number of years since substance usage cessation, if available. | integer | no |  | Duration Since Last Substance Use |  | 1; 4; 20
 
 ## Death<a name='Death'></a>
 _Information relating to the death of an organism._
@@ -603,7 +651,10 @@ diet_meat_consumption | Dietary patterns of donor - meat (chicken, seafood, fish
 reproductive_history | Reproductive history of the donor at the time of collection. | object | no | [See module  reproductive_history](module.md#reproductive-history) | Reproductive history |  | 
 blood_test | Results from blood tests performed on the individual. | object | no | [See module  blood_test](module.md#blood-test) | Blood tests |  | 
 test_results | Results from medical tests performed on the individual. | string | no |  | Test results |  | lipid panel shows normal level of LDL (124 mg/dL); HIV, HBV, HCV: Negative
+diseases_history | Short description of known disease(s) that have previously affected the donor, but are not considered active now. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Diseases History |  | 
 treatment | Treatments the individual has undergone prior to biomaterial collection. | string | no |  | Treatments |  | Patient treated with antibiotics for a urinary tract infection; Patient treated with chemotherapy (Epirubicin, cisplatin, capecitabine) to treat stomach cancer
+device_treatment | Device/interventional therapy 1 year before and/or at time of sample collection. | string | no |  | Device Treatment | ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT | Should be one of: ECMO, IABP, Impella, LVAD, RVAD, PPM, ICD, CRT
+cardioplegia | Cardioplegia applied right before or during time of biomaterial collection. | boolean | no |  | Cardioplegia |  | yes; no
 previous_surgeries | Previous surgeries the individual has undergone prior to biomaterial collection. | string | no |  | Previous surgeries |  | Appendectomy; Coleostomy; Vaginoplasty; LASIK; Abdominal surgery
 defined_diet | Whether the individual was following a defined diet at the time of biomaterial collection. | boolean | no |  | Defined diet |  | yes; no
 diet_specific | Defined diet the donor was on at the time of biomaterial collection. | array | no |  | Diet Specific | vegan, vegetarian, omnivore, gluten_free, fodmap, baby_formula, breastfeeding, elimination, keto, paleo | gluten_free; fodmap; baby_formula; breastfeeding; elimination; keto; paleo
@@ -646,9 +697,19 @@ testosterone | Testosterone in the last blood test of the donor before collectio
 testosterone_unit | Testosterone unit. | string | no |  | Testosterone unit | nmol/L, ng/dL | nmol/L; ng/dL
 triglycerides | Triglycerides levels from the donor's last blood test after at least 9-12 hours of fasting, prior to the biopsy collection. | number | no |  | Triglycerides |  | 160; 133; 140
 triglycerides_unit | Triglycerides unit. | string | no |  | Triglycerides unit | mg/dL, mmol/L | mg/dL; mmol/L
+sodium | Sodium in the last blood test of the donor before collection. | number | no |  | Sodium |  | 138; 140; 142
+sodium_unit | Sodium unit. | string | no |  | Sodium unit | mmol/L | mmol/L
+potassium | Potassium in the last blood test of the donor before collection. | number | no |  | Potassium |  | 4.0; 4.2; 3.8
+potassium_unit | Potassium unit. | string | no |  | Potassium unit | mmol/L | mmol/L
+urea | Urea in the last blood test of the donor before collection. | number | no |  | Urea |  | 5.0; 5.5; 4.8
+urea_unit | Urea unit. | string | no |  | Urea unit | mmol/L | mmol/L
+creatinine | Creatinine in the last blood test of the donor before collection. | number | no |  | Creatinine |  | 80; 85; 78
+creatinine_unit | Creatinine unit. | string | no |  | Creatinine unit | micromol/L, mg/dL | micromol/L; mg/dL
+total_bilirubin | Total bilirubin in the last blood test of the donor before collection. | number | no |  | Total bilirubin |  | 12; 10; 14
+total_bilirubin_unit | Total bilirubin unit. | string | no |  | Total bilirubin unit | micromol/L | micromol/L
 white_blood_cell_count | Measurement of total white blood cells per unit volume of blood from the donor's last blood test prior to biopsy collection. | number | no |  | White cell count |  | 4.5; 11; 9.24
 white_blood_cell_count_unit | White cell count unit. | string | no |  | White cell count unit | 10^9/L, cells/μL | 10^9/L; cells/μL
-bloodtest_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
+blood_test_time_offset | Time between the test and the collection of the sample, in days. | number | no |  | Blood test time offset |  | 12; 42; 98
 
 ## Residence<a name='Residence'></a>
 _Donor's residence location information._

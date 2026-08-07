@@ -24,6 +24,48 @@
           "user_friendly": "Physical activity",
           "example": "active -  football, tennis; sedentary",
           "bionetworks": ["adipose","heart","musculoskeletal"]
+        },
+        "substance_type": {
+            "description": "Any drug or substance the donor uses or used.",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "marijuana",
+                    "cocaine",
+                    "heroin",
+                    "methamphetamine",
+                    "prescription drugs (non-medical use)"
+                ]
+            },
+            "example": "marijuana; cocaine; heroin; methamphetamine; prescription drugs (non-medical use)",
+            "guidelines": "Should be one of: marijuana; cocaine; heroin; methamphetamine; prescription drugs (non-medical use).",
+            "user_friendly": "Substance Type",
+            "bionetworks": ["heart", "oral and craniofacial", "liver", "reproduction"]
+        },
+        "substance_frequency": {
+            "description": "Number of donor's substance usage per year.",
+            "type": "number",
+            "user_friendly": "Substance Use Frequency",
+            "minimum": 0,
+            "example": "12; 50; 300",
+            "bionetworks": ["heart", "oral and craniofacial", "liver", "reproduction"]
+        },
+        "substance_use_duration": {
+            "description": "Duration of donor's substance usage in years.",
+            "type": "integer",
+            "user_friendly": "Duration Of Substance Use",
+            "minimum": 0,
+            "example": "4; 8; 20",
+            "bionetworks": ["heart", "oral and craniofacial", "liver", "reproduction"]
+        },
+        "substance_duration_since_last_use": {
+            "description": "If donor is no longer using, specify the number of years since substance usage cessation, if available.",
+            "type": "integer",
+            "user_friendly": "Duration Since Last Substance Use",
+            "minimum": 0,
+            "example": "1; 4; 20",
+            "bionetworks": ["heart", "oral and craniofacial", "liver", "reproduction"]
         }
     }
 }

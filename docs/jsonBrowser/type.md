@@ -226,8 +226,8 @@ schema_type | The type of the metadata schema entity. | string | yes |  |  | pro
 provenance | Provenance information provided by the system. | object | no | [See   provenance](.md#provenance) |  |  | 
 protocol_core | Core protocol-level information. | object | yes | [See core  protocol_core](core.md#protocol-core) | Protocol core |  | 
 method | Method used to collect the biomaterial. | object | yes | [See module  process_type_ontology](module.md#process-type-ontology) | Collection method |  | 
-biopsy_procedure | Type of biopsy procedure used in the sample collection. | string | no |  | Type of biopsy procedure | Bergstrom needle, Punch biopsy, Mercedes needle, dry aspiration, Mercedes needle, tumescent lidocaine “wet” aspiration | Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration
 procedure | Procedure used to collect the specimen from the organism. | string | no |  | Procedure |  | colonoscopy; venipuncture; laparoscopic surgery
+biopsy_procedure | Type of biopsy procedure used in the sample collection. | string | no |  | Type of biopsy procedure | Bergstrom needle, Punch biopsy, Mercedes needle, dry aspiration, Mercedes needle, tumescent lidocaine “wet” aspiration | Bergstrom needle; Punch biopsy; Mercedes needle, dry aspiration; Mercedes needle, tumescent lidocaine “wet” aspiration
 reagents | A list of purchased reagents used in this protocol. | array | no | [See module  purchased_reagents](module.md#purchased-reagents) | Protocol reagents |  | 
 
 ## Differentiation protocol
@@ -353,7 +353,8 @@ genus_species | The scientific binomial name for the species of the specimen. | 
 organ | The organ that the biomaterial came from. | object | yes | [See module  organ_ontology](module.md#organ-ontology) | Organ |  | 
 organ_parts | A term for a specific part of the organ that the biomaterial came from. | array | no | [See module  organ_part_ontology](module.md#organ-part-ontology) | Organ part |  | 
 radial_tissue_term | Layer(s) of the gut that was/were sampled. | array | no |  | Radial tissue term | EPI, LP, MLN, MUILF, MUSC, PP, SMILF, SUB | EPI; LP; MLN; MUILF; MUSC; PP; SMILF; SUB
-transplant_organ | Was the specimen collected after extraction for organ transplantation? | boolean | no |  | Transplant organ |  | yes; no
+transplant_organ | Was the organ transplanted or explanted before biomaterial collection? | string | no |  | Transplant organ | explanted organ, transplanted organ, no transplant | explanted organ; transplanted organ; no transplant.
+transplant_rejection_reason | If the organ was evaluated for transplantation but rejected give the reason for rejection. | string | no |  | Transplant Rejection Reason |  | Rejected because underlying malignant disease; not evaluated for transplantation
 diseases | Short description of known disease(s) of the specimen. | array | no | [See module  disease_ontology](module.md#disease-ontology) | Known disease(s) |  | 
 adjacent_diseases | Short description of the disease(s) adjacent to the specimen's collection site (e.g. breast cancer). | array | no | [See module  disease_ontology](module.md#disease-ontology) | Adjacent disease(s) |  | 
 experimental_condition | Case of the sample used in the experiment context, it should include a description of the experimental conditions of the study. If disease case, specify the disease that was studied. | string | no |  | Case Control definition |  | healthy control; disease control; MAFLD disease case; gestational diabetes case
