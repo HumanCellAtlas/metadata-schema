@@ -22,7 +22,7 @@ Documentation supporting the metadata standard is available in the `docs/` direc
 
 ## Metadata schemas and examples
 
-Metadata JSON schemas are located in the `json_schema/` directory. Schemas are also hosted at [schema.humancellatlas.org](https://schema.humancellatlas.org/a).
+Metadata JSON schemas are located in the `json_schema/` directory. Schemas are also hosted at [schema.humancellatlas.org](https://schema.humancellatlas.org/).
 
 When required, extensions to base JSON schemas have been developed and are located in the `json_schema_extensions/` directory.
 
